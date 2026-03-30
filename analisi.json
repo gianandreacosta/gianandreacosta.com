@@ -1,6 +1,501 @@
 {
-  "generated_at": "2026-03-30T13:53:36.439040+00:00",
+  "generated_at": "2026-03-30T14:46:13.811333+00:00",
   "analyses": [
+    {
+      "id": 3,
+      "run_id": 33,
+      "run_time": "2026-03-30 13:09:56.180660+00:00",
+      "analyzed_at": "2026-03-30T14:46:13.807515+00:00",
+      "articles_analyzed": 97,
+      "articles_selected": 30,
+      "model_used": "anthropic/claude-haiku-4-5",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria registra una dispersione di argomenti senza coerenza tematica specifica. Emerge un dibattito sulla disruption tecnologica e l'impatto dell'IA sulla produzione creativa, mentre una notizia rilevante sulla bioetica (clonazione) rimane isolata. Il dataset manca di incroci significativi e approfondimenti coordinati.",
+          "notizie": [
+            {
+              "titolo": "R3 Bio: la startup segreta che produce cloni umani senza cervello per i trapianti",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/",
+              "riassunto": "R3 Bio, società californiana operante in segretezza, ha rivelato di aver raccolto finanziamenti per creare 'sacchi d'organi' non senzienti derivati da cloni di primati come alternativa ai test su animali. La ricerca mira alla creazione di copie biologiche senza funzioni cerebrali per trapianti e ricerca biologica. La divulgazione rappresenta un cambio di strategia comunicativa della startup.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nostalgia per l'era pre-IA della scrittura creativa e dell'espressione autenticità",
+              "fonte": "Less Wrong (Hacker News)",
+              "link": "https://www.lesswrong.com/posts/BJ4pnropWdnzzgeJc/i-am-definitely-missing-the-pre-ai-writing-era",
+              "riassunto": "Riflessione sulla perdita della dimensione autentica della scrittura umana in un'epoca di proliferazione dei contenuti generati da IA. L'articolo esprime preoccupazione sulla degradazione della qualità letteraria e sulla banalizzazione della produzione creativa nell'era della generazione automatizzata. Affronta tematiche di identità culturale e valore artistico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Strategie di sopravvivenza nel settore tecnologico nel 2026",
+              "fonte": "Hacker News",
+              "link": "https://blog.phuaxueyong.com/post/2026-03-23-how-to-survive-tech-in-2026/",
+              "riassunto": "Guida pratica alle dinamiche del settore tech contemporaneo, affrontando le sfide della disruption, automazione e trasformazione accelerata. L'articolo propone strategie adaptive per professionisti e imprese nel contesto di rapido cambiamento tecnologico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Equazione Hamilton-Jacobi-Bellman: modelli di apprendimento per rinforzo e diffusione",
+              "fonte": "Hacker News",
+              "link": "https://dani2442.github.io/posts/continuous-rl/",
+              "riassunto": "Articolo tecnico su metodologie avanzate di machine learning, focalizzato su modelli di reinforcement learning continuo e architetture diffusive. Affronta fondamenti matematici per ottimizzazione e controllo nell'IA.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Bioetica e limiti della manipolazione biologica",
+            "Disruption tecnologica e obsolescenza professionale",
+            "Crisi di autenticità nell'era post-IA",
+            "Innovazione in modelli di machine learning avanzati",
+            "Strategie adattive nel tech contemporaneo"
+          ],
+          "da_tenere_d_occhio": "Sviluppi regolatori intorno a R3 Bio e implicazioni etiche della clonazione umana per trapianti. Monitorare convergenza tra dibattito culturale sulla perdita di autenticità e innovazione tecnica accelerata nel settore AI/ML.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La cronaca svizzera di oggi è dominata da tre temi centrali: la crescente minaccia cibernetica con attacchi sempre più sofisticati, la richiesta della popolazione di maggiore sovranità digitale e controlli sulle big tech, e questioni di sicurezza doganale. Emergono chiaramente degli incroci narrativi tra più fonti sugli stessi argomenti.",
+          "notizie": [
+            {
+              "titolo": "Cyberminacce sempre più mirate e sofisticate in Svizzera",
+              "fonte": "CdT Svizzera / LaRegione Svizzera / Ticinonews Svizzera",
+              "link": "https://www.cdt.ch/news/cyberminacce-sempre-piu-mirate-cresce-lallarme-423578",
+              "riassunto": "L'Ufficio federale della cibersicurezza svizzero denuncia un'escalation degli attacchi informatici, sempre più mirati e complessi. Emergono nuove minacce come SMS-Blaster e strumenti basati su IA che aumentano significativamente i rischi per le infrastrutture critiche nazionali. Gli attacchi non colpiscono solo aziende private ma rappresentano una minaccia strutturale per il Paese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Tutte e tre le fonti riportano il medesimo rapporto federale con uguale enfasi sulla minaccia. LaRegione aggiunge specificamente la menzione di 'SMS-Blaster e IA' nel titolo, sottolineando le nuove tecnologie impiegate. La copertura è uniforme, indicando un tema di rilevanza istituzionale confermata."
+            },
+            {
+              "titolo": "Svizzeri chiedono maggiore sovranità digitale e controllo sulle big tech",
+              "fonte": "CdT Svizzera / Ticinonews Svizzera",
+              "link": "https://www.cdt.ch/news/svizzeri-chiedono-maggiore-sovranita-digitale-allo-stato-423577",
+              "riassunto": "Un sondaggio di gfs.bern per la Fondazione Mercator Svizzera rivela che la popolazione svizzera chiede allo Stato maggiore sovranità digitale e regole più severe per i giganti tecnologici. Nonostante un atteggiamento positivo verso la digitalizzazione, crescono le preoccupazioni per il controllo dei dati e l'autonomia nazionale nel settore tech.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Entrambe le fonti citano il medesimo sondaggio di gfs.bern. LaRegione enfatizza il dato positivo ('atteggiamento positivo verso la digitalizzazione'), mentre CdT e Ticinonews mettono in rilievo la richiesta di sovranità e controllo normativo. Nessuna differenza sostanziale di contenuto, ma diversa enfasi narrativa."
+            },
+            {
+              "titolo": "Sequestro doganale: 270 kg di prodotti da forno non dichiarati",
+              "fonte": "CdT Svizzera / Ticinonews Svizzera",
+              "link": "https://www.cdt.ch/news/scoperti-in-dogana-270-kg-di-prodotti-da-forno-non-sdoganati-423566",
+              "riassunto": "La dogana svizzera ha sequestrato 270 chilogrammi di prodotti da forno non regolarmente sdoganati. Il conducente del veicolo ha dovuto versare diverse centinaia di franchi per coprire IVA, dazi doganali e una multa amministrativa. L'episodio evidenzia i controlli alle frontiere.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Identica copertura, stessi dettagli, medesima importanza narrativa. Si tratta di una notizia operativa di cronaca doganale senza variazioni di angolazione tra le due fonti."
+            },
+            {
+              "titolo": "Test genetici per le Olimpiadi: equità o discriminazione negli sport femminili?",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/geschlechtertests-fuer-olympia-sorgt-ein-gentest-fuer-mehr-fairness-im-frauensport",
+              "riassunto": "Il dibattito internazionale sui test genetici per determinare l'ammissibilità alle competizioni femminili alle Olimpiadi divide esperti e società civile. Mentre i promotori sostengono che garantirebbero maggiore equità, un sociologo citato dalla fonte critica duramente l'approccio per i rischi di discriminazione e violazione della privacy.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "L'Iran conferma la morte del comandante delle Guardie Rivoluzionarie",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/nahost/krieg-in-nahost-iran-bestaetigt-tod-von-revolutionsgarde-kommandanten",
+              "riassunto": "Dopo un attacco israeliano, l'Iran ha confermato ufficialmente la morte di Alireza Tangsiri, comandante della marina delle Guardie Rivoluzionarie. La notizia si inquadra nel contesto dello scontro geopolitico mediorientale in corso.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Cibersicurezza e minacce digitali evolute",
+            "Sovranità digitale e regolamentazione tech",
+            "Controllo delle infrastrutture critiche",
+            "Privacy e dati personali",
+            "Sicurezza doganale e contrabbando"
+          ],
+          "da_tenere_d_occhio": "L'intersecazione tra ciberminacce sofisticate e richiesta di sovranità digitale da parte della popolazione svizzera suggerisce che il tema della sicurezza informatica e dell'autonomia nazionale nel settore tecnologico diventerà centrale nelle prossime settimane. Monitorare possibili annunci di nuove normative federali in risposta alle pressioni pubbliche e agli allarmi dell'Ufficio federale della cibersicurezza.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese di oggi evidenzia criticità infrastrutturali e di sicurezza stradale, con un miglioramento della situazione sanitaria legata alla legionella. Emerge anche un focus turistico per le festività pasquali, mentre proseguono iniziative di inclusione sociale a livello cantonale.",
+          "notizie": [
+            {
+              "titolo": "Incidenti stradali in calo ma più feriti nel 2025: oltre 2.500 patenti ritirate",
+              "fonte": "CdT Ticino / Ticinonews Ticino",
+              "link": "https://www.cdt.ch/news/ticino/oltre-2500-patenti-ritirate-nel-2025-sulle-strade-ticinesi-423561",
+              "riassunto": "Il bilancio della polizia cantonale registra un paradosso: sebbene gli incidenti siano in calo (oltre 3.800), aumentano i feriti. Nel 2025 sono state ritirate 2.508 patenti, mentre i casi di pirateria stradale salgono a 43 (27 in più rispetto al 2024). Il traffico intenso rimane la causa principale della preoccupazione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "CdT enfatizza il dato sui 2.500 patenti nel titolo e approfondisce il fenomeno della pirateria stradale (43 casi, +27 rispetto 2024); Ticinonews mantiene focus su incidenti/feriti con numero leggermente diverso di patenti (2'508). Entrambe evidenziano il traffic intenso, ma CdT aggiunge dato comparativo sulla pirateria."
+            },
+            {
+              "titolo": "Legionella in Ticino: migliora la situazione con un solo caso non conforme nel 2025",
+              "fonte": "CdT Ticino / Ticinonews Ticino",
+              "link": "https://www.cdt.ch/news/legionella-migliora-la-situazione-in-ticino-ma-resta-alta-lattenzione-423570",
+              "riassunto": "I controlli del Laboratorio cantonale indicano un significativo miglioramento: solo un caso non conforme nelle docce e idromassaggi pubblici nel 2025. Nonostante il dato positivo, rimane alta l'attenzione e il monitoraggio costante del batterio per prevenire nuovi focolai.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "CdT utilizza tono moderato nel titolo ('migliora...ma resta alta l'attenzione'); Ticinonews enfatizza il numero assoluto ('un solo caso') senza condizionale nel sottotitolo. Entrambe riportano lo stesso dato, ma CdT sottolinea maggiormente la necessità di vigilanza continuativa."
+            },
+            {
+              "titolo": "Ferrovia Cadenazzo-Luino: interruzioni dal 3-10 aprile, limitazioni fino a dicembre",
+              "fonte": "CdT Ticino / Ticinonews Ticino",
+              "link": "https://www.cdt.ch/news/ferrovia-limitazioni-sulla-tratta-cadenazzo-luino-423569",
+              "riassunto": "Dal 3 al 10 aprile i collegamenti sulla tratta Cadenazzo-Luino saranno completamente interrotti per lavori di manutenzione. Successivamente, fino a dicembre, ci saranno limitazioni al servizio con tempi di viaggio significativamente più lunghi. L'intervento riguarda un'arteria strategica per il Ticino.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Identiche le informazioni fornite dalle due fonti. Titoli paralleli, stessi dettagli sui periodi di interruzione e limitazione. Nessuna differenza narrativa rilevante tra i due articoli."
+            },
+            {
+              "titolo": "Pasqua in Ticino: condizioni meteo favorevoli, il cantone attrae i turisti da tutta Europa",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/pasqua-e-meteo-il-blick-invita-i-turisti-ad-attraversare-il-san-gottardo-430261",
+              "riassunto": "La stampa svizzera (Blick) ha evidenziato come il Ticino sarà un'isola felice durante le festività pasquali, con temperature che raggiungeranno i 18 gradi. L'articolo suggerisce al turismo europeo di attraversare il San Gottardo per approfittare del bel tempo e della meta turistica ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Processo d'appello contro ex ministro gambiano Ousman Sonko aperto a Bellinzona",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1914785/sonko-ministro-processo-appello-gambiano-ousman",
+              "riassunto": "Ha avuto inizio oggi a Bellinzona il processo d'appello contro l'ex ministro dell'interno della Gambia Ousman Sonko. Il procedimento tocca questioni di diritto internazionale e rappresenta un caso significativo per la giustizia ticinese su tema extraterritoriale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Destinazione Rispetto: Mendrisio lancia iniziativa per inclusione e pari opportunità 2025-2027",
+              "fonte": "tio.ch Ticino",
+              "link": "https://www.tio.ch/ticino/attualita/1914804/mendrisio-rispetto-opportunita-azione-destinazione",
+              "riassunto": "Il comune di Mendrisio ha lanciato 'Destinazione Rispetto', un'iniziativa volta a rinnovare l'impegno per la promozione di una cultura inclusiva. Il progetto si allinea con il Piano di azione per le pari opportunità 2025-2027 a livello cantonale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza stradale e traffico intenso",
+            "Infrastrutture e trasporti ferroviari",
+            "Salute pubblica e monitoraggio epidemiologico",
+            "Turismo e economia stagionale",
+            "Inclusione sociale e pari opportunità"
+          ],
+          "da_tenere_d_occhio": "Evoluzione della pirateria stradale in Ticino (43 casi nel 2025, tendenza in aumento). Monitorare i lavori ferroviari sulla tratta Cadenazzo-Luino e possibili ripercussioni sulla mobilità. Seguire lo sviluppo della situazione legionella oltre dicembre per verificare se il trend positivo si consolida.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La settimana culturale è dominata dall'adattamento dei videogiochi per il grande schermo, con Mario e Minecraft già affermati come blockbuster. Nel frattempo, il mondo editoriale si prepara ad aprile con uscite attese da autori di spicco, mentre la televisione e il teatro esplorano nuovi territori creativi, dalla psicoterapia in televisione all'intersezione tra danza e ricerca scientifica spaziale.",
+          "notizie": [
+            {
+              "titolo": "Videogiochi diventano film: Mario e Minecraft dominano Hollywood, in arrivo Call of Duty e Zelda",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/movies/mario-minecraft-video-games.html",
+              "riassunto": "Super Mario Bros. e Minecraft hanno consolidato il loro status di blockbuster cinematografici, aprendo la strada a future adattamenti di Call of Duty e The Legend of Zelda. Gli spettatori seguono con attenzione questa tendenza di conversione dei titoli videoludici al grande schermo, un fenomeno che rappresenta una trasformazione significativa nell'industria dell'intrattenimento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Arsenio Hall pubblica memoir: ricordi da talk-show host con apparizioni di Eddie Murphy, Snoop Dogg e Bill Clinton",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/books/review/arsenio-hall-memoir.html",
+              "riassunto": "Il conduttore televisivo Arsenio Hall ripercorre gli anni di gloria del suo talk-show attraverso un nuovo libro di memorie ricco di aneddoti. Il volume presenta testimonianze di personalità di spicco come Eddie Murphy, Snoop Dogg e Bill Clinton, mantenendo però un tono critico e poco sentimentale nei confronti del proprio percorso professionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sarah Shahi protagonista di 'Paradise': l'attrice reinventatrice di ruoli terapeutici tra Hulu e memoir",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/arts/television/sarah-shahi-paradise.html",
+              "riassunto": "Sarah Shahi consolidata nella televisione americana con il ruolo ricorrente di terapeuta nel drama Hulu 'Paradise', prosegue la sua carriera con una nuova dimensione di autobiografia self-help. L'attrice rappresenta una tendenza contemporanea di performer che estendono la propria influenza dal medium audiovisivo alla saggistica motivazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Danzatori collaborano con scienziati per reimaginare il corpo umano nello spazio a gravità zero",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/arts/dance/dancers-gravity-scientists-space.html",
+              "riassunto": "Con l'accelerazione dell'era commerciale dell'esplorazione spaziale, la comunità scientifica sta rivalutando la cultura fisica dello spazio esterno. I ballerini professionisti emergono come figure chiave per aiutare gli scienziati a comprendere e reimmaginare il comportamento del corpo umano in assenza di gravità, rappresentando un'inusuale convergenza tra arte e ricerca scientifica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aprile 2026: 29 novità editoriali con Emma Straub, Patrick Radden Keefe, TJ Klune e Lena Dunham",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/books/new-books-april.html",
+              "riassunto": "La rassegna bibliografica per aprile presenta una selezione curata di 29 titoli, con una varietà che spazia da romanzi contemporanei (Emma Straub, Ben Lerner, TJ Klune) a saggi non-fiction di rilievo (Patrick Radden Keefe, Lena Dunham), incluso un volume dedicato alla storia viaria degli Stati Uniti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Adattamenti videoludici nel cinema mainstream",
+            "Memoir e autobiografia di figure pubbliche",
+            "Convergenza arte-scienza (danza e ricerca spaziale)",
+            "Letteratura contemporanea e narrativa variegata",
+            "Televisione come piattaforma di espressione psicologica"
+          ],
+          "da_tenere_d_occhio": "L'ondata di adattamenti da videogiochi a film potrebbe proseguire oltre Call of Duty e Zelda; monitorare il ciclo di pubblicazione memorialistico di celebrity; seguire lo sviluppo della collaborazione danza-scienza nello spazio come modello di interdisciplinarità culturale innovativa",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La settimana economica è caratterizzata da segnali contrastanti: mentre il settore del caffè premium italiano (Lavazza) mostra crescita robusta nel 2025, l'economia svizzera accusa rallentamenti significativi. Emergono pressioni dovute ai dazi americani e all'incertezza sulla domanda estera.",
+          "notizie": [
+            {
+              "titolo": "Lavazza accelera con crescita del 15% nel 2025, punta sulla capacità produttiva negli USA",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/lavazza-cresce-2025-15percento-e-raddoppia-ricavi-dieci-anni-AIu6lvEC",
+              "riassunto": "L'azienda torinese di caffè segna una crescita del 15% nel 2025 e ha raddoppiato i ricavi nel decennio. Il CEO Baravalle segnala pressioni dai prezzi delle materie prime e dai dazi Trump, annunciando investimenti per espandere la capacità produttiva americana al fine di mitigare l'impatto tariffario.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Economia svizzera in difficoltà: l'indice KOF segnala prospettive fosche per produzione e domanda estera",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/nuvoloni-allorizzonte-per-leconomia-svizzera-430264",
+              "riassunto": "Il barometro economico di marzo del Centro di ricerca congiunturale KOF del Politecnico federale di Zurigo evidenzia un deterioramento delle prospettive. Le preoccupazioni maggiori riguardano sia la produzione interna che la domanda estera, segnalando incertezza nel panorama economico prossimo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto dei dazi Trump sull'aziende internazionali",
+            "Pressioni sui prezzi delle materie prime",
+            "Rallentamento economico europeo",
+            "Strategie di delocalizzazione produttiva verso USA",
+            "Incertezza sulla domanda estera"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'evoluzione dei dazi americani e il loro impatto sulle aziende europee di lusso/premium; seguire gli indicatori economici svizzeri nei prossimi mesi per valutare se il rallentamento si estende ad altre economie europee; tracciare gli investimenti produttivi annunciati da Lavazza negli USA come indicator di reshoring tattico dovuto a pressioni tariffarie.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Il 30 marzo 2026 emerge un panorama geopolitico complesso caratterizzato da tensioni Iran-USA-Israele in escalation, sfide alla sovranità economica occidentale (Cuba e Russia), instabilità democratiche in Asia (Myanmar) e negoziati strategici sino-taiwanesi. Gli eventi mostrano il ricorso a sanzioni e rappresaglie come strumenti di conflitto geopolitico.",
+          "notizie": [
+            {
+              "titolo": "Una petroliera russa sanzionata arriva a Cuba sfidando il blocco americano",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/30/cuba-petroliera-russa",
+              "riassunto": "Una petroliera russa sottoposta a sanzioni statunitensi è attesa a Cuba il 31 marzo, in sfida diretto al blocco energetico imposto dagli USA sull'isola caraibica. L'arrivo della nave avviene mentre Cuba affronta una grave crisi energetica e rappresenta un chiaro test della capacità americana di far rispettare le proprie sanzioni secondarie in emisfero occidentale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "L'Iran minaccia rappresaglie contro funzionari USA e israeliani nel Medio Oriente",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/03/30/liran-minaccia-di-colpire-le-case-dei-funzionari-usa-e-israeliani-in-medio-oriente_58252ae7-4c17-49f9-9eb2-b10980b3effe.html",
+              "riassunto": "Teheran ha minacciato attacchi diretti contro le abitazioni di funzionari americani e israeliani nella regione, presentandolo come risposta simmetrica agli attacchi sulle case di dignitari iraniani. La dichiarazione rappresenta un'escalation rhetórica e potenzialmente militare in un contesto di conflitto già critico.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Domani",
+                "BBC World"
+              ],
+              "differenze_narrative": "Domani enfatizza il ruolo di Trump nei negoziati e il transito di navi nello Stretto di Hormuz, suggerendo una mediazione diplomatica in corso. ANSA si concentra sulla minaccia diretta senza contesto negoziale. BBC World rimane più neutrale su cause e soluzioni."
+            },
+            {
+              "titolo": "Escalation militare nel Golfo: Spagna chiude lo spazio aereo, vittime confermate in Kuwait",
+              "fonte": "Domani",
+              "link": "https://www.editorialedomani.it/politica/mondo/guerra-iran-stati-uniti-israele-libano-trattative-ultime-notizie-oggi-30-marzo-lk9mrtaz",
+              "riassunto": "La crisi Iran-USA-Israele si intensifica: la Spagna chiude lo spazio aereo ai voli coinvolti nella guerra, mentre si registra una morte in Kuwait. Nel contempo, Trump dichiara il passaggio di 20 navi nello Stretto di Hormuz con assenso dell'interlocutore iraniano Ghalibaf, suggerendo negoziati sotterranei.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Domani offre una visione più 'insider' con dettagli su negoziati Trump-Ghalibaf e azioni concrete (chiusura spazi aerei). BBC World adotta tono più distaccato su dinamiche di prezzo petrolio. NYT World enfatizza impatto umanitario dell'inverno ucraino come conseguenza indiretta delle tensioni."
+            },
+            {
+              "titolo": "Il capo della giunta militare del Myanmar avanza verso la presidenza dopo elezioni contestate",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/asia/2026/03/30/il-capo-della-giunta-militare-del-myanmar-verso-la-presidenza_6c0ee19e-48b2-4534-94e4-640b086c7fd9.html",
+              "riassunto": "Il leader della giunta militare birmana procede verso la presidenza, supportato da elezioni parlamentari ampiamente criticate dalla comunità internazionale come antidemocratiche. L'evento consolida il controllo militare dopo il colpo di stato del 2021 e rappresenta un fallimento dei processi democratici in Asia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "I calciatori iraniani protestano per le vittime civili con simboli durante l'inno nazionale",
+              "fonte": "Il Sole 24 Ore Mondo",
+              "link": "https://www.ilsole24ore.com/art/la-protesta-calciatori-iraniani-campo-uno-zainetto-l-inno-AIOUq6EC",
+              "riassunto": "Giocatori iraniani scendono in campo con zaini scolastici viola (simbolo di vittime di attacchi alle scuole) e fascie nere di lutto durante l'inno nazionale. La protesta silenziosa rappresenta la resistenza della società civile iraniana agli attacchi aerei e testimonia la polarizzazione del conflitto.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "La Russia espelle un diplomatico britannico accusato di spionaggio",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-03-30/russia-espulso-diplomatico-britannico-spia-36354791/",
+              "riassunto": "Mosca annuncia l'espulsione di Yanse Gerardus, secondo segretario dell'ambasciata britannica, accusato di attività di intelligence dall'FSB. L'espulsione riflette il deterioramento delle relazioni Russia-Regno Unito in contesto di conflitto ucraino e mancanza di fiducia diplomatica.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "La leader del KMT taiwanese visiterà Pechino dal 7-12 aprile per incontri con Xi Jinping",
+              "fonte": "Adnkronos",
+              "link": "https://www.adnkronos.com/internazionale/akieng/china-taiwan-opposition-leader-to-visit-from-april-7-to-12-at-xis-invitation_63NcylCL69eGRbLrDZNW8T",
+              "riassunto": "Cheng Li-wun, leader della principale opposizione taiwanesa (KMT), visiterà la Cina su invito di Xi Jinping, cercando colloqui strategici prima di una missione negli USA. La visita rappresenta un tentativo cinese di influenzare la politica taiwanese attraverso l'opposizione e sottolinea l'importanza geo-strategica dell'isola.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Adnkronos (versioni multiplo-linguistiche)"
+              ],
+              "differenze_narrative": "Le versioni giapponese, russa e inglese di Adnkronos presentano identico contenuto e tono, indicando una notizia gestita centralmente dalle agenzie. Nessuna variazione narrativa significativa tra versioni linguistiche."
+            },
+            {
+              "titolo": "Crisi energetica globale e risposta dei governi ai rialzi petroliferi",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/cjr9yr73xyeo?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Governi mondiali introducono misure di contenimento ai rialzi petroliferi con razionamenti di carburante e sussidi ai trasporti pubblici. L'articolo mappa risposte nazionali diverse e prefigura pressioni economiche globali derivanti dalle tensioni geopolitiche mediorientali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Domani",
+                "AGI"
+              ],
+              "differenze_narrative": "BBC World enfatizza le contromisure governative. AGI sottolinea il costo turistico durante Pasqua, focalizzandosi su impatto consumatore. Domani integra dinamica prezzo-geopolitica con negoziati Trump-Iran. Nessuna analisi diretta della correlazione sanzioni-prezzo."
+            }
+          ],
+          "trend": [
+            "Escalation Iran-USA-Israele con rischi di allargamento regionale",
+            "Sfida alla sovranità economica occidentale (Russia-Cuba, energia)",
+            "Regressione democratica in Asia (Myanmar, Taiwan)",
+            "Negoziati sino-taiwanesi come proxy del conflitto strategico USA-Cina",
+            "Impatto economico-energetico dei conflitti su economia civile e turismo",
+            "Protesta silenziosa della società civile contro militarizzazione (Iran)"
+          ],
+          "da_tenere_d_occhio": "Conferma dell'arrivo della petroliera russa a Cuba il 31 marzo e risposta USA; escalation militare nel Golfo con possibile coinvolgimento di basi europee; risultati della visita di Cheng Li-wun a Pechino e implicazioni per Taiwan; dichiarazioni post-riunione Xi-Cheng sulla postura taiwanese verso gli USA.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "run_id": 33,
+      "run_time": "2026-03-30 13:09:56.180660+00:00",
+      "analyzed_at": "2026-03-30T14:43:00.652110+00:00",
+      "articles_analyzed": 97,
+      "articles_selected": 0,
+      "model_used": "claude-opus-4-5",
+      "status": "error",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requ",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 400: Bad Request | OpenAI: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 1,
       "run_id": 33,
