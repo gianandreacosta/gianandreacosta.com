@@ -1,6 +1,477 @@
 {
-  "generated_at": "2026-03-30T14:46:13.811333+00:00",
+  "generated_at": "2026-03-30T15:13:26.171260+00:00",
   "analyses": [
+    {
+      "id": 4,
+      "run_id": 35,
+      "run_time": "2026-03-30 15:10:47.585428+00:00",
+      "analyzed_at": "2026-03-30T15:13:26.167741+00:00",
+      "articles_analyzed": 92,
+      "articles_selected": 35,
+      "model_used": "anthropic/claude-haiku-4-5",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La settimana si caratterizza per importanti sviluppi nell'ecosistema AI: finanziamenti significativi per infrastrutture cloud efficienti, innovazioni nel settore biomedico con i gemelli digitali, e discussioni sulla neuroscienza computazionale. Emerge una chiara priorità nella risoluzione dei colli di bottiglia infrastrutturali e nella disponibilità di dati qualificati per l'addestramento di modelli.",
+          "notizie": [
+            {
+              "titolo": "ScaleOps raccoglie 130 milioni per affrontare la crisi di GPU e costi cloud nell'era dell'IA",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
+              "riassunto": "ScaleOps ha chiuso un round di Series C da 130 milioni di dollari per automatizzare l'infrastruttura cloud in tempo reale. La soluzione affronta due problemi critici: la carenza di GPU e l'impennata dei costi computazionali per l'IA, automatizzando l'allocazione delle risorse Kubernetes.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "Mantis Biotech sviluppa gemelli digitali umani sintetici per risolvere la scarsità di dati medici",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/03/30/mantis-biotech-is-making-digital-twins-of-humans-to-help-solve-medicines-data-availability-problem/",
+              "riassunto": "Mantis Biotech integra dati da fonti eterogenee per creare dataset sintetici e costruire gemelli digitali del corpo umano, che rappresentano anatomia, fisiologia e comportamento. L'approccio risolve il problema critico della disponibilità di dati qualificati per la ricerca medica e lo sviluppo di modelli predittivi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "Neuroni dei pappagalli: densità doppia rispetto ai primati della stessa massa cerebrale",
+              "fonte": "Hacker News",
+              "link": "https://www.dhanishsemar.com/writing/bird-brains",
+              "riassunto": "Ricerca che dimostra come i pappagalli concentrano il doppio dei neuroni rispetto a primati di massa cerebrale equivalente. Il dato ha implicazioni significative per la comprensione dell'architettura neurale ottimale e potrebbe informare il design di reti neurali artificiali più efficienti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "Trasformare qualsiasi dispositivo in un router: nuove possibilità di connettività distribuita",
+              "fonte": "Hacker News",
+              "link": "https://nbailey.ca/post/router/",
+              "riassunto": "Articolo tecnico su come convertire dispositivi arbitrari in router, abilitando architetture di rete distribuita. Rilevante per l'edge computing e l'esecuzione distribuita di carichi di lavoro AI ai margini della rete.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "Teoria dei giochi inversi come soluzione sistemica alla carenza abitativa",
+              "fonte": "Hacker News",
+              "link": "https://www.noemamag.com/the-architecture-of-cooperation/",
+              "riassunto": "Esplorazione di come la teoria dei giochi può essere invertita per risolvere problemi di coordinamento complessi come la carenza di alloggi. Rappresenta un'applicazione potenziale di modelli matematici avanzati a problemi socioeconomici strutturali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            },
+            {
+              "titolo": "Vulnerabilità critica F5 BIG-IP sfruttata attivamente: patch urgente richiesta",
+              "fonte": "Hacker News",
+              "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-f5-big-ip-flaw-in-attacks-patch-now/",
+              "riassunto": "Una vulnerabilità critica in F5 BIG-IP è ora oggetto di exploit attivi in campagne di attacco. Poiché BIG-IP è infrastruttura critica per load balancing in ambienti cloud e data center, rappresenta un rischio significativo per i sistemi AI in produzione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": null
+            }
+          ],
+          "trend": [
+            "Ottimizzazione infrastrutturale dell'IA (GPU efficiency, cloud costs)",
+            "Dati sintetici e gemelli digitali per addestramento modelli",
+            "Neuroscienze computazionali e ottimizzazione architettonica",
+            "Sicurezza critica per sistemi AI in produzione",
+            "Edge computing e distribuzioni decentralizzate"
+          ],
+          "da_tenere_d_occhio": "Il fenomeno della carenza di risorse computazionali (GPU) e costi cloud proibitivi emerge come vincolo principale per lo scaling dell'IA. Monitorare l'evoluzione delle soluzioni di sintesi dati e il loro impatto sulla qualità dei modelli medici/IA. La vulnerabilità F5 merita tracciamento per identificare potenziali impatti su infrastrutture di ML in produzione.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La cronaca svizzera di oggi si focalizza su questioni di protezione dei consumatori e innovazione nel settore automobilistico. Emerge un dato significativo sul fronte della lealtà commerciale, mentre l'industria automobilistica registra l'ingresso di nuovi attori nel segmento dei veicoli elettrici.",
+          "notizie": [
+            {
+              "titolo": "Record di denunce per pubblicità sleale nel 2025",
+              "fonte": "CdT Svizzera / Ticinonews Svizzera",
+              "link": "https://www.cdt.ch/news/record-di-denunce-per-pubblicita-sleale-nel-2025-423611",
+              "riassunto": "La Commissione svizzera per la lealtà (CSL) ha elaborato 240 denunce nel 2025, con un tasso di accoglimento del 64,9%. Questo rappresenta un record storico nel numero di segnalazioni, indicando una crescente attenzione dei consumatori verso le pratiche commerciali scorrette e una maggiore consapevolezza dei propri diritti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano i medesimi dati statistici (240 denunce, 64,9% accolte) senza divergenze narratives significative. La copertura è parallela e conforme, indicando una diffusione coordinata di un comunicato stampa ufficiale della CSL."
+            },
+            {
+              "titolo": "BYD presenta il nuovo SUV compatto Act 3 sul mercato svizzero",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/sport/motori/su-il-sipario-per-latto-3-di-byd-non-solo-un-suv-elettrico-ma-un-passaggio-di-scena-423623",
+              "riassunto": "BYD introduce il modello Act 3 nel segmento dei SUV compatti elvetici, con specifiche tecniche avanzate: doppia motorizzazione fino a 449 CV, architettura elettrica a 800 volt e capacità di ricarica rapida fino a 220 kW. Il debutto rappresenta un potenziamento della presenza del costruttore cinese nel mercato svizzero con un'offerta competitiva nel segmento.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trump minaccia attacchi contro infrastrutture petrolifere e energetiche iraniane",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/nahost/krieg-in-nahost-trump-droht-abermals-mit-angriff-auf-oelquellen-und-kraftwerke",
+              "riassunto": "Il Presidente Trump rinnova minacce di attacchi contro pozzi petroliferi e centrali elettriche iraniane, richiedendo l'apertura dello Stretto di Hormuz. Si tratta di un'escalation retorica nel conflitto mediorientale con implicazioni geopolitiche significative per la stabilità energetica globale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Protezione dei consumatori e contrasto alla pubblicità ingannevole",
+            "Mobilità elettrica e transizione automobilistica",
+            "Tensioni geopolitiche e sicurezza energetica",
+            "Competitività dei costruttori cinesi nel mercato europeo"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'evoluzione del trend di denunce per pubblicità sleale per identificare settori critici. Seguire l'andamento della penetrazione di mercato dei produttori cinesi di veicoli elettrici in Svizzera. Tracciare le implicazioni delle minacce di Trump sulla stabilità dei mercati energetici internazionali.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese di oggi è segnata da un grave incidente stradale a Muralto che ha causato disagi significativi al traffico, oltre a una operazione internazionale di solidarietà medica e a un caso di traffico di droga. Gli eventi sono coperti da più fonti regionali con dettagli e angolazioni diverse.",
+          "notizie": [
+            {
+              "titolo": "Pedone investito a Muralto, gravemente ferito. Disagi al traffico",
+              "fonte": "CdT Ticino / Ticinonews / tio.ch",
+              "link": "https://www.cdt.ch/news/ticino/pedone-investito-a-muralto-avrebbe-riportato-gravi-ferite-423630",
+              "riassunto": "Un pedone è stato investito attorno alle 14:30 nei pressi della stazione FFS di Muralto, riportando gravi ferite. L'incidente ha generato significativi disagi al traffico nella zona. Sul posto sono intervenuti polizia e ambulanza.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews",
+                "tio.ch"
+              ],
+              "differenze_narrative": "CdT e Ticinonews riportano in modo neutrale 'gravi ferite' senza enfasi sui disagi; tio.ch sottolinea maggiormente l'impatto sul traffico con 'grossi disagi' nel titolo e evidenzia il dispiegamento di forze (polizia e ambulanza) con tono più urgente e operativo"
+            },
+            {
+              "titolo": "Dal Ticino al Messico: 469 interventi chirurgici in due settimane",
+              "fonte": "CdT Ticino / Ticinonews",
+              "link": "https://www.cdt.ch/news/ticino/dal-ticino-al-messico-469-interventi-chirurgici-in-due-settimane-423607",
+              "riassunto": "È rientrata la delegazione della Swiss Foundation Against Blindness da una missione medico-chirurgica presso l'Hospital General de Cancún in Messico. In due settimane sono stati effettuati 469 interventi chirurgici per combattere la cecità. Un'operazione di solidarietà internazionale che testimonia l'impegno ticinese nel settore medico-umanitario.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano identico contenuto con identica struttura narrativa; nessuna differenza rilevante di tono o angolazione"
+            },
+            {
+              "titolo": "Arisa in concerto a Lugano il 23 novembre al LAC",
+              "fonte": "CdT Ticino / Ticinonews",
+              "link": "https://www.cdt.ch/news/ticino/arisa-in-concerto-a-lugano-a-novembre-423624",
+              "riassunto": "La cantante Arisa si esibirà al LAC di Lugano il 23 novembre nel suo nuovo Live Tour nei teatri. L'evento è una tappa importante della tournée nazionale della principale artista.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews"
+              ],
+              "differenze_narrative": "Identica copertura su entrambe le fonti senza differenze narratives o di angolazione"
+            },
+            {
+              "titolo": "Traffico di cocaina a Mendrisio: condannati per 3 chili sequestrati",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/la-valigia-e-zeppa-di-cocaina-ma-nessuno-sa-quanto-pesa-423622",
+              "riassunto": "Una coppia è stata condannata dopo il sequestro, nel gennaio 2025, di 3 chili di cocaina in un trolley su un treno a Mendrisio. Gli imputati hanno sostenuto di credere che il quantitativo fosse inferiore, ma la Corte non ha creduto alle loro dichiarazioni. Il caso evidenzia il controllo del traffico di stupefacenti in transit.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Apprendisti falegnami lasciano il segno nella mediateca del Cpt di Bellinzona",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1914871/formazione-bellinzona-falegnami-mediateca-postazione",
+              "riassunto": "Apprendisti falegnami del Centro professionale di Bellinzona hanno realizzato interventi nella mediateca del Cpt, integrando la formazione pratica con applicazioni concrete nelle strutture scolastiche.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Incidenti stradali gravi",
+            "Traffico di stupefacenti",
+            "Solidarietà medico-internazionale",
+            "Formazione professionale",
+            "Cultura e intrattenimento"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle condizioni del pedone investito a Muralto e eventuali cause dell'incidente; possibili nuovi sviluppi sulla rotta di traffico di droga identificata a Mendrisio",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "Cultura",
+          "sommario": "La settimana culturale è caratterizzata da una prevalenza di contenuti teatrali e letterari di respiro internazionale, con focus su revival classici e riscoperte di autori trascurati. Emergono tendenze di vulnerabilità nel teatro contemporaneo e interesse per le radici storiche di fenomeni culturali moderni.",
+          "notizie": [
+            {
+              "titolo": "Angélica Liddell espone vulnerabilità nella 'Trilogia dei Funerali'",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/theater/angelica-liddell-trilogy-of-funerals.html",
+              "riassunto": "La provocatrice spagnola Angélica Liddell, nota per il teatro estremo, mostra una dimensione inedita di vulnerabilità nella sua 'Trilogia dei Funerali'. La produzione segna un cambio di prospettiva rispetto alle opere precedenti, rivelando una sofisticazione emotiva che sorprenderà i seguaci di lunga data del suo lavoro.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Revival di 'Morte di un commesso viaggiatore' a Broadway con Lane e Metcalf, guidato dalle note di Arthur Miller",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/30/theater/death-salesman-broadway-lane-metcalf.html",
+              "riassunto": "La nuova produzione di Joe Mantello a Broadway, con Nathan Lane e Laurie Metcalf, si basa su una bozza inedita con annotazioni manoscritte di Arthur Miller. Il ritrovamento delle note autoriali fornisce una prospettiva autentica sui dettagli della messa in scena originale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Gertrude Chandler Warner, autrice di 'The Boxcar Children', finalmente non più trascurata",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/27/obituaries/gertrude-chandler-warner-overlooked.html",
+              "riassunto": "Un riconoscimento tardivo per Gertrude Chandler Warner, la cui serie bestseller sugli 'Orfani nella vagone' ha generato numerosi sequel, spinoff e film d'animazione. La riscoperta dell'autrice sottolinea il contributo significativo di scrittrici dimenticate dalla letteratura per l'infanzia.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Le origini antiche dello zodiaco: una mostra a Berlino svela le radici dell'astrologia moderna",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/26/arts/design/zodiac-origins-exhibition-berlin.html",
+              "riassunto": "Un'esposizione esamina le fondamenta storiche dell'industria dell'astrologia, oggi multimiliardaria, tracciando il percorso dalle civiltà babilonesi ed egiziane sino al mondo classico. La mostra rivela come credenze antiche si siano evolute nelle app e servizi odierni.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Festival Steps compie 20 anni con grande successo in Svizzera",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1914885/festival-danza-aspettative-steps-edizione",
+              "riassunto": "Il festival di danza contemporanea svizzero supera le aspettative della sua ventesima edizione con esibizioni sold-out su tutto il territorio. Il successo evidenzia la solidità della danza contemporanea nel panorama culturale elvetico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Giorgio Pasotti presenta il suo nuovo romanzo 'Ora' con una riflessione su consapevolezza e rinascita",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/cinema/il-momento-perfetto-e-ora-parola-di-giorgio-pasotti-423618",
+              "riassunto": "L'attore Giorgio Pasotti ha presentato il suo nuovo romanzo a Melide in una serata che mescola cultura e riflessione personale. Il testo affronta tematiche di cambiamento, consapevolezza e la capacità umana di ricominciare.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Teatro classico in revival con nuove interpretazioni",
+            "Riscoperta e rivalutazione di autori/autrici trascurati",
+            "Interesse per le origini storiche di fenomeni culturali contemporanei",
+            "Vulnerabilità e intimità nel teatro contemporaneo estremo",
+            "Danza contemporanea come settore robusto della cultura locale"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'evoluzione dei revival di classici americani a Broadway (possibili ulteriori scoperte di fonti autoriali Miller). Seguire il crescente trend di riscoperta di figure femminili nella letteratura e il suo impatto sulle riedizioni editoriali.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "L'economia italiana mostra dinamismo su più fronti: infrastrutture strategiche, attrazione di capitali esteri nel lusso, rilancio del settore aereo e crescita del tech. Parallelamente emergono opportunità nel turismo e nelle eccellenze agroalimentari. Il contesto internazionale rimane caratterizzato da coordinamento su temi energetici critici.",
+          "notizie": [
+            {
+              "titolo": "G7: coordinamento globale su misure contro lo shock energetico",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/g7-pronti-ulteriori-misure-contro-shock-energetico-AIQKCTFC",
+              "riassunto": "I Paesi del G7 si impegnano ad adottare misure coordinate per stabilizzare i mercati energetici. L'accordo sottolinea l'importanza di preservare la sicurezza energetica e la stabilità economica attraverso un'azione congiunta internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Capitali arabi investono in Italia nel lusso: yacht, moda e design",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/dove-investono-arabi-yacht-moda-e-biciclette-target-segmento-lusso-AIA4MlDC",
+              "riassunto": "I fondi sovrani mediorientali diversificano gli investimenti in eccellenze italiane, mirando principalmente al settore lusso attraverso acquisizioni di aziende nei segmenti yacht, fashion e beni di lusso. Una strategia che consolida l'attrattività dell'Italia come destinazione di capitale internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Italia leader europeo nel turismo crocieristico",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/italia-principale-beneficiario-crocieristica-europa-AIM4hPFC",
+              "riassunto": "Secondo lo studio della Clia, l'Italia si posiziona come principale beneficiario del comparto crocieristico europeo, rappresentando un punto di attrazione strategico per oltre 50 compagnie di navigazione internazionali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Napoli: parte la progettazione della Linea 10 della Metropolitana",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/napoli-fischio-partenza-la-linea-10-metropolitana-AI7VvnCC",
+              "riassunto": "Firmato il contratto per l'avvio della progettazione della Linea 10 della metropolitana di Napoli, con conseguente realizzazione della prima tratta del Lotto 1. Un'infrastruttura strategica per la mobilità urbana meridionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Settore aereo italiano: dalla crisi alla nuova stagione delle partnership strategiche",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/dai-miraggi-alitalia-e-air-italy-stagione-partnership-AISp8kDC",
+              "riassunto": "Superati i fallimenti di Alitalia e Air Italy, il trasporto aereo italiano abbandona la strategia di aziende nazionali autonome per orientarsi verso partnership internazionali. Un cambio di paradigma nel settore aviazione commerciale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "UCapital24 accelera con l'intelligenza artificiale al centro della strategia",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/ucapital24-cresce-l-utile-al-centro-strategia-AIntGPFC",
+              "riassunto": "UCapital24, il tech-hub italiano quotato su Euronext Growth Milan, chiude il 2025 con crescita dell'utile. L'azienda consolida il passaggio da start-up innovativa a ecosistema digitale globale, posizionando l'IA come driver strategico della propria evoluzione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Patrimonio alimentare alpino: la Svizzera candida eccellenze a Unesco",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1914880/pane-nero-di-segale-miele-di-montagna-e-formaggio-dell-alpe-la-svizzera-punta-all-unesco",
+              "riassunto": "La Svizzera deposita la candidatura ufficiale per il riconoscimento Unesco del patrimonio alimentare alpino, includendo pane nero di segale, miele di montagna e formaggi d'alpe. Una strategia di valorizzazione delle eccellenze agroalimentari territoriali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Attrazione di capitali esteri in Italia (lusso, infrastrutture)",
+            "Transizione energetica e coordinamento internazionale",
+            "Digitalizzazione e intelligenza artificiale nel fintech",
+            "Diversificazione del turismo (crociere, lusso)",
+            "Riposizionamento strategico dei settori tradizionali",
+            "Valorizzazione del patrimonio agroalimentare territoriale"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'effettivo realizzo degli investimenti arabi nel lusso italiano e il completamento della Linea 10 di Napoli; seguire l'impatto della strategia AI di UCapital24 sulla competitività fintech italiana; tracciare l'evoluzione delle partnership aeree internazionali nel post-Alitalia.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La settimana è caratterizzata da tensioni in Medio Oriente con focus su Cisgiordania e violenze dei coloni israeliani, mediazioni diplomatiche tra UE-Iran attraverso il Pakistan, e iniziative di cooperazione internazionale tra Italia e paesi africani. Emergono anche questioni di diritti umani e crisi diplomatiche con implicazioni globali.",
+          "notizie": [
+            {
+              "titolo": "Israele ritira il battaglione dalla Cisgiordania dopo dichiarazioni di 'vendetta' contro i palestinesi",
+              "fonte": "New York Times",
+              "link": "https://www.nytimes.com/2026/03/30/world/middleeast/israel-west-bank-battalion.html",
+              "riassunto": "Un battaglione israeliano è stato ritirato dalla Cisgiordania dopo che soldati hanno dichiarato pubblicamente motivazioni di 'vendetta' contro i palestinesi e rivendicazioni territoriali su tutto il territorio. L'episodio, avvenuto durante l'arresto di una troupe CNN, rappresenta un momento critico nelle operazioni israeliane.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times",
+                "Il Sole 24 Ore"
+              ],
+              "differenze_narrative": "NYT enfatizza il linguaggio di vendetta e le dichiarazioni aggressive dei soldati come motivo del ritiro; Il Sole 24 Ore si focalizza sulla richiesta della diaspora ebraica di fermare le violenze dei coloni, adottando una prospettiva più ampia sui diritti umani e la pressione internazionale."
+            },
+            {
+              "titolo": "Diaspora ebraica internazionale chiede fine alle violenze dei coloni in Cisgiordania",
+              "fonte": "Il Sole 24 Ore",
+              "link": "https://www.ilsole24ore.com/art/gli-ebrei-diaspora-chiedono-fine-violenze-cisgiordania-AI2IINFC",
+              "riassunto": "Oltre mille membri della diaspora ebraica globale hanno sottoscritto una lettera aperta al presidente israeliano Isaac Herzog per denunciare le violenze perpetrate dai coloni israeliani contro i civili palestinesi. L'iniziativa rappresenta una frattura significativa nella comunità internazionale ebraica.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times",
+                "Il Sole 24 Ore"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore presenta la lettera come atto di protesta interna alla comunità ebraica per questioni etiche; NYT enfatizza le conseguenze operative (ritiro del battaglione) come risposta alle pressioni internazionali."
+            },
+            {
+              "titolo": "Mediazione UE-Iran per la pace: Costa sostiene gli sforzi diplomatici del Pakistan",
+              "fonte": "Adnkronos",
+              "link": "https://www.adnkronos.com/internazionale/esteri/ue-e-iran-costa-sharif-sostegno-alla-mediazione-per-la-pace_5SsfNyRlTOyZ1FeQppSxXT",
+              "riassunto": "Il presidente del Consiglio Europeo ha dialogato con il Premier pakistano, trasmettendogli il supporto dell'Unione Europea per gli sforzi di mediazione tra i belligeranti in Medio Oriente. L'iniziativa rappresenta il coinvolgimento dell'UE in canali diplomatici alternativi per risolvere le tensioni regionali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Italia rafforza cooperazione agricola in Mozambico nella provincia di Manica",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/maeci/it/news/2026-03-30/mozambico-cooperazione-agricoltura-36362447/",
+              "riassunto": "L'Italia intensifica la collaborazione con il Mozambico attraverso investimenti strategici nel settore agricolo nella provincia centrale di Manica, promuovendo l'imprenditorialità locale e la sostenibilità ambientale. Gli interventi stanno trasformando le dinamiche economiche regionali con ricadute positive sulla comunità.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI (it)",
+                "AGI (fr)"
+              ],
+              "differenze_narrative": "Le versioni italiana e francese di AGI sono sostanzialmente identiche, entrambe enfatizzando il ruolo degli investimenti italiani come catalizzatore di sviluppo sostenibile. La versione francese ('Au Mozambique coopération agricole renforcée avec l'Italie') utilizza struttura sintattica più formale."
+            },
+            {
+              "titolo": "Italia finanzia programma di riabilitazione delle spiagge a Gabès, Tunisia",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/maeci/fr/news/2026-03-30/gabes-rehabilitation-plages-36362935/",
+              "riassunto": "L'Italia ha annunciato un programma di finanziamento per la riabilitazione delle spiagge a Gabès, nel sud-est tunisino. L'iniziativa rappresenta l'impegno italiano nella cooperazione ambientale e marittima nel Mediterraneo, in un contesto di significative sfide ambientali nella regione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Papa nomina climatologo brasiliano Carlos Nobre come consigliere per l'Amazzonia",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/americalatina/2026/03/30/il-papa-nomina-il-climatologo-brasiliano-carlos-nobre-come-consigliere_69751d0c-ca1e-487c-916b-f4a110cf452e.html",
+              "riassunto": "Papa Francesco nomina il climatologo brasiliano Carlos Nobre, esperto in riscaldamento globale e teoria della 'savanizzazione' dell'Amazzonia, come consigliere. La scelta riflette l'impegno pontificio su questioni climatiche e ambientali, specialmente riguardo al patrimonio naturale sudamericano.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dimissioni CEO Air Canada dopo critiche per messaggio di cordoglio monolingue in inglese",
+              "fonte": "BBC World / New York Times",
+              "link": "https://www.nytimes.com/2026/03/30/business/air-canada-ceo-crash-retire.html",
+              "riassunto": "Michael Rousseau, CEO di Air Canada, si dimette a seguito delle reazioni negative al suo comunicato di cordoglio esclusivamente in inglese dopo la collisione fatale all'aeroporto LaGuardia. La compagnia aerea ha promesso di enfatizzare la competenza del francese nella ricerca del successore, sottolineando l'importanza della rappresentanza linguistica.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "New York Times"
+              ],
+              "differenze_narrative": "BBC evidenzia il contesto di critiche sui social media e la reazione immediata del pubblico; NYT fornisce dettagli sulla politica aziendale riguardante il bilinguismo e le implicazioni per il ricambio di leadership nel contesto canadese."
+            },
+            {
+              "titolo": "Tajani al G7 dei Ministri degli Esteri: focus su Medio Oriente, Iran e Stretto di Hormuz",
+              "fonte": "Adnkronos",
+              "link": "https://www.adnkronos.com/tajani-in-francia-per-il-vertice-dei-ministri-degli-esteri-del-g7_1fCTOM9QKp2IIByAnQrjsr",
+              "riassunto": "Il Ministro degli Esteri italiano Antonio Tajani partecipa alla terza riunione del G7 sotto presidenza francese. I lavori si concentrano sulla crisi in Medio Oriente, il conflitto con l'Iran e la sicurezza dello Stretto di Hormuz, riflettendo le priorità geopolitiche europee e occidentali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni israelo-palestinesi e violenze dei coloni in Cisgiordania",
+            "Mediazioni diplomatiche UE-Iran attraverso canali alternativi",
+            "Cooperazione bilaterale Italia-Africa (Mozambico, Tunisia)",
+            "Diplomazia ambientale e leadership climatica del Vaticano",
+            "Questioni linguistiche e rappresentanza nelle crisi internazionali"
+          ],
+          "da_tenere_d_occhio": "Evoluzione della situazione in Cisgiordania e possibili escalation violente; efficacia dei canali di mediazione UE-Pakistan-Iran nel risolvere tensioni regionali; coerenza italiana nei progetti di cooperazione africana e impatto su stabilità regionale nel Mediterraneo allargato.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        }
+      ]
+    },
     {
       "id": 3,
       "run_id": 33,
