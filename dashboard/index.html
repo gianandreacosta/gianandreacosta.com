@@ -190,7 +190,13 @@
       padding: 0.5rem 0.4rem;
       border-bottom: 1px solid #27272a;
       font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
     }
+    .source-table th:hover { color: #a1a1aa; }
+    .source-table th.sort-asc::after  { content: ' ↑'; color: #818cf8; }
+    .source-table th.sort-desc::after { content: ' ↓'; color: #818cf8; }
     .source-table th:nth-child(3),
     .source-table th:nth-child(4) { text-align: right; }
     .source-table td {
@@ -357,8 +363,13 @@
 
       // CARD 3: Sources
       html += `<div class="card"><div class="card-title">Fonti (${data.by_source.length})</div>`;
-      html += `<div style="overflow-x:auto;"><table class="source-table">
-        <thead><tr><th>Fonte</th><th>Categoria</th><th>Totale</th><th>Ultima run</th></tr></thead><tbody>`;
+      html += `<div style="overflow-x:auto;"><table class="source-table" id="sources-table">
+        <thead><tr>
+          <th data-col="0" data-type="str">Fonte</th>
+          <th data-col="1" data-type="str">Categoria</th>
+          <th data-col="2" data-type="num" style="text-align:right">Totale</th>
+          <th data-col="3" data-type="num" style="text-align:right">Ultima run</th>
+        </tr></thead><tbody>`;
       data.by_source.forEach(s => {
         html += `<tr>
           <td>${s.source}</td>
@@ -389,6 +400,48 @@
     }
 
     loadData();
+
+    // ── Sorting tabella fonti ──────────────────────────────────────────────
+    let _sortCol = -1, _sortAsc = true;
+
+    document.addEventListener('click', function(e) {
+      const th = e.target.closest('#sources-table thead th');
+      if (!th) return;
+      const col  = parseInt(th.dataset.col);
+      const type = th.dataset.type || 'str';
+
+      if (_sortCol === col) {
+        _sortAsc = !_sortAsc;
+      } else {
+        _sortCol = col;
+        _sortAsc = true;
+      }
+
+      // Aggiorna classi frecce
+      document.querySelectorAll('#sources-table thead th').forEach(h => {
+        h.classList.remove('sort-asc', 'sort-desc');
+      });
+      th.classList.add(_sortAsc ? 'sort-asc' : 'sort-desc');
+
+      // Ordina righe
+      const tbody = document.querySelector('#sources-table tbody');
+      const rows  = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort((a, b) => {
+        const aCell = a.cells[col].textContent.trim();
+        const bCell = b.cells[col].textContent.trim();
+        let cmp;
+        if (type === 'num') {
+          const aNum = parseFloat(aCell.replace(/[^0-9.-]/g, '')) || 0;
+          const bNum = parseFloat(bCell.replace(/[^0-9.-]/g, '')) || 0;
+          cmp = aNum - bNum;
+        } else {
+          cmp = aCell.localeCompare(bCell, 'it');
+        }
+        return _sortAsc ? cmp : -cmp;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    });
+    // ──────────────────────────────────────────────────────────────────────
   </script>
 </body>
 </html>
