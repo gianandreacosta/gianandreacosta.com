@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 Analisi AI Rassegna</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e4e4e7;
+      min-height: 100vh;
+      padding: 1.5rem 1rem 3rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-top: 0.5rem;
+    }
+    .header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .header .subtitle {
+      color: #71717a;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+    .header .back-link {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      color: #71717a;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .header .back-link:hover { color: #a1a1aa; }
+
+    /* Cards */
+    .card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .card-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Status section */
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .stat-box { text-align: center; }
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      color: #71717a;
+      margin-top: 0.15rem;
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+    .badge-ok    { background: #14532d; color: #4ade80; }
+    .badge-error { background: #450a0a; color: #f87171; }
+    .badge-partial { background: #431407; color: #fb923c; }
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #27272a;
+    }
+    .status-meta {
+      font-size: 0.75rem;
+      color: #71717a;
+    }
+    .cmd-hint {
+      background: #111113;
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 0.5rem 0.85rem;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.72rem;
+      color: #a1a1aa;
+      margin-top: 0.75rem;
+    }
+
+    /* Category sections */
+    .cat-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .cat-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .cat-sommario {
+      font-size: 0.82rem;
+      color: #71717a;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    /* News items */
+    .news-item {
+      border-top: 1px solid #27272a;
+      padding: 0.85rem 0;
+    }
+    .news-item:first-of-type { border-top: none; }
+    .news-title-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.4rem;
+    }
+    .news-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #e4e4e7;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .news-title:hover { color: #fff; text-decoration: underline; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.1rem 0.45rem;
+      border-radius: 10px;
+      font-size: 0.62rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-fonte  { background: #1e1e3f; color: #818cf8; }
+    .badge-incrocio { background: #431407; color: #f59e0b; }
+    .badge-alta   { background: #0c1a0e; color: #4ade80; }
+    .badge-media  { background: #1c1300; color: #fbbf24; }
+    .news-riassunto {
+      font-size: 0.8rem;
+      color: #71717a;
+      line-height: 1.55;
+      margin-bottom: 0.35rem;
+    }
+
+    /* Differenze narrative (collapsible) */
+    .diff-toggle {
+      font-size: 0.72rem;
+      color: #f59e0b;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      margin-bottom: 0.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .diff-toggle:hover { color: #fbbf24; }
+    .diff-content {
+      font-size: 0.78rem;
+      color: #a1a1aa;
+      background: #111113;
+      border-left: 2px solid #f59e0b;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 0.35rem;
+      display: none;
+      line-height: 1.5;
+    }
+    .diff-content.open { display: block; }
+
+    /* Trend pills */
+    .trend-section {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #27272a;
+    }
+    .trend-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #52525b;
+      margin-bottom: 0.4rem;
+    }
+    .trend-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .trend-pill {
+      background: #1e1e21;
+      border: 1px solid #3f3f46;
+      border-radius: 20px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.72rem;
+      color: #a1a1aa;
+    }
+
+    /* Da tenere d'occhio */
+    .watch-box {
+      background: #1a1208;
+      border: 1px solid #3d2f0c;
+      border-radius: 10px;
+      padding: 0.65rem 0.9rem;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: #d97706;
+      line-height: 1.5;
+    }
+    .watch-box strong {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 0.2rem;
+      color: #f59e0b;
+    }
+
+    /* Archive table */
+    .arch-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+    .arch-table th {
+      text-align: left;
+      color: #52525b;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.5rem 0.4rem;
+      border-bottom: 1px solid #27272a;
+      font-weight: 600;
+    }
+    .arch-table th:nth-child(n+2) { text-align: right; }
+    .arch-table td {
+      padding: 0.45rem 0.4rem;
+      border-bottom: 1px solid #1e1e21;
+      color: #a1a1aa;
+    }
+    .arch-table td:nth-child(n+2) { text-align: right; }
+    .arch-table tr { cursor: pointer; }
+    .arch-table tr:hover td { background: #1c1c1f; }
+    .arch-table tr.active td { background: #1e2030; color: #e4e4e7; }
+
+    /* Misc */
+    .loading { text-align: center; color: #52525b; padding: 3rem 0; }
+    .error-msg { text-align: center; color: #dc2626; padding: 2rem 0; }
+    .empty-cat { font-size: 0.8rem; color: #52525b; padding: 0.5rem 0; }
+    .separator { height: 1px; background: #1e1e21; margin: 0.5rem 0; }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .status-grid { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+      .stat-value { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="index.html" class="back-link">← Dashboard</a>
+      <h1>🧠 Analisi AI Rassegna</h1>
+      <p class="subtitle">Analisi editoriale automatica per categoria</p>
+    </div>
+
+    <div id="status-section">
+      <div class="loading">Caricamento analisi...</div>
+    </div>
+
+    <div id="analysis-section"></div>
+    <div id="archive-section"></div>
+  </div>
+
+  <script>
+    const CAT_LABELS = {
+      geopolitica:     '🌍 Geopolitica',
+      cronaca_ticino:  '🏔️ Cronaca Ticino',
+      economia:        '💰 Economia',
+      cultura:         '🎭 Cultura',
+      cronaca_svizzera:'🇨🇭 Cronaca Svizzera',
+      ai_openclaw:     '🤖 AI & Tech',
+    };
+
+    function catLabel(cat) { return CAT_LABELS[cat] || cat; }
+
+    function formatTime(ts) {
+      if (!ts) return '—';
+      try {
+        const d = new Date(ts.replace(' ', 'T').replace(/\+00:00$/, 'Z'));
+        return d.toLocaleString('it-CH', { timeZone: 'Europe/Zurich', dateStyle: 'medium', timeStyle: 'short' });
+      } catch { return ts; }
+    }
+
+    function escHtml(s) {
+      if (!s) return '';
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function statusBadge(status) {
+      const cls = status === 'ok' ? 'badge-ok' : status === 'partial' ? 'badge-partial' : 'badge-error';
+      const icon = status === 'ok' ? '✅' : status === 'partial' ? '⚠️' : '❌';
+      return `<span class="status-badge ${cls}">${icon} ${escHtml(status)}</span>`;
+    }
+
+    let allData = null;
+    let currentIdx = 0;
+
+    async function loadData() {
+      try {
+        const resp = await fetch('../analisi.json?t=' + Date.now());
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        allData = await resp.json();
+
+        if (!allData.analyses || allData.analyses.length === 0) {
+          throw new Error('Nessuna analisi nel file');
+        }
+
+        renderStatus(allData.analyses[0]);
+        renderAnalysis(allData.analyses[0]);
+        renderArchive(allData.analyses, 0);
+
+      } catch (e) {
+        const isNotFound = e.message.includes('404') || e.message.includes('Failed to fetch');
+        document.getElementById('status-section').innerHTML =
+          `<div class="card">
+            <div class="card-title">Stato</div>
+            <p class="empty-cat">${isNotFound ? '📭 Nessuna analisi disponibile.' : '❌ Errore: ' + escHtml(e.message)}</p>
+            <div class="cmd-hint">Per avviare: <code>python3 tools/rassegna_analisi.py</code></div>
+          </div>`;
+      }
+    }
+
+    function renderStatus(entry) {
+      document.getElementById('status-section').innerHTML = `
+        <div class="card">
+          <div class="card-title">Stato Ultima Analisi</div>
+          <div class="status-grid">
+            <div class="stat-box">
+              <div class="stat-value">${entry.articles_analyzed || 0}</div>
+              <div class="stat-label">Articoli analizzati</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${entry.articles_selected || 0}</div>
+              <div class="stat-label">Notizie selezionate</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${entry.data ? entry.data.length : 0}</div>
+              <div class="stat-label">Categorie</div>
+            </div>
+          </div>
+          <div class="status-row">
+            <span class="status-meta">🕐 ${formatTime(entry.analyzed_at)}</span>
+            ${statusBadge(entry.status || 'ok')}
+            <span class="status-meta">Run #${entry.run_id} · ${escHtml(entry.model_used || '—')}</span>
+          </div>
+          <div class="cmd-hint">Per aggiornare: <code>python3 tools/rassegna_analisi.py</code></div>
+        </div>`;
+    }
+
+    function renderAnalysis(entry) {
+      if (!entry.data || entry.data.length === 0) {
+        document.getElementById('analysis-section').innerHTML =
+          `<div class="card"><p class="empty-cat">Nessun dato di analisi disponibile per questa run.</p></div>`;
+        return;
+      }
+
+      let html = '';
+      for (const catData of entry.data) {
+        const cat = catData.categoria || '';
+        const notizie = catData.notizie || [];
+        const trend = catData.trend || [];
+
+        html += `<div class="card">`;
+        html += `<div class="cat-header"><span class="cat-label">${catLabel(cat)}</span></div>`;
+
+        if (catData.sommario) {
+          html += `<p class="cat-sommario">${escHtml(catData.sommario)}</p>`;
+        }
+
+        if (notizie.length === 0) {
+          html += `<p class="empty-cat">Nessuna notizia selezionata per questa categoria.</p>`;
+        } else {
+          for (const news of notizie) {
+            html += `<div class="news-item">`;
+            html += `<div class="news-title-row">`;
+            if (news.link) {
+              html += `<a class="news-title" href="${escHtml(news.link)}" target="_blank" rel="noopener">${escHtml(news.titolo)}</a>`;
+            } else {
+              html += `<span class="news-title">${escHtml(news.titolo)}</span>`;
+            }
+            if (news.fonte) {
+              html += ` <span class="badge badge-fonte">${escHtml(news.fonte)}</span>`;
+            }
+            if (news.rilevanza === 'alta') {
+              html += ` <span class="badge badge-alta">● alta</span>`;
+            } else if (news.rilevanza === 'media') {
+              html += ` <span class="badge badge-media">● media</span>`;
+            }
+            if (news.incrocio && news.fonti_incrocio && news.fonti_incrocio.length > 0) {
+              html += ` <span class="badge badge-incrocio">🔁 ${news.fonti_incrocio.length} fonti</span>`;
+            }
+            html += `</div>`;
+
+            if (news.riassunto) {
+              html += `<p class="news-riassunto">${escHtml(news.riassunto)}</p>`;
+            }
+
+            if (news.incrocio && news.differenze_narrative) {
+              const uid = 'diff_' + Math.random().toString(36).slice(2);
+              html += `<button class="diff-toggle" onclick="toggleDiff('${uid}')">▶ Differenze narrative</button>`;
+              html += `<div class="diff-content" id="${uid}">${escHtml(news.differenze_narrative)}</div>`;
+            }
+
+            html += `</div>`;
+          }
+        }
+
+        // Trend
+        if (trend.length > 0) {
+          html += `<div class="trend-section">`;
+          html += `<div class="trend-label">📈 Trend</div>`;
+          html += `<div class="trend-pills">`;
+          for (const t of trend) {
+            html += `<span class="trend-pill">${escHtml(t)}</span>`;
+          }
+          html += `</div></div>`;
+        }
+
+        // Da tenere d'occhio
+        if (catData.da_tenere_d_occhio) {
+          html += `<div class="watch-box"><strong>👁 Da tenere d'occhio</strong>${escHtml(catData.da_tenere_d_occhio)}</div>`;
+        }
+
+        html += `</div>`;
+      }
+
+      document.getElementById('analysis-section').innerHTML = html;
+    }
+
+    function toggleDiff(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const btn = el.previousElementSibling;
+      el.classList.toggle('open');
+      if (btn) btn.textContent = el.classList.contains('open') ? '▼ Differenze narrative' : '▶ Differenze narrative';
+    }
+
+    function renderArchive(analyses, activeIdx) {
+      if (!analyses || analyses.length <= 1) {
+        document.getElementById('archive-section').innerHTML = '';
+        return;
+      }
+
+      let html = `<div class="card">`;
+      html += `<div class="card-title">Archivio Analisi</div>`;
+      html += `<div style="overflow-x:auto;"><table class="arch-table">`;
+      html += `<thead><tr>
+        <th>Data</th>
+        <th>Run ID</th>
+        <th>Analizzati</th>
+        <th>Selezionati</th>
+        <th>Status</th>
+      </tr></thead><tbody>`;
+
+      analyses.forEach((entry, idx) => {
+        const isActive = idx === activeIdx;
+        html += `<tr class="${isActive ? 'active' : ''}" onclick="selectAnalysis(${idx})">
+          <td>${formatTime(entry.analyzed_at)}</td>
+          <td>#${entry.run_id}</td>
+          <td>${entry.articles_analyzed || 0}</td>
+          <td>${entry.articles_selected || 0}</td>
+          <td>${statusBadge(entry.status || 'ok')}</td>
+        </tr>`;
+      });
+
+      html += `</tbody></table></div></div>`;
+      document.getElementById('archive-section').innerHTML = html;
+    }
+
+    function selectAnalysis(idx) {
+      if (!allData || !allData.analyses) return;
+      currentIdx = idx;
+      renderStatus(allData.analyses[idx]);
+      renderAnalysis(allData.analyses[idx]);
+      renderArchive(allData.analyses, idx);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
