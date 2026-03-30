@@ -1,6 +1,114 @@
 {
-  "generated_at": "2026-03-30T15:13:26.171260+00:00",
+  "generated_at": "2026-03-30T15:28:37.492063+00:00",
   "analyses": [
+    {
+      "id": 5,
+      "run_id": 37,
+      "run_time": "2026-03-30 15:27:21.060313+00:00",
+      "analyzed_at": "2026-03-30T15:28:37.487944+00:00",
+      "articles_analyzed": 6,
+      "articles_selected": 3,
+      "model_used": "anthropic/claude-haiku-4-5",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "geopolitica",
+          "sommario": "La rassegna odierna della categoria geopolitica presenta una notizia rilevante sui rapporti USA-Cina in un contesto di tensioni internazionali, mentre le altre notizie riguardano tematiche nazionali (sanitaria e sportiva) non direttamente geopolitiche.",
+          "notizie": [
+            {
+              "titolo": "Il vertice fantasma di Trump in Cina: Xi osserva i disastri americani",
+              "fonte": "Domani",
+              "link": "https://www.editorialedomani.it/politica/mondo/Trump-Cina-vertice-rinviato-Xi-nwin19iq",
+              "riassunto": "Il rinvio del vertice tra Trump e Xi Jinping rivela la percezione cinese del secondo mandato americano come governo disfunzionale. Pechino adotta una strategia di limitazione dei danni e crescente autonomia, approfittando delle instabilità interne statunitensi per consolidare la propria posizione geopolitica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Deterioramento relazioni USA-Cina",
+            "Strategia cinese di autonomia economica",
+            "Instabilità politica americana nel secondo mandato Trump",
+            "Reposizionamento degli equilibri geopolitici globali"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'evoluzione dei negoziati commerciali USA-Cina e le possibili contromisure economiche di Pechino; seguire l'impatto della percezione cinese sulla disfunzionalità americana nelle dinamiche multilaterali internazionali",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Le autorità intensificano i controlli sulla filiera tessile italiana, con particolare focus su pratiche illegali di riciclaggio e tracciabilità dei materiali. Emergono sequestri significativi nei principali hub logistici e produttivi del settore.",
+          "notizie": [
+            {
+              "titolo": "Operazione contro il traffico di rifiuti tessili: sequestri a Napoli e Prato per filati senza tracciabilità",
+              "fonte": "Il Sole 24 Ore Italia",
+              "link": "https://www.ilsole24ore.com/art/dai-rifiuti-tessili-filati-senza-tracciabilita-sequestri-napoli-e-prato-AIakuFFC",
+              "riassunto": "Le autorità intensificano i controlli sulla filiera tessile attraverso porti e magazzini. Scattano sequestri di filati provenienti da rifiuti tessili che circolano senza alcuna documentazione di tracciabilità. L'operazione interessa i principali hub logistici di Napoli e Prato, evidenziando un problema sistemico nella gestione del riciclaggio tessile italiano.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tracciabilità e compliance nella filiera tessile",
+            "contrasto al traffico illegale di rifiuti",
+            "economia circolare e riciclaggio fraudolento",
+            "controlli doganali e logistici",
+            "qualità e certificazione dei filati"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle operazioni di sequestro e identificazione dei responsabili della filiera illegale; impatto sulle aziende tessili legittime e possibili irrigidimenti normativi; estensione dei controlli ad altri hub logistici nazionali.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Il Tribunale federale accoglie parzialmente il ricorso delle compagnie telefoniche contro la variante di Piano regolatore del Municipio di Bellinzona. La sentenza riguarda le antenne e il sistema di cascata, evidenziando tensioni tra infrastrutture telecomunicative e pianificazione territoriale.",
+          "notizie": [
+            {
+              "titolo": "Tribunale federale accoglie parzialmente il ricorso delle telco sulla variante di Piano regolatore di Bellinzona",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1914899/federale-diritto-piano-priorita-sentenza",
+              "riassunto": "Sunrise, Salt e Swisscom hanno impugnato davanti al Tribunale federale la variante di Piano regolatore approvata dal Consiglio comunale di Bellinzona riguardante il posizionamento delle antenne e il sistema di cascata. Il Tribunale federale accoglie parzialmente il ricorso, evidenziando una parziale incostituzionalità della decisione municipale rispetto alle normative federali sulle telecomunicazioni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Infrastrutture telecomunicative",
+            "Pianificazione territoriale",
+            "Ricorsi amministrativi",
+            "Diritto federale vs locale",
+            "Controversie urbanistiche Bellinzona"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle conseguenze della sentenza: quali modifiche al Piano regolatore comporterà il parziale accoglimento del ricorso e come risponderà l'amministrazione comunale. Potenziale impatto su altre varianti di PRs in Ticino riguardanti infrastrutture telecom.",
+          "_model_used": "anthropic/claude-haiku-4-5"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        }
+      ]
+    },
     {
       "id": 4,
       "run_id": 35,
