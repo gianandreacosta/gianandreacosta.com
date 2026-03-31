@@ -388,6 +388,58 @@ function peekWalkDir() {
   return Store.get('lbw_walk_dir', Math.floor(Date.now() / 3600000) % 8);
 }
 
+// --- Cerca POI reali vicino a un punto (Overpass API) per spot schiscetta ---
+async function findNearbyPOI(lat, lng, radiusM) {
+  radiusM = radiusM || 300;
+  // Cerca: parchi, viewpoint, piazze, panchine, aree picnic, giardini, fontane, playground, spiagge
+  var r = radiusM, c = lat + ',' + lng;
+  var query = '[out:json][timeout:8];(' +
+    'node["tourism"="viewpoint"](around:' + r + ',' + c + ');' +
+    'node["leisure"="park"](around:' + r + ',' + c + ');' +
+    'way["leisure"="park"](around:' + r + ',' + c + ');' +
+    'node["leisure"="garden"](around:' + r + ',' + c + ');' +
+    'way["leisure"="garden"](around:' + r + ',' + c + ');' +
+    'node["place"="square"](around:' + r + ',' + c + ');' +
+    'way["place"="square"](around:' + r + ',' + c + ');' +
+    'node["leisure"="picnic_table"](around:' + r + ',' + c + ');' +
+    'node["amenity"="bench"](around:' + r + ',' + c + ');' +
+    'node["amenity"="fountain"](around:' + r + ',' + c + ');' +
+    'node["leisure"="playground"](around:' + r + ',' + c + ');' +
+    'node["natural"="beach"](around:' + r + ',' + c + ');' +
+    ');out center 10;';
+  try {
+    var resp = await fetch('https://overpass-api.de/api/interpreter', {
+      method: 'POST', body: 'data=' + encodeURIComponent(query),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    });
+    var data = await resp.json();
+    var results = (data.elements || []).map(function(el) {
+      var elLat = el.lat || (el.center && el.center.lat);
+      var elLng = el.lon || (el.center && el.center.lon);
+      if (!elLat || !elLng) return null;
+      var tags = el.tags || {};
+      // Determine POI type and name
+      var type = tags.leisure || tags.tourism || tags.amenity || tags.place || tags.natural || 'spot';
+      var name = tags.name || tags['name:it'] || null;
+      var label = name;
+      if (!label) {
+        var labels = { park: 'Parco', viewpoint: 'Punto panoramico', bench: 'Panchina', picnic_table: 'Area picnic',
+          fountain: 'Fontana', playground: 'Area giochi', square: 'Piazza', beach: 'Spiaggia' };
+        label = labels[type] || 'Punto di sosta';
+      }
+      // Priority score: viewpoint > park with name > square > picnic > bench > other
+      var priority = { viewpoint: 10, park: name ? 8 : 5, square: 7, beach: 7, picnic_table: 6, playground: 4, fountain: 3, bench: 2 };
+      return { lat: elLat, lng: elLng, name: label, type: type, score: priority[type] || 1 };
+    }).filter(Boolean);
+    // Sort by score descending, return top results
+    results.sort(function(a, b) { return b.score - a.score; });
+    return results;
+  } catch (e) {
+    console.warn('Overpass POI query failed:', e.message);
+    return [];
+  }
+}
+
 // --- Loop pedonale reale via ORS (andata + ritorno, nessun ristorante) ---
 // Velocità pedonale ORS: ~4.5 km/h = 75 m/min. windingFactor: le strade sono ~30% più lunghe della retta.
 // halfMeters = distanza crow-fly al punto di svolta, tale che ORS torni ~walkMinutes/2 per tratta.
@@ -492,11 +544,23 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir, originOver
   for (var i = 0; i < factors.length; i++) {
     var loopResult = await buildWalkingLoopRealAsync(origin, p.walkMinutes, p.intensity, dirIdx, factors[i]);
     if (loopResult) {
+      // In modalità schiscetta: cerca POI reale vicino al punto di svolta
+      var turnPt = loopResult.turnaround;
+      var foodInfo = { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: turnPt.lat, lng: turnPt.lng };
+      if (p.mealMode === 'Ho già la schiscetta') {
+        try {
+          var pois = await findNearbyPOI(turnPt.lat, turnPt.lng, 250);
+          if (pois.length > 0) {
+            var best = pois[0]; // highest score
+            foodInfo = { id: 'poi-' + best.type, name: best.name, cuisine: 'Schiscetta spot • ' + best.type, lat: best.lat, lng: best.lng, poiType: best.type };
+          }
+        } catch (e) { console.warn('POI lookup failed, using geometric point'); }
+      }
       var proposal = {
         createdAt: new Date().toISOString(),
         origin: { lat: origin.lat, lng: origin.lng },
         walk: { minutes: loopResult.minutes, distanceKm: loopResult.distanceKm, type: 'loop reale \u2022 OSRM' },
-        food: { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: loopResult.turnaround.lat, lng: loopResult.turnaround.lng },
+        food: foodInfo,
         alternatives: [],
         route: loopResult.route,
         source: 'osrm-loop',
@@ -517,6 +581,7 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir, originOver
 window.LBW = {
   DB, Store,
   getUser, setUser,
+  findNearbyPOI,
   getPrefs, setPrefs,
   getProposal, buildProposal,
   buildWalkOnlyProposalAsync,

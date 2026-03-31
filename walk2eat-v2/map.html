@@ -253,7 +253,9 @@
 
     // Turnaround marker
     if (proposal.food && proposal.food.lat) {
-      var turnIcon = L.divIcon({ className: '', html: '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap">🔄 Svolta</div>', iconAnchor: [28, 10] });
+      var turnLabel = proposal.food.name || 'Svolta';
+      var turnEmoji = proposal.food.poiType === 'viewpoint' ? '🏔️' : proposal.food.poiType === 'park' ? '🌳' : proposal.food.poiType === 'bench' ? '🪑' : '🔄';
+      var turnIcon = L.divIcon({ className: '', html: '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;max-width:200px;overflow:hidden;text-overflow:ellipsis">' + turnEmoji + ' ' + turnLabel + '</div>', iconAnchor: [28, 10] });
       L.marker([proposal.food.lat, proposal.food.lng], { icon: turnIcon }).addTo(mapInstance);
     }
 
