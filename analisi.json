@@ -1,6 +1,469 @@
 {
-  "generated_at": "2026-03-31T07:47:31.961561+00:00",
+  "generated_at": "2026-03-31T07:57:35.188335+00:00",
   "analyses": [
+    {
+      "id": 10,
+      "run_id": 42,
+      "run_time": "2026-03-31 07:53:22.013109+00:00",
+      "analyzed_at": "2026-03-31T07:57:35.183100+00:00",
+      "articles_analyzed": 94,
+      "articles_selected": 34,
+      "model_used": "anthropic/claude-opus-4-6",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall'escalation militare USA-Iran, con il bombardamento americano di un deposito di munizioni iraniano e la ritorsione di Teheran contro una petroliera a Dubai e con missili su Gerusalemme. Rilevanti anche l'approvazione israeliana della pena di morte per palestinesi accusati di terrorismo, le tensioni sul bilancio UE e lo scandalo del broker del segretario alla Difesa USA legato a investimenti nel settore armi prima dell'attacco.",
+          "notizie": [
+            {
+              "titolo": "Gli USA bombardano un deposito di munizioni in Iran: Trump pubblica il video, Teheran colpisce petroliera a Dubai e lancia missili su Gerusalemme",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/03/31/gli-usa-colpiscono-deposito-munizioni-in-iran-trump-posta-il-video_8939abe4-b147-42dd-8097-4b2d2aed3010.html",
+              "riassunto": "Nella notte gli Stati Uniti hanno colpito con bombe anti-bunker un deposito di munizioni nel centro dell'Iran, con forti esplosioni segnalate anche a Teheran e interruzioni della corrente elettrica. Trump ha pubblicato un video dell'attacco. L'Iran ha reagito colpendo una petroliera a Dubai e lanciando missili verso Gerusalemme, facendo scattare le sirene d'allarme. Il WSJ riporta che Trump sarebbe disposto a porre fine alla guerra senza riaprire lo Stretto di Hormuz.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Adnkronos",
+                "Domani",
+                "20 Minuten",
+                "20 Minutes",
+                "AGI"
+              ],
+              "differenze_narrative": "ANSA e Adnkronos offrono la copertura più completa con diretta e aggiornamenti continui, includendo le ritorsioni iraniane e il retroscena WSJ sulla disponibilità di Trump a negoziare. Domani titola in modo più descrittivo, evidenziando i tre fronti (petroliera Dubai, deposito Iran, Gerusalemme) e specificando l'assenza di vittime sulla nave. 20 Minuten (tedesco) e 20 Minutes (francese) si concentrano sull'azione americana e sul video di Trump, con tono più distaccato e senza i dettagli sulla ritorsione iraniana nel titolo. AGI inserisce la notizia nel contesto più ampio dell'indagine IDF sulla morte dei caschi blu in Libano, collegando i fronti del conflitto."
+            },
+            {
+              "titolo": "Scandalo Hegseth: il broker del segretario alla Difesa USA tentò investimenti in aziende di armi prima dell'attacco all'Iran",
+              "fonte": "Il Sole 24 Ore Mondo",
+              "link": "https://www.ilsole24ore.com/art/ft-broker-segretario-difesa-usa-voleva-investire-armi-prima-dell-attacco-iran-AItbVJGC",
+              "riassunto": "Secondo il Financial Times, un broker di Pete Hegseth, segretario alla Difesa degli Stati Uniti, ha tentato un ingente investimento in importanti aziende del settore della difesa nelle settimane precedenti l'attacco congiunto USA-Israele all'Iran. La rivelazione solleva gravi questioni di insider trading e conflitto di interessi ai vertici del Pentagono.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Israele approva la pena di morte per i palestinesi accusati di terrorismo",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/31/israele-approva-pena-morte-per-palestinesi-accusati-terrorismo",
+              "riassunto": "La Knesset ha approvato il 30 marzo una legge che introduce la pena di morte per i 'terroristi', concepita per essere applicata esclusivamente ai palestinesi riconosciuti colpevoli di attacchi antisraeliani mortali. La misura si inserisce nel contesto di radicalizzazione della politica israeliana descritto anche dall'analisi di Domani sull'estrema destra e i coloni.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "Domani"
+              ],
+              "differenze_narrative": "Internazionale riporta la notizia come fatto di cronaca legislativa, sottolineando che la legge è 'concepita per essere applicata solo ai palestinesi'. Domani non copre direttamente la notizia della pena di morte ma pubblica un'analisi di lungo periodo sulla trasformazione di Israele in uno stato dominato dall'estrema destra e dai coloni, fornendo il contesto ideologico in cui questa legge si colloca. L'angolazione di Domani è più strutturale e storica, quella di Internazionale più fattuale e immediata."
+            },
+            {
+              "titolo": "Indagine dell'IDF sulla morte di tre caschi blu in Libano: crescente preoccupazione per UNIFIL",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-03-31/iran-guerra-notizie-31-marzo-36368390/",
+              "riassunto": "L'esercito israeliano ha avviato un'indagine sulla morte di tre caschi blu in Libano, suggerendo una possibile responsabilità di Hezbollah. I ministri della Difesa di Italia e Francia hanno espresso preoccupazione congiunta per gli attacchi contro UNIFIL. L'episodio apre un fronte diplomatico delicato tra Israele e i paesi contributori della missione ONU.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI",
+                "Adnkronos"
+              ],
+              "differenze_narrative": "AGI dedica un articolo specifico all'indagine IDF, riportando la versione israeliana che punta il dito su Hezbollah. Adnkronos menziona la preoccupazione Italia-Francia per UNIFIL all'interno della diretta sulla guerra Iran, trattandola come elemento secondario del quadro più ampio. La diversa collocazione editoriale riflette due scelte: AGI isola il fatto come notizia autonoma, Adnkronos lo subordina all'escalation regionale."
+            },
+            {
+              "titolo": "Bilancio UE 2028-2034: in arrivo tagli drastici a coesione e spesa sociale",
+              "fonte": "Il Sole 24 Ore Mondo",
+              "link": "https://www.ilsole24ore.com/art/bilancio-ue-arrivo-tagli-drastici-coesione-e-spesa-sociale-AInM9qFC",
+              "riassunto": "Un documento interno dell'Europarlamento certifica le profonde modifiche previste nella proposta del prossimo Quadro finanziario pluriennale 2028-2034, con tagli significativi ai fondi per la coesione territoriale e la spesa sociale. La notizia arriva in un momento in cui l'UE è chiamata a bilanciare l'aumento della spesa per la difesa con il mantenimento delle politiche di solidarietà interna.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trump e lo Stretto di Hormuz: l'editoriale del NYT mette in guardia dall'errore di Churchill ai Dardanelli",
+              "fonte": "New York Times Homepage",
+              "link": "https://www.nytimes.com/2026/03/31/opinion/trump-hormuz-turkey-dardanelles.html",
+              "riassunto": "Un editoriale del New York Times paragona la situazione nello Stretto di Hormuz alla crisi dei Dardanelli del 1936, suggerendo che la convenzione che stabilì il controllo turco sullo stretto potrebbe ispirare una soluzione al collo di bottiglia energetico nel Golfo Persico. L'analisi avverte Trump dal ripetere l'errore strategico di Churchill a Gallipoli.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Manifestazioni 'No Kings' in tutto il mondo: Colbert commenta le proteste di massa",
+              "fonte": "New York Times Homepage",
+              "link": "https://www.nytimes.com/2026/03/31/arts/television/colbert-no-kings-marches.html",
+              "riassunto": "Stephen Colbert ha commentato i raduni 'No Kings' che si sono tenuti in tutto il mondo, con particolare enfasi sulla folla radunatasi a New York. Le manifestazioni rappresentano un movimento di protesta globale, probabilmente legato alle derive autoritarie percepite nell'attuale fase politica americana.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Investimenti europei in Palantir: oltre 27 miliardi di dollari nell'azienda controversa per i legami con polizia e militari",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/daniele-grasso/2026/03/31/palantir-investimenti-europei",
+              "riassunto": "Un'inchiesta rivela che banche e fondi europei hanno investito più di 27 miliardi di dollari in Palantir, azienda tecnologica americana contestata per i suoi rapporti commerciali con corpi di polizia e forze militari accusati di violazioni dei diritti umani. L'indagine solleva interrogativi sulla coerenza degli standard ESG europei.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Birmania: il capo della giunta militare Min Aung Hlaing compie un altro passo verso la presidenza formale",
+              "fonte": "20 Minutes",
+              "link": "https://www.20min.ch/fr/story/birmanie-le-chef-de-la-junte-fait-un-pas-de-plus-vers-la-presidence-103537736",
+              "riassunto": "Min Aung Hlaing, 69 anni, che aveva preso il potere con il colpo di stato che rovesciò il governo eletto del premio Nobel Aung San Suu Kyi (tuttora imprigionata), sta consolidando la sua posizione con un ulteriore passo verso la formalizzazione della presidenza. Un segnale di stabilizzazione autoritaria del regime birmano.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Escalation militare USA-Iran con apertura di fronti multipli (Iran, Dubai, Gerusalemme, Libano)",
+            "Radicalizzazione della politica israeliana: pena di morte per palestinesi e influenza dell'estrema destra",
+            "Conflitti di interesse ai vertici della difesa USA in tempo di guerra",
+            "Riorientamento del bilancio UE verso la difesa a scapito di coesione e welfare",
+            "Movimenti di protesta globali contro derive autoritarie ('No Kings')"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della guerra USA-Iran nelle prossime 48 ore: la disponibilità di Trump a negoziare senza riaprire Hormuz (riportata dal WSJ) potrebbe indicare un'apertura diplomatica, ma le ritorsioni iraniane su Dubai e Gerusalemme e il fronte UNIFIL in Libano rischiano di far degenerare il conflitto in una guerra regionale su più fronti. Cruciale anche lo sviluppo dello scandalo insider trading del broker di Hegseth, che potrebbe avere ripercussioni politiche interne significative.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata dominata da investimenti industriali strategici in Italia, con il maxi-progetto Silicon Box per i semiconduttori nel Novarese e l'allarme energia degli Internet provider. Le borse europee restano volatili tra tensioni geopolitiche e attesa sui dati inflazione, mentre emergono segnali di crisi nel settore bici e nuove alleanze nel lusso-ospitalità.",
+          "notizie": [
+            {
+              "titolo": "Silicon Box: via libera al polo dei semiconduttori nel Novarese con 1,3 miliardi di aiuti pubblici",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/silicon-box-via-l-accordo-il-progetto-che-avra-13-mld-aiuti-AIEPvOGC",
+              "riassunto": "Firmato l'accordo per la realizzazione del polo dei semiconduttori di Silicon Box nel Novarese. L'investimento complessivo ammonta a 3,2 miliardi di euro, con 1,3 miliardi di aiuti pubblici e la creazione prevista di 1.600 posti di lavoro diretti. Un progetto strategico per la sovranità tecnologica italiana ed europea nel settore dei chip.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Internet provider in allarme energia: lettera a Palazzo Chigi per salvare reti e data center",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/energia-internet-provider-allarme-piano-salvare-reti-e-data-center-AIIPXhFC",
+              "riassunto": "Gli Internet provider italiani hanno inviato una lettera alla presidente del Consiglio Meloni, al sottosegretario Butti e al ministro del Mimit per denunciare l'emergenza dei costi energetici che minaccia la sostenibilità delle infrastrutture di rete e dei data center. Si chiede un piano strutturale di intervento per garantire la continuità dei servizi digitali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Borse europee volatili, si arresta la corsa del petrolio. Oro e Bitcoin in rialzo, occhi sull'inflazione Eurozona",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borse-asiatiche-miste-mentre-prezzi-petrolio-continuano-salire-AIMOyIGC",
+              "riassunto": "Le borse europee mostrano volatilità con il rallentamento della corsa del greggio. A Milano spicca la performance di Nexi. Si registrano rialzi per Bitcoin e oro come beni rifugio, mentre i mercati attendono i dati sull'inflazione dell'Eurozona. Sullo sfondo, segnali di apertura di Trump sulla fine della guerra.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Crisi della bici italiana: vendite in calo del 30-40% dai picchi del 2022",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/strada-salita-la-bici-italiana-AItKH0EC",
+              "riassunto": "Il settore ciclistico italiano attraversa una crisi profonda: le vendite sono crollate del 30% nel 2024, con una riduzione complessiva del 40% rispetto ai picchi del 2022. I magazzini restano carichi di invenduto e le prospettive per il 2025 rimangono difficili, segnando la fine del boom post-pandemia delle due ruote.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lefay e Marriott siglano un'alleanza per espandere il brand italiano dell'ospitalità di lusso all'estero",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/lefay-e-marriott-accordo-portare-brand-italiano-all-estero-AIqzYGFC",
+              "riassunto": "Il gruppo di ospitalità del benessere Lefay ha firmato un accordo strategico con la catena internazionale Marriott per portare il proprio brand oltre confine. L'intesa punta a valorizzare l'eccellenza italiana del wellness tourism sui mercati internazionali, sfruttando la rete distributiva globale di Marriott.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Giovani imprenditori del Made in Italy a confronto al Mimit su Food, Fashion e Furniture",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/food-fashion-e-furniture-giovani-eccellenze-made-italy-preparano-futuro-AImo6eFC",
+              "riassunto": "Seconda edizione del Forum 'Creare Futuro' al Ministero delle Imprese, promosso dai Gruppi Giovani di Confindustria Accessori Moda, Federalimentare e FederlegnoArredo. Al centro le strategie per il ricambio generazionale e l'innovazione nei tre pilastri delle 'F' del Made in Italy.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Telefonia mobile in Svizzera: il 54% dei clienti non cambia operatore da oltre cinque anni",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1915058/clienti-anni-svizzera-telefonia-cinque",
+              "riassunto": "Un'indagine evidenzia la crescente fedeltà degli utenti di telefonia mobile in Svizzera, con oltre la metà dei clienti che non cambia operatore da più di cinque anni. Le offerte promozionali perdono efficacia, mentre aumentano i costi operativi per le compagnie telefoniche.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Investimenti strategici in tecnologia e semiconduttori in Italia",
+            "Costo dell'energia come fattore critico per le infrastrutture digitali",
+            "Volatilità dei mercati finanziari e corsa ai beni rifugio",
+            "Crisi post-boom in settori cresciuti durante la pandemia",
+            "Internazionalizzazione dei brand italiani di eccellenza"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione del progetto Silicon Box nel Novarese e i tempi di erogazione degli 1,3 miliardi di aiuti pubblici: sarà il banco di prova della strategia italiana sui semiconduttori. Parallelamente, monitorare la risposta del governo alla lettera degli Internet provider sull'emergenza energetica, che potrebbe generare interventi normativi a breve termine.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Giornata povera di notizie strettamente svizzere: le testate elvetiche si concentrano su scenari internazionali, dalla normalizzazione negli aeroporti USA alle forze speciali americane in Medio Oriente. Unico spunto con angolazione svizzera è l'analisi di LaRegione sul ruolo delle sanzioni di paesi terzi nella prevenzione dei conflitti.",
+          "notizie": [
+            {
+              "titolo": "Il ruolo delle sanzioni di paesi terzi nella prevenzione delle guerre: l'analisi dalla Svizzera",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915030/come-le-sanzioni-imposte-da-paesi-terzi-potrebbero-evitare-la-guerra",
+              "riassunto": "Un'analisi da Berna esplora come la minaccia di sanzioni imposte da paesi terzi avrebbe potuto prevenire conflitti armati. Il tema tocca direttamente il dibattito svizzero sulla neutralità e sull'adozione di misure sanzionatorie in linea con la comunità internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Forze speciali americane arrivate in Medio Oriente: Rangers e Navy Seals si uniscono al contingente USA",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/nahost/krieg-in-nahost-medien-us-spezialeinheiten-im-nahen-osten-angekommen",
+              "riassunto": "Secondo quanto riportato dal New York Times, unità di Army Rangers e Navy Seals sono giunte in Medio Oriente, affiancandosi a migliaia di soldati già presenti nella regione. L'escalation militare statunitense segna un'intensificazione del coinvolgimento diretto nel conflitto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "USA: situazione normalizzata negli aeroporti, code eliminate e stipendi TSA pagati",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/lage-normalisiert-sich-warteschlangen-an-us-flughaefen-aufgeloest-loehne-ausgezahlt",
+              "riassunto": "I dipendenti della TSA hanno ricevuto nuovamente gli stipendi, ponendo fine alle lunghe attese registrate negli aeroporti di New York e Atlanta. La normalizzazione segna la conclusione di un periodo di disagi legati al blocco dei pagamenti federali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Dibattito svizzero su neutralità e sanzioni internazionali",
+            "Escalation militare USA in Medio Oriente",
+            "Conseguenze degli shutdown federali americani"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione del dibattito politico a Berna sul tema delle sanzioni di paesi terzi, che potrebbe avere ripercussioni sulla posizione di neutralità della Svizzera e sulle relazioni con UE e NATO.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Giornata densa per la cronaca ticinese: il rapporto droga 2025 con 122 arresti e 132 kg di cocaina sequestrati domina su tre testate. Rilevante il caso giudiziario di Fiorenzo Dadò (falsa testimonianza) e un nuovo incendio boschivo nel Malcantone. Sul fronte politico, l'UDC si oppone alla candidatura di Lugano a Capitale Culturale 2030.",
+          "notizie": [
+            {
+              "titolo": "Rapporto droga 2025 in Ticino: 122 arresti e 132 kg di cocaina sequestrati",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/il-rapporto-2025-in-ticino-122-arresti-per-droga-sequestrati-132-kg-di-cocaina-423693",
+              "riassunto": "Il rapporto annuale sugli stupefacenti fotografa un Ticino stabile nel consumo e nello spaccio: 122 persone arrestate, 132 kg di cocaina sequestrati, 6 decessi per overdose e 116 minorenni denunciati. Il cantone si conferma punto di transito strategico verso altri Paesi europei.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino",
+                "tio.ch Ticino"
+              ],
+              "differenze_narrative": "CdT e Ticinonews titolano in modo quasi identico, focalizzandosi sui numeri chiave (122 arresti, 132 kg). Tio.ch adotta un tono più sensazionalistico con il titolo 'Boom di arresti' e un elenco dettagliato delle sostanze (khat, cocaina, hashish, eroina, ketamina), enfatizzando il ruolo del Ticino come 'punto di transito strategico'. CdT e Ticinonews parlano di situazione 'stabile', tio.ch punta sulla drammatizzazione."
+            },
+            {
+              "titolo": "Fiorenzo Dadò: decreto d'accusa per falsa testimonianza, scagionato dalla denuncia mendace",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/fiorenzo-dado-decreto-daccusa-per-falsa-testimonianza-423694",
+              "riassunto": "Il presidente del Centro Fiorenzo Dadò è stato colpito da un decreto d'accusa per falsa testimonianza, mentre è stato emesso un decreto di abbandono per il reato di denuncia mendace. Dadò ribadisce di aver agito in buona fede per tutelare una fonte.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "CdT titola ponendo l'accento sul decreto d'accusa per falsa testimonianza, mentre Ticinonews apre con l'assoluzione ('Dadò scagionato dall'accusa di denuncia mendace') per poi aggiungere 'ma resta la falsa testimonianza'. Stessa notizia, ma angolazioni opposte: CdT più severo nel tono, Ticinonews più favorevole al politico nel framing iniziale."
+            },
+            {
+              "titolo": "Nuovo incendio boschivo in Ticino: fiamme nei boschi del Malcantone",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/un-altro-incendio-boschivo-in-ticino-fiamme-nel-malcantone-423683",
+              "riassunto": "Un rogo è stato segnalato nei boschi sopra Ponte Tresa e Pura, nel Malcantone. Il CdT sottolinea il carattere ricorrente dell'evento ('un altro incendio'), evidenziando una serie preoccupante di incendi boschivi in Ticino.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "CdT titola con 'Un altro incendio boschivo in Ticino', inserendo l'evento in un contesto di emergenza ricorrente. Ticinonews usa un titolo più neutro e descrittivo ('Incendio boschivo nel Malcantone'), limitandosi alla cronaca puntuale senza riferimenti alla serie di roghi precedenti."
+            },
+            {
+              "titolo": "Lugano Capitale Culturale 2030: l'UDC ribadisce il no al credito da 1,5 milioni",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/a-lugano-si-costruisce-il-palco-ma-lo-spettacolo-e-unincognita-423692",
+              "riassunto": "Il gruppo UDC ha confermato la propria opposizione al credito di 1,5 milioni di franchi destinato alla candidatura di Lugano a Capitale Culturale Svizzera 2030, criticando l'indeterminatezza del progetto con la metafora 'si costruisce il palco, ma lo spettacolo è un'incognita'.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Titolo e descrizione sono identici su entrambe le testate, suggerendo una fonte comune (probabilmente un comunicato stampa o una dichiarazione UDC ripresa tal quale). Nessuna differenza sostanziale di angolazione rilevata."
+            },
+            {
+              "titolo": "Turismo pasquale in Ticino: meno partenze ma weekend soleggiato con 20 gradi",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/vacanze-dal-ticino-e-per-il-ticino-ecco-la-situazione-del-turismo-pasquale-430304",
+              "riassunto": "Per le vacanze di Pasqua si prevedono meno partenze dei ticinesi rispetto al 2025, anche a causa delle tensioni in Medio Oriente che hanno costretto a riorganizzare voli. In compenso, il Ticino attende turisti grazie a un weekend con meteo favorevole. Soddisfazione di albergatori e operatori.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Petizione contro il dog park di Lumino: 201 firme raccolte",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1914906/zona-cani-area-lumino-aspetto",
+              "riassunto": "I residenti di Lumino hanno raccolto 201 firme contro il progetto di un percorso per cani lungo l'argine sommergibile del fiume Moesa. La preoccupazione principale riguarda l'assenza di recinzioni nell'area prevista.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Minusio: l'Oratorio San Giovanni Bosco diventa Casa San Giuseppe grazie a una donazione milionaria",
+              "fonte": "LaRegione Locarnese",
+              "link": "https://www.laregione.ch/cantone/locarnese/1913937/consiglio-fondazione-giovanni-giuseppe-bosco-minusio-gebert-casa-nome-donazione",
+              "riassunto": "L'Oratorio San Giovanni Bosco di Minusio ha cambiato nome in Casa San Giuseppe per accettare un lascito da un milione di franchi. Il misterioso donatore aveva posto come condizione il cambio di denominazione della struttura.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Telefonia mobile in Svizzera: la guerra dei prezzi raggiunge i suoi limiti",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/telefonia-mobile-la-guerra-dei-prezzi-sta-raggiungendo-i-suoi-limiti-430337",
+              "riassunto": "Dopo i tassi record di cambio operatore nel 2023-2024, il mercato svizzero della telefonia mobile si stabilizza. Anche i giovani sotto i 30 anni, storicamente più inclini al cambio, si sono dimostrati più fedeli al proprio operatore.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Emergenza incendi boschivi ricorrenti in Ticino",
+            "Lotta al narcotraffico: Ticino crocevia europeo della droga",
+            "Tensioni politiche sugli investimenti culturali a Lugano",
+            "Casi giudiziari che coinvolgono esponenti politici ticinesi"
+          ],
+          "da_tenere_d_occhio": "Il caso Fiorenzo Dadò: il presidente del Centro dovrà rispondere dell'accusa di falsa testimonianza. L'evoluzione giudiziaria potrebbe avere ripercussioni politiche significative sul partito e sul panorama politico ticinese. Da monitorare anche la serie di incendi boschivi nel contesto della siccità pre-pasquale.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Giornata con poche notizie nella categoria cultura. Spicca un'iniziativa artistica e sociale a Bellinzona che unisce fotografia, autismo e sensibilizzazione attraverso una mostra diffusa nelle vie della città.",
+          "notizie": [
+            {
+              "titolo": "Oltre trenta sguardi sull'autismo: una mostra diffusa tra le vie di Bellinzona",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1914315/autismo-pozzi-progetto-ares-fondazione-mostra-sguardi-bellinzona-vie",
+              "riassunto": "A Bellinzona una mostra diffusa porta nelle vie della città oltre trenta ritratti e sguardi sul mondo dell'autismo. Il progetto, realizzato in collaborazione con la Fondazione ARES, coinvolge direttamente le persone nello spettro autistico a ogni livello, dall'ideazione alla realizzazione, offrendo una rappresentazione autentica e non stereotipata della loro quotidianità.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "arte e inclusione sociale",
+            "sensibilizzazione sull'autismo attraverso la cultura"
+          ],
+          "da_tenere_d_occhio": "Eventuali sviluppi o repliche della mostra in altre città ticinesi e la crescente tendenza a utilizzare l'arte come strumento di sensibilizzazione su temi legati alla neurodiversità.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Giornata dominata da temi di sicurezza e AI: GitHub fa marcia indietro sugli annunci Copilot nelle pull request dopo le proteste della community, mentre emergono riflessioni critiche sullo stato della ricerca sulle vulnerabilità e Google affronta il tema delle minacce quantistiche alle criptovalute.",
+          "notizie": [
+            {
+              "titolo": "GitHub ritira gli annunci pubblicitari di Copilot nelle pull request dopo le proteste degli sviluppatori",
+              "fonte": "Hacker News",
+              "link": "https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/",
+              "riassunto": "GitHub ha fatto marcia indietro sulla decisione di inserire annunci promozionali per Copilot all'interno delle pull request, dopo un forte contraccolpo da parte della community degli sviluppatori. La notizia, riportata da The Register, ha generato ampio dibattito con 110 punti e 55 commenti su Hacker News, evidenziando la tensione tra monetizzazione e fiducia degli utenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La ricerca sulle vulnerabilità è in crisi: un'analisi critica dello stato attuale",
+              "fonte": "Hacker News",
+              "link": "https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/",
+              "riassunto": "Un articolo di opinione molto discusso (164 punti, 111 commenti) denuncia lo stato problematico della ricerca sulle vulnerabilità informatiche. L'autore argomenta che il settore è compromesso da dinamiche disfunzionali, sollevando un dibattito acceso nella community sulla qualità e l'integrità della security research.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google lancia TimesFM: modello fondazionale per serie temporali con 200 milioni di parametri e contesto 16k",
+              "fonte": "Hacker News",
+              "link": "https://github.com/google-research/timesfm",
+              "riassunto": "Google Research rilascia TimesFM, un modello fondazionale open source per l'analisi predittiva di serie temporali con 200 milioni di parametri e una finestra di contesto di 16.000 punti. Il progetto, pubblicato su GitHub, segna un passo importante nell'applicazione dei modelli fondazionali al forecasting, con 79 punti e 38 commenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google svela le vulnerabilità quantistiche delle criptovalute con un approccio di divulgazione responsabile",
+              "fonte": "Hacker News",
+              "link": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+              "riassunto": "Google Research pubblica un blog post sulla divulgazione responsabile delle vulnerabilità che il calcolo quantistico potrebbe introdurre nei sistemi crittografici alla base delle criptovalute. L'articolo propone un framework per affrontare proattivamente queste minacce prima che diventino sfruttabili, collegandosi al più ampio tema della sicurezza post-quantistica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sony sospende le spedizioni di schede di memoria per carenza globale di NAND flash",
+              "fonte": "Hacker News",
+              "link": "https://www.techzine.eu/news/devices/140058/sony-halts-memory-card-shipments-due-to-nand-shortage/",
+              "riassunto": "Sony ha interrotto le spedizioni di schede di memoria a causa di una carenza di chip NAND flash. La notizia segnala possibili tensioni nella supply chain dei semiconduttori, con potenziali ripercussioni anche sul settore AI e data center che dipendono fortemente dalla disponibilità di memoria.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Raincast: strumento open source per generare app desktop native da descrizioni testuali",
+              "fonte": "Hacker News",
+              "link": "https://github.com/tihiera/raincast",
+              "riassunto": "Un progetto Show HN presenta Raincast, uno strumento open source che permette di descrivere un'applicazione in linguaggio naturale e ottenere un'app desktop nativa funzionante. Il progetto è ancora in fase iniziale ma rappresenta un esempio concreto dell'evoluzione degli strumenti di generazione di codice assistiti dall'AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensione tra monetizzazione AI e fiducia della community open source",
+            "Crisi e ripensamento della ricerca sulla sicurezza informatica",
+            "Minacce del calcolo quantistico alla crittografia e alle criptovalute",
+            "Modelli fondazionali applicati a domini specializzati (serie temporali)",
+            "Fragilità della supply chain dei semiconduttori"
+          ],
+          "da_tenere_d_occhio": "L'intersezione tra sicurezza quantistica e vulnerabilità crittografiche: il lavoro di Google sulla divulgazione responsabile delle vulnerabilità quantistiche potrebbe accelerare la transizione verso algoritmi post-quantistici, con impatti significativi su blockchain e infrastrutture finanziarie.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        }
+      ]
+    },
     {
       "id": 9,
       "run_id": 41,
