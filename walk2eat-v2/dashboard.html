@@ -144,9 +144,9 @@
   </div>
 </nav>
 
-<script src="assets/js/routes-poc-data.js?v=20260329a"></script>
-<script src="assets/js/config.js?v=20260329a"></script>
-<script src="assets/js/app.js?v=20260329a"></script>
+<script src="assets/js/routes-poc-data.js?v=20260331a"></script>
+<script src="assets/js/config.js?v=20260331a"></script>
+<script src="assets/js/app.js?v=20260331a"></script>
 <script>
 (function() {
   var HEART_OFF = '\u2661', HEART_ON = '\u2764\uFE0F';
@@ -278,7 +278,14 @@
     btn.classList.add('loading');
     setMapLoading(isAlternative ? 'Calcolo alternativa…' : 'Calcolo percorso…');
     try {
-      var proposal = await LBW.buildWalkOnlyProposalAsync(null, !!isAlternative);
+      // Per le alternative, riusa l'origin della proposta precedente (evita drift GPS)
+      var originOverride = (isAlternative && currentProposal && currentProposal.origin) ? currentProposal.origin : null;
+      var proposal = await LBW.buildWalkOnlyProposalAsync(null, !!isAlternative, originOverride);
+      if (proposal && proposal.error) {
+        document.getElementById('mapLoadingMsg').textContent = '⚠️ ' + proposal.message;
+        btn.classList.remove('loading');
+        return;
+      }
       renderProposal(proposal);
     } catch(e) {
       document.getElementById('mapLoadingMsg').textContent = 'Errore: ' + e.message;

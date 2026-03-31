@@ -365,7 +365,8 @@ async function getGPSPosition(timeoutMs) {
     var timer = setTimeout(function() { resolve(null); }, timeoutMs);
     navigator.geolocation.getCurrentPosition(
       function(pos) { clearTimeout(timer); resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude }); },
-      function() { clearTimeout(timer); resolve(null); }
+      function() { clearTimeout(timer); resolve(null); },
+      { maximumAge: 0, enableHighAccuracy: true, timeout: timeoutMs }
     );
   });
 }
@@ -466,11 +467,14 @@ async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxO
 }
 
 // --- Proposal walk-only asincrona (nessun ristorante) ---
-async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir) {
+// originOverride: se fornito, usa questo origin invece di rileggere GPS (utile per le alternative)
+async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir, originOverride) {
   var p = prefsOverride || getPrefs();
-  // Usa GPS solo se l'utente ha scelto "Posizione attuale", altrimenti usa l'indirizzo salvato
+  // Se origin è già fornito (es. alternativa), riusalo — non rileggere GPS per evitare posizione diversa
   var origin;
-  if (p.location && p.location.label === 'Posizione attuale') {
+  if (originOverride && originOverride.lat && originOverride.lng) {
+    origin = originOverride;
+  } else if (p.location && p.location.label === 'Posizione attuale') {
     var gpsPos = await getGPSPosition(5000);
     origin = gpsPos || { lat: p.location.lat, lng: p.location.lng };
   } else {
@@ -483,6 +487,7 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir) {
   if (loopResult) {
     var proposal = {
       createdAt: new Date().toISOString(),
+      origin: { lat: origin.lat, lng: origin.lng },
       walk: { minutes: loopResult.minutes, distanceKm: loopResult.distanceKm, type: 'loop reale \u2022 OSRM' },
       food: { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: loopResult.turnaround.lat, lng: loopResult.turnaround.lng },
       alternatives: [],
@@ -494,24 +499,11 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir) {
     return proposal;
   }
 
-  // Fallback sintetico se OSRM non risponde
-  var speed = p.intensity === 'dinamica' ? 5.5 : p.intensity === 'media' ? 4.7 : 4.0;
-  var walkKm = +(speed * (p.walkMinutes / 60)).toFixed(1);
-  var angleRad2 = (WALK_DIRECTIONS[dirIdx % 8] * Math.PI) / 180;
-  var halfM = (walkKm * 500) * 0.65;
-  var fallbackTurn = movePoint(origin.lat, origin.lng, halfM * Math.cos(angleRad2), halfM * Math.sin(angleRad2));
-  var fallbackLoop = buildWalkingLoop({ lat: origin.lat, lng: origin.lng }, fallbackTurn, p.walkMinutes, p.intensity);
-  var fallbackProposal = {
-    createdAt: new Date().toISOString(),
-    walk: { minutes: p.walkMinutes, distanceKm: walkKm, type: 'loop sintetico' },
-    food: { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: fallbackTurn.lat, lng: fallbackTurn.lng },
-    alternatives: [],
-    route: fallbackLoop,
-    source: 'synthetic-loop',
-    walkOnly: true
+  // Nessuna direzione funziona — segnala errore invece di generare percorso sintetico irrealistico
+  return {
+    error: true,
+    message: 'Nessun percorso trovato in questa zona. Prova a cambiare posizione o durata.'
   };
-  finalizeProposal(fallbackProposal);
-  return fallbackProposal;
 }
 
 window.LBW = {
