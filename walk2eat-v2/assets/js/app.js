@@ -405,54 +405,61 @@ async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxO
   var startDirIdx = (typeof dirIdxOverride === 'number') ? dirIdxOverride : peekWalkDir();
 
   // Prova fino a 8 direzioni partendo da startDirIdx; scarta se ORS ritorna distanza/durata irrealistica
+  // Ottimizzazione: prima testa SOLO andata per escludere direzioni impossibili (riduce API calls)
+  var orsKey = (window.W2E_CONFIG && window.W2E_CONFIG.orsApiKey) || '';
+  var orsBase = 'https://api.openrouteservice.org/v2/directions/foot-walking';
+  var orsHeaders = { 'Authorization': orsKey, 'Content-Type': 'application/json' };
+  function makeOrsBody(from, to) {
+    return JSON.stringify({ coordinates: [[from.lng, from.lat], [to.lng, to.lat]], instructions: false });
+  }
+  function decodePolyline(encoded) {
+    var pts = [], idx = 0, lat = 0, lng = 0;
+    while (idx < encoded.length) {
+      var b, shift = 0, result = 0;
+      do { b = encoded.charCodeAt(idx++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      lat += (result & 1) ? ~(result >> 1) : (result >> 1);
+      shift = 0; result = 0;
+      do { b = encoded.charCodeAt(idx++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      lng += (result & 1) ? ~(result >> 1) : (result >> 1);
+      pts.push({ lat: lat / 1e5, lng: lng / 1e5 });
+    }
+    return pts;
+  }
+
   for (var attempt = 0; attempt < 8; attempt++) {
     var dirIdx = (startDirIdx + attempt) % 8;
     var angleRad = (WALK_DIRECTIONS[dirIdx] * Math.PI) / 180;
     var turnaround = movePoint(origin.lat, origin.lng, halfMeters * Math.cos(angleRad), halfMeters * Math.sin(angleRad));
     try {
-      // OpenRouteService foot-walking: profilo pedone reale, durate accurate
-      var orsKey = (window.W2E_CONFIG && window.W2E_CONFIG.orsApiKey) || '';
-      var orsBase = 'https://api.openrouteservice.org/v2/directions/foot-walking';
-      var orsHeaders = { 'Authorization': orsKey, 'Content-Type': 'application/json' };
-      var makeOrsBody = function(from, to) {
-        return JSON.stringify({ coordinates: [[from.lng, from.lat], [to.lng, to.lat]], instructions: false });
-      };
-      var resps = await Promise.all([
-        fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(origin, turnaround) }),
-        fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(turnaround, origin) })
-      ]);
-      var datas = await Promise.all(resps.map(function(r) { return r.json(); }));
-      var outSeg = datas[0].routes && datas[0].routes[0] && datas[0].routes[0].summary;
-      var retSeg = datas[1].routes && datas[1].routes[0] && datas[1].routes[0].summary;
-      if (!outSeg || !retSeg) { console.warn('ORS dir ' + dirIdx + ': nessun percorso', datas[0]); continue; }
+      // Step 1: solo andata — filtra direzioni impossibili con 1 sola chiamata API
+      var outResp = await fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(origin, turnaround) });
+      var outData = await outResp.json();
+      var outSeg = outData.routes && outData.routes[0] && outData.routes[0].summary;
+      if (!outSeg) { console.warn('ORS dir ' + dirIdx + ': nessun percorso andata'); continue; }
+      // Se solo l'andata supera già il limite → skip, non fare la chiamata ritorno
+      if (outSeg.distance > maxTotalMeters * 0.7) {
+        console.warn('ORS dir ' + dirIdx + ': andata troppo lunga (' + Math.round(outSeg.distance) + 'm), skip');
+        continue;
+      }
+      // Step 2: ritorno — solo se l'andata è plausibile
+      var retResp = await fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(turnaround, origin) });
+      var retData = await retResp.json();
+      var retSeg = retData.routes && retData.routes[0] && retData.routes[0].summary;
+      if (!retSeg) { console.warn('ORS dir ' + dirIdx + ': nessun percorso ritorno'); continue; }
       var totalMeters = outSeg.distance + retSeg.distance;
       var totalDurSec = outSeg.duration + retSeg.duration;
       if (totalMeters > maxTotalMeters) {
-        console.warn('ORS dir ' + dirIdx + ': percorso troppo lungo (' + Math.round(totalMeters/1000) + ' km, max ' + Math.round(maxTotalMeters/1000) + ' km)');
+        console.warn('ORS dir ' + dirIdx + ': totale troppo lungo (' + Math.round(totalMeters/1000) + ' km)');
         continue;
       }
       if (totalDurSec < minDurSec || totalDurSec > maxDurSec) {
-        console.warn('ORS dir ' + dirIdx + ': durata anomala (' + Math.round(totalDurSec/60) + ' min, atteso ' + walkMinutes + ' min ±60%)');
+        console.warn('ORS dir ' + dirIdx + ': durata anomala (' + Math.round(totalDurSec/60) + ' min)');
         continue;
       }
-      // Geometria: ORS restituisce encoded polyline in routes[0].geometry
-      function decodePolyline(encoded) {
-        var pts = [], idx = 0, lat = 0, lng = 0;
-        while (idx < encoded.length) {
-          var b, shift = 0, result = 0;
-          do { b = encoded.charCodeAt(idx++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
-          lat += (result & 1) ? ~(result >> 1) : (result >> 1);
-          shift = 0; result = 0;
-          do { b = encoded.charCodeAt(idx++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
-          lng += (result & 1) ? ~(result >> 1) : (result >> 1);
-          pts.push({ lat: lat / 1e5, lng: lng / 1e5 });
-        }
-        return pts;
-      }
-      var outPts = decodePolyline(datas[0].routes[0].geometry);
-      var retPts = decodePolyline(datas[1].routes[0].geometry);
+      var outPts = decodePolyline(outData.routes[0].geometry);
+      var retPts = decodePolyline(retData.routes[0].geometry);
       var totalDist = +((totalMeters) / 1000).toFixed(2);
-      var totalMin = Math.round((outSeg.duration + retSeg.duration) / 60);
+      var totalMin = Math.round(totalDurSec / 60);
       return {
         route: outPts.concat(retPts.slice(1)),
         turnaround: outPts[outPts.length - 1],
@@ -462,7 +469,7 @@ async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxO
         source: 'osrm-loop'
       };
     } catch (e) {
-      console.warn('OSRM dir ' + dirIdx + ' errore:', e.message);
+      console.warn('ORS dir ' + dirIdx + ' errore:', e.message);
     }
   }
   console.warn('OSRM: tutte le direzioni fallite, uso sintetico');
@@ -484,8 +491,10 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir, originOver
     origin = { lat: p.location.lat, lng: p.location.lng };
   }
 
-  var dirIdx = forceNewDir ? getNextWalkDir() : peekWalkDir();
-  var factors = forceNewDir ? [1.0, 0.7, 0.5] : [1.0]; // alternative: prova con raggio ridotto
+  // Scegli una direzione casuale (evita sequenziale che si pianta su direzioni lago)
+  var dirIdx = forceNewDir ? Math.floor(Math.random() * 8) : peekWalkDir();
+  // Il loop interno in buildWalkingLoopRealAsync prova tutte le 8 direzioni a partire da dirIdx
+  var factors = [1.0, 0.7, 0.5];
   for (var i = 0; i < factors.length; i++) {
     var loopResult = await buildWalkingLoopRealAsync(origin, p.walkMinutes, p.intensity, dirIdx, factors[i]);
     if (loopResult) {
