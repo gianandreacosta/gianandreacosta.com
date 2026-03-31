@@ -1,6 +1,183 @@
 {
-  "generated_at": "2026-03-30T15:28:37.492063+00:00",
+  "generated_at": "2026-03-31T05:00:38.569683+00:00",
   "analyses": [
+    {
+      "id": 7,
+      "run_id": 40,
+      "run_time": "2026-03-31 04:45:05.938465+00:00",
+      "analyzed_at": "2026-03-31T05:00:38.564172+00:00",
+      "articles_analyzed": 5,
+      "articles_selected": 4,
+      "model_used": "anthropic/claude-opus-4-6",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "geopolitica",
+          "sommario": "Giornata povera di notizie strettamente geopolitiche nella selezione odierna. I tre articoli disponibili coprono un furto d'arte in Italia, l'avvistamento di un alce al confine tedesco-ceco e la missione lunare Artemis II, nessuno dei quali rientra nel perimetro classico della geopolitica. Si segnalano comunque per completezza.",
+          "notizie": [
+            {
+              "titolo": "Furto lampo al museo Magnani-Rocca di Parma: rubati dipinti di Renoir, Cézanne e Matisse in soli 3 minuti",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/03/30/world/europe/parma-art-heist-renoir-matisse-cezanne-italy.html",
+              "riassunto": "Ladri hanno fatto irruzione nella Fondazione Magnani-Rocca nei pressi di Parma, in Italia, portando via in appena tre minuti dipinti di Renoir, Cézanne e Matisse dal valore di svariati milioni di euro. Le autorità italiane stanno indagando su quello che appare come un colpo altamente pianificato.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "L'alce Emil riappare al confine tra Germania e Repubblica Ceca",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/sichtung-er-ist-wieder-da-elch-emil-taucht-an-deutscher-grenze-auf-103537212",
+              "riassunto": "L'alce Emil, in viaggio da mesi attraverso l'Europa centrale, è stato avvistato al confine tra Repubblica Ceca e Germania. La vicenda, di colore più che geopolitica, tocca marginalmente il tema della fauna selvatica transfrontaliera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Artemis II: come seguire il primo volo con equipaggio verso la Luna dopo oltre 50 anni",
+              "fonte": "New York Times Homepage",
+              "link": "https://www.nytimes.com/2026/01/28/travel/florida-artemis-ii-moon-launch.html",
+              "riassunto": "La NASA si prepara al lancio di Artemis II, la prima missione con equipaggio intorno alla Luna dagli anni '70. L'articolo fornisce indicazioni su come assistere al lancio dal Kennedy Space Center in Florida o online. Il programma Artemis ha anche una dimensione geopolitica legata alla competizione spaziale con la Cina.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "criminalità organizzata e furti d'arte in Europa",
+            "corsa spaziale e competizione USA-Cina sulla Luna"
+          ],
+          "da_tenere_d_occhio": "Le indagini sul furto alla Fondazione Magnani-Rocca di Parma: la rapidità del colpo suggerisce una rete criminale specializzata, con possibili ramificazioni internazionali nel traffico illecito di opere d'arte. Sul fronte spaziale, monitorare l'evoluzione della missione Artemis II e le reazioni di Pechino nel contesto della competizione lunare.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata scarsa di notizie economiche nel feed analizzato. L'unica notizia disponibile riguarda il mondo dello spettacolo e non è pertinente alla categoria economia, pertanto non sono identificabili argomenti economici rilevanti.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Nessun sviluppo economico rilevante individuabile dal feed odierno. Si consiglia di ampliare le fonti di monitoraggio per la categoria economia.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Giornata con una sola notizia rilevante nella categoria, focalizzata sul cambio di rotta della SEC statunitense in materia di regolamentazione delle criptovalute sotto l'amministrazione Trump.",
+          "notizie": [
+            {
+              "titolo": "La SEC cambia rotta: da avversaria a promotrice di politiche favorevoli alle criptovalute",
+              "fonte": "New York Times Technology",
+              "link": "https://www.nytimes.com/2026/03/30/technology/sec-crypto-friendly-rules.html",
+              "riassunto": "La Securities and Exchange Commission statunitense, sotto la presidenza Trump, sta entrando in una nuova fase di vicinanza al mondo crypto, passando da un approccio ostile e sanzionatorio a uno collaborativo. L'agenzia sta attivamente redigendo normative favorevoli al settore delle criptovalute, segnando un cambiamento radicale nella regolamentazione finanziaria USA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "regolamentazione crypto USA",
+            "politiche pro-cripto dell'amministrazione Trump",
+            "evoluzione ruolo SEC"
+          ],
+          "da_tenere_d_occhio": "Monitorare i dettagli delle nuove normative SEC in fase di scrittura e il loro impatto concreto sul mercato crypto, nonché le reazioni del Congresso e delle altre agenzie regolatorie federali.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "run_id": 39,
+      "run_time": "2026-03-30 15:35:09.427186+00:00",
+      "analyzed_at": "2026-03-30T19:19:12.166575+00:00",
+      "articles_analyzed": 1,
+      "articles_selected": 1,
+      "model_used": "anthropic/claude-opus-4-6",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "geopolitica",
+          "sommario": "Giornata con una sola notizia rilevante nella categoria, focalizzata sulla politica ambientale dell'Unione Europea. Il Consiglio UE interviene sulla regolamentazione delle emissioni CO2 per il trasporto pesante, concedendo flessibilità nel breve termine pur mantenendo gli obiettivi climatici al 2040.",
+          "notizie": [
+            {
+              "titolo": "UE: il Consiglio concede flessibilità sulle emissioni CO2 per camion e bus fino al 2030, confermati gli obiettivi 2040",
+              "fonte": "Adnkronos",
+              "link": "https://www.adnkronos.com/internazionale/esteri/ue-flessibilita-co2-per-camion-e-bus-fino-al-2030-obiettivi-2040-intatti_69IL9XGOLbhLjYJt0V7P3D",
+              "riassunto": "Il Consiglio dell'Unione Europea ha adottato un emendamento mirato che concede maggiore flessibilità ai produttori di camion e autobus per rispettare i requisiti sulle emissioni di CO2 nel breve-medio termine, fino al 2030. Gli obiettivi più ambiziosi fissati per il 2040 restano tuttavia invariati, segnalando un approccio pragmatico che bilancia le esigenze dell'industria del trasporto pesante con gli impegni climatici di lungo periodo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Politica climatica UE e compromessi con l'industria",
+            "Transizione energetica nel trasporto pesante"
+          ],
+          "da_tenere_d_occhio": "Monitorare le reazioni dell'industria automotive e dei gruppi ambientalisti alla flessibilità concessa, nonché eventuali pressioni per estendere le deroghe oltre il 2030 o ammorbidire anche gli obiettivi 2040.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        }
+      ]
+    },
     {
       "id": 5,
       "run_id": 37,
