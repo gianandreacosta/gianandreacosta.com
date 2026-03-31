@@ -133,6 +133,12 @@
         <select id="themeSelect">
           <option value="classic">🟢 Classico</option>
           <option value="teal">🌊 Verde Acqua</option>
+          <option value="ocean">🐠 Oceano</option>
+          <option value="sand">🏜️ Sabbia</option>
+          <option value="cozy">🔮 Cozy</option>
+          <option value="pastel">🌸 Pastello</option>
+          <option value="nordic">❄️ Nordic</option>
+          <option value="sunset">🌅 Tramonto</option>
         </select>
       </div>
     </div>
@@ -356,8 +362,8 @@
   var themeSelect = document.getElementById('themeSelect');
   var previewDot = document.getElementById('previewDot');
   var previewLabel = document.getElementById('previewLabel');
-  var themeColors = { classic: '#22c55e', teal: '#14b8a6' };
-  var themeLabels = { classic: 'Verde classico + emoji', teal: 'Verde acqua + icone moderne' };
+  var themeColors = { classic: '#22c55e', teal: '#14b8a6', ocean: '#2dd4bf', sand: '#d97706', cozy: '#c084fc', pastel: '#e88d9d', nordic: '#38bdf8', sunset: '#f472b6' };
+  var themeLabels = { classic: 'Verde classico + emoji', teal: 'Teal + icone minimali', ocean: 'Verde acqua profondo', sand: 'Toni caldi deserto', cozy: 'Viola morbido, accogliente', pastel: 'Chiaro, arioso, leggero', nordic: 'Blu scandinavo elegante', sunset: 'Rosa-arancio gradient caldo' };
 
   themeSelect.value = W2E_THEMES.get();
   previewDot.style.background = themeColors[W2E_THEMES.get()] || themeColors.classic;

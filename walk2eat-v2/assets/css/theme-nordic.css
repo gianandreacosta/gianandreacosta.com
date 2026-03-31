@@ -1,0 +1,26 @@
+/* Walk2Eat — Theme: Nordic (minimalismo scandinavo, freddo elegante) */
+:root {
+  --bg: #1e293b;
+  --bg-soft: #1e3a5f;
+  --card: #1e3348;
+  --card-border: #2d4a68;
+  --text: #e0f2fe;
+  --text-secondary: #7dd3fc;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --accent-soft: rgba(56,189,248,0.12);
+  --accent-2: #a5f3fc;
+  --danger: #f87171;
+  --warning: #fde68a;
+}
+.brand-text, .brand-two { color: var(--accent) !important; }
+.btn-primary { background: var(--accent) !important; color: #0c1e36 !important; }
+.btn-primary:hover { background: var(--accent-hover) !important; }
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; }
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+.section-title { color: var(--accent) !important; }
+body { background: var(--bg) !important; }
+.top-header { background: rgba(30,41,59,0.92) !important; }
+.bottom-nav { background: rgba(30,41,59,0.95) !important; }
+.card { background: var(--card) !important; border-color: var(--card-border) !important; }

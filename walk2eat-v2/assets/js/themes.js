@@ -2,18 +2,59 @@
 
 (function() {
   var THEMES = {
-    classic: { label: 'Classico', css: null, icons: 'emoji' },
-    teal:    { label: 'Verde Acqua', css: 'assets/css/theme-teal.css', icons: 'modern' }
+    classic: { label: 'Classico',       css: null,                           icons: 'emoji',    color: '#22c55e', desc: 'Verde scuro + emoji classiche' },
+    teal:    { label: 'Verde Acqua',    css: 'assets/css/theme-teal.css',    icons: 'minimal',  color: '#14b8a6', desc: 'Teal + icone minimali' },
+    ocean:   { label: 'Oceano',         css: 'assets/css/theme-ocean.css',   icons: 'minimal',  color: '#2dd4bf', desc: 'Immersione verde acqua profondo' },
+    sand:    { label: 'Sabbia',         css: 'assets/css/theme-sand.css',    icons: 'geo',      color: '#d97706', desc: 'Toni caldi deserto' },
+    cozy:    { label: 'Cozy',           css: 'assets/css/theme-cozy.css',    icons: 'soft',     color: '#c084fc', desc: 'Viola morbido, accogliente' },
+    pastel:  { label: 'Pastello',       css: 'assets/css/theme-pastel.css',  icons: 'outline',  color: '#e88d9d', desc: 'Chiaro, arioso, leggero' },
+    nordic:  { label: 'Nordic',         css: 'assets/css/theme-nordic.css',  icons: 'minimal',  color: '#38bdf8', desc: 'Blu scandinavo elegante' },
+    sunset:  { label: 'Tramonto',       css: 'assets/css/theme-sunset.css',  icons: 'warm',     color: '#f472b6', desc: 'Rosa-arancio gradient caldo' }
   };
 
-  // Modern icon mapping (replaces emoji with sleek Unicode/text)
-  var MODERN_ICONS = {
-    '🏠': '⌂', '🧭': '◎', '❤️': '♥', '📋': '☰', '⚙️': '⚙',
-    '🔄': '↻', '📍': '◉', '⏱': '◷', '📏': '↔', '🚶': '⇢',
-    '🍽️': '⊕', '🥡': '▣', '📡': '◈', '💾': '⬇', '🚪': '⇥',
-    '🏁': '▸', '🌳': '♣', '🏔️': '△', '🪑': '▭', '📊': '▦',
-    '♡': '○', '🔄': '↻', '🗺️': '▱', '☀️': '☀', '🌤': '⛅',
-    '⛅': '◑', '🌧': '◌', '❄️': '✻', '🌡️': '|'
+  // Icon sets — each maps emoji to a replacement
+  var ICON_SETS = {
+    emoji: null, // keep original emoji
+    minimal: {
+      '🏠': '⌂', '🧭': '◎', '❤️': '♥', '📋': '☰', '⚙️': '⚙',
+      '🔄': '↻', '📍': '◉', '⏱': '◷', '📏': '↔', '🚶': '⇢',
+      '🍽️': '⊕', '🥡': '▣', '📡': '◈', '💾': '⬇', '🚪': '⇥',
+      '🏁': '▸', '🌳': '♣', '🏔️': '△', '🪑': '□', '📊': '▦',
+      '☀️': '○', '🌤': '◔', '⛅': '◑', '🌧': '◌', '❄️': '✻',
+      '🎨': '◐', '🟢': '●', '🌊': '≈'
+    },
+    geo: {
+      '🏠': '⌂', '🧭': '◇', '❤️': '★', '📋': '≡', '⚙️': '⛭',
+      '🔄': '⟳', '📍': '⊙', '⏱': '⏳', '📏': '⤡', '🚶': '→',
+      '🍽️': '⊞', '🥡': '▤', '📡': '⊛', '💾': '↧', '🚪': '↦',
+      '🏁': '▶', '🌳': '⚘', '🏔️': '⛰', '🪑': '▬', '📊': '⊞',
+      '☀️': '☼', '🌤': '⛅', '⛅': '☁', '🌧': '☂', '❄️': '❅',
+      '🎨': '◑', '🟢': '◉', '🌊': '〰'
+    },
+    soft: {
+      '🏠': '◈', '🧭': '✦', '❤️': '♡', '📋': '▪', '⚙️': '✧',
+      '🔄': '↺', '📍': '◆', '⏱': '○', '📏': '─', '🚶': '›',
+      '🍽️': '◇', '🥡': '□', '📡': '◈', '💾': '▾', '🚪': '▸',
+      '🏁': '◆', '🌳': '❋', '🏔️': '▵', '🪑': '▫', '📊': '▪',
+      '☀️': '◌', '🌤': '◔', '⛅': '◑', '🌧': '◕', '❄️': '✿',
+      '🎨': '◑', '🟢': '◆', '🌊': '~'
+    },
+    outline: {
+      '🏠': '□', '🧭': '○', '❤️': '♡', '📋': '≡', '⚙️': '○',
+      '🔄': '↻', '📍': '○', '⏱': '○', '📏': '—', '🚶': '→',
+      '🍽️': '○', '🥡': '□', '📡': '◇', '💾': '↓', '🚪': '→',
+      '🏁': '▷', '🌳': '○', '🏔️': '△', '🪑': '□', '📊': '□',
+      '☀️': '○', '🌤': '◑', '⛅': '◑', '🌧': '●', '❄️': '✳',
+      '🎨': '○', '🟢': '○', '🌊': '○'
+    },
+    warm: {
+      '🏠': '⌂', '🧭': '✺', '❤️': '♥', '📋': '☰', '⚙️': '✦',
+      '🔄': '⟳', '📍': '✸', '⏱': '◔', '📏': '↔', '🚶': '❯',
+      '🍽️': '✦', '🥡': '▣', '📡': '✸', '💾': '⬇', '🚪': '⇥',
+      '🏁': '▸', '🌳': '❀', '🏔️': '▲', '🪑': '▭', '📊': '▦',
+      '☀️': '✺', '🌤': '◔', '⛅': '◑', '🌧': '◕', '❄️': '✻',
+      '🎨': '✦', '🟢': '●', '🌊': '≋'
+    }
   };
 
   function getTheme() {
@@ -34,58 +75,57 @@
       var link = document.createElement('link');
       link.id = 'w2e-theme-css';
       link.rel = 'stylesheet';
-      link.href = theme.css;
+      link.href = theme.css + '?v=' + Date.now();
       document.head.appendChild(link);
     }
     // Apply icon set
-    if (theme.icons === 'modern') {
-      applyModernIcons();
-    }
+    var iconSet = ICON_SETS[theme.icons];
+    if (iconSet) applyIcons(iconSet);
     setTheme(id);
     document.body.dataset.theme = id;
   }
 
-  function applyModernIcons() {
-    // Replace emoji in nav icons
+  function applyIcons(iconMap) {
+    if (!iconMap) return;
+    // Nav icons
     document.querySelectorAll('.nav-icon').forEach(function(el) {
-      var emoji = el.textContent.trim();
-      if (MODERN_ICONS[emoji]) {
-        el.textContent = MODERN_ICONS[emoji];
-        el.style.fontFamily = 'system-ui, sans-serif';
+      var txt = el.textContent.trim();
+      if (iconMap[txt]) {
+        el.textContent = iconMap[txt];
+        el.style.fontFamily = 'system-ui, -apple-system, sans-serif';
         el.style.fontSize = '18px';
       }
     });
-    // Replace emoji in card titles, badges, buttons
+    // Card titles, badges, buttons, section titles, toggle labels
     document.querySelectorAll('.card-title, .walk-badge, .btn, .section-title, .toggle-label').forEach(function(el) {
       var html = el.innerHTML;
-      Object.keys(MODERN_ICONS).forEach(function(emoji) {
-        if (html.includes(emoji)) {
-          html = html.split(emoji).join('<span style="font-family:system-ui;font-size:1em">' + MODERN_ICONS[emoji] + '</span>');
+      var changed = false;
+      Object.keys(iconMap).forEach(function(emoji) {
+        if (html.indexOf(emoji) !== -1) {
+          html = html.split(emoji).join(iconMap[emoji]);
+          changed = true;
         }
       });
-      el.innerHTML = html;
+      if (changed) el.innerHTML = html;
     });
   }
 
-  // Auto-apply on load
+  // Auto-apply CSS early (before DOMContentLoaded)
   var currentTheme = getTheme();
-  if (currentTheme !== 'classic') {
-    // Inject CSS early (before DOMContentLoaded) for flash prevention
-    var theme = THEMES[currentTheme];
-    if (theme && theme.css) {
-      var link = document.createElement('link');
-      link.id = 'w2e-theme-css';
-      link.rel = 'stylesheet';
-      link.href = theme.css;
-      document.head.appendChild(link);
-    }
+  var theme = THEMES[currentTheme];
+  if (theme && theme.css) {
+    var link = document.createElement('link');
+    link.id = 'w2e-theme-css';
+    link.rel = 'stylesheet';
+    link.href = theme.css + '?v=20260331';
+    document.head.appendChild(link);
   }
-  // Apply icons after DOM is ready
+
+  // Apply icons after DOM ready
   document.addEventListener('DOMContentLoaded', function() {
     var t = getTheme();
-    if (THEMES[t] && THEMES[t].icons === 'modern') {
-      applyModernIcons();
-    }
+    var th = THEMES[t];
+    if (th && ICON_SETS[th.icons]) applyIcons(ICON_SETS[th.icons]);
     document.body.dataset.theme = t;
   });
 

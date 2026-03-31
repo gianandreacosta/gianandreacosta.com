@@ -1,0 +1,26 @@
+/* Walk2Eat — Theme: Cozy (colori caldi, accogliente) */
+:root {
+  --bg: #1a1523;
+  --bg-soft: #221a2e;
+  --card: #2a1f38;
+  --card-border: #3d2e52;
+  --text: #f5f0ff;
+  --text-secondary: #c4b5d4;
+  --accent: #c084fc;
+  --accent-hover: #a855f7;
+  --accent-soft: rgba(192,132,252,0.12);
+  --accent-2: #f0abfc;
+  --danger: #fb7185;
+  --warning: #fcd34d;
+}
+.brand-text, .brand-two { color: var(--accent) !important; }
+.btn-primary { background: var(--accent) !important; color: #1a1523 !important; }
+.btn-primary:hover { background: var(--accent-hover) !important; }
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; }
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+.section-title { color: var(--accent) !important; }
+body { background: var(--bg) !important; }
+.top-header { background: rgba(26,21,35,0.9) !important; }
+.bottom-nav { background: rgba(26,21,35,0.95) !important; }
+.card { background: var(--card) !important; border-color: var(--card-border) !important; }
