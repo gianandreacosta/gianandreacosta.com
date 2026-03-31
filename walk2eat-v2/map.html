@@ -130,8 +130,8 @@
       <!-- View mode -->
       <div class="view-pills" id="viewPills" style="display:none">
         <div class="view-pill" id="viewTop" data-view="top">🗺️ Mappa</div>
-        <div class="view-pill active" id="view3d" data-view="3d">🏔️ 3D</div>
-        <div class="view-pill" id="viewFollow" data-view="follow">🧭 Segui</div>
+        <div class="view-pill" id="view3d" data-view="3d">🏔️ 3D</div>
+        <div class="view-pill active" id="viewFollow" data-view="follow">🧭 Segui</div>
       </div>
 
       <!-- Layer pills -->
@@ -148,8 +148,7 @@
       <!-- Bottom controls -->
       <div class="map-controls">
         <button class="ctrl-btn" id="btnCenter" title="Centra su di me">📍</button>
-        <button class="ctrl-btn" id="btnStart" title="Avvia navigazione">▶️</button>
-        <button class="ctrl-btn" id="btnNewRoute" title="Nuovo percorso">🔄</button>
+        <button class="ctrl-btn" id="btnStart" title="Avvia/ferma navigazione">▶️</button>
       </div>
     </div>
 
@@ -182,7 +181,7 @@
   var watchId = null;
   var isTracking = false;
   var autoCenter = true;
-  var viewMode = '3d'; // top | 3d | follow
+  var viewMode = 'follow'; // top | 3d | follow
   var routePoints = [];
   var totalRouteMeters = 0;
   var currentProposal = null;
@@ -286,7 +285,7 @@
       style: makeStyle(currentLayerId),
       bounds: [sw, ne],
       fitBoundsOptions: { padding: { top: 90, bottom: 80, left: 30, right: 30 } },
-      pitch: 55,
+      pitch: 60,
       maxPitch: 70,
       attributionControl: false
     });
@@ -416,21 +415,22 @@
     setView('top');
   }
 
-  // --- Load route ---
-  async function loadRoute() {
-    setLoading('Ricerca posizione GPS…');
+  // --- Load route from localStorage (same as home) ---
+  function loadRoute() {
+    setLoading('Caricamento percorso…');
     try {
-      var gps = await LBW.getGPSPosition(5000);
-      setLoading(gps ? 'GPS trovato! Calcolo percorso…' : 'Calcolo percorso…');
-      var proposal = await LBW.buildWalkOnlyProposalAsync();
+      var proposal = LBW.Store.get('lbw_today', null);
       if (!proposal || !proposal.route || !proposal.route.length) {
-        if (proposal && proposal.error) setError('⚠️ ' + proposal.message);
-        else setError('Impossibile generare il percorso.');
+        setError('Nessun percorso disponibile. Genera un percorso dalla Home.');
         document.getElementById('mapWrapper').style.display = 'block';
         return;
       }
-      if (isTracking) stopTracking();
       renderRoute(proposal);
+      // Auto-start navigation in follow mode
+      setTimeout(function() {
+        startTracking();
+        setView('follow');
+      }, 500);
     } catch (e) {
       console.error(e);
       setError('Errore: ' + e.message);
@@ -440,11 +440,6 @@
   // --- Events ---
   document.getElementById('btnStart').addEventListener('click', function() {
     if (isTracking) stopTracking(); else startTracking();
-  });
-
-  document.getElementById('btnNewRoute').addEventListener('click', function() {
-    if (isTracking) stopTracking();
-    loadRoute();
   });
 
   document.getElementById('btnCenter').addEventListener('click', function() {
