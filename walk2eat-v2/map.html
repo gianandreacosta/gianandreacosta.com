@@ -11,6 +11,20 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
     .map-fullish { height: calc(55dvh - 40px); min-height: 280px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border); }
+    .map-layer-toggle {
+      position: absolute; bottom: 12px; right: 12px; z-index: 1000;
+      display: flex; gap: 4px; background: rgba(15,23,42,0.85);
+      border-radius: 20px; padding: 4px; backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .map-layer-btn {
+      border: none; cursor: pointer; padding: 5px 10px; border-radius: 16px;
+      font-size: 11px; font-weight: 600; transition: all .2s;
+      background: transparent; color: rgba(255,255,255,0.5);
+    }
+    .map-layer-btn.active {
+      background: var(--primary, #22c55e); color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -34,7 +48,13 @@
       <span id="loadingMsg">Ricerca posizione GPS…</span>
     </div>
 
-    <div id="map" class="map-fullish" style="display:none"></div>
+    <div style="position:relative">
+      <div id="map" class="map-fullish" style="display:none"></div>
+      <div class="map-layer-toggle" id="layerToggle" style="display:none">
+        <button class="map-layer-btn active" id="btnOsm" onclick="switchLayer('osm')">🗺️ OSM</button>
+        <button class="map-layer-btn" id="btnSwiss" onclick="switchLayer('swiss')">🏔️ Swisstopo</button>
+      </div>
+    </div>
 
     <div id="metaBox" style="display:none">
       <div class="walk-meta" id="walkBadges"></div>
@@ -111,7 +131,19 @@
 
     if (mapInstance) { mapInstance.remove(); mapInstance = null; }
     mapInstance = L.map('map');
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OSM' }).addTo(mapInstance);
+
+    // Tile layers
+    window._tileLayers = {
+      osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }),
+      swiss: L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', {
+        attribution: '© <a href="https://www.swisstopo.admin.ch">swisstopo</a>'
+      })
+    };
+    window._activeLayer = 'osm';
+    window._tileLayers.osm.addTo(mapInstance);
+    document.getElementById('layerToggle').style.display = 'flex';
 
     var pts = proposal.route.map(function(x) { return [x.lat, x.lng]; });
     L.polyline(pts, { color: '#22c55e', weight: 4, opacity: 0.9 }).addTo(mapInstance);
@@ -147,6 +179,17 @@
   document.getElementById('btnRefresh').addEventListener('click', loadRoute);
   loadRoute();
 })();
+
+function switchLayer(name) {
+  if (!window._tileLayers || !window._activeLayer || window._activeLayer === name) return;
+  var map = window._tileLayers[window._activeLayer]._map;
+  if (!map) return;
+  window._tileLayers[window._activeLayer].remove();
+  window._tileLayers[name].addTo(map);
+  window._activeLayer = name;
+  document.getElementById('btnOsm').classList.toggle('active', name === 'osm');
+  document.getElementById('btnSwiss').classList.toggle('active', name === 'swiss');
+}
 </script>
 </body>
 </html>
