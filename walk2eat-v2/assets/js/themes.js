@@ -89,35 +89,55 @@
       '🍽️':'⊕','🥡':'▣','📡':'◈','💾':'⬇','🚪':'⇥',
       '🏁':'▸','🌳':'♣','🏔️':'△','🪑':'□','📊':'▦',
       '🎨':'◐','🟢':'●','🌊':'≈','🐠':'◎','🏜️':'◇',
-      '🔮':'◆','🌸':'○','❄️':'✻','🌅':'◑'
+      '🔮':'◆','🌸':'○','❄️':'✻','🌅':'◑',
+      '👋':'·','🏃':'→','🔙':'←','🎯':'◎','🎪':'◇',
+      '💡':'◈','☀️':'○','🌤':'◔','⛅':'◑','☁️':'◑',
+      '🌧️':'●','💨':'≋','🌡️':'|','♡':'○','✅':'✓','⚠️':'!',
+      '🗺️':'▱'
     },
     geo: {
       '🏠':'⌂','🧭':'◇','❤️':'★','📋':'≡','⚙️':'⛭',
       '🔄':'⟳','📍':'⊙','⏱':'⏳','📏':'⤡','🚶':'→',
       '🍽️':'⊞','🥡':'▤','📡':'⊛','💾':'↧','🚪':'↦',
       '🏁':'▶','🌳':'⚘','🏔️':'⛰','🪑':'▬','📊':'⊞',
-      '🎨':'◑','🟢':'◉','🌊':'〰','🏜️':'☼','❄️':'❅','🌅':'☀'
+      '🎨':'◑','🟢':'◉','🌊':'〰','🏜️':'☼','❄️':'❅','🌅':'☀',
+      '👋':'·','🏃':'▸','🔙':'◂','🎯':'⊙','🎪':'◇',
+      '💡':'✦','☀️':'☼','🌤':'⛅','⛅':'☁','☁️':'☁',
+      '🌧️':'☂','💨':'≈','🌡️':'|','♡':'☆','✅':'✓','⚠️':'!',
+      '🗺️':'▱'
     },
     soft: {
       '🏠':'◈','🧭':'✦','❤️':'♡','📋':'▪','⚙️':'✧',
       '🔄':'↺','📍':'◆','⏱':'○','📏':'─','🚶':'›',
       '🍽️':'◇','🥡':'□','📡':'◈','💾':'▾','🚪':'▸',
       '🏁':'◆','🌳':'❋','🏔️':'▵','🪑':'▫','📊':'▪',
-      '🎨':'◑','🟢':'◆','🌊':'~','🔮':'✦','🌸':'❋','❄️':'✿','🌅':'○'
+      '🎨':'◑','🟢':'◆','🌊':'~','🔮':'✦','🌸':'❋','❄️':'✿','🌅':'○',
+      '👋':'~','🏃':'›','🔙':'‹','🎯':'◆','🎪':'◇',
+      '💡':'✧','☀️':'◌','🌤':'◔','⛅':'◑','☁️':'◑',
+      '🌧️':'◕','💨':'~','🌡️':'|','♡':'○','✅':'✓','⚠️':'!',
+      '🗺️':'□'
     },
     outline: {
       '🏠':'□','🧭':'○','❤️':'♡','📋':'≡','⚙️':'○',
       '🔄':'↻','📍':'○','⏱':'○','📏':'—','🚶':'→',
       '🍽️':'○','🥡':'□','📡':'◇','💾':'↓','🚪':'→',
       '🏁':'▷','🌳':'○','🏔️':'△','🪑':'□','📊':'□',
-      '🎨':'○','🟢':'○','🌊':'○','🌸':'◇','❄️':'✳','🌅':'○'
+      '🎨':'○','🟢':'○','🌊':'○','🌸':'◇','❄️':'✳','🌅':'○',
+      '👋':'·','🏃':'→','🔙':'←','🎯':'○','🎪':'□',
+      '💡':'◇','☀️':'○','🌤':'◑','⛅':'◑','☁️':'○',
+      '🌧️':'●','💨':'~','🌡️':'|','♡':'○','✅':'✓','⚠️':'△',
+      '🗺️':'□'
     },
     warm: {
       '🏠':'⌂','🧭':'✺','❤️':'♥','📋':'☰','⚙️':'✦',
       '🔄':'⟳','📍':'✸','⏱':'◔','📏':'↔','🚶':'❯',
       '🍽️':'✦','🥡':'▣','📡':'✸','💾':'⬇','🚪':'⇥',
       '🏁':'▸','🌳':'❀','🏔️':'▲','🪑':'▭','📊':'▦',
-      '🎨':'✦','🟢':'●','🌊':'≋','🌅':'✺','❄️':'✻'
+      '🎨':'✦','🟢':'●','🌊':'≋','🌅':'✺','❄️':'✻',
+      '👋':'~','🏃':'▸','🔙':'◂','🎯':'✸','🎪':'✦',
+      '💡':'✺','☀️':'✺','🌤':'◔','⛅':'◑','☁️':'◑',
+      '🌧️':'◕','💨':'≋','🌡️':'|','♡':'♡','✅':'✓','⚠️':'!',
+      '🗺️':'▱'
     }
   };
 
@@ -163,28 +183,50 @@
     document.head.appendChild(style);
   }
 
+  // Build regex from icon map keys (longest first to avoid partial matches)
+  function buildEmojiRegex(iconMap) {
+    var keys = Object.keys(iconMap).sort(function(a,b) { return b.length - a.length; });
+    var escaped = keys.map(function(k) { return k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+    return new RegExp(escaped.join('|'), 'g');
+  }
+
+  function replaceInNode(node, iconMap, regex) {
+    if (node.nodeType === 3) { // Text node
+      var text = node.nodeValue;
+      if (regex.test(text)) {
+        regex.lastIndex = 0;
+        node.nodeValue = text.replace(regex, function(m) { return iconMap[m] || m; });
+      }
+    } else if (node.nodeType === 1 && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE' && node.tagName !== 'TEXTAREA') {
+      for (var i = 0; i < node.childNodes.length; i++) {
+        replaceInNode(node.childNodes[i], iconMap, regex);
+      }
+    }
+  }
+
+  // Store originals for reverting when switching back to emoji theme
+  var originalBodyHTML = null;
+
   function applyIcons(iconMap) {
     if (!iconMap) return;
-    document.querySelectorAll('.nav-icon').forEach(function(el) {
-      var txt = el.textContent.trim();
-      if (iconMap[txt]) { el.textContent = iconMap[txt]; el.style.fontFamily = 'system-ui,sans-serif'; el.style.fontSize = '18px'; }
-    });
-    document.querySelectorAll('.card-title,.walk-badge,.btn,.section-title,.toggle-label').forEach(function(el) {
-      var html = el.innerHTML, changed = false;
-      Object.keys(iconMap).forEach(function(emoji) {
-        if (html.indexOf(emoji) !== -1) { html = html.split(emoji).join(iconMap[emoji]); changed = true; }
-      });
-      if (changed) el.innerHTML = html;
-    });
+    // Save original body HTML once (for reverting to emoji)
+    if (!originalBodyHTML) originalBodyHTML = document.body.innerHTML;
+    var regex = buildEmojiRegex(iconMap);
+    replaceInNode(document.body, iconMap, regex);
+  }
+
+  function revertIcons() {
+    if (originalBodyHTML) {
+      document.body.innerHTML = originalBodyHTML;
+      originalBodyHTML = null;
+    }
   }
 
   function applyTheme(id) {
     var theme = THEMES[id] || THEMES.classic;
-    injectStyle(id);
-    var iconSet = ICON_SETS[theme.icons];
-    if (iconSet) applyIcons(iconSet);
     setTheme(id);
-    document.body.dataset.theme = id;
+    // Full page reload ensures clean state (no stale icon replacements)
+    location.reload();
   }
 
   // Inject style IMMEDIATELY (before DOM renders)
