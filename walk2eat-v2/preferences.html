@@ -122,6 +122,26 @@
     </div>
   </div>
 
+  <!-- Tema -->
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">🎨 Aspetto</span>
+    </div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="themeSelect">Tema</label>
+        <select id="themeSelect">
+          <option value="classic">🟢 Classico</option>
+          <option value="teal">🌊 Verde Acqua</option>
+        </select>
+      </div>
+    </div>
+    <div id="themePreview" style="margin-top:8px;padding:12px;border-radius:var(--radius-sm);border:1px solid var(--card-border);display:flex;gap:8px;align-items:center">
+      <div id="previewDot" style="width:24px;height:24px;border-radius:50%;background:var(--accent)"></div>
+      <span id="previewLabel" style="font-size:13px;color:var(--text-secondary)">Tema attuale</span>
+    </div>
+  </div>
+
   <!-- Actions -->
   <div class="btn-row" style="margin-top:16px">
     <button id="save" class="btn btn-primary" style="flex:2">
@@ -157,9 +177,10 @@
   </div>
 </nav>
 
-<script src="assets/js/routes-poc-data.js?v=20260329a"></script>
-<script src="assets/js/config.js?v=20260329a"></script>
-<script src="assets/js/app.js?v=20260329a"></script>
+<script src="assets/js/routes-poc-data.js?v=20260331c"></script>
+<script src="assets/js/config.js?v=20260331c"></script>
+<script src="assets/js/app.js?v=20260331c"></script>
+<script src="assets/js/themes.js?v=20260331c"></script>
 <script>
 (function() {
   var user = LBW.getUser();
@@ -329,6 +350,24 @@
   document.getElementById('logoutBtn').onclick = function() {
     LBW.Store.set('lbw_user', null);
     window.location.href = 'index.html';
+  };
+
+  // Theme selector
+  var themeSelect = document.getElementById('themeSelect');
+  var previewDot = document.getElementById('previewDot');
+  var previewLabel = document.getElementById('previewLabel');
+  var themeColors = { classic: '#22c55e', teal: '#14b8a6' };
+  var themeLabels = { classic: 'Verde classico + emoji', teal: 'Verde acqua + icone moderne' };
+
+  themeSelect.value = W2E_THEMES.get();
+  previewDot.style.background = themeColors[W2E_THEMES.get()] || themeColors.classic;
+  previewLabel.textContent = themeLabels[W2E_THEMES.get()] || '';
+
+  themeSelect.onchange = function() {
+    var id = themeSelect.value;
+    W2E_THEMES.apply(id);
+    previewDot.style.background = themeColors[id] || themeColors.classic;
+    previewLabel.textContent = themeLabels[id] || '';
   };
 })();
 </script>

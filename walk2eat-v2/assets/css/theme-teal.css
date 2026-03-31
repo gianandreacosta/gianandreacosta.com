@@ -1,0 +1,44 @@
+/* ============================================
+   Walk2Eat — Theme: Teal (verde acqua)
+   Modern icons via CSS overrides
+   ============================================ */
+
+:root {
+  --accent: #14b8a6;
+  --accent-hover: #0d9488;
+  --accent-soft: rgba(20,184,166,0.12);
+  --accent-2: #67e8f9;
+  --bg: #0c1222;
+  --bg-soft: #0f1729;
+  --card: #162032;
+  --card-border: #1e3a5f;
+  --warning: #fbbf24;
+}
+
+/* Brand accent color */
+.brand-text, .brand-two { color: var(--accent) !important; }
+
+/* Primary buttons */
+.btn-primary { background: var(--accent) !important; }
+.btn-primary:hover, .btn-primary:active { background: var(--accent-hover) !important; }
+
+/* Route line in dashboard (Leaflet) */
+.leaflet-interactive { stroke: var(--accent) !important; }
+
+/* Bottom nav active */
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+
+/* Walk badges */
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; }
+
+/* Toggle switches */
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+
+/* Section titles */
+.section-title { color: var(--accent) !important; }
+
+/* Card header border */
+.card-header { border-bottom-color: var(--card-border) !important; }
+
+/* ── Modern Icons Override ── */
+/* Replace emoji icons with text symbols for a cleaner look */
