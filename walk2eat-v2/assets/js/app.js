@@ -207,7 +207,10 @@ function buildProposalFromPoc(prefs){
   };
 }
 
+var currentProposal = null;
+
 function finalizeProposal(proposal){
+  currentProposal = proposal;
   Store.set('lbw_today', proposal);
   addHistory(proposal);
   return proposal;
@@ -388,10 +391,10 @@ function peekWalkDir() {
 // --- Loop pedonale reale via ORS (andata + ritorno, nessun ristorante) ---
 // Velocità pedonale ORS: ~4.5 km/h = 75 m/min. windingFactor: le strade sono ~30% più lunghe della retta.
 // halfMeters = distanza crow-fly al punto di svolta, tale che ORS torni ~walkMinutes/2 per tratta.
-async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxOverride) {
+async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxOverride, halfMetersFactor) {
   var walkSpeedMpm = 75; // m/min (~4.5 km/h, calibrato su ORS foot-walking)
   var windingFactor = 0.70; // il crow-fly è ~70% della distanza stradale reale
-  var halfMeters = Math.round((walkMinutes / 2) * walkSpeedMpm * windingFactor);
+  var halfMeters = Math.round((walkMinutes / 2) * walkSpeedMpm * windingFactor * (halfMetersFactor || 1.0));
   // Max plausibile: più stringente — percorso totale non deve eccedere 1.6x il teorico
   var maxTotalMeters = walkMinutes * walkSpeedMpm * 1.6;
   // Tolleranza durata: il percorso ORS deve stare entro ±60% del walkMinutes atteso
@@ -482,21 +485,23 @@ async function buildWalkOnlyProposalAsync(prefsOverride, forceNewDir, originOver
   }
 
   var dirIdx = forceNewDir ? getNextWalkDir() : peekWalkDir();
-  var loopResult = await buildWalkingLoopRealAsync(origin, p.walkMinutes, p.intensity, dirIdx);
-
-  if (loopResult) {
-    var proposal = {
-      createdAt: new Date().toISOString(),
-      origin: { lat: origin.lat, lng: origin.lng },
-      walk: { minutes: loopResult.minutes, distanceKm: loopResult.distanceKm, type: 'loop reale \u2022 OSRM' },
-      food: { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: loopResult.turnaround.lat, lng: loopResult.turnaround.lng },
-      alternatives: [],
-      route: loopResult.route,
-      source: 'osrm-loop',
-      walkOnly: true
-    };
-    finalizeProposal(proposal);
-    return proposal;
+  var factors = forceNewDir ? [1.0, 0.7, 0.5] : [1.0]; // alternative: prova con raggio ridotto
+  for (var i = 0; i < factors.length; i++) {
+    var loopResult = await buildWalkingLoopRealAsync(origin, p.walkMinutes, p.intensity, dirIdx, factors[i]);
+    if (loopResult) {
+      var proposal = {
+        createdAt: new Date().toISOString(),
+        origin: { lat: origin.lat, lng: origin.lng },
+        walk: { minutes: loopResult.minutes, distanceKm: loopResult.distanceKm, type: 'loop reale \u2022 OSRM' },
+        food: { id: 'walk-only', name: 'Punto di svolta', cuisine: 'Passeggiata', lat: loopResult.turnaround.lat, lng: loopResult.turnaround.lng },
+        alternatives: [],
+        route: loopResult.route,
+        source: 'osrm-loop',
+        walkOnly: true
+      };
+      finalizeProposal(proposal);
+      return proposal;
+    }
   }
 
   // Nessuna direzione funziona — segnala errore invece di generare percorso sintetico irrealistico
