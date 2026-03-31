@@ -404,14 +404,10 @@ async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxO
 
   var startDirIdx = (typeof dirIdxOverride === 'number') ? dirIdxOverride : peekWalkDir();
 
-  // Prova fino a 8 direzioni partendo da startDirIdx; scarta se ORS ritorna distanza/durata irrealistica
-  // Ottimizzazione: prima testa SOLO andata per escludere direzioni impossibili (riduce API calls)
+  // Prova fino a 8 direzioni: UNA sola chiamata API per direzione (round-trip con 3 waypoint)
   var orsKey = (window.W2E_CONFIG && window.W2E_CONFIG.orsApiKey) || '';
   var orsBase = 'https://api.openrouteservice.org/v2/directions/foot-walking';
   var orsHeaders = { 'Authorization': orsKey, 'Content-Type': 'application/json' };
-  function makeOrsBody(from, to) {
-    return JSON.stringify({ coordinates: [[from.lng, from.lat], [to.lng, to.lat]], instructions: false });
-  }
   function decodePolyline(encoded) {
     var pts = [], idx = 0, lat = 0, lng = 0;
     while (idx < encoded.length) {
@@ -431,40 +427,38 @@ async function buildWalkingLoopRealAsync(origin, walkMinutes, intensity, dirIdxO
     var angleRad = (WALK_DIRECTIONS[dirIdx] * Math.PI) / 180;
     var turnaround = movePoint(origin.lat, origin.lng, halfMeters * Math.cos(angleRad), halfMeters * Math.sin(angleRad));
     try {
-      // Step 1: solo andata — filtra direzioni impossibili con 1 sola chiamata API
-      var outResp = await fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(origin, turnaround) });
-      var outData = await outResp.json();
-      var outSeg = outData.routes && outData.routes[0] && outData.routes[0].summary;
-      if (!outSeg) { console.warn('ORS dir ' + dirIdx + ': nessun percorso andata'); continue; }
-      // Se solo l'andata supera già il limite → skip, non fare la chiamata ritorno
-      if (outSeg.distance > maxTotalMeters * 0.7) {
-        console.warn('ORS dir ' + dirIdx + ': andata troppo lunga (' + Math.round(outSeg.distance) + 'm), skip');
-        continue;
-      }
-      // Step 2: ritorno — solo se l'andata è plausibile
-      var retResp = await fetch(orsBase, { method: 'POST', headers: orsHeaders, body: makeOrsBody(turnaround, origin) });
-      var retData = await retResp.json();
-      var retSeg = retData.routes && retData.routes[0] && retData.routes[0].summary;
-      if (!retSeg) { console.warn('ORS dir ' + dirIdx + ': nessun percorso ritorno'); continue; }
-      var totalMeters = outSeg.distance + retSeg.distance;
-      var totalDurSec = outSeg.duration + retSeg.duration;
+      // Round-trip in UNA chiamata: origin → turnaround → origin (3 waypoint)
+      var body = JSON.stringify({
+        coordinates: [[origin.lng, origin.lat], [turnaround.lng, turnaround.lat], [origin.lng, origin.lat]],
+        instructions: false
+      });
+      var resp = await fetch(orsBase, { method: 'POST', headers: orsHeaders, body: body });
+      var data = await resp.json();
+      var route = data.routes && data.routes[0];
+      if (!route || !route.summary) { console.warn('ORS dir ' + dirIdx + ': nessun percorso'); continue; }
+      var totalMeters = route.summary.distance;
+      var totalDurSec = route.summary.duration;
       if (totalMeters > maxTotalMeters) {
-        console.warn('ORS dir ' + dirIdx + ': totale troppo lungo (' + Math.round(totalMeters/1000) + ' km)');
+        console.warn('ORS dir ' + dirIdx + ': troppo lungo (' + Math.round(totalMeters/1000) + ' km)');
         continue;
       }
       if (totalDurSec < minDurSec || totalDurSec > maxDurSec) {
         console.warn('ORS dir ' + dirIdx + ': durata anomala (' + Math.round(totalDurSec/60) + ' min)');
         continue;
       }
-      var outPts = decodePolyline(outData.routes[0].geometry);
-      var retPts = decodePolyline(retData.routes[0].geometry);
-      var totalDist = +((totalMeters) / 1000).toFixed(2);
-      var totalMin = Math.round(totalDurSec / 60);
+      var allPts = decodePolyline(route.geometry);
+      // Trova il punto più vicino al turnaround come punto di svolta effettivo
+      var bestTurnIdx = 0, bestTurnDist = Infinity;
+      for (var ti = 0; ti < allPts.length; ti++) {
+        var dx = allPts[ti].lat - turnaround.lat, dy = allPts[ti].lng - turnaround.lng;
+        var dd = dx*dx + dy*dy;
+        if (dd < bestTurnDist) { bestTurnDist = dd; bestTurnIdx = ti; }
+      }
       return {
-        route: outPts.concat(retPts.slice(1)),
-        turnaround: outPts[outPts.length - 1],
-        distanceKm: totalDist,
-        minutes: totalMin,
+        route: allPts,
+        turnaround: allPts[bestTurnIdx],
+        distanceKm: +(totalMeters / 1000).toFixed(2),
+        minutes: Math.round(totalDurSec / 60),
         dirIdx: dirIdx,
         source: 'osrm-loop'
       };
