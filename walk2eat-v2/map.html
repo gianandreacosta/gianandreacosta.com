@@ -129,8 +129,8 @@
 
       <!-- View mode -->
       <div class="view-pills" id="viewPills" style="display:none">
-        <div class="view-pill active" id="viewTop" data-view="top">🗺️ Mappa</div>
-        <div class="view-pill" id="view3d" data-view="3d">🏔️ 3D</div>
+        <div class="view-pill" id="viewTop" data-view="top">🗺️ Mappa</div>
+        <div class="view-pill active" id="view3d" data-view="3d">🏔️ 3D</div>
         <div class="view-pill" id="viewFollow" data-view="follow">🧭 Segui</div>
       </div>
 
@@ -182,7 +182,7 @@
   var watchId = null;
   var isTracking = false;
   var autoCenter = true;
-  var viewMode = 'top'; // top | 3d | follow
+  var viewMode = '3d'; // top | 3d | follow
   var routePoints = [];
   var totalRouteMeters = 0;
   var currentProposal = null;
@@ -286,6 +286,7 @@
       style: makeStyle(currentLayerId),
       bounds: [sw, ne],
       fitBoundsOptions: { padding: { top: 90, bottom: 80, left: 30, right: 30 } },
+      pitch: 55,
       maxPitch: 70,
       attributionControl: false
     });
