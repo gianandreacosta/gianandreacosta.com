@@ -7,15 +7,14 @@
   <title>Navigazione • Walk2Eat</title>
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.js"></script>
   <style>
-    /* Map takes most of the screen */
-    .nav-map { height: calc(100dvh - 170px); min-height: 300px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border); }
+    .nav-map { height: calc(100dvh - 160px); min-height: 320px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border); }
 
-    /* Live tracking panel at top of map */
+    /* Live tracking panel */
     .live-panel {
-      position: absolute; top: 12px; left: 12px; right: 12px; z-index: 1000;
+      position: absolute; top: 12px; left: 12px; right: 12px; z-index: 10;
       display: flex; gap: 8px; justify-content: center; align-items: center;
       background: rgba(15,23,42,0.92); backdrop-filter: blur(12px);
       border-radius: 16px; padding: 10px 16px;
@@ -26,63 +25,82 @@
     .live-stat .val { font-size: 20px; font-weight: 800; color: var(--primary, #22c55e); }
     .live-stat .lbl { font-size: 10px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.5px; }
     .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse-dot 2s infinite; }
-    @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.5); } }
-
-    /* GPS accuracy ring */
-    .gps-accuracy { border: 2px solid rgba(34,197,94,0.3); background: rgba(34,197,94,0.08); border-radius: 50%; }
-
-    /* User position blue dot */
-    .user-dot {
-      width: 18px; height: 18px; border-radius: 50%;
-      background: #3b82f6; border: 3px solid #fff;
-      box-shadow: 0 0 8px rgba(59,130,246,0.6), 0 0 20px rgba(59,130,246,0.3);
-    }
-    .user-dot-heading {
-      width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent;
-      border-bottom: 14px solid #3b82f6; position: absolute; top: -14px; left: 3px;
-      filter: drop-shadow(0 0 3px rgba(59,130,246,0.5));
-    }
-
-    /* Layer switch */
-    .map-layer-toggle {
-      position: absolute; bottom: 12px; right: 12px; z-index: 1000;
-      display: flex; gap: 4px; background: rgba(15,23,42,0.85);
-      border-radius: 20px; padding: 4px; backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.12);
-    }
-    .map-layer-btn {
-      border: none; cursor: pointer; padding: 5px 10px; border-radius: 16px;
-      font-size: 11px; font-weight: 600; transition: all .2s;
-      background: transparent; color: rgba(255,255,255,0.5);
-    }
-    .map-layer-btn.active { background: var(--primary, #22c55e); color: #fff; }
-
-    /* Center-on-me button */
-    .center-btn {
-      position: absolute; bottom: 12px; left: 12px; z-index: 1000;
-      width: 40px; height: 40px; border-radius: 50%;
-      background: rgba(15,23,42,0.85); backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #fff; font-size: 18px; cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .center-btn.tracking { background: var(--primary, #22c55e); color: #fff; }
+    @keyframes pulse-dot { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.5; transform:scale(1.5); } }
 
     /* Progress bar */
-    .progress-bar-container {
-      position: absolute; bottom: 52px; left: 12px; right: 12px; z-index: 1000;
-      height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px;
-      overflow: hidden;
+    .progress-bar-wrap {
+      position: absolute; bottom: 60px; left: 12px; right: 12px; z-index: 10;
+      height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;
     }
     .progress-bar-fill { height: 100%; background: var(--primary, #22c55e); border-radius: 3px; transition: width 0.5s; width: 0%; }
 
-    .map-loading { min-height: 300px; }
+    /* Control buttons row */
+    .map-controls {
+      position: absolute; bottom: 12px; left: 12px; right: 12px; z-index: 10;
+      display: flex; gap: 8px; justify-content: space-between;
+    }
+    .ctrl-btn {
+      width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(15,23,42,0.85); backdrop-filter: blur(8px);
+      color: #fff; font-size: 20px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: all .2s;
+    }
+    .ctrl-btn.active { background: var(--primary, #22c55e); }
+    .ctrl-btn:active { transform: scale(0.9); }
+
+    /* Layer pills */
+    .layer-pills {
+      position: absolute; top: 72px; right: 12px; z-index: 10;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .layer-pill {
+      padding: 4px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; cursor: pointer;
+      background: rgba(15,23,42,0.8); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px); transition: all .2s; text-align: center;
+    }
+    .layer-pill.active { background: var(--primary, #22c55e); color: #fff; }
+
+    /* View mode pills */
+    .view-pills {
+      position: absolute; top: 72px; left: 12px; z-index: 10;
+      display: flex; gap: 4px;
+    }
+    .view-pill {
+      padding: 4px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; cursor: pointer;
+      background: rgba(15,23,42,0.8); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px); transition: all .2s;
+    }
+    .view-pill.active { background: #3b82f6; color: #fff; }
+
+    .map-loading { min-height: 320px; }
+
+    /* User dot pulse (inside map canvas via marker) */
+    .user-dot-outer {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: rgba(59,130,246,0.25); display: flex; align-items: center; justify-content: center;
+      animation: pulse-ring 2s infinite;
+    }
+    .user-dot-inner {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #3b82f6; border: 2.5px solid #fff;
+      box-shadow: 0 0 6px rgba(59,130,246,0.6);
+    }
+    @keyframes pulse-ring { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.4); opacity:0.4; } }
+
+    /* Direction cone */
+    .heading-cone {
+      position: absolute; top: -20px; left: 50%; transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 8px solid transparent; border-right: 8px solid transparent;
+      border-bottom: 20px solid rgba(59,130,246,0.5);
+      filter: blur(1px);
+    }
   </style>
 </head>
 <body>
-<div class="container page-enter">
+<div class="container page-enter" style="padding:0 8px">
 
-  <div class="top-header">
+  <div class="top-header" style="padding:8px 0">
     <a class="brand" href="dashboard.html">
       <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
       <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
@@ -90,53 +108,54 @@
     <a class="btn btn-ghost" href="dashboard.html">← Home</a>
   </div>
 
-  <div class="card" style="padding:0;overflow:visible">
+  <div style="position:relative">
+    <!-- Loading state -->
     <div id="loadingBox" class="map-loading">
       <div class="spinner"></div>
       <span id="loadingMsg">Ricerca posizione GPS…</span>
     </div>
 
-    <div id="mapWrapper" style="position:relative;display:none">
+    <!-- Map container -->
+    <div id="mapWrapper" style="display:none;position:relative">
       <div id="map" class="nav-map"></div>
 
-      <!-- Live tracking panel -->
-      <div class="live-panel" id="livePanel">
+      <!-- Live panel -->
+      <div class="live-panel" id="livePanel" style="display:none">
         <div class="live-dot"></div>
-        <div class="live-stat">
-          <div class="val" id="distRemain">--</div>
-          <div class="lbl">Rimanenti</div>
-        </div>
-        <div class="live-stat">
-          <div class="val" id="timeRemain">--</div>
-          <div class="lbl">Min</div>
-        </div>
-        <div class="live-stat">
-          <div class="val" id="distDone">0</div>
-          <div class="lbl">Percorsi</div>
-        </div>
+        <div class="live-stat"><div class="val" id="distRemain">--</div><div class="lbl">Rimanenti</div></div>
+        <div class="live-stat"><div class="val" id="timeRemain">--</div><div class="lbl">Min</div></div>
+        <div class="live-stat"><div class="val" id="distDone">0</div><div class="lbl">Percorsi</div></div>
+      </div>
+
+      <!-- View mode -->
+      <div class="view-pills" id="viewPills" style="display:none">
+        <div class="view-pill active" id="viewTop" data-view="top">🗺️ Mappa</div>
+        <div class="view-pill" id="view3d" data-view="3d">🏔️ 3D</div>
+        <div class="view-pill" id="viewFollow" data-view="follow">🧭 Segui</div>
+      </div>
+
+      <!-- Layer pills -->
+      <div class="layer-pills">
+        <div class="layer-pill active" id="layerOsm" data-layer="osm">🗺️ OSM</div>
+        <div class="layer-pill" id="layerSwiss" data-layer="swiss">🏔️ Swiss</div>
       </div>
 
       <!-- Progress bar -->
-      <div class="progress-bar-container">
+      <div class="progress-bar-wrap" id="progressWrap" style="display:none">
         <div class="progress-bar-fill" id="progressFill"></div>
       </div>
 
-      <!-- Center on me button -->
-      <button class="center-btn tracking" id="btnCenter" title="Centra su di me">📍</button>
-
-      <!-- Layer switcher -->
-      <div class="map-layer-toggle" id="layerToggle">
-        <button class="map-layer-btn active" id="btnOsm">🗺️ OSM</button>
-        <button class="map-layer-btn" id="btnSwiss">🏔️ Swiss</button>
+      <!-- Bottom controls -->
+      <div class="map-controls">
+        <button class="ctrl-btn" id="btnCenter" title="Centra su di me">📍</button>
+        <button class="ctrl-btn" id="btnStart" title="Avvia navigazione">▶️</button>
+        <button class="ctrl-btn" id="btnNewRoute" title="Nuovo percorso">🔄</button>
       </div>
     </div>
 
-    <div id="metaBox" style="display:none;padding:16px">
-      <p class="small" id="errorMsg" style="display:none;color:var(--danger)"></p>
-      <div class="btn-row">
-        <button class="btn btn-primary" id="btnStart" style="flex:1">🚶 Avvia navigazione</button>
-        <button class="btn btn-secondary" id="btnNewRoute" style="flex:1">🔄 Nuovo percorso</button>
-      </div>
+    <!-- Error / meta -->
+    <div id="metaBox" style="display:none;padding:12px">
+      <p id="errorMsg" style="color:var(--danger);margin:0"></p>
     </div>
   </div>
 
@@ -153,163 +172,247 @@
   </div>
 </nav>
 
-<script src="assets/js/routes-poc-data.js?v=20260331b"></script>
-<script src="assets/js/config.js?v=20260331b"></script>
-<script src="assets/js/app.js?v=20260331b"></script>
+<script src="assets/js/routes-poc-data.js?v=20260331c"></script>
+<script src="assets/js/config.js?v=20260331c"></script>
+<script src="assets/js/app.js?v=20260331c"></script>
 <script>
 (function() {
-  var mapInstance = null;
-  var routeLine = null;
+  var map = null;
   var userMarker = null;
-  var accuracyCircle = null;
   var watchId = null;
   var isTracking = false;
   var autoCenter = true;
-  var routePoints = []; // Array of {lat, lng}
+  var viewMode = 'top'; // top | 3d | follow
+  var routePoints = [];
   var totalRouteMeters = 0;
   var currentProposal = null;
+  var lastUserPos = null;
+  var lastHeading = null;
+  var currentLayerId = 'osm';
 
-  // --- Haversine distance in meters ---
+  var TILE_SOURCES = {
+    osm: { tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], attribution: '© OpenStreetMap', maxzoom: 19 },
+    swiss: { tiles: ['https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg'], attribution: '© swisstopo', maxzoom: 18 }
+  };
+
+  // --- Haversine ---
   function distM(a, b) {
-    var R = 6371000, dLat = (b.lat - a.lat) * Math.PI / 180, dLng = (b.lng - a.lng) * Math.PI / 180;
-    var s = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(a.lat * Math.PI/180) * Math.cos(b.lat * Math.PI/180) * Math.sin(dLng/2) * Math.sin(dLng/2);
+    var R = 6371000, dLat = (b.lat-a.lat)*Math.PI/180, dLng = (b.lng-a.lng)*Math.PI/180;
+    var s = Math.sin(dLat/2)**2 + Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dLng/2)**2;
     return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1-s));
   }
 
-  // --- Find nearest point on route and remaining distance ---
+  // --- Route progress ---
   function routeProgress(userPos) {
-    if (!routePoints.length) return { nearestIdx: 0, distFromStart: 0, distToEnd: 0, fraction: 0 };
+    if (!routePoints.length) return { nearestIdx: 0, distFromStart: 0, distToEnd: 0, fraction: 0, offRoute: 999 };
     var bestIdx = 0, bestDist = Infinity;
     for (var i = 0; i < routePoints.length; i++) {
       var d = distM(userPos, routePoints[i]);
       if (d < bestDist) { bestDist = d; bestIdx = i; }
     }
-    // Distance from start to nearest point
     var fromStart = 0;
     for (var j = 1; j <= bestIdx; j++) fromStart += distM(routePoints[j-1], routePoints[j]);
-    var toEnd = totalRouteMeters - fromStart;
-    return { nearestIdx: bestIdx, distFromStart: fromStart, distToEnd: Math.max(0, toEnd), fraction: fromStart / (totalRouteMeters || 1), offRoute: bestDist };
+    return { nearestIdx: bestIdx, distFromStart: fromStart, distToEnd: Math.max(0, totalRouteMeters - fromStart), fraction: fromStart / (totalRouteMeters || 1), offRoute: bestDist };
   }
 
   // --- Update live panel ---
-  function updateLivePanel(progress) {
-    var remainKm = (progress.distToEnd / 1000);
-    var doneKm = (progress.distFromStart / 1000);
-    document.getElementById('distRemain').textContent = remainKm < 1 ? Math.round(remainKm * 1000) + 'm' : remainKm.toFixed(1) + 'km';
-    document.getElementById('distDone').textContent = doneKm < 1 ? Math.round(doneKm * 1000) + 'm' : doneKm.toFixed(1) + 'km';
-    // Estimate time remaining: 75m/min walking speed
-    var minRemain = Math.round(progress.distToEnd / 75);
-    document.getElementById('timeRemain').textContent = minRemain;
-    document.getElementById('progressFill').style.width = Math.min(100, Math.round(progress.fraction * 100)) + '%';
+  function updatePanel(prog) {
+    var rKm = prog.distToEnd / 1000, dKm = prog.distFromStart / 1000;
+    document.getElementById('distRemain').textContent = rKm < 1 ? Math.round(rKm*1000) + 'm' : rKm.toFixed(1) + 'km';
+    document.getElementById('distDone').textContent = dKm < 1 ? Math.round(dKm*1000) + 'm' : dKm.toFixed(1) + 'km';
+    document.getElementById('timeRemain').textContent = Math.round(prog.distToEnd / 75);
+    document.getElementById('progressFill').style.width = Math.min(100, Math.round(prog.fraction * 100)) + '%';
   }
 
-  // --- Set loading state ---
+  // --- Loading / Error ---
   function setLoading(msg) {
     document.getElementById('loadingBox').style.display = 'flex';
     document.getElementById('mapWrapper').style.display = 'none';
     document.getElementById('metaBox').style.display = 'none';
-    document.getElementById('loadingMsg').textContent = msg || 'Caricamento…';
+    document.getElementById('loadingMsg').textContent = msg;
   }
-
   function setError(msg) {
     document.getElementById('loadingBox').style.display = 'none';
-    document.getElementById('mapWrapper').style.display = 'block';
     document.getElementById('metaBox').style.display = 'block';
-    var e = document.getElementById('errorMsg');
-    e.textContent = msg; e.style.display = 'block';
+    document.getElementById('errorMsg').textContent = msg;
   }
 
-  // --- Render the route on map ---
+  // --- Create / switch tile source ---
+  function applyTileLayer(layerId) {
+    if (!map) return;
+    currentLayerId = layerId;
+    var src = TILE_SOURCES[layerId];
+    if (map.getSource('raster-tiles')) {
+      // Can't update source directly in MapLibre, so swap style
+      map.getSource('raster-tiles').tiles = src.tiles;
+      map.style.sourceCaches['raster-tiles'].clearTiles();
+      map.triggerRepaint();
+    }
+    document.querySelectorAll('.layer-pill').forEach(function(el) { el.classList.toggle('active', el.dataset.layer === layerId); });
+  }
+
+  // --- Build MapLibre style ---
+  function makeStyle(layerId) {
+    var src = TILE_SOURCES[layerId];
+    return {
+      version: 8,
+      sources: {
+        'raster-tiles': { type: 'raster', tiles: src.tiles, tileSize: 256, attribution: src.attribution, maxzoom: src.maxzoom }
+      },
+      layers: [{ id: 'raster-layer', type: 'raster', source: 'raster-tiles' }]
+    };
+  }
+
+  // --- Render route ---
   function renderRoute(proposal) {
     currentProposal = proposal;
     document.getElementById('loadingBox').style.display = 'none';
     document.getElementById('mapWrapper').style.display = 'block';
-    document.getElementById('metaBox').style.display = 'block';
-    document.getElementById('errorMsg').style.display = 'none';
+    document.getElementById('metaBox').style.display = 'none';
 
     routePoints = proposal.route;
-    // Calculate total route length
     totalRouteMeters = 0;
     for (var i = 1; i < routePoints.length; i++) totalRouteMeters += distM(routePoints[i-1], routePoints[i]);
 
-    if (mapInstance) { mapInstance.remove(); mapInstance = null; }
-    mapInstance = L.map('map', { zoomControl: false });
+    // Compute bounds
+    var lats = routePoints.map(function(p){return p.lat;}), lngs = routePoints.map(function(p){return p.lng;});
+    var sw = [Math.min.apply(null, lngs), Math.min.apply(null, lats)];
+    var ne = [Math.max.apply(null, lngs), Math.max.apply(null, lats)];
 
-    // Tile layers
-    window._tileLayers = {
-      osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }),
-      swiss: L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', { attribution: '© swisstopo' })
-    };
-    window._activeLayer = 'osm';
-    window._tileLayers.osm.addTo(mapInstance);
+    if (map) { map.remove(); map = null; userMarker = null; }
 
-    // Draw route
-    var pts = routePoints.map(function(p) { return [p.lat, p.lng]; });
-    routeLine = L.polyline(pts, { color: '#22c55e', weight: 5, opacity: 0.8 }).addTo(mapInstance);
+    map = new maplibregl.Map({
+      container: 'map',
+      style: makeStyle(currentLayerId),
+      bounds: [sw, ne],
+      fitBoundsOptions: { padding: { top: 90, bottom: 80, left: 30, right: 30 } },
+      maxPitch: 70,
+      attributionControl: false
+    });
 
-    // Start marker
-    var startIcon = L.divIcon({ className: '', html: '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap">🏁 Partenza</div>', iconAnchor: [30, 10] });
-    L.marker(pts[0], { icon: startIcon }).addTo(mapInstance);
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
 
-    // Turnaround marker
-    if (proposal.food && proposal.food.lat) {
-      var turnLabel = proposal.food.name || 'Svolta';
-      var turnEmoji = proposal.food.poiType === 'viewpoint' ? '🏔️' : proposal.food.poiType === 'park' ? '🌳' : proposal.food.poiType === 'bench' ? '🪑' : '🔄';
-      var turnIcon = L.divIcon({ className: '', html: '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;max-width:200px;overflow:hidden;text-overflow:ellipsis">' + turnEmoji + ' ' + turnLabel + '</div>', iconAnchor: [28, 10] });
-      L.marker([proposal.food.lat, proposal.food.lng], { icon: turnIcon }).addTo(mapInstance);
-    }
+    map.on('load', function() {
+      // Route line
+      var coords = routePoints.map(function(p) { return [p.lng, p.lat]; });
+      map.addSource('route', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: coords } } });
+      // Route glow
+      map.addLayer({ id: 'route-glow', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 10, 'line-opacity': 0.25, 'line-blur': 6 } });
+      // Route line
+      map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.9 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
 
-    mapInstance.fitBounds(L.latLngBounds(pts), { padding: [60, 30] });
+      // Start marker
+      var startEl = document.createElement('div');
+      startEl.innerHTML = '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.3)">🏁 Partenza</div>';
+      new maplibregl.Marker({ element: startEl, anchor: 'bottom' }).setLngLat([routePoints[0].lng, routePoints[0].lat]).addTo(map);
 
-    // Update button states
-    document.getElementById('btnStart').textContent = '🚶 Avvia navigazione';
-    isTracking = false;
-    updateLivePanel({ distToEnd: totalRouteMeters, distFromStart: 0, fraction: 0 });
+      // Turnaround marker
+      if (proposal.food && proposal.food.lat) {
+        var turnEl = document.createElement('div');
+        var emoji = proposal.food.poiType === 'viewpoint' ? '🏔️' : proposal.food.poiType === 'park' ? '🌳' : proposal.food.poiType === 'bench' ? '🪑' : '🔄';
+        var label = proposal.food.name || 'Svolta';
+        turnEl.innerHTML = '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;max-width:200px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 8px rgba(0,0,0,0.3)">' + emoji + ' ' + label + '</div>';
+        new maplibregl.Marker({ element: turnEl, anchor: 'bottom' }).setLngLat([proposal.food.lng, proposal.food.lat]).addTo(map);
+      }
+    });
+
+    // Disable auto-center on user interaction
+    map.on('dragstart', function() { autoCenter = false; document.getElementById('btnCenter').classList.remove('active'); });
+
+    updatePanel({ distToEnd: totalRouteMeters, distFromStart: 0, fraction: 0 });
   }
 
-  // --- GPS live tracking ---
+  // --- Apply view mode ---
+  function setView(mode) {
+    viewMode = mode;
+    document.querySelectorAll('.view-pill').forEach(function(el) { el.classList.toggle('active', el.dataset.view === mode); });
+
+    if (!map) return;
+    if (mode === 'top') {
+      map.easeTo({ pitch: 0, bearing: 0, duration: 800 });
+    } else if (mode === '3d') {
+      map.easeTo({ pitch: 55, duration: 800 });
+    } else if (mode === 'follow') {
+      map.easeTo({ pitch: 60, zoom: 17, duration: 800 });
+      autoCenter = true;
+      document.getElementById('btnCenter').classList.add('active');
+    }
+  }
+
+  // --- Compute bearing between two points ---
+  function bearing(a, b) {
+    var dLng = (b.lng - a.lng) * Math.PI / 180;
+    var lat1 = a.lat * Math.PI / 180, lat2 = b.lat * Math.PI / 180;
+    var y = Math.sin(dLng) * Math.cos(lat2);
+    var x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLng);
+    return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+  }
+
+  // --- GPS tracking ---
   function startTracking() {
     if (!navigator.geolocation) { setError('GPS non disponibile'); return; }
     isTracking = true;
     autoCenter = true;
-    document.getElementById('btnStart').textContent = '⏹ Stop navigazione';
-    document.getElementById('btnCenter').classList.add('tracking');
+    document.getElementById('btnStart').innerHTML = '⏹';
+    document.getElementById('btnStart').classList.add('active');
+    document.getElementById('btnCenter').classList.add('active');
+    document.getElementById('livePanel').style.display = 'flex';
+    document.getElementById('progressWrap').style.display = 'block';
+    document.getElementById('viewPills').style.display = 'flex';
 
     watchId = navigator.geolocation.watchPosition(function(pos) {
       var userPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-      var accuracy = pos.coords.accuracy || 20;
+      var heading = pos.coords.heading; // may be null
 
-      // Update user dot
-      if (userMarker) { userMarker.setLatLng([userPos.lat, userPos.lng]); }
-      else {
-        var dotIcon = L.divIcon({ className: '', html: '<div class="user-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
-        userMarker = L.marker([userPos.lat, userPos.lng], { icon: dotIcon, zIndexOffset: 1000 }).addTo(mapInstance);
+      // User marker
+      if (!userMarker) {
+        var el = document.createElement('div');
+        el.className = 'user-dot-outer';
+        el.innerHTML = '<div class="user-dot-inner"></div>';
+        userMarker = new maplibregl.Marker({ element: el, anchor: 'center' })
+          .setLngLat([userPos.lng, userPos.lat])
+          .addTo(map);
+      } else {
+        userMarker.setLngLat([userPos.lng, userPos.lat]);
       }
 
-      // Accuracy circle
-      if (accuracyCircle) { accuracyCircle.setLatLng([userPos.lat, userPos.lng]).setRadius(accuracy); }
-      else { accuracyCircle = L.circle([userPos.lat, userPos.lng], { radius: accuracy, className: 'gps-accuracy', interactive: false }).addTo(mapInstance); }
+      // Progress
+      var prog = routeProgress(userPos);
+      updatePanel(prog);
 
-      // Calculate progress
-      var progress = routeProgress(userPos);
-      updateLivePanel(progress);
-
-      // Auto-center on user
-      if (autoCenter && mapInstance) {
-        mapInstance.setView([userPos.lat, userPos.lng], Math.max(mapInstance.getZoom(), 16), { animate: true });
+      // Calculate heading from GPS movement
+      if (lastUserPos && distM(lastUserPos, userPos) > 3) {
+        lastHeading = bearing(lastUserPos, userPos);
       }
 
+      // Auto-center + follow mode
+      if (autoCenter && map) {
+        var opts = { center: [userPos.lng, userPos.lat], duration: 600 };
+        if (viewMode === 'follow' && lastHeading !== null) {
+          opts.bearing = lastHeading;
+          opts.pitch = 60;
+          opts.zoom = Math.max(map.getZoom(), 17);
+        }
+        map.easeTo(opts);
+      }
+
+      lastUserPos = userPos;
     }, function(err) {
-      console.warn('GPS error:', err.message);
-    }, { enableHighAccuracy: true, maximumAge: 3000, timeout: 10000 });
+      console.warn('GPS:', err.message);
+    }, { enableHighAccuracy: true, maximumAge: 2000, timeout: 10000 });
   }
 
   function stopTracking() {
     if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
     isTracking = false;
-    document.getElementById('btnStart').textContent = '🚶 Avvia navigazione';
-    if (userMarker) { mapInstance.removeLayer(userMarker); userMarker = null; }
-    if (accuracyCircle) { mapInstance.removeLayer(accuracyCircle); accuracyCircle = null; }
+    document.getElementById('btnStart').innerHTML = '▶️';
+    document.getElementById('btnStart').classList.remove('active');
+    document.getElementById('livePanel').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    document.getElementById('viewPills').style.display = 'none';
+    if (userMarker) { userMarker.remove(); userMarker = null; }
+    lastUserPos = null; lastHeading = null;
+    setView('top');
   }
 
   // --- Load route ---
@@ -322,6 +425,7 @@
       if (!proposal || !proposal.route || !proposal.route.length) {
         if (proposal && proposal.error) setError('⚠️ ' + proposal.message);
         else setError('Impossibile generare il percorso.');
+        document.getElementById('mapWrapper').style.display = 'block';
         return;
       }
       if (isTracking) stopTracking();
@@ -332,7 +436,7 @@
     }
   }
 
-  // --- Event listeners ---
+  // --- Events ---
   document.getElementById('btnStart').addEventListener('click', function() {
     if (isTracking) stopTracking(); else startTracking();
   });
@@ -344,42 +448,44 @@
 
   document.getElementById('btnCenter').addEventListener('click', function() {
     autoCenter = !autoCenter;
-    this.classList.toggle('tracking', autoCenter);
-    if (autoCenter && userMarker && mapInstance) {
-      mapInstance.setView(userMarker.getLatLng(), Math.max(mapInstance.getZoom(), 16), { animate: true });
+    this.classList.toggle('active', autoCenter);
+    if (autoCenter && lastUserPos && map) {
+      map.easeTo({ center: [lastUserPos.lng, lastUserPos.lat], zoom: Math.max(map.getZoom(), 16), duration: 600 });
     }
   });
 
-  // Layer switcher
-  document.getElementById('btnOsm').addEventListener('click', function() { switchLayer('osm'); });
-  document.getElementById('btnSwiss').addEventListener('click', function() { switchLayer('swiss'); });
-
-  // Disable auto-center when user drags the map
-  // We attach this after map is created — use MutationObserver to wait
-  var mapReadyInterval = setInterval(function() {
-    if (mapInstance) {
-      mapInstance.on('dragstart', function() {
-        autoCenter = false;
-        document.getElementById('btnCenter').classList.remove('tracking');
+  // Layer switch
+  document.querySelectorAll('.layer-pill').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var lid = this.dataset.layer;
+      if (lid === currentLayerId) return;
+      // MapLibre: need to set new style and re-add route
+      if (!map) return;
+      var center = map.getCenter(), zoom = map.getZoom(), pitch = map.getPitch(), brng = map.getBearing();
+      map.setStyle(makeStyle(lid));
+      currentLayerId = lid;
+      document.querySelectorAll('.layer-pill').forEach(function(p) { p.classList.toggle('active', p.dataset.layer === lid); });
+      // Re-add route after style load
+      map.once('style.load', function() {
+        if (!currentProposal) return;
+        var coords = routePoints.map(function(p) { return [p.lng, p.lat]; });
+        map.addSource('route', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: coords } } });
+        map.addLayer({ id: 'route-glow', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 10, 'line-opacity': 0.25, 'line-blur': 6 } });
+        map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.9 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
+        // Restore camera
+        map.jumpTo({ center: center, zoom: zoom, pitch: pitch, bearing: brng });
       });
-      clearInterval(mapReadyInterval);
-    }
-  }, 200);
+    });
+  });
 
-  // Start
+  // View mode switch
+  document.querySelectorAll('.view-pill').forEach(function(el) {
+    el.addEventListener('click', function() { setView(this.dataset.view); });
+  });
+
+  // --- Go ---
   loadRoute();
 })();
-
-function switchLayer(name) {
-  if (!window._tileLayers || !window._activeLayer || window._activeLayer === name) return;
-  var map = window._tileLayers[window._activeLayer]._map;
-  if (!map) return;
-  window._tileLayers[window._activeLayer].remove();
-  window._tileLayers[name].addTo(map);
-  window._activeLayer = name;
-  document.getElementById('btnOsm').classList.toggle('active', name === 'osm');
-  document.getElementById('btnSwiss').classList.toggle('active', name === 'swiss');
-}
 </script>
 </body>
 </html>
