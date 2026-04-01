@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0f172a">
-  <title>La tua pausa • Walk2Eat v3</title>
+  <title>La tua pausa • Walk2Eat</title>
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -40,19 +40,8 @@
     </div>
   </div>
 
-  <!-- Walk Stats — with skeleton loading states -->
-  <div class="grid grid-2" style="margin-top:8px" id="statsGrid">
-    <!-- Skeleton shown while loading -->
-    <div class="stat-card" id="skeletonStat1">
-      <div class="skeleton skeleton-value"></div>
-      <div class="skeleton skeleton-label"></div>
-    </div>
-    <div class="stat-card" id="skeletonStat2">
-      <div class="skeleton skeleton-value"></div>
-      <div class="skeleton skeleton-label"></div>
-    </div>
-  </div>
-  <div class="grid grid-2" style="margin-top:8px; display:none" id="statsReal">
+  <!-- Walk Stats -->
+  <div class="grid grid-2" style="margin-top:8px">
     <div class="stat-card">
       <div class="stat-value" id="walkStat">—</div>
       <div class="stat-label">🚶 Camminata</div>
@@ -65,15 +54,15 @@
     </div>
   </div>
 
-  <!-- Map Preview — skeleton replaces spinner -->
+  <!-- Map Preview -->
   <div class="card" style="margin-top:12px">
     <div class="card-header">
       <span class="badge badge-accent">📍 Percorso</span>
       <span class="small" id="updatedAt"></span>
     </div>
-    <div id="mapLoadingBox">
-      <div class="skeleton skeleton-map"></div>
-      <div class="skeleton skeleton-text w-60" style="margin-top:8px"></div>
+    <div id="mapLoadingBox" class="map-loading">
+      <div class="spinner"></div>
+      <span id="mapLoadingMsg">Calcolo percorso…</span>
     </div>
     <div style="position:relative">
       <div id="mapPreview" class="map-box" style="display:none"></div>
@@ -85,7 +74,7 @@
     <p id="routeSourceNote" class="small mt-sm" style="display:none"></p>
   </div>
 
-  <!-- Action Buttons — in thumb zone (bottom area) -->
+  <!-- Action Buttons -->
   <div class="btn-row">
     <a class="btn btn-primary" href="map.html" style="flex:1">
       🧭 Vai!
@@ -103,35 +92,30 @@
     </button>
   </div>
 
-
-</div>
-
-<!-- Bottom Sheet Overlay — FUORI dal container per position:fixed corretto -->
-<div class="bottom-sheet-overlay" id="sheetOverlay"></div>
-
-<!-- Bottom Sheet — FUORI dal container (fixed positioning richiede parent senza transform/animation) -->
-<div class="bottom-sheet" id="detailSheet">
-  <div class="bottom-sheet-handle"></div>
-  <div class="grid grid-2">
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">⏱ Tempi</span>
+  <!-- Detail Panel (animated) -->
+  <div id="detailPanel" class="detail-panel">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">⏱ Tempi</span>
+        </div>
+        <div id="timeBreakdown" class="small"></div>
       </div>
-      <div id="timeBreakdown" class="small"></div>
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">🌤 Meteo</span>
+        </div>
+        <div id="weatherBox" class="small"></div>
+      </div>
     </div>
-    <div class="card">
+    <div class="card" style="margin-top:12px">
       <div class="card-header">
-        <span class="card-title">🌤 Meteo</span>
+        <span class="card-title">💡 Perché questa proposta</span>
       </div>
-      <div id="weatherBox" class="small"></div>
+      <div id="whyBox" class="small"></div>
     </div>
   </div>
-  <div class="card" style="margin-top:12px">
-    <div class="card-header">
-      <span class="card-title">💡 Perché questa proposta</span>
-    </div>
-    <div id="whyBox" class="small"></div>
-  </div>
+
 </div>
 
 <!-- Bottom Navigation -->
@@ -189,23 +173,15 @@
   }
 
   function setMapLoading(msg) {
-    // v3: show skeleton instead of spinner
-    document.getElementById('mapLoadingBox').style.display = 'block';
+    document.getElementById('mapLoadingBox').style.display = 'flex';
+    document.getElementById('mapLoadingMsg').textContent = msg || 'Calcolo percorso…';
     document.getElementById('mapPreview').style.display = 'none';
     document.getElementById('routeSourceNote').style.display = 'none';
-    // Show skeleton stats, hide real stats
-    document.getElementById('skeletonStat1').style.display = '';
-    document.getElementById('skeletonStat2').style.display = '';
-    document.getElementById('statsReal').style.display = 'none';
-    document.getElementById('statsGrid').style.display = 'grid';
   }
 
   function setMapReady() {
     document.getElementById('mapLoadingBox').style.display = 'none';
     document.getElementById('mapPreview').style.display = 'block';
-    // Reveal real stats, hide skeleton
-    document.getElementById('statsGrid').style.display = 'none';
-    document.getElementById('statsReal').style.display = 'grid';
   }
 
   function weatherMock() {
@@ -325,60 +301,20 @@
     if (!currentProposal) return;
     LBW.toggleFavoriteRoute(currentProposal);
     setFavButton(currentProposal);
-    // v3: micro-interaction — heart bounce
-    this.classList.remove('heart-bounce');
-    void this.offsetWidth; // reflow to restart animation
-    this.classList.add('heart-bounce');
-    var self = this;
-    this.addEventListener('animationend', function() {
-      self.classList.remove('heart-bounce');
-    }, { once: true });
   };
 
-  // v3: Bottom Sheet logic (replaces expanding detail-panel)
-  var sheetOpen = false;
-  var sheet = document.getElementById('detailSheet');
-  var overlay = document.getElementById('sheetOverlay');
-
-  function openSheet() {
-    sheet.classList.add('open');
-    overlay.classList.add('active');
-    sheetOpen = true;
-    document.getElementById('detailToggle').innerHTML = '📊 Chiudi';
-  }
-
-  function closeSheet() {
-    sheet.classList.remove('open');
-    overlay.classList.remove('active');
-    sheetOpen = false;
-    document.getElementById('detailToggle').innerHTML = '📊 Dettagli';
-  }
-
+  var detailOpen = false;
   document.getElementById('detailToggle').onclick = function() {
-    sheetOpen ? closeSheet() : openSheet();
+    detailOpen = !detailOpen;
+    var panel = document.getElementById('detailPanel');
+    if (detailOpen) {
+      panel.classList.add('open');
+      this.innerHTML = '📊 Nascondi';
+    } else {
+      panel.classList.remove('open');
+      this.innerHTML = '📊 Dettagli';
+    }
   };
-
-  overlay.onclick = function() { closeSheet(); };
-
-  // Drag-to-dismiss on bottom sheet
-  (function() {
-    var startY = 0, dragging = false;
-    sheet.addEventListener('touchstart', function(e) {
-      startY = e.touches[0].clientY;
-      dragging = true;
-    }, { passive: true });
-    sheet.addEventListener('touchmove', function(e) {
-      if (!dragging) return;
-      var dy = e.touches[0].clientY - startY;
-      if (dy > 0) sheet.style.transform = 'translateY(' + dy + 'px)';
-    }, { passive: true });
-    sheet.addEventListener('touchend', function(e) {
-      dragging = false;
-      var dy = e.changedTouches[0].clientY - startY;
-      if (dy > 80) { closeSheet(); }
-      sheet.style.transform = '';
-    });
-  })();
 
   loadNewRoute(false);
 })();
