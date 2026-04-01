@@ -107,7 +107,7 @@ img { max-width: 100%; display: block; }
 }
 .brand-text {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: var(--t-md); /* 20px — era 1.1rem */
   color: var(--accent);
   letter-spacing: -0.02em;
 }
@@ -186,7 +186,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 12px;
 }
 .card-title {
-  font-size: 1rem;
+  font-size: var(--t-base); /* 16px — invariato ma su variabile */
   font-weight: 700;
 }
 .card-icon {
@@ -207,17 +207,17 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .stat-value {
-  font-size: 1.5rem;
+  font-size: var(--t-xl); /* 31px — era 1.5rem, ora più grande e impattante */
   font-weight: 800;
   color: var(--accent);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .stat-label {
-  font-size: 0.75rem;
+  font-size: var(--t-xs); /* 10px — era 0.75rem, più piccola per contrasto */
   color: var(--text-secondary);
   margin-top: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 /* ── Buttons ── */
@@ -487,13 +487,13 @@ select {
 
 /* ── Section headings ── */
 .section-title {
-  font-size: 1.1rem;
+  font-size: var(--t-md); /* 20px — era 1.1rem */
   font-weight: 700;
   margin: 20px 0 12px;
 }
 
 /* ── Small text ── */
-.small { font-size: 0.8rem; color: var(--text-secondary); }
+.small { font-size: var(--t-sm); color: var(--text-secondary); } /* 13px — era 0.8rem */
 .text-accent { color: var(--accent); }
 .text-center { text-align: center; }
 .mt-sm { margin-top: 8px; }
@@ -629,20 +629,11 @@ body.no-bottom-nav .bottom-nav { display: none; }
    V3 — UX enhancements
    ══════════════════════════════════════════ */
 
-/* #4 — Scala tipografica applicata ai componenti */
-.stat-value   { font-size: var(--t-xl); }
-.stat-label   { font-size: var(--t-xs); letter-spacing: 0.06em; }
-.card-title   { font-size: var(--t-base); }
-.section-title{ font-size: var(--t-md); }
-.small        { font-size: var(--t-sm); }
-.brand-text   { font-size: var(--t-md); }
-
-/* #6 — Elevazione: card usa elevation-1, sfondo usa elevation-0 */
+/* #6 — Elevazione: card usa elevation-1 */
 .card         { background: var(--elevation-1); }
 .stat-card    { background: var(--elevation-1); }
 
-/* #7 — Touch target 48px garantito */
-.btn          { min-height: var(--touch-min); }
+/* #7 — Touch target 48px su nav-item e list-item (btn già ha min-height in definizione base) */
 .nav-item     { min-height: var(--touch-min); min-width: var(--touch-min); }
 .list-item    { min-height: var(--touch-min); }
 
