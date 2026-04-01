@@ -40,17 +40,31 @@
     </div>
   </div>
 
-  <!-- Walk Stats -->
-  <div class="grid grid-2" style="margin-top:8px">
-    <div class="stat-card">
-      <div class="stat-value" id="walkStat">—</div>
-      <div class="stat-label">🚶 Camminata</div>
-      <div class="small mt-sm" id="walkType"></div>
+  <!-- Walk Stats: skeleton durante il caricamento, reali dopo -->
+  <div id="statsWrap" style="margin-top:8px">
+    <!-- Skeleton (visibile al caricamento) -->
+    <div class="grid grid-2" id="statsSkeleton">
+      <div class="stat-card">
+        <div class="skeleton skel-stat"></div>
+        <div class="skeleton skel-label"></div>
+      </div>
+      <div class="stat-card">
+        <div class="skeleton skel-stat"></div>
+        <div class="skeleton skel-label"></div>
+      </div>
     </div>
-    <div class="stat-card">
-      <div class="stat-value" id="foodStat">—</div>
-      <div class="stat-label" id="foodLabel">📍 Destinazione</div>
-      <div class="small mt-sm" id="foodCuisine"></div>
+    <!-- Dati reali (nascosti finché non arrivano) -->
+    <div class="grid grid-2" id="statsReal" style="display:none">
+      <div class="stat-card">
+        <div class="stat-value" id="walkStat">—</div>
+        <div class="stat-label">🚶 Camminata</div>
+        <div class="small mt-sm" id="walkType"></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="foodStat">—</div>
+        <div class="stat-label" id="foodLabel">📍 Destinazione</div>
+        <div class="small mt-sm" id="foodCuisine"></div>
+      </div>
     </div>
   </div>
 
@@ -60,9 +74,11 @@
       <span class="badge badge-accent">📍 Percorso</span>
       <span class="small" id="updatedAt"></span>
     </div>
-    <div id="mapLoadingBox" class="map-loading">
-      <div class="spinner"></div>
-      <span id="mapLoadingMsg">Calcolo percorso…</span>
+    <!-- Skeleton mappa (sostituisce spinner) -->
+    <div id="mapLoadingBox">
+      <div class="skeleton skel-map"></div>
+      <div class="skeleton skel-text w70" style="margin-top:8px"></div>
+      <div class="skeleton skel-text w50"></div>
     </div>
     <div style="position:relative">
       <div id="mapPreview" class="map-box" style="display:none"></div>
@@ -172,16 +188,22 @@
     document.getElementById('layerToggle').style.display = 'flex';
   }
 
-  function setMapLoading(msg) {
-    document.getElementById('mapLoadingBox').style.display = 'flex';
-    document.getElementById('mapLoadingMsg').textContent = msg || 'Calcolo percorso…';
+  function setMapLoading() {
+    // v3: skeleton al posto dello spinner
+    document.getElementById('mapLoadingBox').style.display = 'block';
     document.getElementById('mapPreview').style.display = 'none';
     document.getElementById('routeSourceNote').style.display = 'none';
+    // Mostra skeleton stat, nascondi dati reali
+    document.getElementById('statsSkeleton').style.display = 'grid';
+    document.getElementById('statsReal').style.display = 'none';
   }
 
   function setMapReady() {
     document.getElementById('mapLoadingBox').style.display = 'none';
     document.getElementById('mapPreview').style.display = 'block';
+    // Rivela dati reali, nascondi skeleton
+    document.getElementById('statsSkeleton').style.display = 'none';
+    document.getElementById('statsReal').style.display = 'grid';
   }
 
   function weatherMock() {
@@ -277,19 +299,21 @@
   async function loadNewRoute(isAlternative) {
     var btn = document.getElementById('refreshWalk');
     btn.classList.add('loading');
-    setMapLoading(isAlternative ? 'Calcolo alternativa…' : 'Calcolo percorso…');
+    setMapLoading();
     try {
       // Per le alternative, riusa l'origin della proposta precedente (evita drift GPS)
       var originOverride = (isAlternative && currentProposal && currentProposal.origin) ? currentProposal.origin : null;
       var proposal = await LBW.buildWalkOnlyProposalAsync(null, !!isAlternative, originOverride);
       if (proposal && proposal.error) {
-        document.getElementById('mapLoadingMsg').textContent = '⚠️ ' + proposal.message;
+        // v3: mostra errore in console invece del div spinner rimosso
+      console.warn('⚠️ ' + proposal.message);
         btn.classList.remove('loading');
         return;
       }
       renderProposal(proposal);
     } catch(e) {
-      document.getElementById('mapLoadingMsg').textContent = 'Errore: ' + e.message;
+      // v3: mostra errore in console invece del div spinner rimosso
+      console.warn('Errore: ' + e.message);
     } finally {
       btn.classList.remove('loading');
     }
@@ -301,6 +325,14 @@
     if (!currentProposal) return;
     LBW.toggleFavoriteRoute(currentProposal);
     setFavButton(currentProposal);
+    // v3: micro-interaction heartbeat
+    var btn = this;
+    btn.classList.remove('heart-bounce');
+    void btn.offsetWidth; // reflow per riavviare animazione
+    btn.classList.add('heart-bounce');
+    btn.addEventListener('animationend', function() {
+      btn.classList.remove('heart-bounce');
+    }, { once: true });
   };
 
   var detailOpen = false;
