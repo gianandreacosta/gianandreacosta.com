@@ -78,6 +78,31 @@
         '--accent-2':'#fda4af','--warning':'#fbbf24'
       },
       extra: '.btn-primary{background:linear-gradient(135deg,#f472b6,#fb923c)!important;color:#1a1018!important;border:none!important}'
+    },
+    light_modern: {
+      label: 'Chiaro Moderno', color: '#2563eb', icons: 'minimal',
+      desc: 'Chiaro, professionale, blu',
+      vars: {
+        '--bg':'#f8fafc','--bg-soft':'#f1f5f9','--card':'#ffffff','--card-border':'#e2e8f0',
+        '--text':'#1e293b','--text-secondary':'#64748b',
+        '--accent':'#2563eb','--accent-hover':'#1d4ed8','--accent-soft':'rgba(37,99,235,0.10)',
+        '--accent-2':'#60a5fa','--warning':'#f59e0b','--danger':'#ef4444',
+        '--shadow':'0 4px 24px rgba(0,0,0,0.08)'
+      },
+      extra: 'body{color:#1e293b!important}.top-header{background:rgba(255,255,255,0.92)!important;border-bottom:1px solid #e2e8f0!important}.bottom-nav{background:rgba(255,255,255,0.97)!important;border-top:1px solid #e2e8f0!important}.btn-secondary{background:#f1f5f9!important;color:#1e293b!important}.btn-ghost{color:#1e293b!important;border-color:#e2e8f0!important}select,.input{background:#f1f5f9!important;color:#1e293b!important;border-color:#e2e8f0!important}.nav-item .nav-icon,.nav-item span{color:#64748b!important}.nav-item.active .nav-icon,.nav-item.active span{color:#2563eb!important}.stat-value{color:#2563eb!important}'
+    },
+    minimal_chic: {
+      label: 'Minimal Chic', color: '#d97706', icons: 'geo',
+      desc: 'Off-white, ambra, bordi netti',
+      vars: {
+        '--bg':'#fafafa','--bg-soft':'#f5f5f5','--card':'#ffffff','--card-border':'#e5e5e5',
+        '--text':'#111111','--text-secondary':'#666666',
+        '--accent':'#d97706','--accent-hover':'#b45309','--accent-soft':'rgba(217,119,6,0.08)',
+        '--accent-2':'#92400e','--warning':'#d97706','--danger':'#dc2626',
+        '--radius':'6px','--radius-sm':'4px','--radius-xs':'3px',
+        '--shadow':'0 2px 8px rgba(0,0,0,0.06)'
+      },
+      extra: 'body{color:#111111!important}.top-header{background:rgba(255,255,255,0.95)!important;border-bottom:1px solid rgba(0,0,0,0.08)!important}.bottom-nav{background:rgba(255,255,255,0.98)!important;border-top:1px solid rgba(0,0,0,0.08)!important}.btn-secondary{background:#f5f5f5!important;color:#111111!important}.btn-ghost{color:#111111!important;border-color:#e5e5e5!important}select,.input{background:#f5f5f5!important;color:#111111!important;border-color:#e5e5e5!important}.nav-item .nav-icon,.nav-item span{color:#666666!important}.nav-item.active .nav-icon,.nav-item.active span{color:#d97706!important}.stat-value{color:#d97706!important}'
     }
   };
 
