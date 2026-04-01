@@ -182,9 +182,11 @@
     // Force body, cards, nav backgrounds
     var v = theme.vars;
     css += 'body{background:' + (v['--bg']||'') + '!important;color:' + (v['--text']||'') + '!important}';
+    // Pagine normali (header sticky)
     css += '.top-header{background:' + (v['--bg']||'') + 'ee!important}';
     css += '.bottom-nav{background:' + (v['--bg']||'') + 'f5!important}';
     css += '.card{background:' + (v['--card']||'') + '!important;border-color:' + (v['--card-border']||'') + '!important}';
+    css += '.stat-card{background:' + (v['--card']||'') + '!important;border-color:' + (v['--card-border']||'') + '!important}';
     css += '.brand-text,.brand-two{color:' + (v['--accent']||'') + '!important}';
     css += '.btn-primary{background:' + (v['--accent']||'') + '!important}';
     css += '.btn-primary:hover{background:' + (v['--accent-hover']||'') + '!important}';
@@ -193,6 +195,40 @@
     css += '.tgl-ios:checked+.tgl-btn{background:' + (v['--accent']||'') + '!important}';
     css += '.section-title{color:' + (v['--accent']||'') + '!important}';
     css += 'select,.input{background:' + (v['--bg-soft']||'') + '!important;color:' + (v['--text']||'') + '!important;border-color:' + (v['--card-border']||'') + '!important}';
+    // v3 MAP-FIRST layout: top-bar, bottom-card, layer pill, nav bar
+    // Converti --bg hex in rgb per le variabili glass
+    var bg = v['--bg'] || '#0f172a';
+    var card = v['--card'] || '#1e293b';
+    var border = v['--card-border'] || '#334155';
+    // Helper: converti hex #rrggbb in "r,g,b"
+    function hexToRgb(hex) {
+      hex = hex.replace('#','');
+      if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+      var r = parseInt(hex.substring(0,2),16);
+      var g = parseInt(hex.substring(2,4),16);
+      var b = parseInt(hex.substring(4,6),16);
+      return r+','+g+','+b;
+    }
+    var bgRgb = hexToRgb(bg);
+    var cardRgb = hexToRgb(card);
+    var borderRgb = hexToRgb(border);
+    css += '.top-bar{background:rgba(' + bgRgb + ',0.82)!important;border-bottom-color:rgba(' + borderRgb + ',0.4)!important}';
+    css += '.bottom-card{background:rgba(' + bgRgb + ',0.94)!important;border-top-color:rgba(' + borderRgb + ',0.4)!important}';
+    css += '.bottom-nav{background:rgba(' + bgRgb + ',0.96)!important;border-top-color:rgba(' + borderRgb + ',0.4)!important}';
+    css += '.map-layer-pill{background:rgba(' + bgRgb + ',0.88)!important;border-color:rgba(' + borderRgb + ',0.4)!important}';
+    css += '.map-layer-btn.active{background:' + (v['--accent-soft']||'rgba(34,197,94,0.15)') + '!important;color:' + (v['--accent']||'#22c55e') + '!important}';
+    css += '.route-stat-value{color:' + (v['--accent']||'') + '!important}';
+    css += '.live-stat .val{color:' + (v['--accent']||'') + '!important}';
+    css += '.progress-bar-fill{background:' + (v['--accent']||'') + '!important}';
+    css += '.ctrl-btn.active{background:' + (v['--accent']||'') + '!important}';
+    css += '.bottom-card-handle{background:rgba(' + borderRgb + ',0.5)!important}';
+    css += '.bottom-card-details{border-top-color:rgba(' + borderRgb + ',0.4)!important}';
+    // Temi chiari: aggiusta colori testo nel card
+    if (v['--text'] && v['--text'] !== '#e5e7eb') {
+      css += '.route-dest-name,.route-stat-unit{color:' + (v['--text']||'') + '!important}';
+      css += '.bottom-card-content .small{color:' + (v['--text-secondary']||v['--text']||'') + '!important}';
+      css += '.nav-item{color:' + (v['--text-secondary']||'') + '!important}';
+    }
     if (theme.extra) css += theme.extra;
     return css;
   }
