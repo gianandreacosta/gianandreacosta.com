@@ -1,6 +1,753 @@
 {
-  "generated_at": "2026-03-31T07:57:35.188335+00:00",
+  "generated_at": "2026-04-01T04:54:34.343983+00:00",
   "analyses": [
+    {
+      "id": 11,
+      "run_id": 43,
+      "run_time": "2026-04-01 04:45:10.266968+00:00",
+      "analyzed_at": "2026-04-01T04:54:34.334088+00:00",
+      "articles_analyzed": 275,
+      "articles_selected": 58,
+      "model_used": "anthropic/claude-opus-4-6",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dalla crisi Iran-USA-Israele, con bombardamenti intensi, tensioni diplomatiche con l'Europa (caso sorvolo Francia), impatto economico globale (benzina oltre 4$/gallone) e proposte di pace sino-pakistane. Rilevanti anche la pena di morte per palestinesi in Israele, la crisi Libano-UNIFIL, le tensioni USA-NATO e il crash militare russo in Crimea.",
+          "notizie": [
+            {
+              "titolo": "Bombardamenti massicci sull'Iran: Trump critica gli europei, Cina e Pakistan propongono un piano di pace in 5 punti",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/31/iran-bombardamenti-trump-critica-paesi-europei",
+              "riassunto": "Gli Stati Uniti e Israele hanno condotto massicci bombardamenti sull'Iran. Trump ha rinnovato le minacce a Teheran, mentre Cina e Pakistan hanno proposto un piano in 5 punti (cessate il fuoco, colloqui, passaggio sicuro a Hormuz, accordo di pace ONU). L'ambasciatore iraniano a Roma conferma che Khamenei è nel paese ma non appare per ragioni di sicurezza. Giappone e Indonesia concordano sulla necessità di allentare le tensioni per garantire la navigazione nello Stretto di Hormuz.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "ANSA Mondo",
+                "Adnkronos",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Internazionale inquadra la vicenda con tono critico verso l'imperialismo USA. Il NYT si concentra sulle contraddizioni di Trump sul 'regime change' e sull'impatto sui marinai civili bloccati nel Golfo. ANSA fornisce copertura frammentata ma capillare (uranio, Khamenei, piano sino-pakistano). Adnkronos riporta l'angolo diplomatico asiatico (Giappone-Indonesia). L'ANSA e il NYT convergono sull'impatto economico (benzina a 4$/gallone), ma il NYT contestualizza meglio il blocco del petrolio del Golfo Persico."
+            },
+            {
+              "titolo": "Francia vieta sorvolo ad aerei israeliani con armi USA: ira di Trump, Parigi smentisce parzialmente",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/03/31/media-parigi-ha-vietato-spazio-aereo-a-voli-israele-con-armi-usa_b6a8c8b7-ebae-4cda-819a-80a8f3545815.html",
+              "riassunto": "Parigi avrebbe vietato per la prima volta dall'inizio del conflitto in Iran il sorvolo a voli israeliani che trasportano armi americane. Trump ha reagito duramente dichiarando che 'la Francia si è dimostrata molto poco collaborativa' e che gli USA 'lo ricorderanno'. Fonti militari francesi precisano che nessun limite è stato posto agli aerei militari USA e che l'atterraggio resta aperto solo per voli di trasporto logistico.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo (3 articoli distinti)"
+              ],
+              "differenze_narrative": "L'ANSA copre la vicenda con tre articoli separati che riflettono le tre prospettive: la notizia Reuters sul divieto, la reazione furiosa di Trump, e la risposta delle fonti militari francesi che ridimensionano la portata del divieto. L'insieme rivela una significativa guerra di narrative tra Washington e Parigi."
+            },
+            {
+              "titolo": "Rubio: gli USA dovranno 'riesaminare' il rapporto con la NATO, critiche ai paesi che impediscono l'uso delle basi",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/01/rubio-gli-usa-dovranno-riesaminare-il-loro-rapporto-con-la-nato_1f251fe7-bc23-47db-bddd-b5f8d90e829b.html",
+              "riassunto": "Il segretario di Stato Marco Rubio ha dichiarato che gli USA dovranno riesaminare il rapporto con la NATO, prendendo di mira i paesi alleati che 'impediscono di utilizzare le basi'. La dichiarazione si inserisce nel contesto più ampio delle tensioni transatlantiche legate al conflitto in Iran e al caso del sorvolo francese, e riecheggia le critiche di Trump agli europei riportate da Internazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale"
+              ],
+              "differenze_narrative": "L'ANSA riporta la dichiarazione di Rubio in modo neutro e fattuale. Internazionale colloca le critiche di Trump ai paesi europei in un quadro analitico più ampio, con un editoriale che paragona il 'perimetro di sicurezza' USA all'imperialismo. Le due fonti convergono nel descrivere una frattura crescente tra USA e alleati europei."
+            },
+            {
+              "titolo": "Benzina negli USA oltre i 4 dollari al gallone: l'impatto economico della guerra in Iran",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/03/31/la-benzina-in-usa-oltre-i-4-dollari-al-gallone-prima-volte-in-4-anni_4ebb03cb-34ce-44bb-9f19-2ebf8afea3a8.html",
+              "riassunto": "I prezzi della benzina negli USA hanno superato la soglia dei 4 dollari al gallone per la prima volta in quattro anni, con un aumento di oltre il 30% dall'inizio degli attacchi USA-Israele all'Iran a fine febbraio. Il blocco di fatto del Golfo Persico e dello Stretto di Hormuz ha interrotto i flussi petroliferi, con migliaia di marinai civili bloccati nella zona di conflitto.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times Homepage",
+                "New York Times World"
+              ],
+              "differenze_narrative": "L'ANSA si concentra sul dato numerico e sul record di prezzo. Il NYT Homepage contestualizza con l'impatto sui consumatori americani legandolo direttamente agli attacchi su Iran. Il NYT World aggiunge la dimensione umana con il reportage sui marinai civili bloccati nel Golfo Persico, una conseguenza poco coperta dai media italiani."
+            },
+            {
+              "titolo": "Israele approva la pena di morte per i palestinesi accusati di terrorismo",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/31/israele-approva-pena-morte-per-palestinesi-accusati-terrorismo",
+              "riassunto": "La Knesset ha approvato il 30 marzo una legge che introduce la pena di morte per 'terroristi', concepita per essere applicata esclusivamente ai palestinesi riconosciuti colpevoli di attacchi mortali contro israeliani. La legge rappresenta una svolta radicale nel sistema giuridico israeliano.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Libano: riunione urgente ONU dopo l'uccisione di tre caschi blu indonesiani",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/31/libano-riunione-urgente-onu-dopo-morte-caschi-blu-indonesiani",
+              "riassunto": "Il Consiglio di Sicurezza ONU si è riunito d'urgenza il 31 marzo dopo l'uccisione di tre caschi blu indonesiani nel sud del Libano. Israele ha contemporaneamente annunciato la morte di quattro soldati israeliani nella stessa area. L'episodio aggrava ulteriormente le tensioni nella regione già segnata dal conflitto con l'Iran.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aereo militare russo si schianta in Crimea: 29 morti",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/01/aereo-militare-russo-si-schianta-in-crimea-29-morti_5135c768-4ce1-49b5-94df-94b83e46bc6f.html",
+              "riassunto": "Un aereo militare russo si è schiantato in Crimea causando 29 vittime. La causa ufficiale sarebbe un guasto tecnico. L'incidente avviene mentre i ministri UE si recano a Kiev per commemorare i massacri di Bucha e discutere il futuro del sostegno europeo all'Ucraina.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ministri UE a Kiev per l'anniversario di Bucha e il futuro del sostegno all'Ucraina",
+              "fonte": "Adnkronos",
+              "link": "https://www.adnkronos.com/internazionale/esteri/ucraina-ministri-ue-a-kiev-per-bucha-e-il-futuro-del-sostegno-europeo_7M6ocb63X5t4oFmr2d6wp9",
+              "riassunto": "Riunione straordinaria dei ministri UE a Kiev per ricordare i massacri di Bucha della primavera 2022 e discutere il proseguimento degli aiuti al paese in guerra con la Russia. La visita ha un forte valore simbolico in un momento di tensioni transatlantiche crescenti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Cile di estrema destra revoca la regolarizzazione di 182mila migranti",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/03/31/cile-governo-estrema-destra-revoca-regolarizzazione-migranti",
+              "riassunto": "Il governo cileno del presidente di estrema destra José Antonio Kast ha annunciato la revoca della regolarizzazione di circa 182mila migranti, prevista dalla precedente amministrazione di sinistra. La decisione si inserisce nell'ondata di politiche anti-immigrazione in America Latina.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Re Carlo negli USA a fine aprile: Londra conferma la visita di Stato per non irritare Trump",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/03/31/re-carlo-negli-usa-a-fine-aprile-visita-di-stato-confermata_e39b4db4-60fe-4b2c-a80e-9c63596708bb.html",
+              "riassunto": "Il governo britannico ha confermato la visita di Stato di Re Carlo negli USA a fine aprile, cercando di evitare di irritare Trump nonostante gli strappi sull'Iran e le polemiche interne. La decisione riflette il delicato equilibrismo diplomatico del Regno Unito tra alleanza transatlantica e crescente disagio europeo per la guerra in Iran.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Escalation della guerra USA-Israele contro l'Iran e sue conseguenze globali (petrolio, diplomazia, navigazione)",
+            "Frattura transatlantica crescente: tensioni USA-Europa su NATO, basi militari e sorvoli",
+            "Impatto economico del conflitto mediorientale sui prezzi energetici globali",
+            "Svolta autoritaria in Israele: pena di morte selettiva per palestinesi",
+            "Ondata di destra in America Latina: politiche anti-immigrazione in Cile",
+            "Crisi umanitaria multifonte: caschi blu uccisi in Libano, marinai bloccati nel Golfo, violenze in Sudan"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle tensioni USA-Francia sul sorvolo e le dichiarazioni di Rubio sulla NATO potrebbero segnare una rottura strutturale nell'alleanza atlantica. Monitorare se altri paesi europei seguiranno l'esempio di Parigi nel limitare il supporto logistico alla campagna militare in Iran, e l'impatto del piano di pace sino-pakistano in 5 punti sulla diplomazia internazionale. Il superamento dei 4$/gallone di benzina potrebbe diventare un fattore politico interno decisivo per Trump.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata dominata da grandi operazioni industriali e finanziarie: dall'investimento miliardario di Silicon Box nei semiconduttori in Piemonte alla mega-fusione Unilever-McCormick nel food. Le borse europee chiudono un marzo volatile, mentre lo shock energetico globale riporta in auge il carbone. Diversi segnali di dinamismo nel tessuto produttivo italiano tra export, consumi e nuovi investimenti esteri.",
+          "notizie": [
+            {
+              "titolo": "Silicon Box: al via il polo dei semiconduttori nel Novarese con 1,3 miliardi di aiuti pubblici",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/silicon-box-via-l-accordo-il-progetto-che-avra-13-mld-aiuti-AIEPvOGC",
+              "riassunto": "Firmato l'accordo per la creazione di un polo dei semiconduttori nel Novarese da parte di Silicon Box. L'investimento complessivo è di 3,2 miliardi di euro, con 1,3 miliardi di aiuti pubblici e la creazione di 1.600 posti di lavoro diretti. Un tassello strategico per la sovranità tecnologica europea nel settore dei chip.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Unilever e McCormick si fondono: nasce un colosso alimentare globale da 66 miliardi",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/unilever-accordo-mccormick-nasce-colosso-food-66-miliardi-AIO4YiGC",
+              "riassunto": "Unilever ha raggiunto un accordo per fondere la propria divisione alimentare con il produttore di spezie McCormick, dando vita a una società con un valore stimato di 66 miliardi di euro. L'operazione ridisegna gli equilibri del settore food globale e rappresenta una delle più grandi fusioni dell'anno nel comparto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Borse europee volatili, marzo chiude come il peggior mese da giugno 2022. Rally del petrolio",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borse-asiatiche-miste-mentre-prezzi-petrolio-continuano-salire-AIMOyIGC",
+              "riassunto": "L'Euro Stoxx 600 ha registrato il mese peggiore (-8%) da giugno 2022, in un contesto di forte volatilità. Il petrolio Brent ha messo a segno un rialzo record del 64,1% nel solo mese di marzo, con il Wti a +58,7%. A Milano si distingue Nexi in positivo. Il conflitto in Iran pesa sull'andamento dei mercati.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lo shock energetico globale riporta in auge il carbone",
+              "fonte": "The Economist Finance",
+              "link": "https://www.economist.com/finance-and-economics/2026/03/31/the-energy-shock-brings-coal-back-into-fashion",
+              "riassunto": "Secondo The Economist, la crisi del gas naturale liquefatto (LNG) sta favorendo un ritorno del carbone come fonte energetica competitiva. Un paradosso per la transizione ecologica: il combustibile più inquinante torna di moda proprio mentre i prezzi del petrolio e del gas schizzano verso l'alto a causa delle tensioni geopolitiche.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Economist Finance",
+                "Il Sole 24 Ore Finanza"
+              ],
+              "differenze_narrative": "The Economist analizza il fenomeno globale del ritorno del carbone come conseguenza strutturale della crisi LNG, con un taglio macro e ambientale. Il Sole 24 Ore, nella cronaca di borsa, si concentra sul rally del petrolio e l'impatto sui mercati finanziari europei. Entrambi fotografano lo stesso shock energetico ma da angolazioni diverse: commodity/transizione energetica vs. impatto su mercati e investitori."
+            },
+            {
+              "titolo": "Sturm Ruger rigetta l'offerta di acquisizione di Beretta Holding",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/sturm-ruger-rigetta-l-offerta-beretta-holding-AI4UxoGC",
+              "riassunto": "Il board di Sturm, Ruger & Co ha respinto la proposta di Beretta Holding di acquisire il 20% della società americana quotata a Wall Street. La scadenza per la richiesta della holding italiana è arrivata oggi con un rifiuto netto, segnando una battuta d'arresto per l'espansione internazionale del gruppo bresciano nel mercato delle armi USA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Mundys rafforza la posizione in Getlink: punta al 25% dell'operatore del tunnel della Manica",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/a-parigi-balza-getlink-il-rafforzamento-mundys-capitale-AIAX2WGC",
+              "riassunto": "La holding infrastrutturale Mundys (famiglia Benetton) sale fino al 9,5% di Getlink, operatore del tunnel sotto la Manica, con l'obiettivo dichiarato di raggiungere il 25% senza puntare al controllo. Il titolo balza a Parigi. Un'operazione che segna l'espansione della famiglia Benetton nelle infrastrutture europee di trasporto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Consumi fuori casa in Italia a quota 102 miliardi, ma la spritz economy segna il passo",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/i-consumi-fuori-casa-valgono-102-miliardi-soffre-spritz-economy-AI6uPnGC",
+              "riassunto": "I consumi fuori casa raggiungono nel 2025 un giro d'affari di 102 miliardi (+1,5% sull'anno precedente). Tuttavia il segmento dell'aperitivo e della cosiddetta 'spritz economy' mostra segni di sofferenza, segnalando un cambio nelle abitudini di spesa degli italiani verso una ristorazione più selettiva.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trevi lancia aumento di capitale da 100 milioni con il supporto di CDP Equity",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/trevi-lancia-aumento-capitale-100-milioni-il-pieno-supporto-cdp-equity-AIFoOQGC",
+              "riassunto": "Trevi Finanziaria Industriale ha approvato un aumento di capitale da 100 milioni di euro, con il pieno supporto di CDP Equity che parteciperà all'operazione e voterà a favore in assemblea straordinaria. Un segnale importante del ruolo di Cassa Depositi e Prestiti nel sostegno all'industria italiana specializzata.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ceramica italiana leader negli USA con 769 milioni di vendite, ma i dazi preoccupano",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/ceramica-italiana-leader-usa-vendite-769-milioni-87percento-AICMOJHC",
+              "riassunto": "L'export di ceramica italiana verso gli Stati Uniti raggiunge 769 milioni di euro (+8,7%), confermando la leadership del settore. Tuttavia alla fiera Coverings 2026 di Las Vegas domina l'incertezza tra gli espositori, probabilmente legata al contesto geopolitico e alle politiche commerciali americane.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Shock energetico globale: rally del petrolio e ritorno del carbone",
+            "Mega-operazioni M&A: Unilever-McCormick, Mundys-Getlink, Beretta-Ruger",
+            "Investimenti industriali strategici in Italia: semiconduttori e infrastrutture",
+            "Ruolo crescente di CDP e fondi pubblici nel sostegno all'industria",
+            "Incertezza commerciale internazionale per l'export italiano verso gli USA"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dello shock energetico e il suo impatto congiunto su mercati finanziari, transizione ecologica e costi per imprese e consumatori: il rally del petrolio (+64% a marzo), la crisi del LNG e il ritorno del carbone delineano uno scenario di crisi energetica strutturale che potrebbe condizionare profondamente il secondo trimestre 2026.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata dall'incendio di Crans-Montana e le sue ripercussioni diplomatiche con l'Italia, dal rincaro dei trasporti pubblici svizzeri e dal rifiuto della Confederazione ai sorvoli USA. Emergono anche fatti di cronaca nera e temi di politica interna ed estera con risvolti elvetici.",
+          "notizie": [
+            {
+              "titolo": "Trasporti pubblici svizzeri: aumento tariffario del 3,9% da dicembre",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/i-biglietti-dei-trasporti-pubblici-salgono-sul-treno-del-rincaro-423783",
+              "riassunto": "Alliance Swiss Pass ha annunciato un aumento medio delle tariffe dei trasporti pubblici del 3,9% a partire da dicembre. L'abbonamento metà-prezzo salirà di 5 franchi. Per il Canton Ticino, la Comunità Arcobaleno temporeggia sulla decisione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Il CdT enfatizza il dettaglio dell'aumento dell'abbonamento metà-prezzo (+5 franchi) e la posizione attendista del Canton Ticino. LaRegione si concentra sulla motivazione ufficiale fornita da Alliance Swiss Pass, ossia l'incremento dei costi e le decisioni politiche, con un approccio più istituzionale e meno locale."
+            },
+            {
+              "titolo": "La Confederazione ha respinto diverse richieste di sorvolo statunitensi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/la-confederazione-ha-respinto-diverse-richieste-di-sorvolo-usa-423754",
+              "riassunto": "Undici domande di sorvolo sono state depositate dagli Stati Uniti fra il 5 e il 23 marzo e sono state respinte dalla Confederazione. La decisione si inserisce nel più ampio contesto europeo delle posizioni dei Paesi rispetto alle operazioni militari USA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Incendio di Crans-Montana: l'ambasciatore italiano non è ancora rientrato a Berna, il Vallese chiede 10 milioni",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/nach-brand-in-crans-montana-italiens-botschafter-kehrt-noch-immer-nicht-nach-bern-zurueck",
+              "riassunto": "L'ambasciatore italiano in Svizzera non è ancora rientrato a Berna dopo l'incendio di Crans-Montana e alla cerimonia commemorativa è stato rappresentato dal suo vice. Parallelamente il Canton Vallese ha chiesto un credito supplementare di 10,18 milioni di franchi per le vittime, con aiuti immediati da 10'000 franchi e prefinanziamento di 50'000 franchi rimborsati dalla Confederazione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Schweiz",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "SRF si concentra sull'aspetto diplomatico e sull'assenza dell'ambasciatore italiano alla cerimonia, evidenziando la tensione tra i due Paesi. LaRegione approfondisce invece il lato finanziario e operativo degli aiuti cantonali, dettagliando importi, struttura del credito e copertura di funerali e rimpatri. Le due fonti offrono angolazioni complementari dello stesso evento."
+            },
+            {
+              "titolo": "Anziano muore dopo frenata brusca di un autobus: un bambino aveva attraversato la strada",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/il-bus-frena-bruscamente-un-anziano-cade-e-muore-il-giorno-dopo-423799",
+              "riassunto": "Un anziano passeggero è caduto a bordo di un autobus che aveva frenato bruscamente per evitare un bambino che aveva attraversato improvvisamente la strada. L'uomo è deceduto il giorno successivo all'incidente.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Entrambe le testate riportano la notizia in modo pressoché identico, con titolo e descrizione sovrapponibili. Non emergono differenze significative di angolazione o dettagli aggiuntivi, suggerendo una fonte comune (probabilmente un comunicato della polizia)."
+            },
+            {
+              "titolo": "Bambino trovato gravemente ferito a Romanshorn",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/trovato-un-bimbo-ferito-gravemente-a-romanshorn-423763",
+              "riassunto": "Un bambino è stato trovato gravemente ferito a Romanshorn, nel Canton Turgovia. È stato trasportato in ospedale e le indagini delle autorità sono in corso. Le circostanze dell'accaduto non sono ancora state chiarite.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Svizzera preoccupata per la pena di morte approvata in Israele contro i palestinesi",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915242/legge-israele-pena-morte-knesset",
+              "riassunto": "Il DFAE ha chiesto l'abrogazione della legge approvata dalla Knesset (62 a 48) che prevede la pena di morte per atti di terrorismo con processi entro 90 giorni. La posizione svizzera si allinea alle critiche internazionali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "SRF Schweiz"
+              ],
+              "differenze_narrative": "LaRegione tratta la notizia dall'angolazione svizzera, evidenziando la presa di posizione del DFAE e il voto parlamentare israeliano. SRF la affronta con due articoli separati: uno focalizzato sulle critiche internazionali al parlamento israeliano, l'altro sull'analisi della situazione politica interna israeliana che rende tali posizioni maggioritarie. La prospettiva svizzera è esclusiva di LaRegione."
+            },
+            {
+              "titolo": "Condannato a 24 mesi l'ex direttore di una compagnia di danza per abusi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/abusi-in-una-compagnia-di-danza-lex-direttore-e-stato-condannato-a-24-mesi-423774",
+              "riassunto": "L'ex direttore di una compagnia di danza è stato condannato a 24 mesi di detenzione per abusi. Dovrà inoltre versare 12'000 franchi di risarcimento a un'ex collaboratrice che aveva 16 anni al momento dell'assunzione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Riabilitazione degli svizzeri che combatterono nella Resistenza italiana e francese",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915237/resistenza-francese-italia-riabilitazione-volontari",
+              "riassunto": "La Commissione degli affari giuridici del Consiglio degli Stati ha dato seguito alla proposta di riabilitare i volontari svizzeri che parteciparono alla Resistenza in Italia e in Francia, seguendo il Consiglio nazionale. Un tema storico che torna d'attualità.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Affitti in aumento: il 40% delle famiglie svizzere spende oltre il 30% del reddito per l'alloggio",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915076/asi-sondaggio-affitti-famiglie-aumento",
+              "riassunto": "Un sondaggio dell'Associazione Svizzera degli Inquilini rivela che il 40% delle famiglie spende oltre il 30% del proprio reddito per l'affitto, superando la soglia considerata sostenibile. Il dato evidenzia la crescente pressione abitativa in Svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La BNS torna a vendere valute estere per la prima volta in due anni",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915083/bns-due-valute-miliardi-acquisti",
+              "riassunto": "Per la prima volta dal quarto trimestre 2023, la Banca nazionale svizzera ha venduto valute estere, segnalando un cambio di strategia monetaria dopo un lungo periodo di acquisti per contenere il franco forte.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Costo della vita in aumento (trasporti, affitti, tariffe)",
+            "Conseguenze diplomatiche dell'incendio di Crans-Montana",
+            "Posizionamento svizzero rispetto ai conflitti internazionali (sorvoli USA, pena di morte Israele)",
+            "Cronaca nera con vittime vulnerabili (anziani, bambini)"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle relazioni diplomatiche Italia-Svizzera dopo l'incendio di Crans-Montana: il mancato rientro dell'ambasciatore italiano e la richiesta di crediti supplementari del Vallese potrebbero segnalare una crisi più profonda. Da monitorare anche eventuali sviluppi sul caso del bambino gravemente ferito a Romanshorn, le cui circostanze restano ignote.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Giornata dominata dal rapporto cantonale sulla droga con 122 arresti e 132 kg di cocaina sequestrati, coperto da tutte le principali testate. Tiene banco il caso giudiziario di Fiorenzo Dadò e la scomparsa di Lili Hinstin, ex direttrice del Locarno Film Festival. Sul fronte politico, avanza il dossier salario minimo e la petizione sanitaria raccoglie 20mila firme in 5 giorni.",
+          "notizie": [
+            {
+              "titolo": "Rapporto droga 2025: 122 arresti in Ticino e 132 kg di cocaina sequestrati, boom rispetto al 2024",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/esplosi-gli-arresti-per-droga-ma-il-ticino-resta-sostanzialmente-una-regione-di-transito-423764",
+              "riassunto": "Il rapporto annuale sugli stupefacenti evidenzia un netto aumento degli arresti (122 contro i 78 del 2024) e dei sequestri di cocaina. Sei i decessi per overdose, 116 minorenni denunciati. Il Ticino si conferma snodo di transito per la droga diretta in Europa. Il commissario Lopa sottolinea la preoccupazione per il coinvolgimento di minori.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino",
+                "tio.ch Ticino"
+              ],
+              "differenze_narrative": "Il CdT enfatizza il dato dell'esplosione degli arresti e cita direttamente il commissario Lopa. Ticinonews presenta i dati in modo più asciutto e istituzionale. Tio.ch adotta un tono più sensazionalistico elencando le singole sostanze (khat, ketamina, hashish, eroina) nel titolo e punta sull'aspetto 'boom di arresti' e sul ruolo di transito strategico del cantone. Il CdT è l'unico a fornire il confronto numerico diretto con il 2024 (78 arresti)."
+            },
+            {
+              "titolo": "Fiorenzo Dadò scagionato dalla denuncia mendace, ma accusato di falsa testimonianza: promette battaglia",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/fiorenzo-dado-la-falsa-testimonianza-ce-ma-sono-pronto-a-oppormi-423761",
+              "riassunto": "Il Ministero pubblico ha abbandonato l'accusa di denuncia mendace nei confronti del presidente del Centro Fiorenzo Dadò, legata alle informazioni portate in Commissione, ma ha emesso un decreto d'accusa per falsa testimonianza. Dadò ribadisce la buona fede e annuncia di volersi opporre al decreto.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Il CdT titola in modo più combattivo ('sono pronto a oppormi') evidenziando la volontà di battaglia legale del politico. Ticinonews adotta un taglio più neutro e bilanciato, sottolineando sia l'assoluzione dalla denuncia mendace sia la permanenza dell'accusa di falsa testimonianza. Entrambi riportano la dichiarazione sulla buona fede e la tutela della fonte, ma il CdT offre maggiore contesto sul ruolo in Commissione."
+            },
+            {
+              "titolo": "È morta Lili Hinstin, ex direttrice artistica del Locarno Film Festival: aveva 48 anni",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/e-morta-lili-hinstin-423740",
+              "riassunto": "Si è spenta a 48 anni Lili Hinstin, direttrice artistica del Locarno Film Festival dalla fine del 2018 al 2020. Era malata da tempo. La sua figura ha segnato un periodo di transizione importante per il festival locarnese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Entrambe le testate riportano la notizia con toni sobri e contenuti pressoché identici. Il CdT precisa 'dalla fine del 2018' per l'inizio del mandato, mentre Ticinonews indica genericamente 'dal 2018'. Differenza minima, copertura sostanzialmente allineata."
+            },
+            {
+              "titolo": "Salario minimo in Ticino: via libera unanime della commissione, il controprogetto verso l'aula",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1915235/salario-iniziativa-rapporto-sirica-controprogetto-salari",
+              "riassunto": "La commissione della gestione ha approvato all'unanimità l'accordo sul nuovo salario minimo cantonale. Confermati i cinque punti del compromesso. Il PS non ritirerà l'iniziativa prima dell'avallo del parlamento. Il relatore Sirica assicura che l'accordo è 'blindato'.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "LaRegione approfondisce il contesto politico con la citazione di Sirica e la 'nota metodologica' che accompagnerà il rapporto in aula, mantenendo un taglio analitico. Ticinonews sintetizza con un approccio più diretto, menzionando la condizione del ritiro dell'iniziativa solo dopo l'avallo parlamentare. LaRegione evidenzia la cautela del PS, Ticinonews enfatizza l'unanimità del voto."
+            },
+            {
+              "titolo": "SwissMediaCast restituisce la concessione DAB+ in Ticino: la copertura radio resta garantita",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/swissmediacast-restituisce-la-concessione-dab-in-ticino-ma-la-copertura-e-garantita-423762",
+              "riassunto": "SwissMediaCast rinuncia per motivi economici alla concessione DAB+ nella Svizzera italiana con effetto dal 31 marzo 2026. La copertura radio digitale continuerà a essere garantita da Digris e dalla SSR.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Le due testate pubblicano la notizia con titolo e contenuto praticamente identici, suggerendo una fonte comune (comunicato stampa o agenzia). Nessuna differenza narrativa significativa."
+            },
+            {
+              "titolo": "Petizione sanitaria: 20mila firme raccolte in soli 5 giorni consegnate al consigliere De Rosa",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/non-e-colpa-dei-pazienti-raccolte-20-mila-firme-in-soli-5-giorni-430378",
+              "riassunto": "L'alleanza trasversale tra partiti e organizzazioni ha raccolto 20mila firme in soli cinque giorni con la petizione 'Non è colpa dei pazienti', consegnate al consigliere di Stato Raffaele De Rosa. Un risultato definito 'straordinario' dai promotori che segnala un forte malcontento sulla gestione sanitaria cantonale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Accoltellamento al collo: confermato il tentato omicidio, 38 mesi sospesi con obbligo di cura",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/accoltello-un-amico-al-collo-condannato-ma-deve-curarsi-423796",
+              "riassunto": "Condannato a 3 anni e 8 mesi sospesi per tentato omicidio un uomo che nel dicembre 2020 accoltellò un conoscente al collo per futili motivi. Il giudice ha sottolineato l'incomprensibilità del gesto e il rischio accettato di infliggere ferite mortali. Disposta una misura terapeutica.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "LaRegione Bellinzonese"
+              ],
+              "differenze_narrative": "Il CdT fornisce dettagli più precisi sulla pena (3 anni e 8 mesi) e cita il giudice, con un taglio più giudiziario. LaRegione titola in modo più sintetico ('38 mesi ma sospesi') e il contenuto disponibile appare meno dettagliato. Il CdT enfatizza la motivazione dei 'futili motivi' e l'obbligo di cura."
+            },
+            {
+              "titolo": "Cureglia: indagato il municipale UDC Stefano Rezzonico per fatti della sfera privata",
+              "fonte": "LaRegione Luganese",
+              "link": "https://www.laregione.ch/cantone/luganese/1915192/cureglia-stefano-rezzonico-ticinesi-udc",
+              "riassunto": "La procuratrice pubblica Petra Canonica Alexakis ha aperto un'indagine nei confronti del municipale 44enne dell'UDC di Cureglia Stefano Rezzonico. Il reato ipotizzato riguarda la sfera privata dell'uomo e non la sua carica pubblica.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bufera sul Porto di Locarno: richiesta di perizia esterna e accesso ai documenti",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/bufera-sul-porto-di-locarno-ci-vorrebbe-una-perizia-esterna-423768",
+              "riassunto": "Il capogruppo della Sinistra Unita Francesco Albi chiede un parere giuridico indipendente sulle criticità nella gestione della SA partecipata dalla Città di Locarno. I due membri designati dal Municipio hanno inviato una raccomandata per ottenere accesso a tutta la documentazione societaria.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sicurezza al Nebiopoli di Chiasso: aperta d'ufficio un'inchiesta penale sul carnevale",
+              "fonte": "LaRegione Mendrisiotto",
+              "link": "https://www.laregione.ch/cantone/mendrisiotto/1915124/nebiopoli-sicurezza-carnevale-intervento-competenza",
+              "riassunto": "È stata aperta d'ufficio un'inchiesta penale sulla sicurezza durante il carnevale Nebiopoli di Chiasso. L'indagine riguarda le modalità di gestione della sicurezza durante la manifestazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Emergenza stupefacenti: aumento arresti e coinvolgimento minori",
+            "Casi giudiziari contro figure politiche (Dadò, Rezzonico)",
+            "Salario minimo verso l'approvazione parlamentare",
+            "Malcontento sanitario: mobilitazione popolare record",
+            "Gestione enti pubblici sotto scrutinio (Porto Locarno, Nebiopoli)"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione del caso Dadò verso un possibile processo per falsa testimonianza e il passaggio in aula del controprogetto sul salario minimo, che potrebbe portare al ritiro dell'iniziativa popolare del PS. Da monitorare anche la petizione sanitaria da 20mila firme e la risposta del Consiglio di Stato.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Giornata dominata dalla scomparsa di figure artistiche (David Riondino, Melvin Edwards, Glen Baxter, Lili Hinstin), dall'espansione dell'Eurovision in Asia con il primo ESC Asia a Bangkok, e dagli annunci dei grandi festival estivi come il Montreux Jazz Festival al suo 60° anniversario. Forte presenza di notizie dalla scena culturale ticinese e svizzera.",
+          "notizie": [
+            {
+              "titolo": "L'Eurovision Song Contest si espande in Asia: Bangkok ospiterà il primo ESC Asia",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/31/arts/music/eurovision-song-contest-asia.html",
+              "riassunto": "L'European Broadcasting Union lancia la prima edizione asiatica dell'Eurovision Song Contest, che si terrà a Bangkok con la partecipazione di 10 nazioni tra cui Corea del Sud, Filippine e Vietnam. L'espansione rappresenta un passo storico per il format europeo verso il mercato asiatico.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times Arts",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "Il NYT si concentra sulle nazioni partecipanti e sull'impatto culturale globale del format. LaRegione enfatizza il ruolo dell'EBU e dei partner produttivi (Voxovation, S2O Productions) e dell'emittente thailandese, con un'angolazione più orientata agli aspetti organizzativi e istituzionali europei."
+            },
+            {
+              "titolo": "Montreux Jazz Festival compie 60 anni: Deep Purple, Jovanotti e Raye tra i protagonisti",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1915105/montreux-festival-jazz-jovanotti-raye-deep-purple-60imo",
+              "riassunto": "Il 60° Montreux Jazz Festival, in programma dal 3 al 18 luglio 2026, annuncia un cartellone di grande prestigio con Deep Purple, Jovanotti, Raye, Nick Cave e Moby. Un'edizione celebrativa per uno dei festival musicali più iconici al mondo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "CdT Società"
+              ],
+              "differenze_narrative": "LaRegione titola con enfasi sull'anniversario (60imo) e menziona tre nomi di punta. Il Corriere del Ticino adotta un taglio più popolare ('Dai Deep Purple a Jovanotti: ecco gli artisti') e aggiunge nel sommario Nick Cave e Moby, ampliando il ventaglio di nomi per attrarre un pubblico più ampio."
+            },
+            {
+              "titolo": "Addio a David Riondino: funerale tra poesia, racconto e la sua Maracaibo",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1915173/riondino-david-chiesa-maracaibo-spettacolo",
+              "riassunto": "Si sono svolti i funerali di David Riondino, artista poliedrico tra teatro, poesia e canzone. La cerimonia è stata un ultimo spettacolo commovente, con lacrime e l'immancabile 'Maracaibo', il brano che lo rese celebre. Un addio che ha mescolato memoria e arte.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Morta Lili Hinstin, ex direttrice artistica del Locarno Film Festival",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/locarno-film-festival/1915226/festival-locarno-film-hinstin-direttrice-lili",
+              "riassunto": "È scomparsa la francese Lili Hinstin, che aveva ricoperto il ruolo di direttrice artistica del Locarno Film Festival per due edizioni. Una figura significativa per il cinema d'autore e per il prestigioso festival ticinese.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Melvin Edwards, scultore che intrecciò la storia afroamericana nell'arte, muore a 88 anni",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/31/arts/melvin-edwards-dead.html",
+              "riassunto": "È morto a 88 anni Melvin Edwards, scultore afroamericano noto per i 'Lynch Fragments', serie di sculture astratte in acciaio iniziata nel 1963 che evocavano la lunga e devastante storia di violenza contro i neri americani. Una perdita significativa per l'arte contemporanea.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La nuova invasione britannica della musica pop è al femminile: Raye, Olivia Dean, Lola Young e PinkPantheress",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/31/arts/music/british-invasion-raye-olivia-dean-pinkpantheress.html",
+              "riassunto": "Una nuova generazione di artiste britanniche — Raye, Olivia Dean, Lola Young e PinkPantheress — sta conquistando le classifiche internazionali e la cultura pop, rivendicando con orgoglio la propria identità inglese anziché adattarla al mercato americano. Un fenomeno culturale di portata globale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Recensione di 'The Super Mario Galaxy Movie': il sequel del mega-blockbuster non convince",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/03/31/movies/the-super-mario-galaxy-movie-review.html",
+              "riassunto": "Il sequel del film di Super Mario, uno dei maggiori incassi della storia dell'animazione, riceve una recensione tiepida dal NYT. Il film non riesce a stare fermo abbastanza a lungo da lasciar godere i momenti riusciti, risultando frenetico e insoddisfacente.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Addio a Glen Baxter, maestro britannico dell'illustrazione surreale",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1915335/baxter-illustratore-surreale-glen-londra",
+              "riassunto": "È scomparso a Londra l'illustratore britannico Glen Baxter, celebre per il suo umorismo surreale e il tratto inconfondibile. Le sue opere hanno influenzato generazioni di illustratori e vignettisti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lugano Dance Project chiude con la terza e ultima edizione: un addio guardando all'eredità",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1915278/danza-lac-eredita-lugano-pubblico-edizione-dance-rifici",
+              "riassunto": "La terza e ultima edizione del Lugano Dance Project si terrà dal 10 al 14 giugno al LAC. L'evento biennale dedicato alla danza contemporanea chiude i battenti, ponendo l'accento sull'eredità culturale lasciata al territorio.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Lutti nel mondo dell'arte e della cultura: scomparsa di più figure artistiche significative (Riondino, Edwards, Baxter, Hinstin)",
+            "Globalizzazione dei format culturali europei: Eurovision si espande in Asia",
+            "Nuova ondata di artiste britanniche nella musica pop internazionale",
+            "Festival estivi svizzeri in fermento: annunci e line-up (Montreux, Estival, Lugano Dance Project)"
+          ],
+          "da_tenere_d_occhio": "L'espansione dell'Eurovision in Asia potrebbe ridefinire il format e il suo impatto culturale globale: monitorare la reazione dei mercati musicali asiatici e l'eventuale coinvolgimento di artisti K-pop già affermati. Seguire anche gli sviluppi del Locarno Film Festival dopo la scomparsa dell'ex direttrice artistica Lili Hinstin.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Giornata dominata dal mega-round di OpenAI da 122 miliardi di dollari con valutazione a 852 miliardi, dalla clamorosa fuga del codice sorgente di Claude Code di Anthropic (che continua la sua settimana nera), e da mosse strategiche di big tech come Salesforce, Google e Oracle nel riposizionamento AI.",
+          "notizie": [
+            {
+              "titolo": "OpenAI chiude un round di finanziamento monstre da 122 miliardi di dollari con valutazione a 852 miliardi",
+              "fonte": "Hacker News / CNBC",
+              "link": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+              "riassunto": "OpenAI ha chiuso il più grande round di finanziamento nella storia delle startup, raccogliendo 122 miliardi di dollari (di cui 3 miliardi da investitori retail) con una valutazione di 852 miliardi. Il round è guidato da Amazon, Nvidia e SoftBank, e avvicina la società all'IPO. Si tratta di cifre senza precedenti che ridefiniscono le dimensioni del settore AI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Hacker News",
+                "TechCrunch AI",
+                "New York Times Technology"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza la componente retail (3 miliardi) e la valutazione a 852 miliardi; il NYT riporta una valutazione diversa (730 miliardi) e parla di 12 miliardi aggiuntivi, suggerendo che il round si sia espanso progressivamente; Hacker News via CNBC si focalizza sull'imminenza dell'IPO. La discrepanza sulla valutazione (730 vs 852 miliardi) potrebbe riflettere aggiornamenti in tempo reale del round. Su HN il dibattito è acceso con 323 commenti, segno di forte polarizzazione della community."
+            },
+            {
+              "titolo": "Fuga del codice sorgente di Claude Code: Anthropic pubblica accidentalmente il sorgente del suo tool di coding AI",
+              "fonte": "Hacker News",
+              "link": "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/",
+              "riassunto": "Il codice sorgente di Claude Code è trapelato tramite un file map nel registro NPM, rivelando dettagli interni come strumenti falsi, espressioni regex di frustrazione e una 'modalità sotto copertura'. È il secondo incidente di sicurezza per Anthropic in una settimana, dopo il leak di post interni sul modello Mythos. L'analisi del codice ha generato enorme interesse nella community tecnica.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Hacker News",
+                "The Decoder",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "Hacker News offre l'analisi tecnica più approfondita (975 punti, 383 commenti) con dettagli su fake tools e stealth mode; The Decoder contestualizza l'incidente nella serie di problemi di Anthropic (leak Mythos + questo); TechCrunch con il titolo 'Anthropic is having a month' adotta un tono più sarcastico e narrativo, parlando di un 'umano che combina guai per la seconda volta in una settimana'. Le fonti tecniche scavano nel codice, le generaliste enfatizzano il pattern di errori."
+            },
+            {
+              "titolo": "OpenAI lancia un plugin Codex che funziona all'interno di Claude Code di Anthropic",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-launches-a-codex-plugin-that-runs-inside-anthropics-claude-code/",
+              "riassunto": "OpenAI ha rilasciato un plugin che integra il suo assistente di coding Codex direttamente all'interno di Claude Code di Anthropic. Una mossa strategica inusuale che porta il prodotto di OpenAI nel cuore dell'ecosistema del concorrente, segnalando una nuova fase di interoperabilità (o competizione asimmetrica) nel mercato degli strumenti AI per sviluppatori.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Oracle licenzia migliaia di dipendenti per finanziare la scommessa sull'infrastruttura AI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/oracle-reportedly-lays-off-thousands-of-employees-to-bankroll-its-massive-ai-infrastructure-bet/",
+              "riassunto": "Oracle sta tagliando migliaia di posti di lavoro per finanziare la costruzione massiva di data center AI. Con il titolo in calo del 25% e debiti in crescita, l'azienda scommette su miliardi di ricavi garantiti, incluso un ordine da 455 miliardi da OpenAI. Ma la materializzazione effettiva di questi ricavi è tutt'altro che certa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Salesforce annuncia un restyling di Slack con 30 nuove funzionalità basate sull'AI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
+              "riassunto": "Salesforce ha presentato un massiccio aggiornamento di Slack incentrato sull'intelligenza artificiale, con 30 nuove funzionalità. L'obiettivo è trasformare Slack da semplice tool di messaggistica a piattaforma di lavoro potenziata dall'AI, in un momento in cui la competizione per gli strumenti di produttività enterprise si intensifica.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Qwen3.5-Omni di Alibaba impara a scrivere codice da istruzioni vocali e video senza addestramento specifico",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/qwen3-5-omni-learned-to-write-code-from-spoken-instructions-and-video-without-anyone-training-it-to/",
+              "riassunto": "Alibaba ha rilasciato Qwen3.5-Omni, modello AI omnimodale che elabora testo, immagini, audio e video. Sorprendentemente, il modello ha sviluppato spontaneamente la capacità di scrivere codice partendo da istruzioni vocali e input video, senza essere stato addestrato per farlo. Afferma di battere Gemini 3.1 Pro nei task audio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bonsai a 1 bit: i primi LLM a 1 bit commercialmente validi",
+              "fonte": "Hacker News",
+              "link": "https://prismml.com/",
+              "riassunto": "Presentati su Hacker News i primi modelli linguistici a 1 bit considerati commercialmente utilizzabili. La tecnologia promette di ridurre drasticamente i requisiti computazionali per l'inferenza AI, con potenziali impatti enormi sull'accessibilità e i costi di deployment dei modelli. Grande interesse della community con 164 punti e 69 commenti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I benchmark AI sono rotti: servono nuovi paradigmi di valutazione",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/03/31/1134833/ai-benchmarks-are-broken-heres-what-we-need-instead/",
+              "riassunto": "MIT Technology Review critica il paradigma dei benchmark AI basato sul confronto uomo-macchina, ritenendolo ormai inadeguato. Il tema si collega all'analisi di The Decoder sul divario tra benchmark e impatto economico reale, suggerendo che i guadagni di produttività misurati nei test non si traducono in benefici concreti a causa di overhead di verifica e inerzia organizzativa.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "MIT Tech Review",
+                "The Decoder"
+              ],
+              "differenze_narrative": "MIT Tech Review affronta il tema da un'angolazione più filosofica e metodologica, questionando il framework stesso del confronto uomo-macchina; The Decoder (Frontier Radar #2) si concentra sull'aspetto pratico-economico, analizzando perché i miglioramenti nei benchmark non si traducono in produttività aziendale misurabile. Insieme offrono una critica complementare all'ossessione per i benchmark."
+            },
+            {
+              "titolo": "Mercor colpita da cyberattack legato alla compromissione del progetto open source LiteLLM",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+              "riassunto": "La startup AI di recruiting Mercor ha confermato un incidente di sicurezza dopo che un gruppo hacker ha rivendicato il furto di dati dai suoi sistemi. L'attacco è legato alla compromissione del progetto open source LiteLLM, evidenziando i rischi della supply chain software nell'ecosistema AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La California stabilisce regole proprie sull'AI per gli appaltatori statali, sfidando la politica federale",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/california-sets-its-own-ai-rules-for-state-contractors-pushing-back-against-federal-policy/",
+              "riassunto": "Il governatore Gavin Newsom ha firmato un ordine esecutivo che impone alle aziende con contratti statali di implementare salvaguardie contro l'uso improprio dell'AI. La mossa segna una crescente divergenza tra California e governo federale sulla regolamentazione dell'intelligenza artificiale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Concentrazione di capitali senza precedenti nel settore AI (round OpenAI, licenziamenti Oracle per infrastruttura AI, data center Nebius)",
+            "Crisi di sicurezza e affidabilità nelle aziende AI leader (leak Anthropic, attacco Mercor via supply chain open source)",
+            "Interoperabilità competitiva: rivali AI che costruiscono nei reciproci ecosistemi (Codex dentro Claude Code)",
+            "Emergenza di capacità non previste nei modelli multimodali (Qwen3.5-Omni)",
+            "Crescente scetticismo verso benchmark e metriche di produttività AI"
+          ],
+          "da_tenere_d_occhio": "La serie di incidenti di Anthropic (leak blog interni su Mythos, leak codice sorgente Claude Code) potrebbe segnalare problemi organizzativi più profondi proprio mentre l'azienda compete con OpenAI. Contemporaneamente, la mossa di OpenAI di integrare Codex dentro Claude Code rappresenta una strategia di 'cavallo di Troia' che potrebbe ridefinire le dinamiche competitive nel mercato degli strumenti AI per sviluppatori. Monitorare se la valutazione di OpenAI a 852 miliardi reggerà il percorso verso l'IPO.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        }
+      ]
+    },
     {
       "id": 10,
       "run_id": 42,
