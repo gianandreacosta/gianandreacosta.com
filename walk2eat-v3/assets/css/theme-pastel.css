@@ -1,0 +1,30 @@
+/* Walk2Eat — Theme: Pastel (chiaro, leggero, arioso) */
+:root {
+  --bg: #faf7f5;
+  --bg-soft: #f5f0eb;
+  --card: #ffffff;
+  --card-border: #e8e0d8;
+  --text: #3d3833;
+  --text-secondary: #8a8279;
+  --accent: #e88d9d;
+  --accent-hover: #d46b7e;
+  --accent-soft: rgba(232,141,157,0.12);
+  --accent-2: #93c5fd;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+.brand-text, .brand-two { color: var(--accent) !important; }
+.btn-primary { background: var(--accent) !important; color: #fff !important; }
+.btn-primary:hover { background: var(--accent-hover) !important; }
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+.nav-item .nav-icon, .nav-item span { color: #8a8279 !important; }
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; background: var(--accent-soft) !important; }
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+.section-title { color: var(--accent) !important; }
+body { background: var(--bg) !important; color: var(--text) !important; }
+.top-header { background: rgba(250,247,245,0.95) !important; border-bottom-color: var(--card-border) !important; }
+.bottom-nav { background: rgba(255,255,255,0.97) !important; border-top: 1px solid var(--card-border) !important; }
+.card { background: var(--card) !important; border-color: var(--card-border) !important; box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important; }
+.btn-ghost { color: var(--text) !important; border-color: var(--card-border) !important; }
+.btn-secondary { color: var(--text) !important; background: var(--bg-soft) !important; }
+select, .input { background: var(--bg-soft) !important; color: var(--text) !important; border-color: var(--card-border) !important; }

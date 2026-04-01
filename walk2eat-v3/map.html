@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <title>Navigazione • Walk2Eat</title>
+  <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.js"></script>
+  <style>
+    .nav-map { height: calc(100dvh - 160px); min-height: 320px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border); }
+
+    /* Live tracking panel */
+    .live-panel {
+      position: absolute; top: 12px; left: 12px; right: 12px; z-index: 10;
+      display: flex; gap: 8px; justify-content: center; align-items: center;
+      background: rgba(15,23,42,0.92); backdrop-filter: blur(12px);
+      border-radius: 16px; padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fff; font-size: 13px; font-weight: 600;
+    }
+    .live-stat { text-align: center; flex: 1; }
+    .live-stat .val { font-size: 20px; font-weight: 800; color: var(--primary, #22c55e); }
+    .live-stat .lbl { font-size: 10px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.5px; }
+    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse-dot 2s infinite; }
+    @keyframes pulse-dot { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.5; transform:scale(1.5); } }
+
+    /* Progress bar */
+    .progress-bar-wrap {
+      position: absolute; bottom: 60px; left: 12px; right: 12px; z-index: 10;
+      height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;
+    }
+    .progress-bar-fill { height: 100%; background: var(--primary, #22c55e); border-radius: 3px; transition: width 0.5s; width: 0%; }
+
+    /* Control buttons row */
+    .map-controls {
+      position: absolute; bottom: 12px; left: 12px; right: 12px; z-index: 10;
+      display: flex; gap: 8px; justify-content: space-between;
+    }
+    .ctrl-btn {
+      width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(15,23,42,0.85); backdrop-filter: blur(8px);
+      color: #fff; font-size: 20px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: all .2s;
+    }
+    .ctrl-btn.active { background: var(--primary, #22c55e); }
+    .ctrl-btn:active { transform: scale(0.9); }
+
+    /* Layer pills */
+    .layer-pills {
+      position: absolute; top: 72px; right: 12px; z-index: 10;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .layer-pill {
+      padding: 4px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; cursor: pointer;
+      background: rgba(15,23,42,0.8); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px); transition: all .2s; text-align: center;
+    }
+    .layer-pill.active { background: var(--primary, #22c55e); color: #fff; }
+
+    /* View mode pills */
+    .view-pills {
+      position: absolute; top: 72px; left: 12px; z-index: 10;
+      display: flex; gap: 4px;
+    }
+    .view-pill {
+      padding: 4px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; cursor: pointer;
+      background: rgba(15,23,42,0.8); color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px); transition: all .2s;
+    }
+    .view-pill.active { background: #3b82f6; color: #fff; }
+
+    .map-loading { min-height: 320px; }
+
+    /* User dot pulse (inside map canvas via marker) */
+    .user-dot-outer {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: rgba(59,130,246,0.25); display: flex; align-items: center; justify-content: center;
+      animation: pulse-ring 2s infinite;
+    }
+    .user-dot-inner {
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #3b82f6; border: 2.5px solid #fff;
+      box-shadow: 0 0 6px rgba(59,130,246,0.6);
+    }
+    @keyframes pulse-ring { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.4); opacity:0.4; } }
+
+    /* Direction cone */
+    .heading-cone {
+      position: absolute; top: -20px; left: 50%; transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 8px solid transparent; border-right: 8px solid transparent;
+      border-bottom: 20px solid rgba(59,130,246,0.5);
+      filter: blur(1px);
+    }
+  </style>
+</head>
+<body>
+<div class="container page-enter" style="padding:0 8px">
+
+  <div class="top-header" style="padding:8px 0">
+    <a class="brand" href="dashboard.html">
+      <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
+      <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
+    </a>
+    <a class="btn btn-ghost" href="dashboard.html">← Home</a>
+  </div>
+
+  <div style="position:relative">
+    <!-- Loading state -->
+    <div id="loadingBox" class="map-loading">
+      <div class="spinner"></div>
+      <span id="loadingMsg">Ricerca posizione GPS…</span>
+    </div>
+
+    <!-- Map container -->
+    <div id="mapWrapper" style="display:none;position:relative">
+      <div id="map" class="nav-map"></div>
+
+      <!-- Live panel -->
+      <div class="live-panel" id="livePanel" style="display:none">
+        <div class="live-dot"></div>
+        <div class="live-stat"><div class="val" id="distRemain">--</div><div class="lbl">Rimanenti</div></div>
+        <div class="live-stat"><div class="val" id="timeRemain">--</div><div class="lbl">Min</div></div>
+        <div class="live-stat"><div class="val" id="distDone">0</div><div class="lbl">Percorsi</div></div>
+      </div>
+
+      <!-- View mode -->
+      <div class="view-pills" id="viewPills" style="display:none">
+        <div class="view-pill" id="viewTop" data-view="top">🗺️ Mappa</div>
+        <div class="view-pill" id="view3d" data-view="3d">🏔️ 3D</div>
+        <div class="view-pill active" id="viewFollow" data-view="follow">🧭 Segui</div>
+      </div>
+
+      <!-- Layer pills -->
+      <div class="layer-pills">
+        <div class="layer-pill active" id="layerOsm" data-layer="osm">🗺️ OSM</div>
+        <div class="layer-pill" id="layerSwiss" data-layer="swiss">🏔️ Swiss</div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="progress-bar-wrap" id="progressWrap" style="display:none">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+
+      <!-- Bottom controls -->
+      <div class="map-controls">
+        <button class="ctrl-btn" id="btnCenter" title="Centra su di me">📍</button>
+        <button class="ctrl-btn" id="btnStart" title="Avvia/ferma navigazione">▶️</button>
+      </div>
+    </div>
+
+    <!-- Error / meta -->
+    <div id="metaBox" style="display:none;padding:12px">
+      <p id="errorMsg" style="color:var(--danger);margin:0"></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="dashboard.html" class="nav-item"><span class="nav-icon">🏠</span><span>Home</span></a>
+    <a href="map.html" class="nav-item active"><span class="nav-icon">🧭</span><span>Vai!</span></a>
+    <a href="favorites.html" class="nav-item"><span class="nav-icon">❤️</span><span>Preferiti</span></a>
+    <a href="history.html" class="nav-item"><span class="nav-icon">📋</span><span>Cronologia</span></a>
+    <a href="preferences.html" class="nav-item"><span class="nav-icon">⚙️</span><span>Impostazioni</span></a>
+  </div>
+</nav>
+
+<script src="assets/js/routes-poc-data.js?v=20260331c"></script>
+<script src="assets/js/config.js?v=20260331c"></script>
+<script src="assets/js/app.js?v=20260331c"></script>
+<script src="assets/js/themes.js?v=20260331c"></script>
+<script>
+(function() {
+  var map = null;
+  var userMarker = null;
+  var watchId = null;
+  var isTracking = false;
+  var autoCenter = true;
+  var viewMode = 'follow'; // top | 3d | follow
+  var routePoints = [];
+  var totalRouteMeters = 0;
+  var currentProposal = null;
+  var lastUserPos = null;
+  var lastHeading = null;
+  var currentLayerId = 'osm';
+
+  var TILE_SOURCES = {
+    osm: { tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], attribution: '© OpenStreetMap', maxzoom: 19 },
+    swiss: { tiles: ['https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg'], attribution: '© swisstopo', maxzoom: 18 }
+  };
+
+  // --- Haversine ---
+  function distM(a, b) {
+    var R = 6371000, dLat = (b.lat-a.lat)*Math.PI/180, dLng = (b.lng-a.lng)*Math.PI/180;
+    var s = Math.sin(dLat/2)**2 + Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1-s));
+  }
+
+  // --- Route progress ---
+  function routeProgress(userPos) {
+    if (!routePoints.length) return { nearestIdx: 0, distFromStart: 0, distToEnd: 0, fraction: 0, offRoute: 999 };
+    var bestIdx = 0, bestDist = Infinity;
+    for (var i = 0; i < routePoints.length; i++) {
+      var d = distM(userPos, routePoints[i]);
+      if (d < bestDist) { bestDist = d; bestIdx = i; }
+    }
+    var fromStart = 0;
+    for (var j = 1; j <= bestIdx; j++) fromStart += distM(routePoints[j-1], routePoints[j]);
+    return { nearestIdx: bestIdx, distFromStart: fromStart, distToEnd: Math.max(0, totalRouteMeters - fromStart), fraction: fromStart / (totalRouteMeters || 1), offRoute: bestDist };
+  }
+
+  // --- Update live panel ---
+  function updatePanel(prog) {
+    var rKm = prog.distToEnd / 1000, dKm = prog.distFromStart / 1000;
+    document.getElementById('distRemain').textContent = rKm < 1 ? Math.round(rKm*1000) + 'm' : rKm.toFixed(1) + 'km';
+    document.getElementById('distDone').textContent = dKm < 1 ? Math.round(dKm*1000) + 'm' : dKm.toFixed(1) + 'km';
+    document.getElementById('timeRemain').textContent = Math.round(prog.distToEnd / 75);
+    document.getElementById('progressFill').style.width = Math.min(100, Math.round(prog.fraction * 100)) + '%';
+  }
+
+  // --- Loading / Error ---
+  function setLoading(msg) {
+    document.getElementById('loadingBox').style.display = 'flex';
+    document.getElementById('mapWrapper').style.display = 'none';
+    document.getElementById('metaBox').style.display = 'none';
+    document.getElementById('loadingMsg').textContent = msg;
+  }
+  function setError(msg) {
+    document.getElementById('loadingBox').style.display = 'none';
+    document.getElementById('metaBox').style.display = 'block';
+    document.getElementById('errorMsg').textContent = msg;
+  }
+
+  // --- Create / switch tile source ---
+  function applyTileLayer(layerId) {
+    if (!map) return;
+    currentLayerId = layerId;
+    var src = TILE_SOURCES[layerId];
+    if (map.getSource('raster-tiles')) {
+      // Can't update source directly in MapLibre, so swap style
+      map.getSource('raster-tiles').tiles = src.tiles;
+      map.style.sourceCaches['raster-tiles'].clearTiles();
+      map.triggerRepaint();
+    }
+    document.querySelectorAll('.layer-pill').forEach(function(el) { el.classList.toggle('active', el.dataset.layer === layerId); });
+  }
+
+  // --- Build MapLibre style ---
+  function makeStyle(layerId) {
+    var src = TILE_SOURCES[layerId];
+    return {
+      version: 8,
+      sources: {
+        'raster-tiles': { type: 'raster', tiles: src.tiles, tileSize: 256, attribution: src.attribution, maxzoom: src.maxzoom }
+      },
+      layers: [{ id: 'raster-layer', type: 'raster', source: 'raster-tiles' }]
+    };
+  }
+
+  // --- Render route ---
+  function renderRoute(proposal) {
+    currentProposal = proposal;
+    document.getElementById('loadingBox').style.display = 'none';
+    document.getElementById('mapWrapper').style.display = 'block';
+    document.getElementById('metaBox').style.display = 'none';
+
+    routePoints = proposal.route;
+    totalRouteMeters = 0;
+    for (var i = 1; i < routePoints.length; i++) totalRouteMeters += distM(routePoints[i-1], routePoints[i]);
+
+    // Compute bounds
+    var lats = routePoints.map(function(p){return p.lat;}), lngs = routePoints.map(function(p){return p.lng;});
+    var sw = [Math.min.apply(null, lngs), Math.min.apply(null, lats)];
+    var ne = [Math.max.apply(null, lngs), Math.max.apply(null, lats)];
+
+    if (map) { map.remove(); map = null; userMarker = null; }
+
+    map = new maplibregl.Map({
+      container: 'map',
+      style: makeStyle(currentLayerId),
+      bounds: [sw, ne],
+      fitBoundsOptions: { padding: { top: 90, bottom: 80, left: 30, right: 30 } },
+      pitch: 60,
+      maxPitch: 70,
+      attributionControl: false
+    });
+
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+
+    map.on('load', function() {
+      // Route line
+      var coords = routePoints.map(function(p) { return [p.lng, p.lat]; });
+      map.addSource('route', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: coords } } });
+      // Route glow
+      map.addLayer({ id: 'route-glow', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 10, 'line-opacity': 0.25, 'line-blur': 6 } });
+      // Route line
+      map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.9 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
+
+      // Start marker
+      var startEl = document.createElement('div');
+      startEl.innerHTML = '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.3)">🏁 Partenza</div>';
+      new maplibregl.Marker({ element: startEl, anchor: 'bottom' }).setLngLat([routePoints[0].lng, routePoints[0].lat]).addTo(map);
+
+      // Turnaround marker
+      if (proposal.food && proposal.food.lat) {
+        var turnEl = document.createElement('div');
+        var emoji = proposal.food.poiType === 'viewpoint' ? '🏔️' : proposal.food.poiType === 'park' ? '🌳' : proposal.food.poiType === 'bench' ? '🪑' : '🔄';
+        var label = proposal.food.name || 'Svolta';
+        turnEl.innerHTML = '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:10px;font-size:12px;font-weight:bold;white-space:nowrap;max-width:200px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 8px rgba(0,0,0,0.3)">' + emoji + ' ' + label + '</div>';
+        new maplibregl.Marker({ element: turnEl, anchor: 'bottom' }).setLngLat([proposal.food.lng, proposal.food.lat]).addTo(map);
+      }
+    });
+
+    // Disable auto-center on user interaction
+    map.on('dragstart', function() { autoCenter = false; document.getElementById('btnCenter').classList.remove('active'); });
+
+    updatePanel({ distToEnd: totalRouteMeters, distFromStart: 0, fraction: 0 });
+  }
+
+  // --- Apply view mode ---
+  function setView(mode) {
+    viewMode = mode;
+    document.querySelectorAll('.view-pill').forEach(function(el) { el.classList.toggle('active', el.dataset.view === mode); });
+
+    if (!map) return;
+    if (mode === 'top') {
+      map.easeTo({ pitch: 0, bearing: 0, duration: 800 });
+    } else if (mode === '3d') {
+      map.easeTo({ pitch: 55, duration: 800 });
+    } else if (mode === 'follow') {
+      map.easeTo({ pitch: 60, zoom: 17, duration: 800 });
+      autoCenter = true;
+      document.getElementById('btnCenter').classList.add('active');
+    }
+  }
+
+  // --- Compute bearing between two points ---
+  function bearing(a, b) {
+    var dLng = (b.lng - a.lng) * Math.PI / 180;
+    var lat1 = a.lat * Math.PI / 180, lat2 = b.lat * Math.PI / 180;
+    var y = Math.sin(dLng) * Math.cos(lat2);
+    var x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLng);
+    return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+  }
+
+  // --- GPS tracking ---
+  function startTracking() {
+    if (!navigator.geolocation) { setError('GPS non disponibile'); return; }
+    isTracking = true;
+    autoCenter = true;
+    document.getElementById('btnStart').innerHTML = '⏹';
+    document.getElementById('btnStart').classList.add('active');
+    document.getElementById('btnCenter').classList.add('active');
+    document.getElementById('livePanel').style.display = 'flex';
+    document.getElementById('progressWrap').style.display = 'block';
+    document.getElementById('viewPills').style.display = 'flex';
+
+    watchId = navigator.geolocation.watchPosition(function(pos) {
+      var userPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      var heading = pos.coords.heading; // may be null
+
+      // User marker
+      if (!userMarker) {
+        var el = document.createElement('div');
+        el.className = 'user-dot-outer';
+        el.innerHTML = '<div class="user-dot-inner"></div>';
+        userMarker = new maplibregl.Marker({ element: el, anchor: 'center' })
+          .setLngLat([userPos.lng, userPos.lat])
+          .addTo(map);
+      } else {
+        userMarker.setLngLat([userPos.lng, userPos.lat]);
+      }
+
+      // Progress
+      var prog = routeProgress(userPos);
+      updatePanel(prog);
+
+      // Calculate heading from GPS movement
+      if (lastUserPos && distM(lastUserPos, userPos) > 3) {
+        lastHeading = bearing(lastUserPos, userPos);
+      }
+
+      // Auto-center + follow mode
+      if (autoCenter && map) {
+        var opts = { center: [userPos.lng, userPos.lat], duration: 600 };
+        if (viewMode === 'follow' && lastHeading !== null) {
+          opts.bearing = lastHeading;
+          opts.pitch = 60;
+          opts.zoom = Math.max(map.getZoom(), 17);
+        }
+        map.easeTo(opts);
+      }
+
+      lastUserPos = userPos;
+    }, function(err) {
+      console.warn('GPS:', err.message);
+    }, { enableHighAccuracy: true, maximumAge: 2000, timeout: 10000 });
+  }
+
+  function stopTracking() {
+    if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
+    isTracking = false;
+    document.getElementById('btnStart').innerHTML = '▶️';
+    document.getElementById('btnStart').classList.remove('active');
+    document.getElementById('livePanel').style.display = 'none';
+    document.getElementById('progressWrap').style.display = 'none';
+    document.getElementById('viewPills').style.display = 'none';
+    if (userMarker) { userMarker.remove(); userMarker = null; }
+    lastUserPos = null; lastHeading = null;
+    setView('top');
+  }
+
+  // --- Load route from localStorage (same as home) ---
+  function loadRoute() {
+    setLoading('Caricamento percorso…');
+    try {
+      var proposal = LBW.Store.get('lbw_today', null);
+      if (!proposal || !proposal.route || !proposal.route.length) {
+        setError('Nessun percorso disponibile. Genera un percorso dalla Home.');
+        document.getElementById('mapWrapper').style.display = 'block';
+        return;
+      }
+      renderRoute(proposal);
+      // Auto-start navigation in follow mode
+      setTimeout(function() {
+        startTracking();
+        setView('follow');
+      }, 500);
+    } catch (e) {
+      console.error(e);
+      setError('Errore: ' + e.message);
+    }
+  }
+
+  // --- Events ---
+  document.getElementById('btnStart').addEventListener('click', function() {
+    if (isTracking) stopTracking(); else startTracking();
+  });
+
+  document.getElementById('btnCenter').addEventListener('click', function() {
+    autoCenter = !autoCenter;
+    this.classList.toggle('active', autoCenter);
+    if (autoCenter && lastUserPos && map) {
+      map.easeTo({ center: [lastUserPos.lng, lastUserPos.lat], zoom: Math.max(map.getZoom(), 16), duration: 600 });
+    }
+  });
+
+  // Layer switch
+  document.querySelectorAll('.layer-pill').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var lid = this.dataset.layer;
+      if (lid === currentLayerId) return;
+      // MapLibre: need to set new style and re-add route
+      if (!map) return;
+      var center = map.getCenter(), zoom = map.getZoom(), pitch = map.getPitch(), brng = map.getBearing();
+      map.setStyle(makeStyle(lid));
+      currentLayerId = lid;
+      document.querySelectorAll('.layer-pill').forEach(function(p) { p.classList.toggle('active', p.dataset.layer === lid); });
+      // Re-add route after style load
+      map.once('style.load', function() {
+        if (!currentProposal) return;
+        var coords = routePoints.map(function(p) { return [p.lng, p.lat]; });
+        map.addSource('route', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: coords } } });
+        map.addLayer({ id: 'route-glow', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 10, 'line-opacity': 0.25, 'line-blur': 6 } });
+        map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.9 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
+        // Restore camera
+        map.jumpTo({ center: center, zoom: zoom, pitch: pitch, bearing: brng });
+      });
+    });
+  });
+
+  // View mode switch
+  document.querySelectorAll('.view-pill').forEach(function(el) {
+    el.addEventListener('click', function() { setView(this.dataset.view); });
+  });
+
+  // --- Go ---
+  loadRoute();
+})();
+</script>
+</body>
+</html>

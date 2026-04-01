@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <title>La tua pausa • Walk2Eat v3</title>
+  <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    .map-layer-toggle {
+      position: absolute; bottom: 8px; right: 8px; z-index: 1000;
+      display: flex; gap: 4px; background: rgba(15,23,42,0.85);
+      border-radius: 20px; padding: 3px; backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .map-layer-btn {
+      border: none; cursor: pointer; padding: 4px 8px; border-radius: 14px;
+      font-size: 10px; font-weight: 600; transition: all .2s;
+      background: transparent; color: rgba(255,255,255,0.5);
+    }
+    .map-layer-btn.active {
+      background: var(--primary, #22c55e); color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class="container page-enter">
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <a class="brand" href="dashboard.html">
+      <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
+      <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
+    </a>
+    <div class="header-actions">
+      <span id="hello" class="small" style="color:var(--accent)"></span>
+    </div>
+  </div>
+
+  <!-- Walk Stats — with skeleton loading states -->
+  <div class="grid grid-2" style="margin-top:8px" id="statsGrid">
+    <!-- Skeleton shown while loading -->
+    <div class="stat-card" id="skeletonStat1">
+      <div class="skeleton skeleton-value"></div>
+      <div class="skeleton skeleton-label"></div>
+    </div>
+    <div class="stat-card" id="skeletonStat2">
+      <div class="skeleton skeleton-value"></div>
+      <div class="skeleton skeleton-label"></div>
+    </div>
+  </div>
+  <div class="grid grid-2" style="margin-top:8px; display:none" id="statsReal">
+    <div class="stat-card">
+      <div class="stat-value" id="walkStat">—</div>
+      <div class="stat-label">🚶 Camminata</div>
+      <div class="small mt-sm" id="walkType"></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="foodStat">—</div>
+      <div class="stat-label" id="foodLabel">📍 Destinazione</div>
+      <div class="small mt-sm" id="foodCuisine"></div>
+    </div>
+  </div>
+
+  <!-- Map Preview — skeleton replaces spinner -->
+  <div class="card" style="margin-top:12px">
+    <div class="card-header">
+      <span class="badge badge-accent">📍 Percorso</span>
+      <span class="small" id="updatedAt"></span>
+    </div>
+    <div id="mapLoadingBox">
+      <div class="skeleton skeleton-map"></div>
+      <div class="skeleton skeleton-text w-60" style="margin-top:8px"></div>
+    </div>
+    <div style="position:relative">
+      <div id="mapPreview" class="map-box" style="display:none"></div>
+      <div class="map-layer-toggle" id="layerToggle" style="display:none">
+        <button class="map-layer-btn active" id="btnOsm" onclick="switchLayer('osm')">🗺️ OSM</button>
+        <button class="map-layer-btn" id="btnSwiss" onclick="switchLayer('swiss')">🏔️ Swiss</button>
+      </div>
+    </div>
+    <p id="routeSourceNote" class="small mt-sm" style="display:none"></p>
+  </div>
+
+  <!-- Action Buttons — in thumb zone (bottom area) -->
+  <div class="btn-row">
+    <a class="btn btn-primary" href="map.html" style="flex:1">
+      🧭 Vai!
+    </a>
+    <button id="refreshWalk" class="btn btn-secondary" style="flex:1">
+      🔄 Alternativa
+    </button>
+  </div>
+  <div class="btn-row">
+    <button id="save" class="btn btn-ghost" style="flex:1">
+      ♡ Salva
+    </button>
+    <button id="detailToggle" class="btn btn-ghost" style="flex:1">
+      📊 Dettagli
+    </button>
+  </div>
+
+  <!-- Bottom Sheet Overlay -->
+  <div class="bottom-sheet-overlay" id="sheetOverlay"></div>
+
+  <!-- Bottom Sheet — replaces expanding detail panel -->
+  <div class="bottom-sheet" id="detailSheet">
+    <div class="bottom-sheet-handle"></div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">⏱ Tempi</span>
+        </div>
+        <div id="timeBreakdown" class="small"></div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">🌤 Meteo</span>
+        </div>
+        <div id="weatherBox" class="small"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-header">
+        <span class="card-title">💡 Perché questa proposta</span>
+      </div>
+      <div id="whyBox" class="small"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="dashboard.html" class="nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="map.html" class="nav-item">
+      <span class="nav-icon">🧭</span>
+      <span>Vai!</span>
+    </a>
+    <a href="favorites.html" class="nav-item">
+      <span class="nav-icon">❤️</span>
+      <span>Preferiti</span>
+    </a>
+    <a href="history.html" class="nav-item">
+      <span class="nav-icon">📋</span>
+      <span>Cronologia</span>
+    </a>
+    <a href="preferences.html" class="nav-item">
+      <span class="nav-icon">⚙️</span>
+      <span>Impostazioni</span>
+    </a>
+  </div>
+</nav>
+
+<script src="assets/js/routes-poc-data.js?v=20260331a"></script>
+<script src="assets/js/config.js?v=20260331a"></script>
+<script src="assets/js/app.js?v=20260331a"></script>
+<script src="assets/js/themes.js?v=20260331c"></script>
+<script>
+(function() {
+  var HEART_OFF = '\u2661', HEART_ON = '\u2764\uFE0F';
+  var u = LBW.getUser();
+  if (!u) { location.href = 'login.html'; return; }
+  var prefs = LBW.getPrefs();
+
+  document.getElementById('hello').textContent = 'Ciao ' + u.name + ' 👋';
+
+  var map = null, routeLine = null, startMarker = null, turnMarker = null;
+  var currentProposal = null;
+
+  function initMap() {
+    if (map) return;
+    map = L.map('mapPreview', { zoomControl: false, attributionControl: false });
+    window._tileLayers = {
+      osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
+      swiss: L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg')
+    };
+    window._activeLayer = 'osm';
+    window._tileLayers.osm.addTo(map);
+    document.getElementById('layerToggle').style.display = 'flex';
+  }
+
+  function setMapLoading(msg) {
+    // v3: show skeleton instead of spinner
+    document.getElementById('mapLoadingBox').style.display = 'block';
+    document.getElementById('mapPreview').style.display = 'none';
+    document.getElementById('routeSourceNote').style.display = 'none';
+    // Show skeleton stats, hide real stats
+    document.getElementById('skeletonStat1').style.display = '';
+    document.getElementById('skeletonStat2').style.display = '';
+    document.getElementById('statsReal').style.display = 'none';
+    document.getElementById('statsGrid').style.display = 'grid';
+  }
+
+  function setMapReady() {
+    document.getElementById('mapLoadingBox').style.display = 'none';
+    document.getElementById('mapPreview').style.display = 'block';
+    // Reveal real stats, hide skeleton
+    document.getElementById('statsGrid').style.display = 'none';
+    document.getElementById('statsReal').style.display = 'grid';
+  }
+
+  function weatherMock() {
+    var d = new Date();
+    var key = (d.getDate() + d.getMonth() + d.getHours()) % 4;
+    if (key === 0) return { label: 'Sole', temp: 22, bad: false };
+    if (key === 1) return { label: 'Nuvoloso', temp: 18, bad: false };
+    if (key === 2) return { label: 'Pioggia leggera', temp: 14, bad: true };
+    return { label: 'Vento forte', temp: 12, bad: true };
+  }
+
+  function renderWeather() {
+    var w = weatherMock();
+    var icon = w.label.includes('Sole') ? '☀️' : w.label.includes('Nuvoloso') ? '☁️' : w.label.includes('Pioggia') ? '🌧️' : '💨';
+    document.getElementById('weatherBox').innerHTML =
+      '<div style="display:flex;align-items:center;gap:8px">' +
+      '<span style="font-size:1.3rem">' + icon + '</span>' +
+      '<span><b>' + w.label + '</b> ' + w.temp + '°C<br>' +
+      '<span style="font-size:0.75rem">' + (w.bad ? '⚠️ Condizioni sfavorevoli' : '✅ Condizioni buone') + '</span></span></div>';
+  }
+
+  function renderBreakdown(p) {
+    var walkTotal = p.walk.minutes;
+    var walkOut = Math.round(walkTotal / 2);
+    var walkBack = walkTotal - walkOut;
+    document.getElementById('timeBreakdown').innerHTML =
+      '<div style="display:flex;flex-direction:column;gap:4px">' +
+      '<div>🏃 Andata: <b>' + walkOut + ' min</b></div>' +
+      '<div>🔙 Ritorno: <b>' + walkBack + ' min</b></div>' +
+      '<hr style="border-color:var(--card-border);margin:4px 0">' +
+      '<div>📏 Totale: <b>' + walkTotal + ' min</b> • <b>' + p.walk.distanceKm + ' km</b></div></div>';
+  }
+
+  function renderWhy(p) {
+    var reasons = [
+      '🎯 Intensità: <b>' + prefs.intensity + '</b>',
+      '🎪 Obiettivo: <b>' + prefs.goal + '</b>',
+      '🔄 Percorso ad anello: parti e ritorni allo stesso punto'
+    ];
+    document.getElementById('whyBox').innerHTML = reasons.map(function(r) {
+      return '<div style="padding:3px 0">' + r + '</div>';
+    }).join('');
+  }
+
+  function setFavButton(proposal) {
+    var saveEl = document.getElementById('save');
+    var routeFav = LBW.isFavoriteRoute(proposal);
+    if (routeFav) { saveEl.innerHTML = HEART_ON + ' Salvato'; saveEl.className = 'btn btn-secondary'; saveEl.style.flex = '1'; }
+    else { saveEl.innerHTML = HEART_OFF + ' Salva'; saveEl.className = 'btn btn-ghost'; saveEl.style.flex = '1'; }
+  }
+
+  function renderProposal(p) {
+    currentProposal = p;
+
+    document.getElementById('walkStat').textContent = p.walk.minutes + ' min';
+    document.getElementById('walkType').textContent = p.walk.distanceKm + ' km • ' + (p.walk.type || '');
+    document.getElementById('foodStat').textContent = p.food.name || '—';
+    document.getElementById('foodCuisine').textContent = p.food.cuisine || '';
+    document.getElementById('updatedAt').textContent = new Date(p.createdAt).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+
+    setFavButton(p);
+    renderBreakdown(p);
+    renderWhy(p);
+    renderWeather();
+
+    initMap();
+    setMapReady();
+    var pts = (p.route || []).map(function(x) { return [x.lat, x.lng]; });
+    if (routeLine) { map.removeLayer(routeLine); routeLine = null; }
+    if (startMarker) { map.removeLayer(startMarker); startMarker = null; }
+    if (turnMarker) { map.removeLayer(turnMarker); turnMarker = null; }
+    if (pts.length) {
+      routeLine = L.polyline(pts, { color: '#22c55e', weight: 4, opacity: 0.9 }).addTo(map);
+      var startIcon = L.divIcon({ className: '', html: '<div style="background:#22c55e;color:#fff;padding:3px 8px;border-radius:8px;font-size:11px;font-weight:bold">📍</div>', iconAnchor: [10, 10] });
+      startMarker = L.marker(pts[0], { icon: startIcon }).addTo(map);
+      if (p.food && p.food.lat) {
+        var turnIcon = L.divIcon({ className: '', html: '<div style="background:#f59e0b;color:#fff;padding:3px 8px;border-radius:8px;font-size:11px;font-weight:bold">🔄</div>', iconAnchor: [10, 10] });
+        turnMarker = L.marker([p.food.lat, p.food.lng], { icon: turnIcon }).addTo(map);
+      }
+      map.fitBounds(L.latLngBounds(pts), { padding: [20, 20] });
+    }
+
+    var note = document.getElementById('routeSourceNote');
+    if (p.source === 'osrm-loop') {
+      note.textContent = '✅ Percorso reale su strade pedonali';
+      note.style.display = 'block';
+    } else if (p.source === 'synthetic-loop') {
+      note.textContent = '⚠️ Percorso approssimato (OSRM non raggiungibile)';
+      note.style.display = 'block';
+    }
+  }
+
+  async function loadNewRoute(isAlternative) {
+    var btn = document.getElementById('refreshWalk');
+    btn.classList.add('loading');
+    setMapLoading(isAlternative ? 'Calcolo alternativa…' : 'Calcolo percorso…');
+    try {
+      // Per le alternative, riusa l'origin della proposta precedente (evita drift GPS)
+      var originOverride = (isAlternative && currentProposal && currentProposal.origin) ? currentProposal.origin : null;
+      var proposal = await LBW.buildWalkOnlyProposalAsync(null, !!isAlternative, originOverride);
+      if (proposal && proposal.error) {
+        document.getElementById('mapLoadingMsg').textContent = '⚠️ ' + proposal.message;
+        btn.classList.remove('loading');
+        return;
+      }
+      renderProposal(proposal);
+    } catch(e) {
+      document.getElementById('mapLoadingMsg').textContent = 'Errore: ' + e.message;
+    } finally {
+      btn.classList.remove('loading');
+    }
+  }
+
+  document.getElementById('refreshWalk').onclick = function() { loadNewRoute(true); };
+
+  document.getElementById('save').onclick = function() {
+    if (!currentProposal) return;
+    LBW.toggleFavoriteRoute(currentProposal);
+    setFavButton(currentProposal);
+    // v3: micro-interaction — heart bounce
+    this.classList.remove('heart-bounce');
+    void this.offsetWidth; // reflow to restart animation
+    this.classList.add('heart-bounce');
+    var self = this;
+    this.addEventListener('animationend', function() {
+      self.classList.remove('heart-bounce');
+    }, { once: true });
+  };
+
+  // v3: Bottom Sheet logic (replaces expanding detail-panel)
+  var sheetOpen = false;
+  var sheet = document.getElementById('detailSheet');
+  var overlay = document.getElementById('sheetOverlay');
+
+  function openSheet() {
+    sheet.classList.add('open');
+    overlay.classList.add('active');
+    sheetOpen = true;
+    document.getElementById('detailToggle').innerHTML = '📊 Chiudi';
+  }
+
+  function closeSheet() {
+    sheet.classList.remove('open');
+    overlay.classList.remove('active');
+    sheetOpen = false;
+    document.getElementById('detailToggle').innerHTML = '📊 Dettagli';
+  }
+
+  document.getElementById('detailToggle').onclick = function() {
+    sheetOpen ? closeSheet() : openSheet();
+  };
+
+  overlay.onclick = function() { closeSheet(); };
+
+  // Drag-to-dismiss on bottom sheet
+  (function() {
+    var startY = 0, dragging = false;
+    sheet.addEventListener('touchstart', function(e) {
+      startY = e.touches[0].clientY;
+      dragging = true;
+    }, { passive: true });
+    sheet.addEventListener('touchmove', function(e) {
+      if (!dragging) return;
+      var dy = e.touches[0].clientY - startY;
+      if (dy > 0) sheet.style.transform = 'translateY(' + dy + 'px)';
+    }, { passive: true });
+    sheet.addEventListener('touchend', function(e) {
+      dragging = false;
+      var dy = e.changedTouches[0].clientY - startY;
+      if (dy > 80) { closeSheet(); }
+      sheet.style.transform = '';
+    });
+  })();
+
+  loadNewRoute(false);
+})();
+
+function switchLayer(name) {
+  if (!window._tileLayers || window._activeLayer === name) return;
+  var m = window._tileLayers[window._activeLayer]._map;
+  if (!m) return;
+  window._tileLayers[window._activeLayer].remove();
+  window._tileLayers[name].addTo(m);
+  window._activeLayer = name;
+  document.getElementById('btnOsm').classList.toggle('active', name === 'osm');
+  document.getElementById('btnSwiss').classList.toggle('active', name === 'swiss');
+}
+</script>
+</body>
+</html>
