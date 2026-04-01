@@ -143,7 +143,11 @@
 (function() {
   var HEART_OFF = '\u2661', HEART_ON = '\u2764\uFE0F';
   var u = LBW.getUser();
-  if (!u) { location.href = 'login.html'; return; }
+  // v3: se non loggato, crea utente demo automaticamente (per test)
+  if (!u) {
+    LBW.setUser({ name: 'Demo', email: 'demo@walk2eat.app' });
+    u = LBW.getUser();
+  }
   var prefs = LBW.getPrefs();
 
   document.getElementById('hello').textContent = 'Ciao ' + u.name + ' 👋';
