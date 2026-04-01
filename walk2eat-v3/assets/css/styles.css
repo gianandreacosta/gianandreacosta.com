@@ -697,8 +697,9 @@ body.no-bottom-nav .bottom-nav { display: none; }
 .bottom-sheet {
   position: fixed;
   bottom: calc(var(--bottom-nav-h) + var(--safe-bottom));
-  left: 0;
-  right: 0;
+  /* Centrato con left/right calcolati, non margin:0 auto (incompatibile con fixed) */
+  left: max(0px, calc(50vw - 320px));
+  right: max(0px, calc(50vw - 320px));
   z-index: 201;
   background: var(--elevation-2);
   border-radius: var(--radius) var(--radius) 0 0;
@@ -707,8 +708,6 @@ body.no-bottom-nav .bottom-nav { display: none; }
   border-top: 1px solid var(--card-border);
   transform: translateY(110%);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  max-width: 640px;
-  margin: 0 auto;
   max-height: 70vh;
   overflow-y: auto;
   box-shadow: 0 -8px 40px rgba(0,0,0,0.4);
@@ -764,9 +763,7 @@ body.no-bottom-nav .bottom-nav { display: none; }
 .card {
   background: var(--elevation-1);
 }
-.bottom-sheet {
-  background: var(--elevation-2);
-}
+/* elevation override per bottom sheet già definita sopra — no duplicato */
 
 /* ── Touch target guarantee ── */
 .btn {

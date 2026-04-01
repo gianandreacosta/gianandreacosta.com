@@ -103,34 +103,35 @@
     </button>
   </div>
 
-  <!-- Bottom Sheet Overlay -->
-  <div class="bottom-sheet-overlay" id="sheetOverlay"></div>
 
-  <!-- Bottom Sheet — replaces expanding detail panel -->
-  <div class="bottom-sheet" id="detailSheet">
-    <div class="bottom-sheet-handle"></div>
-    <div class="grid grid-2">
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">⏱ Tempi</span>
-        </div>
-        <div id="timeBreakdown" class="small"></div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">🌤 Meteo</span>
-        </div>
-        <div id="weatherBox" class="small"></div>
-      </div>
-    </div>
-    <div class="card" style="margin-top:12px">
+</div>
+
+<!-- Bottom Sheet Overlay — FUORI dal container per position:fixed corretto -->
+<div class="bottom-sheet-overlay" id="sheetOverlay"></div>
+
+<!-- Bottom Sheet — FUORI dal container (fixed positioning richiede parent senza transform/animation) -->
+<div class="bottom-sheet" id="detailSheet">
+  <div class="bottom-sheet-handle"></div>
+  <div class="grid grid-2">
+    <div class="card">
       <div class="card-header">
-        <span class="card-title">💡 Perché questa proposta</span>
+        <span class="card-title">⏱ Tempi</span>
       </div>
-      <div id="whyBox" class="small"></div>
+      <div id="timeBreakdown" class="small"></div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">🌤 Meteo</span>
+      </div>
+      <div id="weatherBox" class="small"></div>
     </div>
   </div>
-
+  <div class="card" style="margin-top:12px">
+    <div class="card-header">
+      <span class="card-title">💡 Perché questa proposta</span>
+    </div>
+    <div id="whyBox" class="small"></div>
+  </div>
 </div>
 
 <!-- Bottom Navigation -->
