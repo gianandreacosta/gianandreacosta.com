@@ -6,9 +6,70 @@
   <meta name="theme-color" content="#0f172a">
   <title>La tua pausa • Walk2Eat v3</title>
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260401c">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    /* Inline critico — garantisce mappa full-screen anche se il CSS esterno è in cache */
+    html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+    #map-fullscreen {
+      position: fixed !important;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw; height: 100vh;
+      z-index: 1;
+      background: #1a2744;
+    }
+    .top-bar {
+      position: fixed !important;
+      top: 0; left: 0; right: 0;
+      z-index: 20;
+      background: rgba(10,17,32,0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .bottom-card {
+      position: fixed !important;
+      bottom: 0; left: 0; right: 0;
+      z-index: 30;
+      background: rgba(10,17,32,0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-radius: 24px 24px 0 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 -8px 40px rgba(0,0,0,0.5);
+    }
+    /* Bottom card sopra la nav — la nav è z:100 ma il card è z:30 quindi la nav sta sopra */
+    /* Il card deve avere padding-bottom pari all'altezza della nav */
+    .bottom-card {
+      padding-bottom: 60px !important; /* altezza nav */
+    }
+    .bottom-nav {
+      position: fixed !important;
+      bottom: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,17,32,0.96);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .map-overlay {
+      position: fixed !important;
+      inset: 0;
+      z-index: 28;
+      pointer-events: none;
+      transition: background 0.3s;
+    }
+    .map-overlay.active {
+      background: rgba(0,0,0,0.45);
+      pointer-events: auto;
+    }
+    .map-layer-pill {
+      position: fixed !important;
+      left: 12px;
+      z-index: 25;
+    }
+  </style>
 </head>
 <body class="map-layout">
 
