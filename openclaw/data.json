@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T23:40:07.679371Z",
+  "generated_at": "2026-04-02T23:50:11.654753Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 19min",
+      "next": "in 9min",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "error",
-      "next": "in 5h",
+      "next": "in 4h",
       "note": "Esegui la rassegna mattutina completa:\n\ncd /root/.opencla...",
       "enabled": true
     },
