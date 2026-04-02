@@ -1,6 +1,671 @@
 {
-  "generated_at": "2026-04-02T04:54:42.025712+00:00",
+  "generated_at": "2026-04-02T11:02:36.380451+00:00",
   "analyses": [
+    {
+      "id": 13,
+      "run_id": 45,
+      "run_time": "2026-04-02 04:45:04.825474+00:00",
+      "analyzed_at": "2026-04-02T11:02:36.369714+00:00",
+      "articles_analyzed": 267,
+      "articles_selected": 49,
+      "model_used": "anthropic/claude-opus-4-6",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Giornata dominata dalla controversia sulle cure a domicilio, con il Consiglio di Stato che conferma il prelievo a carico dei pazienti nonostante 20mila firme contrarie. Grave incidente a Cadenazzo con un agente del traffico investito. Traffico pasquale già intenso al San Gottardo con code fino a 12 km.",
+          "notizie": [
+            {
+              "titolo": "Cure a domicilio: il Consiglio di Stato conferma la partecipazione ai costi nonostante la petizione da 20mila firme",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/prelievo-per-le-cure-a-domicilio-il-consiglio-di-stato-tira-dritto-423898",
+              "riassunto": "Il Governo ticinese, riunito in seduta extra muros a Brissago, ha ribadito la volontà di mantenere la contestata misura di partecipazione dei pazienti ai costi delle cure a domicilio. Il consigliere De Rosa difende la scelta come strumento di responsabilizzazione dell'utente. ALVAD replica che non agirà nell'illegalità ma che la legge è chiara nel non prevederlo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino",
+                "LaRegione Ticino"
+              ],
+              "differenze_narrative": "Il CdT dedica tre articoli distinti: la decisione governativa, la replica di ALVAD e le iniziative casse malati, offrendo un quadro completo del conflitto. Ticinonews titola in modo più neutro ('monitora la situazione ma tira dritto'), concentrandosi sulla seduta extra muros. LaRegione usa un tono più critico con 'il Consiglio di Stato si incaponisce', suggerendo ostinazione. Il CdT riporta le parole di De Rosa e dà voce anche alla controparte ALVAD, mentre le altre fonti restano più sulla cronaca istituzionale."
+            },
+            {
+              "titolo": "Agente per la gestione del traffico investito a Cadenazzo: è grave",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/agente-per-la-gestione-del-traffico-investito-a-cadenazzo-e-grave-423913",
+              "riassunto": "Un agente addetto alla gestione del traffico è stato travolto da un'auto in via San Gottardo a Cadenazzo, all'altezza della rotonda con via Monteceneri. L'uomo è stato sbalzato diversi metri a causa del violento impatto e versa in gravi condizioni. Le dinamiche dell'incidente sono ancora da ricostruire.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Le due fonti riportano la notizia con testo praticamente identico, suggerendo una fonte comune (comunicato di polizia). Non emergono differenze significative nell'angolazione né nei dettagli forniti."
+            },
+            {
+              "titolo": "Traffico pasquale al San Gottardo: code fino a 12 km, previsti picchi giovedì e venerdì",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/traffico-pasquale-oggi-toccati-i-12-km-di-coda-al-san-gottardo-ma-e-solo-linizio-430491",
+              "riassunto": "L'esodo pasquale verso sud è iniziato con colonne fino a 12 km e attese fino a due ore al portale nord del San Gottardo. Giovedì e venerdì si prevedono picchi con code fino a 15 km, mentre il controesodo è atteso già da domenica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Navigazione Lago Maggiore: nuova stagione con più battelli e tariffe più care",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/navigazione-sul-lago-maggiore-lofferta-e-stata-rimodulata-423902",
+              "riassunto": "Il presidente del CdA Agostino Ferrazzini illustra i cambiamenti introdotti per la nuova stagione della navigazione sul Lago Maggiore, con un'offerta rimodulata e tariffe riviste al rialzo. La motivazione: navigare con battelli semivuoti non rappresenta un servizio migliore.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino",
+                "LaRegione Locarnese"
+              ],
+              "differenze_narrative": "CdT e Ticinonews condividono lo stesso taglio istituzionale con le dichiarazioni del presidente Ferrazzini. LaRegione Locarnese titola in modo più diretto e critico ('Più battelli e più cari'), evidenziando subito l'aspetto economico per l'utente, con un'angolazione più locale e vicina al pubblico del Locarnese."
+            },
+            {
+              "titolo": "Sentiero comunale che finisce in un varco abusivo verso l'Italia: richiesta di intervento",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/sentiero-comunale-finisce-in-un-varco-abusivo-stop-a-transiti-impropri-423883",
+              "riassunto": "Tiziano Pasta chiede al Comune e alle autorità federali di delimitare un sentiero comunale nel Mendrisiotto e chiudere un varco non ufficiale verso l'Italia, utilizzato per transiti impropri attraverso la rete di confine.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino",
+                "LaRegione Mendrisiotto"
+              ],
+              "differenze_narrative": "CdT e Ticinonews condividono titolo e contenuto identici, basati sulla medesima fonte. LaRegione Mendrisiotto utilizza un virgolettato diverso nel titolo ('Quel varco nella ramina alla fine del sentiero è abusivo'), con un taglio più descrittivo e locale."
+            },
+            {
+              "titolo": "Logopedia per bambini: i fondi 2025 sono già esauriti a marzo",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1915250/aumento-marzo-pedagogia-logopedia-scrive-soldi-finiti",
+              "riassunto": "La Sezione pedagogia speciale ha comunicato all'associazione dei logopedisti (Alosi) che non vi è più disponibilità finanziaria per coprire ulteriori terapie sotto la convenzione col DECS. I fondi previsti per l'intero anno si sono esauriti già nel mese di marzo, lasciando scoperte le esigenze terapeutiche dei bambini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Uomo senza fissa dimora colleziona 29 condanne per furti reiterati",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/promesse-non-mantenute-perche-ora-dovrei-crederci-423886",
+              "riassunto": "Condannato nuovamente un trentottenne svizzero senza fissa dimora che ha rubato in modo reiterato in abitazioni, negozi e auto per finanziare la tossicodipendenza. Trentacinque gli accusatori privati. Il giudice lo ammonisce duramente: 'Questa è veramente l'ultima possibilità'.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "LaRegione Luganese"
+              ],
+              "differenze_narrative": "Il CdT usa un titolo emotivo con il virgolettato del giudice ('Perché ora dovrei crederci?'), enfatizzando la dimensione umana e giudiziaria. LaRegione titola in modo più fattuale ('Uomo senza fissa dimora colleziona 29 condanne'), concentrandosi sul dato numerico."
+            },
+            {
+              "titolo": "Svastiche nei bagni delle scuole medie di Lodrino",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1915477/nazista-allievi-lodrino",
+              "riassunto": "Simboli nazisti sono stati trovati nei bagni delle scuole medie di Lodrino, in concomitanza con la manifestazione podistica Giro media Blenio. L'episodio solleva preoccupazione sulla diffusione di simbologia estremista tra i giovani.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Onsernone in crisi finanziaria: il Comune di montagna lancia una raccolta fondi",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/le-imposte-non-bastano-piu-onsernone-ora-cerca-donazioni-423889",
+              "riassunto": "Il Comune di Onsernone lancia una campagna di raccolta fondi destinata a tre progetti comunitari, ammettendo che le imposte non bastano più. Una serata pubblica è prevista per l'11 aprile. Il municipale Cortesi parla di apertura al dialogo con la popolazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Carburanti alle stelle: il sindacato VPOD chiede l'aumento dei rimborsi chilometrici",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/carburanti-alle-stelle-il-vpod-chiede-piu-rimborsi-per-i-chilometri-di-servizio-430482",
+              "riassunto": "Il sindacato VPOD chiede di portare l'indennità chilometrica per i dipendenti pubblici da 55 a 65 centesimi al km, ritenendo il rimborso attuale insufficiente a fronte dei rincari. La benzina senza piombo 95 è aumentata dell'11% e il diesel del 22%.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensione tra Governo e operatori sanitari sulle cure a domicilio",
+            "Costo della vita e rincari (carburanti, navigazione, rimborsi)",
+            "Sicurezza stradale e gestione del traffico pasquale",
+            "Crisi finanziaria dei servizi pubblici (logopedia, comuni di montagna)",
+            "Varchi di confine e transiti irregolari"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dello scontro istituzionale sulle cure a domicilio: la posizione irremovibile del Consiglio di Stato contro ALVAD e le 20mila firme della petizione potrebbe sfociare in un contenzioso legale. Da monitorare anche la situazione della logopedia infantile con fondi esauriti a marzo, che potrebbe diventare emergenza nei prossimi mesi.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Giornata dominata dalle decisioni del Consiglio federale: sospesi i pagamenti per il sistema Patriot agli USA, respinte le accuse americane sulle pratiche commerciali sleali. Forte impatto della guerra in Medio Oriente sull'economia svizzera con carburanti in forte aumento. Continuano a tenere banco la tragedia di Crans-Montana e il pacchetto di accordi Svizzera-UE.",
+          "notizie": [
+            {
+              "titolo": "Svizzera sospende i pagamenti per i missili Patriot e respinge le accuse USA sulle pratiche commerciali",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/quanto-e-lontana-lamerica-stop-ai-pagamenti-dei-patriot-423897",
+              "riassunto": "Il Consiglio federale ha deciso di sospendere i pagamenti a Washington per il sistema di difesa terra-aria Patriot finché non saranno chiarite le condizioni di consegna degli armamenti. Parallelamente, Berna ha respinto le accuse statunitensi su presunte attività commerciali sleali della Svizzera, in un contesto di crescente tensione nelle relazioni transatlantiche.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Il CdT unisce in un unico articolo dal taglio editoriale ('Quanto è lontana l'America') la sospensione Patriot e la risposta alle accuse USA, enfatizzando la distanza politica crescente. LaRegione tratta i due temi in articoli separati e con tono più istituzionale e asciutto, limitandosi ai fatti senza cornice interpretativa."
+            },
+            {
+              "titolo": "Keller-Sutter denuncia la piattaforma X di Elon Musk dopo insulti generati dal chatbot Grok",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/karin-keller-sutter-insultata-da-grok-denuncia-anche-la-piattaforma-x-di-elon-musk-423847",
+              "riassunto": "La consigliera federale Karin Keller-Sutter ha sporto querela contro la piattaforma X dopo che un utente ha chiesto al chatbot Grok di prenderla 'pesantemente' di mira con espressioni misogine. La presidente della Confederazione ha dichiarato che bisogna opporsi con fermezza e chiamare i responsabili a renderne conto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Pacchetto accordi Svizzera-UE: parlamentari puntano alla ratifica europea già nel 2026",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/pacchetto-accordi-svizzera-ue-ratifica-europea-gia-nel-2026-423881",
+              "riassunto": "Parlamentari europei e svizzeri esprimono la volontà di accelerare la ratifica del pacchetto di accordi bilaterali tra Berna e Bruxelles, con l'obiettivo ambizioso di concludere il processo già nel 2026. Il dossier resta centrale per il posizionamento della Svizzera in Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Le tre testate riprendono la notizia in modo pressoché identico, con titoli e descrizioni quasi sovrapponibili, suggerendo una fonte comune (agenzia). Nessuna differenza significativa di angolazione o tono."
+            },
+            {
+              "titolo": "Carburanti alle stelle in Svizzera per la guerra in Iran: diesel a +22%, boom di auto elettriche",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1915374/conflitto-iran-svizzera-carburanti-benzina",
+              "riassunto": "Il conflitto in Medio Oriente fa impennare i prezzi dei carburanti in Svizzera: il diesel sale del 22% a 2,13 franchi, la benzina 95 dell'11%. Di riflesso, le immatricolazioni di auto elettriche a marzo crescono del 22% e le ibride plug-in del 38%. Il caro-cherosene colpisce anche il traffico aereo con biglietti più cari e rischio tagli alle tratte.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "LaRegione si concentra sui dati TCS sui prezzi alla pompa e sulle immatricolazioni elettriche, con approccio statistico. Ticinonews affronta l'impatto sul traffico aereo intervistando l'ex comandante Swiss Battaglioni, aggiungendo una dimensione concreta e settoriale (supplementi carburante, tagli tratte) assente nell'altra testata."
+            },
+            {
+              "titolo": "Pilatus acquisisce la tedesca Air Alliance e rafforza la presenza in Europa",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/pilatus-punta-sul-mercato-europeo-rilevata-una-societa-tedesca-423904",
+              "riassunto": "Il costruttore aeronautico nidvaldese Pilatus rileva Air Alliance, azienda tedesca attiva nei servizi per l'aviazione, con l'obiettivo di consolidare la propria posizione sul mercato europeo. L'operazione mantiene i 120 dipendenti e lascia indipendente la filiale Unicair.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Copertura omogenea tra le tre testate. LaRegione aggiunge dettagli operativi (mantenimento dei 120 dipendenti, indipendenza di Unicair, focus sui modelli PC-12 e PC-24), mentre CdT e Ticinonews restano più generici sull'obiettivo strategico europeo."
+            },
+            {
+              "titolo": "Tre svizzeri su quattro usano l'intelligenza artificiale quotidianamente",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/tre-svizzeri-su-quattro-usano-lia-quotidianamente-423905",
+              "riassunto": "Secondo un sondaggio di Comparis, il 76% degli adulti svizzeri utilizza strumenti di intelligenza artificiale nella vita quotidiana, un balzo significativo rispetto al 50% registrato nel 2024. Il dato colloca la Svizzera tra i Paesi con la più alta adozione di IA al mondo.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Copertura sostanzialmente identica tra le due testate, con gli stessi dati percentuali e la medesima fonte Comparis. Nessuna differenza rilevante nella narrativa."
+            },
+            {
+              "titolo": "Crans-Montana: errore nelle sepolture a Pully, necessaria la riesumazione di due giovani vittime",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/crans-montana-errore-nelle-sepolture-riesumazione-per-due-giovani-vittime-423877",
+              "riassunto": "Scoperto un errore nelle sepolture al cimitero di Pully: i corpi di Trystan Pidoux e dell'amico Guillaume, vittime della tragedia di Crans-Montana, si trovano in tombe comuni a rotazione. Le famiglie chiedono una concessione definitiva, ma sarà necessaria una riesumazione. Tensioni con il Comune, con la polizia presente durante un incontro.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Il CdT tratta la vicenda delle sepolture in dettaglio con accento emotivo sulle famiglie e le tensioni col Comune. LaRegione affronta il tema Crans-Montana da un'angolazione diversa: la cerimonia dell'Ambasciata italiana a Berna e la reputazione della Svizzera all'estero, senza toccare la questione sepolture, creando così un racconto complementare sulla gestione post-tragedia."
+            },
+            {
+              "titolo": "Caso Constellation: rinviato l'interrogatorio di Jacques Moretti per motivi di salute",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/linterrogatorio-di-jacques-moretti-rinviato-dopo-certificati-medici-una-vergogna-423908",
+              "riassunto": "La Procura vallesana ha accolto la richiesta dell'avvocato del gestore del Constellation di rinviare l'interrogatorio dopo la presentazione di certificati medici. L'avvocato di una vittima ha duramente criticato la decisione, definendola 'una vergogna' e suggerendo che si tratterebbe di problemi legati alla depressione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Chiusa la galleria del San Gottardo per un camion in panne: code fino a 12 km",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/camion-in-panne-chiusa-la-galleria-del-san-gottardo-423903",
+              "riassunto": "Un camion in panne ha causato la chiusura della galleria del San Gottardo, con code che hanno raggiunto i 12 km al portale nord. Già durante la giornata si erano registrati importanti disagi al traffico.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Copertura identica tra le due testate, con gli stessi dettagli sulla lunghezza delle code e la causa del blocco. Probabile fonte comune (polizia/TCS)."
+            },
+            {
+              "titolo": "La lunga mano dell'Iran in Svizzera: infiltrazioni in moschee e università",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/regimetreue-iraner-der-lange-arm-der-mullahs-in-der-schweiz",
+              "riassunto": "Un'inchiesta di SRF rivela come l'influenza del regime iraniano si estenda fino alle moschee e alle università svizzere attraverso sostenitori fedeli al regime. La notizia assume ulteriore rilevanza nel contesto della guerra in corso in Medio Oriente e delle tensioni geopolitiche globali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto della guerra Iran-USA sull'economia svizzera (carburanti, aviazione, difesa)",
+            "Relazioni Svizzera-USA in deterioramento (Patriot, accuse commerciali)",
+            "Strascichi della tragedia di Crans-Montana (sepolture, processo, cerimonie)",
+            "Accordi bilaterali Svizzera-UE verso accelerazione",
+            "Adozione massiva dell'intelligenza artificiale nella popolazione svizzera",
+            "Sicurezza interna e influenze estere (Iran, piattaforme digitali)"
+          ],
+          "da_tenere_d_occhio": "L'escalation nelle relazioni Svizzera-USA su più fronti (sospensione pagamenti Patriot, accuse di pratiche commerciali sleali, impatto del conflitto iraniano sui prezzi energetici) potrebbe ridefinire la postura geopolitica svizzera e accelerare il riavvicinamento con l'UE. Da monitorare anche gli sviluppi giudiziari sul caso Constellation e l'evoluzione della querela Keller-Sutter contro X/Grok, che potrebbe creare un precedente legale europeo sulla responsabilità delle piattaforme AI.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata dal tour politicamente carico di Bruce Springsteen, da emergenze sanitarie nel mondo dello spettacolo (Megan Thee Stallion ed Eugene Mirman), e da anniversari significativi come i 50 anni di Apple. Sul fronte editoriale, attenzione alla dozzina del Premio Strega e a nuove produzioni teatrali shakespeariane.",
+          "notizie": [
+            {
+              "titolo": "Bruce Springsteen apre il tour 'Land of Hope and Dreams' a Minneapolis con messaggi anti-Trump",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/01/arts/music/bruce-springsteen-minneapolis-concert-trump.html",
+              "riassunto": "La E Street Band ha inaugurato martedì sera il nuovo tour a Minneapolis. Springsteen ha rivolto al pubblico un appello all'unità contro la divisione e alla pace contro la guerra, in un concerto dal forte contenuto politico rivolto implicitamente contro l'amministrazione Trump.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Megan Thee Stallion portata d'urgenza in ospedale durante lo spettacolo di Moulin Rouge a Broadway",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/01/theater/megan-thee-stallion-hospital-moulin-rouge-broadway.html",
+              "riassunto": "La rapper è stata trasportata d'urgenza in ospedale a metà della performance di 'Moulin Rouge! The Musical' martedì sera a Broadway. Si prevede il suo ritorno in scena giovedì, ma l'episodio ha destato forte attenzione mediatica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Eugene Mirman, voce di Gene in 'Bob's Burgers', gravemente ferito in un incidente stradale",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/01/us/eugene-mirman-car-crash-bobs-burgers.html",
+              "riassunto": "L'attore e doppiatore Eugene Mirman è rimasto coinvolto in un grave incidente automobilistico martedì nel New Hampshire. È ricoverato in ospedale con ferite serie ma non a rischio di vita.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cinquant'anni di Apple: dal 'Think different' di Steve Jobs al futuro",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1914893/apple-jobs-primo-iphone-steve-storia-different-think-anni-cinquant",
+              "riassunto": "L'anniversario dei 50 anni di Apple viene celebrato da più testate. LaRegione ripercorre la storia dalla fondazione all'iPhone, mentre Ticinonews sottolinea l'iniziativa del sito animato di Apple che celebra i prodotti iconici. Un anniversario che intreccia cultura tecnologica e pop.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "Ticinonews Magazine"
+              ],
+              "differenze_narrative": "LaRegione adotta un taglio storico-narrativo, ripercorrendo la filosofia di Jobs e l'evoluzione dell'azienda. Ticinonews si concentra sull'aspetto celebrativo e visuale, evidenziando il sito animato creato per l'occasione. Entrambe pongono l'iPhone come prodotto simbolo, ma LaRegione approfondisce il contesto culturale mentre Ticinonews resta sulla notizia breve."
+            },
+            {
+              "titolo": "Annunciata la dozzina del Premio Strega 2026 e i cinque finalisti dello Strega Europeo",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1915617/la-dozzina-dello-strega-e-i-cinque-di-quello-europeo",
+              "riassunto": "Il Comitato direttivo del Premio Strega, presieduto da Melania Mazzucco, ha selezionato i 12 libri candidati al più importante premio letterario italiano. Contemporaneamente sono stati annunciati i cinque finalisti dello Strega Europeo, segnando l'avvio della stagione dei premi letterari.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sadie Sink e Noah Jupe in 'Romeo e Giulietta' a Londra, mentre il NYCB annuncia il 'Romeo' di Ratmansky",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/01/theater/romeo-and-juliet-sadie-sink-joah-jupe-robert-icke.html",
+              "riassunto": "Shakespeare protagonista della giornata: a Londra la produzione di Robert Icke con Sadie Sink e Noah Jupe viene lodata per la sincerità dei protagonisti. Parallelamente, il New York City Ballet annuncia per la stagione 2026-27 il 'Romeo e Giulietta' di Ratmansky e un raro Balanchine. Due adattamenti shakespeariani (Amleto e Tito Andronico) vengono recensiti dal NYT.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times Arts (teatro)",
+                "New York Times Arts (danza)",
+                "New York Times Arts (recensioni Shakespeare)"
+              ],
+              "differenze_narrative": "Si tratta di tre articoli della stessa testata che convergono sul tema shakespeariano da angolazioni diverse: la recensione londinese enfatizza il giovane amore e la regia di Icke; l'annuncio del NYCB si concentra sul repertorio classico nella danza; le recensioni di Amleto e Tito Andronico esplorano il contrasto tra vita/morte e gioia. Insieme delineano un momento di forte ritorno a Shakespeare nelle arti performative."
+            },
+            {
+              "titolo": "Chi è Demis Hassabis: una nuova biografia sull'uomo dietro Google DeepMind",
+              "fonte": "The Economist Culture",
+              "link": "https://www.economist.com/culture/2026/04/01/who-is-demis-hassabis-the-man-behind-google-deepmind",
+              "riassunto": "The Economist recensisce una nuova biografia dedicata a Demis Hassabis, figura centrale nella corsa all'intelligenza artificiale e cofondatore di DeepMind. Il libro esamina il percorso personale e professionale di uno dei protagonisti più influenti del settore tech-AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Scoperta una necropoli antica a Yverdon-les-Bains con dieci sepolture di epoca romana",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/scienze/1915422/scavi-massicciate-dieci-yverdon-les-bains-sepolture-vd-necropoli-yverdon",
+              "riassunto": "Scavi preventivi per un progetto immobiliare a Yverdon-les-Bains (canton Vaud) hanno portato alla luce un complesso funerario con sette tombe a inumazione, tre a cremazione e reperti di epoca romana. Una scoperta archeologica significativa per la Svizzera romanda.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La Gen Z abbraccia gli hobby dei boomer: dal crochet al giardinaggio",
+              "fonte": "The Economist Culture",
+              "link": "https://www.economist.com/culture/2026/04/01/why-gen-z-is-taking-up-boomer-hobbies",
+              "riassunto": "The Economist analizza il fenomeno culturale per cui la Generazione Z sta abbandonando le discoteche a favore di hobby tradizionalmente associati ai baby boomer, come l'uncinetto e le attività manuali. Un trend che riflette un cambiamento nei valori e nella ricerca di benessere.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Morte di Bettina Köster, voce dell'avanguardia musicale berlinese degli anni '80",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/01/arts/music/bettina-koster-dead.html",
+              "riassunto": "È morta a 66 anni Bettina Köster, cantante dei Malaria! e figura chiave della scena post-punk e avanguardista di Berlino Ovest negli anni '80. Aveva collaborato e condiviso i palchi con band come Birthday Party e New Order.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Shakespeare nelle arti performative: teatro e danza convergono su classici rivisitati",
+            "Emergenze sanitarie nel mondo dello spettacolo (Megan Thee Stallion, Eugene Mirman)",
+            "Anniversari culturali e tecnologici (50 anni di Apple)",
+            "Musica e politica: Springsteen e il tour come atto di resistenza",
+            "Riscoperta di hobby analogici e tradizionali da parte delle nuove generazioni",
+            "Stagione dei premi letterari (Premio Strega 2026)"
+          ],
+          "da_tenere_d_occhio": "Il tour di Bruce Springsteen 'Land of Hope and Dreams' potrebbe diventare un fenomeno culturale-politico di rilievo nei prossimi mesi, dato il contesto elettorale e le tensioni sociali negli USA. Da monitorare anche le condizioni di Eugene Mirman e l'evoluzione della dozzina del Premio Strega verso la cinquina finale.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore parsing risposta AI",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Errore: Unterminated string starting at: line 114 column 25 (char 11701)",
+          "_parse_error": "Unterminated string starting at: line 114 column 25 (char 11701)",
+          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"La giornata è dominata dalla crisi Iran-USA con le minacce di Trump di 'riportare l'Iran all'età della pietra', il braccio di ferro sullo Stretto di Hormuz e le ricadute finanziarie globali. Tensioni transatlantiche con la minaccia di uscita dalla NATO, mentre proseguono gli attacchi russi in Ucraina e la crisi migratoria nel Mediterraneo.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Guerra Iran-USA: Trump minaccia attacchi devastanti, Teheran smentisce ",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata dominata dagli effetti economici della guerra in Medio Oriente (petrolio, borse, carburanti) e dalle ripercussioni dei dazi USA sul commercio globale. Spiccano anche il round record di OpenAI, la sorpresa degli indici PMI e l'esclusione dell'Italia dai Mondiali con il suo impatto economico sul sistema televisivo e sportivo.",
+          "notizie": [
+            {
+              "titolo": "L'euforia da cessate il fuoco spinge le Borse europee, Milano +3,2% mentre il petrolio crolla",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borse-trump-e-indice-fiducia-imprese-giapponesi-fanno-rimbalzare-tokyo-47percento-AIjWdgHC",
+              "riassunto": "Le dichiarazioni di Trump su una presunta richiesta di cessate il fuoco da parte dell'Iran (smentita da Teheran) hanno innescato un forte rally sulle Borse europee, con Milano a +3,2%. I titoli oil hanno ritracciato pesantemente con il petrolio in picchiata, mentre i titoli della difesa come Avio hanno guidato i rialzi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Finanza",
+                "Il Sole 24 Ore Finanza (titoli oil/Eni)",
+                "Ticinonews Economia (benzina)",
+                "The Economist Business (raffinerie India, petrolio Africa)"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore si concentra sulle dinamiche di mercato azionario e sui singoli titoli (Avio, Eni). Ticinonews offre l'angolazione del consumatore finale con i rincari di benzina (+11%) e diesel (+22%) dopo un mese di guerra. The Economist allarga la prospettiva geopolitica analizzando le conseguenze sulle raffinerie indiane (margini compressi da conflitto e governo) e sull'opportunità per il petrolio africano come alternativa. Il Sole 24 Ore enfatizza l'euforia dei mercati, mentre Ticinonews e The Economist sottolineano i costi reali e strutturali del conflitto."
+            },
+            {
+              "titolo": "Frenano i titoli petroliferi in scia al crollo del greggio, Eni ripiega dopo il rally",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/frenano-titoli-oil-scia-greggio-eni-ripiega-il-rally-AIJ2txHC",
+              "riassunto": "I titoli petroliferi hanno frenato bruscamente con il calo del greggio legato alle speranze di de-escalation in Medio Oriente. Eni è tra i più colpiti dopo il recente rally. Gli analisti segnalano che saranno cruciali i tempi di riapertura dello Stretto di Hormuz per determinare la direzione dei prezzi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Finanza",
+                "Ticinonews Economia",
+                "The Economist Business"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore si focalizza sull'impatto borsistico e sullo Stretto di Hormuz come variabile chiave. Ticinonews documenta l'impatto sui prezzi al dettaglio dei carburanti in Svizzera. The Economist analizza le ricadute industriali sulle raffinerie indiane e le opportunità per l'Africa come nuovo polo estrattivo."
+            },
+            {
+              "titolo": "Benzina e diesel in forte rialzo dopo un mese di guerra in Medio Oriente",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/benzina-il-balzo-del-prezzo-del-carburante-dopo-un-mese-di-guerra-430450",
+              "riassunto": "Dopo oltre quattro settimane di conflitto in Medio Oriente, il prezzo del diesel è salito del 22% e quello della benzina senza piombo 95 dell'11%. L'aumento riflette le tensioni sullo Stretto di Hormuz e l'incertezza sulle forniture globali di greggio.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "Il Sole 24 Ore Finanza",
+                "The Economist Business"
+              ],
+              "differenze_narrative": "Ticinonews adotta l'angolazione dell'impatto diretto sui consumatori con dati percentuali precisi sui rincari. Il Sole 24 Ore tratta il tema dal lato finanziario e borsistico. The Economist guarda alle conseguenze industriali globali e alle opportunità di riconfigurazione delle catene di approvvigionamento petrolifero."
+            },
+            {
+              "titolo": "OpenAI chiude un round di finanziamento record da 122 miliardi di dollari",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/openai-chiude-round-finanziamento-record-122-mld-$-AIKDPiHC",
+              "riassunto": "OpenAI ha completato un round di finanziamento storico da 122 miliardi di dollari, portando la valutazione della società a 852 miliardi. Tra gli investitori figurano Amazon, Nvidia e SoftBank, a conferma della centralità dell'intelligenza artificiale nelle strategie dei grandi gruppi tech.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il 'Liberation Day' dei dazi USA ha rimodellato il commercio globale, ma non come sperava Trump",
+              "fonte": "The Economist Finance",
+              "link": "https://www.economist.com/finance-and-economics/2026/04/01/liberation-day-has-reshaped-trade-but-not-as-donald-trump-hoped",
+              "riassunto": "A un anno dal 'Giorno della Liberazione' tariffario, The Economist analizza come il commercio globale si sia in realtà rafforzato, contrariamente alle intenzioni protezionistiche di Trump. I flussi commerciali si sono riorganizzati ma non ridotti, mostrando la resilienza del sistema globale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Economist Finance",
+                "Il Sole 24 Ore Finanza (Ken Fisher)"
+              ],
+              "differenze_narrative": "The Economist offre un'analisi strutturale e critica, sostenendo che i dazi hanno paradossalmente rafforzato il commercio globale. Ken Fisher sul Sole 24 Ore adotta una prospettiva di mercato più pragmatica, sostenendo che i dazi sono già scontati nei corsi di borsa e che gli investitori hanno già metabolizzato l'impatto."
+            },
+            {
+              "titolo": "Gli indici PMI manifatturieri sorprendono al rialzo: sopra la soglia di crescita per la prima volta in 38 mesi",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/gli-indici-pmi-sorprendono-430457",
+              "riassunto": "L'indice PMI manifatturiero ha superato la soglia dei 50 punti per la prima volta dal dicembre 2022, dopo 38 mesi consecutivi di contrazione. Il dato rappresenta un segnale potenzialmente significativo di inversione del ciclo manifatturiero.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Italia fuori dai Mondiali 2026: il conto salato per la Rai, gli investitori pubblicitari e il sistema calcio",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/mondiali-italia-fuori-conto-salato-tv-e-sistema-calcio-AIiV0wIC",
+              "riassunto": "L'eliminazione dell'Italia dai Mondiali USA-Canada-Messico produce un impatto economico significativo. Rai Pubblicità aveva già venduto spazi pubblicitari prevedendo gli Azzurri ai quarti di finale, e ora dovrà gestire un ridimensionamento degli introiti. Il danno si estende all'intero sistema calcio italiano.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Orsini: su Transizione 5.0 le promesse sono state mantenute, confermati 1,5 miliardi",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/orsini-su-transizione-50-importante-che-promesse-siano-state-mantenute-AIOWMPIC",
+              "riassunto": "Il presidente di Confindustria Orsini accoglie positivamente la conferma dei fondi per Transizione 5.0: il ministro Urso ha mantenuto i 1,3 miliardi originari aggiungendo ulteriori 200 milioni. Il piano è centrale per l'innovazione e la digitalizzazione del tessuto produttivo italiano.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nike, utile netto in calo del 35% nel trimestre con stime deludenti per il 2026",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/nike-35percento-l-utile-netto-trimestre-stime-deludenti-il-2026-AIYhUvHC",
+              "riassunto": "Nike registra un crollo dell'utile netto del 35% nel trimestre e prevede un calo delle vendite 'low single digit' fino a fine 2026, con una flessione del 2-4% nel trimestre in corso, peggiore delle attese degli analisti. Il dato conferma le difficoltà del colosso sportswear nella fase di ristrutturazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tre svizzeri su quattro usano l'intelligenza artificiale ogni giorno",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1915567/ia-comparis-utilizzo-sondaggio-18-35enni",
+              "riassunto": "Un sondaggio Comparis rivela che il 75% degli svizzeri utilizza quotidianamente strumenti di IA, con un'adozione particolarmente marcata nella fascia 18-35 anni. Permane tuttavia una forte preoccupazione per la privacy e la protezione dei dati personali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto economico della guerra in Medio Oriente su petrolio, mercati e prezzi al consumo",
+            "Dazi USA e riconfigurazione del commercio globale",
+            "Intelligenza artificiale: round di finanziamento record e adozione di massa",
+            "Ripresa manifatturiera segnalata dagli indici PMI",
+            "Politica industriale italiana: Transizione 5.0 e incentivi auto elettriche"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione del conflitto in Medio Oriente e in particolare la riapertura dello Stretto di Hormuz: da essa dipendono la stabilizzazione dei prezzi energetici, l'andamento dei mercati e i margini dell'industria della raffinazione globale. Il presunto cessate il fuoco Iran-USA è stato smentito da Teheran, e l'euforia di borsa potrebbe rivelarsi prematura.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Giornata dominata dalla fuga del codice sorgente di Claude Code di Anthropic, con ripercussioni massicce su GitHub, e dalla conferma del mega round di finanziamento da 122 miliardi di dollari di OpenAI. Forte attenzione anche all'impatto ambientale dei data center AI e alle vulnerabilità degli agenti autonomi.",
+          "notizie": [
+            {
+              "titolo": "Anthropic e la fuga del codice sorgente di Claude Code: oltre 8.000 cloni su GitHub nonostante le rimozioni di massa",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+              "riassunto": "Anthropic ha accidentalmente esposto il codice sorgente di Claude Code, scatenando una corsa alla clonazione su GitHub con oltre 8.000 copie. L'azienda ha tentato di rimuovere migliaia di repository con takedown DMCA, ma ha finito per colpire anche repository non correlati. Anthropic ha definito l'operazione un incidente e ha ritirato la maggior parte delle notifiche.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder",
+                "Hacker News"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza la reazione ufficiale di Anthropic e la natura accidentale delle rimozioni eccessive. The Decoder si concentra sull'entità del danno potenziale e sul numero di cloni (8.000+), con tono più allarmistico. Hacker News (via build.ms) offre un'analisi tecnica della fuga con discussione della community. TechCrunch è più equilibrato verso l'azienda, The Decoder più critico sull'impatto."
+            },
+            {
+              "titolo": "OpenAI chiude un round di finanziamento da 122 miliardi di dollari a una valutazione di 852 miliardi e lancia la super app ChatGPT",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-officially-confirms-mega-funding-round-and-chatgpt-super-app/",
+              "riassunto": "OpenAI ha ufficialmente confermato la chiusura di un round di finanziamento record da 122 miliardi di dollari con una valutazione di 852 miliardi. Contestualmente, l'azienda ha presentato la ChatGPT Super App e ha segnalato un deciso orientamento verso il mercato enterprise.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "New York Times Technology"
+              ],
+              "differenze_narrative": "The Decoder fornisce dettagli specifici su valutazione e strategia enterprise. Il NYT inquadra il round nel contesto più ampio del boom di raccolta fondi AI (297 miliardi nel primo trimestre 2026 tra OpenAI, Anthropic, Waymo e altri), offrendo una visione macroeconomica del fenomeno piuttosto che concentrarsi sulla singola azienda."
+            },
+            {
+              "titolo": "Le aziende AI infrangono tutti i record di raccolta fondi: 297 miliardi nel primo trimestre 2026",
+              "fonte": "New York Times Technology",
+              "link": "https://www.nytimes.com/2026/04/01/technology/ai-companies-fund-raising-records.html",
+              "riassunto": "OpenAI, Anthropic, Waymo e altre aziende di intelligenza artificiale hanno raccolto complessivamente 297 miliardi di dollari nei primi tre mesi del 2026, stabilendo record assoluti di finanziamento. Il dato segnala un'accelerazione senza precedenti del boom degli investimenti nel settore AI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times Technology",
+                "The Decoder"
+              ],
+              "differenze_narrative": "Il NYT offre il quadro aggregato del mercato dei finanziamenti AI, mentre The Decoder si focalizza sul singolo round di OpenAI. Il NYT adotta un tono di cronaca economica, The Decoder un taglio più tech-oriented con dettagli sul prodotto."
+            },
+            {
+              "titolo": "Google DeepMind identifica sei 'trappole' che possono dirottare gli agenti AI autonomi nel mondo reale",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/google-deepmind-study-exposes-six-traps-that-can-easily-hijack-autonomous-ai-agents-in-the-wild/",
+              "riassunto": "Ricercatori di Google DeepMind hanno pubblicato il primo catalogo sistematico delle vulnerabilità degli agenti AI autonomi. Lo studio identifica sei tipologie di 'trappole' attraverso cui siti web, documenti e API possono essere weaponizzati per manipolare agenti che navigano il web, gestiscono email e conducono transazioni in autonomia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il data center Hyperion di Meta sarà alimentato da 10 nuove centrali a gas naturale: consumi pari a quelli del South Dakota",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge-could-power-south-dakota/",
+              "riassunto": "Il prossimo data center Hyperion di Meta dedicato all'AI sarà alimentato da 10 nuovi impianti a gas naturale, con un consumo energetico paragonabile a quello dell'intero stato del South Dakota. La notizia solleva interrogativi sull'impatto ambientale della corsa all'AI e sulle promesse di sostenibilità delle big tech.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "L'UE vieta i contenuti generati dall'AI nelle comunicazioni ufficiali delle istituzioni europee",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/eu-bars-ai-generated-content-from-official-communications-according-to-politico/",
+              "riassunto": "Secondo Politico, Commissione, Parlamento e Consiglio europei hanno vietato ai propri team stampa l'uso di contenuti interamente generati dall'AI nelle comunicazioni ufficiali. Gli esperti considerano la misura un'opportunità mancata per un approccio più sfumato alla regolamentazione dell'AI generativa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Perplexity AI citata in giudizio per presunta condivisione di dati personali degli utenti con Meta e Google",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/perplexity-ai-sued-over-alleged-data-sharing-with-meta-and-google/",
+              "riassunto": "Perplexity AI affronta una class-action con l'accusa di aver condiviso dati personali degli utenti, estratti dalle conversazioni in chat, con Meta e Google. La causa, riportata da Bloomberg, solleva questioni fondamentali sulla privacy nei motori di ricerca AI.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cognichip raccoglie 60 milioni per far progettare all'AI i chip che alimentano l'AI stessa",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/01/cognichip-wants-ai-to-design-the-chips-that-power-ai-and-just-raised-60m-to-try/",
+              "riassunto": "La startup Cognichip ha raccolto 60 milioni di dollari per sviluppare un sistema in cui l'intelligenza artificiale progetta i chip destinati a far funzionare l'AI stessa. L'azienda promette di ridurre i costi di sviluppo dei chip di oltre il 75% e dimezzare i tempi di progettazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I lavoratori della gig economy che addestrano robot umanoidi da casa propria",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/04/01/1134863/humanoid-data-training-gig-economy-2026-breakthrough-technology/",
+              "riassunto": "Un'inchiesta del MIT Technology Review rivela come lavoratori gig in tutto il mondo, incluso uno studente di medicina in Nigeria, stiano addestrando robot umanoidi registrandosi con iPhone legati alla fronte. Il fenomeno rappresenta una nuova frontiera della gig economy applicata alla robotica, selezionato tra le tecnologie breakthrough del 2026.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crisi di sicurezza e proprietà intellettuale nelle aziende AI (leak Anthropic, causa Perplexity)",
+            "Finanziamenti AI a livelli senza precedenti (297 miliardi in un trimestre)",
+            "Impatto ambientale ed energetico dei data center AI",
+            "Vulnerabilità e rischi degli agenti AI autonomi",
+            "Regolamentazione istituzionale dell'AI generativa in Europa",
+            "Convergenza AI-hardware: chip progettati dall'AI e training robotico distribuito"
+          ],
+          "da_tenere_d_occhio": "La fuga del codice sorgente di Claude Code potrebbe avere conseguenze a lungo termine sulla competitività di Anthropic e sulla sicurezza dei modelli AI. Con oltre 8.000 cloni già distribuiti, il codice è ormai impossibile da contenere: monitorare se emergeranno fork funzionanti, analisi di vulnerabilità o imitazioni commerciali basate sul codice trapelato.",
+          "_model_used": "anthropic/claude-opus-4-6"
+        }
+      ]
+    },
     {
       "id": 12,
       "run_id": 45,
