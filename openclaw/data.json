@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T23:20:18.854642Z",
+  "generated_at": "2026-04-02T23:30:10.105613Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 39min",
+      "next": "in 29min",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -172,7 +172,7 @@
       "schedule": "one-shot: 2026-04-03T06:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 7h",
+      "next": "in 6h",
       "note": "Promemoria: comprare il pensiero per Maria.",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "one-shot: 2026-04-03T09:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 10h",
+      "next": "in 9h",
       "note": "Promemoria: fare la borsa per il concerto e per le cose da sci.",
       "enabled": true
     },
