@@ -29,13 +29,16 @@ body { background: #0d1117; color: #e6edf3; font-family: 'Segoe UI', system-ui, 
 .section { margin-bottom: 24px; }
 .section h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: #c9d1d9; }
 table { width: 100%; border-collapse: collapse; background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
-th { background: #1c2128; text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b949e; border-bottom: 1px solid #30363d; }
+th { background: #1c2128; text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b949e; border-bottom: 1px solid #30363d; cursor: pointer; user-select: none; white-space: nowrap; }
+th:hover { color: #c9d1d9; background: #21262d; }
+th.sorted-asc::after { content: ' ↑'; color: #58a6ff; }
+th.sorted-desc::after { content: ' ↓'; color: #58a6ff; }
+th.sorted-asc, th.sorted-desc { color: #58a6ff; }
 td { padding: 10px 14px; border-bottom: 1px solid #21262d; vertical-align: middle; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #1c2128; }
 .copy-btn { background: #21262d; border: 1px solid #30363d; color: #8b949e; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; font-family: monospace; }
 .copy-btn:hover { background: #30363d; color: #c9d1d9; }
-.restore-cmd { font-family: monospace; font-size: 11px; color: #8b949e; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .loading { color: #8b949e; font-style: italic; text-align: center; padding: 40px; }
 .error-msg { color: #f85149; background: #4e1f1f; border: 1px solid #da3633; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
 .rate-number { font-family: monospace; font-size: 24px; font-weight: 700; }
@@ -118,13 +121,13 @@ tr:hover td { background: #1c2128; }
   <!-- Sub-agents -->
   <div class="section">
     <h2>Sub-Agents</h2>
-    <table>
+    <table id="tbl-subagents">
       <thead>
         <tr>
-          <th>Nome</th>
-          <th>Ruolo</th>
-          <th>Modello primario</th>
-          <th>Fallback</th>
+          <th data-col="0" data-type="str">Nome</th>
+          <th data-col="1" data-type="str">Ruolo</th>
+          <th data-col="2" data-type="str">Modello primario</th>
+          <th data-col="3" data-type="str">Fallback</th>
         </tr>
       </thead>
       <tbody id="subagents-table">
@@ -136,19 +139,19 @@ tr:hover td { background: #1c2128; }
   <!-- Cron Jobs -->
   <div class="section">
     <h2>Cron Jobs</h2>
-    <table>
+    <table id="tbl-cron">
       <thead>
         <tr>
-          <th>Nome</th>
-          <th>Schedule</th>
-          <th>Target</th>
-          <th>Stato</th>
-          <th>Prossima esecuzione</th>
-          <th>Testo / Note</th>
+          <th data-col="0" data-type="str">Nome</th>
+          <th data-col="1" data-type="str">Schedule</th>
+          <th data-col="2" data-type="str">Target</th>
+          <th data-col="3" data-type="str">Stato</th>
+          <th data-col="4" data-type="str">Prossima esecuzione</th>
+          <th data-col="5" data-type="str">Testo / Note</th>
         </tr>
       </thead>
       <tbody id="cron-table">
-        <tr><td colspan="5" class="loading">Caricamento...</td></tr>
+        <tr><td colspan="6" class="loading">Caricamento...</td></tr>
       </tbody>
     </table>
   </div>
@@ -156,14 +159,14 @@ tr:hover td { background: #1c2128; }
   <!-- Backup -->
   <div class="section">
     <h2>Backup Disponibili</h2>
-    <table>
+    <table id="tbl-backup">
       <thead>
         <tr>
-          <th>Data</th>
-          <th>File</th>
-          <th>Dimensione</th>
-          <th>Contesto</th>
-          <th>Restore</th>
+          <th data-col="0" data-type="date">Data</th>
+          <th data-col="1" data-type="str">File</th>
+          <th data-col="2" data-type="size">Dimensione</th>
+          <th data-col="3" data-type="str">Contesto</th>
+          <th data-col="4" data-type="none">Restore</th>
         </tr>
       </thead>
       <tbody id="backup-table">
@@ -175,6 +178,56 @@ tr:hover td { background: #1c2128; }
 </div>
 
 <script>
+// ── Sorting ─────────────────────────────────────────────────────────────────
+const sortState = {};
+
+function parseVal(td, type) {
+  const txt = td.dataset.sort !== undefined ? td.dataset.sort : td.innerText.trim();
+  if (type === 'num')  return parseFloat(txt) || 0;
+  if (type === 'size') { // e.g. "8.7M", "1.2K"
+    const m = txt.match(/([\d.]+)([KMGT]?)/i);
+    if (!m) return 0;
+    const mult = {K:1e3,M:1e6,G:1e9,T:1e12}[m[2].toUpperCase()] || 1;
+    return parseFloat(m[1]) * mult;
+  }
+  if (type === 'date') return new Date(txt).getTime() || 0;
+  return txt.toLowerCase();
+}
+
+function initSortable(tableId) {
+  const table = document.getElementById(tableId);
+  if (!table) return;
+  table.querySelectorAll('th[data-col]').forEach(th => {
+    if (th.dataset.type === 'none') return; // colonna non ordinabile
+    th.addEventListener('click', () => {
+      const col = parseInt(th.dataset.col);
+      const type = th.dataset.type || 'str';
+      const key = tableId + '_' + col;
+      const asc = sortState[key] !== 'asc';
+      sortState[key] = asc ? 'asc' : 'desc';
+
+      // Reset header highlights
+      table.querySelectorAll('th').forEach(h => h.classList.remove('sorted-asc','sorted-desc'));
+      th.classList.add(asc ? 'sorted-asc' : 'sorted-desc');
+
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr')).filter(r => !r.querySelector('.loading'));
+      rows.sort((a, b) => {
+        const tdA = a.querySelectorAll('td')[col];
+        const tdB = b.querySelectorAll('td')[col];
+        if (!tdA || !tdB) return 0;
+        const va = parseVal(tdA, type);
+        const vb = parseVal(tdB, type);
+        if (va < vb) return asc ? -1 : 1;
+        if (va > vb) return asc ? 1 : -1;
+        return 0;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    });
+  });
+}
+
+// ── Data & Render ────────────────────────────────────────────────────────────
 async function loadData() {
   document.getElementById('last-update').textContent = 'Aggiornamento...';
   try {
@@ -184,19 +237,14 @@ async function loadData() {
     renderData(d);
     document.getElementById('error-banner').style.display = 'none';
   } catch(e) {
-    document.getElementById('error-banner').textContent = 'Errore caricamento dati: ' + e.message + ' — i dati mostrati potrebbero non essere aggiornati.';
+    document.getElementById('error-banner').textContent = 'Errore caricamento dati: ' + e.message;
     document.getElementById('error-banner').style.display = 'block';
     document.getElementById('last-update').textContent = 'Errore aggiornamento';
   }
 }
 
 function badge(status) {
-  const map = {
-    'ok': 'ok', 'running': 'ok', 'active': 'ok', 'OK': 'ok',
-    'error': 'error', 'Error': 'error', 'failed': 'error',
-    'warning': 'warning', 'Warning': 'warning',
-    'idle': 'idle',
-  };
+  const map = { ok:'ok', running:'ok', active:'ok', OK:'ok', error:'error', Error:'error', failed:'error', warning:'warning', Warning:'warning', idle:'idle' };
   const cls = map[status] || 'unknown';
   return `<span class="badge ${cls}">${status}</span>`;
 }
@@ -208,8 +256,7 @@ function renderData(d) {
   document.getElementById('sys-port').textContent = d.system?.gateway_port || 'n/a';
 
   // Telegram
-  const tgStatus = d.telegram?.status || 'unknown';
-  document.getElementById('ch-telegram').innerHTML = badge(tgStatus);
+  document.getElementById('ch-telegram').innerHTML = badge(d.telegram?.status || 'unknown');
   document.getElementById('ch-token').innerHTML = d.telegram?.token_present
     ? '<span class="badge ok">presente</span>'
     : '<span class="badge error">mancante</span>';
@@ -222,23 +269,9 @@ function renderData(d) {
 
   // Modelli
   document.getElementById('model-primary').textContent = d.models?.primary || 'n/a';
-  const fb = d.models?.fallbacks || [];
-  document.getElementById('model-fallbacks').innerHTML = fb.map((m, i) =>
+  document.getElementById('model-fallbacks').innerHTML = (d.models?.fallbacks || []).map((m, i) =>
     `<div class="fallback-item"><div class="fallback-num">${i+1}</div><span>${m}</span></div>`
   ).join('');
-
-  // Cron
-  const crons = d.cron_jobs || [];
-  document.getElementById('cron-table').innerHTML = crons.length === 0
-    ? '<tr><td colspan="6" class="loading">Nessun cron job trovato</td></tr>'
-    : crons.map(c => `<tr>
-        <td style="font-family:monospace;color:${c.enabled===false?'#555':'#c9d1d9'}">${c.enabled===false?'<s>'+c.name+'</s>':c.name}</td>
-        <td style="font-family:monospace;font-size:11px;color:#8b949e">${c.schedule || 'n/a'}</td>
-        <td><span style="color:#8b949e;font-size:11px">${c.target}</span></td>
-        <td>${badge(c.status || 'unknown')}</td>
-        <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.next || 'n/a'}</td>
-        <td style="font-size:12px;color:#c9d1d9;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${(c.note||'').replace(/"/g,'&quot;')}">${c.note || '—'}</td>
-      </tr>`).join('');
 
   // Sub-agents
   const subagents = d.subagents || [];
@@ -248,34 +281,61 @@ function renderData(d) {
         <td style="font-weight:600;color:#c9d1d9">${sa.name}</td>
         <td style="color:#8b949e;font-size:12px">${sa.role}</td>
         <td style="font-family:monospace;font-size:12px;color:#58a6ff">${sa.primary || 'n/a'}</td>
-        <td style="font-family:monospace;font-size:11px;color:#8b949e">${(sa.fallbacks||[]).join(' \u2192 ') || '\u2014'}</td>
+        <td style="font-family:monospace;font-size:11px;color:#8b949e">${(sa.fallbacks||[]).join(' → ') || '—'}</td>
       </tr>`).join('');
 
-  // Backup
+  // Cron
+  const crons = d.cron_jobs || [];
+  document.getElementById('cron-table').innerHTML = crons.length === 0
+    ? '<tr><td colspan="6" class="loading">Nessun cron job trovato</td></tr>'
+    : crons.map(c => {
+        const note = (c.note || '').replace(/"/g, '&quot;');
+        const nameCell = c.enabled === false ? `<s>${c.name}</s>` : c.name;
+        const nameColor = c.enabled === false ? '#555' : '#c9d1d9';
+        return `<tr>
+          <td style="font-family:monospace;color:${nameColor}">${nameCell}</td>
+          <td style="font-family:monospace;font-size:11px;color:#8b949e">${c.schedule || 'n/a'}</td>
+          <td style="color:#8b949e;font-size:11px">${c.target}</td>
+          <td>${badge(c.status || 'unknown')}</td>
+          <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.next || 'n/a'}</td>
+          <td style="font-size:12px;color:#c9d1d9;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${note}">${c.note || '—'}</td>
+        </tr>`;
+      }).join('');
+
+  // Backup — data-sort su ogni cella per ordinamento corretto
   const backups = d.backups || [];
   document.getElementById('backup-table').innerHTML = backups.length === 0
     ? '<tr><td colspan="5" class="loading">Nessun backup trovato</td></tr>'
-    : backups.map(b => `<tr>
-        <td style="font-family:monospace;font-size:12px">${b.date ? b.date.replace('T',' ').replace('Z',' UTC') : 'n/a'}</td>
-        <td style="font-family:monospace;font-size:11px;color:#8b949e">${b.file}</td>
-        <td style="font-family:monospace">${b.size}</td>
-        <td style="color:#c9d1d9">${b.context || '—'}</td>
-        <td>
-          <button class="copy-btn" onclick="copyCmd('${b.restore_cmd?.replace(/'/g,"\\'")}')">📋 Copia</button>
-        </td>
-      </tr>`).join('');
+    : backups.map(b => {
+        const dateDisplay = b.date ? b.date.replace('T',' ').replace('Z',' UTC') : 'n/a';
+        const sizeSort = b.size ? b.size : '0';
+        const safeCmd = (b.restore_cmd || '').replace(/'/g, "\\'");
+        return `<tr>
+          <td data-sort="${b.date || ''}" style="font-family:monospace;font-size:12px">${dateDisplay}</td>
+          <td style="font-family:monospace;font-size:11px;color:#8b949e">${b.file}</td>
+          <td data-sort="${sizeSort}" style="font-family:monospace">${b.size}</td>
+          <td style="color:#c9d1d9">${b.context || '—'}</td>
+          <td><button class="copy-btn" onclick="copyCmd('${safeCmd}')">📋 Copia</button></td>
+        </tr>`;
+      }).join('');
 
-  // Timestamp
   const ts = d.generated_at ? new Date(d.generated_at).toLocaleString('it-IT') : new Date().toLocaleString('it-IT');
   document.getElementById('last-update').textContent = 'Aggiornato: ' + ts;
 }
 
 function copyCmd(cmd) {
   navigator.clipboard.writeText(cmd).then(() => {
-    const btns = document.querySelectorAll('.copy-btn');
-    btns.forEach(b => { if(b.getAttribute('onclick').includes(cmd.substring(0,20))) { b.textContent = '✅ Copiato!'; setTimeout(() => b.textContent = '📋 Copia', 2000); }});
+    document.querySelectorAll('.copy-btn').forEach(b => {
+      if (b.getAttribute('onclick')?.includes(cmd.substring(0, 20))) {
+        b.textContent = '✅ Copiato!';
+        setTimeout(() => b.textContent = '📋 Copia', 2000);
+      }
+    });
   });
 }
+
+// Init sorting su tutte le tabelle
+['tbl-subagents','tbl-cron','tbl-backup'].forEach(initSortable);
 
 // Auto-refresh ogni 5 minuti
 setInterval(loadData, 300000);
