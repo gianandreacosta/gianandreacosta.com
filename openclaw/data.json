@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T20:50:12.317276Z",
+  "generated_at": "2026-04-02T20:53:18.538688Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "gateway_running": true,
@@ -76,67 +76,121 @@
   "rate_limits_today": 1726,
   "cron_jobs": [
     {
-      "name": "dashboard-data-update",
-      "schedule": "vedi config",
-      "target": "*",
-      "status": "*",
-      "next": "*"
-    },
-    {
-      "name": "session-memory-capture",
-      "schedule": "vedi config",
-      "target": "1h",
-      "status": "in",
-      "next": "6,8,10,12,14,16,18,20,..."
+      "name": "memory-review",
+      "schedule": "0 6 * * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 9h",
+      "note": "You are Geoffrey's background memory reviewer. Every run:...",
+      "enabled": true
     },
     {
       "name": "backup-daily-config",
-      "schedule": "vedi config",
-      "target": "*",
-      "status": "*",
-      "next": "2"
+      "schedule": "0 2 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 3h",
+      "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
+      "enabled": true
     },
     {
-      "name": "rassegna-mattutina",
-      "schedule": "vedi config",
-      "target": "*",
-      "status": "*",
-      "next": "6"
-    },
-    {
-      "name": "memory-review",
-      "schedule": "vedi config",
-      "target": "*",
-      "status": "*",
-      "next": "6"
-    },
-    {
-      "name": "promemoria-maria",
-      "schedule": "vedi config",
-      "target": "10h",
-      "status": "in",
-      "next": "06:30Z"
-    },
-    {
-      "name": "promemoria-borsa-conc...",
-      "schedule": "vedi config",
-      "target": "13h",
-      "status": "in",
-      "next": "09:30Z"
+      "name": "Promemoria pagamento Maria",
+      "schedule": "0 21 28 * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 26g",
+      "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
+      "enabled": true
     },
     {
       "name": "backup-weekly-full",
-      "schedule": "vedi config",
-      "target": "*",
-      "status": "*",
-      "next": "1"
+      "schedule": "0 1 * * 0 (Europe/Zurich)",
+      "target": "isolated",
+      "status": "idle",
+      "next": "in 2g",
+      "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
+      "enabled": true
     },
     {
-      "name": "Promemoria",
-      "schedule": "vedi config",
-      "target": "21",
-      "status": "0",
-      "next": "cron"
+      "name": "session-memory-capture",
+      "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 1h",
+      "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
+      "enabled": true
+    },
+    {
+      "name": "rassegna-mattutina",
+      "schedule": "45 6 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "error",
+      "next": "in 7h",
+      "note": "Esegui la rassegna mattutina completa:\n\ncd /root/.opencla...",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-fide",
+      "schedule": "one-shot: 2026-04-01T15:00:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "Promemoria: iscriviti alla FEDE (Federica)!",
+      "enabled": false
+    },
+    {
+      "name": "promemoria-pasqua",
+      "schedule": "one-shot: 2026-04-02T08:30:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "Promemoria: pensiero di Pasqua!",
+      "enabled": false
+    },
+    {
+      "name": "test-remind-curl",
+      "schedule": "one-shot: 2026-04-02T10:43:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "cd /root/.openclaw/workspace && bash tools/remind.sh 'Test remind.sh \u2014 arriva...",
+      "enabled": false
+    },
+    {
+      "name": "test-outbound-telegram",
+      "schedule": "one-shot: 2026-04-02T16:23:30.000Z",
+      "target": "isolated",
+      "status": "error",
+      "next": "n/a",
+      "note": "\ud83e\uddea TEST OUTBOUND TELEGRAM \u2014 Se leggi questo, l'outbound fu...",
+      "enabled": false
+    },
+    {
+      "name": "promemoria-maria",
+      "schedule": "one-shot: 2026-04-03T06:30:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 9h",
+      "note": "Promemoria: comprare il pensiero per Maria.",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-borsa-concerto",
+      "schedule": "one-shot: 2026-04-03T09:30:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 12h",
+      "note": "Promemoria: fare la borsa per il concerto e per le cose da sci.",
+      "enabled": true
+    },
+    {
+      "name": "dashboard-data-update",
+      "schedule": "*/10 * * * *",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 6min",
+      "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
+      "enabled": true
     }
   ],
   "backups": [
