@@ -115,6 +115,24 @@ tr:hover td { background: #1c2128; }
     </div>
   </div>
 
+  <!-- Sub-agents -->
+  <div class="section">
+    <h2>Sub-Agents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Ruolo</th>
+          <th>Modello primario</th>
+          <th>Fallback</th>
+        </tr>
+      </thead>
+      <tbody id="subagents-table">
+        <tr><td colspan="4" class="loading">Caricamento...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <!-- Cron Jobs -->
   <div class="section">
     <h2>Cron Jobs</h2>
@@ -218,6 +236,17 @@ function renderData(d) {
         <td>${badge(c.target === 'isolated' ? 'idle' : 'ok')} <span style="color:#8b949e;font-size:11px">${c.target}</span></td>
         <td>${badge(c.status || 'unknown')}</td>
         <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.next || 'n/a'}</td>
+      </tr>`).join('');
+
+  // Sub-agents
+  const subagents = d.subagents || [];
+  document.getElementById('subagents-table').innerHTML = subagents.length === 0
+    ? '<tr><td colspan="4" class="loading">Nessun sub-agent trovato</td></tr>'
+    : subagents.map(sa => `<tr>
+        <td style="font-weight:600;color:#c9d1d9">${sa.name}</td>
+        <td style="color:#8b949e;font-size:12px">${sa.role}</td>
+        <td style="font-family:monospace;font-size:12px;color:#58a6ff">${sa.primary || 'n/a'}</td>
+        <td style="font-family:monospace;font-size:11px;color:#8b949e">${(sa.fallbacks||[]).join(' \u2192 ') || '\u2014'}</td>
       </tr>`).join('');
 
   // Backup
