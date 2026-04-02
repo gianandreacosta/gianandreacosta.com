@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T22:20:07.382703Z",
+  "generated_at": "2026-04-02T22:30:07.021495Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -172,7 +172,7 @@
       "schedule": "one-shot: 2026-04-03T06:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 8h",
+      "next": "in 7h",
       "note": "Promemoria: comprare il pensiero per Maria.",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "one-shot: 2026-04-03T09:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 11h",
+      "next": "in 10h",
       "note": "Promemoria: fare la borsa per il concerto e per le cose da sci.",
       "enabled": true
     },
