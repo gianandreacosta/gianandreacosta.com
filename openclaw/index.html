@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geoffrey | OpenClaw Monitor</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0d1117; color: #e6edf3; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; }
+.header { background: #161b22; border-bottom: 1px solid #30363d; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+.header h1 { font-size: 18px; font-weight: 600; color: #58a6ff; }
+.header .meta { color: #8b949e; font-size: 12px; font-family: monospace; }
+.btn { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.btn:hover { background: #30363d; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; }
+.card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b949e; margin-bottom: 12px; }
+.status-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #21262d; }
+.status-row:last-child { border-bottom: none; }
+.status-row .label { color: #8b949e; }
+.status-row .value { font-family: monospace; color: #e6edf3; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; font-family: monospace; }
+.badge.ok { background: #1f4e1f; color: #56d364; border: 1px solid #2ea043; }
+.badge.error { background: #4e1f1f; color: #f85149; border: 1px solid #da3633; }
+.badge.warning { background: #4e3d1f; color: #e3b341; border: 1px solid #d29922; }
+.badge.idle { background: #1f2d4e; color: #79c0ff; border: 1px solid #388bfd; }
+.badge.unknown { background: #2d2d2d; color: #8b949e; border: 1px solid #30363d; }
+.section { margin-bottom: 24px; }
+.section h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: #c9d1d9; }
+table { width: 100%; border-collapse: collapse; background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
+th { background: #1c2128; text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b949e; border-bottom: 1px solid #30363d; }
+td { padding: 10px 14px; border-bottom: 1px solid #21262d; vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #1c2128; }
+.copy-btn { background: #21262d; border: 1px solid #30363d; color: #8b949e; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; font-family: monospace; }
+.copy-btn:hover { background: #30363d; color: #c9d1d9; }
+.restore-cmd { font-family: monospace; font-size: 11px; color: #8b949e; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.loading { color: #8b949e; font-style: italic; text-align: center; padding: 40px; }
+.error-msg { color: #f85149; background: #4e1f1f; border: 1px solid #da3633; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+.rate-number { font-family: monospace; font-size: 24px; font-weight: 700; }
+.rate-number.high { color: #f85149; }
+.rate-number.low { color: #56d364; }
+.fallback-chain { display: flex; flex-direction: column; gap: 4px; }
+.fallback-item { display: flex; align-items: center; gap: 8px; font-family: monospace; font-size: 12px; }
+.fallback-num { background: #21262d; color: #8b949e; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>🦇 Geoffrey | OpenClaw Monitor</h1>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <span class="meta" id="last-update">Caricamento...</span>
+    <button class="btn" onclick="loadData()">↻ Aggiorna</button>
+  </div>
+</div>
+
+<div class="container">
+  <div id="error-banner" style="display:none" class="error-msg"></div>
+
+  <!-- Stato Sistema -->
+  <div class="grid">
+    <div class="card">
+      <h2>Sistema</h2>
+      <div class="status-row">
+        <span class="label">Versione</span>
+        <span class="value" id="sys-version">...</span>
+      </div>
+      <div class="status-row">
+        <span class="label">Gateway</span>
+        <span id="sys-gateway">...</span>
+      </div>
+      <div class="status-row">
+        <span class="label">Porta</span>
+        <span class="value" id="sys-port">...</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Canali</h2>
+      <div class="status-row">
+        <span class="label">Telegram</span>
+        <span id="ch-telegram">...</span>
+      </div>
+      <div class="status-row">
+        <span class="label">Token</span>
+        <span id="ch-token">...</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Rate Limits Oggi</h2>
+      <div style="text-align:center;padding:8px 0">
+        <div class="rate-number" id="rate-count">...</div>
+        <div style="color:#8b949e;font-size:12px;margin-top:4px">richieste bloccate (429)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modelli -->
+  <div class="section">
+    <h2>Modelli &amp; Fallback</h2>
+    <div class="card">
+      <div class="status-row">
+        <span class="label">Modello primario</span>
+        <span class="value" style="color:#58a6ff" id="model-primary">...</span>
+      </div>
+      <div style="margin-top:12px">
+        <div style="color:#8b949e;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px">Fallback chain</div>
+        <div class="fallback-chain" id="model-fallbacks"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cron Jobs -->
+  <div class="section">
+    <h2>Cron Jobs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Schedule</th>
+          <th>Target</th>
+          <th>Stato</th>
+          <th>Prossima esecuzione</th>
+        </tr>
+      </thead>
+      <tbody id="cron-table">
+        <tr><td colspan="5" class="loading">Caricamento...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Backup -->
+  <div class="section">
+    <h2>Backup Disponibili</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>File</th>
+          <th>Dimensione</th>
+          <th>Contesto</th>
+          <th>Restore</th>
+        </tr>
+      </thead>
+      <tbody id="backup-table">
+        <tr><td colspan="5" class="loading">Caricamento...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<script>
+async function loadData() {
+  document.getElementById('last-update').textContent = 'Aggiornamento...';
+  try {
+    const res = await fetch('data.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const d = await res.json();
+    renderData(d);
+    document.getElementById('error-banner').style.display = 'none';
+  } catch(e) {
+    document.getElementById('error-banner').textContent = 'Errore caricamento dati: ' + e.message + ' — i dati mostrati potrebbero non essere aggiornati.';
+    document.getElementById('error-banner').style.display = 'block';
+    document.getElementById('last-update').textContent = 'Errore aggiornamento';
+  }
+}
+
+function badge(status) {
+  const map = {
+    'ok': 'ok', 'running': 'ok', 'active': 'ok', 'OK': 'ok',
+    'error': 'error', 'Error': 'error', 'failed': 'error',
+    'warning': 'warning', 'Warning': 'warning',
+    'idle': 'idle',
+  };
+  const cls = map[status] || 'unknown';
+  return `<span class="badge ${cls}">${status}</span>`;
+}
+
+function renderData(d) {
+  // Sistema
+  document.getElementById('sys-version').textContent = d.system?.version || 'n/a';
+  document.getElementById('sys-gateway').innerHTML = badge(d.system?.gateway_running ? 'running' : 'error');
+  document.getElementById('sys-port').textContent = d.system?.gateway_port || 'n/a';
+
+  // Telegram
+  const tgStatus = d.telegram?.status || 'unknown';
+  document.getElementById('ch-telegram').innerHTML = badge(tgStatus);
+  document.getElementById('ch-token').innerHTML = d.telegram?.token_present
+    ? '<span class="badge ok">presente</span>'
+    : '<span class="badge error">mancante</span>';
+
+  // Rate limits
+  const rate = d.rate_limits_today || 0;
+  const rateEl = document.getElementById('rate-count');
+  rateEl.textContent = rate;
+  rateEl.className = 'rate-number ' + (rate > 100 ? 'high' : 'low');
+
+  // Modelli
+  document.getElementById('model-primary').textContent = d.models?.primary || 'n/a';
+  const fb = d.models?.fallbacks || [];
+  document.getElementById('model-fallbacks').innerHTML = fb.map((m, i) =>
+    `<div class="fallback-item"><div class="fallback-num">${i+1}</div><span>${m}</span></div>`
+  ).join('');
+
+  // Cron
+  const crons = d.cron_jobs || [];
+  document.getElementById('cron-table').innerHTML = crons.length === 0
+    ? '<tr><td colspan="5" class="loading">Nessun cron job trovato</td></tr>'
+    : crons.map(c => `<tr>
+        <td style="font-family:monospace;color:#c9d1d9">${c.name}</td>
+        <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.schedule || 'n/a'}</td>
+        <td>${badge(c.target === 'isolated' ? 'idle' : 'ok')} <span style="color:#8b949e;font-size:11px">${c.target}</span></td>
+        <td>${badge(c.status || 'unknown')}</td>
+        <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.next || 'n/a'}</td>
+      </tr>`).join('');
+
+  // Backup
+  const backups = d.backups || [];
+  document.getElementById('backup-table').innerHTML = backups.length === 0
+    ? '<tr><td colspan="5" class="loading">Nessun backup trovato</td></tr>'
+    : backups.map(b => `<tr>
+        <td style="font-family:monospace;font-size:12px">${b.date ? b.date.replace('T',' ').replace('Z',' UTC') : 'n/a'}</td>
+        <td style="font-family:monospace;font-size:11px;color:#8b949e">${b.file}</td>
+        <td style="font-family:monospace">${b.size}</td>
+        <td style="color:#c9d1d9">${b.context || '—'}</td>
+        <td>
+          <button class="copy-btn" onclick="copyCmd('${b.restore_cmd?.replace(/'/g,"\\'")}')">📋 Copia</button>
+        </td>
+      </tr>`).join('');
+
+  // Timestamp
+  const ts = d.generated_at ? new Date(d.generated_at).toLocaleString('it-IT') : new Date().toLocaleString('it-IT');
+  document.getElementById('last-update').textContent = 'Aggiornato: ' + ts;
+}
+
+function copyCmd(cmd) {
+  navigator.clipboard.writeText(cmd).then(() => {
+    const btns = document.querySelectorAll('.copy-btn');
+    btns.forEach(b => { if(b.getAttribute('onclick').includes(cmd.substring(0,20))) { b.textContent = '✅ Copiato!'; setTimeout(() => b.textContent = '📋 Copia', 2000); }});
+  });
+}
+
+// Auto-refresh ogni 5 minuti
+setInterval(loadData, 300000);
+loadData();
+</script>
+</body>
+</html>
