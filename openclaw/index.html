@@ -47,6 +47,10 @@ tr:hover td { background: #1c2128; }
 .fallback-chain { display: flex; flex-direction: column; gap: 4px; }
 .fallback-item { display: flex; align-items: center; gap: 8px; font-family: monospace; font-size: 12px; }
 .fallback-num { background: #21262d; color: #8b949e; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+.show-more-row td { text-align: center; padding: 10px; }
+.show-more-btn { background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+.show-more-btn:hover { background: #30363d; }
+.row-hidden { display: none; }
 </style>
 </head>
 <body>
@@ -321,6 +325,9 @@ function renderData(d) {
 
   const ts = d.generated_at ? new Date(d.generated_at).toLocaleString('it-IT') : new Date().toLocaleString('it-IT');
   document.getElementById('last-update').textContent = 'Aggiornato: ' + ts;
+  applyShowMore('subagents-table', 4);
+  applyShowMore('cron-table', 6);
+  applyShowMore('backup-table', 5);
 }
 
 function copyCmd(cmd) {
@@ -332,6 +339,27 @@ function copyCmd(cmd) {
       }
     });
   });
+}
+
+// ── Show More ───────────────────────────────────────────────────────────────
+const ROWS_LIMIT = 10;
+
+function applyShowMore(tbodyId, colspan) {
+  const tbody = document.getElementById(tbodyId);
+  if (!tbody) return;
+  const rows = Array.from(tbody.querySelectorAll('tr')).filter(r => !r.querySelector('.loading') && !r.classList.contains('show-more-row'));
+  if (rows.length <= ROWS_LIMIT) return;
+  rows.forEach((r, i) => { if (i >= ROWS_LIMIT) r.classList.add('row-hidden'); });
+  const hidden = rows.length - ROWS_LIMIT;
+  const tr = document.createElement('tr');
+  tr.className = 'show-more-row';
+  tr.innerHTML = `<td colspan="${colspan}"><button class="show-more-btn" onclick="showAll('${tbodyId}')">Mostra altri ${hidden} ↓</button></td>`;
+  tbody.appendChild(tr);
+}
+
+function showAll(tbodyId) {
+  document.getElementById(tbodyId).querySelectorAll('.row-hidden').forEach(r => r.classList.remove('row-hidden'));
+  document.getElementById(tbodyId).querySelector('.show-more-row')?.remove();
 }
 
 // Init sorting su tutte le tabelle
