@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T23:30:10.105613Z",
+  "generated_at": "2026-04-02T23:40:07.679371Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 29min",
+      "next": "in 19min",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
