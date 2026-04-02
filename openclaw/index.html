@@ -77,6 +77,10 @@ tr:hover td { background: #1c2128; }
         <span class="value" id="sys-version">...</span>
       </div>
       <div class="status-row">
+        <span class="label">Aggiornamenti</span>
+        <span id="sys-update">...</span>
+      </div>
+      <div class="status-row">
         <span class="label">Gateway</span>
         <span id="sys-gateway">...</span>
       </div>
@@ -256,6 +260,13 @@ function badge(status) {
 function renderData(d) {
   // Sistema
   document.getElementById('sys-version').textContent = d.system?.version || 'n/a';
+  const upd = d.system?.update_available;
+  const latest = d.system?.latest_ver || 'n/a';
+  document.getElementById('sys-update').innerHTML = upd === true
+    ? `<span class="badge warning">↑ ${latest} disponibile</span>`
+    : upd === false
+    ? '<span class="badge ok">aggiornato</span>'
+    : '<span class="badge unknown">n/a</span>';
   document.getElementById('sys-gateway').innerHTML = badge(d.system?.gateway_running ? 'running' : 'error');
   document.getElementById('sys-port').textContent = d.system?.gateway_port || 'n/a';
 
