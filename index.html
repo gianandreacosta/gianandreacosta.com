@@ -96,6 +96,10 @@
     /* Rassegna */
     .card--rassegna { background: linear-gradient(135deg, #1e3a5f, #2563eb); }
     /* Experiments */
+    .card--monitor { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1px solid #30363d; }
+    .card--monitor .card-title { color: #58a6ff; }
+    .card--monitor .card-desc { color: #8b949e; }
+    .card--monitor .card-arrow { color: #58a6ff; }
     .card--exp {
       background: #18181b;
       border: 1px solid #27272a;
@@ -177,6 +181,18 @@
 
     <!-- Experiments -->
     <section>
+      <div class="section-label">Sistema</div>
+      <div class="cards">
+        <a class="card card--monitor" href="/openclaw/">
+          <span class="card-icon">🦇</span>
+          <div class="card-text">
+            <div class="card-title">Geoffrey Monitor</div>
+            <div class="card-desc">Stato sistema OpenClaw, cron, modelli e backup</div>
+          </div>
+          <span class="card-arrow">›</span>
+        </a>
+      </div>
+
       <div class="section-label">Experiments</div>
       <div class="cards">
         <a class="card card--exp" href="/experiments/">
