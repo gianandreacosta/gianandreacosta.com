@@ -1,176 +1,261 @@
 {
-  "updated_at": "2026-04-02T20:31:07Z",
+  "generated_at": "2026-04-02T21:00:17.108742Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
-    "gateway": {
-      "status": "running",
-      "pid": 1940486,
-      "port": 18789,
-      "bind": "127.0.0.1",
-      "note": "loopback-only gateway"
-    },
-    "telegram": "ok",
-    "channels": {
-      "telegram": { "enabled": true }
-    }
+    "gateway_running": true,
+    "gateway_port": 18789
+  },
+  "telegram": {
+    "status": "OK",
+    "token_present": true
   },
   "models": {
     "primary": "anthropic/claude-sonnet-4-6",
-    "fallback": [],
-    "rate_limit_today": 733
+    "fallbacks": [
+      "openai/gpt-5.1-codex-mini",
+      "openrouter/anthropic/claude-haiku-4-5"
+    ]
   },
-  "cron": [
+  "subagents": [
     {
-      "id": "784148c1",
-      "name": "session-memory-capture",
-      "enabled": true,
-      "schedule": "5 6,8,10,12,14,16,18,20,22 * * *",
-      "tz": "UTC",
-      "lastRunStatus": "ok",
-      "lastRunAtMs": 1775153100008,
-      "lastDurationMs": 168243,
-      "nextRunAtMs": 1775167500000,
-      "consecutiveErrors": 0,
-      "lastDeliveryStatus": "delivered"
+      "name": "Custode",
+      "role": "Manutenzione OpenClaw",
+      "primary": "openrouter/google/gemini-2.5-flash-lite",
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
     },
     {
-      "id": "b7b03879",
-      "name": "backup-daily-config",
-      "enabled": true,
-      "schedule": "0 2 * * *",
-      "tz": "Europe/Zurich",
-      "lastRunStatus": "ok",
-      "lastRunAtMs": 1775088000019,
-      "lastDurationMs": 26495,
-      "nextRunAtMs": 1775174400000,
-      "consecutiveErrors": 0,
-      "lastDeliveryStatus": "not-delivered"
+      "name": "Officina",
+      "role": "Sviluppo software/web",
+      "primary": "openai/gpt-5.1-codex",
+      "fallbacks": [
+        "openai/gpt-5.1-codex",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
     },
     {
-      "id": "f2734a76",
-      "name": "rassegna-mattutina",
-      "enabled": true,
-      "schedule": "45 6 * * *",
-      "tz": "Europe/Zurich",
-      "lastRunStatus": "error",
-      "lastRunAtMs": 1775105100011,
-      "lastDurationMs": 591573,
-      "nextRunAtMs": 1775191500000,
-      "consecutiveErrors": 1,
-      "lastError": "Outbound not configured for channel: telegram",
-      "lastDeliveryStatus": "not-requested"
+      "name": "CFO",
+      "role": "Flussi contabili (pagamenti Maria)",
+      "primary": "openai/gpt-5.1-codex",
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
     },
     {
-      "id": "d1006e35",
+      "name": "Archivio",
+      "role": "Documenti e memoria",
+      "primary": "openai/gpt-5.1-codex-mini",
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
+    },
+    {
+      "name": "Model Manager",
+      "role": "Gestione stack modelli/API",
+      "primary": "anthropic/claude-haiku-4-5",
+      "fallbacks": [
+        "anthropic/claude-opus-4-6",
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
+    },
+    {
+      "name": "Segreteria",
+      "role": "Amministrazione generica",
+      "primary": "openai/gpt-5.1-codex-mini",
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
+      ]
+    }
+  ],
+  "rate_limits_today": 1726,
+  "cron_jobs": [
+    {
       "name": "memory-review",
-      "enabled": true,
-      "schedule": "0 6 * * *",
-      "tz": "UTC",
-      "lastRunStatus": "ok",
-      "lastRunAtMs": 1775109664195,
-      "lastDurationMs": 15626,
-      "nextRunAtMs": 1775196064189,
-      "consecutiveErrors": 0,
-      "lastDeliveryStatus": "not-delivered"
+      "schedule": "0 6 * * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 9h",
+      "note": "You are Geoffrey's background memory reviewer. Every run:...",
+      "enabled": true
     },
     {
-      "id": "eeae75d3",
-      "name": "backup-weekly-full",
-      "enabled": true,
-      "schedule": "0 1 * * 0",
-      "tz": "Europe/Zurich",
-      "lastRunStatus": null,
-      "lastRunAtMs": null,
-      "nextRunAtMs": 1775343600000,
-      "consecutiveErrors": 0,
-      "lastDeliveryStatus": null
+      "name": "backup-daily-config",
+      "schedule": "0 2 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 2h",
+      "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
+      "enabled": true
     },
     {
-      "id": "ea56a96a",
       "name": "Promemoria pagamento Maria",
-      "enabled": true,
-      "schedule": "0 21 28 * *",
-      "tz": "UTC",
-      "lastRunStatus": "ok",
-      "lastRunAtMs": 1774731600011,
-      "lastDurationMs": 9156,
-      "nextRunAtMs": 1777410000000,
-      "consecutiveErrors": 0,
-      "lastDeliveryStatus": "not-delivered"
+      "schedule": "0 21 28 * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 25g",
+      "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
+      "enabled": true
+    },
+    {
+      "name": "backup-weekly-full",
+      "schedule": "0 1 * * 0 (Europe/Zurich)",
+      "target": "isolated",
+      "status": "idle",
+      "next": "in 2g",
+      "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
+      "enabled": true
+    },
+    {
+      "name": "session-memory-capture",
+      "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
+      "target": "isolated",
+      "status": "ok",
+      "next": "in 1h",
+      "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
+      "enabled": true
+    },
+    {
+      "name": "rassegna-mattutina",
+      "schedule": "45 6 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "error",
+      "next": "in 7h",
+      "note": "Esegui la rassegna mattutina completa:\n\ncd /root/.opencla...",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-fide",
+      "schedule": "one-shot: 2026-04-01T15:00:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "Promemoria: iscriviti alla FEDE (Federica)!",
+      "enabled": false
+    },
+    {
+      "name": "promemoria-pasqua",
+      "schedule": "one-shot: 2026-04-02T08:30:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "Promemoria: pensiero di Pasqua!",
+      "enabled": false
+    },
+    {
+      "name": "test-remind-curl",
+      "schedule": "one-shot: 2026-04-02T10:43:00.000Z",
+      "target": "main",
+      "status": "error",
+      "next": "n/a",
+      "note": "cd /root/.openclaw/workspace && bash tools/remind.sh 'Test remind.sh \u2014 arriva...",
+      "enabled": false
+    },
+    {
+      "name": "test-outbound-telegram",
+      "schedule": "one-shot: 2026-04-02T16:23:30.000Z",
+      "target": "isolated",
+      "status": "error",
+      "next": "n/a",
+      "note": "\ud83e\uddea TEST OUTBOUND TELEGRAM \u2014 Se leggi questo, l'outbound fu...",
+      "enabled": false
+    },
+    {
+      "name": "promemoria-maria",
+      "schedule": "one-shot: 2026-04-03T06:30:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 9h",
+      "note": "Promemoria: comprare il pensiero per Maria.",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-borsa-concerto",
+      "schedule": "one-shot: 2026-04-03T09:30:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 12h",
+      "note": "Promemoria: fare la borsa per il concerto e per le cose da sci.",
+      "enabled": true
+    },
+    {
+      "name": "dashboard-data-update",
+      "schedule": "*/10 * * * *",
+      "target": "isolated",
+      "status": "ok",
+      "next": "scaduto",
+      "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
+      "enabled": true
     }
   ],
   "backups": [
     {
       "file": "daily-config-20260402-2211.tar.gz",
       "date": "2026-04-02T22:11:00Z",
-      "size": "8.7M",
-      "version": "2026.4.2",
-      "context": "Configurazione stabile post-hardening sicurezza e aggiornamento 2026.4.2",
+      "size": "8.6M",
+      "context": "Stabile post-hardening sicurezza + OpenClaw 2026.4.2",
       "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260402-2157.tar.gz",
       "date": "2026-04-02T21:57:00Z",
-      "size": "8.7M",
-      "version": "2026.4.2",
-      "context": "Pre aggiornamento 2026.4.2",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "size": "8.6M",
+      "context": "Pre-aggiornamento 2026.4.2",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-2157.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260402-1357.tar.gz",
       "date": "2026-04-02T13:57:00Z",
       "size": "8.4M",
-      "version": "2026.4.2",
-      "context": "Backup automatico 02/04",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "context": "Backup automatico 02/04 pomeriggio",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-1357.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260402-1305.tar.gz",
       "date": "2026-04-02T13:05:00Z",
       "size": "8.4M",
-      "version": "2026.4.2",
       "context": "Backup automatico 02/04 mattina",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-1305.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260401-0753.tar.gz",
       "date": "2026-04-01T07:53:00Z",
-      "size": "8.1M",
-      "version": "2026.4.2",
+      "size": "8.0M",
       "context": "Backup automatico 01/04 mattina",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260401-0753.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260401-0200.tar.gz",
       "date": "2026-04-01T02:00:00Z",
-      "size": "7.8M",
-      "version": "2026.4.2",
+      "size": "7.7M",
       "context": "Backup notturno automatico 01/04",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260401-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260331-0200.tar.gz",
       "date": "2026-03-31T02:00:00Z",
-      "size": "7.5M",
-      "version": "2026.4.2",
+      "size": "7.4M",
       "context": "Backup notturno automatico 31/03",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260331-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260330-2150.tar.gz",
       "date": "2026-03-30T21:50:00Z",
-      "size": "7.5M",
-      "version": "2026.4.2",
-      "context": "Post fix rassegna stampa",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "size": "7.4M",
+      "context": "Post fix rassegna stampa 30/03",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260330-2150.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
       "file": "daily-config-20260329.tar.gz",
       "date": "2026-03-29T00:00:00Z",
-      "size": "6.8M",
-      "version": "2026.4.2",
+      "size": "6.7M",
       "context": "Backup manuale 29/03",
-      "restore_cmd": "bash /root/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260329.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ]
 }
