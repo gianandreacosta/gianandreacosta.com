@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T21:20:10.862571Z",
+  "generated_at": "2026-04-02T21:25:40.104864Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -24,40 +24,52 @@
       "name": "Custode",
       "role": "Manutenzione OpenClaw",
       "primary": "anthropic/claude-haiku-4-5",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini"
+      ]
     },
     {
       "name": "Officina",
       "role": "Sviluppo software/web",
       "primary": "anthropic/claude-opus-4-6",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex"
+      ]
     },
     {
       "name": "CFO",
       "role": "Flussi contabili (pagamenti Maria)",
       "primary": "anthropic/claude-sonnet-4-6",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini"
+      ]
     },
     {
       "name": "Archivio",
       "role": "Documenti e memoria",
       "primary": "anthropic/claude-haiku-4-5",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini"
+      ]
     },
     {
       "name": "Model Manager",
       "role": "Gestione stack modelli/API",
       "primary": "anthropic/claude-opus-4-6",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini"
+      ]
     },
     {
       "name": "Segreteria",
       "role": "Amministrazione generica",
       "primary": "anthropic/claude-haiku-4-5",
-      "fallbacks": []
+      "fallbacks": [
+        "openai/gpt-5.1-codex-mini"
+      ]
     }
   ],
-  "rate_limits_today": 1727,
+  "rate_limits_today": 1746,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -100,7 +112,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 44min",
+      "next": "in 39min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -172,7 +184,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 4min",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     }
