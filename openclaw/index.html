@@ -144,6 +144,7 @@ tr:hover td { background: #1c2128; }
           <th>Target</th>
           <th>Stato</th>
           <th>Prossima esecuzione</th>
+          <th>Testo / Note</th>
         </tr>
       </thead>
       <tbody id="cron-table">
@@ -229,13 +230,14 @@ function renderData(d) {
   // Cron
   const crons = d.cron_jobs || [];
   document.getElementById('cron-table').innerHTML = crons.length === 0
-    ? '<tr><td colspan="5" class="loading">Nessun cron job trovato</td></tr>'
+    ? '<tr><td colspan="6" class="loading">Nessun cron job trovato</td></tr>'
     : crons.map(c => `<tr>
-        <td style="font-family:monospace;color:#c9d1d9">${c.name}</td>
-        <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.schedule || 'n/a'}</td>
-        <td>${badge(c.target === 'isolated' ? 'idle' : 'ok')} <span style="color:#8b949e;font-size:11px">${c.target}</span></td>
+        <td style="font-family:monospace;color:${c.enabled===false?'#555':'#c9d1d9'}">${c.enabled===false?'<s>'+c.name+'</s>':c.name}</td>
+        <td style="font-family:monospace;font-size:11px;color:#8b949e">${c.schedule || 'n/a'}</td>
+        <td><span style="color:#8b949e;font-size:11px">${c.target}</span></td>
         <td>${badge(c.status || 'unknown')}</td>
         <td style="font-family:monospace;font-size:12px;color:#8b949e">${c.next || 'n/a'}</td>
+        <td style="font-size:12px;color:#c9d1d9;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${(c.note||'').replace(/"/g,'&quot;')}">${c.note || '—'}</td>
       </tr>`).join('');
 
   // Sub-agents
