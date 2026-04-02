@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T21:26:19.016409Z",
+  "generated_at": "2026-04-02T21:26:44.614069Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -25,7 +25,8 @@
       "role": "Manutenzione OpenClaw",
       "primary": "anthropic/claude-haiku-4-5",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini"
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     },
     {
@@ -33,7 +34,8 @@
       "role": "Sviluppo software/web",
       "primary": "anthropic/claude-opus-4-6",
       "fallbacks": [
-        "openai/gpt-5.1-codex"
+        "openai/gpt-5.1-codex",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     },
     {
@@ -41,7 +43,8 @@
       "role": "Flussi contabili (pagamenti Maria)",
       "primary": "anthropic/claude-sonnet-4-6",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini"
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     },
     {
@@ -49,7 +52,8 @@
       "role": "Documenti e memoria",
       "primary": "anthropic/claude-haiku-4-5",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini"
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     },
     {
@@ -57,7 +61,8 @@
       "role": "Gestione stack modelli/API",
       "primary": "anthropic/claude-opus-4-6",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini"
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     },
     {
@@ -65,7 +70,8 @@
       "role": "Amministrazione generica",
       "primary": "anthropic/claude-haiku-4-5",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini"
+        "openai/gpt-5.1-codex-mini",
+        "openrouter/anthropic/claude-haiku-4-5"
       ]
     }
   ],
