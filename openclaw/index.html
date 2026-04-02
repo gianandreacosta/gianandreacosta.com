@@ -364,13 +364,32 @@ function applyShowMore(tbodyId, colspan) {
   const hidden = rows.length - ROWS_LIMIT;
   const tr = document.createElement('tr');
   tr.className = 'show-more-row';
-  tr.innerHTML = `<td colspan="${colspan}"><button class="show-more-btn" onclick="showAll('${tbodyId}')">Mostra altri ${hidden} ↓</button></td>`;
+  tr.innerHTML = `<td colspan="${colspan}"><button class="show-more-btn" onclick="showAll('${tbodyId}', ${colspan})">Mostra altri ${hidden} ↓</button></td>`;
   tbody.appendChild(tr);
 }
 
-function showAll(tbodyId) {
-  document.getElementById(tbodyId).querySelectorAll('.row-hidden').forEach(r => r.classList.remove('row-hidden'));
-  document.getElementById(tbodyId).querySelector('.show-more-row')?.remove();
+function showAll(tbodyId, colspan) {
+  const tbody = document.getElementById(tbodyId);
+  const hidden = tbody.querySelectorAll('.row-hidden');
+  hidden.forEach(r => r.classList.remove('row-hidden'));
+  // Sostituisci il bottone con "Nascondi"
+  const moreRow = tbody.querySelector('.show-more-row');
+  if (moreRow) {
+    moreRow.innerHTML = `<td colspan="${colspan}"><button class="show-more-btn" onclick="hideExtra('${tbodyId}', ${colspan})">Nascondi ↑</button></td>`;
+  }
+}
+
+function hideExtra(tbodyId, colspan) {
+  const tbody = document.getElementById(tbodyId);
+  // Rimuovi eventuale riga show-more esistente
+  tbody.querySelector('.show-more-row')?.remove();
+  // Nascondi righe oltre il limite
+  const rows = Array.from(tbody.querySelectorAll('tr')).filter(r => !r.classList.contains('show-more-row'));
+  rows.forEach((r, i) => { if (i >= ROWS_LIMIT) r.classList.add('row-hidden'); else r.classList.remove('row-hidden'); });
+  // Scrolla in cima alla tabella
+  tbody.closest('table')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Ri-aggiungi il bottone mostra altri
+  applyShowMore(tbodyId, colspan);
 }
 
 // Init sorting su tutte le tabelle
