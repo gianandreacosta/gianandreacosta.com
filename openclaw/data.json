@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T21:26:44.614069Z",
+  "generated_at": "2026-04-02T21:30:12.847162Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "rate_limits_today": 1746,
+  "rate_limits_today": 1767,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 38min",
+      "next": "in 34min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -172,7 +172,7 @@
       "schedule": "one-shot: 2026-04-03T06:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 9h",
+      "next": "in 8h",
       "note": "Promemoria: comprare il pensiero per Maria.",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "one-shot: 2026-04-03T09:30:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 12h",
+      "next": "in 11h",
       "note": "Promemoria: fare la borsa per il concerto e per le cose da sci.",
       "enabled": true
     },
@@ -190,7 +190,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "in 3min",
+      "next": "scaduto",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     }
