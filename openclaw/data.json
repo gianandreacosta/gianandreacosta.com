@@ -1,7 +1,10 @@
 {
-  "generated_at": "2026-04-02T21:10:13.803392Z",
+  "generated_at": "2026-04-02T21:12:38.899569Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
+    "current_ver": "2026.4.2",
+    "latest_ver": "2026.4.2",
+    "update_available": false,
     "gateway_running": true,
     "gateway_port": 18789
   },
@@ -116,7 +119,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 54min",
+      "next": "in 52min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -188,8 +191,17 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 7min",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-test-lista",
+      "schedule": "one-shot: 2026-04-02T21:12:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "scaduto",
+      "note": "Testa la lista.",
       "enabled": true
     }
   ],
