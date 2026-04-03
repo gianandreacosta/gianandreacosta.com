@@ -126,6 +126,39 @@ tr:hover td { background: #1c2128; }
     </div>
   </div>
 
+  <!-- Rassegna Stampa -->
+  <div class="section">
+    <h2>Rassegna Stampa</h2>
+    <div class="grid">
+      <div class="card">
+        <h2>Articoli</h2>
+        <div class="status-row">
+          <span class="label">Totale archivio</span>
+          <span class="value" id="rs-total">...</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Aggiunti oggi</span>
+          <span class="value" id="rs-today">...</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Nuovi nell'ultima run</span>
+          <span class="value" id="rs-new-last">...</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Ultima raccolta</h2>
+        <div class="status-row">
+          <span class="label">Timestamp</span>
+          <span class="value" id="rs-last-run" style="font-size:12px">...</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Articoli trovati</span>
+          <span class="value" id="rs-last-found">...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Sub-agents -->
   <div class="section">
     <h2>Sub-Agents</h2>
@@ -287,6 +320,20 @@ function renderData(d) {
   document.getElementById('model-fallbacks').innerHTML = (d.models?.fallbacks || []).map((m, i) =>
     `<div class="fallback-item"><div class="fallback-num">${i+1}</div><span>${m}</span></div>`
   ).join('');
+
+  // Rassegna stampa
+  const rs = d.rassegna || {};
+  document.getElementById('rs-total').textContent = rs.articles_total ?? 'n/a';
+  const todayVal = rs.articles_today ?? 'n/a';
+  const todayEl = document.getElementById('rs-today');
+  todayEl.textContent = todayVal;
+  todayEl.style.color = todayVal > 0 ? '#56d364' : '#f85149';
+  const newLast = rs.articles_new_last_run ?? 'n/a';
+  const newLastEl = document.getElementById('rs-new-last');
+  newLastEl.textContent = newLast;
+  newLastEl.style.color = newLast > 0 ? '#56d364' : '#f85149';
+  document.getElementById('rs-last-run').textContent = rs.last_run ? rs.last_run.replace('T',' ').replace('Z',' UTC').substring(0,19) + ' UTC' : 'n/a';
+  document.getElementById('rs-last-found').textContent = rs.last_run_found ?? 'n/a';
 
   // Sub-agents
   const subagents = d.subagents || [];
