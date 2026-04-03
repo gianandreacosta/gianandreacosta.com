@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T11:30:08.652733Z",
+  "generated_at": "2026-04-03T11:40:10.534672Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 34min",
+      "next": "in 24min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
