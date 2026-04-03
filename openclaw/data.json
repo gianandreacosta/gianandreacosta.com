@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T00:40:14.430250Z",
+  "generated_at": "2026-04-03T00:50:09.694607Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "error",
-      "next": "in 4h",
+      "next": "in 3h",
       "note": "Esegui la rassegna mattutina completa:\n\ncd /root/.opencla...",
       "enabled": true
     },
