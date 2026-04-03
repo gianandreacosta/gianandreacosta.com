@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T07:01:07.579129Z",
+  "generated_at": "2026-04-03T07:10:08.480060Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 1h",
+      "next": "in 54min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -257,5 +257,12 @@
       "context": "Backup manuale 29/03",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260329.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
-  ]
+  ],
+  "rassegna": {
+    "articles_total": 5557,
+    "articles_today": 449,
+    "articles_new_last_run": 53,
+    "last_run": "2026-04-03 06:03:22.716161+00:00",
+    "last_run_found": 3758
+  }
 }
