@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T22:30:07.933959Z",
+  "generated_at": "2026-04-04T22:40:09.987913Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -109,7 +109,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 29min",
+      "next": "in 19min",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
