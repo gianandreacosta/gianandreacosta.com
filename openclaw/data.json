@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T20:50:10.905827Z",
+  "generated_at": "2026-04-04T21:00:09.270524Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 3h",
+      "next": "in 2h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -100,7 +100,7 @@
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 24g",
+      "next": "in 23g",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
@@ -109,7 +109,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 2h",
+      "next": "in 1h",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 8h",
+      "next": "in 7h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -199,7 +199,7 @@
       "schedule": "one-shot: 2026-04-05T08:00:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 11h",
+      "next": "in 10h",
       "note": "Promemoria: messaggio Seju e candidatura.",
       "enabled": true
     }
