@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T08:56:18.568353Z",
+  "generated_at": "2026-04-04T09:00:18.364730Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 15h",
+      "next": "in 14h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -109,7 +109,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 14h",
+      "next": "in 13h",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
@@ -172,7 +172,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "in 3min",
+      "next": "scaduto",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 20h",
+      "next": "in 19h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
