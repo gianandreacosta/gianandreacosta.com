@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T08:30:12.649518Z",
+  "generated_at": "2026-04-04T08:40:15.695441Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -128,7 +128,7 @@
       "target": "isolated",
       "status": "ok",
       "next": "in 20h",
-      "note": "Esegui la rassegna mattutina completa:\n\ncd /root/.opencla...",
+      "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
     {
@@ -174,6 +174,24 @@
       "status": "ok",
       "next": "scaduto",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
+      "enabled": true
+    },
+    {
+      "name": "rassegna-analisi",
+      "schedule": "0 7 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "idle",
+      "next": "in 20h",
+      "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
+      "enabled": true
+    },
+    {
+      "name": "rassegna-email-dashboard",
+      "schedule": "15 7 * * * (Europe/Zurich)",
+      "target": "isolated",
+      "status": "idle",
+      "next": "in 20h",
+      "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     }
   ],
