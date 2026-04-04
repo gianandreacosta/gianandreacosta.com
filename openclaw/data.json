@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T10:00:20.118627Z",
+  "generated_at": "2026-04-04T10:10:11.688141Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20h",
+      "next": "in 19h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -198,8 +198,15 @@
   "summaries": [
     {
       "date": "2026-04-04",
-      "entry_count": 2,
+      "entry_count": 3,
       "entries": [
+        {
+          "time": "10:05 UTC",
+          "timestamp": "2026-04-04T10:05:00Z",
+          "event_count": 9,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 08:14 UTC: chiede dove leggere l'analisi di Officina sui problemi rassegna stampa | domanda | \u2705 risposto \u2014 Geoffrey ha indicato il messaggio nel transcript | sessions transcript (4c181d74) |\n| G.A. 08:22 UTC: \"Mandalo per mail\" (report diagnostico Officina) | richiesta | \u2705 email inviata a gianandreacosta@gmail.com, oggetto: [Rassegna] Report diagnostico 4 aprile 2026 | sessions transcript (4c181d74) |\n| G.A. 08:26 UTC: \"Fai un backup con rollback assicurandoti di includere tutte le cose della rassegna. Poi ch[iama Officina]\" | richiesta | \u2705 backup eseguito (`daily-config-20260404-1026.tar.gz`, 10 MB) + Officina spawnat | sessions transcript (4c181d74) |\n| Officina fix2 (08:27\u201308:32 UTC): 5 fix alla pipeline rassegna stampa | azione sub-agent | \u2705 completato \u2014 tutti e 5 fix applicati e verificati | sessions transcript (4c181d74), subagent a7802c6e |\n| G.A. 08:37 UTC (vocale): vuole summary periodici sulla dashboard Geoffrey Monitor invece che su Telegram | richiesta | \u2705 capito e affidato a Officina per valutazione architettuale | sessions transcript (4c181d74) |\n| Officina design (08:38\u201308:40 UTC): valutazione 3 proposte per Activity Log dashboard | analisi sub-agent | \u2705 completato \u2014 Proposta A (JSON Inline) raccomandata, no database necessario | sessions transcript (4c181d74), subagent bb5287c2 |\n| G.A. 08:54 UTC: \"Ok procedi\" (implementazione Activity Log dashboard) | richiesta | \u2705 completato \u2014 Activity Log live su lab.gianandreacosta.com/openclaw/ | sessions transcript (4c181d74), subagent 4928ad1b |\n| G.A. 09:00 UTC: \"Memorizza tutto ci\u00f2 che avete fatto e fai backup\" | richiesta | \u2705 MEMORY.md aggiornato + backup `daily-config-20260404-1102.tar.gz` (10 MB) | sessions transcript (4c181d74) |\n| Dashboard update cron (10 min) \u2014 run regolari 08:20\u201310:00 UTC | azione | \u2705 verificato (run ogni 10 min, output \"ok\", deprecation warning non bloccante) | sessions transcript (vari cron) |",
+          "conversations": ""
+        },
         {
           "time": "08:07 UTC",
           "timestamp": "2026-04-04T08:07:00Z",
