@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T18:00:08.517301Z",
+  "generated_at": "2026-04-04T18:10:11.825149Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 12h",
+      "next": "in 11h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -207,8 +207,15 @@
   "summaries": [
     {
       "date": "2026-04-04",
-      "entry_count": 6,
+      "entry_count": 7,
       "entries": [
+        {
+          "time": "18:05 UTC",
+          "timestamp": "2026-04-04T18:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 17:43 UTC (vocale): promemoria domani domenica alle 11:00 svizzera \u2014 \"messaggio Seju e candidatura\" | richiesta | \u2705 cron creato per 2026-04-05T08:00:00Z (10:00 ora CH) | sessions transcript (4c181d74), cron API |\n| Dashboard-data-update cron (ogni 10 min) \u2014 run 16:10, 16:20, 16:30, 16:40, 16:50, 17:00, 17:10, 17:20, 17:30 UTC | azione automatica | \u2705 completati \u2014 output \"ok\" in tutte le sessioni | sessions transcript (18bf61fe, 1c942b24, 2ddf6441, 44081d84, ...) |\n| action-log.jsonl 16:05\u201318:05 UTC | monitoraggio | \u26a0\ufe0f Nessuna nuova voce nel periodo \u2014 solo voce storica (2026-03-29) | action-log.jsonl |",
+          "conversations": ""
+        },
         {
           "time": "16:05 UTC",
           "timestamp": "2026-04-04T16:05:00Z",
