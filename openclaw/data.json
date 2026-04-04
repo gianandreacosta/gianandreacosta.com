@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T23:01:09.351582Z",
+  "generated_at": "2026-04-04T23:10:14.432046Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 58min",
+      "next": "in 49min",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -108,8 +108,8 @@
       "name": "backup-weekly-full",
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
-      "status": "idle",
-      "next": "scaduto",
+      "status": "ok",
+      "next": "in 6g",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 7h",
+      "next": "in 6h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
