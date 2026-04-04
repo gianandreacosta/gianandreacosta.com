@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T08:20:11.830705Z",
+  "generated_at": "2026-04-04T08:30:12.649518Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -178,6 +178,13 @@
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260404-1026.tar.gz",
+      "date": "2026-04-04T10:26:00Z",
+      "size": "9.1M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260404-1026.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260404-0200.tar.gz",
       "date": "2026-04-04T02:00:00Z",
