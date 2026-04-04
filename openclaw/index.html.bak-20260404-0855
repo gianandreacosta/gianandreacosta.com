@@ -51,25 +51,6 @@ tr:hover td { background: #1c2128; }
 .show-more-btn { background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; }
 .show-more-btn:hover { background: #30363d; }
 .row-hidden { display: none; }
-.day-accordion { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
-.day-header { padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
-.day-header:hover { background: #1c2128; }
-.day-title { font-weight: 600; color: #c9d1d9; }
-.day-meta { color: #8b949e; font-size: 12px; }
-.day-arrow { color: #8b949e; transition: transform 0.2s; }
-.day-accordion.open .day-arrow { transform: rotate(180deg); }
-.day-body { display: none; border-top: 1px solid #30363d; }
-.day-accordion.open .day-body { display: block; }
-.entry-row { padding: 10px 16px; border-bottom: 1px solid #21262d; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-.entry-row:last-child { border-bottom: none; }
-.entry-row:hover { background: #1c2128; }
-.entry-time { font-family: monospace; color: #58a6ff; font-size: 13px; }
-.entry-meta { color: #8b949e; font-size: 12px; }
-.entry-arrow { color: #8b949e; font-size: 11px; transition: transform 0.2s; }
-.entry-row.open .entry-arrow { transform: rotate(180deg); }
-.entry-detail { display: none; padding: 12px 16px; background: #0d1117; border-top: 1px solid #21262d; }
-.entry-row.open + .entry-detail { display: block; }
-.entry-detail pre { white-space: pre-wrap; word-break: break-word; font-size: 11px; color: #8b949e; font-family: monospace; max-height: 300px; overflow-y: auto; background: #161b22; padding: 8px; border-radius: 4px; }
 </style>
 </head>
 <body>
@@ -175,14 +156,6 @@ tr:hover td { background: #1c2128; }
           <span class="value" id="rs-last-found">...</span>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Activity Log -->
-  <div class="section">
-    <h2>📋 Activity Log</h2>
-    <div id="activity-log-container">
-      <div class="loading">Caricamento...</div>
     </div>
   </div>
 
@@ -412,9 +385,6 @@ function renderData(d) {
   document.getElementById('last-update').textContent = 'Aggiornato: ' + ts;
   applyShowMore('subagents-table', 4);
   applyShowMore('cron-table', 6);
-  // Activity Log
-  renderActivityLog(d.summaries || []);
-
   applyShowMore('backup-table', 5);
 }
 
@@ -471,65 +441,6 @@ function hideExtra(tbodyId, colspan) {
 
 // Init sorting su tutte le tabelle
 ['tbl-subagents','tbl-cron','tbl-backup'].forEach(initSortable);
-
-function renderActivityLog(summaries) {
-  const container = document.getElementById('activity-log-container');
-  if (!container) return;
-  
-  if (!summaries || summaries.length === 0) {
-    container.innerHTML = '<div class="loading">Nessun summary disponibile</div>';
-    return;
-  }
-  
-  container.innerHTML = summaries.map((day, di) => {
-    const dateObj = new Date(day.date + 'T12:00:00Z');
-    const dateLabel = dateObj.toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-    const isOpen = di < 2 ? 'open' : '';
-    
-    const entries = (day.entries || []).map((e, ei) => {
-      const hasConv = e.conversations && e.conversations.trim().length > 0;
-      const hasTable = e.events_table && e.events_table.trim().length > 0;
-      const detailContent = [
-        hasTable ? `<strong>Eventi:</strong>\n<pre>${escHtml(e.events_table)}</pre>` : '',
-        hasConv ? `<strong>Conversazioni:</strong>\n<pre>${escHtml(e.conversations)}</pre>` : ''
-      ].filter(Boolean).join('');
-      
-      return `<div class="entry-row" onclick="toggleEntry(this)">
-        <span class="entry-time">🕐 ${e.time}</span>
-        <span class="entry-meta">${e.event_count} eventi${hasConv ? ' \u00b7 conversazioni' : ''}</span>
-        <span class="entry-arrow">\u25bc</span>
-      </div>
-      <div class="entry-detail">${detailContent || '<em style="color:#555">Nessun dettaglio disponibile</em>'}</div>`;
-    }).join('');
-    
-    return `<div class="day-accordion ${isOpen}">
-      <div class="day-header" onclick="toggleDay(this.parentElement)">
-        <span class="day-title">📅 ${dateLabel}</span>
-        <span style="display:flex;align-items:center;gap:12px">
-          <span class="day-meta">${day.entry_count} summary</span>
-          <span class="day-arrow">\u25bc</span>
-        </span>
-      </div>
-      <div class="day-body">${entries || '<div style="padding:12px 16px;color:#555">Nessun entry</div>'}</div>
-    </div>`;
-  }).join('');
-}
-
-function escHtml(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
-
-function toggleDay(el) {
-  el.classList.toggle('open');
-}
-
-function toggleEntry(row) {
-  row.classList.toggle('open');
-  const detail = row.nextElementSibling;
-  if (detail && detail.classList.contains('entry-detail')) {
-    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-  }
-}
 
 // Auto-refresh ogni 5 minuti
 setInterval(loadData, 300000);
