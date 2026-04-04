@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T14:00:27.293970Z",
+  "generated_at": "2026-04-04T14:10:15.961881Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 16h",
+      "next": "in 15h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -198,8 +198,15 @@
   "summaries": [
     {
       "date": "2026-04-04",
-      "entry_count": 4,
+      "entry_count": 5,
       "entries": [
+        {
+          "time": "14:05 UTC",
+          "timestamp": "2026-04-04T14:05:00Z",
+          "event_count": 5,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Scansione attivit\u00e0 12:05\u201314:05 UTC | monitoraggio | \u2705 completato | sessions_list + session files |\n| Verifica action-log ultimi 2h | monitoraggio | \u26a0\ufe0f Nessuna voce nel periodo 12:05\u201314:05 UTC | action-log.jsonl |\n| dashboard-data-update cron (12:30 UTC) \u2014 `update_dashboard.py` | azione automatica | \u2705 completato \u2014 output: \"ok\" (deprecation warning non bloccante) | session f3675dd8 |\n| dashboard-data-update cron (14:00 UTC) \u2014 `update_dashboard.py` | azione automatica | \u2705 completato \u2014 output: \"ok\" (deprecation warning non bloccante) | session 33d4f8d0 |\n| Sessione Telegram G.A. | monitoraggio | \u26a0\ufe0f Nessuna interazione G.A. da 09:02 UTC \u2014 Geoffrey in idle | sessions.json |",
+          "conversations": ""
+        },
         {
           "time": "12:05 UTC",
           "timestamp": "2026-04-04T12:05:00Z",
