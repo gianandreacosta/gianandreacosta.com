@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T17:40:09.871170Z",
+  "generated_at": "2026-04-04T17:50:18.019428Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 24min",
+      "next": "in 14min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 11h",
+      "next": "in 10h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -192,6 +192,15 @@
       "status": "idle",
       "next": "in 11h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
+      "enabled": true
+    },
+    {
+      "name": "promemoria-seju-candidatura",
+      "schedule": "one-shot: 2026-04-05T08:00:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 14h",
+      "note": "Promemoria: messaggio Seju e candidatura.",
       "enabled": true
     }
   ],
