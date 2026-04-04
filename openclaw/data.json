@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T12:50:11.524886Z",
+  "generated_at": "2026-04-04T13:00:12.751565Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 11h",
+      "next": "in 10h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -109,7 +109,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 10h",
+      "next": "in 9h",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "idle",
-      "next": "in 16h",
+      "next": "in 15h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
