@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T16:00:14.477162Z",
+  "generated_at": "2026-04-04T16:10:37.361639Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 14h",
+      "next": "in 13h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -198,8 +198,15 @@
   "summaries": [
     {
       "date": "2026-04-04",
-      "entry_count": 5,
+      "entry_count": 6,
       "entries": [
+        {
+          "time": "16:05 UTC",
+          "timestamp": "2026-04-04T16:05:00Z",
+          "event_count": 4,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 14:22 UTC (vocale): traduzione \"impegno/impegnarsi\" in tedesco e inglese | richiesta | \u2705 risposto \u2014 Geoffrey ha dato le traduzioni DE/EN | sessions transcript (4c181d74) |\n| G.A. 14:26 UTC (vocale): stessa traduzione anche in francese | richiesta | \u2705 risposto \u2014 Geoffrey ha dato le traduzioni FR | sessions transcript (4c181d74) |\n| Cron dashboard-data-update (ogni 10 min) \u2014 run regolari 14:00\u201316:00 UTC | azione automatica | \u2705 in esecuzione regolare | sessions list |\n| action-log.jsonl ultimi 2h (14:05\u201316:05 UTC) | monitoraggio | \u26a0\ufe0f Nessuna voce nel periodo \u2014 solo voce storica (2026-03-29) presente | action-log.jsonl |",
+          "conversations": ""
+        },
         {
           "time": "14:05 UTC",
           "timestamp": "2026-04-04T14:05:00Z",
