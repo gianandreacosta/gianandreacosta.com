@@ -28,6 +28,11 @@ body { background: #0d1117; color: #e6edf3; font-family: 'Segoe UI', system-ui, 
 .badge.unknown { background: #2d2d2d; color: #8b949e; border: 1px solid #30363d; }
 .section { margin-bottom: 24px; }
 .section h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: #c9d1d9; }
+.section-header { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; padding: 6px 0; }
+.section-header:hover h2 { color: #58a6ff; }
+.section-toggle { color: #8b949e; font-size: 13px; transition: transform 0.2s; display: inline-block; }
+.section.collapsed .section-toggle { transform: rotate(-90deg); }
+.section.collapsed .section-body { display: none; }
 table { width: 100%; border-collapse: collapse; background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
 th { background: #1c2128; text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8b949e; border-bottom: 1px solid #30363d; cursor: pointer; user-select: none; white-space: nowrap; }
 th:hover { color: #c9d1d9; background: #21262d; }
@@ -131,8 +136,11 @@ tr:hover td { background: #1c2128; }
   </div>
 
   <!-- Modelli -->
-  <div class="section">
-    <h2>Modelli &amp; Fallback</h2>
+  <div class="section" id="sec-modelli">
+    <div class="section-header" onclick="toggleSection('sec-modelli')">
+      <h2>Modelli &amp; Fallback</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <div class="card">
       <div class="status-row">
         <span class="label">Modello primario</span>
@@ -143,11 +151,15 @@ tr:hover td { background: #1c2128; }
         <div class="fallback-chain" id="model-fallbacks"></div>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- Sub-agents -->
-  <div class="section">
-    <h2>Sub-Agents</h2>
+  <div class="section" id="sec-subagents">
+    <div class="section-header" onclick="toggleSection('sec-subagents')">
+      <h2>Sub-Agents</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <table id="tbl-subagents">
       <thead>
         <tr>
@@ -161,11 +173,15 @@ tr:hover td { background: #1c2128; }
         <tr><td colspan="4" class="loading">Caricamento...</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- Cron Jobs -->
-  <div class="section">
-    <h2>Cron Jobs</h2>
+  <div class="section" id="sec-cron">
+    <div class="section-header" onclick="toggleSection('sec-cron')">
+      <h2>Cron Jobs</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <table id="tbl-cron">
       <thead>
         <tr>
@@ -181,11 +197,15 @@ tr:hover td { background: #1c2128; }
         <tr><td colspan="6" class="loading">Caricamento...</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- Backup -->
-  <div class="section">
-    <h2>Backup Disponibili</h2>
+  <div class="section" id="sec-backup">
+    <div class="section-header" onclick="toggleSection('sec-backup')">
+      <h2>Backup Disponibili</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <table id="tbl-backup">
       <thead>
         <tr>
@@ -200,11 +220,15 @@ tr:hover td { background: #1c2128; }
         <tr><td colspan="5" class="loading">Caricamento...</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <!-- Rassegna Stampa -->
-  <div class="section">
-    <h2>Rassegna Stampa</h2>
+  <div class="section" id="sec-rassegna">
+    <div class="section-header" onclick="toggleSection('sec-rassegna')">
+      <h2>Rassegna Stampa</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <div class="grid">
       <div class="card">
         <h2>Articoli</h2>
@@ -233,17 +257,42 @@ tr:hover td { background: #1c2128; }
         </div>
       </div>
     </div>
+    </div>
   </div>
 
   <!-- Activity Log -->
-  <div class="section">
-    <h2>📋 Activity Log</h2>
+  <div class="section" id="sec-actlog">
+    <div class="section-header" onclick="toggleSection('sec-actlog')">
+      <h2>📋 Activity Log</h2><span class="section-toggle">▼</span>
+    </div>
+    <div class="section-body">
     <div id="activity-log-container">
       <div class="loading">Caricamento...</div>
+    </div>
     </div>
   </div>
 
 </div>
+
+<script>
+function toggleSection(id) {
+  const sec = document.getElementById(id);
+  sec.classList.toggle('collapsed');
+  try {
+    const s = JSON.parse(localStorage.getItem('sec-states') || '{}');
+    s[id] = sec.classList.contains('collapsed');
+    localStorage.setItem('sec-states', JSON.stringify(s));
+  } catch(e) {}
+}
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    const s = JSON.parse(localStorage.getItem('sec-states') || '{}');
+    Object.entries(s).forEach(([id, collapsed]) => {
+      if (collapsed) { const el = document.getElementById(id); if (el) el.classList.add('collapsed'); }
+    });
+  } catch(e) {}
+});
+</script>
 
 <script>
 // ── Sorting ─────────────────────────────────────────────────────────────────
