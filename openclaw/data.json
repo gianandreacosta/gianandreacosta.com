@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-05T14:50:07.962160Z",
+  "generated_at": "2026-04-05T23:46:06.162764Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.2",
     "update_available": false,
-    "gateway_running": false,
+    "gateway_running": true,
     "gateway_port": 18789
   },
   "telegram": {
@@ -13,10 +13,10 @@
     "token_present": true
   },
   "models": {
-    "primary": "anthropic/claude-sonnet-4-6",
+    "primary": "openrouter/google/gemini-2.5-flash",
     "fallbacks": [
-      "openai/gpt-5.1-codex-mini",
-      "openrouter/anthropic/claude-haiku-4-5"
+      "ollama/qwen3.5:cloud",
+      "openrouter/stepfun/step-3.5-flash:free"
     ]
   },
   "subagents": [
@@ -75,14 +75,14 @@
       ]
     }
   ],
-  "rate_limits_today": 2,
+  "rate_limits_today": 11,
   "cron_jobs": [
     {
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 15h",
+      "next": "in 6h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 9h",
+      "next": "in 13min",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -100,7 +100,7 @@
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 23g",
+      "next": "in 22g",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
@@ -109,7 +109,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 6g",
+      "next": "in 5g",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 1h",
+      "next": "in 6h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 13h",
+      "next": "in 4h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -172,7 +172,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 3min",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 14h",
+      "next": "in 5h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -190,7 +190,7 @@
       "schedule": "15 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 14h",
+      "next": "in 5h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     }
@@ -198,7 +198,7 @@
   "summaries": [
     {
       "date": "2026-04-05",
-      "entry_count": 6,
+      "entry_count": 15,
       "entries": [
         {
           "time": "06:05 UTC",
@@ -240,6 +240,69 @@
           "timestamp": "2026-04-05T14:05:00Z",
           "event_count": 3,
           "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 14:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 12:05\u201314:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "06:05 UTC",
+          "timestamp": "2026-04-05T06:05:00Z",
+          "event_count": 2,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 06:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| memory/action-log.jsonl 04:05\u201306:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |",
+          "conversations": ""
+        },
+        {
+          "time": "08:05 UTC",
+          "timestamp": "2026-04-05T08:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 08:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 06:05\u201308:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "10:05 UTC",
+          "timestamp": "2026-04-05T10:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 10:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 08:05\u201310:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "12:05 UTC",
+          "timestamp": "2026-04-05T12:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 12:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 10:05\u201312:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "06:05 UTC",
+          "timestamp": "2026-04-05T06:05:00Z",
+          "event_count": 2,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 06:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| memory/action-log.jsonl 04:05\u201306:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |",
+          "conversations": ""
+        },
+        {
+          "time": "14:05 UTC",
+          "timestamp": "2026-04-05T14:05:00Z",
+          "event_count": 15,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 14:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 12:05\u201314:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "18:05 UTC",
+          "timestamp": "2026-04-05T18:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 18:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 16:05\u201318:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "20:05 UTC",
+          "timestamp": "2026-04-05T20:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 20:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 18:05\u201320:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
+          "conversations": ""
+        },
+        {
+          "time": "22:05 UTC",
+          "timestamp": "2026-04-05T22:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 22:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 20:05\u201322:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
           "conversations": ""
         }
       ]
@@ -584,6 +647,27 @@
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260406-0053.tar.gz",
+      "date": "2026-04-06T00:53:00Z",
+      "size": "9.3M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260406-0053.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
+    {
+      "file": "daily-config-20260405-1941.tar.gz",
+      "date": "2026-04-05T19:41:00Z",
+      "size": "9.3M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260405-1941.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
+    {
+      "file": "daily-config-20260405-1728.tar.gz",
+      "date": "2026-04-05T17:28:00Z",
+      "size": "9.3M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260405-1728.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260405-1644.tar.gz",
       "date": "2026-04-05T16:44:00Z",
