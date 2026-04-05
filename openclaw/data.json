@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T05:40:11.913332Z",
+  "generated_at": "2026-04-05T05:50:08.381846Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20min",
+      "next": "in 10min",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 24min",
+      "next": "in 14min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 23h",
+      "next": "in 22h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
