@@ -11,10 +11,10 @@
       background: #0a0a0a;
       color: #e4e4e7;
       min-height: 100vh;
-      padding: 1.5rem 1.25rem 3rem;
+      padding: 1.25rem 1rem 3rem;
     }
 
-    .container { max-width: 560px; margin: 0 auto; }
+    .container { max-width: 900px; margin: 0 auto; }
 
     .back-link {
       display: inline-flex;
@@ -23,173 +23,186 @@
       color: #71717a;
       text-decoration: none;
       font-size: 0.85rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
       transition: color 0.15s;
     }
     .back-link:hover { color: #a1a1aa; }
 
-    /* Clock Header */
+    /* ─── Clock ───────────────────────────────── */
     .clock-header {
       text-align: center;
       background: linear-gradient(135deg, #0c4a6e, #0369a1);
       border-radius: 20px;
-      padding: 2rem 1.5rem;
-      margin-bottom: 1.75rem;
+      padding: 1.5rem 1.5rem;
+      margin-bottom: 1.5rem;
     }
-    .clock-time {
-      font-size: 3.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #fff;
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-    }
-    .clock-date {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.75);
-      margin-top: 0.5rem;
-      text-transform: capitalize;
-    }
-    .clock-tz {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.45);
-      margin-top: 0.3rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
+    .clock-time { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+    .clock-date { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin-top: 0.4rem; text-transform: capitalize; }
+    .clock-tz   { font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-top: 0.25rem; letter-spacing: 0.08em; text-transform: uppercase; }
 
-    /* Weather cards grid */
+    /* ─── Alert banner ────────────────────────── */
+    .global-alerts { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; }
+    .alert-banner {
+      background: #431407;
+      border: 1px solid #c2410c;
+      border-radius: 10px;
+      padding: 0.65rem 1rem;
+      font-size: 0.82rem;
+      color: #fed7aa;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .alert-banner.frost { background: #1e1b4b; border-color: #6366f1; color: #c7d2fe; }
+    .alert-banner.wind  { background: #431407; border-color: #c2410c; color: #fed7aa; }
+    .alert-banner.storm { background: #3b1f05; border-color: #d97706; color: #fde68a; }
+
+    /* ─── Lugano Featured Card ────────────────── */
+    .lugano-featured {
+      background: linear-gradient(135deg, #0c4a6e 0%, #164e63 50%, #0e7490 100%);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .lugano-featured::before {
+      content: '🌊';
+      position: absolute; top: -10px; right: -10px;
+      font-size: 8rem; opacity: 0.07; line-height: 1;
+    }
+    .lugano-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.55); margin-bottom: 0.5rem; }
+    .lugano-main { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .lugano-left {}
+    .lugano-icon { font-size: 3.5rem; line-height: 1; margin-bottom: 0.3rem; }
+    .lugano-desc { font-size: 0.88rem; color: rgba(255,255,255,0.7); }
+    .lugano-temp { font-size: 3.5rem; font-weight: 800; color: #fff; line-height: 1; }
+    .lugano-feels { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 0.2rem; }
+    .lugano-right { display: flex; flex-direction: column; gap: 0.4rem; min-width: 130px; }
+    .lugano-meta-row { font-size: 0.8rem; color: rgba(255,255,255,0.7); display: flex; gap: 0.4rem; align-items: center; }
+    .lugano-advice { margin-top: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 0.5rem 0.75rem; font-size: 0.8rem; color: rgba(255,255,255,0.85); display: flex; gap: 0.5rem; align-items: center; }
+
+    /* Forecast 3gg inline Lugano */
+    .lugano-forecast { margin-top: 1rem; display: flex; gap: 0.5rem; }
+    .forecast-pill {
+      flex: 1;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 0.5rem 0.4rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .forecast-pill .fp-day { font-size: 0.65rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .forecast-pill .fp-icon { font-size: 1.4rem; margin: 0.2rem 0; }
+    .forecast-pill .fp-rain { font-size: 0.65rem; color: #7dd3fc; margin-top: 0.2rem; }
+
+    /* Mini chart */
+    .lugano-chart { margin-top: 1rem; }
+    .lugano-chart-title { font-size: 0.65rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .chart-svg { width: 100%; height: 48px; display: block; }
+
+    /* Sun/UV row */
+    .lugano-sun-row { margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .sun-pill {
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .uv-badge {
+      display: inline-block;
+      padding: 0.1rem 0.4rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+    .uv-low    { background: #14532d; color: #86efac; }
+    .uv-mod    { background: #713f12; color: #fde68a; }
+    .uv-high   { background: #7f1d1d; color: #fca5a5; }
+    .uv-xhigh  { background: #4c1d95; color: #ddd6fe; }
+
+    /* ─── Cities Grid ─────────────────────────── */
+    .section-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #52525b;
+      margin-bottom: 0.75rem;
+    }
     .weather-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-    @media (max-width: 360px) {
-      .weather-grid { grid-template-columns: 1fr; }
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.65rem;
     }
 
     .weather-card {
       background: #18181b;
       border: 1px solid #27272a;
-      border-radius: 16px;
-      padding: 1.25rem 1.1rem;
+      border-radius: 14px;
+      padding: 1.1rem 1rem;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
+      position: relative;
     }
     @media (hover: hover) {
       .weather-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
     }
+    .weather-card.has-alert { border-color: #854d0e; }
+    .weather-card.has-frost  { border-color: #4338ca; }
 
-    .city-name {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #52525b;
-      margin-bottom: 0.5rem;
-    }
+    .city-name { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin-bottom: 0.45rem; }
+    .weather-icon { font-size: 1.9rem; line-height: 1; margin-bottom: 0.3rem; }
+    .weather-desc { font-size: 0.75rem; color: #71717a; margin-bottom: 0.55rem; }
+    .temp-main { font-size: 1.9rem; font-weight: 800; color: #fff; line-height: 1; }
+    .temp-feels { font-size: 0.72rem; color: #71717a; margin-top: 0.15rem; margin-bottom: 0.55rem; }
+    .weather-meta { display: flex; flex-direction: column; gap: 0.25rem; }
+    .meta-row { font-size: 0.72rem; color: #71717a; display: flex; align-items: center; gap: 0.35rem; }
+    .meta-icon { width: 14px; text-align: center; }
+    .wind-arrow { display: inline-block; }
 
-    .weather-icon {
-      font-size: 2.2rem;
-      line-height: 1;
-      margin-bottom: 0.4rem;
-    }
+    /* Card alerts */
+    .card-alert { margin-top: 0.5rem; font-size: 0.68rem; padding: 0.25rem 0.5rem; border-radius: 6px; display: inline-block; }
+    .card-alert.frost { background: #1e1b4b; color: #c7d2fe; }
+    .card-alert.wind  { background: #431407; color: #fed7aa; }
 
-    .weather-desc {
-      font-size: 0.78rem;
-      color: #71717a;
-      margin-bottom: 0.75rem;
-      min-height: 1.1rem;
-    }
+    /* Card forecast strip */
+    .card-forecast { margin-top: 0.65rem; padding-top: 0.55rem; border-top: 1px solid #27272a; display: flex; gap: 0.25rem; }
+    .cf-day { flex: 1; text-align: center; font-size: 0.65rem; color: #52525b; }
+    .cf-day .cf-icon { font-size: 1rem; display: block; margin: 0.15rem 0; }
+    .cf-day .cf-max { color: #e4e4e7; font-weight: 600; }
+    .cf-day .cf-min { color: #52525b; }
 
-    .temp-main {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: -0.03em;
-      line-height: 1;
-    }
+    /* Rain prob */
+    .rain-bar-wrap { margin-top: 0.4rem; display: flex; align-items: center; gap: 0.4rem; font-size: 0.65rem; color: #71717a; }
+    .rain-bar { flex: 1; height: 3px; background: #27272a; border-radius: 2px; overflow: hidden; }
+    .rain-bar-fill { height: 100%; border-radius: 2px; background: #0284c7; transition: width 0.5s; }
 
-    .temp-feels {
-      font-size: 0.78rem;
-      color: #71717a;
-      margin-top: 0.2rem;
-    }
+    /* Thermal advice */
+    .thermal-advice { margin-top: 0.45rem; font-size: 0.68rem; color: #71717a; font-style: italic; }
 
-    .weather-meta {
-      margin-top: 0.85rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-
-    .meta-row {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.78rem;
-      color: #a1a1aa;
-    }
-    .meta-icon { font-size: 0.85rem; }
-
-    .wind-arrow {
-      display: inline-block;
-      font-size: 0.9rem;
-      transition: transform 0.5s ease;
-    }
-
-    /* Skeleton loading */
-    .skeleton {
-      background: linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.5s infinite;
-      border-radius: 6px;
-    }
-    @keyframes shimmer {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-    .skeleton-line {
-      height: 1rem;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
-    }
-    .skeleton-temp {
-      height: 2rem;
-      width: 70%;
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
-    }
-    .skeleton-icon {
-      height: 2.2rem;
-      width: 2.2rem;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
-    }
+    /* Skeleton */
+    .skeleton { background: #27272a; border-radius: 6px; animation: pulse 1.5s infinite; }
+    .skeleton-icon { width: 36px; height: 36px; border-radius: 8px; margin-bottom: 0.4rem; }
+    .skeleton-line { height: 10px; margin-bottom: 0.4rem; }
+    .skeleton-temp { height: 28px; width: 70px; margin-bottom: 0.5rem; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
     /* Footer */
-    footer {
-      text-align: center;
-      margin-top: 1.75rem;
-      color: #3f3f46;
-      font-size: 0.75rem;
-    }
-    #last-update { color: #52525b; }
+    footer { text-align: center; margin-top: 1.5rem; color: #3f3f46; font-size: 0.72rem; }
+    footer a { color: #52525b; text-decoration: none; }
+    footer a:hover { color: #71717a; }
 
-    /* Error state */
-    .error-badge {
-      display: inline-block;
-      background: #450a0a;
-      color: #fca5a5;
-      font-size: 0.72rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 20px;
-      margin-top: 0.5rem;
-    }
+    /* Skeleton Lugano */
+    .lugano-skeleton { height: 200px; background: linear-gradient(135deg, #0c4a6e 0%, #164e63 100%); border-radius: 20px; animation: pulse 1.5s infinite; }
   </style>
 </head>
 <body>
   <div class="container">
-
     <a class="back-link" href="/">← Torna all'home</a>
 
     <!-- Clock -->
@@ -199,102 +212,261 @@
       <div class="clock-tz">🇨🇭 Svizzera — Europe/Zurich</div>
     </div>
 
-    <!-- Weather Grid -->
-    <div class="weather-grid" id="weather-grid">
-      <!-- Skeleton placeholders -->
-      <div class="weather-card" id="card-lugano">
-        <div class="city-name">Lugano</div>
-        <div class="skeleton skeleton-icon"></div>
-        <div class="skeleton skeleton-line" style="width:60%"></div>
-        <div class="skeleton skeleton-temp"></div>
-        <div class="skeleton skeleton-line" style="width:80%"></div>
-        <div class="skeleton skeleton-line" style="width:70%"></div>
-      </div>
-      <div class="weather-card" id="card-davos">
-        <div class="city-name">Davos</div>
-        <div class="skeleton skeleton-icon"></div>
-        <div class="skeleton skeleton-line" style="width:60%"></div>
-        <div class="skeleton skeleton-temp"></div>
-        <div class="skeleton skeleton-line" style="width:80%"></div>
-        <div class="skeleton skeleton-line" style="width:70%"></div>
-      </div>
-      <div class="weather-card" id="card-zurigo">
-        <div class="city-name">Zurigo</div>
-        <div class="skeleton skeleton-icon"></div>
-        <div class="skeleton skeleton-line" style="width:60%"></div>
-        <div class="skeleton skeleton-temp"></div>
-        <div class="skeleton skeleton-line" style="width:80%"></div>
-        <div class="skeleton skeleton-line" style="width:70%"></div>
-      </div>
-      <div class="weather-card" id="card-berna">
-        <div class="city-name">Berna</div>
-        <div class="skeleton skeleton-icon"></div>
-        <div class="skeleton skeleton-line" style="width:60%"></div>
-        <div class="skeleton skeleton-temp"></div>
-        <div class="skeleton skeleton-line" style="width:80%"></div>
-        <div class="skeleton skeleton-line" style="width:70%"></div>
-      </div>
+    <!-- Global alerts -->
+    <div class="global-alerts" id="global-alerts" style="display:none"></div>
+
+    <!-- Lugano Featured -->
+    <div class="section-title">⭐ Lugano — Meteo esteso</div>
+    <div id="lugano-container">
+      <div class="lugano-skeleton"></div>
     </div>
 
-    <footer>
-      <div>Dati: <a href="https://open-meteo.com" style="color:#52525b;text-decoration:none;">Open-Meteo</a></div>
-      <div>Ultimo aggiornamento: <span id="last-update">—</span></div>
-    </footer>
+    <!-- Other cities -->
+    <div class="section-title" style="margin-top:1.25rem">🇨🇭 Principali città svizzere</div>
+    <div class="weather-grid" id="weather-grid"></div>
 
+    <footer>
+      <div>Dati: <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> — aggiornamento ogni 10 min</div>
+      <div style="margin-top:0.3rem">Ultimo aggiornamento: <span id="last-update">—</span></div>
+    </footer>
   </div>
 
   <script>
-    // ─── Clock ───────────────────────────────────────────────
-    const GIORNI = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
-    const MESI   = ['gennaio','febbraio','marzo','aprile','maggio','giugno',
-                    'luglio','agosto','settembre','ottobre','novembre','dicembre'];
-
+    // ─── Clock ────────────────────────────────────────────────
     function updateClock() {
       const now = new Date();
       const opts = { timeZone: 'Europe/Zurich' };
       const h = new Intl.DateTimeFormat('it-IT', { ...opts, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(now);
-      const parts = new Intl.DateTimeFormat('it-IT', { ...opts, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).formatToParts(now);
-      const dateStr = parts.map(p => p.value).join('');
+      const dateStr = new Intl.DateTimeFormat('it-IT', { ...opts, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(now);
       document.getElementById('clock-time').textContent = h;
       document.getElementById('clock-date').textContent = dateStr;
     }
     updateClock();
     setInterval(updateClock, 1000);
 
-    // ─── WMO Weather Code mapping ────────────────────────────
+    // ─── WMO weather codes ────────────────────────────────────
     function wmoInfo(code) {
-      if (code === 0)              return { desc: 'Cielo sereno',   icon: '☀️' };
-      if (code === 1)              return { desc: 'Poco nuvoloso',  icon: '🌤️' };
-      if (code === 2)              return { desc: 'Parz. nuvoloso', icon: '⛅' };
-      if (code === 3)              return { desc: 'Nuvoloso',       icon: '🌥️' };
-      if (code === 45 || code === 48) return { desc: 'Nebbia',      icon: '🌫️' };
-      if (code >= 51 && code <= 55)   return { desc: 'Pioggerella', icon: '🌦️' };
-      if (code >= 61 && code <= 65)   return { desc: 'Pioggia',     icon: '🌧️' };
-      if (code >= 71 && code <= 75)   return { desc: 'Neve',        icon: '❄️' };
-      if (code >= 80 && code <= 82)   return { desc: 'Rovesci',     icon: '🌦️' };
-      if (code === 95)            return { desc: 'Temporale',       icon: '⛈️' };
+      if (code === 0)                    return { desc: 'Cielo sereno',   icon: '☀️' };
+      if (code === 1)                    return { desc: 'Poco nuvoloso',  icon: '🌤️' };
+      if (code === 2)                    return { desc: 'Parz. nuvoloso', icon: '⛅' };
+      if (code === 3)                    return { desc: 'Nuvoloso',       icon: '🌥️' };
+      if (code === 45 || code === 48)    return { desc: 'Nebbia',         icon: '🌫️' };
+      if (code >= 51 && code <= 55)      return { desc: 'Pioggerella',    icon: '🌦️' };
+      if (code >= 61 && code <= 65)      return { desc: 'Pioggia',        icon: '🌧️' };
+      if (code >= 71 && code <= 75)      return { desc: 'Neve',           icon: '❄️' };
+      if (code >= 80 && code <= 82)      return { desc: 'Rovesci',        icon: '🌦️' };
+      if (code === 95)                   return { desc: 'Temporale',      icon: '⛈️' };
+      if (code >= 96 && code <= 99)      return { desc: 'Grandine',       icon: '⛈️' };
       return { desc: 'N/D', icon: '🌡️' };
     }
 
-    // ─── Wind direction arrow ────────────────────────────────
+    // ─── Wind direction arrow ─────────────────────────────────
     function windArrow(deg) {
-      // Arrow points in direction wind is blowing TO
-      return `<span class="wind-arrow" style="display:inline-block;transform:rotate(${deg}deg)">↑</span>`;
+      return `<span class="wind-arrow" style="transform:rotate(${deg}deg);display:inline-block">↑</span>`;
     }
 
-    // ─── Cities config ───────────────────────────────────────
-    const CITIES = [
-      { id: 'lugano', name: 'Lugano', lat: 46.0037, lon: 8.9511 },
-      { id: 'davos',  name: 'Davos',  lat: 46.8033, lon: 9.8378 },
-      { id: 'zurigo', name: 'Zurigo', lat: 47.3769, lon: 8.5417 },
-      { id: 'berna',  name: 'Berna',  lat: 46.9481, lon: 7.4474 },
+    // ─── Thermal advice ───────────────────────────────────────
+    function thermalAdvice(temp, wind) {
+      if (temp < -5)  return ['🧥', 'Molto freddo — copriti bene'];
+      if (temp < 2)   return ['🧤', 'Freddo — giacca pesante e guanti'];
+      if (temp < 8)   return ['🧣', 'Fresco — meglio una giacca'];
+      if (temp < 15)  return ['👕', 'Mite — porta qualcosa per la sera'];
+      if (temp < 22)  return ['😊', 'Temperatura gradevole'];
+      if (temp < 28)  return ['☀️', 'Caldo — leggero e crema solare'];
+      return ['🥵', 'Molto caldo — idratati!'];
+    }
+
+    // ─── UV badge ─────────────────────────────────────────────
+    function uvBadge(uv) {
+      if (uv === null || uv === undefined) return '<span class="uv-badge uv-low">N/D</span>';
+      if (uv < 3)  return `<span class="uv-badge uv-low">${uv.toFixed(1)} Basso</span>`;
+      if (uv < 6)  return `<span class="uv-badge uv-mod">${uv.toFixed(1)} Moderato</span>`;
+      if (uv < 8)  return `<span class="uv-badge uv-high">${uv.toFixed(1)} Alto</span>`;
+      return `<span class="uv-badge uv-xhigh">${uv.toFixed(1)} Molto alto</span>`;
+    }
+
+    // ─── Format time from ISO string ──────────────────────────
+    function fmtTime(isoStr) {
+      if (!isoStr) return '--:--';
+      const d = new Date(isoStr);
+      return new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Zurich', hour: '2-digit', minute: '2-digit', hour12: false }).format(d);
+    }
+
+    // ─── Day labels ───────────────────────────────────────────
+    const DAYS_SHORT = ['Dom','Lun','Mar','Mer','Gio','Ven','Sab'];
+    function dayLabel(dateStr, i) {
+      if (i === 0) return 'Oggi';
+      if (i === 1) return 'Dom';
+      const d = new Date(dateStr);
+      return DAYS_SHORT[d.getDay()];
+    }
+
+    // ─── SVG sparkline ────────────────────────────────────────
+    function buildSparkline(temps, width = 400, height = 48) {
+      const valid = temps.filter(t => t !== null && t !== undefined);
+      if (valid.length < 2) return '';
+      const minT = Math.min(...valid);
+      const maxT = Math.max(...valid);
+      const range = maxT - minT || 1;
+      const n = temps.length;
+      const pts = temps.map((t, i) => {
+        const x = (i / (n - 1)) * width;
+        const y = height - ((t - minT) / range) * (height - 8) - 4;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(' ');
+      const firstPt = pts.split(' ')[0].split(',');
+      const lastPt  = pts.split(' ').slice(-1)[0].split(',');
+      return `
+        <svg class="chart-svg" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none">
+          <polyline fill="none" stroke="rgba(125,211,252,0.7)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="${pts}"/>
+          <circle cx="${firstPt[0]}" cy="${firstPt[1]}" r="3" fill="#38bdf8"/>
+          <circle cx="${lastPt[0]}"  cy="${lastPt[1]}"  r="3" fill="#38bdf8"/>
+        </svg>
+      `;
+    }
+
+    // ─── Cities config ────────────────────────────────────────
+    const LUGANO = { id: 'lugano', name: 'Lugano', lat: 46.0037, lon: 8.9511 };
+    const OTHER_CITIES = [
+      { id: 'lucerna',   name: 'Lucerna',  lat: 47.0502, lon: 8.3093 },
+      { id: 'zurigo',    name: 'Zurigo',   lat: 47.3769, lon: 8.5417 },
+      { id: 'sangallo',  name: 'San Gallo',lat: 47.4245, lon: 9.3767 },
+      { id: 'basilea',   name: 'Basilea',  lat: 47.5596, lon: 7.5886 },
+      { id: 'berna',     name: 'Berna',    lat: 46.9480, lon: 7.4474 },
+      { id: 'losanna',   name: 'Losanna',  lat: 46.5197, lon: 6.6322 },
+      { id: 'ginevra',   name: 'Ginevra',  lat: 46.2044, lon: 6.1432 },
+      { id: 'aarau',     name: 'Aarau',    lat: 47.3922, lon: 8.0449 },
     ];
 
-    // ─── Render card ─────────────────────────────────────────
-    function renderCard(city, data) {
-      const c = data.current;
+    // ─── API params ───────────────────────────────────────────
+    const CURRENT_PARAMS = 'temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code,apparent_temperature,wind_direction_10m';
+    const DAILY_PARAMS   = 'temperature_2m_max,temperature_2m_min,weather_code,precipitation_probability_max,sunrise,sunset,uv_index_max';
+    const FORECAST_DAYS  = 4;  // today + 3
+    const PAST_DAYS      = 7;
+
+    function buildUrl(city, extended = false) {
+      const base = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&timezone=Europe%2FZurich&wind_speed_unit=kmh`;
+      const cur  = `&current=${CURRENT_PARAMS}`;
+      const day  = `&daily=${DAILY_PARAMS}&forecast_days=${FORECAST_DAYS}`;
+      const past = extended ? `&past_days=${PAST_DAYS}` : '';
+      return base + cur + day + past;
+    }
+
+    // ─── Alerts detection ─────────────────────────────────────
+    const globalAlerts = new Map(); // key → {type, text}
+
+    function checkAlerts(city, cur, daily) {
+      const alerts = [];
+      if (cur.temperature_2m <= 0) {
+        alerts.push({ type: 'frost', text: `❄️ ${city.name}: gelo (${cur.temperature_2m.toFixed(1)}°C)` });
+      }
+      if (cur.wind_speed_10m >= 60) {
+        alerts.push({ type: 'wind', text: `💨 ${city.name}: vento forte (${Math.round(cur.wind_speed_10m)} km/h)` });
+      }
+      if (daily && daily.weather_code && (daily.weather_code[0] === 95 || daily.weather_code[0] >= 96)) {
+        alerts.push({ type: 'storm', text: `⛈️ ${city.name}: temporali previsti oggi` });
+      }
+      return alerts;
+    }
+
+    function renderGlobalAlerts(allAlerts) {
+      const wrap = document.getElementById('global-alerts');
+      if (allAlerts.length === 0) { wrap.style.display = 'none'; return; }
+      wrap.style.display = 'flex';
+      wrap.innerHTML = allAlerts.map(a =>
+        `<div class="alert-banner ${a.type}">${a.text}</div>`
+      ).join('');
+    }
+
+    // ─── Render Lugano ────────────────────────────────────────
+    function renderLugano(data) {
+      const c  = data.current;
+      const d  = data.daily;
       const { desc, icon } = wmoInfo(c.weather_code);
+      const [advIcon, advText] = thermalAdvice(c.temperature_2m, c.wind_speed_10m);
+
+      // Forecast pills (day 0..3)
+      const forecastHtml = [0,1,2,3].map(i => {
+        const wi = wmoInfo(d.weather_code[i]);
+        const rain = d.precipitation_probability_max[i] ?? 0;
+        const label = i === 0 ? 'Oggi' : i === 1 ? 'Dom' : (() => { const dt = new Date(d.time[i]); return DAYS_SHORT[dt.getDay()]; })();
+        return `<div class="forecast-pill">
+          <div class="fp-day">${label}</div>
+          <div class="fp-icon">${wi.icon}</div>
+          <div>${Math.round(d.temperature_2m_max[i])}° / ${Math.round(d.temperature_2m_min[i])}°</div>
+          <div class="fp-rain">💧 ${rain}%</div>
+        </div>`;
+      }).join('');
+
+      // Historical max temps for sparkline (past 7 + today)
+      const histTemps = d.temperature_2m_max ? d.temperature_2m_max.slice(0, PAST_DAYS + 1) : [];
+      const sparkline  = buildSparkline(histTemps);
+
+      // UV and sun
+      const uv      = d.uv_index_max ? d.uv_index_max[0] : null;
+      const sunrise = d.sunrise ? fmtTime(d.sunrise[0]) : '--:--';
+      const sunset  = d.sunset  ? fmtTime(d.sunset[0])  : '--:--';
+
+      document.getElementById('lugano-container').innerHTML = `
+        <div class="lugano-featured">
+          <div class="lugano-label">⭐ Lugano — Vista Lago</div>
+          <div class="lugano-main">
+            <div class="lugano-left">
+              <div class="lugano-icon">${icon}</div>
+              <div class="lugano-desc">${desc}</div>
+              <div class="lugano-temp">${Math.round(c.temperature_2m)}°C</div>
+              <div class="lugano-feels">Percepita ${Math.round(c.apparent_temperature)}°C</div>
+            </div>
+            <div class="lugano-right">
+              <div class="lugano-meta-row">💧 Umidità ${c.relative_humidity_2m}%</div>
+              <div class="lugano-meta-row">${windArrow(c.wind_direction_10m)} Vento ${Math.round(c.wind_speed_10m)} km/h</div>
+              <div class="lugano-meta-row">🌧️ Pioggia oggi ${d.precipitation_probability_max[0] ?? 0}%</div>
+              <div class="lugano-meta-row">🌅 Alba ${sunrise}</div>
+              <div class="lugano-meta-row">🌇 Tramonto ${sunset}</div>
+              <div class="lugano-meta-row">☀️ UV ${uvBadge(uv)}</div>
+            </div>
+          </div>
+          <div class="lugano-advice">${advIcon} ${advText}</div>
+          <div class="lugano-forecast">${forecastHtml}</div>
+          ${histTemps.length >= 2 ? `
+          <div class="lugano-chart">
+            <div class="lugano-chart-title">Temperatura massima — ultimi 7 giorni</div>
+            ${sparkline}
+          </div>` : ''}
+        </div>`;
+    }
+
+    // ─── Render city card ─────────────────────────────────────
+    function renderCard(city, data) {
+      const c  = data.current;
+      const d  = data.daily;
+      const { desc, icon } = wmoInfo(c.weather_code);
+      const [advIcon, advText] = thermalAdvice(c.temperature_2m, c.wind_speed_10m);
+
+      const alerts = checkAlerts(city, c, d);
+      alerts.forEach(a => globalAlerts.set(city.id + '_' + a.type, a));
+
+      const alertHtml = alerts.map(a => `<div class="card-alert ${a.type}">${a.text.split(':')[0]}</div>`).join('');
+
+      const forecastHtml = [1,2,3].map(i => {
+        const wi = wmoInfo(d.weather_code[i]);
+        const dt = new Date(d.time[i]);
+        const day = DAYS_SHORT[dt.getDay()];
+        return `<div class="cf-day">
+          <span class="cf-day" style="color:#71717a;font-size:0.62rem">${day}</span>
+          <span class="cf-icon">${wi.icon}</span>
+          <span class="cf-max">${Math.round(d.temperature_2m_max[i])}°</span>
+          <br><span class="cf-min">${Math.round(d.temperature_2m_min[i])}°</span>
+        </div>`;
+      }).join('');
+
+      const rainProb = d.precipitation_probability_max ? d.precipitation_probability_max[0] ?? 0 : 0;
+
       const card = document.getElementById('card-' + city.id);
+      const hasAlertClass = alerts.some(a => a.type === 'wind' || a.type === 'storm') ? 'has-alert' :
+                             alerts.some(a => a.type === 'frost') ? 'has-frost' : '';
+      if (hasAlertClass) card.classList.add(hasAlertClass);
+
       card.innerHTML = `
         <div class="city-name">${city.name}</div>
         <div class="weather-icon">${icon}</div>
@@ -302,50 +474,77 @@
         <div class="temp-main">${Math.round(c.temperature_2m)}°C</div>
         <div class="temp-feels">Percepita ${Math.round(c.apparent_temperature)}°C</div>
         <div class="weather-meta">
-          <div class="meta-row"><span class="meta-icon">💧</span> Umidità ${c.relative_humidity_2m}%</div>
+          <div class="meta-row"><span class="meta-icon">💧</span> ${c.relative_humidity_2m}%</div>
           <div class="meta-row"><span class="meta-icon">${windArrow(c.wind_direction_10m)}</span> ${Math.round(c.wind_speed_10m)} km/h</div>
         </div>
+        <div class="rain-bar-wrap">
+          <span>💧</span>
+          <div class="rain-bar"><div class="rain-bar-fill" style="width:${rainProb}%"></div></div>
+          <span>${rainProb}%</span>
+        </div>
+        <div class="thermal-advice">${advIcon} ${advText}</div>
+        ${alertHtml}
+        <div class="card-forecast">${forecastHtml}</div>
       `;
     }
 
-    function renderError(city) {
+    function renderCardError(city) {
       const card = document.getElementById('card-' + city.id);
-      card.innerHTML = `
-        <div class="city-name">${city.name}</div>
-        <div class="weather-icon">❌</div>
-        <div class="error-badge">Errore caricamento</div>
-      `;
+      if (card) card.innerHTML = `<div class="city-name">${city.name}</div><div style="color:#71717a;font-size:0.8rem;margin-top:0.5rem">Errore caricamento</div>`;
     }
 
-    // ─── Fetch weather for all cities ────────────────────────
-    async function fetchWeather() {
-      const params = 'current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code,apparent_temperature,wind_direction_10m';
-      const fetchCity = async (city) => {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&${params}&wind_speed_unit=kmh&timezone=Europe%2FZurich`;
-        try {
-          const res = await fetch(url);
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          const data = await res.json();
-          renderCard(city, data);
-        } catch (e) {
-          console.error('Errore per', city.name, e);
-          renderError(city);
-        }
-      };
+    // ─── Init grid skeleton ───────────────────────────────────
+    function initGrid() {
+      const grid = document.getElementById('weather-grid');
+      grid.innerHTML = OTHER_CITIES.map(city => `
+        <div class="weather-card" id="card-${city.id}">
+          <div class="city-name">${city.name}</div>
+          <div class="skeleton skeleton-icon"></div>
+          <div class="skeleton skeleton-line" style="width:65%"></div>
+          <div class="skeleton skeleton-temp"></div>
+          <div class="skeleton skeleton-line" style="width:80%"></div>
+          <div class="skeleton skeleton-line" style="width:55%"></div>
+        </div>`).join('');
+    }
 
-      await Promise.all(CITIES.map(fetchCity));
+    // ─── Fetch all ────────────────────────────────────────────
+    async function fetchAll() {
+      globalAlerts.clear();
+
+      // Fetch Lugano (extended = past 7 days for chart)
+      const luganoFetch = fetch(buildUrl(LUGANO, true))
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(data => {
+          renderLugano(data);
+          const alerts = checkAlerts(LUGANO, data.current, data.daily);
+          alerts.forEach(a => globalAlerts.set('lugano_' + a.type, a));
+        })
+        .catch(e => {
+          console.error('Lugano error:', e);
+          document.getElementById('lugano-container').innerHTML = '<div style="color:#71717a;padding:1rem">Errore caricamento dati Lugano</div>';
+        });
+
+      // Fetch other cities
+      const cityFetches = OTHER_CITIES.map(city =>
+        fetch(buildUrl(city))
+          .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+          .then(data => renderCard(city, data))
+          .catch(e => { console.error(`Errore ${city.name}:`, e); renderCardError(city); })
+      );
+
+      await Promise.all([luganoFetch, ...cityFetches]);
+
+      renderGlobalAlerts([...globalAlerts.values()]);
 
       const now = new Date();
-      const timeStr = new Intl.DateTimeFormat('it-IT', {
-        timeZone: 'Europe/Zurich',
-        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+      document.getElementById('last-update').textContent = new Intl.DateTimeFormat('it-IT', {
+        timeZone: 'Europe/Zurich', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
       }).format(now);
-      document.getElementById('last-update').textContent = timeStr;
     }
 
-    // Initial load + auto-refresh every 10 min
-    fetchWeather();
-    setInterval(fetchWeather, 10 * 60 * 1000);
+    initGrid();
+    fetchAll();
+    setInterval(fetchAll, 10 * 60 * 1000);
   </script>
 </body>
 </html>
