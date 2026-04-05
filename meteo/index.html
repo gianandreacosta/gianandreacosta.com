@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteo Svizzera — Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e4e4e7;
+      min-height: 100vh;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    .container { max-width: 560px; margin: 0 auto; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #71717a;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #a1a1aa; }
+
+    /* Clock Header */
+    .clock-header {
+      text-align: center;
+      background: linear-gradient(135deg, #0c4a6e, #0369a1);
+      border-radius: 20px;
+      padding: 2rem 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .clock-time {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #fff;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .clock-date {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      margin-top: 0.5rem;
+      text-transform: capitalize;
+    }
+    .clock-tz {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.3rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Weather cards grid */
+    .weather-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 360px) {
+      .weather-grid { grid-template-columns: 1fr; }
+    }
+
+    .weather-card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 16px;
+      padding: 1.25rem 1.1rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    @media (hover: hover) {
+      .weather-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    }
+
+    .city-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 0.5rem;
+    }
+
+    .weather-icon {
+      font-size: 2.2rem;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .weather-desc {
+      font-size: 0.78rem;
+      color: #71717a;
+      margin-bottom: 0.75rem;
+      min-height: 1.1rem;
+    }
+
+    .temp-main {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .temp-feels {
+      font-size: 0.78rem;
+      color: #71717a;
+      margin-top: 0.2rem;
+    }
+
+    .weather-meta {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      color: #a1a1aa;
+    }
+    .meta-icon { font-size: 0.85rem; }
+
+    .wind-arrow {
+      display: inline-block;
+      font-size: 0.9rem;
+      transition: transform 0.5s ease;
+    }
+
+    /* Skeleton loading */
+    .skeleton {
+      background: linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 6px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .skeleton-line {
+      height: 1rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .skeleton-temp {
+      height: 2rem;
+      width: 70%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .skeleton-icon {
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 1.75rem;
+      color: #3f3f46;
+      font-size: 0.75rem;
+    }
+    #last-update { color: #52525b; }
+
+    /* Error state */
+    .error-badge {
+      display: inline-block;
+      background: #450a0a;
+      color: #fca5a5;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a class="back-link" href="/">← Torna all'home</a>
+
+    <!-- Clock -->
+    <div class="clock-header">
+      <div class="clock-time" id="clock-time">--:--:--</div>
+      <div class="clock-date" id="clock-date">--</div>
+      <div class="clock-tz">🇨🇭 Svizzera — Europe/Zurich</div>
+    </div>
+
+    <!-- Weather Grid -->
+    <div class="weather-grid" id="weather-grid">
+      <!-- Skeleton placeholders -->
+      <div class="weather-card" id="card-lugano">
+        <div class="city-name">Lugano</div>
+        <div class="skeleton skeleton-icon"></div>
+        <div class="skeleton skeleton-line" style="width:60%"></div>
+        <div class="skeleton skeleton-temp"></div>
+        <div class="skeleton skeleton-line" style="width:80%"></div>
+        <div class="skeleton skeleton-line" style="width:70%"></div>
+      </div>
+      <div class="weather-card" id="card-davos">
+        <div class="city-name">Davos</div>
+        <div class="skeleton skeleton-icon"></div>
+        <div class="skeleton skeleton-line" style="width:60%"></div>
+        <div class="skeleton skeleton-temp"></div>
+        <div class="skeleton skeleton-line" style="width:80%"></div>
+        <div class="skeleton skeleton-line" style="width:70%"></div>
+      </div>
+      <div class="weather-card" id="card-zurigo">
+        <div class="city-name">Zurigo</div>
+        <div class="skeleton skeleton-icon"></div>
+        <div class="skeleton skeleton-line" style="width:60%"></div>
+        <div class="skeleton skeleton-temp"></div>
+        <div class="skeleton skeleton-line" style="width:80%"></div>
+        <div class="skeleton skeleton-line" style="width:70%"></div>
+      </div>
+      <div class="weather-card" id="card-berna">
+        <div class="city-name">Berna</div>
+        <div class="skeleton skeleton-icon"></div>
+        <div class="skeleton skeleton-line" style="width:60%"></div>
+        <div class="skeleton skeleton-temp"></div>
+        <div class="skeleton skeleton-line" style="width:80%"></div>
+        <div class="skeleton skeleton-line" style="width:70%"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div>Dati: <a href="https://open-meteo.com" style="color:#52525b;text-decoration:none;">Open-Meteo</a></div>
+      <div>Ultimo aggiornamento: <span id="last-update">—</span></div>
+    </footer>
+
+  </div>
+
+  <script>
+    // ─── Clock ───────────────────────────────────────────────
+    const GIORNI = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+    const MESI   = ['gennaio','febbraio','marzo','aprile','maggio','giugno',
+                    'luglio','agosto','settembre','ottobre','novembre','dicembre'];
+
+    function updateClock() {
+      const now = new Date();
+      const opts = { timeZone: 'Europe/Zurich' };
+      const h = new Intl.DateTimeFormat('it-IT', { ...opts, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(now);
+      const parts = new Intl.DateTimeFormat('it-IT', { ...opts, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).formatToParts(now);
+      const dateStr = parts.map(p => p.value).join('');
+      document.getElementById('clock-time').textContent = h;
+      document.getElementById('clock-date').textContent = dateStr;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // ─── WMO Weather Code mapping ────────────────────────────
+    function wmoInfo(code) {
+      if (code === 0)              return { desc: 'Cielo sereno',   icon: '☀️' };
+      if (code === 1)              return { desc: 'Poco nuvoloso',  icon: '🌤️' };
+      if (code === 2)              return { desc: 'Parz. nuvoloso', icon: '⛅' };
+      if (code === 3)              return { desc: 'Nuvoloso',       icon: '🌥️' };
+      if (code === 45 || code === 48) return { desc: 'Nebbia',      icon: '🌫️' };
+      if (code >= 51 && code <= 55)   return { desc: 'Pioggerella', icon: '🌦️' };
+      if (code >= 61 && code <= 65)   return { desc: 'Pioggia',     icon: '🌧️' };
+      if (code >= 71 && code <= 75)   return { desc: 'Neve',        icon: '❄️' };
+      if (code >= 80 && code <= 82)   return { desc: 'Rovesci',     icon: '🌦️' };
+      if (code === 95)            return { desc: 'Temporale',       icon: '⛈️' };
+      return { desc: 'N/D', icon: '🌡️' };
+    }
+
+    // ─── Wind direction arrow ────────────────────────────────
+    function windArrow(deg) {
+      // Arrow points in direction wind is blowing TO
+      return `<span class="wind-arrow" style="display:inline-block;transform:rotate(${deg}deg)">↑</span>`;
+    }
+
+    // ─── Cities config ───────────────────────────────────────
+    const CITIES = [
+      { id: 'lugano', name: 'Lugano', lat: 46.0037, lon: 8.9511 },
+      { id: 'davos',  name: 'Davos',  lat: 46.8033, lon: 9.8378 },
+      { id: 'zurigo', name: 'Zurigo', lat: 47.3769, lon: 8.5417 },
+      { id: 'berna',  name: 'Berna',  lat: 46.9481, lon: 7.4474 },
+    ];
+
+    // ─── Render card ─────────────────────────────────────────
+    function renderCard(city, data) {
+      const c = data.current;
+      const { desc, icon } = wmoInfo(c.weather_code);
+      const card = document.getElementById('card-' + city.id);
+      card.innerHTML = `
+        <div class="city-name">${city.name}</div>
+        <div class="weather-icon">${icon}</div>
+        <div class="weather-desc">${desc}</div>
+        <div class="temp-main">${Math.round(c.temperature_2m)}°C</div>
+        <div class="temp-feels">Percepita ${Math.round(c.apparent_temperature)}°C</div>
+        <div class="weather-meta">
+          <div class="meta-row"><span class="meta-icon">💧</span> Umidità ${c.relative_humidity_2m}%</div>
+          <div class="meta-row"><span class="meta-icon">${windArrow(c.wind_direction_10m)}</span> ${Math.round(c.wind_speed_10m)} km/h</div>
+        </div>
+      `;
+    }
+
+    function renderError(city) {
+      const card = document.getElementById('card-' + city.id);
+      card.innerHTML = `
+        <div class="city-name">${city.name}</div>
+        <div class="weather-icon">❌</div>
+        <div class="error-badge">Errore caricamento</div>
+      `;
+    }
+
+    // ─── Fetch weather for all cities ────────────────────────
+    async function fetchWeather() {
+      const params = 'current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code,apparent_temperature,wind_direction_10m';
+      const fetchCity = async (city) => {
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&${params}&wind_speed_unit=kmh&timezone=Europe%2FZurich`;
+        try {
+          const res = await fetch(url);
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          const data = await res.json();
+          renderCard(city, data);
+        } catch (e) {
+          console.error('Errore per', city.name, e);
+          renderError(city);
+        }
+      };
+
+      await Promise.all(CITIES.map(fetchCity));
+
+      const now = new Date();
+      const timeStr = new Intl.DateTimeFormat('it-IT', {
+        timeZone: 'Europe/Zurich',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+      }).format(now);
+      document.getElementById('last-update').textContent = timeStr;
+    }
+
+    // Initial load + auto-refresh every 10 min
+    fetchWeather();
+    setInterval(fetchWeather, 10 * 60 * 1000);
+  </script>
+</body>
+</html>
