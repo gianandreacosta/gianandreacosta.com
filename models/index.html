@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geoffrey — Model Catalog</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3250;
+      --accent: #6c8aff;
+      --accent2: #a78bfa;
+      --green: #34d399;
+      --yellow: #fbbf24;
+      --red: #f87171;
+      --orange: #fb923c;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+    header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #1a1d27 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 32px 20px;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; }
+    header h1 span { color: var(--accent); }
+    header p { color: var(--muted); margin-top: 4px; font-size: 0.9rem; }
+    #update-time { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+
+    .controls {
+      padding: 20px 32px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .controls input {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      width: 260px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .controls input:focus { border-color: var(--accent); }
+    .filter-group { display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-btn {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    #count { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+
+    .table-wrap {
+      padding: 24px 32px;
+      overflow-x: auto;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    thead th {
+      background: var(--surface2);
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.5px;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+    thead th:hover { color: var(--accent); }
+    thead th.sorted-asc::after { content: ' ↑'; color: var(--accent); }
+    thead th.sorted-desc::after { content: ' ↓'; color: var(--accent); }
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    tbody tr:hover { background: var(--surface2); }
+    td { padding: 12px 14px; vertical-align: top; }
+    td:first-child { font-weight: 600; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-anthropic { background: #3b1f47; color: #d8b4fe; }
+    .badge-openai   { background: #1a3a2e; color: #6ee7b7; }
+    .badge-or-anthropic { background: #2d1f3f; color: #c4b5fd; }
+    .badge-or-openai    { background: #14302a; color: #86efac; }
+    .badge-or-google    { background: #1e3a1e; color: #4ade80; }
+    .badge-or-deepseek  { background: #1a2744; color: #93c5fd; }
+    .badge-or-minimax   { background: #3a1f1f; color: #fca5a5; }
+    .badge-or-other     { background: #2a2a1f; color: #fde68a; }
+    .badge-ollama       { background: #1f2e3a; color: #7dd3fc; }
+
+    .cost-free { color: var(--green); font-weight: 700; }
+    .cost-low  { color: var(--accent); }
+    .cost-mid  { color: var(--yellow); }
+    .cost-high { color: var(--orange); }
+    .cost-xhigh{ color: var(--red); }
+
+    .speed-fast   { color: var(--green); }
+    .speed-medium { color: var(--yellow); }
+    .speed-slow   { color: var(--orange); }
+
+    .tag { display: inline-block; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 7px; font-size: 0.7rem; color: var(--muted); margin: 1px 2px; }
+
+    .alias { font-size: 0.75rem; color: var(--accent2); font-family: monospace; }
+
+    .no-results { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 1.1rem; }
+
+    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 0.75rem; border-top: 1px solid var(--border); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🦇 Geoffrey — <span>Model Catalog</span></h1>
+  <p>Tutti i modelli configurati in OpenClaw — costi, specifiche, velocità, use case</p>
+  <div id="update-time">Aggiornato: <script>document.write(new Date('2026-04-05').toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}))</script></div>
+</header>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="🔍  Cerca modello, alias, provider…" oninput="applyFilters()" />
+  <div class="filter-group" id="provider-filters">
+    <button class="filter-btn active" data-filter="all" onclick="setFilter('all', this)">Tutti</button>
+    <button class="filter-btn" data-filter="anthropic" onclick="setFilter('anthropic', this)">Anthropic</button>
+    <button class="filter-btn" data-filter="openai" onclick="setFilter('openai', this)">OpenAI</button>
+    <button class="filter-btn" data-filter="google" onclick="setFilter('google', this)">Google</button>
+    <button class="filter-btn" data-filter="deepseek" onclick="setFilter('deepseek', this)">DeepSeek</button>
+    <button class="filter-btn" data-filter="ollama" onclick="setFilter('ollama', this)">Ollama</button>
+    <button class="filter-btn" data-filter="free" onclick="setFilter('free', this)">💚 Gratuiti</button>
+    <button class="filter-btn" data-filter="vision" onclick="setFilter('vision', this)">🖼️ Vision</button>
+    <button class="filter-btn" data-filter="reasoning" onclick="setFilter('reasoning', this)">🧠 Reasoning</button>
+  </div>
+  <span id="count"></span>
+</div>
+
+<div class="table-wrap">
+  <table id="models-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Modello / Alias</th>
+        <th onclick="sortTable(1)">Provider</th>
+        <th onclick="sortTable(2)">Costo input ($/1M tok)</th>
+        <th onclick="sortTable(3)">Costo output ($/1M tok)</th>
+        <th onclick="sortTable(4)">Velocità</th>
+        <th onclick="sortTable(5)">Contesto</th>
+        <th>Capacità</th>
+        <th>Task tipici in Geoffrey</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <div class="no-results" id="no-results" style="display:none">Nessun modello corrisponde ai filtri selezionati.</div>
+</div>
+
+<footer>Geoffrey Monitor · <a href="/openclaw/">Dashboard principale</a> · Aggiornato manualmente</footer>
+
+<script>
+const MODELS = [
+  // ── ANTHROPIC DIRETTI ──────────────────────────────────────────────────────
+  {
+    name: "claude-opus-4-6",
+    alias: "—",
+    provider: "anthropic",
+    providerLabel: "Anthropic",
+    badgeClass: "badge-anthropic",
+    costIn: 15.00,
+    costOut: 75.00,
+    costClass: "cost-xhigh",
+    speed: "Lento",
+    speedClass: "speed-slow",
+    ctx: "200K",
+    tags: ["vision", "reasoning", "tool-use", "long-ctx"],
+    task: "Architettura complessa, codice critico (sub-agent Officina). Il modello più capace in assoluto.",
+    free: false,
+    filterTags: ["anthropic", "vision", "reasoning"]
+  },
+  {
+    name: "claude-sonnet-4-6",
+    alias: "—",
+    provider: "anthropic",
+    providerLabel: "Anthropic",
+    badgeClass: "badge-anthropic",
+    costIn: 3.00,
+    costOut: 15.00,
+    costClass: "cost-high",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "200K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Modello principale di Geoffrey. Conversazione, analisi, code review, task quotidiani.",
+    free: false,
+    filterTags: ["anthropic", "vision", "reasoning"]
+  },
+  {
+    name: "claude-haiku-4-5",
+    alias: "—",
+    provider: "anthropic",
+    providerLabel: "Anthropic",
+    badgeClass: "badge-anthropic",
+    costIn: 0.80,
+    costOut: 4.00,
+    costClass: "cost-low",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "200K",
+    tags: ["vision", "tool-use"],
+    task: "Task leggeri veloci, sintesi, cron periodici economici.",
+    free: false,
+    filterTags: ["anthropic", "vision"]
+  },
+  // ── OPENAI DIRETTI ─────────────────────────────────────────────────────────
+  {
+    name: "gpt-5.1",
+    alias: "GPT_API",
+    provider: "openai",
+    providerLabel: "OpenAI",
+    badgeClass: "badge-openai",
+    costIn: 2.00,
+    costOut: 8.00,
+    costClass: "cost-mid",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Alternativa a Sonnet con API key OpenAI dedicata (OPENAI_API_KEY_H).",
+    free: false,
+    filterTags: ["openai", "vision", "reasoning"]
+  },
+  {
+    name: "gpt-5.1-codex",
+    alias: "GPT_OAUTH",
+    provider: "openai",
+    providerLabel: "OpenAI (OAuth)",
+    badgeClass: "badge-openai",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "reasoning", "code", "tool-use"],
+    task: "Versione OAuth: costo zero (piano Codex). Ottimo per coding tasks e code review.",
+    free: true,
+    filterTags: ["openai", "vision", "reasoning", "free"]
+  },
+  {
+    name: "gpt-5.1-codex-mini",
+    alias: "GPT51_CODEX_MINI",
+    provider: "openai",
+    providerLabel: "OpenAI (OAuth)",
+    badgeClass: "badge-openai",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["reasoning", "code", "tool-use"],
+    task: "Fallback economico per task di codice. Usato come fallback nel chain principale.",
+    free: true,
+    filterTags: ["openai", "reasoning", "free"]
+  },
+  {
+    name: "gpt-4o-mini",
+    alias: "GPT4_LITE",
+    provider: "openai",
+    providerLabel: "OpenAI",
+    badgeClass: "badge-openai",
+    costIn: 0.15,
+    costOut: 0.60,
+    costClass: "cost-low",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "tool-use"],
+    task: "Task ultra-economici, classificazioni, risposte brevi. Ottimo per cron leggeri.",
+    free: false,
+    filterTags: ["openai", "vision"]
+  },
+  // ── OLLAMA LOCALE ──────────────────────────────────────────────────────────
+  {
+    name: "qwen3.5:cloud",
+    alias: "—",
+    provider: "ollama",
+    providerLabel: "Ollama (locale)",
+    badgeClass: "badge-ollama",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Medio (CPU)",
+    speedClass: "speed-medium",
+    ctx: "256K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Fallback gratuito per tutti gli agenti. Buona qualità, zero costo. Indispensabile quando OpenRouter è giù.",
+    free: true,
+    filterTags: ["ollama", "vision", "reasoning", "free"]
+  },
+  {
+    name: "minimax-m2.5:cloud",
+    alias: "—",
+    provider: "ollama",
+    providerLabel: "Ollama (locale)",
+    badgeClass: "badge-ollama",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Medio (CPU)",
+    speedClass: "speed-medium",
+    ctx: "200K",
+    tags: ["reasoning"],
+    task: "Modello cinese locale, reasoning capace. Fallback alternativo a qwen3.5.",
+    free: true,
+    filterTags: ["ollama", "reasoning", "free"]
+  },
+  // ── OPENROUTER — ANTHROPIC ─────────────────────────────────────────────────
+  {
+    name: "claude-opus-4-6",
+    alias: "opus",
+    provider: "openrouter/anthropic",
+    providerLabel: "OpenRouter · Anthropic",
+    badgeClass: "badge-or-anthropic",
+    costIn: 15.00,
+    costOut: 75.00,
+    costClass: "cost-xhigh",
+    speed: "Lento",
+    speedClass: "speed-slow",
+    ctx: "200K",
+    tags: ["vision", "reasoning", "tool-use", "long-ctx"],
+    task: "Alias /model opus. Routing via OpenRouter quando Anthropic diretto non disponibile.",
+    free: false,
+    filterTags: ["anthropic", "vision", "reasoning"]
+  },
+  {
+    name: "claude-sonnet-4-6",
+    alias: "sonnet",
+    provider: "openrouter/anthropic",
+    providerLabel: "OpenRouter · Anthropic",
+    badgeClass: "badge-or-anthropic",
+    costIn: 3.00,
+    costOut: 15.00,
+    costClass: "cost-high",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "200K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Alias /model sonnet. Alternativa OpenRouter al Sonnet diretto.",
+    free: false,
+    filterTags: ["anthropic", "vision", "reasoning"]
+  },
+  {
+    name: "claude-haiku-4-5",
+    alias: "haiku",
+    provider: "openrouter/anthropic",
+    providerLabel: "OpenRouter · Anthropic",
+    badgeClass: "badge-or-anthropic",
+    costIn: 0.80,
+    costOut: 4.00,
+    costClass: "cost-low",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "200K",
+    tags: ["vision", "tool-use"],
+    task: "Alias /model haiku. Cron leggeri, sintesi rapide. ⚠️ Crediti OpenRouter esauriti (aprile 2026).",
+    free: false,
+    filterTags: ["anthropic", "vision"]
+  },
+  // ── OPENROUTER — OPENAI ────────────────────────────────────────────────────
+  {
+    name: "gpt-5-mini",
+    alias: "gpt",
+    provider: "openrouter/openai",
+    providerLabel: "OpenRouter · OpenAI",
+    badgeClass: "badge-or-openai",
+    costIn: 0.40,
+    costOut: 1.60,
+    costClass: "cost-low",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "tool-use"],
+    task: "Alias /model gpt. Ottimo rapporto qualità/prezzo. Task quotidiani senza reasoning.",
+    free: false,
+    filterTags: ["openai", "vision"]
+  },
+  {
+    name: "gpt-5-nano",
+    alias: "nano",
+    provider: "openrouter/openai",
+    providerLabel: "OpenRouter · OpenAI",
+    badgeClass: "badge-or-openai",
+    costIn: 0.10,
+    costOut: 0.40,
+    costClass: "cost-low",
+    speed: "Ultrarapido",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["tool-use"],
+    task: "Alias /model nano. Il più economico del parco. Classificazioni, routing, risposte binarie.",
+    free: false,
+    filterTags: ["openai"]
+  },
+  {
+    name: "gpt-5.4",
+    alias: "GPT54",
+    provider: "openrouter/openai",
+    providerLabel: "OpenRouter · OpenAI",
+    badgeClass: "badge-or-openai",
+    costIn: 5.00,
+    costOut: 15.00,
+    costClass: "cost-xhigh",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Alias /model GPT54. Il flagship OpenAI più recente. Test comparativi vs Claude.",
+    free: false,
+    filterTags: ["openai", "vision", "reasoning"]
+  },
+  // ── OPENROUTER — GOOGLE ────────────────────────────────────────────────────
+  {
+    name: "gemini-2.5-flash",
+    alias: "flash",
+    provider: "openrouter/google",
+    providerLabel: "OpenRouter · Google",
+    badgeClass: "badge-or-google",
+    costIn: 0.15,
+    costOut: 0.60,
+    costClass: "cost-low",
+    speed: "Molto veloce",
+    speedClass: "speed-fast",
+    ctx: "1M",
+    tags: ["vision", "reasoning", "tool-use", "long-ctx", "audio"],
+    task: "Alias /model flash. Candidato main session (migrazione in corso). Contesto 1M, velocissimo, ottimo prezzo.",
+    free: false,
+    filterTags: ["google", "vision", "reasoning"]
+  },
+  {
+    name: "gemini-2.5-flash-lite",
+    alias: "flashlite",
+    provider: "openrouter/google",
+    providerLabel: "OpenRouter · Google",
+    badgeClass: "badge-or-google",
+    costIn: 0.07,
+    costOut: 0.30,
+    costClass: "cost-low",
+    speed: "Ultrarapido",
+    speedClass: "speed-fast",
+    ctx: "1M",
+    tags: ["vision", "tool-use", "long-ctx"],
+    task: "Alias /model flashlite. Sub-agent budget, cron leggeri, analisi batch.",
+    free: false,
+    filterTags: ["google", "vision"]
+  },
+  {
+    name: "gemini-2.5-pro",
+    alias: "GeminiPro",
+    provider: "openrouter/google",
+    providerLabel: "OpenRouter · Google",
+    badgeClass: "badge-or-google",
+    costIn: 1.25,
+    costOut: 10.00,
+    costClass: "cost-mid",
+    speed: "Medio",
+    speedClass: "speed-medium",
+    ctx: "1M",
+    tags: ["vision", "reasoning", "tool-use", "long-ctx", "code"],
+    task: "Alias /model GeminiPro. Candidato per Officina. Reasoning nativo, context 1M, ottimo per analisi lunghe. ⚠️ Thinking sempre attivo (min 128 token).",
+    free: false,
+    filterTags: ["google", "vision", "reasoning"]
+  },
+  // ── OPENROUTER — ALTRI ────────────────────────────────────────────────────
+  {
+    name: "deepseek-v3.2",
+    alias: "deepseek",
+    provider: "openrouter/deepseek",
+    providerLabel: "OpenRouter · DeepSeek",
+    badgeClass: "badge-or-deepseek",
+    costIn: 0.27,
+    costOut: 1.10,
+    costClass: "cost-low",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "163K",
+    tags: ["reasoning", "code", "tool-use"],
+    task: "Alias /model deepseek. Sessione corrente! Eccellente per coding, analisi tecnica. ❌ No vision.",
+    free: false,
+    filterTags: ["deepseek", "reasoning"]
+  },
+  {
+    name: "kimi-k2.5",
+    alias: "kimi",
+    provider: "openrouter/moonshotai",
+    providerLabel: "OpenRouter · Moonshot",
+    badgeClass: "badge-or-other",
+    costIn: 1.00,
+    costOut: 3.00,
+    costClass: "cost-mid",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["reasoning", "tool-use", "code"],
+    task: "Alias /model kimi. Reasoning forte, ottimo per task tecnici. ❌ No vision.",
+    free: false,
+    filterTags: ["reasoning"]
+  },
+  {
+    name: "minimax-m2.5",
+    alias: "minimax",
+    provider: "openrouter/minimax",
+    providerLabel: "OpenRouter · MiniMax",
+    badgeClass: "badge-or-minimax",
+    costIn: 0.80,
+    costOut: 2.40,
+    costClass: "cost-low",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "1M",
+    tags: ["reasoning", "tool-use", "long-ctx"],
+    task: "Alias /model minimax. Context 1M, reasoning capace. ❌ No vision.",
+    free: false,
+    filterTags: ["reasoning"]
+  },
+  {
+    name: "glm-5",
+    alias: "glm",
+    provider: "openrouter/z-ai",
+    providerLabel: "OpenRouter · Z.AI",
+    badgeClass: "badge-or-other",
+    costIn: 0.50,
+    costOut: 1.50,
+    costClass: "cost-low",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "128K",
+    tags: ["vision", "reasoning", "tool-use"],
+    task: "Alias /model glm. Modello cinese capace con vision. Buon backup per task generici.",
+    free: false,
+    filterTags: ["vision", "reasoning"]
+  },
+  {
+    name: "nemotron-3-super-120b",
+    alias: "NemoFree",
+    provider: "openrouter/nvidia",
+    providerLabel: "OpenRouter · NVIDIA (free)",
+    badgeClass: "badge-or-other",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Medio",
+    speedClass: "speed-medium",
+    ctx: "128K",
+    tags: ["reasoning", "tool-use"],
+    task: "Alias /model NemoFree. Completamente gratuito. 120B params. Task di analisi quando il budget è critico.",
+    free: true,
+    filterTags: ["reasoning", "free"]
+  },
+  {
+    name: "step-3.5-flash",
+    alias: "stepflash",
+    provider: "openrouter/stepfun",
+    providerLabel: "OpenRouter · StepFun (free)",
+    badgeClass: "badge-or-other",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-free",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "32K",
+    tags: ["tool-use"],
+    task: "Alias /model stepflash. Gratuito e veloce. Cron backup (backup-daily, backup-weekly). Contesto limitato.",
+    free: true,
+    filterTags: ["free"]
+  },
+  {
+    name: "seedream-4.5",
+    alias: "seedream",
+    provider: "openrouter/bytedance-seed",
+    providerLabel: "OpenRouter · ByteDance (image gen)",
+    badgeClass: "badge-or-other",
+    costIn: 0,
+    costOut: 0,
+    costClass: "cost-low",
+    speed: "Veloce",
+    speedClass: "speed-fast",
+    ctx: "—",
+    tags: ["image-gen"],
+    task: "Alias /model seedream. Generazione immagini. Non è un LLM conversazionale.",
+    free: false,
+    filterTags: []
+  },
+];
+
+let currentFilter = 'all';
+let sortCol = -1;
+let sortDir = 1;
+
+function providerMatch(model, filter) {
+  if (filter === 'all') return true;
+  if (filter === 'free') return model.free;
+  if (filter === 'vision') return model.filterTags.includes('vision');
+  if (filter === 'reasoning') return model.filterTags.includes('reasoning');
+  return model.filterTags.includes(filter);
+}
+
+function setFilter(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const rows = document.querySelectorAll('#table-body tr');
+  let visible = 0;
+
+  rows.forEach((row, i) => {
+    const model = filteredModels[i];
+    if (!model) return;
+    const matchFilter = providerMatch(model, currentFilter);
+    const matchSearch = !q ||
+      model.name.toLowerCase().includes(q) ||
+      model.alias.toLowerCase().includes(q) ||
+      model.provider.toLowerCase().includes(q) ||
+      model.task.toLowerCase().includes(q) ||
+      model.tags.some(t => t.includes(q));
+    row.style.display = (matchFilter && matchSearch) ? '' : 'none';
+    if (matchFilter && matchSearch) visible++;
+  });
+
+  document.getElementById('count').textContent = `${visible} modell${visible === 1 ? 'o' : 'i'}`;
+  document.getElementById('no-results').style.display = visible === 0 ? '' : 'none';
+}
+
+let filteredModels = [...MODELS];
+
+function renderTable(data) {
+  filteredModels = data;
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+  data.forEach(m => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>
+        <div>${m.name}</div>
+        ${m.alias !== '—' ? `<div class="alias">/model ${m.alias}</div>` : ''}
+      </td>
+      <td><span class="badge ${m.badgeClass}">${m.providerLabel}</span></td>
+      <td><span class="${m.costClass}">${m.costIn === 0 ? '🆓 Gratis' : '$' + m.costIn.toFixed(2)}</span></td>
+      <td><span class="${m.costClass}">${m.costOut === 0 ? '🆓 Gratis' : '$' + m.costOut.toFixed(2)}</span></td>
+      <td><span class="${m.speedClass}">${m.speed}</span></td>
+      <td>${m.ctx}</td>
+      <td>${m.tags.map(t => `<span class="tag">${t}</span>`).join('')}</td>
+      <td>${m.task}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+  applyFilters();
+}
+
+function sortTable(col) {
+  const headers = document.querySelectorAll('thead th');
+  headers.forEach((h, i) => {
+    h.classList.remove('sorted-asc', 'sorted-desc');
+  });
+
+  if (sortCol === col) sortDir = -sortDir;
+  else { sortCol = col; sortDir = 1; }
+
+  headers[col].classList.add(sortDir === 1 ? 'sorted-asc' : 'sorted-desc');
+
+  const getVal = (m, c) => {
+    switch(c) {
+      case 0: return m.name;
+      case 1: return m.providerLabel;
+      case 2: return m.costIn;
+      case 3: return m.costOut;
+      case 4: return ['Ultrarapido','Molto veloce','Veloce','Medio','Lento'].indexOf(m.speed);
+      case 5: return m.ctx;
+      default: return '';
+    }
+  };
+
+  const sorted = [...MODELS].sort((a, b) => {
+    const va = getVal(a, col);
+    const vb = getVal(b, col);
+    if (typeof va === 'number') return (va - vb) * sortDir;
+    return va.localeCompare(vb) * sortDir;
+  });
+
+  renderTable(sorted);
+}
+
+renderTable(MODELS);
+document.getElementById('count').textContent = `${MODELS.length} modelli`;
+</script>
+</body>
+</html>
