@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T08:00:20.342422Z",
+  "generated_at": "2026-04-05T08:10:12.805888Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 22h",
+      "next": "in 21h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -193,27 +193,25 @@
       "next": "in 21h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
-    },
-    {
-      "name": "promemoria-seju-candidatura",
-      "schedule": "one-shot: 2026-04-05T08:00:00.000Z",
-      "target": "main",
-      "status": "idle",
-      "next": "scaduto",
-      "note": "Promemoria: messaggio Seju e candidatura.",
-      "enabled": true
     }
   ],
   "summaries": [
     {
       "date": "2026-04-05",
-      "entry_count": 1,
+      "entry_count": 2,
       "entries": [
         {
           "time": "06:05 UTC",
           "timestamp": "2026-04-05T06:05:00Z",
           "event_count": 2,
           "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 06:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| memory/action-log.jsonl 04:05\u201306:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |",
+          "conversations": ""
+        },
+        {
+          "time": "08:05 UTC",
+          "timestamp": "2026-04-05T08:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 08:05 UTC | cron | \u2705 eseguito | sistema cron |\n| Scan action-log.jsonl 06:05\u201308:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |\n| Sessioni attive nel periodo | monitoraggio | \u26a0\ufe0f solo sessione cron attiva \u2014 nessuna sessione main | sessions_list |",
           "conversations": ""
         }
       ]
