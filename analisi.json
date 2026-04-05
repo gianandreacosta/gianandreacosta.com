@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-04-03T04:52:52.351821+00:00",
+  "generated_at": "2026-04-05T05:00:30.049231+00:00",
   "analyses": [
+    {
+      "id": 16,
+      "run_id": 53,
+      "run_time": "2026-04-05 04:45:08.185379+00:00",
+      "analyzed_at": "2026-04-05T05:00:30.028103+00:00",
+      "articles_analyzed": 163,
+      "articles_selected": 0,
+      "model_used": "anthropic/claude-sonnet-4-6",
+      "status": "error",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
+        }
+      ]
+    },
     {
       "id": 15,
       "run_id": 49,
