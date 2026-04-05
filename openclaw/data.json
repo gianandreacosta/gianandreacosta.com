@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T06:00:21.892079Z",
+  "generated_at": "2026-04-05T06:10:14.728979Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -82,7 +82,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 0min",
+      "next": "in 23h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -205,6 +205,19 @@
     }
   ],
   "summaries": [
+    {
+      "date": "2026-04-05",
+      "entry_count": 1,
+      "entries": [
+        {
+          "time": "06:05 UTC",
+          "timestamp": "2026-04-05T06:05:00Z",
+          "event_count": 2,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 06:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| memory/action-log.jsonl 04:05\u201306:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |",
+          "conversations": ""
+        }
+      ]
+    },
     {
       "date": "2026-04-04",
       "entry_count": 9,
