@@ -1,0 +1,26 @@
+/* Walk2Eat — Theme: Ocean (verde acqua immersivo) */
+:root {
+  --bg: #042f2e;
+  --bg-soft: #064e3b;
+  --card: #0a3d3a;
+  --card-border: #115e59;
+  --text: #ccfbf1;
+  --text-secondary: #5eead4;
+  --accent: #2dd4bf;
+  --accent-hover: #14b8a6;
+  --accent-soft: rgba(45,212,191,0.15);
+  --accent-2: #67e8f9;
+  --danger: #fb7185;
+  --warning: #fcd34d;
+}
+.brand-text, .brand-two { color: var(--accent) !important; }
+.btn-primary { background: var(--accent) !important; color: #042f2e !important; }
+.btn-primary:hover { background: var(--accent-hover) !important; }
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; }
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+.section-title { color: var(--accent) !important; }
+body { background: var(--bg) !important; }
+.top-header { background: rgba(4,47,46,0.9) !important; }
+.bottom-nav { background: rgba(4,47,46,0.95) !important; }
+.card { background: var(--card) !important; border-color: var(--card-border) !important; }

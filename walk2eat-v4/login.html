@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <title>Login &bull; Walk2Eat</title>
+  <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4.0.0">
+</head>
+<body class="no-bottom-nav">
+<div class="container page-enter">
+
+  <div class="top-header" style="border-bottom:none;background:transparent;backdrop-filter:none">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
+      <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
+    </a>
+    <a class="btn btn-ghost" href="index.html">&larr; Indietro</a>
+  </div>
+
+  <div style="max-width:400px;margin:32px auto 0">
+    <div class="card">
+      <div style="text-align:center;margin-bottom:20px">
+        <div style="font-size:2.5rem;margin-bottom:8px">👋</div>
+        <h2 style="font-size:1.3rem">Benvenuto!</h2>
+        <p class="small">Accedi o crea il tuo profilo</p>
+      </div>
+
+      <div class="form-grid" style="grid-template-columns:1fr">
+        <div class="form-group">
+          <label for="name">Il tuo nome</label>
+          <input id="name" class="input" placeholder="Es. Gian-Andrea" autocomplete="given-name" maxlength="60">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" class="input" type="email" placeholder="nome@email.com" autocomplete="email" maxlength="120">
+        </div>
+        <div id="loginError" style="display:none;color:var(--danger);font-size:var(--t-xs);padding:4px 0"></div>
+        <button id="go" class="btn btn-primary btn-block">
+          Continua &rarr;
+        </button>
+      </div>
+
+      <p class="small mt-md text-center">Prototype: autenticazione locale (localStorage)</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/routes-poc-data.js?v=4.0.0"></script>
+<script src="assets/js/config.js?v=4.0.0"></script>
+<script src="assets/js/app.js?v=4.0.0"></script>
+<script src="assets/js/themes.js?v=4.0.0"></script>
+<script>
+(function() {
+  // If already logged in, go to dashboard
+  if (LBW.getUser()) { location.href = 'dashboard.html'; return; }
+
+  var nameEl = document.getElementById('name');
+  var emailEl = document.getElementById('email');
+  var errorEl = document.getElementById('loginError');
+
+  function sanitize(str) {
+    return str.replace(/[<>"'&]/g, '').trim();
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function showError(msg) {
+    errorEl.textContent = msg;
+    errorEl.style.display = 'block';
+  }
+
+  function doLogin() {
+    errorEl.style.display = 'none';
+    var n = sanitize(nameEl.value);
+    var e = sanitize(emailEl.value);
+    if (!n || n.length < 2) { showError('Inserisci un nome valido (almeno 2 caratteri)'); nameEl.focus(); return; }
+    if (!e || !isValidEmail(e)) { showError('Inserisci un indirizzo email valido'); emailEl.focus(); return; }
+    LBW.setUser({ name: n, email: e });
+    location.href = 'dashboard.html';
+  }
+
+  document.getElementById('go').onclick = doLogin;
+  emailEl.addEventListener('keydown', function(ev) {
+    if (ev.key === 'Enter') doLogin();
+  });
+  nameEl.addEventListener('keydown', function(ev) {
+    if (ev.key === 'Enter') emailEl.focus();
+  });
+})();
+</script>
+</body>
+</html>

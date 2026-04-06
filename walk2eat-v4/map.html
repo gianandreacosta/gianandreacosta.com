@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <title>Navigazione &bull; Walk2Eat v4</title>
+  <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4.0.0">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@5.21.1/dist/maplibre-gl.js"></script>
+  <style>
+    /* Live tracking panel */
+    .live-stats { display:flex; gap:0; justify-content:space-around; padding:4px 0 8px; }
+    .live-stat { text-align:center; flex:1; border-right:1px solid rgba(255,255,255,0.08); }
+    .live-stat:last-child { border-right:none; }
+    .live-stat .val { font-size:1.6rem; font-weight:800; color:var(--accent); line-height:1.1; }
+    .live-stat .lbl { font-size:0.6rem; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:0.06em; margin-top:2px; }
+    .progress-bar-wrap { height:4px; background:rgba(255,255,255,0.08); border-radius:2px; overflow:hidden; margin:8px 0; }
+    .progress-bar-fill { height:100%; background:var(--accent); border-radius:2px; transition:width 0.5s; width:0%; }
+    .view-pills { position:fixed; top:70px; left:12px; z-index:22; display:none; gap:4px; flex-direction:row; }
+    .view-pill { padding:5px 10px; border-radius:20px; font-size:0.6rem; font-weight:700; cursor:pointer; background:rgba(10,17,32,0.82); color:rgba(255,255,255,0.5); border:1px solid rgba(255,255,255,0.1); backdrop-filter:blur(8px); transition:all .2s; }
+    .view-pill.active { background:#3b82f6; color:#fff; border-color:#3b82f6; }
+    .map-controls { position:fixed; right:12px; z-index:25; display:flex; flex-direction:column; gap:8px; }
+    .ctrl-btn { width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,0.12); background:rgba(10,17,32,0.85); backdrop-filter:blur(8px); color:#fff; font-size:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .2s; box-shadow:0 2px 12px rgba(0,0,0,0.4); }
+    .ctrl-btn.active { background:var(--accent); color:#052e16; }
+    .ctrl-btn:active { transform:scale(0.9); }
+    .live-dot { width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block; animation:pulse-dot 2s infinite; margin-right:6px; vertical-align:middle; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.5)} }
+    .user-dot-outer { width:24px; height:24px; border-radius:50%; background:rgba(59,130,246,0.25); display:flex; align-items:center; justify-content:center; animation:pulse-ring 2s infinite; }
+    .user-dot-inner { width:14px; height:14px; border-radius:50%; background:#3b82f6; border:2.5px solid #fff; box-shadow:0 0 6px rgba(59,130,246,0.6); }
+    @keyframes pulse-ring { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:0.4} }
+    .map-loading-overlay { position:fixed; inset:0; z-index:50; background:rgba(10,17,32,0.92); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; color:var(--text); font-size:0.9rem; }
+    .map-loading-overlay.hidden { display:none; }
+  </style>
+</head>
+<body class="map-layout">
+
+<!-- z:1 — Mappa full-screen (MapLibre) -->
+<div id="map-fullscreen"></div>
+
+<!-- Loading overlay -->
+<div class="map-loading-overlay" id="loadingOverlay">
+  <div class="spinner"></div>
+  <span id="loadingMsg">Ricerca posizione GPS&hellip;</span>
+</div>
+
+<!-- z:20 — Top bar floating -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a class="brand" href="dashboard.html">
+      <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
+      <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
+    </a>
+    <span id="navStatus" class="small" style="color:var(--accent)"></span>
+  </div>
+</div>
+
+<!-- z:22 — View mode pills -->
+<div class="view-pills" id="viewPills">
+  <div class="view-pill" id="viewTop" data-view="top">🗺️ Mappa</div>
+  <div class="view-pill" id="view3d" data-view="3d">🏔️ 3D</div>
+  <div class="view-pill active" id="viewFollow" data-view="follow">🧭 Segui</div>
+</div>
+
+<!-- z:25 — Layer toggle pill -->
+<div class="map-layer-pill" id="layerPill" style="display:none">
+  <button class="map-layer-btn active" id="layerOsm" data-layer="osm">🗺️ OSM</button>
+  <button class="map-layer-btn" id="layerSwiss" data-layer="swiss">🏔️ Swiss</button>
+</div>
+
+<!-- z:25 — Bottoni controllo -->
+<div class="map-controls" id="mapControls" style="display:none">
+  <button class="ctrl-btn" id="btnCenter" title="Centra su di me">📍</button>
+  <button class="ctrl-btn" id="btnStart" title="Avvia navigazione">▶️</button>
+</div>
+
+<!-- z:30 — Bottom Card -->
+<div class="bottom-card" id="bottomCard">
+  <div class="bottom-card-handle-area">
+    <div class="bottom-card-handle"></div>
+  </div>
+  <div class="bottom-card-content">
+
+    <!-- Stato: nessun percorso -->
+    <div id="noRouteMsg" style="display:none;text-align:center;padding:12px 0">
+      <div style="font-size:1.5rem;margin-bottom:8px">🗺️</div>
+      <div style="font-weight:700;margin-bottom:4px">Nessun percorso</div>
+      <div class="small" style="margin-bottom:12px">Genera un percorso dalla Home</div>
+      <a class="btn btn-primary btn-block" href="dashboard.html">Vai alla Home</a>
+    </div>
+
+    <!-- Stato: percorso caricato -->
+    <div id="routeInfo" style="display:none">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span class="live-dot" id="liveDot" style="display:none"></span>
+        <span style="font-weight:700;font-size:var(--t-base)" id="destName">&mdash;</span>
+        <span class="small" id="destCuisine"></span>
+      </div>
+
+      <div class="progress-bar-wrap" id="progressWrap" style="display:none">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+
+      <div class="live-stats" id="livePanel" style="display:none">
+        <div class="live-stat"><div class="val" id="distRemain">--</div><div class="lbl">Rimanenti</div></div>
+        <div class="live-stat"><div class="val" id="timeRemain">--</div><div class="lbl">Minuti</div></div>
+        <div class="live-stat"><div class="val" id="distDone">0</div><div class="lbl">Percorsi</div></div>
+      </div>
+
+      <div class="action-row" style="margin-top:8px">
+        <button class="btn btn-primary" id="btnStart2">▶️ Naviga</button>
+        <button class="btn btn-ghost btn-sm" id="btnCenter2">📍 Centra</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- z:100 — Bottom Navigation -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="dashboard.html" class="nav-item">
+      <span class="nav-icon">🏠</span><span>Oggi</span>
+    </a>
+    <a href="favorites.html" class="nav-item">
+      <span class="nav-icon">❤️</span><span>Preferiti</span>
+    </a>
+    <a href="history.html" class="nav-item">
+      <span class="nav-icon">🕑</span><span>Cronologia</span>
+    </a>
+    <a href="preferences.html" class="nav-item">
+      <span class="nav-icon">⚙️</span><span>Impostazioni</span>
+    </a>
+  </div>
+</nav>
+
+<script src="assets/js/routes-poc-data.js?v=4.0.0"></script>
+<script src="assets/js/config.js?v=4.0.0"></script>
+<script src="assets/js/app.js?v=4.0.0"></script>
+<script src="assets/js/themes.js?v=4.0.0"></script>
+<script src="assets/js/map.js?v=4.0.0"></script>
+</body>
+</html>
