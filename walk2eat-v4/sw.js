@@ -1,6 +1,6 @@
 /* Walk2Eat v4 — Service Worker (cache-first for static assets, network-first for API) */
 
-var CACHE_NAME = 'walk2eat-v4.1.0';
+var CACHE_NAME = 'walk2eat-v4.2.0';
 
 var STATIC_ASSETS = [
   './',
@@ -63,16 +63,16 @@ self.addEventListener('fetch', function(event) {
     return;
   }
 
-  // Cache-first for local static assets
+  // Network-first for local assets (always get fresh, fallback to cache offline)
   event.respondWith(
-    caches.match(event.request).then(function(cached) {
-      return cached || fetch(event.request).then(function(resp) {
-        var clone = resp.clone();
-        caches.open(CACHE_NAME).then(function(cache) {
-          cache.put(event.request, clone);
-        });
-        return resp;
+    fetch(event.request).then(function(resp) {
+      var clone = resp.clone();
+      caches.open(CACHE_NAME).then(function(cache) {
+        cache.put(event.request, clone);
       });
+      return resp;
+    }).catch(function() {
+      return caches.match(event.request);
     })
   );
 });
