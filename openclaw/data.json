@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T06:00:53.581964Z",
+  "generated_at": "2026-04-06T06:10:14.183819Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,14 +72,14 @@
       ]
     }
   ],
-  "rate_limits_today": 171,
+  "rate_limits_today": 178,
   "cron_jobs": [
     {
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
-      "status": "ok",
-      "next": "in 0min",
+      "status": "error",
+      "next": "in 23h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -193,6 +193,19 @@
     }
   ],
   "summaries": [
+    {
+      "date": "2026-04-06",
+      "entry_count": 1,
+      "entries": [
+        {
+          "time": "06:05 UTC",
+          "timestamp": "2026-04-06T06:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Session-memory-capture cron eseguito | azione | \u2705 completato | action-log |\n| Azioni utente ultime 2h | richiesta | \u26a0\ufe0f non verificabile | action-log vuoto (nessuna entry recente) |\n| Conversazioni importanti | richiesta | \u26a0\ufe0f non verificabile | session history non accessibile (visibility=tree) |",
+          "conversations": "Nessuna conversazione catturata \u2014 history sessione non accessibile per restrizioni di visibilit\u00e0.\n\n---\n*Nota: action-log.jsonl contiene solo entry storiche (ultima: 2026-03-29T21:37:54Z). Nessuna azione verificata nelle ultime 2 ore.*"
+        }
+      ]
+    },
     {
       "date": "2026-04-05",
       "entry_count": 15,
