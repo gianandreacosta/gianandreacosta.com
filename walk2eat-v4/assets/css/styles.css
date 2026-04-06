@@ -155,7 +155,7 @@ img { max-width: 100%; display: block; }
   max-height: 90dvh;
   transition: none; /* gestita via JS con translateY */
   /* spazio per la bottom nav sotto il card */
-  padding-bottom: calc(var(--bottom-nav-h) + var(--safe-bottom));
+  padding-bottom: calc(var(--bottom-nav-h) + var(--safe-bottom)) !important;
 }
 .bottom-card-handle-area {
   display: flex;
