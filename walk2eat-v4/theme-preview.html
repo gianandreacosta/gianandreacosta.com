@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Theme Preview &bull; Walk2Eat v4</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:#0a0a0a; color:#e4e4e7; padding:20px; }
+    h1 { text-align:center; font-size:1.4rem; margin-bottom:8px; }
+    .subtitle { text-align:center; color:#71717a; font-size:0.85rem; margin-bottom:24px; }
+    .grid { display:grid; grid-template-columns:1fr; gap:20px; max-width:420px; margin:0 auto; }
+    @media(min-width:800px) { .grid { grid-template-columns:1fr 1fr; max-width:860px; } }
+
+    .theme-card {
+      border-radius:20px; overflow:hidden; cursor:pointer;
+      transition:transform 0.2s, box-shadow 0.2s;
+      border:2px solid transparent;
+    }
+    .theme-card:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,0.5); }
+
+    /* Mini app mockup inside each card */
+    .mock { padding:16px; min-height:320px; display:flex; flex-direction:column; }
+    .mock-topbar { display:flex; justify-content:space-between; align-items:center; padding:8px 0 12px; }
+    .mock-brand { font-weight:800; font-size:1rem; }
+    .mock-greeting { font-size:0.7rem; opacity:0.7; }
+    .mock-map { flex:1; border-radius:12px; min-height:80px; position:relative; overflow:hidden; }
+    .mock-map-inner { width:100%; height:100%; background:linear-gradient(135deg, rgba(128,128,128,0.15), rgba(128,128,128,0.05)); }
+    .mock-route { position:absolute; top:20%; left:15%; width:70%; height:60%; border:3px solid; border-radius:40% 60% 50% 40%; opacity:0.7; }
+    .mock-card {
+      border-radius:16px 16px 0 0; padding:14px; margin-top:-8px; position:relative; z-index:2;
+      border-top:1px solid rgba(128,128,128,0.2);
+    }
+    .mock-stats { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px; }
+    .mock-stat-big { font-size:1.6rem; font-weight:800; line-height:1; }
+    .mock-stat-unit { font-size:0.65rem; opacity:0.6; }
+    .mock-dest { text-align:right; }
+    .mock-dest-name { font-size:0.8rem; font-weight:700; }
+    .mock-dest-sub { font-size:0.6rem; opacity:0.5; }
+    .mock-btns { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px; }
+    .mock-btn { padding:8px; border-radius:10px; text-align:center; font-size:0.7rem; font-weight:700; border:none; }
+    .mock-nav {
+      display:flex; justify-content:space-around; padding:8px 0;
+      border-top:1px solid rgba(128,128,128,0.15); margin-top:8px;
+    }
+    .mock-nav-item { text-align:center; font-size:0.55rem; opacity:0.5; }
+    .mock-nav-item.active { opacity:1; }
+    .mock-nav-icon { font-size:0.9rem; }
+
+    /* Theme label */
+    .theme-label {
+      padding:10px 16px; display:flex; justify-content:space-between; align-items:center;
+      background:rgba(0,0,0,0.3);
+    }
+    .theme-name { font-weight:700; font-size:0.85rem; }
+    .theme-mood { font-size:0.7rem; opacity:0.6; max-width:180px; text-align:right; }
+  </style>
+</head>
+<body>
+  <h1>Walk2Eat &mdash; Nuovi Temi</h1>
+  <p class="subtitle">Clicca su un tema per vederlo meglio. Scegli i tuoi preferiti.</p>
+  <div class="grid" id="grid"></div>
+
+<script>
+var THEMES = [
+  {
+    id: 'carbon', name: 'Carbon Minimal', mood: 'Ultra-moderno, Spotify-grade',
+    bg:'#18181B', card:'#27272A', text:'#FAFAFA', textSec:'#A1A1AA', accent:'#22D3EE',
+    border:'#3F3F46'
+  },
+  {
+    id: 'forest_night', name: 'Forest Night', mood: 'Natura, wellness, Headspace',
+    bg:'#0F1F14', card:'#1A2E1F', text:'#ECFDF5', textSec:'#6EE7B7', accent:'#34D399',
+    border:'#2D4A34'
+  },
+  {
+    id: 'royal_noir', name: 'Royal Noir', mood: 'Lusso, fine dining, gold-on-black',
+    bg:'#1A1A1A', card:'#2A2A2A', text:'#F5F0E0', textSec:'#A1A1AA', accent:'#D9B648',
+    border:'#3A3A3A'
+  },
+  {
+    id: 'deep_navy', name: 'Deep Navy', mood: 'Trust, navigazione, atletico',
+    bg:'#0A1A3C', card:'#122D5E', text:'#BFD8FF', textSec:'#6AA2FF', accent:'#38BDF8',
+    border:'#1E3F7A'
+  },
+  {
+    id: 'earthbound', name: 'Earthbound', mood: 'Artigianale, caldo, slow food',
+    bg:'#F4EBD2', card:'#FFFFFF', text:'#4A3F36', textSec:'#8A694D', accent:'#C18A63',
+    border:'#DDD0B8', light:true
+  },
+  {
+    id: 'coffee_house', name: 'Coffee House', mood: 'Caf\u00E8 italiano, food discovery',
+    bg:'#EEDBC3', card:'#FFFFFF', text:'#4A3325', textSec:'#8A694D', accent:'#9E7B5A',
+    border:'#D4C0A6', light:true
+  },
+  {
+    id: 'soft_mint', name: 'Soft Mint', mood: 'Fresco, wellness, Apple Health',
+    bg:'#EFFFF8', card:'#FFFFFF', text:'#1A2E1F', textSec:'#6AA495', accent:'#3DBEA0',
+    border:'#C8E8DC', light:true
+  },
+  {
+    id: 'arctic', name: 'Arctic Frost', mood: 'Ultra-minimal, scandinavo, Apple',
+    bg:'#F5F5F5', card:'#FFFFFF', text:'#111111', textSec:'#7C7C7C', accent:'#5A9EB5',
+    border:'#E0E0E0', light:true
+  },
+  {
+    id: 'moss_wood', name: 'Moss & Wood', mood: 'Outdoor, sentieri, Patagonia',
+    bg:'#F4EBD2', card:'#E8D9B4', text:'#3B2D1F', textSec:'#775A3A', accent:'#5E7B4C',
+    border:'#C9BA94', light:true
+  },
+  {
+    id: 'slate_pro', name: 'Slate Pro', mood: 'Professionale, Uber/Strava',
+    bg:'#0F172A', card:'#1E293B', text:'#F1F5F9', textSec:'#94A3B8', accent:'#38BDF8',
+    border:'#334155'
+  }
+];
+
+var grid = document.getElementById('grid');
+
+THEMES.forEach(function(t) {
+  var btnPrimBg = t.accent;
+  var btnPrimColor = t.light ? '#fff' : (isLightColor(t.accent) ? '#111' : '#fff');
+  var btnSecBg = t.light ? t.border : 'rgba(255,255,255,0.1)';
+  var btnSecColor = t.light ? t.text : t.textSec;
+  var navActiveColor = t.accent;
+  var navColor = t.textSec;
+  var routeColor = t.accent;
+
+  var html =
+    '<div class="mock" style="background:' + t.bg + ';color:' + t.text + '">' +
+      '<div class="mock-topbar">' +
+        '<div class="mock-brand" style="color:' + t.accent + '">Walk<span style="color:' + t.text + '">2</span>Eat</div>' +
+        '<div class="mock-greeting" style="color:' + t.textSec + '">Ciao Gian \uD83D\uDC4B</div>' +
+      '</div>' +
+      '<div class="mock-map" style="background:' + t.card + ';border:1px solid ' + t.border + '">' +
+        '<div class="mock-map-inner"></div>' +
+        '<div class="mock-route" style="border-color:' + routeColor + '"></div>' +
+      '</div>' +
+      '<div class="mock-card" style="background:' + t.card + ';border-color:' + t.border + '">' +
+        '<div class="mock-stats">' +
+          '<div><span class="mock-stat-big" style="color:' + t.accent + '">24</span> <span class="mock-stat-unit" style="color:' + t.textSec + '">min \u00B7 1.8 km</span></div>' +
+          '<div class="mock-dest"><div class="mock-dest-name">Green Fork</div><div class="mock-dest-sub" style="color:' + t.textSec + '">Healthy</div></div>' +
+        '</div>' +
+        '<div class="mock-btns">' +
+          '<div class="mock-btn" style="background:' + btnPrimBg + ';color:' + btnPrimColor + '">\uD83E\uDDED Vai!</div>' +
+          '<div class="mock-btn" style="background:' + btnSecBg + ';color:' + btnSecColor + ';border:1px solid ' + t.border + '">\uD83D\uDD04 Alternativa</div>' +
+        '</div>' +
+        '<div class="mock-nav">' +
+          '<div class="mock-nav-item active" style="color:' + navActiveColor + '"><div class="mock-nav-icon">\uD83C\uDFE0</div>Oggi</div>' +
+          '<div class="mock-nav-item" style="color:' + navColor + '"><div class="mock-nav-icon">\u2764\uFE0F</div>Preferiti</div>' +
+          '<div class="mock-nav-item" style="color:' + navColor + '"><div class="mock-nav-icon">\uD83D\uDD51</div>Cronologia</div>' +
+          '<div class="mock-nav-item" style="color:' + navColor + '"><div class="mock-nav-icon">\u2699\uFE0F</div>Impostazioni</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="theme-label" style="background:' + (t.light ? 'rgba(0,0,0,0.06)' : 'rgba(0,0,0,0.3)') + ';color:' + t.text + '">' +
+      '<span class="theme-name">' + t.name + '</span>' +
+      '<span class="theme-mood" style="color:' + t.textSec + '">' + t.mood + '</span>' +
+    '</div>';
+
+  var card = document.createElement('div');
+  card.className = 'theme-card';
+  card.style.background = t.bg;
+  card.innerHTML = html;
+  grid.appendChild(card);
+});
+
+function isLightColor(hex) {
+  hex = hex.replace('#','');
+  var r = parseInt(hex.substring(0,2),16);
+  var g = parseInt(hex.substring(2,4),16);
+  var b = parseInt(hex.substring(4,6),16);
+  return (r*299 + g*587 + b*114) / 1000 > 160;
+}
+</script>
+</body>
+</html>
