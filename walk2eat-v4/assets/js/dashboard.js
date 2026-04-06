@@ -217,19 +217,19 @@
       routeLine = L.polyline(pts, { color: '#22c55e', weight: 5, opacity: 0.95 }).addTo(map);
 
       var startIcon = L.divIcon({
-        className: '',
+        className: 'w2e-marker',
+        iconSize: [0, 0],
         html: '<div style="background:#34D399;color:#052e16;padding:6px 14px;border-radius:20px;' +
-              'font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);white-space:nowrap;border:2px solid #fff">Partenza</div>',
-        iconAnchor: [16, 16]
+              'font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);white-space:nowrap;border:2px solid #fff;position:absolute;transform:translate(-50%,-50%)">Partenza</div>'
       });
       startMarker = L.marker(pts[0], { icon: startIcon }).addTo(map);
 
       if (p.food && p.food.lat) {
         var turnIcon = L.divIcon({
-          className: '',
+          className: 'w2e-marker',
+          iconSize: [0, 0],
           html: '<div style="background:#f59e0b;color:#451a03;padding:6px 14px;border-radius:20px;' +
-                'font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);white-space:nowrap;border:2px solid #fff;max-width:180px;overflow:hidden;text-overflow:ellipsis">' + (p.food.name || 'Destinazione') + '</div>',
-          iconAnchor: [16, 16]
+                'font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);white-space:nowrap;border:2px solid #fff;position:absolute;transform:translate(-50%,-50%)">' + (p.food.name || 'Destinazione') + '</div>'
         });
         turnMarker = L.marker([p.food.lat, p.food.lng], { icon: turnIcon }).addTo(map);
       }
