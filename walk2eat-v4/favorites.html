@@ -146,11 +146,6 @@
       '<button class="btn btn-secondary" style="flex:1;font-size:0.8rem" id="selectR' + i + '"><i data-lucide="play" class="lucide"></i> Seleziona</button>' +
       '</div>' +
       '<div id="detailR' + i + '" style="display:none;margin-top:8px">' +
-      '<div class="grid grid-2" style="margin-bottom:8px">' +
-      '<div class="stat-card"><div class="stat-value">' + item.walk.minutes + '</div><div class="stat-label">min</div></div>' +
-      '<div class="stat-card"><div class="stat-value">' + item.walk.distanceKm + '</div><div class="stat-label">km</div></div>' +
-      '</div>' +
-      '<div class="small" style="margin-bottom:8px;opacity:0.7">' + (item.walk.type || '') + ' &bull; salvato ' + new Date(item.savedAt).toLocaleDateString('it-IT', {day:'numeric',month:'short'}) + '</div>' +
       '<div id="fmap-R' + i + '" class="map-box" style="height:180px"></div>' +
       '</div></div>';
   }
