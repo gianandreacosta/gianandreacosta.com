@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Fatta in Casa — Ricette</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #e4e4e7;
+      min-height: 100vh;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    .container { max-width: 580px; margin: 0 auto; }
+
+    /* Back link */
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #71717a;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      transition: color 0.15s;
+    }
+    .back:hover { color: #e4e4e7; }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    header .emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    header p {
+      color: #71717a;
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    /* Recipe card */
+    .recipe {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .recipe:hover {
+      transform: translateY(-2px);
+      border-color: #3f3f46;
+    }
+
+    .recipe-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .recipe-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .recipe-title-wrap { flex: 1; }
+    .recipe-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .recipe-subtitle {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.15rem;
+    }
+    .recipe-toggle {
+      color: #52525b;
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .recipe.open .recipe-toggle { transform: rotate(90deg); }
+
+    .recipe-body {
+      display: none;
+      padding-top: 0.5rem;
+    }
+    .recipe.open .recipe-body { display: block; }
+
+    /* Meta badges */
+    .meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.3rem 0.65rem;
+      border-radius: 20px;
+      background: #27272a;
+      color: #a1a1aa;
+    }
+    .badge--time { background: #1e3a5f; color: #93c5fd; }
+    .badge--diff { background: #1a2e1a; color: #86efac; }
+    .badge--diff.medium { background: #2e2a1a; color: #fcd34d; }
+    .badge--diff.hard { background: #2e1a1a; color: #fca5a5; }
+
+    /* Sections */
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #52525b;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+    .section-title:first-of-type { margin-top: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 0.88rem;
+      color: #d4d4d8;
+      padding: 0.3rem 0;
+      padding-left: 1.2rem;
+      position: relative;
+      line-height: 1.45;
+    }
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #52525b;
+    }
+
+    ol {
+      padding-left: 1.4rem;
+    }
+    ol li {
+      font-size: 0.88rem;
+      color: #d4d4d8;
+      padding: 0.35rem 0;
+      line-height: 1.5;
+    }
+    ol li::marker {
+      color: #52525b;
+      font-weight: 700;
+    }
+
+    .tip {
+      background: #1c1917;
+      border-left: 3px solid #f59e0b;
+      border-radius: 0 8px 8px 0;
+      padding: 0.75rem 1rem;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      color: #fbbf24;
+      line-height: 1.45;
+    }
+
+    /* Dough section */
+    .dough-banner {
+      background: linear-gradient(135deg, #b45309, #92400e);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .dough-banner h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+    .dough-banner p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #3f3f46;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a class="back" href="/">‹ Torna alla home</a>
+
+    <header>
+      <div class="emoji">🍕</div>
+      <h1>Pizza Fatta in Casa</h1>
+      <p>5 ricette classiche — dall'impasto al forno</p>
+    </header>
+
+    <!-- Impasto base -->
+    <div class="dough-banner">
+      <h2>Impasto Base per Tutti</h2>
+      <p>500g farina 0 · 325ml acqua · 10g sale · 3g lievito · 10ml olio EVO</p>
+    </div>
+
+    <!-- Ricetta 1: Margherita -->
+    <div class="recipe open" id="r1">
+      <div class="recipe-header" onclick="toggle('r1')">
+        <span class="recipe-icon">🍅</span>
+        <div class="recipe-title-wrap">
+          <div class="recipe-title">Margherita</div>
+          <div class="recipe-subtitle">La regina delle pizze</div>
+        </div>
+        <span class="recipe-toggle">›</span>
+      </div>
+      <div class="recipe-body">
+        <div class="meta">
+          <span class="badge badge--time">25 min</span>
+          <span class="badge badge--diff">Facile</span>
+          <span class="badge">4 persone</span>
+        </div>
+        <div class="section-title">Ingredienti</div>
+        <ul>
+          <li>Passata di pomodoro San Marzano, 200g</li>
+          <li>Mozzarella fior di latte, 200g</li>
+          <li>Basilico fresco, 8-10 foglie</li>
+          <li>Olio extravergine d'oliva</li>
+          <li>Sale q.b.</li>
+        </ul>
+        <div class="section-title">Procedimento</div>
+        <ol>
+          <li>Stendi l'impasto su un piano infarinato formando un disco di circa 30cm.</li>
+          <li>Distribuisci la passata di pomodoro lasciando 1cm di bordo.</li>
+          <li>Spezzetta la mozzarella e distribuiscila uniformemente.</li>
+          <li>Inforna a 250°C (o massima temperatura) per 8-10 minuti.</li>
+          <li>Aggiungi basilico fresco e un filo d'olio a crudo appena sfornata.</li>
+        </ol>
+        <div class="tip">Per una cottura perfetta, preriscalda il forno con una pietra refrattaria per almeno 30 minuti.</div>
+      </div>
+    </div>
+
+    <!-- Ricetta 2: Diavola -->
+    <div class="recipe" id="r2">
+      <div class="recipe-header" onclick="toggle('r2')">
+        <span class="recipe-icon">🌶️</span>
+        <div class="recipe-title-wrap">
+          <div class="recipe-title">Diavola</div>
+          <div class="recipe-subtitle">Piccante con salame e peperoncino</div>
+        </div>
+        <span class="recipe-toggle">›</span>
+      </div>
+      <div class="recipe-body">
+        <div class="meta">
+          <span class="badge badge--time">25 min</span>
+          <span class="badge badge--diff">Facile</span>
+          <span class="badge">4 persone</span>
+        </div>
+        <div class="section-title">Ingredienti</div>
+        <ul>
+          <li>Passata di pomodoro, 200g</li>
+          <li>Mozzarella fior di latte, 180g</li>
+          <li>Salame piccante (spianata calabrese), 80g</li>
+          <li>Peperoncino in fiocchi</li>
+          <li>Olio extravergine d'oliva</li>
+        </ul>
+        <div class="section-title">Procedimento</div>
+        <ol>
+          <li>Stendi l'impasto e distribuisci la passata di pomodoro.</li>
+          <li>Aggiungi la mozzarella spezzettata.</li>
+          <li>Disponi le fette di salame piccante su tutta la superficie.</li>
+          <li>Spolverizza con fiocchi di peperoncino a piacere.</li>
+          <li>Inforna a 250°C per 8-10 minuti fino a quando i bordi sono dorati.</li>
+        </ol>
+        <div class="tip">Aggiungi il salame a metà cottura per evitare che diventi troppo secco.</div>
+      </div>
+    </div>
+
+    <!-- Ricetta 3: Quattro Formaggi -->
+    <div class="recipe" id="r3">
+      <div class="recipe-header" onclick="toggle('r3')">
+        <span class="recipe-icon">🧀</span>
+        <div class="recipe-title-wrap">
+          <div class="recipe-title">Quattro Formaggi</div>
+          <div class="recipe-subtitle">Mozzarella, gorgonzola, fontina, parmigiano</div>
+        </div>
+        <span class="recipe-toggle">›</span>
+      </div>
+      <div class="recipe-body">
+        <div class="meta">
+          <span class="badge badge--time">20 min</span>
+          <span class="badge badge--diff medium">Media</span>
+          <span class="badge">4 persone</span>
+        </div>
+        <div class="section-title">Ingredienti</div>
+        <ul>
+          <li>Mozzarella fior di latte, 125g</li>
+          <li>Gorgonzola dolce, 80g</li>
+          <li>Fontina valdostana, 80g</li>
+          <li>Parmigiano Reggiano grattugiato, 40g</li>
+          <li>Pepe nero macinato fresco</li>
+        </ul>
+        <div class="section-title">Procedimento</div>
+        <ol>
+          <li>Stendi l'impasto — questa pizza si fa in bianco, senza pomodoro.</li>
+          <li>Distribuisci la mozzarella spezzettata come base.</li>
+          <li>Aggiungi cubetti di fontina e piccoli pezzi di gorgonzola.</li>
+          <li>Spolverizza con il parmigiano grattugiato.</li>
+          <li>Inforna a 250°C per 8-10 minuti. Aggiungi pepe nero appena sfornata.</li>
+        </ol>
+        <div class="tip">Taglia la fontina a cubetti piccoli per una fusione uniforme. Il gorgonzola va a ciuffetti.</div>
+      </div>
+    </div>
+
+    <!-- Ricetta 4: Focaccia Genovese -->
+    <div class="recipe" id="r4">
+      <div class="recipe-header" onclick="toggle('r4')">
+        <span class="recipe-icon">🫒</span>
+        <div class="recipe-title-wrap">
+          <div class="recipe-title">Focaccia Genovese</div>
+          <div class="recipe-subtitle">Croccante fuori, soffice dentro</div>
+        </div>
+        <span class="recipe-toggle">›</span>
+      </div>
+      <div class="recipe-body">
+        <div class="meta">
+          <span class="badge badge--time">40 min</span>
+          <span class="badge badge--diff">Facile</span>
+          <span class="badge">6 persone</span>
+        </div>
+        <div class="section-title">Ingredienti</div>
+        <ul>
+          <li>Impasto base (con 20ml di olio EVO in più)</li>
+          <li>Olio extravergine d'oliva, 50ml</li>
+          <li>Acqua, 30ml</li>
+          <li>Sale grosso marino</li>
+          <li>Rosmarino fresco (opzionale)</li>
+        </ul>
+        <div class="section-title">Procedimento</div>
+        <ol>
+          <li>Ungi una teglia da forno con abbondante olio.</li>
+          <li>Stendi l'impasto nella teglia, lascialo lievitare 30 minuti coperto.</li>
+          <li>Crea le fossette premendo con le dita su tutta la superficie.</li>
+          <li>Emulsiona olio e acqua e versali nelle fossette. Spargi il sale grosso.</li>
+          <li>Inforna a 220°C per 18-20 minuti fino a doratura perfetta.</li>
+        </ol>
+        <div class="tip">Il segreto è l'emulsione di acqua e olio nelle fossette: crea la crosticina croccante tipica.</div>
+      </div>
+    </div>
+
+    <!-- Ricetta 5: Marinara -->
+    <div class="recipe" id="r5">
+      <div class="recipe-header" onclick="toggle('r5')">
+        <span class="recipe-icon">🧄</span>
+        <div class="recipe-title-wrap">
+          <div class="recipe-title">Marinara</div>
+          <div class="recipe-subtitle">Pomodoro, aglio, origano — niente formaggio</div>
+        </div>
+        <span class="recipe-toggle">›</span>
+      </div>
+      <div class="recipe-body">
+        <div class="meta">
+          <span class="badge badge--time">20 min</span>
+          <span class="badge badge--diff">Facile</span>
+          <span class="badge">4 persone</span>
+        </div>
+        <div class="section-title">Ingredienti</div>
+        <ul>
+          <li>Passata di pomodoro San Marzano, 200g</li>
+          <li>Aglio fresco, 2 spicchi tagliati a lamelle</li>
+          <li>Origano secco</li>
+          <li>Olio extravergine d'oliva</li>
+          <li>Sale q.b.</li>
+        </ul>
+        <div class="section-title">Procedimento</div>
+        <ol>
+          <li>Stendi l'impasto e distribuisci la passata di pomodoro.</li>
+          <li>Disponi le lamelle d'aglio su tutta la superficie.</li>
+          <li>Spolverizza generosamente con origano.</li>
+          <li>Aggiungi un filo d'olio a spirale.</li>
+          <li>Inforna a 250°C per 7-8 minuti — cuoce veloce senza formaggio.</li>
+        </ol>
+        <div class="tip">La marinara è la pizza più antica di Napoli. L'aglio non va schiacciato ma tagliato a lamelle sottili.</div>
+      </div>
+    </div>
+
+    <footer>© 2026 Gian-Andrea Costa</footer>
+  </div>
+
+  <script>
+    function toggle(id) {
+      document.getElementById(id).classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
