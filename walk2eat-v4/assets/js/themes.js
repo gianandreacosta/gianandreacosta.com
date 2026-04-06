@@ -13,7 +13,9 @@
         '--text':'#1A1A1E','--text-secondary':'#7C7C80',
         '--accent':'#4A9B8E','--accent-hover':'#3D8377','--accent-soft':'rgba(74,155,142,0.10)',
         '--accent-2':'#38BDF8','--warning':'#F59E0B','--danger':'#EF4444',
-        '--shadow':'0 1px 3px rgba(0,0,0,0.06)'
+        '--shadow':'0 1px 3px rgba(0,0,0,0.06)',
+        '--elevation-0':'#F8F6F2','--elevation-1':'#FFFFFF','--elevation-2':'#F0EDE6','--elevation-3':'#E8E4DC',
+        '--glass-heavy':'rgba(248,246,242,0.92)','--glass-medium':'rgba(248,246,242,0.80)','--glass-light':'rgba(248,246,242,0.65)','--glass-border':'rgba(0,0,0,0.06)'
       },
       extra: 'body{color:#1A1A1E!important}' +
         '.top-header{background:rgba(248,246,242,0.95)!important;border-bottom:1px solid rgba(0,0,0,0.06)!important}' +
@@ -23,18 +25,30 @@
         'select,.input{background:#F0EDE6!important;color:#1A1A1E!important;border-color:rgba(0,0,0,0.08)!important}' +
         '.nav-item .lucide,.nav-item span{color:#7C7C80!important}' +
         '.nav-item.active .lucide,.nav-item.active span{color:#4A9B8E!important}' +
+        '.nav-item.active{background:rgba(74,155,142,0.10)!important}' +
         '.stat-value{color:#4A9B8E!important}' +
         '.section-title{color:#4A9B8E!important}' +
-        '.brand-text{color:#4A9B8E!important}'
+        '.brand-text{color:#4A9B8E!important}' +
+        '.brand-logo{filter:brightness(0.3)!important}' +
+        '.feature-card{background:#FFFFFF!important;border-color:rgba(0,0,0,0.06)!important}' +
+        '.feature-text h3{color:#4A9B8E!important}' +
+        '.feature-text p{color:#7C7C80!important}' +
+        '.tab-bar{background:rgba(0,0,0,0.04)!important}' +
+        '.tab-btn{color:#7C7C80!important}' +
+        '.tab-btn.active{background:#FFFFFF!important;color:#1A1A1E!important;box-shadow:0 1px 3px rgba(0,0,0,0.08)!important}'
     },
     forest: {
       label: 'Forest', color: '#34D399',
       vars: {
-        '--bg':'#0F1F14','--bg-soft':'#162B1B','--card':'#1A2E1F','--card-border':'rgba(110,231,183,0.08)',
+        '--bg':'#0F1F14','--bg-soft':'#162B1B','--card':'#1A2E1F','--card-border':'#1E3D25',
         '--text':'#ECFDF5','--text-secondary':'#6EE7B7',
         '--accent':'#34D399','--accent-hover':'#10B981','--accent-soft':'rgba(52,211,153,0.12)',
-        '--accent-2':'#6EE7B7','--warning':'#FCD34D'
-      }
+        '--accent-2':'#6EE7B7','--warning':'#FCD34D',
+        '--elevation-0':'#0F1F14','--elevation-1':'#1A2E1F','--elevation-2':'#234A2D','--elevation-3':'#2D5C38'
+      },
+      extra: '.tab-bar{background:rgba(15,31,20,0.6)!important}' +
+        '.tab-btn{color:#6EE7B7!important}' +
+        '.tab-btn.active{background:#1A2E1F!important;color:#ECFDF5!important}'
     }
   };
 
@@ -82,9 +96,11 @@
     var bg = v['--bg'] || '#0f172a';
     var card = v['--card'] || '#1e293b';
     var border = v['--card-border'] || '#334155';
+    // hexToRgb only works with hex values, skip rgba
     var bgRgb = hexToRgb(bg);
     var cardRgb = hexToRgb(card);
-    var borderRgb = hexToRgb(border);
+    var isLight = v['--bg'] && parseInt(v['--bg'].replace('#','').substring(0,2),16) > 128;
+    var borderRgb = border.indexOf('rgba') === -1 ? hexToRgb(border) : (isLight ? '0,0,0' : '255,255,255');
 
     css += '.top-bar{background:rgba(' + bgRgb + ',0.82)!important;border-bottom-color:rgba(' + borderRgb + ',0.4)!important}';
     css += '.bottom-card{background:rgba(' + bgRgb + ',0.94)!important;border-top-color:rgba(' + borderRgb + ',0.4)!important}';

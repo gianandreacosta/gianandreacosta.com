@@ -145,12 +145,12 @@
       map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.95 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
 
       var startEl = document.createElement('div');
-      startEl.innerHTML = '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">Start</div>';
+      startEl.innerHTML = '<div style="background:#34D399;color:#052e16;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);border:2px solid #fff;white-space:nowrap">Partenza</div>';
       new maplibregl.Marker({ element: startEl, anchor: 'bottom' }).setLngLat([routePoints[0].lng, routePoints[0].lat]).addTo(map);
 
       if (proposal.food && proposal.food.lat) {
         var turnEl = document.createElement('div');
-        turnEl.innerHTML = '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">' + (proposal.food.name || 'Svolta') + '</div>';
+        turnEl.innerHTML = '<div style="background:#f59e0b;color:#451a03;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:800;box-shadow:0 2px 12px rgba(0,0,0,0.5);border:2px solid #fff;white-space:nowrap;max-width:180px;overflow:hidden;text-overflow:ellipsis">' + (proposal.food.name || 'Destinazione') + '</div>';
         new maplibregl.Marker({ element: turnEl, anchor: 'bottom' }).setLngLat([proposal.food.lng, proposal.food.lat]).addTo(map);
       }
     });
