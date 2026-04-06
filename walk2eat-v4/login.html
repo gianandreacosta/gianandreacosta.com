@@ -8,6 +8,9 @@
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/css/styles.css?v=4.0.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body class="no-bottom-nav">
 <div class="container page-enter">
@@ -23,7 +26,7 @@
   <div style="max-width:400px;margin:32px auto 0">
     <div class="card">
       <div style="text-align:center;margin-bottom:20px">
-        <div style="font-size:2.5rem;margin-bottom:8px">👋</div>
+        <div style="font-size:2.5rem;margin-bottom:8px"><i data-lucide="hand-metal" style="width:40px;height:40px;color:var(--accent)"></i></div>
         <h2 style="font-size:1.3rem">Benvenuto!</h2>
         <p class="small">Accedi o crea il tuo profilo</p>
       </div>
@@ -49,6 +52,7 @@
 
 </div>
 
+<script src="https://unpkg.com/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script src="assets/js/routes-poc-data.js?v=4.0.2"></script>
 <script src="assets/js/config.js?v=4.0.2"></script>
 <script src="assets/js/app.js?v=4.0.2"></script>
@@ -92,6 +96,8 @@
   nameEl.addEventListener('keydown', function(ev) {
     if (ev.key === 'Enter') emailEl.focus();
   });
+
+  lucide.createIcons();
 })();
 </script>
 </body>

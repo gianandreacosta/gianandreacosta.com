@@ -8,6 +8,9 @@
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/css/styles.css?v=4.0.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container page-enter">
@@ -19,12 +22,12 @@
     </a>
   </div>
 
-  <h2 class="section-title" id="prefsTitle">⚙️ Impostazioni</h2>
+  <h2 class="section-title" id="prefsTitle"><i data-lucide="settings" class="lucide"></i> Impostazioni</h2>
 
   <!-- Timing Section -->
   <div class="card">
     <div class="card-header">
-      <span class="card-title">⏱ Tempi</span>
+      <span class="card-title"><i data-lucide="timer" class="lucide"></i> Tempi</span>
     </div>
     <div class="form-grid">
       <div class="form-group">
@@ -46,7 +49,7 @@
   <!-- Food Section -->
   <div class="card">
     <div class="card-header">
-      <span class="card-title">🍽️ Cibo</span>
+      <span class="card-title"><i data-lucide="utensils" class="lucide"></i> Cibo</span>
     </div>
 
     <div class="toggle-row">
@@ -54,7 +57,7 @@
         <input class="tgl tgl-ios" id="schiscettaCheck" type="checkbox">
         <label class="tgl-btn" for="schiscettaCheck"></label>
       </div>
-      <span class="toggle-label">🥡 Ho gi&agrave; la schiscetta</span>
+      <span class="toggle-label"><i data-lucide="package" class="lucide"></i> Ho gi&agrave; la schiscetta</span>
     </div>
 
     <div class="form-grid">
@@ -80,7 +83,7 @@
   <!-- Walk Section -->
   <div class="card">
     <div class="card-header">
-      <span class="card-title">🚶 Camminata</span>
+      <span class="card-title"><i data-lucide="footprints" class="lucide"></i> Camminata</span>
     </div>
     <div class="form-grid">
       <div class="form-group">
@@ -102,7 +105,7 @@
   <!-- Location Section -->
   <div class="card">
     <div class="card-header">
-      <span class="card-title">📍 Posizione</span>
+      <span class="card-title"><i data-lucide="map-pin" class="lucide"></i> Posizione</span>
     </div>
 
     <div class="toggle-row">
@@ -110,7 +113,7 @@
         <input class="tgl tgl-ios" id="gpsCheck" type="checkbox">
         <label class="tgl-btn" for="gpsCheck"></label>
       </div>
-      <span class="toggle-label">📡 Usa posizione GPS</span>
+      <span class="toggle-label"><i data-lucide="radio" class="lucide"></i> Usa posizione GPS</span>
     </div>
 
     <div class="form-group">
@@ -126,22 +129,15 @@
   <!-- Tema -->
   <div class="card">
     <div class="card-header">
-      <span class="card-title">🎨 Aspetto</span>
+      <span class="card-title"><i data-lucide="palette" class="lucide"></i> Aspetto</span>
     </div>
     <div class="form-grid">
       <div class="form-group">
         <label for="themeSelect">Tema</label>
         <select id="themeSelect">
-          <option value="classic">🟢 Classico</option>
-          <option value="teal">🌊 Verde Acqua</option>
-          <option value="ocean">🐠 Oceano</option>
-          <option value="sand">🏜️ Sabbia</option>
-          <option value="cozy">🔮 Cozy</option>
-          <option value="pastel">🌸 Pastello</option>
-          <option value="nordic">❄️ Nordic</option>
-          <option value="sunset">🌅 Tramonto</option>
-          <option value="light_modern">☀️ Chiaro Moderno</option>
-          <option value="minimal_chic">◻️ Minimal Chic</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="forest">Forest</option>
         </select>
       </div>
     </div>
@@ -154,10 +150,10 @@
   <!-- Actions -->
   <div class="btn-row" style="margin-top:16px">
     <button id="save" class="btn btn-primary" style="flex:2">
-      💾 Salva preferenze
+      <i data-lucide="save" class="lucide"></i> Salva preferenze
     </button>
     <button id="logoutBtn" class="btn btn-danger" style="flex:1">
-      🚪 Logout
+      <i data-lucide="log-out" class="lucide"></i> Logout
     </button>
   </div>
 
@@ -169,20 +165,21 @@
 <nav class="bottom-nav">
   <div class="bottom-nav-inner">
     <a href="dashboard.html" class="nav-item">
-      <span class="nav-icon">🏠</span><span>Oggi</span>
+      <span class="nav-icon"><i data-lucide="home"></i></span><span>Oggi</span>
     </a>
     <a href="favorites.html" class="nav-item">
-      <span class="nav-icon">❤️</span><span>Preferiti</span>
+      <span class="nav-icon"><i data-lucide="heart"></i></span><span>Preferiti</span>
     </a>
     <a href="history.html" class="nav-item">
-      <span class="nav-icon">🕑</span><span>Cronologia</span>
+      <span class="nav-icon"><i data-lucide="clock"></i></span><span>Cronologia</span>
     </a>
     <a href="preferences.html" class="nav-item active">
-      <span class="nav-icon">⚙️</span><span>Impostazioni</span>
+      <span class="nav-icon"><i data-lucide="settings"></i></span><span>Impostazioni</span>
     </a>
   </div>
 </nav>
 
+<script src="https://unpkg.com/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script src="assets/js/routes-poc-data.js?v=4.0.2"></script>
 <script src="assets/js/config.js?v=4.0.2"></script>
 <script src="assets/js/app.js?v=4.0.2"></script>
@@ -191,7 +188,7 @@
 (function() {
   var user = LBW.getUser();
   if (!user) { window.location.href = 'login.html'; return; }
-  document.getElementById('prefsTitle').textContent = '⚙️ Preferenze ' + (user.name || '');
+  document.getElementById('prefsTitle').innerHTML = '<i data-lucide="settings" class="lucide"></i> Preferenze ' + (user.name || '');
 
   var p = LBW.getPrefs();
   var breakMinutesEl = document.getElementById('breakMinutes');
@@ -363,19 +360,21 @@
   var themeSelect = document.getElementById('themeSelect');
   var previewDot = document.getElementById('previewDot');
   var previewLabel = document.getElementById('previewLabel');
-  var themeColors = { classic: '#22c55e', teal: '#14b8a6', ocean: '#2dd4bf', sand: '#d97706', cozy: '#c084fc', pastel: '#e88d9d', nordic: '#38bdf8', sunset: '#f472b6', light_modern: '#2563eb', minimal_chic: '#d97706' };
-  var themeLabels = { classic: 'Verde classico + emoji', teal: 'Teal + icone minimali', ocean: 'Verde acqua profondo', sand: 'Toni caldi deserto', cozy: 'Viola morbido, accogliente', pastel: 'Chiaro, arioso, leggero', nordic: 'Blu scandinavo elegante', sunset: 'Rosa-arancio gradient caldo', light_modern: 'Chiaro, professionale, blu', minimal_chic: 'Off-white, ambra, bordi netti' };
+  var themeColors = { dark: '#34D399', light: '#4A9B8E', forest: '#34D399' };
+  var themeLabels = { dark: 'Apple-grade dark, emerald accent', light: 'Warm parchment, teal accent', forest: 'Deep nature, wellness mood' };
 
   themeSelect.value = W2E_THEMES.get();
-  previewDot.style.background = themeColors[W2E_THEMES.get()] || themeColors.classic;
+  previewDot.style.background = themeColors[W2E_THEMES.get()] || themeColors.dark;
   previewLabel.textContent = themeLabels[W2E_THEMES.get()] || '';
 
   themeSelect.onchange = function() {
     var id = themeSelect.value;
     W2E_THEMES.apply(id);
-    previewDot.style.background = themeColors[id] || themeColors.classic;
+    previewDot.style.background = themeColors[id] || themeColors.dark;
     previewLabel.textContent = themeLabels[id] || '';
   };
+
+  lucide.createIcons();
 })();
 </script>
 </body>

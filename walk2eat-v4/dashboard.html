@@ -8,6 +8,9 @@
   <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/css/styles.css?v=4.0.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
@@ -29,8 +32,8 @@
 
 <!-- z:25 — Layer toggle pill (OSM / Swiss) -->
 <div class="map-layer-pill" id="layerPill" style="display:none">
-  <button class="map-layer-btn active" id="btnOsm" onclick="switchLayer('osm')">🗺️ OSM</button>
-  <button class="map-layer-btn" id="btnSwiss" onclick="switchLayer('swiss')">🏔️ Swiss</button>
+  <button class="map-layer-btn active" id="btnOsm" onclick="switchLayer('osm')"><i data-lucide="map" class="lucide" style="width:14px;height:14px"></i> OSM</button>
+  <button class="map-layer-btn" id="btnSwiss" onclick="switchLayer('swiss')"><i data-lucide="mountain" class="lucide" style="width:14px;height:14px"></i> Swiss</button>
 </div>
 
 <!-- z:28 — Overlay scuro (attivo quando card è espanso) -->
@@ -83,8 +86,8 @@
 
       <!-- Azioni primarie -->
       <div class="action-row">
-        <a class="btn btn-primary" href="map.html" id="btnGo">🧭 Vai!</a>
-        <button class="btn btn-secondary" id="refreshWalk">🔄 Alternativa</button>
+        <a class="btn btn-primary" href="map.html" id="btnGo"><i data-lucide="compass" class="lucide"></i> Vai!</a>
+        <button class="btn btn-secondary" id="refreshWalk"><i data-lucide="refresh-cw" class="lucide"></i> Alternativa</button>
       </div>
       <div class="action-row-2" style="margin-top:8px">
         <button class="btn btn-ghost btn-sm" id="save">♡ Salva</button>
@@ -95,16 +98,16 @@
       <div id="detailSection" class="bottom-card-details">
         <div class="grid grid-2" style="margin-bottom:12px">
           <div class="card" style="padding:12px">
-            <div class="card-title" style="margin-bottom:8px">⏱ Tempi</div>
+            <div class="card-title" style="margin-bottom:8px"><i data-lucide="timer" class="lucide"></i> Tempi</div>
             <div id="timeBreakdown" class="small"></div>
           </div>
           <div class="card" style="padding:12px">
-            <div class="card-title" style="margin-bottom:8px">🌤 Meteo</div>
+            <div class="card-title" style="margin-bottom:8px"><i data-lucide="cloud-sun" class="lucide"></i> Meteo</div>
             <div id="weatherBox" class="small"></div>
           </div>
         </div>
         <div class="card" style="padding:12px">
-          <div class="card-title" style="margin-bottom:8px">💡 Perch&eacute; questa proposta</div>
+          <div class="card-title" style="margin-bottom:8px"><i data-lucide="lightbulb" class="lucide"></i> Perch&eacute; questa proposta</div>
           <div id="whyBox" class="small"></div>
         </div>
         <p id="routeSourceNote" class="small mt-sm" style="display:none"></p>
@@ -118,20 +121,21 @@
 <nav class="bottom-nav">
   <div class="bottom-nav-inner">
     <a href="dashboard.html" class="nav-item active">
-      <span class="nav-icon">🏠</span><span>Oggi</span>
+      <span class="nav-icon"><i data-lucide="home"></i></span><span>Oggi</span>
     </a>
     <a href="favorites.html" class="nav-item">
-      <span class="nav-icon">❤️</span><span>Preferiti</span>
+      <span class="nav-icon"><i data-lucide="heart"></i></span><span>Preferiti</span>
     </a>
     <a href="history.html" class="nav-item">
-      <span class="nav-icon">🕑</span><span>Cronologia</span>
+      <span class="nav-icon"><i data-lucide="clock"></i></span><span>Cronologia</span>
     </a>
     <a href="preferences.html" class="nav-item">
-      <span class="nav-icon">⚙️</span><span>Impostazioni</span>
+      <span class="nav-icon"><i data-lucide="settings"></i></span><span>Impostazioni</span>
     </a>
   </div>
 </nav>
 
+<script src="https://unpkg.com/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script src="assets/js/routes-poc-data.js?v=4.0.2"></script>
 <script src="assets/js/config.js?v=4.0.2"></script>
 <script src="assets/js/app.js?v=4.0.2"></script>
