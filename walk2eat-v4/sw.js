@@ -1,6 +1,6 @@
 /* Walk2Eat v4 — Service Worker (cache-first for static assets, network-first for API) */
 
-var CACHE_NAME = 'walk2eat-v4.0.0';
+var CACHE_NAME = 'walk2eat-v4.0.2';
 
 var STATIC_ASSETS = [
   './',
