@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T12:00:15.154567Z",
+  "generated_at": "2026-04-06T12:10:09.026723Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,14 +72,14 @@
       ]
     }
   ],
-  "rate_limits_today": 1320,
+  "rate_limits_today": 1337,
   "cron_jobs": [
     {
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "error",
-      "next": "in 18h",
+      "next": "in 17h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -195,11 +195,18 @@
   "summaries": [
     {
       "date": "2026-04-06",
-      "entry_count": 1,
+      "entry_count": 2,
       "entries": [
         {
           "time": "10:05 UTC",
           "timestamp": "2026-04-06T10:05:00Z",
+          "event_count": 3,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Session-memory-capture cron eseguito | azione | \u26a0\ufe0f non verificabile | action-log vuoto (nessuna entry recente) |\n| Azioni utente ultime 2h | richiesta | \u26a0\ufe0f non verificabile | action-log vuoto (nessuna entry recente) |\n| Conversazioni importanti | richiesta | \u26a0\ufe0f non verificabile | session history non accessibile (visibility=tree) |",
+          "conversations": "Nessuna conversazione catturata \u2014 history sessione non accessibile per restrizioni di visibilit\u00e0."
+        },
+        {
+          "time": "12:05 UTC",
+          "timestamp": "2026-04-06T12:05:00Z",
           "event_count": 3,
           "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Session-memory-capture cron eseguito | azione | \u26a0\ufe0f non verificabile | action-log vuoto (nessuna entry recente) |\n| Azioni utente ultime 2h | richiesta | \u26a0\ufe0f non verificabile | action-log vuoto (nessuna entry recente) |\n| Conversazioni importanti | richiesta | \u26a0\ufe0f non verificabile | session history non accessibile (visibility=tree) |",
           "conversations": "Nessuna conversazione catturata \u2014 history sessione non accessibile per restrizioni di visibilit\u00e0."
