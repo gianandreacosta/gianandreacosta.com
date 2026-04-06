@@ -185,9 +185,10 @@
     }
     isTracking = true;
     autoCenter = true;
-    document.getElementById('btnStart').innerHTML = 'Stop';
+    document.getElementById('btnStart').innerHTML = '<i data-lucide="square" class="lucide"></i>';
     document.getElementById('btnStart').classList.add('active');
-    document.getElementById('btnStart2').innerHTML = 'Stop';
+    document.getElementById('btnStart2').innerHTML = '<i data-lucide="square" class="lucide"></i> Stop';
+    refreshIcons();
     document.getElementById('btnCenter').classList.add('active');
     document.getElementById('liveDot').style.display = 'inline-block';
     document.getElementById('livePanel').style.display = 'flex';
@@ -223,9 +224,10 @@
   function stopTracking() {
     if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
     isTracking = false;
-    document.getElementById('btnStart').innerHTML = 'Naviga';
+    document.getElementById('btnStart').innerHTML = '<i data-lucide="play" class="lucide"></i>';
     document.getElementById('btnStart').classList.remove('active');
-    document.getElementById('btnStart2').innerHTML = 'Naviga';
+    document.getElementById('btnStart2').innerHTML = '<i data-lucide="play" class="lucide"></i> Naviga';
+    refreshIcons();
     document.getElementById('liveDot').style.display = 'none';
     document.getElementById('livePanel').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';
