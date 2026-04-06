@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T14:00:22.240178Z",
+  "generated_at": "2026-04-06T14:10:14.552548Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,14 +72,14 @@
       ]
     }
   ],
-  "rate_limits_today": 1338,
+  "rate_limits_today": 1354,
   "cron_jobs": [
     {
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "error",
-      "next": "in 16h",
+      "next": "in 15h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -114,8 +114,8 @@
       "name": "session-memory-capture",
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
-      "status": "ok",
-      "next": "in 4min",
+      "status": "error",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
