@@ -98,7 +98,8 @@
         if (tg) tg.onclick = function() {
           var open = dt.style.display !== 'none';
           dt.style.display = open ? 'none' : 'block';
-          tg.textContent = open ? '📍 Dettagli' : '✖ Chiudi';
+          tg.innerHTML = open ? '<i data-lucide="map-pin" class="lucide"></i> Dettagli' : '<i data-lucide="x" class="lucide"></i> Chiudi';
+          if (typeof lucide !== 'undefined') lucide.createIcons();
           if (!open) {
             var pr = type === 'R' ? proposalFromRoute(x) : null;
             if (pr) drawMap(type + i, pr);
@@ -141,10 +142,15 @@
       '<button class="btn btn-ghost" style="padding:8px;min-height:36px;font-size:0.75rem" id="rmR' + i + '">' + HEART_ON + '</button>' +
       '</div>' +
       '<div class="btn-row" style="margin-top:8px">' +
-      '<button class="btn btn-ghost" style="flex:1;font-size:0.8rem" id="toggleR' + i + '">📍 Dettagli</button>' +
-      '<button class="btn btn-secondary" style="flex:1;font-size:0.8rem" id="selectR' + i + '">▶ Seleziona</button>' +
+      '<button class="btn btn-ghost" style="flex:1;font-size:0.8rem" id="toggleR' + i + '"><i data-lucide="map-pin" class="lucide"></i> Dettagli</button>' +
+      '<button class="btn btn-secondary" style="flex:1;font-size:0.8rem" id="selectR' + i + '"><i data-lucide="play" class="lucide"></i> Seleziona</button>' +
       '</div>' +
       '<div id="detailR' + i + '" style="display:none;margin-top:8px">' +
+      '<div class="grid grid-2" style="margin-bottom:8px">' +
+      '<div class="stat-card"><div class="stat-value">' + item.walk.minutes + '</div><div class="stat-label">min</div></div>' +
+      '<div class="stat-card"><div class="stat-value">' + item.walk.distanceKm + '</div><div class="stat-label">km</div></div>' +
+      '</div>' +
+      '<div class="small" style="margin-bottom:8px;opacity:0.7">' + (item.walk.type || '') + ' &bull; salvato ' + new Date(item.savedAt).toLocaleDateString('it-IT', {day:'numeric',month:'short'}) + '</div>' +
       '<div id="fmap-R' + i + '" class="map-box" style="height:180px"></div>' +
       '</div></div>';
   }
