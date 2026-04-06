@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T00:01:50.036981Z",
+  "generated_at": "2026-04-06T00:05:16.495514Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -23,46 +23,46 @@
     {
       "name": "Custode",
       "role": "Manutenzione OpenClaw",
-      "primary": "anthropic/claude-haiku-4-5",
+      "primary": "openrouter/google/gemini-2.5-flash-lite",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini",
-        "openrouter/anthropic/claude-haiku-4-5"
+        "ollama/qwen3.5:cloud",
+        "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
     {
       "name": "Officina",
       "role": "Sviluppo software/web",
-      "primary": "anthropic/claude-opus-4-6",
+      "primary": "moonshotai/kimi-k2.5",
       "fallbacks": [
-        "openai/gpt-5.1-codex",
-        "openrouter/anthropic/claude-haiku-4-5"
+        "ollama/qwen3.5:cloud",
+        "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
     {
       "name": "CFO",
       "role": "Flussi contabili (pagamenti Maria)",
-      "primary": "anthropic/claude-sonnet-4-6",
+      "primary": "openrouter/google/gemini-2.5-flash-lite",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini",
-        "openrouter/anthropic/claude-haiku-4-5"
+        "ollama/qwen3.5:cloud",
+        "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
     {
       "name": "Archivio",
       "role": "Documenti e memoria",
-      "primary": "anthropic/claude-haiku-4-5",
+      "primary": "openrouter/google/gemini-2.5-flash-lite",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini",
-        "openrouter/anthropic/claude-haiku-4-5"
+        "ollama/qwen3.5:cloud",
+        "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
     {
       "name": "Model Manager",
       "role": "Gestione stack modelli/API",
-      "primary": "anthropic/claude-opus-4-6",
+      "primary": "openrouter/google/gemini-2.5-flash",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini",
-        "openrouter/anthropic/claude-haiku-4-5"
+        "ollama/qwen3.5:cloud",
+        "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
     {
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 23h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -118,7 +118,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 6h",
+      "next": "in 5h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -172,7 +172,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 4min",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     },
