@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T00:40:15.020032Z",
+  "generated_at": "2026-04-06T00:50:08.466949Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "rate_limits_today": 0,
+  "rate_limits_today": 42,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -127,7 +127,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4h",
+      "next": "in 3h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -647,6 +647,13 @@
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260406-0244.tar.gz",
+      "date": "2026-04-06T02:44:00Z",
+      "size": "9.3M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260406-0244.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260406-0201.tar.gz",
       "date": "2026-04-06T02:01:00Z",
