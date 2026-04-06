@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <title>La tua pausa &bull; Walk2Eat v4</title>
+  <link rel="icon" href="assets/branding-hq/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4.0.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="map-layout">
+
+<!-- z:1 — Mappa full-screen -->
+<div id="map-fullscreen"></div>
+
+<!-- z:20 — Top bar floating -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a class="brand" href="dashboard.html">
+      <img class="brand-logo" src="assets/branding-hq/walk2eat-navbar-dark-128.png" alt="Walk2Eat">
+      <span class="brand-text">Walk<span class="brand-two">2</span>Eat</span>
+    </a>
+    <span id="hello" class="small" style="color:var(--accent)"></span>
+  </div>
+</div>
+
+<!-- z:25 — Layer toggle pill (OSM / Swiss) -->
+<div class="map-layer-pill" id="layerPill" style="display:none">
+  <button class="map-layer-btn active" id="btnOsm" onclick="switchLayer('osm')">🗺️ OSM</button>
+  <button class="map-layer-btn" id="btnSwiss" onclick="switchLayer('swiss')">🏔️ Swiss</button>
+</div>
+
+<!-- z:28 — Overlay scuro (attivo quando card è espanso) -->
+<div class="map-overlay" id="mapOverlay"></div>
+
+<!-- z:30 — Bottom Card -->
+<div class="bottom-card" id="bottomCard">
+
+  <!-- Drag handle -->
+  <div class="bottom-card-handle-area" id="dragHandle">
+    <div class="bottom-card-handle"></div>
+  </div>
+
+  <div class="bottom-card-content">
+
+    <!-- Skeleton (visibile durante caricamento) -->
+    <div id="cardSkeleton">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:12px">
+        <div>
+          <div class="skeleton" style="height:44px;width:100px;border-radius:8px"></div>
+          <div class="skeleton" style="height:10px;width:60px;margin-top:6px;border-radius:4px"></div>
+        </div>
+        <div style="text-align:right">
+          <div class="skeleton" style="height:20px;width:120px;border-radius:6px"></div>
+          <div class="skeleton" style="height:10px;width:80px;margin-top:6px;border-radius:4px"></div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div class="skeleton" style="height:48px;border-radius:12px"></div>
+        <div class="skeleton" style="height:48px;border-radius:12px"></div>
+        <div class="skeleton" style="height:48px;border-radius:12px"></div>
+        <div class="skeleton" style="height:48px;border-radius:12px"></div>
+      </div>
+    </div>
+
+    <!-- Contenuto reale (nascosto durante caricamento) -->
+    <div id="cardContent" style="display:none">
+
+      <!-- Riga riepilogo percorso -->
+      <div class="route-summary">
+        <div class="route-main">
+          <span class="route-stat-value" id="walkStat">&mdash;</span>
+          <span class="route-stat-unit">min &middot; <span id="walkDist">&mdash;</span> km</span>
+        </div>
+        <div class="route-dest">
+          <div class="route-dest-name" id="foodName">&mdash;</div>
+          <div class="route-dest-sub" id="foodCuisine"></div>
+        </div>
+      </div>
+
+      <!-- Azioni primarie -->
+      <div class="action-row">
+        <a class="btn btn-primary" href="map.html" id="btnGo">🧭 Vai!</a>
+        <button class="btn btn-secondary" id="refreshWalk">🔄 Alternativa</button>
+      </div>
+      <div class="action-row-2" style="margin-top:8px">
+        <button class="btn btn-ghost btn-sm" id="save">♡ Salva</button>
+        <button class="btn btn-ghost btn-sm" id="detailToggle">📊 Dettagli</button>
+      </div>
+
+      <!-- Dettagli espandibili -->
+      <div id="detailSection" class="bottom-card-details">
+        <div class="grid grid-2" style="margin-bottom:12px">
+          <div class="card" style="padding:12px">
+            <div class="card-title" style="margin-bottom:8px">⏱ Tempi</div>
+            <div id="timeBreakdown" class="small"></div>
+          </div>
+          <div class="card" style="padding:12px">
+            <div class="card-title" style="margin-bottom:8px">🌤 Meteo</div>
+            <div id="weatherBox" class="small"></div>
+          </div>
+        </div>
+        <div class="card" style="padding:12px">
+          <div class="card-title" style="margin-bottom:8px">💡 Perch&eacute; questa proposta</div>
+          <div id="whyBox" class="small"></div>
+        </div>
+        <p id="routeSourceNote" class="small mt-sm" style="display:none"></p>
+      </div>
+
+    </div><!-- /cardContent -->
+  </div><!-- /bottom-card-content -->
+</div><!-- /bottom-card -->
+
+<!-- z:100 — Bottom Navigation -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <a href="dashboard.html" class="nav-item active">
+      <span class="nav-icon">🏠</span><span>Oggi</span>
+    </a>
+    <a href="favorites.html" class="nav-item">
+      <span class="nav-icon">❤️</span><span>Preferiti</span>
+    </a>
+    <a href="history.html" class="nav-item">
+      <span class="nav-icon">🕑</span><span>Cronologia</span>
+    </a>
+    <a href="preferences.html" class="nav-item">
+      <span class="nav-icon">⚙️</span><span>Impostazioni</span>
+    </a>
+  </div>
+</nav>
+
+<script src="assets/js/routes-poc-data.js?v=4.0.0"></script>
+<script src="assets/js/config.js?v=4.0.0"></script>
+<script src="assets/js/app.js?v=4.0.0"></script>
+<script src="assets/js/themes.js?v=4.0.0"></script>
+<script src="assets/js/dashboard.js?v=4.0.0"></script>
+</body>
+</html>

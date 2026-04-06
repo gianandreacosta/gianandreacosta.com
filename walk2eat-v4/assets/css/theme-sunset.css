@@ -1,0 +1,26 @@
+/* Walk2Eat — Theme: Sunset (tramonto caldo) */
+:root {
+  --bg: #1a1018;
+  --bg-soft: #261520;
+  --card: #2d1a28;
+  --card-border: #4a2d3e;
+  --text: #fdf2f8;
+  --text-secondary: #f9a8d4;
+  --accent: #f472b6;
+  --accent-hover: #ec4899;
+  --accent-soft: rgba(244,114,182,0.12);
+  --accent-2: #fda4af;
+  --danger: #ef4444;
+  --warning: #fbbf24;
+}
+.brand-text, .brand-two { color: var(--accent) !important; }
+.btn-primary { background: linear-gradient(135deg, #f472b6, #fb923c) !important; color: #1a1018 !important; border: none !important; }
+.btn-primary:hover { background: linear-gradient(135deg, #ec4899, #f97316) !important; }
+.nav-item.active .nav-icon, .nav-item.active span { color: var(--accent) !important; }
+.walk-badge { border-color: var(--accent) !important; color: var(--accent) !important; }
+.tgl-ios:checked + .tgl-btn { background: var(--accent) !important; }
+.section-title { color: var(--accent) !important; }
+body { background: var(--bg) !important; }
+.top-header { background: rgba(26,16,24,0.92) !important; }
+.bottom-nav { background: rgba(26,16,24,0.95) !important; }
+.card { background: var(--card) !important; border-color: var(--card-border) !important; }
