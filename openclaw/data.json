@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T00:50:08.466949Z",
+  "generated_at": "2026-04-06T01:00:12.897775Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "rate_limits_today": 42,
+  "rate_limits_today": 102,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -91,7 +91,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 23h",
+      "next": "in 22h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": true
     },
@@ -181,7 +181,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4h",
+      "next": "in 3h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
