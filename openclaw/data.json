@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T00:05:16.495514Z",
+  "generated_at": "2026-04-06T00:10:08.694835Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -172,7 +172,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "scaduto",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": true
     },
