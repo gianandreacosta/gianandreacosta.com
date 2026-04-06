@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T13:00:12.480950Z",
+  "generated_at": "2026-04-06T13:10:10.627370Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "error",
-      "next": "in 17h",
+      "next": "in 16h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 1h",
+      "next": "in 54min",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
