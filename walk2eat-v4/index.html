@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="assets/branding-hq/walk2eat-symbol-180.png">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="assets/css/styles.css?v=4.0.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body class="no-bottom-nav">
 <div class="container page-enter">
@@ -33,21 +36,21 @@
   <!-- Features — aligned with JTBD: Semplificare, Integrare, Dare Benessere -->
   <div class="feature-grid">
     <div class="feature-card">
-      <div class="feature-icon">🧠</div>
+      <div class="feature-icon"><i data-lucide="brain" class="lucide"></i></div>
       <div class="feature-text">
         <h3>Zero decisioni</h3>
         <p>Apri, cammina, mangia. Il prodotto pensa per te.</p>
       </div>
     </div>
     <div class="feature-card">
-      <div class="feature-icon">🎯</div>
+      <div class="feature-icon"><i data-lucide="target" class="lucide"></i></div>
       <div class="feature-text">
         <h3>Rigenerazione reale</h3>
         <p>Non fitness, non passi: stacco mentale e chiarezza cognitiva.</p>
       </div>
     </div>
     <div class="feature-card">
-      <div class="feature-icon">⚡</div>
+      <div class="feature-icon"><i data-lucide="zap" class="lucide"></i></div>
       <div class="feature-text">
         <h3>Ogni giorno diverso</h3>
         <p>Percorsi nuovi, scorci inediti, posti selezionati per te.</p>
@@ -66,6 +69,8 @@
 
 </div>
 
+<script src="https://unpkg.com/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script src="assets/js/themes.js?v=4.0.2"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

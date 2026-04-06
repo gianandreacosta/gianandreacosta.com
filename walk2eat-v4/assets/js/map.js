@@ -1,6 +1,10 @@
 (function() {
   'use strict';
 
+  function refreshIcons() {
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
+
   var map = null;
   var userMarker = null;
   var watchId = null;
@@ -141,13 +145,12 @@
       map.addLayer({ id: 'route-line', type: 'line', source: 'route', paint: { 'line-color': '#22c55e', 'line-width': 4, 'line-opacity': 0.95 }, layout: { 'line-cap': 'round', 'line-join': 'round' } });
 
       var startEl = document.createElement('div');
-      startEl.innerHTML = '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">\ud83c\udfc1 Partenza</div>';
+      startEl.innerHTML = '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">Start</div>';
       new maplibregl.Marker({ element: startEl, anchor: 'bottom' }).setLngLat([routePoints[0].lng, routePoints[0].lat]).addTo(map);
 
       if (proposal.food && proposal.food.lat) {
         var turnEl = document.createElement('div');
-        var emoji = proposal.food.poiType === 'viewpoint' ? '\ud83c\udfd4\ufe0f' : proposal.food.poiType === 'park' ? '\ud83c\udf33' : '\ud83c\udf7d\ufe0f';
-        turnEl.innerHTML = '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">' + emoji + ' ' + (proposal.food.name || 'Svolta') + '</div>';
+        turnEl.innerHTML = '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">' + (proposal.food.name || 'Svolta') + '</div>';
         new maplibregl.Marker({ element: turnEl, anchor: 'bottom' }).setLngLat([proposal.food.lng, proposal.food.lat]).addTo(map);
       }
     });
@@ -182,9 +185,9 @@
     }
     isTracking = true;
     autoCenter = true;
-    document.getElementById('btnStart').innerHTML = '\u23f9';
+    document.getElementById('btnStart').innerHTML = 'Stop';
     document.getElementById('btnStart').classList.add('active');
-    document.getElementById('btnStart2').innerHTML = '\u23f9 Stop';
+    document.getElementById('btnStart2').innerHTML = 'Stop';
     document.getElementById('btnCenter').classList.add('active');
     document.getElementById('liveDot').style.display = 'inline-block';
     document.getElementById('livePanel').style.display = 'flex';
@@ -220,9 +223,9 @@
   function stopTracking() {
     if (watchId !== null) { navigator.geolocation.clearWatch(watchId); watchId = null; }
     isTracking = false;
-    document.getElementById('btnStart').innerHTML = '\u25b6\ufe0f';
+    document.getElementById('btnStart').innerHTML = 'Naviga';
     document.getElementById('btnStart').classList.remove('active');
-    document.getElementById('btnStart2').innerHTML = '\u25b6\ufe0f Naviga';
+    document.getElementById('btnStart2').innerHTML = 'Naviga';
     document.getElementById('liveDot').style.display = 'none';
     document.getElementById('livePanel').style.display = 'none';
     document.getElementById('progressWrap').style.display = 'none';

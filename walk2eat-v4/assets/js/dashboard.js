@@ -6,7 +6,13 @@
 (function () {
   'use strict';
 
-  var HEART_OFF = '\u2661', HEART_ON = '\u2764\uFE0F';
+  /* ── Lucide icon refresh helper ── */
+  function refreshIcons() {
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
+
+  var HEART_OFF = '<i data-lucide="heart" class="lucide"></i>';
+  var HEART_ON  = '<i data-lucide="heart" class="lucide" style="fill:currentColor"></i>';
 
   /* ── Toast notification system ── */
   var _toastEl = null;
@@ -55,7 +61,7 @@
   var prefs = LBW.getPrefs();
 
   /* ── Greeting ── */
-  document.getElementById('hello').textContent = 'Ciao ' + u.name + ' \uD83D\uDC4B';
+  document.getElementById('hello').textContent = 'Ciao ' + u.name;
 
   /* ── Map state ── */
   var map = null, routeLine = null, startMarker = null, turnMarker = null;
@@ -98,6 +104,7 @@
     document.getElementById('cardSkeleton').style.display = 'none';
     document.getElementById('cardContent').style.display  = 'block';
     positionLayerPill();
+    refreshIcons();
   }
 
   /* ── Weather mock ── */
@@ -112,16 +119,20 @@
 
   function renderWeather() {
     var w = weatherMock();
-    var icon = w.label.includes('Sole')     ? '\u2600\uFE0F'
-             : w.label.includes('Nuvoloso') ? '\u2601\uFE0F'
-             : w.label.includes('Pioggia')  ? '\uD83C\uDF27\uFE0F'
-             :                                '\uD83D\uDCA8';
+    var icon = w.label.includes('Sole')     ? '<i data-lucide="sun" class="lucide"></i>'
+             : w.label.includes('Nuvoloso') ? '<i data-lucide="cloud" class="lucide"></i>'
+             : w.label.includes('Pioggia')  ? '<i data-lucide="cloud-rain" class="lucide"></i>'
+             :                                '<i data-lucide="wind" class="lucide"></i>';
+    var condition = w.bad
+      ? '<i data-lucide="alert-triangle" class="lucide" style="color:var(--warning)"></i> Condizioni sfavorevoli'
+      : '<i data-lucide="check-circle" class="lucide" style="color:var(--accent)"></i> Condizioni buone';
     document.getElementById('weatherBox').innerHTML =
       '<div style="display:flex;align-items:center;gap:8px">' +
         '<span style="font-size:1.3rem">' + icon + '</span>' +
         '<span><b>' + w.label + '</b> ' + w.temp + '\u00B0C<br>' +
-        '<span>' + (w.bad ? '\u26A0\uFE0F Condizioni sfavorevoli' : '\u2705 Condizioni buone') + '</span></span>' +
+        '<span>' + condition + '</span></span>' +
       '</div>';
+    refreshIcons();
   }
 
   /* ── Time breakdown ── */
@@ -131,23 +142,25 @@
     var walkBack  = walkTotal - walkOut;
     document.getElementById('timeBreakdown').innerHTML =
       '<div style="display:flex;flex-direction:column;gap:4px">' +
-        '<div>\uD83C\uDFC3 Andata: <b>' + walkOut + ' min</b></div>' +
-        '<div>\uD83D\uDD19 Ritorno: <b>' + walkBack + ' min</b></div>' +
+        '<div><i data-lucide="move-right" class="lucide"></i> Andata: <b>' + walkOut + ' min</b></div>' +
+        '<div><i data-lucide="move-left" class="lucide"></i> Ritorno: <b>' + walkBack + ' min</b></div>' +
         '<hr style="border-color:var(--glass-border);margin:4px 0">' +
-        '<div>\uD83D\uDCCF Totale: <b>' + walkTotal + ' min</b> \u00B7 <b>' + p.walk.distanceKm + ' km</b></div>' +
+        '<div><i data-lucide="ruler" class="lucide"></i> Totale: <b>' + walkTotal + ' min</b> \u00B7 <b>' + p.walk.distanceKm + ' km</b></div>' +
       '</div>';
+    refreshIcons();
   }
 
   /* ── Why this proposal ── */
   function renderWhy(p) {
     var reasons = [
-      '\uD83C\uDFAF Intensit\u00E0: <b>' + prefs.intensity + '</b>',
-      '\uD83C\uDFAA Obiettivo: <b>' + prefs.goal + '</b>',
-      '\uD83D\uDD04 Percorso ad anello'
+      '<i data-lucide="target" class="lucide"></i> Intensit\u00E0: <b>' + prefs.intensity + '</b>',
+      '<i data-lucide="compass" class="lucide"></i> Obiettivo: <b>' + prefs.goal + '</b>',
+      '<i data-lucide="refresh-cw" class="lucide"></i> Percorso ad anello'
     ];
     document.getElementById('whyBox').innerHTML = reasons.map(function (r) {
       return '<div style="padding:3px 0">' + r + '</div>';
     }).join('');
+    refreshIcons();
   }
 
   /* ── Save / favorite toggle ── */
@@ -161,6 +174,7 @@
       saveEl.innerHTML = HEART_OFF + ' Salva';
       saveEl.classList.remove('btn-saved');
     }
+    refreshIcons();
   }
 
   /* ── Show error inside card content ── */
@@ -169,10 +183,11 @@
     var el = document.getElementById('cardContent');
     el.innerHTML =
       '<div style="text-align:center;padding:24px 16px;color:#ef4444">' +
-        '<div style="font-size:1.5rem;margin-bottom:8px">\u26A0\uFE0F</div>' +
+        '<div style="font-size:1.5rem;margin-bottom:8px"><i data-lucide="alert-triangle" class="lucide" style="width:32px;height:32px"></i></div>' +
         '<div style="font-weight:600;margin-bottom:4px">Errore</div>' +
         '<div style="font-size:13px;opacity:.85">' + msg + '</div>' +
       '</div>';
+    refreshIcons();
   }
 
   /* ── Render proposal on map + card ── */
@@ -204,7 +219,7 @@
       var startIcon = L.divIcon({
         className: '',
         html: '<div style="background:#22c55e;color:#fff;padding:4px 10px;border-radius:20px;' +
-              'font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">\uD83D\uDCCD</div>',
+              'font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">Start</div>',
         iconAnchor: [12, 12]
       });
       startMarker = L.marker(pts[0], { icon: startIcon }).addTo(map);
@@ -213,7 +228,7 @@
         var turnIcon = L.divIcon({
           className: '',
           html: '<div style="background:#f59e0b;color:#fff;padding:4px 10px;border-radius:20px;' +
-                'font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">\uD83C\uDF7D\uFE0F</div>',
+                'font-size:12px;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,0.4)">' + (p.food.name || 'Ristorante') + '</div>',
           iconAnchor: [12, 12]
         });
         turnMarker = L.marker([p.food.lat, p.food.lng], { icon: turnIcon }).addTo(map);
@@ -230,12 +245,14 @@
     /* -- Route source note -- */
     var note = document.getElementById('routeSourceNote');
     if (p.source === 'osrm-loop') {
-      note.textContent  = '\u2705 Percorso reale su strade pedonali';
+      note.innerHTML  = '<i data-lucide="check-circle" class="lucide"></i> Percorso reale su strade pedonali';
       note.style.display = 'block';
     } else if (p.source === 'synthetic-loop') {
-      note.textContent  = '\u26A0\uFE0F Percorso approssimato';
+      note.innerHTML  = '<i data-lucide="alert-triangle" class="lucide"></i> Percorso approssimato';
       note.style.display = 'block';
     }
+
+    refreshIcons();
   }
 
   /* ── Load / refresh route ── */
@@ -297,12 +314,13 @@
     if (detailOpen) {
       section.classList.add('visible');
       overlay.classList.add('active');
-      this.innerHTML = '\uD83D\uDCCA Chiudi';
+      this.innerHTML = '<i data-lucide="bar-chart" class="lucide"></i> Chiudi';
     } else {
       section.classList.remove('visible');
       overlay.classList.remove('active');
-      this.innerHTML = '\uD83D\uDCCA Dettagli';
+      this.innerHTML = '<i data-lucide="bar-chart" class="lucide"></i> Dettagli';
     }
+    refreshIcons();
     positionLayerPill();
   };
 
