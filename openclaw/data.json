@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T19:20:04.564657Z",
+  "generated_at": "2026-04-07T19:30:05.072348Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 44min",
+      "next": "in 34min",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
@@ -127,42 +127,6 @@
       "next": "in 9h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
-    },
-    {
-      "name": "promemoria-fide",
-      "schedule": "one-shot: 2026-04-01T15:00:00.000Z",
-      "target": "main",
-      "status": "error",
-      "next": "n/a",
-      "note": "Promemoria: iscriviti alla FEDE (Federica)!",
-      "enabled": false
-    },
-    {
-      "name": "promemoria-pasqua",
-      "schedule": "one-shot: 2026-04-02T08:30:00.000Z",
-      "target": "main",
-      "status": "error",
-      "next": "n/a",
-      "note": "Promemoria: pensiero di Pasqua!",
-      "enabled": false
-    },
-    {
-      "name": "test-remind-curl",
-      "schedule": "one-shot: 2026-04-02T10:43:00.000Z",
-      "target": "main",
-      "status": "error",
-      "next": "n/a",
-      "note": "cd /root/.openclaw/workspace && bash tools/remind.sh 'Test remind.sh \u2014 arriva...",
-      "enabled": false
-    },
-    {
-      "name": "test-outbound-telegram",
-      "schedule": "one-shot: 2026-04-02T16:23:30.000Z",
-      "target": "isolated",
-      "status": "error",
-      "next": "n/a",
-      "note": "\ud83e\uddea TEST OUTBOUND TELEGRAM \u2014 Se leggi questo, l'outbound fu...",
-      "enabled": false
     },
     {
       "name": "dashboard-data-update",
