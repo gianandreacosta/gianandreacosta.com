@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-07T18:50:05.100441Z",
+  "generated_at": "2026-04-07T18:51:14.734129Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.5",
     "update_available": true,
-    "gateway_running": false,
+    "gateway_running": true,
     "gateway_port": 18789
   },
   "telegram": {
@@ -869,7 +869,7 @@
     "last_run_found": 3603
   },
   "model_status": {
-    "timestamp": "2026-04-07T18:49:06Z",
+    "timestamp": "2026-04-07T18:51:08Z",
     "usage_stats": {
       "openai-codex:default": {
         "last_used": "2026-03-13 20:23 UTC"
@@ -968,14 +968,14 @@
         "status": "ok",
         "api_reachable": true,
         "window_5h_status": "allowed",
-        "window_5h_used_pct": 10.0,
-        "window_5h_remaining_pct": 90.0,
-        "window_5h_reset_in": "4.2h",
+        "window_5h_used_pct": 11.0,
+        "window_5h_remaining_pct": 89.0,
+        "window_5h_reset_in": "4.1h",
         "window_5h_reset_at": "2026-04-07 23:00 UTC",
         "window_7d_status": "allowed",
         "window_7d_used_pct": 14.0,
         "window_7d_remaining_pct": 86.0,
-        "window_7d_reset_in": "117.2h",
+        "window_7d_reset_in": "117.1h",
         "window_7d_reset_at": "2026-04-12 16:00 UTC",
         "overall_status": "allowed",
         "overage_status": "allowed",
