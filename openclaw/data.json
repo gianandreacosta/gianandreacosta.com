@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-07T11:36:08.888447Z",
+  "generated_at": "2026-04-07T11:40:04.599736Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.5",
     "update_available": true,
-    "gateway_running": true,
+    "gateway_running": false,
     "gateway_port": 18789
   },
   "telegram": {
@@ -88,7 +88,7 @@
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 12h",
+      "next": "n/a",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
       "enabled": false
     },
@@ -106,7 +106,7 @@
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4g",
+      "next": "n/a",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
       "enabled": false
     },
@@ -169,7 +169,7 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "in 3min",
+      "next": "n/a",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": false
     },
