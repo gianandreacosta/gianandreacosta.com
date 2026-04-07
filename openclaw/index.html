@@ -627,73 +627,73 @@ function renderModelStatus(ms) {
   }
   tsEl.textContent = 'Ultimo check: ' + (ms.timestamp ? new Date(ms.timestamp).toLocaleString('it-IT') : 'n/a');
 
-  // Providers summary
   const providers = ms.providers || {};
-  const provList = document.getElementById('ms-providers-list');
-  const provOrder = ['openrouter', 'openai-codex', 'openai', 'google', 'nemofree'];
-  let provHtml = '';
-  
-  for (const pname of provOrder) {
-    const p = providers[pname];
-    if (!p) continue;
-    const st = p.status || 'unknown';
-    const icon = (st === 'ok' || st === 'valid' || st === 'allowed') ? '✅' : '❌';
-    let detail = '';
-    
-    if (pname === 'openrouter') {
-      const rem = p.credit_remaining_usd;
-      const lim = p.credit_limit_usd;
-      detail = rem !== undefined ? ` — $${Number(rem).toFixed(2)} / $${lim}` : '';
-    } else if (pname === 'openai-codex') {
-      detail = ` — ${p.plan || '?'}, scade in ${p.token_expires_in || '?'}`;
-    } else if (pname === 'nemofree') {
-      const remReq = p['x-ratelimit-remaining-requests'];
-      detail = remReq ? ` — ${remReq} richieste rimanenti` : '';
-    }
-    
-    const label = pname === 'openai-codex' ? 'OpenAI Codex' : pname === 'nemofree' ? 'NemoFree (cron)' : pname.charAt(0).toUpperCase() + pname.slice(1);
-    provHtml += `<div class="status-row"><span class="label">${icon} ${label}</span><span class="value" style="font-size:12px">${st}${detail}</span></div>`;
-  }
-  provList.innerHTML = provHtml || '<div style="color:#555">Nessun provider</div>';
 
-  // Ollama models
+  // --- Providers card ---
+  const provList = document.getElementById('ms-providers-list');
+  let html = '';
+
+  // OpenRouter
+  const or_ = providers.openrouter || {};
+  if (or_.status === 'ok') {
+    html += `<div class="status-row"><span class="label">OpenRouter</span><span class="value" style="font-size:12px">Spesa: $\${(or_.usage_monthly_usd||0).toFixed(2)}/mese, $\${(or_.usage_weekly_usd||0).toFixed(2)}/sett</span></div>`;
+    html += `<div class="status-row"><span class="label" style="font-size:11px"></span><span style="font-size:11px"><a href="https://openrouter.ai/settings/credits" target="_blank" style="color:#58a6ff">Verifica saldo →</a></span></div>`;
+  } else {
+    html += `<div class="status-row"><span class="label">OpenRouter</span><span class="badge error">non raggiungibile</span></div>`;
+  }
+
+  // NemoFree
+  const nf = providers.nemofree || {};
+  const nfOk = nf.status === 'ok';
+  html += `<div class="status-row"><span class="label">NemoFree (cron)</span><span class="badge ${nfOk ? 'ok' : 'error'}">${nfOk ? 'operativo' : nf.status === 'rate_limited' ? 'rate limited' : nf.status || '?'}</span></div>`;
+
+  // OpenAI Codex
+  const codex = providers['openai-codex'] || {};
+  const codexOk = codex.status === 'valid';
+  html += `<div class="status-row"><span class="label">OpenAI Codex (OAuth)</span><span class="badge ${codexOk ? 'ok' : 'error'}">${codexOk ? 'token valido' : codex.status === 'expired' ? 'token scaduto' : codex.status || '?'}${codexOk ? ' · ' + (codex.plan || '') : ''}</span></div>`;
+
+  // OpenAI API key
+  const oai = providers.openai || {};
+  const oaiOk = (oai.status || '').includes('ok');
+  html += `<div class="status-row"><span class="label">OpenAI API key</span><span>${oaiOk ? '<span class="badge ok">chiave attiva</span>' : '<span class="badge error">non valida</span>'} <a href="https://platform.openai.com/settings/organization/billing" target="_blank" style="color:#58a6ff;font-size:11px;margin-left:8px">credito →</a></span></div>`;
+
+  // Google
+  const goog = providers.google || {};
+  const googOk = (goog.status || '').includes('ok');
+  html += `<div class="status-row"><span class="label">Google AI</span><span>${googOk ? '<span class="badge ok">API attiva</span>' : '<span class="badge error">non raggiungibile</span>'} <a href="https://console.cloud.google.com/apis/dashboard" target="_blank" style="color:#58a6ff;font-size:11px;margin-left:8px">quota →</a></span></div>`;
+
+  // Anthropic
+  const anth = providers.anthropic || {};
+  const anthOk = (anth.status || '').includes('ok');
+  html += `<div class="status-row"><span class="label">Anthropic (OAuth)</span><span>${anthOk ? '<span class="badge ok">accesso attivo</span>' : '<span class="badge error">non raggiungibile</span>'} <a href="https://console.anthropic.com/settings/billing" target="_blank" style="color:#58a6ff;font-size:11px;margin-left:8px">crediti →</a></span></div>`;
+
+  provList.innerHTML = html;
+
+  // --- Ollama card ---
   const ollama = providers.ollama || {};
   const ollamaList = document.getElementById('ms-ollama-list');
-  const models = ollama.models || [];
-  let ollamaHtml = `<div class="status-row"><span class="label">Servizio</span><span>${ollama.status === 'ok' ? '<span class="badge ok">online</span>' : '<span class="badge error">offline</span>'}</span></div>`;
-  
-  for (const m of models) {
-    const mst = m.status;
-    const icon = mst === 'ok' ? '✅' : mst === 'rate_limited' ? '🔴' : mst === 'local' ? '📊' : '⚠️';
-    const label = m.type === 'embedding' ? `${m.name} [embedding]` : m.name;
-    const badgeCls = mst === 'ok' ? 'ok' : mst === 'rate_limited' ? 'error' : mst === 'local' ? 'idle' : 'warning';
-    ollamaHtml += `<div class="status-row"><span class="label">${icon} ${label}</span><span class="badge ${badgeCls}">${mst}</span></div>`;
-  }
-  ollamaList.innerHTML = ollamaHtml;
-
-  // Anthropic detail
-  const anth = providers.anthropic || {};
-  const anthEl = document.getElementById('ms-anthropic-detail');
-  if (anth.window_5h_used_pct !== undefined) {
-    const used5 = anth.window_5h_used_pct;
-    const rem5 = anth.window_5h_remaining_pct;
-    const used7 = anth.window_7d_used_pct || 0;
-    const rem7 = anth.window_7d_remaining_pct || 0;
-    
-    function bar(pct) {
-      const w = Math.min(100, Math.max(0, pct));
-      const color = w < 50 ? '#238636' : w < 80 ? '#d29922' : '#da3633';
-      return `<div style="background:#21262d;border-radius:4px;height:8px;width:100%;margin:4px 0"><div style="background:${color};height:100%;border-radius:4px;width:${w}%"></div></div>`;
+  let oHtml = '';
+  if (ollama.status === 'ok') {
+    for (const m of (ollama.models || [])) {
+      const mst = m.status;
+      if (m.type === 'embedding') {
+        oHtml += `<div class="status-row"><span class="label">📊 ${m.name}</span><span class="badge idle">attivo [embedding]</span></div>`;
+      } else if (mst === 'ok') {
+        oHtml += `<div class="status-row"><span class="label">✅ ${m.name}</span><span class="badge ok">disponibile</span></div>`;
+      } else if (mst === 'rate_limited') {
+        oHtml += `<div class="status-row"><span class="label">🔴 ${m.name}</span><span class="badge error">cap settimanale</span></div>`;
+      } else {
+        oHtml += `<div class="status-row"><span class="label">⚠️ ${m.name}</span><span class="badge warning">${mst}</span></div>`;
+      }
     }
-    
-    anthEl.innerHTML = `
-      <div class="status-row"><span class="label">Stato</span><span class="badge ${anth.overall_status === 'allowed' ? 'ok' : 'warning'}">${anth.overall_status || '?'}</span></div>
-      <div style="margin-top:8px"><span style="color:#8b949e;font-size:11px">Finestra 5h: ${used5}% usato / ${rem5}% rimanente</span>${bar(used5)}<span style="color:#555;font-size:10px">Reset: ${anth.window_5h_reset_at || '?'}</span></div>
-      <div style="margin-top:8px"><span style="color:#8b949e;font-size:11px">Finestra 7gg: ${used7}% usato / ${rem7}% rimanente</span>${bar(used7)}<span style="color:#555;font-size:10px">Reset: ${anth.window_7d_reset_at || '?'}</span></div>
-    `;
   } else {
-    anthEl.innerHTML = '<div class="status-row"><span class="label">Stato</span><span class="badge ' + (anth.status === 'ok' ? 'ok' : 'warning') + '">' + (anth.status || '?') + '</span></div>';
+    oHtml = '<div class="status-row"><span class="badge error">servizio non raggiungibile</span></div>';
   }
+  ollamaList.innerHTML = oHtml;
+
+  // --- Anthropic card: hide it (not useful per user feedback) ---
+  const anthCard = document.getElementById('ms-anthropic-card');
+  if (anthCard) anthCard.style.display = 'none';
 }
 
 const MS_WEBHOOK_URL = 'http://187.77.93.152:18792/refresh?token=O9PMFRaIN_WC1uC5YsQkkXtL31sx6Mt3';
