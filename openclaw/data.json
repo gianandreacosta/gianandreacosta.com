@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-07T18:51:31.531522Z",
+  "generated_at": "2026-04-07T19:00:05.761142Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.5",
     "update_available": true,
-    "gateway_running": true,
+    "gateway_running": false,
     "gateway_port": 18789
   },
   "telegram": {
@@ -178,7 +178,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 10h",
+      "next": "in 9h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
