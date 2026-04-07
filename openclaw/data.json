@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T11:30:11.322966Z",
+  "generated_at": "2026-04-07T11:36:08.888447Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -35,7 +35,7 @@
       "primary": "openrouter/moonshotai/kimi-k2.5",
       "fallbacks": [
         "openai/gpt-5.1-codex-mini",
-        "ollama/minimax-m2.5:cloud",
+        "ollama/minimax-m2.7:cloud",
         "openrouter/stepfun/step-3.5-flash:free"
       ]
     },
@@ -90,7 +90,7 @@
       "status": "ok",
       "next": "in 12h",
       "note": "Run /root/.openclaw/workspace/tools/backup_daily_config.s...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "Promemoria pagamento Maria",
@@ -108,7 +108,7 @@
       "status": "ok",
       "next": "in 4g",
       "note": "Run /root/.openclaw/workspace/tools/backup_weekly_full.sh...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "session-memory-capture",
@@ -169,9 +169,9 @@
       "schedule": "*/10 * * * *",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 3min",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "rassegna-analisi",
