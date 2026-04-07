@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T10:00:16.439077Z",
+  "generated_at": "2026-04-07T10:10:12.292104Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,14 +72,14 @@
       ]
     }
   ],
-  "rate_limits_today": 71,
+  "rate_limits_today": 90,
   "cron_jobs": [
     {
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "error",
-      "next": "in 20h",
+      "next": "in 19h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 6,8,10,12,14,16,18,20,22 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 1h",
       "note": "Sei il sub-agent Archivio con regole ANTI-HALLUCINATION.\n...",
       "enabled": true
     },
@@ -195,11 +195,18 @@
   "summaries": [
     {
       "date": "2026-04-07",
-      "entry_count": 1,
+      "entry_count": 2,
       "entries": [
         {
           "time": "08:05 UTC",
           "timestamp": "2026-04-07T08:05:00Z",
+          "event_count": 0,
+          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|",
+          "conversations": ""
+        },
+        {
+          "time": "10:05 UTC",
+          "timestamp": "2026-04-07T10:05:00Z",
           "event_count": 0,
           "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|",
           "conversations": "Nessuna conversazione importante catturata nelle ultime 2h."
