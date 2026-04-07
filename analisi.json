@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-04-06T05:09:14.233054+00:00",
+  "generated_at": "2026-04-07T05:00:38.454586+00:00",
   "analyses": [
+    {
+      "id": 19,
+      "run_id": 55,
+      "run_time": "2026-04-07 04:45:08.858729+00:00",
+      "analyzed_at": "2026-04-07T05:00:38.436552+00:00",
+      "articles_analyzed": 152,
+      "articles_selected": 0,
+      "model_used": "openai/gpt-5.1-codex-mini",
+      "status": "error",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
+        }
+      ]
+    },
     {
       "id": 18,
       "run_id": 54,
