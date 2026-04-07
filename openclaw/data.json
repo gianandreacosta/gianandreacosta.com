@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T23:40:04.815897Z",
+  "generated_at": "2026-04-07T23:50:04.730053Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -124,7 +124,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 5h",
+      "next": "in 4h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
