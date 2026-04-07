@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-07T08:40:20.659354Z",
+  "generated_at": "2026-04-07T08:50:45.910868Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.5",
     "update_available": true,
-    "gateway_running": true,
+    "gateway_running": false,
     "gateway_port": 18789
   },
   "telegram": {
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 0,
+  "rate_limits_today": 55,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -124,7 +124,7 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20h",
+      "next": "in 19h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
