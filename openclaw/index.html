@@ -696,14 +696,14 @@ function renderModelStatus(ms) {
   if (anthCard) anthCard.style.display = 'none';
 }
 
-const MS_WEBHOOK_URL = 'http://187.77.93.152:18792/refresh?token=O9PMFRaIN_WC1uC5YsQkkXtL31sx6Mt3';
+const MS_WEBHOOK_URL = 'https://cloud.gianandreacosta.com/api/model-refresh?token=O9PMFRaIN_WC1uC5YsQkkXtL31sx6Mt3';
 
 async function refreshModelStatus() {
   const btn = document.getElementById('ms-refresh-btn');
   btn.textContent = '⏳ Aggiornamento...';
   btn.disabled = true;
   try {
-    const res = await fetch(MS_WEBHOOK_URL, { mode: 'no-cors' });
+    const res = await fetch(MS_WEBHOOK_URL);
     btn.textContent = '✅ Richiesta inviata';
     setTimeout(() => { btn.textContent = '🔄 Aggiorna ora'; btn.disabled = false; }, 5000);
     // Reload data after a delay to pick up fresh cache
