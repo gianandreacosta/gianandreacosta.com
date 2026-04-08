@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T08:30:05.516470Z",
+  "generated_at": "2026-04-08T08:40:05.112518Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -124,9 +124,9 @@
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20h",
+      "next": "n/a",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "dashboard-data-update",
@@ -142,18 +142,18 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20h",
+      "next": "n/a",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "rassegna-email-dashboard",
       "schedule": "15 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 20h",
+      "next": "n/a",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
-      "enabled": true
+      "enabled": false
     }
   ],
   "summaries": [
