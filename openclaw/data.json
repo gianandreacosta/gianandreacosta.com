@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-08T09:27:06.275389Z",
+  "generated_at": "2026-04-08T09:30:06.551696Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
     "latest_ver": "2026.4.8",
     "update_available": true,
-    "gateway_running": true,
+    "gateway_running": false,
     "gateway_port": 18789
   },
   "telegram": {
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 0,
+  "rate_limits_today": 35,
   "cron_jobs": [
     {
       "name": "memory-review",
