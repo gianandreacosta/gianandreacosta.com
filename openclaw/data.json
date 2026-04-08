@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T21:50:05.098246Z",
+  "generated_at": "2026-04-08T22:00:05.898752Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 317,
+  "rate_limits_today": 335,
   "cron_jobs": [
     {
       "name": "memory-review",
