@@ -66,6 +66,42 @@
     .btn-refresh:hover { background: #3f3f46; color: #e4e4e7; }
     .btn-refresh:active { transform: scale(0.95); }
 
+    /* Top nav */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #a1a1aa;
+      background: #18181b;
+      border: 1px solid #27272a;
+      transition: all 0.15s;
+    }
+    .nav-btn:hover { background: #27272a; color: #e4e4e7; }
+    .nav-btn-accent {
+      background: #1e1b4b;
+      border-color: #312e81;
+      color: #a5b4fc;
+    }
+    .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
+
+    .meta-date {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #a1a1aa;
+      letter-spacing: -0.01em;
+    }
+
     /* Cards */
     .card {
       background: #18181b;
@@ -243,15 +279,20 @@
 </head>
 <body>
   <div class="container">
+    <nav class="top-nav">
+      <a href="/" class="nav-btn">🏠 Home</a>
+      <a href="analisi.html" class="nav-btn nav-btn-accent">🧠 Analisi AI →</a>
+    </nav>
+
     <div class="header">
-      <a href="analisi.html" class="back-link">← Analisi AI</a>
       <h1>📊 Dashboard Rassegna Stampa</h1>
-      <p class="subtitle">Monitoraggio automatico fonti giornalistiche &nbsp;·&nbsp; <a href="/" style="color:#52525b;text-decoration:none;font-size:0.8rem;">🏠 Home</a></p>
+      <p class="subtitle">Monitoraggio automatico fonti giornalistiche</p>
       <div class="meta-bar">
-        <span class="timestamp" id="generated-at">Caricamento...</span>
+        <div class="meta-date" id="generated-at">Caricamento...</div>
         <button class="btn-refresh" id="btn-refresh" onclick="loadData()">🔄 Aggiorna</button>
       </div>
     </div>
+</div>
 
     <div id="content">
       <div class="loading">Caricamento dati...</div>

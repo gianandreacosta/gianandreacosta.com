@@ -41,6 +41,56 @@
     }
     .header .back-link:hover { color: #a1a1aa; }
 
+    /* Top nav */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #a1a1aa;
+      background: #18181b;
+      border: 1px solid #27272a;
+      transition: all 0.15s;
+    }
+    .nav-btn:hover { background: #27272a; color: #e4e4e7; }
+    .nav-btn-accent {
+      background: #1e1b4b;
+      border-color: #312e81;
+      color: #a5b4fc;
+    }
+    .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
+
+    /* Collapsible archive */
+    .archive-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+    .archive-toggle:hover .card-title { color: #71717a; }
+    .toggle-icon {
+      font-size: 0.75rem;
+      color: #52525b;
+      transition: transform 0.2s;
+    }
+    .toggle-icon.open { transform: rotate(90deg); }
+    .archive-body {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .archive-body.open { display: block; }
+
     /* Cards */
     .card {
       background: #18181b;
@@ -102,6 +152,18 @@
     .status-meta {
       font-size: 0.75rem;
       color: #71717a;
+    }
+    .status-date {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #a1a1aa;
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+    .status-model {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #818cf8;
     }
     .cmd-hint {
       background: #111113;
@@ -286,12 +348,16 @@
 </head>
 <body>
   <div class="container">
+    <nav class="top-nav">
+      <a href="/" class="nav-btn">🏠 Home</a>
+      <a href="index.html" class="nav-btn nav-btn-accent">📊 Raccolta →</a>
+    </nav>
+
     <div class="header">
-      <a href="/" class="back-link">← Home</a>
-      <span style="float:right;margin-top:-1.4rem;"><a href="index.html" style="color:#52525b;font-size:0.75rem;text-decoration:none;">📊 Statistiche</a></span>
       <h1>🧠 Analisi AI Rassegna</h1>
       <p class="subtitle">Analisi editoriale automatica per categoria</p>
     </div>
+</div>
 
     <div id="status-section">
       <div class="loading">Caricamento analisi...</div>
@@ -518,6 +584,15 @@
       renderAnalysis(allData.analyses[idx]);
       renderArchive(allData.analyses, idx);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleArchive() {
+      const body = document.getElementById(archive-body);
+      const icon = document.getElementById(archive-icon);
+      if (body && icon) {
+        body.classList.toggle(open);
+        icon.classList.toggle(open);
+      }
     }
 
     loadData();
