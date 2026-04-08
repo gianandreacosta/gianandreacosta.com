@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T23:50:04.730053Z",
+  "generated_at": "2026-04-08T00:00:08.321442Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 113,
+  "rate_limits_today": 0,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -142,7 +142,7 @@
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 5h",
+      "next": "in 4h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     },
@@ -556,78 +556,16 @@
           "conversations": ""
         }
       ]
-    },
-    {
-      "date": "2026-04-01",
-      "entry_count": 9,
-      "entries": [
-        {
-          "time": "06:05 UTC",
-          "timestamp": "2026-04-01T06:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (04:05\u201306:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "08:05 UTC",
-          "timestamp": "2026-04-01T08:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (06:05\u201308:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-01T10:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (08:05\u201310:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "12:05 UTC",
-          "timestamp": "2026-04-01T12:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (10:05\u201312:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "14:05 UTC",
-          "timestamp": "2026-04-01T14:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (12:05\u201314:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "16:05 UTC",
-          "timestamp": "2026-04-01T16:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (14:05\u201316:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "18:05 UTC",
-          "timestamp": "2026-04-01T18:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (16:05\u201318:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "20:05 UTC",
-          "timestamp": "2026-04-01T20:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (18:05\u201320:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        },
-        {
-          "time": "22:05 UTC",
-          "timestamp": "2026-04-01T22:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (20:05\u201322:05 UTC) | Audit | \u2705 Nessuna sessione attiva | sessions_list (solo cron in esecuzione) |",
-          "conversations": ""
-        }
-      ]
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260408-0200.tar.gz",
+      "date": "2026-04-08T02:00:00Z",
+      "size": "9.8M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260408-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260407-0200.tar.gz",
       "date": "2026-04-07T02:00:00Z",
@@ -827,7 +765,7 @@
   ],
   "rassegna": {
     "articles_total": 7609,
-    "articles_today": 585,
+    "articles_today": 0,
     "articles_new_last_run": 585,
     "last_run": "2026-04-07 04:45:08.858729+00:00",
     "last_run_found": 3603
