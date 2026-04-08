@@ -3,599 +3,275 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🧠 Analisi AI Rassegna</title>
+  <title>&#x1f9e0; Analisi AI Rassegna</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #e4e4e7;
-      min-height: 100vh;
-      padding: 1.5rem 1rem 3rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0a0a0a; color: #e4e4e7;
+      min-height: 100vh; padding: 1.5rem 1rem 3rem;
     }
     .container { max-width: 720px; margin: 0 auto; }
 
-    /* Header */
-    .header {
-      text-align: center;
-      margin-bottom: 2rem;
-      padding-top: 0.5rem;
-    }
-    .header h1 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-    .header .subtitle {
-      color: #71717a;
-      font-size: 0.85rem;
-      margin-top: 0.3rem;
-    }
-    .header .back-link {
-      display: inline-block;
-      margin-bottom: 0.75rem;
-      color: #71717a;
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
-    .header .back-link:hover { color: #a1a1aa; }
-
-    /* Top nav */
-    .top-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
+    /* Nav */
+    .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
     .nav-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      color: #a1a1aa;
-      background: #18181b;
-      border: 1px solid #27272a;
-      transition: all 0.15s;
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.5rem 1rem; border-radius: 10px; font-size: 0.82rem; font-weight: 600;
+      text-decoration: none; color: #a1a1aa; background: #18181b; border: 1px solid #27272a; transition: all 0.15s;
     }
     .nav-btn:hover { background: #27272a; color: #e4e4e7; }
-    .nav-btn-accent {
-      background: #1e1b4b;
-      border-color: #312e81;
-      color: #a5b4fc;
-    }
+    .nav-btn-accent { background: #1e1b4b; border-color: #312e81; color: #a5b4fc; }
     .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
 
-    /* Collapsible archive */
-    .archive-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      user-select: none;
-    }
-    .archive-toggle:hover .card-title { color: #71717a; }
-    .toggle-icon {
-      font-size: 0.75rem;
-      color: #52525b;
-      transition: transform 0.2s;
-    }
-    .toggle-icon.open { transform: rotate(90deg); }
-    .archive-body {
-      display: none;
-      margin-top: 0.75rem;
-    }
-    .archive-body.open { display: block; }
+    /* Header */
+    .header { text-align: center; margin-bottom: 1.5rem; }
+    .header h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: #fff; }
+    .header .subtitle { color: #71717a; font-size: 0.85rem; margin-top: 0.3rem; }
 
     /* Cards */
-    .card {
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 14px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    .card-title {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #52525b;
-      margin-bottom: 0.75rem;
-    }
+    .card { background: #18181b; border: 1px solid #27272a; border-radius: 14px; padding: 1.25rem; margin-bottom: 1rem; }
+    .card-title { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin-bottom: 0.75rem; }
 
-    /* Status section */
-    .status-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem;
-      margin-bottom: 1rem;
+    /* Card meta row */
+    .card-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #27272a; }
+    .card-meta-left { display: flex; flex-direction: column; gap: 0.2rem; }
+    .card-date { font-size: 1rem; font-weight: 600; color: #e4e4e7; }
+    .card-model { font-size: 0.8rem; font-weight: 500; color: #818cf8; }
+    .btn-refresh {
+      background: #27272a; border: 1px solid #3f3f46; color: #a1a1aa;
+      padding: 0.35rem 0.9rem; border-radius: 8px; font-size: 0.75rem; cursor: pointer; transition: all 0.15s;
     }
+    .btn-refresh:hover { background: #3f3f46; color: #e4e4e7; }
+
+    /* Status grid */
+    .status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; text-align: center; }
     .stat-box { text-align: center; }
-    .stat-value {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.7rem;
-      color: #71717a;
-      margin-top: 0.15rem;
-    }
+    .stat-value { font-size: 1.5rem; font-weight: 700; color: #fff; line-height: 1; }
+    .stat-label { font-size: 0.7rem; color: #71717a; margin-top: 0.15rem; }
     .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.25rem 0.65rem;
-      border-radius: 20px;
-      font-size: 0.72rem;
-      font-weight: 600;
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.25rem 0.65rem; border-radius: 20px; font-size: 0.72rem; font-weight: 600;
     }
-    .badge-ok    { background: #14532d; color: #4ade80; }
+    .badge-ok { background: #14532d; color: #4ade80; }
     .badge-error { background: #450a0a; color: #f87171; }
     .badge-partial { background: #431407; color: #fb923c; }
-    .status-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.75rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid #27272a;
-    }
-    .status-meta {
-      font-size: 0.75rem;
-      color: #71717a;
-    }
-    .status-date {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #a1a1aa;
-      display: block;
-      margin-bottom: 0.1rem;
-    }
-    .status-model {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #818cf8;
-    }
-    .cmd-hint {
-      background: #111113;
-      border: 1px solid #27272a;
-      border-radius: 8px;
-      padding: 0.5rem 0.85rem;
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      font-size: 0.72rem;
-      color: #a1a1aa;
-      margin-top: 0.75rem;
-    }
 
     /* Category sections */
-    .cat-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.75rem;
-    }
-    .cat-label {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .cat-sommario {
-      font-size: 0.82rem;
-      color: #71717a;
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
+    .cat-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .cat-label { font-size: 1rem; font-weight: 700; color: #fff; }
+    .cat-sommario { font-size: 0.82rem; color: #71717a; margin-bottom: 1rem; line-height: 1.5; }
 
     /* News items */
-    .news-item {
-      border-top: 1px solid #27272a;
-      padding: 0.85rem 0;
-    }
+    .news-item { border-top: 1px solid #27272a; padding: 0.85rem 0; }
     .news-item:first-of-type { border-top: none; }
-    .news-title-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.4rem;
-    }
-    .news-title {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #e4e4e7;
-      text-decoration: none;
-      line-height: 1.4;
-    }
+    .news-title-row { display: flex; align-items: flex-start; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+    .news-title { font-size: 0.9rem; font-weight: 600; color: #e4e4e7; text-decoration: none; line-height: 1.4; }
     .news-title:hover { color: #fff; text-decoration: underline; }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.1rem 0.45rem;
-      border-radius: 10px;
-      font-size: 0.62rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .badge-fonte  { background: #1e1e3f; color: #818cf8; }
+    .badge { display: inline-flex; align-items: center; padding: 0.1rem 0.45rem; border-radius: 10px; font-size: 0.62rem; font-weight: 600; white-space: nowrap; }
+    .badge-fonte { background: #1e1e3f; color: #818cf8; }
     .badge-incrocio { background: #431407; color: #f59e0b; }
-    .badge-alta   { background: #0c1a0e; color: #4ade80; }
-    .badge-media  { background: #1c1300; color: #fbbf24; }
-    .news-riassunto {
-      font-size: 0.8rem;
-      color: #71717a;
-      line-height: 1.55;
-      margin-bottom: 0.35rem;
-    }
+    .badge-alta { background: #0c1a0e; color: #4ade80; }
+    .badge-media { background: #1c1300; color: #fbbf24; }
+    .news-riassunto { font-size: 0.8rem; color: #71717a; line-height: 1.55; margin-bottom: 0.35rem; }
 
-    /* Differenze narrative (collapsible) */
-    .diff-toggle {
-      font-size: 0.72rem;
-      color: #f59e0b;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0;
-      margin-bottom: 0.4rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
+    /* Differenze narrative */
+    .diff-toggle { font-size: 0.72rem; color: #f59e0b; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 0.4rem; display: inline-flex; align-items: center; gap: 0.3rem; }
     .diff-toggle:hover { color: #fbbf24; }
-    .diff-content {
-      font-size: 0.78rem;
-      color: #a1a1aa;
-      background: #111113;
-      border-left: 2px solid #f59e0b;
-      padding: 0.5rem 0.75rem;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 0.35rem;
-      display: none;
-      line-height: 1.5;
-    }
+    .diff-content { font-size: 0.78rem; color: #a1a1aa; background: #111113; border-left: 2px solid #f59e0b; padding: 0.5rem 0.75rem; border-radius: 0 6px 6px 0; margin-bottom: 0.35rem; display: none; line-height: 1.5; }
     .diff-content.open { display: block; }
 
     /* Trend pills */
-    .trend-section {
-      margin-top: 0.75rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid #27272a;
-    }
-    .trend-label {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #52525b;
-      margin-bottom: 0.4rem;
-    }
+    .trend-section { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #27272a; }
+    .trend-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: #52525b; margin-bottom: 0.4rem; }
     .trend-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-    .trend-pill {
-      background: #1e1e21;
-      border: 1px solid #3f3f46;
-      border-radius: 20px;
-      padding: 0.2rem 0.65rem;
-      font-size: 0.72rem;
-      color: #a1a1aa;
-    }
+    .trend-pill { background: #1e1e21; border: 1px solid #3f3f46; border-radius: 20px; padding: 0.2rem 0.65rem; font-size: 0.72rem; color: #a1a1aa; }
 
-    /* Da tenere d'occhio */
-    .watch-box {
-      background: #1a1208;
-      border: 1px solid #3d2f0c;
-      border-radius: 10px;
-      padding: 0.65rem 0.9rem;
-      margin-top: 0.75rem;
-      font-size: 0.8rem;
-      color: #d97706;
-      line-height: 1.5;
-    }
-    .watch-box strong {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      display: block;
-      margin-bottom: 0.2rem;
-      color: #f59e0b;
-    }
+    /* Watch box */
+    .watch-box { background: #1a1208; border: 1px solid #3d2f0c; border-radius: 10px; padding: 0.65rem 0.9rem; margin-top: 0.75rem; font-size: 0.8rem; color: #d97706; line-height: 1.5; }
+    .watch-box strong { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.2rem; color: #f59e0b; }
 
     /* Archive table */
-    .arch-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.8rem;
-    }
-    .arch-table th {
-      text-align: left;
-      color: #52525b;
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 0.5rem 0.4rem;
-      border-bottom: 1px solid #27272a;
-      font-weight: 600;
-    }
+    .arch-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    .arch-table th { text-align: left; color: #52525b; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.5rem 0.4rem; border-bottom: 1px solid #27272a; font-weight: 600; }
     .arch-table th:nth-child(n+2) { text-align: right; }
-    .arch-table td {
-      padding: 0.45rem 0.4rem;
-      border-bottom: 1px solid #1e1e21;
-      color: #a1a1aa;
-    }
+    .arch-table td { padding: 0.45rem 0.4rem; border-bottom: 1px solid #1e1e21; color: #a1a1aa; }
     .arch-table td:nth-child(n+2) { text-align: right; }
     .arch-table tr { cursor: pointer; }
     .arch-table tr:hover td { background: #1c1c1f; }
     .arch-table tr.active td { background: #1e2030; color: #e4e4e7; }
 
+    /* Collapsible sections */
+    .section-toggle { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+    .section-toggle:hover .card-title { color: #71717a; }
+    .toggle-icon { font-size: 0.75rem; color: #52525b; transition: transform 0.2s; }
+    .toggle-icon.open { transform: rotate(90deg); }
+    .section-body { display: none; margin-top: 0.75rem; }
+    .section-body.open { display: block; }
+
     /* Misc */
     .loading { text-align: center; color: #52525b; padding: 3rem 0; }
     .error-msg { text-align: center; color: #dc2626; padding: 2rem 0; }
     .empty-cat { font-size: 0.8rem; color: #52525b; padding: 0.5rem 0; }
-    .separator { height: 1px; background: #1e1e21; margin: 0.5rem 0; }
 
-    /* Responsive */
     @media (max-width: 500px) {
-      .status-grid { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+      .status-grid { gap: 0.5rem; }
       .stat-value { font-size: 1.2rem; }
+      .card-date { font-size: 0.88rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <nav class="top-nav">
-      <a href="/" class="nav-btn">🏠 Home</a>
-      <a href="index.html" class="nav-btn nav-btn-accent">📊 Raccolta →</a>
+      <a href="/" class="nav-btn">&#x1f3e0; Home</a>
+      <a href="index.html" class="nav-btn nav-btn-accent">&#x1f4ca; Raccolta &#x2192;</a>
     </nav>
-
     <div class="header">
-      <h1>🧠 Analisi AI Rassegna</h1>
+      <h1>&#x1f9e0; Analisi AI Rassegna</h1>
       <p class="subtitle">Analisi editoriale automatica per categoria</p>
     </div>
-</div>
-
-    <div id="status-section">
-      <div class="loading">Caricamento analisi...</div>
-    </div>
-
+    <div id="status-section"><div class="loading">Caricamento analisi...</div></div>
     <div id="analysis-section"></div>
     <div id="archive-section"></div>
   </div>
 
-  <script>
-    const CAT_LABELS = {
-      geopolitica:     '🌍 Geopolitica',
-      cronaca_ticino:  '🏔️ Cronaca Ticino',
-      economia:        '💰 Economia',
-      cultura:         '🎭 Cultura',
-      cronaca_svizzera:'🇨🇭 Cronaca Svizzera',
-      ai_openclaw:     '🤖 AI & Tech',
-    };
+<script>
+var CAT_LABELS={geopolitica:"\u{1f30d} Geopolitica",cronaca_ticino:"\u{1f3d4}\ufe0f Cronaca Ticino",economia:"\u{1f4b0} Economia",cultura:"\u{1f3ad} Cultura",cronaca_svizzera:"\u{1f1e8}\u{1f1ed} Cronaca Svizzera",ai_openclaw:"\u{1f916} AI & Tech"};
+function catLabel(c){return CAT_LABELS[c]||c}
+function formatTime(ts){
+  if(!ts)return"\u2014";
+  try{var d=new Date(ts.replace(" ","T").replace(/\+00:00$/,"Z"));return d.toLocaleString("it-CH",{timeZone:"Europe/Zurich",dateStyle:"medium",timeStyle:"short"})}catch(e){return ts}
+}
+function escHtml(s){if(!s)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function statusBadge(st){
+  var cls=st==="ok"?"badge-ok":st==="partial"?"badge-partial":"badge-error";
+  var icon=st==="ok"?"\u2705":st==="partial"?"\u26a0\ufe0f":"\u274c";
+  return "<span class=\"status-badge "+cls+"\">"+icon+" "+escHtml(st)+"</span>";
+}
+function toggleSection(id){
+  var b=document.getElementById(id+"-body"),i=document.getElementById(id+"-icon");
+  if(b&&i){b.classList.toggle("open");i.classList.toggle("open")}
+}
 
-    function catLabel(cat) { return CAT_LABELS[cat] || cat; }
+var allData=null,currentIdx=0;
 
-    function formatTime(ts) {
-      if (!ts) return '—';
-      try {
-        const d = new Date(ts.replace(' ', 'T').replace(/\+00:00$/, 'Z'));
-        return d.toLocaleString('it-CH', { timeZone: 'Europe/Zurich', dateStyle: 'medium', timeStyle: 'short' });
-      } catch { return ts; }
-    }
+async function loadData(){
+  try{
+    var r=await fetch("../analisi.json?t="+Date.now());
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    allData=await r.json();
+    if(!allData.analyses||allData.analyses.length===0)throw new Error("Nessuna analisi nel file");
+    renderStatus(allData.analyses[0]);
+    renderAnalysis(allData.analyses[0]);
+    renderArchive(allData.analyses,0);
+  }catch(e){
+    document.getElementById("status-section").innerHTML="<div class=\"card\"><div class=\"card-title\">Stato</div><p class=\"empty-cat\">\u274c Errore: "+escHtml(e.message)+"</p></div>";
+  }
+}
 
-    function escHtml(s) {
-      if (!s) return '';
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
+function renderStatus(entry){
+  var h="<div class=\"card\"><div class=\"card-title\">Ultima Analisi</div>";
+  h+="<div class=\"card-meta\">";
+  h+="<div class=\"card-meta-left\">";
+  h+="<span class=\"card-date\">\u{1f4c5} "+formatTime(entry.analyzed_at)+"</span>";
+  h+="<span class=\"card-model\">\u{1f916} "+escHtml(entry.model_used||"\u2014")+"</span>";
+  h+="</div>";
+  h+="<div style=\"text-align:right\">";
+  h+=statusBadge(entry.status||"ok");
+  h+="<div style=\"font-size:0.72rem;color:#71717a;margin-top:0.2rem\">Run #"+entry.run_id+"</div>";
+  h+="</div></div>";
+  h+="<div class=\"status-grid\">";
+  h+="<div class=\"stat-box\"><div class=\"stat-value\">"+(entry.articles_analyzed||0)+"</div><div class=\"stat-label\">Analizzati</div></div>";
+  h+="<div class=\"stat-box\"><div class=\"stat-value\">"+(entry.articles_selected||0)+"</div><div class=\"stat-label\">Selezionati</div></div>";
+  h+="<div class=\"stat-box\"><div class=\"stat-value\">"+(entry.data?entry.data.length:0)+"</div><div class=\"stat-label\">Categorie</div></div>";
+  h+="</div></div>";
+  document.getElementById("status-section").innerHTML=h;
+}
 
-    function statusBadge(status) {
-      const cls = status === 'ok' ? 'badge-ok' : status === 'partial' ? 'badge-partial' : 'badge-error';
-      const icon = status === 'ok' ? '✅' : status === 'partial' ? '⚠️' : '❌';
-      return `<span class="status-badge ${cls}">${icon} ${escHtml(status)}</span>`;
-    }
-
-    let allData = null;
-    let currentIdx = 0;
-
-    async function loadData() {
-      try {
-        const resp = await fetch('../analisi.json?t=' + Date.now());
-        if (!resp.ok) throw new Error('HTTP ' + resp.status);
-        allData = await resp.json();
-
-        if (!allData.analyses || allData.analyses.length === 0) {
-          throw new Error('Nessuna analisi nel file');
-        }
-
-        renderStatus(allData.analyses[0]);
-        renderAnalysis(allData.analyses[0]);
-        renderArchive(allData.analyses, 0);
-
-      } catch (e) {
-        const isNotFound = e.message.includes('404') || e.message.includes('Failed to fetch');
-        document.getElementById('status-section').innerHTML =
-          `<div class="card">
-            <div class="card-title">Stato</div>
-            <p class="empty-cat">${isNotFound ? '📭 Nessuna analisi disponibile.' : '❌ Errore: ' + escHtml(e.message)}</p>
-            <div class="cmd-hint">Per avviare: <code>python3 tools/rassegna_analisi.py</code></div>
-          </div>`;
+function renderAnalysis(entry){
+  if(!entry.data||entry.data.length===0){
+    document.getElementById("analysis-section").innerHTML="<div class=\"card\"><p class=\"empty-cat\">Nessun dato disponibile.</p></div>";
+    return;
+  }
+  var h="";
+  entry.data.forEach(function(catData){
+    var cat=catData.categoria||"";
+    var notizie=catData.notizie||[];
+    var trend=catData.trend||[];
+    h+="<div class=\"card\">";
+    h+="<div class=\"cat-header\"><span class=\"cat-label\">"+catLabel(cat)+"</span></div>";
+    if(catData.sommario)h+="<p class=\"cat-sommario\">"+escHtml(catData.sommario)+"</p>";
+    if(notizie.length===0){h+="<p class=\"empty-cat\">Nessuna notizia selezionata.</p>"}
+    else{notizie.forEach(function(news){
+      h+="<div class=\"news-item\"><div class=\"news-title-row\">";
+      if(news.link){h+="<a class=\"news-title\" href=\""+escHtml(news.link)+"\" target=\"_blank\" rel=\"noopener\">"+escHtml(news.titolo)+"</a>"}
+      else{h+="<span class=\"news-title\">"+escHtml(news.titolo)+"</span>"}
+      if(news.fonte)h+=" <span class=\"badge badge-fonte\">"+escHtml(news.fonte)+"</span>";
+      if(news.rilevanza==="alta")h+=" <span class=\"badge badge-alta\">\u25cf alta</span>";
+      else if(news.rilevanza==="media")h+=" <span class=\"badge badge-media\">\u25cf media</span>";
+      if(news.incrocio&&news.fonti_incrocio&&news.fonti_incrocio.length>0)h+=" <span class=\"badge badge-incrocio\">\u{1f501} "+news.fonti_incrocio.length+" fonti</span>";
+      h+="</div>";
+      if(news.riassunto)h+="<p class=\"news-riassunto\">"+escHtml(news.riassunto)+"</p>";
+      if(news.incrocio&&news.differenze_narrative){
+        var uid="diff_"+Math.random().toString(36).slice(2);
+        h+="<button class=\"diff-toggle\" onclick=\"toggleDiff(this,&apos;"+uid+"&apos;)\">\u25b6 Differenze narrative</button>";
+        h+="<div class=\"diff-content\" id=\""+uid+"\">"+escHtml(news.differenze_narrative)+"</div>";
       }
+      h+="</div>";
+    })}
+    if(trend.length>0){
+      h+="<div class=\"trend-section\"><div class=\"trend-label\">\u{1f4c8} Trend</div><div class=\"trend-pills\">";
+      trend.forEach(function(t){h+="<span class=\"trend-pill\">"+escHtml(t)+"</span>"});
+      h+="</div></div>";
     }
-
-    function renderStatus(entry) {
-      document.getElementById('status-section').innerHTML = `
-        <div class="card">
-          <div class="card-title">Stato Ultima Analisi</div>
-          <div class="status-grid">
-            <div class="stat-box">
-              <div class="stat-value">${entry.articles_analyzed || 0}</div>
-              <div class="stat-label">Articoli analizzati</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-value">${entry.articles_selected || 0}</div>
-              <div class="stat-label">Notizie selezionate</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-value">${entry.data ? entry.data.length : 0}</div>
-              <div class="stat-label">Categorie</div>
-            </div>
-          </div>
-          <div class="status-row">
-            <span class="status-meta">🕐 ${formatTime(entry.analyzed_at)}</span>
-            ${statusBadge(entry.status || 'ok')}
-            <span class="status-meta">Run #${entry.run_id} · ${escHtml(entry.model_used || '—')}</span>
-          </div>
-          <div class="cmd-hint">Per aggiornare: <code>python3 tools/rassegna_analisi.py</code></div>
-        </div>`;
+    if(catData.da_tenere_d_occhio){
+      h+="<div class=\"watch-box\"><strong>\u{1f441} Da tenere d&apos;occhio</strong>"+escHtml(catData.da_tenere_d_occhio)+"</div>";
     }
+    h+="</div>";
+  });
+  document.getElementById("analysis-section").innerHTML=h;
+}
 
-    function renderAnalysis(entry) {
-      if (!entry.data || entry.data.length === 0) {
-        document.getElementById('analysis-section').innerHTML =
-          `<div class="card"><p class="empty-cat">Nessun dato di analisi disponibile per questa run.</p></div>`;
-        return;
-      }
+function toggleDiff(btn,id){
+  var el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle("open");
+  btn.textContent=el.classList.contains("open")?"\u25bc Differenze narrative":"\u25b6 Differenze narrative";
+}
 
-      let html = '';
-      for (const catData of entry.data) {
-        const cat = catData.categoria || '';
-        const notizie = catData.notizie || [];
-        const trend = catData.trend || [];
+function renderArchive(analyses,activeIdx){
+  if(!analyses||analyses.length<=1){document.getElementById("archive-section").innerHTML="";return}
+  var h="<div class=\"card\">";
+  h+="<div class=\"section-toggle\" onclick=\"toggleSection(&apos;archive&apos;)\">";
+  h+="<div class=\"card-title\" style=\"margin-bottom:0\">\u25b6 Archivio Analisi ("+analyses.length+")</div>";
+  h+="<span class=\"toggle-icon\" id=\"archive-icon\">\u25b6</span></div>";
+  h+="<div class=\"section-body\" id=\"archive-body\">";
+  h+="<div style=\"overflow-x:auto\"><table class=\"arch-table\">";
+  h+="<thead><tr><th>Data</th><th>Run</th><th>Analizzati</th><th>Selezionati</th><th>Status</th></tr></thead><tbody>";
+  analyses.forEach(function(entry,idx){
+    var cls=idx===activeIdx?"active":"";
+    h+="<tr class=\""+cls+"\" onclick=\"selectAnalysis("+idx+")\">";
+    h+="<td>"+formatTime(entry.analyzed_at)+"</td>";
+    h+="<td>#"+entry.run_id+"</td>";
+    h+="<td>"+(entry.articles_analyzed||0)+"</td>";
+    h+="<td>"+(entry.articles_selected||0)+"</td>";
+    h+="<td>"+statusBadge(entry.status||"ok")+"</td></tr>";
+  });
+  h+="</tbody></table></div></div></div>";
+  document.getElementById("archive-section").innerHTML=h;
+}
 
-        html += `<div class="card">`;
-        html += `<div class="cat-header"><span class="cat-label">${catLabel(cat)}</span></div>`;
+function selectAnalysis(idx){
+  if(!allData||!allData.analyses)return;
+  currentIdx=idx;
+  renderStatus(allData.analyses[idx]);
+  renderAnalysis(allData.analyses[idx]);
+  renderArchive(allData.analyses,idx);
+  window.scrollTo({top:0,behavior:"smooth"});
+}
 
-        if (catData.sommario) {
-          html += `<p class="cat-sommario">${escHtml(catData.sommario)}</p>`;
-        }
-
-        if (notizie.length === 0) {
-          html += `<p class="empty-cat">Nessuna notizia selezionata per questa categoria.</p>`;
-        } else {
-          for (const news of notizie) {
-            html += `<div class="news-item">`;
-            html += `<div class="news-title-row">`;
-            if (news.link) {
-              html += `<a class="news-title" href="${escHtml(news.link)}" target="_blank" rel="noopener">${escHtml(news.titolo)}</a>`;
-            } else {
-              html += `<span class="news-title">${escHtml(news.titolo)}</span>`;
-            }
-            if (news.fonte) {
-              html += ` <span class="badge badge-fonte">${escHtml(news.fonte)}</span>`;
-            }
-            if (news.rilevanza === 'alta') {
-              html += ` <span class="badge badge-alta">● alta</span>`;
-            } else if (news.rilevanza === 'media') {
-              html += ` <span class="badge badge-media">● media</span>`;
-            }
-            if (news.incrocio && news.fonti_incrocio && news.fonti_incrocio.length > 0) {
-              html += ` <span class="badge badge-incrocio">🔁 ${news.fonti_incrocio.length} fonti</span>`;
-            }
-            html += `</div>`;
-
-            if (news.riassunto) {
-              html += `<p class="news-riassunto">${escHtml(news.riassunto)}</p>`;
-            }
-
-            if (news.incrocio && news.differenze_narrative) {
-              const uid = 'diff_' + Math.random().toString(36).slice(2);
-              html += `<button class="diff-toggle" onclick="toggleDiff('${uid}')">▶ Differenze narrative</button>`;
-              html += `<div class="diff-content" id="${uid}">${escHtml(news.differenze_narrative)}</div>`;
-            }
-
-            html += `</div>`;
-          }
-        }
-
-        // Trend
-        if (trend.length > 0) {
-          html += `<div class="trend-section">`;
-          html += `<div class="trend-label">📈 Trend</div>`;
-          html += `<div class="trend-pills">`;
-          for (const t of trend) {
-            html += `<span class="trend-pill">${escHtml(t)}</span>`;
-          }
-          html += `</div></div>`;
-        }
-
-        // Da tenere d'occhio
-        if (catData.da_tenere_d_occhio) {
-          html += `<div class="watch-box"><strong>👁 Da tenere d'occhio</strong>${escHtml(catData.da_tenere_d_occhio)}</div>`;
-        }
-
-        html += `</div>`;
-      }
-
-      document.getElementById('analysis-section').innerHTML = html;
-    }
-
-    function toggleDiff(id) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const btn = el.previousElementSibling;
-      el.classList.toggle('open');
-      if (btn) btn.textContent = el.classList.contains('open') ? '▼ Differenze narrative' : '▶ Differenze narrative';
-    }
-
-    function renderArchive(analyses, activeIdx) {
-      if (!analyses || analyses.length <= 1) {
-        document.getElementById('archive-section').innerHTML = '';
-        return;
-      }
-
-      let html = `<div class="card">`;
-      html += `<div class="card-title">Archivio Analisi</div>`;
-      html += `<div style="overflow-x:auto;"><table class="arch-table">`;
-      html += `<thead><tr>
-        <th>Data</th>
-        <th>Run ID</th>
-        <th>Analizzati</th>
-        <th>Selezionati</th>
-        <th>Status</th>
-      </tr></thead><tbody>`;
-
-      analyses.forEach((entry, idx) => {
-        const isActive = idx === activeIdx;
-        html += `<tr class="${isActive ? 'active' : ''}" onclick="selectAnalysis(${idx})">
-          <td>${formatTime(entry.analyzed_at)}</td>
-          <td>#${entry.run_id}</td>
-          <td>${entry.articles_analyzed || 0}</td>
-          <td>${entry.articles_selected || 0}</td>
-          <td>${statusBadge(entry.status || 'ok')}</td>
-        </tr>`;
-      });
-
-      html += `</tbody></table></div></div>`;
-      document.getElementById('archive-section').innerHTML = html;
-    }
-
-    function selectAnalysis(idx) {
-      if (!allData || !allData.analyses) return;
-      currentIdx = idx;
-      renderStatus(allData.analyses[idx]);
-      renderAnalysis(allData.analyses[idx]);
-      renderArchive(allData.analyses, idx);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function toggleArchive() {
-      const body = document.getElementById(archive-body);
-      const icon = document.getElementById(archive-icon);
-      if (body && icon) {
-        body.classList.toggle(open);
-        icon.classList.toggle(open);
-      }
-    }
-
-    loadData();
-  </script>
+loadData();
+</script>
 </body>
 </html>

@@ -7,202 +7,57 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #e4e4e7;
-      min-height: 100vh;
-      padding: 1.5rem 1rem 3rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0a0a0a; color: #e4e4e7;
+      min-height: 100vh; padding: 1.5rem 1rem 3rem;
     }
     .container { max-width: 720px; margin: 0 auto; }
 
-    /* Header */
-    .header {
-      text-align: center;
-      margin-bottom: 2rem;
-      padding-top: 0.5rem;
+    /* Nav */
+    .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
+    .nav-btn {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.5rem 1rem; border-radius: 10px; font-size: 0.82rem; font-weight: 600;
+      text-decoration: none; color: #a1a1aa; background: #18181b; border: 1px solid #27272a; transition: all 0.15s;
     }
-    .header h1 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-    .header .subtitle {
-      color: #71717a;
-      font-size: 0.85rem;
-      margin-top: 0.3rem;
-    }
-    .header .back-link {
-      display: inline-block;
-      margin-bottom: 0.75rem;
-      color: #71717a;
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
-    .header .back-link:hover { color: #a1a1aa; }
+    .nav-btn:hover { background: #27272a; color: #e4e4e7; }
+    .nav-btn-accent { background: #1e1b4b; border-color: #312e81; color: #a5b4fc; }
+    .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
 
-    .meta-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 0.75rem;
-      flex-wrap: wrap;
-    }
-    .meta-bar .timestamp {
-      color: #52525b;
-      font-size: 0.75rem;
-    }
+    /* Header */
+    .header { text-align: center; margin-bottom: 1.5rem; }
+    .header h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: #fff; }
+    .header .subtitle { color: #71717a; font-size: 0.85rem; margin-top: 0.3rem; }
+
+    /* Cards */
+    .card { background: #18181b; border: 1px solid #27272a; border-radius: 14px; padding: 1.25rem; margin-bottom: 1rem; }
+    .card-title { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin-bottom: 0.75rem; }
+
+    /* Card meta row */
+    .card-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #27272a; }
+    .card-date { font-size: 1rem; font-weight: 600; color: #e4e4e7; }
     .btn-refresh {
-      background: #27272a;
-      border: 1px solid #3f3f46;
-      color: #a1a1aa;
-      padding: 0.35rem 0.9rem;
-      border-radius: 8px;
-      font-size: 0.75rem;
-      cursor: pointer;
-      transition: all 0.15s;
+      background: #27272a; border: 1px solid #3f3f46; color: #a1a1aa;
+      padding: 0.35rem 0.9rem; border-radius: 8px; font-size: 0.75rem; cursor: pointer; transition: all 0.15s;
     }
     .btn-refresh:hover { background: #3f3f46; color: #e4e4e7; }
     .btn-refresh:active { transform: scale(0.95); }
 
-    /* Top nav */
-    .top-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1.25rem;
-    }
-    .nav-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      color: #a1a1aa;
-      background: #18181b;
-      border: 1px solid #27272a;
-      transition: all 0.15s;
-    }
-    .nav-btn:hover { background: #27272a; color: #e4e4e7; }
-    .nav-btn-accent {
-      background: #1e1b4b;
-      border-color: #312e81;
-      color: #a5b4fc;
-    }
-    .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
-
-    .meta-date {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #a1a1aa;
-      letter-spacing: -0.01em;
-    }
-
-    /* Cards */
-    .card {
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 14px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    .card-title {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #52525b;
-      margin-bottom: 0.75rem;
-    }
-
     /* Big number */
-    .big-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #fff;
-      line-height: 1;
-    }
-    .big-label {
-      color: #71717a;
-      font-size: 0.8rem;
-      margin-top: 0.25rem;
-    }
+    .big-number { font-size: 2.5rem; font-weight: 800; color: #fff; line-height: 1; }
+    .big-label { color: #71717a; font-size: 0.8rem; margin-top: 0.25rem; }
 
-    /* Run info */
-    .run-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem;
-      text-align: center;
-    }
-    .run-stat-value {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .run-stat-label {
-      font-size: 0.7rem;
-      color: #71717a;
-      margin-top: 0.15rem;
-    }
-    .run-time {
-      color: #52525b;
-      font-size: 0.75rem;
-      margin-top: 0.75rem;
-      text-align: center;
-    }
+    /* Run grid */
+    .run-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; text-align: center; margin-top: 1rem; }
+    .run-stat-value { font-size: 1.5rem; font-weight: 700; color: #fff; }
+    .run-stat-label { font-size: 0.7rem; color: #71717a; margin-top: 0.15rem; }
 
     /* Category bars */
-    .cat-row {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.5rem;
-    }
-    .cat-name {
-      font-size: 0.8rem;
-      color: #a1a1aa;
-      width: 120px;
-      flex-shrink: 0;
-      text-align: right;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .cat-bar-wrap {
-      flex: 1;
-      background: #27272a;
-      border-radius: 6px;
-      height: 22px;
-      overflow: hidden;
-      position: relative;
-    }
-    .cat-bar {
-      height: 100%;
-      border-radius: 6px;
-      transition: width 0.5s ease;
-      min-width: 2px;
-    }
-    .cat-bar-count {
-      position: absolute;
-      right: 8px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.7);
-    }
-    .cat-badge {
-      font-size: 0.65rem;
-      color: #52525b;
-      margin-left: 0.25rem;
-    }
-
-    /* Category colors */
+    .cat-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .cat-name { font-size: 0.8rem; color: #a1a1aa; width: 120px; flex-shrink: 0; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cat-bar-wrap { flex: 1; background: #27272a; border-radius: 6px; height: 22px; overflow: hidden; position: relative; }
+    .cat-bar { height: 100%; border-radius: 6px; transition: width 0.5s ease; min-width: 2px; }
+    .cat-bar-count { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.7); }
     .color-geopolitica { background: linear-gradient(90deg, #dc2626, #ef4444); }
     .color-cronaca_ticino { background: linear-gradient(90deg, #0891b2, #22d3ee); }
     .color-economia { background: linear-gradient(90deg, #16a34a, #4ade80); }
@@ -210,279 +65,172 @@
     .color-cronaca_svizzera { background: linear-gradient(90deg, #d97706, #fbbf24); }
     .color-ai_openclaw { background: linear-gradient(90deg, #2563eb, #60a5fa); }
     .color-default { background: linear-gradient(90deg, #52525b, #71717a); }
+    .new-badge { background: #16a34a; color: #fff; font-size: 0.6rem; padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 700; }
 
-    /* Source table */
-    .source-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.8rem;
-    }
+    /* Tables */
+    .source-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
     .source-table th {
-      text-align: left;
-      color: #52525b;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 0.5rem 0.4rem;
-      border-bottom: 1px solid #27272a;
-      font-weight: 600;
-      cursor: pointer;
-      user-select: none;
-      white-space: nowrap;
+      text-align: left; color: #52525b; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 0.5rem 0.4rem; border-bottom: 1px solid #27272a; font-weight: 600; cursor: pointer; user-select: none; white-space: nowrap;
     }
     .source-table th:hover { color: #a1a1aa; }
-    .source-table th.sort-asc::after  { content: ' ↑'; color: #818cf8; }
-    .source-table th.sort-desc::after { content: ' ↓'; color: #818cf8; }
-    .source-table th:nth-child(3),
-    .source-table th:nth-child(4) { text-align: right; }
-    .source-table td {
-      padding: 0.45rem 0.4rem;
-      border-bottom: 1px solid #1e1e21;
-      color: #a1a1aa;
-    }
-    .source-table td:nth-child(3),
-    .source-table td:nth-child(4) {
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-      color: #e4e4e7;
-    }
+    .source-table th.sort-asc::after  { content: " \2191"; color: #818cf8; }
+    .source-table th.sort-desc::after { content: " \2193"; color: #818cf8; }
+    .source-table th:nth-child(3), .source-table th:nth-child(4) { text-align: right; }
+    .source-table td { padding: 0.45rem 0.4rem; border-bottom: 1px solid #1e1e21; color: #a1a1aa; }
+    .source-table td:nth-child(3), .source-table td:nth-child(4) { text-align: right; font-variant-numeric: tabular-nums; color: #e4e4e7; }
     .source-table tr:hover td { background: #1c1c1f; }
-    .cat-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      margin-right: 4px;
-      vertical-align: middle;
-    }
-    .new-badge {
-      background: #16a34a;
-      color: #fff;
-      font-size: 0.6rem;
-      padding: 0.1rem 0.35rem;
-      border-radius: 4px;
-      font-weight: 700;
-    }
+    .cat-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+
+    /* Collapsible sections */
+    .section-toggle { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+    .section-toggle:hover .card-title { color: #71717a; }
+    .toggle-icon { font-size: 0.75rem; color: #52525b; transition: transform 0.2s; }
+    .toggle-icon.open { transform: rotate(90deg); }
+    .section-body { display: none; margin-top: 0.75rem; }
+    .section-body.open { display: block; }
 
     /* Loading / Error */
     .loading { text-align: center; color: #52525b; padding: 3rem 0; }
     .error { text-align: center; color: #dc2626; padding: 2rem 0; }
 
-    /* Responsive */
     @media (max-width: 500px) {
       .cat-name { width: 85px; font-size: 0.7rem; }
-      .run-grid { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+      .run-grid { gap: 0.5rem; }
       .big-number { font-size: 2rem; }
       .source-table { font-size: 0.72rem; }
+      .card-date { font-size: 0.88rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <nav class="top-nav">
-      <a href="/" class="nav-btn">🏠 Home</a>
-      <a href="analisi.html" class="nav-btn nav-btn-accent">🧠 Analisi AI →</a>
+      <a href="/" class="nav-btn">&#x1f3e0; Home</a>
+      <a href="analisi.html" class="nav-btn nav-btn-accent">&#x1f9e0; Analisi AI &#x2192;</a>
     </nav>
-
     <div class="header">
-      <h1>📊 Dashboard Rassegna Stampa</h1>
+      <h1>&#x1f4ca; Dashboard Rassegna Stampa</h1>
       <p class="subtitle">Monitoraggio automatico fonti giornalistiche</p>
-      <div class="meta-bar">
-        <div class="meta-date" id="generated-at">Caricamento...</div>
-        <button class="btn-refresh" id="btn-refresh" onclick="loadData()">🔄 Aggiorna</button>
-      </div>
     </div>
-</div>
-
-    <div id="content">
-      <div class="loading">Caricamento dati...</div>
-    </div>
+    <div id="content"><div class="loading">Caricamento dati...</div></div>
   </div>
 
-  <script>
-    const CAT_COLORS = {
-      geopolitica: '#dc2626',
-      cronaca_ticino: '#0891b2',
-      economia: '#16a34a',
-      cultura: '#9333ea',
-      cronaca_svizzera: '#d97706',
-      ai_openclaw: '#2563eb',
-    };
+<script>
+const CAT_COLORS = { geopolitica:"#dc2626", cronaca_ticino:"#0891b2", economia:"#16a34a", cultura:"#9333ea", cronaca_svizzera:"#d97706", ai_openclaw:"#2563eb" };
+const CAT_LABELS = { geopolitica:"\u{1f30d} Geopolitica", cronaca_ticino:"\u{1f3d4}\ufe0f Cronaca Ticino", economia:"\u{1f4b0} Economia", cultura:"\u{1f3ad} Cultura", cronaca_svizzera:"\u{1f1e8}\u{1f1ed} Cronaca Svizzera", ai_openclaw:"\u{1f916} AI & Tech" };
+function catColor(c){return CAT_COLORS[c]||"#52525b"}
+function catLabel(c){return CAT_LABELS[c]||c}
+function catClass(c){return CAT_COLORS[c]?"color-"+c:"color-default"}
+function formatTime(ts){
+  if(!ts)return"\u2014";
+  try{const d=new Date(ts.replace(" ","T").replace(/\+00:00$/,"Z"));return d.toLocaleString("it-CH",{timeZone:"Europe/Zurich",dateStyle:"medium",timeStyle:"short"})}catch{return ts}
+}
 
-    const CAT_LABELS = {
-      geopolitica: '🌍 Geopolitica',
-      cronaca_ticino: '🏔️ Cronaca Ticino',
-      economia: '💰 Economia',
-      cultura: '🎭 Cultura',
-      cronaca_svizzera: '🇨🇭 Cronaca Svizzera',
-      ai_openclaw: '🤖 AI & Tech',
-    };
+function toggleSection(id){
+  var b=document.getElementById(id+"-body"),i=document.getElementById(id+"-icon");
+  if(b&&i){b.classList.toggle("open");i.classList.toggle("open")}
+}
 
-    function catColor(cat) { return CAT_COLORS[cat] || '#52525b'; }
-    function catLabel(cat) { return CAT_LABELS[cat] || cat; }
-    function catClass(cat) { return CAT_COLORS[cat] ? 'color-' + cat : 'color-default'; }
+async function loadData(){
+  try{
+    var r=await fetch("/rassegna-stats.json?t="+Date.now());
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    var data=await r.json();
+    render(data);
+  }catch(e){
+    document.getElementById("content").innerHTML="<div class=\"error\">\u274c Errore caricamento<br><small>"+e.message+"</small></div>";
+  }
+}
 
-    function formatTime(ts) {
-      if (!ts) return '—';
-      try {
-        const d = new Date(ts.replace(' ', 'T').replace(/\+00:00$/, 'Z'));
-        return d.toLocaleString('it-CH', { timeZone: 'Europe/Zurich', dateStyle: 'medium', timeStyle: 'short' });
-      } catch { return ts; }
-    }
+function render(data){
+  var maxCat=Math.max.apply(null,data.by_category.map(function(c){return c.count}));
+  var lrcm={};
+  (data.last_run_by_category||[]).forEach(function(c){lrcm[c.category]=c.count});
+  var h="";
 
-    async function loadData() {
-      const btn = document.getElementById('btn-refresh');
-      btn.textContent = '⏳ Carico...';
-      btn.disabled = true;
+  // CARD 1: Panoramica
+  h+="<div class=\"card\"><div class=\"card-title\">Panoramica</div>";
+  h+="<div class=\"card-meta\">";
+  h+="<span class=\"card-date\">\u{1f4c5} "+(data.last_run?formatTime(data.last_run.run_time):data.generated_at)+"</span>";
+  h+="<button class=\"btn-refresh\" onclick=\"loadData()\">\u{1f504} Aggiorna</button>";
+  h+="</div>";
+  h+="<div style=\"display:flex;align-items:baseline;gap:1rem;margin-bottom:1rem\">";
+  h+="<span class=\"big-number\">"+data.total_articles.toLocaleString("it")+"</span>";
+  h+="<span class=\"big-label\">articoli monitorati</span></div>";
+  if(data.last_run){
+    h+="<div class=\"run-grid\">";
+    h+="<div><div class=\"run-stat-value\">"+data.last_run.articles_found.toLocaleString("it")+"</div><div class=\"run-stat-label\">Scansionati</div></div>";
+    h+="<div><div class=\"run-stat-value\" style=\"color:#4ade80\">"+data.last_run.articles_new.toLocaleString("it")+"</div><div class=\"run-stat-label\">Nuovi</div></div>";
+    h+="<div><div class=\"run-stat-value\" style=\"color:#fbbf24\">"+data.last_run.articles_updated.toLocaleString("it")+"</div><div class=\"run-stat-label\">Aggiornati</div></div>";
+    h+="</div>";
+  }
+  h+="</div>";
 
-      try {
-        const resp = await fetch('/rassegna-stats.json?t=' + Date.now());
-        if (!resp.ok) throw new Error('HTTP ' + resp.status);
-        const data = await resp.json();
-        render(data);
-        document.getElementById('generated-at').textContent = '⏱️ Aggiornato: ' + data.generated_at;
-      } catch (e) {
-        document.getElementById('content').innerHTML =
-          '<div class="error">❌ Errore caricamento dati<br><small>' + e.message + '</small></div>';
-      } finally {
-        btn.textContent = '🔄 Aggiorna';
-        btn.disabled = false;
-      }
-    }
+  // CARD 2: Categorie
+  h+="<div class=\"card\"><div class=\"card-title\">Articoli per Categoria</div>";
+  data.by_category.forEach(function(c){
+    var pct=(c.count/maxCat*100).toFixed(1);
+    var nc=lrcm[c.category]||0;
+    h+="<div class=\"cat-row\"><span class=\"cat-name\">"+catLabel(c.category)+"</span>";
+    h+="<div class=\"cat-bar-wrap\"><div class=\"cat-bar "+catClass(c.category)+"\" style=\"width:"+pct+"%\"></div>";
+    h+="<span class=\"cat-bar-count\">"+c.count+(nc?" <span class=\"new-badge\">+"+nc+"</span>":"")+"</span></div></div>";
+  });
+  h+="</div>";
 
-    function render(data) {
-      const maxCat = Math.max(...data.by_category.map(c => c.count));
+  // CARD 3: Fonti
+  h+="<div class=\"card\"><div class=\"card-title\">Fonti ("+data.by_source.length+")</div>";
+  h+="<div style=\"overflow-x:auto\"><table class=\"source-table\" id=\"sources-table\">";
+  h+="<thead><tr><th data-col=\"0\" data-type=\"str\">Fonte</th><th data-col=\"1\" data-type=\"str\">Categoria</th>";
+  h+="<th data-col=\"2\" data-type=\"num\" style=\"text-align:right\">Totale</th><th data-col=\"3\" data-type=\"num\" style=\"text-align:right\">Ultima run</th></tr></thead><tbody>";
+  data.by_source.forEach(function(s){
+    h+="<tr><td>"+s.source+"</td><td><span class=\"cat-dot\" style=\"background:"+catColor(s.category)+"\"></span>"+catLabel(s.category)+"</td>";
+    h+="<td>"+s.total_articles+"</td><td>"+(s.last_run_articles>0?"<span class=\"new-badge\">+"+s.last_run_articles+"</span>":"\u2014")+"</td></tr>";
+  });
+  h+="</tbody></table></div></div>";
 
-      // Build last-run category map
-      const lastRunCatMap = {};
-      (data.last_run_by_category || []).forEach(c => { lastRunCatMap[c.category] = c.count; });
-
-      let html = '';
-
-      // CARD 1: Overview + Last Run
-      html += `
-        <div class="card">
-          <div class="card-title">Panoramica</div>
-          <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:1rem;">
-            <span class="big-number">${data.total_articles.toLocaleString('it')}</span>
-            <span class="big-label">articoli monitorati</span>
-          </div>
-          ${data.last_run ? `
-          <div class="run-grid">
-            <div>
-              <div class="run-stat-value">${data.last_run.articles_found.toLocaleString('it')}</div>
-              <div class="run-stat-label">Scansionati</div>
-            </div>
-            <div>
-              <div class="run-stat-value" style="color:#4ade80">${data.last_run.articles_new.toLocaleString('it')}</div>
-              <div class="run-stat-label">Nuovi</div>
-            </div>
-            <div>
-              <div class="run-stat-value" style="color:#fbbf24">${data.last_run.articles_updated.toLocaleString('it')}</div>
-              <div class="run-stat-label">Aggiornati</div>
-            </div>
-          </div>
-          <div class="run-time">Ultima run: ${formatTime(data.last_run.run_time)}</div>
-          ` : ''}
-        </div>`;
-
-      // CARD 2: Categories
-      html += `<div class="card"><div class="card-title">Articoli per Categoria</div>`;
-      data.by_category.forEach(c => {
-        const pct = (c.count / maxCat * 100).toFixed(1);
-        const newCount = lastRunCatMap[c.category] || 0;
-        html += `
-          <div class="cat-row">
-            <span class="cat-name">${catLabel(c.category)}</span>
-            <div class="cat-bar-wrap">
-              <div class="cat-bar ${catClass(c.category)}" style="width:${pct}%"></div>
-              <span class="cat-bar-count">${c.count}${newCount ? ' <span class="new-badge">+' + newCount + '</span>' : ''}</span>
-            </div>
-          </div>`;
-      });
-      html += `</div>`;
-
-      // CARD 3: Sources
-      html += `<div class="card"><div class="card-title">Fonti (${data.by_source.length})</div>`;
-      html += `<div style="overflow-x:auto;"><table class="source-table" id="sources-table">
-        <thead><tr>
-          <th data-col="0" data-type="str">Fonte</th>
-          <th data-col="1" data-type="str">Categoria</th>
-          <th data-col="2" data-type="num" style="text-align:right">Totale</th>
-          <th data-col="3" data-type="num" style="text-align:right">Ultima run</th>
-        </tr></thead><tbody>`;
-      data.by_source.forEach(s => {
-        html += `<tr>
-          <td>${s.source}</td>
-          <td><span class="cat-dot" style="background:${catColor(s.category)}"></span>${catLabel(s.category)}</td>
-          <td>${s.total_articles}</td>
-          <td>${s.last_run_articles > 0 ? '<span class="new-badge">+' + s.last_run_articles + '</span>' : '—'}</td>
-        </tr>`;
-      });
-      html += `</tbody></table></div></div>`;
-
-      // CARD 4: Run History
-      if (data.runs_history && data.runs_history.length > 1) {
-        html += `<div class="card"><div class="card-title">Storico Run (ultime ${data.runs_history.length})</div>`;
-        html += `<div style="overflow-x:auto;"><table class="source-table">
-          <thead><tr><th>Data/Ora</th><th style="text-align:right">Scansionati</th><th style="text-align:right">Nuovi</th><th style="text-align:right">Aggiornati</th></tr></thead><tbody>`;
-        data.runs_history.forEach(r => {
-          html += `<tr>
-            <td>${formatTime(r.run_time)}</td>
-            <td style="text-align:right">${r.articles_found.toLocaleString('it')}</td>
-            <td style="text-align:right;color:#4ade80">${r.articles_new > 0 ? '+' + r.articles_new : '0'}</td>
-            <td style="text-align:right;color:#fbbf24">${r.articles_updated.toLocaleString('it')}</td>
-          </tr>`;
-        });
-        html += `</tbody></table></div></div>`;
-      }
-
-      document.getElementById('content').innerHTML = html;
-    }
-
-    loadData();
-
-    // ── Sorting tabella fonti ──────────────────────────────────────────────
-    let _sortCol = -1, _sortAsc = true;
-
-    document.addEventListener('click', function(e) {
-      const th = e.target.closest('#sources-table thead th');
-      if (!th) return;
-      const col  = parseInt(th.dataset.col);
-      const type = th.dataset.type || 'str';
-
-      if (_sortCol === col) {
-        _sortAsc = !_sortAsc;
-      } else {
-        _sortCol = col;
-        _sortAsc = true;
-      }
-
-      // Aggiorna classi frecce
-      document.querySelectorAll('#sources-table thead th').forEach(h => {
-        h.classList.remove('sort-asc', 'sort-desc');
-      });
-      th.classList.add(_sortAsc ? 'sort-asc' : 'sort-desc');
-
-      // Ordina righe
-      const tbody = document.querySelector('#sources-table tbody');
-      const rows  = Array.from(tbody.querySelectorAll('tr'));
-      rows.sort((a, b) => {
-        const aCell = a.cells[col].textContent.trim();
-        const bCell = b.cells[col].textContent.trim();
-        let cmp;
-        if (type === 'num') {
-          const aNum = parseFloat(aCell.replace(/[^0-9.-]/g, '')) || 0;
-          const bNum = parseFloat(bCell.replace(/[^0-9.-]/g, '')) || 0;
-          cmp = aNum - bNum;
-        } else {
-          cmp = aCell.localeCompare(bCell, 'it');
-        }
-        return _sortAsc ? cmp : -cmp;
-      });
-      rows.forEach(r => tbody.appendChild(r));
+  // CARD 4: Storico (collapsible, closed)
+  if(data.runs_history&&data.runs_history.length>1){
+    h+="<div class=\"card\">";
+    h+="<div class=\"section-toggle\" onclick=\"toggleSection(history)\">";
+    h+="<div class=\"card-title\" style=\"margin-bottom:0\">\u25b6 Storico Run ("+data.runs_history.length+")</div>";
+    h+="<span class=\"toggle-icon\" id=\"history-icon\">\u25b6</span></div>";
+    h+="<div class=\"section-body\" id=\"history-body\">";
+    h+="<div style=\"overflow-x:auto\"><table class=\"source-table\">";
+    h+="<thead><tr><th>Data/Ora</th><th style=\"text-align:right\">Scansionati</th><th style=\"text-align:right\">Nuovi</th><th style=\"text-align:right\">Aggiornati</th></tr></thead><tbody>";
+    data.runs_history.forEach(function(r){
+      h+="<tr><td>"+formatTime(r.run_time)+"</td>";
+      h+="<td style=\"text-align:right\">"+r.articles_found.toLocaleString("it")+"</td>";
+      h+="<td style=\"text-align:right;color:#4ade80\">"+(r.articles_new>0?"+"+r.articles_new:"0")+"</td>";
+      h+="<td style=\"text-align:right;color:#fbbf24\">"+r.articles_updated.toLocaleString("it")+"</td></tr>";
     });
-    // ──────────────────────────────────────────────────────────────────────
-  </script>
+    h+="</tbody></table></div></div></div>";
+  }
+
+  document.getElementById("content").innerHTML=h;
+}
+
+loadData();
+
+// Sorting
+var _sc=-1,_sa=true;
+document.addEventListener("click",function(e){
+  var th=e.target.closest("#sources-table thead th");
+  if(!th)return;
+  var col=parseInt(th.dataset.col),type=th.dataset.type||"str";
+  if(_sc===col){_sa=!_sa}else{_sc=col;_sa=true}
+  document.querySelectorAll("#sources-table thead th").forEach(function(h){h.classList.remove("sort-asc","sort-desc")});
+  th.classList.add(_sa?"sort-asc":"sort-desc");
+  var tbody=document.querySelector("#sources-table tbody");
+  var rows=Array.from(tbody.querySelectorAll("tr"));
+  rows.sort(function(a,b){
+    var ac=a.cells[col].textContent.trim(),bc=b.cells[col].textContent.trim(),cmp;
+    if(type==="num"){cmp=(parseFloat(ac.replace(/[^0-9.-]/g,""))||0)-(parseFloat(bc.replace(/[^0-9.-]/g,""))||0)}
+    else{cmp=ac.localeCompare(bc,"it")}
+    return _sa?cmp:-cmp;
+  });
+  rows.forEach(function(r){tbody.appendChild(r)});
+});
+</script>
 </body>
 </html>
