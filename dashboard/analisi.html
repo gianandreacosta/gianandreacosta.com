@@ -243,7 +243,7 @@ function toggleDiff(btn,id){
 function renderArchive(analyses,activeIdx){
   if(!analyses||analyses.length<=1){document.getElementById("archive-section").innerHTML="";return}
   var h="<div class=\"card\">";
-  h+="<div class=\"section-toggle\" onclick=\"toggleSection(&apos;archive&apos;)\">";
+  h+="<div class=\"section-toggle\" onclick=\"toggleSection('archive')\">";
   h+="<div class=\"card-title\" style=\"margin-bottom:0\">\u25b6 Archivio Analisi ("+analyses.length+")</div>";
   h+="<span class=\"toggle-icon\" id=\"archive-icon\">\u25b6</span></div>";
   h+="<div class=\"section-body\" id=\"archive-body\">";

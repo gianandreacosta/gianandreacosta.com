@@ -192,7 +192,7 @@ function render(data){
   // CARD 4: Storico (collapsible, closed)
   if(data.runs_history&&data.runs_history.length>1){
     h+="<div class=\"card\">";
-    h+="<div class=\"section-toggle\" onclick=\"toggleSection(history)\">";
+    h+="<div class=\"section-toggle\" onclick=\"toggleSection('history')\">";
     h+="<div class=\"card-title\" style=\"margin-bottom:0\">\u25b6 Storico Run ("+data.runs_history.length+")</div>";
     h+="<span class=\"toggle-icon\" id=\"history-icon\">\u25b6</span></div>";
     h+="<div class=\"section-body\" id=\"history-body\">";
