@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-08T05:10:04.735501Z",
+  "generated_at": "2026-04-08T05:20:04.975770Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
-    "latest_ver": "2026.4.5",
+    "latest_ver": "2026.4.8",
     "update_available": true,
     "gateway_running": false,
     "gateway_port": 18789
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 50min",
+      "next": "in 40min",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -151,7 +151,7 @@
       "schedule": "15 7 * * * (Europe/Zurich)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4min",
+      "next": "in 23h",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": true
     }
