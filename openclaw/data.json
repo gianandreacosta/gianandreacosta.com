@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T23:50:05.439318Z",
+  "generated_at": "2026-04-09T00:00:08.965883Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 335,
+  "rate_limits_today": 0,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -466,99 +466,16 @@
           "conversations": "Nessuna conversazione significativa nel periodo 20:05\u201322:05 UTC."
         }
       ]
-    },
-    {
-      "date": "2026-04-02",
-      "entry_count": 12,
-      "entries": [
-        {
-          "time": "06:05 UTC",
-          "timestamp": "2026-04-02T06:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (04:05\u201306:05 UTC) | Audit | \u2705 Nessuna sessione attiva | log filesystem (ultimo cron 01/04 22:05 UTC) |",
-          "conversations": ""
-        },
-        {
-          "time": "08:05 UTC",
-          "timestamp": "2026-04-02T08:05:00Z",
-          "event_count": 6,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Backup giornaliero (b7b03879) \u2014 `daily-config-20260401-0200.tar.gz` ~8MB | cron automatico | \u2705 completato (status=ok, dur=26s) | cron/runs/b7b03879*.jsonl |\n| Rassegna mattutina (f2734a76) \u2014 `bash tools/rassegna_mattutina.sh full` | cron automatico | \u26a0\ufe0f non verificabile \u2014 delivery fallita \"Outbound not configured: telegram\"; esecuzione durata ~9.8min ma output non confermato | cron/runs/f2734a76*.jsonl |\n| Memory review (d1006e35) \u2014 controllo MEMORY.md e file sessioni | cron automatico | \u2705 completato (status=ok) \u2014 \"MEMORY.md fully synchronized, no new items to promote\" | cron/runs/d1006e35*.jsonl |\n| Session-memory-capture 06:05 UTC (784148c1) \u2014 primo summary del giorno | cron automatico | \u2705 completato (status=ok) \u2014 file memory/2026-04-02.md creato | cron/runs/784148c1*.jsonl |\n| MEMORY.md modificato alle 07:29 UTC | filesystem anomalia | \u26a0\ufe0f non verificabile \u2014 nessun cron run tracciabile in quella finestra | stat MEMORY.md |\n| Sessioni utente 00:00\u201308:05 UTC | audit | \u2705 nessuna sessione utente \u2014 solo 3 righe di log (errori cron delivery) | openclaw-2026-04-02.log |",
-          "conversations": ""
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-02T10:05:00Z",
-          "event_count": 4,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 08:05 UTC (784148c1 run a1643a8d) | cron automatico | \u2705 completato (status=ok, dur=240s) \u2014 `memory/2026-04-02.md` aggiornato con summary 08:05 | cron/runs |\n| action-log.jsonl \u2014 nessuna nuova entry | audit | \u26a0\ufe0f non verificabile \u2014 ultima entry: 2026-03-29T21:37:54Z | action-log.jsonl |\n| Sessioni utente 08:05\u201310:05 UTC | audit | \u26a0\ufe0f nessuna sessione utente rilevata \u2014 solo cron in esecuzione | assenza sessioni |\n| Anomalia MEMORY.md modificato 07:29 UTC (carry-over) | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessun cron run tracciabile per quella finestra | stat MEMORY.md |",
-          "conversations": ""
-        },
-        {
-          "time": "12:05 UTC",
-          "timestamp": "2026-04-02T12:05:00Z",
-          "event_count": 12,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 10:05 UTC (1206888d) | cron automatico | \u2705 completato | sessions/1206888d*.jsonl |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29) | audit | \u26a0\ufe0f non verificabile | action-log.jsonl |\n| Sessione utente attiva 10:40\u201311:59 UTC (323fcf74) \u2014 G.A.C. presente | sessione | \u2705 confermato | sessions/323fcf74*.jsonl |\n| Outbound Telegram rotto (`out: 37h ago`) \u2192 diagnosticato e comunicato | diagnosi | \u2705 confermato | conversazione 10:40\u201310:53 |\n| `openclaw gateway restart` eseguito dall'utente | azione utente | \u2705 confermato (`out: 1m ago` post-restart) | conversazione 10:53 |\n| Fix `rassegna_analisi.py` e `send_rassegna_completa.py`: aggiunto `git pull --rebase` | fix codice | \u2705 eseguito (Geoffrey) | conversazione 10:54 |\n| Push manuale analisi AI rassegna stamattina su lab.gianandreacosta.com | azione | \u2705 completato | conversazione 11:02 |\n| Test `announce` post-restart: `delivered: true` | verifica | \u2705 confermato | conversazione 11:04 |\n| `remind.sh` rimosso dal workspace (non pi\u00f9 necessario) | cleanup | \u2705 eseguito | conversazione 11:55 |\n| Backup `daily-config-20260402-1357.tar.gz` (9.0 MB) | backup | \u2705 completato | conversazione 11:57 |\n| Hardening sicurezza \u2014 punti 3,13,14,2,15,7,10 completati (7/12) | hardening | \u2705 verificato da audit OpenClaw output | sessione precedente + conversazione 11:56 |\n| Riepilogo 4 punti rimanenti hardening fornito all'utente | analisi | \u2705 non verificabile come azione \u2014 solo output testuale | conversazione 11:59 |",
-          "conversations": ""
-        },
-        {
-          "time": "14:05 UTC",
-          "timestamp": "2026-04-02T14:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 12:05 UTC \u2014 run precedente | cron automatico | \u2705 completato (summary 12:05 presente nel file) | memory/2026-04-02.md |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29T21:37:54Z) | audit | \u26a0\ufe0f non verificabile \u2014 nessuna azione loggata nelle ultime 2h | action-log.jsonl |\n| Sessioni utente 12:05\u201314:05 UTC | audit | \u2705 nessuna sessione utente \u2014 solo cron in esecuzione | sessions_list (0 sessioni nei 180min) |",
-          "conversations": ""
-        },
-        {
-          "time": "06:05 UTC",
-          "timestamp": "2026-04-02T06:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination attivo | Monitoraggio | \u2705 Operativo | action-log.jsonl (2026-03-29T21:37:54Z) |\n| Nessuna nuova azione loggata in action-log.jsonl (ultime 2h) | Audit | \u26a0\ufe0f Non verificabile | assenza di nuove entries |\n| Nessuna sessione utente attiva nelle ultime 2h (04:05\u201306:05 UTC) | Audit | \u2705 Nessuna sessione attiva | log filesystem (ultimo cron 01/04 22:05 UTC) |",
-          "conversations": ""
-        },
-        {
-          "time": "08:05 UTC",
-          "timestamp": "2026-04-02T08:05:00Z",
-          "event_count": 6,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Backup giornaliero (b7b03879) \u2014 `daily-config-20260401-0200.tar.gz` ~8MB | cron automatico | \u2705 completato (status=ok, dur=26s) | cron/runs/b7b03879*.jsonl |\n| Rassegna mattutina (f2734a76) \u2014 `bash tools/rassegna_mattutina.sh full` | cron automatico | \u26a0\ufe0f non verificabile \u2014 delivery fallita \"Outbound not configured: telegram\"; esecuzione durata ~9.8min ma output non confermato | cron/runs/f2734a76*.jsonl |\n| Memory review (d1006e35) \u2014 controllo MEMORY.md e file sessioni | cron automatico | \u2705 completato (status=ok) \u2014 \"MEMORY.md fully synchronized, no new items to promote\" | cron/runs/d1006e35*.jsonl |\n| Session-memory-capture 06:05 UTC (784148c1) \u2014 primo summary del giorno | cron automatico | \u2705 completato (status=ok) \u2014 file memory/2026-04-02.md creato | cron/runs/784148c1*.jsonl |\n| MEMORY.md modificato alle 07:29 UTC | filesystem anomalia | \u26a0\ufe0f non verificabile \u2014 nessun cron run tracciabile in quella finestra | stat MEMORY.md |\n| Sessioni utente 00:00\u201308:05 UTC | audit | \u2705 nessuna sessione utente \u2014 solo 3 righe di log (errori cron delivery) | openclaw-2026-04-02.log |",
-          "conversations": ""
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-02T10:05:00Z",
-          "event_count": 4,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 08:05 UTC (784148c1 run a1643a8d) | cron automatico | \u2705 completato (status=ok, dur=240s) \u2014 `memory/2026-04-02.md` aggiornato con summary 08:05 | cron/runs |\n| action-log.jsonl \u2014 nessuna nuova entry | audit | \u26a0\ufe0f non verificabile \u2014 ultima entry: 2026-03-29T21:37:54Z | action-log.jsonl |\n| Sessioni utente 08:05\u201310:05 UTC | audit | \u26a0\ufe0f nessuna sessione utente rilevata \u2014 solo cron in esecuzione | assenza sessioni |\n| Anomalia MEMORY.md modificato 07:29 UTC (carry-over) | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessun cron run tracciabile per quella finestra | stat MEMORY.md |",
-          "conversations": ""
-        },
-        {
-          "time": "12:05 UTC",
-          "timestamp": "2026-04-02T12:05:00Z",
-          "event_count": 12,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 10:05 UTC (1206888d) | cron automatico | \u2705 completato | sessions/1206888d*.jsonl |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29) | audit | \u26a0\ufe0f non verificabile | action-log.jsonl |\n| Sessione utente attiva 10:40\u201311:59 UTC (323fcf74) \u2014 G.A.C. presente | sessione | \u2705 confermato | sessions/323fcf74*.jsonl |\n| Outbound Telegram rotto (`out: 37h ago`) \u2192 diagnosticato e comunicato | diagnosi | \u2705 confermato | conversazione 10:40\u201310:53 |\n| `openclaw gateway restart` eseguito dall'utente | azione utente | \u2705 confermato (`out: 1m ago` post-restart) | conversazione 10:53 |\n| Fix `rassegna_analisi.py` e `send_rassegna_completa.py`: aggiunto `git pull --rebase` | fix codice | \u2705 eseguito (Geoffrey) | conversazione 10:54 |\n| Push manuale analisi AI rassegna stamattina su lab.gianandreacosta.com | azione | \u2705 completato | conversazione 11:02 |\n| Test `announce` post-restart: `delivered: true` | verifica | \u2705 confermato | conversazione 11:04 |\n| `remind.sh` rimosso dal workspace (non pi\u00f9 necessario) | cleanup | \u2705 eseguito | conversazione 11:55 |\n| Backup `daily-config-20260402-1357.tar.gz` (9.0 MB) | backup | \u2705 completato | conversazione 11:57 |\n| Hardening sicurezza \u2014 punti 3,13,14,2,15,7,10 completati (7/12) | hardening | \u2705 verificato da audit OpenClaw output | sessione precedente + conversazione 11:56 |\n| Riepilogo 4 punti rimanenti hardening fornito all'utente | analisi | \u2705 non verificabile come azione \u2014 solo output testuale | conversazione 11:59 |",
-          "conversations": ""
-        },
-        {
-          "time": "14:05 UTC",
-          "timestamp": "2026-04-02T14:05:00Z",
-          "event_count": 15,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 12:05 UTC \u2014 run precedente | cron automatico | \u2705 completato (summary 12:05 presente nel file) | memory/2026-04-02.md |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29T21:37:54Z) | audit | \u26a0\ufe0f non verificabile \u2014 nessuna azione loggata nelle ultime 2h | action-log.jsonl |\n| Sessioni utente 12:05\u201314:05 UTC | audit | \u2705 nessuna sessione utente \u2014 solo cron in esecuzione | sessions_list (0 sessioni nei 180min) |",
-          "conversations": ""
-        },
-        {
-          "time": "18:05 UTC",
-          "timestamp": "2026-04-02T18:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Test outbound Telegram (cron job 8dab2804-877f-43de-8061-25a82f0397e4, announce \u2192 8433961017) | azione | \u26a0\ufe0f non verificabile | memory/2026-04-02-1735.md |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29T21:37:54Z) | audit | \u2705 completato (ultima entry 29/03) | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "22:05 UTC",
-          "timestamp": "2026-04-02T22:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 22:05 UTC | cron | \u26a0\ufe0f non verificabile \u2014 non presente in action-log | non disponibile |\n| action-log.jsonl \u2014 nessuna nuova entry (ultima: 2026-03-29T21:37:54Z) | audit | \u26a0\ufe0f non verificabile \u2014 nessuna azione recente | action-log.jsonl |\n| Sessioni utente 20:05\u201322:05 UTC | audit | \u26a0\ufe0f non verificabile \u2014 nessuna sessione umana loggata | sessions_list (solo cron) |",
-          "conversations": ""
-        }
-      ]
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260409-0200.tar.gz",
+      "date": "2026-04-09T02:00:00Z",
+      "size": "10.1M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260409-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260408-1136.tar.gz",
       "date": "2026-04-08T11:36:00Z",
@@ -761,18 +678,11 @@
       "size": "7.4M",
       "context": "Post fix rassegna stampa 30/03",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260330-2150.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20260329.tar.gz",
-      "date": "2026-03-29T00:00:00Z",
-      "size": "6.7M",
-      "context": "Backup manuale 29/03",
-      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260329.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
     "articles_total": 8384,
-    "articles_today": 775,
+    "articles_today": 0,
     "articles_new_last_run": 4,
     "last_run": "2026-04-08 04:51:29.134870+00:00",
     "last_run_found": 2953
