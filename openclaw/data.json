@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T23:50:05.661189Z",
+  "generated_at": "2026-04-10T00:00:12.689229Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 1,
+  "rate_limits_today": 0,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -397,78 +397,16 @@
           "conversations": "#### 2026-04-03 \u2014 Fix rassegna stampa + bug dashboard\n\n**07:00\u201307:07 \u2014 Errore trascrizione audio (spagnolo vs italiano)**\n- G.A. ha mandato un vocale in italiano (\"Come va con la rassegna?\")\n- La trascrizione automatica l'ha erroneamente reso in spagnolo (\"\u00bfC\u00f3mo va con la rese\u00f1a?\")\n- Geoffrey ha risposto in spagnolo\n- G.A.: \"Io non parlo spagnolo e mai l'ho fatto\"\n- Geoffrey: \"Hai ragione \u2014 il tuo vocale era in italiano, la trascrizione ha sbagliato e mi sono fidato di quella invece di chiedere conferma. Errore mio.\"\n- **Lezione**: Non fidarsi ciecamente delle trascrizioni automatiche; se la lingua sembra incongruente con l'utente, chiedere conferma.\n\n**07:08 \u2014 Bug dashboard (0 articoli nuovi)**\n- G.A.: \"La dashboard riporta ancora 0 nuovi articoli oggi, che non \u00e8 vero. Sistemala.\"\n- Geoffrey ha verificato: ultima run (06:03 UTC) aveva 53 nuovi articoli, DB conteneva 449 articoli first_seen oggi.\n- Problema: `update_dashboard.py` non leggeva i dati della rassegna stampa.\n- Fix applicat"
         }
       ]
-    },
-    {
-      "date": "2026-04-03",
-      "entry_count": 9,
-      "entries": [
-        {
-          "time": "06:05 UTC",
-          "timestamp": "2026-04-03T06:05:00Z",
-          "event_count": 1,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |",
-          "conversations": "Nessuna conversazione significativa nel periodo 04:05\u201306:05 UTC."
-        },
-        {
-          "time": "08:05 UTC",
-          "timestamp": "2026-04-03T08:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 06:05\u201308:05 UTC."
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-03T10:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 08:05\u201310:05 UTC."
-        },
-        {
-          "time": "12:05 UTC",
-          "timestamp": "2026-04-03T12:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 10:05\u201312:05 UTC."
-        },
-        {
-          "time": "14:05 UTC",
-          "timestamp": "2026-04-03T14:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 12:05\u201314:05 UTC."
-        },
-        {
-          "time": "16:05 UTC",
-          "timestamp": "2026-04-03T16:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 14:05\u201316:05 UTC."
-        },
-        {
-          "time": "18:05 UTC",
-          "timestamp": "2026-04-03T18:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 18:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 16:05\u201318:05 UTC."
-        },
-        {
-          "time": "20:05 UTC",
-          "timestamp": "2026-04-03T20:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 20:05 UTC | cron | \u2705 completato | sessions_list |\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 18:05\u201320:05 UTC."
-        },
-        {
-          "time": "22:05 UTC",
-          "timestamp": "2026-04-03T22:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 22:05 UTC | cron | \u2705 completato | sessions_list |\n| Nessuna nuova voce action-log nelle ultime 2h | audit | \u26a0\ufe0f non verificabile | memory/action-log.jsonl (ultima entry 2026-03-29T21:37:54Z) |\n| Nessuna sessione attiva tranne questo cron | audit | \u2705 verificato | sessions_list |",
-          "conversations": "Nessuna conversazione significativa nel periodo 20:05\u201322:05 UTC."
-        }
-      ]
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260410-0200.tar.gz",
+      "date": "2026-04-10T02:00:00Z",
+      "size": "10.3M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260410-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260409-0200.tar.gz",
       "date": "2026-04-09T02:00:00Z",
@@ -671,18 +609,11 @@
       "size": "7.4M",
       "context": "Backup notturno automatico 31/03",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260331-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20260330-2150.tar.gz",
-      "date": "2026-03-30T21:50:00Z",
-      "size": "7.4M",
-      "context": "Post fix rassegna stampa 30/03",
-      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260330-2150.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
     "articles_total": 9078,
-    "articles_today": 694,
+    "articles_today": 0,
     "articles_new_last_run": 694,
     "last_run": "2026-04-09 04:45:02.006879+00:00",
     "last_run_found": 2826
