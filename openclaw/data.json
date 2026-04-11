@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T23:50:04.890048Z",
+  "generated_at": "2026-04-11T00:00:07.884745Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -328,78 +328,16 @@
           "conversations": ""
         }
       ]
-    },
-    {
-      "date": "2026-04-04",
-      "entry_count": 9,
-      "entries": [
-        {
-          "time": "22:05 UTC",
-          "timestamp": "2026-04-04T22:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 22:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| memory/action-log.jsonl 20:05\u201322:05 UTC | monitoraggio | \u26a0\ufe0f non verificabile \u2014 nessuna voce nel periodo | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "20:05 UTC",
-          "timestamp": "2026-04-04T20:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Cron session-memory-capture 20:05 UTC | cron | \u26a0\ufe0f non verificabile | non disponibile |\n| action-log.jsonl 18:05\u201320:05 UTC | monitoraggio | \u26a0\ufe0f Nessuna nuova voce nel periodo | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "18:05 UTC",
-          "timestamp": "2026-04-04T18:05:00Z",
-          "event_count": 3,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 17:43 UTC (vocale): promemoria domani domenica alle 11:00 svizzera \u2014 \"messaggio Seju e candidatura\" | richiesta | \u2705 cron creato per 2026-04-05T08:00:00Z (10:00 ora CH) | sessions transcript (4c181d74), cron API |\n| Dashboard-data-update cron (ogni 10 min) \u2014 run 16:10, 16:20, 16:30, 16:40, 16:50, 17:00, 17:10, 17:20, 17:30 UTC | azione automatica | \u2705 completati \u2014 output \"ok\" in tutte le sessioni | sessions transcript (18bf61fe, 1c942b24, 2ddf6441, 44081d84, ...) |\n| action-log.jsonl 16:05\u201318:05 UTC | monitoraggio | \u26a0\ufe0f Nessuna nuova voce nel periodo \u2014 solo voce storica (2026-03-29) | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "16:05 UTC",
-          "timestamp": "2026-04-04T16:05:00Z",
-          "event_count": 4,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 14:22 UTC (vocale): traduzione \"impegno/impegnarsi\" in tedesco e inglese | richiesta | \u2705 risposto \u2014 Geoffrey ha dato le traduzioni DE/EN | sessions transcript (4c181d74) |\n| G.A. 14:26 UTC (vocale): stessa traduzione anche in francese | richiesta | \u2705 risposto \u2014 Geoffrey ha dato le traduzioni FR | sessions transcript (4c181d74) |\n| Cron dashboard-data-update (ogni 10 min) \u2014 run regolari 14:00\u201316:00 UTC | azione automatica | \u2705 in esecuzione regolare | sessions list |\n| action-log.jsonl ultimi 2h (14:05\u201316:05 UTC) | monitoraggio | \u26a0\ufe0f Nessuna voce nel periodo \u2014 solo voce storica (2026-03-29) presente | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "14:05 UTC",
-          "timestamp": "2026-04-04T14:05:00Z",
-          "event_count": 5,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Scansione attivit\u00e0 12:05\u201314:05 UTC | monitoraggio | \u2705 completato | sessions_list + session files |\n| Verifica action-log ultimi 2h | monitoraggio | \u26a0\ufe0f Nessuna voce nel periodo 12:05\u201314:05 UTC | action-log.jsonl |\n| dashboard-data-update cron (12:30 UTC) \u2014 `update_dashboard.py` | azione automatica | \u2705 completato \u2014 output: \"ok\" (deprecation warning non bloccante) | session f3675dd8 |\n| dashboard-data-update cron (14:00 UTC) \u2014 `update_dashboard.py` | azione automatica | \u2705 completato \u2014 output: \"ok\" (deprecation warning non bloccante) | session 33d4f8d0 |\n| Sessione Telegram G.A. | monitoraggio | \u26a0\ufe0f Nessuna interazione G.A. da 09:02 UTC \u2014 Geoffrey in idle | sessions.json |",
-          "conversations": ""
-        },
-        {
-          "time": "12:05 UTC",
-          "timestamp": "2026-04-04T12:05:00Z",
-          "event_count": 2,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Scansione attivit\u00e0 10:05\u201312:05 UTC | monitoraggio | \u26a0\ufe0f Nessuna sessione attiva rilevata nel periodo | sessions_list (activeMinutes=120) |\n| Verifica action-log ultimi 2h | monitoraggio | \u26a0\ufe0f Nessuna voce nel periodo 10:05\u201312:05 UTC | action-log.jsonl |",
-          "conversations": ""
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-04T10:05:00Z",
-          "event_count": 9,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| G.A. 08:14 UTC: chiede dove leggere l'analisi di Officina sui problemi rassegna stampa | domanda | \u2705 risposto \u2014 Geoffrey ha indicato il messaggio nel transcript | sessions transcript (4c181d74) |\n| G.A. 08:22 UTC: \"Mandalo per mail\" (report diagnostico Officina) | richiesta | \u2705 email inviata a gianandreacosta@gmail.com, oggetto: [Rassegna] Report diagnostico 4 aprile 2026 | sessions transcript (4c181d74) |\n| G.A. 08:26 UTC: \"Fai un backup con rollback assicurandoti di includere tutte le cose della rassegna. Poi ch[iama Officina]\" | richiesta | \u2705 backup eseguito (`daily-config-20260404-1026.tar.gz`, 10 MB) + Officina spawnat | sessions transcript (4c181d74) |\n| Officina fix2 (08:27\u201308:32 UTC): 5 fix alla pipeline rassegna stampa | azione sub-agent | \u2705 completato \u2014 tutti e 5 fix applicati e verificati | sessions transcript (4c181d74), subagent a7802c6e |\n| G.A. 08:37 UTC (vocale): vuole summary periodici sulla dashboard Geoffrey Monitor invece che su Telegram | richiesta | \u2705 capito e affidato a Officina per valutazione architettuale | sessions transcript (4c181d74) |\n| Officina design (08:38\u201308:40 UTC): valutazione 3 proposte per Activity Log dashboard | analisi sub-agent | \u2705 completato \u2014 Proposta A (JSON Inline) raccomandata, no database necessario | sessions transcript (4c181d74), subagent bb5287c2 |\n| G.A. 08:54 UTC: \"Ok procedi\" (implementazione Activity Log dashboard) | richiesta | \u2705 completato \u2014 Activity Log live su lab.gianandreacosta.com/openclaw/ | sessions transcript (4c181d74), subagent 4928ad1b |\n| G.A. 09:00 UTC: \"Memorizza tutto ci\u00f2 che avete fatto e fai backup\" | richiesta | \u2705 MEMORY.md aggiornato + backup `daily-config-20260404-1102.tar.gz` (10 MB) | sessions transcript (4c181d74) |\n| Dashboard update cron (10 min) \u2014 run regolari 08:20\u201310:00 UTC | azione | \u2705 verificato (run ogni 10 min, output \"ok\", deprecation warning non bloccante) | sessions transcript (vari cron) |",
-          "conversations": ""
-        },
-        {
-          "time": "08:07 UTC",
-          "timestamp": "2026-04-04T08:07:00Z",
-          "event_count": 6,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Rassegna stampa run 52 (04:47 UTC): 597 articoli nuovi, 902 aggiornati, 3348 totali scansionati | azione | \u2705 completato | DB rassegna_archive.db (runs.id=52) |\n| Analisi AI rassegna run 52 | azione | \u26a0\ufe0f NON ESEGUITA \u2014 nessuna riga in rassegna_analisi per run_id=52 | DB rassegna_archive.db |\n| G.A. voce 05:42 UTC: richiesta diagnostica script rassegna (solo analisi, zero modifiche) | richiesta | \u2705 completato \u2014 Officina spawnat, report consegnato 05:47 UTC | sessions transcript (4c181d74) |\n| G.A. 06:38 UTC: \"Quindi questa analisi?\" \u2014 chiede se analisi AI \u00e8 arrivata | domanda | \u26a0\ufe0f Analisi non eseguita: Geoffrey ha risposto che il processo era stato ucciso a met\u00e0 | sessions transcript (4c181d74) |\n| G.A. 06:39 UTC: \"Alle 07:42 ti ho chiesto una cosa precisa, dov'\u00e8?\" \u2014 Geoffrey ha spiegato che aveva solo chiesto diagnosi, non esecuzione | chiarimento | \u2705 risolto senza azioni operative | sessions transcript (4c181d74) |\n| Dashboard update cron (10 min) attivo durante tutta la mattinata | azione | \u2705 verificato (sessioni regolari ogni 10 min) | sessions list |",
-          "conversations": ""
-        },
-        {
-          "time": "06:05 UTC",
-          "timestamp": "2026-04-04T06:05:00Z",
-          "event_count": 10,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|\n| Sistema anti-hallucination cron memory-capture deployato (log_action.sh, prompt aggiornato) | azione | \u2705 completato | action-log (2026-03-29T21:37Z) |\n| Richiesta analisi diagnostica rassegna stampa (voce Telegram 05:42 UTC) | richiesta | \u2705 completato \u2014 Officina spawnat, report restituito alle 05:47 UTC | sessions transcript |\n| Report Officina: diagnosi pipeline rassegna stampa (solo analisi, zero modifiche) | analisi sub-agent | \u2705 completato | sessions transcript |",
-          "conversations": "#### 2026-04-03 \u2014 Fix rassegna stampa + bug dashboard\n\n**07:00\u201307:07 \u2014 Errore trascrizione audio (spagnolo vs italiano)**\n- G.A. ha mandato un vocale in italiano (\"Come va con la rassegna?\")\n- La trascrizione automatica l'ha erroneamente reso in spagnolo (\"\u00bfC\u00f3mo va con la rese\u00f1a?\")\n- Geoffrey ha risposto in spagnolo\n- G.A.: \"Io non parlo spagnolo e mai l'ho fatto\"\n- Geoffrey: \"Hai ragione \u2014 il tuo vocale era in italiano, la trascrizione ha sbagliato e mi sono fidato di quella invece di chiedere conferma. Errore mio.\"\n- **Lezione**: Non fidarsi ciecamente delle trascrizioni automatiche; se la lingua sembra incongruente con l'utente, chiedere conferma.\n\n**07:08 \u2014 Bug dashboard (0 articoli nuovi)**\n- G.A.: \"La dashboard riporta ancora 0 nuovi articoli oggi, che non \u00e8 vero. Sistemala.\"\n- Geoffrey ha verificato: ultima run (06:03 UTC) aveva 53 nuovi articoli, DB conteneva 449 articoli first_seen oggi.\n- Problema: `update_dashboard.py` non leggeva i dati della rassegna stampa.\n- Fix applicat"
-        }
-      ]
     }
   ],
   "backups": [
+    {
+      "file": "daily-config-20260411-0200.tar.gz",
+      "date": "2026-04-11T02:00:00Z",
+      "size": "10.6M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260411-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260410-0200.tar.gz",
       "date": "2026-04-10T02:00:00Z",
@@ -602,18 +540,11 @@
       "size": "7.7M",
       "context": "Backup notturno automatico 01/04",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260401-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20260331-0200.tar.gz",
-      "date": "2026-03-31T02:00:00Z",
-      "size": "7.4M",
-      "context": "Backup notturno automatico 31/03",
-      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260331-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
     "articles_total": 9923,
-    "articles_today": 845,
+    "articles_today": 0,
     "articles_new_last_run": 845,
     "last_run": "2026-04-10 04:45:01.146778+00:00",
     "last_run_found": 1991
