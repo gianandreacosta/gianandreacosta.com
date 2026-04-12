@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T18:50:04.522748Z",
+  "generated_at": "2026-04-12T18:52:22.347921Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -439,7 +439,7 @@
     "last_run_found": 3366
   },
   "model_status": {
-    "timestamp": "2026-04-12T04:00:01Z",
+    "timestamp": "2026-04-12T18:52:16Z",
     "usage_stats": {
       "openai-codex:default": {
         "last_used": "2026-03-13 20:23 UTC"
@@ -451,7 +451,7 @@
           "rate_limit": 1
         },
         "cooldown": "expired (no longer in cooldown)",
-        "last_failure": "2026-04-10 20:07 UTC"
+        "last_failure": "2026-04-12 18:51 UTC"
       },
       "ollama:default": {
         "last_used": "2026-04-06 09:09 UTC",
@@ -460,7 +460,7 @@
           "rate_limit": 1
         },
         "cooldown": "expired (no longer in cooldown)",
-        "last_failure": "2026-04-10 12:57 UTC"
+        "last_failure": "2026-04-12 18:51 UTC"
       },
       "xai:default": {
         "error_count": 1,
@@ -483,9 +483,9 @@
       "openrouter": {
         "provider": "openrouter",
         "status": "ok",
-        "usage_monthly_usd": 10.061,
-        "usage_weekly_usd": 0.816,
-        "usage_daily_usd": 0,
+        "usage_monthly_usd": 10.0853,
+        "usage_weekly_usd": 0.8403,
+        "usage_daily_usd": 0.0242,
         "is_free_tier": false
       },
       "openai": {
@@ -538,13 +538,13 @@
         "window_5h_status": "allowed",
         "window_5h_used_pct": 0.0,
         "window_5h_remaining_pct": 100.0,
-        "window_5h_reset_in": "5.0h",
-        "window_5h_reset_at": "2026-04-12 09:00 UTC",
+        "window_5h_reset_in": "4.1h",
+        "window_5h_reset_at": "2026-04-12 23:00 UTC",
         "window_7d_status": "allowed",
-        "window_7d_used_pct": 32.0,
-        "window_7d_remaining_pct": 68.0,
-        "window_7d_reset_in": "12.0h",
-        "window_7d_reset_at": "2026-04-12 16:00 UTC",
+        "window_7d_used_pct": 0.0,
+        "window_7d_remaining_pct": 100.0,
+        "window_7d_reset_in": "167.1h",
+        "window_7d_reset_at": "2026-04-19 18:00 UTC",
         "overall_status": "allowed",
         "overage_status": "allowed",
         "overage_reason": ""
@@ -552,7 +552,7 @@
       "openai-codex": {
         "provider": "openai-codex",
         "status": "valid",
-        "token_expires_in": "91.3h",
+        "token_expires_in": "76.4h",
         "plan": "plus",
         "api_reachable": false
       },
