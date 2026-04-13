@@ -1,6 +1,190 @@
 {
-  "generated_at": "2026-04-13T05:02:12.605209+00:00",
+  "generated_at": "2026-04-13T08:47:29.317841+00:00",
   "analyses": [
+    {
+      "id": 27,
+      "run_id": 66,
+      "run_time": "2026-04-13 08:43:37.925650+00:00",
+      "analyzed_at": "2026-04-13T08:47:29.309789+00:00",
+      "articles_analyzed": 42,
+      "articles_selected": 11,
+      "model_used": "openrouter/openai/gpt-5-mini",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La cronaca svizzera di oggi è dominata da un grave caso di abusi in asilo con crescenti critiche ai controlli istituzionali e da condizioni meteo anomale con una nuova ondata di neve sulle Alpi meridionali. Diversi incidenti stradali e violazioni delle regole di riposo dei camionisti completano il quadro.",
+          "notizie": [
+            {
+              "titolo": "Scandalo abusi in asilo: almeno 15 bambini coinvolti, emergono ritardi e fallimenti nei controlli",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/schweiz/zuerich/kita-betreuer-trieb-sein-unwesen-laenger-als-bisher-bekannt-trotz-etlichen-meldungen-niemand-stoppte-tobias-f-id21864706.html",
+              "riassunto": "Un assistente d'asilo, Tobias F., è accusato di aver abusato di almeno 15 bambini nelle regioni di Winterthur e Berna. Emergono dettagli che indicano ripetute segnalazioni non adeguatamente gestite dalle autorità: il caso solleva forti critiche sulle falle nei meccanismi di controllo e protezione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Schweiz - Tobias F. operava più a lungo del noto",
+                "Blick Schweiz - 15 bambini abusati: asilo di Winterthur avvertito in anticipo"
+              ],
+              "differenze_narrative": "Entrambi gli articoli pongono l'accento sulla gravità dei fatti e sulle carenze dei controlli. Il primo (Tobias F. operava più a lungo...) enfatizza il fallimento sistemico delle autorità e la durata delle violenze; il secondo (15 bambini abused...) sottolinea che il nido di Winterthur era stato avvertito tempestivamente, focalizzandosi sul ritardo nell'intervento locale. Il tono è uniforme (allarmistico e critico), ma un pezzo è più inchiestistico mentre l'altro evidenzia la sequenza temporale delle segnalazioni."
+            },
+            {
+              "titolo": "Nuova ondata di neve colpisce le Alpi meridionali: metà aprile con condizioni da pieno inverno",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/schweiz/woche-beginnt-mit-weiterer-schneewalze-in-suedlichen-alpen-mitten-im-april-schnee-wie-mitten-im-winter-id21864982.html",
+              "riassunto": "Una perturbazione riporta forte nevicate sulle Alpi meridionali, in particolare in Vallese e sul versante sudalpino, con pericolo valanghe e condizioni in quota paragonabili al pieno inverno. La situazione interessa direttamente regioni ticinesi e cantonali alpine, con possibili disagi a trasporti e infrastrutture.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Condotta pericolosa su strada: incidente a Rupperswil con conducente ubriaco e inseguimento a Moosseedorf con minorenne ferito",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/schweiz/unfall-in-rupperswil-ag-alkoholisierter-autofahrer-prallt-in-steinbrocken-mutter-57-und-sohn-16-getroffen-id21862355.html",
+              "riassunto": "Due episodi stradali recenti: a Rupperswil un 63enne ubriaco ha urtato massi al bordo strada causando ferite a una donna di 57 anni e al figlio di 16; a Moosseedorf un minorenne in fuga dalla polizia si è schiantato contro un albero dopo un inseguimento. Entrambi i casi mettono in luce rischi legati all'alcol e alla guida di minori.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Critiche e inchieste su controlli istituzionali nei servizi per l'infanzia",
+            "Clima e fenomeni meteorologici anomali che impattano le regioni alpine"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle indagini sul caso Tobias F., possibili approfondimenti giudiziari e risposte istituzionali (ispezioni, riforme nei controlli) nelle prossime 24-48 ore; aggiornamenti sulle condizioni meteo e rischi valanghe per le Alpi meridionali.",
+          "_model_used": "openrouter/openai/gpt-5-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la copertura geopolitica è dominata da tensioni USA‑Iran e dal clamoroso ribaltone politico in Ungheria; a livello svizzero emergono vicende con impatto diretto sul Paese, tra processi all'estero e proteste che coinvolgono la capitale.",
+          "notizie": [
+            {
+              "titolo": "Cambio storico in Ungheria: Peter Magyar batte Viktor Orbán",
+              "fonte": "Blick Ausland / Blick Politik (più articoli)",
+              "link": "https://www.blick.ch/ausland/peter-magyar-gewinnt-historische-wahl-das-ist-der-neue-ministerpraesident-von-ungarn-id21864693.html",
+              "riassunto": "Dopo 16 anni Viktor Orbán perde le elezioni: la Tisza‑Partei di Peter Magyar conquista una vittoria storica con forte consenso. L'evento apre la possibilità di ricucire i rapporti con l'UE e segnala una svolta nella politica centro‑orientale europea.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Ausland",
+                "Blick Politik"
+              ],
+              "differenze_narrative": "Tutti gli articoli provengono dalla stessa testata ma con angolazioni diverse: alcuni pezzi enfatizzano il sollievo e la reazione positiva dell'UE ('Europa reagisce con sollievo'), altri offrono ritratti personali di Magyar o di Orban (profilo storico), mentre altri ancora mettono sotto la lente le accuse di voto di scambio e corruzione che hanno segnato la campagna. Tono complessivo celebrativo‑analitico, con attenzione sia alle implicazioni europee sia agli aspetti controversi interni."
+            },
+            {
+              "titolo": "Nuove tensioni USA‑Iran: discorsi su blocco dello Stretto di Hormuz e fallimento del vertice di Islamabad",
+              "fonte": "Blick Ausland",
+              "link": "https://www.blick.ch/wirtschaft/kampf-um-wichtige-meerenge-warum-trump-nun-die-strasse-von-hormus-blockieren-will-id21864353.html",
+              "riassunto": "Rilanci di Trump su controllo o blocco dello Stretto di Hormuz e contemporanee trattative fallite tra USA e Iran a Islamabad segnano un'escalation diplomatica: Mosse che rischiano di acuire le tensioni in Medio Oriente e influire sui mercati energetici globali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Ausland (articolo su Hormuz)",
+                "Blick Ausland (articolo su Islamabad)"
+              ],
+              "differenze_narrative": "Entrambi gli articoli della stessa testata coprono aspetti complementari: uno si concentra sugli effetti economici e strategici dell'eventuale controllo dello Stretto (enfasi su costi e rischio militare), l'altro sul fallimento diplomatico del summit di Islamabad (enfasi su divergenze di posizioni e responsabilità dei negoziatori). Il framing alterna preoccupazione economica a critica della poca efficacia della diplomazia."
+            },
+            {
+              "titolo": "Processo in Sudan: due manager svizzeri rischiano lunghe pene per affari petroliferi",
+              "fonte": "Blick Ausland",
+              "link": "https://www.blick.ch/ausland/oelgeschaefte-im-sudanesischen-buergerkrieg-zwei-schweizer-managern-drohen-lange-haftstrafen-id21861672.html",
+              "riassunto": "Un maxi‑processo in Sudan vede imputati due manager svizzeri per il loro ruolo negli affari petroliferi durante la guerra civile; il procedimento, con centinaia di udienze e numerosi testimoni, può avere ripercussioni legali e reputazionali per aziende e individui svizzeri coinvolti all'estero.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Riallineamento politico in Europa centrale (fine dell'era Orbán)",
+            "Escalation e fallimenti diplomatici USA‑Iran, rischio impatto energetico"
+          ],
+          "da_tenere_d_occhio": "Evoluzione della situazione USA‑Iran (dichiarazioni di Washington/Teheran, eventuali azioni navali nello Stretto di Hormuz) e sviluppi legali/mediatici sul processo ai manager svizzeri in Sudan nelle prossime 24 ore.",
+          "_model_used": "openrouter/openai/gpt-5-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la copertura economica mette al centro tre temi con impatto diretto per la Svizzera: interruzioni nei trasporti aerei per lo sciopero dei piloti Lufthansa, pressioni sul mercato immobiliare con banche che alzano i margini sui mutui, e misure commerciali dei grandi rivenditori svizzeri per contenere sprechi e prezzi. Sullo sfondo resta la tensione in Medio Oriente che alimenta volatilità sui mercati energetici.",
+          "notizie": [
+            {
+              "titolo": "Sciopero dei piloti Lufthansa: voli da e per la Svizzera cancellati lunedì e martedì",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schweiz-betroffen-lufthansa-piloten-streiken-am-montag-und-dienstag-id21863329.html",
+              "riassunto": "I piloti di Lufthansa hanno indetto uno sciopero per lunedì e martedì a seguito di un contenzioso salariale; la misura colpisce anche voli da e per la Svizzera, con cancellazioni e disagi per passeggeri e merci. Impatto diretto sul traffico aereo svizzero, possibili ripercussioni per turismo e catene logistiche.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Banche svizzere aumentano i margini sulle ipoteche: pressione sui proprietari di casa",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/sonntagsblick/banken-erhoehen-margen-bei-hypotheken-das-geschaeft-mit-den-hausbesitzern-id21862450.html",
+              "riassunto": "Le banche elvetiche stanno ampliando i margini applicati ai mutui nonostante il contesto di tassi bassi che sostiene il mercato immobiliare. Questo si traduce in costi più alti per i proprietari e potenziali effetti sul mercato residenziale e sulla spesa delle famiglie.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Migros introduce etichetta verde e congela la carne prima della scadenza per offrire sconti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/migros-gefriert-fleisch-vor-ablauf-ein-dieser-gruene-aufkleber-hilft-dir-sparen-und-was-du-sonst-noch-wissen-musst-id21863382.html",
+              "riassunto": "La catena svizzera Migros propone carne surgelata prima della scadenza con un bollino verde per vendere a prezzo ridotto, iniziativa volta a ridurre gli sprechi e offrire risparmi ai consumatori. Importante per il potere d'acquisto domestico e per le pratiche di gestione degli stock nella grande distribuzione svizzera.",
+              "rilevanza": "media",
+              "incrocio": false
+            },
+            {
+              "titolo": "Tensioni in Medio Oriente rilanciano il prezzo del petrolio e mettono in allarme gli investitori",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/schwierige-zeiten-fuer-anleger-iran-krieg-truebt-rendite-aussicht-selbst-in-best-case-szenario-id21865609.html",
+              "riassunto": "La guerra in Medio Oriente e il timore di un blocco dello Stretto di Hormuz fanno salire la volatilità sui mercati: i rendimenti attesi a medio-lungo termine risultano ridotti anche nello scenario migliore e il prezzo del petrolio supera i 100$ al barile. Le ricadute interessano inflazione, costi energetici e mercati finanziari globali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Tempi difficili per gli investitori: le nubi della guerra iraniana restituiscono prospettive anche nello scenario migliore - Blick Wirtschaft",
+                "Minaccioso blocco statunitense dello Stretto di Hormuz: i prezzi del petrolio risalgono a oltre 100 dollari al barile - Blick Wirtschaft",
+                "Alternativa economica a Maiorca: i turisti prendono d'assalto le città costiere grazie ai prezzi bassi - Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Le tre cronache coprono lo stesso sfondo di tensione Iran/Strait of Hormuz ma con angolazioni diverse: il primo articolo adotta un tono macroeconomico, analizzando l'impatto sui rendimenti e sul rischio di stagflazione; il secondo è più focalizzato sui mercati energetici e sulla dinamica immediata del prezzo del petrolio (tono più allarmistico); il terzo usa la stessa causa geopolitica per spiegare effetti concreti sul turismo e sui flussi di domanda, privilegiando un racconto di consumo e spostamenti. Dettagli tecnici sui meccanismi di mercato e le possibili contromisure politiche sono più presenti nel pezzo sugli investitori, mentre il live-ticker mostra dati di mercato aggiornati ma meno contestualizzazione strategica."
+            },
+            {
+              "titolo": "E-mail sensibili su Ariane de Rothschild: nuovi elementi sul passato con Epstein",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/heikle-e-mails-aufgetaucht-was-wusste-ariane-de-rothschild-ueber-epsteins-vergangenheit-id21863534.html",
+              "riassunto": "Sono emerse e-mail che potrebbero mettere in discussione le dichiarazioni della CEO della banca Edmond de Rothschild di Ginevra circa la conoscenza delle attività di Jeffrey Epstein. Il caso ha rilevanza reputazionale per la banca svizzera e possibili implicazioni legali o di governance.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Tensione geopolitica Medio Oriente che alimenta prezzi energetici e volatilità finanziaria",
+            "Pressione sui costi abitativi in Svizzera: banche che aumentano i margini ipotecari"
+          ],
+          "da_tenere_d_occhio": "Evoluzione dello sciopero Lufthansa e comunicazioni delle compagnie per valutare durata e impatto sui voli svizzeri; nuovi sviluppi sulla politica dei margini ipotecari da parte delle banche e possibili interventi regolatori; aggiornamenti sui prezzi del petrolio legati agli eventi nello Stretto di Hormuz nelle prossime 24 ore.",
+          "_model_used": "openrouter/openai/gpt-5-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessun articolo disponibile per questa categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": ""
+        }
+      ]
+    },
     {
       "id": 26,
       "run_id": 62,
@@ -8008,113 +8192,6 @@
             "Uso nascosto dell'IA generativa nei settori creativi (musica, scrittura)"
           ],
           "da_tenere_d_occhio": "L'evoluzione del caso Pentagono vs. Anthropic: il blocco temporaneo del giudice potrebbe creare un precedente legale fondamentale sulla capacità del governo USA di escludere aziende IA dalla supply chain federale per motivi politici. In parallelo, monitorare la catena di compromissioni nella supply chain software (Axios, LiteLLM) che potrebbe rivelare un pattern di attacco più ampio e coordinato.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "run_id": 40,
-      "run_time": "2026-03-31 04:45:05.938465+00:00",
-      "analyzed_at": "2026-03-31T05:00:38.564172+00:00",
-      "articles_analyzed": 5,
-      "articles_selected": 4,
-      "model_used": "anthropic/claude-opus-4-6",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "geopolitica",
-          "sommario": "Giornata povera di notizie strettamente geopolitiche nella selezione odierna. I tre articoli disponibili coprono un furto d'arte in Italia, l'avvistamento di un alce al confine tedesco-ceco e la missione lunare Artemis II, nessuno dei quali rientra nel perimetro classico della geopolitica. Si segnalano comunque per completezza.",
-          "notizie": [
-            {
-              "titolo": "Furto lampo al museo Magnani-Rocca di Parma: rubati dipinti di Renoir, Cézanne e Matisse in soli 3 minuti",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/03/30/world/europe/parma-art-heist-renoir-matisse-cezanne-italy.html",
-              "riassunto": "Ladri hanno fatto irruzione nella Fondazione Magnani-Rocca nei pressi di Parma, in Italia, portando via in appena tre minuti dipinti di Renoir, Cézanne e Matisse dal valore di svariati milioni di euro. Le autorità italiane stanno indagando su quello che appare come un colpo altamente pianificato.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L'alce Emil riappare al confine tra Germania e Repubblica Ceca",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/sichtung-er-ist-wieder-da-elch-emil-taucht-an-deutscher-grenze-auf-103537212",
-              "riassunto": "L'alce Emil, in viaggio da mesi attraverso l'Europa centrale, è stato avvistato al confine tra Repubblica Ceca e Germania. La vicenda, di colore più che geopolitica, tocca marginalmente il tema della fauna selvatica transfrontaliera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Artemis II: come seguire il primo volo con equipaggio verso la Luna dopo oltre 50 anni",
-              "fonte": "New York Times Homepage",
-              "link": "https://www.nytimes.com/2026/01/28/travel/florida-artemis-ii-moon-launch.html",
-              "riassunto": "La NASA si prepara al lancio di Artemis II, la prima missione con equipaggio intorno alla Luna dagli anni '70. L'articolo fornisce indicazioni su come assistere al lancio dal Kennedy Space Center in Florida o online. Il programma Artemis ha anche una dimensione geopolitica legata alla competizione spaziale con la Cina.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "criminalità organizzata e furti d'arte in Europa",
-            "corsa spaziale e competizione USA-Cina sulla Luna"
-          ],
-          "da_tenere_d_occhio": "Le indagini sul furto alla Fondazione Magnani-Rocca di Parma: la rapidità del colpo suggerisce una rete criminale specializzata, con possibili ramificazioni internazionali nel traffico illecito di opere d'arte. Sul fronte spaziale, monitorare l'evoluzione della missione Artemis II e le reazioni di Pechino nel contesto della competizione lunare.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Giornata scarsa di notizie economiche nel feed analizzato. L'unica notizia disponibile riguarda il mondo dello spettacolo e non è pertinente alla categoria economia, pertanto non sono identificabili argomenti economici rilevanti.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Nessun sviluppo economico rilevante individuabile dal feed odierno. Si consiglia di ampliare le fonti di monitoraggio per la categoria economia.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Nessun articolo disponibile per questa categoria.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": ""
-        },
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Nessun articolo disponibile per questa categoria.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": ""
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Nessun articolo disponibile per questa categoria.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": ""
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Giornata con una sola notizia rilevante nella categoria, focalizzata sul cambio di rotta della SEC statunitense in materia di regolamentazione delle criptovalute sotto l'amministrazione Trump.",
-          "notizie": [
-            {
-              "titolo": "La SEC cambia rotta: da avversaria a promotrice di politiche favorevoli alle criptovalute",
-              "fonte": "New York Times Technology",
-              "link": "https://www.nytimes.com/2026/03/30/technology/sec-crypto-friendly-rules.html",
-              "riassunto": "La Securities and Exchange Commission statunitense, sotto la presidenza Trump, sta entrando in una nuova fase di vicinanza al mondo crypto, passando da un approccio ostile e sanzionatorio a uno collaborativo. L'agenzia sta attivamente redigendo normative favorevoli al settore delle criptovalute, segnando un cambiamento radicale nella regolamentazione finanziaria USA.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "regolamentazione crypto USA",
-            "politiche pro-cripto dell'amministrazione Trump",
-            "evoluzione ruolo SEC"
-          ],
-          "da_tenere_d_occhio": "Monitorare i dettagli delle nuove normative SEC in fase di scrittura e il loro impatto concreto sul mercato crypto, nonché le reazioni del Congresso e delle altre agenzie regolatorie federali.",
           "_model_used": "anthropic/claude-opus-4-6"
         }
       ]
