@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Fatta in Casa — Ricette</title>
+  <title>Pizza Fatta in Casa — I Miei Esperimenti</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -14,9 +14,8 @@
       padding: 2rem 1.25rem 3rem;
     }
 
-    .container { max-width: 580px; margin: 0 auto; }
+    .container { max-width: 680px; margin: 0 auto; }
 
-    /* Back link */
     .back {
       display: inline-flex;
       align-items: center;
@@ -46,7 +45,64 @@
       margin-top: 0.4rem;
     }
 
-    /* Recipe card */
+    /* Tabella comparativa */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      border: 1px solid #27272a;
+    }
+    table {
+      width: 100%;
+      min-width: 580px;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+    thead th {
+      background: #18181b;
+      color: #a1a1aa;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.68rem;
+      padding: 0.7rem 0.6rem;
+      text-align: left;
+      border-bottom: 1px solid #27272a;
+      position: sticky;
+      top: 0;
+    }
+    thead th:first-child {
+      color: #52525b;
+      width: 90px;
+    }
+    thead th.col-1 { color: #f59e0b; }
+    thead th.col-2 { color: #8b5cf6; }
+    thead th.col-3 { color: #10b981; }
+    thead th.col-4 { color: #3b82f6; }
+    tbody td {
+      padding: 0.55rem 0.6rem;
+      border-bottom: 1px solid #1a1a1e;
+      color: #d4d4d8;
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody td:first-child {
+      font-weight: 600;
+      color: #71717a;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tbody tr.sep td {
+      border-top: 2px solid #27272a;
+      padding-top: 0.7rem;
+    }
+    .best { color: #4ade80; font-weight: 600; }
+    .wip { color: #fbbf24; font-style: italic; }
+
+    /* Recipe cards */
     .recipe {
       background: #18181b;
       border: 1px solid #27272a;
@@ -64,7 +120,6 @@
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      margin-bottom: 1rem;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
     }
@@ -90,7 +145,7 @@
 
     .recipe-body {
       display: none;
-      padding-top: 0.5rem;
+      padding-top: 1rem;
     }
     .recipe.open .recipe-body { display: block; }
 
@@ -109,10 +164,9 @@
       background: #27272a;
       color: #a1a1aa;
     }
-    .badge--time { background: #1e3a5f; color: #93c5fd; }
-    .badge--diff { background: #1a2e1a; color: #86efac; }
-    .badge--diff.medium { background: #2e2a1a; color: #fcd34d; }
-    .badge--diff.hard { background: #2e1a1a; color: #fca5a5; }
+    .badge--hydra { background: #1e3a5f; color: #93c5fd; }
+    .badge--best { background: #1a2e1a; color: #86efac; }
+    .badge--wip { background: #2e2a1a; color: #fcd34d; }
 
     /* Sections */
     .section-title {
@@ -170,23 +224,26 @@
       line-height: 1.45;
     }
 
-    /* Dough section */
-    .dough-banner {
-      background: linear-gradient(135deg, #b45309, #92400e);
-      border-radius: 14px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .dough-banner h2 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-    .dough-banner p {
+    .test-note {
+      background: #0f1a0f;
+      border-left: 3px solid #4ade80;
+      border-radius: 0 8px 8px 0;
+      padding: 0.75rem 1rem;
+      margin-top: 0.75rem;
       font-size: 0.82rem;
-      color: rgba(255,255,255,0.7);
+      color: #86efac;
+      line-height: 1.45;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #52525b;
+      margin-bottom: 0.75rem;
+      margin-top: 2rem;
+      padding-left: 0.25rem;
     }
 
     footer {
@@ -194,6 +251,11 @@
       margin-top: 2rem;
       color: #3f3f46;
       font-size: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      table { font-size: 0.72rem; }
+      thead th, tbody td { padding: 0.45rem 0.4rem; }
     }
   </style>
 </head>
@@ -205,192 +267,271 @@
     <header>
       <div class="emoji">🍕</div>
       <h1>Pizza Fatta in Casa</h1>
-      <p>5 ricette classiche — dall'impasto al forno</p>
+      <p>I miei esperimenti — 4 metodi a confronto</p>
     </header>
 
-    <!-- Impasto base -->
-    <div class="dough-banner">
-      <h2>Impasto Base per Tutti</h2>
-      <p>500g farina 0 · 325ml acqua · 10g sale · 3g lievito · 10ml olio EVO</p>
+    <!-- Tabella comparativa -->
+    <div class="section-label">Confronto rapido (per 1kg di farina)</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-1">1. Diretto</th>
+            <th class="col-2">2. Poolish</th>
+            <th class="col-3">3. Alta Idrat.</th>
+            <th class="col-4">4. Lievit. Lunga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Farina</td>
+            <td>Caputo Pizzeria / Nuvola</td>
+            <td>Caputo Pizzeria (poolish + rinfresco)</td>
+            <td>W330+</td>
+            <td>Forte (Nuvola Plus / Cuoco)</td>
+          </tr>
+          <tr>
+            <td>Acqua</td>
+            <td>600-700ml (60-70%)</td>
+            <td>~600ml (~60%)</td>
+            <td>800ml (80%) → ridurre a 700-750ml</td>
+            <td>750ml (75%)</td>
+          </tr>
+          <tr>
+            <td>Lievito secco</td>
+            <td>~1g</td>
+            <td>~3.5g</td>
+            <td>8-10g</td>
+            <td>6g</td>
+          </tr>
+          <tr>
+            <td>Sale</td>
+            <td>25g</td>
+            <td>27g</td>
+            <td>20g</td>
+            <td>20g</td>
+          </tr>
+          <tr>
+            <td>Extra</td>
+            <td>Filo d'olio</td>
+            <td>~3.5g miele + filo d'olio</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Panetti</td>
+            <td>240-280g</td>
+            <td>~280g</td>
+            <td>240-260g</td>
+            <td>240-260g</td>
+          </tr>
+          <tr class="sep">
+            <td>Impasto</td>
+            <td>20-25 min a mano</td>
+            <td>15 min a mano</td>
+            <td>Solo pieghe, mai impastare</td>
+            <td>Pieghe stretch&fold</td>
+          </tr>
+          <tr>
+            <td>Lievitaz.</td>
+            <td>8h amb (+8h frigo opz.)</td>
+            <td>2-4h amb (o 12h frigo + 2-4h)</td>
+            <td>2h amb</td>
+            <td>12-24h</td>
+          </tr>
+          <tr>
+            <td>Forno</td>
+            <td>~400°C</td>
+            <td>~400°C</td>
+            <td>~400°C</td>
+            <td>Da testare</td>
+          </tr>
+          <tr>
+            <td>Risultato</td>
+            <td class="best">Test 3 e 5 TOP</td>
+            <td class="best">Test 2 e 3 TOP</td>
+            <td class="best">Ottimo</td>
+            <td class="wip">In corso</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <!-- Ricetta 1: Margherita -->
+    <!-- Dettagli ricette -->
+    <div class="section-label">Dettagli metodi</div>
+
+    <!-- 1. Impasto Diretto -->
     <div class="recipe open" id="r1">
       <div class="recipe-header" onclick="toggle('r1')">
-        <span class="recipe-icon">🍅</span>
+        <span class="recipe-icon">🫓</span>
         <div class="recipe-title-wrap">
-          <div class="recipe-title">Margherita</div>
-          <div class="recipe-subtitle">La regina delle pizze</div>
+          <div class="recipe-title">Impasto Diretto</div>
+          <div class="recipe-subtitle">60-70% idratazione — il metodo classico</div>
         </div>
         <span class="recipe-toggle">›</span>
       </div>
       <div class="recipe-body">
         <div class="meta">
-          <span class="badge badge--time">25 min</span>
-          <span class="badge badge--diff">Facile</span>
-          <span class="badge">4 persone</span>
+          <span class="badge badge--hydra">60-70%</span>
+          <span class="badge badge--best">Test 3 & 5 TOP</span>
+          <span class="badge">240-280g panetti</span>
         </div>
-        <div class="section-title">Ingredienti</div>
+        <div class="section-title">Ingredienti (1kg farina)</div>
         <ul>
-          <li>Passata di pomodoro San Marzano, 200g</li>
-          <li>Mozzarella fior di latte, 200g</li>
-          <li>Basilico fresco, 8-10 foglie</li>
-          <li>Olio extravergine d'oliva</li>
-          <li>Sale q.b.</li>
+          <li>1kg farina Caputo Pizzeria o Nuvola</li>
+          <li>600-700ml acqua fresca</li>
+          <li>~1g lievito secco (sciolto in acqua subito)</li>
+          <li>25g sale sciolto in acqua prima che si formi la palla</li>
+          <li>Filo d'olio alla palla</li>
         </ul>
         <div class="section-title">Procedimento</div>
         <ol>
-          <li>Stendi l'impasto su un piano infarinato formando un disco di circa 30cm.</li>
-          <li>Distribuisci la passata di pomodoro lasciando 1cm di bordo.</li>
-          <li>Spezzetta la mozzarella e distribuiscila uniformemente.</li>
-          <li>Inforna a 250°C (o massima temperatura) per 8-10 minuti.</li>
-          <li>Aggiungi basilico fresco e un filo d'olio a crudo appena sfornata.</li>
+          <li>Sciogliere il lievito nell'acqua, aggiungere farina gradualmente.</li>
+          <li>Aggiungere sale sciolto in acqua prima che si formi la palla.</li>
+          <li>Impastare sul tavolo 20-25 minuti.</li>
+          <li>Aggiungere un filo d'olio alla palla, riposo 30 min coperto con panno.</li>
+          <li>Mozzatura e panetti da 240-280g.</li>
+          <li>Lievitazione 8h a 20°C (+ 8h in frigo opzionali).</li>
+          <li>Forno ~400°C.</li>
         </ol>
-        <div class="tip">Per una cottura perfetta, preriscalda il forno con una pietra refrattaria per almeno 30 minuti.</div>
+        <div class="test-note">
+          <strong>Test 3 (TOP):</strong> Caputo Pizzeria, 70% idratazione, ~1g lievito secco. Pieghe ai panetti dopo 4h delle 8h di lievitazione. Poco olio nei tupperware. Funziona anche invertendo: prima frigo poi fuori.
+        </div>
+        <div class="test-note">
+          <strong>Test 5 (TOP, in giornata):</strong> Stessa ricetta ma 60%, panetti 260-280g, forno non troppo caldo (~400°C). Ancora meglio con farina Nuvola, impastato 25 min.
+        </div>
+        <div class="tip">Poco lievito se si lievita a temp. ambiente, altrimenti i panetti esplodono.</div>
       </div>
     </div>
 
-    <!-- Ricetta 2: Diavola -->
+    <!-- 2. Poolish -->
     <div class="recipe" id="r2">
       <div class="recipe-header" onclick="toggle('r2')">
-        <span class="recipe-icon">🌶️</span>
+        <span class="recipe-icon">🧪</span>
         <div class="recipe-title-wrap">
-          <div class="recipe-title">Diavola</div>
-          <div class="recipe-subtitle">Piccante con salame e peperoncino</div>
+          <div class="recipe-title">Poolish</div>
+          <div class="recipe-subtitle">Pre-fermento — le migliori di sempre</div>
         </div>
         <span class="recipe-toggle">›</span>
       </div>
       <div class="recipe-body">
         <div class="meta">
-          <span class="badge badge--time">25 min</span>
-          <span class="badge badge--diff">Facile</span>
-          <span class="badge">4 persone</span>
+          <span class="badge badge--hydra">~60%</span>
+          <span class="badge badge--best">Test 2 & 3 TOP</span>
+          <span class="badge">~280g panetti</span>
         </div>
-        <div class="section-title">Ingredienti</div>
+        <div class="section-title">Poolish (giorno prima)</div>
         <ul>
-          <li>Passata di pomodoro, 200g</li>
-          <li>Mozzarella fior di latte, 180g</li>
-          <li>Salame piccante (spianata calabrese), 80g</li>
-          <li>Peperoncino in fiocchi</li>
-          <li>Olio extravergine d'oliva</li>
+          <li>150g farina</li>
+          <li>150ml acqua</li>
+          <li>5g lievito fresco (o 2.5g secco)</li>
+          <li>2.5g miele</li>
+        </ul>
+        <p style="font-size:0.82rem; color:#a1a1aa; margin-top:0.3rem;">Mescolare tutto, riposo 1h a temp. amb., poi in frigo 16-24 ore.</p>
+
+        <div class="section-title">Rinfresco (giorno dopo)</div>
+        <ul>
+          <li>Tutto il poolish</li>
+          <li>625g farina (Caputo Pizzeria)</li>
+          <li>310ml acqua a temp. ambiente</li>
+          <li>20g sale</li>
         </ul>
         <div class="section-title">Procedimento</div>
         <ol>
-          <li>Stendi l'impasto e distribuisci la passata di pomodoro.</li>
-          <li>Aggiungi la mozzarella spezzettata.</li>
-          <li>Disponi le fette di salame piccante su tutta la superficie.</li>
-          <li>Spolverizza con fiocchi di peperoncino a piacere.</li>
-          <li>Inforna a 250°C per 8-10 minuti fino a quando i bordi sono dorati.</li>
+          <li>Impastare poolish + farina + acqua + sale per 15 minuti.</li>
+          <li>Riposo 15 min coperto sul bancone.</li>
+          <li>Fare palla, mettere in ciotola oliata, riposo 1h a temp. amb.</li>
+          <li>Stagliare con mani oliate, panetti nel contenitore infarinato, olio sopra.</li>
+          <li>Riposo 2-4h a temp. amb. (o 12h frigo + 2-4h fuori).</li>
         </ol>
-        <div class="tip">Aggiungi il salame a metà cottura per evitare che diventi troppo secco.</div>
+        <div class="test-note">
+          <strong>Test 2 (TOP, le migliori di sempre!):</strong> Caputo Pizzeria sia per poolish che rinfresco. 310ml acqua. Palline lasciate 4h nel contenitore grande — hanno tenuto! Con metà dosi: 2 panetti e mezzo.
+        </div>
+        <div class="test-note">
+          <strong>Test 3 (TOP):</strong> Come test 2 ma palline prima 12h in frigo, poi 2-4h fuori. Importante: usare tupperware rotondi. Più contemporanea del diretto, ma servono tupperware rotondi perché non si riesce a togliere dalla cassetta.
+        </div>
       </div>
     </div>
 
-    <!-- Ricetta 3: Quattro Formaggi -->
+    <!-- 3. Alta Idratazione -->
     <div class="recipe" id="r3">
       <div class="recipe-header" onclick="toggle('r3')">
-        <span class="recipe-icon">🧀</span>
+        <span class="recipe-icon">💧</span>
         <div class="recipe-title-wrap">
-          <div class="recipe-title">Quattro Formaggi</div>
-          <div class="recipe-subtitle">Mozzarella, gorgonzola, fontina, parmigiano</div>
+          <div class="recipe-title">Alta Idratazione W330</div>
+          <div class="recipe-subtitle">80% — solo pieghe, niente impastamento</div>
         </div>
         <span class="recipe-toggle">›</span>
       </div>
       <div class="recipe-body">
         <div class="meta">
-          <span class="badge badge--time">20 min</span>
-          <span class="badge badge--diff medium">Media</span>
-          <span class="badge">4 persone</span>
+          <span class="badge badge--hydra">80%</span>
+          <span class="badge badge--best">Ottimo</span>
+          <span class="badge">240-260g panetti</span>
         </div>
-        <div class="section-title">Ingredienti</div>
+        <div class="section-title">Ingredienti (1kg farina)</div>
         <ul>
-          <li>Mozzarella fior di latte, 125g</li>
-          <li>Gorgonzola dolce, 80g</li>
-          <li>Fontina valdostana, 80g</li>
-          <li>Parmigiano Reggiano grattugiato, 40g</li>
-          <li>Pepe nero macinato fresco</li>
+          <li>1kg farina W330+</li>
+          <li>800ml acqua (80%) — prossima volta 700-750ml</li>
+          <li>8-10g lievito secco</li>
+          <li>20g sale</li>
         </ul>
         <div class="section-title">Procedimento</div>
         <ol>
-          <li>Stendi l'impasto — questa pizza si fa in bianco, senza pomodoro.</li>
-          <li>Distribuisci la mozzarella spezzettata come base.</li>
-          <li>Aggiungi cubetti di fontina e piccoli pezzi di gorgonzola.</li>
-          <li>Spolverizza con il parmigiano grattugiato.</li>
-          <li>Inforna a 250°C per 8-10 minuti. Aggiungi pepe nero appena sfornata.</li>
+          <li>Mescolare tutto in ciotola con cucchiaio (NON impastare, impasto molto liquido).</li>
+          <li>Frigo 30 min.</li>
+          <li>Pieghe in ciotola → frigo 30 min. Ripetere.</li>
+          <li>Formare il pallottolone, 1h a temp. ambiente.</li>
+          <li>Frigo per rendere gestibile l'impasto.</li>
+          <li>Staglio → panetti 240-260g → frigo.</li>
+          <li>Ripieghe → lievitazione 2h a temp. ambiente.</li>
         </ol>
-        <div class="tip">Taglia la fontina a cubetti piccoli per una fusione uniforme. Il gorgonzola va a ciuffetti.</div>
+        <div class="test-note">
+          <strong>Risultato:</strong> Eccellente! Alveolatura fine e uniforme, leggerezza, impasto arioso e morbido. Si scioglie letteralmente in bocca. Cornicione alto e caratteristico. Il top! 🤌
+        </div>
+        <div class="tip">
+          <strong>Prossimo esperimento:</strong> W330 o superiore, idratazione 70-75% (non 80%), più lievito, NON impastare — solo pieghe e riposi.
+        </div>
       </div>
     </div>
 
-    <!-- Ricetta 4: Focaccia Genovese -->
+    <!-- 4. Lievitazione Lunga -->
     <div class="recipe" id="r4">
       <div class="recipe-header" onclick="toggle('r4')">
-        <span class="recipe-icon">🫒</span>
+        <span class="recipe-icon">⏳</span>
         <div class="recipe-title-wrap">
-          <div class="recipe-title">Focaccia Genovese</div>
-          <div class="recipe-subtitle">Croccante fuori, soffice dentro</div>
+          <div class="recipe-title">Lievitazione Lunga 12-24h</div>
+          <div class="recipe-subtitle">In corso — esperimenti con farina forte</div>
         </div>
         <span class="recipe-toggle">›</span>
       </div>
       <div class="recipe-body">
         <div class="meta">
-          <span class="badge badge--time">40 min</span>
-          <span class="badge badge--diff">Facile</span>
-          <span class="badge">6 persone</span>
+          <span class="badge badge--hydra">75%</span>
+          <span class="badge badge--wip">In corso</span>
+          <span class="badge">240-260g panetti</span>
         </div>
-        <div class="section-title">Ingredienti</div>
+        <div class="section-title">Ingredienti (1kg farina)</div>
         <ul>
-          <li>Impasto base (con 20ml di olio EVO in più)</li>
-          <li>Olio extravergine d'oliva, 50ml</li>
-          <li>Acqua, 30ml</li>
-          <li>Sale grosso marino</li>
-          <li>Rosmarino fresco (opzionale)</li>
+          <li>1kg farina forte (Nuvola Plus / Caputo Cuoco)</li>
+          <li>750ml acqua (75% idratazione)</li>
+          <li>6g lievito secco</li>
+          <li>20g sale</li>
         </ul>
         <div class="section-title">Procedimento</div>
         <ol>
-          <li>Ungi una teglia da forno con abbondante olio.</li>
-          <li>Stendi l'impasto nella teglia, lascialo lievitare 30 minuti coperto.</li>
-          <li>Crea le fossette premendo con le dita su tutta la superficie.</li>
-          <li>Emulsiona olio e acqua e versali nelle fossette. Spargi il sale grosso.</li>
-          <li>Inforna a 220°C per 18-20 minuti fino a doratura perfetta.</li>
+          <li>Mescolare tutto in ciotola (impasto idratato ma gestibile).</li>
+          <li>Palla "brutta" — riposo 30 min a temp. ambiente.</li>
+          <li>Se non si gestisce → frigo 30 min e ripetere pieghe.</li>
+          <li>Una volta ottenuta palla decente → 2h a temp. ambiente.</li>
+          <li>Se serve per gestibilità → breve passaggio in frigo.</li>
+          <li>Staglio in panetti 240-260g.</li>
+          <li>Lievitazione finale: 12-24 ore.</li>
         </ol>
-        <div class="tip">Il segreto è l'emulsione di acqua e olio nelle fossette: crea la crosticina croccante tipica.</div>
-      </div>
-    </div>
-
-    <!-- Ricetta 5: Marinara -->
-    <div class="recipe" id="r5">
-      <div class="recipe-header" onclick="toggle('r5')">
-        <span class="recipe-icon">🧄</span>
-        <div class="recipe-title-wrap">
-          <div class="recipe-title">Marinara</div>
-          <div class="recipe-subtitle">Pomodoro, aglio, origano — niente formaggio</div>
+        <div class="tip">
+          <strong>Test 8 apr 2026:</strong> 500g farina bianca ticinese (3-10g proteine), 1g zucchero, 3g lievito secco, 10g sale, 80% idratazione. Pieghe stretch&fold x2, dopo 1h pieghe aggiuntive e frigo per la notte. Esito da aggiornare.
         </div>
-        <span class="recipe-toggle">›</span>
-      </div>
-      <div class="recipe-body">
-        <div class="meta">
-          <span class="badge badge--time">20 min</span>
-          <span class="badge badge--diff">Facile</span>
-          <span class="badge">4 persone</span>
-        </div>
-        <div class="section-title">Ingredienti</div>
-        <ul>
-          <li>Passata di pomodoro San Marzano, 200g</li>
-          <li>Aglio fresco, 2 spicchi tagliati a lamelle</li>
-          <li>Origano secco</li>
-          <li>Olio extravergine d'oliva</li>
-          <li>Sale q.b.</li>
-        </ul>
-        <div class="section-title">Procedimento</div>
-        <ol>
-          <li>Stendi l'impasto e distribuisci la passata di pomodoro.</li>
-          <li>Disponi le lamelle d'aglio su tutta la superficie.</li>
-          <li>Spolverizza generosamente con origano.</li>
-          <li>Aggiungi un filo d'olio a spirale.</li>
-          <li>Inforna a 250°C per 7-8 minuti — cuoce veloce senza formaggio.</li>
-        </ol>
-        <div class="tip">La marinara è la pizza più antica di Napoli. L'aglio non va schiacciato ma tagliato a lamelle sottili.</div>
       </div>
     </div>
 
