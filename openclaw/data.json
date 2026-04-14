@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T23:50:04.672208Z",
+  "generated_at": "2026-04-14T00:00:08.033490Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 64,
+  "rate_limits_today": 0,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -156,29 +156,15 @@
       "enabled": false
     }
   ],
-  "summaries": [
-    {
-      "date": "2026-04-07",
-      "entry_count": 2,
-      "entries": [
-        {
-          "time": "08:05 UTC",
-          "timestamp": "2026-04-07T08:05:00Z",
-          "event_count": 0,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|",
-          "conversations": ""
-        },
-        {
-          "time": "10:05 UTC",
-          "timestamp": "2026-04-07T10:05:00Z",
-          "event_count": 14,
-          "events_table": "| Evento | Tipo | Esito | Fonte esito |\n|--------|------|-------|-------------|",
-          "conversations": "Nessuna conversazione importante catturata nelle ultime 2h.\n\n### Sintesi artefatti \u2014 11:11 UTC\n**Git recente:**\n- 11bf87d3 Auto-update stats dashboard [2026-04-07]\n\n**Stato cron:**\n| Job | Stato | Durata |\n|-----|-------|--------|\n| memory-review | ok | 8.8s |\n| backup-daily-config | ok | 29.2s |\n| Promemoria pagamento Maria | ok | 9.2s |\n| backup-weekly-full | ok | 57.9s |\n| session-memory-capture | ok | 77.1s |\n| rassegna-mattutina | ok | 264.1s |\n| promemoria-fide | error | 16.4s |\n| promemoria-pasqua | error | 600.0s |\n| test-remind-curl | error | 11.7s |\n| test-outbound-telegram | error | 33.2s |\n| dashboard-data-update | ok | 11.8s |\n| rassegna-analisi | ok | 22.4s |\n| rassegna-email-dashboard | ok | 206.9s |\n\n**File memoria aggiornati:**\n- /root/.openclaw/workspace/memory/2026-04-07.md\n- /root/.openclaw/workspace/memory/2026-04-07-0841.md\n- /root/.openclaw/workspace/memory/2026-04-07-0839.md\n- /root/.openclaw/workspace/memory/2026-04-06.md\n- /root/.openclaw/workspace/memory/2026"
-        }
-      ]
-    }
-  ],
+  "summaries": [],
   "backups": [
+    {
+      "file": "daily-config-20260414-0200.tar.gz",
+      "date": "2026-04-14T02:00:00Z",
+      "size": "11.6M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260414-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260413-0200.tar.gz",
       "date": "2026-04-13T02:00:00Z",
@@ -381,18 +367,11 @@
       "size": "8.4M",
       "context": "Backup automatico 02/04 pomeriggio",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-1357.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20260402-1305.tar.gz",
-      "date": "2026-04-02T13:05:00Z",
-      "size": "8.4M",
-      "context": "Backup automatico 02/04 mattina",
-      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-1305.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
     "articles_total": 12024,
-    "articles_today": 829,
+    "articles_today": 0,
     "articles_new_last_run": 2,
     "last_run": "2026-04-13 08:43:37.925650+00:00",
     "last_run_found": 3795
