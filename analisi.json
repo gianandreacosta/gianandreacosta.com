@@ -1,6 +1,240 @@
 {
-  "generated_at": "2026-04-15T08:18:11.201673+00:00",
+  "generated_at": "2026-04-15T09:06:22.507548+00:00",
   "analyses": [
+    {
+      "id": 34,
+      "run_id": 68,
+      "run_time": "2026-04-15 04:45:02.111313+00:00",
+      "analyzed_at": "2026-04-15T09:06:22.502359+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 13,
+      "model_used": "ollama/qwen3.5:cloud",
+      "status": "partial",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese è dominata oggi dalle implicazioni economiche dell'intesa federale sui salari minimi, che crea incertezze specifiche per il Cantone. Parallelamente, i dati meteorologici evidenziano il Mendrisiotto come area critica per i fulmini, mentre a livello giudiziario emerge una maxi-truffa nel settore delle auto d'epoca.",
+          "notizie": [
+            {
+              "titolo": "Salario minimo: intesa a Berna, ma scenari complessi per il Ticino",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma-per-il-ticino-le-cose-si-complicano-425142",
+              "riassunto": "La Commissione economia del Nazionale stabilisce la prevalenza dei salari minimi nei contratti collettivi su quelli cantonali, salvo eccezioni. Per il Ticino, dove vige un salario minimo cantonale, la situazione resta aperta e potenzialmente critica per il mercato del lavoro locale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "La CdT enfatizza le 'complicazioni' e l'incertezza politica per il Ticino con un tono più allarmistico, mentre Ticinonews riporta i fatti tecnici della decisione della Commissione con un approccio più neutro e descrittivo."
+            },
+            {
+              "titolo": "Mendrisiotto e Luganese: le regioni ticinesi più colpite dai fulmini nel 2025",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/e-il-mendrisiotto-la-regione-piu-colpita-dai-fulmini-nel-2025-luganese-al-secondo-posto-431406",
+              "riassunto": "Nonostante un calo generale del 25% dei fulmini in Svizzera, il Ticino conferma la sua vocazione temporalesca. Il Mendrisiotto risulta la regione più colpita, seguito dal Luganese, dati cruciali per la prevenzione e la sicurezza sul territorio.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano identici dati statistici senza significative differenze di framing; la notizia è trattata come un resoconto meteorologico fattuale da entrambe le testate."
+            },
+            {
+              "titolo": "Maxi-truffa da 20 milioni: a processo un gestore di auto d'epoca",
+              "fonte": "LaRegione Luganese",
+              "link": "https://www.laregione.ch/cantone/luganese/1917800/maxi-truffa-da-20-milioni-a-processo-un-gestore-di-auto-d-epoca",
+              "riassunto": "Un gestore di auto d'epoca finisce sotto processo per una presunta truffa dal valore di 20 milioni di franchi. Il caso giudiziario di grande portata economica scuote il settore del lusso in Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Mercato del lavoro e salari minimi",
+            "Eventi meteorologici estremi"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione legislativa a Berna sulla gerarchia tra salari minimi cantonali e contratti collettivi, che potrebbe ridefinire le tutele salariali in Ticino.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La cronaca svizzera è dominata oggi dalle conseguenze dell'incendio di Crans-Montana, con nuove indagini sul sindaco, e dall'impatto diretto sugli utenti ticinesi del data breach di Booking. Sul fronte internazionale, le elezioni in Ungheria vedono la partecipazione di osservatori svizzeri, mentre lo sciopero Lufthansa colpisce i collegamenti aerei nazionali.",
+          "notizie": [
+            {
+              "titolo": "Incendio di Crans-Montana: il sindaco interrogato come ottavo indagato",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1917701/sindaco-crans-montana-capodanno-incendio-inchiesta-interrogato-crans",
+              "riassunto": "Il sindaco di Crans-Montana è stato interrogato nell'ambito dell'inchiesta sulla strage di Capodanno, accusato di omicidio colposo. L'evoluzione giudiziaria coinvolge ora anche la massima autorità comunale, ampliando il perimetro delle responsabilità per il rogo che ha causato 41 vittime.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "La notizia è riportata con focus specifico sull'interrogatorio del sindaco; altre fonti generaliste potrebbero focalizzarsi solo sulle vittime o sui proprietari del locale, mentre qui si evidenzia l'escalation istituzionale dell'inchiesta."
+            },
+            {
+              "titolo": "Data breach di Booking: violati dati di utenti ticinesi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/booking-mette-in-guardia-gli-utenti-attivita-sospette-su-diverse-prenotazioni-424974",
+              "riassunto": "La piattaforma Booking ha subito un attacco informatico che ha esposto nomi, contatti e indirizzi, includendo dati di residenti in Ticino. Sebbene i dati bancari siano salvi, l'evento solleva preoccupazioni per la privacy e il rischio di phishing mirato alla popolazione locale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Elezioni in Ungheria: osservatori svizzeri monitorano la fine dell'era Orban",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/sorge-vor-manipulation-schweizer-politiker-haben-die-wahl-in-ungarn-ueberwacht",
+              "riassunto": "Politici svizzeri, tra cui Sibel Arslan e Roland Büchel, hanno partecipato come osservatori internazionali alle elezioni ungheresi che hanno sancito la sconfitta di Viktor Orban. La presenza elvetica sottolinea l'impegno della Svizzera nel monitoraggio democratico in un contesto di alta tensione politica europea.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Schweiz"
+              ],
+              "differenze_narrative": "Mentre diverse testate SRF coprono l'evento da angolazioni diverse (analisi politica, risultato elettorale), questa notizia si distingue per il focus specifico sul ruolo attivo e la presenza fisica dei rappresentanti istituzionali svizzeri sul campo."
+            },
+            {
+              "titolo": "Sciopero Lufthansa: cancellati voli da e per la Svizzera",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1917842/lufthansa-sciopero-svizzera-germania-tre",
+              "riassunto": "Lo sciopero del personale Lufthansa in Germania sta causando la cancellazione di numerosi voli con partenza o arrivo in Svizzera, creando disagi significativi per i passeggeri elvetici. L'evento evidenzia la forte interdipendenza dei trasporti aerei svizzeri con gli hub tedeschi di Francoforte e Monaco.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Schweiz",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Le fonti tedesche (SRF) tendono a focalizzarsi sulle cause sindacali interne e sui numeri totali dei voli cancellati in Germania, mentre le fonti ticinesi (LaRegione) enfatizzano l'impatto pratico sui viaggiatori svizzeri e sui collegamenti specifici con l'Italia e il Ticino."
+            }
+          ],
+          "trend": [
+            "Sicurezza e responsabilità istituzionale dopo tragedie",
+            "Cybersecurity e protezione dati personali"
+          ],
+          "da_tenere_d_occhio": "Sviluppi dell'inchiesta giudiziaria sull'incendio di Crans-Montana e possibili nuove incriminazioni di figure istituzionali nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: timed out | OR-fallback3: HTTP Error 404: Not Found"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Tensione crescente in Medio Oriente con il blocco USA sull'Iran e rischi per lo stretto di Hormuz, svolta politica storica in Ungheria con la sconfitta di Orbán e attriti diplomatici tra Vaticano e amministrazione Trump.",
+          "notizie": [
+            {
+              "titolo": "Stati Uniti avviano blocco porti iraniani tra tensioni e negoziati",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/14/stati-uniti-avviano-blocco-porti-iraniani",
+              "riassunto": "Washington ha iniziato il blocco dei porti iraniani aumentando l'incertezza nello stretto di Hormuz, nonostante le speranze di una fine delle ostilità abbiano stabilizzato i mercati petroliferi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA e WSJ enfatizzano l'escalation militare e le reazioni di Cina e Russia; NYT analizza le implicazioni strategiche e legali del blocco; Internazionale focalizza sull'impatto economico e l'incertezza diplomatica."
+            },
+            {
+              "titolo": "Péter Magyar vince le elezioni in Ungheria, fine dell'era Orbán",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/ungheria-sconfitta-elettorale-orban",
+              "riassunto": "Il partito sovranista di Viktor Orbán è stato sconfitto dal nuovo partito di centrodestra Tisza, segnando una battuta d'arresto per i suoi alleati internazionali e un cambiamento storico per l'UE.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World"
+              ],
+              "differenze_narrative": "Internazionale sottolinea le implicazioni geopolitiche per Russia e USA; NYT approfondisce il profilo di Magyar come ex alleato di Orbán e la reazione emotiva degli elettori ungheresi."
+            },
+            {
+              "titolo": "Papa Leone XIV risponde a Trump durante la visita in Algeria",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/papa-leone-risponde-attacco-trump",
+              "riassunto": "Il Pontefice ha denunciato le violazioni del diritto internazionale da parte di potenze neocoloniali poche ore dopo un attacco verbale di Donald Trump, sollevando tensioni diplomatiche.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA riporta le condanne iraniane e le critiche di Vance al Vaticano; NYT contestualizza teologicamente la risposta del Papa; Internazionale evidenzia la denuncia politica del neocolonialismo."
+            }
+          ],
+          "trend": [
+            "Crisi nello Stretto di Hormuz",
+            "Ridisegno politico dell'Europa centrale"
+          ],
+          "da_tenere_d_occhio": "Evoluzione del blocco navale USA e possibili reazioni militari iraniane nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: timed out | OR-fallback3: HTTP Error 404: Not Found"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Il settore AI affronta una crisi di risorse computazionali mentre i giganti tecnologici accelerano sullo sviluppo di agenti autonomi. Emerge un forte dibattito sulla disconnessione tra esperti e pubblico, con nuove acquisizioni strategiche che ridisegnano il mercato finanziario e enterprise.",
+          "notizie": [
+            {
+              "titolo": "Crisi globale delle risorse computazionali: razionamenti e crollo dei servizi AI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices/",
+              "riassunto": "La domanda esplosiva per gli agenti AI ha saturato la capacità di calcolo, causando interruzioni dei servizi (incluso Anthropic), razionamenti e un aumento del 50% dei prezzi delle GPU. Un evento critico con ripercussioni immediate su costi e affidabilità per le aziende svizzere che adottano queste tecnologie.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "The Decoder enfatizza l'aspetto drammatico della carenza fisica e l'aumento dei costi per l'industria; TechCrunch si concentra sulle implicazioni specifiche per la sicurezza degli agenti enterprise come OpenClaw, suggerendo che la scarsità di risorse spinge verso soluzioni chiuse e controllate."
+            },
+            {
+              "titolo": "Rapporto Stanford: crescente divario tra esperti AI e opinione pubblica",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/04/13/1135720/why-opinion-on-ai-is-so-divided/",
+              "riassunto": "L'indice AI 2026 di Stanford evidenzia una disconnessione preoccupante: mentre gli insider vedono progresso, il pubblico nutre ansia crescente per posti di lavoro e sanità. Rilevante per il contesto socio-economico svizzero, noto per la sua cautela nell'adozione tecnologica.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "MIT Tech Review",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "MIT Tech Review adotta un tono analitico e sociologico, esplorando le cause della divisione opinativa; TechCrunch tratta la notizia come un dato di fatto statistico, collegandolo direttamente alle implicazioni di mercato e alla percezione del rischio negli investimenti."
+            },
+            {
+              "titolo": "OpenAI acquisisce Hiro: pianificazione finanziaria integrata in ChatGPT",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
+              "riassunto": "OpenAI ha acquistato la startup di finanza personale Hiro per integrare capacità di pianificazione finanziaria avanzata in ChatGPT. Una mossa strategica che potrebbe trasformare il settore fintech, rilevante per la piazza finanziaria svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Carenza strutturale di capacità computazionale (GPU)",
+            "Consolidamento del mercato degli agenti AI verticali"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei prezzi delle GPU e la disponibilità di servizi cloud per le imprese europee nelle prossime 24 ore a seguito degli annunci di razionamento.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        }
+      ]
+    },
     {
       "id": 33,
       "run_id": 68,
@@ -4108,588 +4342,6 @@
             "Agenti AI autonomi per lavoro strategico e di ricerca approfondita"
           ],
           "da_tenere_d_occhio": "L'adozione di Gemma 4 con licenza Apache 2.0 da parte della community: potrebbe rappresentare un punto di svolta nella strategia open-source di Google e costringere i competitor a rivedere le proprie politiche di licensing. Monitorare anche le reazioni della community all'acquisizione di TBPN da parte di OpenAI, che potrebbe segnare l'inizio di una tendenza di aziende AI che acquisiscono media per controllare la narrativa del settore.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "run_id": 49,
-      "run_time": "2026-04-03 04:47:12.972092+00:00",
-      "analyzed_at": "2026-04-03T04:52:52.108582+00:00",
-      "articles_analyzed": 168,
-      "articles_selected": 44,
-      "model_used": "anthropic/claude-opus-4-6",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata dall'esodo pasquale con code chilometriche al Gottardo, dal caso del docente arrestato a Giubiasco per presunti abusi sessuali su minori, e da processi penali in corso. Sullo sfondo, temi di politica sanitaria e demografica animano il dibattito cantonale.",
-          "notizie": [
-            {
-              "titolo": "Esodo pasquale: colonne chilometriche sull'A2 e al San Gottardo",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/e-iniziato-lesodo-pasquale-chilometri-di-colonne-sulla2-424004",
-              "riassunto": "Il Venerdì Santo ha portato il caos sulla A2 in direzione sud, con incolonnamenti già da Rivera e fino a 15 km di coda al portale del San Gottardo. La giornata è classificata da 'bollino rosso' da ViaSuisse, con il picco atteso nel primo pomeriggio. Una breve chiusura del tunnel ha aggravato la situazione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino",
-                "tio.ch Ticino"
-              ],
-              "differenze_narrative": "CdT e Ticinonews condividono titolo e testo quasi identici, focalizzandosi sull'inizio dell'esodo e il bollino rosso. Tio.ch aggiunge dettagli operativi (chiusura temporanea del tunnel, 15 km di coda specifici) e usa un tono più colorito ('Venerdì di Passione', 'traffico da incubo'), enfatizzando l'esperienza vissuta dagli automobilisti."
-            },
-            {
-              "titolo": "Docente arrestato alle Medie di Giubiasco: il caso di presunti abusi sessuali su minori",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/docente-arrestato-a-giubiasco-notizia-che-sconcerta-e-addolora-430580",
-              "riassunto": "Un docente 37enne della scuola media di Giubiasco è stato arrestato per ipotesi di atti sessuali con fanciulli, con più vittime coinvolte. La direzione scolastica ha scritto alle famiglie e attivato misure di sostegno. L'uomo presiedeva anche un'associazione sportiva frequentata da giovani, senza aver mai destato sospetti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Bellinzonese",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews riporta la reazione istituzionale della scuola e le misure di sostegno attivate. LaRegione approfondisce il profilo dell'arrestato (sport, esercito, attività con giovani) e le testimonianze di chi lo conosceva, senza che fossero emersi sospetti. Il CdT allarga il discorso alla prevenzione degli abusi sessuali in Ticino, intervistando una psicologa dell'ASPI che evidenzia carenze sistemiche nei meccanismi di rilevamento."
-            },
-            {
-              "titolo": "Abusi sessuali, la psicologa dell'ASPI: «In Ticino la prevenzione andrebbe rafforzata»",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/abusi-sessuali-in-ticino-la-prevenzione-andrebbe-rafforzata-424002",
-              "riassunto": "A margine del caso Giubiasco, la responsabile della formazione adulti dell'ASPI Raffaella Brenni Tonella sottolinea come i segnali di abuso si manifestino spesso attraverso sintomi comportamentali e chiede il rafforzamento della prevenzione nelle scuole ticinesi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino",
-                "LaRegione Bellinzonese"
-              ],
-              "differenze_narrative": "Questo articolo del CdT rappresenta l'approfondimento analitico del caso Giubiasco, spostando il focus dall'evento di cronaca alla dimensione sistemica della prevenzione, con voce esperta esterna. Le altre fonti restano ancorate alla cronaca dei fatti."
-            },
-            {
-              "titolo": "Accoltellamento alla scalinata Visconti: l'accusa chiede 4 anni e mezzo di reclusione",
-              "fonte": "LaRegione Bellinzonese",
-              "link": "https://www.laregione.ch/cantone/bellinzonese/1915825/marocchino-anni-visconti-scalinata-tre",
-              "riassunto": "Si è aperto il processo per l'accoltellamento avvenuto sulla scalinata Visconti, in cui un 25enne ferì tre persone nel contesto di una lite legata alla droga nei pressi della stazione. Il pubblico ministero ha chiesto una pena di 4 anni e 6 mesi di reclusione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Bellinzonese",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "LaRegione titola sull'accoltellamento e la pena richiesta. Il CdT enfatizza il contesto ('Lite per droga, e poi le coltellate'), evidenziando la dinamica legata allo spaccio vicino alla stazione. Entrambi concordano sulla richiesta di pena, ma con angolazioni diverse: cronaca giudiziaria per LaRegione, fatto di sicurezza urbana per il CdT."
-            },
-            {
-              "titolo": "Truffa da 2,6 milioni di euro sull'asse Romania-Verzasca",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/truffa-da-26-milioni-di-euro-sullasse-romania-verzasca-423994",
-              "riassunto": "Un cittadino italiano di 45 anni è stato condannato a 36 mesi di reclusione (12 da scontare) per aver truffato una cinquantina di persone per un totale di 2,6 milioni di euro. Tra le vittime figurano anche professionisti del settore finanziario attivi nel Locarnese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Giornate autogestite al Liceo: scontro tra Sindacato studenti e Direzione",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/il-sindacato-studenti-denuncia-la-direzione-del-liceo-non-ci-sta-424007",
-              "riassunto": "Le giornate autogestite al Liceo di Mendrisio hanno generato polemiche: il SISA denuncia censure su attività, verifiche e misure punitive. La Direzione respinge le accuse. Attività sarebbero state annullate e i controlli ritenuti eccessivi dagli studenti.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "LaRegione Mendrisiotto"
-              ],
-              "differenze_narrative": "Il CdT presenta la vicenda come uno scontro dialettico tra le parti, dando voce sia al SISA sia alla Direzione. LaRegione titola sulle 'misure punitive' e i controlli, con un tono più critico verso la gestione dell'istituto."
-            },
-            {
-              "titolo": "Partecipazione ai costi delle cure a domicilio: manifestazione e iniziativa parlamentare",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1915832/pazienti-consiglio-costi-cure-partecipazione-domicilio-piazza-parlamento",
-              "riassunto": "È in preparazione una manifestazione di protesta per il 18 aprile a Bellinzona contro la partecipazione dei pazienti ai costi delle cure a domicilio. Parallelamente, è pronta un'iniziativa urgente per chiedere al Gran Consiglio l'abrogazione della misura contestata: una strategia a tenaglia tra piazza e parlamento.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "In Ticino meno figli e sempre più tardi: il ritratto demografico del Cantone",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/in-ticino-meno-figli-e-sempre-piu-tardi-423995",
-              "riassunto": "Le statistiche fotografano una società ticinese in evoluzione: quattro neomamme su cinque hanno più di trent'anni e oltre un quarto dei giovani non intende avere figli. Una demografa invoca politiche familiari mirate, definendole un investimento e non una spesa.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Innalzamento della diga del lago della Sella: progetto ritenuto fattibile",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/cosi-ti-alzo-la-diga-di-7-metri-423987",
-              "riassunto": "Il potenziamento dell'impianto del lago della Sella in Valle Leventina, con un innalzamento della diga di 7 metri, è giudicato fattibile dal punto di vista ambientale e tecnico a costi contenuti. L'intervento consentirebbe una maggiore produzione idroelettrica invernale, in linea con le direttive federali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Pasqua con temperature fino a 25 gradi in Ticino",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/pasqua-temperature-fino-a-25-gradi-ma-attenzione-alle-grigliate-430578",
-              "riassunto": "MeteoSvizzera prevede un anticipo d'estate per Pasqua con massime fino a 25 gradi. L'articolo invita alla prudenza per le grigliate, nel contesto di un periodo con rischio incendio potenzialmente elevato.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza e abusi su minori in ambito scolastico",
-            "Esodo pasquale e viabilità autostradale",
-            "Processi penali e criminalità (accoltellamenti, truffe)",
-            "Politiche sanitarie e costi delle cure a domicilio",
-            "Calo demografico e trasformazioni sociali in Ticino"
-          ],
-          "da_tenere_d_occhio": "Il caso del docente arrestato a Giubiasco potrebbe ampliarsi con l'emergere di ulteriori vittime. Da monitorare la manifestazione del 18 aprile contro la partecipazione ai costi delle cure a domicilio e la relativa iniziativa parlamentare urgente in Gran Consiglio, che potrebbe generare un forte dibattito politico nelle prossime settimane.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Giornata dominata dal ritorno dell'ambasciatore italiano Cornado in Svizzera dopo il caso Crans-Montana, da un incidente mortale sul lavoro a Visp e dalle ripercussioni sulla Svizzera dei dazi farmaceutici USA. Sul fronte interno, attenzione all'allontanamento di profughi ucraini e ai licenziamenti di TeleBielingue.",
-          "notizie": [
-            {
-              "titolo": "L'ambasciatore italiano Cornado rientra in Svizzera dopo il caso Crans-Montana",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/crans-montana-lambasciatore-cornado-torna-in-svizzera-423992",
-              "riassunto": "L'ambasciatore italiano Cornado torna a Berna dopo essere stato richiamato a Roma il 24 gennaio in seguito alla scarcerazione di Jacques Moretti nel caso Crans-Montana. La Farnesina ha confermato il rientro, segnando una distensione nei rapporti diplomatici italo-svizzeri.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT e Ticinonews riportano la notizia con titolo e descrizione identici, focalizzandosi sul richiamo del 24 gennaio e sulla scarcerazione di Moretti. LaRegione usa un titolo leggermente diverso e nella descrizione inserisce erroneamente dati su Zewo e donazioni (probabile errore di feed), non aggiungendo dettagli sul caso diplomatico. Tutte le fonti citano la Farnesina come origine della notizia."
-            },
-            {
-              "titolo": "Operaio muore schiacciato tra carico e gru in un incidente sul lavoro a Visp",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/operaio-muore-in-un-incidente-sul-lavoro-a-visp-423989",
-              "riassunto": "Un operaio ha perso la vita a Visp (Vallese) dopo essere rimasto schiacciato tra il carico e una gru durante le operazioni di lavoro. Le cause dell'incidente sono oggetto di indagine da parte delle autorità competenti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti riportano la notizia in modo pressoché identico, sia nel titolo che nella descrizione, senza differenze significative di angolazione o dettagli aggiuntivi. Nessuna delle due fornisce informazioni sull'identità della vittima o sull'azienda coinvolta."
-            },
-            {
-              "titolo": "Dazi farmaceutici USA: la Svizzera ottiene un'esenzione parziale con tariffa ridotta al 15%",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/international/dekret-von-trump-usa-verkuenden-hohe-arzneimittel-zoelle-schweiz-ausgenommen",
-              "riassunto": "Un decreto di Trump introduce dazi elevati sui farmaci importati negli USA, ma la Svizzera beneficia di un trattamento preferenziale con un'aliquota ridotta al 15%. Una notizia cruciale per il settore farmaceutico elvetico, pilastro dell'export svizzero, con implicazioni dirette per colossi come Novartis e Roche.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Svizzera ordina l'allontanamento di 104 profughi ucraini provenienti dalle regioni occidentali",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1915756/domande-novembre-norma-regioni-svizzera-allontanamento",
-              "riassunto": "La Svizzera ha disposto l'allontanamento di 104 profughi ucraini provenienti da sette province occidentali dell'Ucraina. La norma, applicata retroattivamente da novembre 2025, esclude lo statuto di protezione S per i richiedenti da queste aree considerate sicure.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "TeleBielingue: licenziamento collettivo dopo la perdita della concessione federale",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1915734/concessione-telebielingue-bienne-licenziamenti-zona",
-              "riassunto": "L'emittente televisiva TeleBielingue di Bienne procede a un licenziamento collettivo dopo che la Confederazione ha deciso di non rinnovare la concessione. Una decisione che solleva interrogativi sul futuro del servizio mediatico regionale bilingue nella zona di Bienne.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Misure contro le firme false nelle iniziative: valutazione positiva ma critiche sulla comunicazione",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1915767/federale-cancelleria-firme-misure-problema",
-              "riassunto": "La Commissione della gestione del Consiglio degli Stati approva le misure adottate dalla Cancelleria federale per contrastare il fenomeno delle firme false nelle raccolte per iniziative e referendum. Tuttavia, critica la comunicazione tardiva del problema da parte della Cancelleria.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Trump licenzia la ministra della giustizia Pam Bondi: pesa il caso Epstein",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/international/kontroverse-um-epstein-files-trump-entlaesst-seine-justizministerin-pam-bondi",
-              "riassunto": "Il presidente Trump ha rimosso l'attorney general Pam Bondi, sostituendola con il vice Todd Blanche. La decisione è legata alla controversia sui file Epstein. La notizia ha rilevanza internazionale con potenziali ripercussioni sulle relazioni giudiziarie svizzere.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Estero"
-              ],
-              "differenze_narrative": "SRF si concentra sulla polemica sui file Epstein e sulla successione con Todd Blanche. LaRegione contestualizza il licenziamento come secondo caso dopo Kristi Noem, suggerendo un pattern di epurazioni nell'amministrazione Trump. SRF è più fattuale, LaRegione adotta un tono più interpretativo."
-            },
-            {
-              "titolo": "Lo Zoo di Zurigo introduce la salsiccia vegetale a base di piselli biologici",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/allo-zoo-di-zurigo-la-salsiccia-diventa-green-423361",
-              "riassunto": "Lo Zoo di Zurigo sostituisce la classica salsiccia con una versione vegetale a base di piselli biologici. L'iniziativa promette una riduzione del 20% delle emissioni di CO₂ senza alterare il gusto, in linea con gli obiettivi di sostenibilità dell'istituzione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni diplomatiche Italia-Svizzera sul caso Crans-Montana",
-            "Impatto dei dazi USA sull'economia svizzera e sul settore farmaceutico",
-            "Politica migratoria svizzera sempre più restrittiva verso i profughi ucraini",
-            "Sicurezza sul lavoro e incidenti mortali nei cantieri",
-            "Crisi dei media regionali e perdita di concessioni"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle relazioni diplomatiche Italia-Svizzera dopo il rientro dell'ambasciatore Cornado: resta da capire se il caso Moretti-Crans-Montana sia realmente chiuso o se vi saranno ulteriori sviluppi giudiziari e diplomatici. Parallelamente, monitorare l'impatto concreto dei dazi farmaceutici USA al 15% sulle esportazioni di Novartis e Roche e le possibili negoziazioni per un'ulteriore riduzione.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata dalle anticipazioni sul Festival di Cannes 2025, con il debutto alla regia di John Travolta e il premio Carrosse d'Or a Claire Denis. Fa notizia il ritorno del regista iraniano Jafar Panahi in Iran e, sul fronte musicale, il caso giudiziario shock dell'ex chitarrista dei Turnstile. Dalla Svizzera italiana arrivano riflessioni su cultura, genere e installazioni artistiche contro la guerra.",
-          "notizie": [
-            {
-              "titolo": "Il regista dissidente Jafar Panahi è rientrato in Iran",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915862/iran-panahi-jafar-rientrato-regista",
-              "riassunto": "Il celebre regista iraniano Jafar Panahi, noto dissidente e più volte premiato ai festival internazionali, è rientrato in Iran. La notizia, di forte impatto geopolitico e culturale, solleva interrogativi sulla sua sicurezza e sulle condizioni della libertà artistica nel Paese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "John Travolta debutta alla regia e sceglie Cannes per la prima mondiale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915861/travolta-cannes-john-regista-anni",
-              "riassunto": "John Travolta ha scelto il Festival di Cannes per presentare al mondo la sua opera prima da regista. Un debutto atteso che segna una svolta nella carriera dell'attore hollywoodiano e alimenta le attese sull'edizione 2025 del festival.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cannes: il premio Carrosse d'Or alla cineasta francese Claire Denis",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915860/denis-carrosse-claire-cannes-quinzaine",
-              "riassunto": "Claire Denis riceverà il prestigioso premio Carrosse d'Or il 13 maggio al Festival di Cannes, nell'ambito della Quinzaine des Cinéastes. Un riconoscimento alla carriera di una delle registe più influenti del cinema contemporaneo francese e internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ex chitarrista dei Turnstile accusato di tentato omicidio: avrebbe investito il padre del frontman",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/02/arts/music/turnstile-brady-ebert-attempted-murder.html",
-              "riassunto": "Brady Ebert, membro fondatore della band hardcore punk Turnstile di Baltimora, è accusato di tentato omicidio per aver investito con la propria auto il padre di Brendan Yates, vocalist del gruppo. Un caso shock che scuote la scena musicale punk americana.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Megan Thee Stallion torna sul palco di 'Moulin Rouge' dopo il malore",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/02/theater/megan-thee-stallion-returns.html",
-              "riassunto": "La rapper Megan Thee Stallion è tornata sul palco del musical 'Moulin Rouge' a Broadway appena due giorni dopo essere stata portata in ospedale per un malore durante una performance. Il rapido rientro testimonia la sua determinazione ma solleva anche domande sulla salute degli artisti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Veronica Fusaro in gara nella seconda semifinale dell'Eurovision Song Contest",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915863/serata-veronica-fusaro-song-eurovision",
-              "riassunto": "La cantautrice svizzera Veronica Fusaro si esibirà nella seconda semifinale della settantesima edizione dell'Eurovision Song Contest, portando la Svizzera nella competizione musicale più seguita d'Europa.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cultura e parità di genere: il Cantone Ticino apre il dibattito sulle disparità nel settore culturale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915864/genere-cultura-parita-lugano-stato",
-              "riassunto": "Una giornata di riflessione a Lugano sulle disparità di genere nelle realtà culturali ticinesi, promossa dal Cantone. Un'iniziativa che si inserisce nel dibattito più ampio sulla rappresentanza femminile nelle istituzioni artistiche e culturali della Svizzera italiana.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Installazione contro la guerra a Sant'Antonino per il triduo pasquale",
-              "fonte": "Ticinonews Magazine",
-              "link": "https://www.ticinonews.ch/magazine/insignemente-nato-risorto-invano-a-s-antonino-uninstallazione-contro-la-guerra-430590",
-              "riassunto": "L'artista ticinese Cristiano Perli presenta 'Insignemente Nato, Risorto Invano?', un'installazione visibile durante il triduo pasquale a Sant'Antonino. L'opera è un monito visivo e poetico contro i conflitti in corso, unendo arte e impegno civile nel periodo liturgico più significativo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Mascolinità a confronto: Louis Theroux esplora la 'manosfera' e Werner Herzog insegue gli elefanti fantasma",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915527/theroux-herzog-elefanti-maschio-ghost-elephants-due-esempi",
-              "riassunto": "Due documentari mettono a fuoco altrettanti modelli di mascolinità 'eccezionale': 'Louis Theroux: Dentro La Manosfera' indaga la subcultura online della mascolinità tossica, mentre 'Ghost Elephants' di Werner Herzog racconta un'ossessione maschile per l'avventura fuori dall'ordinario.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Festival di Cannes 2025: anticipazioni e premi con Travolta e Denis",
-            "Mascolinità e genere nella cultura contemporanea",
-            "Arte e impegno civile contro la guerra",
-            "Libertà artistica e dissidenza in Iran",
-            "Salute e benessere degli artisti in scena"
-          ],
-          "da_tenere_d_occhio": "Il rientro di Jafar Panahi in Iran è la notizia da monitorare con maggiore attenzione: le circostanze del ritorno (volontario o forzato), le sue condizioni e le eventuali restrizioni imposte dal regime potrebbero evolvere rapidamente. In parallelo, le prossime settimane saranno decisive per le selezioni ufficiali del Festival di Cannes, con il debutto registico di Travolta e il programma completo ancora da svelare.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Unterminated string starting at: line 113 column 25 (char 11405)",
-          "_parse_error": "Unterminated string starting at: line 113 column 25 (char 11405)",
-          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Giornata dominata dall'escalation Iran-Israele con una nuova ondata di missili e la mobilitazione internazionale per lo stretto di Hormuz. Sul fronte interno USA, Trump prosegue le purghe licenziando l'Attorney General Bondi e il capo di stato maggiore dell'esercito, mentre minaccia l'uscita dalla NATO. Attacco alla base italiana UNIFIL in Libano.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Stretto di Hormuz: oltre 40 Paesi mobilitati per la riapertura,",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Giornata dominata dai nuovi dazi di Trump su farmaci e metalli, che si intrecciano con il tema del Made in Italy e del surplus commerciale italiano. Sul fronte aziendale, Tesla delude Wall Street, Revolut viene sanzionata dall'Antitrust italiano e il settore marittimo lancia l'allarme carburanti per la crisi nel Golfo Persico.",
-          "notizie": [
-            {
-              "titolo": "Trump impone nuovi dazi su farmaci e metalli: 15% sulle medicine per la Svizzera, impatti globali",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/estero/trump-impone-nuovi-dazi-su-farmaci-e-metalli-per-la-svizzera-il-15-sulle-medicine-430594",
-              "riassunto": "L'amministrazione Trump annuncia nuove tariffe su farmaci e metalli. Per la Svizzera si tratta del 15% sulle medicine, con le tariffe sui metalli in vigore già da lunedì e quelle farmaceutiche entro 120-180 giorni. La mossa ha implicazioni dirette anche per il settore farmaceutico italiano, parte del 'nuovo Made in Italy'.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il 'nuovo' Made in Italy vanta un surplus commerciale record di oltre 60 miliardi",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/dai-farmaci-vini-nuovo-made-italy-vanta-surplus-oltre-60-miliardi-AID0L1JC",
-              "riassunto": "La bilancia commerciale del 'nuovo' Made in Italy — dai farmaci ai vini — ha raggiunto nel 2024 un surplus di 62 miliardi di euro, posizionando l'Italia al primo posto mondiale. Un dato che assume ulteriore rilevanza alla luce dei nuovi dazi USA su farmaci e metalli, che potrebbero impattare direttamente su queste filiere.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia",
-                "Ticinonews Economia"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore celebra il primato italiano con tono ottimistico focalizzandosi sul surplus, mentre la notizia dei dazi Trump da Ticinonews introduce una minaccia concreta proprio al settore farmaceutico, uno dei pilastri di questo 'nuovo' Made in Italy. Le due notizie lette insieme rivelano una tensione tra successo commerciale e vulnerabilità geopolitica."
-            },
-            {
-              "titolo": "Tesla delude nel primo trimestre, titolo in caduta a Wall Street",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/tesla-delude-trimestre-titolo-caduta-wall-street-AIcb4XJC",
-              "riassunto": "I risultati trimestrali di Tesla sono al di sotto delle aspettative del mercato, provocando una caduta del titolo a Wall Street. Se il mercato europeo tiene, quello americano soffre particolarmente per il venir meno degli incentivi all'elettrificazione voluti dall'amministrazione precedente.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Revolut sanzionata dall'Antitrust italiano per 11 milioni di euro",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/revolut-sanzione-antitrust-11-milioni-pratiche-commerciali-scorrette-AIz0mEJC",
-              "riassunto": "L'Agcm ha comminato una sanzione di 11 milioni di euro a Revolut per pratiche commerciali scorrette, contestando la diffusione di messaggi ingannevoli sui servizi di investimento. La fintech ha replicato rivendicando la correttezza del proprio operato e annunciando ricorso.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Armatori chiedono contributo straordinario al Governo per il caro carburanti da crisi nel Golfo",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/costo-carburanti-armatori-chiedono-contributo-straordinario-governo-AIjbmwJC",
-              "riassunto": "L'aumento del costo dei carburanti legato alle tensioni nel Golfo Persico minaccia i collegamenti marittimi essenziali per la continuità territoriale italiana. Confitarma e le associazioni di categoria lanciano l'allarme e chiedono un intervento straordinario del Governo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI entra nel mondo dell'informazione acquistando il talk show online Tbpn",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/openai-sbarca-nell-informazione-e-compra-talk-show-online-tbpn-AIsTz2JC",
-              "riassunto": "Dopo la mega-raccolta da 122 miliardi di dollari, OpenAI fa il suo ingresso nell'informazione quotidiana acquisendo il talk show online Tbpn. I ricavi dell'azienda target sono ancora modesti, ma la mossa segnala l'ambizione di Sam Altman di espandere l'ecosistema AI nel giornalismo e nei media.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Stellantis in recupero in Borsa grazie alle immatricolazioni di marzo",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/acquisti-stellantis-mercato-festeggia-immatricolazioni-marzo-AIhAoKJC",
-              "riassunto": "Il titolo Stellantis registra acquisti in Borsa dopo i dati positivi sulle immatricolazioni di marzo, con un recupero significativo in USA e Italia. Permane invece la debolezza sul mercato francese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nasce Healtion: 100 milioni per un nuovo polo italiano dell'healthy food",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/nasce-healtion-100-milioni-investimenti-lo-sviluppo-nell-heathy-food-AIxok6HC",
-              "riassunto": "Debutta Healtion, nuovo gruppo alimentare italiano specializzato nel cibo salutare con un piano di investimenti da 100 milioni di euro. Il progetto si inserisce nel trend crescente dell'healthy food e del benessere alimentare, rafforzando la filiera agroalimentare italiana.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia (Healtion)",
-                "Il Sole 24 Ore Economia (Amadori/Mimit)"
-              ],
-              "differenze_narrative": "Entrambe le notizie riguardano il settore agroalimentare italiano ma con angolazioni diverse: Healtion rappresenta l'investimento privato e l'innovazione di prodotto nel segmento salutistico, mentre l'intervento di Amadori al Mimit solleva il problema strutturale del gap di competenze e del mismatch domanda-offerta di lavoro nel medesimo comparto. Insieme tratteggiano un settore in crescita ma con criticità sul capitale umano."
-            },
-            {
-              "titolo": "EssilorLuxottica si espande in Tailandia con l'acquisizione in Top Charoen",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/essilux-acquisisce-quota-top-charoen-e-rafforza-presenza-tailandia-AIuwIsJC",
-              "riassunto": "EssilorLuxottica acquisisce una partecipazione significativa in Top Charoen, principale catena di retail ottico in Tailandia con oltre 2.000 negozi, rafforzando la propria strategia di espansione nel Sud-est asiatico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Nuovi dazi USA su farmaci e metalli e impatto sulle filiere europee",
-            "Tensioni geopolitiche (Golfo Persico) e costo dell'energia/carburanti",
-            "Espansione delle Big Tech AI nel settore media e informazione",
-            "Rilancio e vulnerabilità del Made in Italy agroalimentare e farmaceutico",
-            "Regolamentazione fintech in Europa (caso Revolut)",
-            "Automotive: divergenza tra crisi Tesla e ripresa Stellantis"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei dazi Trump su farmaci e metalli nelle prossime settimane: con le tariffe sui metalli in vigore da lunedì e quelle farmaceutiche entro 120-180 giorni, l'impatto sulla filiera farmaceutica italiana — pilastro del surplus commerciale da 62 miliardi — potrebbe essere significativo. Da monitorare anche la risposta UE e le possibili ritorsioni commerciali.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Giornata ricca di annunci nel settore AI: Google rilascia Gemma 4 con licenza Apache 2.0, Microsoft lancia tre nuovi modelli fondamentali, OpenAI acquisisce il podcast TBPN. Da segnalare anche il lancio di Cursor 3 e le critiche interne a Microsoft Azure.",
-          "notizie": [
-            {
-              "titolo": "Google rilascia Gemma 4: i modelli aperti più potenti, per la prima volta con licenza Apache 2.0",
-              "fonte": "Hacker News / The Decoder",
-              "link": "https://deepmind.google/models/gemma/gemma-4/",
-              "riassunto": "Google ha rilasciato la famiglia Gemma 4, i suoi modelli aperti più capaci di sempre. Quattro nuovi modelli utilizzabili da smartphone a workstation, distribuiti per la prima volta con licenza completamente aperta Apache 2.0. Su Hacker News ha ottenuto oltre 1.200 punti e 369 commenti, segno dell'enorme interesse della community.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Hacker News",
-                "The Decoder"
-              ],
-              "differenze_narrative": "Hacker News riporta la notizia con link diretto a DeepMind, lasciando il dibattito alla community (1243 punti, enorme engagement). The Decoder enfatizza maggiormente la novità della licenza Apache 2.0 come svolta storica e dettaglia la scalabilità dei modelli su diversi dispositivi. Il tono di HN è più tecnico-comunitario, The Decoder più analitico-giornalistico."
-            },
-            {
-              "titolo": "OpenAI acquisisce TBPN, il popolare talk show tech della Silicon Valley",
-              "fonte": "TechCrunch AI / Hacker News",
-              "link": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
-              "riassunto": "OpenAI ha acquisito TBPN, il podcast tech cult della Silicon Valley. Il programma continuerà a operare in modo indipendente, sotto la supervisione di Chris Lehane, responsabile delle operazioni politiche di OpenAI. L'acquisizione solleva interrogativi sulla strategia mediatica di OpenAI.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "Hacker News"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza l'indipendenza editoriale promessa e il ruolo di Chris Lehane, con tono descrittivo e neutrale. Hacker News (175 punti, 145 commenti) linka direttamente l'annuncio ufficiale di OpenAI, e la community si concentra sulle implicazioni di un'azienda AI che acquisisce un media, con tono più critico e scettico sull'indipendenza reale del podcast."
-            },
-            {
-              "titolo": "Microsoft lancia tre nuovi modelli fondamentali AI, tra cui MAI-Transcribe-1",
-              "fonte": "TechCrunch AI / The Decoder",
-              "link": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
-              "riassunto": "Il gruppo MAI di Microsoft, formatosi sei mesi fa, ha rilasciato tre modelli per trascrizione vocale, generazione audio e generazione immagini. MAI-Transcribe-1 è 2,5 volte più veloce del predecessore, supporta 25 lingue e costa 0,36$ per ora di audio. Microsoft lo integra già nei propri prodotti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch inquadra i tre modelli come mossa strategica competitiva di Microsoft contro i rivali AI, con visione d'insieme. The Decoder si concentra specificamente su MAI-Transcribe-1, dettagliando benchmark tecnici (velocità 2,5x, prezzo, 25 lingue, robustezza al rumore), con approccio più tecnico e granulare."
-            },
-            {
-              "titolo": "Cursor 3: la nuova versione dell'editor AI che sta rivoluzionando lo sviluppo software",
-              "fonte": "Hacker News",
-              "link": "https://cursor.com/blog/cursor-3",
-              "riassunto": "Cursor ha annunciato la versione 3 del suo editor di codice AI-powered. La notizia ha generato un dibattito enorme su Hacker News con 332 punti e 274 commenti, confermando Cursor come uno degli strumenti più discussi nell'ecosistema degli sviluppatori.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ex ingegnere Azure denuncia le decisioni che hanno minato la fiducia nella piattaforma Microsoft",
-              "fonte": "Hacker News",
-              "link": "https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion",
-              "riassunto": "Un ex ingegnere di Azure Core ha pubblicato un'analisi dettagliata delle decisioni interne che avrebbero eroso la fiducia nella piattaforma cloud di Microsoft. Il post, intitolato suggestivamente 'How Microsoft Vaporized a Trillion', ha raggiunto 462 punti e 171 commenti su Hacker News, toccando un nervo scoperto nella community tech.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Google aggiunge avatar guidabili tramite prompt nell'app Vids",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/02/google-now-lets-you-direct-avatars-through-prompts-in-its-vids-app/",
-              "riassunto": "Google ha introdotto la possibilità di personalizzare e dirigere avatar tramite istruzioni testuali nella sua app Vids per la creazione video. La funzione rappresenta un ulteriore passo nell'integrazione di AI generativa nei tool di produttività Google.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Sakana AI lancia 'Ultra Deep Research': ricerca autonoma fino a 8 ore per analisi strategiche",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/sakana-ai-launches-ultra-deep-research-to-automate-weeks-of-strategy-work/",
-              "riassunto": "Sakana AI ha presentato 'Sakana Marlin', un assistente AI per clienti business che conduce ricerche autonome fino a 8 ore, comprimendo settimane di lavoro strategico in poche ore. Lo strumento è attualmente in beta testing e punta al mercato enterprise della consulenza e analisi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Compromissione della supply chain NPM di Axios: pubblicato il post mortem",
-              "fonte": "Hacker News",
-              "link": "https://github.com/axios/axios/issues/10636",
-              "riassunto": "Axios, una delle librerie HTTP più usate nell'ecosistema JavaScript, ha subito un attacco alla supply chain tramite NPM. Il post mortem dettagliato è stato pubblicato su GitHub, evidenziando vulnerabilità critiche nella catena di distribuzione del software open source.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Modelli AI open source sempre più potenti e con licenze più permissive (Apache 2.0)",
-            "Microsoft in forte offensiva AI con modelli fondamentali proprietari",
-            "OpenAI espande la propria influenza acquisendo media e piattaforme di contenuti",
-            "Strumenti di coding AI (Cursor 3) sempre più centrali nel workflow degli sviluppatori",
-            "Agenti AI autonomi per ricerca e analisi strategica di lunga durata"
-          ],
-          "da_tenere_d_occhio": "L'adozione della licenza Apache 2.0 da parte di Google per Gemma 4 potrebbe cambiare le dinamiche competitive nell'AI open source, mettendo pressione su Meta (Llama) e altri attori a liberalizzare ulteriormente le proprie licenze. Da monitorare anche la reazione della community e degli sviluppatori alla strategia mediatica di OpenAI con l'acquisizione di TBPN, e se Microsoft risponderà a Gemma 4 aprendo i propri modelli MAI.",
           "_model_used": "anthropic/claude-opus-4-6"
         }
       ]
