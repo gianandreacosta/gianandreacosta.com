@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T07:40:04.621215Z",
+  "generated_at": "2026-04-15T07:48:09.886141Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -377,7 +377,7 @@
     "last_run_found": 2611
   },
   "model_status": {
-    "timestamp": "2026-04-15T04:00:01Z",
+    "timestamp": "2026-04-15T07:47:50Z",
     "usage_stats": {
       "openai-codex:default": {
         "last_used": "2026-03-13 20:23 UTC"
@@ -466,14 +466,14 @@
         "status": "ok",
         "api_reachable": true,
         "window_5h_status": "allowed",
-        "window_5h_used_pct": 0.0,
-        "window_5h_remaining_pct": 100.0,
-        "window_5h_reset_in": "5.0h",
+        "window_5h_used_pct": 7.0,
+        "window_5h_remaining_pct": 93.0,
+        "window_5h_reset_in": "1.2h",
         "window_5h_reset_at": "2026-04-15 09:00 UTC",
         "window_7d_status": "allowed",
-        "window_7d_used_pct": 6.0,
-        "window_7d_remaining_pct": 94.0,
-        "window_7d_reset_in": "110.0h",
+        "window_7d_used_pct": 7.0,
+        "window_7d_remaining_pct": 93.0,
+        "window_7d_reset_in": "106.2h",
         "window_7d_reset_at": "2026-04-19 18:00 UTC",
         "overall_status": "allowed",
         "overage_status": "allowed",
@@ -482,7 +482,7 @@
       "openai-codex": {
         "provider": "openai-codex",
         "status": "valid",
-        "token_expires_in": "19.3h",
+        "token_expires_in": "15.5h",
         "plan": "plus",
         "api_reachable": false
       },
