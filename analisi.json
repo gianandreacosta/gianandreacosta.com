@@ -1,6 +1,73 @@
 {
-  "generated_at": "2026-04-14T05:10:09.317659+00:00",
+  "generated_at": "2026-04-15T05:14:12.546767+00:00",
   "analyses": [
+    {
+      "id": 29,
+      "run_id": 68,
+      "run_time": "2026-04-15 04:45:02.111313+00:00",
+      "analyzed_at": "2026-04-15T05:14:12.537416+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 0,
+      "model_used": "ollama/qwen3.5:cloud",
+      "status": "partial",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore parsing risposta AI",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 112)",
+          "_parse_error": "Invalid control character at: line 3 column 76 (char 112)",
+          "_raw": "{\n  \"categoria\": \"cronaca_svizzera\",\n  \"sommario\": \"Giornata segnata da sviluppi giudiziari rilevanti, tra cui l\nl'inchiesta sull'incendio di Crans-Montana e un caso legale involving un me\nmembro del governo federale. Disagi previsti per i viaggiatori aerei a caus\ncausa di scioperi internazionali.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Sciopero Lufthansa: cancellati voli tra Svizzera e Germani\nGermania\",\n      \"fonte\": \"LaRegione Svizzera\",\n      \"link\": \"https://www.laregione.ch/svizzera/svizz",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore parsing risposta AI",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
+          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
+          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Tensione crescente nel Golfo Persico con il blocco USA di Ho\nHormuz che minaccia gli approvvigionamenti energetici globali. parallelo sc\nscontro diplomatico tra l'amministrazione Trump e il Vaticano, mentre l'Eur\nl'Europa registra un cambio di guardia in Ungheria.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Gli USA avviano il blocco dei porti iraniani mentre proseg\nprosegue il dialogo\",\n      \"fonte\": \"Internazionale\",\n      \"link\": \"https://www.interna",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore parsing risposta AI",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
+          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
+          "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"Oggi dominano le notizie sull'impatto sociale dell'AI (rappo\n(rapporto Stanford) e le mosse aggressive di OpenAI, mentre emerge una cris\ncrisi infrastrutturale globale. Nessuna notizia diretta sulla Svizzera, ma \nle implicazioni economiche toccano i settori finance e tech elvetici.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Rapporto Stanford 2026: cresce il divario tra esperti AI e\ne pubblico\",\n      \"fonte\": \"TechCrunch AI\",\n      \"link\": \"https://tec",
+          "_model_used": "ollama/qwen3.5:cloud"
+        }
+      ]
+    },
     {
       "id": 28,
       "run_id": 67,
@@ -6995,637 +7062,6 @@
             "Fragilità della supply chain dei semiconduttori"
           ],
           "da_tenere_d_occhio": "L'intersezione tra sicurezza quantistica e vulnerabilità crittografiche: il lavoro di Google sulla divulgazione responsabile delle vulnerabilità quantistiche potrebbe accelerare la transizione verso algoritmi post-quantistici, con impatti significativi su blockchain e infrastrutture finanziarie.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "run_id": 41,
-      "run_time": "2026-03-31 07:00:01.543932+00:00",
-      "analyzed_at": "2026-03-31T07:47:31.957690+00:00",
-      "articles_analyzed": 236,
-      "articles_selected": 47,
-      "model_used": "anthropic/claude-opus-4-6",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Unterminated string starting at: line 111 column 5 (char 11974)",
-          "_parse_error": "Unterminated string starting at: line 111 column 5 (char 11974)",
-          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Giornata dominata dall'escalation USA-Iran con l'attacco iraniano a una petroliera nel porto di Dubai che fa volare il prezzo del petrolio, mentre in Libano la morte di caschi blu Unifil e soldati israeliani infiamma il fronte diplomatico. Trump minaccia di 'cancellare l'Iran dalla mappa' mentre crolla nei sondaggi al 33%.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Attacco iraniano a petroliera nel porto di Dubai: il Brent vola a 115 dollari\",\n      \"f",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Giornata dominata dalle tensioni geopolitiche Iran-USA e dal loro impatto sui mercati globali: il Nikkei crolla di oltre 1.300 punti, l'oro vacilla. In Italia scattano gli obblighi sulle polizze catastrofali e si segnalano criticità per il settore bici e per l'energia dei data center.",
-          "notizie": [
-            {
-              "titolo": "Trump lancia ultimatum all'Iran: se non c'è accordo, distruzione di centrali e pozzi petroliferi",
-              "fonte": "Adnkronos",
-              "link": "https://www.adnkronos.com/internazionale/esteri/trump-iran-guerra-ultimatum-6-aprile_4PnFYy6EtGrr7TfkgwO633",
-              "riassunto": "Il presidente USA minaccia un attacco diretto alle infrastrutture energetiche iraniane se lo Stretto di Hormuz non verrà riaperto, pur parlando di 'grandi progressi' nei negoziati. L'ultimatum ha ripercussioni dirette sui mercati petroliferi, sull'oro e sulle borse globali.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Adnkronos",
-                "The Economist Finance",
-                "Adnkronos (Nikkei)"
-              ],
-              "differenze_narrative": "Adnkronos riporta l'ultimatum in chiave cronachistica e geopolitica. The Economist analizza le conseguenze finanziarie post-Iran sull'oro, suggerendo un ridimensionamento del metallo come bene rifugio ('il nuovo crypto?'). La notizia sul crollo del Nikkei collega esplicitamente il sell-off azionario alle incertezze mediorientali, evidenziando l'impatto concreto sui mercati asiatici."
-            },
-            {
-              "titolo": "Crollo del Nikkei: l'indice giapponese perde oltre 1.300 punti in apertura",
-              "fonte": "Adnkronos",
-              "link": "https://www.adnkronos.com/internazionale/akieng/nikkei-average-falls-over-1-300-points-in-early-trade_H5KyTl5V4fp6x34wIucPx",
-              "riassunto": "Il Nikkei 225 crolla di oltre 1.300 punti nelle contrattazioni mattutine, con vendite massicce soprattutto sui titoli tech, alimentate dall'incertezza sulla crisi mediorientale e dal sell-off della vigilia a Wall Street.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Adnkronos",
-                "The Economist Finance"
-              ],
-              "differenze_narrative": "Adnkronos riporta il dato di mercato in tempo reale collegandolo direttamente alla crisi Iran. The Economist allarga la prospettiva ai mercati delle commodity, concentrandosi sul declino dell'oro come rifugio sicuro dopo la fase di tensione iraniana."
-            },
-            {
-              "titolo": "Oro meno attraente dopo la crisi iraniana: il bene rifugio vacilla",
-              "fonte": "The Economist Finance",
-              "link": "https://www.economist.com/finance-and-economics/2026/03/30/after-iran-gold-is-looking-less-glittery",
-              "riassunto": "The Economist analizza il ridimensionamento dell'oro come bene rifugio dopo le tensioni iraniane, paragonandolo provocatoriamente alle criptovalute per la sua crescente volatilità e il comportamento speculativo degli investitori.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Economist Finance",
-                "Adnkronos"
-              ],
-              "differenze_narrative": "The Economist adotta un tono analitico e provocatorio ('Is the yellow metal the new crypto?'), mentre le fonti Adnkronos si limitano a riportare i dati di mercato senza approfondimento interpretativo sulla dinamica dell'oro."
-            },
-            {
-              "titolo": "Polizze catastrofali obbligatorie: scade il termine per le imprese italiane",
-              "fonte": "Adnkronos",
-              "link": "https://www.adnkronos.com/internazionale/esteri/polizze-catastrofali-obbligo-scadenza-costo-cosa-sapere_2EkxPXr8FY97SP5MXHz48d",
-              "riassunto": "Il 31 marzo è il termine ultimo per la sottoscrizione delle polizze Cat Nat. Micro e piccole imprese del turismo e della ristorazione devono adeguarsi per proteggersi dai danni catastrofali e mantenere l'accesso ai contributi pubblici. I costi variano significativamente per tipologia di attività.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Giappone: quadro macroeconomico misto tra inflazione in calo, produzione in frenata e disoccupazione in discesa",
-              "fonte": "Adnkronos",
-              "link": "https://www.adnkronos.com/internazionale/akieng/tokyos-inflation-slows-to-17-pct-in-march_5xe7HBbzo1bdrFZVRsNbir",
-              "riassunto": "Pacchetto di dati macro dal Giappone: l'inflazione di Tokyo rallenta all'1,7% (quarto mese consecutivo di decelerazione), la produzione industriale cala del 2,1% a febbraio, ma la disoccupazione scende al 2,6%, prima discesa in sette mesi. Aumenti alimentari in rallentamento ad aprile.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Adnkronos (inflazione Tokyo)",
-                "Adnkronos (produzione industriale)",
-                "Adnkronos (disoccupazione)",
-                "Adnkronos (prezzi alimentari)"
-              ],
-              "differenze_narrative": "Le quattro notizie provengono dalla stessa fonte (Jiji Press via Adnkronos) ma offrono un quadro composito: il rallentamento dell'inflazione e dei rincari alimentari suggerisce un allentamento delle pressioni sui prezzi, mentre il calo della produzione industriale segnala debolezza manifatturiera. La discesa della disoccupazione introduce un elemento di resilienza del mercato del lavoro."
-            },
-            {
-              "titolo": "Internet provider italiani in allarme energia: lettera a Palazzo Chigi per salvare reti e data center",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/energia-internet-provider-allarme-piano-salvare-reti-e-data-center-AIIPXhFC",
-              "riassunto": "Gli Internet provider italiani hanno inviato una lettera alla presidente Meloni e ai ministri competenti per segnalare l'emergenza energetica che minaccia la sostenibilità di reti e data center. Chiedono un piano di intervento urgente per garantire forniture adeguate al settore digitale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "ITA Airways torna a Londra Heathrow grazie agli slot di Lufthansa",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/ita-sbarca-londra-heathrow-grazie-lufthansa-AIUSjcFC",
-              "riassunto": "ITA Airways, ex Alitalia, torna nel più grande scalo europeo sfruttando gli slot ceduti dalla casamadre tedesca Lufthansa. Un segnale concreto dell'integrazione nel gruppo e del rafforzamento del network della compagnia italiana.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Settore bici italiano in crisi profonda: cali del 30-40% dai picchi del 2022",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/strada-salita-la-bici-italiana-AItKH0EC",
-              "riassunto": "Il comparto della bicicletta in Italia vive un anno definito 'pessimo' dagli operatori, con riduzioni delle vendite nell'ordine del 30% a causa dei magazzini ancora carichi dal 2024. Rispetto ai picchi del 2022 il settore ha perso il 40%, segnalando la fine del boom post-pandemia.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "MPS: il proxy advisor ISS raccomanda la lista del CdA per l'assemblea",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/mps-proxy-advisor-iss-suggerisce-voto-la-lista-cda-AId8knFC",
-              "riassunto": "Il proxy advisor ISS suggerisce agli azionisti di Monte dei Paschi di Siena di votare la lista del consiglio di amministrazione, pur riconoscendo i meriti della lista alternativa di Plt Holding che propone la conferma dell'attuale AD Luigi Lovaglio. Un segnale rilevante in vista dell'assemblea.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Grano duro: operativa la nuova Commissione Unica Nazionale per le quotazioni",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/grano-duro-via-commissione-unica-nazionale-cun-le-quotazioni-ufficiali-AIPGWrFC",
-              "riassunto": "Primo fixing al rialzo per i listini del frumento duro nazionale. La nuova Commissione Unica Nazionale (CUN), riunita al ministero il 30 marzo, centralizza le quotazioni ufficiali del grano duro, materia prima strategica per la filiera della pasta italiana.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crisi geopolitica Iran-USA e impatto su mercati globali e commodity",
-            "Rallentamento macroeconomico in Giappone con segnali misti",
-            "Nuovi obblighi normativi per le imprese italiane (polizze catastrofali)",
-            "Crisi energetica e digitale: allarme data center in Italia",
-            "Ridimensionamento dei beni rifugio tradizionali (oro)"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dell'ultimatum di Trump all'Iran con scadenza il 6 aprile: un eventuale attacco alle infrastrutture energetiche iraniane avrebbe conseguenze devastanti sui mercati petroliferi globali, sullo Stretto di Hormuz e sull'intero sistema finanziario internazionale. Monitorare anche la reazione della Banca del Giappone al quadro macro deteriorato e al crollo del Nikkei.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata dalla legge israeliana sulla pena di morte, coperta da più fonti con angolazioni diverse, e dalla crisi energetica globale al centro del G7. Sul fronte interno svizzero, spiccano la vendita Pilatus all'Indonesia, le restrizioni a Mitholz e l'avanzata dell'UDC nei cantoni.",
-          "notizie": [
-            {
-              "titolo": "Israele approva la pena di morte per i terroristi: legge che colpisce di fatto solo i palestinesi",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/international/ja-zu-umstrittenem-vorstoss-israels-parlament-stimmt-fuer-todesstrafe-fuer-terroristen",
-              "riassunto": "La Knesset ha approvato a maggioranza emendamenti che introducono la pena di morte davanti ai tribunali militari per palestinesi condannati per attacchi letali. La legge è stata criticata come discriminatoria da Amnesty International, che denuncia violazioni del diritto alla vita e possibili crimini di guerra.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Estero"
-              ],
-              "differenze_narrative": "SRF dedica due articoli distinti: uno centrato sul voto parlamentare e uno sull'impatto discriminatorio verso i palestinesi, con tono analitico. LaRegione pubblica sia la notizia del voto sia la reazione di Amnesty International come pezzi separati, enfatizzando la dimensione dei diritti umani e menzionando decessi in detenzione (13 nei primi mesi dell'anno, caso Emmanuel Damas). Amnesty parla esplicitamente di 'crudeltà e discriminazione', un linguaggio assente nelle coperture SRF."
-            },
-            {
-              "titolo": "G7 pronto ad agire sullo shock energetico, ma senza decisioni concrete",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/international/g7-treffen-zur-energiekrise-die-weltwirtschaft-am-abgrund-die-weltdiplomatie-im-abseits",
-              "riassunto": "I leader del G7 si dichiarano pronti a misure coordinate per fronteggiare la crisi energetica globale, ma non riescono ancora a prendere decisioni vincolanti. Si parla di rilascio coordinato di riserve AIE e invito a non imporre restrizioni all'export.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Estero"
-              ],
-              "differenze_narrative": "SRF adotta un tono più critico e drammatico ('economia globale sull'orlo del baratro, diplomazia in dispari') sottolineando l'incapacità di decidere. LaRegione pubblica due articoli distinti: uno più sintetico sul comunicato ufficiale e uno più dettagliato che elenca misure concrete (riserve AIE, banche centrali, restrizioni export), con tono più tecnico-istituzionale e meno editoriale."
-            },
-            {
-              "titolo": "Pilatus vende 12 jet PC-24 all'aeronautica militare indonesiana",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/pilatus-vende-12-pc-24-allaeronautica-militare-indonesiana-423653",
-              "riassunto": "L'azienda svizzera Pilatus ha concluso un contratto per la vendita di 12 aerei PC-24 all'aeronautica indonesiana, con opzione per ulteriori velivoli. Il pacchetto include assistenza a terra, pezzi di ricambio, formazione e supporto tecnico dalla sede di Stans.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti riportano la notizia con testo sostanzialmente identico, probabile origine da agenzia. Nessuna differenza significativa di angolazione o dettaglio."
-            },
-            {
-              "titolo": "Ex deposito di Mitholz: dopo lo sgombero possibili restrizioni sull'uso agricolo del terreno",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/ex-deposito-di-mitholz-dopo-lo-sgombero-possibili-restrizioni-sulluso-del-terreno-423621",
-              "riassunto": "Nuove indagini sul suolo dell'ex deposito militare di Mitholz hanno rivelato che le munizioni sono distribuite più in profondità e su un'area più vasta del previsto. Il terreno potrebbe non essere più utilizzabile a fini agricoli come in precedenza.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Anche in questo caso le due testate riportano un testo identico, verosimilmente da dispaccio ATS. Nessuna differenza narrativa rilevabile."
-            },
-            {
-              "titolo": "Bilancio elettorale cantonale: l'UDC avanza, bene il PS, arretrano i Verdi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/ludc-ha-il-vento-in-poppa-bene-il-ps-perdono-i-verdi-423667",
-              "riassunto": "Dall'ultimo rinnovo dei poteri federali si è votato in 14 cantoni. L'UDC prosegue la sua avanzata su scala nazionale dopo la vittoria a Berna, mentre tutti gli altri partiti perdono terreno tranne i socialisti. L'analista Stojanović osserva però che la sinistra complessivamente 'marcia sul posto'.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L'ambasciatore italiano assente al raccoglimento di Crans-Montana a tre mesi dal rogo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/lambasciatore-italiano-non-sara-a-crans-montana-mercoledi-423658",
-              "riassunto": "L'ambasciatore italiano Gian Lorenzo Cornado, richiamato a Roma il 26 gennaio scorso, non sarà presente alla cerimonia di raccoglimento organizzata dall'Ambasciata italiana a Crans-Montana, a tre mesi dall'incendio nella località vallesana.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Alimentazione scorretta e malattie cardiache: oltre 4 milioni di morti all'anno, 4.200 in Svizzera",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1914921/decessi-alimentazione-studio-malattie-paesi-frutta-morti-causa",
-              "riassunto": "Uno studio condotto su 204 Paesi individua nella carenza di frutta secca, semi, cereali integrali e frutta e nell'uso eccessivo di sale le principali cause alimentari di malattie cardiache letali. In Svizzera si contano circa 4.200 decessi nel 2023 per questa causa.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Le sanzioni preventive di paesi terzi come strumento per evitare le guerre: il caso analizzato da Berna",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1915030/come-le-sanzioni-imposte-da-paesi-terzi-potrebbero-evitare-la-guerra",
-              "riassunto": "Un'analisi da Berna esplora come la minaccia credibile di sanzioni da parte di paesi terzi avrebbe potuto scoraggiare invasioni e conflitti. Un tema rilevante per la politica di neutralità svizzera e il suo posizionamento internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ritorno improvviso dell'inverno in Svizzera: temperature in brusco calo dopo una primavera anticipata",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/limprovviso-ritorno-dellinverno-pone-bruscamente-fine-alla-primavera-430306",
-              "riassunto": "Dopo tre settimane di marzo caratterizzate da sole abbondante e scarse precipitazioni, le temperature sono scese nettamente in tutta la Svizzera, ponendo fine bruscamente all'anticipo primaverile.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Escalation mediorientale e sue ripercussioni globali (pena di morte Israele, attacchi nel Golfo, forze speciali USA, G7 energia)",
-            "Avanzata dell'UDC e riassetto del panorama politico svizzero dopo i voti cantonali",
-            "Rapporti diplomatici Italia-Svizzera sotto tensione (caso ambasciatore e Crans-Montana)",
-            "Industria della difesa svizzera in espansione (Pilatus-Indonesia)"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della crisi energetica globale legata al conflitto in Medio Oriente e l'eventuale passaggio del G7 da dichiarazioni d'intenti a misure concrete; in parallelo, le reazioni internazionali alla legge israeliana sulla pena di morte e possibili conseguenze diplomatiche per la Svizzera, considerato il suo ruolo tradizionale di mediatrice nei diritti umani.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Giornata segnata da incendi boschivi nel Malcantone, un investimento mortale a Muralto e il dibattito politico sulla candidatura di Lugano a Capitale Culturale 2030. Sullo sfondo, il Ticino si prepara a un pienone turistico pasquale e si discute l'impatto della riforma EFAS sui premi di cassa malati.",
-          "notizie": [
-            {
-              "titolo": "Incendio boschivo nel Malcantone: fiamme nei boschi sopra Ponte Tresa e Pura",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/un-altro-incendio-boschivo-in-ticino-fiamme-nel-malcantone-423683",
-              "riassunto": "Un nuovo rogo è scoppiato nei boschi del Malcantone, tra Pura e Ponte Tresa, con i pompieri impegnati a domare le fiamme. L'incendio segue un fine settimana già critico nel Luganese. Secondo l'Istituto WSL, le cause sono quasi sempre riconducibili all'attività umana.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "tio.ch Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "CdT e Ticinonews usano titoli quasi identici e toni essenziali da breaking news. Tio.ch enfatizza la vicinanza all'abitato. Ticinonews in un articolo correlato precedente approfondisce le cause degli incendi con un'intervista all'esperto WSL Boris Pezzatti, attribuendo la responsabilità all'uomo e lanciando un appello alla prudenza."
-            },
-            {
-              "titolo": "Pedone 92enne investito e ucciso a Muralto vicino alla stazione FFS",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/pedone-investito-a-muralto-morto-un-92enne-430302",
-              "riassunto": "Un anziano di 92 anni è stato travolto e ucciso sulle strisce pedonali nei pressi della stazione FFS di Muralto da un 63enne svizzero alla guida di un veicolo pesante. L'incidente è avvenuto attorno alle 14:30.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Locarnese"
-              ],
-              "differenze_narrative": "Ticinonews fornisce più dettagli operativi: età della vittima, nazionalità e età del conducente, tipo di veicolo e orario preciso. LaRegione utilizza un titolo più formale ('investimento mortale') e una formula più asciutta, omettendo alcuni dettagli circostanziali."
-            },
-            {
-              "titolo": "Lugano Capitale Culturale 2030: sbloccato il credito da 1,5 milioni, ma l'UDC si oppone",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/a-lugano-si-costruisce-il-palco-ma-lo-spettacolo-e-unincognita-423692",
-              "riassunto": "Il Consiglio comunale di Lugano ha approvato il credito di 1,5 milioni di franchi per la candidatura congiunta con Locarno e Mendrisio a Capitale Culturale Svizzera 2030. L'UDC ha ribadito la propria contrarietà, definendo il progetto un'incognita.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "CdT pubblica due articoli distinti: uno sullo sblocco del credito con tono positivo ('la candidatura ha il suo sostegno finanziario') e uno sulla critica UDC. Ticinonews riprende solo l'angolazione critica dell'UDC con titolo identico a CdT, privilegiando la polemica politica rispetto al risultato del voto."
-            },
-            {
-              "titolo": "Quadro elettrico in fiamme a Losone, diverse abitazioni rimaste al buio",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/prende-fuoco-un-quadro-elettrico-a-losone-diverse-abitazioni-al-buio-423661",
-              "riassunto": "Un quadro elettrico ha preso fuoco a Losone causando un blackout che ha lasciato diverse abitazioni senza corrente. L'alimentazione è stata ripristinata attorno alle 22:30.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "Copertura pressoché identica tra le due testate, con titolo e descrizione sovrapponibili. Nessuna differenza sostanziale di angolazione o dettagli."
-            },
-            {
-              "titolo": "Pasqua in Ticino: previsioni di bel tempo e albergatori pronti al pienone",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/pasqua-la-sonnenstube-e-tornata-albergatori-ticinesi-pronti-al-pienone-423650",
-              "riassunto": "Le previsioni di MeteoSvizzera indicano tempo mite e soleggiato per il weekend pasquale. Più di una camera su due è già prenotata, in linea con lo scorso anno. Gli albergatori si attendono un'ondata di prenotazioni last minute.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "CdT adotta un tono celebrativo ed evocativo ('la Sonnenstube è tornata'), centrandosi sul settore alberghiero. Ticinonews allarga la prospettiva anche ai ticinesi in partenza, segnalando meno partenze rispetto al 2025 e voli da riorganizzare per le tensioni in Medio Oriente, offrendo un quadro più complesso."
-            },
-            {
-              "titolo": "La mamma di un giovane suicida: «Ad ammazzare mio figlio è stato il pregiudizio»",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/la-mamma-di-un-giovane-suicida-ad-ammazzare-mio-figlio-e-stato-il-pregiudizio-430315",
-              "riassunto": "A margine della proiezione del film 'Il ragazzo dai pantaloni rosa', la madre di un giovane vittima di bullismo racconta la sua tragedia. La donna sottolinea la responsabilità collettiva – dei ragazzi ma soprattutto degli adulti – nel prevenire queste tragedie.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "UBS investe nella ticinese Artificialy per un'intelligenza artificiale su misura",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/economia/ubs-investe-in-artificialy-per-una-intelligenza-artificiale-su-misura-423649",
-              "riassunto": "La grande banca svizzera è entrata nel capitale della società ticinese Artificialy, che impiega oltre quaranta specialisti nel campo dell'IA. L'operazione punta a unire capitale e progetti concreti per generare valore reale, posizionando il Ticino come polo tecnologico.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Impatto della riforma EFAS sui premi: possibile riduzione teorica del 5%",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/limpatto-di-efas-sui-premi-riduzione-teorica-del-5-423637",
-              "riassunto": "La nuova ripartizione dei costi sanitari tra Cantone e casse malati, in vigore dal 1° gennaio 2028, potrebbe ridurre i premi del 5%. Il Consiglio di Stato avverte però che il risparmio effettivo potrebbe essere inferiore a questa stima teorica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Meno detenuti alla Farera, il carcere 'respira' un po'",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1914959/detenuti-farera-laffranchini-carcere-po",
-              "riassunto": "La situazione nel carcere della Farera registra un miglioramento grazie alla diminuzione del numero di detenuti. Introdotti più controlli e l'obbligo di notifica sulle verifiche effettuate per garantire standard adeguati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Videosorveglianza: la legge cantonale entrerà in vigore il 1° luglio",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1914992/videosorveglianza-legge-luglio-vigore-diritto",
-              "riassunto": "Dal prossimo 1° luglio sarà operativa la legge cantonale sulla videosorveglianza, che regolamenta l'uso delle telecamere sul territorio ticinese nel rispetto del diritto alla privacy.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Incendi boschivi ricorrenti e cause antropiche",
-            "Dibattiti comunali su investimenti culturali e urbanistici",
-            "Turismo pasquale e attrattività del Ticino",
-            "Costi sanitari e riforme (EFAS, cannabis terapeutica)",
-            "Sicurezza stradale e incidenti mortali"
-          ],
-          "da_tenere_d_occhio": "Evoluzione degli incendi boschivi nel Malcantone e nel Luganese: con il vento forte previsto nei prossimi giorni e le cause prevalentemente umane, il rischio di nuovi roghi resta elevato. Da monitorare anche gli sviluppi sulla candidatura di Lugano a Capitale Culturale 2030 dopo l'approvazione del credito e l'opposizione dell'UDC.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è segnata dal grande ritorno di Céline Dion con dieci concerti a Parigi dopo sei anni di assenza, dalla controversa première di 'Dog Day Afternoon' a Broadway e da diversi lutti nel mondo dell'arte e dello spettacolo. In ambito svizzero-italiano, riflettori su Elio e il suo concerto-spettacolo sulla tristezza.",
-          "notizie": [
-            {
-              "titolo": "Céline Dion annuncia il ritorno sul palco: dieci concerti a Parigi da settembre",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/03/30/arts/music/celine-dion-paris-concerts.html",
-              "riassunto": "Céline Dion, che si è esibita raramente dopo la diagnosi di sindrome della persona rigida nel 2022, torna con 10 show a Parigi a partire da settembre. Si tratta del suo ritorno sulle scene dopo sei anni di assenza, un evento atteso a livello globale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times Arts",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "Il NYT contestualizza la notizia nel percorso medico di Dion, sottolineando la rarità delle sue esibizioni dal 2022 e la diagnosi di sindrome della persona rigida. LaRegione adotta un tono più celebrativo e conciso, enfatizzando i 'sei anni di assenza' come dato emotivo senza approfondire il contesto clinico. Il NYT guarda all'evento dal punto di vista internazionale, LaRegione lo inquadra per il pubblico francofono/svizzero."
-            },
-            {
-              "titolo": "\"Dog Day Afternoon\" debutta a Broadway con Bernthal e Moss-Bachrach: grande attesa, recensioni tiepide",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/03/30/theater/dog-day-afternoon-review-bernthal-moss-bachrach.html",
-              "riassunto": "L'adattamento teatrale del film cult del 1975 segna il debutto a Broadway di Jon Bernthal ed Ebon Moss-Bachrach. La recensione del NYT giudica lo spettacolo 'poco cotto': l'approccio comico soffoca la tensione del soggetto originale, lasciando i due protagonisti senza una direzione chiara.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times Arts (intervista)",
-                "New York Times Arts (recensione)"
-              ],
-              "differenze_narrative": "Il NYT pubblica due pezzi distinti sullo stesso evento: un'intervista pre-debutto ai protagonisti (tono entusiasta, racconto della sfida artistica e dell'emozione del debutto) e una recensione post-première (tono critico, giudizio negativo sull'equilibrio tra commedia e dramma). Il contrasto tra i due articoli dello stesso giornale evidenzia il divario tra aspettative e risultato."
-            },
-            {
-              "titolo": "Elio e 'La rivalutazione della tristezza': concerto-spettacolo tra Bellinzona e la Svizzera italiana",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1914833/tristezza-elio-anni-essere-triste-musica-canzone-trent",
-              "riassunto": "Stefano 'Elio' Belisari porta in Svizzera il suo concerto-spettacolo dedicato alla rivalutazione della tristezza come sentimento autentico e necessario. Lo spettacolo è in programma il 2 aprile al Teatro Sociale di Bellinzona, dopo la partecipazione a Sanremo e l'uscita del nuovo disco.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "CdT Società"
-              ],
-              "differenze_narrative": "LaRegione adotta un taglio più personale e impressionistico ('che bel concerto, ho pianto tutto il tempo'), con un racconto emozionale dell'esperienza. Il Corriere del Ticino propone un'intervista classica a Elio, con un approccio più giornalistico e una citazione diretta dell'artista ('La tristezza è un sentimento ingiustamente bistrattato'). Le due testate svizzere coprono lo stesso evento con angolazioni complementari: cronaca emotiva vs. approfondimento dialogico."
-            },
-            {
-              "titolo": "Mary Beth Hurt, attrice di 'Interiors' e 'Il mondo secondo Garp', muore a 79 anni",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/03/30/movies/mary-beth-hurt-actress-dead.html",
-              "riassunto": "È scomparsa Mary Beth Hurt, attrice nota per ruoli memorabili in film di Woody Allen ('Interiors') e George Roy Hill ('Il mondo secondo Garp'). Apprezzata per la capacità di elevare ruoli secondari con acume e improvvisazione, ha avuto anche una carriera teatrale importante con nomination ai Tony.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Morto Alexander Kluge a 94 anni, padre del Nuovo Cinema Tedesco",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/03/27/movies/alexander-kluge-dead.html",
-              "riassunto": "Si è spento a 94 anni Alexander Kluge, regista, teorico e autore prolifico, figura cardine del cinema e della cultura tedesca del dopoguerra. Considerato uno dei più grandi intellettuali pubblici della Germania, ha rivoluzionato il linguaggio cinematografico del suo Paese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ben Stevenson, coreografo che rese grande il Houston Ballet, muore a 89 anni",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/03/30/arts/dance/ben-stevenson-dead.html",
-              "riassunto": "Scompare Ben Stevenson, coreografo britannico che sotto la sua guida ha trasformato il Houston Ballet in una delle compagnie più grandi e prestigiose d'America. Le sue creazioni sono state rappresentate in tutto il mondo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Wikipedia vieta gli articoli scritti con l'intelligenza artificiale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915016/ia-wikipedia-scritti-vietati-articoli",
-              "riassunto": "Wikipedia ha ufficializzato il divieto di pubblicare articoli generati dall'intelligenza artificiale. La decisione si inserisce nel dibattito globale sull'affidabilità dei contenuti prodotti da IA e sulla tutela della qualità enciclopedica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gli Eventi Letterari Monte Verità 2026: grande successo e riflessione sul ruolo della letteratura",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/la-necessita-della-letteratura-in-unepoca-di-grandi-tensioni-423641",
-              "riassunto": "L'edizione 2026 degli Eventi Letterari Monte Verità ha registrato un grande successo di pubblico, con presenze di rilievo e un programma articolato. Il tema centrale è stato la necessità della letteratura in un'epoca segnata da forti tensioni geopolitiche e sociali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il mercato musicale svizzero cresce per il decimo anno consecutivo grazie allo streaming",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1915015/mercato-streaming-svizzero-utilizzo-anni",
-              "riassunto": "Nel 2025 il mercato musicale svizzero segna il decimo anno consecutivo di crescita, trainato dall'espansione dello streaming. Il dato conferma la trasformazione strutturale dell'industria musicale nel Paese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Ondata di lutti nel mondo dell'arte e dello spettacolo (Hurt, Kluge, Stevenson, Machado)",
-            "Grandi ritorni musicali e teatrali (Céline Dion, Dog Day Afternoon a Broadway, Elio in Svizzera)",
-            "Dibattito su intelligenza artificiale e contenuti culturali (Wikipedia vieta articoli IA)",
-            "Crescita dello streaming e trasformazione del mercato musicale"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle condizioni di salute di Céline Dion in vista dei concerti di settembre a Parigi: dato l'impatto della sindrome della persona rigida, la tenuta fisica per 10 show consecutivi sarà il vero banco di prova del suo ritorno, con potenziali aggiornamenti nelle prossime settimane sulla vendita dei biglietti e sulla risposta del pubblico.",
-          "_model_used": "anthropic/claude-opus-4-6"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Giornata dominata dal tema della fiducia nell'IA (sondaggio Quinnipiac su adozione vs. sfiducia), da tensioni geopolitiche tra Pentagono e Anthropic, e da importanti sviluppi tecnici come le allucinazioni dei modelli multimodali e la sicurezza della supply chain software (Axios compromesso su NPM, LiteLLM che scarica Delve).",
-          "notizie": [
-            {
-              "titolo": "L'adozione dell'IA cresce negli USA ma la fiducia crolla: il paradosso del sondaggio Quinnipiac",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll-more-americans-adopt-tools-fewer-say-they-can-trust-the-results/",
-              "riassunto": "Secondo un nuovo sondaggio della Quinnipiac University, l'adozione degli strumenti IA è in forte aumento tra gli americani, ma la fiducia nei risultati resta bassa. La maggioranza esprime preoccupazioni su trasparenza, regolamentazione e impatto sociale. Un dato correlato: il 15% sarebbe disposto ad avere un supervisore IA al lavoro.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI (fiducia)",
-                "TechCrunch AI (capo IA)"
-              ],
-              "differenze_narrative": "Lo stesso sondaggio Quinnipiac viene spacchettato in due articoli separati da TechCrunch: uno enfatizza il dato sulla sfiducia crescente nonostante l'adozione, l'altro isola il dato più provocatorio del 15% disposto a lavorare per un boss IA. Due angolazioni complementari ma che insieme danno il quadro completo di un rapporto ambivalente degli americani con l'IA."
-            },
-            {
-              "titolo": "Il Pentagono contro Anthropic: la tattica della guerra culturale si ritorce contro",
-              "fonte": "MIT Tech Review",
-              "link": "https://www.technologyreview.com/2026/03/30/1134881/the-pentagons-culture-war-tactic-against-anthropic-has-backfired/",
-              "riassunto": "Un giudice californiano ha temporaneamente bloccato il Pentagono dal classificare Anthropic come rischio per la supply chain e dall'ordinare alle agenzie governative di smettere di usare i suoi prodotti. La mossa del Dipartimento della Difesa viene inquadrata come tattica di guerra culturale che si è rivelata controproducente.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "I modelli multimodali descrivono con sicurezza immagini mai viste: Stanford svela la falla nei benchmark",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/ai-models-confidently-describe-images-they-never-saw-and-benchmarks-fail-to-catch-it/",
-              "riassunto": "Uno studio di Stanford dimostra che modelli come GPT-5, Gemini 3 Pro e Claude Opus 4.5 generano descrizioni dettagliate e diagnosi mediche anche quando nessuna immagine viene fornita. I benchmark standard non riescono a rilevare questo problema, sollevando gravi dubbi sull'affidabilità delle valutazioni correnti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "MIT Tech Review (strumenti salute IA)"
-              ],
-              "differenze_narrative": "The Decoder si concentra sulla falla tecnica nei benchmark e nei modelli multimodali. MIT Tech Review affronta lo stesso problema da un'angolazione applicativa, chiedendosi quanto funzionino davvero gli strumenti sanitari IA (citando Copilot Health di Microsoft e Health AI di Amazon). Entrambi convergono sulla questione dell'affidabilità dei risultati IA, ma con prospettive complementari: una accademica, l'altra consumer-oriented."
-            },
-            {
-              "titolo": "Axios compromesso su NPM: versioni malevole distribuiscono trojan di accesso remoto",
-              "fonte": "Hacker News",
-              "link": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
-              "riassunto": "La popolarissima libreria JavaScript Axios è stata compromessa su NPM con versioni dannose che distribuiscono un trojan di accesso remoto (RAT). La notizia, con 476 punti su Hacker News, evidenzia la vulnerabilità critica della supply chain software open source, tema che si intreccia con la vicenda LiteLLM/Delve.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Hacker News (Axios)",
-                "TechCrunch AI (LiteLLM/Delve)"
-              ],
-              "differenze_narrative": "Hacker News riporta la compromissione di Axios su NPM come evento di sicurezza puro. TechCrunch racconta la vicenda LiteLLM che abbandona Delve dopo aver subito un malware di furto credenziali. Entrambe le notizie convergono sul tema critico della sicurezza della supply chain nel mondo open source e IA, ma da angolazioni diverse: compromissione diretta di una libreria vs. compromissione tramite un partner di compliance."
-            },
-            {
-              "titolo": "Microsoft espande Copilot Cowork: modelli IA che controllano il lavoro di altri modelli",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/microsoft-rolls-out-copilot-cowork-more-broadly-and-lets-ai-models-check-each-others-work/",
-              "riassunto": "Microsoft 365 Copilot introduce 'Cowork', un assistente IA capace di gestire interi flussi di lavoro in autonomia. Una nuova funzionalità di ricerca consente a più modelli IA di verificare reciprocamente i propri risultati, affrontando il problema dell'affidabilità con un approccio multi-agente.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "GitHub fa marcia indietro: rimossi gli annunci pubblicitari di Copilot nelle pull request dopo le proteste",
-              "fonte": "Hacker News",
-              "link": "https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/",
-              "riassunto": "GitHub ha ritirato gli annunci pubblicitari per Copilot inseriti nelle pull request dopo un forte contraccolpo della comunità degli sviluppatori. La mossa evidenzia le tensioni tra monetizzazione degli strumenti IA e rispetto degli spazi di lavoro degli sviluppatori open source.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L'IA come l'Ozempic dell'industria musicale: i produttori usano i generatori di nascosto",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/insiders-liken-ai-to-the-ozempic-of-the-music-industry-as-hitmakers-reportedly-hide-their-generator-use/",
-              "riassunto": "Produttori e autori musicali di successo stanno adottando silenziosamente generatori IA, ma l'industria preferisce non parlarne. La metafora dell'Ozempic è calzante: tutti lo usano, nessuno lo ammette. Se i creativi affermati trovano nuove opportunità, un'intera classe di lavoratori musicali rischia di essere marginalizzata.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ollama ora basato su MLX per Apple Silicon: anteprima del nuovo backend",
-              "fonte": "Hacker News",
-              "link": "https://ollama.com/blog/mlx",
-              "riassunto": "Ollama, il popolare strumento per eseguire modelli IA in locale, introduce il supporto nativo per il framework MLX di Apple Silicon in anteprima. Il cambio di backend promette prestazioni significativamente migliori sui Mac, rendendo l'inferenza locale più accessibile ed efficiente.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Universal Claude.md: strumento per ridurre drasticamente i token di output di Claude",
-              "fonte": "Hacker News",
-              "link": "https://github.com/drona23/claude-token-efficient",
-              "riassunto": "Un progetto open source molto popolare (242 punti su HN) propone un file di configurazione universale per ridurre i token di output di Claude, ottimizzando costi e velocità. Il progetto si affianca a un tutorial interattivo per imparare Claude Code 'facendo' (207 punti), segnalando una comunità molto attiva attorno all'ecosistema Anthropic.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Hacker News (claude-token-efficient)",
-                "Hacker News (claude.nagdy.me)"
-              ],
-              "differenze_narrative": "Due progetti indipendenti sullo stesso ecosistema Claude emergono contemporaneamente su Hacker News: uno focalizzato sull'ottimizzazione dei costi (riduzione token), l'altro sull'apprendimento pratico di Claude Code. Insieme indicano una maturazione rapida della community di sviluppatori attorno ai tool Anthropic."
-            }
-          ],
-          "trend": [
-            "Crisi di fiducia nell'IA: adozione in crescita ma sfiducia dilagante",
-            "Sicurezza della supply chain software e IA sotto attacco",
-            "Allucinazioni multimodali e inadeguatezza dei benchmark attuali",
-            "Tensioni geopolitiche e regolamentari (Pentagono vs Anthropic)",
-            "IA generativa nascosta nei settori creativi (musica)",
-            "Ecosistema Claude/Anthropic in rapida espansione nella community dev"
-          ],
-          "da_tenere_d_occhio": "Il caso Pentagono vs Anthropic: il blocco temporaneo del giudice californiano potrebbe creare un precedente significativo sui rapporti tra governo USA e aziende IA. Se la classificazione come 'rischio supply chain' venisse confermata in appello, potrebbe innescare un effetto domino su tutti i fornitori IA del settore pubblico e ridisegnare gli equilibri di potere nel mercato enterprise dell'intelligenza artificiale.",
           "_model_used": "anthropic/claude-opus-4-6"
         }
       ]
