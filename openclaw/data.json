@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T21:40:04.557944Z",
+  "generated_at": "2026-04-15T21:50:09.097847Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -13,7 +13,7 @@
     "token_present": true
   },
   "models": {
-    "primary": "openai/gpt-5.1-codex-mini",
+    "primary": "openai-codex/gpt-5.4",
     "fallbacks": [
       "openrouter/openai/gpt-5-mini",
       "ollama/qwen3.5:cloud",
@@ -34,7 +34,7 @@
       "role": "Sviluppo software/web",
       "primary": "openrouter/moonshotai/kimi-k2.5",
       "fallbacks": [
-        "openai/gpt-5.1-codex-mini",
+        "openai-codex/gpt-5.4",
         "ollama/minimax-m2.7:cloud",
         "openrouter/openai/gpt-oss-120b:free"
       ]
@@ -517,7 +517,7 @@
         "context_length": 400000
       },
       {
-        "model_id": "openai/gpt-5.1-codex-mini",
+        "model_id": "openai-codex/gpt-5.4",
         "alias": "GPT51_CODEX_MINI",
         "type": "paid",
         "cost_input_per_1M": 0.25,
@@ -671,7 +671,7 @@
         "cost_output": 0
       }
     ],
-    "primary_model": "openai/gpt-5.1-codex-mini",
+    "primary_model": "openai-codex/gpt-5.4",
     "fallback_chain": [
       "openrouter/openai/gpt-5-mini",
       "ollama/qwen3.5:cloud",
