@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T09:20:04.982294Z",
+  "generated_at": "2026-04-15T09:28:08.366680Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -17,7 +17,7 @@
     "fallbacks": [
       "openrouter/openai/gpt-5-mini",
       "ollama/qwen3.5:cloud",
-      "openrouter/stepfun/step-3.5-flash:free"
+      "openrouter/openai/gpt-oss-120b:free"
     ]
   },
   "subagents": [
@@ -36,7 +36,7 @@
       "fallbacks": [
         "openai/gpt-5.1-codex-mini",
         "ollama/minimax-m2.7:cloud",
-        "openrouter/stepfun/step-3.5-flash:free"
+        "openrouter/openai/gpt-oss-120b:free"
       ]
     },
     {
@@ -618,8 +618,8 @@
         "cost_output": 0
       },
       {
-        "model_id": "openrouter/stepfun/step-3.5-flash:free",
-        "alias": "stepflash",
+        "model_id": "openrouter/openai/gpt-oss-120b:free",
+        "alias": "gpt-oss",
         "type": "free",
         "cost_input": 0,
         "cost_output": 0
@@ -675,7 +675,7 @@
     "fallback_chain": [
       "openrouter/openai/gpt-5-mini",
       "ollama/qwen3.5:cloud",
-      "openrouter/stepfun/step-3.5-flash:free"
+      "openrouter/openai/gpt-oss-120b:free"
     ]
   }
 }
