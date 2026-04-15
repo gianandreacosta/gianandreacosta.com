@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T10:10:04.890675Z",
+  "generated_at": "2026-04-15T10:20:04.852835Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -72,7 +72,7 @@
       ]
     }
   ],
-  "rate_limits_today": 7,
+  "rate_limits_today": 28,
   "cron_jobs": [
     {
       "name": "memory-review",
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 54min",
+      "next": "in 44min",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
