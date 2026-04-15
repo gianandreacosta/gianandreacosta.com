@@ -146,7 +146,7 @@
 <header>
   <h1>🦇 Geoffrey — <span>Model Catalog</span></h1>
   <p>Tutti i modelli configurati in OpenClaw — costi, specifiche, velocità, use case</p>
-  <div id="update-time">Aggiornato: <script>document.write(new Date('2026-04-05').toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}))</script></div>
+  <div id="update-time">Aggiornato: <script>document.write(new Date('2026-04-15').toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}))</script></div>
 </header>
 
 <div class="controls">
@@ -247,20 +247,20 @@ const MODELS = [
     provider: "openai",
     providerLabel: "OpenAI",
     badgeClass: "badge-openai",
-    costIn: 2.00,
-    costOut: 8.00,
+    costIn: 1.25,
+    costOut: 10.00,
     costClass: "cost-mid",
     speed: "Veloce",
     speedClass: "speed-fast",
-    ctx: "128K",
+    ctx: "400K",
     tags: ["vision", "reasoning", "tool-use"],
-    task: "Alternativa a Sonnet con API key OpenAI dedicata (OPENAI_API_KEY_H).",
+    task: "Alternativa a Sonnet con API key OpenAI dedicata (OPENAI_API_KEY_H). Listino aggiornato aprile 2026.",
     free: false,
     filterTags: ["openai", "vision", "reasoning"]
   },
   {
     name: "gpt-5.1-codex",
-    alias: "GPT_OAUTH",
+    alias: "GPT51_CODEX",
     provider: "openai",
     providerLabel: "OpenAI (OAuth)",
     badgeClass: "badge-openai",
@@ -269,9 +269,9 @@ const MODELS = [
     costClass: "cost-free",
     speed: "Veloce",
     speedClass: "speed-fast",
-    ctx: "128K",
+    ctx: "400K",
     tags: ["vision", "reasoning", "code", "tool-use"],
-    task: "Versione OAuth: costo zero (piano Codex). Ottimo per coding tasks e code review.",
+    task: "Versione OAuth: costo zero (piano Codex). Listino $1.25/$10 per M. Ottimo per coding tasks e code review.",
     free: true,
     filterTags: ["openai", "vision", "reasoning", "free"]
   },
@@ -286,11 +286,11 @@ const MODELS = [
     costClass: "cost-free",
     speed: "Molto veloce",
     speedClass: "speed-fast",
-    ctx: "128K",
-    tags: ["reasoning", "code", "tool-use"],
-    task: "Fallback economico per task di codice. Usato come fallback nel chain principale.",
+    ctx: "400K",
+    tags: ["vision", "reasoning", "code", "tool-use"],
+    task: "Primary di Geoffrey. Costo zero via OAuth (listino $0.25/$2.00 per M). Usato nel chain principale.",
     free: true,
-    filterTags: ["openai", "reasoning", "free"]
+    filterTags: ["openai", "vision", "reasoning", "free"]
   },
   {
     name: "gpt-4o-mini",
@@ -328,7 +328,7 @@ const MODELS = [
     filterTags: ["ollama", "vision", "reasoning", "free"]
   },
   {
-    name: "minimax-m2.5:cloud",
+    name: "minimax-m2.7:cloud",
     alias: "—",
     provider: "ollama",
     providerLabel: "Ollama (locale)",
@@ -340,7 +340,7 @@ const MODELS = [
     speedClass: "speed-medium",
     ctx: "200K",
     tags: ["reasoning"],
-    task: "Modello cinese locale, reasoning capace. Fallback alternativo a qwen3.5.",
+    task: "Modello cinese locale, reasoning capace (v2.7 aprile 2026). Fallback alternativo a qwen3.5.",
     free: true,
     filterTags: ["ollama", "reasoning", "free"]
   },
@@ -437,14 +437,14 @@ const MODELS = [
     provider: "openrouter/openai",
     providerLabel: "OpenRouter · OpenAI",
     badgeClass: "badge-or-openai",
-    costIn: 5.00,
+    costIn: 2.50,
     costOut: 15.00,
-    costClass: "cost-xhigh",
+    costClass: "cost-high",
     speed: "Veloce",
     speedClass: "speed-fast",
-    ctx: "128K",
-    tags: ["vision", "reasoning", "tool-use"],
-    task: "Alias /model GPT54. Il flagship OpenAI più recente. Test comparativi vs Claude.",
+    ctx: "1M",
+    tags: ["vision", "reasoning", "code", "tool-use", "long-ctx"],
+    task: "Alias /model GPT54. Flagship OpenAI (rilasciato 5 marzo 2026). Context 1M, unifica linea Codex+GPT. Via OAuth Codex CLI è gratis.",
     free: false,
     filterTags: ["openai", "vision", "reasoning"]
   },
@@ -587,21 +587,21 @@ const MODELS = [
     filterTags: ["reasoning", "free"]
   },
   {
-    name: "step-3.5-flash",
-    alias: "stepflash",
-    provider: "openrouter/stepfun",
-    providerLabel: "OpenRouter · StepFun (free)",
-    badgeClass: "badge-or-other",
+    name: "gpt-oss-120b",
+    alias: "gpt-oss",
+    provider: "openrouter/openai",
+    providerLabel: "OpenRouter · OpenAI (free)",
+    badgeClass: "badge-or-openai",
     costIn: 0,
     costOut: 0,
     costClass: "cost-free",
     speed: "Veloce",
     speedClass: "speed-fast",
-    ctx: "32K",
-    tags: ["tool-use"],
-    task: "Alias /model stepflash. Gratuito e veloce. Cron backup (backup-daily, backup-weekly). Contesto limitato.",
+    ctx: "128K",
+    tags: ["reasoning", "code", "tool-use"],
+    task: "Alias /model gpt-oss. Open-weight Apache 2.0, 117B MoE (~5.1B attivi). Performance ~ o4-mini sui benchmark. Fallback #3 del primary e di Officina.",
     free: true,
-    filterTags: ["free"]
+    filterTags: ["openai", "reasoning", "free"]
   },
   {
     name: "seedream-4.5",
