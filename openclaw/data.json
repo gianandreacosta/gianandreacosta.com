@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T23:50:04.937213Z",
+  "generated_at": "2026-04-15T00:00:07.938887Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -158,6 +158,13 @@
   ],
   "summaries": [],
   "backups": [
+    {
+      "file": "daily-config-20260415-0200.tar.gz",
+      "date": "2026-04-15T02:00:00Z",
+      "size": "11.9M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260415-0200.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
+    },
     {
       "file": "daily-config-20260414-0200.tar.gz",
       "date": "2026-04-14T02:00:00Z",
@@ -360,18 +367,11 @@
       "size": "8.6M",
       "context": "Pre-aggiornamento 2026.4.2",
       "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-2157.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20260402-1357.tar.gz",
-      "date": "2026-04-02T13:57:00Z",
-      "size": "8.4M",
-      "context": "Backup automatico 02/04 pomeriggio",
-      "restore_cmd": "BACKUP=/root/.openclaw/workspace/backups/daily-config-20260402-1357.tar.gz bash /root/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
     "articles_total": 12760,
-    "articles_today": 736,
+    "articles_today": 0,
     "articles_new_last_run": 736,
     "last_run": "2026-04-14 04:45:01.699545+00:00",
     "last_run_found": 3590
