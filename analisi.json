@@ -1,6 +1,318 @@
 {
-  "generated_at": "2026-04-15T09:39:32.304531+00:00",
+  "generated_at": "2026-04-16T05:06:09.110089+00:00",
   "analyses": [
+    {
+      "id": 36,
+      "run_id": 69,
+      "run_time": "2026-04-16 04:45:01.785126+00:00",
+      "analyzed_at": "2026-04-16T05:06:09.098483+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 19,
+      "model_used": "ollama/qwen3.5:cloud",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi dominano le notizie sul salario minimo con ripercussioni cantonali, il debutto in borsa di Centiel e un caso di cronaca nera transfrontaliero.",
+          "notizie": [
+            {
+              "titolo": "Salari minimi, prevale l'obbligo generale ma il Ticino resta in gioco",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma-per-il-ticino-le-cose-si-complicano-425142",
+              "riassunto": "La Commissione del Consiglio nazionale stabilisce la precedenza dei salari nei CCL su quelli cantonali, salvo eccezioni. Per il Ticino la situazione rimane incerta.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Ticinonews riporta la decisione tecnica in modo neutro; CdT enfatizza le complicazioni politiche per il Ticino e l'incertezza residua."
+            },
+            {
+              "titolo": "Centiel approva fusione con HT5 e debutta in Borsa a Zurigo",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1918021/centiel-fusione-ht5-borsa-zurigo",
+              "riassunto": "Gli azionisti approvano l'operazione che crea un'azienda tecnologica quotata al SIX. Sede legale trasferita a Lugano.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Ticino"
+              ],
+              "differenze_narrative": "Ticinonews punta sul potenziale di crescita internazionale; LaRegione fornisce dettagli tecnici sull'operatività borsistica e simboli."
+            },
+            {
+              "titolo": "Neonato morto per maltrattamenti, genitori arrestati in Ticino",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/svizzera/neonato-morto-per-maltrattamenti-in-italia-genitori-fermati-in-ticino-425237",
+              "riassunto": "Coppia ricercata per la morte di un bambino in Italia catturata nel nostro Cantone grazie alla cooperazione con l'Interpol.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Salario minimo",
+            "Economia aziendale"
+          ],
+          "da_tenere_d_occhio": "Evoluzione normativa sul salario minimo cantonale",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata dalle tensioni economiche internazionali con i dazi USA e dal dibattito interno sulla spesa per la difesa (F-35 e nuovo armamento). Spiccano anche notizie di cronaca locale su costi degli affitti e licenze edilizie a Zurigo, oltre alla tradizionale festa del Sechseläuten.",
+          "notizie": [
+            {
+              "titolo": "Negoziati sui dazi USA: Berna cerca stabilità per l'orologiero e l'economia",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/dazi-proseguono-i-negoziati-con-gli-usa-431479",
+              "riassunto": "La SECO conferma la prosecuzione dei colloqui con Washington per garantire stabilità al settore orologiero e ad altri rami economici cruciali, in un contesto di forte incertezza commerciale globale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Via libera delle commissioni per nuova pistola d'ordinanza e credito F-35",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/verso-il-primo-si-per-la-nuova-pistola-e-il-credito-degli-f-35a-425119",
+              "riassunto": "La Commissione della politica di sicurezza degli Stati ha raccomandato l'acquisto della SIG Sauer P320 e approvato i costi aggiuntivi per gli F-35, segnando un passo decisivo verso il potenziamento dell'esercito nonostante le critiche sui costi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "Le due notizie della stessa testata (CdT) si complementano: una si focalizza sul dettaglio tecnico dell'approvazione della pistola e il rifiuto dei fondi anti-droni, l'altra offre una visione d'insieme sul 'primo sì' politico per entrambi i crediti militari."
+            },
+            {
+              "titolo": "Caos immobiliare a Zurigo: affitti record e blocchi edilizi tra polemiche",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/mietzins-irrsinn-in-zuerich-4-5-zimmer-fuer-5000-franken-direkt-am-laermigen-rosengarten-id21870202.html",
+              "riassunto": "Emergono casi eclatanti nel mercato immobiliare zurighese: un appartamento rumoroso offerto a 5'000 franchi e il blocco giudiziario di un nuovo McDonald's per camini troppo alti, evidenziando le tensioni abitative e urbanistiche nella massima città svizzera.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Schweiz",
+                "Blick Schweiz"
+              ],
+              "differenze_narrative": "Blick utilizza un tono sensazionalistico e critico verso gli sviluppatori e il mercato, mettendo in luce l'assurdità delle situazioni (affitti folli, burocrazia sui camini) per illustrare il malessere abitativo e la complessità edilizia a Zurigo."
+            },
+            {
+              "titolo": "Sechseläuten a Zurigo: il rogo del Böögg tenterà di prevedere l'estate",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/che-estate-ci-aspetta-lo-decidera-il-boogg-ma-il-pupazzo-non-e-affidabile-425072",
+              "riassunto": "Si celebra oggi la tradizionale festa primaverile delle corporazioni di Zurigo con il rogo del Böögg; secondo il folklore, la velocità dell'esplosione della testa del fantoccio predice la qualità dell'estate imminente.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano l'evento con tono descrittivo e culturale. CdT e Ticinonews sottolineano allo stesso modo il carattere folkloristico e l'inaffidabilità scientifica della profezia, senza differenze politiche o di angolazione significative."
+            }
+          ],
+          "trend": [
+            "Tensioni commerciali USA-Svizzera",
+            "Potenziamento materiale dell'esercito"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei negoziati sui dazi con gli USA e l'impatto concreto sul settore orologiero nelle prossime ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La scena culturale odierna vede un forte protagonismo del Ticino con eventi locali e proiezioni internazionali di artisti regionali, affiancato da scoperte scientifiche dell'Università di Ginevra. Le notizie internazionali si concentrano su grandi mostre museali negli USA, ma con minore impatto diretto per il lettore svizzero.",
+          "notizie": [
+            {
+              "titolo": "Il duo ticinese NEVERCREW realizza un'opera murale a Vienna",
+              "fonte": "Ticinonews Magazine",
+              "link": "https://www.ticinonews.ch/magazine/a-vienna-spunta-souvenir-la-nuova-opera-del-duo-ticinese-nevercrew-431436",
+              "riassunto": "Gli artisti ticinesi NEVERCREW hanno inaugurato 'Souvenir', un intervento site-specific nel terzo distretto di Vienna. La notizia evidenzia il successo internazionale della scena artistica del Cantone.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Scoperti enormi serbatoi di magma in Toscana dai ricercatori UNIGE",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/scienze/1918140/magma-toscana-unige-scoperta-nazionale",
+              "riassunto": "L'Università di Ginevra ha individuato un vasto serbatoio magmatico sotto la Toscana. Una scoperta scientifica di portata internazionale che coinvolge direttamente un'istituzione accademica svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lancio della residenza di scrittura Bi[e]laterale a Bienne",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1918229/residenza-lingua-biel-bi-bienne",
+              "riassunto": "Avviata a Bienne 'Bi[e]laterale', una nuova residenza di scrittura in lingua italiana che promuove il dialogo culturale tra le regioni linguistiche svizzere, rafforzando l'identità italofona nel paese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Internazionalizzazione degli artisti ticinesi",
+            "Eccellenza della ricerca scientifica svizzera in ambito geologico"
+          ],
+          "da_tenere_d_occhio": "Sviluppi sulla residenza Bi[e]laterale e possibili nuove collaborazioni transfrontaliere per gli artisti NEVERCREW.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La tensione nello Stretto di Hormuz domina l'agenda con il blocco navale USA e le reazioni di Cina e Iran, mentre in Europa si registra uno shock politico con la vittoria dell'opposizione in Ungheria. Parallelamente, riprendono i colloqui storici tra Israele e Libano a Washington, sebbene oscurati dal conflitto regionale più ampio.",
+          "notizie": [
+            {
+              "titolo": "Crisi nello Stretto di Hormuz: blocco USA, minacce cinesi e conferenza europea",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/14/pechino-il-blocco-usa-su-hormuz-e-pericoloso-in-caso-di-nuovi-dazi-reagiremo_e1b4e0a2-34df-4ddc-bbfe-d852b52e42a5.html",
+              "riassunto": "Gli USA hanno avviato il blocco dei porti iraniani, innescando forti reazioni da Pechino che definisce la mossa pericolosa e da Teheran. È stata indetta una conferenza a Parigi per una missione di paesi non belligeranti, segnalando un'escalation con potenziali ripercussioni globali sui mercati energetici.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA enfatizza la diplomazia d'urgenza e le dichiarazioni ufficiali di condanna; Internazionale pone l'accento sull'incertezza dei mercati petroliferi e la speranza di dialogo; il NYT analizza il rischio che il blocco di Trump comprometta la distensione con la Cina, inquadrando l'evento come un possibile ritorno alla 'legge della giungla'."
+            },
+            {
+              "titolo": "Svolta in Ungheria: Peter Magyar sconfigge Orbán e sospende i notiziari di stato",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/ungheria-magyar-annuncia-sospensione-notiziari-tv-stato",
+              "riassunto": "L'ex alleato di Viktor Orbán, Peter Magyar, ha ottenuto una vittoria schiacciante alle elezioni ungheresi, annunciando immediatamente la sospensione dei notiziari della TV di stato, storicamente megafono del governo uscente. L'evento segna un potenziale cambiamento geopolitico nell'UE.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Internazionale si concentra sulle azioni immediate di riforma interna (sospensione notiziari) come rottura col passato; il NYT offre un'analisi più biografica del rapporto tra Magyar e Orbán, interrogandosi sulla profondità reale del cambiamento politico oltre la vittoria elettorale."
+            },
+            {
+              "titolo": "Colloqui storici Israele-Libano a Washington tra speranze e scetticismo",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/israele-libano-colloqui-diretti-washington",
+              "riassunto": "Per la prima volta in trent'anni, Israele e Libano hanno partecipato a colloqui diretti ospitati dal segretario di stato USA Marco Rubio. Nonostante i toni incoraggianti, permangono dubbi sull'efficacia reale dei negoziati mentre continuano le ostilità con Hezbollah.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano l'evento storico, ma il NYT sottolinea come l'incontro sia stato 'oscurato' dalla guerra in corso e dal rifiuto israeliano di fermare le campagne militari, adottando un tono più cauto rispetto alla semplice cronaca dell'evento."
+            }
+          ],
+          "trend": [
+            "Escalation navale nel Golfo Persico",
+            "Riassetto politico nell'Europa centrale"
+          ],
+          "da_tenere_d_occhio": "Sviluppi della conferenza di Parigi sulla sicurezza di Hormuz e le prime mosse legislative del nuovo governo ungherese nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "L'economia svizzera è oggi dominata dalle tensioni geopolitiche in Medio Oriente che impattano sui tassi ipotecari e sui mercati azionari, mentre il settore bancario affronta nuove pressioni dagli USA. Sul fronte interno, un guasto tecnico colpisce un operatore telefonico e aumentano i richiami di prodotti.",
+          "notizie": [
+            {
+              "titolo": "Tensione Iran-USA: impatto sui mutui svizzeri e rischi per la borsa",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/life/wohnen/immobilien/experte-warnt-hausbesitzer-vor-risiken-iran-krieg-laesst-hypotheken-mit-kurzen-laufzeiten-boomen-id21867808.html",
+              "riassunto": "L'escalation in Medio Oriente sta facendo salire i tassi d'interesse in Svizzera, spingendo i proprietari di case verso mutui a breve termine (Saron). Gli esperti avvertono che questa strategia potrebbe rivelarsi rischiosa se il conflitto si prolungasse, con ripercussioni anche sulla stabilità dei mercati azionari.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "Il Sole 24 Ore Finanza"
+              ],
+              "differenze_narrative": "Blick focalizza l'analisi sull'impatto diretto e tangibile per le famiglie svizzere (mutui e costi della casa), adottando un tono cautelativo. Il Sole 24 Ore offre una visione più macroeconomica e di mercato, evidenziando come le speranze di pace abbiano temporaneamente sostenuto la borsa di Milano e fatto calare il petrolio."
+            },
+            {
+              "titolo": "UBS sotto pressione dagli USA per i conti nazisti ereditati da Credit Suisse",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/usa-fordern-entschaedigung-wie-sich-die-ubs-im-streit-um-nazi-konten-der-cs-wehrt-id21869620.html",
+              "riassunto": "Il Senato statunitense critica l'UBS per un'presunta mancanza di trasparenza nella gestione dei conti dormienti dell'era nazista ereditati da Credit Suisse. La disputa potrebbe portare alla riapertura dell'accordo del 1999, esponendo la banca a nuove richieste di risarcimento e danni reputazionali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Guasto tecnico da Sunrise: disservizi per clienti e aziende",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/kundendienst-nicht-erreichbar-sunrise-kunden-von-stoerungen-betroffen-id21868375.html",
+              "riassunto": "Un errore di configurazione durante la manutenzione ha causato un'estesa interruzione dei servizi Sunrise, colpendo il servizio clienti e la telefonia fissa. Il disservizio ha creato particolari difficoltà alle piccole imprese dipendenti dalla connettività, evidenziando la fragilità delle infrastrutture critiche.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Geopolitica e inflazione dei tassi ipotecari",
+            "Responsabilità storica del settore bancario svizzero"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle trattative tra USA e Iran nelle prossime ore, che determinerà la direzione dei tassi Saron e la volatilità della piazza finanziaria svizzera.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi dominano le notizie sulla sicurezza dei modelli AI avanzati e le tensioni finanziarie nel settore. Nessuna notizia diretta sulla Svizzera, ma le implicazioni regolatorie europee su Anthropic sono cruciali per il mercato elvetico.",
+          "notizie": [
+            {
+              "titolo": "Claude Mythos solleva preoccupazioni per la sicurezza e la regolamentazione AI in Europa",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/claude-mythos-is-a-wake-up-call-for-europes-ai-safety-apparatus/",
+              "riassunto": "Anthropic limita l'accesso a Mythos, capace di trovare vulnerabilità meglio degli umani. Le autorità europee mancano di visibilità sul sistema, un problema strutturale rilevante anche per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza il briefing politico con l'amministrazione Trump, mentre The Decoder focalizza sul rischio cybersecurity e sul vuoto normativo europeo."
+            },
+            {
+              "titolo": "Investitori mettono in discussione la valutazione di OpenAI amid strategie incerte",
+              "fonte": "Reuters (via Hacker News)",
+              "link": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/",
+              "riassunto": "La valutazione di 852 miliardi di OpenAI sotto scrutinio. Alcuni investitori preferiscono Anthropic considerata più accessibile rispetto alla capitalizzazione richiesta per l'IPO di OpenAI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "Reuters"
+              ],
+              "differenze_narrative": "TechCrunch presenta Anthropic come un affare relativo rispetto a OpenAI, Reuters sottolinea lo scetticismo degli investitori sulla sostenibilità della valutazione di OpenAI."
+            },
+            {
+              "titolo": "Google integra AI Skills in Chrome per salvare flussi di lavoro",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/14/google-adds-ai-skills-to-chrome-to-help-you-save-favorite-workflows/",
+              "riassunto": "Google aggiunge la funzione Skills a Chrome per salvare e riutilizzare prompt AI. Integrazione pratica che migliora la produttività quotidiana degli utenti browser.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch descrive il lancio come integrazione di flusso di lavoro, The Decoder lo presenta principalmente come strumento di riutilizzo prompt one-click."
+            }
+          ],
+          "trend": [
+            "Regolamentazione sicurezza AI",
+            "Sovravalutazione startup AI"
+          ],
+          "da_tenere_d_occhio": "Reazione delle autorità UE e svizzere alle capacità offensive del modello Claude Mythos nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        }
+      ]
+    },
     {
       "id": 35,
       "run_id": 68,
@@ -3861,67 +4173,6 @@
           ],
           "da_tenere_d_occhio": "L'entrata in vigore del blocco di Anthropic agli abbonamenti Claude per tool di terze parti (OpenClaw incluso) è fissata per il 4 aprile alle 12:00 PT / 21:00 CET: monitorare la reazione della community e le eventuali alternative che emergeranno nelle prossime ore.",
           "_model_used": "anthropic/claude-sonnet-4-6"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "run_id": 53,
-      "run_time": "2026-04-05 04:45:08.185379+00:00",
-      "analyzed_at": "2026-04-05T05:00:30.028103+00:00",
-      "articles_analyzed": 163,
-      "articles_selected": 0,
-      "model_used": "anthropic/claude-sonnet-4-6",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 401: Unauthorized"
         }
       ]
     }
