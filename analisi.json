@@ -1,6 +1,284 @@
 {
-  "generated_at": "2026-04-16T05:06:09.110089+00:00",
+  "generated_at": "2026-04-17T05:11:14.401262+00:00",
   "analyses": [
+    {
+      "id": 37,
+      "run_id": 70,
+      "run_time": "2026-04-17 04:45:01.363170+00:00",
+      "analyzed_at": "2026-04-17T05:11:14.388596+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 17,
+      "model_used": "ollama/qwen3.5:cloud, openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese è dominata da un grave fatto di sangue con risonanza internazionale e dall'annuncio di un grande evento culturale. Mentre il caso dell'infanticidio evidenzia il ruolo della polizia cantonale nella cooperazione giudiziaria, il festival Moon&Stars conferma il suo impatto economico e turistico.",
+          "notizie": [
+            {
+              "titolo": "Genitori arrestati in Ticino per la morte del neonato maltrattato in Italia",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/svizzera/neonato-morto-per-maltrattamenti-in-italia-genitori-fermati-in-ticino-425237",
+              "riassunto": "La polizia ticinese ha arrestato una coppia italiana ricercata per la morte del figlio di 7 mesi avvenuta a Borgomanero nel 2024. L'operazione, frutto della cooperazione con Interpol, sottolinea l'efficacia delle indagini transfrontaliere e il ruolo del Cantone come rifugio involontario per latitanti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Moon&Stars svela la Opening Night con Sal Da Vinci, Emis Killa e Rkomi",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/moonstars-parte-con-sal-da-vinci-425243",
+              "riassunto": "Il prestigioso festival locarnese annuncia il cartellone della serata inaugurale del 9 luglio, puntando su grandi nomi della musica italiana. La notizia conferma la ripresa degli eventi di massa in Ticino, con significative ricadute previste per il turismo e l'economia locale del Locarnese.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano identici dettagli fattuali sul programma. CdT mantiene un tono istituzionale focalizzato sull'evento culturale, mentre Ticinonews adotta una leggermente maggiore enfasi sulla popolarità degli artisti per attrarre il pubblico giovane."
+            }
+          ],
+          "trend": [
+            "Cooperazione di polizia transfrontaliera",
+            "Ripresa dei grandi eventi culturali estivi"
+          ],
+          "da_tenere_d_occhio": "Sviluppi giudiziari sul caso dell'infanticidio e possibili reazioni della difesa degli indagati nelle prossime ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da decisioni economiche e politiche di rilevanza nazionale: gli azionisti di UBS hanno dato ampia conferma al consiglio di amministrazione, il Consiglio federale avvia una revisione della Lex Koller per limitare gli acquisti immobiliari da parte di stranieri, e la Svizzera conferma un nuovo stanziamento di 23 milioni di franchi per sostenere la popolazione del Sudan.",
+          "notizie": [
+            {
+              "titolo": "Gli azionisti di UBS approvano tutte le proposte del consiglio di amministrazione",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/ubs-gli-azionisti-approvano-tutte-le-proposte-del-cda-431581",
+              "riassunto": "Nel voto annuale, gli azionisti di UBS hanno espresso un consenso superiore al 90 % su tutti i punti all'ordine del giorno, confermando la strategia di ristrutturazione e i piani di remunerazione del CdA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Consiglio federale vuole inasprire la Lex Koller per gli acquisti immobiliari da parte di stranieri",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1918427/estero-federale-acquisto-autorizzazione-legge",
+              "riassunto": "Il governo ha avviato una consultazione, prevista fino a metà luglio, per modificare la legge sugli acquisti immobiliari da parte di non residenti, suscitando reazioni contrastanti tra i partiti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La Svizzera stanzia 23 milioni di franchi per sostenere la popolazione in Sudan",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/la-svizzera-stanzia-23-milioni-per-sostenere-la-popolazione-in-sudan-431610",
+              "riassunto": "Tre anni dopo l'inizio del conflitto, la Confederazione conferma il proprio impegno umanitario destinando 23 milioni di franchi per aiuti di emergenza e programmi di sviluppo in Sudan.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riforme del mercato immobiliare",
+            "Governance e governance bancaria post‑crisi",
+            "Impegno umanitario svizzero all’estero"
+          ],
+          "da_tenere_d_occhio": "L'esito della consultazione sulla Lex Koller e le eventuali modifiche legislative nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La scena culturale odierna è dominata da una sentenza storica contro il monopolio Live Nation-Ticketmaster, con forti ripercussioni globali sul mercato musicale. In ambito locale, il Ticino si distingue per iniziative di prossimità come i concerti gratuiti del Lucerne Festival e riflessioni teatrali presso il Lac di Lugano.",
+          "notizie": [
+            {
+              "titolo": "Live Nation e Ticketmaster dichiarati monopolio illegale: svolta storica per la musica",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/15/arts/music/live-nation-antitrust-trial-verdict-monopoly.html",
+              "riassunto": "Una giuria di Manhattan ha accertato la violazione delle leggi antitrust da parte del colosso dei biglietti, stabilendo un sovrapprezzo medio di 1,72 dollari. La sentenza apre la strada a sanzioni e risarcimenti che potrebbero ridisegnare l'industria musicale mondiale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times Arts",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "Il New York Times focalizza l'analisi sugli aspetti legali, sulle conseguenze finanziarie per l'industria e sui dettagli del verdetto della giuria. LaRegione, pur riportando i dati economici nel sommario di un articolo sui dischi, sposta l'angolatura sull'impatto per i consumatori e sul valore analogico della musica fisica, usando la notizia come contrappunto al mercato digitale monopolistico."
+            },
+            {
+              "titolo": "Lucerne Festival porta 120 eventi gratuiti nel cuore della città vecchia",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1918309/festival-musica-lucerne-concerti-lucerna",
+              "riassunto": "Dal 13 agosto al 13 settembre, il prestigioso festival propone un programma accessibile con concerti in centro città e performance della Contemporary Orchestra. Un'iniziativa di forte impatto per la Svizzera centrale che democratizza l'accesso alla musica classica.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Teatro al Lac: in scena 'I miei stupidi intenti' tra parole che salvano e dannano",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1918440/faina-lac-intenti-vicoquartomazzini-i",
+              "riassunto": "Al Museo d'arte di Lugano (Lac) va in scena lo spettacolo tratto dal bestseller di Paolo Cognetti, con un'analisi focalizzata sul potere della parola nelle pagine di Zannone. Evento di rilevanza locale che conferma il ruolo culturale del territorio ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Antitrust e democratizzazione dell'accesso alla cultura",
+            "Valorizzazione degli eventi culturali gratuiti e di prossimità"
+          ],
+          "da_tenere_d_occhio": "Le sanzioni specifiche e le misure di disinvestimento che il giudice imporrà a Live Nation-Ticketmaster nelle prossime settimane, che potrebbero cambiare i prezzi dei biglietti anche in Europa.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dalla crisi iraniana e dalle sue ripercussioni transatlantiche, con un focus specifico sulla frattura tra Trump e Meloni che tocca da vicino gli interessi italiani e svizzeri. Parallelamente, emergono segnali di svolta nell'Europa centrale con il crollo del governo Orbán in Ungheria, mentre si registra una preoccupante escalation di violenza nelle scuole in Turchia.",
+          "notizie": [
+            {
+              "titolo": "Frattura diplomatica tra Trump e Meloni su Iran e Vaticano",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/15/world/europe/trump-meloni-italy-iran-pope.html",
+              "riassunto": "Si incrina l'alleanza tra il presidente USA Trump e la premier italiana Meloni a causa di divergenze sulla gestione della crisi iraniana e questioni vaticane. Rilevante per la Svizzera dato il forte interscambio politico ed economico con l'Italia e il ruolo di mediazione elvetico.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World",
+                "Internazionale"
+              ],
+              "differenze_narrative": "Il NYT enfatizza la rottura personale e strategica tra i due leader come notizia di prima pagina politica. Internazionale contestualizza l'evento all'interno di una serie di dichiarazioni di Trump ('Blocco') e delle mosse del Congresso USA per limitare i suoi poteri bellici, offrendo una visione più istituzionale della crisi."
+            },
+            {
+              "titolo": "Crollo del governo Orbán: l'Ungheria verso una nuova era democratica",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/magazine/yascha-mounk/2026/04/16/gli-ungheresi-voltano-pagina",
+              "riassunto": "Péter Magyar annuncia la sospensione dei notiziari di stato dopo la vittoria elettorale che ha estromesso Viktor Orbán. Un evento cruciale per l'equilibrio UE, con possibili impatti sulle politiche di neutralità e sui flussi migratori che interessano anche la Confederazione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "Internazionale"
+              ],
+              "differenze_narrative": "La notizia è coperta da più articoli della stessa testata con angolazioni complementari: un pezzo di cronaca annuncia le prime misure (sospensione TV di stato), mentre un'analisi di Yascha Mounk esplora le sfide future per la ricostruzione democratica, evitando trionfalismi e sottolineando gli ostacoli rimanenti."
+            },
+            {
+              "titolo": "Escalation di violenza nelle scuole in Turchia: due attacchi in 48 ore",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/turchia-secondo-attacco-scuola-due-giorni",
+              "riassunto": "Due gravi sparatorie in scuole turche hanno causato diversi morti e feriti in due giorni, segnalando un'allarmante instabilità sociale nel sudest del paese. La notizia è di rilievo internazionale per le implicazioni sulla sicurezza regionale e sui flussi migratori verso l'Europa.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale"
+              ],
+              "differenze_narrative": "ANSA riporta i fatti con un tono di cronaca nera immediato, focalizzandosi sul numero delle vittime e sulla sequenza temporale degli eventi. Internazionale approfondisce il contesto sociale e politico, collegando gli attacchi a tensioni più ampie e fornendo dettagli sulle dinamiche interne alla scuola."
+            }
+          ],
+          "trend": [
+            "Riallineamento degli assi politici USA-Europa",
+            "Transizioni democratiche nell'Europa dell'Est"
+          ],
+          "da_tenere_d_occhio": "Le reazioni del Congresso USA alle risoluzioni per limitare i poteri di Trump sull'Iran e le prime nomine del nuovo governo ungherese.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'economia svizzera è dominata dalla fusione Helvetia-Baloise e dalle tensioni sui prezzi di Lindt, mentre a livello globale i mercati reagiscono alla crisi in Medio Oriente con impatti sul lusso e sull'oil&gas.",
+          "notizie": [
+            {
+              "titolo": "Fusione Helvetia-Baloise: chiarimenti sui licenziamenti nel nuovo colosso assicurativo",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/mega-fusion-helvetia-baloise-verwirrung-um-entlassungen-beim-neuen-versicherungsriesen-id21870996.html",
+              "riassunto": "Il neo-costituito gruppo assicurativo Helvetia-Baloise ha pubblicato i risultati 2025, fornendo nuovi dettagli sul controverso piano di riduzione del personale. La notizia è cruciale per il mercato del lavoro ticinese e svizzero dato l'impatto sociale della mega-fusione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lindt sotto pressione: i discount tedeschi boicottano i prezzi elevati del cioccolato",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schoggi-firma-in-der-kritik-deutsche-supermarkt-riesen-motzen-ueber-hohe-lindt-preise-id21871920.html",
+              "riassunto": "Le catene Rewe ed Edeka minacciano di ridurre gli spazi a favore di marchi propri a causa dei costi eccessivi dei prodotti Lindt, dopo un debole business pasquale. Un segnale d'allarme per uno dei principali exportatori svizzeri in un mercato chiave.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Crollo del lusso e incertezze Oil&Gas: la guerra in Medio Oriente pesa sulle borse",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/hermes-primo-trimestre-inferiore-attese-causa-guerra-medio-oriente-AI7eAsVC",
+              "riassunto": "I titoli del lusso come Hermès e Kering subiscono forti ribassi a causa delle tensioni geopolitiche, che influenzano anche il settore energetico. Un trend internazionale che monitora anche la Svizzera, piazza finanziaria esposta a questi asset.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Finanza",
+                "The Economist Finance"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore si concentra sull'immediata reazione dei corsi azionari e sui dati trimestrali delle singole aziende (Hermès, Kering). The Economist adotta un'angolatura macroeconomica più ampia, analizzando come il conflitto prosciugherà i fondi sovrani del Golfo da 6mila miliardi, offrendo un contesto strutturale oltre la volatilità di borsa."
+            }
+          ],
+          "trend": [
+            "Impatto geopolitico sui mercati del lusso e dell'energia",
+            "Consolidamento e razionalizzazione nel settore assicurativo svizzero"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle trattative tra Lindt e la grande distribuzione tedesca e eventuali annunci ufficiali sui numeri esatti dei licenziamenti post-fusione Helvetia-Baloise.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da importanti aggiornamenti di OpenAI su agenti sicuri e modelli specialistici, mentre Google amplia la sua offerta TTS multilingue. Le notizie hanno rilevanza internazionale e impatti potenziali sul mercato svizzero di AI e creatività digitale.",
+          "notizie": [
+            {
+              "titolo": "OpenAI aggiorna l'Agents SDK con supporto sandbox per agenti IA più sicuri",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+              "riassunto": "OpenAI ha rilasciato una nuova versione del suo Agents SDK, introducendo un ambiente sandbox nativo che permette di eseguire codice, gestire file e compiti complessi in isolamento, migliorando la sicurezza degli agenti aziendali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza le opportunità per le imprese di creare agenti più capaci, con un tono ottimista verso l'adozione. The Decoder, invece, mette in evidenza gli aspetti di sicurezza e il contesto di regolamentazione, adottando un tono più prudente e tecnico."
+            },
+            {
+              "titolo": "Google lancia Gemini 3.1 Flash TTS, supporto per oltre 70 lingue",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/google-ships-its-most-expressive-gemini-3-1-text-to-speech-model-yet-with-70-language-support/",
+              "riassunto": "Il nuovo modello di sintesi vocale Gemini 3.1 di Google offre una resa espressiva avanzata e supporta più di 70 lingue, includendo l'italiano, con controlli dettagliati su stile, ritmo e tono, aprendo a nuove applicazioni multilingue.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI presenta GPT-5.4-Cyber, modello specializzato per la difesa informatica",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-releases-gpt-5-4-cyber-a-model-built-specifically-for-defensive-cybersecurity/",
+              "riassunto": "OpenAI ha lanciato GPT-5.4-Cyber, un modello addestrato specificamente per compiti di sicurezza informatica difensiva; l'accesso è limitato a esperti verificati, segnando una prima mossa verso AI dedicata alla cyber‑security.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza e sandbox per agenti IA",
+            "Espansione multilingue dei modelli TTS",
+            "Specializzazione dei modelli AI per settori verticali (cybersecurity)"
+          ],
+          "da_tenere_d_occhio": "L'adozione del nuovo Agents SDK sandbox da parte delle aziende svizzere e la disponibilità di Gemini 3.1 in italiano potrebbero influenzare il mercato locale nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 36,
       "run_id": 69,
@@ -3876,303 +4154,6 @@
           ],
           "da_tenere_d_occhio": "Reazione della comunità degli sviluppatori alle restrizioni di Anthropic e possibili alternative open source emergenti nelle prossime 24 ore.",
           "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "run_id": 53,
-      "run_time": "2026-04-05 04:45:08.185379+00:00",
-      "analyzed_at": "2026-04-05T06:43:18.395843+00:00",
-      "articles_analyzed": 163,
-      "articles_selected": 18,
-      "model_used": "anthropic/claude-sonnet-4-6",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Il fine settimana pasquale domina la cronaca ticinese con code record al San Gottardo che paralizzano il traffico verso l'Italia. Emergono anche notizie di rilievo sociale: presunti abusi scolastici a Giubiasco che mobilitano la politica, un richiamo alimentare di Coop per salmonella e la condanna per tentato omicidio alla scalinata Visconti di Bellinzona.",
-          "notizie": [
-            {
-              "titolo": "Code record al San Gottardo: 21 km di attesa per chi va verso l'Italia",
-              "fonte": "Ticinonews / CdT",
-              "link": "https://www.ticinonews.ch/svizzera/traffico-paralizzato-al-san-gottardo-qualcuno-sa-come-arrivare-in-italia-430648",
-              "riassunto": "Il portale nord della galleria del San Gottardo ha registrato code fino a 21 km con attese di oltre 3 ore e mezza, in pieno esodo pasquale verso l'Italia. Non si tratta di un record assoluto — il primato spetta ai 28 km di Pentecoste 1999 e 2018 — ma la situazione è comunque eccezionale. Il TCS avverte che i flussi intensi potrebbero proseguire anche nei prossimi giorni con le vacanze primaverili.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews punta sull'impatto umano e sul disorientamento degli automobilisti, titolando con una citazione diretta ('Qualcuno sa come arrivare in Italia?') che trasmette ironia e frustrazione. CdT offre una copertura più analitica e contestualizzata: pubblica tre articoli distinti, uno dei quali mette esplicitamente la coda odierna in prospettiva storica, citando i record del passato e ridimensionando parzialmente l'allarme. Il CdT intervista anche il TCS per una valutazione prospettica, mentre Ticinonews rimane focalizzato sul presente."
-            },
-            {
-              "titolo": "Presunti abusi sessuali alle scuole medie di Giubiasco: la politica reagisce",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/presunti-abusi-alle-medie-di-giubiasco-reagisce-la-politica-430658",
-              "riassunto": "Il caso di presunti abusi sessuali in una scuola media di Giubiasco — già sollevato il giorno precedente — ha generato immediate reazioni politiche. L'ASPI Ticino sottolinea l'importanza della prevenzione e chiede che agli studenti vengano forniti gli strumenti linguistici per riconoscere e denunciare situazioni di abuso. La notizia si collega alla segnalazione separata del docente arrestato menzionata da LaRegione, suggerendo un clima di attenzione crescente sul tema.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Bellinzonese"
-              ],
-              "differenze_narrative": "Ticinonews segue gli sviluppi politici e istituzionali del caso Giubiasco, con focus sulle reazioni post-notizia e sul ruolo preventivo delle associazioni. LaRegione Bellinzonese tratta invece il caso di un docente arrestato con vittime identificate alla Scuola Commercio, senza esplicitare se si tratti dello stesso episodio o di un caso parallelo: il titolo e la descrizione lasciano aperta l'ambiguità, rendendo difficile stabilire se si tratti di un incrocio diretto o di due vicende distinte nello stesso ambito."
-            },
-            {
-              "titolo": "Coop richiama formaggi del caseificio Landbrügg: rischio salmonella",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/coop-richiama-vari-formaggi-possono-contenere-salmonelle-430655",
-              "riassunto": "Coop ha lanciato un richiamo precauzionale per diversi formaggi prodotti dal caseificio Landbrügg, potenzialmente contaminati da salmonelle. I prodotti potrebbero essere stati acquistati anche in Ticino. La notizia è di rilevanza diretta per i consumatori svizzeri, in particolare nel periodo pasquale in cui il consumo di formaggi e latticini è elevato.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Mobilità e traffico transfrontaliero nei periodi di punta (Pasqua, vacanze primaverili)",
-            "Sicurezza nelle scuole ticinesi e tutela dei minori da abusi",
-            "Sicurezza alimentare e richiami di prodotti nella grande distribuzione"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione del caso degli abusi scolastici (Giubiasco/Bellinzona): nei prossimi giorni è attesa una risposta ufficiale del Dipartimento dell'educazione e potrebbero emergere ulteriori dettagli sull'entità del fenomeno e sulle misure adottate dalle autorità scolastiche cantonali. Parallelamente, il traffico al San Gottardo potrebbe tornare critico lunedì di Pasquetta e nel corso della settimana di vacanze primaverili.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da due temi con impatto diretto sulla Svizzera: i nuovi dazi farmaceutici americani al 15%, che toccano il cuore dell'export elvetico, e il traffico congestionato al San Gottardo con code fino a 20 km. Si segnalano inoltre episodi di cronaca nera in più cantoni e buone notizie sui conti cantonali 2025.",
-          "notizie": [
-            {
-              "titolo": "Dazi USA al 15% sui farmaci svizzeri: il Consiglio federale è rammaricato, Interpharma chiede parità con il Regno Unito",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/dazi-al-15-sui-farmaci-il-consiglio-federale-e-rammaricato-430620",
-              "riassunto": "Trump ha imposto dazi del 15% sui prodotti farmaceutici svizzeri, colpendo uno dei settori trainanti dell'export elvetico. Il Consiglio federale esprime 'rammarico' ma considera l'aliquota in linea con la dichiarazione d'intenti del novembre 2025. Interpharma chiede di negoziare condizioni almeno pari a quelle del Regno Unito, mentre le imprese svizzere segnalano già ordini rallentati e investimenti in calo.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera",
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews si concentra sulla reazione istituzionale del Consiglio federale e sul dettaglio tecnico dell'aliquota. Il CdT allarga il quadro all'impatto sulle imprese svizzere in generale ('ordini rallentati, investimenti in calo'), adottando un tono più preoccupato. LaRegione dà voce principalmente a Interpharma e alla sua richiesta negoziale, inquadrando la notizia dal lato dell'industria di categoria. Nessuna fonte mette in discussione la risposta 'morbida' del governo federale."
-            },
-            {
-              "titolo": "San Gottardo paralizzato: code fino a 20 km al portale nord per il traffico del weekend pasquale",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/san-gottardo-paralizzato-toccati-i-20km-di-colonna-al-portale-nord-430604",
-              "riassunto": "Il traffico verso sud al tunnel del San Gottardo ha raggiunto i 20 km di colonna al portale nord con attese fino a 3 ore e 20 minuti, in un tipico scenario da esodo pasquale. La situazione a Brogeda era ancora fluida ma destinata a peggiorare, con impatto diretto su migliaia di ticinesi e turisti diretti verso il sud della Svizzera e l'Italia.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Rissa alla stazione di Sion: due feriti, tre arresti",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/rissa-alla-stazione-di-sion-due-feriti-424080",
-              "riassunto": "Una rissa alla stazione ferroviaria di Sion ha causato due feriti. La polizia cantonale vallesana ha arrestato tre sospetti e li ha posti in detenzione preventiva. L'episodio si inserisce in un quadro di cronaca di violenza urbana che interessa più stazioni svizzere.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due testate riportano la notizia in modo sostanzialmente identico, con descrizioni quasi sovrapponibili, suggerendo un'origine comune (comunicato della polizia cantonale). Nessuna delle due aggiunge approfondimenti o contesto su fenomeni di violenza stazionaria. La copertura è puramente fattuale e priva di inquadramento critico."
-            }
-          ],
-          "trend": [
-            "Impatto dei dazi Trump sull'economia svizzera, in particolare sul settore farmaceutico",
-            "Violenza e criminalità in spazi pubblici (stazioni, sparatorie tra cittadini stranieri)"
-          ],
-          "da_tenere_d_occhio": "Sviluppo dei negoziati sui dazi farmaceutici: il Consiglio federale e Interpharma potrebbero avanzare nelle prossime ore una proposta formale agli USA per equiparare le condizioni svizzere a quelle britanniche. Qualsiasi annuncio negoziale avrebbe impatto diretto su uno dei pilastri dell'export elvetico.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Il panorama culturale di oggi è dominato da spunti ticinesi e locali, con eventi musicali a Bellinzona e Giornico, ma anche da temi di portata internazionale come le polemiche sulla Biennale di Venezia e l'atteso debutto televisivo di Meryl Streep. Si registra inoltre l'incrocio di due fonti sul film 'The Drama' con Zendaya e Robert Pattinson.",
-          "notizie": [
-            {
-              "titolo": "Biennale di Venezia nel mirino: dopo la Russia, artisti chiedono l'esclusione di Israele e Stati Uniti",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1916017/biennale-lettera-venezia-artisti-curatori-russia-israele-stati-uniti-mirino",
-              "riassunto": "Una lettera aperta firmata da artisti e curatori chiede alla Biennale di Venezia di escludere i padiglioni di Israele e Stati Uniti, sulla scia del precedente russo del 2022. La questione tocca direttamente il mondo dell'arte internazionale e rimette al centro il dibattito sulla politicizzazione delle grandi istituzioni culturali, con riverberi anche sulla partecipazione svizzera alla manifestazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "'The Drama': il nuovo film con Zendaya e Robert Pattinson tra segreti di coppia e tradimenti imperdonabili",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1916000/drama-film-coppia-amore-mondo",
-              "riassunto": "Il film 'The Drama' del regista Kristoffer Borgli è nelle sale svizzere e viene recensito sia dalla stampa ticinese che dal New York Times. La pellicola esplora i segreti nascosti all'interno di una relazione di coppia attraverso i personaggi interpretati da Zendaya e Robert Pattinson. Un titolo di grande richiamo popolare che stimola riflessioni su fiducia e perdono.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione si concentra sull'uscita nelle sale con una valutazione critica distaccata, definendo le premesse 'intriganti (forse solo quelle)' con un tono leggermente scettico. Il New York Times adotta invece un approccio tematico e culturale, inquadrando il film nella cornice di una domanda universale — 'esistono tradimenti imperdonabili?' — e punta sulla notorietà dei due attori protagonisti per catturare l'attenzione del lettore, senza esprimere un giudizio estetico esplicito."
-            },
-            {
-              "titolo": "Meryl Streep torna in tv: Netflix annuncia una serie da 'Le Correzioni' di Jonathan Franzen",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1916063/streep-franzen-le-correzioni-tv-meryl",
-              "riassunto": "Netflix ha ufficializzato una serie limitata tratta dal celebre romanzo 'Le Correzioni' di Jonathan Franzen, con Meryl Streep protagonista: si tratta del grande ritorno televisivo dell'attrice premio Oscar. L'adattamento di uno dei romanzi più importanti della letteratura americana contemporanea è un evento atteso dal pubblico italofono e internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Politicizzazione delle istituzioni culturali internazionali (Biennale, Smithsonian)",
-            "Adattamenti televisivi di grandi romanzi letterari su piattaforme streaming"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della vicenda della Biennale di Venezia: se la lettera degli artisti raccoglierà ulteriori adesioni o se l'istituzione risponderà ufficialmente alla richiesta di esclusione dei padiglioni di Israele e USA, con possibili implicazioni anche per il padiglione svizzero.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall'escalation del conflitto USA-Iran, con l'abbattimento di due caccia americani e un pilota disperso che rischia di segnare una svolta drammatica nel teatro mediorientale. In parallelo, Israele torna a colpire Beirut e l'Iran lancia nuovi attacchi missilistici, ampliando il fronte regionale. Sullo sfondo, la NATO affronta una crisi d'identità strutturale.",
-          "notizie": [
-            {
-              "titolo": "Iran abbatte due caccia USA: pilota disperso, negoziati bloccati e rischio escalation",
-              "fonte": "AGI",
-              "link": "https://www.agi.it/estero/news/2026-04-04/iran-guerra-notizie-4-aprile-36434166/",
-              "riassunto": "L'Iran ha abbattuto un F-15E Strike Eagle e un A-10 Warthog, con un pilota ancora disperso sul suolo iraniano e operazioni di ricerca e recupero in corso. Il Pentagono conta 365 militari feriti e 13 morti nelle quasi 5 settimane dell'Operazione Epic Fury. I negoziati sono fermi, Trump minaccia nuovi attacchi alle infrastrutture civili iraniane, mentre l'intelligence USA segnala che Teheran sta già riparando i bunker missilistici. L'episodio rischia di essere un punto di non ritorno nel conflitto.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "AGI",
-                "ANSA Mondo",
-                "New York Times World",
-                "BBC World",
-                "Internazionale"
-              ],
-              "differenze_narrative": "AGI e ANSA enfatizzano il dramma umano del pilota disperso e la dimensione operativa militare. Il NYT approfondisce aspetti tecnici (caratteristiche dell'F-15E) e strategici (i dubbi sull'efficacia dei raid sui bunker missilistici, già in fase di riparazione). La BBC si concentra sul racconto umano tramite l'ex marine e la complessità del recupero. Internazionale adotta un tono più critico verso Washington, sottolineando gli attacchi alle infrastrutture civili e le dichiarazioni aggressive di Trump, inquadrando l'evento come potenziale crimine di guerra. L'AGI riporta i festeggiamenti a Teheran, elemento assente o minimizzato dalle fonti anglofone."
-            },
-            {
-              "titolo": "Israele bombarda la periferia sud di Beirut e l'Iran lancia nuovi missili: si allarga il fronte regionale",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/04/la-periferia-sud-di-beirut-bombardata-da-israele_15d8721c-8c23-418f-a4cc-51902a52cefc.html",
-              "riassunto": "Mentre infuria il conflitto USA-Iran, Israele ha ripreso a colpire le infrastrutture di Hezbollah nei sobborghi meridionali di Beirut. In simultanea, l'esercito israeliano ha attivato i sistemi di difesa contro un nuovo attacco missilistico iraniano. Il fronte si estende su più teatri simultanei, complicando ulteriormente la gestione diplomatica della crisi mediorientale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Queste notizie risultano coperte in modo esclusivo da ANSA Mondo nel corpus analizzato, senza incroci significativi con le altre testate presenti. La loro rilevanza sistemica è tuttavia alta in quanto connesse al medesimo teatro di crisi."
-            },
-            {
-              "titolo": "È il momento di reinventare la NATO: l'alleanza atlantica è strutturalmente in crisi",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/notizie/pierre-haski/2026/04/03/reinventare-la-nato",
-              "riassunto": "L'analista Pierre Haski su Internazionale sostiene che la NATO, almeno nella sua concezione storica, sia 'sostanzialmente morta'. In un contesto in cui gli USA sono impegnati in un conflitto aperto contro l'Iran e il rapporto transatlantico è sotto pressione massima, la questione della difesa europea autonoma diventa urgente anche per paesi come la Svizzera, che osserva da vicino le dinamiche di sicurezza continentale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Escalation militare USA-Iran con rischio di allargamento regionale su più fronti simultanei",
-            "Ridefinizione dell'architettura di sicurezza occidentale e crisi del modello NATO",
-            "Uso dell'intelligenza artificiale e dei droni come moltiplicatori di forza nei conflitti moderni"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà decisivo l'esito dell'operazione di ricerca e recupero del pilota americano disperso in Iran: se catturato vivo, diventerebbe uno strumento di pressione negoziale e propaganda per Teheran con conseguenze imprevedibili sull'escalation. Monitorare inoltre eventuali risposte missilistiche USA dopo le dichiarazioni di Trump sulle infrastrutture civili iraniane.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da notizie prevalentemente italiane, con mercati chiusi per Venerdì Santo e dati sul lavoro USA che battono le attese. Spiccano temi di governance aziendale (BP, MPS) e investimenti esteri in Italia, mentre l'economia italiana mostra segnali misti tra crisi industriali e nuove opportunità.",
-          "notizie": [
-            {
-              "titolo": "Mercati chiusi per Venerdì Santo: i dati sul lavoro USA battono le attese",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borsa-bene-seul-36percento-e-tokyo-13percento-rosso-piazze-cinesi-AIP1eKKC",
-              "riassunto": "Con le Borse europee e Wall Street chiuse per la festività, l'attenzione si sposta sui dati macroeconomici USA: il rapporto sull'occupazione supera le previsioni con la disoccupazione che scende al 4,3%, un segnale importante per le future mosse della Federal Reserve. In Asia Tokyo chiude in forte rialzo. Per i lettori svizzeri, questi dati influenzano le aspettative su tassi di interesse e andamento del dollaro/franco.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "BP sotto pressione: proxy advisor chiede ai soci di votare contro la retromarcia sugli obiettivi climatici",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/bp-retro-ambientale-scontro-assemblea-iss-soci-votate-contro-AIpkJULC",
-              "riassunto": "Il proxy advisor ISS raccomanda agli azionisti di BP di bocciare la decisione del consiglio di revocare le risoluzioni sulla rendicontazione climatica, segnalando un'importante battaglia di governance in assemblea. La vicenda si inserisce nel più ampio dibattito globale sul ritiro degli impegni ESG da parte delle major energetiche, con potenziali ripercussioni per gli investitori istituzionali svizzeri esposti al titolo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Digital Realty investe 2 miliardi in data center italiani: hub strategico tra Europa, Africa e Medio Oriente",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/digital-realty-sbarca-italia-2-miliardi-data-center-AIsD5PKC",
-              "riassunto": "Il colosso americano dei data center (63 miliardi di market cap, quotato al Nasdaq) annuncia un investimento da 2 miliardi di euro in Italia, con hub a Roma (2027) e Milano (2028) pensati come nodi di connessione verso Africa e Medio Oriente. L'operazione conferma l'attrattività dell'Italia come polo digitale e potrebbe interessare indirettamente l'ecosistema tecnologico della Svizzera italiana, già connessa alle infrastrutture milanesi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Governance ESG e scontri in assemblea tra management e azionisti attivisti",
-            "Investimenti esteri in infrastrutture digitali italiane come proxy della competitività europea"
-          ],
-          "da_tenere_d_occhio": "Riapertura dei mercati lunedì dopo Pasqua: i dati sull'occupazione USA (disoccupazione al 4,3%) saranno il principale catalizzatore delle aspettative sulla Fed e si rifletteranno su cambi, obbligazioni e azionario europeo e svizzero. Da seguire anche l'assemblea BP e l'esito del voto sul piano climatico.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da movimenti strategici dei grandi player dell'IA: Anthropic si espande in biotech, politica e mercati privati, mentre OpenAI riorganizza il vertice e acquisisce una testata mediatica. In primo piano anche la notizia diretta per gli utenti OpenClaw: Anthropic ha annunciato che dal 4 aprile gli abbonamenti Claude non saranno più utilizzabili con harness di terze parti come OpenClaw.",
-          "notizie": [
-            {
-              "titolo": "Anthropic blocca l'uso degli abbonamenti Claude con OpenClaw e tool di terze parti",
-              "fonte": "Hacker News",
-              "link": "https://news.ycombinator.com/item?id=47633396",
-              "riassunto": "A partire dal 4 aprile 2026, Anthropic ha comunicato via email agli utenti che gli abbonamenti Claude non potranno più essere utilizzati con harness di terze parti come OpenClaw. Chi vorrà continuare a usare questi strumenti dovrà passare a un'opzione pay-as-you-go separata. Questa decisione colpisce direttamente la community dei lettori di questa newsletter e impatta l'ecosistema degli sviluppatori che si affidano a Claude tramite strumenti non ufficiali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Anthropic acquista la biotech Coefficient Bio per 400 milioni e apre un PAC politico",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
-              "riassunto": "Anthropic ha acquisito la startup stealth Coefficient Bio per 400 milioni di dollari in azioni, segnando il suo primo grande ingresso nel biotech basato su IA. In parallelo, l'azienda ha lanciato un PAC (Political Action Committee) per sostenere candidati favorevoli alla sua agenda politica sull'IA in vista delle elezioni di metà mandato USA. Questi movimenti delineano una strategia di espansione su più fronti — scientifico, politico e finanziario — che potrebbe influenzare la regolamentazione dell'IA a livello internazionale, Svizzera inclusa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch tratta l'acquisizione di Coefficient Bio come breaking news citando The Information e Eric Newcomer, con tono neutro-descrittivo. The Decoder si concentra invece sulla spiegazione tecnica dei limiti di Claude Code e non copre direttamente l'acquisizione biotech, ma affronta le mosse commerciali di Anthropic da una prospettiva più critica verso la sostenibilità del modello di utilizzo."
-            },
-            {
-              "titolo": "OpenAI acquisisce una redazione e riorganizza il vertice: il COO Lightcap guiderà 'progetti speciali'",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-decides-the-best-way-to-fight-critical-ai-coverage-is-to-own-a-newsroom/",
-              "riassunto": "OpenAI ha acquisito il talk show tecnologico TBPN, che pur dichiarandosi editorialmente indipendente riferirà al dipartimento comunicazione dell'azienda — una contraddizione segnalata da The Decoder. Contemporaneamente, il COO Brad Lightcap assume un nuovo ruolo su 'progetti speciali' e la CMO Kate Rouch lascia temporaneamente per motivi di salute. Questi cambiamenti interni riflettono una fase di forte transizione strategica per OpenAI, che tenta di controllare la narrativa pubblica sull'IA mentre affronta pressioni competitive crescenti.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch si limita a riportare i cambiamenti organizzativi in modo descrittivo, elencando i nuovi ruoli senza commento editoriale. The Decoder adotta invece un tono esplicitamente critico sull'acquisizione della redazione TBPN, sottolineando l'evidente conflitto d'interessi tra indipendenza editoriale e controllo aziendale."
-            }
-          ],
-          "trend": [
-            "Anthropic in espansione aggressiva: biotech, politica e restrizioni sugli accessi di terze parti",
-            "Consolidamento del potere narrativo da parte delle big tech AI (OpenAI compra media, Anthropic fa lobby)"
-          ],
-          "da_tenere_d_occhio": "L'entrata in vigore del blocco di Anthropic agli abbonamenti Claude per tool di terze parti (OpenClaw incluso) è fissata per il 4 aprile alle 12:00 PT / 21:00 CET: monitorare la reazione della community e le eventuali alternative che emergeranno nelle prossime ore.",
-          "_model_used": "anthropic/claude-sonnet-4-6"
         }
       ]
     }
