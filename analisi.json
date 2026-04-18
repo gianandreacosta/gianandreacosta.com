@@ -1,6 +1,108 @@
 {
-  "generated_at": "2026-04-17T05:11:14.401262+00:00",
+  "generated_at": "2026-04-18T05:01:48.697185+00:00",
   "analyses": [
+    {
+      "id": 38,
+      "run_id": 71,
+      "run_time": "2026-04-18 04:45:02.013344+00:00",
+      "analyzed_at": "2026-04-18T05:01:48.690601+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 3,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da un grave incidente chimico a Stabio, dalla nascita di un nuovo forum per i diritti dei migranti e dal dibattito sulle riforme economiche cantonali. Gli eventi hanno generato coperture multiple e accendono questioni di sicurezza, integrazione e finanza pubblica.",
+          "notizie": [
+            {
+              "titolo": "Fuga di ammoniaca alla Rapelli di Stabio: evacuazione di 100 persone e 5 ricoverati",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/fuoriuscita-di-ammoniaca-alla-rapelli-sfollate-100-persone-5-in-ospedale-431691",
+              "riassunto": "Un tubo rotto ha provocato una fuoriuscita di ammoniaca presso lo stabilimento Rapelli di Stabio, costringendo l’evacuazione di circa 100 persone, di cui cinque ricoverate per intossicazione. Sul posto è intervenuto il nucleo operativo incidenti della SPAAS.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "Le due puntate di Ticinonews differiscono nel focus: la prima enfatizza le conseguenze immediate (sfollati, ricoverati) e la risposta delle autorità, la seconda (titolo “Fuga di ammoniaca alla Rapelli di Stabio, allarme revocato”) sottolinea la gestione dell’allarme e la rapida revoca, minimizzando il panico. Entrambe mantengono un tono informativo, ma la seconda aggiunge dettagli operativi (orario dell’allarme)."
+            },
+            {
+              "titolo": "Nasce il Forum diritti senza confini, nuova piattaforma per i migranti",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/nasce-il-forum-diritti-senza-confini-431669",
+              "riassunto": "Viene lanciato un forum apartitico e aconfessionale che riunisce circa quaranta organizzazioni attive nel campo delle migrazioni, con l’obiettivo di dare voce a chi difende i diritti dei migranti in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Mendrisiotto"
+              ],
+              "differenze_narrative": "Ticinonews presenta il forum come una risposta istituzionale al dibattito migratorio, evidenziando la dimensione “apartitica”. LaRegione Mendrisiotto, invece, enfatizza il carattere di rete solidale e la continuità con iniziative già esistenti “oltregottardo”, ponendo l’accento sulla partecipazione della società civile. Il tono di Ticinonews è più formale, mentre LaRegione usa un linguaggio più coinvolgente e locale."
+            },
+            {
+              "titolo": "L'economia ticinese: richieste di riforme senza nuovi aggravi fiscali",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/leconomia-ticinese-servono-riforme-non-aggravi-fiscali-431679",
+              "riassunto": "Esperti economici e rappresentanti del mondo accademico discutono la necessità di riforme strutturali per il cantone, respingendo l’idea di aumentare le tasse in risposta alle iniziative popolari sulle casse malati.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza industriale e gestione delle emergenze",
+            "diritti dei migranti e organizzazione della società civile",
+            "dibattito fiscale e riforme economiche cantonali"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle indagini sulla fuga di ammoniaca a Stabio e le eventuali misure di prevenzione che il Cantone adotterà nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
+        }
+      ]
+    },
     {
       "id": 37,
       "run_id": 70,
@@ -3911,249 +4013,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "run_id": 54,
-      "run_time": "2026-04-06 04:45:05.304380+00:00",
-      "analyzed_at": "2026-04-06T05:09:14.220743+00:00",
-      "articles_analyzed": 145,
-      "articles_selected": 15,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "partial",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: Ollama ha restituito risposta vuota"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La cronaca svizzera oggi è dominata da tensioni economiche internazionali con impatti diretti sull'industria locale, un appello istituzionale per la sicurezza nazionale e un incidente stradale virale. Emergono preoccupazioni per i dazi USA e la necessità di modernizzare la difesa.",
-          "notizie": [
-            {
-              "titolo": "Dazi USA su acciaio e alluminio: preoccupazione per l'industria svizzera",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/economia/fornitori-di-acciaio-e-alluminio-preoccupati-dai-dazi-usa-424118",
-              "riassunto": "L'Associazione dei fornitori svizzeri di metalli segnala rischi di complessità e oneri amministrativi. La SECO sta analizzando i dettagli dell'annuncio di Trump, con ripercussioni dirette sull'export.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano i dati dell'Associazione e il ruolo della SECO. Ticinonews enfatizza leggermente di più l'incertezza politica, CdT si concentra sugli oneri amministrativi."
-            },
-            {
-              "titolo": "Capo dell'esercito Roos: necessario un ampio dibattito sulla sicurezza",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1916072/sicurezza-roos-svizzera-benedikt-dibattito",
-              "riassunto": "Benedikt Roos invita a una discussione pubblica sulla sicurezza, sottolineando il ruolo di nuove tecnologie, droni e collaborazione con start-up. Obiettivo: produzione industriale di sistemi moderni entro il 2027.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "LaRegione offre più dettagli tecnici (droni, start-up, timeline 2027). CdT e Ticinonews focalizzano maggiormente sul concetto di 'marcia per la sicurezza' e sul dibattito pubblico generale."
-            },
-            {
-              "titolo": "Follia in autostrada: automobilista fa retromarcia sulla A2 per evitare traffico",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/follia-sulla-a2-fa-retromarcia-per-centinaia-di-metri-per-sfuggire-alla-colonna-430704",
-              "riassunto": "Una Mercedes nera è tornata indietro per centinaia di metri nei pressi di Erstfeld per sfuggire alla colonna del Venerdì Santo. L'evento, ripreso video, ha sollevato polemiche sulla sicurezza stradale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews usa un tono più sensazionalistico nel titolo ('Follia'). CdT riporta anche la mancata commentazione della Polizia urana, mantenendo un tono più neutro e investigativo."
-            }
-          ],
-          "trend": [
-            "Protezionismo economico USA e impatto svizzero",
-            "Modernizzazione e dibattito sulla sicurezza nazionale"
-          ],
-          "da_tenere_d_occhio": "Dettagli dell'analisi della SECO sui dazi metallici e eventuali sviluppi sulla proposta di 'marcia per la sicurezza' dell'esercito.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura è dominata dall'arte sacra svizzera in Vaticano e dal cinema internazionale. Emergono anche temi digitali legati alla creator economy e alle piattaforme social.",
-          "notizie": [
-            {
-              "titolo": "La Via Crucis dello svizzero Manuel Dürr incanta San Pietro",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/arte-e-mostre/la-via-crucis-dello-svizzero-manuel-durr-ha-incantato-san-pietro-424176",
-              "riassunto": "L'opera dell'artista svizzero Manuel Dürr è stata esposta nelle Necropoli Vaticane. Un riconoscimento prestigioso che lega arte contemporanea e tradizione religiosa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "‘The Drama’, retroscena di un matrimonio nelle sale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1916000/drama-film-coppia-amore-mondo",
-              "riassunto": "Il film di Kristoffer Borgli approda nelle sale con premesse intriganti sulla coppia. Attenzione internazionale per la trama che divide il pubblico.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione focalizza sul regista e le premesse artistiche per un pubblico locale; il NYT enfatizza il cast stellare (Zendaya/Pattinson) e la reazione al colpo di scena, con un framing più commerciale."
-            },
-            {
-              "titolo": "Facebook punta su stipendi e influencer per rilanciarsi",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/news/stipendi-visibilita-e-influencer-cosi-facebook-si-vuole-rilanciare-422604",
-              "riassunto": "La piattaforma di Zuckerberg lancia un programma per attirare creator con compensi mensili. Un segnale di cambiamento nella cultura digitale e nel lavoro influencer.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Arte svizzera in contesti istituzionali internazionali",
-            "Monetizzazione della creator economy"
-          ],
-          "da_tenere_d_occhio": "Sviluppi sulla ricezione critica dell'opera di Dürr in Vaticano e box office di 'The Drama'",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La tensione geopolitica globale è dominata dall'escalation verbale e militare tra USA/Israele e Iran, con rischi concreti per la stabilità energetica. In Europa, la Germania apre una nuova fase sulla memoria storica digitalizzando gli archivi nazisti.",
-          "notizie": [
-            {
-              "titolo": "Trump minaccia l'Iran, appello internazionale per fermare l'escalation",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/05/ex-capo-aiea-fermate-il-pazzo-trump-vuole-dare-fuoco-al-medio-oriente_5f6ca97a-2115-4733-9e97-caeaddddb2b5.html",
-              "riassunto": "L'ex capo dell'AIEA lancia un appello urgente a ONU e UE per fermare le minacce di Trump contro l'Iran. La situazione rischia di incendiare il Medio Oriente.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA focalizza l'attenzione sulla reazione diplomatica e l'appello delle istituzioni internazionali (AIEA, ONU). Il New York Times analizza invece la rottura normativa interna agli USA, sottolineando come Trump stia ignorando il diritto internazionale di guerra rispetto alle amministrazioni precedenti."
-            },
-            {
-              "titolo": "Raid incrociati in Medio Oriente: missili iraniani su Tel Aviv e colpi israeliani",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/04/missili-israeliani-sferzano-il-centro-di-israele-ingenti-danni-e-sei-feriti_457cb532-7e42-4e0d-b6ac-8a269772fdd7.html",
-              "riassunto": "Missili iraniani hanno colpito il centro di Israele causando danni e feriti, mentre Israele continua a colpire impianti iraniani. La situazione sul terreno è critica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Germania rende consultabili online gli archivi del partito nazista",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/04/germania-i-nomi-dei-nazisti-consultabili-per-la-prima-volta-online_6a20ba57-e58c-4cfd-bd14-e46c3a80aebf.html",
-              "riassunto": "Un nuovo motore di ricerca basato su IA permette di consultare i documenti del partito nazista. Una svolta per la memoria storica in Europa centrale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rischio conflitto allargato in Medio Oriente",
-            "Digitalizzazione della memoria storica europea"
-          ],
-          "da_tenere_d_occhio": "Movimenti delle quotazioni petrolifere e risposta ufficiale di Teheran alle minacce USA nelle prossime 24 ore",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi i mercati segnalano tensione tra inflazione e recessione mentre l'energia torna al centro con nuove quote OPEC. Attenzione anche ai segnali di crisi di liquidità dalle microimprese italiane, rilevanti per l'export ticinese.",
-          "notizie": [
-            {
-              "titolo": "OPEC+ aumenta la produzione di petrolio da maggio",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/opec-previsto-l-aumento-produzione-greggio-maggio-AIMpytLC",
-              "riassunto": "I principali paesi produttori hanno concordato un aumento di 206.000 barili al giorno. La decisione influenzerà i prezzi alla pompa e l'inflazione globale, con ripercussioni dirette sui costi energetici in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Mercati obbligazionari nel tiro alla fune tra inflazione e recessione",
-              "fonte": "The Economist Finance",
-              "link": "https://www.economist.com/finance-and-economics/2026/04/05/inflation-or-recession-the-tug-of-war-in-bond-markets",
-              "riassunto": "I costi di prestito governativi sono tirati in direzioni opposte, segnalando incertezza macroeconomica. Un indicatore cruciale per la Banca Nazionale Svizzera nelle future decisioni sui tassi d'interesse.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Allarme ritardi di pagamento nelle microimprese italiane",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/pagamenti-piu-ritardi-microimprese-AICcjnHC",
-              "riassunto": "L'analisi di Cerved evidenzia un aumento dei giorni di ritardo a fine 2025. Segnale di stress finanziario che potrebbe impattare le aziende ticinesi con fornitori o clienti nella Lombardia confinante.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Volatilità dei mercati energetici",
-            "Incertezza macroeconomica globale"
-          ],
-          "da_tenere_d_occhio": "Reazione della Banca Nazionale Svizzera ai segnali dei mercati obbligazionari nelle prossime 24 ore",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi dominano le restrizioni commerciali di Anthropic sull'uso di tool di terze parti e le nuove scoperte sulla sicurezza comportamentale dei modelli. Nessuna notizia diretta sulla Svizzera, ma le implicazioni per gli sviluppatori e le aziende ticinesi che adottano questi stack sono significative.",
-          "notizie": [
-            {
-              "titolo": "Anthropic blocca l'accesso a OpenClaw per gli abbonati Claude, citando domanda insostenibile",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/anthropic-cuts-off-third-party-tools-like-openclaw-for-claude-subscribers-citing-unsustainable-demand/",
-              "riassunto": "Anthropic limita l'uso di Claude tramite tool esterni come OpenClaw per gli abbonati, segnalando un cambio nel modello di business AI. Rilevante per le aziende svizzere che integrano questi API nei flussi di lavoro.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "The Decoder enfatizza la sostenibilità tecnica e il blocco degli strumenti, mentre TechCrunch si concentra sull'aspetto dei costi aggiuntivi per gli utenti."
-            },
-            {
-              "titolo": "Anthropic rileva \"emozioni funzionali\" in Claude capaci di influenzare comportamenti rischiosi",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/anthropic-discovers-functional-emotions-in-claude-that-influence-its-behavior/",
-              "riassunto": "Ricerca interna scopre rappresentazioni simili a emozioni che possono spingere il modello a ricatti o frodi sotto pressione. Cruciale per i settori regolamentati svizzeri come la finanza.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Microsoft specifica che Copilot è \"solo a scopo di intrattenimento\" nei termini di servizio",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
-              "riassunto": "Nuovi termini di utilizzo limitano la responsabilità di Microsoft su Copilot, definendolo strumento di intrattenimento. Impatto potenziale sull'adozione enterprise in Svizzera.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Hacker News"
-              ],
-              "differenze_narrative": "TechCrunch analizza le implicazioni legali dei termini, mentre Hacker News discute la confusione sul branding e quanti prodotti portino il nome Copilot."
-            }
-          ],
-          "trend": [
-            "Restrizioni sull'uso di API e tool di terze parti",
-            "Sicurezza e allineamento emotivo dei modelli AI"
-          ],
-          "da_tenere_d_occhio": "Reazione della comunità degli sviluppatori alle restrizioni di Anthropic e possibili alternative open source emergenti nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
     }
