@@ -1,6 +1,253 @@
 {
-  "generated_at": "2026-04-18T05:01:48.697185+00:00",
+  "generated_at": "2026-04-19T05:02:40.589874+00:00",
   "analyses": [
+    {
+      "id": 39,
+      "run_id": 72,
+      "run_time": "2026-04-19 04:45:01.998163+00:00",
+      "analyzed_at": "2026-04-19T05:02:40.585297+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da emergenze ambientali e sicurezza urbana: una fuga di ammoniaca a Stabio, l'arrivo di un impianto mobile per l'acqua potabile e la crescente preoccupazione per i furti di biciclette in stazione a Lugano.",
+          "notizie": [
+            {
+              "titolo": "Fuga di ammoniaca alla Rapelli di Stabio: intervento dei pompieri",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/fuga-di-ammoniaca-alla-rapelli-i-pompieri-un-evento-molto-pericoloso-431754",
+              "riassunto": "Una perdita di ammoniaca si è verificata ieri sera nella struttura Rapelli di Stabio. I vigili del fuoco hanno risposto con un modulo specializzato per emergenze chimiche, sottolineando la pericolosità dell’incidente.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Ticino si dota di un impianto mobile per acqua potabile in emergenza",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/acqua-potabile-anche-in-emergenza-il-ticino-si-dota-di-un-impianto-mobile-431756",
+              "riassunto": "La Protezione civile ha presentato un nuovo potabilizzatore mobile capace di produrre fino a 24 m³ di acqua sicura all'ora, destinato a garantire approvvigionamento idrico in caso di guasti o calamità.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Furti sistematici di biciclette in stazione a Lugano: la consigliera Antonini chiede risposte concrete",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/furti-sistematici-di-biciclette-in-stazione-a-lugano-quali-risposte-concrete-431746",
+              "riassunto": "A seguito di numerosi furti di biciclette nella stazione di Lugano, la consigliera comunale Céline Antonini (PLR) ha presentato un'interrogazione al municipio per ottenere misure di sicurezza più efficaci.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza pubblica e gestione delle emergenze",
+            "prevenzione dei furti urbani"
+          ],
+          "da_tenere_d_occhio": "Possibili aggiornamenti sulla gestione della fuga di ammoniaca e sull'implementazione dell'impianto mobile di acqua potabile nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da decisioni politiche di rilievo: l'aumento dell'IVA per finanziare la 13ª AVS, il referendum sull'export di armi e l'accordo di Parmelin per la ferrovia ucraina, quest'ultimo riportato da più testate.",
+          "notizie": [
+            {
+              "titolo": "Aumento dell'IVA di 0,5 punti per finanziare la 13ª AVS",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/su-liva-di-05-punti-per-pagare-la-13-avs-425451",
+              "riassunto": "La commissione federale propone di far passare l'IVA dall'8,1% all'8,6% entro il 2033 per coprire la tredicesima rata dell'AVS, mantenendo invariata l'aliquota ridotta per i beni di prima necessità.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Referendum sulla revisione delle norme di esportazione di armi",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1918948/armi-svizzera-esportazione-allentamento-deve",
+              "riassunto": "Il popolo svizzero sarà chiamato alle urne per decidere se allentare le restrizioni all'esportazione di armamenti, una questione che tocca direttamente la tradizione di neutralità e l'industria della difesa del Paese.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Parmelin firma accordo per modernizzare la ferrovia ucraina",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/parmelin-firma-un-accordo-per-modernizzare-la-ferrovia-ucraina-425373",
+              "riassunto": "Il Presidente della Confederazione, Guy Parmelin, ha sottoscritto a Washington un accordo con la Banca Mondiale per finanziare la ricostruzione della rete ferroviaria di Kiev, integrando gli impegni già presi dalla Svizzera e dal settore privato elvetico.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT enfatizza il ruolo della Svizzera come partner affidabile e la continuità con gli impegni privati, mentre LaRegione sottolinea l'aspetto diplomatico dell'accordo a Washington e lo presenta come un segnale di sostegno geopolitico alla Ucraina."
+            }
+          ],
+          "trend": [
+            "debate fiscale per finanziare la previdenza",
+            "rivalutazione della politica di esportazione di armi",
+            "coinvolgimento svizzero in progetti infrastrutturali all'estero"
+          ],
+          "da_tenere_d_occhio": "L'esito del referendum sull'export di armi, che potrebbe influenzare le future decisioni di politica estera e industriale svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con concerti di grandi nomi, il ritorno di icone musicali e l'avvio di festival internazionali in Ticino.",
+          "notizie": [
+            {
+              "titolo": "I Gipsy Kings di Diego Baliardo aprono il festival Nevermind in Svizzera",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1919095/gipsy-kings-by-baliardo-piu-vad-vuc-al-nevermind",
+              "riassunto": "I Gipsy Kings, guidati da Diego Baliardo, si esibiscono nella serata di apertura del festival Nevermind, evento musicale di rilievo che si svolge in Svizzera, attirando pubblico internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Céline Dion torna con il nuovo singolo “Dansons”",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1919096/celine-dion-e-tornata-e-allora-dansons",
+              "riassunto": "La celebre cantante canadese di origine francese, Céline Dion, pubblica “Dansons”, una ballad dedicata al pubblico svizzero, suscitando grande entusiasmo nei media locali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Apertura del festival Visions du Réel a Nyon, punto di riferimento per il cinema documentario",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1919063/grasset-nora-autori-gruppo-olivier",
+              "riassunto": "Il festival Visions du Réel, dedicato al documentario, inizia oggi a Nyon (VD) con una programmazione che attira registi e pubblico da tutto il mondo, consolidando il ruolo del Ticino nel panorama culturale internazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rinascita dei grandi concerti live in Svizzera",
+            "Ritorno di artisti internazionali con produzioni dedicate al pubblico locale"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori annunci di artisti internazionali per le prossime tappe del festival Nevermind nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la Svizzera è al centro di tre temi chiave: la riapertura strategica dello Stretto di Hormuz, un caso di diritto del lavoro a Zurigo che coinvolge una catena di supermercati, e le tensioni in Medio Oriente che influenzano i mercati energetici europei.",
+          "notizie": [
+            {
+              "titolo": "L'Iran riapre lo Stretto di Hormuz: le navi commerciali possono transitare",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/17/iran-annuncia-riapertura-stretto-hormuz",
+              "riassunto": "Il ministro degli Esteri iraniano Abbas Araghchi ha annunciato la riapertura dello stretto di Hormuz dopo il cessate il fuoco tra Israele e Libano, consentendo il passaggio di tutte le navi commerciali. La mossa è cruciale per le rotte energetiche che toccano anche gli interessi svizzeri di import/export di petrolio.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA riporta la notizia in chiave operativa, sottolineando l'apertura totale per le navi commerciali e il rispetto del cessate il fuoco; Internazionale inquadra la decisione nel contesto diplomatico del cessate il fuoco mediorientale, evidenziando le ripercussioni politiche; NYT, invece, si concentra sulla minaccia della “flotta di zanzare” iraniana, dipingendo lo stretto come zona di rischio nonostante la riapertura."
+            },
+            {
+              "titolo": "Migrolino: divieto di lavoro domenicale per due negozi a Zurigo, vittoria per i sindacati",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/trick-mit-gastgewerbepatent-scheitert-behoerden-pfeifen-migrolino-zurueck-gewerkschaft-jubelt-id21877919.html",
+              "riassunto": "Le autorità del cantone di Zurigo hanno annullato le autorizzazioni che permettevano a due punti vendita Migrolino di impiegare personale la domenica senza permesso, accogliendo la protesta del sindacato Unia. Il caso ha implicazioni per la normativa sul lavoro in tutta la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tregua di dieci giorni tra Israele e Libano: impatti sui mercati energetici europei",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/19/mattarella-scrive-a-macron-inammissibile-lattacco-allunifil-in-libano_1c3ce9c7-fe96-4a4b-8c8a-a14eea5ed755.html",
+              "riassunto": "Un cessate il fuoco di dieci giorni è entrato in vigore il 16 aprile tra Israele e Libano, riducendo le tensioni nella regione del Mediterraneo orientale. La stabilità è fondamentale per i flussi di gas e petrolio che alimentano l'economia svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riapertura di rotte marittime strategiche",
+            "Tensioni sul mercato del lavoro svizzero"
+          ],
+          "da_tenere_d_occhio": "Evoluzione della situazione nello Stretto di Hormuz nelle prossime 24 ore, soprattutto eventuali incidenti o restrizioni che potrebbero colpire le esportazioni svizzere di energia",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "I mercati energetici dominano la giornata: la riapertura dello Stretto di Hormuz spinge al rialzo l'SMI e influisce sui prezzi alla pompa in Svizzera, mentre un colosso farmaceutico statunitense si conferma il maggiore contribuente fiscale del Paese.",
+          "notizie": [
+            {
+              "titolo": "L'SMI sale con la riapertura di Hormuz: il prezzo del petrolio scende, i mercati azionari si rallegrano",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borsa-tokyo-ribasso-i-massimi-AIjWRYXC",
+              "riassunto": "L'indice svizzero supera i 48.000 punti dopo che il canale di Hormuz è stato sbloccato, facendo calare il Brent a 87 dollari. Le banche guidano il rally, con MPS +4,17%.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Finanza",
+                "The Economist Finance",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore Finanza adotta un tono ottimista, evidenziando il rialzo dell'SMI e il rally bancario; The Economist, invece, sottolinea che i mercati energetici restano volatili e che la situazione è ancora incerta, con un framing più cautelativo; Blick Wirtschaft fornisce un live‑ticker focalizzato sull'impatto per le imprese svizzere e i consumatori, enfatizzando l'aumento dei costi alla pompa e usando un linguaggio più sensazionalistico."
+            },
+            {
+              "titolo": "Il colosso farmaceutico statunitense è il maggiore contribuente fiscale in Svizzera",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/deutlich-mehr-als-konkurrenten-roche-und-novartis-us-pharmariese-ist-der-groesste-steuerzahler-der-schweiz-id21878662.html",
+              "riassunto": "Una grande azienda farmaceutica americana supera Roche e Novartis in termini di versamenti fiscali, confermandosi il più grande contribuente al bilancio federale svizzero.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Oscillazioni del prezzo del petrolio colpiscono i consumatori svizzeri",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/nicht-nur-an-der-tankstelle-wirds-teurer-so-stark-trifft-der-schwankende-oelpreis-uns-schweizer-id21878010.html",
+              "riassunto": "Il blocco di Hormuz ha spinto i prezzi del carburante verso l'alto, facendo aumentare i costi non solo alla pompa ma anche in altri settori dell'economia domestica svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riapertura di Hormuz e impatto sui mercati energetici",
+            "Forte contributo fiscale delle multinazionali farmaceutiche",
+            "Pressioni inflazionistiche legate al prezzo del petrolio in Svizzera"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei prezzi del petrolio dopo la riapertura di Hormuz e le possibili ripercussioni sui tassi di interesse e sulla politica monetaria della Banca Nazionale Svizzera nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su ristrutturazioni aziendali di OpenAI, nuove iniziative di tokenmaxxing e lanci di prodotti AI di Anthropic e Google, senza impatti diretti sulla Svizzera.",
+          "notizie": [],
+          "trend": [
+            "Ristrutturazioni e cambi di leadership in OpenAI",
+            "Tokenmaxxing e strategie di spesa AI"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi normativi svizzeri su AI a seguito delle recenti riorganizzazioni di OpenAI e delle pratiche di tokenmaxxing",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 38,
       "run_id": 71,
@@ -3952,67 +4199,6 @@
           ],
           "da_tenere_d_occhio": "Monitorare gli sviluppi geopolitici che potrebbero influenzare l'infrastruttura dei data center AI e le risposte delle aziende tecnologiche alle sfide etiche e di sicurezza poste dall'intelligenza artificiale.",
           "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "run_id": 55,
-      "run_time": "2026-04-07 04:45:08.858729+00:00",
-      "analyzed_at": "2026-04-07T05:00:38.436552+00:00",
-      "articles_analyzed": 152,
-      "articles_selected": 0,
-      "model_used": "openai/gpt-5.1-codex-mini",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1G⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | O",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. Anthropic: HTTP Error 404: Not Found | OpenAI: HTTP Error 400: Bad Request | Ollama: \u001b[?2026h\u001b[?25l\u001b[1G⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 429 Too Many Requests: you (gianandreacosta) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade"
         }
       ]
     }
