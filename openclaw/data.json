@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T05:50:04.561661Z",
+  "generated_at": "2026-04-19T06:00:05.800196Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 10min",
+      "next": "in 0min",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
