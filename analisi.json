@@ -1,6 +1,312 @@
 {
-  "generated_at": "2026-04-19T05:02:40.589874+00:00",
+  "generated_at": "2026-04-20T05:10:08.992899+00:00",
   "analyses": [
+    {
+      "id": 40,
+      "run_id": 73,
+      "run_time": "2026-04-20 04:45:01.751223+00:00",
+      "analyzed_at": "2026-04-20T05:10:08.983462+00:00",
+      "articles_analyzed": 175,
+      "articles_selected": 19,
+      "model_used": "ollama/qwen3.5:cloud, openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese è dominata dalle proteste contro i nuovi costi delle cure domiciliari e dai test sismici al BedrettoLab. Emergono anche tensioni sociali sui sussidi sanitari e un caso giudiziario eclatante a Brissago.",
+          "notizie": [
+            {
+              "titolo": "Proteste in piazza contro i nuovi oneri sulle cure domiciliari",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/cure-a-domicilio-300-in-piazza-a-bellinzona-contro-i-nuovi-costi-425491",
+              "riassunto": "Circa 300-500 persone hanno manifestato a Bellinzona contro la misura di risparmio del Governo che introduce nuovi costi per le cure domiciliari. I manifestanti chiedono lo stralcio della decisione, definendola ingiusta e colpevolizzante per i pazienti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "tio.ch Ticino",
+                "LaRegione Ticino"
+              ],
+              "differenze_narrative": "CdT e Ticinonews si concentrano sui numeri della partecipazione e sugli slogan ('Non è colpa dei pazienti'). tio.ch enfatizza il tono politico con citazioni dirette sull'ingiustizia sociale. LaRegione inserisce la notizia nel contesto delle alleanze politiche dei Verdi."
+            },
+            {
+              "titolo": "Terremoti artificiali al BedrettoLab per studiare le faglie",
+              "fonte": "LaRegione Bellinzonese",
+              "link": "https://www.laregione.ch/cantone/bellinzonese/1919143/terremoti-bedrettolab-eth-magnitudo-bedretto",
+              "riassunto": "L'ETH di Zurigo avvia il progetto FEAR nel tunnel del Bedretto, inducendo micro-sismi di magnitudo 1 a 1,5 km di profondità. L'obiettivo è analizzare la formazione delle faglie e migliorare le previsioni sismiche future.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "LaRegione usa un tono più scientifico dettagliando la profondità e la magnitudo. Ticinonews e CdT adottano un approccio più divulgativo, spiegando l'utilità pratica per la sicurezza e le previsioni, con titoli quasi identici."
+            },
+            {
+              "titolo": "Arrestato a Brissago un guaritore tibetano per truffa e abusi",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/brissago-arrestato-per-truffa-e-coazione-sessuale-guaritore-tibetano-431769",
+              "riassunto": "Un 67enne operante nel settore del benessere olistico è stato arrestato a Brissago con l'accusa di truffa e coazione sessuale. L'inchiesta verte su trattamenti terapeutici falsi, aspetti economici e rapporti intimi con alcune clienti.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano i fatti essenziali. Ticinonews tende a sottolineare il contrasto tra l'immagine del 'benessere olistico' e le accuse gravi, mentre CdT mantiene un resoconto più asciutto dei capi d'imputazione."
+            },
+            {
+              "titolo": "Crisi dei sussidi cassa malati: ritardi e difficoltà per le famiglie",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/sussidi-di-cassa-malati-ritardi-inaccettabili-431770",
+              "riassunto": "Il consigliere comunale Massimiliano Robbiani (Lega) denuncia ritardi inaccettabili nell'erogazione dei sussidi per le casse malati, lasciando molti cittadini in difficoltà nel pagare i premi. La questione si intreccia con il clima di protesta sociale nel Cantone.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Le fonti sono allineate nel riportare la denuncia politica. Ticinonews pone l'accento sulla pressione sui cittadini, CdT integra la notizia nel più ampio dibattito sulla gestione sanitaria cantonale."
+            }
+          ],
+          "trend": [
+            "Malcontento sociale per i tagli alla sanità",
+            "Ricerca scientifica e sicurezza sismica"
+          ],
+          "da_tenere_d_occhio": "Sviluppi della protesta sulle cure domiciliari e eventuale reazione del Governo o del Gran Consiglio nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La cronaca odierna è dominata da un incidente stradale curioso in Ticino e dalle dichiarazioni politiche di Christoph Blocher sulla sovranità, entrambi ampiamente ripresi. Si segnala inoltre la chiusura definitiva del parco tematico Ticiland a Sciaffusa, mentre restano sotto osservazione le tensioni geopolitiche internazionali con possibili ripercussioni economiche.",
+          "notizie": [
+            {
+              "titolo": "Incidente insolito: auto contro tavolo da ping-pong per evitare un gatto",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/finisce-con-lauto-contro-un-tavolo-da-ping-pong-ho-evitato-un-gatto-425485",
+              "riassunto": "Un 79enne ha perso il controllo dell'auto tentando di schivare un gatto, finendo contro un tavolo da ping-pong; gli agenti lo hanno dichiarato non idoneo alla guida. L'evento, avvenuto in Ticino, ha suscitato grande curiosità sui media locali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "CdT e Ticinonews riportano i fatti in modo quasi identico focalizzandosi sulla dinamica e sul ritiro della patente. LaRegione offre un titolo più sintetico ma la sostanza narrativa rimane allineata, senza particolari differenze di framing politico o omissioni rilevanti."
+            },
+            {
+              "titolo": "Blocher rilancia la neutralità armata: «Svizzera aperta ma sovrana»",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/blocher-svizzera-aperta-al-mondo-ma-senza-perdere-sovranita-425487",
+              "riassunto": "All'assemblea di Pro Svizzera, l'ex consigliere federale Christoph Blocher critica sanzioni, UE e NATO, chiedendo maggiore autonomia. Un intervento che riaccende il dibattito sulla politica estera elvetica in vista delle prossime scadenze elettorali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Entrambe le fonti riportano fedelmente le parole di Blocher. CdT fornisce leggermente più contesto sull'evento (Pro Svizzera), mentre Ticinonews si concentra essenzialmente sulle citazioni dirette riguardo alla neutralità e alle critiche verso l'UE."
+            },
+            {
+              "titolo": "Chiude il parco Ticiland a Sciaffusa: fine di un sogno durato sei anni",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/aus-nach-nur-knapp-6-jahren-dieser-schweizer-freizeitpark-in-schaffhausen-ist-in-wenigen-tagen-geschichte-id21881416.html",
+              "riassunto": "Il parco tematico Ticiland a Stein am Rhein chiuderà definitivamente il 26 aprile a causa degli alti costi operativi e della mancanza di investitori. Una notizia significativa per il tessuto turistico regionale e simbolo di progetti falliti nel settore.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Dibattito sulla sovranità svizzera e neutralità",
+            "Sicurezza stradale e mobilità degli anziani"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della crisi nello Stretto di Hormuz e le possibili ripercussioni sui mercati energetici svizzeri nelle prossime 24 ore.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Il panorama culturale odierno è segnato dalla scomparsa dell'attrice Nathalie Baye, ampiamente riportata dai media svizzeri, e dalla Milano Design Week che attira l'attenzione internazionale. In ambito locale, il Ticino celebra il cinquantesimo anniversario della Borsa Svizzera degli Spettacoli.",
+          "notizie": [
+            {
+              "titolo": "Lutto nel cinema francese: morta l'attrice Nathalie Baye",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1919198/cinema-baye-francese-anni-attrice-nathalie-morta",
+              "riassunto": "L'attrice francese Nathalie Baye è scomparsa a 77 anni dopo una malattia. La notizia ha avuto risonanza transfrontaliera, confermando il suo status di icona culturale anche per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "SRF Kultur"
+              ],
+              "differenze_narrative": "LaRegione enfatizza il suo ruolo nel cinema francese e la sua luminosità artistica. SRF Kultur pone l'accento sulla sua fama internazionale (Citando 'Catch Me If You Can') e specifica i dettagli sulla malattia grave."
+            },
+            {
+              "titolo": "Milano Design Week: il design collaborativo protagonista dell'edizione annuale",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/04/19/arts/design/milan-design-week-inspired-collaborations.html",
+              "riassunto": "La settimana del design milanese vede un forte focus sulle collaborazioni tra designer per nuove creazioni. Evento di forte interesse per il Ticino data la prossimità geografica e culturale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Borsa Svizzera degli Spettacoli: successo per l'edizione del cinquantesimo anniversario",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1919283/svizzera-spettacoli-borsa-successo-edizione",
+              "riassunto": "La principale piattaforma di scambio per lo spettacolo dal vivo in Svizzera celebra 50 anni di attività con un'edizione di successo, segnando un traguardo storico per il settore culturale elvetico.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Milano Design Week",
+            "Mercato del collezionismo pop"
+          ],
+          "da_tenere_d_occhio": "Dettagli sulle esequie di Nathalie Baye e reazioni del mondo del cinema.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall'escalation in Medio Oriente, con la morte di un peacekeeper francese in Libano e le tensioni nello Stretto di Hormuz che minacciano le rotte globali. Parallelamente, si registra un grave episodio di cronaca nera a Kiev che evidenzia l'instabilità interna ucraina, mentre la Svizzera monitora da vicino le implicazioni economiche e di sicurezza di questi teatri.",
+          "notizie": [
+            {
+              "titolo": "Tensioni in Libano: ucciso un casco blu francese, accuse reciproche tra Macron e Hezbollah",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/18/macron-un-casco-blu-ucciso-e-tre-feriti-tra-i-francesi-in-libano_6df751f3-6041-4132-9dca-fff678eb1f55.html",
+              "riassunto": "Un peacekeeper dell'UNIFIL è stato ucciso nel sud del Libano durante operazioni di sminamento; Macron accusa Hezbollah, che nega ogni coinvolgimento. L'evento mette a rischio la fragile tregua e la stabilità regionale, cruciale per gli equilibri europei.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA e BBC enfatizzano la reazione diplomatica di Macron e la negazione di Hezbollah, focalizzandosi sulla violazione del cessate il fuoco. Il New York Times offre un contesto più ampio sul ritorno degli sfollati, suggerendo che la tregua 'tiene' nonostante l'incidente, minimizzando leggermente l'impatto immediato rispetto alle fonti europee."
+            },
+            {
+              "titolo": "Stretto di Hormuz sotto pressione: navi bloccate e colloqui USA-Iran in stallo",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/18/la-msc-euribia-sta-uscendo-dallo-stretto-di-hormuz_834d00b0-d259-4bbf-9ae8-7dcc1e2e1270.html",
+              "riassunto": "Segnalati spari contro mercantili e blocco navale mentre Teheran valuta le proposte USA definendole 'eccessive'. La situazione minaccia direttamente le forniture energetiche globali, con potenziali ripercussioni economiche anche per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Le fonti ANSA riportano i dettagli operativi del blocco e le dichiarazioni iraniane in tempo reale. Il New York Times inserisce l'evento in una cornice analitica più ampia sulla diplomazia imprevedibile degli USA nell'era Trump, sottolineando la difficoltà delle potenze medie nel gestire la crisi."
+            },
+            {
+              "titolo": "Sparatoria di massa a Kiev: 6 morti in un supermercato, cresce l'allarme sicurezza",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/18/sale-a-6-il-bilancio-dei-morti-della-sparatoria-a-kiev_3813bbc2-35b1-418f-9cb5-246fa651561a.html",
+              "riassunto": "La più grave sparatoria in anni di guerra colpisce la capitale ucraina, evidenziando la proliferazione di armi e le falle nella sicurezza interna. Un segnale preoccupante di destabilizzazione sociale in un paese chiave per la difesa europea.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA si concentra sul bilancio delle vittime e sulle dichiarazioni ufficiali di Zelensky. Il New York Times approfondisce il contesto della proliferazione delle armi da fuoco dovuta alla guerra, inquadrando l'evento come sintomo di un malessere sociale profondo piuttosto che come semplice cronaca nera."
+            }
+          ],
+          "trend": [
+            "Fragilità dei cessate il fuoco in Medio Oriente",
+            "Proliferazione di armi leggere in zone di conflitto attivo"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della crisi nello Stretto di Hormuz nelle prossime ore: un blocco prolungato potrebbe innescare un'impennata dei prezzi energetici con immediato impatto sui mercati finanziari svizzeri.",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "L'economia oggi è dominata da flussi di capitale verso il Ticino e da tensioni geopolitiche che colpiscono l'export di lusso svizzero. Emergono anche criticità logistiche legate al commercio transfrontaliero.",
+          "notizie": [
+            {
+              "titolo": "Il Ticino diventa una \"Dubai delle Alpi\" per i milionari",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/tessin-wird-zum-alpen-dubai-golf-millionaere-fluechten-in-die-schweiz-id21881260.html",
+              "riassunto": "Il Canton Ticino si conferma meta privilegiata per gli investitori della regione del Golfo, superando Zugo e Zurigo. Un flusso di capitali che trasforma il mercato immobiliare locale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La guerra in Iran blocca gli affari degli orologiai svizzeri a Dubai",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/dubai-geschaeft-lahmgelegt-iran-krieg-stoppt-boom-der-schweizer-uhrenfirmen-id21881467.html",
+              "riassunto": "Le tensioni geopolitiche nel Golfo frenano l'export di lusso svizzero. Un settore chiave dell'economia elvetica sotto pressione per l'instabilità regionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Critiche alla Posta svizzera per l'arrivo massiccio di pacchi cinesi",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/spielzeug-papst-sandro-kueng-schiesst-scharf-gegen-die-post-das-ist-ein-regelrechter-china-paeckli-bschiss-id21883447.html",
+              "riassunto": "Il Verband Spielwaren Schweiz denuncia squilibri competitivi e volumi eccessivi di merce asiatica. Un tema caldo per logistica e commercio al dettaglio locale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Flussi di capitale verso il Ticino",
+            "Impatto geopolitico sull'export di lusso"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle tensioni in Iran e effetti sul mercato degli orologi nelle prossime 24h",
+          "_model_used": "ollama/qwen3.5:cloud"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia con impatto diretto sulla Svizzera; emergono però tre eventi di rilievo internazionale legati a grandi player dell'AI, tutti recenti.",
+          "notizie": [
+            {
+              "titolo": "OpenAI perde tre dirigenti in un colpo solo mentre la ristrutturazione rimodella la sua gamma di prodotti",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-loses-three-executives-in-one-swoop-as-restructuring-reshapes-its-product-lineup/",
+              "riassunto": "Tre alti dirigenti lasciano OpenAI in un unico turno di dimissioni; la mossa avviene mentre l'azienda riorganizza il portafoglio puntando su clienti enterprise e strumenti di coding.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Meta prepara un taglio del 10% della forza lavoro per finanziare le infrastrutture AI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/zuckerberg-reportedly-trades-headcount-for-compute-as-meta-readies-to-cut-10-percent-of-its-workforce-to-fund-ai-infrastructure/",
+              "riassunto": "Meta prevede di licenziare circa 8.000 dipendenti entro il 20 maggio, con un'ulteriore ondata prevista entro l'anno, per destinare le risorse al crescente fabbisogno di calcolo AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cerebras presenta il suo chip AI in vista di un'IPO",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+              "riassunto": "La startup di chip AI Cerebras ha depositato la documentazione per un'IPO, dopo accordi con AWS e un presunto contratto da oltre 10 miliardi di dollari con OpenAI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Ristrutturazioni aziendali e tagli del personale per finanziare l'AI",
+            "Crescita delle valutazioni e delle IPO nel settore dei chip AI"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori annunci di licenziamenti o di partnership strategiche tra fornitori di chip AI e grandi piattaforme entro le prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 39,
       "run_id": 72,
@@ -3896,309 +4202,6 @@
           ],
           "da_tenere_d_occhio": "Monitorare nelle prossime 24h l’evoluzione degli accordi di capacità (ulteriori partner o dettagli contrattuali per Anthropic) e le reazioni del mercato alla notizia del cessate il fuoco USA-Iran, che potrebbero influenzare logistica, sicurezza delle infrastrutture e stabilità delle supply chain tecnologiche.",
           "_model_used": "openrouter/openai/gpt-5-mini"
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "run_id": 55,
-      "run_time": "2026-04-07 04:45:08.858729+00:00",
-      "analyzed_at": "2026-04-07T08:17:08.736395+00:00",
-      "articles_analyzed": 152,
-      "articles_selected": 19,
-      "model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese di oggi si concentra su questioni di sicurezza, problematiche ambientali e iniziative sociali. Emergono notizie relative alla criminalità organizzata, alla gestione delle risorse idriche e all'integrazione di comunità straniere.",
-          "notizie": [
-            {
-              "titolo": "Criminalità organizzata in Ticino: strategie delle cosche analizzate dall'USI",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/prodotti/cdt-weekend/stretti-tra-camorra-e-ndrangheta-424156",
-              "riassunto": "L'Osservatorio sulla criminalità organizzata dell'USI ha analizzato le sofisticate strategie impiegate da camorra e 'ndrangheta per operare sul territorio ticinese. La notizia evidenzia la presenza e l'influenza delle mafie in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Acqua non potabile a Lavizzara: raccomandazioni del Municipio",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/acqua-non-potabile-a-lavizzara-430768",
-              "riassunto": "Il Municipio di Lavizzara ha emesso raccomandazioni per gli abitanti di diverse frazioni (Piano di Peccia, Sant'Antonio, San Carlo, Cortignelli e Veglia) a causa della non potabilità dell'acqua. La problematica riguarda la sicurezza sanitaria della popolazione locale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "LaRegione Locarnese"
-              ],
-              "differenze_narrative": "Ticinonews e CdT riportano la notizia in modo simile, concentrandosi sulle raccomandazioni del Municipio. LaRegione Locarnese, pur trattando lo stesso argomento, lo presenta in modo più conciso, indicando semplicemente la dichiarazione di non potabilità 'fino a nuovo avviso'."
-            },
-            {
-              "titolo": "Ucraini in Ticino: il permesso S tra aiuti e incognite future",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/ucraini-in-ticino-il-permesso-s-tra-aiuti-e-incognite-430760",
-              "riassunto": "La situazione degli ucraini in Ticino, titolari del permesso S, viene analizzata evidenziando il sostegno offerto dal sistema svizzero ma anche gli ostacoli sul fronte lavorativo e le incertezze che si prospettano dopo il 2027.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Gestione delle risorse idriche e sicurezza sanitaria",
-            "Integrazione e supporto alle comunità straniere",
-            "Sicurezza e criminalità organizzata"
-          ],
-          "da_tenere_d_occhio": "Gli sviluppi riguardanti l'integrazione lavorativa e le prospettive a lungo termine per i rifugiati ucraini in Ticino, così come eventuali aggiornamenti sulla qualità dell'acqua a Lavizzara e le implicazioni per gli abitanti.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La cronaca svizzera odierna è dominata da notizie di cronaca locale, con particolare attenzione a incidenti e attività criminali. Emergono anche temi legati all'economia e alla salute.",
-          "notizie": [
-            {
-              "titolo": "Valanga travolge alpinisti nel Canton Uri: due feriti gravi",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1916256/valanga-due-alpinisti-stati-incidente",
-              "riassunto": "Due alpinisti sono rimasti gravemente feriti in una valanga sul Fleckistock, nel Canton Uri. Un terzo alpinista è riuscito a mettersi in salvo autonomamente. L'incidente sottolinea i pericoli legati alle attività in montagna in condizioni meteorologiche avverse.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "LaRegione Svizzera riporta che uno dei tre alpinisti rischia di morire, mentre il CdT Svizzera parla di due feriti gravi e una terza persona salvatasi autonomamente. Entrambe le fonti concordano sull'evento e sul luogo."
-            },
-            {
-              "titolo": "Furto in concessionaria in Argovia: arrestato 18enne francese",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1916265/stato-arrestato-polizia-autoconcessionaria-ladri",
-              "riassunto": "Un diciottenne francese è stato arrestato in seguito a un tentativo di furto in un'autoconcessionaria nel Canton Argovia. L'episodio evidenzia la problematica dei giovani stranieri coinvolti in attività criminali in Svizzera.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "LaRegione Svizzera si concentra sull'arresto del diciottenne francese, menzionando che casi simili coinvolgono spesso giovani stranieri. Il CdT Svizzera riporta la notizia dell'arresto di un 18enne francese, aggiungendo dettagli sulle origini maghrebine e l'organizzazione in bande. Entrambe le fonti concordano sull'evento e sull'arresto."
-            },
-            {
-              "titolo": "La Posta svizzera punta a crescere nonostante il calo della corrispondenza",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/visto-il-calo-della-corrispondenza-ecco-come-il-gigante-giallo-punta-a-crescere-430744",
-              "riassunto": "La Posta svizzera intende compensare le perdite dovute al calo della corrispondenza tradizionale potenziando le attività complementari, come la collaborazione con PostFinance. Questo indica una strategia di adattamento al mercato digitale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano la stessa notizia con dettagli simili, evidenziando la strategia della Posta di diversificare le proprie attività per far fronte al calo della corrispondenza tradizionale. Nessuna differenza narrativa significativa."
-            }
-          ],
-          "trend": [
-            "Incidenti e cronaca locale",
-            "Strategie economiche aziendali"
-          ],
-          "da_tenere_d_occhio": "Monitorare eventuali sviluppi nelle indagini sui furti e sugli incidenti, nonché le strategie di adattamento della Posta svizzera al mercato digitale.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La scena culturale odierna è dominata da dibattiti sull'impatto dell'intelligenza artificiale sulla creatività e dalla riflessione su eventi storici e figure di spicco. Emergono anche notizie locali con risvolti artistici e culturali.",
-          "notizie": [
-            {
-              "titolo": "L'intelligenza artificiale minaccia la cultura: dibattito tra \"brain rot\" e futuro artistico",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/06/magazine/ai-apocalypse-brain-rot-memes.html",
-              "riassunto": "Un articolo del New York Times esplora come l'intelligenza artificiale e i meme stiano trasformando la cultura, portando a un fenomeno definito \"brain rot\". La notizia solleva interrogativi sull'autenticità e l'evoluzione delle forme artistiche e comunicative nell'era digitale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times Arts",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "Il New York Times si concentra sull'impatto pervasivo dell'IA e dei meme sulla cultura globale, definendo il fenomeno 'brain rot' e analizzandone le conseguenze su slang, messaggi politici e la vita quotidiana. LaRegione, invece, cita l'IA in relazione a un'intervista a Ute Lemper, inserendola nel contesto di una riflessione più ampia sulla musica, l'arte e il ruolo degli artisti, suggerendo una preoccupazione per la potenziale 'sostituzione degli artisti e della loro arte'."
-            },
-            {
-              "titolo": "Il caso Regeni: dibattito politico e culturale sul rifiuto dei fondi per il film",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1916446/il-film-su-regeni-non-ha-interesse-artistico-culturale",
-              "riassunto": "Il rifiuto di fondi per il documentario \"Giulio Regeni, tutto il male del mondo\" sta generando un acceso dibattito politico e culturale. La decisione, definita \"politica e non artistica\" e \"censura\", solleva interrogativi sulla libertà di espressione e sul ruolo delle istituzioni nella promozione culturale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "Non applicabile, trattandosi di una singola fonte che copre l'evento."
-            },
-            {
-              "titolo": "Zermatt Unplugged: il festival svizzero apre con star internazionali",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1916334/concerti-unplugged-zermatt-tom-emeli-sande-odell-placebo",
-              "riassunto": "La 17esima edizione del festival Zermatt Unplugged prende il via con un cartellone di rilievo, includendo artisti internazionali come Placebo, Tom Odell ed Emeli Sandé. L'evento, ai piedi del Cervino, promette un'ampia offerta musicale con numerosi concerti.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": null
-            }
-          ],
-          "trend": [
-            "Impatto dell'intelligenza artificiale sulla cultura e sull'arte",
-            "Riflessioni storiche e figure del passato nel contesto culturale",
-            "Eventi culturali e artistici in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Gli sviluppi sul caso Regeni e le eventuali reazioni politiche e culturali, nonché le evoluzioni del dibattito sull'intelligenza artificiale e il suo impatto sulla creatività.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La scena geopolitica odierna è dominata dalle crescenti tensioni tra Stati Uniti e Iran, con scambi di accuse e minacce di rappresaglie che alimentano il timore di un'escalation. Parallelamente, si osservano sviluppi significativi in America Latina e in Europa, con elezioni e dinamiche politiche interne che potrebbero avere ripercussioni internazionali.",
-          "notizie": [
-            {
-              "titolo": "Tensioni USA-Iran: raid aerei e accuse reciproche, si teme escalation",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/06/media-iran-raid-usa-israele-vicino-teheran-almeno-13-morti_a813818e-3a3c-45d1-b517-d9f074d7c2f1.html",
-              "riassunto": "Media iraniani riportano raid aerei USA-Israele vicino Teheran con almeno 13 morti, colpendo unità abitative. Teheran minaccia rappresaglie più dure in caso di attacchi a obiettivi civili, mentre gli USA, tramite Trump, lanciano ultimatum e minacciano azioni militari. Si parla di mediazioni per un cessate il fuoco.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "L'ANSA Mondo si concentra sulla cronaca dei raid e sulle immediate minacce iraniane, riportando anche le dichiarazioni di Unifil sulla pericolosità della situazione. Il New York Times World, invece, enfatizza le dichiarazioni di Trump, le sue minacce di 'bombardare l'Iran fino all'età della pietra' e le sue critiche alla proposta iraniana, oltre a riportare la proposta iraniana in 10 punti. L'ANSA cita anche la posizione di Lavrov che invita gli USA ad abbandonare il linguaggio degli ultimatum. Il tono dell'ANSA è più focalizzato sull'evento immediato e sulle reazioni, mentre il NYT offre un quadro più ampio delle posizioni politiche e delle strategie negoziali."
-            },
-            {
-              "titolo": "Vance in Ungheria per sostenere Orban in vista delle elezioni, con potenziali ripercussioni sui voti rom",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/07/world/europe/vance-hungary-orban-fidesz-election.html",
-              "riassunto": "Il vicepresidente USA JD Vance si recherà in Ungheria per sostenere Viktor Orban prima delle elezioni. La visita evidenzia l'interesse degli Stati Uniti per l'esito del voto, che potrebbe influenzare anche le decisioni politiche interne relative alla minoranza rom.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times World"
-              ],
-              "differenze_narrative": "Le due notizie del New York Times World, pur trattando lo stesso evento (la visita di Vance in Ungheria), presentano angolazioni leggermente diverse. La prima si concentra sul sostegno politico americano a Orban e sull'investimento della Russia nella sua vittoria. La seconda approfondisce l'impatto delle politiche di Orban sulla minoranza rom e come questi voti potrebbero essere decisivi in una corsa elettorale serrata. Entrambe le notizie sono pubblicate dalla stessa fonte, quindi le differenze narrative sono più sfumature di enfasi che divergenze di contenuto."
-            },
-            {
-              "titolo": "Polemiche sulla partecipazione di Kanye West a festival londinese per commenti antisemiti",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/05/polemiche-sulla-partecipazione-di-kanye-west-ad-un-festival-londinese_80e18ceb-5ae3-49d7-bfaf-766e8153e8c2.html",
-              "riassunto": "Kanye West è al centro di polemiche per la sua partecipazione a un festival a Londra, a causa di commenti antisemiti e razzisti. Il Primo Ministro britannico Keir Starmer ha espresso profonda preoccupazione, sottolineando la necessità di combattere l'antisemitismo.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "L'ANSA Mondo riporta la notizia focalizzandosi sulle dichiarazioni del Primo Ministro britannico Keir Starmer e sulla natura 'abominevole' dell'antisemitismo. Il New York Times World, invece, collega la rinuncia di Pepsi alla sponsorizzazione all'antisemitismo e ai commenti razzisti del rapper, fornendo un dettaglio in più sull'impatto commerciale della vicenda. Entrambe le fonti concordano sulla gravità dei commenti e sulla reazione politica, ma il NYT aggiunge un elemento di conseguenza aziendale."
-            }
-          ],
-          "trend": [
-            "Escalation tensioni USA-Iran",
-            "Dinamiche politiche europee (Ungheria)",
-            "Impatto di commenti controversi sulla scena pubblica"
-          ],
-          "da_tenere_d_occhio": "Gli sviluppi della crisi tra Stati Uniti e Iran, con particolare attenzione al rispetto degli ultimatum e alle possibili rappresaglie, nonché le reazioni internazionali e gli sforzi di mediazione per evitare un conflitto aperto.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Le notizie economiche odierne riflettono un quadro complesso, con tensioni geopolitiche che influenzano i mercati finanziari e l'industria, mentre emergono trend di crescita in settori specifici come l'istruzione online e il turismo di lusso.",
-          "notizie": [
-            {
-              "titolo": "Guerra e tensioni geopolitiche pesano sulle borse europee",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/la-scure-della-guerra-sulle-borse-pesa-piu-della-crisi-del-2022-430804",
-              "riassunto": "L'indice che replica il rendimento delle 600 principali società quotate in 17 paesi europei ha perso il 6% dall'inizio del conflitto in Medio Oriente. Questo dato evidenzia l'impatto significativo delle tensioni geopolitiche sui mercati finanziari europei.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Economist Finance"
-              ],
-              "differenze_narrative": "Ticinonews si concentra sull'impatto diretto sulle borse europee, quantificando la perdita percentuale. The Economist, pur trattando temi correlati come l'inflazione/recessione e l'economia iraniana, offre un'analisi più ampia e contestualizzata delle dinamiche economiche globali influenzate da conflitti e incertezze."
-            },
-            {
-              "titolo": "L'industria italiana soffre per blocchi all'export e aumento dei costi",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/export-bilico-merce-bloccata-listini-rialzo-tempesta-sull-industria-AIFrZoLC",
-              "riassunto": "L'industria italiana si trova ad affrontare una 'tempesta' a causa di blocchi nelle esportazioni, merci ferme e listini in rialzo. Le associazioni di categoria prevedono un ulteriore calo per l'anno in corso e la necessità di rivedere al ribasso le stime di crescita.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": null
-            },
-            {
-              "titolo": "Mercato delle università telematiche in Italia: crescita a oltre tre miliardi di euro",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/universita-telematiche-italia-mercato-crescita-oltre-tre-miliardi-euro-AIMYxULC",
-              "riassunto": "Il mercato delle università telematiche in Italia ha superato i tre miliardi di euro, con un raddoppio degli iscritti negli ultimi cinque anni. Il tasso di occupazione dei laureati online è leggermente superiore a quello delle università tradizionali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": null
-            }
-          ],
-          "trend": [
-            "Impatto delle tensioni geopolitiche sull'economia globale e sui mercati finanziari",
-            "Crescita e resilienza di settori specifici (istruzione online, turismo di lusso)"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle decisioni dell'OPEC+ riguardo alla produzione di greggio e le conseguenti ripercussioni sui prezzi dell'energia e sull'inflazione globale.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria 'ai_openclaw' oggi presenta un quadro variegato di sviluppi nell'intelligenza artificiale, con particolare attenzione alle implicazioni pratiche, alle sfide etiche e alle innovazioni tecnologiche. Emergono temi legati all'uso dei dati personali, alla sicurezza informatica e all'integrazione dell'IA in diversi settori.",
-          "notizie": [
-            {
-              "titolo": "Il New York Times licenzia un collaboratore per plagio tramite strumento AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/the-new-york-times-drops-freelancer-whose-ai-tool-copied-from-an-existing-book-review/",
-              "riassunto": "Il New York Times ha interrotto la collaborazione con un giornalista freelance a causa dell'utilizzo di uno strumento di intelligenza artificiale che ha copiato passaggi da una recensione di libri esistente. Questo evento evidenzia i rischi legati all'uso non supervisionato di strumenti AI nel giornalismo e la necessità di una comprensione approfondita del loro funzionamento.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Le capacità offensive dell'IA nel cyber-attacco raddoppiano ogni sei mesi",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/ai-offensive-cyber-capabilities-are-doubling-every-six-months-safety-researchers-find/",
-              "riassunto": "Un nuovo studio rivela che le capacità offensive dell'intelligenza artificiale nel campo della sicurezza informatica stanno raddoppiando ogni 5,7 mesi dal 2024. Questo rapido progresso solleva serie preoccupazioni sulla crescente minaccia di attacchi informatici automatizzati e sulla necessità di contromisure adeguate.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L'Iran minaccia i data center AI 'Stargate' con attacchi missilistici",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/",
-              "riassunto": "In un contesto di escalation delle tensioni tra Stati Uniti e Iran, Teheran ha minacciato di colpire i data center legati agli Stati Uniti con nuovi attacchi missilistici. Questo sviluppo geopolitico aggiunge un livello di rischio significativo all'infrastruttura critica legata all'intelligenza artificiale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gemma4 su iPhone: l'IA di Google ora disponibile offline sui dispositivi mobili",
-              "fonte": "Hacker News",
-              "link": "https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337",
-              "riassunto": "Google ha lanciato un'app per iOS che integra i modelli AI Gemma4, permettendo l'elaborazione offline. Questo segna un passo importante verso l'integrazione dell'IA avanzata direttamente sui dispositivi mobili, migliorando la privacy e l'accessibilità.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza e rischi dell'IA",
-            "Integrazione dell'IA nei media e nel giornalismo",
-            "Sviluppo e accessibilità dei modelli AI"
-          ],
-          "da_tenere_d_occhio": "Monitorare gli sviluppi geopolitici che potrebbero influenzare l'infrastruttura dei data center AI e le risposte delle aziende tecnologiche alle sfide etiche e di sicurezza poste dall'intelligenza artificiale.",
-          "_model_used": "openrouter/openrouter/google/gemini-2.5-flash-lite"
         }
       ]
     }
