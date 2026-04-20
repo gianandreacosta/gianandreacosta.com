@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T04:00:06.108385Z",
+  "generated_at": "2026-04-20T04:10:04.592199Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 2h",
+      "next": "in 1h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 7h",
+      "next": "in 6h",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
@@ -376,5 +376,330 @@
     "last_run": "2026-04-19 04:45:01.998163+00:00",
     "last_run_found": 3913
   },
-  "model_status": null
+  "model_status": {
+    "timestamp": "2026-04-20T04:00:02Z",
+    "usage_stats": {
+      "openai-codex:default": {
+        "last_used": "2026-04-16 11:06 UTC",
+        "error_count": 1,
+        "failure_types": {
+          "rate_limit": 1
+        },
+        "cooldown": "expired (no longer in cooldown)",
+        "last_failure": "2026-04-19 11:07 UTC"
+      },
+      "openai:default": {
+        "last_used": "2026-04-06 09:36 UTC",
+        "error_count": 1,
+        "failure_types": {
+          "rate_limit": 1
+        },
+        "cooldown": "expired (no longer in cooldown)",
+        "last_failure": "2026-04-15 21:32 UTC"
+      },
+      "ollama:default": {
+        "last_used": "2026-04-17 07:14 UTC",
+        "error_count": 1,
+        "failure_types": {
+          "rate_limit": 1
+        },
+        "cooldown": "expired (no longer in cooldown)",
+        "last_failure": "2026-04-19 11:56 UTC"
+      },
+      "xai:default": {
+        "error_count": 1,
+        "failure_types": {
+          "auth": 1
+        },
+        "cooldown": "expired (no longer in cooldown)",
+        "last_failure": "2026-03-16 12:22 UTC"
+      },
+      "google:default": {
+        "last_used": "2026-03-28 10:15 UTC",
+        "last_failure": "2026-03-28 10:13 UTC"
+      },
+      "anthropic:default": {
+        "last_used": "2026-04-19 11:58 UTC",
+        "last_failure": "2026-04-09 11:53 UTC"
+      },
+      "openai-codex:gianandreacosta@gmail.com": {
+        "last_used": "2026-04-16 19:55 UTC",
+        "error_count": 1,
+        "failure_types": {
+          "rate_limit": 1
+        },
+        "cooldown": "expired (no longer in cooldown)",
+        "last_failure": "2026-04-19 11:07 UTC"
+      }
+    },
+    "providers": {
+      "openrouter": {
+        "provider": "openrouter",
+        "status": "ok",
+        "usage_monthly_usd": 10.1213,
+        "usage_weekly_usd": 0,
+        "usage_daily_usd": 0,
+        "is_free_tier": false
+      },
+      "openai": {
+        "provider": "openai",
+        "status": "ok",
+        "billing": "not available via API key (use platform.openai.com)"
+      },
+      "google": {
+        "provider": "google",
+        "status": "ok",
+        "billing": "not available via API key"
+      },
+      "ollama": {
+        "provider": "ollama",
+        "status": "ok",
+        "models": [
+          {
+            "name": "minimax-m2.7:cloud",
+            "status": "ok"
+          },
+          {
+            "name": "kimi-k2.5:cloud",
+            "status": "ok"
+          },
+          {
+            "name": "qwen3.5:cloud",
+            "status": "ok"
+          },
+          {
+            "name": "nomic-embed-text:latest",
+            "status": "local",
+            "type": "embedding"
+          }
+        ],
+        "installed_models": [
+          "nomic-embed-text:latest",
+          "minimax-m2.7:cloud",
+          "kimi-k2.5:cloud",
+          "qwen3.5:cloud"
+        ],
+        "running_models": []
+      },
+      "anthropic": {
+        "provider": "anthropic",
+        "status": "ok",
+        "api_reachable": true,
+        "window_5h_status": "allowed",
+        "window_5h_used_pct": 0.0,
+        "window_5h_remaining_pct": 100.0,
+        "window_5h_reset_in": "5.0h",
+        "window_5h_reset_at": "2026-04-20 09:00 UTC",
+        "window_7d_status": "allowed",
+        "window_7d_used_pct": 3.0,
+        "window_7d_remaining_pct": 97.0,
+        "window_7d_reset_in": "87.0h",
+        "window_7d_reset_at": "2026-04-23 19:00 UTC",
+        "overall_status": "allowed",
+        "overage_status": "allowed",
+        "overage_reason": ""
+      },
+      "openai-codex": {
+        "provider": "openai-codex",
+        "status": "valid",
+        "token_expires_in": "151.1h",
+        "plan": "plus",
+        "api_reachable": false
+      },
+      "nemofree": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "status": "ok"
+      }
+    },
+    "models": [
+      {
+        "model_id": "openai/gpt-4o-mini",
+        "alias": "GPT4_LITE",
+        "type": "paid",
+        "cost_input_per_1M": 0.15,
+        "cost_output_per_1M": 0.6,
+        "context_length": 128000
+      },
+      {
+        "model_id": "openai/gpt-5.1",
+        "alias": "GPT_API",
+        "type": "paid",
+        "cost_input_per_1M": 1.25,
+        "cost_output_per_1M": 10.0,
+        "context_length": 400000
+      },
+      {
+        "model_id": "openai/gpt-5.1-codex",
+        "alias": "GPT51_CODEX",
+        "type": "paid",
+        "cost_input_per_1M": 1.25,
+        "cost_output_per_1M": 10.0,
+        "context_length": 400000
+      },
+      {
+        "model_id": "ollama/qwen3.5:cloud",
+        "alias": "",
+        "type": "local (free)",
+        "cost_input": 0,
+        "cost_output": 0
+      },
+      {
+        "model_id": "openrouter/minimax/minimax-m2.5",
+        "alias": "minimax",
+        "type": "paid",
+        "cost_input_per_1M": 0.118,
+        "cost_output_per_1M": 0.99,
+        "context_length": 196608
+      },
+      {
+        "model_id": "openrouter/deepseek/deepseek-v3.2",
+        "alias": "deepseek",
+        "type": "paid",
+        "cost_input_per_1M": 0.259,
+        "cost_output_per_1M": 0.42,
+        "context_length": 163840
+      },
+      {
+        "model_id": "openrouter/moonshotai/kimi-k2.5",
+        "alias": "kimi",
+        "type": "paid",
+        "cost_input_per_1M": 0.3827,
+        "cost_output_per_1M": 1.72,
+        "context_length": 262144
+      },
+      {
+        "model_id": "openrouter/z-ai/glm-5",
+        "alias": "glm",
+        "type": "paid",
+        "cost_input_per_1M": 0.72,
+        "cost_output_per_1M": 2.3,
+        "context_length": 80000
+      },
+      {
+        "model_id": "openrouter/google/gemini-2.5-flash-lite",
+        "alias": "flashlite",
+        "type": "paid",
+        "cost_input_per_1M": 0.1,
+        "cost_output_per_1M": 0.4,
+        "context_length": 1048576
+      },
+      {
+        "model_id": "openrouter/google/gemini-2.5-flash",
+        "alias": "flash",
+        "type": "paid",
+        "cost_input_per_1M": 0.3,
+        "cost_output_per_1M": 2.5,
+        "context_length": 1048576
+      },
+      {
+        "model_id": "openrouter/anthropic/claude-haiku-4-5",
+        "alias": "haiku",
+        "type": "unknown"
+      },
+      {
+        "model_id": "openrouter/anthropic/claude-sonnet-4-6",
+        "alias": "sonnet",
+        "type": "unknown"
+      },
+      {
+        "model_id": "openrouter/anthropic/claude-opus-4-6",
+        "alias": "opus",
+        "type": "unknown"
+      },
+      {
+        "model_id": "openrouter/openai/gpt-5-mini",
+        "alias": "gpt",
+        "type": "paid",
+        "cost_input_per_1M": 0.25,
+        "cost_output_per_1M": 2.0,
+        "context_length": 400000
+      },
+      {
+        "model_id": "openrouter/openai/gpt-5-nano",
+        "alias": "nano",
+        "type": "paid",
+        "cost_input_per_1M": 0.05,
+        "cost_output_per_1M": 0.4,
+        "context_length": 400000
+      },
+      {
+        "model_id": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+        "alias": "NemoFree",
+        "type": "free",
+        "cost_input": 0,
+        "cost_output": 0
+      },
+      {
+        "model_id": "openrouter/bytedance-seed/seedream-4.5",
+        "alias": "seedream",
+        "type": "unknown"
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4-6",
+        "alias": "",
+        "type": "paid (direct)",
+        "note": "pricing depends on model tier"
+      },
+      {
+        "model_id": "anthropic/claude-haiku-4-5",
+        "alias": "",
+        "type": "paid (direct)",
+        "note": "pricing depends on model tier"
+      },
+      {
+        "model_id": "anthropic/claude-opus-4-6",
+        "alias": "",
+        "type": "paid (direct)",
+        "note": "pricing depends on model tier"
+      },
+      {
+        "model_id": "openrouter/google/gemini-2.5-pro",
+        "alias": "GeminiPro",
+        "type": "paid",
+        "cost_input_per_1M": 1.25,
+        "cost_output_per_1M": 10.0,
+        "context_length": 1048576
+      },
+      {
+        "model_id": "openrouter/openai/gpt-5.4",
+        "alias": "GPT54",
+        "type": "paid",
+        "cost_input_per_1M": 2.5,
+        "cost_output_per_1M": 15.0,
+        "context_length": 1050000
+      },
+      {
+        "model_id": "ollama/minimax-m2.7:cloud",
+        "alias": "",
+        "type": "local (free)",
+        "cost_input": 0,
+        "cost_output": 0
+      },
+      {
+        "model_id": "openai-codex/gpt-5.4",
+        "alias": "",
+        "type": "unknown"
+      },
+      {
+        "model_id": "openrouter/openai/gpt-oss-120b:free",
+        "alias": "gpt-oss",
+        "type": "free",
+        "cost_input": 0,
+        "cost_output": 0
+      },
+      {
+        "model_id": "openrouter/google/gemma-4-26b-a4b-it:free",
+        "alias": "gemma4",
+        "type": "free",
+        "cost_input": 0,
+        "cost_output": 0
+      }
+    ],
+    "primary_model": "openai-codex/gpt-5.4",
+    "fallback_chain": [
+      "openrouter/openai/gpt-5-mini",
+      "ollama/qwen3.5:cloud",
+      "openrouter/openai/gpt-oss-120b:free"
+    ]
+  }
 }
