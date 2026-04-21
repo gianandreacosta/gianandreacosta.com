@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:20:04.253649Z",
+  "generated_at": "2026-04-21T19:30:04.649984Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 44min",
+      "next": "in 34min",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
@@ -154,6 +154,15 @@
       "next": "n/a",
       "note": "Esegui: cd /root/.openclaw/workspace && bash tools/rasseg...",
       "enabled": false
+    },
+    {
+      "name": "Promemoria mattutino 2026-04-22",
+      "schedule": "one-shot: 2026-04-22T07:00:00.000Z",
+      "target": "main",
+      "status": "idle",
+      "next": "in 11h",
+      "note": "\ud83d\udd14 **Promemoria \u2014 22 Apr 09:00**\n\n\u2022 Controllare mail\n\u2022 Chiamare [?]\n\u2022 Scrivere...",
+      "enabled": true
     }
   ],
   "summaries": [],
