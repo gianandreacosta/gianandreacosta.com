@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T22:00:05.531772Z",
+  "generated_at": "2026-04-21T22:08:38.845493Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -13,8 +13,9 @@
     "token_present": true
   },
   "models": {
-    "primary": "openai-codex/gpt-5.4",
+    "primary": "openrouter/openai/gpt-5.4-mini",
     "fallbacks": [
+      "openai-codex/gpt-5.4",
       "openrouter/openai/gpt-5-mini",
       "ollama/qwen3.5:cloud",
       "openrouter/openai/gpt-oss-120b:free"
@@ -79,7 +80,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 8h",
+      "next": "in 7h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +116,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 13h",
+      "next": "in 12h",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
