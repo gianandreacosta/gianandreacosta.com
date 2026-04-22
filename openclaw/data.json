@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T10:40:05.115793Z",
+  "generated_at": "2026-04-22T10:49:38.084990Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -15,8 +15,7 @@
   "models": {
     "primary": "openrouter/openai/gpt-5.4-mini",
     "fallbacks": [
-      "openai-codex/gpt-5.4",
-      "openrouter/openai/gpt-5-mini",
+      "openai-codex/gpt-5.4-mini",
       "ollama/qwen3.5:cloud",
       "openrouter/openai/gpt-oss-120b:free"
     ]
@@ -37,7 +36,7 @@
       "fallbacks": [
         "openai-codex/gpt-5.4",
         "ollama/minimax-m2.7:cloud",
-        "openrouter/openai/gpt-oss-120b:free"
+        "openrouter/nvidia/nemotron-3-super-120b-a12b:free"
       ]
     },
     {
@@ -116,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 24min",
+      "next": "in 15min",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
