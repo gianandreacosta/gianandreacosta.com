@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T06:30:05.615078Z",
+  "generated_at": "2026-04-22T06:40:05.022450Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -161,7 +161,7 @@
       "schedule": "one-shot: 2026-04-22T07:00:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 29min",
+      "next": "in 19min",
       "note": "\ud83d\udd14 **Promemoria \u2014 22 Apr 09:00**\n\n\u2022 Controllare mail\n\u2022 Chiamare [?]\n\u2022 Scrivere...",
       "enabled": true
     }
