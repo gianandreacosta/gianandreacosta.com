@@ -1,6 +1,288 @@
 {
-  "generated_at": "2026-04-21T05:01:53.677867+00:00",
+  "generated_at": "2026-04-22T05:02:14.147399+00:00",
   "analyses": [
+    {
+      "id": 42,
+      "run_id": 75,
+      "run_time": "2026-04-22 04:45:01.835917+00:00",
+      "analyzed_at": "2026-04-22T05:02:14.142550+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata ticinese è dominata da decisioni politiche cantonali con effetti concreti su lavoro e sanità, affiancate da un fatto di cronaca recente legato alle truffe agli anziani. Tra le notizie selezionate prevalgono i temi con impatto diretto sulla popolazione e con chiaro carattere d'attualità.",
+          "notizie": [
+            {
+              "titolo": "Salario minimo: il Gran Consiglio approva il compromesso, entrata in vigore dal 2027",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/salario-minimo-il-compromesso-passa-in-gran-consiglio-431903",
+              "riassunto": "Dopo mesi di trattative, il Parlamento ticinese ha approvato il rapporto di compromesso sul salario minimo. La decisione conta perché incide direttamente sul mercato del lavoro cantonale e sui redditi delle fasce salariali più basse, con applicazione progressiva a partire dal 2027.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cure a domicilio: il Parlamento respinge l'urgenza chiesta dal PS",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/cure-a-domicilio-il-gran-consiglio-frena-sullurgenza-431894",
+              "riassunto": "Il Gran Consiglio ha detto no alla procedura d'urgenza invocata per abrogare una misura di risparmio del Governo nel settore delle cure a domicilio. È una notizia rilevante perché tocca un ambito sensibile per famiglie, anziani e operatori sociosanitari, segnalando uno scontro politico ancora aperto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tentata truffa con la \"chiamata shock\" a Biasca, arrestato un sospetto",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/unaltra-chiamata-shock-in-ticino-scattano-le-manette-431887",
+              "riassunto": "Un uomo di 47 anni è stato arrestato perché sospettato di aver cercato di raggirare un anziano di Biasca con il metodo della falsa emergenza telefonica. La notizia ha forte rilievo pratico perché richiama un fenomeno criminale ricorrente in Ticino e riaccende l'allerta sulla protezione delle persone più vulnerabili.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "decisioni del Gran Consiglio con impatto sociale ed economico",
+            "attenzione crescente alla tutela delle persone vulnerabili tra sanità e truffe"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire le reazioni politiche e delle parti sociali sul salario minimo, così come eventuali nuovi dettagli giudiziari o di prevenzione sul caso della truffa telefonica a Biasca.",
+          "_model_used": "openai-codex/gpt-5.4"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata svizzera è dominata da temi con impatto istituzionale ed economico: la possibile ripetizione del voto sull'identità elettronica, i dubbi sui grandi investimenti ferroviari e il bilancio climatico delle principali aziende del Paese. Spiccano soprattutto i dossier federali che possono avere effetti concreti su fiducia pubblica, finanze e politica industriale.",
+          "notizie": [
+            {
+              "titolo": "Identità elettronica, il Tribunale federale valuta se annullare la votazione",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/identita-elettronica-e-se-il-voto-venisse-annullato-425642",
+              "riassunto": "Il Tribunale federale deve decidere se la votazione dello scorso settembre sull'identità elettronica debba essere ripetuta. Al centro del caso c'è il presunto coinvolgimento eccessivo di Swisscom, controllata dalla Confederazione, nella campagna per il sì. È una notizia di forte rilievo perché tocca la regolarità del processo democratico e un dossier chiave della digitalizzazione svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ferrovie svizzere sotto esame: il Controllo federale delle finanze segnala carenze nei piani",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/la-ferrovia-forse-non-e-sui-binari-giusti-425611",
+              "riassunto": "Il Controllo federale delle finanze ha evidenziato problemi nelle previsioni e nella qualità dei dati usati per pianificare il sistema ferroviario. In gioco ci sono miliardi di franchi e la credibilità di uno dei pilastri della mobilità pubblica svizzera. La notizia conta perché riguarda investimenti federali, priorità infrastrutturali e possibili ripercussioni anche per le regioni periferiche e di transito come il Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Le grandi aziende svizzere tagliano la CO2 diretta, ma aumentano le emissioni indirette",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1919465/emissioni-scope-holcim-co2-aziende",
+              "riassunto": "Un'analisi AWP sui gruppi dello SMI mostra un calo delle emissioni dirette, mentre quelle indirette lungo la catena del valore continuano a crescere. Il dato suggerisce che i progressi climatici delle grandi imprese svizzere restano parziali e spostano l'attenzione sulla responsabilità complessiva delle filiere. È un tema rilevante per politica climatica, trasparenza ESG e competitività internazionale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Le due fonti si basano sullo stesso dato AWP ma con accenti diversi. LaRegione adotta un taglio più analitico e quantitativo, cita l'analisi sulle 20 società dell'SMI e richiama i gruppi più esposti come Holcim e ABB; Ticinonews usa una formulazione più sintetica e divulgativa, puntando soprattutto sul contrasto fra miglioramento delle emissioni dirette e peggioramento di quelle indirette. Il framing di LaRegione è più economico-industriale, quello di Ticinonews più orientato al messaggio generale sulla sostenibilità."
+            }
+          ],
+          "trend": [
+            "istituzioni federali sotto pressione su trasparenza e correttezza democratica",
+            "sostenibilità e controllo degli investimenti pubblici al centro del dibattito svizzero"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà cruciale seguire l'esito o gli sviluppi dell'udienza al Tribunale federale sull'e-ID: un eventuale annullamento del voto avrebbe un impatto politico immediato e riaprirebbe il dossier sulla digitalizzazione statale.",
+          "_model_used": "openai-codex/gpt-5.4"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è segnata soprattutto da temi vicini alla Svizzera italiana e al panorama elvetico: dal traguardo storico della Fondazione Beyeler a un appuntamento teatrale a Bellinzona. Sul fronte internazionale spicca invece la morte dell'attore Patrick Muldoon, rilanciata da più testate e quindi rilevante per ampiezza di copertura.",
+          "notizie": [
+            {
+              "titolo": "La Fondazione Beyeler supera i 10 milioni di visitatori e celebra con Cézanne",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1919489/fondazione-visitatori-cezanne-beyeler-museo",
+              "riassunto": "Il museo di Riehen, uno dei poli artistici più importanti della Svizzera, raggiunge il traguardo dei 10 milioni di visitatori dall'apertura nel 1997. La celebrazione con Cézanne conferma il peso internazionale dell'istituzione e il suo ruolo centrale nell'offerta culturale svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "A Bellinzona torna il 'Frankenstein' di Margherita Saltamacchia al Teatro Sociale",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1919350/mary-vita-margherita-shelley-creatura-saltamacchia-teatro-frankenstein",
+              "riassunto": "La rilettura scenica dei testi di Mary Shelley approda al Teatro Sociale di Bellinzona, con un forte radicamento nel calendario culturale ticinese. È una notizia di rilievo locale perché segnala un appuntamento concreto per il pubblico della Svizzera italiana e valorizza una proposta teatrale contemporanea.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Muore a 57 anni Patrick Muldoon, volto di 'Melrose Place' e 'Days of Our Lives'",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/news/morto-patrick-muldoon-interprete-di-melrose-place-e-starship-troopers-425604",
+              "riassunto": "La scomparsa dell'attore e produttore statunitense Patrick Muldoon ha avuto ampia eco mediatica internazionale. La notizia conta soprattutto per la forte riconoscibilità televisiva dell'attore e perché viene ripresa da più testate, segnale di rilevanza trasversale nel circuito culturale e dell'intrattenimento.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times Arts",
+                "CdT Società",
+                "Ticinonews Magazine"
+              ],
+              "differenze_narrative": "Il New York Times adotta un taglio più biografico e di carriera, insistendo sul peso del ruolo in 'Days of Our Lives' e sul profilo dell'attore nella TV americana. CdT e Ticinonews usano invece un'impostazione più da breaking news, sintetica e centrata su morte, età e causa del decesso, con enfasi sui titoli più popolari come 'Melrose Place' e 'Starship Troopers'."
+            }
+          ],
+          "trend": [
+            "forte centralità di istituzioni e appuntamenti culturali svizzeri e ticinesi",
+            "ampia circolazione di notizie necrologiche legate a figure note dello spettacolo internazionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da monitorare se il traguardo della Fondazione Beyeler verrà ripreso da altre testate svizzere come notizia culturale nazionale e se emergeranno ulteriori dettagli o tributi internazionali sulla morte di Patrick Muldoon.",
+          "_model_used": "openai-codex/gpt-5.4"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata geopolitica è dominata dall’inasprimento del confronto tra Stati Uniti e Iran, con un episodio navale che mette a rischio la tregua e ha ricadute regionali più ampie. In Europa spicca il voto bulgaro con l’affermazione di un profilo filorusso, mentre in Asia il Giappone accelera il riposizionamento strategico abbandonando alcuni tabù del dopoguerra.",
+          "notizie": [
+            {
+              "titolo": "Gli Stati Uniti sequestrano una nave iraniana e mettono a rischio la tregua con Teheran",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/20/usa-sequestrano-nave-iraniana-tregua-a-rischio",
+              "riassunto": "Washington ha sequestrato una nave cargo iraniana diretta verso l’Iran, facendo salire bruscamente la tensione tra i due paesi. La notizia conta perché può compromettere la fragile tregua e riaprire una fase di escalation nel Golfo, con effetti su sicurezza energetica e stabilità regionale che interessano anche l’Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Internazionale incornicia l’episodio soprattutto come minaccia politica alla tregua tra Stati Uniti e Iran, con un tono più orientato alle conseguenze diplomatiche immediate. Il New York Times adotta un taglio più tecnico e documentale, insistendo sul fatto che la nave Touska fosse già sanzionata dal Tesoro statunitense per legami con programmi d’armamento iraniani: meno enfasi sul rischio di rottura politica, più sulla base giuridico-sanzionatoria dell’azione americana."
+            },
+            {
+              "titolo": "In Bulgaria vince il fronte filorusso guidato da Rumen Radev",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/ultime-notizie/2026/04/20/bulgaria-filorusso-radev-vince-elezioni",
+              "riassunto": "Le legislative bulgare segnano una netta avanzata del campo politico vicino a Rumen Radev, presentato come figura filorussa. È una notizia rilevante perché tocca gli equilibri interni dell’Unione europea e della Nato sul fianco orientale, in un momento in cui la coesione europea resta cruciale anche per i paesi neutrali ma integrati economicamente come la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Giappone amplia l’export di armi e rompe con un pilastro del pacifismo postbellico",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/20/world/asia/japan-weapons-arms-sale-nato.html",
+              "riassunto": "Il governo giapponese guidato da Sanae Takaichi allenta i limiti storici all’esportazione di armamenti, segnando una svolta strategica di grande portata. La decisione pesa sugli equilibri asiatici e sui rapporti con Cina, Stati Uniti e Nato, ed è indicativa di una più ampia corsa al riarmo internazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rischio di escalation indiretta tra Stati Uniti e Iran attraverso sequestri, sanzioni e pressioni sui paesi della regione",
+            "Riposizionamento strategico di paesi alleati o partner dell’Occidente, tra riarmo giapponese e fragilità politica nell’Europa orientale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà cruciale capire se il sequestro della nave iraniana provocherà una risposta di Teheran o un irrigidimento americano più ampio, con possibili effetti immediati su traffico marittimo, petrolio e diplomazia europea.",
+          "_model_used": "openai-codex/gpt-5.4"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Nella giornata economica spiccano soprattutto dossier con impatto diretto sulla Svizzera: i possibili rimborsi dei dazi USA alle imprese elvetiche e i dubbi sui costi reali dei grandi progetti ferroviari federali. Sullo sfondo, tra le notizie internazionali più forti, emerge il cambio al vertice di Apple, rilanciato da più testate.",
+          "notizie": [
+            {
+              "titolo": "Dazi USA, le aziende svizzere puntano a recuperare fino a 1,5 miliardi di dollari",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schweizer-firmen-hoffen-auf-zoll-rueckzahlung-jetzt-wollen-wir-unser-geld-zurueck-id21886270.html",
+              "riassunto": "Secondo Blick, una parte dei 166 miliardi di dollari di dazi americani da restituire nel mondo potrebbe tornare anche alle imprese svizzere, per circa 1,5 miliardi. La notizia conta perché tocca direttamente la competitività delle aziende esportatrici elvetiche, anche se la procedura di rimborso tramite il portale Cape si preannuncia lunga e complessa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Progetti ferroviari svizzeri, il Controllo federale delle finanze teme costi sottostimati per miliardi",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1919530/dati-incompleti-e-stime-incerte-sui-progetti-ferroviari-costi-sottostimati-per-miliardi",
+              "riassunto": "Il Controllo federale delle finanze giudica poco affidabili dati e stime sui grandi progetti ferroviari, sollevando il rischio di sottovalutazioni miliardarie. È una notizia molto rilevante per la Svizzera perché riguarda spesa pubblica, infrastrutture strategiche e possibili pressioni future sui bilanci federali e sui tempi di realizzazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Apple cambia guida: John Ternus nuovo CEO, Tim Cook passa alla presidenza esecutiva",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/apple-nomina-john-ternus-ceo-tim-cook-e-presidente-esecutivo-431912",
+              "riassunto": "Apple avrebbe avviato una svolta di governance con la nomina di John Ternus a CEO dal 1° settembre e il passaggio di Tim Cook al ruolo di presidente esecutivo. La notizia ha peso globale per gli effetti potenziali su strategia industriale, corsa all'intelligenza artificiale e mercati tecnologici, ed è stata ripresa da più fonti internazionali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "The Economist Business",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Ticinonews adotta un taglio rapido e informativo, centrato sull'annuncio e sulla fonte Bloomberg. The Economist legge il cambio come passaggio strategico verso la trasformazione di Apple nell'era dell'AI, con enfasi sulle sfide industriali di Ternus. Blick usa un framing più narrativo e manageriale: Cook non esce davvero di scena, ma resta regista politico e strategico dietro le quinte."
+            }
+          ],
+          "trend": [
+            "forte centralità dei dossier economici con impatto diretto sulla Svizzera",
+            "transizione tecnologica e AI come chiave di lettura delle grandi aziende globali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato se emergeranno dettagli operativi sui rimborsi dei dazi alle imprese svizzere e se il dossier sui costi ferroviari provocherà reazioni politiche o richieste di revisione dei progetti federali.",
+          "_model_used": "openai-codex/gpt-5.4"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria oggi è dominata da mosse di scala industriale nell'IA: maxi-accordi infrastrutturali, uso dei modelli da parte dell'intelligence USA e segnali sempre più concreti dell'impatto dell'IA generativa sui mercati creativi. Nessuna notizia ha un impatto diretto su Svizzera o Ticino, quindi prevalgono freschezza, portata internazionale e presenza di incroci tra fonti.",
+          "notizie": [
+            {
+              "titolo": "Anthropic ottiene altri 5 miliardi da Amazon e si impegna a spendere 100 miliardi su AWS",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
+              "riassunto": "Amazon rafforza in modo massiccio la propria alleanza con Anthropic con un nuovo investimento da 5 miliardi di dollari. In cambio, Anthropic promette una spesa cloud monstre su AWS, segnale di quanto la corsa all'IA dipenda ormai da accordi verticali fra modelli, chip e data center. Conta perché consolida il duopolio infrastrutturale tra hyperscaler e grandi laboratori di IA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La NSA usa il modello Mythos di Anthropic, nonostante tensioni interne al Pentagono",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/20/nsa-spies-are-reportedly-using-anthropics-mythos-despite-pentagon-feud/",
+              "riassunto": "Secondo più ricostruzioni, l'agenzia di intelligence elettronica statunitense sta già usando Mythos, il modello più potente e riservato di Anthropic. La notizia mostra quanto rapidamente l'IA avanzata stia entrando nei flussi operativi della sicurezza nazionale americana, con implicazioni geopolitiche e di governance molto ampie.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch inquadra la vicenda come una notizia di potere istituzionale, enfatizzando la frizione con il Pentagono e il contesto politico-burocratico della difesa USA. The Decoder adotta un taglio più tecnico e diretto, sottolineando soprattutto che la NSA sta usando il modello più avanzato di Anthropic e insistendo meno sul conflitto interno tra apparati. In sintesi: TechCrunch privilegia il framing politico-strategico, The Decoder quello tecnologico-operativo."
+            },
+            {
+              "titolo": "Deezer: il 44% dei brani caricati ogni giorno è generato dall'intelligenza artificiale",
+              "fonte": "Hacker News",
+              "link": "https://techcrunch.com/2026/04/20/deezer-says-44-of-songs-uploaded-to-its-platform-daily-are-ai-generated/",
+              "riassunto": "La piattaforma musicale segnala che quasi un brano su due tra quelli caricati quotidianamente nasce da strumenti di IA. È un dato forte per l'industria culturale europea: cambia il problema della moderazione, della remunerazione dei diritti e della visibilità degli autori umani. Per un pubblico svizzero, il tema tocca da vicino musica, media e policy digitali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "integrazione sempre più stretta tra grandi modelli di IA e infrastrutture cloud hyperscale",
+            "passaggio dell'IA generativa da novità di prodotto a leva strategica per intelligence e industrie creative"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergeranno dettagli aggiuntivi sull'uso di Mythos da parte della NSA e se altri media confermeranno o problematizzeranno l'accordo Amazon-Anthropic, soprattutto sul piano antitrust e della dipendenza infrastrutturale.",
+          "_model_used": "openai-codex/gpt-5.4"
+        }
+      ]
+    },
     {
       "id": 41,
       "run_id": 74,
@@ -3869,316 +4151,6 @@
             "tensioni operative e di supporto nelle aziende AI in rapida crescita"
           ],
           "da_tenere_d_occhio": "Possibili aggiornamenti su Muse Spark (benchmark indipendenti e accessibilità in Europa/Svizzera) e sviluppi operativi di Anthropic nelle prossime 24h; inoltre monitorare reazioni regolatorie o collaborazioni locali su misure di sicurezza per minori legate al piano OpenAI.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "run_id": 58,
-      "run_time": "2026-04-09 04:45:02.006879+00:00",
-      "analyzed_at": "2026-04-09T05:03:01.590699+00:00",
-      "articles_analyzed": 151,
-      "articles_selected": 19,
-      "model_used": "openrouter/openai/gpt-5-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da questioni economiche e di sicurezza: segnali contrastanti sul mercato del lavoro, tensioni e incertezze sul fronte carburanti nonché un'allerta elevata per rischio incendi che coinvolge direttamente il territorio. Diversi articoli rilevanti sono coperti da più testate, segnale di forte attenzione pubblica.",
-          "notizie": [
-            {
-              "titolo": "Disoccupazione in calo ma restano i problemi nei pagamenti delle indennità",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/economia/la-disoccupazione-scende-al-31-in-svizzera-430954",
-              "riassunto": "A marzo il tasso di disoccupazione in Svizzera è sceso al 3,1% (-4.821 persone), segnalando un miglioramento del mercato del lavoro. Tuttavia permangono grandi disagi pratici: il nuovo sistema informatico ha provocato ritardi nei versamenti delle indennità, lasciando migliaia di disoccupati senza entrate per settimane.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino (disoccupazione)",
-                "Ticinonews Ticino (ritardi versamenti indennità)"
-              ],
-              "differenze_narrative": "Entrambi gli articoli provengono dalla stessa testata e sono complementari: il pezzo sulla disoccupazione dà un quadro statistico positivo e istituzionale, mentre quello sui ritardi enfatizza l'impatto pratico e le difficoltà individuali derivanti da problemi tecnici del sistema. Il tono del primo è neutro/informativo; il secondo è più critico verso l'implementazione del nuovo sistema e sottolinea la gravità dei disagi."
-            },
-            {
-              "titolo": "Allarme carburanti: timori di approvvigionamento, calo del petrolio e impatto sui benzinai",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/confine/benzina-esaurita-carburanti-siamo-agli-sgoccioli-430885",
-              "riassunto": "Segnalazioni di pompe con cartelli 'benzina esaurita' in alcune stazioni di Como hanno alimentato preoccupazioni sui rifornimenti; le associazioni indicano problemi logistici più che una crisi di approvvigionamento. Parallelamente, il prezzo del petrolio è crollato dopo una tregua geopolitica USA-Iran, suscitando cauto ottimismo su possibili cali al distributore, ma i benzinai ticinesi restano in difficoltà per il taglio delle accise.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino (Benzina esaurita)",
-                "Ticinonews Ticino (Crolla il petrolio)",
-                "LaRegione Ticino (benzinai lombardi presi d’assalto dai ticinesi)"
-              ],
-              "differenze_narrative": "Ticinonews segnala sia il problema locale delle pompe vuote (angolo logistico/operativo) sia il crollo del petrolio (angolo geopolitico/economico) con toni cauti e spiegazioni tecniche. LaRegione enfatizza l'impatto transfrontaliero per i ticinesi che vanno a far rifornimento in Lombardia e il problema strutturale per i benzinai locali: tono più focalizzato sulle conseguenze economiche locali e sulla rabbia/pressione sui commercianti."
-            },
-            {
-              "titolo": "Allerta incendi: in Ticino scatta il grado 4 per rischio elevato",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/rischio-incendi-elevato-in-ticino-scatta-lallerta-di-grado-4-424511",
-              "riassunto": "Le autorità cantonali hanno innalzato l'allerta a grado 4 per rischio incendi, segnalando rapida propagazione delle fiamme. Viene raccomandato di evitare fuochi all'aperto e rispettare le direttive (divieti di accensione, attenzione ai comportamenti a rischio), con implicazioni immediate per attività ricreative e gestione del territorio.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni economiche quotidiane: miglioramento statistico del lavoro vs problemi operativi nei pagamenti",
-            "Volatilità carburifera: oscillazioni internazionali dei prezzi vs difficoltà logistiche locali e impatto transfrontaliero"
-          ],
-          "da_tenere_d_occhio": "Evoluzione dei ritardi nei pagamenti delle indennità (possibili misure correttive SECO nelle prossime 24-48h) e sviluppo della situazione carburanti dopo il crollo del petrolio: se i prezzi alla pompa caleranno effettivamente e come sarà gestita la pressione sui benzinai transfrontalieri.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi le notizie di cronaca svizzera si concentrano su questioni di politica estera e sicurezza (intervento diplomatico con Israele), sulla gestione dell'energia in Svizzera (decisioni aziendali su impianti idroelettrici e preoccupazioni sul carburante) e su temi di salute pubblica e sicurezza locale. Alcuni temi internazionali con ricadute nazionali (missione Artemis, crisi in Medio Oriente) vengono ripresi da più fonti.",
-          "notizie": [
-            {
-              "titolo": "Berna convoca l'ambasciatore israeliano: ragioni e implicazioni",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/schweiz/schweizerische-intervention-israelischen-botschafter-zum-gespraech-geladen-was-bedeutet-das-1",
-              "riassunto": "Il Dipartimento federale ha invitato l'ambasciatore israeliano per un incontro collegato alla questione della pena di morte e ad altre preoccupazioni. Si tratta di un gesto diplomatico formale che segnala il coinvolgimento della Svizzera su temi di diritti umani e stabilità internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Repower ferma la centrale idroelettrica Chlus e punta su batterie in Valposchiavo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/repower-dice-stop-alla-centrale-idroelettrica-chlus-424525",
-              "riassunto": "Repower annuncia lo stop alla centrale Chlus e la costruzione di una batteria di accumulo presso la centrale di Robbia in Valposchiavo per immagazzinare energia in eccesso. La misura segnala una riorientazione degli investimenti locali in risposta a esigenze di flessibilità e mercato.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti riportano lo stesso annuncio e gli stessi dettagli tecnici; CdT fornisce contesto leggermente più ampio sul perché della decisione, mentre Ticinonews si concentra sull'impatto locale in Valposchiavo. Nessun framing politico marcato."
-            },
-            {
-              "titolo": "Situazione carburante: Swiss monitora, prezzi alla pompa caleranno solo lentamente",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/non-siamo-ancora-in-emergenza-ma-stiamo-ragionando-sul-carburante-423977",
-              "riassunto": "La gestione del carburante resta sotto osservazione: spazi aerei chiusi e rincari del cherosene impongono valutazioni quotidiane per Swiss; il TCS avverte che i prezzi della benzina scenderanno ma con lentezza nonostante sviluppi geopolitici recenti. Possibili ripercussioni sui consumatori e sui trasporti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT offre reportage operativo su decisioni interne a Swiss e rischi logistici, mentre l'articolo ripreso da Ticinonews si concentra sulla previsione dei prezzi e sul commento del TCS. Entrambe le fonti concordano su impatti graduali; Ticinonews enfatizza l'aspetto economico per i consumatori."
-            },
-            {
-              "titolo": "Allarme alimentare: batteri pericolosi nel quark di latte intero crudo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/batteri-nocivi-per-la-salute-nel-quark-di-latte-intero-crudo-424523",
-              "riassunto": "L'Ufficio federale della sicurezza alimentare e di veterinaria segnala la potenziale presenza di batteri nocivi in un lotto di quark prodotto con latte intero crudo e raccomanda di non consumarlo. È un avviso di salute pubblica con impatto diretto sui consumatori svizzeri.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Problemi nella missione Artemis II: avvertimento svizzero sui rischi di rientro e dettagli tecnici",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/dialog/rueckkehr-der-artemis-2-crew-claude-nicollier-warnt-vor-risiken-bei-wiedereintritt",
-              "riassunto": "Claude Nicollier mette in guardia sui rischi legati al rientro dell'equipaggio di Artemis II, evidenziando complessità tecniche e pericoli del rientro atmosferico. La notizia è seguita anche da media stranieri che sottolineano altri problemi tecnici a bordo.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "20 Minutes Suisse"
-              ],
-              "differenze_narrative": "SRF adotta un approccio tecnico e di rischio (focus sul commento dell'astronauta svizzero), mentre 20 Minutes evidenzia un problema pratico e più 'sensazionalistico' delle toilette a bordo. SRF dà una prospettiva di sicurezza/esperienza svizzera; 20 Minutes punta su un particolare curioso e immediatamente riconoscibile dal pubblico."
-            }
-          ],
-          "trend": [
-            "Gestione e sicurezza dell'approvvigionamento energetico (centrali, carburanti, accumulo)",
-            "Impegni diplomatici e implicazioni per la neutralità svizzera (contatti con Israele, crisi mediorientali)"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle decisioni sul carburante nelle prossime 24h (possibili misure operative di Swiss o nuove comunicazioni ufficiali) e ulteriori sviluppi sulla posizione diplomatica della Svizzera rispetto al conflitto israelo-palestinese (eventuali dichiarazioni ufficiali o reazioni).",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Giornata culturale con forte attenzione al panorama ticinese: festival e rassegne locali occupano la scena (ChiassoLetteraria, Visions du Réel, eventi a Massagno). Tra le notizie anche temi internazionali e di interesse generale, ma con minor rilevanza locale.",
-          "notizie": [
-            {
-              "titolo": "Emilie Bujès lascia la direzione artistica di Visions du Réel: partirà a fine luglio",
-              "fonte": "LaRegione",
-              "link": "https://www.laregione.ch/culture/culture/1916762/bujes-du-visions-reel-festival-emilie-luglio",
-              "riassunto": "Emilie Bujès, direttrice artistica del festival del cinema Visions du Réel di Nyon, annuncia l'uscita dal ruolo a fine luglio per trasferirsi al Geneva International Film Festival dal 1° agosto, dedicandosi a fiction, serie TV e digitale. La direzione artistica del festival di Nyon sarà messa a concorso.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione (1916762)",
-                "LaRegione (1916923)"
-              ],
-              "differenze_narrative": "Entrambi gli articoli della stessa testata riportano la notizia in termini simili e fattuali. Un pezzo pone maggiore enfasi sul passaggio della Bujès al festival ginevrino e sulle sue nuove aree d'interesse (fiction, serie TV, digitale), l'altro si concentra più sul fatto dell'abbandono della direzione e sulle modalità del passaggio (concorso per il ruolo). Toni entrambe neutri; non emergono framing politici."
-            },
-            {
-              "titolo": "ChiassoLetteraria torna per la ventesima edizione: ospiti internazionali e focus sul tema 'Venti'",
-              "fonte": "LaRegione",
-              "link": "https://www.laregione.ch/culture/culture/1916922/uson-vittorio-clara-ospiti-chiassoletteraria",
-              "riassunto": "Apre la ventesima edizione di ChiassoLetteraria, intitolata 'Venti', con ospiti come Vittorio Gallese e Clara Usón. L'evento è un appuntamento culturale rilevante per il Ticino e celebra il traguardo della rassegna con un programma di incontri e dibattiti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Omaggio a De André e Guccini: spettacolo il 15 aprile a Massagno",
-              "fonte": "LaRegione",
-              "link": "https://www.laregione.ch/culture/musica/1916832/andre-guccini-fabrizio-anni-spettacolo",
-              "riassunto": "Lo spettacolo 'Genova, l’Emilia e l’America' porterà sullo stesso palco canzoni di Fabrizio De André e Francesco Guccini il 15 aprile a Massagno, con una band che include musicisti di rilievo come Ellade Bandini e Flaco Biondini. Evento di interesse locale per il pubblico ticinese amante della canzone d'autore italiana.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "rinnovamenti nella direzione dei festival cinematografici svizzeri",
-            "rilancio e celebrazione di rassegne culturali locali (Chiasso, Massagno)"
-          ],
-          "da_tenere_d_occhio": "Seguire nelle prossime 24h eventuali sviluppi sulla successione a Visions du Réel (bandi, candidature) e aggiornamenti sul programma completo della ventesima ChiassoLetteraria.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Giornata dominata dalle notizie sul cessate il fuoco e le trattative tra Stati Uniti e Iran, con ripercussioni immediate sul traffico marittimo nello Stretto di Hormuz e reazioni diplomatiche internazionali. Secondo filone rilevante: tensioni nella relazione transatlantica, con il presidente Trump che mette in dubbio l'impegno Usa nella NATO e annuncia possibili ridispiegamenti di truppe.",
-          "notizie": [
-            {
-              "titolo": "Tregua fragile tra Stati Uniti e Iran: mediatori, chiusura di Hormuz e mobilitazione internazionale",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/08/macron-15-paesi-mobilitati-per-la-ripresa-del-traffico-a-hormuz_8d00c531-357c-4d39-b3fd-f188363e4276.html",
-              "riassunto": "Negli ultimi giorni si sono intensificate mediazioni internazionali per consolidare un cessate il fuoco tra Iran e Stati Uniti: la mediazione pakistana ha evitato un'immediata escalation, ma la tregua resta instabile. L'Iran ha segnalato la chiusura dello Stretto di Hormuz con navi costrette a invertire rotta, mentre Macron annuncia la mobilitazione di 15 Paesi per garantire la ripresa del traffico marittimo in coordinamento con l'Iran. Reazioni diplomatiche contrastanti (Mosca, Israele, politici iraniani) segnalano che la situazione resta fluida e a rischio di ripresa delle ostilità.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo (Macron mobilita 15 Paesi)",
-                "ANSA Mondo (Media Iran: Hormuz chiuso)",
-                "Internazionale (analisi cessate il fuoco)",
-                "ANSA Mondo (Casa Bianca: inviati a Islamabad)",
-                "ANSA Mondo (Netanyahu, Tajani, Ghalibaf, Lavrov)"
-              ],
-              "differenze_narrative": "Le fonti occidentali (ANSA riferendo dichiarazioni di Macron e della Casa Bianca) enfatizzano sforzi diplomatici e cooperazione internazionale per riaprire il traffico commerciale e stabilizzare la regione; gli organi iraniani riportano posture più aggressive (chiusura di Hormuz) sottolineando capacità di pressione sul traffico petrolifero. Russia (attraverso citazioni di Lavrov e portavoce) presenta un framing più pacificatore, insistendo sulla soluzione diplomatica e criticando opzioni militari; Israele e figure interne iraniane espongono invece toni più bellicosi o di contestazione rispetto ai termini dell'accordo (Netanyahu pronto a riprendere guerra, Ghalibaf denuncia violazioni). Internazionale fornisce analisi sulle fragilità della tregua e sulle incognite future, con tono più interpretativo rispetto all'informazione fattuale di ANSA."
-            },
-            {
-              "titolo": "Trump valuta il ritiro di truppe da Paesi NATO poco collaborativi e riposizionamenti",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/08/wsj-trump-vuole-ritirare-truppe-da-paesi-nato-poco-collaborativi-sulliran_f9f1e121-6625-4dfb-9d44-53a2b62a8a8b.html",
-              "riassunto": "Secondo ricostruzioni giornalistiche e dichiarazioni della Casa Bianca, il presidente Trump sta considerando il ritiro di truppe da Paesi NATO giudicati poco collaborativi nella crisi con l'Iran, per ridislocarle in nazioni che hanno offerto sostegno. La Casa Bianca conferma che il tema sarà discusso con leader europei (incluso Rutte). La mossa potrebbe incrinare ulteriormente relazioni transatlantiche e avere implicazioni per la sicurezza collettiva in Europa.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo (WSJ su ritiro truppe)",
-                "ANSA Mondo (Casa Bianca: Trump pensa al ritiro dalla NATO)",
-                "ANSA Mondo (Casa Bianca: colloqui alto livello con Cina su Iran)"
-              ],
-              "differenze_narrative": "Il reportage del WSJ, rilanciato da ANSA, presenta l'azione come una strategia concreta e tattica di pressione per premiare alleati disponibili; le comunicazioni ufficiali della Casa Bianca tendono a sfumare l'ipotesi come 'valutazione' e sottolineano che ci saranno consultazioni con partner (tono più cautelativo). Alcune fonti anglosassoni enfatizzano l'impatto destabilizzante sull'Alleanza, mentre i rilanci istituzionali mirano a normalizzare il dibattito come parte di negoziati più ampi sulla crisi Iraniana."
-            }
-          ],
-          "trend": [
-            "Rischio di interruzione del traffico petrolifero nello Stretto di Hormuz e impatto sui prezzi dell'energia",
-            "Tensioni transatlantiche: rinegoziazione degli impegni militari Usa verso la NATO"
-          ],
-          "da_tenere_d_occhio": "Evoluzione dell'accesso commerciale nello Stretto di Hormuz (notizie su riaperture o ulteriori chiusure) e sviluppi diplomatici nelle prossime 24h, in particolare i risultati dei colloqui di inviati Usa a Islamabad e le reazioni europee all'eventuale proposta di ritiro/trassferimento di truppe Usa.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La selezione odierna mette al centro due temi con impatto diretto per il pubblico svizzero-italofono: il dibattito nazionale sulla vendita di aziende svizzere all’estero e una rivelazione mediatico‑finanziaria sul creatore del Bitcoin. In evidenza anche la pressione geopolitica sui mercati energetici, tema di portata internazionale che può riflettersi sui prezzi e sui trasporti aerei.",
-          "notizie": [
-            {
-              "titolo": "Proteste in Svizzera dopo la vendita di Aromat agli USA: cresce la mobilitazione",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1916758/aromat-svizzera-patria-svendita-svizzero",
-              "riassunto": "La cessione dell’azienda alimentare Aromat a investitori statunitensi ha scatenato proteste e una petizione con migliaia di firme: si parla di perdita di controllo strategico e di identità economica. La vicenda alimenta il dibattito sul ruolo degli acquirenti esteri nelle imprese svizzere.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il New York Times sostiene che l'inventore del Bitcoin sarebbe il britannico Adam Back",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/linventore-del-bitcoin-e-il-britannico-adam-back-431017",
-              "riassunto": "Il New York Times, secondo Ticinonews, ha pubblicato un'analisi documentale che indica Adam Back come possibile creatore di Bitcoin (Satoshi Nakamoto). La notizia rilancia il dibattito su proprietà intellettuale, storia della criptovaluta e implicazioni legali/di mercato.",
-              "rilevanza": "media",
-              "incrocio": false
-            },
-            {
-              "titolo": "Tensione geopolitica continua: conflitto nel Golfo e prezzi energetici rimangono sotto pressione",
-              "fonte": "Il Sole 24 Ore Finanza / The Economist Finance",
-              "link": "https://www.ilsole24ore.com/art/aerei-tensione-rimane-il-cessate-fuoco-AIVFoWOC\nhttps://www.economist.com/finance-and-economics/2026/04/08/the-third-gulf-war-will-scar-energy-markets-for-a-long-time-yet",
-              "riassunto": "Analisti segnalano che i rischi residui e i danni alle infrastrutture nella regione del Golfo manterranno elevata la volatilità dei mercati energetici e influenzeranno i costi del carburante per il trasporto aereo, nonostante temporanei cessate il fuoco.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Finanza",
-                "The Economist Finance"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore si concentra sull'impatto immediato sui prezzi del carburante per aerei e sulle conseguenze pratiche per il trasporto, con un tono orientato al mercato domestico/industriale. The Economist adotta un quadro più sistemico e geopolitico: valuta rischi a medio-lungo termine derivanti da infrastrutture danneggiate e rischio residuo, enfatizzando le implicazioni globali sui mercati energetici. Il Sole è più operativo e focalizzato su effetti pratici; The Economist offre analisi strategica e scenari prolungati."
-            }
-          ],
-          "trend": [
-            "Cessioni di aziende svizzere a investitori esteri e reazioni pubbliche/nazionaliste",
-            "Persistente rischio geopolitico che mantiene alti prezzi energetici e volatilità nei trasporti",
-            "Rinnovato interesse mediatico e legale sull'origine del Bitcoin e sulle figure chiave nelle crypto"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle proteste e delle iniziative politiche relative alla vendita di Aromat; possibili sviluppi o smentite sulla paternità del Bitcoin da parte di Adam Back; variazioni dei prezzi del carburante e annunci sulle rotte/servizi aerei nelle prossime 24 ore legati alla situazione nel Golfo.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la copertura si concentra su nuovi grandi modelli di frontiera (Meta Muse Spark), questioni di sicurezza e responsabilità legate all’uso dell’AI (OpenAI Child Safety Blueprint) e problemi infrastrutturali e di supporto in aziende AI emergenti (Anthropic). Non ci sono notizie con impatto diretto esplicito sulla Svizzera/Ticino, perciò la selezione privilegia eventi di portata internazionale e storie riprese da più fonti.",
-          "notizie": [
-            {
-              "titolo": "Meta lancia Muse Spark, il suo primo modello di frontiera senza pesi aperti",
-              "fonte": "The Decoder (e Meta blog via Hacker News)",
-              "link": "https://the-decoder.com/metas-muse-spark-is-its-first-frontier-model-and-its-first-without-open-weights/",
-              "riassunto": "Meta ha annunciato Muse Spark, definito come il primo modello di frontiera di Meta e il primo rilasciato senza pesi aperti. Test indipendenti riportano che si sta riducendo il divario rispetto a OpenAI, Anthropic e Google. L'annuncio è anche rilanciato sul blog ufficiale di Meta e amplificato dalla comunità tech.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "Meta blog (rilanciato su Hacker News)"
-              ],
-              "differenze_narrative": "The Decoder adotta un tono analitico e comparativo, mette in evidenza test indipendenti e la strategia di non aprire i pesi; il post ufficiale di Meta è promozionale, enfatizza capacità e roadmap senza discutere limitazioni o implicazioni di sicurezza. Hacker News amplifica reazioni della community (punti, commenti), spesso critiche o tecniche."
-            },
-            {
-              "titolo": "OpenAI pubblica un nuovo 'Child Safety Blueprint' per contrastare lo sfruttamento sessuale minorile legato all'AI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/08/openai-releases-a-new-safety-blueprint-to-address-the-rise-in-child-sexual-exploitation/",
-              "riassunto": "OpenAI ha diffuso un piano di sicurezza mirato a ridurre l'uso dell'intelligenza artificiale per fini di sfruttamento sessuale di minori. Il blueprint include misure tecniche e policy per mitigare rischi emergenti legati alla generazione di contenuti, con implicazioni legali e operative per piattaforme che distribuiscono modelli generativi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Anthropic assume l'ex responsabile AI di Azure mentre emergono problemi di supporto e fatturazione",
-              "fonte": "The Decoder (assunzione) e Hacker News (lamentele utenti)",
-              "link": "https://the-decoder.com/anthropic-hires-microsofts-azure-ai-chief-to-fix-its-infrastructure-problems/",
-              "riassunto": "Anthropic ha ingaggiato Eric Boyd, ex dirigente Microsoft Azure, per migliorare la propria infrastruttura dopo problemi operativi. In parallelo la community su Hacker News e post personali segnalano difficoltà di supporto e ritardi nelle risposte ai clienti, suggerendo che i problemi persistono a livello commerciale e operativo.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "Hacker News (thread su problemi di fatturazione/supporto)"
-              ],
-              "differenze_narrative": "The Decoder presenta la notizia come mossa strategica per risolvere lacune infrastrutturali, con focus aziendale e fonti (Bloomberg). Hacker News e post individuali danno spazio all'esperienza utente e alla frustrazione pratica (supporto assente, fatturazione), enfatizzando impatto sulla clientela e la percezione pubblica piuttosto che la soluzione dirigenziale."
-            }
-          ],
-          "trend": [
-            "Competizione tra grandi aziende tech sul rilascio di modelli di frontiera non open-weight (strategia difensiva e PR)",
-            "Aumento di iniziative di safety e policy per mitigare abusi dell'AI (child safety, contenuti non-consensuali)"
-          ],
-          "da_tenere_d_occhio": "Monitorare nelle prossime 24h i benchmark indipendenti su Muse Spark, eventuali reazioni regolatorie o partnership europee (possibili implicazioni per i fornitori cloud in Svizzera) e l'efficacia delle misure di OpenAI nel prevenire abusi: segnalazioni di implementazione concreta e test di mitigazione saranno indicativi.",
           "_model_used": "openrouter/openai/gpt-5-mini"
         }
       ]
