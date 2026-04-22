@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-22T03:00:06.173568Z",
+  "generated_at": "2026-04-22T03:10:05.097133Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
-    "latest_ver": "2026.4.20",
+    "latest_ver": "2026.4.21",
     "update_available": true,
     "gateway_running": true,
     "gateway_port": 18789
@@ -80,7 +80,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 3h",
+      "next": "in 2h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -116,7 +116,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 8h",
+      "next": "in 7h",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
