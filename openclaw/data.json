@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T05:50:04.980831Z",
+  "generated_at": "2026-04-22T06:00:05.740869Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -80,7 +80,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 10min",
+      "next": "in 0min",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -161,7 +161,7 @@
       "schedule": "one-shot: 2026-04-22T07:00:00.000Z",
       "target": "main",
       "status": "idle",
-      "next": "in 1h",
+      "next": "in 59min",
       "note": "\ud83d\udd14 **Promemoria \u2014 22 Apr 09:00**\n\n\u2022 Controllare mail\n\u2022 Chiamare [?]\n\u2022 Scrivere...",
       "enabled": true
     }
