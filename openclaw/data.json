@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T19:10:04.534806Z",
+  "generated_at": "2026-04-23T19:20:04.728020Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 54min",
+      "next": "in 44min",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
