@@ -444,6 +444,13 @@
           "url": "https://www.srf.ch/kultur/bnf/rss/454",
           "lingua": "de",
           "enabled": true
+        },
+        {
+          "nome": "BBC",
+          "tipo": "rss",
+          "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+          "lingua": "en",
+          "enabled": true
         }
       ]
     },
