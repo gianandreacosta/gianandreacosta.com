@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 Admin — Fonti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      🛠️ <span>Rassegna</span>
+      <span class="badge-admin">ADMIN</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="/admin/" class="nav-btn">⬅ Hub</a>
+      <a href="/admin/fonti.html" class="nav-btn active">📰 Fonti</a>
+      <a href="#" class="nav-btn disabled">🧠 Analisi</a>
+      <a href="#" class="nav-btn disabled">⚙️ Impostazioni</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="api-status" class="api-status">…</span>
+    </div>
+  </div>
+
+  <div id="sync-banner" style="display:none;"></div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">📰 Fonti</div>
+        <div id="counts" style="font-size:0.8rem;color:var(--text-muted);">caricamento…</div>
+      </div>
+      <button class="btn primary" onclick="openAddModal()">+ Aggiungi fonte</button>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label>Categoria</label>
+        <select id="f-cat" onchange="renderTable()"><option value="">tutte</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Tipo</label>
+        <select id="f-tipo" onchange="renderTable()">
+          <option value="">tutti</option>
+          <option value="rss">rss</option>
+          <option value="scrape">scrape</option>
+          <option value="scrape_js">scrape_js</option>
+          <option value="cdt">cdt</option>
+          <option value="rsi">rsi</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Lingua</label>
+        <select id="f-lang" onchange="renderTable()">
+          <option value="">tutte</option>
+          <option value="it">it</option>
+          <option value="de">de</option>
+          <option value="fr">fr</option>
+          <option value="en">en</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Stato</label>
+        <select id="f-enabled" onchange="renderTable()">
+          <option value="">tutti</option>
+          <option value="yes">attive</option>
+          <option value="no">disattive</option>
+        </select>
+      </div>
+      <div class="filter-group" style="flex:1;min-width:180px;">
+        <label>Cerca</label>
+        <input type="text" id="f-search" placeholder="nome o url…" oninput="renderTable()">
+      </div>
+    </div>
+
+    <div id="table-wrap"><div class="loading"><span class="spinner"></span> Caricamento fonti…</div></div>
+  </div>
+
+</div>
+
+<!-- Modal: Aggiungi/Modifica fonte -->
+<div class="modal-overlay" id="source-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="source-modal-title">Aggiungi fonte</div>
+      <button class="modal-close" onclick="Modal.close('source-modal')">×</button>
+    </div>
+    <div id="source-modal-error" style="display:none;" class="banner error"></div>
+    <div class="form-group">
+      <label>Categoria</label>
+      <select id="s-cat"></select>
+    </div>
+    <div class="form-group">
+      <label>Nome *</label>
+      <input type="text" id="s-nome" placeholder="es. Corriere della Sera Mondo">
+    </div>
+    <div class="form-group">
+      <label>Tipo *</label>
+      <select id="s-tipo">
+        <option value="rss">rss</option>
+        <option value="scrape">scrape</option>
+        <option value="scrape_js">scrape_js</option>
+        <option value="cdt">cdt</option>
+        <option value="rsi">rsi</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>URL *</label>
+      <input type="url" id="s-url" placeholder="https://…/rss.xml">
+    </div>
+    <div class="form-group">
+      <label>Lingua *</label>
+      <select id="s-lingua">
+        <option value="it">it</option>
+        <option value="de">de</option>
+        <option value="fr">fr</option>
+        <option value="en">en</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Sezione (opzionale, per tipo cdt)</label>
+      <input type="text" id="s-sezione" placeholder="es. ticino, economia">
+    </div>
+    <div class="form-group">
+      <label>User-Agent (opzionale)</label>
+      <input type="text" id="s-ua" placeholder="vuoto = default">
+    </div>
+    <div class="form-group" id="s-enabled-wrap" style="display:none;">
+      <label>Attiva</label>
+      <label class="toggle">
+        <input type="checkbox" id="s-enabled">
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="Modal.close('source-modal')">Annulla</button>
+      <button class="btn" onclick="testFromForm()">🧪 Testa URL</button>
+      <button class="btn primary" id="s-save-btn" onclick="saveSourceFromForm()">Salva</button>
+    </div>
+    <div id="s-test-result"></div>
+  </div>
+</div>
+
+<!-- Modal: Test feed risultato esteso (quando lanciato da tabella) -->
+<div class="modal-overlay" id="test-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">🧪 Test feed</div>
+      <button class="modal-close" onclick="Modal.close('test-modal')">×</button>
+    </div>
+    <div id="test-modal-body"><div class="loading"><span class="spinner"></span> Test in corso…</div></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="Modal.close('test-modal')">Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<script src="lib/api.js"></script>
+<script src="lib/components.js"></script>
+<script>
+
+let STATE = {
+  sources: [],
+  categories: [],
+  editing: null,  // null = add mode, {cat, slug} = edit mode
+};
+
+async function init() {
+  try { await ensureAuth(); } catch { return; }
+  renderApiStatus();
+  await loadAll();
+  await renderSyncBanner();
+}
+
+async function loadAll() {
+  try {
+    const [sources, cats] = await Promise.all([Api.listSources(), Api.listCategories()]);
+    STATE.sources = sources;
+    STATE.categories = cats;
+    populateCategorySelects();
+    renderTable();
+  } catch (e) {
+    document.getElementById("table-wrap").innerHTML =
+      `<div class="banner error">Errore caricamento: ${escHtml(e.message)}</div>`;
+  }
+}
+
+function populateCategorySelects() {
+  const filter = document.getElementById("f-cat");
+  const modal = document.getElementById("s-cat");
+  const opts = STATE.categories.map(c =>
+    `<option value="${escHtml(c.key)}">${escHtml(c.emoji)} ${escHtml(c.nome)} (${c.n_fonti})</option>`
+  ).join("");
+  filter.innerHTML = '<option value="">tutte le categorie</option>' + opts;
+  modal.innerHTML = opts;
+}
+
+async function renderSyncBanner() {
+  try {
+    const configs = await Api.listConfigs();
+    const fonti = configs.find(c => c.name === "rassegna_fonti.json");
+    const banner = document.getElementById("sync-banner");
+    if (fonti && !fonti.in_sync) {
+      banner.style.display = "block";
+      banner.innerHTML = `
+        <div class="banner">
+          ◆ <strong>Shadow fuori sync</strong> — ci sono modifiche pendenti rispetto al live della V1. Il cutover è manuale e non è ancora stato eseguito.
+        </div>`;
+    } else {
+      banner.style.display = "none";
+    }
+  } catch {}
+}
+
+function applyFilters(sources) {
+  const cat = document.getElementById("f-cat").value;
+  const tipo = document.getElementById("f-tipo").value;
+  const lang = document.getElementById("f-lang").value;
+  const en = document.getElementById("f-enabled").value;
+  const q = document.getElementById("f-search").value.trim().toLowerCase();
+  return sources.filter(s => {
+    if (cat && s.category_key !== cat) return false;
+    if (tipo && s.tipo !== tipo) return false;
+    if (lang && s.lingua !== lang) return false;
+    if (en === "yes" && !s.enabled) return false;
+    if (en === "no" && s.enabled) return false;
+    if (q && !(s.nome.toLowerCase().includes(q) || s.url.toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+
+function renderTable() {
+  const wrap = document.getElementById("table-wrap");
+  const filtered = applyFilters(STATE.sources);
+  const byCat = {};
+  STATE.categories.forEach(c => byCat[c.key] = c);
+
+  document.getElementById("counts").textContent =
+    `${filtered.length} / ${STATE.sources.length} fonti · ${STATE.categories.length} categorie`;
+
+  if (filtered.length === 0) {
+    wrap.innerHTML = '<div class="loading">Nessuna fonte per questi filtri.</div>';
+    return;
+  }
+
+  const rows = filtered.map(s => {
+    const c = byCat[s.category_key] || { emoji: "", nome: s.category_key };
+    return `<tr>
+      <td>${escHtml(c.emoji)} <span style="color:var(--text-muted);font-size:0.75rem;">${escHtml(c.nome)}</span></td>
+      <td><strong>${escHtml(s.nome)}</strong></td>
+      <td><span class="badge badge-${escHtml(s.tipo)}">${escHtml(s.tipo)}</span></td>
+      <td><span class="badge badge-lang">${escHtml(s.lingua)}</span></td>
+      <td class="url-cell"><a href="${escHtml(s.url)}" target="_blank" rel="noopener">${escHtml(s.url)}</a></td>
+      <td>
+        <label class="toggle">
+          <input type="checkbox" ${s.enabled ? "checked" : ""} onchange="toggleSrc('${escHtml(s.category_key)}','${escHtml(s.slug)}')">
+          <span class="toggle-slider"></span>
+        </label>
+      </td>
+      <td class="actions">
+        <button class="btn small" onclick="testFromRow('${escHtml(s.category_key)}','${escHtml(s.slug)}')">🧪</button>
+        <button class="btn small" onclick="openEditModal('${escHtml(s.category_key)}','${escHtml(s.slug)}')">✏️</button>
+      </td>
+    </tr>`;
+  }).join("");
+
+  wrap.innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Cat.</th><th>Nome</th><th>Tipo</th><th>Ling.</th><th>URL</th><th>Attiva</th><th>Azioni</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+async function toggleSrc(cat, slug) {
+  try {
+    const r = await Api.toggleSource(cat, slug);
+    Toast.success(`${r.nome}: ${r.enabled ? "attivata" : "disattivata"}`);
+    // aggiorna in-memory
+    const idx = STATE.sources.findIndex(s => s.category_key === cat && s.slug === slug);
+    if (idx >= 0) STATE.sources[idx] = r;
+    renderSyncBanner();
+  } catch (e) {
+    Toast.error(`Errore: ${e.message}`);
+    renderTable();  // ripristina checkbox
+  }
+}
+
+function openAddModal() {
+  STATE.editing = null;
+  document.getElementById("source-modal-title").textContent = "Aggiungi fonte";
+  document.getElementById("s-enabled-wrap").style.display = "none";
+  document.getElementById("source-modal-error").style.display = "none";
+  document.getElementById("s-nome").value = "";
+  document.getElementById("s-tipo").value = "rss";
+  document.getElementById("s-url").value = "";
+  document.getElementById("s-lingua").value = "it";
+  document.getElementById("s-sezione").value = "";
+  document.getElementById("s-ua").value = "";
+  document.getElementById("s-cat").disabled = false;
+  document.getElementById("s-test-result").innerHTML = "";
+  Modal.open("source-modal");
+}
+
+function openEditModal(cat, slug) {
+  const src = STATE.sources.find(s => s.category_key === cat && s.slug === slug);
+  if (!src) return;
+  STATE.editing = { cat, slug };
+  document.getElementById("source-modal-title").textContent = `Modifica: ${src.nome}`;
+  document.getElementById("source-modal-error").style.display = "none";
+  document.getElementById("s-cat").value = cat;
+  document.getElementById("s-cat").disabled = true;
+  document.getElementById("s-nome").value = src.nome;
+  document.getElementById("s-tipo").value = src.tipo;
+  document.getElementById("s-url").value = src.url;
+  document.getElementById("s-lingua").value = src.lingua;
+  document.getElementById("s-sezione").value = src.sezione || "";
+  document.getElementById("s-ua").value = src.user_agent || "";
+  document.getElementById("s-enabled").checked = src.enabled;
+  document.getElementById("s-enabled-wrap").style.display = "block";
+  document.getElementById("s-test-result").innerHTML = "";
+  Modal.open("source-modal");
+}
+
+function formBody() {
+  return {
+    nome: document.getElementById("s-nome").value.trim(),
+    tipo: document.getElementById("s-tipo").value,
+    url: document.getElementById("s-url").value.trim(),
+    lingua: document.getElementById("s-lingua").value,
+    sezione: document.getElementById("s-sezione").value.trim() || null,
+    user_agent: document.getElementById("s-ua").value.trim() || null,
+  };
+}
+
+async function saveSourceFromForm() {
+  const body = formBody();
+  const err = document.getElementById("source-modal-error");
+  err.style.display = "none";
+  if (!body.nome || !body.url) {
+    err.textContent = "Nome e URL sono obbligatori.";
+    err.style.display = "block";
+    return;
+  }
+  const btn = document.getElementById("s-save-btn");
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Salvo…';
+  try {
+    if (STATE.editing) {
+      body.enabled = document.getElementById("s-enabled").checked;
+      await Api.updateSource(STATE.editing.cat, STATE.editing.slug, body);
+      Toast.success("Fonte aggiornata");
+    } else {
+      const cat = document.getElementById("s-cat").value;
+      await Api.createSource(cat, body);
+      Toast.success("Fonte aggiunta");
+    }
+    Modal.close("source-modal");
+    await loadAll();
+    renderSyncBanner();
+  } catch (e) {
+    err.textContent = "Errore: " + e.message;
+    err.style.display = "block";
+  } finally {
+    btn.disabled = false; btn.textContent = "Salva";
+  }
+}
+
+async function testFromForm() {
+  const body = formBody();
+  const box = document.getElementById("s-test-result");
+  if (!body.url) {
+    box.innerHTML = '<div class="test-result error">URL mancante</div>';
+    return;
+  }
+  box.innerHTML = '<div class="test-result"><span class="spinner"></span> Test in corso…</div>';
+  try {
+    const r = await Api.testFeed({ url: body.url, tipo: body.tipo, user_agent: body.user_agent });
+    box.innerHTML = renderTestResult(r);
+  } catch (e) {
+    box.innerHTML = `<div class="test-result error"><h4>❌ Errore</h4>${escHtml(e.message)}</div>`;
+  }
+}
+
+async function testFromRow(cat, slug) {
+  const src = STATE.sources.find(s => s.category_key === cat && s.slug === slug);
+  if (!src) return;
+  const body = document.getElementById("test-modal-body");
+  body.innerHTML = '<div class="loading"><span class="spinner"></span> Test in corso…</div>';
+  Modal.open("test-modal");
+  try {
+    const r = await Api.testFeed({ url: src.url, tipo: src.tipo, user_agent: src.user_agent });
+    body.innerHTML = `<p style="margin-bottom:0.5rem;font-size:0.85rem;"><strong>${escHtml(src.nome)}</strong><br><code style="color:var(--text-muted);">${escHtml(src.url)}</code></p>` + renderTestResult(r);
+  } catch (e) {
+    body.innerHTML = `<div class="test-result error"><h4>❌ Errore</h4>${escHtml(e.message)}</div>`;
+  }
+}
+
+function renderTestResult(r) {
+  const cls = r.ok ? "ok" : "error";
+  const icon = r.ok ? "✅" : "❌";
+  let titles = "";
+  if (r.first_titles && r.first_titles.length > 0) {
+    titles = "<ul>" + r.first_titles.map(t => "<li>" + escHtml(t) + "</li>").join("") + "</ul>";
+  }
+  return `<div class="test-result ${cls}">
+    <h4>${icon} ${r.ok ? "OK" : "Fallito"}</h4>
+    <div>HTTP ${r.status_code ?? "—"} · ${r.entries_found ?? 0} entries · ${r.response_time_ms ?? "—"}ms</div>
+    ${r.error ? `<div style="color:var(--red);margin-top:0.3rem;">${escHtml(r.error)}</div>` : ""}
+    ${titles}
+  </div>`;
+}
+
+init();
+</script>
+
+</body>
+</html>
