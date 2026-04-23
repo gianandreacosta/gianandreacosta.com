@@ -23,6 +23,9 @@
     .nav-btn:hover { background: #27272a; color: #e4e4e7; }
     .nav-btn-accent { background: #1e1b4b; border-color: #312e81; color: #a5b4fc; }
     .nav-btn-accent:hover { background: #312e81; color: #c7d2fe; }
+    .nav-btn-admin { background: #451a03; border-color: #b45309; color: #fbbf24; }
+    .nav-btn-admin:hover { background: #78350f; color: #fcd34d; }
+    .nav-left { display: flex; gap: 0.5rem; }
 
     /* Header */
     .header { text-align: center; margin-bottom: 1.5rem; }
@@ -106,7 +109,10 @@
 <body>
   <div class="container">
     <nav class="top-nav">
-      <a href="/" class="nav-btn">&#x1f3e0; Home</a>
+      <div class="nav-left">
+        <a href="/" class="nav-btn">&#x1f3e0; Home</a>
+        <a href="/admin/" class="nav-btn nav-btn-admin">&#x1f6e0;&#xfe0f; Admin</a>
+      </div>
       <a href="analisi.html" class="nav-btn nav-btn-accent">&#x1f9e0; Analisi AI &#x2192;</a>
     </nav>
     <div class="header">
