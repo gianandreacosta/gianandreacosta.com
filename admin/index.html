@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛠️ Admin Rassegna</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      🛠️ <span>Rassegna</span>
+      <span class="badge-admin">ADMIN</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="/" class="nav-btn">🏠 Home</a>
+      <a href="/dashboard/" class="nav-btn">📊 Rassegna</a>
+      <a href="/dashboard/analisi.html" class="nav-btn">🧠 Analisi</a>
+      <a href="/admin/" class="nav-btn active">🛠️ Admin</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="api-status" class="api-status">…</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">⚡ Stato sistema</div>
+    <div id="status-box" class="loading"><span class="spinner"></span> Caricamento…</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📂 Config files — shadow vs live</div>
+    <div id="configs-box" class="loading"><span class="spinner"></span> Caricamento…</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🚀 Strumenti</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0.75rem;">
+
+      <a href="/admin/fonti.html" class="card" style="margin:0;text-decoration:none;color:inherit;border-left:3px solid var(--accent);">
+        <div style="font-size:1.5rem;margin-bottom:0.3rem;">📰</div>
+        <div style="font-weight:600;margin-bottom:0.25rem;">Gestione Fonti</div>
+        <div style="color:var(--text-muted);font-size:0.8rem;">Aggiungi, modifica, abilita/disabilita fonti RSS</div>
+      </a>
+
+      <div class="card" style="margin:0;opacity:0.5;border-left:3px solid var(--border);">
+        <div style="font-size:1.5rem;margin-bottom:0.3rem;">🧠</div>
+        <div style="font-weight:600;margin-bottom:0.25rem;">Parametri Analisi</div>
+        <div style="color:var(--text-muted);font-size:0.8rem;">Modelli, prompt, soglie — <em>in arrivo</em></div>
+      </div>
+
+      <div class="card" style="margin:0;opacity:0.5;border-left:3px solid var(--border);">
+        <div style="font-size:1.5rem;margin-bottom:0.3rem;">⚙️</div>
+        <div style="font-weight:600;margin-bottom:0.25rem;">Impostazioni</div>
+        <div style="color:var(--text-muted);font-size:0.8rem;">Frequenza, email, destinatario — <em>in arrivo</em></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card" style="font-size:0.78rem;color:var(--text-muted);line-height:1.7;">
+    <strong>ℹ️ Come funziona</strong><br>
+    Le modifiche fatte da qui vengono scritte in <code>config-shadow/</code> del repo GitHub.<br>
+    La pipeline V1 sul VPS continua a usare i config originali — <strong>niente impatto in produzione</strong>.<br>
+    Quando sarai pronto, un cutover manuale promuoverà i config shadow a live.
+  </div>
+
+</div>
+
+<script src="lib/api.js"></script>
+<script src="lib/components.js"></script>
+<script>
+(async function(){
+  try {
+    await ensureAuth();
+  } catch(e) { return; }
+
+  renderApiStatus();
+
+  // Status box
+  const statusBox = document.getElementById("status-box");
+  try {
+    const verify = await Api.verify();
+    const h = await Api.health();
+    statusBox.innerHTML = `
+      <div class="stat-grid">
+        <div class="stat-box">
+          <div class="stat-value">${verify.user}</div>
+          <div class="stat-label">Utente</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">v${h.version}</div>
+          <div class="stat-label">API</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">${Math.round(h.uptime_s)}s</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+    `;
+  } catch(e) {
+    statusBox.innerHTML = `<div class="banner error">Errore: ${escHtml(e.message)}</div>`;
+  }
+
+  // Configs box
+  const configsBox = document.getElementById("configs-box");
+  try {
+    const configs = await Api.listConfigs();
+    let anyDiff = false;
+    const rows = configs.map(c => {
+      const status = c.in_sync
+        ? '<span style="color:var(--green);">● in sync</span>'
+        : (anyDiff = true, '<span style="color:var(--accent);">◆ shadow modificato</span>');
+      return `<tr>
+        <td><code>${escHtml(c.name)}</code></td>
+        <td>${status}</td>
+        <td style="color:var(--text-muted);font-family:ui-monospace,monospace;font-size:0.72rem;">
+          live ${fmtBytes(c.live?.size)} · shadow ${fmtBytes(c.shadow?.size)}
+        </td>
+      </tr>`;
+    }).join("");
+    configsBox.innerHTML = `
+      <div class="table-wrap" style="margin-bottom:0.5rem;">
+        <table>
+          <thead><tr><th>File</th><th>Stato</th><th>Size</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      ${anyDiff ? '<div class="banner">⚠️ Ci sono modifiche in shadow non ancora promosse al live.</div>' : ''}
+    `;
+  } catch(e) {
+    configsBox.innerHTML = `<div class="banner error">Errore: ${escHtml(e.message)}</div>`;
+  }
+})();
+</script>
+
+</body>
+</html>
