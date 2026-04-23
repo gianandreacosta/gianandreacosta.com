@@ -683,7 +683,7 @@
           "url": "https://www.blick.ch/digital/rss.xml",
           "lingua": "de",
           "user_agent": "curl/8.5.0",
-          "enabled": false
+          "enabled": true
         }
       ]
     }
