@@ -1,0 +1,21 @@
+{
+  "_comment": "Configurazione per rassegna_analisi.py — modifica liberamente senza toccare il codice",
+  "model_primary": "openai-codex/gpt-5.4-mini",
+  "model_fallback": "openrouter/openai/gpt-5.4-mini",
+  "model_fallback2": "ollama/qwen3.5:cloud",
+  "model_fallback3": "openrouter/openai/gpt-oss-120b:free",
+  "prompt_version": "v1.0",
+  "prompt_file": "rassegna_analisi_prompt.txt",
+  "max_articles_per_category": 30,
+  "min_description_length": 20,
+  "news_per_category_min": 1,
+  "news_per_category_max": 3,
+  "category_order": [
+    "cronaca_ticino",
+    "cronaca_svizzera",
+    "cultura",
+    "geopolitica",
+    "economia",
+    "ai_openclaw"
+  ]
+}

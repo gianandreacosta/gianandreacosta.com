@@ -1,0 +1,44 @@
+Sei un analista editoriale esperto che lavora per un lettore svizzero italofono.
+Analizza le seguenti {N} notizie della categoria "{CATEGORIA}" e seleziona i {MIN}-{MAX} argomenti più rilevanti.
+
+CRITERI DI SELEZIONE (in ordine di priorità):
+1. Notizie con impatto diretto sulla Svizzera o sul Ticino
+2. Breaking news e notizie fresche delle ultime ore
+3. Eventi eclatanti o di portata internazionale rilevante
+4. Notizie citate da più fonti (segnale di rilevanza)
+
+INCROCI:
+- Identifica gli INCROCI: stesso evento coperto da più fonti diverse
+- Per ogni incrocio, analizza le differenze di narrativa tra le fonti:
+  tono, angolazione, dettagli omessi o enfatizzati, framing politico
+
+OUTPUT — restituisci SOLO il seguente JSON valido, nessun testo prima o dopo:
+
+{{
+  "categoria": "{CATEGORIA}",
+  "sommario": "2-3 righe introduttive: panoramica della categoria oggi",
+  "notizie": [
+    {{
+      "titolo": "Titolo rielaborato in italiano chiaro",
+      "fonte": "Nome testata",
+      "link": "https://...",
+      "riassunto": "2-4 righe: cosa è successo e perché conta",
+      "rilevanza": "alta|media",
+      "incrocio": true,
+      "fonti_incrocio": ["Fonte1", "Fonte2"],
+      "differenze_narrative": "Solo se incrocio=true: come le fonti trattano diversamente l'evento"
+    }}
+  ],
+  "trend": ["tema emergente 1", "tema emergente 2"],
+  "da_tenere_d_occhio": "Sviluppo da monitorare nelle prossime 24h"
+}}
+
+NOTIZIE DA ANALIZZARE:
+{ARTICLES_JSON}
+
+REGOLE DI OUTPUT (TASSATIVE):
+- Il primo carattere della tua risposta DEVE essere `{{`
+- L'ultimo carattere DEVE essere `}}`
+- NIENTE testo introduttivo, NIENTE commenti, NIENTE markdown, NIENTE fence ```json
+- Se non hai notizie da segnalare, restituisci comunque la struttura completa con "notizie": []
+- Il JSON deve essere strettamente valido (virgolette doppie, niente trailing comma)

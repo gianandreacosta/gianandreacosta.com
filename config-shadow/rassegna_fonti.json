@@ -1,0 +1,600 @@
+{
+  "_nota": "Aggiungi fonti qui. Tipi: rss, scrape (HTML LaRegione), cdt (JSON API CdT/Ticinonews). Per aggiungere una fonte basta copiare un blocco e modificarlo.",
+  "categorie": {
+    "geopolitica": {
+      "emoji": "🌍",
+      "nome": "GEOPOLITICA",
+      "fonti": [
+        {
+          "nome": "ANSA Mondo",
+          "tipo": "rss",
+          "url": "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "ANSA Cronaca",
+          "tipo": "rss",
+          "url": "https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Internazionale",
+          "tipo": "rss",
+          "url": "https://www.internazionale.it/sitemaps/rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Mondo",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/mondo/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Italia",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/italia/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Politica",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/politica/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Economia",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/economia/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Sole 24 Ore Mondo",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/mondo.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Sole 24 Ore Italia",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/italia.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Corriere della Sera",
+          "tipo": "rss",
+          "url": "https://xml2.corriereobjects.it/rss/homepage.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "la Repubblica",
+          "tipo": "scrape_js",
+          "url": "https://www.repubblica.it/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Domani",
+          "tipo": "rss",
+          "url": "https://editorialedomani.it/rss",
+          "lingua": "it"
+        },
+        {
+          "nome": "AGI",
+          "tipo": "rss",
+          "url": "https://www.agi.it/rss",
+          "lingua": "it"
+        },
+        {
+          "nome": "Adnkronos",
+          "tipo": "rss",
+          "url": "https://www.adnkronos.com/rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "BBC World",
+          "tipo": "rss",
+          "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "New York Times World",
+          "tipo": "rss",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "New York Times Homepage",
+          "tipo": "rss",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Guardian",
+          "tipo": "rss",
+          "url": "https://www.theguardian.com/world/rss",
+          "lingua": "en"
+        },
+        {
+          "nome": "Al Jazeera",
+          "tipo": "rss",
+          "url": "https://www.aljazeera.com/xml/rss/all.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "SRF International",
+          "tipo": "rss",
+          "url": "https://www.srf.ch/news/bnf/rss/1926",
+          "lingua": "de"
+        },
+        {
+          "nome": "The Economist International",
+          "tipo": "rss",
+          "url": "https://www.economist.com/international/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Economist The World This Week",
+          "tipo": "rss",
+          "url": "https://www.economist.com/the-world-this-week/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "20 Minuten",
+          "tipo": "rss",
+          "url": "https://partner-feeds.20min.ch/rss/20minuten",
+          "lingua": "de"
+        },
+        {
+          "nome": "20 Minutes",
+          "tipo": "rss",
+          "url": "https://partner-feeds.20min.ch/rss/20minutes",
+          "lingua": "fr"
+        },
+        {
+          "nome": "Blick Ausland",
+          "tipo": "rss",
+          "url": "https://www.blick.ch/ausland/rss.xml",
+          "lingua": "de",
+          "user_agent": "curl/8.5.0"
+        },
+        {
+          "nome": "Blick Politik",
+          "tipo": "rss",
+          "url": "https://www.blick.ch/politik/rss.xml",
+          "lingua": "de",
+          "user_agent": "curl/8.5.0"
+        }
+      ]
+    },
+    "cronaca_ticino": {
+      "emoji": "🏔️",
+      "nome": "CRONACA TICINO",
+      "fonti": [
+        {
+          "nome": "LaRegione Bellinzonese",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/cantone/bellinzonese",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Locarnese",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/cantone/locarnese",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Luganese",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/cantone/luganese",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Mendrisiotto",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/cantone/mendrisiotto",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Ticino",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/cantone/ticino",
+          "lingua": "it"
+        },
+        {
+          "nome": "CdT Ticino",
+          "tipo": "cdt",
+          "url": "https://www.cdt.ch",
+          "sezione": "ticino",
+          "lingua": "it"
+        },
+        {
+          "nome": "RSI Ticino",
+          "tipo": "rsi",
+          "url": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/",
+          "lingua": "it"
+        },
+        {
+          "nome": "tio.ch Ticino",
+          "tipo": "scrape_js",
+          "url": "https://www.tio.ch/ticino",
+          "lingua": "it"
+        },
+        {
+          "nome": "Teleticino",
+          "tipo": "rss",
+          "url": "https://www.teleticino.ch/rss",
+          "lingua": "it"
+        },
+        {
+          "nome": "Ticinonews Ticino",
+          "tipo": "cdt",
+          "url": "https://www.ticinonews.ch/ticino",
+          "sezione": "ticino",
+          "lingua": "it"
+        }
+      ]
+    },
+    "cronaca_svizzera": {
+      "emoji": "🇨🇭",
+      "nome": "CRONACA SVIZZERA",
+      "fonti": [
+        {
+          "nome": "LaRegione Svizzera",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/svizzera/svizzera",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Estero",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/estero/estero",
+          "lingua": "it"
+        },
+        {
+          "nome": "CdT Svizzera",
+          "tipo": "cdt",
+          "url": "https://www.cdt.ch",
+          "sezione": "svizzera",
+          "lingua": "it"
+        },
+        {
+          "nome": "RSI Svizzera",
+          "tipo": "rsi",
+          "url": "https://www.rsi.ch/info/svizzera/",
+          "lingua": "it"
+        },
+        {
+          "nome": "RSI Mondo",
+          "tipo": "rsi",
+          "url": "https://www.rsi.ch/info/mondo/",
+          "lingua": "it"
+        },
+        {
+          "nome": "SRF Schweiz",
+          "tipo": "rss",
+          "url": "https://www.srf.ch/news/bnf/rss/1922",
+          "lingua": "de"
+        },
+        {
+          "nome": "20 Minuten Schweiz",
+          "tipo": "rss",
+          "url": "https://partner-feeds.20min.ch/rss/20minuten",
+          "lingua": "de"
+        },
+        {
+          "nome": "20 Minutes Suisse",
+          "tipo": "rss",
+          "url": "https://partner-feeds.20min.ch/rss/20minutes",
+          "lingua": "fr"
+        },
+        {
+          "nome": "Ticinonews Svizzera",
+          "tipo": "cdt",
+          "url": "https://www.ticinonews.ch/svizzera",
+          "sezione": "svizzera",
+          "lingua": "it"
+        },
+        {
+          "nome": "Blick Schweiz",
+          "tipo": "rss",
+          "url": "https://www.blick.ch/schweiz/rss.xml",
+          "lingua": "de",
+          "user_agent": "curl/8.5.0"
+        }
+      ]
+    },
+    "cultura": {
+      "emoji": "🎭",
+      "nome": "CULTURA TICINO & SVIZZERA",
+      "fonti": [
+        {
+          "nome": "LaRegione Culture",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/culture",
+          "lingua": "it"
+        },
+        {
+          "nome": "LaRegione Spettacoli",
+          "tipo": "scrape",
+          "url": "https://www.laregione.ch/culture/spettacoli",
+          "lingua": "it"
+        },
+        {
+          "nome": "CdT Società",
+          "tipo": "cdt",
+          "url": "https://www.cdt.ch",
+          "sezione": "societa",
+          "lingua": "it"
+        },
+        {
+          "nome": "RSI Cultura",
+          "tipo": "rsi",
+          "url": "https://www.rsi.ch/info/cultura-e-spettacoli/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Cultura",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/cultura/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Sport",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/sport/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Post Scienza",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/scienza/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Internazionale",
+          "tipo": "rss",
+          "url": "https://www.internazionale.it/sitemaps/rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Corriere Cultura",
+          "tipo": "rss",
+          "url": "https://xml2.corriereobjects.it/rss/cultura.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "New York Times Arts",
+          "tipo": "rss",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Economist Culture",
+          "tipo": "rss",
+          "url": "https://www.economist.com/culture/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "Ticinonews Magazine",
+          "tipo": "cdt",
+          "url": "https://www.ticinonews.ch/magazine",
+          "sezione": "magazine",
+          "lingua": "it"
+        },
+        {
+          "nome": "SRF Kultur",
+          "tipo": "rss",
+          "url": "https://www.srf.ch/kultur/bnf/rss/454",
+          "lingua": "de"
+        }
+      ]
+    },
+    "economia": {
+      "emoji": "💰",
+      "nome": "ECONOMIA & FINANZA",
+      "fonti": [
+        {
+          "nome": "Il Sole 24 Ore Economia",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/economia.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Sole 24 Ore Finanza",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/finanza.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Sole 24 Ore Mondo",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/mondo.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Il Sole 24 Ore Italia",
+          "tipo": "rss",
+          "url": "https://www.ilsole24ore.com/rss/italia.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "The Economist Finance",
+          "tipo": "rss",
+          "url": "https://www.economist.com/finance-and-economics/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Economist Business",
+          "tipo": "rss",
+          "url": "https://www.economist.com/business/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Economist International",
+          "tipo": "rss",
+          "url": "https://www.economist.com/international/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Economist The World This Week",
+          "tipo": "rss",
+          "url": "https://www.economist.com/the-world-this-week/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "Il Post Economia",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/economia/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "Corriere della Sera",
+          "tipo": "rss",
+          "url": "https://xml2.corriereobjects.it/rss/homepage.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Domani",
+          "tipo": "rss",
+          "url": "https://editorialedomani.it/rss",
+          "lingua": "it"
+        },
+        {
+          "nome": "AGI",
+          "tipo": "rss",
+          "url": "https://www.agi.it/rss",
+          "lingua": "it"
+        },
+        {
+          "nome": "Adnkronos",
+          "tipo": "rss",
+          "url": "https://www.adnkronos.com/rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "ANSA Mondo",
+          "tipo": "rss",
+          "url": "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "Internazionale",
+          "tipo": "rss",
+          "url": "https://www.internazionale.it/sitemaps/rss.xml",
+          "lingua": "it"
+        },
+        {
+          "nome": "New York Times Homepage",
+          "tipo": "rss",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "BBC World",
+          "tipo": "rss",
+          "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "RSI Svizzera",
+          "tipo": "rsi",
+          "url": "https://www.rsi.ch/info/svizzera/",
+          "lingua": "it"
+        },
+        {
+          "nome": "CdT Svizzera",
+          "tipo": "cdt",
+          "url": "https://www.cdt.ch",
+          "sezione": "svizzera",
+          "lingua": "it"
+        },
+        {
+          "nome": "tio.ch Svizzera",
+          "tipo": "scrape_js",
+          "url": "https://www.tio.ch/svizzera",
+          "lingua": "it"
+        },
+        {
+          "nome": "SRF Schweiz",
+          "tipo": "rss",
+          "url": "https://www.srf.ch/news/bnf/rss/1922",
+          "lingua": "de"
+        },
+        {
+          "nome": "Ticinonews Economia",
+          "tipo": "cdt",
+          "url": "https://www.ticinonews.ch/economia",
+          "sezione": "economia",
+          "lingua": "it"
+        },
+        {
+          "nome": "Blick Wirtschaft",
+          "tipo": "rss",
+          "url": "https://www.blick.ch/wirtschaft/rss.xml",
+          "lingua": "de",
+          "user_agent": "curl/8.5.0"
+        }
+      ]
+    },
+    "ai_openclaw": {
+      "emoji": "🤖",
+      "nome": "AI & OPENCLAW",
+      "fonti": [
+        {
+          "nome": "TechCrunch AI",
+          "tipo": "rss",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+          "lingua": "en"
+        },
+        {
+          "nome": "The Decoder",
+          "tipo": "rss",
+          "url": "https://the-decoder.com/feed/",
+          "lingua": "en"
+        },
+        {
+          "nome": "MIT Tech Review",
+          "tipo": "rss",
+          "url": "https://www.technologyreview.com/feed/",
+          "lingua": "en"
+        },
+        {
+          "nome": "Hacker News",
+          "tipo": "rss",
+          "url": "https://hnrss.org/frontpage",
+          "lingua": "en"
+        },
+        {
+          "nome": "OpenClaw Releases",
+          "tipo": "rss",
+          "url": "https://github.com/openclaw/openclaw/releases.atom",
+          "lingua": "en"
+        },
+        {
+          "nome": "Il Post Tecnologia",
+          "tipo": "rss",
+          "url": "https://www.ilpost.it/tecnologia/feed/",
+          "lingua": "it"
+        },
+        {
+          "nome": "The Economist Science & Tech",
+          "tipo": "rss",
+          "url": "https://www.economist.com/science-and-technology/rss.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "New York Times Technology",
+          "tipo": "rss",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+          "lingua": "en"
+        },
+        {
+          "nome": "Blick Digital",
+          "tipo": "rss",
+          "url": "https://www.blick.ch/digital/rss.xml",
+          "lingua": "de",
+          "user_agent": "curl/8.5.0"
+        }
+      ]
+    }
+  }
+}
