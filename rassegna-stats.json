@@ -1,9 +1,9 @@
 {
-  "total_articles": 20579,
+  "total_articles": 20686,
   "by_category": [
     {
       "category": "geopolitica",
-      "count": 12667
+      "count": 12774
     },
     {
       "category": "cronaca_ticino",
@@ -35,7 +35,7 @@
   "last_run_by_category": [
     {
       "category": "geopolitica",
-      "count": 570
+      "count": 677
     },
     {
       "category": "cronaca_ticino",
@@ -74,14 +74,14 @@
     {
       "source": "ANSA Cronaca",
       "category": "geopolitica",
-      "total_articles": 1192,
-      "last_run_articles": 52
+      "total_articles": 1256,
+      "last_run_articles": 116
     },
     {
       "source": "ANSA Mondo",
       "category": "geopolitica",
-      "total_articles": 1068,
-      "last_run_articles": 44
+      "total_articles": 1111,
+      "last_run_articles": 87
     },
     {
       "source": "The Guardian",
@@ -644,5 +644,5 @@
       "articles_updated": 871
     }
   ],
-  "generated_at": "2026-04-24 07:15:04 UTC+02:00"
+  "generated_at": "2026-04-25 07:15:04 UTC+02:00"
 }
