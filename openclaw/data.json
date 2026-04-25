@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T07:00:04.875849Z",
+  "generated_at": "2026-04-25T07:10:04.437822Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 23h",
+      "next": "in 22h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 4h",
+      "next": "in 3h",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
@@ -370,11 +370,11 @@
     }
   ],
   "rassegna": {
-    "articles_total": 20686,
-    "articles_today": 107,
-    "articles_new_last_run": 938,
-    "last_run": "2026-04-24 04:45:01.396366+00:00",
-    "last_run_found": 2344
+    "articles_total": 21424,
+    "articles_today": 845,
+    "articles_new_last_run": 738,
+    "last_run": "2026-04-25 07:03:38.049696+00:00",
+    "last_run_found": 2975
   },
   "model_status": {
     "timestamp": "2026-04-25T04:00:02Z",

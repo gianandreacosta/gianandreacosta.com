@@ -1,6 +1,258 @@
 {
-  "generated_at": "2026-04-25T05:00:58.232240+00:00",
+  "generated_at": "2026-04-25T07:06:13.878655+00:00",
   "analyses": [
+    {
+      "id": 46,
+      "run_id": 78,
+      "run_time": "2026-04-25 07:03:38.049696+00:00",
+      "analyzed_at": "2026-04-25T07:06:13.873691+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi molto concreti per il Ticino: finanza e regolazione bancaria, sicurezza pubblica e tensioni nel sistema cantonale dei servizi. Accanto a questi dossier, emergono anche rivendicazioni del personale e segnali di prudenza su conti pubblici e gestione degli enti locali.",
+          "notizie": [
+            {
+              "titolo": "La stretta su UBS può ricadere anche sul sistema bancario ticinese",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/qualcuno-dovra-pagare-i-costi-supplementari-che-ubs-dovra-sostenere-432127",
+              "riassunto": "Il presidente dell’Associazione bancaria ticinese commenta la stretta del Governo sugli istituti di rilevanza sistemica e avverte che i costi aggiuntivi non resteranno senza effetti. Il tema tocca da vicino il Ticino, dove il settore bancario ha un peso economico e occupazionale importante. La notizia conta perché anticipa possibili ricadute su credito, margini e competitività degli istituti.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Cornaredo chiuso al Grasshopper per motivi di ordine pubblico e sicurezza",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/sport/calcio/disordini-e-timori-per-la-sicurezza-cornaredo-chiuso-al-grasshopper-425904",
+              "riassunto": "La Polizia cantonale ha espresso parere negativo sull’utilizzo dello stadio di Cornaredo per la partita con il Grasshopper, richiamando rischi per l’ordine pubblico. Il provvedimento arriva anche dopo i disordini attribuiti ai tifosi zurighesi a Losanna. È una notizia rilevante per il Ticino perché coinvolge sicurezza, gestione degli eventi sportivi e immagine della piazza luganese.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Il personale dell’Osc chiede più salario e meno ore",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1920560/risoluzione-del-personale-piu-salario-e-meno-ore",
+              "riassunto": "Il personale dell’Organizzazione sociopsichiatrica cantonale ha approvato una risoluzione per rivendicare migliori condizioni: più salario e riduzione dell’orario di lavoro. La mobilitazione segnala tensioni nel settore sociosanitario pubblico, con possibili effetti sulla qualità dei servizi e sul clima interno. Per il Ticino è un dossier sensibile perché tocca un comparto già sotto pressione.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Pressione su finanza pubblica e istituzioni economiche",
+            "Sicurezza e tensioni nel sistema dei servizi cantonali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle misure su Cornaredo e l’eventuale reazione degli ambienti bancari ticinesi alla stretta su UBS, oltre a possibili sviluppi nella vertenza del personale OSC.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La categoria è dominata da temi con impatto diretto sul pubblico svizzero: mobilità, costi e decisioni economiche/federali. In evidenza anche sviluppi aziendali e regolatori che toccano da vicino il mercato elvetico, mentre alcune notizie di contorno restano più di interesse generale che locale.",
+          "notizie": [
+            {
+              "titolo": "Riaperta la Axenstrasse dopo la chiusura: strada di nuovo percorribile",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/riaperta-al-traffico-la-axenstrasse-425916",
+              "riassunto": "La Axenstrasse è stata riaperta al traffico dopo la chiusura, con le autorità che segnalano nessun ferito e solo lievi danni al manto stradale. È una notizia rilevante per la mobilità regionale e per i collegamenti lungo un asse importante della Svizzera centrale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "UBS in calo in borsa dopo le nuove regole sui fondi propri",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/ubs-3-in-borsa-pesano-le-nuove-regole-sui-fondi-propri-432108",
+              "riassunto": "Il titolo UBS ha perso terreno dopo l'annuncio del Consiglio federale sulle nuove regole sui fondi propri, segnalando un impatto immediato del dossier regolatorio sul principale gruppo bancario svizzero. La misura è delicata perché tocca stabilità finanziaria, credito e competitività del settore bancario.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Lufthansa e Swiss lanciano Economy Basic con solo un piccolo bagaglio a mano",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/lufthansa-e-swiss-lanciano-economy-basic-in-cabina-solo-con-bagaglio-a-mano-piccolo-425921",
+              "riassunto": "Il gruppo Lufthansa introduce anche per Swiss una nuova tariffa Economy Basic pensata per chi viaggia quasi senza bagaglio. La novità interessa direttamente i passeggeri svizzeri perché cambia prezzo, servizi inclusi e strategia commerciale delle compagnie.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT insiste maggiormente sul dettaglio pratico per il viaggiatore e sulle dimensioni consentite del bagaglio, con un taglio più esplicativo. LaRegione presenta la stessa notizia in forma più sintetica e aziendale, concentrandosi soprattutto sul nuovo prodotto tariffario del gruppo Lufthansa-Swiss."
+            }
+          ],
+          "trend": [
+            "pressione su trasporti e mobilità quotidiana",
+            "interventi regolatori e commerciali che incidono su economia e consumatori svizzeri"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione del dossier UBS dopo le nuove regole sui fondi propri e l'eventuale reazione politica/finanziaria; sul fronte trasporti, da verificare se la riapertura della Axenstrasse resterà stabile e senza ulteriori restrizioni.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è trainata da annunci e appuntamenti molto vicini al pubblico svizzero italofono, soprattutto tra Ticino e Grigioni italiani. Sul piano internazionale spicca invece il caso di “Michael”, il biopic su Michael Jackson, già al centro di più letture critiche e di mercato.",
+          "notizie": [
+            {
+              "titolo": "Moon and Stars si rafforza con The Kolors ed EifachBen",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1920591/si-aggiungono-the-kolors-e-eifachben",
+              "riassunto": "Il festival di Locarno/Muralto continua a definire il cartellone con nuovi nomi di richiamo, tra cui i The Kolors e EifachBen. Per il pubblico ticinese è una notizia concreta: consolida uno degli eventi musicali più seguiti dell’estate e anticipa ulteriori annunci.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Ascona ospita una serata tango con Rodolfo Mederos",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1920589/rodolfo-mederos-con-orquesta-tipica-tan-tango",
+              "riassunto": "Al Teatro del Gatto di Ascona va in scena un appuntamento musicale di taglio internazionale, centrato sul tango e su un nome storico come Rodolfo Mederos. È un evento di prossimità che interessa direttamente l’area del Lago Maggiore e conferma la vivacità della programmazione culturale locale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Il biopic su Michael Jackson divide critica e cronaca industriale",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1920491/michael-film-jackson-anni-successo",
+              "riassunto": "Il film “Michael” arriva in sala con un’accoglienza critica fredda, descritto come un biopic sfarzoso ma privo di gioia e con tratti da agiografia. Il tema conta perché riguarda un’icona globale e perché il progetto è al centro di forti aspettative commerciali e di un dibattito sulla rappresentazione del mito.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione lo presenta soprattutto come un film criticamente debole, insistendo sul tono di agiografia e sulla mancanza di vitalità artistica. Il New York Times, invece, sposta l’attenzione dietro le quinte: conflitti produttivi, reshoot, resistenze degli studios e tensioni familiari, con un taglio più industriale e meno estetico; in più sottolinea le attese di un forte incasso, introducendo un framing economico che LaRegione lascia sullo sfondo."
+            }
+          ],
+          "trend": [
+            "grandi festival e programmazioni locali in Ticino",
+            "biopic e riletture critiche delle icone pop"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare eventuali nuovi annunci di Moon and Stars e le reazioni al biopic “Michael”, sia sul fronte critico sia su quello commerciale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata da tre dossier strategici: il riassetto della sicurezza europea, la corsa alle materie prime critiche e la stabilità del Medio Oriente. Per un lettore svizzero, pesano soprattutto le implicazioni economiche e di difesa legate all’asse UE-USA e all’evoluzione della postura europea fuori dalla NATO.",
+          "notizie": [
+            {
+              "titolo": "UE e Stati Uniti rafforzano la cooperazione sui minerali critici",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/24/ue-e-usa-firmano-intesa-sui-minerali-critici-piu-resilienza_bda0522e-b0ce-4373-8114-a3a056391b06.html",
+              "riassunto": "Washington e Bruxelles hanno firmato un’intesa per aumentare la resilienza nelle forniture di minerali critici, un tema centrale per industria, transizione energetica e tecnologie strategiche. Per la Svizzera conta indirettamente perché tocca catene di approvvigionamento europee e stabilità dei mercati.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "L’Europa valuta la difesa reciproca al di fuori della NATO",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/24/world/europe/europe-defense-nato-trump-eu.html",
+              "riassunto": "Diversi Paesi UE stanno riflettendo su come tradurre in pratica l’obbligo di assistenza reciproca in materia di difesa, nel contesto di dubbi sulla solidità dell’ombrello NATO. È un tema altamente rilevante per la sicurezza del continente e per la Svizzera, che deve misurarsi con un ambiente strategico europeo più fragile.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "L’Italia spinge per mantenere la forza internazionale al confine tra Israele e Libano",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/24/meloni-mantenere-forza-internazionale-al-confine-tra-israele-e-libano_6e09fa41-ee65-4b94-b42f-25f1e3e1cda2.html",
+              "riassunto": "Roma ribadisce l’importanza della missione internazionale lungo la linea Israele-Libano e sottolinea il ruolo dell’Italia nel tentativo di stabilizzare l’area. Il dossier è rilevante per gli equilibri mediterranei e per il rischio di un allargamento del conflitto in Medio Oriente.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "sicurezza europea e autonomia strategica",
+            "materie prime critiche e resilienza delle catene di approvvigionamento"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se l’intesa UE-USA sui minerali critici produrrà misure operative concrete e se il dibattito europeo sulla difesa fuori dalla NATO si tradurrà in nuove prese di posizione politiche.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la categoria economia è dominata da temi molto vicini al lettore svizzero: Nestlé torna al centro con nuove misure di riduzione dei costi e con il dossier delicato del latte per neonati, mentre Salt annuncia un aumento dei prezzi che tocca direttamente i consumatori in Svizzera. Sullo sfondo restano segnali di tensione globale su occupazione, catene di fornitura e ristrutturazioni aziendali.",
+          "notizie": [
+            {
+              "titolo": "Nestlé prepara fino a 180 tagli in Francia nel quadro del piano globale di riduzione del personale",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/nestle-annuncia-fino-a-180-licenziamenti-in-francia-dal-2027-432133",
+              "riassunto": "La multinazionale svizzera prevede fino a 180 licenziamenti in Francia dal 2027, come parte di un piano più ampio annunciato dal nuovo CEO Philipp Navratil che comporta la soppressione di 16.000 posti nel mondo. Per la Svizzera la notizia è rilevante perché conferma la pressione sui margini e la fase di riorganizzazione del gruppo con quartier generale a Vevey.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Nestlé punta a normalizzare entro fine anno la situazione del latte per neonati dopo il richiamo globale",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/latte-per-neonati-nestle-mira-a-una-normalizzazione-entro-fine-anno-432081",
+              "riassunto": "Nestlé segnala che la disponibilità dei suoi prodotti per bebè è tornata regolare in aprile, dopo il richiamo dovuto a contaminazione da cereulide in una sessantina di Paesi. Il tema conta per i consumatori svizzeri e per l’immagine del gruppo, perché riguarda sicurezza alimentare, reputazione e capacità di ripristinare la fiducia dopo una crisi internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Salt aumenta i prezzi degli abbonamenti mobile per gli utenti solo SIM",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/salt-aumenta-i-prezzi-degli-abbonamenti-di-telefonia-mobile-432078",
+              "riassunto": "Dal 1° giugno Salt alza i prezzi degli abbonamenti con sola SIM, con rincari per lo più tra 1 e 2 franchi al mese. È una notizia di impatto immediato per i clienti in Svizzera e in Ticino, perché segnala un ulteriore aumento del costo della vita nei servizi di base.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Ristrutturazioni e tagli nelle grandi multinazionali svizzere",
+            "Aumenti di prezzo nei servizi essenziali per i consumatori"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se Nestlé chiarirà l’impatto dei tagli sul personale europeo e se altri operatori telecom seguiranno Salt con rialzi simili.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da due filoni: la corsa ai modelli di nuova generazione e il lato oscuro dell’AI, con phishing e cyberdifesa in primo piano. Per un lettore svizzero italofono, i temi più pertinenti sono quelli che toccano sicurezza digitale, uso aziendale dell’AI e possibili ricadute su imprese e utenti finali.",
+          "notizie": [
+            {
+              "titolo": "Allarme phishing: false email di invito usate per rubare dati e infettare dispositivi",
+              "fonte": "New York Times Technology",
+              "link": "https://www.nytimes.com/2026/04/23/style/invitation-phishing-scam.html",
+              "riassunto": "Secondo il New York Times, hacker stanno impersonando servizi come Paperless Post, Evite e Punchbowl per convincere gli utenti ad aprire inviti fraudolenti. Il rischio è duplice: furto di credenziali e infezione del dispositivo, un tema molto rilevante anche per utenti e PMI in Svizzera, dove il phishing resta una minaccia quotidiana.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "OpenAI lancia GPT-5.5 e accelera la trasformazione di ChatGPT in una super-app",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+              "riassunto": "TechCrunch presenta il nuovo modello di OpenAI come un salto di capacità trasversali, utile in più categorie e con l’obiettivo strategico di rendere ChatGPT sempre più centrale nell’ecosistema digitale. Per il pubblico svizzero conta soprattutto perché un cambio di passo di OpenAI può influenzare prezzi, strumenti professionali e adozione aziendale dell’AI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch adotta un taglio più strategico di prodotto e mercato, sottolineando la traiettoria verso una 'super-app' AI. The Decoder insiste invece sulla natura agentica del modello e sul rincaro dell’API, con un framing più critico verso la monetizzazione e più attento alle implicazioni tecniche e di costo."
+            },
+            {
+              "titolo": "OpenAI e Microsoft rafforzano la difesa informatica con il programma Trusted Access",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openais-new-trusted-access-program-gives-microsoft-its-most-capable-models-for-cyber-defense/",
+              "riassunto": "OpenAI e Microsoft stanno mettendo i modelli più avanzati a disposizione di iniziative di cyber-difesa, in risposta a un panorama in cui l’AI è sempre più utile anche agli attaccanti. Per aziende e istituzioni svizzere è un segnale importante: la sicurezza AI-driven diventa un vantaggio competitivo, ma anche un nuovo fronte di rischio.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "corsa ai modelli AI di nuova generazione e aumento della monetizzazione",
+            "sicurezza digitale: phishing, difesa informatica e uso duale dell’AI"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’accoglienza di GPT-5.5 da parte di sviluppatori e clienti enterprise, soprattutto sul tema prezzi/prestazioni, e l’eventuale emersione di altri casi di phishing che sfruttano brand noti per colpire utenti e aziende.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 45,
       "run_id": 77,
@@ -3763,315 +4015,6 @@
           "notizie": [],
           "trend": [],
           "da_tenere_d_occhio": ""
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "run_id": 62,
-      "run_time": "2026-04-13 04:45:01.916519+00:00",
-      "analyzed_at": "2026-04-13T05:02:12.597870+00:00",
-      "articles_analyzed": 167,
-      "articles_selected": 18,
-      "model_used": "openrouter/openai/gpt-5-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da tre temi con impatto diretto sulla sicurezza e sui servizi: inchieste su un docente sospettato di abusi e questioni sulle abilitazioni, la sicurezza energetica/approvvigionamento di carburanti e gas con possibili ripercussioni locali, e l'allerta valanghe nell'arco alpino che interessa anche le regioni svizzere. Più fonti riprendono alcuni di questi temi, segnale della loro rilevanza.",
-          "notizie": [
-            {
-              "titolo": "Docente sospettato di abusi: interrogazioni politiche e dubbi sulle abilitazioni",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/docente-non-abilitato-sotto-inchiesta-per-atti-sessuali-con-minorenni-falle-sistemiche-nel-decs-431211",
-              "riassunto": "Un docente 37enne è indagato per atti sessuali con minorenni; la vicenda ha sollevato proteste politiche e interrogazioni sulla gestione delle abilitazioni e dei controlli da parte del DECS. La Lega e altri gruppi chiedono chiarimenti e verifiche sulle procedure di assunzione e sorveglianza.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Bellinzonese",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews enfatizza l'inchiesta e le ripercussioni politiche (interrogazioni della Lega), LaRegione si concentra sull'aspetto istituzionale e sulle richieste formali di chiarimenti da parte dei granconsiglieri, mentre il CdT offre una cronaca più investigativa con focus su testimonianze e sul contesto (es. casi correlati o insegnanti che hanno cambiato sede). Tonalità: Ticinonews e LaRegione hanno un framing istituzionale/di responsabilità, il CdT adotta un approccio elaborativo e narrativo che porta più dettagli personali e investigativi; alcune fonti insistono su «falle sistemiche», altre su singole responsabilità, con differenze nell'enfasi su possibili riforme del DECS."
-            },
-            {
-              "titolo": "Scorte di petrolio e gas: autorità rassicurano ma avvertono su possibili razionamenti",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/le-scorte-di-petrolio-basteranno-non-interveniamo-sui-prezzi-424919",
-              "riassunto": "Le autorità federali dichiarano che le scorte strategiche garantiranno l'approvvigionamento di carburanti nonostante i timori per la situazione geopolitica; tuttavia non escludono misure di razionamento in caso di crisi prolungata. Il pezzo sottolinea la vulnerabilità del Ticino meridionale per il gas, che dipende esclusivamente dai rifornimenti dall'Italia.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Allerta valanghe: rischio forte (grado 4) sull'arco alpino",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/il-pericolo-di-valanghe-in-alto-vallese-resta-forte-424905",
-              "riassunto": "L'Istituto SLF di Davos ha confermato il grado di pericolo 4 su alcune creste alpine (Alto Vallese), segnalando rischio di grandi valanghe spontanee e pericoli per attività escursionistiche e infrastrutture. L'avviso è ripreso da più testate e richiede cautela per sciatori, alpinisti e gestori di impianti.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano lo stesso avviso tecnico del SLF. CdT adotta un tono informativo con consigli pratici per i lettori e contesto locale; Ticinonews rilancia l'allerta con enfasi sulla scala nazionale e possibili conseguenze al traffico e alle attività turistiche. Differenze minori: CdT fornisce più dettagli sul livello e le aree specifiche, Ticinonews struttura l'articolo come avviso generale di sicurezza."
-            }
-          ],
-          "trend": [
-            "Controlli e responsabilità nelle istituzioni pubbliche (abusi e abilitazioni)",
-            "Sicurezza energetica e dipendenza dalle forniture estere"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle indagini sul docente (eventuali altre vittime o responsabilità istituzionali) e decisioni federali su misure di razionamento/monitoraggio delle scorte energetiche nelle prossime 24 ore.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata dalle conseguenze della tragedia di Crans-Montana e dall'allerta valanghe che ha inciso sulla stagione invernale; grande risalto anche al ritorno della missione Artemis-2 con evidenti ricadute politiche e industriali per la Svizzera; infine manifestazioni locali contro la politica israeliana e statunitense attirano attenzione nazionale.",
-          "notizie": [
-            {
-              "titolo": "Crans-Montana: ricadute della tragedia sulla stagione invernale e feriti ancora in recupero",
-              "fonte": "LaRegione Svizzera / CdT Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1917413/stagione-marzo-calo-particolare-crans-montana-crans",
-              "riassunto": "La tragedia avvenuta a Crans-Montana continua a pesare sulla stagione invernale locale; gli ultimi feriti dimessi dal Kinderspital di Zurigo segnalano che il recupero sarà lungo. L'evento ha anche generato misure di prevenzione più stringenti in altri ambiti (es. norme antincendio per bandiere agli eventi). Conta perché coinvolge direttamente comunità ticinesi e svizzere, influenza il turismo e solleva questioni di sicurezza pubblica.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "LaRegione adotta un taglio più analitico e di contesto (impatto sulla stagione e commenti sociali), mentre CdT punta sui profili umani e sanitari (dimissione dell'ultimo giovane, percorso di guarigione). LaRegione enfatizza ripercussioni economiche e organizzative; CdT sottolinea la fase clinica e emotiva delle famiglie."
-            },
-            {
-              "titolo": "Aumento dei decessi da valanghe in Europa: la Svizzera tra i paesi colpiti",
-              "fonte": "CdT Svizzera / LaRegione Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/morti-per-valanghe-raggiunte-cifre-che-non-si-registravano-da-anni-424781",
-              "riassunto": "Statistiche europee registrano almeno 138 morti per valanghe quest'inverno, di cui 18 in Svizzera. Esperti dibattono il ruolo del cambiamento climatico e delle condizioni meteorologiche. Notizia rilevante per la sicurezza in montagna, la gestione delle piste e le politiche di prevenzione nel Cantone Ticino e in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "CdT fornisce dati e richiamo all'incertezza scientifica (esperti non concordi su incidenza del clima); LaRegione contestualizza con effetti locali sulle stazioni (Crans-Montana) e sulla stagione turistica. Il tono di CdT è più tecnico, LaRegione più orientato all'impatto socio-economico."
-            },
-            {
-              "titolo": "Artemis-2: il ritorno sulla Terra della missione e il riconoscimento svizzero",
-              "fonte": "SRF Schweiz / LaRegione Svizzera / CdT Svizzera",
-              "link": "https://www.srf.ch/news/international/mondmission-artemis-2-nasa-artemis-2-crew-gesund-und-gluecklich-zurueck-auf-erde",
-              "riassunto": "La missione Artemis-2 è rientrata con successo; l'equipaggio è salvo e la Svizzera, tramite aziende fornitrici e dichiarazioni ufficiali (es. Parmelin), evidenzia il proprio contributo all'ESA. Evento di rilievo per l'industria aerospaziale svizzera e per il prestigio internazionale del paese.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Svizzera",
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "SRF offre copertura tecnica e internazionale (resoconto della missione e commenti dell'astronauta), LaRegione enfatizza il riconoscimento politico nazionale (messaggio di Parmelin e contributo industriale), mentre CdT segnala l'importanza per imprese locali/regioni. Il framing varia da scientifico a politico-economico."
-            },
-            {
-              "titolo": "Centinaia in piazza a Losanna contro Israele e Trump",
-              "fonte": "CdT Svizzera / LaRegione Svizzera",
-              "link": "https://www.cdt.ch/news/in-centinaia-in-strada-a-losanna-contro-israele-e-trump-424807",
-              "riassunto": "Circa 850 persone hanno manifestato nel centro di Losanna contro le politiche israeliane e statunitensi, con slogan contro Netanyahu e Trump e richieste politiche (anche revoca sanzioni all'Iran). Rilevante per l'ordine pubblico locale, le dinamiche di comunità e il dibattito politico svizzero su esteri e libertà di espressione.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "CdT fornisce numeri e descrizione dell'evento; LaRegione aggiunge enfasi su simboli e richieste politiche dei manifestanti. CdT mantiene tono neutro-reportage; LaRegione sottolinea il contenuto politico e simbolico della protesta."
-            }
-          ],
-          "trend": [
-            "conseguenze di incidenti invernali e sicurezza in montagna (Crans-Montana, valanghe)",
-            "interesse pubblico e politico per missioni spaziali con ricadute industriali svizzere (Artemis-2)"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle indagini e delle misure di prevenzione legate a Crans-Montana e all'aumento dei decessi per valanghe; nelle prossime 24h monitorare comunicati ufficiali sanitari e giudiziari, nonché eventuali reazioni politiche/istituzionali sul tema.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Giornata culturale dominata da un mix di cronaca internazionale (missione Artemis II e tensioni attorno alla Biennale di Venezia) e di notizie locali di rilievo per il Ticino (sold out di un concerto di musica classica, mostre). Emergono temi spaziali, geopolitici e la vivacità della scena culturale ticinese.",
-          "notizie": [
-            {
-              "titolo": "Rientrata la capsula Orion: missione Artemis II compiuta",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/scienze/1917411/capsula-ii-stati-missione-artemis-terra",
-              "riassunto": "La capsula Orion di Artemis II è ammarata sana e salva nell'oceano Pacifico dopo aver riportato l'equipaggio sulla Terra. L'evento rappresenta un successo per il programma Artemis e riapre il dibattito su esplorazione spaziale e comunicazione pubblica.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture (capsula rientrata)",
-                "LaRegione Culture (ritorno alla Terra, missione compiuta)",
-                "New York Times Arts (menzione satirica su SNL)"
-              ],
-              "differenze_narrative": "Le pagine locali de LaRegione offrono una copertura fattuale e celebrativa del rientro della capsula, concentrandosi sull'esito tecnico e sulla portata dell'impresa. Al contrario il New York Times tratta Artemis II in chiave culturale/mediatica (satira su SNL), enfatizzando invece la recezione pubblica e il suo utilizzo come materiale comico; dettaglio tecnico e scientifico qui è secondario rispetto all'angolo dell'intrattenimento."
-            },
-            {
-              "titolo": "Ue minaccia di tagliare i fondi alla Biennale di Venezia per l'apertura del padiglione russo",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1917501/biennale-bruxelles-ue-padiglione-apertura-fondi-venezia",
-              "riassunto": "Bruxelles ha concesso 30 giorni alla Biennale per chiarire la sua posizione sull'apertura del padiglione russo, minacciando la revoca di una sovvenzione di 2 milioni per il 2025-2028. La decisione ha scatenato proteste politiche in Italia e acceso il dibattito sul confine tra arte e diplomazia.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Sold out e applausi: Bezuidenhout e Faust trionfano nelle Sonate di Bach a Sopracenerina",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1917520/bach-violino-sonate-sonata-faust-bezuidenhout-sopracenerina",
-              "riassunto": "Il concerto con le sei sonate per clavicembalo e violino di Bach, con Bezuidenhout e Faust, ha registrato il tutto esaurito a Sopracenerina. L'evento è presentato come una 'prima' coraggiosa nella Svizzera italiana, segnale di vivacità della scena musicale locale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "ritorno e interesse mediatico per le missioni spaziali (Artemis II)",
-            "tensioni geopolitiche che investono eventi culturali internazionali (Biennale e padiglione russo)",
-            "forte attività culturale locale in Ticino (concerti, mostre)"
-          ],
-          "da_tenere_d_occhio": "La decisione dell'UE sulla revoca o meno del finanziamento alla Biennale (termine 30 giorni) e eventuali reazioni delle istituzioni culturali italiane e svizzere; sviluppi sulle analisi tecniche e comunicative post-rientro di Artemis II nelle prossime 24-48 ore.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Giornata dominata da due dossier internazionali: la crisi tra Usa e Iran con intensificarsi delle minacce sullo Stretto di Hormuz e negoziati diplomatici a Islamabad; e una svolta politica in Europa centrale con le elezioni in Ungheria che segnano la possibile fine dell'era Orbán. Entrambi i temi sono seguiti da più fonti e possono avere ripercussioni regionali e globali.",
-          "notizie": [
-            {
-              "titolo": "Tensioni Usa-Iran: colloqui a Islamabad senza accordo e minacce di blocco navale nello Stretto di Hormuz",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/11/cbs-gli-usa-smentiscono-di-aver-acconsentito-a-sbloccare-asset-iran_284f8517-3373-4ff1-bf8e-08bc17685a25.html",
-              "riassunto": "Delegazioni Usa e iraniane si sono incontrate a Islamabad con media che riportano possibili colloqui; tuttavia non è arrivato alcun accordo e il rappresentante Usa Vance ha lasciato senza intesa. Parallelamente l'ex presidente Trump e Washington rilanciano opzioni militari, incluse minacce di blocco navale e rimozione di mine nello Stretto di Hormuz, con potenziali ripercussioni sul traffico petrolifero globale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World",
-                "ANSA (articoli su Trump e Hormuz)",
-                "ANSA (delegazione atterrata a Islamabad)",
-                "ANSA (media Iran)"
-              ],
-              "differenze_narrative": "ANSA enfatizza dichiarazioni ufficiali e sviluppi immediati (arrivo delegazione, annunci di Trump, commenti di Downing Street), con tono informativo e focalizzato su citazioni dirette. Il New York Times analizza invece le implicazioni politiche e strategiche più ampie, evidenziando l'assenza di progressi dopo lunghe trattative e le possibili opzioni per l'amministrazione Usa. Differenze: ANSA riporta molte dichiarazioni e titoli forti su azioni militari annunciate da Trump; NYT tende a contestualizzare e a spiegare conseguenze e scelte politiche, omettendo l'enfasi retorica dei singoli tweet/attacchi personali."
-            },
-            {
-              "titolo": "Svolta in Ungheria: Peter Magyar batte Viktor Orbán",
-              "fonte": "AGI",
-              "link": "https://www.agi.it/estero/news/2026-04-12/ungheria-voto-orban-magyar-36535149/",
-              "riassunto": "Le elezioni parlamentari ungheresi sembrano segnare la fine dell'era di Viktor Orbán, con la vittoria del candidato europeista Peter Magyar. La notizia è segnalata da più testate internazionali: è un evento di portata europea che potrebbe incidere su politica Ue, relazioni con Bruxelles e rapporti con Mosca.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "AGI",
-                "New York Times World",
-                "Adnkronos (contesto economico-finanziario collegato)",
-                "NYT (approfondimenti su Magyar e sul voto)"
-              ],
-              "differenze_narrative": "AGI presenta la vittoria come un cambio netto e festeggia il sollievo europeo, con tono politico e conciso. Il New York Times offre un racconto più sfaccettato: profilo di Magyar, cause del voto (corruzione, crescita economica lenta) e analisi delle manipolazioni del sistema elettorale da parte di Orbán, con maggiore contesto storico e critico. Alcune fonti focalizzano sugli effetti geopolitici (allineamenti con Mosca), altre sul significato per la democrazia interna e per l'UE."
-            }
-          ],
-          "trend": [
-            "Escalation di retorica e rischio militare nello Stretto di Hormuz",
-            "Frammentazione del panorama populista europeo dopo le elezioni in Ungheria"
-          ],
-          "da_tenere_d_occhio": "Evoluzione dei colloqui Usa-Iran nelle prossime 24 ore e possibili decisioni militari sullo Stretto di Hormuz; annunci governativi e composizione del nuovo esecutivo ungherese che determineranno l'orientamento di Budapest verso UE, relazioni con la Svizzera e con partner europei.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la rubrica economica per il lettore svizzero-itofono mette in primo piano due notizie con impatto diretto sulla Svizzera: un caso di discriminazione su un volo Swiss e la morte di un cittadino svizzero in un incidente all’estero. A livello regionale/italiano, emerge attenzione al settore enologico (coperto da più articoli) come tema economico rilevante per mercato e turismo.",
-          "notizie": [
-            {
-              "titolo": "Passeggero disabile respinto da un volo Swiss per la sua sedia a rotelle",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1917464/disabile-respinto-da-un-volo-swiss-per-la-sua-sedia-a-rotelle",
-              "riassunto": "Un passeggero disabile non è stato accettato a bordo di un volo Swiss perché la sua carrozzina risultava troppo alta per essere caricata sull’aeromobile. L’episodio solleva questioni su accessibilità, diritti dei passeggeri con ridotta mobilità e procedure delle compagnie aeree.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Muore un 32enne svizzero in incidente in moto nella Foresta Nera",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1917498/incidente-svizzero-foresta-avvenuto-destra",
-              "riassunto": "Un motociclista svizzero di 32 anni ha perso la vita in un incidente avvenuto su una curva a destra nella Foresta Nera (Germania). La notizia ha impatto diretto per la comunità ticinese/svizzera e riapre il tema della sicurezza stradale per i motociclisti all’estero.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Vinitaly: tagli alla burocrazia e puntare su enoturismo e nuovi mercati",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/vinitaly-tagli-burocrazia-risparmi-16-miliardi-AIGqWvSC",
-              "riassunto": "In occasione di Vinitaly emergono due chiavi per il settore vinicolo: un’analisi Coldiretti che individua risparmi per 1,6 miliardi tramite semplificazioni burocratiche e, parallelamente, l’accento su enoturismo e nuovi mercati come leve di crescita per le imprese italiane nel vino.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia - Vinitaly: dai tagli alla burocrazia risparmi per 1,6 miliardi",
-                "Il Sole 24 Ore Economia - Vinitaly: le leve della crescita sono enoturismo e nuovi mercati"
-              ],
-              "differenze_narrative": "Entrambi i pezzi di Il Sole 24 Ore coprono Vinitaly ma con angolazioni diverse: un articolo enfatizza l’impatto economico-analitico (risparmi stimati da Coldiretti e bisogno di ridurre la burocrazia), l’altro punta su strategie commerciali e di marketing (sviluppo dell’enoturismo e apertura a nuovi mercati). Il tono del primo è più critico/sistemico (onere normativo), del secondo più orientato alla crescita e alle opportunità di export/turismo; entrambi tralasciano approfondimenti su ricadute dirette per mercati esteri come la Svizzera."
-            }
-          ],
-          "trend": [
-            "Accessibilità e diritti dei passeggeri con disabilità nelle compagnie aeree",
-            "Sicurezza dei viaggiatori svizzeri all’estero (incidenti stradali transfrontalieri)",
-            "Rilancio del settore vinicolo tramite semplificazioni burocratiche ed enoturismo"
-          ],
-          "da_tenere_d_occhio": "Per le prossime 24h monitorare eventuali comunicati ufficiali di Swiss sull’accaduto (possibili implicazioni regolamentari o ricorsi) e aggiornamenti sulle indagini/informazioni per la famiglia del motociclista; seguire inoltre sviluppi e reazioni politiche o di settore rispetto alle proposte emerse a Vinitaly.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Sotto la categoria ai_openclaw emergono eventi di forte impatto politico e di sicurezza (attacco alla casa del CEO di OpenAI) e sviluppi strategici sull'adozione di modelli AI da parte di istituzioni finanziarie, oltre a evoluzioni tecnologiche rilevanti per privacy e uso on-device.",
-          "notizie": [
-            {
-              "titolo": "Attacco con molotov alla casa di Sam Altman e sua risposta pubblica",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/",
-              "riassunto": "Un ordigno incendiario è stato lanciato contro l'abitazione del CEO di OpenAI; Altman ha risposto pubblicamente con un post in cui affronta critiche giornalistiche e ammette errori passati. L'episodio solleva questioni di sicurezza personale dei leader AI, polarizzazione pubblica e rischi per il dibattito sul controllo delle tecnologie.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch focalizza la notizia sul contesto del profilo critico del New Yorker e sulla risposta di Altman, con tono giornalistico istituzionale; The Decoder enfatizza i dettagli dell'attacco (orario, dinamica del lancio della bottiglia molotov) e il contenuto personale del blog di Altman, usando un registro più narrativo e sensazionalista. TechCrunch inquadra l'episodio anche come problema reputazionale e politico dell'industria AI, mentre The Decoder sottolinea la reazione emotiva e la retorica del CEO (metafora del \"Ring of Power\")."
-            },
-            {
-              "titolo": "Funzionari dell’amministrazione Trump avrebbero spinto le banche a testare il modello Mythos di Anthropic",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/",
-              "riassunto": "Fonti riportano che funzionari dell'amministrazione statunitense avrebbero incoraggiato banche a testare Mythos, il modello di Anthropic, nonostante il Dipartimento della Difesa lo abbia indicato come rischio per la catena di fornitura. La vicenda apre questioni su governance, sicurezza della supply chain AI e pressione politica sull'adozione di modelli da parte di istituzioni finanziarie.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gemma 4 di Google: AI agentica open-source che gira interamente sul telefono",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/googles-gemma-4-puts-free-agentic-ai-on-your-phone-and-no-data-ever-leaves-the-device/",
-              "riassunto": "Google ha rilasciato (open-source) Gemma 4, un modello capace di elaborare testo, immagini e audio completamente on-device con funzionalità agentiche che possono usare strumenti locali. La soluzione riduce il flusso di dati verso il cloud e ha implicazioni pratiche per privacy, competitività e adozione di AI in ambienti regolamentati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza fisica e reputazionale dei leader del settore AI",
-            "Pressioni politiche e rischi di supply-chain nell'adozione di modelli AI da parte di istituzioni finanziarie",
-            "Modelli on-device e privacy come leva competitiva e risposta normativa"
-          ],
-          "da_tenere_d_occhio": "Verificare nelle prossime 24h sviluppi sull'indagine dell'attacco a Sam Altman (fonte ufficiale forze dell'ordine, nuovi commenti di OpenAI) e conferme/addendi su quale pressione l'amministrazione statunitense stia esercitando sulle banche riguardo Mythos; per la Svizzera, monitorare reazioni delle banche svizzere e delle autorità di vigilanza finanziaria rispetto ai rischi di supply-chain e alla possibile sperimentazione di modelli esterni.",
-          "_model_used": "openrouter/openai/gpt-5-mini"
         }
       ]
     }
