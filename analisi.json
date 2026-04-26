@@ -1,6 +1,287 @@
 {
-  "generated_at": "2026-04-25T07:29:59.503391+00:00",
+  "generated_at": "2026-04-26T04:49:58.556486+00:00",
   "analyses": [
+    {
+      "id": 48,
+      "run_id": 79,
+      "run_time": "2026-04-26 04:45:01.885857+00:00",
+      "analyzed_at": "2026-04-26T04:49:58.548067+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openrouter/openai/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata soprattutto da temi di impatto pratico per il Ticino: sicurezza, commercio e grandi eventi sul territorio. Sullo sfondo emergono anche segnali di tenuta economica e qualche tema politico-istituzionale, ma senza incroci forti tra più fonti.",
+          "notizie": [
+            {
+              "titolo": "Assalto a un centro commerciale nel Mendrisiotto: bottino oltre 50mila euro",
+              "fonte": "LaRegione Mendrisiotto",
+              "link": "https://www.laregione.ch/cantone/mendrisiotto/1920861/rapinatori-centro-raccolto-clienti-fuggi",
+              "riassunto": "Un colpo banditesco messo a segno giovedì in un centro commerciale ha fruttato un bottino superiore ai 50mila euro. È la notizia più direttamente legata alla cronaca locale per impatto su sicurezza, commerci e percezione del rischio nella regione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Crisi in Medio Oriente, nessun rincaro immediato nei supermercati ticinesi",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/migros-coop-e-aldi-rassicurano-con-la-crisi-in-medio-oriente-nessun-rincaro-immediato-432173",
+              "riassunto": "Migros, Coop e Aldi rassicurano: al momento non sono previsti aumenti significativi dei prezzi, anche se la situazione resta monitorata. La notizia tocca direttamente i consumatori ticinesi e fotografa un possibile effetto indiretto della tensione internazionale sui rincari.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "A Locarno parte la Coppa del mondo di corsa d’orientamento",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/in-migliaia-a-locarno-dove-e-partita-la-coppa-del-mondo-432201",
+              "riassunto": "Locarno ospita per la prima volta in Ticino le gare di Coppa del mondo di corsa d’orientamento, con 250 atleti da oltre 30 nazioni. È un evento di richiamo internazionale che porta visibilità, presenze e ricadute sul territorio.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "sicurezza e criminalità nei poli commerciali del Ticino",
+            "effetti locali delle tensioni geopolitiche su prezzi e consumi",
+            "grandi eventi sportivi internazionali come leva di visibilità per il territorio"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’evoluzione del caso della rapina nel Mendrisiotto e l’eventuale conferma di pressioni sui prezzi se la crisi in Medio Oriente dovesse incidere sulla catena di approvvigionamento.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto svizzeri: regolazione bancaria, politica cantonale e diplomazia internazionale con ricadute dirette per Berna. In parallelo emergono segnali di pressione su costi, sicurezza e fiducia nelle istituzioni, con alcuni dossier ripresi da più testate.",
+          "notizie": [
+            {
+              "titolo": "Schlegel respinge la linea dell’UBS sui nuovi requisiti patrimoniali",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/massnahmen-sind-nicht-extrem-snb-praesident-martin-schlegel-legt-sich-mit-ubs-an-id21895646.html",
+              "riassunto": "Il presidente della BNS Martin Schlegel difende le nuove regole sui fondi propri contro le critiche dell’UBS, che le ha definite eccessive. Il tema è centrale per la stabilità finanziaria svizzera e per i rapporti tra governo, banca centrale e il principale istituto del Paese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Schweiz",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Blick imposta il pezzo come uno scontro diretto tra BNS e UBS, con un taglio conflittuale e politico. LaRegione privilegia un taglio più istituzionale e tecnico, sottolineando il ruolo della BNS, la stima dell’onere e la logica della stabilità finanziaria."
+            },
+            {
+              "titolo": "Valérie Dittli travolta dall’affare dell’accordo segreto nel canton Vaud",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1920737/dittli-stato-rapporto-valerie-denuncia-accordo",
+              "riassunto": "Il caso Dittli si aggrava dopo la pubblicazione di elementi sul presunto accordo segreto e sul rapporto Meylan, con pressioni crescenti sulla consigliera di Stato vodese. La vicenda pesa sulla credibilità del governo cantonale e alimenta richieste di dimissioni.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La Svizzera riapre gradualmente l’ambasciata in Iran",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/lambasciata-svizzera-in-iran-gradualmente-riaperta-425994",
+              "riassunto": "Berna riattiva progressivamente la propria ambasciata a Teheran, riprendendo anche il ruolo di potenza protettrice degli interessi statunitensi in Iran. È un dossier delicato di diplomazia attiva, con possibile impatto sulla politica estera svizzera e sui canali di mediazione internazionali.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "stabilità finanziaria e nuove regole per le grandi banche",
+            "crisi di fiducia nelle istituzioni politiche cantonali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale risposta dell’UBS alle parole di Schlegel e l’evoluzione politica del caso Dittli, soprattutto se dovessero emergere ulteriori dettagli o richieste formali di dimissioni.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da alcuni temi vicini alla Svizzera: premi e riconoscimenti a firme elvetiche, appuntamenti e festival sul territorio, e un paio di notizie internazionali che hanno risonanza mediatica ma meno impatto diretto locale. Spicca anche un incrocio di fonti su Harry a Kiev, segnale di forte attenzione editoriale.",
+          "notizie": [
+            {
+              "titolo": "Harry ribadisce il legame con la famiglia reale durante la visita a sorpresa a Kiev",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/news/il-principe-harry-faro-sempre-parte-della-famiglia-reale-426057",
+              "riassunto": "Il principe Harry ha dichiarato di considerarsi “sempre parte” della famiglia reale mentre si trovava a Kiev per una visita a sorpresa. La notizia ha risonanza internazionale e interessa anche il pubblico svizzero per l’ampia copertura mediatica e il valore simbolico del messaggio in un contesto geopolitico delicato.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Società",
+                "Ticinonews Magazine"
+              ],
+              "differenze_narrative": "Le due testate riportano sostanzialmente lo stesso fatto, ma il CdT lo incornicia più come dichiarazione identitaria e istituzionale, mentre Ticinonews lo presenta in modo più secco e news-driven. Entrambe enfatizzano la sorpresa della visita a Kiev, senza però approfondire il contesto politico o umanitario della missione."
+            },
+            {
+              "titolo": "Visions du Réel premia un film della regista Xisi Sofia Ye Chen",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1920824/dawn-du-visions-reel-from-to",
+              "riassunto": "Il festival documentaristico di Nyon ha assegnato il Grand Prix della sezione internazionale a \"From Dawn to Dawn\" della regista Xisi Sofia Ye Chen. È una notizia di forte interesse per la Svizzera romanda e, più in generale, per la scena culturale elvetica, perché rafforza il profilo internazionale di uno dei festival più importanti del Paese.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Arnaud Robert premiato come giornalista dell’anno agli Swiss Press Awards",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1920870/robert-giornalista-press-swiss-arnaud",
+              "riassunto": "Arnaud Robert è stato incoronato “Giornalista dell’anno” agli Swiss Press Awards. Per un lettore svizzero italofono è un riconoscimento rilevante perché valorizza il giornalismo elvetico e offre un segnale sullo stato del settore, tra qualità narrativa, inchiesta e prestigio professionale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "rilevanza dei riconoscimenti culturali svizzeri",
+            "forte attenzione ai festival e ai premi con proiezione internazionale"
+          ],
+          "da_tenere_d_occhio": "Da monitorare nelle prossime 24 ore l’eventuale rilancio della visita di Harry a Kiev da parte di altre testate internazionali e l’eco in Svizzera del premio a Visions du Réel, che potrebbe generare ulteriori approfondimenti o reazioni dal settore culturale.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La categoria oggi è dominata dalla crisi Iran-USA e dalle sue ricadute sullo Stretto di Hormuz: negoziati instabili, traffico marittimo bloccato e impatti potenzialmente sensibili anche per la Svizzera, sede di operatori e intermediari del trading energetico. Più marginali, ma da monitorare, i fronti latinoamericani e la diplomazia statunitense sul dossier Iran.",
+          "notizie": [
+            {
+              "titolo": "I colloqui tra Iran e Stati Uniti a Islamabad si complicano o saltano",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-04-25/trump-iran-negoziati-notizie-25-aprile-36747580/",
+              "riassunto": "AGI riferisce che il secondo giro di colloqui tra Usa e Iran in Pakistan sarebbe sfumato: Araghchi ha lasciato Islamabad e Trump avrebbe cancellato la missione di Witkoff e Kushner. È una notizia ad alto impatto perché segnala un possibile brusco stop alla diplomazia sul dossier nucleare e sulla crisi regionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI",
+                "ANSA Mondo",
+                "Il Sole 24 Ore Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "AGI insiste sul fallimento operativo dei colloqui e sul fatto che la missione americana sia stata cancellata, con taglio da breaking news. ANSA mantiene un tono più prudente, indicando che Araghchi non vedrà la controparte e che un incontro potrebbe forse avvenire lunedì secondo Axios. Il Sole 24 Ore enfatizza invece la dimensione strategica e militare, citando la deterrenza iraniana nello Stretto di Hormuz. Il New York Times sposta il focus sul metodo diplomatico di Trump, sottolineando l’outsourcing della politica estera e il ruolo di Rubio, più che l’esito negoziale in sé."
+            },
+            {
+              "titolo": "La crisi di Hormuz blocca il traffico marittimo e spinge in alto i profitti degli intermediari",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/alessandro-lubello/2026/04/25/hormuz-ha-arricchito-commercianti-petrolio",
+              "riassunto": "Internazionale collega la crisi iraniana ai guadagni degli intermediari del petrolio e ricorda che molte grandi aziende del settore hanno sede in Svizzera. Per un lettore svizzero questo è il punto più diretto della giornata: il dossier geopolitico tocca il trading energetico elvetico e la posizione di Ginevra/Zugo come snodi commerciali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "ANSA Mondo",
+                "Domani"
+              ],
+              "differenze_narrative": "Internazionale adotta un taglio economico-strutturale, mettendo al centro i profitti dei commercianti di greggio e il ruolo della Svizzera. ANSA privilegia l’aspetto operativo, segnalando almeno 43 navi portacontainer ancora bloccate nel Golfo Persico con una fonte tecnica di settore. Domani accentua il costo umano e lavorativo, parlando di ventimila marittimi bloccati a bordo in un’area di guerra. Cambiano quindi il frame: business, logistica o diritti dei lavoratori."
+            },
+            {
+              "titolo": "Decine di navi restano bloccate nel Golfo Persico per la crisi dello Stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/25/almeno-43-navi-portacontainer-ancora-bloccate-nel-golfo-persico_b3158558-b91a-47e6-a531-04d7f6b815be.html",
+              "riassunto": "ANSA riporta che almeno 43 navi portacontainer risultano ancora ferme nel Golfo Persico, citando Lloyd’s List. La notizia conferma che la crisi dello Stretto di Hormuz non è solo diplomatica ma sta già producendo effetti concreti sulla circolazione delle merci e sui costi del commercio globale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale",
+                "Domani"
+              ],
+              "differenze_narrative": "ANSA usa un taglio molto fattuale e immediato, concentrandosi sul numero delle navi e sulla fonte specializzata. Internazionale amplia il quadro economico, spiegando chi ci guadagna nel mercato del petrolio e perché la Svizzera è coinvolta. Domani introduce una lettura sociale, insistendo sui marittimi bloccati e sul problema dei diritti e del rimpatrio in zona di guerra."
+            }
+          ],
+          "trend": [
+            "Crisi Iran-USA e diplomazia di emergenza sul dossier nucleare",
+            "Effetti della tensione a Hormuz su shipping, petrolio e piazze finanziarie svizzere"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se i colloqui Usa-Iran riprendono davvero o se si trasformano in un nuovo stallo, con ulteriori effetti su traffico marittimo, prezzi dell’energia e operatori del trading con base in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi con forte impatto per la Svizzera: la BNS prende posizione sul dossier UBS e i mercati restano sensibili agli effetti della guerra in Iran su energia, viaggi e materie prime. Sullo sfondo emergono anche notizie con ricadute elvetiche più indirette, come il crollo del titolo Duolingo e il peso del suo cofondatore svizzero.",
+          "notizie": [
+            {
+              "titolo": "La BNS difende requisiti più severi per UBS e respinge le critiche di eccesso",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/il-presidente-della-bns-contraddice-ubs-le-misure-non-sono-estreme-432154",
+              "riassunto": "Il presidente della BNS Martin Schlegel si schiera apertamente a favore di requisiti patrimoniali più severi per UBS, contraddicendo la banca che li considera troppo pesanti. Per la Svizzera il tema è centrale: riguarda stabilità finanziaria, regolazione bancaria e possibile impatto sul posizionamento internazionale di UBS.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "La guerra in Iran continua a pesare su energia, viaggi e materie prime",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/iran-krieg-macht-alles-teurer-nach-oel-und-gas-jetzt-werden-weitere-rohstoffe-knapp-id21896263.html",
+              "riassunto": "La guerra alimenta timori su rincari di carburante, carburante aereo e approvvigionamenti di materie prime, con effetti che si estendono alla spesa quotidiana e alle vacanze. È un tema molto rilevante anche per la Svizzera, dove costi energetici e prezzi dei viaggi incidono direttamente su famiglie e imprese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "Il Sole 24 Ore Economia",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Blick enfatizza il rischio sistemico: parla di carovita, scarsità di materie prime e catena di effetti sull'economia reale. Il Sole 24 Ore sposta il fuoco sugli effetti sulle intenzioni di spesa degli italiani e sui prezzi delle vacanze, con taglio più statistico e consumer-oriented. Tio.ch adotta un taglio pratico e vicino al lettore svizzero, mostrando che alcune destinazioni diventano persino più economiche nonostante il contesto bellico."
+            },
+            {
+              "titolo": "Il cofondatore svizzero di Duolingo vede bruciare oltre un miliardo in Borsa",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/aktienabsturz-von-sprachlern-app-schweizer-duolingo-mitgruender-buesst-ueber-eine-milliarde-an-boerse-ein-id21895941.html",
+              "riassunto": "Il forte calo del titolo Duolingo ha ridotto in modo drastico il valore della partecipazione del cofondatore svizzero Severin Hacker. La notizia ha un interesse particolare per il pubblico elvetico perché collega un caso globale di mercato e intelligenza artificiale a una figura imprenditoriale svizzera di primo piano.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "pressione geopolitica su energia, trasporti e prezzi",
+            "dossier bancario svizzero e vigilanza su UBS"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l'eventuale ulteriore irrigidimento del dibattito tra BNS, Consiglio federale e UBS sui requisiti di capitale, oltre a nuovi effetti economici della guerra in Iran su carburanti, voli e materie prime in Europa e in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da una nuova accelerazione nella corsa ai modelli di frontiera: DeepSeek rilancia con V4, OpenAI con GPT-5.5 e i grandi player americani continuano a investire massicciamente in calcolo e partnership. Sullo sfondo, cresce il tema della qualità reale dei modelli: benchmark alti, ma ancora allucinazioni, costi e affidabilità restano punti critici.",
+          "notizie": [
+            {
+              "titolo": "Google prepara fino a 40 miliardi di dollari per Anthropic: la guerra del compute entra in una nuova fase",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+              "riassunto": "Google starebbe pianificando un investimento fino a 40 miliardi di dollari in Anthropic, tra cash e capacità di calcolo. La notizia segnala quanto l’accesso al compute sia ormai il vero collo di bottiglia della corsa AI. Per il mercato europeo e svizzero è un indicatore importante della concentrazione del potere tecnologico nelle mani di pochi hyperscaler.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "DeepSeek rilancia con V4: modelli più lunghi, più efficienti e quasi al livello dei leader",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/",
+              "riassunto": "DeepSeek ha presentato in anteprima V4, un nuovo modello di punta pensato per gestire prompt molto più lunghi in modo più efficiente. La mossa rafforza la posizione della Cina nella corsa ai modelli di frontiera e mostra come l’innovazione stia andando anche nella direzione dell’efficienza, non solo della potenza bruta.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "MIT Tech Review",
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "MIT Tech Review enfatizza il salto architetturale e l’importanza strategica del modello, con taglio analitico e meno commerciale. TechCrunch lo presenta come un passo che “colma il divario” con i leader occidentali, sottolineando la competizione diretta con i frontier model. The Decoder insiste invece su prezzo aggressivo e pressione sui rivali, leggendo DeepSeek come fattore di discesa dei costi e possibile disruption del mercato."
+            },
+            {
+              "titolo": "GPT-5.5 torna in testa ai benchmark, ma restano allucinazioni e prezzi più alti",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/gpt-5-5-tops-benchmarks-but-still-hallucinates-frequently-and-costs-20-percent-more-over-the-api/",
+              "riassunto": "OpenAI avrebbe riportato GPT-5.5 in cima ai benchmark, ma il modello continua a mostrare allucinazioni frequenti e costa circa il 20% in più via API. La notizia è rilevante perché evidenzia il contrasto tra leadership tecnica e affidabilità concreta, un tema cruciale per aziende e sviluppatori che usano l’AI in produzione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "MIT Tech Review"
+              ],
+              "differenze_narrative": "The Decoder adotta un taglio critico e pragmatico: il dato chiave non sono i benchmark, ma i limiti di affidabilità e il rincaro. MIT Tech Review, nel pezzo sullo stato dell’AI, inquadra invece OpenAI dentro una riflessione più ampia sulla lentezza dei progressi reali e sulle aspettative di futuri salti di qualità, con tono più strategico che commerciale."
+            }
+          ],
+          "trend": [
+            "Corsa al compute e agli investimenti miliardari tra i grandi attori dell’AI",
+            "Tensione crescente tra prestazioni dichiarate e affidabilità reale dei modelli"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergeranno dettagli confermati sull’investimento di Google in Anthropic e se DeepSeek pubblicherà benchmark comparativi più completi, perché potrebbero spostare ulteriormente l’equilibrio competitivo tra USA e Cina.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 47,
       "run_id": 78,
@@ -4016,75 +4297,6 @@
           "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
           "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
           "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"Oggi dominano le notizie sull'impatto sociale dell'AI (rappo\n(rapporto Stanford) e le mosse aggressive di OpenAI, mentre emerge una cris\ncrisi infrastrutturale globale. Nessuna notizia diretta sulla Svizzera, ma \nle implicazioni economiche toccano i settori finance e tech elvetici.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Rapporto Stanford 2026: cresce il divario tra esperti AI e\ne pubblico\",\n      \"fonte\": \"TechCrunch AI\",\n      \"link\": \"https://tec",
-          "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "run_id": 67,
-      "run_time": "2026-04-14 04:45:01.699545+00:00",
-      "analyzed_at": "2026-04-14T05:10:09.300556+00:00",
-      "articles_analyzed": 161,
-      "articles_selected": 0,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "partial",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 103)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 103)",
-          "_raw": "{\n  \"categoria\": \"cultura\",\n  \"sommario\": \"Oggi la cultura in Svizzera e Ticino è dominata da celebrazi\ncelebrazioni istituzionali e successi d'esportazione. Spiccano il giubileo \ndella Borsa degli Spettacoli e il riconoscimento del cinema d'animazione el\nelvetico, mentre a livello internazionale Netflix rilancia un'icona storica\nstorica.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"La Borsa Svizzera degli Spettacoli festeggia 50 anni a Thu\nThun\",\n      \"fonte\": \"LaRegione Culture\",\n      \"link\": \"ht",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Giornata dominata dall'escalation USA-Iran nello Stretto di \nHormuz con rischi energetici globali, mentre tensioni diplomatiche emergono\nemergono tra la Casa Bianca e il Vaticano. In Europa, un cambio di guardia \nstorico in Ungheria ridisegna gli equilibri del sovranismo.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Tensione USA-Iran: 15 navi americane nello Stretto di Horm\nHormuz per il blocco\",\n      \"fonte\": \"ANSA Mondo\",\n      \"link\": \"https://www.an",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 104)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 104)",
-          "_raw": "{\n  \"categoria\": \"economia\",\n  \"sommario\": \"Oggi l'attenzione economica si concentra sui giganti svizzer\nsvizzeri con il passaggio generazionale in MSC, sulle tensioni sul bilancio\nbilancio UE che toccano da vicino la Confederazione, e sulla tutela del mar\nmarchio Swissness. Emergono temi di successione aziendale, fondi europei e \nprotezione del brand nazionale.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"MSC: passaggio generazionale, le quote ai figli di Aponte\"\nAponte\",\n      \"fonte\": \"Il Sole 24 ",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"L'industria dell'IA affronta oggi una duplice sfida: limiti \ninfrastrutturali critici e crescente scetticismo pubblico. Mentre i giganti\ngiganti tecnologici consolidano il mercato degli agenti, i dati evidenziano\nevidenziano un divario preoccupante tra esperti e società.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Rapporto Stanford: cresce il divario tra esperti di IA e p\npubblico\",\n      \"fonte\": \"TechCrunch AI\",\n      \"link\": \"https://techcrunch.com/2",
           "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
