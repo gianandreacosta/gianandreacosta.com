@@ -1,6 +1,280 @@
 {
-  "generated_at": "2026-04-26T04:49:58.556486+00:00",
+  "generated_at": "2026-04-27T04:50:26.703039+00:00",
   "analyses": [
+    {
+      "id": 49,
+      "run_id": 80,
+      "run_time": "2026-04-27 04:45:01.708767+00:00",
+      "analyzed_at": "2026-04-27T04:50:26.693585+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi di impatto diretto per il Ticino: trasporti ferroviari in affanno, università sotto pressione finanziaria e decisioni infrastrutturali che cambiano la mobilità regionale. Accanto a questi dossier emergono alcune notizie di contesto locale, spesso raccontate da più testate con tagli leggermente diversi.",
+          "notizie": [
+            {
+              "titolo": "TILO in difficoltà sulla linea S40: circolazione limitata per carenza di personale in Italia",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/tilo-fermi-fino-alle-21-sulla-linea-s40-il-motivo-manca-personale-in-italia-432228",
+              "riassunto": "Sulla linea S40 il traffico ferroviario tra Mendrisio, Como e Varese è stato limitato fino alle 21, con disagi diretti per i pendolari ticinesi e transfrontalieri. La causa indicata dalle FFS è la mancanza di personale in Italia: un problema che mostra quanto la tenuta del sistema TILO dipenda anche da fattori esterni al Cantone.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "USI sotto pressione: tagli più incisivi e nuova governance in arrivo",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/usi-dovremo-tagliare-nel-vivo-le-misure-collaterali-non-bastano-piu-432236",
+              "riassunto": "La presidente del Consiglio dell’Università, Monica Duca Widmer, segnala che le misure collaterali non bastano più e che l’USI dovrà intervenire in modo più profondo sul piano strategico. Sullo sfondo c’è anche la partita del nuovo rettore, atteso forse già entro fine maggio: un passaggio cruciale per il futuro dell’ateneo ticinese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Ticinonews insiste sul messaggio di urgenza gestionale e sulla necessità di tagli più duri, con un taglio più operativo e politico. CdT privilegia invece un tono più riflessivo, presentando il Dies academicus come un momento di autocritica dell’università in una fase tra le più difficili della sua storia. La prima fonte valorizza il dossier sul rettore e le decisioni imminenti, la seconda il quadro istituzionale e simbolico dell’ateneo."
+            },
+            {
+              "titolo": "Ritirato il progetto della maxi rotonda sul Cassarate dopo il nuovo no dell’UFAM",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/non-ci-sara-nessuna-maxi-rotonda-sul-cassarate-432229",
+              "riassunto": "Dopo un ulteriore parere negativo dell’Ufficio federale dell’ambiente, il Cantone ha deciso di abbandonare il progetto della maxi rotonda sul Cassarate. La scelta congela per anni un intervento atteso sul nodo viario e rimette in discussione la strategia di mobilità nell’area.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "trasporti e mobilità transfrontaliera",
+            "università e tagli nella spesa pubblica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei disagi TILO e le eventuali misure di ripristino, oltre a possibili nuovi dettagli sul riassetto finanziario e dirigenziale dell’USI.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto vicini al lettore svizzero-italiano: il caso Crans-Montana con la disputa sulle fatture sanitarie ai feriti, il dibattito sui nuovi requisiti patrimoniali per UBS e, sul fronte sociale, la protezione degli apprendisti negli infortuni sul lavoro. In parallelo, emergono anche notizie di contesto su rumore, sicurezza e politica federale, ma con priorità più bassa.",
+          "notizie": [
+            {
+              "titolo": "Crans-Montana: la disputa sulle fatture sanitarie ai feriti diventa un caso politico tra Svizzera e Lombardia",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/crans-montana-spese-di-cura-ai-pazienti-italiani-le-precisazioni-dellufas-432239",
+              "riassunto": "L'UFAS ha precisato la prassi sulle spese di cura inviate ai pazienti italiani feriti nel rogo di Capodanno a Crans-Montana, dopo il rifiuto della Lombardia di pagare. La vicenda tocca direttamente il Ticino e il Vallese, ma anche i rapporti sanitari transfrontalieri con l'Italia. È uno dei dossier più sensibili della giornata per il pubblico svizzero italofono.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews privilegia la precisazione tecnica dell'UFAS e la prassi amministrativa; il CdT insiste sulla cornice istituzionale e sull'intervento di Berna, dando più peso alla legittimità della richiesta; LaRegione enfatizza lo scontro politico con toni più netti, citando la reazione dura di Fontana e Bertolaso e il lessico più conflittuale di parte italiana."
+            },
+            {
+              "titolo": "UBS e requisiti patrimoniali: cresce lo scontro sulla competitività della piazza finanziaria svizzera",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/fondi-propri-le-critiche-di-ubs-sono-paradossali-432249",
+              "riassunto": "Il dibattito sui nuovi requisiti di capitale proposti dal Consiglio federale mette UBS e parte dell'economia svizzera contro economisti e osservatori critici. La questione è centrale per la stabilità del sistema finanziario, ma anche per la competitività del Paese. Ha rilevanza nazionale immediata e può avere effetti sulla regolamentazione futura.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews dà spazio alla replica del professore Chesney alle critiche di UBS, con un taglio polemico verso la banca; il CdT riprende il tema in forma più neutra ma con attenzione al dibattito politico-economico; LaRegione accentua il conflitto tra banca, Economiesuisse e stampa, presentando le lamentele di UBS come eccessive o contraddittorie."
+            },
+            {
+              "titolo": "Unia chiede più protezione per gli apprendisti dopo gli infortuni sul lavoro",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1920921/apprendisti-incidenti-unia-formazione-protezione-vittime-chiede",
+              "riassunto": "Il sindacato Unia denuncia un numero elevato di infortuni tra gli apprendisti e chiede formazione più rigorosa e controlli più severi. Il tema tocca direttamente il mercato del lavoro svizzero e la tutela dei giovani in formazione, con un impatto concreto anche sul tessuto economico ticinese. È una notizia sociale rilevante, seppur meno urgente delle due precedenti.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "LaRegione insiste sui numeri e sulla pressione sindacale per un cambio di sistema; Ticinonews adotta un tono più diretto e divulgativo, mettendo al centro la richiesta di protezione dei giovani in formazione e il rischio concreto di morte sul lavoro. In entrambe le versioni domina un framing di denuncia, ma LaRegione è più sindacale e Ticinonews più immediata e sintetica."
+            }
+          ],
+          "trend": [
+            "sicurezza e responsabilità nelle relazioni Svizzera-Italia",
+            "dibattito su regolazione finanziaria e tutela sociale in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se il caso Crans-Montana evolverà in una presa di posizione coordinata tra autorità svizzere e italiane, e se il dossier UBS porterà a nuove reazioni politiche o industriali a Berna.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La selezione di oggi privilegia soprattutto contenuti con ricadute dirette sulla Svizzera italiana: un evento su IA all’USI di Lugano, una rilettura di figure culturali svizzere e un approfondimento storico che tocca la memoria del Paese. Sullo sfondo, diversi pezzi internazionali di spettacolo e musica, ma con minore impatto locale.",
+          "notizie": [
+            {
+              "titolo": "A Lugano si discute di sovranità digitale europea e intelligenza artificiale",
+              "fonte": "Ticinonews Magazine",
+              "link": "https://www.ticinonews.ch/magazine/ia-una-sovranita-digitale-europea-e-possibile-432234",
+              "riassunto": "Martedì 28 aprile all’USI di Lugano è in programma una conferenza dedicata all’intelligenza artificiale e alla possibilità di una sovranità digitale europea. L’incontro, con Bruno Giussani e il giornalista Giò Rezzonico, è rilevante per il pubblico ticinese perché porta a Lugano un dibattito strategico su tecnologia, autonomia e futuro dei media e della cultura digitale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Riscoperta di Ella Maillart, l’avventuriera ginevrina quasi sconosciuta nella Svizzera tedesca",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/abenteurerin-auf-abwegen-eine-schweizerin-ohne-furcht-die-wilden-reisen-der-ella-maillart",
+              "riassunto": "SRF dedica un profilo alla viaggiatrice ginevrina Ella Maillart, presentandola come una figura straordinaria ma ancora poco nota in parte della Svizzera. È un contenuto di interesse nazionale: valorizza un patrimonio culturale svizzero e contribuisce a riportare l’attenzione su una protagonista della letteratura di viaggio e dell’esplorazione del Novecento.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Chernobyl continua a pesare anche in Svizzera, oltre la memoria della catastrofe",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/tschernobyl-1986-tschernobyl-wirkt-nach-auch-in-der-schweiz",
+              "riassunto": "L’approfondimento ripercorre gli effetti di Chernobyl e mostra come la catastrofe nucleare continui a influenzare società, politica e dibattito energetico anche in Svizzera. Per un lettore svizzero è rilevante perché collega una grande ferita europea a discussioni ancora attuali sul nucleare e sulla gestione del rischio.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "cultura e tecnologia digitale in Svizzera",
+            "memoria storica e riscoperta di figure svizzere",
+            "patrimonio culturale legato a grandi eventi europei"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare l’esito e l’eco della conferenza sull’IA a Lugano, perché potrebbe generare ulteriori prese di posizione sulla sovranità digitale in Svizzera italiana.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dal dossier Iran: colloqui, spostamenti diplomatici e letture divergenti su un possibile stallo con gli Stati Uniti, con ricadute su sicurezza regionale, energia e mercati. Sullo sfondo restano la guerra in Ucraina e il consolidamento dell’asse Russia-Corea del Nord, mentre l’Europa osserva i rischi di una nuova fase di instabilità.",
+          "notizie": [
+            {
+              "titolo": "Iran e Stati Uniti: negoziati in stallo tra manovre diplomatiche e rischio di escalation",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/26/world/middleeast/us-iran-peace-talks-pakistan.html",
+              "riassunto": "I colloqui tra Washington e Teheran restano fragili, con un negoziatore iraniano tornato in Pakistan mentre gli Stati Uniti hanno annullato un viaggio dei propri emissari. Per la Svizzera conta perché un deterioramento del dossier iraniano può influire su prezzi dell’energia, sicurezza internazionale e tensioni diplomatiche in Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Il New York Times insiste sul quadro di impasse strategica e sui rischi di uno stallo senza accordo, con taglio analitico e molto centrato sulle responsabilità di entrambe le parti. ANSA privilegia la cronaca diplomatica immediata: tappe dei colloqui, spostamenti di Araghchi e contatti con Russia e Pakistan, con tono più neutro e meno interpretativo."
+            },
+            {
+              "titolo": "Chernobyl, 40 anni dopo: la guerra in Ucraina trasforma l’area contaminata in una fascia di sicurezza militare",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/26/world/europe/chernobyl-anniversary.html",
+              "riassunto": "L’anniversario di Chernobyl arriva mentre la guerra rende l’area una zona controllata dall’esercito, lontana da qualunque prospettiva di recupero economico. La notizia resta rilevante per la Svizzera per l’impatto sulla stabilità europea, sui temi nucleari e sulla gestione a lungo termine delle conseguenze del conflitto.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La Corea del Nord promette sostegno alla linea russa sulla sovranità",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/27/kim-jong-un-la-corea-del-nord-sosterra-la-politica-russa-per-la-sovranita_25bcc180-3bfc-4ec6-b53f-eb574f1f9613.html",
+              "riassunto": "Kim Jong Un ribadisce il sostegno di Pyongyang alla politica russa dopo l’incontro con il ministro della Difesa Andrey Belousov. È un segnale di ulteriore consolidamento dell’asse anti-occidentale, con effetti indiretti anche per la Svizzera sul piano della sicurezza europea e delle pressioni diplomatiche internazionali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "crisi diplomatica attorno all’Iran e ai suoi alleati",
+            "rafforzamento dei blocchi geopolitici antagonisti (Russia, Corea del Nord, Iran)"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei contatti Iran-USA e l’eventuale conferma di nuovi incontri tra Teheran, Mosca e Islamabad: un segnale di avanzamento o rottura cambierebbe subito il tono del dossier.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto svizzeri: il confronto tra governo e UBS sulle regole di capitale, gli effetti post-acquisizione di Credit Suisse sulle attività collegate e la tenuta del franco rispetto all’euro. Sullo sfondo, restano i segnali di pressione sui mercati finanziari e sulla competitività della piazza elvetica.",
+          "notizie": [
+            {
+              "titolo": "Il braccio di ferro tra governo svizzero e UBS sulle regole di capitale",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/economia/1920937/le-critiche-di-ubs-sono-fuori-luogo-e-paradossali",
+              "riassunto": "Berna vuole imporre che le filiali estere di UBS siano coperte fino al 100% da capitale proprio, contro l’attuale 60%. La banca teme un indebolimento della competitività della piazza finanziaria svizzera, ma il dibattito mostra quanto il dossier sia centrale per stabilità, reputazione e costi del settore bancario nazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Dopo l’acquisizione di Credit Suisse, Swisscard taglia 40 posti di lavoro",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/nach-uebernahme-durch-die-ubs-swisscard-entlaesst-40-leute-id21898903.html",
+              "riassunto": "Swisscard, società di carte di credito legata all’universo CS/UBS, annuncia 40 licenziamenti nel contesto delle difficoltà successive all’integrazione. È un segnale concreto che la ristrutturazione della piazza bancaria svizzera continua ad avere ricadute occupazionali dirette.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Gli operatori mettono alla prova la BNS: il franco potrebbe rafforzarsi ancora contro l’euro",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/haendler-testen-die-snb-warum-der-franken-zum-euro-trotz-warnungen-zulegen-duerfte-id21898858.html",
+              "riassunto": "Il cambio euro-franco mostra un recupero dell’euro, ma gli analisti prevedono un nuovo rafforzamento della moneta svizzera. Per famiglie, imprese esportatrici e turismo, il tema è rilevante perché un franco più forte può incidere su prezzi, margini e competitività.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Regole prudenziali e vigilanza sulla grande banca svizzera",
+            "Forza del franco e pressione sulla competitività esterna"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del confronto tra governo e UBS: eventuali precisazioni su capitale, filiali estere o reazioni politiche possono muovere mercati, occupazione e dibattito sulla piazza finanziaria svizzera.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da due filoni: la corsa agli investimenti e alle alleanze nell’AI generativa, e i primi segnali di mercati agentici in cui gli AI negoziano e concludono transazioni. Per un lettore svizzero contano soprattutto i movimenti europei verso alternative sovrane ai colossi USA e l’evoluzione concreta dell’AI applicata ai servizi e al commercio.",
+          "notizie": [
+            {
+              "titolo": "Anthropic sperimenta un mercato in cui compratori e venditori sono agenti AI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+              "riassunto": "Anthropic ha creato un marketplace sperimentale in cui agenti AI rappresentano sia i compratori sia i venditori, chiudendo affari reali per beni reali e denaro reale. È un passaggio importante perché mostra come l’AI stia uscendo dalla sola assistenza testuale per entrare in dinamiche economiche autonome. Per la Svizzera è rilevante per l’impatto potenziale su e-commerce, compliance e servizi finanziari.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch taglia più sul lato sperimentale e sull’innovazione di prodotto, sottolineando il fatto che gli scambi fossero reali e quindi non solo demo. The Decoder insiste invece sugli effetti distributivi: modelli più forti ottengono affari migliori e chi usa agenti più deboli non se ne accorge, spostando il frame su asimmetrie economiche e rischio di disuguaglianze. La prima fonte è più orientata al mercato emergente, la seconda alla struttura di potere che ne deriva."
+            },
+            {
+              "titolo": "Cohere prende il controllo di Aleph Alpha: nasce una possibile alternativa AI sovrana europea",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+              "riassunto": "Cohere, startup canadese, sta acquisendo la tedesca Aleph Alpha con il sostegno del gruppo Schwarz, puntando a offrire un’alternativa sovrana ai player americani nell’AI enterprise. Il tema è molto rilevante per l’Europa e quindi anche per la Svizzera, dove banche, industria e amministrazioni cercano soluzioni conformi a requisiti di sovranità, dati e governance. È una notizia strategica più che puramente tecnologica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google investe fino a 40 miliardi di dollari in Anthropic",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/",
+              "riassunto": "Google rafforza in modo massiccio la propria scommessa su Anthropic, portando a livelli enormi il flusso di capitale verso il creatore di Claude. La notizia conta perché conferma una concentrazione crescente del potere infrastrutturale nell’AI e segnala una competizione sempre più intensa con OpenAI e Microsoft. Per il mercato svizzero è un indicatore importante per chi decide partnership cloud, AI aziendale e procurement tecnologico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "corsa agli investimenti e alleanze strategiche nell’AI",
+            "emergere di AI agentiche e mercati autonomi",
+            "spinta europea verso alternative sovrane ai modelli USA"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale reazione dei concorrenti di Anthropic e di Google, ma soprattutto se il dossier Cohere-Aleph Alpha genererà ulteriori dettagli su governance, sede operativa e adozione enterprise in Europa.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 48,
       "run_id": 79,
@@ -4230,73 +4504,6 @@
           "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
           "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
           "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"Oggi emergono tensioni tra percezione pubblica e realtà tecn\ntecnica dell'AI secondo Stanford, mentre i grandi player consolidano il set\nsettore finanziario con nuove acquisizioni. Criticità infrastrutturali sull\nsulla capacità computazionale minacciano la crescita globale del settore.\",\nsettore.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Il rapporto Stanford evidenzia il divario tra esperti AI e\ne pubblico generale\",\n      \"fonte\": \"TechCrunch AI\",\n  ",
-          "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T05:14:12.537416+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "partial",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 112)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 112)",
-          "_raw": "{\n  \"categoria\": \"cronaca_svizzera\",\n  \"sommario\": \"Giornata segnata da sviluppi giudiziari rilevanti, tra cui l\nl'inchiesta sull'incendio di Crans-Montana e un caso legale involving un me\nmembro del governo federale. Disagi previsti per i viaggiatori aerei a caus\ncausa di scioperi internazionali.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Sciopero Lufthansa: cancellati voli tra Svizzera e Germani\nGermania\",\n      \"fonte\": \"LaRegione Svizzera\",\n      \"link\": \"https://www.laregione.ch/svizzera/svizz",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Tensione crescente nel Golfo Persico con il blocco USA di Ho\nHormuz che minaccia gli approvvigionamenti energetici globali. parallelo sc\nscontro diplomatico tra l'amministrazione Trump e il Vaticano, mentre l'Eur\nl'Europa registra un cambio di guardia in Ungheria.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Gli USA avviano il blocco dei porti iraniani mentre proseg\nprosegue il dialogo\",\n      \"fonte\": \"Internazionale\",\n      \"link\": \"https://www.interna",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: Command '['ollama', 'run', 'qwen3.5:cloud', '--hidethinking', '--think', 'false']' timed out after 180 seconds | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"Oggi dominano le notizie sull'impatto sociale dell'AI (rappo\n(rapporto Stanford) e le mosse aggressive di OpenAI, mentre emerge una cris\ncrisi infrastrutturale globale. Nessuna notizia diretta sulla Svizzera, ma \nle implicazioni economiche toccano i settori finance e tech elvetici.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Rapporto Stanford 2026: cresce il divario tra esperti AI e\ne pubblico\",\n      \"fonte\": \"TechCrunch AI\",\n      \"link\": \"https://tec",
           "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
