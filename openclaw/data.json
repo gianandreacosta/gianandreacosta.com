@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T04:50:04.755489Z",
+  "generated_at": "2026-04-28T05:00:05.607490Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -97,7 +97,7 @@
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 16h",
+      "next": "in 15h",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
@@ -370,11 +370,11 @@
     }
   ],
   "rassegna": {
-    "articles_total": 22496,
-    "articles_today": 0,
-    "articles_new_last_run": 552,
-    "last_run": "2026-04-27 04:45:01.708767+00:00",
-    "last_run_found": 3653
+    "articles_total": 23263,
+    "articles_today": 767,
+    "articles_new_last_run": 767,
+    "last_run": "2026-04-28 04:45:02.070839+00:00",
+    "last_run_found": 2560
   },
   "model_status": {
     "timestamp": "2026-04-28T04:00:01Z",
