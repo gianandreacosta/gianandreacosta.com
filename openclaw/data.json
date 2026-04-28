@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T20:10:04.616520Z",
+  "generated_at": "2026-04-28T20:20:04.113099Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -97,7 +97,7 @@
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 49min",
+      "next": "in 39min",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
@@ -115,7 +115,7 @@
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "scaduto",
+      "next": "in 14h",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
