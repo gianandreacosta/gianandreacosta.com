@@ -1,9 +1,9 @@
 {
-  "total_articles": 24362,
+  "total_articles": 24367,
   "by_category": [
     {
       "category": "geopolitica",
-      "count": 15016
+      "count": 15018
     },
     {
       "category": "cronaca_ticino",
@@ -11,7 +11,7 @@
     },
     {
       "category": "cronaca_svizzera",
-      "count": 2359
+      "count": 2361
     },
     {
       "category": "ai_openclaw",
@@ -19,7 +19,7 @@
     },
     {
       "category": "economia",
-      "count": 1407
+      "count": 1408
     },
     {
       "category": "cultura",
@@ -35,7 +35,7 @@
   "last_run_by_category": [
     {
       "category": "geopolitica",
-      "count": 666
+      "count": 668
     },
     {
       "category": "cronaca_ticino",
@@ -43,11 +43,11 @@
     },
     {
       "category": "cronaca_svizzera",
-      "count": 124
+      "count": 126
     },
     {
       "category": "economia",
-      "count": 67
+      "count": 68
     },
     {
       "category": "ai_openclaw",
@@ -110,8 +110,8 @@
     {
       "source": "Adnkronos",
       "category": "geopolitica",
-      "total_articles": 752,
-      "last_run_articles": 41
+      "total_articles": 753,
+      "last_run_articles": 42
     },
     {
       "source": "Hacker News",
@@ -134,8 +134,8 @@
     {
       "source": "BBC World",
       "category": "geopolitica",
-      "total_articles": 628,
-      "last_run_articles": 33
+      "total_articles": 629,
+      "last_run_articles": 34
     },
     {
       "source": "LaRegione Estero",
@@ -170,8 +170,8 @@
     {
       "source": "Ticinonews Svizzera",
       "category": "cronaca_svizzera",
-      "total_articles": 483,
-      "last_run_articles": 24
+      "total_articles": 484,
+      "last_run_articles": 25
     },
     {
       "source": "New York Times Arts",
@@ -242,8 +242,8 @@
     {
       "source": "CdT Svizzera",
       "category": "cronaca_svizzera",
-      "total_articles": 255,
-      "last_run_articles": 11
+      "total_articles": 256,
+      "last_run_articles": 12
     },
     {
       "source": "Blick Schweiz",
@@ -536,8 +536,8 @@
     {
       "source": "ANSA Mondo",
       "category": "economia",
-      "total_articles": 5,
-      "last_run_articles": 2
+      "total_articles": 6,
+      "last_run_articles": 3
     },
     {
       "source": "BBC World",
@@ -583,6 +583,12 @@
     }
   ],
   "runs_history": [
+    {
+      "run_time": "2026-04-29 08:59:22.037297+00:00",
+      "articles_found": 2945,
+      "articles_new": 5,
+      "articles_updated": 1689
+    },
     {
       "run_time": "2026-04-29 08:54:59.077903+00:00",
       "articles_found": 2943,
@@ -636,13 +642,7 @@
       "articles_found": 3536,
       "articles_new": 809,
       "articles_updated": 878
-    },
-    {
-      "run_time": "2026-04-22 04:45:01.835917+00:00",
-      "articles_found": 2354,
-      "articles_new": 869,
-      "articles_updated": 836
     }
   ],
-  "generated_at": "2026-04-29 10:56:10 UTC+02:00"
+  "generated_at": "2026-04-29 11:00:40 UTC+02:00"
 }
