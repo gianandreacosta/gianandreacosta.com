@@ -1,9 +1,9 @@
 {
-  "total_articles": 24356,
+  "total_articles": 24362,
   "by_category": [
     {
       "category": "geopolitica",
-      "count": 15012
+      "count": 15016
     },
     {
       "category": "cronaca_ticino",
@@ -11,11 +11,11 @@
     },
     {
       "category": "cronaca_svizzera",
-      "count": 2358
+      "count": 2359
     },
     {
       "category": "ai_openclaw",
-      "count": 1432
+      "count": 1433
     },
     {
       "category": "economia",
@@ -35,7 +35,7 @@
   "last_run_by_category": [
     {
       "category": "geopolitica",
-      "count": 662
+      "count": 666
     },
     {
       "category": "cronaca_ticino",
@@ -43,7 +43,7 @@
     },
     {
       "category": "cronaca_svizzera",
-      "count": 123
+      "count": 124
     },
     {
       "category": "economia",
@@ -51,7 +51,7 @@
     },
     {
       "category": "ai_openclaw",
-      "count": 65
+      "count": 66
     },
     {
       "category": "cultura",
@@ -68,8 +68,8 @@
     {
       "source": "20 Minutes",
       "category": "geopolitica",
-      "total_articles": 1561,
-      "last_run_articles": 71
+      "total_articles": 1562,
+      "last_run_articles": 72
     },
     {
       "source": "ANSA Cronaca",
@@ -110,14 +110,14 @@
     {
       "source": "Adnkronos",
       "category": "geopolitica",
-      "total_articles": 751,
-      "last_run_articles": 40
+      "total_articles": 752,
+      "last_run_articles": 41
     },
     {
       "source": "Hacker News",
       "category": "ai_openclaw",
-      "total_articles": 683,
-      "last_run_articles": 26
+      "total_articles": 684,
+      "last_run_articles": 27
     },
     {
       "source": "AGI",
@@ -134,8 +134,8 @@
     {
       "source": "BBC World",
       "category": "geopolitica",
-      "total_articles": 627,
-      "last_run_articles": 32
+      "total_articles": 628,
+      "last_run_articles": 33
     },
     {
       "source": "LaRegione Estero",
@@ -290,8 +290,8 @@
     {
       "source": "SRF International",
       "category": "geopolitica",
-      "total_articles": 169,
-      "last_run_articles": 5
+      "total_articles": 170,
+      "last_run_articles": 6
     },
     {
       "source": "LaRegione Luganese",
@@ -554,8 +554,8 @@
     {
       "source": "20 Minuten Schweiz",
       "category": "cronaca_svizzera",
-      "total_articles": 3,
-      "last_run_articles": 0
+      "total_articles": 4,
+      "last_run_articles": 1
     },
     {
       "source": "AGI",
@@ -583,6 +583,12 @@
     }
   ],
   "runs_history": [
+    {
+      "run_time": "2026-04-29 08:54:59.077903+00:00",
+      "articles_found": 2943,
+      "articles_new": 6,
+      "articles_updated": 1687
+    },
     {
       "run_time": "2026-04-29 08:49:26.308437+00:00",
       "articles_found": 2997,
@@ -636,13 +642,7 @@
       "articles_found": 2354,
       "articles_new": 869,
       "articles_updated": 836
-    },
-    {
-      "run_time": "2026-04-21 04:45:01.756203+00:00",
-      "articles_found": 3564,
-      "articles_new": 795,
-      "articles_updated": 920
     }
   ],
-  "generated_at": "2026-04-29 10:53:24 UTC+02:00"
+  "generated_at": "2026-04-29 10:56:10 UTC+02:00"
 }
