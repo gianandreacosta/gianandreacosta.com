@@ -1,6 +1,300 @@
 {
-  "generated_at": "2026-04-28T04:51:49.265635+00:00",
+  "generated_at": "2026-04-29T04:50:54.298848+00:00",
   "analyses": [
+    {
+      "id": 51,
+      "run_id": 82,
+      "run_time": "2026-04-29 04:45:01.674077+00:00",
+      "analyzed_at": "2026-04-29T04:50:54.294276+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.0",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi molto locali ma con forte impatto concreto: lavoro e condizioni occupazionali in Ticino, in particolare il dossier Equans e il nuovo contratto collettivo dell’edilizia. Sullo sfondo restano alcune notizie di sicurezza e vita civile, ma la rilevanza maggiore oggi è nelle ricadute dirette per i residenti.",
+          "notizie": [
+            {
+              "titolo": "Equans taglia 19 posti a Monteceneri: scatta la polemica sul piano sociale",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/diciannove-licenziamenti-alla-equans-a-monteceneri-432356",
+              "riassunto": "L’azienda ha annunciato 19 licenziamenti che toccano fibre ottiche, impianti di riscaldamento e amministrazione. La notizia pesa perché colpisce direttamente il mercato del lavoro ticinese e riaccende il dibattito sulla protezione dei dipendenti nei riassetti aziendali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Luganese"
+              ],
+              "differenze_narrative": "Ticinonews mette al centro la dimensione occupazionale e il dato secco dei licenziamenti, con taglio più immediato e sociale. LaRegione inquadra invece il caso nel contesto della trattativa aziendale e del rifiuto del piano sociale, enfatizzando il conflitto sindacale e le responsabilità negoziali."
+            },
+            {
+              "titolo": "Accordo record per l’edilizia ticinese: nuovo contratto collettivo fino al 2031",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1921290/accordo-lavoro-trattativa-conclude-ticinese-tratta",
+              "riassunto": "Si chiude una trattativa definita spinosa con un accordo considerato importante per il settore edile ticinese. La portata è alta perché tocca salari, condizioni di lavoro e attrattività di un comparto strategico per l’economia cantonale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "LaRegione sottolinea il carattere storico dell’intesa e il risultato della mediazione, con un tono orientato al compromesso raggiunto. Ticinonews insiste invece sui nodi concreti del contratto, come giornate troppo lunghe e intemperie, dando più spazio alle condizioni operative dei lavoratori e alla visione di lungo periodo per il settore."
+            },
+            {
+              "titolo": "Nuove misure federali contro la violenza domestica",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/violenza-domestica-la-svizzera-pensa-a-nuove-misure-432326",
+              "riassunto": "Il Dipartimento federale di giustizia e polizia prepara un pacchetto legislativo per rafforzare la tutela nel diritto civile e processuale civile. Conta anche per il Ticino, perché il tema della violenza domestica ha un impatto diretto sui servizi di protezione, prevenzione e presa a carico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "lavoro e condizioni occupazionali in Ticino",
+            "rafforzamento delle tutele sociali e della protezione delle persone fragili"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se il caso Equans produrrà reazioni sindacali o istituzionali e se emergeranno ulteriori dettagli sul piano sociale e sulle possibili ricollocazioni.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi di politica sociale e diritti: in primo piano la lotta alla violenza domestica e l’attuazione dell’iniziativa sulle cure, due dossier con ricadute concrete per Cantoni e Confederazione. Sullo sfondo, il Parlamento ha anche compiuto un passo simbolico forte riconoscendo le persecuzioni contro Jenisch e Sinti come crimini contro l’umanità.",
+          "notizie": [
+            {
+              "titolo": "Violenza domestica e femminicidi: Berna e Cantoni spingono su nuove misure",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/ogni-vittima-di-femminicidio-e-un-fallimento-dello-stato-426243",
+              "riassunto": "La Svizzera rafforza la roadmap contro la violenza domestica e sessuale, con un’attenzione crescente ai femminicidi e alla prevenzione. Il dossier è rilevante perché coinvolge direttamente Confederazione, Cantoni e strumenti concreti come la sorveglianza elettronica annunciata da Gobbi dal 2027.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "La CdT taglia in chiave politica e operativa, con enfasi sulle responsabilità dello Stato e sulle misure annunciate dai politici ticinesi e federali. LaRegione privilegia il bilancio istituzionale della roadmap, sottolineando i progressi già ottenuti ma anche la necessità di ulteriori interventi; il tono è più valutativo e meno polemico."
+            },
+            {
+              "titolo": "Iniziativa sulle cure: 190 mila firme per un’attuazione immediata e integrale",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/liniziativa-sulle-cure-va-applicata-subito-e-in-modo-integrale-432329",
+              "riassunto": "Sindacati e sostenitori hanno consegnato ai parlamentari federali un appello massiccio per chiedere che l’iniziativa sulle cure venga applicata subito e senza dilazioni. La questione è centrale per ospedali e personale sanitario, in un momento in cui il settore denuncia carichi di lavoro elevati e carenza di personale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews mette l’accento sulla pressione popolare e sulla dimensione di mobilitazione, con il focus sui 190 mila firmatari. LaRegione insiste sui contenuti concreti richiesti da sindacati e lavoratori, mentre la CdT evidenzia il conflitto politico tra categorie professionali e commissione parlamentare, dando spazio al rischio di aumento delle tariffe ospedaliere. Cambia quindi il framing: sociale e partecipativo da un lato, tecnico-istituzionale dall’altro."
+            },
+            {
+              "titolo": "Jenisch e Sinti riconosciuti come vittime di crimini contro l’umanità",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/i-nomadi-jenisch-e-sinti-sono-vittime-di-crimini-contro-lumanita-426247",
+              "riassunto": "Il Consiglio nazionale ha approvato il riconoscimento delle persecuzioni subite da Jenisch e Sinti come crimini contro l’umanità, un passaggio storico per la memoria pubblica svizzera. Per il Ticino il tema è particolarmente sensibile, perché il cantone è stato tra i più toccati dalle politiche discriminatorie del passato.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "La CdT insiste sulla sofferenza storica e sul coinvolgimento del Ticino, rendendo il tema più vicino al lettore locale. LaRegione adotta invece un taglio più istituzionale e sintetico, sottolineando il voto del Nazionale e l’invito a tutelare le comunità nomadi come patrimonio culturale. La prima punta sull’impatto emotivo e territoriale, la seconda sul significato politico e di riconoscimento formale."
+            }
+          ],
+          "trend": [
+            "forte attenzione a welfare, sanità e condizioni di lavoro",
+            "riemersione di temi di memoria storica e diritti delle minoranze"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione parlamentare sull’attuazione dell’iniziativa sulle cure e sulle misure anti-violenza: eventuali compromessi o nuovi rilievi finanziari potrebbero cambiare tempi e contenuti delle riforme.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da due assi molto rilevanti per un lettore svizzero italofono: l’eco locale di Losanna e del CERN, con iniziative che toccano direttamente la Svizzera romanda e l’orizzonte scientifico nazionale. Sul piano internazionale spiccano invece il debutto record di “Michael” e alcune notizie di scena e musica di forte richiamo, ma con impatto più indiretto sul pubblico ticinese.",
+          "notizie": [
+            {
+              "titolo": "A Losanna il BDFIL festeggia 20 anni con oltre 100 autori e un omaggio al Québec",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1921257/fumetto-malle-quebec-bdfil-mirion",
+              "riassunto": "Il festival del fumetto di Losanna celebra il ventennale con 16 mostre, più di cento autori e circa ottanta appuntamenti fino al 10 maggio. È una notizia di prima fascia per la Svizzera romanda e, più in generale, per la scena culturale nazionale: conferma il peso del fumetto come evento popolare e internazionale in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il CERN racconta la nascita del Web in una nuova audiofiction",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921381/audiofiction-www-storia-web-giugno",
+              "riassunto": "La notizia richiama il 30 aprile 1993, quando il CERN rese pubblico il World Wide Web: un riferimento identitario fortissimo per la Svizzera e per Ginevra in particolare. L’angolazione culturale rende accessibile una storia scientifica che ha cambiato il mondo, con un chiaro valore simbolico per il pubblico svizzero italofono.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il biopic su Michael Jackson debutta con numeri record e divide critica e fan",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921382/michael-biopic-dollari-michael-debutto",
+              "riassunto": "Il film “Michael” ottiene il miglior esordio di sempre per un biopic musicale, segnale di un forte richiamo commerciale globale. La notizia conta perché mostra la capacità del cinema-evento di polarizzare il pubblico e rilanciare il marchio Jackson, anche al di là delle polemiche critiche.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione mette al centro il dato industriale e il primato al botteghino, con un taglio più celebrativo e sintetico. Il New York Times, invece, insiste sulla frattura tra fan entusiasti e critici severi, trasformando il film in un caso culturale oltre che commerciale. Rispetto alla cornice svizzera, la testata locale privilegia l’impatto del successo; la fonte americana enfatizza la polarizzazione del dibattito e il contesto di reception."
+            }
+          ],
+          "trend": [
+            "forte presenza di eventi e istituzioni culturali svizzere con respiro internazionale",
+            "biopic, adattamenti e grandi franchise come motore di attenzione mediatica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale evoluzione del caso “Michael”, soprattutto se il successo commerciale si tradurrà in ulteriori reazioni critiche o in nuovi dati d’incasso; sul fronte svizzero, possibile aumento di copertura per il BDFIL e per le iniziative legate al CERN.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dagli effetti del conflitto con l’Iran e dalle sue ricadute energetiche e diplomatiche, con attenzione particolare anche alla sicurezza delle forniture in Svizzera. Sullo sfondo restano crisi regionali come il Libano e le ripercussioni internazionali della nuova fase di tensione in Medio Oriente.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera si prepara agli effetti del conflitto con l’Iran: riserve di carburante come rete di sicurezza",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/schweiz/auswirkungen-des-iran-kriegs-exklusive-tankreserven-schweiz-als-treibstoffinsel-in-europa",
+              "riassunto": "SRF spiega che, in caso di scarsità energetica, la Svizzera dispone di riserve strategiche di carburante che non deve condividere con altri Paesi. Per un lettore svizzero è il punto più concreto della categoria: la crisi mediorientale si traduce in un tema immediato di sicurezza degli approvvigionamenti e dei prezzi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Trump rilancia la pressione sull’Iran e parla di un possibile riassetto dello Stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/28/trump-liran-ci-ha-detto-che-e-al-collasso-ci-chiede-di-riaprire-hormuz_35048403-701b-497f-bef8-ea5b4bebdc63.html",
+              "riassunto": "Secondo ANSA, Donald Trump sostiene che l’Iran sarebbe «al collasso» e che avrebbe chiesto di riaprire Hormuz, nodo cruciale per il traffico petrolifero globale. La notizia è rilevante perché qualsiasi escalation nello stretto avrebbe effetti immediati su energia, mercati e diplomazia internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Il Libano resta schiacciato tra tensioni interne e pressione israeliana",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/04/28/libano-occupazione-israele",
+              "riassunto": "L’analisi evidenzia una doppia vulnerabilità del Libano: divisioni interne e rischio di ulteriore destabilizzazione legato all’occupazione israeliana. È uno dei dossier più delicati del Medio Oriente perché può riaccendersi rapidamente e coinvolgere attori regionali già sotto forte pressione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "ricadute economiche e energetiche del conflitto con l’Iran",
+            "instabilità persistente del Medio Oriente e rischio di escalation regionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del dossier Iran-Hormuz: eventuali segnali su chiusura o riapertura del traffico marittimo, nuovi messaggi di Washington e conseguenze sui mercati energetici europei e svizzeri.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La notizia più direttamente rilevante per un lettore svizzero italofono è l’aumento dei prezzi Salt, che tocca subito le famiglie e il mercato telecom. Sul fronte internazionale pesa invece lo shock iraniano sul petrolio, con effetti su compagnie aeree, borse e possibili rincari dei trasporti.",
+          "notizie": [
+            {
+              "titolo": "Salt aumenta i prezzi degli abbonamenti mobili in Svizzera",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schon-wieder-salt-erhoeht-die-preise-das-steckt-dahinter-id21907178.html",
+              "riassunto": "Salt annuncia un aumento delle tariffe per gli abbonamenti mobile da giugno, dopo il precedente caos legato ai rincari Swisscom. Per i consumatori svizzeri è una notizia concreta e immediata, perché tocca il costo della telefonia di uso quotidiano.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Lo shock iraniano sul petrolio mette sotto pressione compagnie aeree, borse e prezzi",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/compagnie-aeree-shock-iraniano-manda-stallo-conti-trimestrali-AIGQzEjC",
+              "riassunto": "L’escalation in Iran e nello Stretto di Hormuz pesa sui conti trimestrali delle compagnie aeree e spinge al rialzo le attese sui prezzi dei biglietti in Europa. Il tema conta anche per Svizzera e Ticino per i riflessi su carburante, trasporti e inflazione importata.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Economia",
+                "Il Sole 24 Ore Finanza",
+                "Adnkronos"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore Economia taglia l’evento dal punto di vista industriale: conti delle compagnie, margini e possibile aumento dei biglietti. Il Sole 24 Ore Finanza lo legge come shock di mercato, con petrolio in risalita e attesa per Fed/Bce e Big Tech. Adnkronos enfatizza invece la dimensione geopolitico-militare, descrivendo la strategia iraniana della ‘flotta delle zanzare’ e il rischio di blocco di Hormuz."
+            },
+            {
+              "titolo": "Il petrolio in rialzo agita i mercati in attesa di Fed e Bce",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borse-tokyo-rally-i-massimi-wall-street-tensioni-petrolio-AIteFBjC",
+              "riassunto": "Le tensioni nello Stretto di Hormuz riportano il petrolio al centro della scena e creano nervosismo sui listini. La notizia è rilevante perché si inserisce in una fase già delicata per i mercati, con le decisioni delle banche centrali e le trimestrali dei colossi tecnologici in arrivo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Economia",
+                "Adnkronos"
+              ],
+              "differenze_narrative": "Rispetto al pezzo dell’Economia, qui il focus è più finanziario e di mercato: petrolio, borse, tassi e sentiment degli investitori. Adnkronos, invece, spinge sul frame geopolitico e sulla minaccia asimmetrica iraniana, con toni più allarmistici e narrativi."
+            }
+          ],
+          "trend": [
+            "rincari al consumo in Svizzera",
+            "effetti del conflitto in Iran su energia e trasporti"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del petrolio e delle compagnie aeree europee: eventuali nuovi rialzi potrebbero tradursi rapidamente in pressioni sui costi di viaggio e sui prezzi al consumo anche in Svizzera.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da grandi mosse di potere nell’ecosistema AI: OpenAI e Microsoft stanno riscrivendo il loro rapporto strategico, mentre la Cina ha bloccato un’operazione da 2 miliardi legata a Meta. Sullo sfondo, emergono anche maxi-finanziamenti a nuovi laboratori e segnali di corsa agli hardware e ai chip per l’AI.",
+          "notizie": [
+            {
+              "titolo": "OpenAI e Microsoft riscrivono l’alleanza: meno esclusività, più libertà sul cloud e meno vincoli sull’AGI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+              "riassunto": "OpenAI ha ottenuto concessioni importanti da Microsoft che le permettono di distribuire prodotti anche su AWS, riducendo la dipendenza da Azure. In cambio, Microsoft ottiene più ritorni economici nel revenue-share, mentre cadono alcuni vincoli che finora definivano il perimetro dell’accordo. È una svolta strategica che ridisegna il mercato cloud dell’AI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder",
+                "Hacker News"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza l’effetto pratico e commerciale: il superamento del rischio legale e la possibilità per OpenAI di vendere su AWS. The Decoder mette invece l’accento sulle clausole rimosse, soprattutto esclusività e vincolo AGI, con taglio più critico-contrattuale. La notizia su Hacker News, basata su Bloomberg, la presenta come chiusura dell’accordo esclusivo e di revenue sharing, con forte attenzione al peso economico e al dibattito tecnico/comunitario nei commenti."
+            },
+            {
+              "titolo": "La Cina blocca l’acquisizione da 2 miliardi di Meta della startup AI Manus",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
+              "riassunto": "Pechino ha ordinato a Meta di smontare l’acquisizione già conclusa di Manus, infliggendo un duro colpo alla strategia di Zuckerberg sugli agenti AI. La decisione segnala l’intensificarsi della rivalità tecnologica tra Stati Uniti e Cina e mostra quanto le autorità cinesi siano pronte a intervenire sulle grandi operazioni nel settore.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch insiste sul danno per la strategia di Meta e sul contesto di indagine durata mesi, con tono da breaking news geopolitica. The Decoder usa un framing più netto e politico, parlando di ordine di smantellamento di un’acquisizione già completata e sottolineando la rivalità tecnologica USA-Cina. Rispetto a TechCrunch, enfatizza di più la dimensione regolatoria e la portata simbolica del veto."
+            },
+            {
+              "titolo": "Un nuovo laboratorio fondato da un ex DeepMind raccoglie 1,1 miliardi per un’AI che apprende senza dati umani",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+              "riassunto": "Ineffable Intelligence, fondato pochi mesi fa dall’ex ricercatore DeepMind David Silver, ha raccolto 1,1 miliardi di dollari a una valutazione di 5,1 miliardi. Il progetto punta a sistemi che apprendono senza dipendere dai dati umani, un’idea che potrebbe cambiare il paradigma della formazione dei modelli. È una delle notizie più forti sul fronte dell’innovazione pura.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "riassetto dei rapporti di forza tra big tech e cloud AI",
+            "corsa geopolitica e finanziaria su agenti, chip e nuovi laboratori AI"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la formalizzazione dell’intesa OpenAI-Microsoft e l’eventuale reazione dei mercati, oltre a possibili dettagli aggiuntivi sul veto cinese contro Meta e su eventuali contromosse legali o regolatorie.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 50,
       "run_id": 81,
@@ -4650,79 +4944,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T07:26:58.154246+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 110)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 110)",
-          "_raw": "{\n  \"categoria\": \"cronaca_ticino\",\n  \"sommario\": \"La cronaca ticinese è dominata dalle decisioni federali sul \nsalario minimo che impattano il Cantone e dai dati climatici sui fulmini. S\nSpicca inoltre una maxi-truffa finanziaria nel Luganese.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Salario minimo, intesa a Berna ma scenari complessi per il\nil Ticino\",\n      \"fonte\": \"CdT Ticino\",\n      \"link\": \"https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma\n\"https://www.cdt.ch/news/salario-minimo-",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 112)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 112)",
-          "_raw": "{\n  \"categoria\": \"cronaca_svizzera\",\n  \"sommario\": \"La cronaca svizzera odierna è dominata dagli sviluppi giudiz\ngiudiziari sull'incendio di Crans-Montana e dalle ripercussioni sui viaggia\nviaggiatori dello sciopero Lufthansa. Segnalata anche una violazione dati s\nsulla piattaforma Booking che coinvolge utenti ticinesi.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Incendio Crans-Montana: sindaco interrogato e nega conosce\nconoscenze pregresse\",\n      \"fonte\": \"LaRegione Svizzera\",\n      \"link\": \"http",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 103)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 103)",
-          "_raw": "{\n  \"categoria\": \"cultura\",\n  \"sommario\": \"La cultura svizzera e ticinese occupa oggi il centro della s\nscena con celebrazioni istituzionali e riconoscimenti internazionali. Spicc\nSpiccano i 50 anni della Borsa degli Spettacoli a Thun e l'inaugurazione de\ndel LACMA firmato dall'architetto Peter Zumthor, mentre il cinema d'animazi\nd'animazione elvetico conferma il suo successo globale.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"La Borsa Svizzera degli Spettacoli festeggia 50 anni a Thu\nThun\",\n      ",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"geopolitica\",\n  \"sommario\": \"Tensione massima nel Golfo Persico con l'avvio del blocco US\nUSA ai porti iraniani, mentre l'Europa registra una svolta politica in Ungh\nUngheria con la sconfitta di Orbán. Sullo sfondo, si acuisce lo scontro dip\ndiplomatico tra Vaticano e amministrazione Trump.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Gli Stati Uniti avviano il blocco dei porti iraniani, merc\nmercati petroliferi sotto pressione\",\n      \"fonte\": \"Internazionale\",\n      \"link\": \"https",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 104)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 104)",
-          "_raw": "{\n  \"categoria\": \"economia\",\n  \"sommario\": \"Oggi l'attenzione economica per il lettore svizzero è domina\ndominata da movimenti strategici di grandi aziende elvetiche e dalla tutela\ntutela del marchio nazionale. Spiccano la successione in MSC e l'espansione\nl'espansione del Gruppo Fontana in Ticino, alongside normative sulla Swissn\nSwissness.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"MSC passa il timone ai figli: successione nel colosso sviz\nsvizzero dello shipping\",\n      \"fonte\": \"Il Sole 24 Ore ",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore parsing risposta AI",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Errore: Invalid control character at: line 3 column 76 (char 107)",
-          "_parse_error": "Invalid control character at: line 3 column 76 (char 107)",
-          "_raw": "{\n  \"categoria\": \"ai_openclaw\",\n  \"sommario\": \"Oggi emergono criticità sull'impatto sociale dell'AI (rappor\n(rapporto Stanford) e limiti infrastrutturali (carenza GPU). OpenAI punta s\nsulla finanza. Nessuna notizia diretta sulla Svizzera, ma forti implicazion\nimplicazioni per il settore bancario e i data center locali.\",\n  \"notizie\": [\n    {\n      \"titolo\": \"Rapporto Stanford 2026 evidenzia divario tra esperti AI e \npubblico\",\n      \"fonte\": \"TechCrunch AI\",\n      \"link\": \"https://techcrunch.com",
-          "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
     }
