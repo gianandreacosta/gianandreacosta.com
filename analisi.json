@@ -1,6 +1,272 @@
 {
-  "generated_at": "2026-04-29T04:50:54.298848+00:00",
+  "generated_at": "2026-04-29T08:46:54.763536+00:00",
   "analyses": [
+    {
+      "id": 52,
+      "run_id": 82,
+      "run_time": "2026-04-29 04:45:01.674077+00:00",
+      "analyzed_at": "2026-04-29T08:46:54.757301+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 17,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi ad alto impatto per il Ticino: lavoro e occupazione, con il nuovo contratto cantonale dell’edilizia e i 19 licenziamenti alla Equans. Sullo sfondo, la politica federale rafforza la risposta alla violenza domestica, con ricadute anche cantonali e l’annuncio del numero 142 per le vittime.",
+          "notizie": [
+            {
+              "titolo": "Equans di Rivera/Monteceneri: 19 licenziamenti e nessun piano sociale",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/diciannove-licenziamenti-alla-equans-a-monteceneri-432356",
+              "riassunto": "La succursale ticinese di Equans taglia 19 posti in tre settori: fibre ottiche, impianti di riscaldamento e amministrazione. La decisione pesa sul Luganese perché arriva dopo il calo di commesse legate a Swisscom e la direzione ha rifiutato un piano sociale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Luganese"
+              ],
+              "differenze_narrative": "Ticinonews insiste sull’impatto occupazionale immediato e sui dettagli pratici dei tagli, presentando i lavoratori come già liberati dagli obblighi di presenza. LaRegione enfatizza invece il punto di vista sindacale e il giudizio politico di OCST, con tono più critico verso la multinazionale e maggiore attenzione al mancato piano sociale."
+            },
+            {
+              "titolo": "Nuovo contratto cantonale dell’edilizia: intesa fino al 2031",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/giornate-troppo-lunghe-e-intemperie-nel-mirino-del-nuovo-contratto-collettivo-cantonale-delledilizia-432355",
+              "riassunto": "Impresari e sindacati hanno firmato il nuovo contratto collettivo cantonale per edilizia e genio civile. L’accordo punta a ridurre le giornate troppo lunghe, migliorare la sicurezza e dare stabilità al settore fino al 2031, in un contesto di carenza di personale e ricambio generazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Ticino"
+              ],
+              "differenze_narrative": "Ticinonews mette al centro le condizioni di lavoro sul cantiere, con enfasi su salute, sicurezza e gestione del tempo. LaRegione evidenzia soprattutto la dimensione negoziale e istituzionale dell’accordo, presentandolo come un risultato quasi storico e utile alla pianificazione del settore."
+            },
+            {
+              "titolo": "La Svizzera rafforza la lotta alla violenza domestica con nuove misure",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/violenza-domestica-la-svizzera-pensa-a-nuove-misure-432326",
+              "riassunto": "Il Dipartimento federale di giustizia e polizia prepara un pacchetto di misure per migliorare la tutela delle vittime nel diritto civile e processuale. Al centro anche prevenzione precoce, sorveglianza elettronica e il numero nazionale 142 operativo dal 1° maggio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "lavoro e condizioni occupazionali in Ticino",
+            "sicurezza e tutela delle vittime di violenza domestica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato l’evolversi dei tagli Equans, in particolare eventuali misure di sostegno ai dipendenti, e l’eventuale reazione politica/sindacale al nuovo contratto dell’edilizia.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi di forte impatto interno: sanità, protezione delle vittime e grandi dossier economico-bancari. Molto spazio anche a iniziative parlamentari e a dibattiti che toccano direttamente Ticino e Cantoni, soprattutto su cure, violenza domestica e rapporto tra politica federale e costi sociali.",
+          "notizie": [
+            {
+              "titolo": "Scontro sull’attuazione dell’iniziativa sulle cure: 190 mila firme chiedono misure immediate",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/troppo-lavoro-o-troppi-costi-spaccatura-sugli-infermieri-426253",
+              "riassunto": "A Berna sindacati e personale sanitario chiedono di applicare subito e integralmente l’iniziativa sulle cure, approvata nel 2021 dal 61% dei votanti. Il nodo è la seconda fase della legge: per i promotori il progetto è troppo debole, per i critici rischia di far esplodere i costi ospedalieri.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT mette in primo piano la spaccatura politica e finanziaria: da un lato le richieste del personale, dall’altro il rischio di aumento delle tariffe ospedaliere. Ticinonews insiste sul gesto simbolico della consegna dell’appello e sul fronte sindacale, con tono più mobilitante. LaRegione evidenzia soprattutto il contenuto concreto delle rivendicazioni e il passaggio parlamentare imminente, con taglio più istituzionale."
+            },
+            {
+              "titolo": "Violenza domestica: il governo parla di progressi, ma i casi restano in aumento",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/ogni-vittima-di-femminicidio-e-un-fallimento-dello-stato-426243",
+              "riassunto": "Beat Jans ha tracciato un bilancio della roadmap contro la violenza domestica e sessuale: i risultati sono giudicati positivi, ma le cifre restano allarmanti. Nel 2025 i reati hanno superato quota 22 mila, oltre 60 al giorno, e dal 2027 è atteso il numero d’aiuto 142.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT adotta un framing più politico-emotivo, con la formula forte di Jans sul femminicidio come ‘fallimento dello Stato’ e un focus sulla questione maschile della violenza. LaRegione privilegia invece il bilancio operativo della roadmap, con accento sui progressi tecnici (sorveglianza elettronica, standard comuni) e sul nuovo numero 142. Entrambe riconoscono però che la situazione resta critica e richiede nuove misure."
+            },
+            {
+              "titolo": "UBS resta solida, ma il nuovo giro di vite sui capitali pesa sul futuro della banca",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1921243/miliardi-ubs-requisiti-prevede-trimestre",
+              "riassunto": "La banca dovrebbe presentare un trimestre operativo solido, ma l’attenzione è sui requisiti patrimoniali più severi decisi dal Consiglio federale. UBS stima fino a 22 miliardi di capitale CET1 aggiuntivo per le nuove misure, mentre il governo ne calcola 20 miliardi: una divergenza importante per uno degli attori chiave della finanza svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Pressione politica su sanità, personale infermieristico e costi del sistema",
+            "Rafforzamento degli strumenti federali contro violenza domestica e femminicidi"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore saranno decisivi il dibattito al Nazionale sull’attuazione dell’iniziativa sulle cure e le reazioni politiche ai dati sulla violenza domestica, con possibile nuova pressione su governo e Cantoni. Sul fronte economico, attese anche ulteriori precisazioni di UBS e del Consiglio federale sui requisiti di capitale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da due temi molto vicini al pubblico svizzero: il BDFIL di Losanna, che festeggia i 20 anni con un programma molto ricco, e l’attualità dell’operista/regista Damiano Michieletto tra Zurigo, Venezia e Milano. Sul fronte più ampio, cresce anche il dibattito sull’impatto dell’IA sulla letteratura e sull’editoria.",
+          "notizie": [
+            {
+              "titolo": "Il BDFIL di Losanna festeggia 20 anni con omaggi a Mirion Malle e al fumetto del Québec",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1921257/fumetto-malle-quebec-bdfil-mirion",
+              "riassunto": "A Losanna si apre la ventesima edizione del festival del fumetto, con 16 mostre, oltre 100 autori e circa 80 appuntamenti fino al 10 maggio. L’omaggio alla fumettista femminista Mirion Malle e la mostra sul Québec ne fanno uno degli eventi culturali più forti della primavera romanda.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Damiano Michieletto, dal Teatro dell'Opera di Zurigo al cinema e alle Olimpiadi",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/buehne/regisseur-im-portraet-olympia-oper-leinwand-damiano-michieletto-ist-ein-alleskoenner",
+              "riassunto": "Il regista italiano è al centro di più progetti simultanei: ha curato la parte artistica iniziale della cerimonia olimpica di Milano 2026, porta al cinema il suo primo film e ha appena messo in scena Mozart a Zurigo. Per il pubblico svizzero è un nome molto presente, soprattutto sul fronte operistico.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "L’IA mette sotto pressione il mondo dei libri: diritti d’autore, trasparenza e mercato",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/literatur/ki-und-literatur-droht-der-literatur-wegen-ki-der-untergang",
+              "riassunto": "SRF fa il punto su come l’intelligenza artificiale stia cambiando la filiera editoriale: testi generati automaticamente, uso di libri per l’addestramento senza licenze e cause miliardarie all’estero. Il tema è molto rilevante anche per editori, autori e lettori in Svizzera.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "grandi eventi culturali in Svizzera romanda e tedesca",
+            "impatto dell’intelligenza artificiale su editoria e creatività"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l’avvio del BDFIL a Losanna e l’eventuale rilancio del dibattito su IA e diritti d’autore nel settore editoriale svizzero.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata geopolitica è dominata dalle conseguenze della crisi con l’Iran: sicurezza energetica, stretto di Hormuz e riflessi anche sulla Svizzera. Sullo sfondo, persistono tensioni in Libano e in Mali, segnali di un quadro internazionale ancora instabile.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera resta protetta dai propri stock petroliferi mentre la crisi con l’Iran scuote i mercati",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/schweiz/auswirkungen-des-iran-kriegs-exklusive-tankreserven-schweiz-als-treibstoffinsel-in-europa",
+              "riassunto": "SRF spiega che, nonostante la guerra contro l’Iran e la chiusura dello Stretto di Hormuz, in Svizzera benzina e diesel continuano a scorrere e i voli decollano. Il BWL giudica la fornitura degli aeroporti sicura fino a fine maggio 2026, grazie alle riserve obbligatorie gestite solo per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Trump rilancia il tema di Hormuz dopo un messaggio attribuito all’Iran",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/28/trump-liran-ci-ha-detto-che-e-al-collasso-ci-chiede-di-riaprire-hormuz_35048403-701b-497f-bef8-ea5b4bebdc63.html",
+              "riassunto": "Donald Trump scrive su Truth che l’Iran sarebbe in uno “stato di collasso” e chiederebbe di riaprire lo Stretto di Hormuz “il prima possibile”. Il passaggio è rilevante perché Hormuz è un collo di bottiglia strategico per petrolio e traffici globali, con possibili effetti su prezzi e sicurezza energetica anche in Europa.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "In Libano cresce lo scontro interno mentre resta aperto il dossier Israele-Hezbollah",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/04/28/libano-occupazione-israele",
+              "riassunto": "Pierre Haski descrive un Paese spaccato: il 27 aprile Naim Qassem ha accusato il governo di “sottomissione”, mentre il presidente Joseph Aoun ha ribattuto che il vero tradimento è aver trascinato il Libano in guerra per interessi esterni. Intanto nel sud i combattimenti continuano, segno che il cessate il fuoco non basta.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "sicurezza energetica europea e rischio Hormuz",
+            "crisi mediorientale con ricadute regionali e interne"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione della crisi sullo Stretto di Hormuz e l’eventuale risposta dei mercati energetici europei; in parallelo, attenzione a possibili nuovi sviluppi nel braccio di ferro tra Hezbollah, governo libanese e Israele.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da due fili conduttori: l’effetto delle tensioni in Medio Oriente sui costi di energia e trasporti, e l’aumento dei prezzi nel mercato svizzero delle telecomunicazioni. Per un lettore svizzero italofono, contano soprattutto il possibile rincaro dei voli e l’ennesimo ritocco delle tariffe mobili.",
+          "notizie": [
+            {
+              "titolo": "Salt alza di nuovo i prezzi degli abbonamenti mobili in Svizzera",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schon-wieder-salt-erhoeht-die-preise-das-steckt-dahinter-id21907178.html",
+              "riassunto": "Salt aumenterà da giugno i prezzi degli abbonamenti mobile di 1-2 franchi al mese per i clienti senza altri servizi o dispositivi. L’azienda parla di investimenti di rete e di una crescita del traffico dati del 50% in cinque anni. Per i consumatori svizzeri è un altro segnale di rincari nel mercato telecom.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Lo shock iraniano manda in stallo i conti delle compagnie aeree europee",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/compagnie-aeree-shock-iraniano-manda-stallo-conti-trimestrali-AIGQzEjC",
+              "riassunto": "La stagione dei trimestrali parte con il settore aereo sotto pressione per il caro-carburante legato alla guerra in Iran. Air France-KLM ha già aumentato di 50 euro i biglietti con un sovrapprezzo carburante; KLM ha cancellato 80 voli andata e ritorno da Schiphol e SAS mille collegamenti. In Europa Bank of America stima un possibile rincaro medio dei biglietti del 5%.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Economia",
+                "Adnkronos"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore legge l'evento soprattutto come uno shock industriale e finanziario per le compagnie aeree europee, con attenzione a prezzi, capacità e margini. Adnkronos enfatizza invece il quadro geopolitico e militare nello Stretto di Hormuz, presentando il rischio sui traffici come conseguenza diretta del braccio di ferro tra Iran e Stati Uniti. La prima fonte privilegia l'impatto sui bilanci e sui biglietti; la seconda il rischio strategico globale sul commercio petrolifero."
+            }
+          ],
+          "trend": [
+            "Rincari nei servizi al consumo in Svizzera, con le telecomunicazioni sotto osservazione",
+            "Effetto Medio Oriente su energia, carburante e costi di trasporto"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la trasmissione dell’aumento dei costi energetici ai prezzi di voli e servizi, oltre all’eventuale reazione della concorrenza telecom in Svizzera dopo il rialzo annunciato da Salt.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da due filoni forti: la ridefinizione del rapporto OpenAI-Microsoft, con effetti diretti su cloud, licenze e futuro commerciale dell’AI, e il caso Meta-Manus, dove la Cina interviene su un’acquisizione strategica nel settore degli agenti AI. Sullo sfondo, cresce la corsa infrastrutturale per alimentare l’AI e si intensificano le mosse su hardware e piattaforme.",
+          "notizie": [
+            {
+              "titolo": "OpenAI e Microsoft riscrivono il patto: fine dell’esclusiva e della clausola AGI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-and-microsoft-rewrite-their-deal-no-more-exclusivity-no-more-agi-clause/",
+              "riassunto": "OpenAI può ora distribuire i propri prodotti tramite qualsiasi cloud provider, mentre Microsoft perde l’esclusiva sulla tecnologia OpenAI. La clausola AGI sparisce e Microsoft ottiene invece una licenza non esclusiva fino al 2032. Per il mercato è un cambio strutturale: apre la strada ad Amazon Web Services e ridisegna la dipendenza di OpenAI da Azure.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "TechCrunch AI",
+                "Hacker News"
+              ],
+              "differenze_narrative": "The Decoder enfatizza il cambio di architettura contrattuale: fine dell’esclusiva, addio alla clausola AGI, nuova redistribuzione del potere. TechCrunch mette più l’accento sul rischio legale rimosso per Microsoft legato all’accordo da 50 miliardi con Amazon, con tono da retroscena negoziale. Bloomberg/Hacker News sintetizzano la svolta come chiusura dell’accordo esclusivo e della revenue share, con taglio più finanziario e meno tecnico."
+            },
+            {
+              "titolo": "Bloccata in Cina l’acquisizione da 2 miliardi di Meta della startup Manus",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/china-blocks-metas-2-billion-acquisition-of-ai-startup-manus/",
+              "riassunto": "L’autorità economica cinese NDRC ordina a Meta di sciogliere l’acquisizione di Manus, startup di AI agentica per cui il gruppo avrebbe già integrato la tecnologia in alcuni prodotti. Il caso segnala quanto Pechino consideri strategico il controllo di team e know-how legati all’AI, e quanto il dossier possa complicare la corsa di Meta sugli agenti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "TechCrunch AI",
+                "MIT Tech Review"
+              ],
+              "differenze_narrative": "TechCrunch racconta la vicenda come intervento regolatorio drastico: niente spiegazioni, ordine di annullare la transazione, dettagli operativi come i 100 dipendenti già spostati a Singapore. The Decoder insiste di più sull’impatto geopolitico e strategico, leggendo il blocco come segnale e possibile leva negoziale nel confronto USA-Cina. MIT Tech Review lo inserisce nella lista delle notizie chiave del giorno con un framing più sintetico e da rassegna."
+            },
+            {
+              "titolo": "OpenAI valuta uno smartphone e chip propri per agenti AI al posto delle app",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+              "riassunto": "Secondo Ming-Chi Kuo, OpenAI lavorerebbe con MediaTek, Qualcomm e Luxshare a uno smartphone con chip dedicati e funzioni basate su agenti AI. L’idea è ridurre la dipendenza da app e controllare direttamente hardware, software e dati d’uso. La produzione di massa sarebbe prevista per il 2028.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch punta molto sul concept di telefono AI e sul contesto delle voci di mercato, con enfasi sui partner industriali e sul richiamo a un possibile smartphone OpenAI. The Decoder è più schematico e supply-chain oriented: evidenzia chip, tempistiche e l’ipotesi di un “AI agent phone” come strategia di controllo totale della piattaforma."
+            }
+          ],
+          "trend": [
+            "Riposizionamento delle grandi piattaforme AI su cloud, licenze e controllo del canale distributivo",
+            "Accelerazione verso agenti AI e hardware dedicato, con forte intreccio tra geopolitica, chip e infrastrutture"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’eventuale reazione di Amazon e degli altri cloud provider alla nuova libertà commerciale di OpenAI, oltre ai dettagli pratici su come Meta proverà a districare o sostituire l’operazione Manus dopo il veto cinese.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 51,
       "run_id": 82,
@@ -4883,67 +5149,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "AI response not parseable as JSON for ai_openclaw"
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T08:10:34.498969+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "openai/gpt-5.1-codex-mini",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
         }
       ]
     }
