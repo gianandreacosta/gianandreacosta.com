@@ -1,6 +1,281 @@
 {
-  "generated_at": "2026-04-29T08:46:54.763536+00:00",
+  "generated_at": "2026-04-29T08:53:20.711152+00:00",
   "analyses": [
+    {
+      "id": 53,
+      "run_id": 83,
+      "run_time": "2026-04-29 08:49:26.308437+00:00",
+      "analyzed_at": "2026-04-29T08:53:20.705962+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La selezione di oggi ruota attorno a tre dossier che toccano da vicino il Ticino: spesa sanitaria in forte aumento, difficoltà dell’industria e pressione sui controlli fiscali e doganali. Sullo sfondo restano temi istituzionali e locali, ma la priorità va alle notizie con impatto concreto su cittadini, imprese e finanze pubbliche.",
+          "notizie": [
+            {
+              "titolo": "Psicoterapia: in Ticino la spesa esplode e il Cantone valuta una moratoria",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/psicoterapia-spendiamo-il-doppio-il-cantone-pensa-a-una-moratoria-426346",
+              "riassunto": "La spesa pro capite per la salute mentale in Ticino cresce del 12,5% nel 2025 e supera di oltre il 50% la media svizzera. Il dato ha spinto il Cantone a considerare una moratoria: tema rilevante perché incide sui costi della sanità e sull’accesso alle cure.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Industria ticinese sotto pressione tra incertezza globale, energia e dazi",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/economia/lindustria-naviga-a-vista-troppi-motivi-di-incertezza-426358",
+              "riassunto": "Il direttore dell’AITI, Stefano Modenini, descrive un settore che “naviga a vista” per effetto di ordinativi deboli, rincaro energetico, crisi tedesca e tensioni geopolitiche. Per il Ticino è un indicatore importante della tenuta economica e dell’occupazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tassa sul traffico pesante: il deputato Quadri denuncia falle nei controlli",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/riscossione-della-tassa-sul-traffico-pesante-entrate-mancate-e-lacune-nei-controlli-al-confine-432441",
+              "riassunto": "In un’interpellanza a Berna, Lorenzo Quadri contesta il nuovo sistema NMTS per la TTPCP, sostenendo che si basi troppo sulle autodichiarazioni e meno sui controlli doganali. La questione tocca direttamente confini, gettito fiscale e trasporto merci verso la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "pressione sui costi pubblici e sanitari",
+            "fragilità economica e industriale in un contesto internazionale incerto"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se il Cantone confermerà misure restrittive sulla psicoterapia e se Berna risponderà all’interpellanza di Quadri sui controlli TTPCP; sul fronte economico, eventuali segnali dalle imprese ticinesi su ordini, investimenti e occupazione.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da tre temi molto concreti per il pubblico svizzero: un dossier che tocca direttamente i frontalieri e il Ticino, il dibattito riaperto sull’acquisto degli F-35 e una sentenza che obbliga Sunrise a garantire un servizio TV più accessibile ai non udenti.\nSul piano locale pesa anche la cronaca giudiziaria, ma il baricentro resta su decisioni che possono avere effetti politici, economici e sociali immediati in Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Frontalieri e disoccupazione: nuovo braccio di ferro tra Svizzera e Bruxelles",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/sulla-disoccupazione-dei-frontalieri-si-apre-un-nuovo-fronte-con-bruxelles-426360",
+              "riassunto": "L’UE sta finalizzando una riforma del coordinamento della sicurezza sociale che cambierebbe il sistema delle indennità di disoccupazione per i frontalieri. In futuro i sussidi potrebbero essere pagati dal Paese di ultimo impiego, non da quello di residenza: un punto sensibile per il Ticino, dove il tema ha impatto diretto su lavoratori e finanze.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Iniziativa per bloccare gli F-35: il fronte politico svizzero resta freddo",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/no-agli-f-35-liniziativa-si-sgonfia-non-piace-neppure-a-ps-e-verdi-426345",
+              "riassunto": "A Berna è partita una nuova iniziativa popolare per fermare l’acquisto dei jet F-35 e modificare la Costituzione, ma il progetto non trova sostegno nei partiti. Il timing è sfavorevole: i primi otto aerei dovrebbero arrivare già da metà prossimo anno, mentre l’iter referendario richiederà anni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sunrise dovrà offrire la funzione TV per persone non udenti",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/sunrise-deve-rendere-disponibile-la-funzione-tv-per-non-udenti-426307",
+              "riassunto": "Il Tribunale amministrativo federale ha accolto il ricorso della Federazione svizzera dei sordi e della SSR: Sunrise dovrà includere nella propria offerta la componente Hbb-TV della SSR, che dà accesso a servizi aggiuntivi per persone con disabilità sensoriali. La sentenza non è definitiva e può ancora arrivare al Tribunale federale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Decisioni federali e regolatorie con effetto diretto su Ticino, telecomunicazioni e diritti dei consumatori",
+            "Tensione tra politica svizzera, costi pubblici e rapporti con l’UE sul piano economico e istituzionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da seguire soprattutto l’evoluzione del dossier frontalieri a Bruxelles e la reazione di Berna, perché potrebbe aprire un nuovo contenzioso con effetti concreti per il mercato del lavoro ticinese.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da alcuni temi molto concreti per il pubblico svizzero italofono: l’ESC con Veronica Fusaro, il Locarno Film Festival in avvicinamento e le ricadute dell’intelligenza artificiale sul mondo pop globale. Sullo sfondo, spazio anche a eventi ticinesi e a figure culturali internazionali che attirano attenzione oltre i confini nazionali.",
+          "notizie": [
+            {
+              "titolo": "Veronica Fusaro in piena campagna ESC: la promozione internazionale passa da Londra",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/sendungen/eurovision-song-contest/eurovision-promo-marathon-veronica-fusaro-12-wilde-stunden-an-der-esc-party-in-london",
+              "riassunto": "La candidata svizzera all’Eurovision 2026 ha partecipato alla pre-party di Londra con un programma massacrante di performance, interviste e shooting. Per la Svizzera conta perché l’ESC resta uno dei palcoscenici culturali più visibili all’estero e Veronica Fusaro è una delle speranze elvetiche.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Locarno svela il manifesto della 79ª edizione: Cindy Sherman firma l’immagine del festival",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921705/frequenze-libere-iii-come-trio",
+              "riassunto": "Il manifesto della prossima edizione del Locarno Film Festival è affidato a Cindy Sherman e reinterpreta l’identità visiva del festival con una donna in bianco e nero avvolta in un telo leopardato. È un segnale forte per il principale evento cinematografico ticinese, con richiamo internazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "LaRegione Spettacoli"
+              ],
+              "differenze_narrative": "Le due notizie presenti nel feed insistono entrambe sul valore simbolico dell’opera di Cindy Sherman, ma l’angolazione è leggermente diversa: una la tratta come fatto di cultura visiva e identità del festival, l’altra come parte del cartellone/agenda Locarno. Il framing è quindi più editoriale e festivaliero che di cronaca pura."
+            },
+            {
+              "titolo": "Taylor Swift si tutela contro i deepfake: brevetti e marchio per voce e immagine",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/news/gesellschaft/massnahmen-gegen-ki-taylor-swift-laesst-ihre-stimme-markenrechtlich-schuetzen",
+              "riassunto": "Swift ha depositato richieste di registrazione per due clip audio e per un’immagine, tramite la sua società TAS Rights Management. Secondo un esperto, l’obiettivo è proteggere voce e aspetto da falsi generati con IA: un tema rilevante anche per il mercato culturale europeo e svizzero.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Kultur",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "SRF imposta il pezzo come misura concreta contro i deepfake e spiega il meccanismo giuridico dei marchi depositati; LaRegione lo riprende in modo molto più sintetico e pop, quasi come segnale di tendenza. SRF privilegia il rischio tecnologico e legale, LaRegione l’icona Taylor Swift e la notizia come fenomeno culturale di massa."
+            }
+          ],
+          "trend": [
+            "cultura e intelligenza artificiale: tutela dell’identità artistica, deepfake e copyright",
+            "eventi culturali svizzeri con forte proiezione internazionale: ESC e Locarno"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l’ulteriore sviluppo della strategia di Taylor Swift contro gli usi dell’IA e le eventuali nuove informazioni sul lancio promozionale della candidatura svizzera all’Eurovision, oltre a possibili dettagli aggiuntivi sul Locarno Film Festival.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dalla crisi Iran-Stretto di Hormuz e dal suo effetto domino su Medio Oriente e alleati occidentali. In parallelo, restano calde le tensioni in Libano e il riassetto dei rapporti USA-Regno Unito attorno a Iran e Ucraina.",
+          "notizie": [
+            {
+              "titolo": "Trump rilancia la pressione sull'Iran e dice che Teheran chiede di riaprire Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/28/trump-liran-ci-ha-detto-che-e-al-collasso-ci-chiede-di-riaprire-hormuz_35048403-701b-497f-bef8-ea5b4bebdc63.html",
+              "riassunto": "Trump afferma su Truth che l’Iran sarebbe in “stato di collasso” e che starebbe chiedendo di riaprire lo Stretto di Hormuz “il prima possibile”. È un segnale di massima tensione sul punto più sensibile del traffico energetico globale, con possibili ricadute immediate sui mercati e sulla sicurezza marittima.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Nel cluster sull’Iran, questa notizia adotta il framing più politico e personale di Trump, con toni trionfalistici e provocatori. Altre fonti nello stesso filone privilegiano invece il dato operativo e militare, come il blocco dei porti e le navi intercettate, senza enfasi sulla narrativa di vittoria."
+            },
+            {
+              "titolo": "Libano, lo scontro tra Hezbollah e il presidente riapre la paura di una crisi interna",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/04/28/libano-occupazione-israele",
+              "riassunto": "Il 27 aprile Naim Qassem, leader di Hezbollah, e il presidente Joseph Aoun si sono accusati a vicenda in pubblico, con riferimenti diretti all’Iran. Sullo sfondo restano il cessate il fuoco fragile e i combattimenti nel sud del Paese: un mix che tiene il Libano sospeso tra guerra esterna e frattura interna.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Washington e Londra rilanciano l’asse anti-Iran e il sostegno all’Ucraina",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/28/re-carlo-serve-risolutezza-incrollabile-per-aiutare-lucraina_8008a9ff-8dc8-4adc-b39f-16d9b5abf4b8.html",
+              "riassunto": "Re Carlo ha chiesto agli Stati Uniti una “risolutezza incrollabile” per aiutare l’Ucraina, richiamando la risposta post-11 settembre. Nello stesso contesto, ha legato la fase internazionale attuale alla guerra in Ucraina e al conflitto con l’Iran, segnalando una convergenza politica tra alleati occidentali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Qui il tono è istituzionale e cerimoniale, con un messaggio di unità occidentale e continuità storica. In altre notizie sullo stesso asse, Trump usa invece un registro più aggressivo e nazionalista, enfatizzando la vittoria militare e la superiorità americana."
+            }
+          ],
+          "trend": [
+            "Escalation tra Iran, Stati Uniti e sicurezza dello Stretto di Hormuz",
+            "Fratture interne nei teatri mediorientali: Libano fragile e alleanze regionali sotto pressione"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del dossier Hormuz: eventuali ulteriori mosse di Trump, contromisure iraniane e nuovi blocchi/interdizioni navali potrebbero avere effetti immediati su prezzi dell’energia e traffico commerciale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica per i lettori svizzeri è dominata da temi molto concreti: tariffe telefoniche, pressione sui prezzi al consumo e rischi regolatori per UBS. Sullo sfondo, si vede una Svizzera dove il potere d’acquisto e la concorrenza tra grandi operatori restano sotto tensione.",
+          "notizie": [
+            {
+              "titolo": "Salt aumenta ancora i prezzi degli abbonamenti mobili in Svizzera",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schon-wieder-salt-erhoeht-die-preise-das-steckt-dahinter-id21907178.html",
+              "riassunto": "Salt alza da giugno i prezzi degli abbonamenti mobile di 1-2 franchi al mese, dopo Swisscom. Il gruppo parla di più investimenti di rete e di consumi dati cresciuti del 50% in cinque anni. Per molti clienti l’aumento pesa perché colpisce anche gli abbonamenti in promozione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Migros blocca diversi marchi cosmetici per ottenere condizioni migliori dai fornitori",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/gillette-loreal-und-co-schon-wieder-steckt-der-orange-riese-im-preisstreit-jetzt-wirft-migros-zahlreiche-kosmetikprodukte-aus-den-regalen-id21906274.html",
+              "riassunto": "Nei negozi Migros mancano temporaneamente prodotti di marchi come Gillette, Garnier, Head & Shoulders e Pantene. Il motivo è una nuova trattativa sui prezzi con Procter & Gamble e L’Oréal, con l’obiettivo di difendere margini bassi e prezzi più competitivi per i clienti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "UBS sotto pressione: in USA si allenta la vigilanza mentre la Svizzera prepara regole più dure",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/ubs-und-die-gefahr-in-uebersee-experte-schlaegt-alarm-trump-tut-alles-dafuer-dass-die-naechste-finanzkrise-kommt-id21904270.html",
+              "riassunto": "La grande banca svizzera beneficia della nuova licenza bancaria negli Stati Uniti, ma Berna vuole rafforzare la cosiddetta “Lex UBS” imponendo più capitale alle filiali estere. Un esperto avverte che la deregolamentazione americana potrebbe aumentare il rischio di una nuova crisi finanziaria.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Pressione sui prezzi e sul potere d’acquisto in Svizzera",
+            "Conflitto tra grandi aziende e fornitori, con riflessi diretti sui consumatori"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se Salt e/o altri operatori confermeranno nuovi rincari e se la disputa Migros-fornitori si estenderà ad altre categorie di prodotti; sul fronte finanziario, attenzione alle reazioni politiche e di mercato alla stretta regolatoria su UBS.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria di oggi ruota attorno a tre assi forti: la guerra commerciale tra i grandi modelli AI e i cloud, il fronte politico-militare negli USA, e la battaglia legale interna a OpenAI. Molte notizie convergono sugli stessi eventi da fonti diverse, segno di un’alta rilevanza e di un ecosistema AI in rapido riassetto.",
+          "notizie": [
+            {
+              "titolo": "Musk rilancia sotto giuramento la rottura con Larry Page nel processo contro OpenAI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/",
+              "riassunto": "Nel processo contro OpenAI, Elon Musk ha raccontato sotto giuramento un vecchio scontro con Larry Page di Google sulla sicurezza dell’AI: Page avrebbe liquidato il rischio di estinzione umana con un “fine”, purché l’AI sopravvivesse. Il racconto rafforza la tesi di Musk sul motivo “filantropico” della sua rottura con OpenAI, ma resta parte di una causa legale in cui ha chiesto 134 miliardi di dollari di danni.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "OpenAI apre i suoi prodotti anche su AWS dopo la revisione dell’accordo con Microsoft",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/",
+              "riassunto": "Amazon ha già iniziato a offrire i nuovi modelli OpenAI su AWS Bedrock, inclusi Codex e un nuovo servizio per agenti AI. Il passaggio segue l’intesa rivista con Microsoft, che non ha più diritti esclusivi sui prodotti OpenAI. Per il mercato cloud è un cambio di equilibrio importante: OpenAI si allarga oltre Azure e Amazon spinge per diventare piattaforma chiave dell’AI enterprise.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "Hacker News"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza la rottura dell’esclusiva Microsoft e il tempismo di Amazon, con taglio competitivo e industriale. La fonte Hacker News/Stratechery mette più il focus sulla nuova architettura degli accordi: Azure resta partner principale ma non esclusivo, OpenAI può distribuire ovunque e Microsoft perde la revenue share diretta, spostando l’attenzione sul riassetto strategico di lungo periodo."
+            },
+            {
+              "titolo": "Google concede al Pentagono accesso alla sua AI, malgrado le proteste interne",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
+              "riassunto": "Google ha ampliato l’accesso del Dipartimento della Difesa USA alla sua AI per reti classificate, dopo il rifiuto di Anthropic di autorizzare usi senza guardrail su sorveglianza domestica e armi autonome. Il contratto segue anche le intese di OpenAI e xAI con il Pentagono. Il caso pesa politicamente perché 950 dipendenti Google hanno firmato una lettera contraria.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch sottolinea il contesto di scontro etico, il precedente di Anthropic e la pressione interna dei dipendenti. The Decoder è più netto sul piano legale e aziendale: evidenzia che le clausole di sicurezza non sarebbero giuridicamente vincolanti e che Google avrebbe accettato di adattare i filtri di sicurezza su richiesta del governo. Il framing di The Decoder è quindi più critico verso la reale efficacia delle garanzie."
+            }
+          ],
+          "trend": [
+            "Riposizionamento dei grandi provider AI tra cloud, distribuzione e ricavi",
+            "Tensione crescente tra adozione militare dell’AI, etica interna e controlli di sicurezza"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono dettagli nuovi sul processo Musk-OpenAI e soprattutto se l’apertura di OpenAI ad AWS innesca ulteriori reazioni di Microsoft, Anthropic o dei regolatori sul fronte concorrenza e sicurezza.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 52,
       "run_id": 82,
@@ -5088,67 +5363,6 @@
           ],
           "da_tenere_d_occhio": "L'evoluzione dei prezzi delle GPU e la disponibilità di servizi cloud per le imprese europee nelle prossime 24 ore a seguito degli annunci di razionamento.",
           "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T08:18:11.197230+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "openai/gpt-5.1-codex-mini",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_ticino",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cronaca_ticino"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_svizzera",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cronaca_svizzera"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cultura",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cultura"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: AI response not parseable as JSON for geopolitica",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for geopolitica"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: AI response not parseable as JSON for economia",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for economia"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: AI response not parseable as JSON for ai_openclaw",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for ai_openclaw"
         }
       ]
     }
