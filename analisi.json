@@ -1,6 +1,281 @@
 {
-  "generated_at": "2026-04-29T09:09:25.347150+00:00",
+  "generated_at": "2026-04-30T04:51:29.135442+00:00",
   "analyses": [
+    {
+      "id": 55,
+      "run_id": 87,
+      "run_time": "2026-04-30 04:45:02.685157+00:00",
+      "analyzed_at": "2026-04-30T04:51:29.130965+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la categoria è dominata da temi con ricadute concrete sul Ticino: rapporti con l’UE, frontalieri e dossier transfrontalieri. Sul versante locale emergono anche una decisione rilevante sul Lago Maggiore e il dibattito attorno a Locarno Film Festival, segnale di una regione al centro tra infrastrutture, economia e visibilità internazionale.",
+          "notizie": [
+            {
+              "titolo": "Via libera all’innalzamento del livello del Lago Maggiore",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Italia-Svizzera-Lago-Maggiore-via-libera-all%E2%80%99innalzamento--3704265.html",
+              "riassunto": "È stato autorizzato l’innalzamento del Lago Maggiore di 15 centimetri, fino a quota 1,40 metri. L’operazione aumenterà la disponibilità idrica di 20-30 milioni di metri cubi e ha un impatto diretto su Ticino, agricoltura e gestione ambientale transfrontaliera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Per i frontalieri cambia la regola sulla disoccupazione",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/Frontalieri-la-disoccupazione-la-pagher%C3%A0-lo-Stato-dove-lavoravano--3704307.html",
+              "riassunto": "La riforma europea del coordinamento della sicurezza sociale potrebbe spostare la disoccupazione dei frontalieri sul Paese in cui hanno lavorato, invece che su quello di residenza. Per il Ticino è un dossier sensibile, perché tocca migliaia di lavoratori transfrontalieri e i rapporti con Bruxelles.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Locarno79: svelata l’immagine ufficiale del festival",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/societa/cinema/svelata-limmagine-di-locarno-79-426352",
+              "riassunto": "Il Locarno Film Festival ha presentato il poster della 79esima edizione, firmato da Cindy Sherman. La scelta conferma il profilo internazionale del festival e rilancia l’attenzione su Locarno come vetrina culturale di punta del Ticino.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "La CdT insiste maggiormente sull’aspetto culturale e identitario dell’immagine, presentandola come segnale della nuova edizione e valorizzando il linguaggio artistico di Cindy Sherman. RSI adotta un taglio più istituzionale e promozionale, sottolineando il simbolismo del leopardo e le parole del direttore artistico sul ruolo delle immagini nell’era digitale. La CdT appare più analitica sulla funzione del manifesto, RSI più centrata sulla comunicazione ufficiale del festival."
+            }
+          ],
+          "trend": [
+            "Dossiers transfrontalieri e rapporti con l’UE che incidono sul Ticino",
+            "Gestione di risorse e infrastrutture condivise con l’Italia",
+            "Cultura e grandi eventi come leva d’immagine per il cantone"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito se la riforma europea sulla disoccupazione dei frontalieri produrrà reazioni politiche in Ticino e se emergeranno dettagli operativi sull’accordo del Lago Maggiore, soprattutto per agricoltura, navigazione e tutela ambientale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da tre filoni molto rilevanti per la Svizzera: un grave incendio a Lancy con una persona in pericolo di vita, una sentenza federale che obbliga Sunrise a garantire funzioni tv per persone non udenti, e il forte risultato trimestrale di UBS mentre prosegue l’integrazione di Credit Suisse.",
+          "notizie": [
+            {
+              "titolo": "Incendio in una torre a Lancy: una persona è in pericolo di vita",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1921585/persona-incendio-torre-lancy-bloccata-pericolo-ascensore-rimasta",
+              "riassunto": "Un incendio scoppiato in una torre a Lancy (GE) ha coinvolto due ascensori distrutti. I pompieri hanno salvato una persona rimasta bloccata nell’impianto: è stata trasportata all’HUG in pericolo di vita. Cinque persone sono state valutate dai sanitari.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Sunrise dovrà offrire anche la funzione tv per persone non udenti",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/sunrise-deve-rendere-disponibile-la-funzione-tv-per-non-udenti-426307",
+              "riassunto": "Il Tribunale amministrativo federale ha accolto il ricorso della Federazione svizzera dei sordi e della SSR contro Sunrise. La questione riguarda la componente Hbb-TV, che va oltre i sottotitoli e offre servizi aggiuntivi per persone con disabilità sensoriali. La sentenza non è ancora definitiva.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "UBS chiude il trimestre con oltre 3 miliardi di utile e accelera l’integrazione di Credit Suisse",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/ubs-lutile-supera-i-3-miliardi-di-dollari-nel-primo-trimestre-432471",
+              "riassunto": "UBS ha registrato un utile netto trimestrale di 3,04 miliardi di dollari, +80% sullo stesso periodo dell’anno precedente e sopra le attese. La banca ha inoltre completato il trasferimento in Svizzera di 1,2 milioni di conti e punta a finire l’integrazione di Credit Suisse entro fine 2026.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews insiste sul risultato finanziario e sul contributo del CEO ticinese Sergio Ermotti, con un taglio più orientato alla performance aziendale. LaRegione mette invece più enfasi sul percorso di integrazione di Credit Suisse e segnala anche il possibile fabbisogno di capitale di 22 miliardi, quindi un framing più prudente e di rischio sistemico."
+            }
+          ],
+          "trend": [
+            "sicurezza e gestione delle emergenze nei centri urbani svizzeri",
+            "regolazione federale su servizi essenziali, banche e grandi gruppi economici"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorati gli sviluppi sull’incendio di Lancy, in particolare le condizioni della persona ricoverata, e l’eventuale reazione ufficiale di Sunrise alla sentenza del TAF. Sul fronte finanziario, attenzione ai commenti di mercato dopo i conti di UBS e alle possibili implicazioni sull’integrazione di Credit Suisse.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la categoria è dominata da due filoni molto pertinenti per il pubblico svizzero italofono: il nuovo manifesto del Locarno Film Festival firmato da Cindy Sherman e il ritorno a Bellinzona di Massimo Rocchi con uno spettacolo che celebra i suoi 50 anni di carriera. Sul piano internazionale spiccano anche la morte del grande fotografo indiano Raghu Rai e alcuni approfondimenti culturali di taglio letterario e musicale.",
+          "notizie": [
+            {
+              "titolo": "Cindy Sherman firma il manifesto ufficiale di Locarno 79",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921703/sherman-festival-cindy-locarno-identita",
+              "riassunto": "Il Locarno Film Festival ha affidato a Cindy Sherman il poster della 79esima edizione. L’artista americana reinterpreta l’identità visiva del Festival con una figura in bianco e nero avvolta in un manto leopardato, tema forte per un evento centrale in Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Massimo Rocchi torna a Bellinzona con uno spettacolo per i suoi 50 anni di palcoscenico",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1921731/anni-rocchi-teatro-massimo-palcoscenico-50",
+              "riassunto": "L’artista italo-svizzero sarà al Teatro Sociale venerdì 1 e sabato 2 maggio alle 20.45 con ‘50 anni di palcoscenico’, in esclusiva per il Ticino. Lo spettacolo intreccia biografia, lingue e culture europee: una presenza di richiamo per la scena culturale locale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "È morto Raghu Rai, fotografo simbolo dell’India contemporanea",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921615/rai-india-immagini-raghu-foto",
+              "riassunto": "Si è spento a 83 anni Raghu Rai, maestro del fotogiornalismo indiano e membro di Magnum dal 1977. Ha raccontato guerre, tragedie e figure come Madre Teresa, Indira Gandhi e il Dalai Lama, lasciando un archivio decisivo per la memoria visiva del Paese.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "forte attenzione alla cultura ticinese e agli eventi legati a Locarno e Bellinzona",
+            "memoria culturale internazionale: omaggi, anniversari e figure storiche della fotografia e della letteratura"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’eventuale ulteriore rilancio del manifesto di Locarno 79 e la reazione del pubblico ticinese al ritorno di Massimo Rocchi, due notizie con potenziale eco locale immediata.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La notizia dominante riguarda l’escalation Iran-USA e il suo impatto sui mercati energetici europei: Hormuz, petrolio e costi dell’energia restano il centro della scena. In parallelo, Bruxelles ha aperto un fronte regolatorio importante contro Meta su Facebook e Instagram, con possibili effetti anche per utenti svizzeri.",
+          "notizie": [
+            {
+              "titolo": "La guerra in Iran continua a far salire i costi energetici in Europa",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/29/von-der-leyen-guerra-in-iran-costa-allue-500-milioni-al-giorno_8f8b92b5-b9b7-47f1-ad7d-da7af233d316.html",
+              "riassunto": "Von der Leyen ha stimato in oltre 27 miliardi di euro in 60 giorni l’aumento della spesa Ue per combustibili fossili, pari a quasi 500 milioni al giorno. Per la Svizzera conta perché la crisi in Medio Oriente continua a sostenere i prezzi dell’energia e dell’import. Il nodo centrale resta Hormuz, con effetti potenzialmente duraturi su inflazione e trasporti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Il Sole 24 Ore Mondo",
+                "Domani",
+                "Internazionale",
+                "Il Post Mondo"
+              ],
+              "differenze_narrative": "ANSA e Domani puntano sull’impatto macroeconomico in Ue e sulle cifre fornite da von der Leyen; Il Sole 24 Ore enfatizza la ricaduta sui mercati energetici, sul blocco di Hormuz e sulle conseguenze per inflazione e crescita; Il Post e Internazionale privilegiano il braccio di ferro geopolitico tra Washington e Teheran, con tono più analitico e polemico sulle mosse di Trump. Cambia anche il framing: Bruxelles parla di costi e di dipendenza energetica, mentre le testate economiche insistono su prezzi, stoccaggi e catena di approvvigionamento."
+            },
+            {
+              "titolo": "Bruxelles accusa Facebook e Instagram di non proteggere abbastanza i minori",
+              "fonte": "Il Sole 24 Ore Mondo",
+              "link": "https://www.ilsole24ore.com/art/ue-sistemi-controllo-l-eta-facebook-e-instagram-inefficaci-AIeeVMlC",
+              "riassunto": "La Commissione europea ha concluso in via preliminare che Instagram e Facebook violano il DSA perché non impediscono efficacemente l’accesso ai minori di 13 anni. Se confermata, la violazione può portare a multe fino al 6% del fatturato annuo. Per un lettore svizzero è rilevante perché la stretta Ue sulle piattaforme incide anche sul mercato digitale e sulla tutela dei minori.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Il Sole 24 Ore Mondo"
+              ],
+              "differenze_narrative": "ANSA dà una lettura più secca e istituzionale, concentrandosi sul possibile sanzionamento; Il Sole 24 Ore aggiunge il contesto normativo del DSA, la risposta attesa di Meta e dettagli tecnici sulle falle nei controlli dell’età. Il framing del Sole è più regolatorio e orientato all’impatto business, mentre ANSA resta più cronachistica."
+            },
+            {
+              "titolo": "Trump alza i toni sull’Iran e rilancia la pressione su Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/28/trump-liran-ci-ha-detto-che-e-al-collasso-ci-chiede-di-riaprire-hormuz_35048403-701b-497f-bef8-ea5b4bebdc63.html",
+              "riassunto": "Trump ha scritto su Truth che l’Iran sarebbe in “stato di collasso” e che chiederebbe la riapertura dello Stretto di Hormuz. In un altro messaggio ha accompagnato gli attacchi a Teheran con un’immagine generata dall’IA in cui impugna una mitragliatrice. La vicenda conta perché il messaggio politico alimenta l’incertezza su petrolio, sicurezza marittima e prezzi dell’energia.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Il Sole 24 Ore Mondo",
+                "Internazionale",
+                "Domani",
+                "Il Post Mondo"
+              ],
+              "differenze_narrative": "ANSA riporta soprattutto le dichiarazioni e l’elemento spettacolare dell’immagine IA; Il Sole 24 Ore colloca il post dentro l’andamento della guerra e della navigazione a Hormuz; Internazionale mette l’accento sulla guerra di nervi e sul rischio di propaganda; Domani inserisce il messaggio nel quadro della vittoria proclamata da Trump; Il Post enfatizza gli effetti materiali sul petrolio iraniano e sulla leva strategica dello Stretto. Le fonti economiche privilegiano i mercati, quelle politiche il conflitto di narrativa."
+            }
+          ],
+          "trend": [
+            "crisi energetica e rischio inflazione legati alla guerra in Iran",
+            "stretta regolatoria europea sulle piattaforme digitali e tutela dei minori"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del dossier Iran-Hormuz: eventuali aperture o nuove chiusure dello stretto potrebbero muovere subito petrolio, carburanti e mercati europei, con ricadute anche in Svizzera.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata dominata da temi molto concreti per la Svizzera: tariffe telefoniche in aumento, tensioni nel commercio al dettaglio e nuove ombre sul fronte bancario e occupazionale. Sullo sfondo, segnali di debolezza industriale e di riorganizzazione in diversi settori, ma anche alcune notizie di forte rilevanza locale.",
+          "notizie": [
+            {
+              "titolo": "Salt aumenta i prezzi degli abbonamenti mobili da giugno",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schon-wieder-salt-erhoeht-die-preise-das-steckt-dahinter-id21907178.html",
+              "riassunto": "Salt alza di 1-2 franchi al mese i prezzi degli abbonamenti mobile per i clienti senza altri servizi o dispositivi presso l’operatore. L’aumento entra in vigore da giugno e segue quello di Swisscom, segnalando una nuova stretta sui costi per i consumatori svizzeri. Salt motiva la decisione con investimenti di rete e con una crescita del traffico dati del 50% in cinque anni.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "UBS: utile trimestrale in forte crescita mentre continua lo scontro con il governo",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/80-prozent-mehr-als-im-vorjahr-ubs-vermeldet-mega-quartalsgewinn-id21888893.html",
+              "riassunto": "La UBS chiude il trimestre con un utile di 3,04 miliardi di dollari, circa l’80% in più su base annua. Il dato rafforza la posizione della banca proprio mentre a Berna cresce la tensione sul lobbying contro una regolamentazione più severa voluta da Karin Keller-Sutter. La vicenda conta perché tocca direttamente la piazza finanziaria svizzera e il futuro quadro regolatorio.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "A Lucerna due aziende chiudono e 112 persone perdono il posto",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/massenentlassungen-in-luzern-zwei-unternehmen-kuendigen-insgesamt-112-menschen-die-stelle-id21889362.html",
+              "riassunto": "Nel canton Lucerna chiudono le sedi di Andritz Beutler AG a Gettnau e di Serge Ferrari Tersuisse a Emmenbrücke, con 112 licenziamenti complessivi. Per la regione è un segnale pesante: si parla di delocalizzazione verso la Francia e di concorrenza asiatica più aggressiva. La notizia ha impatto immediato sul mercato del lavoro locale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "pressione sui prezzi per consumatori e clienti svizzeri",
+            "riassetto di banche, imprese industriali e occupazione locale"
+          ],
+          "da_tenere_d_occhio": "Da monitorare nelle prossime 24 ore l’eventuale reazione dei consumatori agli aumenti di Salt e l’evoluzione del confronto politico su UBS, perché potrebbero tradursi in ulteriori misure regolatorie o in nuove prese di posizione da Berna.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata dai grandi movimenti dell’industria AI: OpenAI allenta il legame con Microsoft e apre ad altri cloud, mentre cresce la pressione competitiva su fatturato e governance. Sullo sfondo, si intensificano i contratti con il Pentagono e il dibattito su sicurezza, agenti e uso militare dell’IA.",
+          "notizie": [
+            {
+              "titolo": "OpenAI si sgancia in parte da Microsoft e può chiudere nuovi accordi cloud",
+              "fonte": "Il Post Tecnologia",
+              "link": "https://www.ilpost.it/2026/04/28/openai-microsoft-modifica-partnership/",
+              "riassunto": "Microsoft ha rinunciato all’esclusiva su vendita dei sistemi OpenAI e sul cloud, pur mantenendo fino al 2030 il 20% dei ricavi dell’azienda. La mossa permette a OpenAI di lavorare con altri partner: è già in trattativa un accordo da 50 miliardi di dollari con Amazon/AWS. Per il mercato AI è uno snodo importante, perché segnala una fase più competitiva e meno dipendente da un solo gigante.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Tecnologia",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "Il Post mette l’accento sulla svolta contrattuale e sulla maggiore libertà commerciale di OpenAI; TechCrunch enfatizza invece la reazione immediata di Amazon e il vantaggio strategico per AWS. Il primo legge l’evento come riequilibrio della partnership con Microsoft, il secondo come apertura di una nuova fase di competizione tra cloud provider."
+            },
+            {
+              "titolo": "Google amplia al Pentagono l’accesso alla sua IA nonostante la protesta dei dipendenti",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
+              "riassunto": "Google ha concesso al Dipartimento della Difesa USA accesso alla sua IA per reti classificate, seguendo OpenAI e xAI dopo il rifiuto di Anthropic di autorizzare usi senza vincoli. Il contratto include riferimenti a divieti su sorveglianza domestica e armi autonome, ma resta poco chiaro se siano davvero vincolanti. Il tema è sensibile anche in Europa: mostra quanto l’uso militare dell’IA stia diventando normalizzato.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch sottolinea il passaggio di testimone tra Anthropic, OpenAI, xAI e Google, con forte attenzione al conflitto etico interno a Google e alla protesta dei dipendenti. The Decoder insiste di più sul profilo giuridico del contratto e sul fatto che le clausole di sicurezza potrebbero non essere legalmente enforceable, dando un taglio più critico sulla sostanza delle garanzie."
+            },
+            {
+              "titolo": "OpenAI non raggiunge gli obiettivi di ricavi mentre Anthropic e Google guadagnano terreno",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-misses-revenue-targets-as-anthropic-and-google-close-in/",
+              "riassunto": "OpenAI avrebbe mancato gli obiettivi interni di fatturato del primo trimestre 2026, mentre la crescita di Gemini e l’avanzata di Anthropic stringono la pressione competitiva. Il quadro è complicato da impegni di spesa giganteschi: circa 600 miliardi di dollari in data center e un consumo di cassa stimato in 25 miliardi nel 2026. Per gli investitori è un segnale forte: la corsa AI resta costosa e non priva di tensioni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Concentrazione e riallineamento dei grandi contratti AI tra cloud, modelli e difesa",
+            "Pressione su OpenAI: concorrenza crescente, costi enormi e governance sempre più sotto stress"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergeranno dettagli aggiuntivi sull’accordo OpenAI-AWS e se la protesta interna a Google o i ricorsi legali sul fronte Pentagono produrranno nuove reazioni pubbliche.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 54,
       "run_id": 86,
@@ -4889,67 +5164,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "AI response not parseable as JSON for ai_openclaw"
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T08:10:34.498969+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "openai/gpt-5.1-codex-mini",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: \"`\\n- L'ultimo carattere DEVE essere `\"",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "\"`\\n- L'ultimo carattere DEVE essere `\""
         }
       ]
     }
