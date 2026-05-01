@@ -1,6 +1,324 @@
 {
-  "generated_at": "2026-04-30T04:51:29.135442+00:00",
+  "generated_at": "2026-05-01T04:51:03.238351+00:00",
   "analyses": [
+    {
+      "id": 56,
+      "run_id": 88,
+      "run_time": "2026-05-01 04:45:02.070420+00:00",
+      "analyzed_at": "2026-05-01T04:51:03.232688+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 21,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La cronaca ticinese è dominata da fatti di forte impatto locale: una tragedia familiare a Vico Morcote, il nodo sicurezza al centro asilanti di Pasture e un nuovo caso giudiziario a Chiasso. Sullo sfondo, restano rilevanti anche temi strutturali come finanze comunali, polizia e rapporti transfrontalieri.",
+          "notizie": [
+            {
+              "titolo": "Bimbo di 2 anni muore annegato in una piscina a Vico Morcote",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Vico-Morcote-bimbo-di-2-anni-annega-in-piscina--3707523.html",
+              "riassunto": "Una tragedia ha colpito il Luganese: un bambino di due anni è stato trovato in una piscina privata a Vico Morcote poco prima delle 14.00. Nonostante la rianimazione e il trasporto urgente in ospedale, il piccolo è deceduto. Il caso ha forte impatto umano e locale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Pasture: Cantone e Comuni discutono sicurezza e gestione dei richiedenti problematici",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pasture-SEM-Cantone-e-Comuni-a-confronto-sulla-sicurezza--3708261.html",
+              "riassunto": "A Chiasso si è svolto un incontro tra SEM, Governo ticinese e sindaci del Mendrisiotto per affrontare le criticità di sicurezza legate al centro di Pasture. Sul tavolo anche il progetto, poi congelato, di un’area separata per richiedenti problematici. La questione riguarda direttamente il territorio di frontiera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Tentato assassinio a Chiasso: condanna confermata con 11 anni di carcere",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Tent%C3%B2-di-uccidere-la-compagna-condannato-a-11-anni--3707616.html",
+              "riassunto": "Un 34enne eritreo è stato condannato a 11 anni di carcere e a 11 anni di espulsione per aver aggredito la compagna a Chiasso nel gennaio 2024, colpendola ripetutamente alla testa con un manubrio. Il caso pesa per la violenza domestica e per la presenza dei figli durante l’aggressione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "Le due uscite RSI coprono lo stesso episodio da angolazioni diverse: l’articolo sul processo mette al centro la richiesta della procura di 15 anni, le versioni divergenti dell’imputato e i dettagli dibattimentali; quello sulla sentenza insiste invece sull’esito giudiziario definitivo, sulla pena di 11 anni e sull’espulsione. Il primo è più processuale e conflittuale, il secondo più sintetico e orientato alla decisione del tribunale."
+            }
+          ],
+          "trend": [
+            "sicurezza e gestione dell’ordine pubblico nel Mendrisiotto",
+            "cronaca nera e violenza domestica con forte impatto locale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire gli sviluppi su Pasture: eventuali decisioni operative della SEM e le reazioni di Cantone e Comuni potrebbero riaccendere il confronto politico e amministrativo.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto concreti per la Svizzera: il dossier frontalieri-UE, la pressione su UBS tra utili record e nuova regolamentazione, e il dibattito politico sulla violenza domestica e le armi private. Sullo sfondo, resta forte l’eco del caso Crans-Montana, soprattutto nel rapporto con l’Italia.",
+          "notizie": [
+            {
+              "titolo": "Riforma UE sulla disoccupazione dei frontalieri: possibili costi aggiuntivi per la Svizzera",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/disoccupazione-stesse-regole-per-i-frontalieri-e-i-residenti-426463",
+              "riassunto": "Gli ambasciatori dei 27 Paesi UE hanno dato il primo via libera a una riforma che sposterebbe l’onere dei sussidi di disoccupazione dal Paese di residenza a quello di ultimo impiego. Per la Svizzera, se decidesse di aderire, significherebbe farsi carico delle indennità di frontalieri rimasti senza lavoro. La SECO parla di decisione ancora non definitiva e precisa che serve il consenso esplicito di Berna.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "La CdT insiste sul cambio di paradigma giuridico («lex loci laboris») e sulla cautela istituzionale di Berna, con attenzione ai passaggi formali e al ruolo dell’UE. Ticinonews punta invece subito sull’impatto per la Svizzera e sul rischio di costi aggiuntivi, con un taglio più diretto e territoriale per il pubblico ticinese."
+            },
+            {
+              "titolo": "UBS, utili record da 3 miliardi mentre cresce lo scontro sulla regolamentazione",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/economia/ubs-in-tre-mesi-lutile-e-di-tre-miliardi-426444",
+              "riassunto": "Nel primo trimestre 2026 UBS ha registrato un utile netto di 3,04 miliardi di dollari, +80% rispetto all’anno prima, grazie soprattutto alla forte volatilità dei mercati e al boom del trading. I ricavi sono saliti a 14,24 miliardi e il rendimento CET1 è arrivato al 16,8%. Il risultato rafforza la banca, ma non attenua il conflitto con il Consiglio federale sulle nuove regole sui fondi propri.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Ermotti respinge le accuse di lobbying aggressivo di UBS sul pacchetto bancario",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/ubs-ermotti-respinge-le-accuse-di-lobbying-aggressivo-432497",
+              "riassunto": "Sergio Ermotti nega che UBS stia facendo pressioni indebite nel dibattito sui fondi propri delle banche: la banca ha il diritto di intervenire, ma non di lanciare minacce. Il CEO ribadisce che le misure del Consiglio federale sono «eccessive e sproporzionate», soprattutto sulla copertura completa delle filiali estere con capitale proprio. Il tema è sensibile anche per il Ticino, dato il profilo del manager e la rilevanza del settore bancario.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Armi in cantina e violenza domestica: il Parlamento valuta il ritiro delle armi militari inutilizzate",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/violenza-domestica-via-larma-dalla-cantina-426461",
+              "riassunto": "Una mozione chiede di confiscare le armi militari privatizzate non utilizzate da almeno dieci anni nel tiro sportivo. Il provvedimento mira a prevenire gli omicidi con armi da fuoco in ambito domestico: nel 2025 si contano 34 vittime di violenza domestica su 55 omicidi complessivi, con 11 casi commessi usando armi da fuoco. Il Consiglio federale sostiene la proposta, mentre ProTell promette battaglia.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Tensioni Svizzera-UE sui frontalieri e sulla sicurezza sociale",
+            "Pressione su UBS tra utili elevati e nuova stretta regolatoria"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione politica di Berna alla riforma UE sui frontalieri e l’evoluzione del dibattito parlamentare sulle armi private in relazione alla violenza domestica.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata dalla polemica sulla Biennale di Venezia, con il caso del Padiglione russo che incrocia politica italiana, fondi UE e dimissioni nella giuria internazionale. Sul fronte ticinese spiccano invece due appuntamenti: una mostra a Monte Carasso e l’anteprima luganese su Barbara Buser, entrambe con ricadute locali dirette.",
+          "notizie": [
+            {
+              "titolo": "La Biennale di Venezia travolta dal caso del Padiglione russo e dalle tensioni con l’UE",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1921931/biennale-giuli-ue-ispettori-linea",
+              "riassunto": "Il ministero italiano della Cultura ha inviato ispettori a Ca' Giustinian per chiarire la riapertura del Padiglione russo alla Biennale Arte, al via il 9 maggio. La Commissione UE sostiene la linea dura di Giuli e minaccia il ritiro di 2 milioni di euro di contributi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "SRF Kultur"
+              ],
+              "differenze_narrative": "LaRegione enfatizza lo scontro politico-istituzionale: ispettori, possibile commissariamento, pressione UE e reazioni di M5S e ministri. SRF, nel suo ticker, riduce il caso a un aggiornamento secco sulla Biennale, mettendo al centro il 'knall' e il ritiro collettivo della giuria, con tono più cronachistico e meno analitico."
+            },
+            {
+              "titolo": "Barbara Buser a Lugano: l’architetta basilese che trasforma invece di demolire",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/cinema/larchitetta-che-non-demolisce-ma-trasforma-pensando-al-clima-426438",
+              "riassunto": "Al Cinema Iride di Lugano arriva l’anteprima ticinese del documentario su Barbara Buser, 72 anni, pioniera dell’economia circolare in architettura. Il film racconta il suo approccio anti-spreco, basato su riuso dei materiali e sostenibilità, dopo anni di ostracismo professionale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "A Monte Carasso la mostra su Duane Michals, fotografo dell’invisibile",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1921950/fotografo-mostra-michals-spazioreale-giovedi",
+              "riassunto": "A SpazioReale di Monte Carasso si inaugura la mostra dedicata a Duane Michals, visitabile fino al 21 giugno. L’esposizione, curata da Enrica Viganò, attraversa l’intera carriera del fotografo statunitense e include autoritratti, ritratti di artisti e immagini annotate a mano.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Cultura e politica si intrecciano sempre più nei grandi eventi internazionali, come mostra il caso Biennale Venezia",
+            "Forte attenzione ticinese per mostre e documentari legati a figure artistiche e culturali di profilo internazionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Biennale: possibili nuove prese di posizione di Venezia, del ministero italiano e dell’UE, oltre a eventuali sviluppi sul Padiglione russo e sulla tenuta della giuria.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation in Medio Oriente: la Flotilla verso Gaza è stata intercettata da Israele e la crisi Iran-mercati energetici sta già facendo schizzare il petrolio. Sullo sfondo, emerge anche un fronte euro-atlantico più vicino alla Svizzera: le tensioni tra Trump, NATO e basi americane in Italia/Spagna.",
+          "notizie": [
+            {
+              "titolo": "Israele intercetta la Flotilla diretta a Gaza, con almeno 22 navi fermate",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/30/flotilla-almeno-22-le-navi-intercettate-al-largo-di-creta_a9fd1eb8-edeb-4522-ba0a-dd9ac21909f5.html",
+              "riassunto": "Secondo il tracker degli attivisti, almeno 22 imbarcazioni della Global Sumud Flotilla sono state intercettate dalla Marina israeliana al largo di Creta alle 4:23. Altre 36 risultavano ancora in navigazione. L’episodio pesa perché coinvolge una missione simbolo sul blocco di Gaza e ha già provocato tensioni diplomatiche con Italia e Ue.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale"
+              ],
+              "differenze_narrative": "ANSA adotta un taglio operativo e cronachistico, basato sul tracker degli attivisti e sulla geolocalizzazione delle navi; il framing è neutro e centrato sui fatti immediati. Internazionale inserisce la Flotilla nel contesto politico del conflitto a Gaza e dell’“assedio israeliano”, con un’angolazione più militante e solidale verso l’iniziativa."
+            },
+            {
+              "titolo": "A Gaza e in Cisgiordania la Flotilla e il voto locale si intrecciano nella crisi palestinese",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/magazine/2026/04/29/un-voto-parziale",
+              "riassunto": "L’articolo racconta le elezioni amministrative vinte da Al Fatah in Cisgiordania e a Deir el Balah, ma chiude con la partenza dalla Sicilia di una nuova missione della Global Sumud Flotilla. Conta perché mostra come il conflitto resti il perno della politica palestinese, mentre le iniziative civili tentano di riaprire l’attenzione internazionale su Gaza.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Internazionale collega la Flotilla al quadro politico palestinese e alla continuità dell’assedio su Gaza, enfatizzando la dimensione civile e simbolica. ANSA, invece, la tratta come un’operazione navale con conseguenze di ordine pubblico e diplomatiche, senza il medesimo contesto politico interno palestinese."
+            },
+            {
+              "titolo": "Il petrolio vola ai massimi dal 2022 dopo le nuove ipotesi Usa sull’Iran",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Il Brent è salito fino a oltre 126 dollari al barile, il livello più alto dal 2022, dopo un report secondo cui il Pentagono sta preparando nuove opzioni militari per Trump sull’Iran. Il nodo strategico è lo stretto di Hormuz, da cui passa circa il 20% del petrolio e del gas naturale liquefatto mondiali: un rischio immediato per inflazione, carburanti e mercati europei.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "BBC mette al centro l’impatto immediato sui prezzi del petrolio, il possibile briefing a Trump e la vulnerabilità dello stretto di Hormuz, con un taglio molto economico-finanziario. Il New York Times sposta invece l’attenzione sulle conseguenze macroeconomiche in Europa: banche centrali, tassi fermi e rischio di uno shock energetico di lunga durata."
+            },
+            {
+              "titolo": "Lo shock del petrolio mette in difficoltà le banche centrali europee",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/04/30/business/bank-of-england-european-central-bank.html",
+              "riassunto": "Il tema è la stretta tra inflazione ed energia: la Banca d’Inghilterra e la Bce hanno lasciato i tassi fermi mentre cresce il timore di danni duraturi da un prolungato shock energetico. Per la Svizzera è rilevante perché un rialzo persistente dei prezzi del petrolio può alimentare pressioni su prezzi, valuta e politica monetaria anche nell’area alpina.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World",
+                "BBC World"
+              ],
+              "differenze_narrative": "NYT interpreta la crisi come dilemma di politica monetaria e stabilità finanziaria, focalizzandosi su Bce e Bank of England. BBC racconta invece la causa geopolitica e di mercato: il possibile riacutizzarsi del confronto con l’Iran e la chiusura di Hormuz, cioè il motore dell’impennata dei prezzi."
+            },
+            {
+              "titolo": "Trump ipotizza un ridimensionamento delle truppe Usa in Italia e Spagna",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/30/trump-possibile-riduzione-truppe-in-italia-e-spagna-probabilmente_72b41511-1aac-437a-9152-604c578e278c.html",
+              "riassunto": "Trump ha risposto “probabilmente” alla domanda su una possibile riduzione delle truppe americane anche in Italia e Spagna, come già in Germania. Ha aggiunto che “l’Italia non è stata di alcun aiuto” e che la Spagna è stata “terribile”. È un segnale rilevante per gli equilibri Nato in Europa e per le basi Usa nel Mediterraneo.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Escalation in Medio Oriente con effetto domino su logistica, diplomazia e mercati energetici",
+            "Pressioni sulla sicurezza europea e sulla presenza militare Usa nel Mediterraneo"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno monitorati due snodi: l’eventuale conferma del numero di navi fermate della Flotilla e la reazione europea/italiana; in parallelo, l’andamento del Brent e le eventuali comunicazioni Usa sull’Iran, perché potrebbero amplificare il rischio energetico e inflattivo.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: il braccio di ferro su UBS e le regole bancarie, il confronto sui tassi della Fed con riflessi sui mercati, e il peggioramento del clima di fiducia sociale in Svizzera. Sullo sfondo, restano segnali di tensione geopolitica e di incertezza per imprese e famiglie.",
+          "notizie": [
+            {
+              "titolo": "La Fed lascia i tassi invariati al 3,50%-3,75% tra inflazione e incertezza geopolitica",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/la-fed-lascia-i-tassi-di-interesse-invariati-fra-il-350-e-il-375-432528",
+              "riassunto": "La Federal Reserve ha confermato i tassi per la terza riunione consecutiva, con una decisione passata per 8 voti a 4. Powell ha definito questa la sua ultima seduta da presidente, mentre la banca centrale cita l’inflazione ancora elevata e l’incertezza legata alla guerra in Medio Oriente. Per la Svizzera conta perché le decisioni della Fed influenzano mercati, cambio e costo del capitale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Ticinonews mette l’accento sul quadro istituzionale: voto del board, terza pausa consecutiva, uscita di scena di Jerome Powell e arrivo di Kevin Warsh. Blick invece legge la decisione soprattutto attraverso il conflitto in Iran, l’aumento del petrolio e i rischi immediati per inflazione e lavoro, con un framing più politico e allarmistico."
+            },
+            {
+              "titolo": "UBS respinge le accuse sul lobbying mentre Berna valuta regole più dure sul capitale",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1921834/ubs-svizzera-ermotti-banca-accuse-keller-sutter-respinge-karin",
+              "riassunto": "Sergio Ermotti ha difeso il diritto di UBS a intervenire nel dibattito sulle nuove regole per i fondi propri, negando pressioni o minacce al Parlamento. Il confronto nasce dalle critiche di Karin Keller-Sutter sulla lobby della banca e tocca un dossier sensibile per la Svizzera: come evitare un nuovo salvataggio pubblico senza penalizzare occupazione e competitività del settore finanziario.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "tio.ch Svizzera",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Blick privilegia il conflitto politico e l’impatto occupazionale, rilanciando l’idea di migliaia di posti di lavoro a rischio e dando voce al sindacato bancario. tio.ch adotta un taglio più istituzionale: riporta le accuse di Keller-Sutter, la replica di Ermotti e il nodo regolatorio, con minore enfasi su toni polemici e più attenzione al perimetro del dibattito."
+            },
+            {
+              "titolo": "In Svizzera cresce il sentimento di ingiustizia, soprattutto per chi ha redditi bassi",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1921654/delusi-dalla-svizzera-chi-guadagna-poco-si-sente-abbandonato",
+              "riassunto": "Il Barometro della giustizia 2026 mostra un peggioramento del clima sociale: tra 2.000 intervistati, il 33% giudica il sistema «piuttosto ingiusto» e il 18% «per niente giusto». Il malessere è più forte tra chi guadagna meno di 3.000 franchi al mese, mentre costi di affitto, premi e AVS dominano la percezione di insicurezza economica. È un segnale importante anche per il Ticino, dove il potere d’acquisto è tema centrale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "tio.ch Svizzera",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Blick presenta il sondaggio come prova del deterioramento del «legame sociale» nel Paese e insiste sulla frattura tra gruppi sociali e sul ruolo del denaro. tio.ch insiste di più sul disagio concreto di chi ha salari bassi e sul peso combinato di affitti, premi malattia e AVS, con un taglio più vicino alla vita quotidiana dei lettori."
+            }
+          ],
+          "trend": [
+            "politica monetaria e mercati sotto pressione geopolitica",
+            "regolazione bancaria svizzera e potere di lobbying di UBS",
+            "costo della vita e percezione di ingiustizia sociale in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorate le reazioni politiche e di mercato alla decisione della Fed, l’evoluzione del dossier UBS in Parlamento e l’eventuale rilancio mediatico del sondaggio sulla giustizia sociale, che potrebbe alimentare il dibattito su premi malattia, affitti e salario reale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata dal riassetto dell’ecosistema AI tra Microsoft, OpenAI e AWS, con ricadute su cloud, enterprise e distribuzione dei modelli. In parallelo, Google spinge forte su Gemini in Europa, mentre emergono segnali importanti su affidabilità dei chatbot e usi regolati dell’IA in ambito pubblico.",
+          "notizie": [
+            {
+              "titolo": "Microsoft rilancia Copilot e consolida il nuovo equilibrio con OpenAI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/29/microsoft-says-it-has-over-20m-paid-copilot-users-and-they-really-are-using-it/",
+              "riassunto": "Microsoft dice di avere 20 milioni di seat Copilot a pagamento nel mondo enterprise. Tra i clienti citati ci sono Bayer, Johnson & Johnson, Mercedes e Roche, un segnale importante anche per il mercato svizzero. Nadella sostiene che l’uso cresce e che Copilot è ormai un’abitudine settimanale quasi al livello di Outlook.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch punta sull’adozione concreta di Copilot e sui numeri di utilizzo, con enfasi commerciale e su grandi clienti enterprise. The Decoder inquadra la notizia soprattutto nel nuovo assetto con OpenAI e AWS, sottolineando la fine dell’esclusiva e la libertà di Microsoft di sfruttare l’IP OpenAI fino al 2032."
+            },
+            {
+              "titolo": "Gemini arriva in Europa con memoria personalizzata e import dei dati da altre app AI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/google-rolls-out-gemini-memory-in-europe-and-wants-you-to-bring-your-chatgpt-data-along/",
+              "riassunto": "Google porta in Europa la funzione Memories di Gemini, che ricorda preferenze e dettagli dei chat precedenti, attiva di default ma disattivabile. In più, consente di importare cronologia e contesto da altre app AI, compreso un archivio ZIP o un prompt di migrazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI rompe l’esclusiva con Microsoft e si apre ad AWS",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-lands-on-aws-one-day-after-microsoft-deal-restructuring/",
+              "riassunto": "A un giorno dal nuovo accordo con Microsoft, OpenAI lancia tre offerte su Amazon Bedrock: modelli OpenAI, Codex e Bedrock Managed Agents. La mossa segna il passaggio da un rapporto esclusivo con Azure a una distribuzione multi-cloud, con effetti rilevanti per il mercato enterprise globale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "The Decoder mette l’accento sulla rapidità della mossa di AWS e sul significato strategico della fine dell’esclusiva Microsoft. TechCrunch, nel pezzo su Nadella, racconta invece la lettura positiva di Microsoft: accesso all’IP OpenAI fino al 2032, nessun pagamento per i modelli e convinzione di poter ‘sfruttare’ appieno il nuovo accordo."
+            }
+          ],
+          "trend": [
+            "riassetto dei rapporti tra i grandi player del cloud AI",
+            "espansione europea di Gemini con funzioni di memoria e personalizzazione"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il nuovo equilibrio OpenAI-Microsoft-AWS porterà ulteriori annunci commerciali o reazioni dei competitor, e se il rollout europeo di Gemini solleverà questioni di privacy e consenso sui dati personali.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 55,
       "run_id": 87,
@@ -5103,67 +5421,6 @@
           ],
           "da_tenere_d_occhio": "L'evoluzione dei prezzi delle GPU e la disponibilità di servizi cloud per le imprese europee nelle prossime 24 ore a seguito degli annunci di razionamento.",
           "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T08:18:11.197230+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 0,
-      "model_used": "openai/gpt-5.1-codex-mini",
-      "status": "error",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_ticino",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cronaca_ticino"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_svizzera",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cronaca_svizzera"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cultura",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cultura"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: AI response not parseable as JSON for geopolitica",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for geopolitica"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: AI response not parseable as JSON for economia",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for economia"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: AI response not parseable as JSON for ai_openclaw",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for ai_openclaw"
         }
       ]
     }
