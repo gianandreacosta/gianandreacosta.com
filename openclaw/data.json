@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T20:50:04.160254Z",
+  "generated_at": "2026-05-02T21:00:05.014135Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -97,7 +97,7 @@
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 26g",
+      "next": "in 25g",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
