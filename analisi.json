@@ -1,6 +1,278 @@
 {
-  "generated_at": "2026-05-01T04:51:03.238351+00:00",
+  "generated_at": "2026-05-02T04:50:24.583138+00:00",
   "analyses": [
+    {
+      "id": 57,
+      "run_id": 89,
+      "run_time": "2026-05-02 04:45:02.147113+00:00",
+      "analyzed_at": "2026-05-02T04:50:24.570078+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da fatti di cronaca ticinese molto concreti: una tragedia familiare a Vico Morcote, tensioni legate al centro asilanti di Pasture e il bilancio del Primo maggio a Lugano con disordini serali. Sullo sfondo restano temi sociali rilevanti come il salario minimo e la sicurezza pubblica.",
+          "notizie": [
+            {
+              "titolo": "Tragico annegamento di un bimbo di 2 anni in una piscina a Vico Morcote",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Vico-Morcote-bimbo-di-2-anni-annega-in-piscina--3707523.html",
+              "riassunto": "Un bambino di due anni è morto nel pomeriggio dopo essere stato trovato in una piscina privata a Vico Morcote. L’allarme è scattato poco prima delle 14.00 e sono intervenuti polizia, soccorritori e Care Team. È la notizia con l’impatto umano più forte sul Ticino oggi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Pasture: Cantone, Comuni e SEM si confrontano sulla sicurezza",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pasture-SEM-Cantone-e-Comuni-a-confronto-sulla-sicurezza--3708261.html",
+              "riassunto": "A Chiasso si è tenuto un incontro tra SEM, Consiglio di Stato e sindaci di Balerna, Chiasso e Novazzano sul tema sicurezza legato al centro di Pasture. Sul tavolo anche il progetto, poi congelato, dell’area separata per richiedenti problematici. La questione riguarda direttamente il Mendrisiotto e resta politicamente sensibile.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Primo maggio a Lugano: manifestazione pacifica diurna e scontri in centro la sera",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-Primo-maggio-a-Lugano-%E2%80%9CN%C3%A9-sfruttati-n%C3%A9-divisi%E2%80%9D--3710049.html",
+              "riassunto": "Il corteo del Primo maggio a Lugano ha riunito oltre un migliaio di persone da Campo Marzo a Piazza Manzoni, con focus su salari, dignità e sicurezza sul lavoro. In serata però, in centro, si sono verificati scontri tra diverse decine di persone nei pressi della Pensilina Botta, con forte mobilitazione di polizia. La notizia conta sia per l’ordine pubblico sia per il significato sindacale della giornata.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza e ordine pubblico nel Sottoceneri",
+            "questioni sociali: salari, lavoro e pressione sulle istituzioni locali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da seguire soprattutto l’evoluzione degli accertamenti sulla tragedia di Vico Morcote e l’eventuale comunicato della polizia sugli scontri di Lugano, che potrebbe chiarire dinamica, matrice e conseguenze giudiziarie.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto vicini alla vita quotidiana dei lettori svizzeri: costi della telefonia, tensioni sul mercato del lavoro e dibattito politico-sindacale in vista della votazione del 14 giugno. In parallelo emergono segnali di raffreddamento economico in alcuni settori, dal fotovoltaico al bancario.",
+          "notizie": [
+            {
+              "titolo": "Dal primo agosto Sunrise aumenta tutti gli abbonamenti di mobile e Internet",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/sunrise-da-agosto-aumentano-le-tariffe-telefonia-mobile-e-internet-432547",
+              "riassunto": "Sunrise alzerà i prezzi da agosto: +1,50 franchi per ogni contratto principale di clienti privati e aziendali, +75 centesimi per gli abbonamenti multipli o combinati. Per i marchi Yallo e Lebara gli aumenti arriveranno fino a 2 franchi al mese. Impatto diretto su famiglie e imprese in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "CKW taglia circa 60 posti nel fotovoltaico per il calo della domanda",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/mercato-solare-in-calo-ckw-taglia-60-posti-nel-ramo-fotovoltaico-432583",
+              "riassunto": "La società energetica lucernese CKW, controllata da Axpo, sopprime o trasferisce circa 60 posti nel ramo solare e termico: 30 licenziamenti e 30 modifiche contrattuali. Il gruppo parla di mercato fotovoltaico raffreddato dopo anni di boom e di ristrutturazione per restare competitivo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Primo Maggio e voto UDC: sindacati e commentatori alzano i toni sulla Svizzera da 10 milioni",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/primo-maggio-il-presidente-delluss-pierre-yves-maillard-attacca-liniziativa-delludc-426602",
+              "riassunto": "Pierre-Yves Maillard, presidente dell’USS, attacca l’iniziativa UDC «No a una Svizzera da 10 milioni!», in votazione il 14 giugno, definendola un pericolo per salari, pensioni e posti di lavoro. Il tema è centrale nelle manifestazioni del Primo Maggio, con ripercussioni dirette sul dibattito su immigrazione, mercato del lavoro e bilaterali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "RSI Svizzera",
+                "Blick Schweiz"
+              ],
+              "differenze_narrative": "Il CdT mette al centro l’attacco politico-sindacale di Maillard e l’asse salari-pensioni-lavoro. RSI amplia il quadro con un’intervista a Daniel Lampart e insiste sulla pressione sul lavoro e sul rischio di isolamento della Svizzera. Blick adotta un taglio più polemico ed economico: contrappone le rivendicazioni dei lavoratori alle accuse di ‘faulness’ e difende la parte di chi sceglie il tempo parziale come fenomeno di benessere, non di pigrizia."
+            }
+          ],
+          "trend": [
+            "pressione sul costo della vita e sui servizi essenziali",
+            "dibattito su lavoro, salari, produttività e immigrazione"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione di sindacati, partiti e consumatori agli aumenti Sunrise e la possibile intensificazione del confronto politico in vista del voto del 14 giugno sulla 'Svizzera da 10 milioni'.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La notizia più rilevante per il pubblico svizzero italofono è il record del Passaporto Musei Svizzeri, che festeggia i 30 anni con numeri in crescita. Sul piano internazionale spiccano la Biennale di Venezia 2026, con forte presenza di figure legate alla Svizzera, e il ritorno di Banksy nel dibattito artistico londinese.",
+          "notizie": [
+            {
+              "titolo": "Il Passaporto Musei Svizzeri raggiunge un record e festeggia 30 anni",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922149/musei-passaporto-anni-fondazione-svizzera",
+              "riassunto": "Nel 2024 il Passaporto Musei Svizzeri ha superato per la prima volta 1,5 milioni di ingressi, in crescita di oltre il 6%. Il sistema, nato nel 1996, oggi dà accesso gratuito a più di 500 musei ed è ormai un sostegno economico importante per le istituzioni culturali del Paese.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La Biennale di Venezia 2026 punta su Koyo Kouoh, 111 artisti e un approccio più sensibile",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922050/biennale-arte-venezia-artisti-keys",
+              "riassunto": "La 61esima Esposizione Internazionale d’Arte si terrà dal 9 maggio al 22 novembre 2026 con il titolo “In Minor Keys”. Il progetto, definito dalla svizzero-camerunese Koyo Kouoh prima della sua morte nel 2025, riunisce 111 partecipanti e insiste su relazioni, memoria e rallentamento dello sguardo.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Fabrice Aragno porta a Venezia un’installazione immersiva ispirata a Godard",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922051/aragno-film-installazione-godard-arte-biennale-immersiva",
+              "riassunto": "Il cineasta neocastellano Fabrice Aragno presenta alla Biennale Arte 2026 “Sentiments Signes Passions”, installazione tratta da “Le Livre d’image” di Jean-Luc Godard. L’opera trasforma il film in spazio fisico e sensoriale, con proiezioni su tulle e un sistema di computer e algoritmi.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Centralità della Svizzera nel sistema culturale europeo, tra musei e Biennale di Venezia",
+            "Musei e arte come esperienza immersiva e accessibile, non solo come visita tradizionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’avvio della Biennale di Venezia 2026 e l’eventuale eco in Svizzera, soprattutto per la presenza di Koyo Kouoh e di artisti legati al territorio elvetico.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation in Medio Oriente: stretto di Hormuz, negoziati sul nucleare iraniano e reazioni internazionali sui costi energetici. Sul fronte europeo pesano anche le nuove tensioni commerciali con Washington e le ricadute del caso Flotilla.",
+          "notizie": [
+            {
+              "titolo": "Hormuz sotto pressione: blocco navale, negoziati con l’Iran e rischio energetico globale",
+              "fonte": "Il Post Mondo",
+              "link": "https://www.ilpost.it/2026/04/30/prosecuzione-blocco-hormuz-problema-mondo/",
+              "riassunto": "Il governo USA si prepara a un blocco prolungato dello stretto di Hormuz, mentre l’Iran prova a trattare su nucleare e sanzioni. Il Post spiega che il blocco colpisce la principale fonte di valuta iraniana e può pesare su prezzi e forniture energetiche mondiali, con effetti indiretti anche per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Il Post offre un quadro analitico e sistemico: descrive il blocco come problema globale, ne spiega gli effetti su economia iraniana, petrolio e stoccaggi, e legge la mossa USA come segnale di assenza di soluzioni rapide. ANSA, riprendendo il Wall Street Journal, taglia più sulla trattativa diplomatica: mette al centro la proposta iraniana di parlare di Hormuz e nucleare in cambio di allentamento delle sanzioni, con un tono più neutro e negoziale."
+            },
+            {
+              "titolo": "Italia, Spagna e Germania nel mirino di Trump: possibili tagli alle truppe USA in Europa",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/01/cbs-pentagono-vuole-ritirare-5.000-soldati-dalla-germania_83fa1bcf-7376-41d6-8e0e-4ce001e6cb17.html",
+              "riassunto": "Secondo CBS, il Pentagono vuole ritirare 5.000 soldati dalla Germania; Trump lascia intendere che il discorso possa estendersi anche a Italia e Spagna. Per l’Europa è un segnale di pressione politica sugli alleati, con possibili ripercussioni sulla sicurezza del continente e sul ruolo NATO.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Le due notizie ANSA sono complementari ma con framing diverso: una è una notizia di intelligence politica/militare, basata su CBS, che parla del ritiro dalla Germania come ritorsione per l’aiuto dato sull’Iran; l’altra riporta la frase di Trump su Italia e Spagna, più aggressiva e polemica. Insieme mostrano sia la possibile decisione operativa sia il tono di pressione verso gli alleati europei."
+            },
+            {
+              "titolo": "La marina israeliana ferma la Global Sumud Flotilla in acque internazionali",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/2026/04/30/global-sumud-flotilla-blocco-israele-acque-internazionali",
+              "riassunto": "Israele ha intercettato 21 delle 58 imbarcazioni della Flotilla, con 175 attivisti fermati e 25 italiani tra loro. Il caso è rilevante per l’Italia e l’Europa perché intreccia diritto internazionale, tensioni su Gaza e gestione diplomatica dei propri cittadini a bordo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Internazionale adotta una cornice fortemente conflittuale e umanitaria: parla di attacco a imbarcazioni civili in acque internazionali, dà spazio alle voci degli attivisti e sottolinea la presenza di 25 italiani. ANSA privilegia invece la versione israeliana, secondo cui l’intervento era indispensabile per prevenire un’escalation e garantire la sicurezza delle persone a bordo nel rispetto del diritto internazionale. Il contrasto è soprattutto nel framing legale e politico dell’abbordaggio."
+            }
+          ],
+          "trend": [
+            "Escalation Iran-USA e centralità dello stretto di Hormuz per energia, sanzioni e diplomazia",
+            "Tensione transatlantica: dazi, pressione sugli alleati europei e riposizionamento militare USA"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore il punto chiave è se si aprirà davvero un canale negoziale tra USA e Iran su Hormuz e nucleare; in parallelo, vanno monitorate le decisioni europee sulle contromisure ai dazi di Trump e l’evoluzione del caso Flotilla con possibili reazioni diplomatiche italiane e UE.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: la decisione BCE sui tassi, una sentenza che tocca direttamente i consumatori svizzeri contro Sunrise e un segnale preoccupante sul mercato del lavoro elvetico, con aziende che puntano su IA e tagli ai costi. Sullo sfondo, restano rilevanti i movimenti internazionali su energia, mercati e telecomunicazioni.",
+          "notizie": [
+            {
+              "titolo": "La BCE congela i tassi al 2% mentre l'energia resta il principale rischio",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/la-bce-lascia-i-tassi-fermi-al-2-432578",
+              "riassunto": "La Banca centrale europea mantiene invariati i tassi: deposito al 2%, rifinanziamento al 2,15% e prestiti marginali al 2,40%. La BCE cita l'impennata dei prezzi energetici legata al conflitto in Medio Oriente come fattore che può rialzare l'inflazione e frenare la crescita dell'Eurozona. Per la Svizzera è importante perché il quadro monetario europeo influenza franco, export e costo del credito.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Il tribunale di Zurigo impone a Sunrise di accettare le disdette scritte",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/sunrise-deve-accettare-le-disdette-scritte-432565",
+              "riassunto": "Il tribunale distrettuale di Zurigo ha accolto l'azione della Fondazione per la protezione dei consumatori contro Sunrise. Il giudice ha vietato due clausole: il rifiuto delle disdette scritte e la limitazione del recesso in caso di aumenti tariffari. La decisione non è ancora definitiva, ma tocca direttamente milioni di clienti svizzeri e potrebbe cambiare la prassi del settore.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "In Svizzera cresce la pressione dell'intelligenza artificiale su occupazione e salari",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/technologie-gefaehrdet-jobs-firmen-hoffen-auf-ki-und-wollen-bei-loehnen-sparen-id21912897.html",
+              "riassunto": "Un sondaggio Deloitte tra 126 CFO mostra più fiducia sulle prospettive 2026, ma anche un chiaro rovescio per i dipendenti: quasi il 50% prevede minori costi del personale grazie all'IA e il 39% preferirebbe investire fuori dalla Svizzera. È una notizia rilevante per il mercato del lavoro elvetico, perché segnala una possibile ondata di razionalizzazioni e delocalizzazioni.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "politica monetaria e inflazione trainata dall'energia",
+            "digitalizzazione e pressione sui posti di lavoro in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l'eventuale ricorso di Sunrise e la reazione delle associazioni dei consumatori: se la sentenza di Zurigo sarà confermata, potrebbe aprire la strada a cambiamenti contrattuali più ampi nel mercato telecom svizzero.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria di oggi è dominata dalla corsa ai capitali e al compute: Anthropic, OpenAI, Google e Microsoft continuano a spingere investimenti enormi su infrastrutture e modelli. Sul fronte industriale emergono anche temi di sicurezza, accesso selettivo agli strumenti cyber e la battaglia legale OpenAI-Musk, mentre prodotti AI entrano sempre più in auto, pagamenti e assistenza business.",
+          "notizie": [
+            {
+              "titolo": "Anthropic prepara un round che potrebbe superare i 900 miliardi di dollari",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+              "riassunto": "Anthropic sta chiedendo agli investitori le allocazioni entro 48 ore per un nuovo round che potrebbe chiudersi in due settimane. La società punta a una valutazione intorno ai 900 miliardi di dollari, più del doppio rispetto al round di febbraio da 380 miliardi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch insiste sulla velocità del round, sulla raccolta prevista di circa 50 miliardi e sulla pressione degli investitori. The Decoder aggiunge il contesto strategico: Anthropic vuole superare OpenAI come startup AI più ارزشiosa, nota i possibili 10 miliardi di Google e 5 miliardi di Amazon e sottolinea che le trattative sono ancora preliminari."
+            },
+            {
+              "titolo": "OpenAI dice di aver raggiunto in anticipo il target di 10 gigawatt di potenza di calcolo",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-says-it-hit-its-10-gigawatt-compute-goal-years-ahead-of-schedule/",
+              "riassunto": "OpenAI afferma di avere già contrattualizzato 10 gigawatt di capacità di calcolo negli Stati Uniti, anni prima del target originario fissato per il 2029. Tre gigawatt sono stati aggiunti solo negli ultimi 90 giorni, inclusi 2 gigawatt da Amazon.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nel processo Musk-OpenAI emerge che xAI ha addestrato Grok su modelli OpenAI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
+              "riassunto": "In tribunale Elon Musk ha ammesso che xAI ha usato tecniche di distillazione sui modelli OpenAI per addestrare Grok, almeno in parte. La rivelazione è rilevante perché tocca il cuore della competizione tra i grandi laboratori AI e del contenzioso sulla missione originaria di OpenAI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The New York Times"
+              ],
+              "differenze_narrative": "TechCrunch mette l’accento sull’ironia industriale: Musk denuncia OpenAI ma ammette pratiche di copia dei modelli, con un taglio molto tecnico e competitivo. Il New York Times, in formato video, inquadra invece il tema soprattutto come snodo del processo e delle origini di OpenAI, con un framing più giudiziario e biografico."
+            }
+          ],
+          "trend": [
+            "corsa al compute e ai round miliardari tra i grandi laboratori di AI",
+            "spostamento dell'AI verso applicazioni operative: sicurezza, automazione e infrastruttura industriale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’esito del round di Anthropic e l’eventuale reazione di OpenAI e degli investitori, oltre agli sviluppi del processo Musk-OpenAI che potrebbe produrre nuove ammissioni o documenti sulla distillazione tra modelli.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 56,
       "run_id": 88,
@@ -5186,240 +5458,6 @@
             "Divario percezione pubblica-esperti"
           ],
           "da_tenere_d_occhio": "Evolution of the 'Spud' model release and potential impact on enterprise AI costs in the Swiss banking sector.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T09:06:22.502359+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 13,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "partial",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata oggi dalle implicazioni economiche dell'intesa federale sui salari minimi, che crea incertezze specifiche per il Cantone. Parallelamente, i dati meteorologici evidenziano il Mendrisiotto come area critica per i fulmini, mentre a livello giudiziario emerge una maxi-truffa nel settore delle auto d'epoca.",
-          "notizie": [
-            {
-              "titolo": "Salario minimo: intesa a Berna, ma scenari complessi per il Ticino",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma-per-il-ticino-le-cose-si-complicano-425142",
-              "riassunto": "La Commissione economia del Nazionale stabilisce la prevalenza dei salari minimi nei contratti collettivi su quelli cantonali, salvo eccezioni. Per il Ticino, dove vige un salario minimo cantonale, la situazione resta aperta e potenzialmente critica per il mercato del lavoro locale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "La CdT enfatizza le 'complicazioni' e l'incertezza politica per il Ticino con un tono più allarmistico, mentre Ticinonews riporta i fatti tecnici della decisione della Commissione con un approccio più neutro e descrittivo."
-            },
-            {
-              "titolo": "Mendrisiotto e Luganese: le regioni ticinesi più colpite dai fulmini nel 2025",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/e-il-mendrisiotto-la-regione-piu-colpita-dai-fulmini-nel-2025-luganese-al-secondo-posto-431406",
-              "riassunto": "Nonostante un calo generale del 25% dei fulmini in Svizzera, il Ticino conferma la sua vocazione temporalesca. Il Mendrisiotto risulta la regione più colpita, seguito dal Luganese, dati cruciali per la prevenzione e la sicurezza sul territorio.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano identici dati statistici senza significative differenze di framing; la notizia è trattata come un resoconto meteorologico fattuale da entrambe le testate."
-            },
-            {
-              "titolo": "Maxi-truffa da 20 milioni: a processo un gestore di auto d'epoca",
-              "fonte": "LaRegione Luganese",
-              "link": "https://www.laregione.ch/cantone/luganese/1917800/maxi-truffa-da-20-milioni-a-processo-un-gestore-di-auto-d-epoca",
-              "riassunto": "Un gestore di auto d'epoca finisce sotto processo per una presunta truffa dal valore di 20 milioni di franchi. Il caso giudiziario di grande portata economica scuote il settore del lusso in Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Mercato del lavoro e salari minimi",
-            "Eventi meteorologici estremi"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione legislativa a Berna sulla gerarchia tra salari minimi cantonali e contratti collettivi, che potrebbe ridefinire le tutele salariali in Ticino.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La cronaca svizzera è dominata oggi dalle conseguenze dell'incendio di Crans-Montana, con nuove indagini sul sindaco, e dall'impatto diretto sugli utenti ticinesi del data breach di Booking. Sul fronte internazionale, le elezioni in Ungheria vedono la partecipazione di osservatori svizzeri, mentre lo sciopero Lufthansa colpisce i collegamenti aerei nazionali.",
-          "notizie": [
-            {
-              "titolo": "Incendio di Crans-Montana: il sindaco interrogato come ottavo indagato",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1917701/sindaco-crans-montana-capodanno-incendio-inchiesta-interrogato-crans",
-              "riassunto": "Il sindaco di Crans-Montana è stato interrogato nell'ambito dell'inchiesta sulla strage di Capodanno, accusato di omicidio colposo. L'evoluzione giudiziaria coinvolge ora anche la massima autorità comunale, ampliando il perimetro delle responsabilità per il rogo che ha causato 41 vittime.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "La notizia è riportata con focus specifico sull'interrogatorio del sindaco; altre fonti generaliste potrebbero focalizzarsi solo sulle vittime o sui proprietari del locale, mentre qui si evidenzia l'escalation istituzionale dell'inchiesta."
-            },
-            {
-              "titolo": "Data breach di Booking: violati dati di utenti ticinesi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/booking-mette-in-guardia-gli-utenti-attivita-sospette-su-diverse-prenotazioni-424974",
-              "riassunto": "La piattaforma Booking ha subito un attacco informatico che ha esposto nomi, contatti e indirizzi, includendo dati di residenti in Ticino. Sebbene i dati bancari siano salvi, l'evento solleva preoccupazioni per la privacy e il rischio di phishing mirato alla popolazione locale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Elezioni in Ungheria: osservatori svizzeri monitorano la fine dell'era Orban",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/international/sorge-vor-manipulation-schweizer-politiker-haben-die-wahl-in-ungarn-ueberwacht",
-              "riassunto": "Politici svizzeri, tra cui Sibel Arslan e Roland Büchel, hanno partecipato come osservatori internazionali alle elezioni ungheresi che hanno sancito la sconfitta di Viktor Orban. La presenza elvetica sottolinea l'impegno della Svizzera nel monitoraggio democratico in un contesto di alta tensione politica europea.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz"
-              ],
-              "differenze_narrative": "Mentre diverse testate SRF coprono l'evento da angolazioni diverse (analisi politica, risultato elettorale), questa notizia si distingue per il focus specifico sul ruolo attivo e la presenza fisica dei rappresentanti istituzionali svizzeri sul campo."
-            },
-            {
-              "titolo": "Sciopero Lufthansa: cancellati voli da e per la Svizzera",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1917842/lufthansa-sciopero-svizzera-germania-tre",
-              "riassunto": "Lo sciopero del personale Lufthansa in Germania sta causando la cancellazione di numerosi voli con partenza o arrivo in Svizzera, creando disagi significativi per i passeggeri elvetici. L'evento evidenzia la forte interdipendenza dei trasporti aerei svizzeri con gli hub tedeschi di Francoforte e Monaco.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Le fonti tedesche (SRF) tendono a focalizzarsi sulle cause sindacali interne e sui numeri totali dei voli cancellati in Germania, mentre le fonti ticinesi (LaRegione) enfatizzano l'impatto pratico sui viaggiatori svizzeri e sui collegamenti specifici con l'Italia e il Ticino."
-            }
-          ],
-          "trend": [
-            "Sicurezza e responsabilità istituzionale dopo tragedie",
-            "Cybersecurity e protezione dati personali"
-          ],
-          "da_tenere_d_occhio": "Sviluppi dell'inchiesta giudiziaria sull'incendio di Crans-Montana e possibili nuove incriminazioni di figure istituzionali nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: timed out | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Tensione crescente in Medio Oriente con il blocco USA sull'Iran e rischi per lo stretto di Hormuz, svolta politica storica in Ungheria con la sconfitta di Orbán e attriti diplomatici tra Vaticano e amministrazione Trump.",
-          "notizie": [
-            {
-              "titolo": "Stati Uniti avviano blocco porti iraniani tra tensioni e negoziati",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/14/stati-uniti-avviano-blocco-porti-iraniani",
-              "riassunto": "Washington ha iniziato il blocco dei porti iraniani aumentando l'incertezza nello stretto di Hormuz, nonostante le speranze di una fine delle ostilità abbiano stabilizzato i mercati petroliferi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA e WSJ enfatizzano l'escalation militare e le reazioni di Cina e Russia; NYT analizza le implicazioni strategiche e legali del blocco; Internazionale focalizza sull'impatto economico e l'incertezza diplomatica."
-            },
-            {
-              "titolo": "Péter Magyar vince le elezioni in Ungheria, fine dell'era Orbán",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/ungheria-sconfitta-elettorale-orban",
-              "riassunto": "Il partito sovranista di Viktor Orbán è stato sconfitto dal nuovo partito di centrodestra Tisza, segnando una battuta d'arresto per i suoi alleati internazionali e un cambiamento storico per l'UE.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times World"
-              ],
-              "differenze_narrative": "Internazionale sottolinea le implicazioni geopolitiche per Russia e USA; NYT approfondisce il profilo di Magyar come ex alleato di Orbán e la reazione emotiva degli elettori ungheresi."
-            },
-            {
-              "titolo": "Papa Leone XIV risponde a Trump durante la visita in Algeria",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/papa-leone-risponde-attacco-trump",
-              "riassunto": "Il Pontefice ha denunciato le violazioni del diritto internazionale da parte di potenze neocoloniali poche ore dopo un attacco verbale di Donald Trump, sollevando tensioni diplomatiche.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA riporta le condanne iraniane e le critiche di Vance al Vaticano; NYT contestualizza teologicamente la risposta del Papa; Internazionale evidenzia la denuncia politica del neocolonialismo."
-            }
-          ],
-          "trend": [
-            "Crisi nello Stretto di Hormuz",
-            "Ridisegno politico dell'Europa centrale"
-          ],
-          "da_tenere_d_occhio": "Evoluzione del blocco navale USA e possibili reazioni militari iraniane nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Paym",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 400: Bad Request | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: timed out | OR-fallback3: HTTP Error 404: Not Found"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Il settore AI affronta una crisi di risorse computazionali mentre i giganti tecnologici accelerano sullo sviluppo di agenti autonomi. Emerge un forte dibattito sulla disconnessione tra esperti e pubblico, con nuove acquisizioni strategiche che ridisegnano il mercato finanziario e enterprise.",
-          "notizie": [
-            {
-              "titolo": "Crisi globale delle risorse computazionali: razionamenti e crollo dei servizi AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices/",
-              "riassunto": "La domanda esplosiva per gli agenti AI ha saturato la capacità di calcolo, causando interruzioni dei servizi (incluso Anthropic), razionamenti e un aumento del 50% dei prezzi delle GPU. Un evento critico con ripercussioni immediate su costi e affidabilità per le aziende svizzere che adottano queste tecnologie.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "The Decoder enfatizza l'aspetto drammatico della carenza fisica e l'aumento dei costi per l'industria; TechCrunch si concentra sulle implicazioni specifiche per la sicurezza degli agenti enterprise come OpenClaw, suggerendo che la scarsità di risorse spinge verso soluzioni chiuse e controllate."
-            },
-            {
-              "titolo": "Rapporto Stanford: crescente divario tra esperti AI e opinione pubblica",
-              "fonte": "MIT Tech Review",
-              "link": "https://www.technologyreview.com/2026/04/13/1135720/why-opinion-on-ai-is-so-divided/",
-              "riassunto": "L'indice AI 2026 di Stanford evidenzia una disconnessione preoccupante: mentre gli insider vedono progresso, il pubblico nutre ansia crescente per posti di lavoro e sanità. Rilevante per il contesto socio-economico svizzero, noto per la sua cautela nell'adozione tecnologica.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "MIT Tech Review",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "MIT Tech Review adotta un tono analitico e sociologico, esplorando le cause della divisione opinativa; TechCrunch tratta la notizia come un dato di fatto statistico, collegandolo direttamente alle implicazioni di mercato e alla percezione del rischio negli investimenti."
-            },
-            {
-              "titolo": "OpenAI acquisisce Hiro: pianificazione finanziaria integrata in ChatGPT",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
-              "riassunto": "OpenAI ha acquistato la startup di finanza personale Hiro per integrare capacità di pianificazione finanziaria avanzata in ChatGPT. Una mossa strategica che potrebbe trasformare il settore fintech, rilevante per la piazza finanziaria svizzera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Carenza strutturale di capacità computazionale (GPU)",
-            "Consolidamento del mercato degli agenti AI verticali"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei prezzi delle GPU e la disponibilità di servizi cloud per le imprese europee nelle prossime 24 ore a seguito degli annunci di razionamento.",
           "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
