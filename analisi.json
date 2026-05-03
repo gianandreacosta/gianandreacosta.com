@@ -1,6 +1,308 @@
 {
-  "generated_at": "2026-05-02T04:50:24.583138+00:00",
+  "generated_at": "2026-05-03T04:50:06.807501+00:00",
   "analyses": [
+    {
+      "id": 58,
+      "run_id": 90,
+      "run_time": "2026-05-03 04:45:02.079048+00:00",
+      "analyzed_at": "2026-05-03T04:50:06.801164+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi di forte impatto locale: il nuovo numero 142 per l’aiuto alle vittime, il Primo maggio con cortei e tensioni a Lugano, e il dossier sul salario minimo che salirà gradualmente entro il 2029.\nSul versante sociale emergono anche segnali di prevenzione e tutela, mentre sullo sfondo resta il clima politico polarizzato attorno a lavoro, salari e sicurezza.",
+          "notizie": [
+            {
+              "titolo": "Attivo in Svizzera e in Ticino il numero 142 per l’aiuto alle vittime",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/142-un-numero-che-fa-la-differenza-contro-la-violenza-432643",
+              "riassunto": "Da oggi è operativo il 142, numero gratuito e attivo 24 ore su 24 per persone vittime di violenze fisiche, psichiche o sessuali, nello spazio privato o pubblico. In Ticino le chiamate sono prese in carico dal Servizio LAV e, fuori orario, dalla FCTSA.\nÈ una misura concreta e immediatamente utile per l’accesso all’ascolto, alla consulenza e all’orientamento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Primo maggio a Lugano: corteo affollato e tensioni serali in centro",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-Primo-maggio-a-Lugano-%E2%80%9CN%C3%A9-sfruttati-n%C3%A9-divisi%E2%80%9D--3710049.html",
+              "riassunto": "A Lugano oltre un migliaio di persone ha partecipato al corteo del Primo maggio, tornato in città dopo undici anni a Bellinzona. Lo slogan era “Né sfruttati né divisi: lavoro e dignità senza confini”, con focus su salari, sicurezza sul lavoro e opposizione all’iniziativa UDC sui 10 milioni.\nIn serata, in centro, si sono verificati scontri vicino alla Pensilina Botta con un forte intervento di polizia.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "RSI privilegia il quadro sindacale e politico del corteo, mettendo al centro il tema di lavoro e dignità e solo in coda le tensioni serali; il taglio è più di cronaca sociale. Ticinonews, con il servizio sul 142, intercetta il contesto istituzionale del primo maggio ma non insiste sugli scontri. Le fonti RSI che parlano dei disordini e del corteo usano un framing diverso: una sottolinea l’ampia partecipazione e la cornice politica, l’altra mette in evidenza l’ordine pubblico e la possibile matrice politica dei tafferugli."
+            },
+            {
+              "titolo": "Salario minimo in Ticino: aumento graduale fino al 2029",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Podcast-Il-salario-minimo-per-vivere--3709473.html",
+              "riassunto": "Il salario minimo orario in Ticino passerà dall’attuale fascia di 20,00-20,50 franchi a 21,75-22,25 franchi entro il 2029, per un aumento annuo stimato di circa 4'800 franchi.\nLa misura riguarda migliaia di lavoratori, soprattutto nei segmenti meno pagati, ma si confronta anche con le discussioni a livello federale su una nuova legge in materia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "lavoro, salari e conflitto sociale in Ticino",
+            "misure concrete di tutela e prevenzione sociale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione degli scontri di Lugano, con eventuali comunicazioni ufficiali della polizia e ricadute politiche sul clima del Primo maggio.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata dal Primo Maggio e dal confronto politico sull’iniziativa UDC «No a una Svizzera da 10 milioni!», attaccata da sindacati, consiglieri federali e PS. Sullo sfondo, pesano anche i timori economici legati al prezzo del petrolio e a possibili tensioni di approvvigionamento.",
+          "notizie": [
+            {
+              "titolo": "Primo Maggio, fronte compatto contro l’iniziativa UDC sulla popolazione",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/primo-maggio-il-presidente-delluss-pierre-yves-maillard-attacca-liniziativa-delludc-426602",
+              "riassunto": "Pierre-Yves Maillard e l’USS hanno usato la Festa del lavoro per attaccare l’iniziativa UDC «No a una Svizzera da 10 milioni!», in votazione il 14 giugno. Il sindacato la presenta come minaccia per salari, pensioni e posti di lavoro, con oltre 50 manifestazioni previste in tutta la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera",
+                "RSI Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT e Ticinonews insistono sul frame sindacale: difesa di salari, pensioni e controlli salariali, con tono militante ma istituzionale. RSI amplia il contesto sociale e sindacale, dando spazio a Daniel Lampart e al tema del lavoro che cambia. LaRegione enfatizza il conflitto politico e sociale, con i discorsi di PS e consigliera federale, mentre CdT/Ticinonews riportano soprattutto la linea dell’USS. Tutte le fonti convergono sull’idea che il voto del 14 giugno sia il vero banco di prova politico."
+            },
+            {
+              "titolo": "Beat Jans e il governo federale mettono in guardia contro l’iniziativa UDC",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/beat-jans-si-scaglia-contro-liniziativa-delludc-no-a-una-svizzera-da-10-milioni-432654",
+              "riassunto": "A Bienne, il consigliere federale Beat Jans ha definito l’iniziativa UDC un «grande rischio» e una proposta estrema. Secondo lui, se approvata, obbligherebbe la Svizzera a denunciare la libera circolazione, mettendo in pericolo la via bilaterale con l’UE e aggravando la carenza di manodopera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews mette in primo piano il profilo politico-istituzionale del monito di Jans e il nesso con la libera circolazione. LaRegione riprende gli stessi contenuti ma con taglio più esplicito sui rischi per bilaterali, credibilità e tradizione umanitaria. CdT affianca Jans alle voci sindacali del Primo Maggio, creando un quadro più corale e meno centrato sul singolo consigliere federale."
+            },
+            {
+              "titolo": "Petrolio alle stelle: la Svizzera teme nuove tensioni di approvvigionamento",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/il-prezzo-del-petrolio-schizza-alle-stelle-e-la-minaccia-di-carenze-spaventa-la-svizzera-426605",
+              "riassunto": "Il Brent ha toccato quota 126 dollari e torna il tema della penuria energetica. L’Ufficio federale per l’approvvigionamento economico avverte che benzina, diesel, gasolio da riscaldamento e cherosene restano garantiti solo fino a maggio, anche se l’approvvigionamento è per ora ancora assicurato.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Primo Maggio come arena politica contro l’iniziativa UDC sull’immigrazione",
+            "preoccupazioni per economia e approvvigionamento energetico in un contesto geopolitico instabile"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito il rilancio del fronte anti-UDC dopo le manifestazioni del Primo Maggio e l’evoluzione delle indicazioni federali su carburanti e combustibili, soprattutto se il Brent resta su livelli elevati.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da due notizie internazionali e da un appuntamento locale di interesse per il Ticino. In evidenza la morte del pittore Georg Baselitz, il Concertone del Primo maggio con la presa di posizione di Piero Pelù e un evento musicale a Chiasso legato alle tradizioni svizzere e italiane.",
+          "notizie": [
+            {
+              "titolo": "È morto Georg Baselitz, maestro tedesco del neoespressionismo",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922270/baselitz-anni-arte-disse-opere-quadri-georg-morto-artista",
+              "riassunto": "Il pittore tedesco è morto a 88 anni, come comunicato dalla galleria Thaddaeus Ropac. Baselitz era celebre per le figure capovolte e per un’arte volutamente controcorrente, al centro di mostre importanti anche in area svizzera, tra cui alla Fondation Beyeler di Riehen.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "Il Post Cultura"
+              ],
+              "differenze_narrative": "LaRegione insiste sul profilo polemico e ‘furioso’ dell’artista, citando episodi, provocazioni e il rapporto con la scena espositiva svizzera. Il Post offre invece un taglio più sintetico e didattico, centrato sul posto di Baselitz nella storia del neoespressionismo e sul suo segno distintivo delle figure capovolte."
+            },
+            {
+              "titolo": "Al Concerto del Primo maggio Piero Pelù attacca colonialismi e guerra a Gaza",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1922405/pelu-thiago-palestina-piero-sayf-liberate",
+              "riassunto": "Sul palco del Concertone, Pelù ha lanciato un duro messaggio politico chiedendo la liberazione di Saif Abdelrahim Abukeshek e Thiago Avila, due membri della Global Sumud Flotilla arrestati dalle forze israeliane. Ha poi ricordato anche Chernobyl e criticato Mussolini.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "Il Post Cultura"
+              ],
+              "differenze_narrative": "Il Post presenta il Concertone come evento musicale e civile, elencando artisti, conduzione e cornice televisiva. LaRegione invece seleziona il momento più politico e conflittuale, mettendo al centro la denuncia di Pelù su Palestina, colonialismi e Global Sumud Flotilla, con un framing molto più militante."
+            },
+            {
+              "titolo": "A Chiasso doppio concerto tra voce popolare svizzera e tradizione salentina",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1922351/alessia-maggio-chiasso-maggiolata-teatro",
+              "riassunto": "Il 5 maggio al Cinema Teatro Chiasso va in scena una serata doppia con La Triada, progetto vocale guidato da Corin Curschellas, e Alessia Tondo. L’appuntamento valorizza lingue minoritarie, repertori alpini e canto popolare del Sud Italia, con un chiaro interesse per il pubblico ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "cultura e politica si intrecciano sempre più nei grandi eventi musicali",
+            "forte attenzione alla memoria artistica europea, tra necrologi e bilanci di carriera",
+            "programmazione culturale transfrontaliera e locale rilevante per il Ticino"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’eventuale rimbalzo mediatico delle polemiche sul discorso di Piero Pelù e le reazioni alla morte di Georg Baselitz, soprattutto da parte di musei, gallerie e critici europei.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation commerciale tra Stati Uniti e Unione Europea, con nuovi dazi auto annunciati da Trump e reazioni dure da Bruxelles. Sullo sfondo restano centrali la crisi con l’Iran, che continua a influenzare energia e mercati, e la possibile riduzione della presenza militare Usa in Germania.",
+          "notizie": [
+            {
+              "titolo": "Trump rilancia la guerra dei dazi sulle auto europee, Bruxelles prepara la risposta",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/wirtschaft/auf-25-prozent-trump-kuendigt-zollerhoehung-auf-eu-fahrzeuge-an",
+              "riassunto": "Donald Trump ha annunciato dazi del 25% su auto e camion importati dall’Ue, in vigore già dalla prossima settimana. La Commissione europea e il Parlamento europeo parlano di partner inaffidabile e minacciano contromisure. Per la Svizzera conta indirettamente per l’impatto su export, catene di fornitura e mercato europeo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF International",
+                "ANSA Mondo",
+                "Il Post Mondo"
+              ],
+              "differenze_narrative": "SRF enfatizza la dimensione commerciale e la reazione istituzionale dell’Ue, con tono molto orientato alle conseguenze economiche. ANSA e Il Post insistono di più sul framing politico di Trump: l’Ue viene presentata come partner che non rispetta gli accordi, mentre Bruxelles ribatte difendendo i propri interessi. Il Post inserisce anche il contesto della visita di re Carlo e della distensione con il Regno Unito, che in SRF resta marginale."
+            },
+            {
+              "titolo": "Iran, negoziati sul nucleare in cambio di allentamento delle sanzioni e sullo sfondo la crisi di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/01/wsj-iran-propone-confronto-sul-nucleare-in-cambio-allentamento-sanzioni_e5d13c2d-2d81-4ba1-87f0-93b08b74f991.html",
+              "riassunto": "Secondo il Wall Street Journal, Teheran sarebbe pronta a discutere il dossier nucleare in cambio di un alleggerimento delle sanzioni e a parlare delle condizioni per l’apertura dello stretto di Hormuz. BBC riferisce anche che Trump considera terminate le ostilità e che non servirebbe un nuovo via libera del Congresso. È un dossier cruciale per energia e prezzi in Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "BBC World",
+                "ANSA Mondo",
+                "Il Post Economia"
+              ],
+              "differenze_narrative": "ANSA dà risalto alla proposta diplomatica iraniana e al nodo Hormuz, con taglio molto sintetico. BBC mette invece al centro il problema costituzionale americano: Trump sostiene che il cessate il fuoco abbia sospeso l’obbligo di autorizzazione del Congresso, quindi la cornice è più istituzionale e legale. Il Post Economia traduce l’impatto geopolitico in conseguenze macroeconomiche, collegando la chiusura di Hormuz all’aumento dell’inflazione e alla prudenza della BCE."
+            },
+            {
+              "titolo": "Gli Stati Uniti valutano di ritirare 5.000 soldati dalla Germania",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/01/cbs-pentagono-vuole-ritirare-5.000-soldati-dalla-germania_83fa1bcf-7376-41d6-8e0e-4ce001e6cb17.html",
+              "riassunto": "Il Pentagono starebbe pianificando il ritiro di 5.000 militari americani dalla Germania. Secondo le fonti citate da CBS, la mossa sarebbe un segnale del malcontento di Trump verso gli alleati europei, in particolare per l’Iran. È una notizia strategicamente rilevante per l’equilibrio Nato in Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA legge il possibile ritiro soprattutto come messaggio politico di Trump verso l’Europa sul dossier Iran. Il New York Times offre una cornice più ampia: sottolinea che, pur con il taglio, in Germania resteranno comunque migliaia di soldati e che il peso della presenza Usa va oltre l’Europa. Il framing del NYT è più strategico e strutturale, ANSA più immediatamente politico-diplomatico."
+            }
+          ],
+          "trend": [
+            "Escalation commerciale tra Stati Uniti e Unione Europea",
+            "Ripercussioni della crisi Iran-Hormuz su energia, inflazione e diplomazia occidentale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la concretezza delle minacce di Trump sui dazi auto e l’eventuale risposta coordinata dell’Ue; in parallelo, capire se la proposta iraniana apre davvero a colloqui formali e se arrivano segnali definitivi sul ridimensionamento delle truppe Usa in Germania.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Giornata dominata da tensioni commerciali internazionali e dal dibattito svizzero su salari, lavoro e libera circolazione. Sullo sfondo, il carovita energetico resta un tema molto concreto per chi vive in Svizzera, soprattutto in vista degli effetti sui prezzi alla pompa.",
+          "notizie": [
+            {
+              "titolo": "Trump alza la pressione sui dazi auto UE: rischio di nuova guerra commerciale",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/trump-e-i-dazi-sulle-auto-ue-siamo-stati-derubati-per-anni-ora-non-lo-saremo-piu-432672",
+              "riassunto": "Donald Trump ha annunciato dazi al 25% sulle auto europee, accusando l’UE di aver violato l’accordo commerciale. La mossa riapre lo scontro tariffario tra Washington e Bruxelles e può colpire anche l’economia svizzera tramite filiere e mercati vicini.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Primo maggio in Svizzera: salari, lavoro e libera circolazione al centro dello scontro politico",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1922287/uss-salari-be-impieghi-discorsi",
+              "riassunto": "I sindacati hanno manifestato in una cinquantina di località chiedendo difesa dei salari e degli impieghi. L’USS vede nell’iniziativa UDC “No a una Svizzera da 10 milioni!” una minaccia alla libera circolazione e alla protezione salariale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "tio.ch Svizzera",
+                "tio.ch Svizzera",
+                "Blick Wirtschaft"
+              ],
+              "differenze_narrative": "Tio taglia nettamente istituzionale e sindacale, con enfasi su salari, dumping e libera circolazione; Blick affronta lo stesso clima da Primo maggio in modo più polemico e divisivo, trasformandolo in un confronto su 'fatica vs. lifestyle', con taglio più provocatorio e meno focalizzato sugli aspetti regolatori."
+            },
+            {
+              "titolo": "Nuovo rialzo dei prezzi dei carburanti in Europa: la Svizzera osserva il rischio di turismo della benzina",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/kommt-es-jetzt-zum-tanktourismus-nachbarlaender-greifen-durch-tankrabatt-in-deutschland-drueckt-benzinpreise-id21914909.html",
+              "riassunto": "Germania, Italia e altri Paesi vicini intervengono sui prezzi dei carburanti, con effetti visibili alla pompa. Per la Svizzera il tema è sensibile: differenze di prezzo oltreconfine possono spostare i rifornimenti e incidere sulla mobilità quotidiana.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "tensioni commerciali USA-UE e impatto sulle catene industriali europee",
+            "salari, libera circolazione e potere d’acquisto come assi del dibattito svizzero"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’eventuale irrigidimento delle misure di Trump sui dazi e la reazione europea, ma anche l’evoluzione del fronte interno svizzero sull’iniziativa UDC e sulle ripercussioni per lavoro, salari e mobilità.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da tre filoni forti: lo scontro legale Musk-OpenAI, la militarizzazione dell’IA con nuovi accordi del Pentagono, e il tema sicurezza/cyber, dove i modelli diventano sia arma sia difesa. Sullo sfondo, cresce anche la corsa industriale su modelli, infrastrutture e agenti AI.",
+          "notizie": [
+            {
+              "titolo": "Musk contro OpenAI: in aula accuse di tradimento, nonprofit e uso dei modelli di OpenAI da parte di xAI",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/",
+              "riassunto": "Nel primo round del processo federale a Oakland, Elon Musk ha detto di essere stato “ingannato” da Sam Altman e Greg Brockman quando finanzió OpenAI nel 2015. Ha anche ammesso che xAI usa modelli di OpenAI per addestrare Grok, mentre in aula si discute la possibile svolta verso una valutazione vicina a 1.000 miliardi di dollari per OpenAI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "MIT Tech Review",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "MIT Tech Review mette in primo piano il tono da scontro epocale e il paradosso di Musk che denuncia OpenAI mentre xAI beneficia dei suoi modelli. TechCrunch adotta un framing più da battaglia societaria e strategica, concentrandosi su ciò che è in gioco per il mercato AI, sulle email/tweet emersi e sulla tesi di Musk secondo cui OpenAI avrebbe tradito la missione nonprofit."
+            },
+            {
+              "titolo": "Il Pentagono amplia la sua strategia AI con accordi su reti classificate: dentro anche Nvidia, Microsoft, AWS e OpenAI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+              "riassunto": "Il Dipartimento della Difesa USA ha firmato accordi per distribuire tecnologie AI su reti classificate a fini operativi, con la dichiarata ambizione di costruire una “AI-first fighting force”. I contratti arrivano dopo il contenzioso con Anthropic sulle condizioni d’uso e rafforzano la corsa del Pentagono a non dipendere da un solo fornitore.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch usa il linguaggio istituzionale del Pentagono e sottolinea la diversificazione dei fornitori dopo la disputa con Anthropic. The Decoder insiste invece sulla dimensione politica e militare, evidenziando l’assenza di Anthropic, le sue obiezioni ai termini d’uso e il rischio di normalizzare sorveglianza domestica e armi autonome sotto il paravento del “lawful operational use”."
+            },
+            {
+              "titolo": "L’IA entra nel cuore della cyberdifesa: nuovi strumenti per difendere reti e codice dagli attacchi",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/",
+              "riassunto": "Anthropic ha lanciato Claude Security, in beta per i clienti enterprise, per scansionare codice, trovare vulnerabilità e suggerire patch con punteggi di gravità e affidabilità. La mossa arriva mentre altri test mostrano che i modelli più recenti stanno raggiungendo capacità d’attacco informatico sempre più autonome.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder"
+              ],
+              "differenze_narrative": "Qui il framing è difensivo: Anthropic presenta l’IA come strumento per dare ai difensori lo stesso vantaggio degli aggressori. Nello stesso ecosistema narrativo, il sito collega la notizia ai test che mostrano capacità cyber offensive nei modelli più recenti, suggerendo che la linea tra protezione e attacco stia diventando sempre più sottile."
+            }
+          ],
+          "trend": [
+            "Conflitto tra grandi attori dell’IA e controllo della proprietà intellettuale",
+            "Militarizzazione e sicurezza dell’IA: dal Pentagono alla difesa del codice"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi del processo Musk-OpenAI e l’eventuale reazione del mercato ai nuovi contratti del Pentagono: eventuali dettagli su OpenAI, Anthropic o sul ruolo di SpaceX potrebbero spostare ulteriormente il focus mediatico.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 57,
       "run_id": 89,
@@ -5172,292 +5474,6 @@
             "Sovravalutazione startup AI"
           ],
           "da_tenere_d_occhio": "Reazione delle autorità UE e svizzere alle capacità offensive del modello Claude Mythos nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "run_id": 68,
-      "run_time": "2026-04-15 04:45:02.111313+00:00",
-      "analyzed_at": "2026-04-15T09:39:32.298082+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "ollama/qwen3.5:cloud, openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata dalle ripercussioni locali dell'intesa federale sul salario minimo e dai dati climatici sui fulmini. Completa il quadro una rilevante vicenda giudiziaria nel Luganese.",
-          "notizie": [
-            {
-              "titolo": "Salario minimo, l'intesa a Berna c'è ma per il Ticino le cose si complicano",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma-per-il-ticino-le-cose-si-complicano-425142",
-              "riassunto": "La Commissione economia del Nazionale stabilisce la precedenza dei salari minimi nei CCL su quelli cantonali, con eccezioni. Il Ticino resta in una zona grigia normativa che potrebbe complicare la tutela locale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "CdT enfatizza le complicazioni politiche per il Ticino nel titolo, adottando un tono di allerta. Ticinonews mantiene un approccio più tecnico e neutro sulla gerarchia dei contratti."
-            },
-            {
-              "titolo": "È il Mendrisiotto la regione più colpita dai fulmini nel 2025, Luganese al secondo posto",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/e-il-mendrisiotto-la-regione-piu-colpita-dai-fulmini-nel-2025-luganese-al-secondo-posto-425004",
-              "riassunto": "Dati 2025 confermano il Ticino come cantone svizzero più colpito dai fulmini. Il Mendrisiotto guida la classifica regionale, seguito dal Luganese, con un calo generale del 25% rispetto all'anno precedente.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "Nessuna differenza sostanziale nel tono o nei dati riportati; entrambe le fonti riportano le statistiche ufficiali senza angolazioni politiche diverse."
-            },
-            {
-              "titolo": "Maxi-truffa da 20 milioni, a processo un gestore di auto d'epoca",
-              "fonte": "LaRegione Luganese",
-              "link": "https://www.laregione.ch/cantone/luganese/1917800/maxi-truffa-da-20-milioni-a-processo-un-gestore-di-auto-d-epoca",
-              "riassunto": "Apre il processo per una frode finanziaria di grandi dimensioni nel Luganese. L'imputato è un noto operatore del settore automobilistico storico, vicenda che solleva interesse per l'importo elevato.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Normativa lavoro federale vs autonomia cantonale",
-            "Impatto climatico sul territorio ticinese"
-          ],
-          "da_tenere_d_occhio": "Sviluppi sull'applicazione concreta della regola sui salari minimi in Ticino e eventuali reazioni politiche locali nelle prossime 24h.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da un attacco informatico che ha colpito dati di ticinesi, da un'indagine sul tragico incendio di Capodanno a Crans-Montana e da un nuovo sciopero della Lufthansa che ha paralizzato numerosi voli verso e dalla Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Booking avverte gli utenti ticinesi di un attacco informatico: dati personali esposti",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/booking-mette-in-guardia-gli-utenti-attivita-sospette-su-diverse-prenotazioni-424974",
-              "riassunto": "La piattaforma di prenotazioni Booking.com è stata vittima di un nuovo cyber‑attacco. Tra le informazioni trapelate vi sono nome, telefono, e-mail e indirizzo di utenti svizzeri, compresi molti ticinesi, ma non dati bancari.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Indagine sul rogo di Capodanno a Crans-Montana: il sindaco interrogato",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1917701/sindaco-crans-montana-capodanno-incendio-inchiesta-interrogato-crans",
-              "riassunto": "Il sindaco di Crans-Montana è stato chiamato a deporre nell’inchiesta sull’incendio della discoteca Le Constellation, che ha provocato 41 morti e 115 feriti durante i festeggiamenti di Capodanno.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Sciopero Lufthansa: cancellazioni di voli in Svizzera e Germania",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1917842/lufthansa-sciopero-svizzera-germania-tre",
-              "riassunto": "Il sindacato dei dipendenti Lufthansa ha indetto uno sciopero che ha provocato la cancellazione di numerosi voli tra la Svizzera e la Germania, creando disagi a migliaia di passeggeri.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "SRF Schweiz"
-              ],
-              "differenze_narrative": "LaRegione si concentra sull'impatto diretto sui voli svizzeri, evidenziando i disagi per i passeggeri e le misure di emergenza degli aeroporti. SRF, invece, inquadrala come parte di uno sciopero più ampio che colpisce gli hub di Francoforte e Monaco, sottolineando le tensioni sindacali a livello europeo e fornendo dati sul numero di voli cancellati."
-            }
-          ],
-          "trend": [
-            "Aumento delle minacce informatiche a piattaforme di viaggio",
-            "Sicurezza e gestione delle emergenze in eventi pubblici"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi dell'indagine sul rogo di Crans-Montana e ulteriori comunicazioni di Booking.com su eventuali violazioni aggiuntive",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura si tinge di rosso bianco e rosso con l'attenzione internazionale sul nuovo LACMA firmato dall'architetto svizzero Peter Zumthor. In patria, si celebrano i 50 anni della Borsa Svizzera degli Spettacoli e il successo crescente del cinema d'animazione elvetico sui palcoscenici globali.",
-          "notizie": [
-            {
-              "titolo": "Il nuovo LACMA di Peter Zumthor apre a Los Angeles",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/14/arts/design/lacma-peter-zumthor-los-angeles.html",
-              "riassunto": "Dopo un decennio di lavori e 724 milioni di dollari, le David Geffen Galleries progettate dallo svizzero Peter Zumthor ridefiniscono il panorama museale di Los Angeles. Un traguardo prestigioso che conferma l'eccellenza dell'architettura elvetica all'estero.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Borsa Svizzera degli Spettacoli festeggia 50 anni a Thun",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1917770/svizzera-artisti-spettacoli-borsa-anni-thun",
-              "riassunto": "Settanta artisti e compagnie si riuniscono al KKThun per celebrare il cinquantenario della piattaforma di scambio teatrale più importante della Confederazione. Un evento chiave per il networking e la visibilità delle performing arts svizzere.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il cinema d'animazione svizzero conquista i festival internazionali",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1917707/cinema-d-animazione-elvetico-successo-d-esportazione-sottovalutato",
-              "riassunto": "I film d'animazione elvetici accumulano premi all'estero ma faticano a trovare spazio in patria. Un paradosso che evidenzia la qualità della produzione nazionale e le sfide di distribuzione locale per gli artisti svizzeri.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Architettura svizzera nel mondo",
-            "Performing arts elvetiche"
-          ],
-          "da_tenere_d_occhio": "Dettagli sull'inaugurazione ufficiale delle David Geffen Galleries e il programma completo della Borsa degli Spettacoli.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La tensione nello Stretto di Hormuz domina l'agenda con il blocco navale USA e le reazioni di Cina e Iran, mentre in Europa il crollo di Orbán in Ungheria ridefinisce gli equilibri politici. Parallelamente, lo scontro verbale tra l'amministrazione Trump e Papa Leone XIV solleva questioni diplomatiche rilevanti per la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Escalation nello Stretto di Hormuz: USA avviano il blocco, Cina avverte e l'Europa cerca una via diplomatica",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/13/wsj-oltre-15-navi-americane-nello-stretto-per-il-blocco-di-hormuz_6ddae459-ce7c-491b-a651-986b33a597e1.html",
-              "riassunto": "Gli Stati Uniti hanno dispiegato oltre 15 navi per bloccare i porti iraniani, innescando la dura reazione di Pechino che definisce la mossa pericolosa. Parallelamente, Francia e Regno Unito organizzano una conferenza per una missione di paesi 'non belligeranti', cruciale per la stabilità energetica globale e le rotte commerciali svizzere.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA enfatizza la diplomazia europea e le dichiarazioni ufficiali di Cina e Iran; Internazionale pone l'accento sull'incertezza dei mercati petroliferi e il paradosso tra blocco e dialogo; il NYT analizza i dettagli operativi militari e le implicazioni politiche interne USA."
-            },
-            {
-              "titolo": "Terza l'era di Orbán: Péter Magyar vince in Ungheria, svolta per l'UE",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/ungheria-sconfitta-elettorale-orban",
-              "riassunto": "Il sovranista Viktor Orbán è stato sconfitto dal riformista Péter Magyar, segnando una storica battuta d'arresto per i nazionalismi in Europa. L'evento è di portata internazionale e rilevante per la Svizzera in quanto modifica gli equilibri politici nell'area Schengen e le relazioni con gli alleati atlantici.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Internazionale sottolinea il sollievo dei cittadini ungheresi e la fine dell'isolamento politico; il NYT si concentra sulla biografia di Magyar come ex alleato di Orbán e si interroga sulla genuinità del cambiamento rispetto alle politiche verso Russia e USA."
-            },
-            {
-              "titolo": "Scontro Trump-Papa: il Vaticano risponde agli attacchi sull'immigrazione e la morale",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/13/papa-leone-risponde-attacco-trump",
-              "riassunto": "Papa Leone XIV ha denunciato le politiche 'neocoloniali' dopo gli attacchi verbali di Donald Trump, mentre il vicepresidente Vance invita il Vaticano a occuparsi solo di questioni morali. La tensione tocca direttamente la Svizzera, sede del Vaticano e di numerose organizzazioni umanitarie internazionali.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA riporta le condanne formali dell'Iran a sostegno del Papa e le dichiarazioni di Vance; Internazionale e NYT evidenziano il contesto del viaggio del Papa in Africa e la dimensione dottrinale della risposta alle critiche statunitensi."
-            }
-          ],
-          "trend": [
-            "Militarizzazione delle rotte energetiche globali",
-            "Ridefinizione degli equilibri politici in Europa centrale"
-          ],
-          "da_tenere_d_occhio": "L'esito della conferenza di venerdì a Parigi sulla missione non belligerante a Hormuz e le eventuali reazioni militari dell'Iran al blocco navale USA.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'economia è dominata da grandi successioni aziendali in Svizzera e innovazioni nei servizi locali, con un'attenzione particolare al rafforzamento del brand elvetico e alla mobilità sostenibile.",
-          "notizie": [
-            {
-              "titolo": "MSC, il re delle portacontainer passa le quote ai figli",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/cambio-proprieta-msc-re-portacontainer-passa-quote-figli-AIH43jTC",
-              "riassunto": "Il colosso dello shipping con sede a Ginevra avvia il passaggio generazionale. Una notizia cruciale per l'economia svizzera dato il peso del gruppo nei traffici marittimi globali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Rivoluzione biglietti nei trasporti pubblici: test per il sistema Be-in, Be-out",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/einsteigen-ohne-billett-test-fuer-ticket-revolution-im-oev-startet-das-musst-du-wissen-id21866677.html",
-              "riassunto": "Alliance Swisspass avvia un test per un nuovo sistema di ticketing senza obbligo di biglietto fisico. Un cambiamento potenziale per la mobilità quotidiana di tutti i residenti in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nespresso lancia il nuovo spot con Dua Lipa e George Clooney",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1917911/nespresso-presenta-il-primo-spot-con-dua-lipa-e-george-clooney",
-              "riassunto": "Il brand svizzero di Nestlé investe in una campagna globale di alto profilo. Segnale di fiducia nel mercato del lusso e conferma della forza dell'export elvetico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Successione nei grandi gruppi svizzeri",
-            "Digitalizzazione dei servizi pubblici"
-          ],
-          "da_tenere_d_occhio": "Esiti del test sul ticketing digitale dei trasporti pubblici e dettagli sul piano industriale di MSC post-successione.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi emergono dati critici sul divario sociale nell'adozione dell'AI, una carenza infrastrutturale globale e mosse strategiche aggressive di OpenAI. Nessuna notizia diretta sulla Svizzera, ma implicazioni economiche rilevanti per il mercato del lavoro e il settore tech elvetico.",
-          "notizie": [
-            {
-              "titolo": "Rapporto Stanford 2026: divario crescente tra esperti AI e pubblico",
-              "fonte": "TechCrunch AI / MIT Tech Review",
-              "link": "https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/",
-              "riassunto": "L'AI Index di Stanford evidenzia un'ansia crescente su jobs ed economia tra il pubblico, non condivisa dagli esperti. Rilevante per la Svizzera per le implicazioni sul mercato del lavoro qualificato e la formazione professionale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "MIT Tech Review"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza l'ansia economica e i rischi per healthcare e jobs; MIT Tech Review adotta un tono più analitico, focalizzandosi sulla polarizzazione dell'opinione e offrendo visualizzazioni dati per comprendere lo stato dell'arte."
-            },
-            {
-              "titolo": "Carenza globale di risorse computazionali per l'AI: prezzi GPU in aumento",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/the-ai-industry-is-running-out-of-compute-with-outages-rationing-and-rising-gpu-prices/",
-              "riassunto": "La domanda di agenti AI collide con capacità di calcolo limitata: interruzioni, razionamenti e prezzi GPU aumentati del 50%. Critico per le aziende tech svizzere che dipendono da infrastrutture cloud per sviluppare soluzioni AI.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI: leak interno sul modello 'Spud' e acquisizione startup finanziaria Hiro",
-              "fonte": "The Decoder / TechCrunch AI",
-              "link": "https://the-decoder.com/openais-leaked-memo-says-new-spud-model-will-make-all-its-products-significantly-better/",
-              "riassunto": "OpenAI pianifica il modello 'Spud' per migliorare i prodotti enterprise e acquisisce Hiro per il planning finanziario. Segnale di consolidamento verticale che potrebbe influenzare i partner finanziari ticinesi e svizzeri.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Saturazione infrastrutturale AI",
-            "Divario percezione pubblica-esperti"
-          ],
-          "da_tenere_d_occhio": "Evolution of the 'Spud' model release and potential impact on enterprise AI costs in the Swiss banking sector.",
           "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
