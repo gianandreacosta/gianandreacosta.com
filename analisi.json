@@ -1,6 +1,262 @@
 {
-  "generated_at": "2026-05-03T04:50:06.807501+00:00",
+  "generated_at": "2026-05-04T04:50:29.848235+00:00",
   "analyses": [
+    {
+      "id": 59,
+      "run_id": 91,
+      "run_time": "2026-05-04 04:45:02.457313+00:00",
+      "analyzed_at": "2026-05-04T04:50:29.843129+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 17,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi molto concreti per il territorio: tensioni di ordine pubblico a Lugano, pressione sull’agricoltura locale e un successo sportivo con forte impronta ticinese. Sullo sfondo, restano alcuni dossier cantonali e federali con impatto più indiretto.",
+          "notizie": [
+            {
+              "titolo": "Scontri a Lugano: due feriti nei disordini ai margini del Primo maggio",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Scontri-a-Lugano-due-persone-ferite--3710940.html",
+              "riassunto": "A Lugano, nella zona della pensilina, la polizia è intervenuta venerdì sera per sedare tafferugli legati ai festeggiamenti del Primo maggio. Il bilancio è di due feriti leggeri e nessun fermo, ma resta da chiarire la dinamica e l’eventuale matrice sportiva dei disordini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Gli agricoltori ticinesi chiedono più sostegno alla politica e più prodotti locali",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/I-contadini-alla-politica-meno-import-pi%C3%B9-locale--3711420.html",
+              "riassunto": "L’Unione dei contadini ticinesi chiede interventi più decisi per proteggere terreni agricoli, formazione e filiera locale, denunciando anche la pressione delle importazioni. Il presidente Omar Pedrini invita enti pubblici ed eventi sovvenzionati a privilegiare i prodotti del territorio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Thun è campione svizzero: successo storico con la firma ticinese di Mauro Lustrinelli",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/La-gioia-di-Thun--3712959.html",
+              "riassunto": "Il Thun ha conquistato il suo primo titolo nazionale dopo 128 anni di storia, coronando una stagione dominata quasi dall’inizio alla fine. Per il lettore ticinese conta anche il ruolo dell’allenatore Mauro Lustrinelli, uno degli artefici della vittoria.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensione tra ordine pubblico e tifoserie nel contesto di eventi in città",
+            "difesa dell’agricoltura ticinese e valorizzazione dei prodotti locali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’evoluzione delle indagini sui disordini di Lugano: autorità e polizia devono chiarire responsabilità, identità dei coinvolti ed eventuali collegamenti con gruppi sportivi.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da due temi molto concreti per famiglie e imprese: sicurezza degli approvvigionamenti energetici e tenuta del mercato del lavoro. Sullo sfondo, Berna accelera anche sul dossier difesa aerea, segnale di un contesto di sicurezza europeo sempre più teso.",
+          "notizie": [
+            {
+              "titolo": "Allarme per il rischio di carenza di carburante e gas in Svizzera",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/il-rischio-di-una-carenza-di-carburante-in-svizzera-e-molto-elevato-426658",
+              "riassunto": "Florence Schurch di Suissenégoce avverte che il rischio di una carenza di carburante in Svizzera è «molto elevato». Nel testo cita riserve strategiche in esaurimento in vari Paesi, la dipendenza svizzera da scorte all’estero e la fragilità delle forniture di gas e petrolio. Per il lettore svizzero conta perché tocca prezzi, sicurezza energetica e approvvigionamento.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Le tre testate trattano lo stesso allarme, ma con sfumature diverse: CdT sviluppa di più il contesto geopolitico e il rischio per gas, petrolio e prezzi alimentari; Ticinonews riprende il taglio pratico per il pubblico ticinese; LaRegione è più sintetica e neutra, concentrata sui dati essenziali e sulla dipendenza svizzera da depositi esteri."
+            },
+            {
+              "titolo": "Migros avverte: senza immigrazione rischiano di peggiorare offerta e servizio",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1922456/immigrazione-migros-ceo-offerta-udc",
+              "riassunto": "Il CEO di Migros Mario Irminger boccia l’iniziativa UDC «No a una Svizzera da 10 milioni!» e sostiene che l’industria alimentare dipende dall’immigrazione. Cita circa 1’000 posti vacanti difficili da coprire e una forte quota di lavoratori stranieri in Micarna, fino al 90% in alcuni reparti. Rilevante perché lega immigrazione, prezzi e qualità dell’offerta quotidiana.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews enfatizza l’argomento politico contro l’iniziativa UDC e riprende le cifre sui dipendenti stranieri; LaRegione mette più in evidenza le conseguenze concrete per i consumatori, come meno filiali, orari ridotti e scelta più limitata. In entrambi i casi il framing è favorevole all’apertura al lavoro straniero, ma con diversa sensibilità tra piano politico e impatto sul servizio."
+            },
+            {
+              "titolo": "La Confederazione cerca un sistema di difesa aerea supplementare oltre ai Patriot",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1922483/sistema-patriot-difesa-informazioni-confederazione-sistemi",
+              "riassunto": "Armasuisse sta raccogliendo informazioni su sistemi di difesa aerea di Germania, Francia, Israele e Corea del Sud per affiancare i Patriot già ordinati. Le risposte sono attese entro fine maggio e peseranno tempi di consegna, costi e quota di produzione in Europa o in Svizzera. È una notizia rilevante per la sicurezza nazionale e per l’industria.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza degli approvvigionamenti energetici e vulnerabilità delle scorte",
+            "immigrazione e manodopera straniera come leva per l’economia svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare eventuali chiarimenti del Consiglio federale sui rischi di carenza energetica e le reazioni politiche all’uscita del CEO di Migros, perché potrebbero alimentare il dibattito su prezzi, consumi e immigrazione.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la categoria cultura è dominata da due fili forti: da un lato l’attenzione svizzera per il Prix Walo e per la scena artistica legata al Ticino, dall’altro le regole e i meccanismi dell’industria globale dell’intrattenimento, dagli Oscar alle grandi produzioni internazionali. Sullo sfondo, anche il recupero di figure artistiche europee come Segantini.",
+          "notizie": [
+            {
+              "titolo": "Il Prix Walo celebra i protagonisti della scena dello spettacolo svizzero",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/news/schweiz/prix-walo-2025-ehrenpreis-fuer-musikmanager-freddy-burger",
+              "riassunto": "A Zurigo è stata assegnata la 50esima edizione del Prix Walo, il premio più prestigioso dello showbiz svizzero. L’Ehren-Prix è andato al manager musicale Freddy Burger, mentre il pubblico ha premiato Nik Hartmann. Un segnale chiaro della centralità della scena culturale elvetica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Segantini torna al centro della scena con una grande mostra a Parigi",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922504/segantini-parigi-giovanni-parigi-arte",
+              "riassunto": "Il Museo Marmottan Monet ospita fino al 16 agosto la prima grande monografica francese su Giovanni Segantini, con oltre 60 opere. Per il pubblico svizzero è una riscoperta importante di un artista legato all’immaginario alpino e alla storia culturale italiana e svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Gli Oscar cambiano le regole e chiudono alla recitazione generata dall’IA",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/05/03/oscar-regolamento-2027/",
+              "riassunto": "L’Academy ha modificato il regolamento in vista degli Oscar 2027: gli interpreti potranno comparire più volte nella stessa categoria se rientrano tra i cinque più votati. Restano centrali anche i paletti sull’uso dell’intelligenza artificiale, tema già evidenziato da altre testate.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Cultura",
+                "SRF Kultur"
+              ],
+              "differenze_narrative": "Il Post si concentra soprattutto sul funzionamento interno del voto e sulle strategie delle campagne premi, con taglio da analisi di industria. SRF, in forma più telegrafica, mette invece in primo piano l’elemento di attualità: l’esclusione dell’IA dalle candidature, trattandolo come notizia rapida e normativa."
+            }
+          ],
+          "trend": [
+            "centralità della cultura svizzera e dei premi nazionali",
+            "riforme dell’industria culturale tra Oscar, IA e nuove regole del settore"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare eventuali reazioni al nuovo regolamento degli Oscar, soprattutto sul fronte dell’uso dell’intelligenza artificiale, e l’eco mediatica del Prix Walo in Svizzera tedesca e in Romandia.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dal Medio Oriente: il dossier Iran-USA-Israele resta al centro, mentre il conflitto in Libano continua a produrre vittime e tensioni. Sul fronte transatlantico, l’annuncio di nuovi dazi USA sulle auto europee aggiunge pressione ai rapporti con l’UE e può avere ricadute anche per l’economia svizzera.",
+          "notizie": [
+            {
+              "titolo": "Trump rilancia i dazi sulle auto europee al 25%: nuova tensione con l’Unione Europea",
+              "fonte": "Il Post Economia",
+              "link": "https://www.ilpost.it/2026/05/01/trump-aumento-dazi-auto-camion-unione-europea-25/",
+              "riassunto": "Donald Trump ha annunciato via Truth l’aumento dei dazi su auto e camion esportati dall’UE negli USA dal 15 al 25%. La misura entra in vigore la prossima settimana e irrigidisce ancora i rapporti transatlantici, con possibili effetti a catena anche sull’industria europea e svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Iran e Stati Uniti: sul tavolo una proposta in cinque punti su Hormuz, nucleare e sanzioni",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/02/i-cinque-punti-della-proposta-iraniana-su-hormuz-nucleare-e-sanzioni_e7db01bb-f601-46fc-80c2-6e5a02736960.html",
+              "riassunto": "Secondo Reuters, un alto funzionario iraniano avrebbe delineato una proposta in cinque punti: fine della guerra con garanzie contro nuovi attacchi, riapertura dello Stretto di Hormuz, revoca del blocco USA e colloqui sul nucleare in cambio della rimozione delle sanzioni. Il dossier è cruciale per i mercati energetici e la stabilità regionale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Raid israeliani in Libano: il bilancio delle vittime continua a salire nonostante il cessate il fuoco",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/02/beirut-e-salito-a-13-il-bilancio-delle-vittime-dei-raid-israeliani_3b28f0c2-920e-40e6-9761-770a47e48593.html",
+              "riassunto": "Il ministero della Salute di Beirut parla di almeno 13 morti nei raid israeliani nel sud del Libano, con donne e bambini tra le vittime. Gli attacchi arrivano nonostante il cessate il fuoco con Hezbollah in vigore dal 17 aprile, segnale di una tregua sempre più fragile.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Escalation e negoziati nel Medio Oriente, con il nodo Hormuz e il rischio energetico globale",
+            "Ritorno del protezionismo USA e pressione commerciale sull’Europa"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione dell’Unione Europea ai dazi annunciati da Trump e l’eventuale evoluzione dei contatti diplomatici su Iran e Libano, soprattutto se emergeranno segnali di de-escalation o nuove misure militari.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: sicurezza degli approvvigionamenti energetici, spese e priorità della Confederazione, e pressione sul lavoro e sui salari. Sullo sfondo emerge anche il rafforzamento dei controlli fiscali internazionali e l’adattamento del tessuto produttivo ai nuovi vincoli globali.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera teme carenze di carburante se la crisi nel Golfo Persico si prolunga",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/wegen-der-militaerischen-lage-am-persischen-golf-treibstoff-engpaesse-ab-juni-moeglich-id21916780.html",
+              "riassunto": "La fornitura di carburanti in Svizzera sarebbe coperta solo fino a fine maggio; da giugno potrebbero comparire i primi colli di bottiglia se la rotta di Hormuz resta bloccata. Le scorte obbligatorie coprono circa 4,5 mesi, ma il mercato già mostra tensioni e maggiore tanktourismus.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Blick mette l'accento sulla tempistica pratica per i consumatori svizzeri, sui depositi obbligatori e sul rischio di panico ai distributori, con taglio molto concreto e quasi operativo. Tio riprende l'allarme in chiave più istituzionale, citando le valutazioni di Suissenégoce e il quadro delle riserve strategiche; il framing è più politico-economico e meno centrato sull'impatto immediato sugli automobilisti."
+            },
+            {
+              "titolo": "La Confederazione cerca un sistema di difesa aerea alternativo ai Patriot americani",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1922484/sistema-federale-patriot-informazioni-sievert",
+              "riassunto": "Berna sta valutando un ulteriore sistema di difesa a lungo raggio, complementare ai Patriot statunitensi, e ha chiesto informazioni a Germania, Francia, Israele e Corea del Sud. Contano tempi di consegna, costi e quota di produzione in Europa, idealmente in Svizzera, segno di una strategia più prudente dopo i ritardi Usa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La Svizzera intensifica la caccia agli evasori fiscali con una rete sempre più globale",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1921814/sempre-piu-paesi-coinvolti-cosi-la-svizzera-da-la-caccia-agli-evasori-fiscali",
+              "riassunto": "Nel 2025 la Svizzera ha ricevuto 6'968 richieste di assistenza amministrativa dall'estero e ha rilasciato informazioni su 3,8 milioni di conti; in uscita, invece, le richieste sono scese a 61 verso 26 Paesi. Il dossier segnala un rafforzamento della cooperazione fiscale internazionale, rilevante anche per chi detiene attivi all'estero o in Svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza degli approvvigionamenti e prezzi dell'energia",
+            "rafforzamento della cooperazione economico-fiscale e della spesa pubblica strategica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione della crisi nel Golfo Persico e l'eventuale risposta del Consiglio federale su misure preventive per carburanti e logistica: eventuali annunci su scorte, razionamenti o comunicazioni alle imprese potrebbero avere un impatto immediato anche in Svizzera italiana.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria di oggi è dominata dal tema della sovranità digitale: la dipendenza della Svizzera dai grandi fornitori USA torna al centro del dibattito, con focus su costi, controllo dei dati e autonomia operativa. Sullo sfondo, emergono anche le tensioni tra AI, privacy e modelli di business basati su tracking e monetizzazione.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera paga sempre di più la dipendenza da Microsoft e dalla Big Tech",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/digitale-souveraenitaet-als-einzelner-kannst-du-nicht-aussteigen-id21910507.html",
+              "riassunto": "Matthias Stürmer spiega che la Svizzera non ha mai affrontato in modo serio il rischio di dipendere dai grandi fornitori USA. I numeri citati sono eloquenti: il contratto federale con Microsoft passa da 42 milioni di franchi nel 2009 a 140 milioni oggi. Per un lettore svizzero, il tema tocca direttamente costi pubblici, continuità dei servizi e controllo sui dati.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Tentativo di uscire dall’ecosistema Big Tech: l’esperimento mostra quanto sia difficile",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/selbstversuch-von-blick-journi-big-tech-loswerden-halb-geschafft-halb-gescheitert-id21910501.html",
+              "riassunto": "Un giornalista di Blick prova a ridurre l’uso di servizi USA nella vita quotidiana e scopre che l’operazione è costosa, scomoda e solo parzialmente possibile. Il pezzo evidenzia anche il rischio del Cloud Act e la fragilità dell’autonomia digitale anche quando i server sono in Svizzera. Il framing è più pratico e personale rispetto all’analisi istituzionale del primo articolo.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "sovranità digitale e dipendenza dalla Big Tech USA",
+            "privacy, dati e monetizzazione dei servizi AI"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il dibattito sulla sovranità digitale diventa politico in Svizzera, soprattutto per possibili reazioni di amministrazioni pubbliche e fornitori IT legati a Microsoft e agli altri grandi cloud americani.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 58,
       "run_id": 90,
@@ -5163,318 +5419,6 @@
           ],
           "da_tenere_d_occhio": "L'adozione del nuovo Agents SDK sandbox da parte delle aziende svizzere e la disponibilità di Gemini 3.1 in italiano potrebbero influenzare il mercato locale nei prossimi giorni.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "run_id": 69,
-      "run_time": "2026-04-16 04:45:01.785126+00:00",
-      "analyzed_at": "2026-04-16T05:06:09.098483+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 19,
-      "model_used": "ollama/qwen3.5:cloud",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi dominano le notizie sul salario minimo con ripercussioni cantonali, il debutto in borsa di Centiel e un caso di cronaca nera transfrontaliero.",
-          "notizie": [
-            {
-              "titolo": "Salari minimi, prevale l'obbligo generale ma il Ticino resta in gioco",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/salario-minimo-lintesa-a-berna-ce-ma-per-il-ticino-le-cose-si-complicano-425142",
-              "riassunto": "La Commissione del Consiglio nazionale stabilisce la precedenza dei salari nei CCL su quelli cantonali, salvo eccezioni. Per il Ticino la situazione rimane incerta.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews riporta la decisione tecnica in modo neutro; CdT enfatizza le complicazioni politiche per il Ticino e l'incertezza residua."
-            },
-            {
-              "titolo": "Centiel approva fusione con HT5 e debutta in Borsa a Zurigo",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1918021/centiel-fusione-ht5-borsa-zurigo",
-              "riassunto": "Gli azionisti approvano l'operazione che crea un'azienda tecnologica quotata al SIX. Sede legale trasferita a Lugano.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Ticino"
-              ],
-              "differenze_narrative": "Ticinonews punta sul potenziale di crescita internazionale; LaRegione fornisce dettagli tecnici sull'operatività borsistica e simboli."
-            },
-            {
-              "titolo": "Neonato morto per maltrattamenti, genitori arrestati in Ticino",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/svizzera/neonato-morto-per-maltrattamenti-in-italia-genitori-fermati-in-ticino-425237",
-              "riassunto": "Coppia ricercata per la morte di un bambino in Italia catturata nel nostro Cantone grazie alla cooperazione con l'Interpol.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Salario minimo",
-            "Economia aziendale"
-          ],
-          "da_tenere_d_occhio": "Evoluzione normativa sul salario minimo cantonale",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata dalle tensioni economiche internazionali con i dazi USA e dal dibattito interno sulla spesa per la difesa (F-35 e nuovo armamento). Spiccano anche notizie di cronaca locale su costi degli affitti e licenze edilizie a Zurigo, oltre alla tradizionale festa del Sechseläuten.",
-          "notizie": [
-            {
-              "titolo": "Negoziati sui dazi USA: Berna cerca stabilità per l'orologiero e l'economia",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/dazi-proseguono-i-negoziati-con-gli-usa-431479",
-              "riassunto": "La SECO conferma la prosecuzione dei colloqui con Washington per garantire stabilità al settore orologiero e ad altri rami economici cruciali, in un contesto di forte incertezza commerciale globale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Via libera delle commissioni per nuova pistola d'ordinanza e credito F-35",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/verso-il-primo-si-per-la-nuova-pistola-e-il-credito-degli-f-35a-425119",
-              "riassunto": "La Commissione della politica di sicurezza degli Stati ha raccomandato l'acquisto della SIG Sauer P320 e approvato i costi aggiuntivi per gli F-35, segnando un passo decisivo verso il potenziamento dell'esercito nonostante le critiche sui costi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "Le due notizie della stessa testata (CdT) si complementano: una si focalizza sul dettaglio tecnico dell'approvazione della pistola e il rifiuto dei fondi anti-droni, l'altra offre una visione d'insieme sul 'primo sì' politico per entrambi i crediti militari."
-            },
-            {
-              "titolo": "Caos immobiliare a Zurigo: affitti record e blocchi edilizi tra polemiche",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/wirtschaft/mietzins-irrsinn-in-zuerich-4-5-zimmer-fuer-5000-franken-direkt-am-laermigen-rosengarten-id21870202.html",
-              "riassunto": "Emergono casi eclatanti nel mercato immobiliare zurighese: un appartamento rumoroso offerto a 5'000 franchi e il blocco giudiziario di un nuovo McDonald's per camini troppo alti, evidenziando le tensioni abitative e urbanistiche nella massima città svizzera.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Blick Schweiz",
-                "Blick Schweiz"
-              ],
-              "differenze_narrative": "Blick utilizza un tono sensazionalistico e critico verso gli sviluppatori e il mercato, mettendo in luce l'assurdità delle situazioni (affitti folli, burocrazia sui camini) per illustrare il malessere abitativo e la complessità edilizia a Zurigo."
-            },
-            {
-              "titolo": "Sechseläuten a Zurigo: il rogo del Böögg tenterà di prevedere l'estate",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/che-estate-ci-aspetta-lo-decidera-il-boogg-ma-il-pupazzo-non-e-affidabile-425072",
-              "riassunto": "Si celebra oggi la tradizionale festa primaverile delle corporazioni di Zurigo con il rogo del Böögg; secondo il folklore, la velocità dell'esplosione della testa del fantoccio predice la qualità dell'estate imminente.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano l'evento con tono descrittivo e culturale. CdT e Ticinonews sottolineano allo stesso modo il carattere folkloristico e l'inaffidabilità scientifica della profezia, senza differenze politiche o di angolazione significative."
-            }
-          ],
-          "trend": [
-            "Tensioni commerciali USA-Svizzera",
-            "Potenziamento materiale dell'esercito"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei negoziati sui dazi con gli USA e l'impatto concreto sul settore orologiero nelle prossime ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La scena culturale odierna vede un forte protagonismo del Ticino con eventi locali e proiezioni internazionali di artisti regionali, affiancato da scoperte scientifiche dell'Università di Ginevra. Le notizie internazionali si concentrano su grandi mostre museali negli USA, ma con minore impatto diretto per il lettore svizzero.",
-          "notizie": [
-            {
-              "titolo": "Il duo ticinese NEVERCREW realizza un'opera murale a Vienna",
-              "fonte": "Ticinonews Magazine",
-              "link": "https://www.ticinonews.ch/magazine/a-vienna-spunta-souvenir-la-nuova-opera-del-duo-ticinese-nevercrew-431436",
-              "riassunto": "Gli artisti ticinesi NEVERCREW hanno inaugurato 'Souvenir', un intervento site-specific nel terzo distretto di Vienna. La notizia evidenzia il successo internazionale della scena artistica del Cantone.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Scoperti enormi serbatoi di magma in Toscana dai ricercatori UNIGE",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/scienze/1918140/magma-toscana-unige-scoperta-nazionale",
-              "riassunto": "L'Università di Ginevra ha individuato un vasto serbatoio magmatico sotto la Toscana. Una scoperta scientifica di portata internazionale che coinvolge direttamente un'istituzione accademica svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Lancio della residenza di scrittura Bi[e]laterale a Bienne",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1918229/residenza-lingua-biel-bi-bienne",
-              "riassunto": "Avviata a Bienne 'Bi[e]laterale', una nuova residenza di scrittura in lingua italiana che promuove il dialogo culturale tra le regioni linguistiche svizzere, rafforzando l'identità italofona nel paese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Internazionalizzazione degli artisti ticinesi",
-            "Eccellenza della ricerca scientifica svizzera in ambito geologico"
-          ],
-          "da_tenere_d_occhio": "Sviluppi sulla residenza Bi[e]laterale e possibili nuove collaborazioni transfrontaliere per gli artisti NEVERCREW.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La tensione nello Stretto di Hormuz domina l'agenda con il blocco navale USA e le reazioni di Cina e Iran, mentre in Europa si registra uno shock politico con la vittoria dell'opposizione in Ungheria. Parallelamente, riprendono i colloqui storici tra Israele e Libano a Washington, sebbene oscurati dal conflitto regionale più ampio.",
-          "notizie": [
-            {
-              "titolo": "Crisi nello Stretto di Hormuz: blocco USA, minacce cinesi e conferenza europea",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/14/pechino-il-blocco-usa-su-hormuz-e-pericoloso-in-caso-di-nuovi-dazi-reagiremo_e1b4e0a2-34df-4ddc-bbfe-d852b52e42a5.html",
-              "riassunto": "Gli USA hanno avviato il blocco dei porti iraniani, innescando forti reazioni da Pechino che definisce la mossa pericolosa e da Teheran. È stata indetta una conferenza a Parigi per una missione di paesi non belligeranti, segnalando un'escalation con potenziali ripercussioni globali sui mercati energetici.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA enfatizza la diplomazia d'urgenza e le dichiarazioni ufficiali di condanna; Internazionale pone l'accento sull'incertezza dei mercati petroliferi e la speranza di dialogo; il NYT analizza il rischio che il blocco di Trump comprometta la distensione con la Cina, inquadrando l'evento come un possibile ritorno alla 'legge della giungla'."
-            },
-            {
-              "titolo": "Svolta in Ungheria: Peter Magyar sconfigge Orbán e sospende i notiziari di stato",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/ungheria-magyar-annuncia-sospensione-notiziari-tv-stato",
-              "riassunto": "L'ex alleato di Viktor Orbán, Peter Magyar, ha ottenuto una vittoria schiacciante alle elezioni ungheresi, annunciando immediatamente la sospensione dei notiziari della TV di stato, storicamente megafono del governo uscente. L'evento segna un potenziale cambiamento geopolitico nell'UE.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Internazionale si concentra sulle azioni immediate di riforma interna (sospensione notiziari) come rottura col passato; il NYT offre un'analisi più biografica del rapporto tra Magyar e Orbán, interrogandosi sulla profondità reale del cambiamento politico oltre la vittoria elettorale."
-            },
-            {
-              "titolo": "Colloqui storici Israele-Libano a Washington tra speranze e scetticismo",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/israele-libano-colloqui-diretti-washington",
-              "riassunto": "Per la prima volta in trent'anni, Israele e Libano hanno partecipato a colloqui diretti ospitati dal segretario di stato USA Marco Rubio. Nonostante i toni incoraggianti, permangono dubbi sull'efficacia reale dei negoziati mentre continuano le ostilità con Hezbollah.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano l'evento storico, ma il NYT sottolinea come l'incontro sia stato 'oscurato' dalla guerra in corso e dal rifiuto israeliano di fermare le campagne militari, adottando un tono più cauto rispetto alla semplice cronaca dell'evento."
-            }
-          ],
-          "trend": [
-            "Escalation navale nel Golfo Persico",
-            "Riassetto politico nell'Europa centrale"
-          ],
-          "da_tenere_d_occhio": "Sviluppi della conferenza di Parigi sulla sicurezza di Hormuz e le prime mosse legislative del nuovo governo ungherese nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "L'economia svizzera è oggi dominata dalle tensioni geopolitiche in Medio Oriente che impattano sui tassi ipotecari e sui mercati azionari, mentre il settore bancario affronta nuove pressioni dagli USA. Sul fronte interno, un guasto tecnico colpisce un operatore telefonico e aumentano i richiami di prodotti.",
-          "notizie": [
-            {
-              "titolo": "Tensione Iran-USA: impatto sui mutui svizzeri e rischi per la borsa",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/life/wohnen/immobilien/experte-warnt-hausbesitzer-vor-risiken-iran-krieg-laesst-hypotheken-mit-kurzen-laufzeiten-boomen-id21867808.html",
-              "riassunto": "L'escalation in Medio Oriente sta facendo salire i tassi d'interesse in Svizzera, spingendo i proprietari di case verso mutui a breve termine (Saron). Gli esperti avvertono che questa strategia potrebbe rivelarsi rischiosa se il conflitto si prolungasse, con ripercussioni anche sulla stabilità dei mercati azionari.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Blick Wirtschaft",
-                "Il Sole 24 Ore Finanza"
-              ],
-              "differenze_narrative": "Blick focalizza l'analisi sull'impatto diretto e tangibile per le famiglie svizzere (mutui e costi della casa), adottando un tono cautelativo. Il Sole 24 Ore offre una visione più macroeconomica e di mercato, evidenziando come le speranze di pace abbiano temporaneamente sostenuto la borsa di Milano e fatto calare il petrolio."
-            },
-            {
-              "titolo": "UBS sotto pressione dagli USA per i conti nazisti ereditati da Credit Suisse",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/usa-fordern-entschaedigung-wie-sich-die-ubs-im-streit-um-nazi-konten-der-cs-wehrt-id21869620.html",
-              "riassunto": "Il Senato statunitense critica l'UBS per un'presunta mancanza di trasparenza nella gestione dei conti dormienti dell'era nazista ereditati da Credit Suisse. La disputa potrebbe portare alla riapertura dell'accordo del 1999, esponendo la banca a nuove richieste di risarcimento e danni reputazionali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Guasto tecnico da Sunrise: disservizi per clienti e aziende",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/kundendienst-nicht-erreichbar-sunrise-kunden-von-stoerungen-betroffen-id21868375.html",
-              "riassunto": "Un errore di configurazione durante la manutenzione ha causato un'estesa interruzione dei servizi Sunrise, colpendo il servizio clienti e la telefonia fissa. Il disservizio ha creato particolari difficoltà alle piccole imprese dipendenti dalla connettività, evidenziando la fragilità delle infrastrutture critiche.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Geopolitica e inflazione dei tassi ipotecari",
-            "Responsabilità storica del settore bancario svizzero"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle trattative tra USA e Iran nelle prossime ore, che determinerà la direzione dei tassi Saron e la volatilità della piazza finanziaria svizzera.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi dominano le notizie sulla sicurezza dei modelli AI avanzati e le tensioni finanziarie nel settore. Nessuna notizia diretta sulla Svizzera, ma le implicazioni regolatorie europee su Anthropic sono cruciali per il mercato elvetico.",
-          "notizie": [
-            {
-              "titolo": "Claude Mythos solleva preoccupazioni per la sicurezza e la regolamentazione AI in Europa",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/claude-mythos-is-a-wake-up-call-for-europes-ai-safety-apparatus/",
-              "riassunto": "Anthropic limita l'accesso a Mythos, capace di trovare vulnerabilità meglio degli umani. Le autorità europee mancano di visibilità sul sistema, un problema strutturale rilevante anche per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza il briefing politico con l'amministrazione Trump, mentre The Decoder focalizza sul rischio cybersecurity e sul vuoto normativo europeo."
-            },
-            {
-              "titolo": "Investitori mettono in discussione la valutazione di OpenAI amid strategie incerte",
-              "fonte": "Reuters (via Hacker News)",
-              "link": "https://www.reuters.com/legal/transactional/openai-investors-question-852-billion-valuation-strategy-shifts-ft-reports-2026-04-14/",
-              "riassunto": "La valutazione di 852 miliardi di OpenAI sotto scrutinio. Alcuni investitori preferiscono Anthropic considerata più accessibile rispetto alla capitalizzazione richiesta per l'IPO di OpenAI.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "Reuters"
-              ],
-              "differenze_narrative": "TechCrunch presenta Anthropic come un affare relativo rispetto a OpenAI, Reuters sottolinea lo scetticismo degli investitori sulla sostenibilità della valutazione di OpenAI."
-            },
-            {
-              "titolo": "Google integra AI Skills in Chrome per salvare flussi di lavoro",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/14/google-adds-ai-skills-to-chrome-to-help-you-save-favorite-workflows/",
-              "riassunto": "Google aggiunge la funzione Skills a Chrome per salvare e riutilizzare prompt AI. Integrazione pratica che migliora la produttività quotidiana degli utenti browser.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch descrive il lancio come integrazione di flusso di lavoro, The Decoder lo presenta principalmente come strumento di riutilizzo prompt one-click."
-            }
-          ],
-          "trend": [
-            "Regolamentazione sicurezza AI",
-            "Sovravalutazione startup AI"
-          ],
-          "da_tenere_d_occhio": "Reazione delle autorità UE e svizzere alle capacità offensive del modello Claude Mythos nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
         }
       ]
     }
