@@ -1,6 +1,218 @@
 {
-  "generated_at": "2026-05-04T04:50:29.848235+00:00",
+  "generated_at": "2026-05-05T04:51:00.797624+00:00",
   "analyses": [
+    {
+      "id": 60,
+      "run_id": 92,
+      "run_time": "2026-05-05 04:45:02.702350+00:00",
+      "analyzed_at": "2026-05-05T04:51:00.793304+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 15,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "partial",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da notizie con ricadute dirette sul territorio: un grave incidente di elicottero a Mezzovico, un incendio a Chiasso e un tema di forte impatto per cittadini e imprese come l’adeguamento delle stime immobiliari in Ticino. Sullo sfondo restano anche le truffe digitali, sempre più diffuse in Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Grave incidente di elicottero a Mezzovico-Vira: sei feriti, uno in pericolo di vita",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Mezzovico-incidente-a-elicottero.-%E2%80%9CSei-feriti-uno-%C3%A8-grave%E2%80%9D--3715749.html",
+              "riassunto": "Un elicottero di una ditta privata è precipitato in fase di atterraggio da circa 20 metri in una piazza di lavoro a Mezzovico-Vira. A bordo c’erano sei persone: un passeggero è grave, due hanno ferite di media gravità. Il SISI ha aperto un’indagine preliminare.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Incendio sul tetto di uno stabile a Chiasso durante lavori con cannello a gas",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Chiasso-incendio-sul-tetto-di-uno-stabile--3715376.html",
+              "riassunto": "Le fiamme sono divampate poco prima delle 13.30 in una palazzina in zona Piazza Indipendenza, mentre quattro operai stavano lavorando sul tetto. Lo stabile è stato sgomberato in via precauzionale e due operai sono stati controllati in ospedale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "In Ticino si vota sulle stime immobiliari: aumento dei valori senza effetti automatici sui cittadini",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/%E2%80%9CStime-immobiliari-pi%C3%B9-alte-va-frenato-impatto-sui-cittadini%E2%80%9D--3716223.html",
+              "riassunto": "Il 14 giugno il popolo ticinese voterà sull’iniziativa per neutralizzare l’impatto delle nuove stime immobiliari. Oggi le stime valgono in media il 40% del mercato, saliranno al 55% nel 2026 e al 70% con la revisione del 2035: il nodo è evitare aumenti fiscali automatici.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "sicurezza e incidenti sul territorio ticinese",
+            "pressione fiscale e abitativa legata alle stime immobiliari"
+          ],
+          "da_tenere_d_occhio": "Va monitorato l’evolversi delle condizioni dei feriti nell’incidente di Mezzovico e l’esito delle verifiche tecniche sull’elicottero; sul fronte politico, crescerà il confronto sull’iniziativa sulle stime immobiliari in vista della votazione del 14 giugno.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_svizzera",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "AI response not parseable as JSON for cronaca_svizzera"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la categoria cultura è dominata da due filoni: le regole dell’industria dell’intrattenimento, con Oscar e piattaforme sotto osservazione, e gli eventi-pop di portata globale. Sul versante svizzero spicca il Premio Walo, con un forte aggancio alla scena musicale elvetica e a Zoë Më, reduce dall’ESC di Basilea.",
+          "notizie": [
+            {
+              "titolo": "Gli Oscar cambiano le regole: più spazio per gli interpreti e nuove restrizioni sull’IA",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/05/03/oscar-regolamento-2027/",
+              "riassunto": "L’Academy ha aggiornato il regolamento in vista degli Oscar del 14 marzo 2027. La novità più visibile è che attori e attrici potranno essere candidati più volte nella stessa categoria se rientrano tra i cinque più votati. Il cambiamento incide sulle strategie degli studios e sui premi di una stagione sempre più industriale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Cultura",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "Il Post taglia l’evento dal punto di vista delle regole del premio e delle conseguenze sulle campagne Oscar, con taglio spiegatorio e storico. LaRegione invece mette l’accento sul tema IA/attori artificiali e sulla tutela dell’autenticità artistica, con un framing più centrato sul confine tra tecnologia e creazione umana."
+            },
+            {
+              "titolo": "Shakira porta due milioni di persone a Copacabana: un mega-concerto gratuito da record",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/news/megaevent-in-rio-de-janeiro-shakira-singt-gratis-fuer-zwei-millionen-fans",
+              "riassunto": "Secondo la municipalità di Rio, circa due milioni di persone hanno assistito al concerto gratuito di Shakira sulla spiaggia di Copacabana. Lo show, lungo due ore e mezza, è stato presentato come il più grande della sua carriera e ha superato quasi il record di Lady Gaga (2,1 milioni).",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Kultur",
+                "CdT Società",
+                "Ticinonews Magazine"
+              ],
+              "differenze_narrative": "SRF mette in primo piano il carattere di evento eccezionale e la dimensione spettacolare del concerto, con dettagli sulla setlist e sulla durata dello show. CdT e Ticinonews insistono di più sul dato numerico e sull’ufficialità della cifra comunicata dal sindaco, con un taglio più da notizia di cronaca internazionale. SRF segnala anche l’incidente mortale durante l’allestimento, dettaglio che gli altri testi non enfatizzano."
+            },
+            {
+              "titolo": "Hecht e Stephan Eicher dominano il Premio Walo, con Zoë Më tra i premiati",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1922593/premio-walo-rock-hecht-stephan-gruppo-canto-eicher-50-edizione",
+              "riassunto": "Alla 50ª edizione del Premio Walo, tenuta a Zurigo, gli Hecht hanno vinto come miglior gruppo pop/rock e Stephan Eicher nella categoria Canto Pop/Rock. Zoë Më, che ha rappresentato la Svizzera all’ESC di Basilea, ha ottenuto il premio come Newcomer; alla carriera è stato premiato Freddy Burger.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "industria culturale sotto nuove regole: premi, piattaforme e intelligenza artificiale",
+            "grandi eventi pop internazionali come fenomeno mediatico e di massa"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eco delle nuove regole Oscar, soprattutto l’eventuale reazione dell’industria cinematografica e dei sindacati. Sul fronte pop, la portata reale dell’evento Shakira a Rio continuerà a generare confronti con il record di Lady Gaga e possibili verifiche sui numeri di affluenza.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La notizia geopolitica dominante oggi è l’escalation nello stretto di Hormuz: tra minacce iraniane, mosse militari statunitensi e colloqui ancora aperti. Sullo sfondo, l’Europa teme effetti immediati su energia e carburanti, mentre la pressione della Cina su Taiwan continua a rafforzare il quadro di instabilità globale.",
+          "notizie": [
+            {
+              "titolo": "Escalation a Hormuz: gli Stati Uniti cambiano le regole d’ingaggio",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/04/media-esercito-usa-autorizzato-a-colpire-motoscafi-e-missili-dei-pasdaran_5db87b89-752d-46f7-9762-e43afabbb6a9.html",
+              "riassunto": "Un alto funzionario americano ha detto ad Axios che le regole d’ingaggio Usa in Medio Oriente sono state modificate. Le forze statunitensi possono ora colpire minacce immediate contro le navi nello stretto di Hormuz, inclusi motoscafi dei pasdaran e postazioni missilistiche iraniane. Per la Svizzera conta perché ogni shock su Hormuz si riflette rapidamente sui prezzi energetici e sui mercati.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "L’Iran minaccia di attaccare forze straniere se si avvicinano a Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/04/teheran-forze-usa-saranno-attaccate-se-si-avvicinano-a-hormuz_7622c454-66bf-40d4-b5bf-c54162a691ec.html",
+              "riassunto": "Un comandante iraniano ha avvertito che qualsiasi forza armata straniera, in particolare quella americana, sarà colpita se tenterà di avvicinarsi o entrare nello stretto. Il messaggio arriva dopo l’annuncio di Trump sul coordinamento Usa delle rotte navali. È un segnale di forte rischio per il traffico marittimo globale e per la sicurezza energetica europea.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "L’UE non sa con precisione quante scorte di carburante abbia",
+              "fonte": "Il Post Economia",
+              "link": "https://www.ilpost.it/2026/05/03/unione-europea-carburanti-scorte/",
+              "riassunto": "L’Unione Europea dispone di dati incompleti e in ritardo su carburanti e prodotti raffinati, proprio mentre cerca di prevenire scarsità legate alla crisi di Hormuz. Le informazioni su benzina, gasolio e materie prime industriali arrivano spesso con settimane o mesi di ritardo, rendendo difficile reagire in tempo. Per la Svizzera, integrata nei mercati europei, è una questione direttamente rilevante.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "escalation militare e diplomatica attorno allo stretto di Hormuz",
+            "vulnerabilità energetica europea e trasparenza insufficiente sulle scorte di carburante"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se i colloqui USA-Iran producono una tregua operativa a Hormuz o se ci sarà un nuovo incidente navale/militare capace di far salire immediatamente i prezzi dell’energia.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l’attenzione economica si concentra soprattutto su temi con impatto diretto sulla Svizzera: sicurezza degli approvvigionamenti energetici, trasparenza sui dazi con Washington e risparmio previdenziale. Sullo sfondo restano i segnali sul mercato del lavoro e sui redditi reali, ma il quadro più sensibile è quello legato ai costi e alla stabilità per famiglie e imprese.",
+          "notizie": [
+            {
+              "titolo": "Possibili carenze di carburante in Svizzera già da giugno",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/wegen-der-militaerischen-lage-am-persischen-golf-treibstoff-engpaesse-ab-juni-moeglich-id21916780.html",
+              "riassunto": "La situazione nel Golfo Persico potrebbe riflettersi anche in Svizzera: secondo Volenergy, la fornitura resterebbe “voraussichtlich unkritisch” solo fino a fine maggio, mentre da giugno potrebbero emergere i primi colli di bottiglia. Le scorte obbligatorie coprono circa 4,5 mesi per i carburanti e 3 mesi per il jet fuel. Per famiglie, trasporti e aviazione sarebbe un rischio concreto di rincari e tensioni logistiche.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La SECO blocca gli atti sui negoziati commerciali con Washington",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1922568/dazi-e-segreti-il-muro-della-seco",
+              "riassunto": "La Segreteria di Stato dell’economia tiene riservati tutti i documenti sulle trattative con gli Usa, compresi i contatti con il “Team Switzerland” di Fredy Gantner. Il garante della trasparenza contesta questa linea e il caso potrebbe finire in tribunale. Per la Svizzera conta perché tocca un dossier commerciale ancora delicato e politicamente sensibile.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Terzo pilastro: piccoli errori che possono costare centinaia di migliaia di franchi",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/das-ist-eine-anzahlung-fuer-ein-eigenheim-der-100000-franken-fehler-bei-der-vorsorge-id21918319.html",
+              "riassunto": "Un confronto su 160 prodotti di pilastro 3a mostra che scegliere male può ridurre il capitale finale di 234'000 franchi su una carriera, a parità di rendimento lordo. Le commissioni vanno da 0,22% a 1,62%, un fattore 7 di differenza. La notizia è rilevante perché tocca direttamente il risparmio previdenziale dei lettori svizzeri e il rendimento a lungo termine.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "sicurezza energetica e dipendenza dagli approvvigionamenti internazionali",
+            "trasparenza, dazi e relazioni economiche tra Svizzera e Stati Uniti"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione della crisi nel Golfo Persico e l’eventuale attivazione di misure svizzere sulle scorte di carburante; sul fronte commerciale, conta capire se il dossier SECO-dazi porterà a un ricorso formale o a nuove richieste di accesso agli atti.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da tre filoni: infrastrutture AI sotto pressione geopolitica, nuovi dati sull’uso medico dei modelli linguistici e il continuo dibattito su coding agentico e affidabilità dei sistemi. Per un lettore svizzero/ ticinese, il tema più sensibile è la sorveglianza telecom globale che cita anche la Svizzera nelle reti coinvolte.",
+          "notizie": [
+            {
+              "titolo": "Sorveglianza segreta sulle reti mobili globali: nella lista compare anche la Svizzera",
+              "fonte": "Hacker News",
+              "link": "https://citizenlab.ca/research/uncovering-global-telecom-exploitation-by-covert-surveillance-actors/",
+              "riassunto": "Citizen Lab descrive campagne di sorveglianza che combinano protocolli 3G/4G e SMS malevoli per tracciare i bersagli. Nelle infrastrutture usate dagli attori compaiono anche operatori e nodi associati alla Svizzera, oltre a molti altri Paesi europei e mediorientali. Per il pubblico svizzero è la notizia più direttamente rilevante sul piano sicurezza e telecom.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La guerra in Medio Oriente rende più vulnerabili i data center su cui si regge l’AI",
+              "fonte": "Il Post Tecnologia",
+              "link": "https://www.ilpost.it/2026/05/03/guerra-data-center/",
+              "riassunto": "Il Post racconta come gli attacchi ai data center nel Golfo abbiano cambiato i piani di Arabia Saudita ed Emirati, che volevano diventare hub regionali per l’AI. Nel testo si cita che l’Iran ha colpito tre data center di Amazon Web Services in Emirati e Bahrein, mentre un attacco USA ha colpito Bank Sepah in Iran. Il tema pesa perché mostra quanto l’infrastruttura digitale dell’AI sia ormai un obiettivo militare.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "In uno studio di Harvard l’AI supera due medici del pronto soccorso in accuratezza diagnostica",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/",
+              "riassunto": "Uno studio pubblicato su Science e guidato da Harvard e Beth Israel Deaconess ha confrontato modelli OpenAI con due medici su 76 casi di pronto soccorso. Nella fase di triage, o1 ha indovinato o quasi indovinato la diagnosi nel 67% dei casi, contro il 55% e il 50% dei due medici. È una notizia importante perché spinge ancora più avanti il dibattito su affidabilità, responsabilità e possibile uso clinico dell’AI.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "AI come infrastruttura critica: data center, cloud e reti mobili diventano bersagli strategici",
+            "AI applicata alla produttività e alla sanità: più capacità, ma anche più domande su controllo e responsabilità"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’impatto concreto delle tensioni geopolitiche sulle infrastrutture cloud e se lo studio di Harvard aprirà nuove repliche o critiche metodologiche sull’uso clinico dei modelli AI.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 59,
       "run_id": 91,
@@ -5141,284 +5353,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "run_id": 70,
-      "run_time": "2026-04-17 04:45:01.363170+00:00",
-      "analyzed_at": "2026-04-17T05:11:14.388596+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 17,
-      "model_used": "ollama/qwen3.5:cloud, openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata da un grave fatto di sangue con risonanza internazionale e dall'annuncio di un grande evento culturale. Mentre il caso dell'infanticidio evidenzia il ruolo della polizia cantonale nella cooperazione giudiziaria, il festival Moon&Stars conferma il suo impatto economico e turistico.",
-          "notizie": [
-            {
-              "titolo": "Genitori arrestati in Ticino per la morte del neonato maltrattato in Italia",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/svizzera/neonato-morto-per-maltrattamenti-in-italia-genitori-fermati-in-ticino-425237",
-              "riassunto": "La polizia ticinese ha arrestato una coppia italiana ricercata per la morte del figlio di 7 mesi avvenuta a Borgomanero nel 2024. L'operazione, frutto della cooperazione con Interpol, sottolinea l'efficacia delle indagini transfrontaliere e il ruolo del Cantone come rifugio involontario per latitanti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Moon&Stars svela la Opening Night con Sal Da Vinci, Emis Killa e Rkomi",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/moonstars-parte-con-sal-da-vinci-425243",
-              "riassunto": "Il prestigioso festival locarnese annuncia il cartellone della serata inaugurale del 9 luglio, puntando su grandi nomi della musica italiana. La notizia conferma la ripresa degli eventi di massa in Ticino, con significative ricadute previste per il turismo e l'economia locale del Locarnese.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano identici dettagli fattuali sul programma. CdT mantiene un tono istituzionale focalizzato sull'evento culturale, mentre Ticinonews adotta una leggermente maggiore enfasi sulla popolarità degli artisti per attrarre il pubblico giovane."
-            }
-          ],
-          "trend": [
-            "Cooperazione di polizia transfrontaliera",
-            "Ripresa dei grandi eventi culturali estivi"
-          ],
-          "da_tenere_d_occhio": "Sviluppi giudiziari sul caso dell'infanticidio e possibili reazioni della difesa degli indagati nelle prossime ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da decisioni economiche e politiche di rilevanza nazionale: gli azionisti di UBS hanno dato ampia conferma al consiglio di amministrazione, il Consiglio federale avvia una revisione della Lex Koller per limitare gli acquisti immobiliari da parte di stranieri, e la Svizzera conferma un nuovo stanziamento di 23 milioni di franchi per sostenere la popolazione del Sudan.",
-          "notizie": [
-            {
-              "titolo": "Gli azionisti di UBS approvano tutte le proposte del consiglio di amministrazione",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/ubs-gli-azionisti-approvano-tutte-le-proposte-del-cda-431581",
-              "riassunto": "Nel voto annuale, gli azionisti di UBS hanno espresso un consenso superiore al 90 % su tutti i punti all'ordine del giorno, confermando la strategia di ristrutturazione e i piani di remunerazione del CdA.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Consiglio federale vuole inasprire la Lex Koller per gli acquisti immobiliari da parte di stranieri",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1918427/estero-federale-acquisto-autorizzazione-legge",
-              "riassunto": "Il governo ha avviato una consultazione, prevista fino a metà luglio, per modificare la legge sugli acquisti immobiliari da parte di non residenti, suscitando reazioni contrastanti tra i partiti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Svizzera stanzia 23 milioni di franchi per sostenere la popolazione in Sudan",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/la-svizzera-stanzia-23-milioni-per-sostenere-la-popolazione-in-sudan-431610",
-              "riassunto": "Tre anni dopo l'inizio del conflitto, la Confederazione conferma il proprio impegno umanitario destinando 23 milioni di franchi per aiuti di emergenza e programmi di sviluppo in Sudan.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riforme del mercato immobiliare",
-            "Governance e governance bancaria post‑crisi",
-            "Impegno umanitario svizzero all’estero"
-          ],
-          "da_tenere_d_occhio": "L'esito della consultazione sulla Lex Koller e le eventuali modifiche legislative nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La scena culturale odierna è dominata da una sentenza storica contro il monopolio Live Nation-Ticketmaster, con forti ripercussioni globali sul mercato musicale. In ambito locale, il Ticino si distingue per iniziative di prossimità come i concerti gratuiti del Lucerne Festival e riflessioni teatrali presso il Lac di Lugano.",
-          "notizie": [
-            {
-              "titolo": "Live Nation e Ticketmaster dichiarati monopolio illegale: svolta storica per la musica",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/15/arts/music/live-nation-antitrust-trial-verdict-monopoly.html",
-              "riassunto": "Una giuria di Manhattan ha accertato la violazione delle leggi antitrust da parte del colosso dei biglietti, stabilendo un sovrapprezzo medio di 1,72 dollari. La sentenza apre la strada a sanzioni e risarcimenti che potrebbero ridisegnare l'industria musicale mondiale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times Arts",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "Il New York Times focalizza l'analisi sugli aspetti legali, sulle conseguenze finanziarie per l'industria e sui dettagli del verdetto della giuria. LaRegione, pur riportando i dati economici nel sommario di un articolo sui dischi, sposta l'angolatura sull'impatto per i consumatori e sul valore analogico della musica fisica, usando la notizia come contrappunto al mercato digitale monopolistico."
-            },
-            {
-              "titolo": "Lucerne Festival porta 120 eventi gratuiti nel cuore della città vecchia",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1918309/festival-musica-lucerne-concerti-lucerna",
-              "riassunto": "Dal 13 agosto al 13 settembre, il prestigioso festival propone un programma accessibile con concerti in centro città e performance della Contemporary Orchestra. Un'iniziativa di forte impatto per la Svizzera centrale che democratizza l'accesso alla musica classica.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Teatro al Lac: in scena 'I miei stupidi intenti' tra parole che salvano e dannano",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1918440/faina-lac-intenti-vicoquartomazzini-i",
-              "riassunto": "Al Museo d'arte di Lugano (Lac) va in scena lo spettacolo tratto dal bestseller di Paolo Cognetti, con un'analisi focalizzata sul potere della parola nelle pagine di Zannone. Evento di rilevanza locale che conferma il ruolo culturale del territorio ticinese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Antitrust e democratizzazione dell'accesso alla cultura",
-            "Valorizzazione degli eventi culturali gratuiti e di prossimità"
-          ],
-          "da_tenere_d_occhio": "Le sanzioni specifiche e le misure di disinvestimento che il giudice imporrà a Live Nation-Ticketmaster nelle prossime settimane, che potrebbero cambiare i prezzi dei biglietti anche in Europa.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dalla crisi iraniana e dalle sue ripercussioni transatlantiche, con un focus specifico sulla frattura tra Trump e Meloni che tocca da vicino gli interessi italiani e svizzeri. Parallelamente, emergono segnali di svolta nell'Europa centrale con il crollo del governo Orbán in Ungheria, mentre si registra una preoccupante escalation di violenza nelle scuole in Turchia.",
-          "notizie": [
-            {
-              "titolo": "Frattura diplomatica tra Trump e Meloni su Iran e Vaticano",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/15/world/europe/trump-meloni-italy-iran-pope.html",
-              "riassunto": "Si incrina l'alleanza tra il presidente USA Trump e la premier italiana Meloni a causa di divergenze sulla gestione della crisi iraniana e questioni vaticane. Rilevante per la Svizzera dato il forte interscambio politico ed economico con l'Italia e il ruolo di mediazione elvetico.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times World",
-                "Internazionale"
-              ],
-              "differenze_narrative": "Il NYT enfatizza la rottura personale e strategica tra i due leader come notizia di prima pagina politica. Internazionale contestualizza l'evento all'interno di una serie di dichiarazioni di Trump ('Blocco') e delle mosse del Congresso USA per limitare i suoi poteri bellici, offrendo una visione più istituzionale della crisi."
-            },
-            {
-              "titolo": "Crollo del governo Orbán: l'Ungheria verso una nuova era democratica",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/magazine/yascha-mounk/2026/04/16/gli-ungheresi-voltano-pagina",
-              "riassunto": "Péter Magyar annuncia la sospensione dei notiziari di stato dopo la vittoria elettorale che ha estromesso Viktor Orbán. Un evento cruciale per l'equilibrio UE, con possibili impatti sulle politiche di neutralità e sui flussi migratori che interessano anche la Confederazione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "Internazionale"
-              ],
-              "differenze_narrative": "La notizia è coperta da più articoli della stessa testata con angolazioni complementari: un pezzo di cronaca annuncia le prime misure (sospensione TV di stato), mentre un'analisi di Yascha Mounk esplora le sfide future per la ricostruzione democratica, evitando trionfalismi e sottolineando gli ostacoli rimanenti."
-            },
-            {
-              "titolo": "Escalation di violenza nelle scuole in Turchia: due attacchi in 48 ore",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/15/turchia-secondo-attacco-scuola-due-giorni",
-              "riassunto": "Due gravi sparatorie in scuole turche hanno causato diversi morti e feriti in due giorni, segnalando un'allarmante instabilità sociale nel sudest del paese. La notizia è di rilievo internazionale per le implicazioni sulla sicurezza regionale e sui flussi migratori verso l'Europa.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale"
-              ],
-              "differenze_narrative": "ANSA riporta i fatti con un tono di cronaca nera immediato, focalizzandosi sul numero delle vittime e sulla sequenza temporale degli eventi. Internazionale approfondisce il contesto sociale e politico, collegando gli attacchi a tensioni più ampie e fornendo dettagli sulle dinamiche interne alla scuola."
-            }
-          ],
-          "trend": [
-            "Riallineamento degli assi politici USA-Europa",
-            "Transizioni democratiche nell'Europa dell'Est"
-          ],
-          "da_tenere_d_occhio": "Le reazioni del Congresso USA alle risoluzioni per limitare i poteri di Trump sull'Iran e le prime nomine del nuovo governo ungherese.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'economia svizzera è dominata dalla fusione Helvetia-Baloise e dalle tensioni sui prezzi di Lindt, mentre a livello globale i mercati reagiscono alla crisi in Medio Oriente con impatti sul lusso e sull'oil&gas.",
-          "notizie": [
-            {
-              "titolo": "Fusione Helvetia-Baloise: chiarimenti sui licenziamenti nel nuovo colosso assicurativo",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/mega-fusion-helvetia-baloise-verwirrung-um-entlassungen-beim-neuen-versicherungsriesen-id21870996.html",
-              "riassunto": "Il neo-costituito gruppo assicurativo Helvetia-Baloise ha pubblicato i risultati 2025, fornendo nuovi dettagli sul controverso piano di riduzione del personale. La notizia è cruciale per il mercato del lavoro ticinese e svizzero dato l'impatto sociale della mega-fusione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Lindt sotto pressione: i discount tedeschi boicottano i prezzi elevati del cioccolato",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/schoggi-firma-in-der-kritik-deutsche-supermarkt-riesen-motzen-ueber-hohe-lindt-preise-id21871920.html",
-              "riassunto": "Le catene Rewe ed Edeka minacciano di ridurre gli spazi a favore di marchi propri a causa dei costi eccessivi dei prodotti Lindt, dopo un debole business pasquale. Un segnale d'allarme per uno dei principali exportatori svizzeri in un mercato chiave.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Crollo del lusso e incertezze Oil&Gas: la guerra in Medio Oriente pesa sulle borse",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/hermes-primo-trimestre-inferiore-attese-causa-guerra-medio-oriente-AI7eAsVC",
-              "riassunto": "I titoli del lusso come Hermès e Kering subiscono forti ribassi a causa delle tensioni geopolitiche, che influenzano anche il settore energetico. Un trend internazionale che monitora anche la Svizzera, piazza finanziaria esposta a questi asset.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Finanza",
-                "The Economist Finance"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore si concentra sull'immediata reazione dei corsi azionari e sui dati trimestrali delle singole aziende (Hermès, Kering). The Economist adotta un'angolatura macroeconomica più ampia, analizzando come il conflitto prosciugherà i fondi sovrani del Golfo da 6mila miliardi, offrendo un contesto strutturale oltre la volatilità di borsa."
-            }
-          ],
-          "trend": [
-            "Impatto geopolitico sui mercati del lusso e dell'energia",
-            "Consolidamento e razionalizzazione nel settore assicurativo svizzero"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle trattative tra Lindt e la grande distribuzione tedesca e eventuali annunci ufficiali sui numeri esatti dei licenziamenti post-fusione Helvetia-Baloise.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da importanti aggiornamenti di OpenAI su agenti sicuri e modelli specialistici, mentre Google amplia la sua offerta TTS multilingue. Le notizie hanno rilevanza internazionale e impatti potenziali sul mercato svizzero di AI e creatività digitale.",
-          "notizie": [
-            {
-              "titolo": "OpenAI aggiorna l'Agents SDK con supporto sandbox per agenti IA più sicuri",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
-              "riassunto": "OpenAI ha rilasciato una nuova versione del suo Agents SDK, introducendo un ambiente sandbox nativo che permette di eseguire codice, gestire file e compiti complessi in isolamento, migliorando la sicurezza degli agenti aziendali.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza le opportunità per le imprese di creare agenti più capaci, con un tono ottimista verso l'adozione. The Decoder, invece, mette in evidenza gli aspetti di sicurezza e il contesto di regolamentazione, adottando un tono più prudente e tecnico."
-            },
-            {
-              "titolo": "Google lancia Gemini 3.1 Flash TTS, supporto per oltre 70 lingue",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/google-ships-its-most-expressive-gemini-3-1-text-to-speech-model-yet-with-70-language-support/",
-              "riassunto": "Il nuovo modello di sintesi vocale Gemini 3.1 di Google offre una resa espressiva avanzata e supporta più di 70 lingue, includendo l'italiano, con controlli dettagliati su stile, ritmo e tono, aprendo a nuove applicazioni multilingue.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI presenta GPT-5.4-Cyber, modello specializzato per la difesa informatica",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-releases-gpt-5-4-cyber-a-model-built-specifically-for-defensive-cybersecurity/",
-              "riassunto": "OpenAI ha lanciato GPT-5.4-Cyber, un modello addestrato specificamente per compiti di sicurezza informatica difensiva; l'accesso è limitato a esperti verificati, segnando una prima mossa verso AI dedicata alla cyber‑security.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza e sandbox per agenti IA",
-            "Espansione multilingue dei modelli TTS",
-            "Specializzazione dei modelli AI per settori verticali (cybersecurity)"
-          ],
-          "da_tenere_d_occhio": "L'adozione del nuovo Agents SDK sandbox da parte delle aziende svizzere e la disponibilità di Gemini 3.1 in italiano potrebbero influenzare il mercato locale nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
     }
