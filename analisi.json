@@ -1,6 +1,318 @@
 {
-  "generated_at": "2026-05-05T04:51:00.797624+00:00",
+  "generated_at": "2026-05-06T04:50:17.519502+00:00",
   "analyses": [
+    {
+      "id": 61,
+      "run_id": 93,
+      "run_time": "2026-05-06 04:45:02.556505+00:00",
+      "analyzed_at": "2026-05-06T04:50:17.510937+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 20,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da un grave incidente a Mezzovico-Vira, con un elicottero precipitato e un drone che ha intralciato i soccorsi. Sul fronte politico, in primo piano le iniziative cantonali su stime immobiliari e cure dentarie, che anticipano un giugno di votazioni molto sensibile per famiglie e contribuenti.",
+          "notizie": [
+            {
+              "titolo": "Elicottero precipitato a Mezzovico-Vira: sei feriti e soccorsi ostacolati da un drone",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Mezzovico-incidente-a-elicottero.-%E2%80%9CSei-feriti-uno-%C3%A8-grave%E2%80%9D--3715749.html",
+              "riassunto": "Un elicottero di una ditta privata è precipitato in fase di atterraggio da circa 20 metri in una piazza di lavoro a Mezzovico-Vira. A bordo c’erano 6 persone: un ferito è grave e via Vira è rimasta chiusa per le operazioni di soccorso. La vicenda pesa anche perché un drone ha intralciato l’intervento della REGA, fatto confermato dalla polizia.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "RSI mette al centro la dimensione di cronaca nera e di emergenza, con il bilancio dei feriti, l’intervento dei soccorritori e l’apertura dell’indagine SISI. Il CdT, nel pezzo sul drone, insiste invece sul profilo della sicurezza aerea e sul carattere illegale e pericoloso del sorvolo, trasformando il caso in un monito pubblico più che in un resoconto dell’incidente."
+            },
+            {
+              "titolo": "A Chiasso un incendio sul tetto di uno stabile durante lavori con cannello a gas",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Chiasso-incendio-sul-tetto-di-uno-stabile--3715376.html",
+              "riassunto": "A poco prima delle 13.30 è divampato un incendio sul tetto di una palazzina in zona Piazza Indipendenza, mentre 4 operai stavano lavorando con un cannello a gas. Le fiamme sono rimaste circoscritte all’esterno, ma una trentina di persone è stata sgomberata e due operai sono finiti in ospedale per accertamenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Ticino prepara la votazione sulle stime immobiliari, con l’obiettivo di evitare nuovi oneri fiscali",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/%E2%80%9CStime-immobiliari-pi%C3%B9-alte-va-frenato-impatto-sui-cittadini%E2%80%9D--3716223.html",
+              "riassunto": "Il 14 giugno i ticinesi voteranno sull’iniziativa per neutralizzare l’effetto delle stime immobiliari più alte. Oggi le stime valgono in media il 40% del mercato, saliranno al 55% nel 2026 e al 70% entro il 2035: il nodo è evitare che l’aggiornamento si traduca in aumenti di imposte, tasse e oneri sociali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza e incidenti sul territorio ticinese",
+            "pressione fiscale e votazioni cantonali che toccano direttamente famiglie e proprietari"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’esito dei primi accertamenti sull’elicottero di Mezzovico-Vira, soprattutto l’eventuale nesso con il drone e le condizioni del ferito grave. Sul versante politico, crescono i segnali di scontro in vista del voto sulle stime immobiliari.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da tre filoni con forte impatto svizzero: il caso Crans-Montana, ormai diventato diplomatico e mediatico, una maxi-controversia giudiziaria sulla Banca Cantonale dei Grigioni e la contestata espansione di Migros-Just Eat che tocca direttamente anche il Ticino. \nSul piano interno emergono anche temi di lavoro, responsabilità istituzionale e reputazione del Paese all’estero.",
+          "notizie": [
+            {
+              "titolo": "Caso Crans-Montana: Berna assicura che le famiglie delle vittime non riceveranno più le fatture",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/per-evitare-malintesi-la-svizzera-non-inviera-piu-copie-delle-fatture-alle-famiglie-delle-vittime-di-crans-montana-426809",
+              "riassunto": "Il presidente della Confederazione Guy Parmelin ha chiarito a Giorgia Meloni che il Consiglio federale esaminerà la questione delle spese ospedaliere legate all’incendio di Crans-Montana. Le cure immediate in Svizzera, per feriti e famiglie, non saranno fatturate a loro carico. Il dossier è diventato un caso politico e d’immagine con l’Italia.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Schweiz",
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "SRF mette l’accento sul canale diplomatico e sulla precisazione tecnica di Parmelin, riportando anche la versione italiana di Palazzo Chigi. CdT adotta un taglio più politico e istituzionale, sottolineando il dialogo aperto e il passo concreto delle copie-fattura non più inviate. Ticinonews privilegia il registro polemico-mediatico, rilanciando la reazione indignata di Luciana Littizzetto e l’aspetto reputazionale per la Svizzera."
+            },
+            {
+              "titolo": "Maxi-causa contro la Banca Cantonale dei Grigioni e BZ Bank: richiesta una somma a tre cifre",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/kunde-fordert-mega-summe-kantonalbank-hat-millionen-klage-am-hals-id21919912.html",
+              "riassunto": "Un cliente ha presentato una richiesta di conciliazione contro la Graubündner Kantonalbank, la sua controllata BZ Bank e alcuni dirigenti. La pretesa è di un «mittlerer dreistelliger Millionenbetrag», cioè un importo nell’ordine delle centinaia di milioni. La banca respinge tutto e promette battaglia legale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "Blick Schweiz"
+              ],
+              "differenze_narrative": "Ticinonews sceglie un tono più sobrio e aziendale, attenendosi al comunicato della banca e spiegando il contesto della denuncia presso l’Ufficio di mediazione di Höfe. Blick enfatizza invece l’entità economica del contenzioso e l’elemento di scandalo, parlando apertamente di una ‘mega causa’ e mettendo al centro il conflitto con il cliente. Entrambe le fonti convergono sul fatto che la banca nega ogni responsabilità."
+            },
+            {
+              "titolo": "Migros e Just Eat sotto pressione: in Ticino parte una collaborazione già contestata per i salari",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/la-nuova-collaborazione-tra-migros-e-just-eat-fa-gia-discutere-432774",
+              "riassunto": "La nuova partnership tra Migros e Just Eat partirà anche in Ticino, ma è già al centro di critiche sindacali. Il nodo è l’uso di subappaltatori che, secondo testimonianze, pagherebbero i corrieri intorno ai 10 franchi l’ora e trasferirebbero sui fattorini il rischio dei periodi di bassa domanda. Per il mercato ticinese della consegna a domicilio è un tema molto concreto.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "tensione tra reputazione pubblica e responsabilità istituzionale in casi sensibili",
+            "pressione su lavoro e salari nei servizi di consegna e nella logistica urbana"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’evoluzione del dossier Crans-Montana, sia sul fronte diplomatico con l’Italia sia su eventuali chiarimenti pratici per le famiglie coinvolte; inoltre, sul caso GKB/BZ Bank va seguito se emergeranno nuovi dettagli sull’entità della richiesta o sulla strategia difensiva della banca.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da un tema molto svizzero: la restituzione di un Hodler agli eredi della proprietaria ebrea, con un chiaro intreccio tra arte, provenienza e memoria storica. Sul fronte locale emergono anche appuntamenti in Ticino, dal dadaismo al LAC al concerto di Gianni Morandi a Locarno.",
+          "notizie": [
+            {
+              "titolo": "Un quadro di Ferdinand Hodler torna agli eredi della precedente proprietaria ebrea",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1922915/nathan-skkg-dipinto-fondazione-hodler",
+              "riassunto": "La Fondazione SKKG di Winterthur ha raggiunto un accordo con gli eredi di Martha Adrianna Nathan per restituire il dipinto di Hodler \"Thunersee mit Blüemlisalp und Niesen\". Il caso è rilevante per la Svizzera perché mette al centro le ricerche di provenienza, le persecuzioni naziste e la responsabilità delle istituzioni culturali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "Le due notizie trattano lo stesso evento ma con tagli diversi: una è più sintetica e focalizzata sull'accordo di restituzione, l'altra ricostruisce in modo più ampio la vicenda storica di Martha Nathan, con dettagli sulla fuga dalla Germania, il soggiorno a Ginevra e le pressioni economiche che portarono alla vendita forzata del dipinto. La seconda enfatizza di più il contesto di persecuzione e la dimensione etica della provenienza."
+            },
+            {
+              "titolo": "Gianni Morandi porterà il suo tour a Locarno in ottobre",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1923054/morandi-gianni-fevi-ottobre-locarno",
+              "riassunto": "Gianni Morandi ha aggiunto tre nuove tappe alla tournée estiva e farà tappa anche al Fevi di Locarno in ottobre. Per il pubblico ticinese è un appuntamento di richiamo, con uno dei nomi più popolari della canzone italiana su un grande palco locale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Una lettura scenica sul dadaismo apre una riflessione tra guerra e teatro al LAC",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1922981/dada-guerra-gasparini-dadaismo-teatro",
+              "riassunto": "Martedì alle 18 al LAC è prevista la lettura scenica di \"Cabaret Voltaire\" di Romeo Gasparini, nell’ambito di Vetrina Prismi. È una proposta di forte interesse locale che richiama il legame storico del dadaismo con la Svizzera e con la stagione culturale ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Memoria storica, provenienza delle opere e restituzioni",
+            "Programmazione culturale ticinese con eventi e nomi popolari"
+          ],
+          "da_tenere_d_occhio": "Da monitorare se la restituzione del Hodler genererà ulteriori reazioni o nuovi casi simili in Svizzera, e se l’annuncio di Morandi a Locarno porterà dettagli su vendita dei biglietti e eventuali altre date ticinesi.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation nello Stretto di Hormuz: tra avvertimenti iraniani, nuove regole d’ingaggio Usa e una bozza Onu sulla libertà di navigazione, il rischio per commercio ed energia resta alto. Sullo sfondo, continua la pressione cinese su Taiwan, mentre sul dossier Libano gli Usa guardano all’Italia come partner utile.",
+          "notizie": [
+            {
+              "titolo": "Cresce la tensione nello Stretto di Hormuz: Usa e Iran alzano il livello di scontro",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/04/media-esercito-usa-autorizzato-a-colpire-motoscafi-e-missili-dei-pasdaran_5db87b89-752d-46f7-9762-e43afabbb6a9.html",
+              "riassunto": "Secondo Axios, un alto funzionario Usa ha detto che le regole d’ingaggio in Medio Oriente sono state modificate per consentire attacchi contro minacce immediate alle navi nello Stretto di Hormuz, inclusi motoscafi dei Pasdaran e postazioni missilistiche iraniane. Nello stesso tempo Teheran minaccia di colpire forze straniere che si avvicinino allo stretto e rivendica il controllo della sicurezza della rotta.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Le fonti Usa insistono sul carattere difensivo delle nuove regole e sulla protezione della navigazione; le fonti iraniane ribaltano il frame, presentando l’Iran come garante della sicurezza dello stretto e gli Usa come forza invasiva. In un caso l’episodio viene persino ridimensionato da una smentita americana su un presunto attacco a una nave, segnalando una forte guerra di narrativa e di informazioni."
+            },
+            {
+              "titolo": "Il dossier Hormuz arriva all’Onu: bozza Usa-Golfo per difendere la navigazione",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/06/rubio-bozza-risoluzione-onu-sulla-liberta-di-navigazione-di-hormuz_05d57691-5769-484d-a1d2-c54b521bd231.html",
+              "riassunto": "Su impulso di Trump, Stati Uniti, Bahrein e altri partner del Golfo hanno preparato una bozza di risoluzione del Consiglio di Sicurezza Onu per difendere la libertà di navigazione nello Stretto di Hormuz. Rubio chiede che l’Iran renda noto il numero e la posizione delle mine posate e collabori alla loro rimozione. Per la Svizzera, la stabilità della rotta è cruciale per energia e commercio.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Qui il framing è istituzionale e multilaterale: si sottolinea il passaggio all’Onu e il sostegno di partner regionali. Rispetto alle notizie più tese sullo scontro armato, il tono è più diplomatico e orientato alla legittimazione internazionale, anche se resta forte l’accusa all’Iran sulle mine e sui pedaggi."
+            },
+            {
+              "titolo": "Gli Stati Uniti respingono il presunto colpo iraniano a una nave vicino a Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/04/axios-usa-smentiscono-nave-colpita-da-missili-iraniani_b3336ffc-47da-4a37-9632-e195b06d685d.html",
+              "riassunto": "Barak Ravid di Axios riferisce che un alto funzionario statunitense ha smentito la notizia secondo cui una nave da guerra Usa sarebbe stata colpita da missili iraniani vicino a Hormuz. La versione iraniana di Fars parlava invece di due missili contro la nave dopo avvertimenti ignorati. L’episodio mostra quanto sia fragile e confusa la situazione sul campo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "La versione iraniana presenta l’episodio come un’azione riuscita di deterrenza, con una nave costretta ad allontanarsi; la smentita americana punta invece a ridurre la credibilità dell’incidente e a evitare l’escalation comunicativa. Il contrasto è netto tra propaganda di forza e contenimento del rischio."
+            },
+            {
+              "titolo": "Washington consulta l’Italia sul Libano: ruolo utile per sicurezza e formazione",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/05/rubio-consulteremo-litalia-sul-libano-puo-essere-molto-utile_7460c28b-445c-4b75-b81e-3567fc13fcfd.html",
+              "riassunto": "Marco Rubio ha detto alla Casa Bianca che gli Stati Uniti consulteranno l’Italia sul Libano, ricordando che Roma ha addestrato forze di polizia e sicurezza libanesi. Il messaggio segnala un possibile coordinamento con un Paese europeo chiave nel dossier mediorientale, rilevante anche per la diplomazia italiana e, indirettamente, per il quadro di stabilità nel Mediterraneo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Pechino intensifica la pressione su Taiwan, tra diplomazia coercitiva e manovre militari",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/05/04/pressioni-cina-taiwan",
+              "riassunto": "Pierre Haski descrive una strategia cinese a più livelli per rendere la vita impossibile a Taiwan: pressioni sui Paesi terzi, riduzione dei riconoscimenti diplomatici, manovre militari e tentativi di isolare politicamente l’isola. Il caso del viaggio del presidente Lai Ching-te in Eswatini, ostacolato da pressioni su altri Stati, è presentato come simbolo di questa offensiva lenta ma costante.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Escalation Iran-Usa attorno allo Stretto di Hormuz e sicurezza delle rotte energetiche",
+            "Pressione cinese su Taiwan e competizione diplomatica nel Pacifico"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione della crisi di Hormuz: eventuali conferme o smentite di incidenti navali, la reazione iraniana alla bozza Onu e possibili effetti immediati su noli, petrolio e traffico marittimo europeo.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: segnali leggermente più positivi per il mercato del lavoro, una nuova mossa della distribuzione online di Migros e le crescenti tensioni tra Esercito e Ruag. Sullo sfondo, il contesto internazionale resta volatile ma pesa meno delle notizie interne al mercato svizzero.",
+          "notizie": [
+            {
+              "titolo": "Migliora leggermente la situazione del mercato del lavoro svizzero",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/migliorano-le-prospettive-sul-mercato-del-lavoro-svizzero-432793",
+              "riassunto": "L’indicatore dell’occupazione del KOF sale a 2,2 punti nel secondo trimestre, +0,1 rispetto ai tre mesi precedenti, restando sopra la media pluriennale di 1,7. Il dato segnala una ripresa graduale dopo il calo durato circa tre anni.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Migros Online riduce la finestra di consegna a domicilio",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/trotzdem-flexibler-als-coop-migros-online-speckt-bei-den-heimlieferungen-ab-id21921983.html",
+              "riassunto": "Dal 17 maggio i clienti potranno scegliere la consegna solo fino a nove giorni in anticipo, contro le tre settimane attuali. Il cambiamento è legato all’entrata in funzione del nuovo magazzino di Regensdorf (ZH). Per la clientela ticinese e svizzera è un segnale concreto sull’evoluzione della logistica online.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Cala la soddisfazione dell’Esercito svizzero verso Ruag",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1922626/crolla-la-soddisfazione-dell-esercito-verso-la-ruag",
+              "riassunto": "Documenti confidenziali indicano un peggioramento del rapporto tra Esercito e Ruag: la soddisfazione scende dal 61% al 51% in un anno. Le critiche riguardano costi, ritardi e qualità delle forniture, tema delicato per la sicurezza e per la politica industriale svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "mercato del lavoro e tenuta congiunturale in Svizzera",
+            "logistica, distribuzione e servizi al dettaglio digitali",
+            "efficienza delle imprese strategiche controllate dalla Confederazione"
+          ],
+          "da_tenere_d_occhio": "Da monitorare nelle prossime 24 ore l’eventuale reazione politica al caso Ruag e se emergono ulteriori indicazioni sul ritmo della ripresa occupazionale svizzera, soprattutto nei settori più esposti al rallentamento internazionale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da tre filoni: la battaglia legale tra Elon Musk e OpenAI, la corsa delle aziende AI a trovare canali di vendita più efficaci per il mercato enterprise, e la finanziarizzazione dell’infrastruttura AI con l’IPO di Cerebras. Sullo sfondo, il settore continua a crescere tra investimenti enormi, pressioni sui costi e tensioni regolatorie.",
+          "notizie": [
+            {
+              "titolo": "Il processo Musk contro OpenAI entra nel vivo tra accuse, messaggi minacciosi e scontro sulla missione originaria",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/04/elon-musk-sent-ominous-texts-to-greg-brockman-sam-altman-after-asking-for-a-settlement-openai-claims/",
+              "riassunto": "OpenAI ha depositato atti secondo cui Musk avrebbe scritto a Greg Brockman che lui e Sam Altman sarebbero diventati «gli uomini più odiati d’America» se la causa non fosse stata chiusa. Il caso ruota attorno alla trasformazione for-profit di OpenAI e potrebbe incidere sui piani di quotazione e sulla governance futura.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "MIT Tech Review"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza il dettaglio processuale più esplosivo — i messaggi «settle-or-else» e l’idea che il contenzioso nasconda interessi economici — con tono da breaking news. MIT Tech Review sposta l’attenzione sul significato politico e storico della causa, cioè se OpenAI abbia tradito la missione nonprofit originaria, e sul possibile impatto sullo scontro pubblico attorno all’AI."
+            },
+            {
+              "titolo": "OpenAI e Anthropic puntano su joint venture per vendere meglio l’AI alle imprese",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+              "riassunto": "Anthropic ha lanciato una joint venture con Blackstone, Hellman & Friedman e Goldman Sachs, valutata 1,5 miliardi di dollari; OpenAI starebbe preparando una struttura simile da oltre 4 miliardi. Il segnale è chiaro: per entrare davvero nelle aziende non basta il modello, servono canali, servizi e integrazione operativa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch legge l’iniziativa come una mossa strategica nella guerra per il mercato enterprise, con attenzione alla struttura finanziaria e al confronto diretto tra i due rivali. The Decoder insiste invece sul messaggio industriale: vendere AI è molto più complesso che produrre modelli, e la presenza di partner finanziari serve a trasformare la distribuzione in una macchina commerciale più capillare."
+            },
+            {
+              "titolo": "Cerebras accelera verso l’IPO, con una valutazione che può arrivare a 40 miliardi di dollari",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/",
+              "riassunto": "Il chipmaker per l’AI prepara la vendita di 28 milioni di azioni a 115-125 dollari, per raccogliere fino a 3,5 miliardi e arrivare a una capitalizzazione di 26,6 miliardi al prezzo alto. Un secondo report indica però un obiettivo ancora più ambizioso, vicino ai 40 miliardi: segno dell’appetito degli investitori per l’infrastruttura AI.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch mette in primo piano i legami con OpenAI e il potenziale effetto contagio su future mega-IPO, con taglio da mercato dei capitali. The Decoder privilegia il confronto industriale con Nvidia, sottolineando che Cerebras è già profittevole e che il roadshow rappresenta una seconda occasione dopo il ritiro della prima domanda di quotazione."
+            }
+          ],
+          "trend": [
+            "Consolidamento e monetizzazione dell’AI enterprise tramite partnership con grandi asset manager e modelli di deployment guidati da consulenti e ingegneri dedicati",
+            "Corsa agli investimenti nell’infrastruttura AI, dai chip alle data center, con l’IPO di Cerebras come termometro del mercato"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’evolversi del processo Musk-OpenAI, sia sul fronte delle prove ammesse sia sul possibile impatto reputazionale e regolatorio. In parallelo, attenzione alle reazioni del mercato sull’IPO di Cerebras e ai dettagli operativi delle nuove joint venture di OpenAI e Anthropic.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 60,
       "run_id": 92,
@@ -5251,108 +5563,6 @@
           ],
           "da_tenere_d_occhio": "Possibili sviluppi normativi svizzeri su AI a seguito delle recenti riorganizzazioni di OpenAI e delle pratiche di tokenmaxxing",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "run_id": 71,
-      "run_time": "2026-04-18 04:45:02.013344+00:00",
-      "analyzed_at": "2026-04-18T05:01:48.690601+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 3,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "partial",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da un grave incidente chimico a Stabio, dalla nascita di un nuovo forum per i diritti dei migranti e dal dibattito sulle riforme economiche cantonali. Gli eventi hanno generato coperture multiple e accendono questioni di sicurezza, integrazione e finanza pubblica.",
-          "notizie": [
-            {
-              "titolo": "Fuga di ammoniaca alla Rapelli di Stabio: evacuazione di 100 persone e 5 ricoverati",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/fuoriuscita-di-ammoniaca-alla-rapelli-sfollate-100-persone-5-in-ospedale-431691",
-              "riassunto": "Un tubo rotto ha provocato una fuoriuscita di ammoniaca presso lo stabilimento Rapelli di Stabio, costringendo l’evacuazione di circa 100 persone, di cui cinque ricoverate per intossicazione. Sul posto è intervenuto il nucleo operativo incidenti della SPAAS.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "Le due puntate di Ticinonews differiscono nel focus: la prima enfatizza le conseguenze immediate (sfollati, ricoverati) e la risposta delle autorità, la seconda (titolo “Fuga di ammoniaca alla Rapelli di Stabio, allarme revocato”) sottolinea la gestione dell’allarme e la rapida revoca, minimizzando il panico. Entrambe mantengono un tono informativo, ma la seconda aggiunge dettagli operativi (orario dell’allarme)."
-            },
-            {
-              "titolo": "Nasce il Forum diritti senza confini, nuova piattaforma per i migranti",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/nasce-il-forum-diritti-senza-confini-431669",
-              "riassunto": "Viene lanciato un forum apartitico e aconfessionale che riunisce circa quaranta organizzazioni attive nel campo delle migrazioni, con l’obiettivo di dare voce a chi difende i diritti dei migranti in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Mendrisiotto"
-              ],
-              "differenze_narrative": "Ticinonews presenta il forum come una risposta istituzionale al dibattito migratorio, evidenziando la dimensione “apartitica”. LaRegione Mendrisiotto, invece, enfatizza il carattere di rete solidale e la continuità con iniziative già esistenti “oltregottardo”, ponendo l’accento sulla partecipazione della società civile. Il tono di Ticinonews è più formale, mentre LaRegione usa un linguaggio più coinvolgente e locale."
-            },
-            {
-              "titolo": "L'economia ticinese: richieste di riforme senza nuovi aggravi fiscali",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/leconomia-ticinese-servono-riforme-non-aggravi-fiscali-431679",
-              "riassunto": "Esperti economici e rappresentanti del mondo accademico discutono la necessità di riforme strutturali per il cantone, respingendo l’idea di aumentare le tasse in risposta alle iniziative popolari sulle casse malati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza industriale e gestione delle emergenze",
-            "diritti dei migranti e organizzazione della società civile",
-            "dibattito fiscale e riforme economiche cantonali"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle indagini sulla fuga di ammoniaca a Stabio e le eventuali misure di prevenzione che il Cantone adotterà nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 429: Too Many Requests | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 429: Too Many Requests | OR-fallback3: HTTP Error 503: Service Unavailable"
         }
       ]
     }
