@@ -1,6 +1,295 @@
 {
-  "generated_at": "2026-05-06T04:50:17.519502+00:00",
+  "generated_at": "2026-05-07T04:51:28.996989+00:00",
   "analyses": [
+    {
+      "id": 62,
+      "run_id": 94,
+      "run_time": "2026-05-07 04:45:02.364784+00:00",
+      "analyzed_at": "2026-05-07T04:51:28.987480+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 19,
+      "model_used": "openrouter/openai/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La categoria è dominata da temi molto ticinesi: sanità e cassa malati, mercato del lavoro nel digitale e finanza pubblica locale. Sullo sfondo restano fatti di cronaca e sicurezza, ma il baricentro oggi è politico-istituzionale e sociale.",
+          "notizie": [
+            {
+              "titolo": "Aspirazione a un contratto collettivo nel settore informatico ticinese",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-settore-informatico-ticinese-dibatte-su-un-possibile-CCL--3719079.html",
+              "riassunto": "In Ticino si discute di un possibile CCL per l’informatica, settore che impiega circa 17’000 persone. ATED e sindacati concordano che il contratto normale entrato in vigore nel 2026 non basta a risolvere dumping salariale e criticità organizzative.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "In Gran Consiglio il finanziamento delle due iniziative sulle casse malati va separato",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Casse-malati-la-Gestione-porta-in-Aula-separatamente-il-finanziamento-delle-due-iniziative--3718734.html",
+              "riassunto": "La Commissione della gestione non segue l’idea del Governo di trattare insieme il finanziamento delle due iniziative popolari sulle casse malati. Si profila un dibattito separato in aula su deduzione integrale dei premi e tetto al 10% del reddito.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Chiasso chiude i conti meglio del previsto e rafforza il dossier aggregativo",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Consuntivo-di-Chiasso-disavanzo-dimezzato-da-6-a-3-milioni--3721713.html",
+              "riassunto": "Il consuntivo 2025 di Chiasso mostra un disavanzo dimezzato, da quasi 6 a poco meno di 3 milioni grazie a rivalutazioni patrimoniali straordinarie. L’operazione porta il capitale proprio da 14 a 37 milioni e pesa anche nel progetto di aggregazione del Basso Mendrisiotto.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Pressione sui costi della salute e delle assicurazioni",
+            "Riorganizzazione del lavoro e della governance economica in Ticino"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’esito del confronto politico sul finanziamento delle iniziative sulle casse malati: potrebbe aprire un nuovo braccio di ferro in Gran Consiglio e influenzare il dibattito cantonale in vista delle votazioni.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la categoria è dominata da temi economici e infrastrutturali: l’inflazione torna a salire in Svizzera, UBS resta sotto osservazione per il dossier regolatorio e in centro-sud del Paese si riapre il confronto sulla nuova base Rega. Sullo sfondo, alcune notizie di mercato del lavoro mostrano ristrutturazioni industriali non trascurabili.",
+          "notizie": [
+            {
+              "titolo": "L’inflazione svizzera risale allo 0,6% in aprile trainata da benzina e prodotti importati",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1923278/inflazione-aprile-prezzo-petrolio-fa-rialzo",
+              "riassunto": "L’indice dei prezzi al consumo cresce dello 0,6% su base annua, contro lo 0,3% di marzo. A spingere sono soprattutto carburanti, viaggi aerei e pacchetti internazionali, mentre alberghi e noleggio auto calano. Per le famiglie conta perché segnala un ritorno di pressione sui costi quotidiani.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "UBS sotto pressione in Borsa dopo le esitazioni della commissione del Consiglio degli Stati",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/difficolta-in-borsa-per-ubs-dopo-la-riunione-della-commissione-economia-degli-stati-432886",
+              "riassunto": "Il titolo UBS apre in calo dell’1% dopo che la commissione economica degli Stati non ha accelerato sulla copertura integrale del capitale proprio delle filiali estere. Il mercato avrebbe preferito tempi più rapidi, ma il dossier resta aperto e rilevante per la stabilità del maggiore istituto svizzero.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Scontro sulla nuova base Rega a Kägiswil: oltre 10'000 firme per salvare il campo di volo",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/knatsch-wegen-neuer-rega-basis-100000-unterschriften-gesammelt-hobby-piloten-kaempfen-fuer-ihren-geliebten-flugplatz-id21924522.html",
+              "riassunto": "La Rega dovrà lasciare l’aeroporto di Zurigo entro il 2030 e guarda a Kägiswil (OW) come nuova sede, ma i piloti amatoriali resistono. Una petizione con 10'820 firme è stata consegnata alla Cancelleria federale per chiedere di mantenere il campo di volo e l’attività di formazione.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Chiusura del mulino Steiner a Zollbrück: 28 posti a rischio per la riorganizzazione di Minoteries",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/minoteries-chiude-il-sito-a-zollbruck-interessati-28-dipendenti-426950",
+              "riassunto": "Minoteries centralizza la produzione e chiude il mulino Steiner a Zollbrück nel primo semestre 2027, con 28 dipendenti coinvolti. Il gruppo cita esigenze regolatorie e strutturali e sposta volumi produttivi verso Granges-près-Marnand e Müllheim-Wigoltingen.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "CdT presenta la decisione come un riassetto industriale spiegato da vincoli regolatori e investimenti necessari, con enfasi sulla razionalizzazione produttiva. Ticinonews riprende la stessa notizia in modo più neutro e telegrafico, privilegiando i dati essenziali (28 dipendenti, chiusura nel 2027) e meno il contesto strategico."
+            }
+          ],
+          "trend": [
+            "pressione economica interna tra inflazione, costi energetici e ristrutturazioni aziendali",
+            "conflitti tra grandi progetti infrastrutturali e interessi locali, come nel caso della base Rega"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito il dossier UBS: eventuali segnali della commissione del Consiglio degli Stati potrebbero muovere ancora il titolo e indicare la direzione della regolamentazione sulle filiali estere.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da un annuncio molto rilevante per la Svizzera italiana: il Locarno Film Festival assegnerà il Pardo d’onore a Darren Aronofsky. Sul piano internazionale spiccano il nuovo album dei Rolling Stones e il caso M.I.A., che continua a far discutere per le sue posizioni e le conseguenze sul tour.",
+          "notizie": [
+            {
+              "titolo": "Darren Aronofsky riceverà il Pardo d’Onore a Locarno79",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/locarno-film-festival/1923175/locarno-film-aronofsky-festival-cinema-darren-onore-pardo",
+              "riassunto": "Il Locarno Film Festival assegnerà il Pardo d’Onore al regista americano Darren Aronofsky, con cerimonia in Piazza Grande venerdì 14 agosto. È una notizia di forte rilievo per il pubblico ticinese e per uno dei festival più importanti della Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "RSI Cultura"
+              ],
+              "differenze_narrative": "LaRegione punta molto sul profilo autoriale di Aronofsky e sulla presentazione del premio come scelta artistica forte del festival. RSI inquadra la notizia in modo più istituzionale, ricordando anche i precedenti grandi nomi premiati a Locarno e sottolineando la sua presenza con due film in programma."
+            },
+            {
+              "titolo": "I Rolling Stones annunciano il nuovo album 'Foreign Tongues'",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1923292/foreign-tongues-album-uscita-rolling-stones-luglio",
+              "riassunto": "Il 10 luglio uscirà in tutto il mondo il nuovo album della band, composto da 14 brani e registrato in meno di un mese a Londra con Andrew Watt. L’uscita conferma che gli Stones restano una presenza centrale nel rock internazionale, con ospiti come Paul McCartney e Robert Smith.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "Ticinonews Magazine"
+              ],
+              "differenze_narrative": "LaRegione insiste sul contesto produttivo, sui dettagli del disco e sui nomi degli ospiti, costruendo un racconto molto ricco. Ticinonews riprende la notizia in chiave più diretta e divulgativa, con un taglio da aggiornamento per il pubblico locale e meno enfasi sul quadro industriale e musicale."
+            },
+            {
+              "titolo": "M.I.A. sempre più al centro di polemiche per i commenti anti-immigrazione",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/05/05/m-i-a-complottismo/",
+              "riassunto": "Il Post racconta il declino pubblico della popstar, passata da icona politica a figura associata a complottismo e posizioni conservatrici. A Dallas ha detto di essere stata “messa al bando” per il suo voto repubblicano, e ha fatto battute sui migranti dal palco.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Cultura",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "Il Post ricostruisce il percorso di lungo periodo: dalla forza innovativa di M.I.A. al suo slittamento verso complottismo e antiscientismo. Il New York Times si concentra invece sull’episodio più recente del tour, sul fatto che Kid Cudi l’abbia rimossa dalla tournée e sulla reazione immediata del pubblico e dei social."
+            }
+          ],
+          "trend": [
+            "grandi istituzioni culturali europee e svizzere in primo piano, con Locarno come snodo centrale per il Ticino",
+            "musica pop e rock tra nostalgia, ritorni e controversie personali degli artisti"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione del mondo cinematografico e ticinese all’omaggio a Darren Aronofsky, oltre a eventuali ulteriori dettagli sul programma di Locarno79. Sul fronte musicale, da seguire se il caso M.I.A. avrà nuove conseguenze sul tour o se emergeranno altri dettagli sul nuovo album dei Rolling Stones.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation tra Stati Uniti e Iran sul dossier Hormuz/nucleare, con segnali misti tra apertura negoziale e pressione militare. In parallelo restano rilevanti la guerra in Ucraina e il caso Flotilla, che coinvolge anche l’Italia sul piano giudiziario e diplomatico.",
+          "notizie": [
+            {
+              "titolo": "Tensione Iran-Usa: tra bozza all’Onu, pressioni su Hormuz e ipotesi di accordo",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/06/rubio-bozza-risoluzione-onu-sulla-liberta-di-navigazione-di-hormuz_05d57691-5769-484d-a1d2-c54b521bd231.html",
+              "riassunto": "Washington, insieme a partner del Golfo, ha preparato una bozza di risoluzione Onu per difendere la libertà di navigazione nello stretto di Hormuz. Rubio parla di voto “nei prossimi giorni” e chiede a Teheran di rivelare dove ha piazzato mine marine. Il dossier è cruciale anche per i mercati energetici e quindi per l’Europa e la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "BBC World",
+                "New York Times World",
+                "Internazionale"
+              ],
+              "differenze_narrative": "ANSA privilegia il taglio istituzionale-diplomatico, centrato sulla bozza Onu e sulle parole di Rubio. BBC insiste sull’impatto economico, mostrando il calo del petrolio e il rialzo delle borse come effetto delle speranze di un accordo. Internazionale adotta un tono più allarmato, descrivendo il rischio di ripresa di una “guerra totale” nello stretto. Il NYT enfatizza invece il difficilissimo equilibrio politico di Trump, tra pressione economica e ricerca di un compromesso salvifico."
+            },
+            {
+              "titolo": "Guerra in Ucraina: nuovi attacchi russi mortali contro città e civili",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/05/05/world/europe/russia-ukraine-zaporizhzhia-attacks.html",
+              "riassunto": "Attacchi russi hanno colpito Zaporizhzhia, Dnipro e Kramatorsk, con almeno 12 morti nella sola Zaporizhzhia, uno dei bilanci più pesanti dell’anno. La notizia conferma che la guerra resta ad alta intensità e continua a pesare sulla sicurezza europea, sulle forniture e sul dibattito internazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Caso Flotilla: l’Italia apre un’indagine sugli abbordaggi israeliani e sui due attivisti detenuti",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/annalisa-camilli/2026/05/05/global-sumud-flotilla-che-succede-ora",
+              "riassunto": "La procura di Roma ha aperto un fascicolo per sequestro di persona dopo l’abbordaggio di 23 barche della Global Sumud Flotilla in acque internazionali. Restano detenuti Thiago Ávila e Saif Abukeshek; gli avvocati hanno presentato esposti e un ricorso alla Cedu. È un dossier sensibile anche per la Svizzera per il precedente sulle missioni civili nel Mediterraneo.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale"
+              ],
+              "differenze_narrative": "ANSA riporta in modo molto sintetico la proroga della detenzione dei due attivisti, con tono quasi di cronaca giudiziaria. Internazionale amplia il contesto legale e politico, sottolineando il fascicolo della procura di Roma, il reato ipotizzato di sequestro di persona, gli esposti e il ricorso alla Cedu. Il framing di Internazionale è più critico verso Israele e più centrato sulle responsabilità italiane."
+            }
+          ],
+          "trend": [
+            "Escalation e possibile de-escalation nel dossier Iran-Hormuz",
+            "Persistenza di conflitti e contenziosi legali nel Mediterraneo e in Europa"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorata l’evoluzione dei contatti Usa-Iran e l’eventuale voto sulla risoluzione Onu su Hormuz: un passo avanti o un nuovo fallimento cambierebbero subito il prezzo del petrolio e il tono dei mercati.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da tre filoni: il ritorno dell’inflazione in Svizzera, i riassetti industriali con impatto sull’occupazione e alcune mosse strategiche di grandi gruppi svizzeri. Sullo sfondo, la pressione dei costi e la ricerca di efficienza restano i temi più concreti per lettori in Svizzera e in Ticino.",
+          "notizie": [
+            {
+              "titolo": "L’inflazione svizzera risale allo 0,6% in aprile",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/inflazione-ancora-in-aumento-in-svizzera-432863",
+              "riassunto": "L’UST segnala un rincaro annuo allo 0,6%, in aumento rispetto allo 0,3% di marzo. Il rialzo è trainato soprattutto da benzina, diesel, olio da riscaldamento e trasporti aerei; per i consumatori svizzeri è un segnale da monitorare, specie per energia e pigioni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Novartis chiuderà lo stabilimento di Wehr entro il 2028",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/novartis-dice-addio-al-suo-stabilimento-di-wehr-432878",
+              "riassunto": "Il gruppo farmaceutico basilese fermerà il sito in Baden-Württemberg, con la soppressione di circa 220 posti di lavoro. Novartis parla di sito non più competitivo e promette che l’approvvigionamento ai pazienti non sarà compromesso; intanto investe 35 milioni di euro in un nuovo impianto a Halle.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Minoteries chiude il mulino di Zollbrück e centralizza la produzione",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1923302/zollbr-ck-minoteries-interessati-chiude-gruppo",
+              "riassunto": "Il gruppo svizzero del settore molitorio fermerà il sito bernese nel primo semestre 2027, con 28 dipendenti coinvolti. La produzione sarà spostata a Granges-près-Marnand e Müllheim-Wigoltingen per ridurre costi e rafforzare le sinergie industriali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Pressione sui costi e riorganizzazione industriale in Svizzera ed Europa",
+            "Rialzo dei prezzi e impatto sul potere d’acquisto delle famiglie svizzere"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se il nuovo dato sull’inflazione svizzera modifica le attese sui tassi della BNS e se altri gruppi industriali annunceranno tagli o concentrazioni produttive con effetti sull’occupazione.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da grandi mosse industriali e di piattaforma: SAP accelera sull’AI enterprise, OpenAI aggiorna ChatGPT con GPT-5.5 Instant, e Meta rafforza i controlli sui minori con analisi visiva. In parallelo emergono segnali di regolazione più dura e di agenti AI sempre più integrati nei processi operativi.",
+          "notizie": [
+            {
+              "titolo": "SAP investe 1,16 miliardi di dollari in Prior Labs e blocca gli agenti non autorizzati",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/",
+              "riassunto": "SAP vuole rafforzare la propria offerta AI enterprise con l’acquisizione del laboratorio tedesco Prior Labs e un investimento di 1 miliardo di euro in quattro anni. Il focus è sui dati strutturati, cruciali per ERP, HR e procurement: un tema molto rilevante anche per le aziende svizzere che usano SAP. In parallelo, la società limita l’uso di agenti AI non autorizzati via API, a protezione del proprio ecosistema.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch mette l’accento sul lato difensivo: SAP investe per colmare il ritardo sull’AI enterprise e al tempo stesso blocca agenti esterni non approvati. The Decoder inquadra invece la mossa come una vera strategia di piattaforma dati, sottolineando anche l’acquisizione di Dremio e la costruzione di un’architettura open AI-ready; il framing è più strutturale e meno legato al rischio competitivo immediato."
+            },
+            {
+              "titolo": "OpenAI aggiorna ChatGPT con GPT-5.5 Instant e meno allucinazioni",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+              "riassunto": "OpenAI sostituisce il modello predefinito di ChatGPT con GPT-5.5 Instant, dichiarando meno allucinazioni in ambiti sensibili come diritto, medicina e finanza. Il modello migliora anche nei benchmark matematici e multimodali, e introduce un migliore uso della memoria e dei contesti personali. È una mossa importante per chi usa ChatGPT in attività professionali anche in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza il prodotto e l’esperienza utente, soffermandosi su memoria, integrazione con Gmail e disponibilità per i vari piani. The Decoder legge lo stesso rilascio in chiave più tecnica e quantitativa, evidenziando il -52,5% di allucinazioni nei test interni e i guadagni di benchmark come segnale di maturazione del modello."
+            },
+            {
+              "titolo": "Meta estende ai minori il riconoscimento di età via AI su foto e video",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/",
+              "riassunto": "Meta usa ora l’AI per stimare se un utente ha meno di 13 anni analizzando foto, video e segnali contestuali come altezza, struttura ossea, post di compleanno o riferimenti alla scuola. Il sistema è già attivo in alcuni Paesi e punta a un rollout più ampio. La misura arriva mentre la pressione regolatoria su sicurezza dei minori cresce in Europa e negli USA.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch insiste sugli aspetti tecnici e sul posizionamento difensivo di Meta dopo una recente sentenza in New Mexico. The Decoder inquadra la stessa notizia come risposta a una pressione regolatoria crescente, con più enfasi sul tema dell’age verification e sul trasferimento di responsabilità verso gli app store."
+            }
+          ],
+          "trend": [
+            "AI enterprise e piattaforme dati: acquisizioni, integrazioni e blocco degli agenti non autorizzati",
+            "Riduzione delle allucinazioni e personalizzazione dei modelli come nuovo argomento competitivo"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l’eventuale reazione del mercato alla strategia SAP e gli sviluppi sul fronte regolatorio di OpenAI e Meta: se emergono dettagli su rollout, restrizioni API o contestazioni legali, potrebbero avere ricadute anche per clienti e sviluppatori in Europa.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 61,
       "run_id": 93,
@@ -5315,253 +5604,6 @@
             "Crescita delle valutazioni e delle IPO nel settore dei chip AI"
           ],
           "da_tenere_d_occhio": "Possibili ulteriori annunci di licenziamenti o di partnership strategiche tra fornitori di chip AI e grandi piattaforme entro le prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "run_id": 72,
-      "run_time": "2026-04-19 04:45:01.998163+00:00",
-      "analyzed_at": "2026-04-19T05:02:40.585297+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 15,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da emergenze ambientali e sicurezza urbana: una fuga di ammoniaca a Stabio, l'arrivo di un impianto mobile per l'acqua potabile e la crescente preoccupazione per i furti di biciclette in stazione a Lugano.",
-          "notizie": [
-            {
-              "titolo": "Fuga di ammoniaca alla Rapelli di Stabio: intervento dei pompieri",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/fuga-di-ammoniaca-alla-rapelli-i-pompieri-un-evento-molto-pericoloso-431754",
-              "riassunto": "Una perdita di ammoniaca si è verificata ieri sera nella struttura Rapelli di Stabio. I vigili del fuoco hanno risposto con un modulo specializzato per emergenze chimiche, sottolineando la pericolosità dell’incidente.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Ticino si dota di un impianto mobile per acqua potabile in emergenza",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/acqua-potabile-anche-in-emergenza-il-ticino-si-dota-di-un-impianto-mobile-431756",
-              "riassunto": "La Protezione civile ha presentato un nuovo potabilizzatore mobile capace di produrre fino a 24 m³ di acqua sicura all'ora, destinato a garantire approvvigionamento idrico in caso di guasti o calamità.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Furti sistematici di biciclette in stazione a Lugano: la consigliera Antonini chiede risposte concrete",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/furti-sistematici-di-biciclette-in-stazione-a-lugano-quali-risposte-concrete-431746",
-              "riassunto": "A seguito di numerosi furti di biciclette nella stazione di Lugano, la consigliera comunale Céline Antonini (PLR) ha presentato un'interrogazione al municipio per ottenere misure di sicurezza più efficaci.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza pubblica e gestione delle emergenze",
-            "prevenzione dei furti urbani"
-          ],
-          "da_tenere_d_occhio": "Possibili aggiornamenti sulla gestione della fuga di ammoniaca e sull'implementazione dell'impianto mobile di acqua potabile nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da decisioni politiche di rilievo: l'aumento dell'IVA per finanziare la 13ª AVS, il referendum sull'export di armi e l'accordo di Parmelin per la ferrovia ucraina, quest'ultimo riportato da più testate.",
-          "notizie": [
-            {
-              "titolo": "Aumento dell'IVA di 0,5 punti per finanziare la 13ª AVS",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/su-liva-di-05-punti-per-pagare-la-13-avs-425451",
-              "riassunto": "La commissione federale propone di far passare l'IVA dall'8,1% all'8,6% entro il 2033 per coprire la tredicesima rata dell'AVS, mantenendo invariata l'aliquota ridotta per i beni di prima necessità.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Referendum sulla revisione delle norme di esportazione di armi",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1918948/armi-svizzera-esportazione-allentamento-deve",
-              "riassunto": "Il popolo svizzero sarà chiamato alle urne per decidere se allentare le restrizioni all'esportazione di armamenti, una questione che tocca direttamente la tradizione di neutralità e l'industria della difesa del Paese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Parmelin firma accordo per modernizzare la ferrovia ucraina",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/parmelin-firma-un-accordo-per-modernizzare-la-ferrovia-ucraina-425373",
-              "riassunto": "Il Presidente della Confederazione, Guy Parmelin, ha sottoscritto a Washington un accordo con la Banca Mondiale per finanziare la ricostruzione della rete ferroviaria di Kiev, integrando gli impegni già presi dalla Svizzera e dal settore privato elvetico.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "CdT enfatizza il ruolo della Svizzera come partner affidabile e la continuità con gli impegni privati, mentre LaRegione sottolinea l'aspetto diplomatico dell'accordo a Washington e lo presenta come un segnale di sostegno geopolitico alla Ucraina."
-            }
-          ],
-          "trend": [
-            "debate fiscale per finanziare la previdenza",
-            "rivalutazione della politica di esportazione di armi",
-            "coinvolgimento svizzero in progetti infrastrutturali all'estero"
-          ],
-          "da_tenere_d_occhio": "L'esito del referendum sull'export di armi, che potrebbe influenzare le future decisioni di politica estera e industriale svizzera.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con concerti di grandi nomi, il ritorno di icone musicali e l'avvio di festival internazionali in Ticino.",
-          "notizie": [
-            {
-              "titolo": "I Gipsy Kings di Diego Baliardo aprono il festival Nevermind in Svizzera",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919095/gipsy-kings-by-baliardo-piu-vad-vuc-al-nevermind",
-              "riassunto": "I Gipsy Kings, guidati da Diego Baliardo, si esibiscono nella serata di apertura del festival Nevermind, evento musicale di rilievo che si svolge in Svizzera, attirando pubblico internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Céline Dion torna con il nuovo singolo “Dansons”",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919096/celine-dion-e-tornata-e-allora-dansons",
-              "riassunto": "La celebre cantante canadese di origine francese, Céline Dion, pubblica “Dansons”, una ballad dedicata al pubblico svizzero, suscitando grande entusiasmo nei media locali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Apertura del festival Visions du Réel a Nyon, punto di riferimento per il cinema documentario",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919063/grasset-nora-autori-gruppo-olivier",
-              "riassunto": "Il festival Visions du Réel, dedicato al documentario, inizia oggi a Nyon (VD) con una programmazione che attira registi e pubblico da tutto il mondo, consolidando il ruolo del Ticino nel panorama culturale internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rinascita dei grandi concerti live in Svizzera",
-            "Ritorno di artisti internazionali con produzioni dedicate al pubblico locale"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori annunci di artisti internazionali per le prossime tappe del festival Nevermind nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la Svizzera è al centro di tre temi chiave: la riapertura strategica dello Stretto di Hormuz, un caso di diritto del lavoro a Zurigo che coinvolge una catena di supermercati, e le tensioni in Medio Oriente che influenzano i mercati energetici europei.",
-          "notizie": [
-            {
-              "titolo": "L'Iran riapre lo Stretto di Hormuz: le navi commerciali possono transitare",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/17/iran-annuncia-riapertura-stretto-hormuz",
-              "riassunto": "Il ministro degli Esteri iraniano Abbas Araghchi ha annunciato la riapertura dello stretto di Hormuz dopo il cessate il fuoco tra Israele e Libano, consentendo il passaggio di tutte le navi commerciali. La mossa è cruciale per le rotte energetiche che toccano anche gli interessi svizzeri di import/export di petrolio.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA riporta la notizia in chiave operativa, sottolineando l'apertura totale per le navi commerciali e il rispetto del cessate il fuoco; Internazionale inquadra la decisione nel contesto diplomatico del cessate il fuoco mediorientale, evidenziando le ripercussioni politiche; NYT, invece, si concentra sulla minaccia della “flotta di zanzare” iraniana, dipingendo lo stretto come zona di rischio nonostante la riapertura."
-            },
-            {
-              "titolo": "Migrolino: divieto di lavoro domenicale per due negozi a Zurigo, vittoria per i sindacati",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/politik/trick-mit-gastgewerbepatent-scheitert-behoerden-pfeifen-migrolino-zurueck-gewerkschaft-jubelt-id21877919.html",
-              "riassunto": "Le autorità del cantone di Zurigo hanno annullato le autorizzazioni che permettevano a due punti vendita Migrolino di impiegare personale la domenica senza permesso, accogliendo la protesta del sindacato Unia. Il caso ha implicazioni per la normativa sul lavoro in tutta la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Tregua di dieci giorni tra Israele e Libano: impatti sui mercati energetici europei",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/19/mattarella-scrive-a-macron-inammissibile-lattacco-allunifil-in-libano_1c3ce9c7-fe96-4a4b-8c8a-a14eea5ed755.html",
-              "riassunto": "Un cessate il fuoco di dieci giorni è entrato in vigore il 16 aprile tra Israele e Libano, riducendo le tensioni nella regione del Mediterraneo orientale. La stabilità è fondamentale per i flussi di gas e petrolio che alimentano l'economia svizzera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riapertura di rotte marittime strategiche",
-            "Tensioni sul mercato del lavoro svizzero"
-          ],
-          "da_tenere_d_occhio": "Evoluzione della situazione nello Stretto di Hormuz nelle prossime 24 ore, soprattutto eventuali incidenti o restrizioni che potrebbero colpire le esportazioni svizzere di energia",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "I mercati energetici dominano la giornata: la riapertura dello Stretto di Hormuz spinge al rialzo l'SMI e influisce sui prezzi alla pompa in Svizzera, mentre un colosso farmaceutico statunitense si conferma il maggiore contribuente fiscale del Paese.",
-          "notizie": [
-            {
-              "titolo": "L'SMI sale con la riapertura di Hormuz: il prezzo del petrolio scende, i mercati azionari si rallegrano",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borsa-tokyo-ribasso-i-massimi-AIjWRYXC",
-              "riassunto": "L'indice svizzero supera i 48.000 punti dopo che il canale di Hormuz è stato sbloccato, facendo calare il Brent a 87 dollari. Le banche guidano il rally, con MPS +4,17%.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Finanza",
-                "The Economist Finance",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore Finanza adotta un tono ottimista, evidenziando il rialzo dell'SMI e il rally bancario; The Economist, invece, sottolinea che i mercati energetici restano volatili e che la situazione è ancora incerta, con un framing più cautelativo; Blick Wirtschaft fornisce un live‑ticker focalizzato sull'impatto per le imprese svizzere e i consumatori, enfatizzando l'aumento dei costi alla pompa e usando un linguaggio più sensazionalistico."
-            },
-            {
-              "titolo": "Il colosso farmaceutico statunitense è il maggiore contribuente fiscale in Svizzera",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/deutlich-mehr-als-konkurrenten-roche-und-novartis-us-pharmariese-ist-der-groesste-steuerzahler-der-schweiz-id21878662.html",
-              "riassunto": "Una grande azienda farmaceutica americana supera Roche e Novartis in termini di versamenti fiscali, confermandosi il più grande contribuente al bilancio federale svizzero.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Oscillazioni del prezzo del petrolio colpiscono i consumatori svizzeri",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/nicht-nur-an-der-tankstelle-wirds-teurer-so-stark-trifft-der-schwankende-oelpreis-uns-schweizer-id21878010.html",
-              "riassunto": "Il blocco di Hormuz ha spinto i prezzi del carburante verso l'alto, facendo aumentare i costi non solo alla pompa ma anche in altri settori dell'economia domestica svizzera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riapertura di Hormuz e impatto sui mercati energetici",
-            "Forte contributo fiscale delle multinazionali farmaceutiche",
-            "Pressioni inflazionistiche legate al prezzo del petrolio in Svizzera"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei prezzi del petrolio dopo la riapertura di Hormuz e le possibili ripercussioni sui tassi di interesse e sulla politica monetaria della Banca Nazionale Svizzera nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su ristrutturazioni aziendali di OpenAI, nuove iniziative di tokenmaxxing e lanci di prodotti AI di Anthropic e Google, senza impatti diretti sulla Svizzera.",
-          "notizie": [],
-          "trend": [
-            "Ristrutturazioni e cambi di leadership in OpenAI",
-            "Tokenmaxxing e strategie di spesa AI"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi normativi svizzeri su AI a seguito delle recenti riorganizzazioni di OpenAI e delle pratiche di tokenmaxxing",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
