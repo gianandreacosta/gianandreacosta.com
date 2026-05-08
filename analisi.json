@@ -1,6 +1,277 @@
 {
-  "generated_at": "2026-05-07T04:51:28.996989+00:00",
+  "generated_at": "2026-05-08T04:50:24.996028+00:00",
   "analyses": [
+    {
+      "id": 63,
+      "run_id": 95,
+      "run_time": "2026-05-08 04:45:02.512026+00:00",
+      "analyzed_at": "2026-05-08T04:50:24.990874+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da notizie di forte interesse locale: un grave incidente a Mezzovico con pazienti ricoverati e gestiti in parallelo, i conti di Chiasso letti anche in chiave aggregativa, e il caso della famiglia curda Pokerce rimpatriata dal Ticino. Sullo sfondo, qualche sviluppo di rilievo economico e infrastrutturale con impatto più ampio sulla Svizzera italiana.",
+          "notizie": [
+            {
+              "titolo": "Mezzovico: l’elicottero precipitato mette alla prova gli ospedali ticinesi",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Elicottero-precipitato-e-feriti-da-operare-contemporaneamente-%E2%80%9Cun-test-importante%E2%80%9D--3724011.html",
+              "riassunto": "Dopo l’incidente di lunedì a Mezzovico, con un elicottero privato precipitato e sei persone a bordo, i medici ticinesi hanno dovuto trattare tre feriti gravi nello stesso momento. Due interventi sono stati avviati quasi in parallelo all’Ospedale Civico di Lugano. La notizia conta perché tocca direttamente la gestione dell’emergenza sanitaria nel cantone.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Chiasso dimezza il disavanzo e prepara il terreno per l’aggregazione",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Consuntivo-di-Chiasso-disavanzo-dimezzato-da-6-a-3-milioni--3721713.html",
+              "riassunto": "Il consuntivo comunale mostra un disavanzo ridotto da quasi 6 a poco meno di 3 milioni grazie a rivalutazioni patrimoniali straordinarie. Il capitale proprio sale da 14 a 37 milioni, un elemento che il Municipio presenta come più favorevole nel dossier aggregativo del Basso Mendrisiotto. Rilevante perché incide sulle prospettive istituzionali e finanziarie della regione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Famiglia curda Pokerce rimpatriata dal Ticino: il padre fermato a Istanbul",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pokerce-il-rimpatrio-finisce-con-un-fermo-a-Istanbul--3724287.html",
+              "riassunto": "La famiglia, vissuta per quattro anni a Riazzino, è stata rimpatriata in Turchia e il padre è stato subito fermato all’aeroporto di Istanbul, poi rilasciato sotto sorveglianza dopo ore di incertezza. Il caso ha avuto forte eco in Ticino per il profilo politico della famiglia e per i timori legati alla persecuzione del padre. Conta perché riguarda un’espulsione partito dal cantone e i possibili rischi umanitari.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "cronaca locale con forte impatto su sanità, giustizia e amministrazione comunale",
+            "tensione tra mobilità/territorio e sicurezza: emergenze, infrastrutture e gestione pubblica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da seguire l’evoluzione clinica dei feriti di Mezzovico e l’eventuale sviluppo giudiziario o politico del caso Pokerce, mentre su Chiasso conterà il prossimo passo del processo aggregativo nel Basso Mendrisiotto.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da tre filoni con ricadute dirette per lettori svizzeri: una condanna della Svizzera da parte della CEDU, buone notizie per la previdenza professionale e risultati solidi per Swiss. Sullo sfondo, qualche segnale di attenzione anche su salute pubblica e trasformazioni economiche, ma con impatto più indiretto.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera condannata dalla CEDU per la gestione di una manifestazione a Ginevra",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/La-Corte-europea-dei-diritti-dell%E2%80%99uomo-condanna-la-Svizzera--3722940.html",
+              "riassunto": "La Corte europea dei diritti dell’uomo ha stabilito che la Svizzera ha violato la libertà di riunione e associazione nei confronti dell’organizzatrice di un corteo del 2019 a Ginevra. La donna era stata multata di 200 franchi per un servizio d’ordine ritenuto insufficiente. Il caso tocca un tema sensibile per Cantoni e comuni: fino a che punto si può imputare penalmente chi organizza una manifestazione autorizzata.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Le casse pensioni rendono al livello più alto degli ultimi 25 anni",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/casse-pensioni-linteresse-sul-capitale-e-il-piu-alto-da-25-anni-432986",
+              "riassunto": "Nel 2025 il capitale di previdenza del secondo pilastro è stato remunerato in media del 4,3%, il miglior dato da un quarto di secolo. Secondo Complementa, il risultato è trainato dal rendimento degli investimenti, salito al 6,4%. Per lavoratori e futuri pensionati è una notizia importante perché rafforza il potere di remunerazione della previdenza professionale, ben oltre il tasso minimo del Consiglio federale all’1,25%.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Swiss parte bene nel primo trimestre, ma il Medio Oriente pesa sulle prospettive",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/swiss-risultati-solidi-nel-primo-trimestre-432958",
+              "riassunto": "Swiss ha chiuso il primo trimestre con fatturato a 1,22 miliardi di franchi, in aumento dello 0,3%, e utile operativo balzato da 3,3 a 30 milioni. La domanda verso l’Asia ha aiutato i conti, ma la compagnia avverte che nel secondo trimestre i costi del carburante legati al conflitto in Medio Oriente cresceranno sensibilmente. Per la Svizzera conta perché Swiss è un attore chiave del trasporto aereo nazionale e un indicatore della congiuntura.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "tenuta economica e previdenziale in Svizzera",
+            "diritti fondamentali e controllo pubblico delle autorità"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione delle autorità svizzere alla condanna CEDU, mentre sul fronte economico sarà importante capire se i segnali positivi di casse pensioni e Swiss reggeranno l’impatto dei costi energetici e del contesto internazionale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata da temi molto vicini al pubblico svizzero italofono: iniziative tra Ticino e Svizzera interna, con attenzione a Monte Verità, all’OSI e alle attività sociali legate alla danza. Sul piano più ampio emergono anche due storie di costume: l’invecchiamento attivo e il rapporto tra arte, memoria e comunità.",
+          "notizie": [
+            {
+              "titolo": "Monte Verità rilancia i suoi Giardini in Arte ad Ascona",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1923640/verita-monte-arte-ascona-claudia",
+              "riassunto": "Il Monte Verità torna a valorizzare i suoi spazi storici con un progetto che intreccia natura e cultura. Per il Ticino conta perché rafforza uno dei luoghi simbolo dell’identità culturale della regione e della sua attrattività turistica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "L’Orchestra della Svizzera italiana celebra il sogno di Dimitri",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1923639/dimitri-osi-sogno-lac-clown",
+              "riassunto": "L’OSI propone undici repliche legate all’immaginario di Dimitri, figura chiave del clown e dello spettacolo in Svizzera. È un’iniziativa di forte richiamo locale, che unisce musica, memoria culturale e scena artistica ticinese.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "In Svizzera crescono gli anziani che ballano: +35% in due anni",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/societa/1923419/ballo-senectute-partecipanti-piste-anziani",
+              "riassunto": "I partecipanti alle attività di danza di Pro Senectute sono saliti da circa 9’800 nel 2023 a 13’300 nel 2025. Il dato segnala un fenomeno sociale rilevante anche per il Ticino: il ballo come socialità, benessere e prevenzione dell’isolamento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "cultura radicata nel territorio ticinese tra luoghi simbolo e istituzioni artistiche",
+            "invecchiamento attivo e pratiche culturali come spazio di socialità"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare se il rilancio di Monte Verità e le iniziative dell’OSI genereranno ulteriori dettagli su programmi, date e affluenza, soprattutto per capire l’impatto sul pubblico locale e sul turismo culturale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dalla crisi legata all’Iran e allo stretto di Hormuz, con effetti potenzialmente diretti sui prezzi dell’energia e sulle piazze commerciali svizzere, in particolare Ginevra. In parallelo, il focolaio di hantavirus a bordo della nave Hondius continua a evolvere con evacuazioni e controlli in più Paesi.",
+          "notizie": [
+            {
+              "titolo": "Crisi di Hormuz e Iran: diplomazia, minacce e sanzioni restano bloccate",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/07/parigi-fuori-questione-revoca-sanzioni-a-iran-finche-hormuz-resta-chiuso_c99cacc9-7ade-41fd-a2ec-7bdda8387a0e.html",
+              "riassunto": "Il ministro francese Jean-Noël Barrot esclude qualunque revoca delle sanzioni finché lo stretto di Hormuz resta chiuso, definendolo un “bene comune dell’umanità”. Nelle stesse ore Trump ipotizza un’intesa con Teheran entro la prossima settimana, mentre i Pasdaran dicono che il transito sarà sicuro solo con la fine delle minacce statunitensi. È un dossier che può incidere sui mercati energetici e sugli operatori svizzeri delle materie prime.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Le tre fonti ANSA restituiscono registri diversi dello stesso nodo geopolitico: la Francia adotta un tono duro e normativo, concentrato sulla riapertura di Hormuz e sulla legittimità delle sanzioni; Trump propone invece un framing ottimistico e negoziale, con la firma dell’intesa evocata in tempi brevissimi; i Pasdaran parlano in chiave difensiva e condizionale, presentando la sicurezza della navigazione come conseguenza della fine delle minacce USA. La prima enfatizza il ricatto geopolitico, la seconda la possibile soluzione diplomatica, la terza la postura di deterrenza iraniana."
+            },
+            {
+              "titolo": "La guerra in Iran fa guadagnare le raffinerie e i trader di petrolio, con riflessi anche sulla Svizzera",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/magazine/serge-enderlin/2026/05/07/chi-guadagna-con-la-guerra",
+              "riassunto": "Secondo Internazionale, le raffinerie statunitensi stanno beneficiando della crisi con margini in forte aumento, mentre a Ginevra il commercio di materie prime vive un momento di profitti record. L’articolo cita il ruolo della lobby SuisseNégoce e il peso del settore, che movimenta un terzo del petrolio mondiale. Per la Svizzera è un tema sensibile perché tocca economia, sicurezza e reputazione del polo ginevrino.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Focolaio di hantavirus sulla nave Hondius: evacuazioni e quarantene in più Paesi",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/06/madrid-la-nave-col-focolaio-hantavirus-arriva-sabato-a-tenerife_55e6078f-8461-4263-b6b6-06db34d46492.html",
+              "riassunto": "La nave da crociera Mv Hondius, al centro del focolaio di hantavirus, arriverà sabato a Tenerife. La ministra spagnola della Sanità Monica García ha annunciato l’evacuazione dei passeggeri stranieri e la quarantena per i 14 spagnoli a Madrid. Il caso resta rilevante perché coinvolge passeggeri di più nazionalità e continua a generare allerta sanitaria internazionale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World",
+                "Il Sole 24 Ore Mondo"
+              ],
+              "differenze_narrative": "ANSA punta sulla gestione sanitaria immediata in Spagna, con date, porto di attracco e misure di quarantena. Il New York Times privilegia l’angolo epidemiologico e di tutela dei passeggeri, parlando di monitoraggio in almeno tre Stati USA e di evacuazioni della nave. Il Sole 24 Ore, con una nota più sintetica e logistica, si concentra soprattutto sulla posizione e sul tragitto della Hondius. L’ANSA è più istituzionale, il NYT più orientato ai rischi sanitari transnazionali, Il Sole più operativo."
+            }
+          ],
+          "trend": [
+            "crisi di Hormuz, energia e ripercussioni sui mercati europei",
+            "allerta sanitaria internazionale legata all'hantavirus e alla mobilità delle crociere"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti l’eventuale evoluzione dei negoziati USA-Iran e ogni aggiornamento sulla riapertura di Hormuz, perché può muovere subito prezzi energetici e assicurativi; sul fronte sanitario, conta capire se emergono nuovi casi collegati alla Hondius o ulteriori evacuazioni.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la categoria economia è dominata da temi con un forte riflesso svizzero: il settore aereo resta influenzato dal conflitto in Medio Oriente e dai costi del carburante, mentre in Svizzera emergono novità su governance industriale e uso dell’IA nei media. Sullo sfondo, i mercati globali reagiscono con forte volatilità al prezzo del petrolio.",
+          "notizie": [
+            {
+              "titolo": "Swiss chiude un trimestre molto forte grazie alla domanda legata alla guerra in Medio Oriente",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/aussergewoehnlich-stark-iran-krieg-beschert-swiss-mega-quartalsgewinn-id21920633.html",
+              "riassunto": "Swiss ha registrato nel primo trimestre 2026 un utile operativo di 30 milioni di franchi, contro i 3,3 milioni dell’anno prima. La compagnia spiega il balzo con la domanda aumentata nel marzo “straordinariamente forte” per il conflitto in Iran e la chiusura di hub come Dubai e Doha. Restano però in arrivo costi più alti per il carburante, che potrebbero pesare sui prossimi trimestri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cambio al vertice di Swiss: Vranckx pronto a sostituire Francioni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/alter-bekannter-uebernimmt-langjaehriger-praesident-der-swiss-hoert-auf-id21926147.html",
+              "riassunto": "Reto Francioni lascia la presidenza del consiglio di amministrazione di Swiss dopo dieci anni; il mandato finirà nell’estate 2026. Al suo posto dovrebbe arrivare Dieter Vranckx, ex CEO della compagnia fino al 2024 e attuale vicepresidente. È un passaggio importante per la governance della principale compagnia aerea svizzera, in una fase ancora segnata da costi elevati e tensioni geopolitiche.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I media svizzeri adottano un codice di condotta per l’uso responsabile dell’IA",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1923542/ia-media-svizzera-codice-condotta-consiglio-europa-strumento-fiducia-pubblico",
+              "riassunto": "Il settore mediatico svizzero introduce un codice di condotta sull’intelligenza artificiale, sostenuto da editori, SSR e Keystone-ATS. Il testo, presentato allo Swiss Media Forum di Lucerna, punta a rafforzare fiducia, trasparenza, protezione dei dati e rispetto del diritto d’autore. Per il pubblico svizzero è un tema rilevante perché tocca direttamente informazione, democrazia e standard editoriali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "energia e carburante come fattore trasversale per trasporti e mercati",
+            "intelligenza artificiale e governance: dal media system alle imprese"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi dei prezzi del petrolio e le ricadute sui vettori aerei svizzeri, oltre alle reazioni del settore media e delle imprese svizzere alle nuove regole e adozioni dell’IA.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da due grandi filoni: la monetizzazione e i limiti pratici dell’AI nei prodotti consumer, con Apple sotto pressione, e la corsa all’infrastruttura di calcolo tra OpenAI, Anthropic, xAI e i grandi cloud. Sullo sfondo, cresce anche la competizione globale con DeepSeek e i segnali dal mercato dei chip.\nPer un lettore svizzero contano soprattutto le ricadute industriali e regolatorie: costi, data center, semiconduttori e affidabilità delle promesse AI.",
+          "notizie": [
+            {
+              "titolo": "Apple chiude con 250 milioni di dollari le cause sulle funzioni AI di Siri ritardate",
+              "fonte": "Il Post Tecnologia",
+              "link": "https://www.ilpost.it/2026/05/06/apple-accordo-pagare-250-milioni-per-inganno-clienti-su-ai/",
+              "riassunto": "Apple ha accettato di pagare 250 milioni di dollari per chiudere una serie di class action negli Stati Uniti legate ad Apple Intelligence e a pubblicità ritenute fuorvianti. Secondo il testo, gli iPhone 15 e 16 venduti tra giugno 2024 e marzo 2025 potrebbero dare diritto a rimborsi fino a 95 dollari per dispositivo. La vicenda pesa perché mostra i ritardi di Apple nel portare sul mercato funzioni AI realmente funzionanti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Tecnologia",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "Il Post insiste sul quadro di difficoltà tecnologica di Apple e sul fatto che l’azienda si appoggi a Google Gemini per colmare il ritardo; TechCrunch enfatizza invece il profilo legale e commerciale della class action, il timing rispetto alla WWDC e il tema della false advertising. Entrambe convergono sull’entità dell’accordo, ma una legge la vicenda come segnale di debolezza strategica, l’altra come correzione di una comunicazione ingannevole."
+            },
+            {
+              "titolo": "Anthropic e SpaceX: un mega-accordo da oltre 300 MW per alimentare Claude",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude/",
+              "riassunto": "Anthropic ha preso in uso l’intera capacità del data center Colossus-1 di SpaceX, pari a oltre 300 megawatt e più di 220.000 GPU NVIDIA, per far crescere Claude. In parallelo, l’azienda aumenterà i limiti d’uso per i clienti e continua a puntare su accordi infrastrutturali enormi con Google, Microsoft e Amazon. La notizia conta perché conferma che il vero collo di bottiglia dell’AI è sempre più l’energia e il compute.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "The Decoder",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "The Decoder mette l’accento sulla scala tecnica e politica dell’accordo, sui limiti d’uso per gli utenti di Claude e sulla contraddizione tra partner industriali e posizionamento ‘democratico’ di Anthropic. TechCrunch interpreta invece l’intesa come monetizzazione della capacità di calcolo di xAI/SpaceX e come segnale che Musk sta trasformando la sua infrastruttura in un business da fornitore di compute. Una fonte parla soprattutto di accesso al cloud, l’altra di strategia industriale e bilancio."
+            },
+            {
+              "titolo": "DeepSeek verso una valutazione di 45 miliardi, con il sostegno del fondo statale cinese",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/deepseek-nears-45-billion-valuation-as-chinas-state-chip-fund-leads-round/",
+              "riassunto": "DeepSeek, il laboratorio AI cinese emerso per modelli efficienti e a basso costo, sarebbe vicino a un round che lo valuterebbe circa 45 miliardi di dollari. Il round sarebbe guidato dal China Integrated Circuit Industry Investment Fund, con possibile partecipazione di Tencent. Il dato è rilevante perché segnala la risposta di Pechino alla dipendenza da chip e tecnologia statunitensi.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch insiste sul salto di valutazione da 20 a 45 miliardi in poche settimane e sul ruolo dei concorrenti che starebbero cercando di attrarre ricercatori DeepSeek; The Decoder dà più spazio alla lettura geopolitica e industriale, evidenziando il ruolo del fondo statale dei chip e la strategia cinese di autosufficienza tecnologica. La prima è più da mercato, la seconda più da politica industriale."
+            }
+          ],
+          "trend": [
+            "Le promesse AI iniziano a scontrarsi con costi, ritardi e cause legali",
+            "La vera corsa competitiva è sull’infrastruttura: chip, energia e data center"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l’effetto domino dell’accordo Apple su WWDC e roadmap di Siri, oltre a eventuali dettagli operativi sull’intesa Anthropic-SpaceX e sulle reazioni di mercato a DeepSeek e ai grandi player dei semiconduttori.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 62,
       "run_id": 94,
@@ -5299,312 +5570,6 @@
           ],
           "da_tenere_d_occhio": "L'evoluzione del dibattito sui forum tecnici riguardo alla migrazione dei comuni svizzeri verso provider di posta europei o open source nelle prossime 24 ore.",
           "_model_used": "ollama/qwen3.5:cloud"
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "run_id": 73,
-      "run_time": "2026-04-20 04:45:01.751223+00:00",
-      "analyzed_at": "2026-04-20T05:10:08.983462+00:00",
-      "articles_analyzed": 175,
-      "articles_selected": 19,
-      "model_used": "ollama/qwen3.5:cloud, openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata dalle proteste contro i nuovi costi delle cure domiciliari e dai test sismici al BedrettoLab. Emergono anche tensioni sociali sui sussidi sanitari e un caso giudiziario eclatante a Brissago.",
-          "notizie": [
-            {
-              "titolo": "Proteste in piazza contro i nuovi oneri sulle cure domiciliari",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/cure-a-domicilio-300-in-piazza-a-bellinzona-contro-i-nuovi-costi-425491",
-              "riassunto": "Circa 300-500 persone hanno manifestato a Bellinzona contro la misura di risparmio del Governo che introduce nuovi costi per le cure domiciliari. I manifestanti chiedono lo stralcio della decisione, definendola ingiusta e colpevolizzante per i pazienti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "tio.ch Ticino",
-                "LaRegione Ticino"
-              ],
-              "differenze_narrative": "CdT e Ticinonews si concentrano sui numeri della partecipazione e sugli slogan ('Non è colpa dei pazienti'). tio.ch enfatizza il tono politico con citazioni dirette sull'ingiustizia sociale. LaRegione inserisce la notizia nel contesto delle alleanze politiche dei Verdi."
-            },
-            {
-              "titolo": "Terremoti artificiali al BedrettoLab per studiare le faglie",
-              "fonte": "LaRegione Bellinzonese",
-              "link": "https://www.laregione.ch/cantone/bellinzonese/1919143/terremoti-bedrettolab-eth-magnitudo-bedretto",
-              "riassunto": "L'ETH di Zurigo avvia il progetto FEAR nel tunnel del Bedretto, inducendo micro-sismi di magnitudo 1 a 1,5 km di profondità. L'obiettivo è analizzare la formazione delle faglie e migliorare le previsioni sismiche future.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "LaRegione usa un tono più scientifico dettagliando la profondità e la magnitudo. Ticinonews e CdT adottano un approccio più divulgativo, spiegando l'utilità pratica per la sicurezza e le previsioni, con titoli quasi identici."
-            },
-            {
-              "titolo": "Arrestato a Brissago un guaritore tibetano per truffa e abusi",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/brissago-arrestato-per-truffa-e-coazione-sessuale-guaritore-tibetano-431769",
-              "riassunto": "Un 67enne operante nel settore del benessere olistico è stato arrestato a Brissago con l'accusa di truffa e coazione sessuale. L'inchiesta verte su trattamenti terapeutici falsi, aspetti economici e rapporti intimi con alcune clienti.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano i fatti essenziali. Ticinonews tende a sottolineare il contrasto tra l'immagine del 'benessere olistico' e le accuse gravi, mentre CdT mantiene un resoconto più asciutto dei capi d'imputazione."
-            },
-            {
-              "titolo": "Crisi dei sussidi cassa malati: ritardi e difficoltà per le famiglie",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/sussidi-di-cassa-malati-ritardi-inaccettabili-431770",
-              "riassunto": "Il consigliere comunale Massimiliano Robbiani (Lega) denuncia ritardi inaccettabili nell'erogazione dei sussidi per le casse malati, lasciando molti cittadini in difficoltà nel pagare i premi. La questione si intreccia con il clima di protesta sociale nel Cantone.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Le fonti sono allineate nel riportare la denuncia politica. Ticinonews pone l'accento sulla pressione sui cittadini, CdT integra la notizia nel più ampio dibattito sulla gestione sanitaria cantonale."
-            }
-          ],
-          "trend": [
-            "Malcontento sociale per i tagli alla sanità",
-            "Ricerca scientifica e sicurezza sismica"
-          ],
-          "da_tenere_d_occhio": "Sviluppi della protesta sulle cure domiciliari e eventuale reazione del Governo o del Gran Consiglio nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La cronaca odierna è dominata da un incidente stradale curioso in Ticino e dalle dichiarazioni politiche di Christoph Blocher sulla sovranità, entrambi ampiamente ripresi. Si segnala inoltre la chiusura definitiva del parco tematico Ticiland a Sciaffusa, mentre restano sotto osservazione le tensioni geopolitiche internazionali con possibili ripercussioni economiche.",
-          "notizie": [
-            {
-              "titolo": "Incidente insolito: auto contro tavolo da ping-pong per evitare un gatto",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/finisce-con-lauto-contro-un-tavolo-da-ping-pong-ho-evitato-un-gatto-425485",
-              "riassunto": "Un 79enne ha perso il controllo dell'auto tentando di schivare un gatto, finendo contro un tavolo da ping-pong; gli agenti lo hanno dichiarato non idoneo alla guida. L'evento, avvenuto in Ticino, ha suscitato grande curiosità sui media locali.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT e Ticinonews riportano i fatti in modo quasi identico focalizzandosi sulla dinamica e sul ritiro della patente. LaRegione offre un titolo più sintetico ma la sostanza narrativa rimane allineata, senza particolari differenze di framing politico o omissioni rilevanti."
-            },
-            {
-              "titolo": "Blocher rilancia la neutralità armata: «Svizzera aperta ma sovrana»",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/blocher-svizzera-aperta-al-mondo-ma-senza-perdere-sovranita-425487",
-              "riassunto": "All'assemblea di Pro Svizzera, l'ex consigliere federale Christoph Blocher critica sanzioni, UE e NATO, chiedendo maggiore autonomia. Un intervento che riaccende il dibattito sulla politica estera elvetica in vista delle prossime scadenze elettorali.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano fedelmente le parole di Blocher. CdT fornisce leggermente più contesto sull'evento (Pro Svizzera), mentre Ticinonews si concentra essenzialmente sulle citazioni dirette riguardo alla neutralità e alle critiche verso l'UE."
-            },
-            {
-              "titolo": "Chiude il parco Ticiland a Sciaffusa: fine di un sogno durato sei anni",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/wirtschaft/aus-nach-nur-knapp-6-jahren-dieser-schweizer-freizeitpark-in-schaffhausen-ist-in-wenigen-tagen-geschichte-id21881416.html",
-              "riassunto": "Il parco tematico Ticiland a Stein am Rhein chiuderà definitivamente il 26 aprile a causa degli alti costi operativi e della mancanza di investitori. Una notizia significativa per il tessuto turistico regionale e simbolo di progetti falliti nel settore.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Dibattito sulla sovranità svizzera e neutralità",
-            "Sicurezza stradale e mobilità degli anziani"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della crisi nello Stretto di Hormuz e le possibili ripercussioni sui mercati energetici svizzeri nelle prossime 24 ore.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Il panorama culturale odierno è segnato dalla scomparsa dell'attrice Nathalie Baye, ampiamente riportata dai media svizzeri, e dalla Milano Design Week che attira l'attenzione internazionale. In ambito locale, il Ticino celebra il cinquantesimo anniversario della Borsa Svizzera degli Spettacoli.",
-          "notizie": [
-            {
-              "titolo": "Lutto nel cinema francese: morta l'attrice Nathalie Baye",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919198/cinema-baye-francese-anni-attrice-nathalie-morta",
-              "riassunto": "L'attrice francese Nathalie Baye è scomparsa a 77 anni dopo una malattia. La notizia ha avuto risonanza transfrontaliera, confermando il suo status di icona culturale anche per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "SRF Kultur"
-              ],
-              "differenze_narrative": "LaRegione enfatizza il suo ruolo nel cinema francese e la sua luminosità artistica. SRF Kultur pone l'accento sulla sua fama internazionale (Citando 'Catch Me If You Can') e specifica i dettagli sulla malattia grave."
-            },
-            {
-              "titolo": "Milano Design Week: il design collaborativo protagonista dell'edizione annuale",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/04/19/arts/design/milan-design-week-inspired-collaborations.html",
-              "riassunto": "La settimana del design milanese vede un forte focus sulle collaborazioni tra designer per nuove creazioni. Evento di forte interesse per il Ticino data la prossimità geografica e culturale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Borsa Svizzera degli Spettacoli: successo per l'edizione del cinquantesimo anniversario",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1919283/svizzera-spettacoli-borsa-successo-edizione",
-              "riassunto": "La principale piattaforma di scambio per lo spettacolo dal vivo in Svizzera celebra 50 anni di attività con un'edizione di successo, segnando un traguardo storico per il settore culturale elvetico.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Milano Design Week",
-            "Mercato del collezionismo pop"
-          ],
-          "da_tenere_d_occhio": "Dettagli sulle esequie di Nathalie Baye e reazioni del mondo del cinema.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall'escalation in Medio Oriente, con la morte di un peacekeeper francese in Libano e le tensioni nello Stretto di Hormuz che minacciano le rotte globali. Parallelamente, si registra un grave episodio di cronaca nera a Kiev che evidenzia l'instabilità interna ucraina, mentre la Svizzera monitora da vicino le implicazioni economiche e di sicurezza di questi teatri.",
-          "notizie": [
-            {
-              "titolo": "Tensioni in Libano: ucciso un casco blu francese, accuse reciproche tra Macron e Hezbollah",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/18/macron-un-casco-blu-ucciso-e-tre-feriti-tra-i-francesi-in-libano_6df751f3-6041-4132-9dca-fff678eb1f55.html",
-              "riassunto": "Un peacekeeper dell'UNIFIL è stato ucciso nel sud del Libano durante operazioni di sminamento; Macron accusa Hezbollah, che nega ogni coinvolgimento. L'evento mette a rischio la fragile tregua e la stabilità regionale, cruciale per gli equilibri europei.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "BBC World",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA e BBC enfatizzano la reazione diplomatica di Macron e la negazione di Hezbollah, focalizzandosi sulla violazione del cessate il fuoco. Il New York Times offre un contesto più ampio sul ritorno degli sfollati, suggerendo che la tregua 'tiene' nonostante l'incidente, minimizzando leggermente l'impatto immediato rispetto alle fonti europee."
-            },
-            {
-              "titolo": "Stretto di Hormuz sotto pressione: navi bloccate e colloqui USA-Iran in stallo",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/18/la-msc-euribia-sta-uscendo-dallo-stretto-di-hormuz_834d00b0-d259-4bbf-9ae8-7dcc1e2e1270.html",
-              "riassunto": "Segnalati spari contro mercantili e blocco navale mentre Teheran valuta le proposte USA definendole 'eccessive'. La situazione minaccia direttamente le forniture energetiche globali, con potenziali ripercussioni economiche anche per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Le fonti ANSA riportano i dettagli operativi del blocco e le dichiarazioni iraniane in tempo reale. Il New York Times inserisce l'evento in una cornice analitica più ampia sulla diplomazia imprevedibile degli USA nell'era Trump, sottolineando la difficoltà delle potenze medie nel gestire la crisi."
-            },
-            {
-              "titolo": "Sparatoria di massa a Kiev: 6 morti in un supermercato, cresce l'allarme sicurezza",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/18/sale-a-6-il-bilancio-dei-morti-della-sparatoria-a-kiev_3813bbc2-35b1-418f-9cb5-246fa651561a.html",
-              "riassunto": "La più grave sparatoria in anni di guerra colpisce la capitale ucraina, evidenziando la proliferazione di armi e le falle nella sicurezza interna. Un segnale preoccupante di destabilizzazione sociale in un paese chiave per la difesa europea.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA si concentra sul bilancio delle vittime e sulle dichiarazioni ufficiali di Zelensky. Il New York Times approfondisce il contesto della proliferazione delle armi da fuoco dovuta alla guerra, inquadrando l'evento come sintomo di un malessere sociale profondo piuttosto che come semplice cronaca nera."
-            }
-          ],
-          "trend": [
-            "Fragilità dei cessate il fuoco in Medio Oriente",
-            "Proliferazione di armi leggere in zone di conflitto attivo"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della crisi nello Stretto di Hormuz nelle prossime ore: un blocco prolungato potrebbe innescare un'impennata dei prezzi energetici con immediato impatto sui mercati finanziari svizzeri.",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "L'economia oggi è dominata da flussi di capitale verso il Ticino e da tensioni geopolitiche che colpiscono l'export di lusso svizzero. Emergono anche criticità logistiche legate al commercio transfrontaliero.",
-          "notizie": [
-            {
-              "titolo": "Il Ticino diventa una \"Dubai delle Alpi\" per i milionari",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/tessin-wird-zum-alpen-dubai-golf-millionaere-fluechten-in-die-schweiz-id21881260.html",
-              "riassunto": "Il Canton Ticino si conferma meta privilegiata per gli investitori della regione del Golfo, superando Zugo e Zurigo. Un flusso di capitali che trasforma il mercato immobiliare locale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La guerra in Iran blocca gli affari degli orologiai svizzeri a Dubai",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/dubai-geschaeft-lahmgelegt-iran-krieg-stoppt-boom-der-schweizer-uhrenfirmen-id21881467.html",
-              "riassunto": "Le tensioni geopolitiche nel Golfo frenano l'export di lusso svizzero. Un settore chiave dell'economia elvetica sotto pressione per l'instabilità regionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Critiche alla Posta svizzera per l'arrivo massiccio di pacchi cinesi",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/spielzeug-papst-sandro-kueng-schiesst-scharf-gegen-die-post-das-ist-ein-regelrechter-china-paeckli-bschiss-id21883447.html",
-              "riassunto": "Il Verband Spielwaren Schweiz denuncia squilibri competitivi e volumi eccessivi di merce asiatica. Un tema caldo per logistica e commercio al dettaglio locale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Flussi di capitale verso il Ticino",
-            "Impatto geopolitico sull'export di lusso"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle tensioni in Iran e effetti sul mercato degli orologi nelle prossime 24h",
-          "_model_used": "ollama/qwen3.5:cloud"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Nessuna notizia con impatto diretto sulla Svizzera; emergono però tre eventi di rilievo internazionale legati a grandi player dell'AI, tutti recenti.",
-          "notizie": [
-            {
-              "titolo": "OpenAI perde tre dirigenti in un colpo solo mentre la ristrutturazione rimodella la sua gamma di prodotti",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-loses-three-executives-in-one-swoop-as-restructuring-reshapes-its-product-lineup/",
-              "riassunto": "Tre alti dirigenti lasciano OpenAI in un unico turno di dimissioni; la mossa avviene mentre l'azienda riorganizza il portafoglio puntando su clienti enterprise e strumenti di coding.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Meta prepara un taglio del 10% della forza lavoro per finanziare le infrastrutture AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/zuckerberg-reportedly-trades-headcount-for-compute-as-meta-readies-to-cut-10-percent-of-its-workforce-to-fund-ai-infrastructure/",
-              "riassunto": "Meta prevede di licenziare circa 8.000 dipendenti entro il 20 maggio, con un'ulteriore ondata prevista entro l'anno, per destinare le risorse al crescente fabbisogno di calcolo AI.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cerebras presenta il suo chip AI in vista di un'IPO",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
-              "riassunto": "La startup di chip AI Cerebras ha depositato la documentazione per un'IPO, dopo accordi con AWS e un presunto contratto da oltre 10 miliardi di dollari con OpenAI.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Ristrutturazioni aziendali e tagli del personale per finanziare l'AI",
-            "Crescita delle valutazioni e delle IPO nel settore dei chip AI"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori annunci di licenziamenti o di partnership strategiche tra fornitori di chip AI e grandi piattaforme entro le prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
     }
