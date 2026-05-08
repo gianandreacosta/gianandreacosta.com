@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T03:50:05.127556Z",
+  "generated_at": "2026-05-08T04:00:05.612833Z",
   "system": {
     "version": "OpenClaw 2026.4.2 (d74a122)",
     "current_ver": "2026.4.2",
@@ -377,7 +377,7 @@
     "last_run_found": 3255
   },
   "model_status": {
-    "timestamp": "2026-05-07T04:00:01Z",
+    "timestamp": "2026-05-08T04:00:01Z",
     "usage_stats": {
       "openai-codex:default": {
         "last_used": "2026-05-06 11:08 UTC",
@@ -413,7 +413,7 @@
         "last_failure": "2026-04-09 11:53 UTC"
       },
       "openai-codex:gianandreacosta@gmail.com": {
-        "last_used": "2026-05-05 20:08 UTC",
+        "last_used": "2026-05-07 20:06 UTC",
         "last_failure": "2026-04-21 13:30 UTC"
       }
     },
@@ -421,8 +421,8 @@
       "openrouter": {
         "provider": "openrouter",
         "status": "ok",
-        "usage_monthly_usd": 3.9574,
-        "usage_weekly_usd": 0.6556,
+        "usage_monthly_usd": 4.45,
+        "usage_weekly_usd": 1.1482,
         "usage_daily_usd": 0,
         "is_free_tier": false
       },
@@ -443,22 +443,22 @@
           {
             "name": "kimi-k2.6:cloud",
             "status": "error",
-            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: cc9a9b03-3ec0-49ab-ac71-6f36ebc7a35c)"
+            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: cc3deeeb-6e0e-484d-801c-3bf8d96fb6cc)"
           },
           {
             "name": "minimax-m2.7:cloud",
             "status": "error",
-            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: 9ba8237c-2092-445d-9735-e375e7fe09ff)"
+            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: 9457afbc-724a-48f6-9fe8-2d6df36a9e4a)"
           },
           {
             "name": "kimi-k2.5:cloud",
             "status": "error",
-            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: 43ea1b1c-7866-4181-b112-23913fa545c5)"
+            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: 179c23a6-951a-47ff-b1f8-d9358f890533)"
           },
           {
             "name": "qwen3.5:cloud",
             "status": "error",
-            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: c040035c-8201-41ba-a874-4ff9bd3a0ebe)"
+            "detail": "this model requires a subscription, upgrade for access: https://ollama.com/upgrade (ref: 96bc2a69-192d-4662-bee1-5c1b02f6185d)"
           },
           {
             "name": "nomic-embed-text:latest",
@@ -483,12 +483,12 @@
         "window_5h_used_pct": 0.0,
         "window_5h_remaining_pct": 100.0,
         "window_5h_reset_in": "5.0h",
-        "window_5h_reset_at": "2026-05-07 09:00 UTC",
+        "window_5h_reset_at": "2026-05-08 09:00 UTC",
         "window_7d_status": "allowed",
         "window_7d_used_pct": 0.0,
         "window_7d_remaining_pct": 100.0,
-        "window_7d_reset_in": "24.0h",
-        "window_7d_reset_at": "2026-05-08 04:00 UTC",
+        "window_7d_reset_in": "168.0h",
+        "window_7d_reset_at": "2026-05-15 04:00 UTC",
         "overall_status": "allowed",
         "overage_status": "rejected",
         "overage_reason": "out_of_credits"
