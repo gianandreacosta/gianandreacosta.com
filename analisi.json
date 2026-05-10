@@ -1,6 +1,264 @@
 {
-  "generated_at": "2026-05-09T04:51:13.501407+00:00",
+  "generated_at": "2026-05-10T04:50:35.081015+00:00",
   "analyses": [
+    {
+      "id": 65,
+      "run_id": 97,
+      "run_time": "2026-05-10 04:45:02.558463+00:00",
+      "analyzed_at": "2026-05-10T04:50:35.072683+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la categoria è dominata da temi che toccano direttamente la Svizzera italiana: una nomina politica di peso a Berna per la ticinese Greta Gysin, la presenza svizzera nel caso sanitario dell’hantavirus e il dibattito interno alla SSR/CORSI dopo il voto sui 200 franchi. Sullo sfondo, restano aggiornamenti su sicurezza e istituzioni ticinesi.",
+          "notizie": [
+            {
+              "titolo": "Greta Gysin verso la guida del gruppo parlamentare dei Verdi",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/verdi-greta-gysin-elunica-candidata-alla-presidenza-del-gruppo-433137",
+              "riassunto": "La consigliera nazionale ticinese è l’unica candidata a succedere ad Aline Trede alla presidenza del gruppo dei Verdi. Se l’elezione del 22 maggio sarà confermata, il Ticino guadagnerà una figura chiave nei rapporti di forza a Palazzo federale, con un profilo ecologista molto visibile su clima e conciliabilità lavoro-vita privata.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "Ticinonews punta sul profilo personale e politico di Gysin, sottolineando la sua origine ticinese, la maternità e le priorità programmatiche. RSI mette più in evidenza l’equilibrio interno dei Verdi e il fatto che con lei le cariche di vertice passerebbero a donne latine, dunque un taglio più istituzionale e di assetto partitico."
+            },
+            {
+              "titolo": "Un svizzero a bordo della nave Hondius, focolaio di hantavirus in evacuazione",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/Hantavirus-sulla-Hondius-c%E2%80%99%C3%A8-uno-svizzero--3728172.html",
+              "riassunto": "L’UFSP conferma che fra i passeggeri della MV Hondius c’è un cittadino svizzero, asintomatico e senza sintomi, mentre la nave con il focolaio si prepara allo sbarco a Tenerife. Il caso conta per la Svizzera perché coinvolge anche un paziente elvetico ricoverato a Zurigo e una persona di Ginevra in isolamento dopo un volo a rischio.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La SSR ticinese prepara la trasformazione con il progetto Enavant",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Alla-CORSI-focus-su-Enavant-e-verticalizzazione--3728574.html",
+              "riassunto": "Alla prima assemblea dopo il no all’iniziativa sui 200 franchi, la CORSI e la RSI hanno illustrato il progetto Enavant e la verticalizzazione di alcuni settori, in un contesto di risparmio da 270 milioni entro il 2029. Il tema pesa sul servizio pubblico in Svizzera italiana perché può cambiare organizzazione, ruoli e riparto delle risorse.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "ascesa di una leadership ticinese a Berna",
+            "impatto di sanità pubblica e gestione dei rischi internazionali con ricadute svizzere",
+            "riforma e contenimento dei costi del servizio pubblico radiotelevisivo"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la conferma formale dell’elezione di Greta Gysin e l’evoluzione del caso Hondius, in particolare l’eventuale sbarco dei passeggeri a Tenerife e le condizioni del cittadino svizzero coinvolto.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da temi molto concreti per il pubblico italofono: viabilità alpina, sicurezza domestica e grandi inchieste giudiziarie ancora in corso.\nSpiccano anche due incroci di notizie riprese da più testate, segnale di forte attenzione mediatica e rilevanza pubblica.",
+          "notizie": [
+            {
+              "titolo": "Riaperto in anticipo il Passo del San Gottardo per alleggerire il traffico sull’A2",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Riaperto-il-Passo-del-San-Gottardo--3726198.html",
+              "riassunto": "Il Passo del San Gottardo è stato riaperto venerdì alle 11, offrendo un’alternativa all’A2 nei giorni di forte traffico per Ascensione e Pentecoste. L’USTRA parla di apertura più anticipata degli ultimi 5 anni, grazie a neve inferiore e meteo favorevole.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Crans-Montana: nuove audizioni nell’inchiesta sul rogo del bar Le Constellation",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Rogo-di-Crans-Montana-convocati-tre-dei-nuovi-indagati--3725337.html",
+              "riassunto": "Tre nuovi indagati saranno sentiti la prossima settimana sul rogo di Capodanno che nel bar Le Constellation causò 41 morti e 115 feriti. Tra loro figurano l’attuale municipale della sicurezza Patrick Clivaz e l’ex sindaco di Chermignon.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "RSI e LaRegione raccontano lo stesso sviluppo giudiziario con taglio molto simile e istituzionale, ma RSI insiste di più sulle ricadute amministrative locali e sul fatto che Clivaz non fosse in carica ai tempi dei controlli antincendio. LaRegione sintetizza maggiormente gli aspetti procedurali e mantiene un tono più secco da agenzia, con meno contesto sulla situazione dei feriti."
+            },
+            {
+              "titolo": "La Svizzera prepara una sorveglianza elettronica in tempo reale contro la violenza domestica",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Violenza-domestica-i-diffidati-presto-controllati-in-diretta--3725487.html",
+              "riassunto": "Vaud avvierà un progetto pilota con braccialetti elettronici e centrale di controllo in tempo reale per far rispettare le zone di divieto. Il sistema, oggi perlopiù passivo, dovrebbe diventare attivo entro il 2027 e potrebbe cambiare la gestione dei casi in tutta la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "RSI sviluppa di più il quadro politico-cantonale e mette in evidenza i costi, la frequenza degli interventi di polizia e l’ipotesi di allentare il segreto medico. LaRegione accentua invece la dimensione operativa del progetto pilota, spiegando in modo più diretto il funzionamento tecnico del sistema e la futura estensione nazionale."
+            }
+          ],
+          "trend": [
+            "mobilità e gestione del traffico alpino",
+            "sicurezza pubblica e prevenzione della violenza domestica"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito soprattutto l’evolversi dell’inchiesta di Crans-Montana, con possibili nuovi dettagli dalle audizioni, e l’eventuale reazione politica al progetto di sorveglianza elettronica contro la violenza domestica.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata dalla Biennale di Venezia, con un caso che tocca direttamente la Svizzera: il padiglione svizzero coinvolto nelle proteste pro-Palestina. Sul fronte elvetico spicca anche una grande mostra a Mendrisio dedicata a Felice Varini, mentre all’estero emergono sviluppi rilevanti attorno all’arte di Paul Klee.",
+          "notizie": [
+            {
+              "titolo": "Alla Biennale di Venezia il padiglione svizzero chiude per protesta, tra tensioni e letture opposte",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1924108/biennale-project-padiglioni-venezia-anti-israele",
+              "riassunto": "Alla Biennale una ventina di padiglioni nazionali, incluso quello svizzero, hanno chiuso in segno di protesta contro la presenza del padiglione israeliano. Pro Helvetia parla invece di carenza di personale, mentre i manifestanti rivendicano uno sciopero contro il «genocidio in corso in Palestina».",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione mette in primo piano il coinvolgimento della Svizzera e dettaglia la posizione di Pro Helvetia, che attribuisce la chiusura a una carenza di personale. Il New York Times inquadra invece l’episodio come parte di una protesta più ampia e internazionale, insistendo sul carattere spettacolare e dirompente della chiusura dei padiglioni più visitati. LaRegione offre quindi un taglio più istituzionale e locale, il NYT uno più conflittuale e da cronaca culturale globale."
+            },
+            {
+              "titolo": "A Mendrisio la prima grande mostra monografica di Felice Varini",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1924177/museo-mostra-vista-varini-arte-punti",
+              "riassunto": "Il Museo d’Arte di Mendrisio ospita la prima grande retrospettiva mai dedicata a Felice Varini, artista molto legato alla percezione e allo spazio. La mostra, aperta dal 10 maggio all’11 ottobre, ha un forte interesse per il pubblico ticinese e per chi segue l’arte contemporanea.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Paul Klee entra in una grande mostra al Jewish Museum di New York",
+              "fonte": "New York Times Arts",
+              "link": "https://www.nytimes.com/2026/05/08/arts/design/paul-klee-angelus-novus-jewish-museum.html",
+              "riassunto": "“Angelus Novus”, una delle opere più note e cariche di storia di Paul Klee, si aggiunge in extremis a una grande rassegna già importante al Jewish Museum. Per la Svizzera culturale è un segnale rilevante della centralità internazionale dell’artista basilese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "La Biennale di Venezia come arena politica oltre che artistica",
+            "Rafforzamento della presenza degli artisti svizzeri nel circuito internazionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle proteste alla Biennale, in particolare se la chiusura dei padiglioni verrà prorogata o se il padiglione svizzero chiarirà definitivamente la propria posizione.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata da tre dossier ad alta intensità: la nuova battaglia legale sui dazi di Trump, che tocca direttamente anche la Svizzera come economia aperta; la crisi tra Stati Uniti e Iran nello Stretto di Hormuz, con ricadute immediate sui mercati energetici; e il fronte ucraino-russo, tra tregua annunciata e forte dimensione simbolica del 9 maggio a Mosca.",
+          "notizie": [
+            {
+              "titolo": "Un tribunale federale boccia anche i nuovi dazi del 10% introdotti da Trump",
+              "fonte": "Il Post Mondo",
+              "link": "https://www.ilpost.it/2026/05/08/stati-uniti-dazi-donald-trump-10-per-cento-illegittimi/",
+              "riassunto": "Un tribunale federale statunitense ha giudicato illegittimi i dazi del 10% imposti da Trump contro tutti i paesi a fine febbraio. La sentenza, per ora limitata ad alcune parti ricorrenti e allo stato di Washington, potrebbe però diventare un nuovo caso fino alla Corte Suprema. Per la Svizzera conta perché il dossier dazi è centrale per export, farmaceutica e negoziati commerciali con Washington.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Lo scontro tra Washington e Teheran fa salire la tensione nello Stretto di Hormuz",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Il ministro degli esteri iraniano Abbas Araghchi accusa gli Stati Uniti di scegliere una “avventura militare spericolata” ogni volta che c’è una soluzione diplomatica sul tavolo. Intanto gli USA hanno colpito o bloccato varie navi iraniane, mentre lo Stretto di Hormuz resta un punto critico per il 20% del petrolio e del gas liquefatto mondiali. La crisi può riflettersi rapidamente su prezzi dell’energia, trasporti e commercio anche in Europa e in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "La BBC mette in primo piano la denuncia iraniana e il linguaggio diplomatico di Teheran, dando peso alla narrativa della pressione americana. Il NYT enfatizza invece l’effetto strategico della blocco navale, il ruolo operativo della Marina USA e le conseguenze pratiche sul traffico marittimo e sui mercati energetici. La prima fonte privilegia il conflitto politico-diplomatico, la seconda il quadro militare e logistico."
+            },
+            {
+              "titolo": "Trump annuncia una tregua di tre giorni in Ucraina per le celebrazioni del 9 maggio",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/08/trump-ci-saranno-tre-giorni-di-tregua-in-ucraina-dal-9-all11-maggio_d664aaf3-1967-40fd-9a0e-98ba6fcf9be9.html",
+              "riassunto": "Donald Trump dice su Truth che dal 9 all’11 maggio ci sarà un cessate il fuoco di tre giorni tra Russia e Ucraina, con scambio di 1.000 prigionieri per parte. L’annuncio arriva mentre in Russia si celebra la vittoria nella Seconda guerra mondiale e può essere un segnale politico importante, ma resta tutto da verificare sul terreno.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Pressione americana su dazi, commercio e regole economiche globali",
+            "Escalation USA-Iran con effetti immediati su energia e navigazione marittima"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la risposta di Washington alla sentenza sui dazi, perché un ricorso o un intervento della Casa Bianca potrebbe cambiare subito il quadro; sul fronte iraniano, conta capire se lo Stretto di Hormuz resterà di fatto bloccato e se l’annunciata tregua in Ucraina reggerà oltre l’effetto simbolico delle celebrazioni russe.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l’attenzione cade soprattutto su temi molto vicini al lettore svizzero: la situazione fragile di alcuni gruppi industriali elvetici, il potere d’acquisto della classe media e segnali contrastanti nel turismo/consumi. Sullo sfondo, emergono anche notizie di governance e reputazione per grandi marchi svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Barry Callebaut resta in crisi: debito alle stelle, utili sotto pressione",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/barry-callebaut-praesident-gefordert-schweizer-schoggi-gigant-steckt-in-der-krise-fest-id21932406.html",
+              "riassunto": "Il gigante svizzero del cioccolato continua a soffrire: vendite e utili calano, mentre il debito è salito fino a 6,5 miliardi di franchi. Il crollo e la volatilità del cacao pesano su un gruppo che è centrale per l’industria alimentare elvetica e per molti marchi globali.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Anche la classe media svizzera fatica a far quadrare i conti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/ab-diesem-lohn-gehoerst-du-dazu-jetzt-kaempft-sogar-der-schweizer-mittelstand-mit-geldproblemen-id21932676.html",
+              "riassunto": "Secondo un’analisi del BFS, circa il 55% della popolazione rientra nella fascia di reddito media, ma il 25% della “bassa media” non ha nemmeno 2’500 franchi di riserva. Il tema è molto rilevante per consumi, affitti e tenuta del potere d’acquisto in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Reka chiude il 2025 con ricavi record e punta sull’estero",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1924086/reka-gruppo-ricavi-attivita-svizzera",
+              "riassunto": "Il gruppo svizzero del viaggio ha raggiunto 132 milioni di franchi di ricavi, in crescita rispetto ai 125 milioni dell’anno precedente. Trainano le vacanze e la Reka-Card, mentre l’acquisizione di un resort all’Elba segnala un’espansione oltre confine.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "pressione sul potere d’acquisto e sui bilanci familiari",
+            "difficoltà e ristrutturazioni nei grandi gruppi industriali svizzeri"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del caso Barry Callebaut, sia per eventuali mosse del management sia per reazioni di mercato; da seguire anche l’impatto delle tensioni sul potere d’acquisto su consumi e domanda interna.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi dominano tre filoni: la battaglia legale tra Elon Musk e OpenAI, la corsa alle valutazioni record nell’AI generativa e il fronte sicurezza/cyber con nuovi modelli più permissivi per i test difensivi. Sullo sfondo, continua la normalizzazione dell’AI nel software, ma anche il suo impatto su investimenti, lavoro e sicurezza digitale.",
+          "notizie": [
+            {
+              "titolo": "Il processo Musk-OpenAI entra nel vivo: accuse incrociate e rischio per la futura IPO",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/",
+              "riassunto": "Nella seconda settimana del processo, OpenAI ribalta la narrativa: secondo Brockman, sarebbe stato Musk a voler spingere per un ramo for profit e a cercare il “controllo assoluto” del progetto. Shivon Zilis ha inoltre testimoniato che Musk tentò di reclutare Sam Altman per guidare un nuovo laboratorio AI in Tesla. La causa può influire sulla corsa di OpenAI verso una IPO stimata vicino a 1.000 miliardi di dollari.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Anthropic si avvicina a una valutazione da 900 miliardi: l’AI privata accelera ancora",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/anthropic-approaches-1-trillion-valuation-as-revenue-grows-fivefold/",
+              "riassunto": "Anthropic starebbe preparando un round da 50 miliardi di dollari, con una valutazione attorno ai 900 miliardi. Il fatturato annualizzato sarebbe cresciuto di cinque volte rispetto a fine 2024, arrivando vicino a 45 miliardi, trainato da Claude Code e Cowork. È un segnale forte di quanto gli investitori stiano anticipando una possibile IPO già entro l’anno.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "OpenAI apre una versione più permissiva di GPT per la ricerca cyber difensiva",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers/",
+              "riassunto": "OpenAI ha lanciato GPT-5.5-Cyber, un modello con filtri di sicurezza più deboli destinato solo a ricercatori verificati e difensori di infrastrutture critiche. Il sistema permette attività come analisi malware, test di penetrazione e simulazione di exploit in ambienti controllati. Per aziende e infrastrutture europee, il tema è rilevante perché mostra come l’AI stia entrando nel cuore della cyber-difesa.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "valutazioni record e finanziarizzazione dell’AI privata",
+            "AI sempre più integrata nella sicurezza informatica e nel test delle vulnerabilità"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del processo Musk-OpenAI: eventuali nuove testimonianze o documenti potrebbero cambiare la percezione del caso e avere effetti sul percorso di IPO di OpenAI e sull’equilibrio competitivo nell’AI generativa.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 64,
       "run_id": 96,
@@ -5273,288 +5531,6 @@
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se l’espansione europea di Anthropic si tradurrà in dettagli operativi su data center, localizzazione dei dati o partnership nell’area EMEA; per i lettori svizzeri sarebbe il segnale più concreto di ricadute sul mercato locale.",
           "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "run_id": 75,
-      "run_time": "2026-04-22 04:45:01.835917+00:00",
-      "analyzed_at": "2026-04-22T05:02:14.142550+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata ticinese è dominata da decisioni politiche cantonali con effetti concreti su lavoro e sanità, affiancate da un fatto di cronaca recente legato alle truffe agli anziani. Tra le notizie selezionate prevalgono i temi con impatto diretto sulla popolazione e con chiaro carattere d'attualità.",
-          "notizie": [
-            {
-              "titolo": "Salario minimo: il Gran Consiglio approva il compromesso, entrata in vigore dal 2027",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/salario-minimo-il-compromesso-passa-in-gran-consiglio-431903",
-              "riassunto": "Dopo mesi di trattative, il Parlamento ticinese ha approvato il rapporto di compromesso sul salario minimo. La decisione conta perché incide direttamente sul mercato del lavoro cantonale e sui redditi delle fasce salariali più basse, con applicazione progressiva a partire dal 2027.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cure a domicilio: il Parlamento respinge l'urgenza chiesta dal PS",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/cure-a-domicilio-il-gran-consiglio-frena-sullurgenza-431894",
-              "riassunto": "Il Gran Consiglio ha detto no alla procedura d'urgenza invocata per abrogare una misura di risparmio del Governo nel settore delle cure a domicilio. È una notizia rilevante perché tocca un ambito sensibile per famiglie, anziani e operatori sociosanitari, segnalando uno scontro politico ancora aperto.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Tentata truffa con la \"chiamata shock\" a Biasca, arrestato un sospetto",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/unaltra-chiamata-shock-in-ticino-scattano-le-manette-431887",
-              "riassunto": "Un uomo di 47 anni è stato arrestato perché sospettato di aver cercato di raggirare un anziano di Biasca con il metodo della falsa emergenza telefonica. La notizia ha forte rilievo pratico perché richiama un fenomeno criminale ricorrente in Ticino e riaccende l'allerta sulla protezione delle persone più vulnerabili.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "decisioni del Gran Consiglio con impatto sociale ed economico",
-            "attenzione crescente alla tutela delle persone vulnerabili tra sanità e truffe"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire le reazioni politiche e delle parti sociali sul salario minimo, così come eventuali nuovi dettagli giudiziari o di prevenzione sul caso della truffa telefonica a Biasca.",
-          "_model_used": "openai-codex/gpt-5.4"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata svizzera è dominata da temi con impatto istituzionale ed economico: la possibile ripetizione del voto sull'identità elettronica, i dubbi sui grandi investimenti ferroviari e il bilancio climatico delle principali aziende del Paese. Spiccano soprattutto i dossier federali che possono avere effetti concreti su fiducia pubblica, finanze e politica industriale.",
-          "notizie": [
-            {
-              "titolo": "Identità elettronica, il Tribunale federale valuta se annullare la votazione",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/identita-elettronica-e-se-il-voto-venisse-annullato-425642",
-              "riassunto": "Il Tribunale federale deve decidere se la votazione dello scorso settembre sull'identità elettronica debba essere ripetuta. Al centro del caso c'è il presunto coinvolgimento eccessivo di Swisscom, controllata dalla Confederazione, nella campagna per il sì. È una notizia di forte rilievo perché tocca la regolarità del processo democratico e un dossier chiave della digitalizzazione svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ferrovie svizzere sotto esame: il Controllo federale delle finanze segnala carenze nei piani",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/la-ferrovia-forse-non-e-sui-binari-giusti-425611",
-              "riassunto": "Il Controllo federale delle finanze ha evidenziato problemi nelle previsioni e nella qualità dei dati usati per pianificare il sistema ferroviario. In gioco ci sono miliardi di franchi e la credibilità di uno dei pilastri della mobilità pubblica svizzera. La notizia conta perché riguarda investimenti federali, priorità infrastrutturali e possibili ripercussioni anche per le regioni periferiche e di transito come il Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Le grandi aziende svizzere tagliano la CO2 diretta, ma aumentano le emissioni indirette",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1919465/emissioni-scope-holcim-co2-aziende",
-              "riassunto": "Un'analisi AWP sui gruppi dello SMI mostra un calo delle emissioni dirette, mentre quelle indirette lungo la catena del valore continuano a crescere. Il dato suggerisce che i progressi climatici delle grandi imprese svizzere restano parziali e spostano l'attenzione sulla responsabilità complessiva delle filiere. È un tema rilevante per politica climatica, trasparenza ESG e competitività internazionale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti si basano sullo stesso dato AWP ma con accenti diversi. LaRegione adotta un taglio più analitico e quantitativo, cita l'analisi sulle 20 società dell'SMI e richiama i gruppi più esposti come Holcim e ABB; Ticinonews usa una formulazione più sintetica e divulgativa, puntando soprattutto sul contrasto fra miglioramento delle emissioni dirette e peggioramento di quelle indirette. Il framing di LaRegione è più economico-industriale, quello di Ticinonews più orientato al messaggio generale sulla sostenibilità."
-            }
-          ],
-          "trend": [
-            "istituzioni federali sotto pressione su trasparenza e correttezza democratica",
-            "sostenibilità e controllo degli investimenti pubblici al centro del dibattito svizzero"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà cruciale seguire l'esito o gli sviluppi dell'udienza al Tribunale federale sull'e-ID: un eventuale annullamento del voto avrebbe un impatto politico immediato e riaprirebbe il dossier sulla digitalizzazione statale.",
-          "_model_used": "openai-codex/gpt-5.4"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è segnata soprattutto da temi vicini alla Svizzera italiana e al panorama elvetico: dal traguardo storico della Fondazione Beyeler a un appuntamento teatrale a Bellinzona. Sul fronte internazionale spicca invece la morte dell'attore Patrick Muldoon, rilanciata da più testate e quindi rilevante per ampiezza di copertura.",
-          "notizie": [
-            {
-              "titolo": "La Fondazione Beyeler supera i 10 milioni di visitatori e celebra con Cézanne",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1919489/fondazione-visitatori-cezanne-beyeler-museo",
-              "riassunto": "Il museo di Riehen, uno dei poli artistici più importanti della Svizzera, raggiunge il traguardo dei 10 milioni di visitatori dall'apertura nel 1997. La celebrazione con Cézanne conferma il peso internazionale dell'istituzione e il suo ruolo centrale nell'offerta culturale svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "A Bellinzona torna il 'Frankenstein' di Margherita Saltamacchia al Teatro Sociale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1919350/mary-vita-margherita-shelley-creatura-saltamacchia-teatro-frankenstein",
-              "riassunto": "La rilettura scenica dei testi di Mary Shelley approda al Teatro Sociale di Bellinzona, con un forte radicamento nel calendario culturale ticinese. È una notizia di rilievo locale perché segnala un appuntamento concreto per il pubblico della Svizzera italiana e valorizza una proposta teatrale contemporanea.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Muore a 57 anni Patrick Muldoon, volto di 'Melrose Place' e 'Days of Our Lives'",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/news/morto-patrick-muldoon-interprete-di-melrose-place-e-starship-troopers-425604",
-              "riassunto": "La scomparsa dell'attore e produttore statunitense Patrick Muldoon ha avuto ampia eco mediatica internazionale. La notizia conta soprattutto per la forte riconoscibilità televisiva dell'attore e perché viene ripresa da più testate, segnale di rilevanza trasversale nel circuito culturale e dell'intrattenimento.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times Arts",
-                "CdT Società",
-                "Ticinonews Magazine"
-              ],
-              "differenze_narrative": "Il New York Times adotta un taglio più biografico e di carriera, insistendo sul peso del ruolo in 'Days of Our Lives' e sul profilo dell'attore nella TV americana. CdT e Ticinonews usano invece un'impostazione più da breaking news, sintetica e centrata su morte, età e causa del decesso, con enfasi sui titoli più popolari come 'Melrose Place' e 'Starship Troopers'."
-            }
-          ],
-          "trend": [
-            "forte centralità di istituzioni e appuntamenti culturali svizzeri e ticinesi",
-            "ampia circolazione di notizie necrologiche legate a figure note dello spettacolo internazionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da monitorare se il traguardo della Fondazione Beyeler verrà ripreso da altre testate svizzere come notizia culturale nazionale e se emergeranno ulteriori dettagli o tributi internazionali sulla morte di Patrick Muldoon.",
-          "_model_used": "openai-codex/gpt-5.4"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata geopolitica è dominata dall’inasprimento del confronto tra Stati Uniti e Iran, con un episodio navale che mette a rischio la tregua e ha ricadute regionali più ampie. In Europa spicca il voto bulgaro con l’affermazione di un profilo filorusso, mentre in Asia il Giappone accelera il riposizionamento strategico abbandonando alcuni tabù del dopoguerra.",
-          "notizie": [
-            {
-              "titolo": "Gli Stati Uniti sequestrano una nave iraniana e mettono a rischio la tregua con Teheran",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/20/usa-sequestrano-nave-iraniana-tregua-a-rischio",
-              "riassunto": "Washington ha sequestrato una nave cargo iraniana diretta verso l’Iran, facendo salire bruscamente la tensione tra i due paesi. La notizia conta perché può compromettere la fragile tregua e riaprire una fase di escalation nel Golfo, con effetti su sicurezza energetica e stabilità regionale che interessano anche l’Europa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Internazionale incornicia l’episodio soprattutto come minaccia politica alla tregua tra Stati Uniti e Iran, con un tono più orientato alle conseguenze diplomatiche immediate. Il New York Times adotta un taglio più tecnico e documentale, insistendo sul fatto che la nave Touska fosse già sanzionata dal Tesoro statunitense per legami con programmi d’armamento iraniani: meno enfasi sul rischio di rottura politica, più sulla base giuridico-sanzionatoria dell’azione americana."
-            },
-            {
-              "titolo": "In Bulgaria vince il fronte filorusso guidato da Rumen Radev",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/ultime-notizie/2026/04/20/bulgaria-filorusso-radev-vince-elezioni",
-              "riassunto": "Le legislative bulgare segnano una netta avanzata del campo politico vicino a Rumen Radev, presentato come figura filorussa. È una notizia rilevante perché tocca gli equilibri interni dell’Unione europea e della Nato sul fianco orientale, in un momento in cui la coesione europea resta cruciale anche per i paesi neutrali ma integrati economicamente come la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Giappone amplia l’export di armi e rompe con un pilastro del pacifismo postbellico",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/20/world/asia/japan-weapons-arms-sale-nato.html",
-              "riassunto": "Il governo giapponese guidato da Sanae Takaichi allenta i limiti storici all’esportazione di armamenti, segnando una svolta strategica di grande portata. La decisione pesa sugli equilibri asiatici e sui rapporti con Cina, Stati Uniti e Nato, ed è indicativa di una più ampia corsa al riarmo internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rischio di escalation indiretta tra Stati Uniti e Iran attraverso sequestri, sanzioni e pressioni sui paesi della regione",
-            "Riposizionamento strategico di paesi alleati o partner dell’Occidente, tra riarmo giapponese e fragilità politica nell’Europa orientale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà cruciale capire se il sequestro della nave iraniana provocherà una risposta di Teheran o un irrigidimento americano più ampio, con possibili effetti immediati su traffico marittimo, petrolio e diplomazia europea.",
-          "_model_used": "openai-codex/gpt-5.4"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Nella giornata economica spiccano soprattutto dossier con impatto diretto sulla Svizzera: i possibili rimborsi dei dazi USA alle imprese elvetiche e i dubbi sui costi reali dei grandi progetti ferroviari federali. Sullo sfondo, tra le notizie internazionali più forti, emerge il cambio al vertice di Apple, rilanciato da più testate.",
-          "notizie": [
-            {
-              "titolo": "Dazi USA, le aziende svizzere puntano a recuperare fino a 1,5 miliardi di dollari",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/schweizer-firmen-hoffen-auf-zoll-rueckzahlung-jetzt-wollen-wir-unser-geld-zurueck-id21886270.html",
-              "riassunto": "Secondo Blick, una parte dei 166 miliardi di dollari di dazi americani da restituire nel mondo potrebbe tornare anche alle imprese svizzere, per circa 1,5 miliardi. La notizia conta perché tocca direttamente la competitività delle aziende esportatrici elvetiche, anche se la procedura di rimborso tramite il portale Cape si preannuncia lunga e complessa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Progetti ferroviari svizzeri, il Controllo federale delle finanze teme costi sottostimati per miliardi",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1919530/dati-incompleti-e-stime-incerte-sui-progetti-ferroviari-costi-sottostimati-per-miliardi",
-              "riassunto": "Il Controllo federale delle finanze giudica poco affidabili dati e stime sui grandi progetti ferroviari, sollevando il rischio di sottovalutazioni miliardarie. È una notizia molto rilevante per la Svizzera perché riguarda spesa pubblica, infrastrutture strategiche e possibili pressioni future sui bilanci federali e sui tempi di realizzazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Apple cambia guida: John Ternus nuovo CEO, Tim Cook passa alla presidenza esecutiva",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/apple-nomina-john-ternus-ceo-tim-cook-e-presidente-esecutivo-431912",
-              "riassunto": "Apple avrebbe avviato una svolta di governance con la nomina di John Ternus a CEO dal 1° settembre e il passaggio di Tim Cook al ruolo di presidente esecutivo. La notizia ha peso globale per gli effetti potenziali su strategia industriale, corsa all'intelligenza artificiale e mercati tecnologici, ed è stata ripresa da più fonti internazionali.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Economia",
-                "The Economist Business",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Ticinonews adotta un taglio rapido e informativo, centrato sull'annuncio e sulla fonte Bloomberg. The Economist legge il cambio come passaggio strategico verso la trasformazione di Apple nell'era dell'AI, con enfasi sulle sfide industriali di Ternus. Blick usa un framing più narrativo e manageriale: Cook non esce davvero di scena, ma resta regista politico e strategico dietro le quinte."
-            }
-          ],
-          "trend": [
-            "forte centralità dei dossier economici con impatto diretto sulla Svizzera",
-            "transizione tecnologica e AI come chiave di lettura delle grandi aziende globali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato se emergeranno dettagli operativi sui rimborsi dei dazi alle imprese svizzere e se il dossier sui costi ferroviari provocherà reazioni politiche o richieste di revisione dei progetti federali.",
-          "_model_used": "openai-codex/gpt-5.4"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria oggi è dominata da mosse di scala industriale nell'IA: maxi-accordi infrastrutturali, uso dei modelli da parte dell'intelligence USA e segnali sempre più concreti dell'impatto dell'IA generativa sui mercati creativi. Nessuna notizia ha un impatto diretto su Svizzera o Ticino, quindi prevalgono freschezza, portata internazionale e presenza di incroci tra fonti.",
-          "notizie": [
-            {
-              "titolo": "Anthropic ottiene altri 5 miliardi da Amazon e si impegna a spendere 100 miliardi su AWS",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
-              "riassunto": "Amazon rafforza in modo massiccio la propria alleanza con Anthropic con un nuovo investimento da 5 miliardi di dollari. In cambio, Anthropic promette una spesa cloud monstre su AWS, segnale di quanto la corsa all'IA dipenda ormai da accordi verticali fra modelli, chip e data center. Conta perché consolida il duopolio infrastrutturale tra hyperscaler e grandi laboratori di IA.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La NSA usa il modello Mythos di Anthropic, nonostante tensioni interne al Pentagono",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/20/nsa-spies-are-reportedly-using-anthropics-mythos-despite-pentagon-feud/",
-              "riassunto": "Secondo più ricostruzioni, l'agenzia di intelligence elettronica statunitense sta già usando Mythos, il modello più potente e riservato di Anthropic. La notizia mostra quanto rapidamente l'IA avanzata stia entrando nei flussi operativi della sicurezza nazionale americana, con implicazioni geopolitiche e di governance molto ampie.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch inquadra la vicenda come una notizia di potere istituzionale, enfatizzando la frizione con il Pentagono e il contesto politico-burocratico della difesa USA. The Decoder adotta un taglio più tecnico e diretto, sottolineando soprattutto che la NSA sta usando il modello più avanzato di Anthropic e insistendo meno sul conflitto interno tra apparati. In sintesi: TechCrunch privilegia il framing politico-strategico, The Decoder quello tecnologico-operativo."
-            },
-            {
-              "titolo": "Deezer: il 44% dei brani caricati ogni giorno è generato dall'intelligenza artificiale",
-              "fonte": "Hacker News",
-              "link": "https://techcrunch.com/2026/04/20/deezer-says-44-of-songs-uploaded-to-its-platform-daily-are-ai-generated/",
-              "riassunto": "La piattaforma musicale segnala che quasi un brano su due tra quelli caricati quotidianamente nasce da strumenti di IA. È un dato forte per l'industria culturale europea: cambia il problema della moderazione, della remunerazione dei diritti e della visibilità degli autori umani. Per un pubblico svizzero, il tema tocca da vicino musica, media e policy digitali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "integrazione sempre più stretta tra grandi modelli di IA e infrastrutture cloud hyperscale",
-            "passaggio dell'IA generativa da novità di prodotto a leva strategica per intelligence e industrie creative"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergeranno dettagli aggiuntivi sull'uso di Mythos da parte della NSA e se altri media confermeranno o problematizzeranno l'accordo Amazon-Anthropic, soprattutto sul piano antitrust e della dipendenza infrastrutturale.",
-          "_model_used": "openai-codex/gpt-5.4"
         }
       ]
     }
