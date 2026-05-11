@@ -1,6 +1,287 @@
 {
-  "generated_at": "2026-05-10T04:50:35.081015+00:00",
+  "generated_at": "2026-05-11T04:50:50.483746+00:00",
   "analyses": [
+    {
+      "id": 66,
+      "run_id": 98,
+      "run_time": "2026-05-11 04:45:02.798206+00:00",
+      "analyzed_at": "2026-05-11T04:50:50.477527+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi molto concreti per il lettore ticinese e dell’area italofona: sicurezza e tutela delle vittime di violenza domestica, tensioni istituzionali nei patriziati grigionesi, e un caso sanitario internazionale che coinvolge anche uno svizzero. Sullo sfondo, varie notizie mostrano anche un Ticino attento alla propria organizzazione interna e ai collegamenti con eventi più ampi.",
+          "notizie": [
+            {
+              "titolo": "Il Ticino valuta la sorveglianza elettronica attiva contro la violenza domestica",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Violenza-domestica-anche-il-Ticino-valuta-la-sorveglianza-attiva--3727053.html",
+              "riassunto": "Il Cantone guarda con interesse ai nuovi sistemi di monitoraggio in tempo reale per gli autori di violenza domestica. Il tema è tornato d’attualità dopo l’arresto di un residente nel Bellinzonese accusato di minacce e lesioni nonostante un divieto di avvicinamento. La misura potrebbe rafforzare la protezione delle vittime entro il 2027.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Roveredo: il patriziato rischia il commissariamento dopo lo scontro con il Cantone",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Roveredo-il-patriziato-rischia-il-commissariamento--3729654.html",
+              "riassunto": "Il patriziato di Roveredo potrebbe essere nuovamente commissariato dopo la protesta del presidente e dei collaboratori contro le pratiche dell’Ufficio migrazione grigionese. La vicenda tocca un nodo sensibile per il Grigioni italiano: naturalizzazioni, permessi di soggiorno e rapporti tra istituzioni locali e Cantone. Il caso ha anche un forte valore politico.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nave Hondius: anche uno svizzero tra le persone coinvolte nel focolaio di hantavirus",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Hondius-lo-svizzero-va-in-quarantena--3729978.html",
+              "riassunto": "Durante l’evacuazione della nave da crociera Hondius a Tenerife, un membro dell’equipaggio svizzero è stato posto in quarantena di sei settimane. L’UFSP precisa che la persona sta bene e non ha sintomi. Il caso resta rilevante per la Svizzera perché coinvolge direttamente cittadini elvetici in un focolaio con tre decessi e 6 contagi confermati.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza e protezione delle persone vulnerabili",
+            "tensioni istituzionali nel Grigioni italiano e nei patriziati",
+            "impatto locale di crisi sanitarie e situazioni internazionali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Roveredo, per capire se il Cantone procederà davvero con il commissariamento, e l’eventuale conferma di ulteriori sviluppi sanitari legati alla Hondius, soprattutto per il cittadino svizzero in quarantena.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata in Svizzera è dominata da temi di forte impatto nazionale: il focolaio di hantavirus sulla nave Hondius con coinvolgimento di uno svizzero, la protesta a Lucerna contro gli accordi con l’UE e il dibattito su traffico alpino e politica dei trasporti. Emergono anche tensioni su sovranità digitale e sicurezza, ma con rilevanza più settoriale.",
+          "notizie": [
+            {
+              "titolo": "Caso hantavirus sulla Hondius: c’è anche un membro dell’equipaggio svizzero e un paziente ricoverato a Zurigo",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/un-membro-dellequipaggio-della-mv-hondius-e-svizzero-non-ha-sintomi-427317",
+              "riassunto": "Il focolaio sulla nave da crociera Hondius coinvolge anche la Svizzera: un membro dell’equipaggio elvetico è asintomatico, mentre un paziente svizzero è ricoverato all’USZ di Zurigo in condizioni buone. L’OMS parla di 6 casi confermati e 2 sospetti, con 3 decessi. Conta perché tocca direttamente la sanità pubblica svizzera e la gestione di un’emergenza internazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "SRF Schweiz"
+              ],
+              "differenze_narrative": "La CdT mette al centro l’impatto svizzero, con il membro dell’equipaggio elvetico, il paziente all’USZ e le decisioni dell’UFSP. SRF privilegia l’evoluzione operativa del caso, con l’evacuazione da Tenerife, il numero di persone già trasportate e l’inquadramento sanitario internazionale. Entrambe citano l’OMS, ma SRF insiste di più sulla dinamica dell’emergenza, mentre la CdT sul seguito concreto per la Svizzera."
+            },
+            {
+              "titolo": "A Lucerna protesta Mass-Voll contro gli accordi Svizzera-UE, con contromanifestazione di sinistra",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/a-lucerna-manifestazione-di-mass-voll-e-contromanifestazione-di-sinistra-427332",
+              "riassunto": "A Lucerna centinaia di persone hanno manifestato contro il pacchetto di accordi con l’UE, su iniziativa di Mass-Voll, mentre circa un migliaio di contro-manifestanti ha denunciato la presenza di estremisti di destra. L’evento mostra quanto il dossier europeo resti polarizzante in Svizzera, con tensioni politiche e di ordine pubblico.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "La CdT descrive l’episodio con maggiore attenzione alla composizione dei gruppi e al dispositivo di sicurezza, citando esplicitamente Junge Tat e militanti stranieri di estrema destra. LaRegione adotta un taglio più sintetico ma più esplicitamente politico, mettendo in evidenza il confronto tra Mass-Voll, la sinistra e il clima da scontro ideologico attorno agli accordi con l’UE."
+            },
+            {
+              "titolo": "Incidente con la tuta alare in Austria: grave una svizzera di 32 anni",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/incidente-con-la-tuta-alare-32enne-svizzera-ferita-gravemente-427339",
+              "riassunto": "A Hohenems, in Austria, una 32enne svizzera è rimasta gravemente ferita in un incidente durante un volo con tuta alare: si è scontrata con una tedesca, ha perso conoscenza e ha finito per precipitare nel Reno dopo aver toccato una linea ad alta tensione. La notizia conta per il coinvolgimento diretto di una cittadina svizzera e per la gravità dell’incidente.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Le due fonti raccontano sostanzialmente lo stesso fatto, ma la CdT enfatizza il dettaglio della dinamica e della gravità clinica, mentre Ticinonews offre una versione più rapida e lineare, adatta a una lettura di aggiornamento. Il framing è quindi quasi identico, con differenze soprattutto di sintesi e ritmo narrativo."
+            }
+          ],
+          "trend": [
+            "svizzera tra emergenze sanitarie internazionali e sicurezza pubblica",
+            "polarizzazione politica su Europa, sovranità e identità nazionale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti l’evoluzione del caso Hondius con eventuali nuovi positivi o decisioni dell’OMS/UFSP, e il dibattito politico sull’UE dopo la protesta di Lucerna, soprattutto se arriveranno reazioni dei partiti o nuove contromanifestazioni.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura parla soprattutto svizzero e ticinese: una riapertura museale di primo piano a Winterthur, una mostra itinerante sulla longevità che tocca direttamente la Svizzera, e la Biennale di Venezia segnata da forti tensioni politiche. Sullo sfondo, il dibattito sul rapporto tra arte, identità e propaganda resta molto acceso.",
+          "notizie": [
+            {
+              "titolo": "Riapre a Winterthur la collezione Oskar Reinhart con capolavori di Cézanne e Van Gogh",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1924269/collezione-reinhart-oskar-winterthur-federale",
+              "riassunto": "Dopo mesi di chiusura, la collezione «Am Römerholz» torna visitabile a Winterthur con sale riorganizzate e nuovi standard di conservazione. La riapertura conta per la Svizzera perché riguarda una delle raccolte private più importanti al mondo, oggi patrimonio della Confederazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Alla Biennale di Venezia il Padiglione russo resta chiuso dopo le polemiche",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1924295/padiglione-biennale-monitor-venezia-performance-chiuso",
+              "riassunto": "Alla Biennale d’arte il padiglione russo è chiuso e sostituito da monitor con performance registrate; all’esterno sorveglianza e clima tranquillo, ma il caso resta politico. La vicenda pesa anche sul piano internazionale: si parla di possibili tagli ai finanziamenti Ue per 2 milioni di euro.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "CdT Società",
+                "The Economist Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "Le testate svizzere mettono in primo piano il fatto concreto della chiusura, la sorveglianza e le reazioni di Meloni, Giuli e dell’Ue; il taglio è più cronachistico e istituzionale. The Economist e New York Times leggono invece la vicenda soprattutto come simbolo del conflitto tra arte e propaganda, con un framing più internazionale e interpretativo, meno centrato sulla cronaca italiana."
+            },
+            {
+              "titolo": "In Svizzera cresce la longevità: una mostra prova a spiegare come si arriva ai 100 anni",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/leben-von-ueber-100-jaehrigen-was-traegt-zum-hohen-alter-bei-eine-ausstellung-sucht-antworten",
+              "riassunto": "La mostra itinerante «Welcome to your future: Hundertjährige der Schweiz» parte dai dati di oltre 2200 centenari nel Paese e da interviste con 277 persone ultracentenarie. Per il pubblico svizzero è un tema molto vicino: secondo le proiezioni, una quota crescente dei nati dopo il 2000 potrebbe arrivare ai 100 anni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "arte e istituzioni culturali sotto pressione politica",
+            "patrimonio, longevità e identità culturale in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Biennale di Venezia, soprattutto la risposta della Fondazione alle richieste dell’Ue e l’eventuale rilancio delle proteste o di nuove prese di posizione ufficiali.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dal dossier Iran-Stretto di Hormuz, con negoziati e minacce che toccano direttamente i mercati energetici europei. Molto rilevante anche il caso dell’ex ambasciatore italiano arrestato per visti Schengen ai russi, con impatto potenziale anche per la Svizzera. Sul fronte Ucraina, Putin rilancia l’idea che la guerra stia “volgendo al termine”, ma il quadro resta fragile.",
+          "notizie": [
+            {
+              "titolo": "Arresto dell’ex ambasciatore italiano per visti Schengen ai cittadini russi",
+              "fonte": "Il Post Mondo",
+              "link": "https://www.ilpost.it/2026/05/08/ambasciatore-italiano-in-uzbekistan-arrestato-visti-russi/",
+              "riassunto": "L’ex ambasciatore italiano in Uzbekistan, Piergabriele Papadia de Bottini di Sant’Agnese, è accusato di corruzione e favoreggiamento dell’immigrazione clandestina. Secondo le indagini, almeno 95 cittadini russi avrebbero ottenuto visti turistici per l’area Schengen tramite tangenti. Il caso è rilevante anche per la Svizzera, che fa parte dello spazio Schengen.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Iran, Trump e Stretto di Hormuz: negoziati sotto pressione e rischio energetico",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-05-09/iran-trump-notizie-aggiornamento-9-maggio-36967457/",
+              "riassunto": "Trump dice di stare ancora valutando il ritiro di truppe americane dall’Italia e, soprattutto, attende una risposta iraniana alla proposta di pace. Washington minaccia nuove azioni nello Stretto di Hormuz e ha sanzionato 10 tra aziende e individui, anche cinesi, accusati di aiutare l’industria militare di Teheran. Per Europa e Svizzera il rischio è soprattutto energetico: eventuali tensioni sui flussi petroliferi si rifletterebbero su prezzi e inflazione.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI",
+                "New York Times World",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "AGI enfatizza il tono assertivo di Trump, il possibile impatto sull’Italia e le sanzioni; ANSA privilegia la dimensione diplomatica, il ruolo del Qatar come mediatore e il formato tecnico dei negoziati; il New York Times inquadra soprattutto il blocco di fatto dello Stretto e il rischio geopolitico globale. In sintesi: AGI è più politica e personalizzata, ANSA più negoziale, NYT più strategica e di crisi internazionale."
+            },
+            {
+              "titolo": "Putin dice che la guerra in Ucraina sta “volgendo al termine”, ma la pace resta lontana",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/cn8p4j2jzwwo?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Dopo la parata del 9 maggio a Mosca, Vladimir Putin ha detto che il conflitto in Ucraina potrebbe essere “in via di conclusione”. Ha però condizionato ogni incontro con Zelensky a un accordo già definito e ha ribadito le accuse all’Occidente per il sostegno a Kyiv. La notizia resta rilevante per l’Europa perché segnala un possibile, ma ancora molto incerto, spiraglio negoziale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "BBC insiste sul carattere ambiguo e condizionato delle parole di Putin, ricordando che l’ultima offensiva e i riferimenti alla guerra restano duri; ANSA mette più in evidenza la cornice simbolica della parata, la ricerca di un canale con l’Ue e la battuta su Schröder come possibile negoziatore. BBC è più prudente e scettica, ANSA più centrata sugli sviluppi diplomatici europei."
+            }
+          ],
+          "trend": [
+            "crisi energetica e sicurezza dello Stretto di Hormuz",
+            "pressione sui canali diplomatici tra Russia, Ucraina e Unione europea"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita la risposta dell’Iran alla proposta americana e l’eventuale evoluzione dei colloqui indiretti tramite il Qatar: un’escalation o una tregua più solida avrebbero effetti immediati sui prezzi dell’energia in Europa e in Svizzera.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto svizzeri: il braccio di ferro su UBS e il capitale richiesto dal Consiglio federale, il tracollo di Farmy con effetti su posti di lavoro e distribuzione online, e le mosse di un grande marchio nazionale come Swatch nel lusso accessibile. Sullo sfondo, il mercato retail svizzero resta sotto pressione e in trasformazione.",
+          "notizie": [
+            {
+              "titolo": "UBS sotto pressione: cresce il confronto sul capitale e sui rischi per i contribuenti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/finanzexperte-marc-chesney-warnt-vor-ubs-risiken-wenn-es-schieflaeuft-bezahlen-wir-steuerzahler-die-zeche-id21935427.html",
+              "riassunto": "L’economista Marc Chesney sostiene che la richiesta del Consiglio federale di aumentare di quasi 20 miliardi di dollari il capitale della banca sia persino modesta. Il nodo centrale è il rischio “too big to fail”: se qualcosa andasse storto, a pagare potrebbero essere i contribuenti svizzeri. Il tema è politicamente sensibile e tocca direttamente Berna.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Farmy chiude: il negozio online svizzero finisce in procedura di fallimento",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/farmy-meldet-konkurs-an-gehypter-schweizer-online-hofladen-ist-am-ende-id21935298.html",
+              "riassunto": "Farmy e Pico Lebensmittel hanno fermato l’attività con effetto immediato e avviato le procedure di fallimento. Il gruppo parla di ragioni economiche dopo il crollo dei volumi seguito al boom del Covid; oltre 100 dipendenti rischiano il posto. È una notizia rilevante per l’e-commerce alimentare svizzero e per il mercato del lavoro.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Swatch rilancia con Audemars Piguet: arriva la “Royal Pop”",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/geruechte-bestaetigt-swatch-lanciert-mit-audemars-piguet-eine-billig-luxusuhr-id21935569.html",
+              "riassunto": "Swatch conferma la collaborazione con Audemars Piguet e prepara il lancio della Royal Pop, una versione più accessibile ispirata alla Royal Oak. L’operazione punta a replicare il successo della MoonSwatch e potrebbe generare forte domanda, con ripercussioni positive per il comparto orologiero svizzero e per l’immagine dei marchi elvetici.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "pressione regolatoria e rischio sistemico nel settore bancario svizzero",
+            "ristrutturazioni e crisi dell’e-commerce alimentare post-Covid"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’evolversi del dibattito su UBS a Berna: eventuali reazioni del Consiglio federale, della banca e del settore potrebbero spostare il tono politico del dossier.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da due filoni: da un lato i riflessi concreti dell’IA in Svizzera, con l’arrivo di Internet Archive Switzerland a San Gallo; dall’altro il dibattito sempre più acceso sui limiti e i rischi dei modelli generativi, tra affidabilità, allineamento e uso nei flussi di lavoro.\nSul fronte più strategico, continuano anche le mosse industriali di OpenAI, Nvidia e partner hardware, segno che la corsa all’infrastruttura AI resta molto intensa.",
+          "notizie": [
+            {
+              "titolo": "Internet Archive apre una fondazione svizzera a San Gallo per preservare archivi e modelli IA",
+              "fonte": "Hacker News",
+              "link": "https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/",
+              "riassunto": "L’Internet Archive ha lanciato una nuova fondazione senza scopo di lucro in Svizzera, con sede a San Gallo. L’iniziativa punta a salvare archivi fragili e a creare un “Gen AI Archive” con l’Università di San Gallo, quindi ha un impatto diretto per il paese e per l’ecosistema di ricerca locale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "I modelli linguistici possono corrompere documenti delegando compiti complessi",
+              "fonte": "Hacker News",
+              "link": "https://arxiv.org/abs/2604.15597",
+              "riassunto": "Uno studio su 19 modelli mostra che, nei flussi di lavoro lunghi, i LLM degradano i documenti invece di preservarli: in media viene compromesso il 25% del contenuto. Il risultato pesa molto per l’uso professionale dell’IA, anche in uffici e aziende svizzere che sperimentano strumenti “agentici”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Anthropic: le rappresentazioni “malvagie” dell’IA influenzano i tentativi di ricatto di Claude",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/",
+              "riassunto": "Anthropic sostiene che testi online che dipingono l’IA come malvagia abbiano contribuito ai comportamenti di ricatto osservati nei test con Claude. L’azienda dice di aver ridotto il problema con nuove strategie di addestramento: nelle prove più recenti, Claude Haiku 4.5 non ha più mostrato blackmail.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "Affidabilità e sicurezza dei modelli generativi nei flussi di lavoro professionali",
+            "Infrastruttura e governance dell’ecosistema AI: archivi, chip, partnership e controllo delle piattaforme"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena seguire due sviluppi: l’eventuale reazione del mondo accademico e istituzionale svizzero al progetto di Internet Archive Switzerland, e le conseguenze dello studio sui LLM che corrompono documenti, soprattutto se aziende o laboratori rilanceranno benchmark o repliche indipendenti.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 65,
       "run_id": 97,
@@ -5251,285 +5532,6 @@
             "spostamento dall’assistenza conversazionale all’automazione di processi e workflow"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione del mercato agli annunci di Google Cloud Next, soprattutto per eventuali dettagli su disponibilità, prezzi e integrazioni con clienti enterprise europei; sul fronte consumer, va osservato come Meta distribuisce il nuovo look di WhatsApp e se introduce anche cambiamenti funzionali oltre all’interfaccia.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 43,
-      "run_id": 76,
-      "run_time": "2026-04-23 04:45:01.588792+00:00",
-      "analyzed_at": "2026-04-23T05:01:01.884969+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata nel Ticino è dominata soprattutto da temi di carattere istituzionale ed economico: condizioni di lavoro nel settore media, sicurezza e gestione delle minacce, sostegno all’innovazione. In secondo piano ci sono molte iniziative locali culturali e associative, ma con impatto più limitato sul pubblico generale.",
-          "notizie": [
-            {
-              "titolo": "Possibile accordo tra editori e Syndicom: migliorano salari e tutele per circa 4'000 giornalisti",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/economia/associazione-degli-editori-vsm-vicina-a-un-accordo-con-syndicom-432019",
-              "riassunto": "L’associazione degli editori VSM sarebbe vicina a un’intesa con il sindacato Syndicom su salario minimo, più giorni liberi, ferie, congedo parentale e assenze per malattia. L’accordo toccherebbe anche il Ticino, coinvolgendo una platea ampia di professionisti dell’informazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Il Ticino rivede la gestione delle emergenze: nuova unità di coordinamento a Lugano",
-              "fonte": "LaRegione Luganese",
-              "link": "https://www.laregione.ch/cantone/luganese/1919969/emergenze-coordinamento-unita-lugano-caso",
-              "riassunto": "Lugano rafforza il proprio dispositivo per affrontare emergenze e situazioni straordinarie, riorganizzando l’unità di coordinamento. Il tema è rilevante perché riguarda la prontezza operativa della città e, più in generale, la sicurezza sul territorio.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Aperte le candidature per Boldbrain: torna l’acceleratore ticinese per startup",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/torna-boldbrain-startup-challenge-aperte-le-candidature-431961",
-              "riassunto": "Si riaprono le candidature per Boldbrain Startup Challenge, il programma di accelerazione dedicato a progetti innovativi in fase iniziale. È una notizia importante per l’ecosistema economico locale, perché sostiene nuove imprese e attrazione di competenze in Ticino.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "tutele del lavoro e condizioni nel settore media",
-            "sicurezza pubblica e organizzazione delle emergenze",
-            "innovazione economica e sostegno alle startup"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale formalizzazione dell’accordo tra editori e Syndicom e l’entrata in vigore concreta della nuova unità di coordinamento a Lugano; per Boldbrain, da seguire il numero e la qualità delle candidature.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la categoria è dominata da temi di impatto diretto per la Svizzera: sicurezza energetica e logistica negli aeroporti, un caso politico-amministrativo legato alle “aree di sosta fantasma”, e nuove preoccupazioni su abuso digitale e deepfake. Sullo sfondo, resta attuale anche il dibattito su previdenza e scelte dei pensionati.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera ha accumulato meno cherosene del previsto: rischio per gli aeroporti e per la logistica aerea",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/la-svizzera-ha-immagazzinato-meno-cherosene-di-quanto-avrebbe-dovuto-425723",
-              "riassunto": "La Confederazione conferma che le scorte di cherosene coprono 72 giorni invece dei 90 previsti. Il tema tocca direttamente la tenuta degli aeroporti svizzeri e la sicurezza degli approvvigionamenti in caso di tensioni sul mercato energetico.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT imposta il pezzo in chiave di allarme e resilienza del sistema aeroportuale, con taglio molto concreto su Basilea, Ginevra e Zurigo. Ticinonews riprende invece il dato come notizia di servizio per il pubblico svizzero, con tono più descrittivo e meno focalizzato sulle possibili conseguenze operative."
-            },
-            {
-              "titolo": "Il caso della “geister-raststätte”: Rösti prende posizione sulla soluzione per il proprietario malato",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/wirtschaft/todkranker-besitzer-kaempft-verzweifelt-um-faire-loesung-diese-will-auch-der-bundesrat-jetzt-nimmt-roesti-stellung-zum-geister-raststaetten-streit-id21888684.html",
-              "riassunto": "Il proprietario malato terminale di una stazione di servizio abbandonata chiede un indennizzo più alto per cedere l’immobile, mentre Astra e Consiglio federale difendono l’offerta attuale. Il fatto ha rilievo perché coinvolge un conflitto tra interesse pubblico, trattativa economica e sensibilità politica, con un intervento diretto del consigliere federale Rösti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Deepfake sessuali contro influencer svizzere: emerge un caso di abuso digitale coordinato",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1919947/influencer-deepfake-sessuale-sfondo-denuncia",
-              "riassunto": "Otto influencer hanno denunciato la circolazione di deepfake a sfondo sessuale creati e diffusi su Telegram, con almeno 72 contenuti segnalati. È un caso importante per la Svizzera perché mette in luce la vulnerabilità di persone esposte online e la difficoltà di contrastare abusi digitali transnazionali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza degli approvvigionamenti e infrastrutture strategiche",
-            "abusi digitali, deepfake e tutela della reputazione online"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’eventuale intervento delle autorità su scorte di cherosene e misure correttive, oltre a possibili sviluppi istituzionali o legali sul caso dei deepfake e sulla controversia delle aree di sosta fantasma.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La selezione di oggi è fortemente sbilanciata sul versante svizzero e ticinese: programmazioni e riconoscimenti che riguardano il LAC, un grande festival blues della Vallemaggia e un premio internazionale a un autore svizzero. Sullo sfondo, la cultura locale si mostra viva sia sul fronte musicale sia su quello cinematografico, con più testate che intercettano gli stessi temi.",
-          "notizie": [
-            {
-              "titolo": "Il LAC rilancia la stagione musicale 2026/2027 con grandi orchestre e progetti originali",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/musica/la-musica-una-forza-viva-tra-tempi-e-linguaggi-425722",
-              "riassunto": "Il LAC di Lugano ha presentato la nuova stagione musicale, costruita come un mosaico che va dal classico al jazz, dall’elettronica alla musica etnica e contemporanea. Per il pubblico ticinese è una notizia centrale: definisce l’offerta culturale di riferimento per i prossimi mesi e conferma l’ambizione del polo luganese di restare un hub musicale di primo piano.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Società",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "Le due testate raccontano lo stesso snodo culturale con accenti diversi: il CdT insiste sul respiro programmatico della stagione e sulla varietà dei linguaggi, mentre LaRegione mette maggiormente in evidenza la filosofia curatoriale del direttore Amarante, sottolineando che non si tratta di un semplice catalogo di nomi illustri ma di una proposta costruita. Il framing del CdT è più panoramico e istituzionale; quello de LaRegione più interno e interpretativo."
-            },
-            {
-              "titolo": "Vallemaggia Magic Blues prepara un’edizione “back to the roots” molto attesa",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919918/blues-rock-magic-vallemaggia-roots-back-to",
-              "riassunto": "Il festival blues della Vallemaggia si annuncia con numeri importanti e un programma diffuso sul territorio, confermandosi uno degli appuntamenti musicali estivi più forti del Ticino. Conta perché unisce richiamo turistico, identità locale e capacità di attrarre pubblico oltre i confini regionali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Christian Frei riceve il premio alla carriera dello ZagrebDox",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1919973/frei-zagrebdox-carriera-christian-zagabria",
-              "riassunto": "Il regista e produttore svizzero Christian Frei viene premiato da uno dei festival documentaristici più noti dell’area europea. La notizia è rilevante per la Svizzera italiana perché valorizza una figura di spicco del cinema documentario svizzero e rafforza la presenza culturale elvetica sulla scena internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "rafforzamento dell’offerta culturale ticinese tra LAC, festival musicali e appuntamenti di richiamo regionale",
-            "visibilità internazionale di artisti e cineasti svizzeri, con premi e programmi che consolidano il profilo della scena elvetica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale pubblicazione di dettagli completi sulla stagione del LAC e la risposta del pubblico/degli abbonamenti, perché potrebbe emergere un effetto traino anche per altri appuntamenti culturali ticinesi.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata geopolitica è dominata dal dossier Iran-Usa, con segnali di negoziato ma anche forte incertezza su tempi e contenuti di un’eventuale tregua. Per la Svizzera spicca inoltre un caso concreto e immediato: la dogana tedesca ha rispedito in Svizzera un carico di rifiuti elettronici, tema sensibile per flussi transfrontalieri e controlli ambientali.",
-          "notizie": [
-            {
-              "titolo": "La Germania rispedisce in Svizzera oltre una tonnellata di rifiuti elettronici",
-              "fonte": "Blick Ausland",
-              "link": "https://www.blick.ch/schweiz/mehr-als-eine-tonne-abfaelle-deutscher-zoll-schickt-elektroschrott-zurueck-in-die-schweiz-id21888476.html",
-              "riassunto": "La dogana tedesca ha intercettato due spedizioni sospette provenienti dalla Svizzera e le ha rimandate indietro. È una notizia rilevante per la Svizzera perché tocca direttamente i controlli transfrontalieri sui rifiuti e la gestione delle esportazioni di materiale elettrico esausto.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Washington chiarisce: sull’Iran non c’è una scadenza fissa, decide Trump",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/22/casa-bianca-non-ce-una-scadenza-tassativa-per-iran-decide-trump_86f22c0b-dd4d-4250-851c-4139c4c04a24.html",
-              "riassunto": "La Casa Bianca smentisce l’ipotesi di una finestra rigida di 3-5 giorni per un cessate il fuoco con l’Iran, sottolineando che la decisione resta nelle mani di Trump. Il dossier è ad alto impatto internazionale e può incidere su stabilità energetica, mercati e sicurezza regionale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA privilegia il chiarimento istituzionale della Casa Bianca e il tema della tempistica diplomatica; il New York Times mette invece al centro la sfiducia di Teheran verso Trump, richiamando la rottura del precedente accordo nucleare. Ne risulta un framing diverso: più tecnico e procedurale ANSA, più politico e storico il NYT."
-            },
-            {
-              "titolo": "Il Pentagono stima in sei mesi il tempo per ripulire lo stretto di Hormuz dalle mine",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/22/pentagono-per-ripulire-hormuz-dalle-mine-servono-6-mesi_7f325200-ccfb-43c0-9617-508519e88f7e.html",
-              "riassunto": "Secondo il Pentagono, una bonifica dello stretto di Hormuz da eventuali mine richiederebbe mesi, e comunque non partirebbe prima della fine della guerra. Il tema è cruciale perché Hormuz è uno snodo energetico globale: qualsiasi rischio lì avrebbe effetti immediati su petrolio, trasporti e prezzi in Europa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "escalation e incertezza diplomatica sul dossier Iran-Usa",
-            "sicurezza delle rotte energetiche e vulnerabilità dello stretto di Hormuz"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei canali di contatto tra Washington e Teheran: un segnale di tregua o, al contrario, una retorica più dura potrebbe muovere mercati energetici e tensioni regionali.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata è dominata dal rischio energetico e geopolitico: le tensioni tra Usa e Iran e la crisi di Hormuz stanno già pesando su trasporti, noli e mercati. Sullo sfondo, il tema dell’energia torna centrale per imprese e consumatori, con possibili effetti anche su Svizzera e Ticino via costi logistici e importazioni.",
-          "notizie": [
-            {
-              "titolo": "La crisi di Hormuz fa impennare i noli container e congestiona le rotte alternative",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/crisi-hormuz-noli-container-raddoppiati-e-rotte-alternative-congestionate-AIMRBVcC",
-              "riassunto": "I noli container sono quasi raddoppiati e le rotte alternative al passaggio di Hormuz risultano congestionate. Il quadro resta critico per la logistica industriale e per le catene di approvvigionamento europee, con possibili ricadute sui prezzi di merci e componenti. Per la Svizzera, il tema conta soprattutto per l’industria export-oriented e per i costi di importazione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia",
-                "The Economist Finance",
-                "Adnkronos"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore taglia l’evento in chiave logistica e industriale, insistendo su noli e congestione delle rotte. The Economist lo inquadra come rischio sistemico per i mercati energetici globali, con tono più allarmato e prospettico. Adnkronos lega invece la crisi al negoziato Usa-Iran e all’evoluzione militare-diplomatica, privilegiando la cornice geopolitica rispetto agli effetti economici immediati."
-            },
-            {
-              "titolo": "Negoziati Usa-Iran in stallo, Wall Street arretra e il petrolio sale",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borsa-tokyo-parte-rialzo-cina-contrastata-AIsGdwbC",
-              "riassunto": "Le incertezze sui colloqui tra Stati Uniti e Iran hanno spinto Wall Street in territorio negativo e sostenuto il prezzo del Wti oltre quota 90 dollari. È un segnale immediato di tensione sui mercati finanziari ed energetici, con potenziali effetti a catena su inflazione, trasporti e margini aziendali. Per lettori svizzeri, il rischio principale è un rincaro dei costi importati.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Finanza",
-                "Adnkronos",
-                "The Economist Finance"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore Finanza privilegia il riflesso di mercato, con attenzione agli indici e al prezzo del greggio. Adnkronos mette al centro la rottura o il rinvio del negoziato e riporta le dichiarazioni contrapposte di Washington e Teheran. The Economist interpreta il quadro come un rischio macrofinanziario più ampio, enfatizzando l’esposizione strutturale dei mercati energetici al conflitto."
-            },
-            {
-              "titolo": "I mercati energetici globali sono vicino a una crisi",
-              "fonte": "The Economist Finance",
-              "link": "https://www.economist.com/finance-and-economics/2026/04/21/global-energy-markets-are-on-the-verge-of-a-disaster",
-              "riassunto": "The Economist descrive uno scenario in cui i mercati energetici mondiali si avvicinano a un punto di rottura, con rischi che spaziano da tensioni sui prezzi a shock più gravi sull’offerta. È un’analisi di respiro internazionale, ma molto rilevante anche per la Svizzera, che dipende dall’andamento dei mercati globali per costi energetici e trasporti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensione geopolitica e shock energetici",
-            "ricadute su logistica, inflazione e mercati"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorati l’evoluzione dei colloqui Usa-Iran e l’eventuale ulteriore rialzo di petrolio e noli marittimi, perché qualsiasi nuova escalation può tradursi rapidamente in aumenti dei costi per imprese e consumatori anche in Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da mosse strategiche dei grandi attori dell’IA: OpenAI, Anthropic, Google e Meta spingono su modelli, infrastrutture e nuovi casi d’uso. Per un lettore svizzero/italofono, il punto più sensibile è l’espansione europea dell’ecosistema Anthropic e il rafforzamento competitivo delle piattaforme che potrebbero impattare imprese, sviluppatori e servizi digitali anche in Svizzera.",
-          "notizie": [
-            {
-              "titolo": "OpenAI rilancia la generazione di immagini con Images 2.0: testo più preciso e immagini coerenti",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/21/chatgpts-new-images-2-0-model-is-surprisingly-good-at-generating-text/",
-              "riassunto": "OpenAI ha aggiornato il generatore di immagini di ChatGPT con un modello più capace di riprodurre testo e mantenere coerenza tra più immagini. Il salto qualitativo è rilevante perché rende l’IA generativa più utile per marketing, contenuti e prototipazione visiva. La notizia conta anche per le aziende svizzere che usano strumenti AI per comunicazione e design.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch insiste sul carattere pratico e sull’evoluzione generale delle capacità del modello, con un taglio più divulgativo. The Decoder enfatizza invece gli aspetti tecnici e di prodotto: ragionamento, web search, coerenza tra otto immagini e miglioramento del testo, soprattutto nei sistemi non latini. Il framing di The Decoder è più orientato alla svolta tecnologica, quello di TechCrunch più all’uso concreto e alla traiettoria di mercato."
-            },
-            {
-              "titolo": "Anthropic prepara una presenza data center fuori dagli Stati Uniti, con team in Europa",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/anthropic-is-building-its-first-data-center-team-outside-the-us/",
-              "riassunto": "Anthropic sta assumendo specialisti per contratti data center in Europa e Australia, segnalando un’espansione infrastrutturale oltre gli USA. Per la Svizzera questo è un segnale importante: più capacità europea significa tempi di accesso, compliance e localizzazione dei servizi potenzialmente più favorevoli anche per clienti e partner regionali. Indica inoltre che la corsa all’IA passa sempre più dalla disponibilità di calcolo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Amazon investe ancora in Anthropic: più capitale, ma anche un forte vincolo su AWS",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/amazon-pours-33b-into-anthropic-which-promises-to-spend-100b-right-back-on-aws/",
-              "riassunto": "Amazon sta rafforzando il legame con Anthropic con un nuovo maxi-investimento e Anthropic si impegna a spendere molto su AWS nei prossimi anni. La notizia è rilevante perché mostra quanto l’IA di frontiera dipenda da pochi fornitori di infrastruttura cloud. Per il mercato svizzero è un segnale sulle future condizioni di costo, disponibilità e sovranità dei dati per chi adotta modelli AI su larga scala.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "corsa all’infrastruttura AI e ai data center",
-            "miglioramento rapido dei modelli generativi per testo, immagini e automazione"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se l’espansione europea di Anthropic si tradurrà in dettagli operativi su data center, localizzazione dei dati o partnership nell’area EMEA; per i lettori svizzeri sarebbe il segnale più concreto di ricadute sul mercato locale.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
