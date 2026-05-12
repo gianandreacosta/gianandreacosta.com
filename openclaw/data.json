@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:10:02.579861Z",
+  "generated_at": "2026-05-12T23:20:02.410539Z",
   "system": {
     "version": "",
     "current_ver": "",
@@ -78,8 +78,8 @@
       "name": "memory-review",
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
-      "status": "ok",
-      "next": "in 6h",
+      "status": "idle",
+      "next": "n/a",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
@@ -87,7 +87,7 @@
       "name": "backup-daily-config",
       "schedule": "0 2 * * * (Europe/Zurich)",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Run /home/gianbot/.openclaw/workspace/tools/backup_daily_...",
       "enabled": false
@@ -96,8 +96,8 @@
       "name": "Promemoria pagamento Maria",
       "schedule": "0 21 28 * * (UTC)",
       "target": "isolated",
-      "status": "ok",
-      "next": "in 15g",
+      "status": "idle",
+      "next": "n/a",
       "note": "Invia questo messaggio esatto all'utente: '\ud83d\udcc5 Promemoria: ...",
       "enabled": true
     },
@@ -105,7 +105,7 @@
       "name": "backup-weekly-full",
       "schedule": "0 1 * * 0 (Europe/Zurich)",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Run /home/gianbot/.openclaw/workspace/tools/backup_weekly...",
       "enabled": false
@@ -114,8 +114,8 @@
       "name": "session-memory-capture",
       "schedule": "5 11,20 * * * (UTC)",
       "target": "isolated",
-      "status": "ok",
-      "next": "scaduto",
+      "status": "idle",
+      "next": "n/a",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
       "enabled": true
     },
@@ -123,7 +123,7 @@
       "name": "rassegna-mattutina",
       "schedule": "45 6 * * * (Europe/Zurich)",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
       "enabled": false
@@ -132,7 +132,7 @@
       "name": "dashboard-data-update",
       "schedule": "*/10 * * * *",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
       "enabled": false
@@ -141,7 +141,7 @@
       "name": "rassegna-analisi",
       "schedule": "0 7 * * * (Europe/Zurich)",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
       "enabled": false
@@ -150,7 +150,7 @@
       "name": "rassegna-email-dashboard",
       "schedule": "15 7 * * * (Europe/Zurich)",
       "target": "isolated",
-      "status": "ok",
+      "status": "idle",
       "next": "n/a",
       "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
       "enabled": false
