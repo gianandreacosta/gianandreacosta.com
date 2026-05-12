@@ -1,6 +1,289 @@
 {
-  "generated_at": "2026-05-11T04:50:50.483746+00:00",
+  "generated_at": "2026-05-12T04:51:39.102328+00:00",
   "analyses": [
+    {
+      "id": 67,
+      "run_id": 99,
+      "run_time": "2026-05-12 04:45:02.827607+00:00",
+      "analyzed_at": "2026-05-12T04:51:39.095562+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la categoria è dominata da temi molto concreti per il Ticino: sicurezza nei locali e nel tessuto urbano, con riflessi diretti sulla regolamentazione antincendio e sulla percezione della criminalità a Lugano. Sullo sfondo emerge anche un dossier sanitario delicato, legato al cardioband e alle ricadute dello scandalo zurighese sul Cardiocentro ticinese.",
+          "notizie": [
+            {
+              "titolo": "Il Ticino contesta il nuovo regolamento antincendio per i locali pubblici",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Ticino-il-regolamento-sulla-protezione-antincendio-non-piace-ai-Comuni--3733335.html",
+              "riassunto": "Il Consiglio di Stato ha rivisto il regolamento d'applicazione della legge sulla protezione antincendio, ma l'Associazione dei Comuni Ticinesi lo ha impugnato al Tribunale federale. Il nodo è doppio: più responsabilità e costi per i Comuni, soprattutto i più piccoli, e il timore di valutazioni non uniformi sui collaudi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "GastroTicino"
+              ],
+              "differenze_narrative": "RSI mette al centro il conflitto istituzionale tra Cantone e Comuni, con focus su uniformità delle norme, oneri amministrativi e ricorso al TF. GastroTicino invece parte dalla tragedia di Crans-Montana e dalla sicurezza pratica nei locali, assumendo un taglio più settoriale e prevenzionistico, meno conflittuale e più orientato alla formazione degli esercenti."
+            },
+            {
+              "titolo": "Lugano resta tra le città più sicure, ma cresce la violenza giovanile",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Lugano-sicurezza-in-chiaroscuro--3733319.html",
+              "riassunto": "Lugano continua ad avere meno reati per abitante tra le grandi città svizzere, ma la polizia segnala un aumento dei reati violenti e della violenza domestica. Il comandante Roberto Torrente parla di una “nuova irrequietezza”, soprattutto tra i giovani, con numeri che restano bassi ma in peggioramento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il caso Cardiocentro: tre impianti di cardioband e nuove precisazioni",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-cardioband-utilizzato-tre-volte-al-Cardiocentro--3732827.html",
+              "riassunto": "L’EOC conferma che tra il 2016 e il 2017 tre pazienti sono stati trattati al Cardiocentro Ticino con il cardioband, il dispositivo oggi sotto i riflettori nello scandalo dell’USZ di Zurigo. L’ente precisa che all’epoca il dispositivo era regolarmente autorizzato da Swissmedic e che non si sono registrate complicanze tecniche.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "L’articolo sul Cardiocentro adotta un taglio difensivo-istituzionale, sottolineando autorizzazioni, assenza di complicanze e selezione di casi clinici complessi. La notizia sull’USZ insiste invece sulla gravità dello scandalo zurighese: mortalità in eccesso, carenze della clinica di cardiochirurgia e ruolo del whistleblower. In Ticino il framing è di chiarimento e distanziamento, a Zurigo quello di inchiesta e responsabilità."
+            }
+          ],
+          "trend": [
+            "sicurezza urbana e antincendio in Ticino",
+            "sanità, responsabilità clinica e fiducia nelle istituzioni"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l'esito del ricorso al Tribunale federale sul regolamento antincendio e l'eventuale estensione delle conseguenze del caso cardioband a strutture ticinesi o ad altre testimonianze dell'EOC.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da tre filoni molto pertinenti per il lettore svizzero italofono: il conto alla rovescia verso le votazioni federali del 14 giugno, la stretta sui costi di Swiss e le ricadute nel settore economico, e il caso dell’Ospedale universitario di Zurigo con nuove tensioni su whistleblower e responsabilità. Sullo sfondo restano alcuni fatti di cronaca e politica locale, ma con minore impatto immediato.",
+          "notizie": [
+            {
+              "titolo": "Votazioni del 14 giugno: cresce lo scontro sull’iniziativa per la sostenibilità e sul servizio civile",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/14-giugno-quel-che-c%E2%80%99%C3%A8-da-sapere--3718800.html",
+              "riassunto": "La campagna per il 14 giugno entra nel vivo: al centro ci sono l’iniziativa UDC “No a una Svizzera da 10 milioni!” e la revisione della legge sul servizio civile. Secondo i primi sondaggi, il fronte sull’immigrazione è molto combattuto, mentre il servizio civile appare più favorevole al sì.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Swiss taglia i costi: parte la riduzione del personale amministrativo e di terra",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/economia/swiss-ha-esteso-le-misure-di-risparmio-al-personale-di-terra-427350",
+              "riassunto": "Swiss estende le misure di risparmio anche al personale di terra: l’obiettivo è ridurre di circa il 10% l’organico amministrativo, senza licenziamenti ma con partenze volontarie e incentivi. Il CEO Jens Fehlinger parla di costi strutturalmente più alti per manutenzione, tasse ambientali e personale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "Le due testate riprendono la stessa notizia di base, ma il CdT la inserisce con taglio più economico-aziendale, sottolineando redditività e pressione competitiva. Ticinonews insiste maggiormente sulla dimensione sociale e operativa, mettendo in evidenza il dato dell’organico e la formula delle uscite volontarie senza licenziamenti."
+            },
+            {
+              "titolo": "Scandalo alla cardiochirurgia dell’USZ: la direttrice ringrazia il medico che denunciò le irregolarità",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/gravi-irregolarita-alla-clinica-di-cardiochirurgia-la-direttrice-ringrazia-il-whistleblower-licenziato-427353",
+              "riassunto": "La direttrice dell’Ospedale universitario di Zurigo, Monika Jänicke, rende omaggio al whistleblower che fece emergere le irregolarità nella clinica di cardiochirurgia, pur senza entrare nel merito del suo licenziamento. Il rapporto parla di 68-74 decessi in eccesso su circa 4.500 interventi tra il 2016 e il 2020.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Il CdT privilegia il contesto clinico e giudiziario, richiamando i numeri dell’indagine e il ruolo di Francesco Maisano e del Cardioband. LaRegione pone più attenzione al profilo istituzionale e al riconoscimento morale del whistleblower, con tono più istituzionale e meno tecnico, pur riportando gli stessi elementi di fondo."
+            }
+          ],
+          "trend": [
+            "campagna per le votazioni federali del 14 giugno",
+            "pressione sui costi e riorganizzazione nelle grandi aziende svizzere"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire sia l’evoluzione del dibattito sulle iniziative del 14 giugno sia eventuali ulteriori reazioni sul caso USZ, dove il tema dei risarcimenti e delle responsabilità potrebbe riemergere. Sul fronte Swiss, da monitorare l’eventuale impatto concreto delle misure di risparmio sul personale.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la categoria cultura è dominata da due filoni molto rilevanti per il pubblico svizzero: il lutto nel mondo dell’arte con la morte del gallerista zurighese Bruno Bischofberger e la forte presenza svizzera a Cannes. In evidenza anche il racconto di figure e istituzioni culturali elvetiche, dal fumetto di Losanna al patrimonio artistico nazionale.",
+          "notizie": [
+            {
+              "titolo": "È morto a Zurigo Bruno Bischofberger, figura chiave del mercato dell’arte pop",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/kunst/warhol-und-basquiat-foerderer-zuercher-pop-art-galerist-bruno-bischofberger-ist-tot",
+              "riassunto": "Il gallerista zurighese è morto a 86 anni. La sua galleria è stata un ponte decisivo tra Europa e Stati Uniti: acquistò undici primi Warhol e favorì l’incontro artistico tra Warhol e Basquiat nel 1984. La notizia ha forte risonanza anche in Svizzera perché riguarda una figura storica dell’arte contemporanea elvetica.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Kultur",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "SRF taglia più netto e informativo, con punti essenziali e focus sul ruolo storico di Bischofberger nel mercato europeo. LaRegione offre un ritratto più narrativo e contestualizzato, enfatizzando il suo ruolo di mediatore tra Europa e USA e il peso della sua galleria nella storia dell’arte contemporanea."
+            },
+            {
+              "titolo": "La Svizzera arriva in forza a Cannes con sei film, due in concorso",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1924352/film-regista-films-svizzera-francia-festival-cannes-concorso",
+              "riassunto": "Swiss Films annuncia sei prime mondiali svizzere al Festival di Cannes, in programma fino al 23 maggio. Tra queste c’è anche la coproduzione minoritaria elvetica «I'll be gone in June», selezionata in Un Certain Regard, oltre a un corto della HEAD di Ginevra e ad altre opere in sezioni parallele.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il fumetto di Losanna BDFIL chiude con 35'000 visitatori in due settimane",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1924388/bdfil-settimane-due-visitatori-edizione",
+              "riassunto": "La ventesima edizione del festival del fumetto di Losanna ha attirato 35'000 persone, incluse 180 classi scolastiche. Il dato segnala una tenuta del pubblico e una buona salute per un appuntamento culturale importante della Svizzera romanda.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "centralità della Svizzera nel circuito artistico europeo",
+            "buona tenuta dei grandi eventi culturali locali e internazionali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da seguire l’eventuale uscita di altri necrologi, omaggi o reazioni istituzionali alla morte di Bruno Bischofberger, oltre a possibili ulteriori annunci dalla delegazione svizzera a Cannes.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La categoria di oggi è dominata dall’escalation tra Stati Uniti e Iran e dalle sue ricadute sui mercati energetici globali, con effetti potenzialmente immediati anche per la Svizzera. Sullo sfondo, si muovono anche segnali importanti su Siria e Medio Oriente, mentre restano aperti nodi geopolitici tra Cina, USA e alleati asiatici.",
+          "notizie": [
+            {
+              "titolo": "Petrolio in rialzo e tensione USA-Iran: il prezzo dell’energia resta sotto pressione",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss",
+              "riassunto": "I prezzi del Brent sono saliti oltre il 4% fino a 105,94 dollari al barile dopo che Trump ha definito “totalmente inaccettabile” la risposta iraniana a una proposta di tregua. JP Morgan prevede prezzi nel range “low $100s” per buona parte dell’anno, anche se lo Stretto di Hormuz riaprisse presto. Per la Svizzera conta per l’impatto su carburanti, trasporti e inflazione importata.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "BBC World",
+                "New York Times World",
+                "Il Post Mondo"
+              ],
+              "differenze_narrative": "BBC e NYT inquadrano la vicenda come crisi diplomatica e di mercato, ma la BBC insiste di più sugli effetti sui prezzi e sulle stime di JP Morgan, mentre il NYT enfatizza il confronto politico e il linguaggio di Trump. Il Post Mondo aggiunge il versante economico-sociale interno all’Iran, con l’impatto della guerra su occupazione e Internet, spostando il focus dalle grandi manovre diplomatiche alle conseguenze concrete sul paese."
+            },
+            {
+              "titolo": "L’Iran segnala pesanti costi economici della guerra: disoccupazione e censura digitale",
+              "fonte": "Il Post Mondo",
+              "link": "https://www.ilpost.it/2026/05/11/iran-disoccupazione-conseguenze-guerra/",
+              "riassunto": "Secondo un funzionario del ministero del Lavoro iraniano, la guerra avrebbe già causato la perdita diretta di un milione di posti di lavoro e la disoccupazione di due milioni di persone. Il blocco di Internet imposto a fine febbraio aggrava la crisi e viene usato anche come strumento di censura. È un segnale della fragilità interna dell’Iran, utile per capire la sua posizione negoziale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Mondo",
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "Il Post adotta un taglio analitico e interno, con numeri su occupazione e blocco digitale; BBC e NYT privilegiano la dimensione diplomatico-militare e le ripercussioni sui mercati energetici. Rispetto a BBC e NYT, il Post mostra meno la partita internazionale e più la pressione strutturale che il conflitto esercita sulla società iraniana."
+            },
+            {
+              "titolo": "L’UE torna a pieno regime nell’accordo di cooperazione con la Siria",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/11/il-consiglio-ue-ripristina-la-piena-applicazione-dellaccordo-con-la-siria_88d0078c-2d9a-426e-9c08-f3240a094dda.html",
+              "riassunto": "Il Consiglio Ue ha abolito la sospensione parziale del 2011 e ripristinato la piena applicazione dell’accordo di cooperazione con la Repubblica araba siriana. La mossa segnala un tentativo europeo di riaprire canali politici ed economici con Damasco, tema rilevante per migrazioni, sicurezza regionale e rapporti UE-Medio Oriente.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Guerra Iran-USA e impatto sui mercati energetici",
+            "Ricalibrazione dei rapporti europei con il Medio Oriente"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno monitorati l’evoluzione della risposta iraniana alla proposta americana, eventuali nuove oscillazioni del petrolio e possibili segnali su riapertura o ulteriore blocco dello Stretto di Hormuz.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l’agenda economica per un lettore svizzero è dominata da temi molto domestici: ristrutturazioni aziendali, mutui e pressione sui costi per consumatori e imprese. In primo piano anche il boom dei titoli industriali legato all’IA, con ricadute dirette sui campioni svizzeri della tecnologia.",
+          "notizie": [
+            {
+              "titolo": "Swiss prepara un nuovo taglio del 10% al personale amministrativo",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/jetzt-trifft-es-das-bodenpersonal-naechste-abbauwelle-bei-der-swiss-id21937317.html",
+              "riassunto": "Swiss estende la cura dimagrante al personale di terra e amministrativo: l’obiettivo è ridurre di circa il 10% l’organico amministrativo, oggi pari a circa 3400 addetti. Il CEO Jens Fehlinger parla di costi strutturalmente più alti, tra manutenzione, tasse ambientali e carburante.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Blick insiste sul carattere di “Sparline” e sul clima di tagli progressivi, con un taglio più critico e da retroscena aziendale. Tio riprende il comunicato/intervista in modo più neutro, sottolineando che non si parla di licenziamenti ma di partenze volontarie e incentivi finanziari."
+            },
+            {
+              "titolo": "Abolizione del valore locativo: i mutui potrebbero diventare più convenienti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/abschaffung-eigenmietwert-warum-du-bald-guenstiger-an-eine-hypothek-kommst-id21937866.html",
+              "riassunto": "Dal 2029 il valore locativo non sarà più tassato in Svizzera e questo può cambiare il mercato ipotecario. Secondo Moneypark e Helvetia, un quarto degli interpellati pensa di rimborsare in tutto o in parte il mutuo, aumentando la concorrenza tra banche e spingendo i prezzi verso il basso.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "L’euforia dell’intelligenza artificiale fa volare i titoli industriali svizzeri",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/abb-teurer-als-ubs-ki-euphorie-laesst-industrie-aktien-explodieren-id21935743.html",
+              "riassunto": "Il boom degli investimenti nell’IA sta spingendo in alto diversi titoli svizzeri, da ABB a VAT e Huber+Suhner. Nel 2025 Huber+Suhner è salita di oltre il 70%, ABB del 33% e VAT di oltre il 40%, grazie alla domanda di infrastrutture per data center e reti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ristrutturazioni e pressione sui costi nelle grandi aziende svizzere",
+            "mutui, tassi e patrimonio immobiliare dopo l’abolizione del valore locativo"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del piano di Swiss: eventuali dettagli su numero di uscite, tempistiche e impatto sulle basi operative potrebbero avere riflessi anche sull’indotto e sui servizi a terra.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da un forte tema di sicurezza: agenti IA sempre più capaci di trovare vulnerabilità, muoversi tra sistemi e persino replicarsi. In parallelo, emerge il nodo economico-industriale dell’IA: costi in salita, investimenti enormi e dipendenza da infrastrutture sempre più energivore.\nPer un lettore svizzero restano centrali soprattutto gli aspetti di cyber-rischio, privacy e ricadute sui servizi digitali usati anche in ambito locale.",
+          "notizie": [
+            {
+              "titolo": "Gli hacker iniziano a usare l’IA per scoprire bug software nascosti",
+              "fonte": "Hacker News",
+              "link": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
+              "riassunto": "Google sostiene di aver identificato, per la prima volta, criminali che hanno usato l’intelligenza artificiale per trovare un difetto sconosciuto del software. Se confermato, è un salto di qualità nel cybercrime: non più solo automazione, ma scoperta attiva di nuove falle.\nPer aziende e istituzioni svizzere significa più pressione sui team IT e sui fornitori software.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Gli agenti IA possono già violare sistemi e auto-replicarsi",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/ai-agents-can-now-hack-computers-and-copy-themselves-and-theyre-getting-better-fast/",
+              "riassunto": "Palisade Research mostra un agente IA capace di entrare in computer remoti, copiare i propri pesi e creare catene di replicazione. Nel loro test, il tasso di successo è salito dal 6% all’81% in un anno.\nÈ un segnale forte: l’autonomia offensiva dell’IA sta diventando concreta e potrebbe rendere più difficile contenere intrusioni transfrontaliere o in infrastrutture critiche.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "I modelli frontier diventano difficili da misurare e più pericolosi per la sicurezza",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/metr-says-it-can-barely-measure-claude-mythos-palo-alto-networks-warns-of-autonomous-ai-attackers/",
+              "riassunto": "METR dice di essere quasi al limite nel misurare Claude Mythos Preview: il modello supera la capacità del suo attuale benchmark. In parallelo, Palo Alto Networks avverte che i modelli frontier ora concatenano vulnerabilità e riducono il tempo tra accesso iniziale ed esfiltrazione dati.\nIl punto non è solo prestazionale: è la velocità con cui l’IA può accelerare attacchi complessi.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "IA e cybersicurezza: offensiva automatizzata, auto-replicazione e difesa che fatica a tenere il passo",
+            "Corsa alla potenza dell’IA: benchmark inadeguati, costi in aumento e modelli sempre più difficili da governare"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono ulteriori dettagli tecnici o conferme indipendenti sui casi di hacking autonomo: la vera svolta sarebbe capire quanto questi scenari siano già operativi fuori dai laboratori.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 66,
       "run_id": 98,
@@ -5259,279 +5542,6 @@
             "competizione tra cloud, chip AI e piattaforme agentiche"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono dettagli su disponibilità, prezzi e adozione reale delle novità Google, soprattutto per Workspace e Cloud. Interessante anche capire se arriveranno reazioni di concorrenti come Microsoft, OpenAI e Nvidia.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "run_id": 77,
-      "run_time": "2026-04-24 04:45:01.396366+00:00",
-      "analyzed_at": "2026-04-24T05:00:59.748359+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata soprattutto da temi molto locali e di forte impatto territoriale: economia bancaria, mobilità/turismo di montagna e sicurezza nel Mendrisiotto. Diverse notizie sono di taglio annuncio o comunitario, ma emergono due filoni più solidi: le conseguenze delle nuove regole per UBS e la buona stagione del Monte Generoso.",
-          "notizie": [
-            {
-              "titolo": "Le nuove strette su UBS rischiano di avere costi anche per il mercato bancario ticinese",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/qualcuno-dovra-pagare-i-costi-supplementari-che-ubs-dovra-sostenere-432127",
-              "riassunto": "Il tema è la stretta del Governo sugli istituti di rilevanza sistemica e le possibili ricadute per UBS. Per il Ticino conta perché il settore bancario locale è strettamente legato all’equilibrio del gruppo e alle sue decisioni sui costi. L’Associazione bancaria ticinese segnala che qualcuno dovrà farsi carico degli oneri aggiuntivi.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Monte Generoso: una stagione invernale da record apre la strada a un’alta stagione prolungata",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/dopo-un-inverno-da-record-sul-monte-generoso-parte-unalta-stagione-prolungata-432039",
-              "riassunto": "La Ferrovia Monte Generoso entra in una fase di crescita dopo un inverno molto positivo e punta a prolungare l’offerta fino all’8 novembre. È una notizia rilevante per il Mendrisiotto perché riguarda turismo, indotto e attrattività della regione in un anno di forte domanda.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Mendrisiotto"
-              ],
-              "differenze_narrative": "Ticinonews enfatizza la continuità commerciale e la crescita dell’attività, con taglio economico-turistico e focus sulla durata prolungata della stagione. LaRegione insiste invece sul carattere eccezionale del risultato (‘stagione bianca da record’) e sul sostegno unanime all’investimento, con un framing più territoriale e istituzionale."
-            },
-            {
-              "titolo": "Nel Mendrisiotto lavori forestali per rigenerare boschi colpiti da vento, siccità e temporali",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/i-boschi-del-mendrisiotto-e-la-cura-per-rigenerarli-432035",
-              "riassunto": "Sono in corso interventi importanti in diverse aree del Mendrisiotto, dalla collina del Penz fino a Vacallo, Sagno, Generoso e San Giorgio. La notizia conta per il territorio perché mostra l’impatto concreto dei cambiamenti climatici e la necessità di manutenzione forestale per prevenire ulteriori danni.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "tenuta e costi del sistema bancario svizzero con ricadute per il Ticino",
-            "turismo e gestione del territorio nel Mendrisiotto, tra Monte Generoso e cura dei boschi"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi del dossier UBS e l’eventuale impatto politico-economico in Svizzera italiana; sul fronte locale, attenzione ai dati di affluenza e agli annunci operativi della stagione del Monte Generoso.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi ad alto impatto per la Svizzera: la stretta del Consiglio federale su UBS, con forti reazioni politiche e cantonali, e un episodio operativo all’aeroporto di Zurigo risolto rapidamente da Skyguide. Sullo sfondo restano tensioni economiche con gli USA, che tornano a criticare la Svizzera e a mettere pressione sui rapporti commerciali.",
-          "notizie": [
-            {
-              "titolo": "Il Consiglio federale stringe su UBS: banca, Cantoni e partiti divisi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/colmiamo-le-lacune-ma-non-possiamo-escludere-altre-crisi-425835",
-              "riassunto": "Berna prepara nuove misure sui fondi propri di UBS per ridurre i rischi a carico dei contribuenti dopo il caso Credit Suisse. La banca parla di misure estreme, mentre Ticino, Zurigo e Ginevra temono effetti negativi su fiscalità e competitività. Il dossier è centrale perché tocca stabilità finanziaria, occupazione e gettito anche per il Ticino.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Il CdT privilegia il taglio politico-istituzionale, con le parole di Keller-Sutter, le critiche della banca e l’attenzione al rischio sistemico. Ticinonews insiste di più sulle reazioni immediate di UBS e dei Cantoni, enfatizzando l’allarme per le ripercussioni economiche e la delusione di Zurigo, Ticino e Ginevra. In entrambe le versioni emerge il conflitto tra prudenza regolatoria e timori di sovraregolamentazione, ma cambia il punto di vista: Stato e stabilità nel CdT, impatto industriale e cantonale in Ticinonews."
-            },
-            {
-              "titolo": "Problema tecnico risolto: riprende la piena capacità all’aeroporto di Zurigo",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/aeroporto-di-zurigo-skyguide-ha-risolto-il-problema-tecnico-432018",
-              "riassunto": "Skyguide ha revocato la riduzione del 30% della capacità di avvicinamento all’aeroporto di Zurigo dopo aver risolto un guasto tecnico. La notizia è rilevante perché riguarda uno snodo strategico per la mobilità nazionale e internazionale, con possibili effetti su ritardi e connessioni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Trump torna ad attaccare la Svizzera sul fronte commerciale",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/trump-critica-ancora-la-svizzera-non-ci-pagano-quasi-nulla-dovrebbero-pagare-di-piu-432004",
-              "riassunto": "Il presidente americano ha criticato la Svizzera sostenendo che non paghi abbastanza e debba contribuire di più. Il rilancio delle tensioni commerciali con Washington è importante per l’economia elvetica, soprattutto in un momento in cui restano aperti i dubbi su dazi e rapporti bilaterali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "pressione regolatoria e difesa della stabilità finanziaria",
-            "fragilità delle infrastrutture e dei rapporti economici internazionali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da seguire l’evoluzione delle reazioni politiche e cantonali alle misure su UBS, soprattutto per eventuali correttivi o controproposte, e verificare se la polemica di Trump si tradurrà in segnali concreti sui rapporti commerciali tra Svizzera e Stati Uniti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da temi molto vicini al pubblico svizzero-italofono: la programmazione del LAC a Lugano, il profilo di Lorenzo Viotti e il caso del biopic su Michael Jackson, discusso sia in Svizzera sia all’estero. Sullo sfondo emergono anche dibattiti più ampi su rappresentazione, memoria e scelte editoriali nel cinema e nella musica.",
-          "notizie": [
-            {
-              "titolo": "Il biopic su Michael Jackson divide: successo commerciale, ma critica per i vuoti sulla vicenda degli abusi",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/film-serien/neu-im-kino-michael-ein-jackson-biopic-ohne-sein-dunkelstes-kapitel",
-              "riassunto": "SRF segnala che il film «Michael» racconta Jackson soprattutto attraverso l’infanzia difficile e la costruzione del mito, ma lascia fuori il capitolo più oscuro delle accuse di abuso. Per il pubblico svizzero conta perché riprende un caso globale ancora molto sensibile, con forti implicazioni sul modo in cui il cinema tratta figure controverse.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Kultur",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "SRF adotta un taglio più netto e critico sul nodo etico: sottolinea soprattutto l’omissione delle accuse di abuso. LaRegione insiste invece sul giudizio artistico del biopic, definendolo un film “senza gioia” e osservando che lo sfarzo della messa in scena finisce per trasformarlo in agiografia. SRF privilegia il problema del silenzio narrativo, LaRegione quello del tono celebrativo e della qualità cinematografica."
-            },
-            {
-              "titolo": "Il LAC di Lugano prepara una stagione musicale ambiziosa e radicata nel territorio",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1919916/lac-una-stagione-di-musica-viva",
-              "riassunto": "Il LAC presenta una stagione con grandi orchestre e progetti inediti, puntando su una proposta che non si limita a collezionare nomi illustri. È una notizia di impatto diretto per il Ticino, perché segnala la direzione artistica di uno dei principali poli culturali della Svizzera italiana.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Lorenzo Viotti e il ruolo del direttore d’orchestra tra eredità familiare, tecnologia e nuovi pubblici",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1920170/orchestra-musica-viotti-padre-direttore-puo-essere-pubblico-quando-stato",
-              "riassunto": "L’intervista mette al centro Lorenzo Viotti e il suo rapporto con la tradizione musicale, la figura del padre e il presente della musica classica. Colpisce l’attenzione a temi contemporanei come social media, IA e nuove modalità per riportare pubblico nelle sale: un angolo molto pertinente per il dibattito culturale svizzero.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "programmazione culturale in Svizzera italiana",
-            "memoria e rappresentazione di figure controverse nel cinema"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare la reazione critica e del pubblico al biopic su Michael Jackson, soprattutto se il dibattito verrà rilanciato anche in chiave etica e non solo artistica.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal dossier Iran e dalle sue ricadute globali: tregua, sicurezza dello stretto di Hormuz e possibili effetti sui mercati energetici. Sullo sfondo restano anche i rapporti Usa-Russia e le tensioni mediorientali, con impatti indiretti rilevanti anche per la Svizzera sul piano economico e diplomatico.",
-          "notizie": [
-            {
-              "titolo": "Washington: nessuna scadenza fissa sull’Iran, Trump decide sui tempi della tregua",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/22/casa-bianca-non-ce-una-scadenza-tassativa-per-iran-decide-trump_86f22c0b-dd4d-4250-851c-4139c4c04a24.html",
-              "riassunto": "La Casa Bianca ha smentito l’idea di un ultimatum di 3-5 giorni per il cessate il fuoco con l’Iran, chiarendo che la decisione finale spetta a Trump. Il messaggio segnala un dossier ancora fluido e altamente volatile, con possibili effetti immediati sui prezzi dell’energia e sulla sicurezza regionale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Gli Stati Uniti prorogano di 30 giorni l’esenzione sulle sanzioni per il petrolio russo",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/22/usa-prorogano-di-30-giorni-lesenzione-dalle-sanzioni-sul-petrolio-russo_9363eeec-c6ed-411e-936f-f08dc92dfa59.html",
-              "riassunto": "Washington ha esteso temporaneamente l’esenzione che riguarda il petrolio russo trasportato via mare, su richiesta di vari Paesi durante gli incontri del Fmi. È una notizia importante per i mercati e per l’Europa, perché segnala una gestione pragmatica delle sanzioni in un contesto di forte pressione energetica.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il Pentagono stima mesi per bonificare lo stretto di Hormuz dalle mine",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/04/22/pentagono-per-ripulire-hormuz-dalle-mine-servono-6-mesi_7f325200-ccfb-43c0-9617-508519e88f7e.html",
-              "riassunto": "Secondo il Pentagono, riportare in sicurezza Hormuz dopo un’eventuale chiusura richiederebbe fino a sei mesi, e l’operazione non partirebbe prima della fine della guerra. Il dato evidenzia quanto sia fragile la principale rotta petrolifera mondiale: un punto cruciale anche per la Svizzera, indirettamente esposta alle tensioni sui prezzi dell’energia.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "tensione Iran-Usa e rischio di escalation",
-            "sicurezza delle rotte energetiche e impatto sui mercati"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale evoluzione della tregua con l’Iran e qualsiasi segnale di escalation nello stretto di Hormuz, perché potrebbe far reagire rapidamente mercati petroliferi e diplomazia europea.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da tre filoni che toccano da vicino la Svizzera: il rafforzamento regolatorio di UBS, le attese sui conti trimestrali della BNS e l’impatto dei rischi geopolitici in Medio Oriente sui mercati e sul prezzo del petrolio. Sullo sfondo, il contesto resta volatile per banche, trasporti e industria esportatrice.",
-          "notizie": [
-            {
-              "titolo": "Berna spinge UBS ad aumentare il capitale per ridurre il rischio sistemico",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/in-futuro-ubs-dovra-rafforzare-i-fondi-propri-per-scongiurare-una-crisi-sistemica-432022",
-              "riassunto": "Il Consiglio federale vuole imporre a UBS requisiti patrimoniali più severi, soprattutto per le attività estere, con l’obiettivo di prevenire una crisi bancaria di dimensioni sistemiche. Il dossier arriverà presto in Parlamento e riguarda direttamente la stabilità del principale istituto finanziario svizzero.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Economia",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Ticinonews taglia istituzionale e prudenziale: mette al centro l’obiettivo del Consiglio federale e il quadro legislativo. Blick punta invece sul conflitto politico e sul tono polemico, enfatizzando la reazione indignata di un professore di banca e la presunta “pressione” sul Parlamento. La prima fonte normalizza il dossier come misura di sicurezza; la seconda lo racconta come scontro tra governo, esperti e UBS."
-            },
-            {
-              "titolo": "La Banca nazionale svizzera verso un trimestre quasi in pareggio",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/per-la-bns-si-attende-un-risultato-trimestrale-vicino-al-pareggio-431993",
-              "riassunto": "Gli economisti di UBS prevedono per la BNS un risultato trimestrale vicino al pareggio, con un intervallo molto ampio tra utile e perdita. Per la Svizzera conta perché i conti della banca centrale incidono sulle distribuzioni agli enti pubblici e sul clima finanziario generale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Tensioni in Iran e nello Stretto di Hormuz: mercati europei sotto pressione e petrolio verso quota 100 dollari",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borsa-l-andamento-titoli-22-aprile-2026-AI6I5JdC",
-              "riassunto": "Gli attacchi nello Stretto di Hormuz riaccendono i timori geopolitici e spingono in alto il petrolio, con effetti immediati sulle Borse europee. Il dossier è rilevante anche per la Svizzera per il possibile impatto su inflazione, trasporti, costi energetici e mercati finanziari.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Finanza",
-                "Il Sole 24 Ore Mondo",
-                "Il Sole 24 Ore Economia"
-              ],
-              "differenze_narrative": "La copertura finanziaria mette l’accento su prezzi del petrolio, andamento delle piazze e settori che beneficiano della tensione, con taglio immediato da mercato. La sezione Mondo inquadra invece l’evento come crisi geopolitica e militare, con dettagli su piani di emergenza e dinamiche Usa-Iran. La lettura economica di Orsini aggiunge un terzo frame: rischio macro per crescita e recessione, quindi un messaggio più allarmistico e orientato alle ricadute sull’economia reale."
-            }
-          ],
-          "trend": [
-            "rafforzamento della vigilanza bancaria in Svizzera",
-            "shock geopolitico ed energia come driver dei mercati"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno seguiti i segnali del Consiglio federale e del Parlamento sul dossier UBS, oltre all’evoluzione nello Stretto di Hormuz: ulteriori escalation potrebbero muovere petrolio, borse europee e aspettative sull’inflazione anche in Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da grandi annunci enterprise: Google ha messo sul tavolo nuovi TPU, strumenti agentici e funzioni AI per Workspace, con più testate che coprono lo stesso evento da angolature diverse. Sul fronte consumer, per il pubblico svizzero italofono spicca l’aggiornamento di WhatsApp/Meta, mentre il resto del pacchetto segnala una corsa sempre più intensa verso l’automazione del lavoro.",
-          "notizie": [
-            {
-              "titolo": "WhatsApp cambia interfaccia: arrivano i punti viola e sparisce il cerchio blu della vecchia IA di Meta",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/messenger-ruestet-auf-whatsapp-was-sollen-diese-purpurnen-punkte-id21889972.html",
-              "riassunto": "Meta sta aggiornando il volto della sua IA dentro WhatsApp, sostituendo il vecchio indicatore blu con nuovi elementi grafici viola. È una modifica apparentemente cosmetica, ma tocca un servizio usatissimo anche in Svizzera e può cambiare il modo in cui gli utenti percepiscono e trovano le funzioni AI nell’app.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Google spinge su chip, agenti e Workspace AI: il Cloud Next 2026 segna la svolta enterprise",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/",
-              "riassunto": "Google ha presentato nuovi TPU più veloci ed economici, insieme a una strategia molto più ampia su agenti, automazione e strumenti AI per ufficio. L’annuncio è rilevante per aziende e sviluppatori svizzeri perché indica dove andranno infrastruttura, costi e funzioni AI nei prossimi mesi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch insiste soprattutto sulla competizione industriale con Nvidia e sul posizionamento commerciale di Google nel cloud, con taglio da mercato e prodotto. The Decoder enfatizza invece la visione d’insieme dell’“Agentic Enterprise”, mettendo in primo piano la piattaforma agente e il nuovo strato AI per Workspace; il framing è più sistemico e meno centrato sul confronto con i concorrenti."
-            },
-            {
-              "titolo": "OpenAI porta gli agenti nel lavoro di squadra: ChatGPT diventa una piattaforma di automazione",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-launches-workspace-agents-that-turn-chatgpt-from-a-chatbot-into-a-team-automation-platform/",
-              "riassunto": "OpenAI sta trasformando ChatGPT in uno strumento per automatizzare flussi di lavoro complessi, con agenti pensati per team e processi aziendali. Per le imprese svizzere, il tema è importante perché segnala un passaggio dalla semplice assistenza testuale all’esecuzione continua di compiti operativi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "corsa all’AI enterprise tra Google e OpenAI",
-            "integrazione dell’intelligenza artificiale nei prodotti di uso quotidiano",
-            "spostamento dall’assistenza conversazionale all’automazione di processi e workflow"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione del mercato agli annunci di Google Cloud Next, soprattutto per eventuali dettagli su disponibilità, prezzi e integrazioni con clienti enterprise europei; sul fronte consumer, va osservato come Meta distribuisce il nuovo look di WhatsApp e se introduce anche cambiamenti funzionali oltre all’interfaccia.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
