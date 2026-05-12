@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:00:02.933714Z",
+  "generated_at": "2026-05-12T23:10:02.579861Z",
   "system": {
     "version": "",
     "current_ver": "",
@@ -79,7 +79,7 @@
       "schedule": "0 6 * * * (UTC)",
       "target": "isolated",
       "status": "ok",
-      "next": "in 7h",
+      "next": "in 6h",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
       "enabled": true
     },
