@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T23:50:05.393981Z",
+  "generated_at": "2026-05-13T00:10:07.124807Z",
   "system": {
     "version": "",
     "current_ver": "",
@@ -13,11 +13,10 @@
     "token_present": true
   },
   "models": {
-    "primary": "openrouter/openai/gpt-5.4-mini",
+    "primary": "openrouter/anthropic/claude-haiku-4-5",
     "fallbacks": [
-      "openai-codex/gpt-5.4-mini",
-      "ollama/qwen3.5:cloud",
-      "openrouter/openai/gpt-oss-120b:free"
+      "openrouter/openai/gpt-oss-120b:free",
+      "openrouter/google/gemini-2.5-flash"
     ]
   },
   "subagents": [
