@@ -635,7 +635,5 @@
       "openrouter/openai/gpt-oss-120b:free",
       "openrouter/google/gemini-2.5-flash"
     ]
-  },
-  "_frozen_note": "Snapshot ultimo update prima della migrazione a WSL Win11 (2026-05-13). VPS silenziata in Fase 8. Dashboard live in /openclaw-pc/.",
-  "_frozen_at": "2026-05-14"
+  }
 }
