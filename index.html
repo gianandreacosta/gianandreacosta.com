@@ -102,6 +102,10 @@
     .card--monitor .card-title { color: #58a6ff; }
     .card--monitor .card-desc { color: #8b949e; }
     .card--monitor .card-arrow { color: #58a6ff; }
+    .card--monitor-pc { background: linear-gradient(135deg, #14532d, #15803d); border: 1px solid #16a34a; }
+    .card--monitor-pc .card-title { color: #4ade80; }
+    .card--monitor-pc .card-desc { color: #86efac; }
+    .card--monitor-pc .card-arrow { color: #4ade80; }
     .card--models { background: linear-gradient(135deg, #1e1b4b, #312e81); border: 1px solid #4338ca; }
     .card--pizza { background: linear-gradient(135deg, #92400e, #dc2626); }
     .card--admin { background: linear-gradient(135deg, #92400e, #f59e0b); }
@@ -197,11 +201,19 @@
     <section>
       <div class="section-label">Sistema</div>
       <div class="cards">
-        <a class="card card--monitor" href="/openclaw/">
+        <a class="card card--monitor-pc" href="/openclaw-pc/">
           <span class="card-icon">🦇</span>
           <div class="card-text">
-            <div class="card-title">Geoffrey Monitor</div>
-            <div class="card-desc">Stato sistema OpenClaw, cron, modelli e backup</div>
+            <div class="card-title">Geoffrey PC Monitor</div>
+            <div class="card-desc">Stato OpenClaw WSL Win11 — live (cron 10 min)</div>
+          </div>
+          <span class="card-arrow">›</span>
+        </a>
+        <a class="card card--monitor" href="/openclaw/" style="opacity:0.65;">
+          <span class="card-icon">🦇</span>
+          <div class="card-text">
+            <div class="card-title">Geoffrey VPS Monitor (frozen)</div>
+            <div class="card-desc">Snapshot pre-migrazione VPS — da dismettere</div>
           </div>
           <span class="card-arrow">›</span>
         </a>
