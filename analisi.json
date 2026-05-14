@@ -1,6 +1,247 @@
 {
-  "generated_at": "2026-05-13T09:03:41.139367+00:00",
+  "generated_at": "2026-05-14T02:51:18.017912+00:00",
   "analyses": [
+    {
+      "id": 69,
+      "run_id": 101,
+      "run_time": "2026-05-14 02:45:01.788265+00:00",
+      "analyzed_at": "2026-05-14T02:51:17.995375+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 15,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "partial",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La notizia più forte riguarda ancora il San Gottardo: il deragliamento del treno merci torna al centro del dibattito con accuse, perizie e nuove misure di sicurezza. Sul fronte politico-federale, il Ticino si fa sentire anche su carburanti e servizio civile, ma con risposte negative da Berna.",
+          "notizie": [
+            {
+              "titolo": "Deragliamento al San Gottardo: nuove accuse e replica dura delle FFS",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/il-deragliamento-del-treno-merci-nel-san-gottardo-avrebbe-potuto-essere-evitato-433459",
+              "riassunto": "Secondo una perizia citata dalla procura ticinese, il deragliamento del treno merci nel tunnel del San Gottardo avrebbe potuto essere evitato. Le FFS respingono la ricostruzione e parlano di «falsità». Il caso resta centrale per la sicurezza ferroviaria in un asse strategico per il Ticino e per la Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino",
+                "LaRegione Ticino"
+              ],
+              "differenze_narrative": "Ticinonews punta sul contrasto tra la perizia della procura e la replica delle FFS, con taglio più diretto e conflittuale. Il CdT riprende la stessa notizia in modo più asciutto, enfatizzando l'esito dell'indagine. LaRegione sposta invece il focus sulla prevenzione, collegando il caso all'installazione dei sensori e alla revoca del limite di velocità, quindi su soluzioni e responsabilità tecnica più che sullo scontro giudiziario."
+            },
+            {
+              "titolo": "Berna boccia lo sconto temporaneo su benzina e carburanti",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/nessuno-sconto-sulla-benzina-berna-dice-no-a-tagli-fiscali-sui-carburanti-427697",
+              "riassunto": "Il Consiglio federale respinge la richiesta del consigliere nazionale ticinese Piero Marchesi di ridurre temporaneamente accise e Iva sui carburanti. Per il Governo l'impatto economico sarebbe limitato e i costi per la Confederazione troppo elevati. Tema sensibile anche per pendolari e automobilisti ticinesi.",
+              "rilevanza": "media",
+              "incrocio": false
+            },
+            {
+              "titolo": "Il Governo frena sul divieto di smartphone sotto i 12 anni",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/smartphones-per-il-governo-il-divieto-sotto-i-12-anni-e-eccessivo-427686",
+              "riassunto": "Berna invita il Parlamento a respingere la mozione del consigliere nazionale ticinese Giorgio Fonio che proponeva di limitare l'accesso agli smartphone per i minori di 12 anni. Il Consiglio federale parla di ingerenza eccessiva nella sfera privata e familiare.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "sicurezza e responsabilità sul San Gottardo",
+            "interventi federali respinti su temi sensibili per il Ticino"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione del caso San Gottardo: eventuali repliche delle FFS, dettagli della perizia e possibili conseguenze giudiziarie o tecniche sul traffico ferroviario.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_svizzera",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "AI response not parseable as JSON for cronaca_svizzera"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La giornata culturale è dominata dall’Eurovision a Vienna, con un forte carico politico attorno alle proteste contro Israele e una copertura frammentata tra cronaca, commento e pagelle. Sul fronte svizzero-romando e ticinese emergono anche iniziative locali: un nuovo evento letterario a Ginevra e appuntamenti musicali a Bellinzona.",
+          "notizie": [
+            {
+              "titolo": "Eurovision a Vienna: proteste contro Israele, tensioni politiche e finale già polemica",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1925079/israele-eurovision-palco-pro-vinci",
+              "riassunto": "L’ESC 2026 è partito in un clima teso: attivisti a Vienna hanno annunciato proteste musicali, una deposizione simbolica di piccole bare in Schwedenplatz e una manifestazione di massa contro la partecipazione di Israele. Il tema ha già generato più articoli e letture diverse, tra cronaca delle contestazioni e focus sul risultato sul palco.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "SRF Kultur",
+                "CdT Società"
+              ],
+              "differenze_narrative": "LaRegione e CdT privilegiano il frame politico e conflittuale, insistendo su proteste, boicottaggi e precedenti storici delle tensioni all’Eurovision. SRF resta più sul versante spettacolare e televisivo, enfatizzando gli highlights della semifinale e il lato show, con meno spazio al contesto geopolitico."
+            },
+            {
+              "titolo": "A Ginevra nasce il nuovo evento letterario ‘Grand Juillet’",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1925128/luglio-evento-juillet-nuovo-ginevra",
+              "riassunto": "Il Cantone di Ginevra lancia ‘Grand Juillet’, una nuova iniziativa letteraria prevista per luglio. È una notizia rilevante per la Svizzera romanda perché segnala un investimento pubblico e culturale in una manifestazione potenzialmente destinata a crescere.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bellinzona tra musica live e scena locale: tornano Bat Battiston e i Nolimit Band",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1925130/band-battiston-nolimit-bat-bellinzona",
+              "riassunto": "A Bellinzona si riaffaccia una proposta musicale radicata nel territorio: il chitarrista ticinese Bat Battiston torna al bar Castello con il suo gruppo. Per il lettore ticinese conta perché segnala continuità e vitalità della scena locale, spesso meno visibile dei grandi eventi internazionali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Eurovision come arena politica oltre che musicale",
+            "Vitalità della cultura locale in Svizzera romanda e in Ticino"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle proteste a Vienna e l’eventuale impatto sulla copertura mediatica dell’Eurovision, inclusi possibili nuovi boicottaggi o reazioni ufficiali degli organizzatori.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dal ritorno della diplomazia ad altissima tensione tra Stati Uniti e Cina, con Trump a Pechino e diversi dossier aperti su Iran, commercio e tecnologia. In parallelo, la crisi di Hormuz e i riflessi energetici sull’Europa restano centrali anche per la Svizzera, mentre sullo sfondo continuano le fragilità di sicurezza in America Latina e sul fronte russo-ucraino.",
+          "notizie": [
+            {
+              "titolo": "Trump in visita a Pechino: Cina, Iran, Boeing e rapporti di forza globali al centro",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-05-13/trump-cina-dossier-37028884/",
+              "riassunto": "Donald Trump è arrivato a Pechino ed è stato accolto dal vicepresidente Han Zheng, con una cerimonia che sottolinea il peso politico della visita. Sul tavolo ci sono dossier sensibili come Iran e Boeing, in un contesto in cui Pechino si presenta ormai da pari a pari con Washington.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI",
+                "Internazionale"
+              ],
+              "differenze_narrative": "AGI taglia sul protocollo della visita e sui dossier concreti, con tono cronachistico e istituzionale. Internazionale legge l’evento come prova del declino del vantaggio americano, enfatizzando il nuovo equilibrio di potenza e il significato geopolitico della visita di Trump."
+            },
+            {
+              "titolo": "Crisi di Hormuz: l’Europa spinge su transizione energetica e riduzione della dipendenza dal fossile",
+              "fonte": "Il Sole 24 Ore Mondo",
+              "link": "https://www.ilsole24ore.com/art/energia-ue-e-crisi-fossile-bisogna-puntare-transizione-e-rinnovabili-AIFWL22C",
+              "riassunto": "L’Ue avverte che la crisi energetica in Medio Oriente sta mettendo sotto pressione l’Europa e va letta come una crisi più ampia del sistema fossile. Il messaggio politico è chiaro: più rinnovabili e transizione per ridurre la vulnerabilità strategica sui prezzi e sugli approvvigionamenti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Sole 24 Ore Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Il Sole 24 Ore insiste sulle conseguenze economiche e industriali per l’Europa, usando un framing di politica energetica e transizione. ANSA, con il riferimento a Tajani e al passaggio su Hormuz, privilegia il profilo diplomatico-istituzionale e la cautela politica italiana, con focus su Parlamento e impegno militare."
+            },
+            {
+              "titolo": "Crisi di Hormuz e prudenza italiana: nessun impegno militare senza mandato parlamentare",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/13/tajani-non-chiediamo-una-nuova-operazione-nel-golfo-impegno-solo_7e21f85b-187d-4045-8cbc-855559cd98dc.html",
+              "riassunto": "Antonio Tajani esclude una nuova operazione italiana nel Golfo in assenza di un quadro politico chiaro e di pace. La linea è di massima prudenza: nessuna nave sarà impegnata a Hormuz senza l’ok del Parlamento, segnale di quanto la crisi tocchi anche le scelte di sicurezza europee.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Il Sole 24 Ore Mondo"
+              ],
+              "differenze_narrative": "ANSA mette al centro la postura italiana e i vincoli istituzionali, con una narrazione politica e diplomatica. Il Sole 24 Ore inserisce la stessa crisi dentro il quadro macroeconomico europeo, puntando su prezzi dell’energia, dipendenza dal Medio Oriente e urgenza della transizione."
+            }
+          ],
+          "trend": [
+            "Rivalità Usa-Cina e ridefinizione dell’equilibrio di potenza globale",
+            "Crisi energetica e sicurezza dello stretto di Hormuz con effetti sull’Europa"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’esito della visita di Trump in Cina e soprattutto ogni segnale su Iran, commercio e tecnologia; in parallelo, eventuali nuove mosse su Hormuz potrebbero tradursi rapidamente in pressioni sui mercati energetici europei e sulle scelte dei governi.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi vicini alla Svizzera: mercato immobiliare in aumento, governance bancaria e investimenti in ricerca. Sullo sfondo, c’è anche un segnale importante sulla sicurezza del traffico merci lungo l’asse del San Gottardo.",
+          "notizie": [
+            {
+              "titolo": "In Svizzera gli affitti richiesti tornano a salire, con aumenti marcati in alcune regioni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/viele-staedte-werden-teurer-in-diesen-regionen-stiegen-die-angebotsmieten-im-april-besonders-id21944487.html",
+              "riassunto": "Gli affitti offerti in Svizzera sono tornati a crescere ad aprile 2026, con rialzi particolarmente forti in un cantone e un aumento visibile anche a Zurigo. Per un lettore svizzero è un segnale diretto sul costo della casa e sulla pressione abitativa nei centri urbani.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Giorgio Pradelli guiderà l’Associazione svizzera dei banchieri",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/giorgio-pradelli-nominato-presidente-dellassociazione-svizzera-dei-banchieri-433352",
+              "riassunto": "Cambio ai vertici dell’ASB: Marcel Rohner lascerà la carica in autunno e al suo posto arriva Giorgio Pradelli, CEO di EFG International. La nomina è rilevante per il settore finanziario svizzero e per i rapporti tra banche, regolazione e piazza economica.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La Svizzera è terza al mondo per investimenti aziendali in ricerca e sviluppo",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/investimenti-aziendali-nella-ricerca-la-svizzera-e-terza-al-mondo-433345",
+              "riassunto": "Nonostante le difficoltà globali, i gruppi svizzeri restano ai vertici mondiali per investimenti privati in R&S. È una notizia importante per competitività, innovazione e attrattività industriale del Paese, anche in chiave Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Pressione sul costo della vita in Svizzera, soprattutto abitazione",
+            "Forza strutturale della piazza finanziaria e dell’innovazione svizzera"
+          ],
+          "da_tenere_d_occhio": "Da monitorare nelle prossime 24 ore se il rialzo degli affitti si estende ad altre aree svizzere e se la nuova guida dell’Associazione svizzera dei banchieri porterà indicazioni su priorità regolatorie o fiscali per il settore.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria è dominata oggi da due filoni: l’espansione di Google di Gemini su Android e l’ondata di grandi finanziamenti alle società AI più avanzate. Sullo sfondo, continuano a emergere temi sensibili per l’Europa e la Svizzera: sicurezza informatica, uso dell’AI in ambito legale e concentrazione di potere nelle mani di pochi grandi player.",
+          "notizie": [
+            {
+              "titolo": "Google porta agenti AI e funzioni Gemini più profonde su Android",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/",
+              "riassunto": "Google sta integrando Gemini in modo molto più ampio su Android: dettatura in Gboard, compilazione automatica di moduli, widget creati con linguaggio naturale e altre funzioni “agentiche”. Per gli utenti svizzeri significa un’accelerazione forte dell’AI nei telefoni di uso quotidiano, con possibili effetti anche per app, produttività e privacy.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza il lancio di prodotto e l’ecosistema Google, con un taglio da annuncio di piattaforma. The Decoder insiste di più sulla dimensione “agentica” e sulle funzioni pratiche che automatizzano compiti multi-step, mettendo in risalto l’evoluzione verso assistenti che agiscono al posto dell’utente."
+            },
+            {
+              "titolo": "Anthropic in trattative per una valutazione da 950 miliardi di dollari",
+              "fonte": "New York Times Technology",
+              "link": "https://www.nytimes.com/2026/05/12/technology/anthropic-funding-950-billion-valuation.html",
+              "riassunto": "Anthropic starebbe cercando nuovo capitale con una valutazione potenziale di 950 miliardi di dollari, dopo essere stata valutata 380 miliardi in precedenza. È uno dei segnali più forti della bolla/espansione del settore AI: pochi attori raccolgono cifre enormi, con ricadute su mercato, concorrenza e regolazione anche in Europa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Isomorphic Labs di Alphabet raccoglie 2,1 miliardi di dollari per spingere l’AI nella scoperta di farmaci",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials/",
+              "riassunto": "La società di Alphabet guidata da Demis Hassabis ha chiuso un round da 2,1 miliardi di dollari per portare la propria piattaforma di drug discovery verso le sperimentazioni cliniche. Per la Svizzera, forte hub farmaceutico, è una notizia molto rilevante: l’AI si sposta sempre più vicino alla pipeline industriale del farmaco.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "L’AI sta diventando una funzione nativa dei sistemi operativi e delle app di uso quotidiano, non più solo un servizio separato",
+            "I capitali si concentrano su pochi campioni dell’AI, con investimenti enormi in infrastrutture, modelli e applicazioni verticali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se l’integrazione di Gemini su Android genererà reazioni su privacy, concorrenza e compatibilità con servizi europei, oltre a eventuali ulteriori dettagli sui maxi-round di Anthropic e Isomorphic Labs.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 68,
       "run_id": 100,
@@ -5280,258 +5521,6 @@
             "espansione dell’IA in ambiti sensibili come sanità e cybersecurity"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore andrà verificato se GPT-5.5 porta conferme indipendenti su prestazioni e prezzi, e se emergono dettagli operativi sul rilascio sanitario di OpenAI, soprattutto su limiti, validazione clinica e disponibilità fuori dagli Stati Uniti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "run_id": 78,
-      "run_time": "2026-04-25 07:03:38.049696+00:00",
-      "analyzed_at": "2026-04-25T07:06:13.873691+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da temi molto concreti per il Ticino: finanza e regolazione bancaria, sicurezza pubblica e tensioni nel sistema cantonale dei servizi. Accanto a questi dossier, emergono anche rivendicazioni del personale e segnali di prudenza su conti pubblici e gestione degli enti locali.",
-          "notizie": [
-            {
-              "titolo": "La stretta su UBS può ricadere anche sul sistema bancario ticinese",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/qualcuno-dovra-pagare-i-costi-supplementari-che-ubs-dovra-sostenere-432127",
-              "riassunto": "Il presidente dell’Associazione bancaria ticinese commenta la stretta del Governo sugli istituti di rilevanza sistemica e avverte che i costi aggiuntivi non resteranno senza effetti. Il tema tocca da vicino il Ticino, dove il settore bancario ha un peso economico e occupazionale importante. La notizia conta perché anticipa possibili ricadute su credito, margini e competitività degli istituti.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Cornaredo chiuso al Grasshopper per motivi di ordine pubblico e sicurezza",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/sport/calcio/disordini-e-timori-per-la-sicurezza-cornaredo-chiuso-al-grasshopper-425904",
-              "riassunto": "La Polizia cantonale ha espresso parere negativo sull’utilizzo dello stadio di Cornaredo per la partita con il Grasshopper, richiamando rischi per l’ordine pubblico. Il provvedimento arriva anche dopo i disordini attribuiti ai tifosi zurighesi a Losanna. È una notizia rilevante per il Ticino perché coinvolge sicurezza, gestione degli eventi sportivi e immagine della piazza luganese.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il personale dell’Osc chiede più salario e meno ore",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1920560/risoluzione-del-personale-piu-salario-e-meno-ore",
-              "riassunto": "Il personale dell’Organizzazione sociopsichiatrica cantonale ha approvato una risoluzione per rivendicare migliori condizioni: più salario e riduzione dell’orario di lavoro. La mobilitazione segnala tensioni nel settore sociosanitario pubblico, con possibili effetti sulla qualità dei servizi e sul clima interno. Per il Ticino è un dossier sensibile perché tocca un comparto già sotto pressione.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Pressione su finanza pubblica e istituzioni economiche",
-            "Sicurezza e tensioni nel sistema dei servizi cantonali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle misure su Cornaredo e l’eventuale reazione degli ambienti bancari ticinesi alla stretta su UBS, oltre a possibili sviluppi nella vertenza del personale OSC.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La categoria è dominata da temi con impatto diretto sul pubblico svizzero: mobilità, costi e decisioni economiche/federali. In evidenza anche sviluppi aziendali e regolatori che toccano da vicino il mercato elvetico, mentre alcune notizie di contorno restano più di interesse generale che locale.",
-          "notizie": [
-            {
-              "titolo": "Riaperta la Axenstrasse dopo la chiusura: strada di nuovo percorribile",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/riaperta-al-traffico-la-axenstrasse-425916",
-              "riassunto": "La Axenstrasse è stata riaperta al traffico dopo la chiusura, con le autorità che segnalano nessun ferito e solo lievi danni al manto stradale. È una notizia rilevante per la mobilità regionale e per i collegamenti lungo un asse importante della Svizzera centrale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "UBS in calo in borsa dopo le nuove regole sui fondi propri",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/ubs-3-in-borsa-pesano-le-nuove-regole-sui-fondi-propri-432108",
-              "riassunto": "Il titolo UBS ha perso terreno dopo l'annuncio del Consiglio federale sulle nuove regole sui fondi propri, segnalando un impatto immediato del dossier regolatorio sul principale gruppo bancario svizzero. La misura è delicata perché tocca stabilità finanziaria, credito e competitività del settore bancario.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Lufthansa e Swiss lanciano Economy Basic con solo un piccolo bagaglio a mano",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/lufthansa-e-swiss-lanciano-economy-basic-in-cabina-solo-con-bagaglio-a-mano-piccolo-425921",
-              "riassunto": "Il gruppo Lufthansa introduce anche per Swiss una nuova tariffa Economy Basic pensata per chi viaggia quasi senza bagaglio. La novità interessa direttamente i passeggeri svizzeri perché cambia prezzo, servizi inclusi e strategia commerciale delle compagnie.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "CdT insiste maggiormente sul dettaglio pratico per il viaggiatore e sulle dimensioni consentite del bagaglio, con un taglio più esplicativo. LaRegione presenta la stessa notizia in forma più sintetica e aziendale, concentrandosi soprattutto sul nuovo prodotto tariffario del gruppo Lufthansa-Swiss."
-            }
-          ],
-          "trend": [
-            "pressione su trasporti e mobilità quotidiana",
-            "interventi regolatori e commerciali che incidono su economia e consumatori svizzeri"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione del dossier UBS dopo le nuove regole sui fondi propri e l'eventuale reazione politica/finanziaria; sul fronte trasporti, da verificare se la riapertura della Axenstrasse resterà stabile e senza ulteriori restrizioni.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è trainata da annunci e appuntamenti molto vicini al pubblico svizzero italofono, soprattutto tra Ticino e Grigioni italiani. Sul piano internazionale spicca invece il caso di “Michael”, il biopic su Michael Jackson, già al centro di più letture critiche e di mercato.",
-          "notizie": [
-            {
-              "titolo": "Moon and Stars si rafforza con The Kolors ed EifachBen",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1920591/si-aggiungono-the-kolors-e-eifachben",
-              "riassunto": "Il festival di Locarno/Muralto continua a definire il cartellone con nuovi nomi di richiamo, tra cui i The Kolors e EifachBen. Per il pubblico ticinese è una notizia concreta: consolida uno degli eventi musicali più seguiti dell’estate e anticipa ulteriori annunci.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Ascona ospita una serata tango con Rodolfo Mederos",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1920589/rodolfo-mederos-con-orquesta-tipica-tan-tango",
-              "riassunto": "Al Teatro del Gatto di Ascona va in scena un appuntamento musicale di taglio internazionale, centrato sul tango e su un nome storico come Rodolfo Mederos. È un evento di prossimità che interessa direttamente l’area del Lago Maggiore e conferma la vivacità della programmazione culturale locale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Il biopic su Michael Jackson divide critica e cronaca industriale",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1920491/michael-film-jackson-anni-successo",
-              "riassunto": "Il film “Michael” arriva in sala con un’accoglienza critica fredda, descritto come un biopic sfarzoso ma privo di gioia e con tratti da agiografia. Il tema conta perché riguarda un’icona globale e perché il progetto è al centro di forti aspettative commerciali e di un dibattito sulla rappresentazione del mito.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione lo presenta soprattutto come un film criticamente debole, insistendo sul tono di agiografia e sulla mancanza di vitalità artistica. Il New York Times, invece, sposta l’attenzione dietro le quinte: conflitti produttivi, reshoot, resistenze degli studios e tensioni familiari, con un taglio più industriale e meno estetico; in più sottolinea le attese di un forte incasso, introducendo un framing economico che LaRegione lascia sullo sfondo."
-            }
-          ],
-          "trend": [
-            "grandi festival e programmazioni locali in Ticino",
-            "biopic e riletture critiche delle icone pop"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare eventuali nuovi annunci di Moon and Stars e le reazioni al biopic “Michael”, sia sul fronte critico sia su quello commerciale.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata da tre dossier strategici: il riassetto della sicurezza europea, la corsa alle materie prime critiche e la stabilità del Medio Oriente. Per un lettore svizzero, pesano soprattutto le implicazioni economiche e di difesa legate all’asse UE-USA e all’evoluzione della postura europea fuori dalla NATO.",
-          "notizie": [
-            {
-              "titolo": "UE e Stati Uniti rafforzano la cooperazione sui minerali critici",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/24/ue-e-usa-firmano-intesa-sui-minerali-critici-piu-resilienza_bda0522e-b0ce-4373-8114-a3a056391b06.html",
-              "riassunto": "Washington e Bruxelles hanno firmato un’intesa per aumentare la resilienza nelle forniture di minerali critici, un tema centrale per industria, transizione energetica e tecnologie strategiche. Per la Svizzera conta indirettamente perché tocca catene di approvvigionamento europee e stabilità dei mercati.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "L’Europa valuta la difesa reciproca al di fuori della NATO",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/24/world/europe/europe-defense-nato-trump-eu.html",
-              "riassunto": "Diversi Paesi UE stanno riflettendo su come tradurre in pratica l’obbligo di assistenza reciproca in materia di difesa, nel contesto di dubbi sulla solidità dell’ombrello NATO. È un tema altamente rilevante per la sicurezza del continente e per la Svizzera, che deve misurarsi con un ambiente strategico europeo più fragile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "L’Italia spinge per mantenere la forza internazionale al confine tra Israele e Libano",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/24/meloni-mantenere-forza-internazionale-al-confine-tra-israele-e-libano_6e09fa41-ee65-4b94-b42f-25f1e3e1cda2.html",
-              "riassunto": "Roma ribadisce l’importanza della missione internazionale lungo la linea Israele-Libano e sottolinea il ruolo dell’Italia nel tentativo di stabilizzare l’area. Il dossier è rilevante per gli equilibri mediterranei e per il rischio di un allargamento del conflitto in Medio Oriente.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "sicurezza europea e autonomia strategica",
-            "materie prime critiche e resilienza delle catene di approvvigionamento"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se l’intesa UE-USA sui minerali critici produrrà misure operative concrete e se il dibattito europeo sulla difesa fuori dalla NATO si tradurrà in nuove prese di posizione politiche.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da temi molto vicini al lettore svizzero: Nestlé torna al centro con nuove misure di riduzione dei costi e con il dossier delicato del latte per neonati, mentre Salt annuncia un aumento dei prezzi che tocca direttamente i consumatori in Svizzera. Sullo sfondo restano segnali di tensione globale su occupazione, catene di fornitura e ristrutturazioni aziendali.",
-          "notizie": [
-            {
-              "titolo": "Nestlé prepara fino a 180 tagli in Francia nel quadro del piano globale di riduzione del personale",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/nestle-annuncia-fino-a-180-licenziamenti-in-francia-dal-2027-432133",
-              "riassunto": "La multinazionale svizzera prevede fino a 180 licenziamenti in Francia dal 2027, come parte di un piano più ampio annunciato dal nuovo CEO Philipp Navratil che comporta la soppressione di 16.000 posti nel mondo. Per la Svizzera la notizia è rilevante perché conferma la pressione sui margini e la fase di riorganizzazione del gruppo con quartier generale a Vevey.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Nestlé punta a normalizzare entro fine anno la situazione del latte per neonati dopo il richiamo globale",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/latte-per-neonati-nestle-mira-a-una-normalizzazione-entro-fine-anno-432081",
-              "riassunto": "Nestlé segnala che la disponibilità dei suoi prodotti per bebè è tornata regolare in aprile, dopo il richiamo dovuto a contaminazione da cereulide in una sessantina di Paesi. Il tema conta per i consumatori svizzeri e per l’immagine del gruppo, perché riguarda sicurezza alimentare, reputazione e capacità di ripristinare la fiducia dopo una crisi internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Salt aumenta i prezzi degli abbonamenti mobile per gli utenti solo SIM",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/salt-aumenta-i-prezzi-degli-abbonamenti-di-telefonia-mobile-432078",
-              "riassunto": "Dal 1° giugno Salt alza i prezzi degli abbonamenti con sola SIM, con rincari per lo più tra 1 e 2 franchi al mese. È una notizia di impatto immediato per i clienti in Svizzera e in Ticino, perché segnala un ulteriore aumento del costo della vita nei servizi di base.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Ristrutturazioni e tagli nelle grandi multinazionali svizzere",
-            "Aumenti di prezzo nei servizi essenziali per i consumatori"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se Nestlé chiarirà l’impatto dei tagli sul personale europeo e se altri operatori telecom seguiranno Salt con rialzi simili.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da due filoni: la corsa ai modelli di nuova generazione e il lato oscuro dell’AI, con phishing e cyberdifesa in primo piano. Per un lettore svizzero italofono, i temi più pertinenti sono quelli che toccano sicurezza digitale, uso aziendale dell’AI e possibili ricadute su imprese e utenti finali.",
-          "notizie": [
-            {
-              "titolo": "Allarme phishing: false email di invito usate per rubare dati e infettare dispositivi",
-              "fonte": "New York Times Technology",
-              "link": "https://www.nytimes.com/2026/04/23/style/invitation-phishing-scam.html",
-              "riassunto": "Secondo il New York Times, hacker stanno impersonando servizi come Paperless Post, Evite e Punchbowl per convincere gli utenti ad aprire inviti fraudolenti. Il rischio è duplice: furto di credenziali e infezione del dispositivo, un tema molto rilevante anche per utenti e PMI in Svizzera, dove il phishing resta una minaccia quotidiana.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "OpenAI lancia GPT-5.5 e accelera la trasformazione di ChatGPT in una super-app",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
-              "riassunto": "TechCrunch presenta il nuovo modello di OpenAI come un salto di capacità trasversali, utile in più categorie e con l’obiettivo strategico di rendere ChatGPT sempre più centrale nell’ecosistema digitale. Per il pubblico svizzero conta soprattutto perché un cambio di passo di OpenAI può influenzare prezzi, strumenti professionali e adozione aziendale dell’AI.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch adotta un taglio più strategico di prodotto e mercato, sottolineando la traiettoria verso una 'super-app' AI. The Decoder insiste invece sulla natura agentica del modello e sul rincaro dell’API, con un framing più critico verso la monetizzazione e più attento alle implicazioni tecniche e di costo."
-            },
-            {
-              "titolo": "OpenAI e Microsoft rafforzano la difesa informatica con il programma Trusted Access",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openais-new-trusted-access-program-gives-microsoft-its-most-capable-models-for-cyber-defense/",
-              "riassunto": "OpenAI e Microsoft stanno mettendo i modelli più avanzati a disposizione di iniziative di cyber-difesa, in risposta a un panorama in cui l’AI è sempre più utile anche agli attaccanti. Per aziende e istituzioni svizzere è un segnale importante: la sicurezza AI-driven diventa un vantaggio competitivo, ma anche un nuovo fronte di rischio.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "corsa ai modelli AI di nuova generazione e aumento della monetizzazione",
-            "sicurezza digitale: phishing, difesa informatica e uso duale dell’AI"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’accoglienza di GPT-5.5 da parte di sviluppatori e clienti enterprise, soprattutto sul tema prezzi/prestazioni, e l’eventuale emersione di altri casi di phishing che sfruttano brand noti per colpire utenti e aziende.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
