@@ -1,6 +1,311 @@
 {
-  "generated_at": "2026-05-16T02:51:34.937723+00:00",
+  "generated_at": "2026-05-17T02:50:38.268612+00:00",
   "analyses": [
+    {
+      "id": 72,
+      "run_id": 104,
+      "run_time": "2026-05-17 02:45:01.732695+00:00",
+      "analyzed_at": "2026-05-17T02:50:38.246066+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 19,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata soprattutto da dossier ticinesi di politica e amministrazione locale: dai dubbi su naturalizzazioni e incarichi istituzionali fino al caso FFS Cargo a Chiasso. Sullo sfondo restano temi molto sentiti come sicurezza pubblica, costo della benzina e tensioni nei rapporti tra Cantone e autorità locali.",
+          "notizie": [
+            {
+              "titolo": "Caso FFS Cargo a Chiasso: rassicurazioni sulla sede, ma restano incognite sul personale",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/ffs-cargo-resta-a-chiasso-ma-ci-sono-incognite-sul-personale-433629",
+              "riassunto": "Il comitato contro lo smantellamento di FFS Cargo in Ticino parla di nuovi tagli in arrivo, mentre la direzione regionale smentisce una chiusura per Chiasso. Il punto decisivo resta l’impatto occupazionale: si annunciano chiarimenti ufficiali, ma il fronte sindacale e politico resta in allerta.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Naturalizzazioni a Mendrisio contestate: ricorso al Consiglio di Stato",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/naturalizzazioni-a-mendrisio-arriva-il-ricorso-al-consiglio-di-stato-433619",
+              "riassunto": "Il consigliere comunale leghista Massimiliano Robbiani impugna la concessione dell’attinenza comunale per 51 domande di naturalizzazione, giudicate piene di «gravi incongruenze». Chiede anche l’effetto sospensivo e un audit sulle pratiche, segnalando un caso sensibile per le procedure comunali nel Mendrisiotto.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Mendrisiotto"
+              ],
+              "differenze_narrative": "Ticinonews mette l’accento sul ricorso, sulle presunte irregolarità e sulla richiesta di audit, con un taglio più conflittuale e politico. LaRegione presenta la notizia in modo più istituzionale e locale, concentrandosi sul passaggio procedurale al Consiglio di Stato e sul contesto del Mendrisiotto, con minore enfasi sullo scontro."
+            },
+            {
+              "titolo": "Minaccia al commesso con coltello: il caso ruota attorno alla capacità di intendere e volere",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/minaccio-un-commesso-con-un-coltello-non-era-capace-di-intendere-e-volere-433661",
+              "riassunto": "La 37enne che avrebbe minacciato un commesso con un coltello, gridando «Allah Akbar», potrebbe non essere punibile perché al momento dei fatti soffriva di un grave scompenso psichico. Il caso è rilevante per il tema della sicurezza pubblica, ma anche per la gestione giudiziaria dei disturbi psichiatrici in episodi violenti.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Bellinzonese"
+              ],
+              "differenze_narrative": "Ticinonews enfatizza il profilo penale e psichiatrico, citando l’espressione religiosa e la possibile non punibilità. LaRegione titola in modo più neutro e sobrio, focalizzandosi sul fatto che la donna non era in grado di intendere e volere, con meno elementi sensazionalistici e più attenzione al quadro giuridico."
+            }
+          ],
+          "trend": [
+            "Ticino tra sicurezza pubblica e casi giudiziari con forte componente psichiatrica",
+            "Tensioni amministrative e politiche su naturalizzazioni, trasporti e gestione del territorio"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita soprattutto l’evoluzione del dossier FFS Cargo a Chiasso e l’eventuale presa di posizione ufficiale sui tagli annunciati; nel frattempo sarà utile capire se il ricorso sulle naturalizzazioni a Mendrisio porterà a una sospensione delle pratiche o a un intervento del Consiglio di Stato.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto politici e con impatto diretto sulla Svizzera: l’iniziativa «10 milioni», le prese di posizione sul dossier migrazione in Europa e il sostegno elvetico al tribunale speciale per l’Ucraina. Sullo sfondo anche i rapporti con Germania e UE, mentre altre notizie di cronaca ed economia locale restano più settoriali.",
+          "notizie": [
+            {
+              "titolo": "L’iniziativa «10 milioni» divide associazioni e settori economici",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1925651/svizzera-iniziativa-manodopera-ue-carenza-burocrazia-categoria-associazioni",
+              "riassunto": "Le associazioni di categoria bocciano il progetto, temendo carenza di manodopera, più burocrazia e ricadute negative su edilizia, turismo, industria, commercio e sanità. Il tema è centrale per il voto del 14 giugno e tocca direttamente il mercato del lavoro svizzero.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "LaRegione enfatizza il fronte economico e i settori coinvolti, con taglio istituzionale e d’allarme sul lavoro. Ticinonews sintetizza in modo più politico e immediato, insistendo su delocalizzazioni, aumento della burocrazia e conseguenze per il Paese."
+            },
+            {
+              "titolo": "Svizzera coinvolta nel nuovo passo europeo verso un tribunale speciale per l’Ucraina",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1925655/svizzera-impegno-tribunale-ucraina-altri",
+              "riassunto": "La Svizzera figura tra gli Stati che sostengono l’istituzione del tribunale speciale per i crimini legati all’Ucraina. La notizia ha rilievo diplomatico perché conferma l’allineamento di Berna a un dossier sensibile nel quadro europeo e internazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "LaRegione mette l’accento sul «passo decisivo» e sulla dimensione collettiva del sostegno internazionale. Il CdT lo presenta invece come un impegno annunciato da Alain Berset, privilegiando la figura svizzera e il collegamento con il Consiglio d’Europa."
+            },
+            {
+              "titolo": "La Svizzera appoggia la linea europea più severa su migrazione e rimpatri",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1925706/stati-dichiarazione-europa-membri-migrazione-consiglio",
+              "riassunto": "46 Stati membri del Consiglio d’Europa, tra cui la Svizzera, hanno approvato una dichiarazione che spinge su esami in Paesi terzi e cooperazione con gli Stati di transito. Il tema è rilevante perché può influenzare la politica migratoria e dei confini anche in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "SRF Schweiz",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "LaRegione descrive il contenuto concreto del testo e il ruolo di Italia e Danimarca, con taglio più tecnico-politico. SRF insiste invece sulle possibili conseguenze per la politica di migrazione e rifugiati in Europa, con un framing più orientato all’impatto futuro."
+            }
+          ],
+          "trend": [
+            "dossier migratorio e pressione su confini/rimpatri in Europa",
+            "linea diplomatica svizzera su Ucraina e cooperazione multilaterale"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorata la reazione politica interna all’iniziativa «10 milioni» e se da Berna arriveranno ulteriori precisazioni su tribunale speciale per l’Ucraina e dichiarazione europea sulla migrazione.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la categoria cultura è dominata da Cannes, con più articoli che raccontano il festival da angolazioni diverse: dalla scarsità di film forti alla presenza delle star. Sul fronte svizzero spiccano due appuntamenti molto pertinenti per il pubblico italofono: le Giornate letterarie di Soletta e un’installazione artistica a Vira Gambarogno.",
+          "notizie": [
+            {
+              "titolo": "Cannes: un festival in cerca di grandi film, ma ancora capace di attirare le star",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1925741/film-festival-due-regista-francese",
+              "riassunto": "L’articolo sottolinea la delusione per alcuni titoli di concorso, in particolare il confronto tra un film di Pawlikowski e uno di Farhadi, mentre un horror più spigoloso convince di più. Conta perché mostra un Cannes molto competitivo ma non uniforme, con giudizi critici già netti sulle opere principali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione adotta un taglio più critico e cinefilo, valutando la qualità del concorso e preferendo un’opera horror a film più austeri o attesi. Il New York Times insiste invece sul contesto industriale: un avvio quieto, l’assenza di grandi produzioni hollywoodiane e il peso simbolico di questa mancanza sul festival."
+            },
+            {
+              "titolo": "A Cannes arriva una Palma d’onore a sorpresa a John Travolta",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1925814/film-travolta-palma-onore-sorpresa-speranza-so-regista",
+              "riassunto": "Travolta riceve una Palma d’onore inattesa al debutto di un suo film da regista, presentato come un gesto di speranza. È una notizia di richiamo internazionale che conferma il peso delle celebrazioni e dei momenti mediatici dentro Cannes, oltre al concorso ufficiale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione mette l’accento sull’effetto sorpresa e sul messaggio emotivo di Travolta, quasi come evento-star. Il New York Times, nel suo pezzo su Cannes, lo inquadrerebbe più come parte del clima del festival e della sua dipendenza dalle figure celebri, anche quando il sistema dei grandi film è in affanno."
+            },
+            {
+              "titolo": "Apertura delle 48esime Giornate letterarie di Soletta",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1925621/soletta-giornate-libro-programma-sera",
+              "riassunto": "Si apre la 48esima edizione delle Giornate letterarie di Soletta, uno degli appuntamenti più importanti della scena libraria svizzera. Per un lettore ticinese è una notizia molto rilevante: segnala il termometro della produzione letteraria nazionale e il dialogo tra le diverse regioni linguistiche.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Cannes come grande barometro della cultura internazionale, tra star system e debolezza del concorso",
+            "Centralità degli eventi culturali svizzeri e ticinesi, con un focus su letteratura e arte sul territorio"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi della narrazione su Cannes: se emergeranno altri giudizi negativi sul concorso o nuove presenze di richiamo, il festival potrebbe restare il tema culturale dominante. Sul fronte svizzero, attenzione alla risonanza delle Giornate letterarie di Soletta e all’accoglienza dell’installazione di Helidon Xhixha a Vira Gambarogno.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dal dossier USA-Cina: il vertice Trump-Xi non ha prodotto svolte concrete, ma ha ridefinito il tono del confronto tra le due potenze. In Medio Oriente restano invece centrali gli attacchi israeliani tra Gaza e Libano, con il rischio di una nuova escalation regionale.",
+          "notizie": [
+            {
+              "titolo": "Il vertice Trump-Xi lascia pochi risultati concreti, ma segnala una tregua tattica tra USA e Cina",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/05/15/world/europe/trump-xi-china-summit.html",
+              "riassunto": "Il New York Times sottolinea che Trump ha cambiato l’impostazione della politica americana verso Pechino, abbandonando la linea più apertamente conflittuale. Il summit mostra una distensione apparente, ma senza accordi sostanziali: la rivalità strategica resta intatta e molto alta.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World",
+                "Internazionale"
+              ],
+              "differenze_narrative": "Il NYT legge il vertice come una svolta pragmatica della politica USA verso la Cina, concentrandosi sulle conseguenze strategiche per Washington. Internazionale enfatizza invece il fatto che l’incontro sia stato presentato come un successo di facciata, ma che la tensione resti alta: il framing è più critico e mette in dubbio la sostanza dell’intesa."
+            },
+            {
+              "titolo": "Il vertice Trump-Xi conferma la rivalità tra le due superpotenze, senza una vera svolta",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/05/15/xi-jinping-trump-incontro",
+              "riassunto": "L’analisi evidenzia che Pechino e Washington avevano interesse a vendere l’incontro come un successo, ma la sostanza è diversa: la tensione resta elevata. Per un lettore svizzero, il dossier conta perché un’escalation commerciale o tecnologica tra USA e Cina avrebbe effetti anche sull’export europeo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "New York Times World",
+                "Internazionale"
+              ],
+              "differenze_narrative": "Rispetto al NYT, che insiste sulla rimodulazione della strategia americana, Internazionale adotta un taglio più interpretativo e mette al centro la continuità del confronto. Più che i dettagli diplomatici, viene evidenziato il rischio sistemico di una competizione che non si risolve con un incontro al vertice."
+            },
+            {
+              "titolo": "Israele colpisce il vertice di Hamas a Gaza, mentre in Libano il cessate il fuoco resta fragile",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
+              "riassunto": "La BBC riferisce di sei morti in un attacco israeliano in Libano, mentre gli Stati Uniti annunciano una proroga del cessate il fuoco. Il quadro resta però instabile: Israele e Hezbollah continuano a scambiarsi colpi, segnale che la de-escalation è ancora lontana.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Israele elimina il leader militare di Hamas a Gaza in un attacco mirato",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/05/15/world/middleeast/israel-gaza-haddad-hamas.html",
+              "riassunto": "Secondo il feed, Izz al-Din al-Haddad, guida della componente militare di Hamas a Gaza, sarebbe stato ucciso in un attacco israeliano. La notizia è rilevante perché colpisce la catena di comando del movimento in un momento di massima pressione militare.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riposizionamento strategico degli Stati Uniti verso la Cina",
+            "Escalation incompiuta tra Israele, Hamas e Hezbollah"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se dal vertice Trump-Xi emergeranno impegni concreti su dazi, tecnologia e sicurezza, e se nel Medio Oriente gli attacchi israeliani provocheranno una risposta più ampia di Hamas o Hezbollah.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da tensioni sui mercati internazionali, dalle mosse industriali di Stellantis in Cina e dal dibattito sul futuro di Mirafiori. Sullo sfondo, si rafforza la preoccupazione per inflazione, tassi e rallentamento della crescita, temi che toccano anche la Svizzera via mercati e filiere europee.",
+          "notizie": [
+            {
+              "titolo": "Le Borse europee e Wall Street chiudono in rosso per i timori su inflazione e rendimenti",
+              "fonte": "Il Sole 24 Ore Finanza",
+              "link": "https://www.ilsole24ore.com/art/borsa-indici-venerdi-15-maggio-2026-AIk7bX5C",
+              "riassunto": "I mercati scontano la delusione per il vertice Trump-Xi e l’aumento dei rendimenti dei Treasury Usa. Piazza Affari arretra del 2% e perde quota 50mila punti, mentre il petrolio sale ancora sopra i 100 dollari. Un segnale importante anche per gli investitori svizzeri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Stellantis stringe un accordo da un miliardo con Dongfeng per rafforzarsi in Cina",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/stellantis-accordo-da-un-miliardo-con-la-cinese-dongfeng-433621",
+              "riassunto": "L’intesa punta alla produzione di veicoli Peugeot e Jeep in Cina, con un contributo di Stellantis stimato in circa 130 milioni di euro. La notizia è rilevante per la filiera automobilistica europea e per il futuro industriale del gruppo, già sotto osservazione anche in Italia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Mirafiori sotto esame: lo storico stabilimento Fiat al centro del nuovo piano industriale",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/mirafiori-fabbrica-fiat-simbolo-fordismo-test-nuovo-piano-industriale-AI35vH5C",
+              "riassunto": "Lo stabilimento simbolo di Torino, inaugurato nel 1939 e arrivato a ospitare fino a 70mila operai, torna al centro delle strategie Stellantis. Il dossier cita possibili partnership o cessioni a player cinesi, segnale di una fase delicata per l’auto europea e per l’indotto dell’area italo-svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensione sui mercati globali tra inflazione, tassi e geopolitica commerciale",
+            "Ristrutturazione dell’industria automobilistica europea con apertura alla Cina"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorate le reazioni dei mercati ai dati sui rendimenti Usa e gli eventuali chiarimenti di Stellantis su Cina e Mirafiori, perché potrebbero influenzare titoli europei e catene di fornitura.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata da tre filoni: la battaglia legale Musk-OpenAI, il tentativo di OpenAI di entrare nella finanza personale e le mosse di Google/Android che toccano da vicino sicurezza e servizi digitali. Per un lettore svizzero sono rilevanti soprattutto i temi di sicurezza online, gestione dei dati e potenziale impatto sui servizi usati quotidianamente.",
+          "notizie": [
+            {
+              "titolo": "La causa Musk-OpenAI arriva al verdetto finale, con accuse reciproche sulla credibilità dei protagonisti",
+              "fonte": "MIT Tech Review",
+              "link": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
+              "riassunto": "Nell’ultima settimana del processo, gli avvocati hanno insistito sulla credibilità di Elon Musk e Sam Altman. Altman è stato interrogato su presunte menzogne e conflitti d’interesse, ma ha ribaltato l’attacco dipingendo Musk come un uomo assetato di potere. Il caso pesa sulla governance dell’AI globale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "MIT Tech Review",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "MIT Tech Review enfatizza il duello personale e la credibilità dei due leader come chiave del processo; il taglio è più giudiziario e analitico. TechCrunch inquadra invece la chiusura del trial dentro la più ampia “macchina dei fondatori” di Musk e il contesto di SpaceX, spostando il focus dal tribunale alla potenza industriale e finanziaria del suo ecosistema."
+            },
+            {
+              "titolo": "OpenAI porta ChatGPT nella finanza personale e vuole collegarlo ai conti bancari",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+              "riassunto": "OpenAI sta trasformando ChatGPT in un assistente finanziario personale che mostra portafoglio, spese, abbonamenti e pagamenti imminenti dopo il collegamento dei conti bancari. La mossa è rilevante perché spinge l’AI dentro dati estremamente sensibili, con implicazioni dirette per privacy e sicurezza bancaria.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch presenta la funzione come un’espansione di prodotto orientata all’esperienza utente e al dashboard finanziario. The Decoder ne sottolinea invece il carattere più provocatorio e rischioso, evidenziando l’accesso ai conti tramite Plaid e il fatto che il sistema potrebbe arrivare a commentare abitudini di spesa come l’asporto, quindi con un framing più critico su privacy e controllo."
+            },
+            {
+              "titolo": "Google limita lo spazio gratuito di Gmail: meno archiviazione per i nuovi account",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/aera-geht-zu-ende-google-kuerzt-heimlich-speicherplatz-bei-gmail-und-co-id21951283.html",
+              "riassunto": "Chi crea oggi un nuovo account Gmail riceve tre volte meno spazio rispetto a prima, salvo fornire a Google il numero di cellulare. Il test è già in corso in varie regioni. Per utenti svizzeri e ticinesi questo può incidere subito su email, backup e servizi collegati all’ecosistema Google.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Convergenza tra AI e servizi finanziari personali, con forte pressione su dati bancari e privacy",
+            "Centralizzazione dei servizi digitali da parte dei grandi platform player, tra controllo degli accessi e riduzione degli spazi gratuiti"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il processo Musk-OpenAI produrrà segnali utili a capire la futura strategia di governance di OpenAI e se l’integrazione bancaria di ChatGPT verrà spiegata meglio sul fronte sicurezza, soprattutto per utenti europei e svizzeri.",
+          "_model_used": "openai-codex/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 71,
       "run_id": 103,
@@ -5296,280 +5601,6 @@
             "nuova corsa ai finanziamenti per laboratori di frontiera e ricerca sull’apprendimento autonomo"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione del mercato all’intesa OpenAI-Microsoft-AWS: potrebbero emergere dettagli su accesso ai modelli, pricing e impatti regolatori, soprattutto in Europa.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "run_id": 80,
-      "run_time": "2026-04-27 04:45:01.708767+00:00",
-      "analyzed_at": "2026-04-27T04:50:26.693585+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da temi di impatto diretto per il Ticino: trasporti ferroviari in affanno, università sotto pressione finanziaria e decisioni infrastrutturali che cambiano la mobilità regionale. Accanto a questi dossier emergono alcune notizie di contesto locale, spesso raccontate da più testate con tagli leggermente diversi.",
-          "notizie": [
-            {
-              "titolo": "TILO in difficoltà sulla linea S40: circolazione limitata per carenza di personale in Italia",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/tilo-fermi-fino-alle-21-sulla-linea-s40-il-motivo-manca-personale-in-italia-432228",
-              "riassunto": "Sulla linea S40 il traffico ferroviario tra Mendrisio, Como e Varese è stato limitato fino alle 21, con disagi diretti per i pendolari ticinesi e transfrontalieri. La causa indicata dalle FFS è la mancanza di personale in Italia: un problema che mostra quanto la tenuta del sistema TILO dipenda anche da fattori esterni al Cantone.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "USI sotto pressione: tagli più incisivi e nuova governance in arrivo",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/usi-dovremo-tagliare-nel-vivo-le-misure-collaterali-non-bastano-piu-432236",
-              "riassunto": "La presidente del Consiglio dell’Università, Monica Duca Widmer, segnala che le misure collaterali non bastano più e che l’USI dovrà intervenire in modo più profondo sul piano strategico. Sullo sfondo c’è anche la partita del nuovo rettore, atteso forse già entro fine maggio: un passaggio cruciale per il futuro dell’ateneo ticinese.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews insiste sul messaggio di urgenza gestionale e sulla necessità di tagli più duri, con un taglio più operativo e politico. CdT privilegia invece un tono più riflessivo, presentando il Dies academicus come un momento di autocritica dell’università in una fase tra le più difficili della sua storia. La prima fonte valorizza il dossier sul rettore e le decisioni imminenti, la seconda il quadro istituzionale e simbolico dell’ateneo."
-            },
-            {
-              "titolo": "Ritirato il progetto della maxi rotonda sul Cassarate dopo il nuovo no dell’UFAM",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/non-ci-sara-nessuna-maxi-rotonda-sul-cassarate-432229",
-              "riassunto": "Dopo un ulteriore parere negativo dell’Ufficio federale dell’ambiente, il Cantone ha deciso di abbandonare il progetto della maxi rotonda sul Cassarate. La scelta congela per anni un intervento atteso sul nodo viario e rimette in discussione la strategia di mobilità nell’area.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "trasporti e mobilità transfrontaliera",
-            "università e tagli nella spesa pubblica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei disagi TILO e le eventuali misure di ripristino, oltre a possibili nuovi dettagli sul riassetto finanziario e dirigenziale dell’USI.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi molto vicini al lettore svizzero-italiano: il caso Crans-Montana con la disputa sulle fatture sanitarie ai feriti, il dibattito sui nuovi requisiti patrimoniali per UBS e, sul fronte sociale, la protezione degli apprendisti negli infortuni sul lavoro. In parallelo, emergono anche notizie di contesto su rumore, sicurezza e politica federale, ma con priorità più bassa.",
-          "notizie": [
-            {
-              "titolo": "Crans-Montana: la disputa sulle fatture sanitarie ai feriti diventa un caso politico tra Svizzera e Lombardia",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/crans-montana-spese-di-cura-ai-pazienti-italiani-le-precisazioni-dellufas-432239",
-              "riassunto": "L'UFAS ha precisato la prassi sulle spese di cura inviate ai pazienti italiani feriti nel rogo di Capodanno a Crans-Montana, dopo il rifiuto della Lombardia di pagare. La vicenda tocca direttamente il Ticino e il Vallese, ma anche i rapporti sanitari transfrontalieri con l'Italia. È uno dei dossier più sensibili della giornata per il pubblico svizzero italofono.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera",
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews privilegia la precisazione tecnica dell'UFAS e la prassi amministrativa; il CdT insiste sulla cornice istituzionale e sull'intervento di Berna, dando più peso alla legittimità della richiesta; LaRegione enfatizza lo scontro politico con toni più netti, citando la reazione dura di Fontana e Bertolaso e il lessico più conflittuale di parte italiana."
-            },
-            {
-              "titolo": "UBS e requisiti patrimoniali: cresce lo scontro sulla competitività della piazza finanziaria svizzera",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/fondi-propri-le-critiche-di-ubs-sono-paradossali-432249",
-              "riassunto": "Il dibattito sui nuovi requisiti di capitale proposti dal Consiglio federale mette UBS e parte dell'economia svizzera contro economisti e osservatori critici. La questione è centrale per la stabilità del sistema finanziario, ma anche per la competitività del Paese. Ha rilevanza nazionale immediata e può avere effetti sulla regolamentazione futura.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera",
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews dà spazio alla replica del professore Chesney alle critiche di UBS, con un taglio polemico verso la banca; il CdT riprende il tema in forma più neutra ma con attenzione al dibattito politico-economico; LaRegione accentua il conflitto tra banca, Economiesuisse e stampa, presentando le lamentele di UBS come eccessive o contraddittorie."
-            },
-            {
-              "titolo": "Unia chiede più protezione per gli apprendisti dopo gli infortuni sul lavoro",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1920921/apprendisti-incidenti-unia-formazione-protezione-vittime-chiede",
-              "riassunto": "Il sindacato Unia denuncia un numero elevato di infortuni tra gli apprendisti e chiede formazione più rigorosa e controlli più severi. Il tema tocca direttamente il mercato del lavoro svizzero e la tutela dei giovani in formazione, con un impatto concreto anche sul tessuto economico ticinese. È una notizia sociale rilevante, seppur meno urgente delle due precedenti.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "LaRegione insiste sui numeri e sulla pressione sindacale per un cambio di sistema; Ticinonews adotta un tono più diretto e divulgativo, mettendo al centro la richiesta di protezione dei giovani in formazione e il rischio concreto di morte sul lavoro. In entrambe le versioni domina un framing di denuncia, ma LaRegione è più sindacale e Ticinonews più immediata e sintetica."
-            }
-          ],
-          "trend": [
-            "sicurezza e responsabilità nelle relazioni Svizzera-Italia",
-            "dibattito su regolazione finanziaria e tutela sociale in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante capire se il caso Crans-Montana evolverà in una presa di posizione coordinata tra autorità svizzere e italiane, e se il dossier UBS porterà a nuove reazioni politiche o industriali a Berna.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La selezione di oggi privilegia soprattutto contenuti con ricadute dirette sulla Svizzera italiana: un evento su IA all’USI di Lugano, una rilettura di figure culturali svizzere e un approfondimento storico che tocca la memoria del Paese. Sullo sfondo, diversi pezzi internazionali di spettacolo e musica, ma con minore impatto locale.",
-          "notizie": [
-            {
-              "titolo": "A Lugano si discute di sovranità digitale europea e intelligenza artificiale",
-              "fonte": "Ticinonews Magazine",
-              "link": "https://www.ticinonews.ch/magazine/ia-una-sovranita-digitale-europea-e-possibile-432234",
-              "riassunto": "Martedì 28 aprile all’USI di Lugano è in programma una conferenza dedicata all’intelligenza artificiale e alla possibilità di una sovranità digitale europea. L’incontro, con Bruno Giussani e il giornalista Giò Rezzonico, è rilevante per il pubblico ticinese perché porta a Lugano un dibattito strategico su tecnologia, autonomia e futuro dei media e della cultura digitale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Riscoperta di Ella Maillart, l’avventuriera ginevrina quasi sconosciuta nella Svizzera tedesca",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/abenteurerin-auf-abwegen-eine-schweizerin-ohne-furcht-die-wilden-reisen-der-ella-maillart",
-              "riassunto": "SRF dedica un profilo alla viaggiatrice ginevrina Ella Maillart, presentandola come una figura straordinaria ma ancora poco nota in parte della Svizzera. È un contenuto di interesse nazionale: valorizza un patrimonio culturale svizzero e contribuisce a riportare l’attenzione su una protagonista della letteratura di viaggio e dell’esplorazione del Novecento.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Chernobyl continua a pesare anche in Svizzera, oltre la memoria della catastrofe",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/tschernobyl-1986-tschernobyl-wirkt-nach-auch-in-der-schweiz",
-              "riassunto": "L’approfondimento ripercorre gli effetti di Chernobyl e mostra come la catastrofe nucleare continui a influenzare società, politica e dibattito energetico anche in Svizzera. Per un lettore svizzero è rilevante perché collega una grande ferita europea a discussioni ancora attuali sul nucleare e sulla gestione del rischio.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "cultura e tecnologia digitale in Svizzera",
-            "memoria storica e riscoperta di figure svizzere",
-            "patrimonio culturale legato a grandi eventi europei"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare l’esito e l’eco della conferenza sull’IA a Lugano, perché potrebbe generare ulteriori prese di posizione sulla sovranità digitale in Svizzera italiana.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal dossier Iran: colloqui, spostamenti diplomatici e letture divergenti su un possibile stallo con gli Stati Uniti, con ricadute su sicurezza regionale, energia e mercati. Sullo sfondo restano la guerra in Ucraina e il consolidamento dell’asse Russia-Corea del Nord, mentre l’Europa osserva i rischi di una nuova fase di instabilità.",
-          "notizie": [
-            {
-              "titolo": "Iran e Stati Uniti: negoziati in stallo tra manovre diplomatiche e rischio di escalation",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/26/world/middleeast/us-iran-peace-talks-pakistan.html",
-              "riassunto": "I colloqui tra Washington e Teheran restano fragili, con un negoziatore iraniano tornato in Pakistan mentre gli Stati Uniti hanno annullato un viaggio dei propri emissari. Per la Svizzera conta perché un deterioramento del dossier iraniano può influire su prezzi dell’energia, sicurezza internazionale e tensioni diplomatiche in Europa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times World",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Il New York Times insiste sul quadro di impasse strategica e sui rischi di uno stallo senza accordo, con taglio analitico e molto centrato sulle responsabilità di entrambe le parti. ANSA privilegia la cronaca diplomatica immediata: tappe dei colloqui, spostamenti di Araghchi e contatti con Russia e Pakistan, con tono più neutro e meno interpretativo."
-            },
-            {
-              "titolo": "Chernobyl, 40 anni dopo: la guerra in Ucraina trasforma l’area contaminata in una fascia di sicurezza militare",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/26/world/europe/chernobyl-anniversary.html",
-              "riassunto": "L’anniversario di Chernobyl arriva mentre la guerra rende l’area una zona controllata dall’esercito, lontana da qualunque prospettiva di recupero economico. La notizia resta rilevante per la Svizzera per l’impatto sulla stabilità europea, sui temi nucleari e sulla gestione a lungo termine delle conseguenze del conflitto.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Corea del Nord promette sostegno alla linea russa sulla sovranità",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/27/kim-jong-un-la-corea-del-nord-sosterra-la-politica-russa-per-la-sovranita_25bcc180-3bfc-4ec6-b53f-eb574f1f9613.html",
-              "riassunto": "Kim Jong Un ribadisce il sostegno di Pyongyang alla politica russa dopo l’incontro con il ministro della Difesa Andrey Belousov. È un segnale di ulteriore consolidamento dell’asse anti-occidentale, con effetti indiretti anche per la Svizzera sul piano della sicurezza europea e delle pressioni diplomatiche internazionali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "crisi diplomatica attorno all’Iran e ai suoi alleati",
-            "rafforzamento dei blocchi geopolitici antagonisti (Russia, Corea del Nord, Iran)"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei contatti Iran-USA e l’eventuale conferma di nuovi incontri tra Teheran, Mosca e Islamabad: un segnale di avanzamento o rottura cambierebbe subito il tono del dossier.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto svizzeri: il confronto tra governo e UBS sulle regole di capitale, gli effetti post-acquisizione di Credit Suisse sulle attività collegate e la tenuta del franco rispetto all’euro. Sullo sfondo, restano i segnali di pressione sui mercati finanziari e sulla competitività della piazza elvetica.",
-          "notizie": [
-            {
-              "titolo": "Il braccio di ferro tra governo svizzero e UBS sulle regole di capitale",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/economia/1920937/le-critiche-di-ubs-sono-fuori-luogo-e-paradossali",
-              "riassunto": "Berna vuole imporre che le filiali estere di UBS siano coperte fino al 100% da capitale proprio, contro l’attuale 60%. La banca teme un indebolimento della competitività della piazza finanziaria svizzera, ma il dibattito mostra quanto il dossier sia centrale per stabilità, reputazione e costi del settore bancario nazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Dopo l’acquisizione di Credit Suisse, Swisscard taglia 40 posti di lavoro",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/nach-uebernahme-durch-die-ubs-swisscard-entlaesst-40-leute-id21898903.html",
-              "riassunto": "Swisscard, società di carte di credito legata all’universo CS/UBS, annuncia 40 licenziamenti nel contesto delle difficoltà successive all’integrazione. È un segnale concreto che la ristrutturazione della piazza bancaria svizzera continua ad avere ricadute occupazionali dirette.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Gli operatori mettono alla prova la BNS: il franco potrebbe rafforzarsi ancora contro l’euro",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/haendler-testen-die-snb-warum-der-franken-zum-euro-trotz-warnungen-zulegen-duerfte-id21898858.html",
-              "riassunto": "Il cambio euro-franco mostra un recupero dell’euro, ma gli analisti prevedono un nuovo rafforzamento della moneta svizzera. Per famiglie, imprese esportatrici e turismo, il tema è rilevante perché un franco più forte può incidere su prezzi, margini e competitività.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Regole prudenziali e vigilanza sulla grande banca svizzera",
-            "Forza del franco e pressione sulla competitività esterna"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del confronto tra governo e UBS: eventuali precisazioni su capitale, filiali estere o reazioni politiche possono muovere mercati, occupazione e dibattito sulla piazza finanziaria svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da due filoni: la corsa agli investimenti e alle alleanze nell’AI generativa, e i primi segnali di mercati agentici in cui gli AI negoziano e concludono transazioni. Per un lettore svizzero contano soprattutto i movimenti europei verso alternative sovrane ai colossi USA e l’evoluzione concreta dell’AI applicata ai servizi e al commercio.",
-          "notizie": [
-            {
-              "titolo": "Anthropic sperimenta un mercato in cui compratori e venditori sono agenti AI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
-              "riassunto": "Anthropic ha creato un marketplace sperimentale in cui agenti AI rappresentano sia i compratori sia i venditori, chiudendo affari reali per beni reali e denaro reale. È un passaggio importante perché mostra come l’AI stia uscendo dalla sola assistenza testuale per entrare in dinamiche economiche autonome. Per la Svizzera è rilevante per l’impatto potenziale su e-commerce, compliance e servizi finanziari.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch taglia più sul lato sperimentale e sull’innovazione di prodotto, sottolineando il fatto che gli scambi fossero reali e quindi non solo demo. The Decoder insiste invece sugli effetti distributivi: modelli più forti ottengono affari migliori e chi usa agenti più deboli non se ne accorge, spostando il frame su asimmetrie economiche e rischio di disuguaglianze. La prima fonte è più orientata al mercato emergente, la seconda alla struttura di potere che ne deriva."
-            },
-            {
-              "titolo": "Cohere prende il controllo di Aleph Alpha: nasce una possibile alternativa AI sovrana europea",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
-              "riassunto": "Cohere, startup canadese, sta acquisendo la tedesca Aleph Alpha con il sostegno del gruppo Schwarz, puntando a offrire un’alternativa sovrana ai player americani nell’AI enterprise. Il tema è molto rilevante per l’Europa e quindi anche per la Svizzera, dove banche, industria e amministrazioni cercano soluzioni conformi a requisiti di sovranità, dati e governance. È una notizia strategica più che puramente tecnologica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Google investe fino a 40 miliardi di dollari in Anthropic",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/google-pours-up-to-40-billion-into-chatgpt-rival-anthropic/",
-              "riassunto": "Google rafforza in modo massiccio la propria scommessa su Anthropic, portando a livelli enormi il flusso di capitale verso il creatore di Claude. La notizia conta perché conferma una concentrazione crescente del potere infrastrutturale nell’AI e segnala una competizione sempre più intensa con OpenAI e Microsoft. Per il mercato svizzero è un indicatore importante per chi decide partnership cloud, AI aziendale e procurement tecnologico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "corsa agli investimenti e alleanze strategiche nell’AI",
-            "emergere di AI agentiche e mercati autonomi",
-            "spinta europea verso alternative sovrane ai modelli USA"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale reazione dei concorrenti di Anthropic e di Google, ma soprattutto se il dossier Cohere-Aleph Alpha genererà ulteriori dettagli su governance, sede operativa e adozione enterprise in Europa.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
