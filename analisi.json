@@ -1,6 +1,279 @@
 {
-  "generated_at": "2026-05-17T02:50:38.268612+00:00",
+  "generated_at": "2026-05-18T02:50:12.193992+00:00",
   "analyses": [
+    {
+      "id": 73,
+      "run_id": 105,
+      "run_time": "2026-05-18 02:45:01.786334+00:00",
+      "analyzed_at": "2026-05-18T02:50:12.173003+00:00",
+      "articles_analyzed": 175,
+      "articles_selected": 18,
+      "model_used": "openrouter/openai/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi di forte impatto locale: un nuovo caso all’EOC con sanzioni interne, la transizione del FC Lugano dal vecchio Cornaredo alla nuova arena e il dibattito politico sull’iniziativa «No a una Svizzera da 10 milioni». Sullo sfondo, il vino ticinese emerge come tema ricorrente ma di taglio più regionale e meno urgente.",
+          "notizie": [
+            {
+              "titolo": "L’EOC sanziona alcuni collaboratori dopo l’indagine su commenti sessuali e domande inopportune",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1925733/eoc-indagine-ente-raccomandazioni-alcuni-commenti-collaboratori-domande",
+              "riassunto": "L’indagine esterna ha certificato comportamenti inadeguati durante le operazioni, tra commenti sessuali e domande fuori luogo. L’EOC applicherà le raccomandazioni dell’esperta e ha già preso misure disciplinari: è una vicenda sensibile per la sanità pubblica ticinese e la tutela del personale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Il FC Lugano chiede ai tifosi di preservare Cornaredo prima del passaggio alla nuova arena",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/la-richiesta-del-fc-lugano-cari-tifosi-cornaredo-ci-serve-ancora-preservate-il-campo-427924",
+              "riassunto": "Alla vigilia dell’ultima partita nel vecchio impianto, il club bianconero invita i sostenitori a non portarsi via «pezzi» dello stadio come ricordo. La notizia conta perché segna un passaggio simbolico importante per il calcio luganese e per l’area di Cornaredo.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "La campagna sull’iniziativa per limitare la Svizzera a 10 milioni di abitanti entra nel vivo",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/e-liniziativa-piu-importante-dellintera-legislatura-433664",
+              "riassunto": "Il politologo Oscar Mazzoleni sottolinea che favorevoli e contrari stanno investendo somme senza precedenti nella campagna. Il tema tocca direttamente il Ticino per gli effetti su demografia, lavoro e politica migratoria, e viene presentato come uno dei dossier più pesanti della legislatura.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Bellinzonese"
+              ],
+              "differenze_narrative": "Ticinonews inquadra il tema come la questione politica più importante della legislatura, con enfasi sul costo e sulla polarizzazione della campagna. LaRegione propone invece una serata di discussione a Bellinzona, con taglio più locale e partecipativo, meno centrato sul conflitto nazionale e più sul dibattito civico."
+            }
+          ],
+          "trend": [
+            "grandi temi di politica federale letti attraverso l’impatto sul Ticino",
+            "transizioni e tensioni nel tessuto locale: sanità, sport e spazi simbolici"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti gli sviluppi sul caso EOC, sia per eventuali reazioni interne sia per possibili prese di posizione politiche o sindacali. Da monitorare anche l’ultimo passaggio del FC Lugano a Cornaredo e l’intensificarsi della campagna sull’iniziativa dei 10 milioni, soprattutto per l’eco nel dibattito ticinese.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "La giornata è dominata da temi molto vicini al pubblico svizzero: costi e accesso ai servizi alpini, dibattiti fiscali e industriali, e un episodio di cronaca legato a un prodotto Swatch/Audemars Piguet che ha creato tensioni anche in Svizzera. Sullo sfondo, restano alcuni dossier politici con ricadute su frontalieri, aeroporto e welfare.",
+          "notizie": [
+            {
+              "titolo": "Swissmem propone un aumento temporaneo dell’IVA per finanziare esercito e 13ª AVS",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/la-proposta-di-swissmem-un-unico-referendum-per-alzare-liva-a-favore-di-esercito-e-13-avs-427918",
+              "riassunto": "Swissmem rilancia l’idea di un unico pacchetto politico: +0,5% di IVA in via temporanea per sostenere sia l’esercito sia la 13ª AVS. La proposta tocca direttamente il portafoglio dei contribuenti e riapre il dibattito su come finanziare due priorità molto sensibili in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I pernottamenti nei rifugi del CAS costeranno di più: rincari fino al 14%",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/pernottare-nei-rifugi-cas-sara-sempre-piu-costoso-prezzi-in-aumento-fino-al-14-427849",
+              "riassunto": "Il Club Alpino Svizzero vuole aumentare i contributi alle sezioni per finanziare lavori di sicurezza e ristrutturazione delle capanne minacciate dal cambiamento climatico. Il costo potrebbe ricadere sugli utenti, con aumenti fino al 14% su pernottamenti, pasti e bevande.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tafferugli e code per i nuovi Royal Pop di Swatch e Audemars Piguet",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1925948/swatch-piguet-audemars-vendite-royal",
+              "riassunto": "Le vendite dei nuovi segnatempo hanno provocato tensioni in più Paesi, con interventi di polizia e uso di gas lacrimogeni; in Svizzera si sono registrati problemi e negozi chiusi. È una notizia rilevante perché coinvolge un marchio simbolo dell’orologeria elvetica e ha avuto eco internazionale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "LaRegione racconta l’episodio come un caso internazionale di ordine pubblico, sottolineando i tafferugli in diversi Paesi, gli interventi di polizia e la chiusura dei negozi. Il CdT, invece, privilegia l’impatto in Svizzera e insiste sui disagi locali, in particolare a Basilea e Losanna, con un taglio più descrittivo e meno sensazionalistico."
+            }
+          ],
+          "trend": [
+            "pressione su costi e finanziamento di infrastrutture e welfare",
+            "cronaca commerciale e reputazione dei marchi svizzeri con eco internazionale"
+          ],
+          "da_tenere_d_occhio": "Va monitorata l’evoluzione del dibattito su IVA, 13ª AVS ed esercito: potrebbe trasformarsi rapidamente in scontro politico. Da seguire anche l’eventuale escalation o normalizzazione delle vendite Swatch/Audemars Piguet, soprattutto se emergono nuovi episodi di ordine pubblico in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "La categoria è dominata dall’Eurovision 2026, con forte eco anche in Svizzera: la finale di Vienna genera copertura multipla, commenti e letture molto diverse tra testate locali e internazionali. In parallelo emergono due segnali molto svizzeri: il richiamo popolare di Fantasy Basel e il riconoscimento letterario di Soletta.",
+          "notizie": [
+            {
+              "titolo": "Eurovision 2026: la Bulgaria vince, Israele è seconda e il contest divide le letture dei media",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/musica/bangaranga-la-bulgaria-vince-leurovision-2026-seconda-israele-427934",
+              "riassunto": "La finale di Vienna ha incoronato la Bulgaria con “Bangaranga”, mentre Israele è arrivato secondo. Per il pubblico svizzero conta anche il formato della copertura: il CdT ha seguito la serata con commenti e pagelle, segnalando un forte interesse locale per un evento paneuropeo e molto polarizzante.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "CdT Società",
+                "New York Times Arts",
+                "SRF Kultur"
+              ],
+              "differenze_narrative": "Le testate svizzere impostano il racconto come evento-spettacolo con tono da cronaca della finale e focus su performance, classifica e ricezione del pubblico. Il New York Times sposta l’asse sulle tensioni politiche e sui boicottaggi legati alla guerra a Gaza, oltre a profili dei singoli artisti e dei favoriti. SRF tratta l’ESC anche come fenomeno mediatico e virale, insistendo sull’impatto digitale e sui meme più che sul solo risultato."
+            },
+            {
+              "titolo": "Fantasy Basel richiama migliaia di fan nel centro espositivo",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/news/swiss-comic-con-fantasy-basel-zieht-tausende-fans-ins-messezentrum",
+              "riassunto": "Fantasy Basel conferma il suo ruolo di grande appuntamento pop-culture svizzero, attirando migliaia di visitatori in costume. Per la Svizzera tedesca è uno degli eventi culturali più visibili del periodo, con ricadute su turismo urbano, fan culture e mercato dell’entertainment.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "A Soletta vince il libro per bambini e ragazzi “Schlich ein Puma in den Tag”",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/literatur/solothurner-literaturtage-2026-schlich-ein-puma-in-den-tag-gewinnt-kinder-und-jugendbuchpreis",
+              "riassunto": "Alle Giornate letterarie di Soletta il premio svizzero per bambini e ragazzi va a “Schlich ein Puma in den Tag”. È una notizia di rilievo per l’editoria elvetica perché segnala attenzione istituzionale alla letteratura per l’infanzia e alla produzione nazionale.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "Eurovision come evento culturale e politico insieme",
+            "Grande visibilità degli eventi pop-culturali in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita la coda mediatica dell’Eurovision: reazioni al risultato, polemiche geopolitiche e possibili ricadute sul dibattito pubblico svizzero.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata geopolitica è dominata dall’asse Washington–Teheran, con segnali di possibile escalation e riflessi sui mercati energetici e sulla sicurezza regionale. In parallelo, si muovono altri dossier ad alto impatto: la stretta statunitense sul Venezuela, il fronte Cina-Russia-USA e l’allerta sanitaria internazionale per Ebola.",
+          "notizie": [
+            {
+              "titolo": "Washington intensifica la pressione sull'Iran mentre si valuta una risposta più dura",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/18/trump-ha-convocato-i-consiglieri-di-sicurezza-al-golf-club-per-parlare-di-iran_0313c74e-43b8-4e2e-81ee-b5a8c22fa169.html",
+              "riassunto": "Trump ha riunito sabato al golf club i principali consiglieri di sicurezza, tra cui Vance, Rubio, il direttore della Cia e Witkoff, per discutere dell’Iran. Il segnale è quello di un dossier entrato in fase delicata, con possibili ricadute su stabilità regionale e prezzi dell’energia.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Alex Saab consegnato agli Stati Uniti: nuovo colpo al cerchio di Maduro",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/americalatina/2026/05/17/venezuela-espelle-negli-usa-alex-saab-uomo-di-fiducia-di-maduro_f20f82f2-f6cd-44cb-babb-c427ca62f3fc.html",
+              "riassunto": "Caracas ha espulso negli Usa Alex Saab, uomo di fiducia di Nicolás Maduro e figura chiave in vari reati contestati da Washington. L’operazione indica una nuova fase della pressione internazionale sul regime venezuelano e sulle reti di potere che lo sostengono.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA insiste sul profilo politico-diplomatico dell'espulsione e sulla formula ufficiale di Caracas; il New York Times la inquadra come parte di una purga interna contro i potenti che hanno aiutato Maduro a restare al potere, evidenziando la dimensione sistemica della corruzione e della lotta di potere."
+            },
+            {
+              "titolo": "L’OMS dichiara un’emergenza sanitaria internazionale per un raro ceppo di Ebola",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/africa/2026/05/17/loms-dichiara-lemergenza-sanitaria-internazionale-per-un-raro-ceppo-di-ebola_d31c3c11-e0b9-4208-a4a8-ca8b14dafff2.html",
+              "riassunto": "L’OMS ha dichiarato l’emergenza sanitaria internazionale per un raro ceppo di Ebola, mentre il bilancio riportato dal New York Times parla di circa 80 morti nella Repubblica Democratica del Congo. Per la Svizzera conta soprattutto il rischio di coordinamento sanitario e di sorveglianza ai confini.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA privilegia l’aspetto istituzionale della dichiarazione OMS e precisa che l’epidemia non è classificata come pandemia; il New York Times sottolinea invece la gravità dell’evento con il numero approssimativo di vittime e il riferimento all’allerta globale, collegandolo alla memoria del Covid."
+            }
+          ],
+          "trend": [
+            "Escalation Usa-Iran e rischio di allargamento del conflitto oltre il Medio Oriente",
+            "Crisi dei regimi sotto pressione: Venezuela e gestione delle reti di potere",
+            "Allerta sanitaria globale con potenziali effetti su cooperazione internazionale e mobilità"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti eventuali segnali concreti dopo la riunione di Trump sull’Iran: tono della Casa Bianca, possibili mosse militari o nuove sanzioni, e reazioni dei mercati energetici.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata è dominata da due filoni molto rilevanti per la Svizzera: il lancio caotico della Swatch «Royal Pop», coperto da più testate e con forti ricadute reputazionali, e la mossa di MSC nel business del petrolio, che conferma l’espansione del gruppo svizzero nei traffici globali. Sullo sfondo, UBS lancia un allarme sulle scorte mondiali di greggio, tema che può riflettersi su prezzi energetici e inflazione.",
+          "notizie": [
+            {
+              "titolo": "Caos al lancio della Swatch «Royal Pop»: code, tensioni e critiche",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/das-war-schwach-liebe-swatch-tumulte-polizei-und-haessige-kunden-rund-um-neue-royal-pop-id21953909.html",
+              "riassunto": "Il debutto della nuova orologeria Swatch-Audemars Piguet ha attirato folle davanti ai negozi e in alcuni casi è intervenuta anche la polizia. A Zurigo, Basilea e in altre città si sono viste lunghe code e forte frustrazione dei clienti. Il caso è rilevante perché coinvolge due marchi simbolo del lusso svizzero e rischia di trasformarsi in un tema reputazionale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Blick punta molto sul disordine, la delusione dei clienti e il tono polemico verso Swatch, con enfasi su tumulti e interventi di polizia. tio.ch mantiene un taglio più neutro e cronachistico, concentrandosi sulle tensioni nelle file a Basilea e Losanna senza lo stesso giudizio sul lancio. Nel complesso, Blick accentua il framing reputazionale e commerciale, tio.ch quello di cronaca locale."
+            },
+            {
+              "titolo": "MSC entra con forza nel petrolio: acquisita metà di Sinokor",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/aponte-mit-mega-offensive-zum-perfekten-zeitpunkt-schweizer-containerriese-msc-will-jetzt-auch-beim-oel-die-weltmeere-beherrschen-id21955598.html",
+              "riassunto": "Il gruppo svizzero MSC si espande oltre i container e punta ora anche al trasporto di petrolio, con l’acquisizione della metà della sudcoreana Sinokor. L’operazione lo proietta tra i grandi operatori globali del tanker business. Per la Svizzera è una notizia di peso perché riguarda uno dei suoi campioni industriali privati più influenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "UBS avverte: le scorte mondiali di petrolio scendono verso i minimi decennali",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/ubs-lancia-lallarme-scorte-globali-di-petrolio-verso-i-minimi-degli-ultimi-10-anni-433742",
+              "riassunto": "Secondo gli analisti, entro fine maggio le scorte globali di greggio potrebbero scendere a 7,6 miliardi di barili, cioè verso i livelli più bassi degli ultimi dieci anni. Il rischio è un aumento dei prezzi dell’energia con effetti a catena su costi e inflazione, tema sensibile anche per l’economia svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "brand svizzeri sotto i riflettori tra hype e rischio reputazionale",
+            "energia e materie prime: petrolio, prezzi e impatti macroeconomici"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del caso Swatch: eventuali reazioni ufficiali del gruppo, nuove immagini o segnalazioni di disordini nei punti vendita e possibili effetti sulle vendite e sull’immagine del marchio.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La categoria di oggi è dominata da tre filoni: stretta su ricerca e uso responsabile dell’IA, nuove mosse strategiche di OpenAI e strumenti contro deepfake e abusi generativi. Per un lettore svizzero italofono, spiccano i temi che toccano direttamente ricerca, affidabilità dei contenuti e governance dell’IA.",
+          "notizie": [
+            {
+              "titolo": "ArXiv introduce una stretta contro i paper scritti interamente dall’IA",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+              "riassunto": "ArXiv inasprisce le regole contro l’uso negligente dei modelli linguistici nei lavori scientifici. La misura può avere un impatto diretto su università e ricercatori svizzeri, perché ArXiv è una piattaforma centrale per la diffusione rapida di ricerca in informatica e IA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "OpenAI affida a Greg Brockman la strategia di prodotto e accelera l’integrazione tra ChatGPT e Codex",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
+              "riassunto": "OpenAI riorganizza la leadership interna e, secondo la ricostruzione, punta a unificare ChatGPT con il prodotto per la programmazione Codex. Il cambiamento segnala un rafforzamento della strategia “AI come piattaforma unica”, con possibili effetti su sviluppatori, aziende e utenti professionali anche in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "YouTube estende a tutti i creator adulti il rilevamento dei deepfake facciali",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/youtube-opens-its-deepfake-face-swap-detection-tool-to-all-adult-creators/",
+              "riassunto": "YouTube amplia lo strumento Likeness Detection a tutti i creator sopra i 18 anni. Il sistema aiuta a individuare video con volti falsificati dall’IA e a chiedere la rimozione direttamente da YouTube Studio: una misura rilevante contro abusi e manipolazioni online.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            }
+          ],
+          "trend": [
+            "rafforzamento dei controlli su uso improprio dell’IA nella ricerca e nei contenuti",
+            "più strumenti anti-deepfake e maggiore attenzione a identità digitale e fiducia online"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se la stretta di ArXiv susciterà reazioni da università e laboratori europei, e se OpenAI chiarirà la portata della riorganizzazione interna e l’eventuale integrazione tra ChatGPT e Codex.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 72,
       "run_id": 104,
@@ -5310,297 +5583,6 @@
             "geopolitica dell’AI: acquisizioni, blocchi regolatori e competizione USA-Cina"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito soprattutto l’effetto concreto della nuova intesa OpenAI-Microsoft sui rapporti con AWS e sulla distribuzione dei prodotti, oltre a eventuali reazioni di Meta al blocco cinese di Manus e ai possibili ricorsi o soluzioni alternative.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 50,
-      "run_id": 81,
-      "run_time": "2026-04-28 04:45:02.070839+00:00",
-      "analyzed_at": "2026-04-28T04:51:49.254921+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 19,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.0",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da un fatto di cronaca stradale nel Locarnese, rilanciato da più testate, e da due temi di rilievo cantonale: la strategia dei Verdi per le elezioni 2027 e le nuove misure federali contro la violenza domestica. Sullo sfondo restano altre notizie locali e di taglio socio-economico, ma con minore impatto immediato.",
-          "notizie": [
-            {
-              "titolo": "Grave incidente in moto a Lavertezzo: 23enne ferito seriamente, passeggera lievemente",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/cade-dalla-moto-in-curva-a-lavertezzo-23enne-ferito-gravemente-432278",
-              "riassunto": "Un giovane motociclista ha perso il controllo del mezzo in curva a Lavertezzo, finendo fuori strada. Il 23enne è rimasto gravemente ferito, mentre la passeggera 21enne ha riportato ferite leggere. È una notizia di impatto diretto per il Ticino e coincide con un secondo rilancio giornalistico dello stesso evento.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Locarnese"
-              ],
-              "differenze_narrative": "Ticinonews privilegia il taglio di cronaca urgente e la dinamica dell’incidente, con attenzione alle condizioni dei due occupanti. LaRegione enfatizza invece lo stato clinico e il riferimento alle ferite serie, con un framing più sobrio e locale; entrambe convergono sull’aspetto di sicurezza stradale, ma Ticinonews appare più immediata e LaRegione più essenziale."
-            },
-            {
-              "titolo": "I Verdi ticinesi preparano le cantonali 2027: lista unica per il governo, corsa autonoma per il parlamento",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/i-verdi-lanciano-le-cantonali-2027-unalleanza-per-il-governo-da-soli-per-il-parlamento-432285",
-              "riassunto": "L’assemblea ordinaria dei Verdi ha definito la linea per le elezioni cantonali 2027: trattative aperte con le forze progressiste per una lista unica al Consiglio di Stato, mentre per il Parlamento il partito intende presentarsi da solo. Il tema conta perché anticipa gli equilibri del fronte progressista e il possibile riassetto del campo ecologista in Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Svizzera prepara nuove misure contro la violenza domestica",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/svizzera/violenza-domestica-la-svizzera-pensa-a-nuove-misure-432326",
-              "riassunto": "Il Dipartimento federale di giustizia e polizia porterà al Consiglio federale un pacchetto legislativo per rafforzare la tutela nel diritto civile e processuale civile contro la violenza domestica, con più prevenzione precoce. È una notizia di portata svizzera, rilevante anche per il Ticino per l’impatto diretto su protezione delle vittime e servizi sul territorio.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "cronaca stradale con impatto locale nel Locarnese",
-            "riassetto politico cantonale in vista delle elezioni 2027",
-            "misure federali di tutela contro la violenza domestica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi delle condizioni del motociclista ferito a Lavertezzo e l’eventuale approfondimento delle cause dell’incidente; sul piano politico, seguiranno i dettagli delle trattative dei Verdi con le altre forze progressiste.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La selezione di oggi privilegia soprattutto le notizie con impatto diretto sulla Svizzera: un grave incidente aereo con vittima svizzera, i nuovi dati sul razzismo in aumento e un passaggio istituzionale significativo in Appenzello Interno. In secondo piano ma ancora rilevante, una cronaca di sicurezza aerea che coinvolge un volo Swiss all’estero e alcuni temi politici/economici nazionali.",
-          "notizie": [
-            {
-              "titolo": "Un pilota svizzero muore dopo la caduta di un aliante in Val di Non",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/estero/aliante-precipita-in-val-di-non-morto-il-pilota-svizzero-432280",
-              "riassunto": "Un aliante partito da Lienz è precipitato in territorio di Livo, in Val di Non, causando la morte del pilota svizzero. La notizia ha rilievo diretto per la Svizzera perché coinvolge una vittima elvetica in un incidente grave oltreconfine. È una cronaca d’impatto, con possibili sviluppi su dinamica e responsabilità.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due testate riportano sostanzialmente lo stesso fatto, ma con angolazioni leggermente diverse: il CdT tende a sottolineare la ricostruzione tecnica della traiettoria e del luogo dell’impatto, mentre Ticinonews valorizza di più l’elemento umano, cioè la nazionalità svizzera della vittima. Il framing è cronachistico in entrambi i casi, ma il taglio ticinese è più immediato per il pubblico locale."
-            },
-            {
-              "titolo": "In Svizzera aumentano i casi di razzismo, soprattutto contro i musulmani",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1920981/razzismo-casi-svizzera-aumento-riss",
-              "riassunto": "Il rapporto annuale segnala un aumento dei casi di razzismo denunciati in Svizzera, con una crescita particolarmente marcata degli episodi contro i musulmani. Il tema è importante perché fotografa una tensione sociale interna e fornisce dati utili al dibattito politico e istituzionale. È una notizia di interesse nazionale con ricadute anche sul Ticino.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "LaRegione imposta la notizia come lettura di tendenza sociale, con attenzione al quadro generale e al contesto statistico. Ticinonews, riprendendo il dato dei 1245 casi e del +3%, privilegia un taglio più diretto e di servizio. Entrambe enfatizzano la crescita dei casi, ma la versione ticinese è più sintetica e orientata all’impatto immediato del dato."
-            },
-            {
-              "titolo": "Pius Federer eletto nuovo landamano di Appenzello Interno",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/appenzello-interno-e-pius-federer-il-nuovo-landamano-426140",
-              "riassunto": "La Landsgemeinde ha eletto Pius Federer nuovo landamano, dopo una candidatura unica. Si tratta di un passaggio istituzionale rilevante per la tradizione politica di Appenzello Interno, che resta un simbolo della democrazia diretta svizzera. Notizia di rilevanza media, soprattutto per chi segue politica e istituzioni elvetiche.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Il CdT sottolinea il valore istituzionale della Landsgemeinde e il fatto che Federer fosse l’unico candidato, quindi un’elezione largamente prevedibile. Ticinonews presenta la stessa informazione in modo più asciutto, da notizia breve. La differenza principale sta nel peso dato alla dimensione simbolica dell’evento: più marcata nel CdT, più neutra e cronachistica su Ticinonews."
-            }
-          ],
-          "trend": [
-            "cronaca sociale e sicurezza interna in Svizzera",
-            "istituzioni e tradizione politica dei cantoni"
-          ],
-          "da_tenere_d_occhio": "Le prossime 24 ore potrebbero portare aggiornamenti sull’inchiesta dell’incidente dell’aliante e su eventuali reazioni politiche ai nuovi dati sul razzismo, soprattutto se emergono commenti da autorità federali o cantonali.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da eventi e figure con forte aggancio svizzero: appuntamenti a Lugano e Losanna, oltre a una riscoperta di un’icona ginevrina come Ella Maillart. Sul piano internazionale spiccano invece un caso controverso all’Opera di Venezia e alcune notizie di rilievo su cinema e musica, ma con impatto più indiretto per il pubblico ticinese.",
-          "notizie": [
-            {
-              "titolo": "Giovanni Allevi in concerto al Palazzo dei Congressi di Lugano",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1921094/allevi-giovanni-palazzo-congressi-lugano",
-              "riassunto": "Giovanni Allevi si esibirà a Lugano il 3 maggio al Palazzo dei Congressi. Per il pubblico svizzero italiano è una data di richiamo immediato, sia per la popolarità del musicista sia per la vicinanza dell’evento al territorio. È una notizia concreta e prossima, utile per chi segue l’offerta culturale locale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "BDFIL festeggia vent’anni a Losanna con grandi mostre e oltre 80 eventi",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1921257/fumetto-malle-quebec-bdfil-mirion",
-              "riassunto": "Il festival del fumetto di Losanna celebra il ventennale con sedici mostre, più di cento autori e un programma molto ricco fino al 10 maggio. Per la Svizzera italiana conta perché conferma la vitalità del panorama culturale romando e l’attrattiva nazionale di un appuntamento di primo piano. L’ampiezza del programma ne fa uno dei poli culturali più rilevanti della settimana.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Riscoperta di Ella Maillart, avventuriera ginevrina e pioniera dei grandi viaggi",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/abenteurerin-auf-abwegen-eine-schweizerin-ohne-furcht-die-wilden-reisen-der-ella-maillart",
-              "riassunto": "SRF dedica un approfondimento alla figura di Ella Maillart, ginevrina poco nota nella Svizzera tedesca ma centrale nella storia culturale elvetica. Il pezzo la presenta come una riscoperta, sottolineando il carattere avventuroso e letterario del suo percorso. È rilevante per il pubblico svizzero perché valorizza una personalità nazionale di forte spessore.",
-              "rilevanza": "media",
-              "incrocio": false
-            },
-            {
-              "titolo": "Caso Beatrice Venezi: la Fenice rompe con la direttrice",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1921098/fenice-venezi-beatrice-orchestra-fondazione",
-              "riassunto": "La Fondazione Teatro La Fenice comunica la rottura con Beatrice Venezi, dopo mesi di tensioni attorno al suo ruolo. La notizia è rilevante per la scena musicale italiana e per il dibattito sul merito, sulle nomine e sul rapporto tra istituzioni culturali e opinione pubblica. Ha eco anche oltre confine per la sua dimensione polemica e simbolica.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione presenta la notizia in modo essenziale e istituzionale, mettendo al centro la comunicazione della Fondazione e il fatto compiuto del licenziamento. Il New York Times invece contestualizza maggiormente la controversia: ricorda che la nomina aveva già suscitato sdegno tra i musicisti dell’orchestra, definisce Venezi non qualificata secondo i critici e insiste sulla dimensione conflittuale, includendo la sua replica pubblica. Il framing del NYT è più politico e narrativamente polemico."
-            }
-          ],
-          "trend": [
-            "forte presenza di eventi e appuntamenti culturali svizzeri, soprattutto tra Ticino e Romandia",
-            "riemergono figure e controversie legate all’alta cultura italiana, in particolare musica e istituzioni liriche"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del caso Beatrice Venezi, perché potrebbe generare ulteriori reazioni dal mondo musicale e politico-culturale italiano.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall’asse Medio Oriente–Asia, con l’Iran al centro di tensioni su negoziati, stretto di Hormuz e impatti energetici. Sullo sfondo, si rafforzano anche i legami militari tra Russia, Corea del Nord e Iran, mentre per la Svizzera restano molto rilevanti le possibili ricadute su energia e prezzi.",
-          "notizie": [
-            {
-              "titolo": "La crisi Iran-Usa resta bloccata tra negoziati sospesi e minaccia su Hormuz",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/27/iran-a-usa-proposta-per-un-accordo-sulla-riapertura-dello-stretto-di-hormuz_e59fa7a3-0e51-4fe6-a287-be44c6c7f5d3.html",
-              "riassunto": "Teheran avrebbe avanzato agli Stati Uniti una proposta per riaprire lo stretto di Hormuz, ma chiede anche di rinviare i colloqui sul nucleare. Il nodo è cruciale per i mercati energetici europei e quindi anche per la Svizzera, che risente subito di eventuali shock su carburanti e trasporti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World",
-                "SRF International"
-              ],
-              "differenze_narrative": "ANSA mette in primo piano l’aspetto negoziale immediato e la richiesta iraniana di rinviare il dossier nucleare. Il New York Times inquadra la situazione come uno stallo strategico tra Iran e Stati Uniti, con tono più analitico e centrato sui rischi di un limbo senza accordo. SRF invece legge la crisi soprattutto dalla prospettiva svizzera, enfatizzando le riserve di carburante e la vulnerabilità dell’approvvigionamento."
-            },
-            {
-              "titolo": "Russia e Corea del Nord rafforzano la cooperazione militare e politica",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/asia/2026/04/26/mosca-il-ministro-della-difesa-russo-a-pyongyang-incontra-kim_e5a3a120-4e5e-4377-aca3-64cb6e89e024.html",
-              "riassunto": "Il ministro della Difesa russo ha incontrato Kim Jong Un a Pyongyang per discutere la cooperazione militare tra i due Paesi, mentre il regime nordcoreano ha ribadito il sostegno alla politica russa sulla sovranità. È un segnale di consolidamento dell’asse anti-occidentale con possibili effetti sulla sicurezza globale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Una fonte ANSA insiste sul contenuto militare e sulle prospettive della cooperazione tra Mosca e Pyongyang; l’altra enfatizza la dimensione politica, cioè il sostegno nordcoreano alla narrativa russa sulla sovranità. Nel primo caso il framing è più strategico-militare, nel secondo più diplomatico e propagandistico."
-            },
-            {
-              "titolo": "La Svizzera si prepara agli effetti collaterali della guerra in Iran sul fronte energetico",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/schweiz/auswirkungen-des-iran-kriegs-exklusive-tankreserven-schweiz-als-treibstoffinsel-in-europa",
-              "riassunto": "SRF evidenzia che la Svizzera dispone di riserve di carburante teoricamente autonome, un elemento importante in caso di crisi energetica internazionale. La notizia è molto rilevante per un pubblico svizzero perché traduce lo scontro geopolitico in un tema concreto di sicurezza degli approvvigionamenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crisi energetica e stretto di Hormuz",
-            "Asse Russia-Corea del Nord-Iran e polarizzazione internazionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei colloqui tra Stati Uniti e Iran e l’eventuale impatto sui flussi petroliferi: per la Svizzera potrebbe tradursi rapidamente in pressione sui prezzi dell’energia e dei trasporti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La notizia più rilevante della giornata è lo shock legato all’Iran e ai rischi sul petrolio, che sta già pesando su compagnie aeree, mercati e vacanze estive: un tema con riflessi diretti anche per Svizzera e Ticino. Sul fronte domestico, emergono inoltre casi che toccano da vicino il contesto svizzero, come lo scandalo legato allo sponsor crypto nel hockey e i timori più ampi sulla tenuta del settore travel.",
-          "notizie": [
-            {
-              "titolo": "La crisi in Iran fa salire il petrolio e mette sotto pressione voli, conti delle compagnie e vacanze estive",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/compagnie-aeree-shock-iraniano-manda-stallo-conti-trimestrali-AIGQzEjC",
-              "riassunto": "Il rialzo del petrolio e la tensione nello Stretto di Hormuz stanno già complicando i bilanci delle compagnie aeree europee, da Air France-KLM a Lufthansa. Il rischio di carburante più caro e di biglietti in aumento tocca anche i viaggiatori svizzeri, con possibili effetti immediati sulle vacanze estive e sulla domanda di trasporto.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia",
-                "Il Sole 24 Ore Finanza",
-                "Adnkronos",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore Economia privilegia l’impatto industriale e di conto economico sulle compagnie aeree e sulle stime delle banche. Il Sole 24 Ore Finanza guarda soprattutto alla reazione dei mercati e alla dinamica del petrolio, incorniciandola come fattore di volatilità globale. Adnkronos enfatizza il profilo geopolitico-militare della minaccia iraniana nello Stretto di Hormuz, mentre Blick Wirtschaft traduce il tutto in chiave pratica per il pubblico svizzero, concentrandosi sull’impatto sulle ferie e sui consigli di viaggio. Ne emerge un evento unico, ma raccontato come crisi dei mercati, rischio geopolitico e problema concreto per i consumatori."
-            },
-            {
-              "titolo": "Lo sponsor crypto dell’HCD lascia dietro di sé perdite e dubbi sulla solidità degli accordi nello sport svizzero",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/wirbel-um-hcd-sponsor-wie-krypto-zocker-schweizer-sportstadien-erobern-id21899566.html",
-              "riassunto": "Il caso Zondacrypto, sponsor dell’HCD, mostra i rischi di un settore crypto ancora fragile e opaco: clienti in allarme, fondatore scomparso e un possibile nuovo scandalo di sponsorizzazione. Per un lettore svizzero conta perché coinvolge direttamente un club nazionale e solleva interrogativi su governance, reputazione e tutela degli investitori.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cambio al vertice di Apple: John Ternus eredita la sfida di rilanciare innovazione e crescita",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/digital/chefwechsel-beim-iphone-riesen-john-ternus-der-neue-guru-fuer-die-religion-apple-id21899059.html",
-              "riassunto": "Tim Cook dovrebbe lasciare la guida ad aprile/settembre a John Ternus, figura interna considerata più tecnica e orientata al prodotto. La notizia è rilevante per l’economia globale perché Apple resta uno dei principali motori della filiera tech, con effetti anche sul mercato svizzero di consumo, lavoro e forniture.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensione geopolitica e impatto sui prezzi dell’energia",
-            "rischi di governance e trasparenza nei settori crypto e sponsorizzazioni sportive"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del dossier Iran-petrolio: nuovi movimenti del greggio, eventuali effetti sui voli in Europa e possibili ricadute su tariffe e vacanze, anche per la Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da mosse strategiche dei grandi attori dell’IA: OpenAI rinegozia rapporti con Microsoft e apre di fatto ad AWS, mentre continuano i segnali di consolidamento attorno a modelli, benchmark e strumenti per sviluppatori. Sullo sfondo, il tema del valore economico dell’IA resta fortissimo, con nuovi round miliardari e una competizione sempre più intensa nel cloud e nella ricerca.",
-          "notizie": [
-            {
-              "titolo": "OpenAI chiude il contenzioso con Microsoft e apre i prodotti anche ad AWS",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
-              "riassunto": "OpenAI ha ottenuto concessioni decisive da Microsoft che riducono i rischi legali legati al maxi accordo con Amazon. In pratica, l’azienda potrà vendere prodotti anche su AWS, mentre Microsoft riceverà più cassa tramite un nuovo schema di revenue share. È una svolta importante negli equilibri del cloud AI globale e può influenzare in modo diretto anche clienti enterprise europei e svizzeri.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il cofondatore di DeepMind David Silver raccoglie 1,1 miliardi per un’IA che apprende senza dati umani",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
-              "riassunto": "Ineffable Intelligence, nuovo laboratorio britannico fondato da David Silver, ha raccolto un round da 1,1 miliardi di dollari a una valutazione di 5,1 miliardi. Il progetto punta su un’IA capace di apprendere senza dati umani, un’ipotesi che potrebbe spostare l’asse competitivo della ricerca di frontiera. Notizia di forte richiamo internazionale per dimensione del finanziamento e ambizione tecnologica.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Google accelera sull’IA per colmare il ritardo nel cloud rispetto ad Amazon e Microsoft",
-              "fonte": "Hacker News",
-              "link": "https://www.ft.com/content/2429f0f0-b685-4747-b425-bf8001a2e94c",
-              "riassunto": "Il Financial Times racconta come Google stia usando l’intelligenza artificiale per rafforzare il proprio cloud e recuperare terreno sui rivali. La notizia è rilevante perché conferma che il cloud AI è il vero terreno di scontro tra i grandi hyperscaler, con implicazioni su prezzi, infrastrutture e disponibilità di servizi anche in Europa. Per un lettore svizzero è un indicatore utile delle prossime dinamiche di mercato.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "consolidamento del mercato cloud AI tra OpenAI, Microsoft, Amazon e Google",
-            "nuova corsa ai finanziamenti per laboratori di frontiera e ricerca sull’apprendimento autonomo"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione del mercato all’intesa OpenAI-Microsoft-AWS: potrebbero emergere dettagli su accesso ai modelli, pricing e impatti regolatori, soprattutto in Europa.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
