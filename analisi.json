@@ -1,6 +1,336 @@
 {
-  "generated_at": "2026-05-18T02:50:12.193992+00:00",
+  "generated_at": "2026-05-19T02:51:14.585925+00:00",
   "analyses": [
+    {
+      "id": 74,
+      "run_id": 106,
+      "run_time": "2026-05-19 02:45:01.311364+00:00",
+      "analyzed_at": "2026-05-19T02:51:14.562031+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 23,
+      "model_used": "openrouter/openai/gpt-5.4-mini",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "La giornata è dominata da temi molto concreti per il Ticino: traffico e mobilità sul San Gottardo, dossier politici ed economici che toccano direttamente frontalieri, FFS Cargo e rapporti con Berna. In parallelo emergono casi locali di forte impatto sociale e sanitario, con più articoli incrociati tra testate.",
+          "notizie": [
+            {
+              "titolo": "Rientro dell’Ascensione: traffico intenso e chiusura temporanea del San Gottardo",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/ecco-il-traffico-di-rientro-dellascensione-433729",
+              "riassunto": "Il rientro dall’Ascensione ha creato forti disagi al traffico: poco prima delle 12.30 la galleria del San Gottardo è stata chiusa temporaneamente per un veicolo in avaria. Alle 15 la coda era di 6 chilometri, con ritardi fino a un’ora. È un tema di impatto diretto per chi rientra in Ticino e per la gestione dell’asse nord-sud.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "San Gottardo: riprendono gli scavi del secondo tubo",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/svizzera/secondo-tubo-del-san-gottardo-riprendono-i-lavori-di-scavo-433787",
+              "riassunto": "L’USTRA ha informato i rappresentanti di Uri e Ticino sulle prossime tappe del secondo tubo del San Gottardo; oggi la fresa meccanica «Paulina» ha ripreso a scavare. Il dossier è strategico per la viabilità ticinese e per il futuro del collegamento alpino più importante del Cantone.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Fronte aperto tra Ticino e Berna sui ristorni dei frontalieri",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/ticino-e-berna-sui-ristorni-la-distanza-rimane-428105",
+              "riassunto": "Ignazio Cassis ha invitato alla cautela su un eventuale blocco dei ristorni dei frontalieri, sottolineando le possibili ripercussioni con la Confederazione. Il consigliere di Stato Norman Gobbi spinge invece per una linea più dura, segno che il dossier resta politicamente sensibile e molto rilevante per il Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "FFS Cargo Chiasso: il comitato chiede un incontro urgente al Governo",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/deposito-ffs-cargo-di-chiasso-il-comitato-contro-lo-smantellamento-chiede-un-incontro-al-governo-433726",
+              "riassunto": "Il comitato contro lo «smantellamento» del deposito FFS Cargo di Chiasso chiede un incontro urgente al Governo, sostenendo che le FFS restano sorde alle richieste del Cantone. Il tema tocca occupazione, logistica e il peso economico di Chiasso come nodo ferroviario.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Mendrisiotto"
+              ],
+              "differenze_narrative": "Ticinonews insiste sul conflitto istituzionale e sulla pressione politica sul Governo cantonale; LaRegione mette maggiormente in risalto l’allarme per il lavoro e il rischio di smantellamento, con taglio più territoriale/mendrisiotto."
+            },
+            {
+              "titolo": "Molestie in ospedale a Lugano: le sanzioni non chiudono il caso",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/bene-le-sanzioni-ma-il-tema-delle-molestie-nel-mondo-sanitario-resta-aperto-433755",
+              "riassunto": "Dopo l’inchiesta interna sull’ortopedia dell’Ospedale regionale di Lugano, l’ASMACT accoglie le sanzioni ma avverte che il problema delle molestie nel mondo sanitario resta aperto. La notizia pesa perché riguarda il clima di lavoro in una struttura sanitaria cantonale e la tutela del personale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Ticinonews privilegia la lettura sindacale e la continuità del problema; il CdT concentra il racconto sull’esito dell’inchiesta e sulle violazioni accertate, con un taglio più istituzionale e meno rivendicativo."
+            },
+            {
+              "titolo": "Locarno: aumentano i casi di assistenza sociale, soprattutto tra i giovani",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/ticino/assistenza-sociale-a-locarno-esplode-il-numero-di-richieste-427994",
+              "riassunto": "Le domande per accedere ai contributi di assistenza sociale a Locarno sono aumentate di oltre il 13% nel 2025. Preoccupano in particolare i molti giovani in difficoltà e la durata prolungata delle prestazioni. È un segnale sociale importante per il Locarnese e per il Cantone.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "LaRegione Locarnese"
+              ],
+              "differenze_narrative": "Il CdT mette in primo piano i numeri e il tema dei giovani; LaRegione accentua il dibattito istituzionale locale e il rifiuto della commissione consultiva, quindi il confronto politico-amministrativo attorno alla risposta comunale."
+            },
+            {
+              "titolo": "Dunja Valsesia guiderà la Sezione della popolazione",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/dunja-valsesia-a-capo-della-sezione-della-popolazione-433737",
+              "riassunto": "L’avvocata Dunja Valsesia subentrerà a Silvia Gada alla guida della Sezione della popolazione, che lascia l’Amministrazione cantonale per la pensione. È un passaggio amministrativo rilevante per un settore delicato come permessi, popolazione residente e gestione degli atti ufficiali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino"
+              ],
+              "differenze_narrative": "Entrambe le testate presentano il cambio ai vertici come notizia istituzionale, ma Ticinonews lo formula in modo più immediato e orientato alla continuità amministrativa; il CdT tende a un taglio più neutro e burocratico."
+            },
+            {
+              "titolo": "Bellinzona, un tuffo dal bordo piscina finisce con ferite serie",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/si-tuffa-dal-bordo-piscina-e-riporta-ferite-di-una-certa-gravita-433749",
+              "riassunto": "Al Bagno pubblico di Bellinzona un 25enne si è tuffato dal bordo piscina poco prima delle 17 ed è rimasto ferito in modo serio, tanto da essere trasportato in ambulanza all’ospedale. È una notizia di cronaca immediata con impatto locale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "CdT Ticino",
+                "LaRegione Bellinzonese"
+              ],
+              "differenze_narrative": "Tutte le fonti trattano l’episodio come cronaca d’urgenza; Ticinonews enfatizza l’orario e il trasporto in ambulanza, il CdT la gravità delle ferite, mentre LaRegione inserisce la notizia in modo più secco e locale."
+            }
+          ],
+          "trend": [
+            "Asse del San Gottardo: traffico, secondo tubo e gestione della mobilità",
+            "Tensioni istituzionali su lavoro, frontalieri e servizi pubblici (FFS Cargo, ristorni, assistenza sociale)"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno seguiti gli sviluppi sul dossier FFS Cargo Chiasso e sulle reazioni del Governo, oltre all’evoluzione del traffico di rientro e alle eventuali nuove informazioni sul caso molestie in sanità, che potrebbe avere ulteriori strascichi istituzionali.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da temi ad alto impatto istituzionale e federale: dalla gestione delle sanzioni verso la Russia ai dossier giudiziari e ferroviari che toccano direttamente il Ticino. In parallelo, alcuni casi di forte richiamo mediatico mostrano come la Svizzera resti anche un palcoscenico internazionale per eventi e personalità di grande visibilità.",
+          "notizie": [
+            {
+              "titolo": "L’Ucraina accusa: tecnologia svizzera ancora presente in Russia nonostante le sanzioni",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/le-accuse-dallucraina-la-tecnologia-svizzera-arriva-ancora-in-russia-427983",
+              "riassunto": "Un consigliere di Zelensky sulle sanzioni denuncia che componenti o tecnologie svizzere continuerebbero ad arrivare in Russia. Il messaggio politico è chiaro: per Kiev le misure adottate dalla SECO non bastano e servono controlli più incisivi lungo la filiera commerciale.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Deragliamento del San Gottardo: le FFS contestano la perizia, ma emergono dettagli omessi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/deragliamento-nel-san-gottardo-del-2023-le-ffs-hanno-omesso-qualche-dettaglio-427995",
+              "riassunto": "Il caso del deragliamento del 2023 al San Gottardo torna al centro del dibattito: le FFS respingono le accuse della perizia del Ministero pubblico ticinese, sostenendo di non aver commesso errori. Dai documenti, però, emergerebbe che il macchinista si sarebbe accorto di un'anomalia, elemento potenzialmente importante per capire la catena delle responsabilità.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Valérie Dittli vuole chiudere la legislatura nonostante la fiducia compromessa",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/valerie-dittli-vuole-finire-la-legislatura-la-rendita-vitalizia-vi-rinuncerei-433722",
+              "riassunto": "La consigliera di Stato vodese, al centro di accuse di aver mentito e nascosto informazioni, dice di voler restare in carica fino alla fine della legislatura e afferma che rinuncerebbe alla rendita vitalizia. Il caso è rilevante perché tocca la credibilità del governo cantonale e la capacità di ripristinare la fiducia interna.",
+              "rilevanza": "alta",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "fiducia nelle istituzioni e gestione delle responsabilità pubbliche",
+            "impatti svizzeri delle tensioni geopolitiche e delle sanzioni internazionali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l'evoluzione del dossier Dittli e le eventuali nuove prese di posizione della SECO o di Kiev sul presunto aggiramento delle sanzioni svizzere; sul fronte ferroviario, eventuali ulteriori documenti o chiarimenti sul caso San Gottardo potrebbero cambiare il quadro delle responsabilità.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "In questa tornata spiccano soprattutto temi con un legame diretto alla Svizzera italiana: l’Eurovision, osservato tra polemiche politiche e risultati del televoto elvetico, e le notizie dalla vita culturale svizzera, da Soletta alla musica federale. Sullo sfondo, restano alcuni grandi appuntamenti internazionali come Cannes e Broadway, ma con minore impatto locale immediato.",
+          "notizie": [
+            {
+              "titolo": "Eurovision: tra boicottaggio spagnolo, televoto svizzero e vittoria bulgara, il concorso diventa un caso politico",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1926013/guerra-eurovision-sanchez-boicottaggio-finale",
+              "riassunto": "Pedro Sánchez ha ribadito il boicottaggio spagnolo dell’Eurovision e ha rilanciato un messaggio contro la guerra. Intanto RTVE ha trasmesso un messaggio di protesta durante la finale, mentre in Svizzera il televoto ha premiato Israele e Sal Da Vinci, mostrando una forte distanza dalla giuria. È un tema rilevante anche per il pubblico ticinese perché unisce cultura pop, geopolitica e partecipazione elvetica.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "CdT Società",
+                "New York Times Arts"
+              ],
+              "differenze_narrative": "LaRegione mette al centro la protesta politica spagnola e il boicottaggio, con un taglio apertamente polemico. CdT guarda invece al lato svizzero, evidenziando la spaccatura tra pubblico e giuria nel televoto nazionale. Il New York Times sposta il focus sulla dimensione geopolitica della vittoria bulgara, interpretandola come segnale del ruolo della Bulgaria nello scenario europeo. Le tre fonti raccontano quindi lo stesso contenitore, ma con angolazioni diverse: protesta, recezione svizzera e lettura continentale."
+            },
+            {
+              "titolo": "Le Giornate letterarie di Soletta confermano il loro peso nel panorama culturale svizzero",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-literaturtage-solothurn-verzeichnen-grossen-andrang",
+              "riassunto": "Le Giornate letterarie di Soletta hanno registrato un forte afflusso di pubblico, con nomi come Lukas Bärfuss e ospiti internazionali che hanno portato temi politici nei dibattiti. Per la Svizzera italiana conta perché segnala una scena letteraria nazionale vivace e capace di attirare attenzione oltre i confini regionali.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Le bande vallesane dominano la Festa federale di musica",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1926093/festa-vallesane-federale-bande-band-musica",
+              "riassunto": "Le formazioni del Vallese occupano sei dei sette posti nella Brass Band Excellence, con l’Ancienne Cécilia di Chermignon al primo posto. Il quadro racconta una forte vitalità della musica bandistica svizzera, ma segnala anche problemi organizzativi come la carenza di volontari.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "cultura e politica si intrecciano sempre più spesso nei grandi eventi",
+            "forte visibilità della scena culturale svizzera tra letteratura, musica e televoto"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato soprattutto l’ulteriore sviluppo del caso Eurovision: possibili reazioni ufficiali, nuove prese di posizione sul boicottaggio e commenti sui risultati del televoto svizzero.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "La giornata è dominata dall’escalation tra Stati Uniti, Israele e Iran: diplomazia in stallo, minacce militari e nuove mosse sullo Stretto di Hormuz. Sullo sfondo, la guerra in Ucraina continua a intensificarsi e l’epidemia di Ebola in Congo riporta l’attenzione sui rischi sanitari globali.",
+          "notizie": [
+            {
+              "titolo": "La crisi con l’Iran entra in una fase più pericolosa: diplomazia bloccata e opzioni militari sul tavolo",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/18/trump-ha-convocato-i-consiglieri-di-sicurezza-al-golf-club-per-parlare-di-iran_0313c74e-43b8-4e2e-81ee-b5a8c22fa169.html",
+              "riassunto": "Trump ha riunito sabato al golf club Vance, Rubio, il direttore della Cia e Witkoff per discutere dell’Iran, mentre BBC e NYT parlano di negoziati in stallo e di possibili nuove risposte iraniane. Tema ad alta rilevanza per gli equilibri energetici e per l’Europa.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "BBC World",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA mette l’accento sulla riunione di sicurezza e sul perimetro politico dell’emergenza; BBC privilegia la fase diplomatica, con l’idea di un “tempo che stringe” ma con scambi ancora aperti; il NYT insiste sulle possibili contromosse iraniane e sul rischio di un allargamento regionale, con più dettaglio sulle opzioni militari e sulle conseguenze strategiche."
+            },
+            {
+              "titolo": "L’Iran prepara nuove strutture di controllo sullo Stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/18/teheran-annuncia-creato-organismo-che-gestira-lo-stretto-di-hormuz_399d109c-b70c-4b9e-9c69-f00c91837091.html",
+              "riassunto": "Teheran annuncia la creazione dell’“Autorità dello Stretto del Golfo Persico”, segnale che si inserisce nel braccio di ferro sulle rotte energetiche. Per l’Europa e la Svizzera conta per i possibili effetti su prezzi dell’energia e mercati.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "New York Times World"
+              ],
+              "differenze_narrative": "ANSA presenta la notizia come un annuncio istituzionale iraniano, con taglio più descrittivo; il NYT la collega invece alla guerra con l’Iran e alle possibili risposte di Teheran, interpretandola come segnale di escalation e di pressione sulle rotte marittime."
+            },
+            {
+              "titolo": "Ebola in Congo: l’OMS dichiara l’emergenza globale mentre gli Stati Uniti limitano gli ingressi",
+              "fonte": "New York Times World",
+              "link": "https://www.nytimes.com/2026/05/18/world/africa/congo-ebola-testing.html",
+              "riassunto": "Il focolaio in Congo è stato identificato con ritardo e ha già colpito anche un medico americano tra i casi confermati. Il NYT segnala problemi di sorveglianza e test, mentre la dichiarazione dell’OMS e le restrizioni USA indicano un rischio di diffusione internazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Escalation Iran-Stati Uniti-Israele e rischio per le rotte energetiche",
+            "Ritorno delle emergenze transnazionali: sicurezza, salute pubblica e controlli alle frontiere"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la possibilità di nuovi attacchi o annunci militari legati all’Iran, soprattutto su Hormuz e sui partner regionali. Da seguire anche l’evoluzione diplomatica e le eventuali reazioni sui mercati energetici.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: energia, export e marchi nazionali. Spiccano l’allarme UBS sulle scorte di petrolio, la mossa di MSC nel trading del greggio e il caso Swatch, diventato un fenomeno commerciale ma anche reputazionale.",
+          "notizie": [
+            {
+              "titolo": "UBS avverte: le scorte mondiali di petrolio scendono verso i minimi degli ultimi dieci anni",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/ubs-lancia-lallarme-scorte-globali-di-petrolio-verso-i-minimi-degli-ultimi-10-anni-433742",
+              "riassunto": "Secondo gli analisti di UBS, entro fine maggio le scorte globali dovrebbero calare a 7,6 miliardi di barili, avvicinandosi ai minimi di un decennio. Per Svizzera e Ticino il tema pesa subito su trasporti, costi energetici e inflazione importata.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "MSC entra con forza nel petrolio: la strategia di Aponte si allarga oltre i container",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/aponte-mit-mega-offensive-zum-perfekten-zeitpunkt-schweizer-containerriese-msc-will-jetzt-auch-beim-oel-die-weltmeere-beherrschen-id21955598.html",
+              "riassunto": "Il colosso svizzero MSC rileva la metà della coreana Sinokor e diventa improvvisamente uno dei grandi player del trasporto di petrolio via tanker. È una diversificazione importante per un gruppo simbolo dell’economia svizzera, in un mercato reso più volatile da tensioni geopolitiche e prezzi ballerini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": []
+            },
+            {
+              "titolo": "Il lancio di Swatch «Royal Pop» divide: successo commerciale, caos nei negozi e critiche al brand",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/war-genau-was-ihr-wolltet-swatch-reagiert-auf-tumulte-und-erntet-kritik-id21955998.html",
+              "riassunto": "Il debutto della nuova Swatch «Royal Pop» ha creato code, tumulti e chiusure temporanee in città come Basilea e Londra. Il caso è rilevante perché mostra la forza dei marchi svizzeri nel lusso accessibile, ma anche il rischio di un hype che sfugge di mano.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "Blick Life"
+              ],
+              "differenze_narrative": "Blick Wirtschaft mette l’accento sulle criticità operative, sul caos e sulla risposta difensiva di Swatch; il contenuto di Blick Life/podcast legge invece il caso come esempio di marketing estremo e spiega i meccanismi che generano l’hype, con tono più analitico e meno polemico."
+            }
+          ],
+          "trend": [
+            "energia e petrolio come fattore chiave per prezzi e costi in Svizzera",
+            "forza e vulnerabilità dei marchi svizzeri nei mercati globali"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato se l’allarme sulle scorte di petrolio si tradurrà in nuovi rialzi dei carburanti e se il caso Swatch si estenderà ad altri negozi o causerà una reazione ufficiale più netta del gruppo.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "La giornata è dominata dallo scontro OpenAI-Musk, con effetti che vanno oltre il tribunale perché toccano governance, fiducia e modello di business dell’IA. Sullo sfondo emergono anche temi molto sensibili per Europa e Svizzera: privacy negli assistenti vocali e sovranità/cybersecurity dei dati e del codice.",
+          "notizie": [
+            {
+              "titolo": "Musk perde la causa contro Sam Altman e OpenAI",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
+              "riassunto": "Il caso legale tra Elon Musk, Sam Altman e OpenAI si chiude con una sconfitta per Musk. Per il settore è una notizia importante perché chiarisce, almeno per ora, la posizione giudiziaria di OpenAI in una disputa che ha forte valore simbolico e industriale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "TechCrunch AI"
+              ],
+              "differenze_narrative": "Una fonte racconta l’esito secco della controversia; l’altra si concentra sul tema della fiducia e sull’affidabilità personale di Altman emersa nelle fasi finali del processo. Il framing passa quindi dal risultato legale al giudizio sulla credibilità dei protagonisti."
+            },
+            {
+              "titolo": "Apple prepara un Siri rinnovato che potrebbe eliminare automaticamente le chat",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
+              "riassunto": "Apple starebbe puntando sulla privacy per il nuovo Siri, fino a prevedere la cancellazione automatica delle conversazioni. È un tema molto rilevante per i lettori svizzeri: tocca direttamente protezione dei dati, fiducia nei dispositivi e gestione locale delle informazioni personali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Mistral avverte la Francia: attenzione a far analizzare codice militare da modelli AI statunitensi",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/",
+              "riassunto": "Il CEO di Mistral, Arthur Mensch, mette in guardia contro la dipendenza europea dalla cybersecurity statunitense, sostenendo che le basi di codice militari francesi non dovrebbero essere scansionate da modelli AI USA. Il messaggio è molto attuale anche per la Svizzera: sovranità digitale, difesa e controllo dei dati.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "IA, privacy e controllo dei dati personali",
+            "Sovranità digitale europea e fiducia nei grandi laboratori AI"
+          ],
+          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il caso OpenAI-Musk genererà nuove reazioni di mercato o dichiarazioni dei protagonisti, e se Apple confermerà dettagli concreti sul nuovo Siri e sulla gestione automatica delle chat.",
+          "_model_used": "openrouter/openai/gpt-5.4-mini"
+        }
+      ]
+    },
     {
       "id": 73,
       "run_id": 105,
@@ -5283,306 +5613,6 @@
             "Pressione su OpenAI: concorrenza crescente, costi enormi e governance sempre più sotto stress"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergeranno dettagli aggiuntivi sull’accordo OpenAI-AWS e se la protesta interna a Google o i ricorsi legali sul fronte Pentagono produrranno nuove reazioni pubbliche.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "run_id": 86,
-      "run_time": "2026-04-29 09:06:44.092107+00:00",
-      "analyzed_at": "2026-04-29T09:09:25.339435+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi di lavoro e giustizia: spiccano il nuovo contratto collettivo dell’edilizia, i 19 licenziamenti alla Equans e l’apertura del processo al TPF di Bellinzona contro Gulnara Karimova e Lombard Odier.\nSul territorio, molte altre notizie sono di taglio locale o comunitario e hanno rilevanza più contenuta.",
-          "notizie": [
-            {
-              "titolo": "Edilizia ticinese: accordo cantonale record fino al 2031",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1921290/accordo-lavoro-trattativa-conclude-ticinese-tratta",
-              "riassunto": "Firmato il contratto collettivo cantonale dell’edilizia e del genio civile, valido fino al 2031. L’intesa è presentata come una base stabile per pianificare il settore, con attenzione a formazione e condizioni di lavoro. Rileva per migliaia di addetti in Ticino.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "LaRegione mette l’accento sul valore politico-sindacale dell’accordo e sulla sua portata ‘record’, con una lettura più istituzionale. Ticinonews entra invece nei dettagli pratici: giornate troppo lunghe, tutela da intemperie, conteggio delle trasferte dal primo minuto e bilanciamento tra diritti dei lavoratori ed esigenze delle imprese."
-            },
-            {
-              "titolo": "Equans licenzia 19 persone a Rivera/Monteceneri e non concede un piano sociale",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/diciannove-licenziamenti-alla-equans-a-monteceneri-432356",
-              "riassunto": "La succursale ticinese di Equans taglia 19 posti di lavoro, con impatti su fibre ottiche, impianti di riscaldamento e amministrazione. I dipendenti risultano liberi da subito, ma l’azienda non ha accettato un piano sociale. La vicenda pesa sul mercato del lavoro locale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Luganese",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "LaRegione privilegia il punto di vista sindacale: evidenzia la delusione dell’OCST, il giudizio critico sulla multinazionale e il mancato riguardo per il territorio. Ticinonews è più fattuale e aziendalista nella cronaca, spiegando i settori colpiti, il numero preciso dei licenziamenti e la causa economica legata al calo di commesse, in particolare dalla fibra ottica Swisscom."
-            },
-            {
-              "titolo": "Parte a Bellinzona il processo a Gulnara Karimova e alla banca Lombard Odier",
-              "fonte": "LaRegione Bellinzonese",
-              "link": "https://www.laregione.ch/cantone/bellinzonese/1921150/riciclaggio-karimova-corruzione-odier-processo-gulnara-lombard",
-              "riassunto": "Al Tribunale penale federale di Bellinzona si è aperto il processo contro Gulnara Karimova, figlia dell’ex presidente uzbeko, e contro Lombard Odier. Le accuse includono riciclaggio e corruzione; il processo durerà un mese e la sentenza è attesa a fine maggio. Ha forte rilievo svizzero.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Lavoro e relazioni industriali in Ticino",
-            "Giustizia economica e procedimenti federali a Bellinzona"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno seguiti soprattutto gli sviluppi del caso Equans, in particolare eventuali reazioni politiche o sindacali al mancato piano sociale, e le decisioni procedurali del TPF sul processo Karimova-Lombard Odier.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi molto concreti per il lettore svizzero: sanità, lavoro e politica istituzionale. In primo piano il confronto sulle cure infermieristiche, la questione dei frontalieri e il caso politico vaudese di Valérie Dittli.",
-          "notizie": [
-            {
-              "titolo": "Le cure infermieristiche: il Parlamento ridimensiona la riforma e i sindacati reagiscono",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Cure-infermieristiche-riforma-ridimensionata-e-reazioni-contrastanti--3700500.html",
-              "riassunto": "Dopo oltre sette ore di dibattito, il Consiglio nazionale non ha portato a 45 ore l’orario massimo settimanale degli infermieri, fermandosi a 50. La durata normale sale a 42 ore, ma i promotori denunciano un testo troppo debole rispetto all’iniziativa approvata dal popolo nel 2021. Il tema ha un impatto diretto sul sistema sanitario svizzero e sulla carenza di personale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "RSI adotta un taglio più istituzionale e di bilancio parlamentare, mettendo in evidenza il compromesso politico e le reazioni del settore. Ticinonews enfatizza invece l'appello sindacale e la mobilitazione di 190'000 firmatari, con un framing più conflittuale e centrato sulla volontà popolare e sulla pressione su Berna."
-            },
-            {
-              "titolo": "I frontalieri e la disoccupazione: Quadri chiede una linea dura verso l’UE",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/la-svizzera-non-deve-versare-la-disoccupazione-ai-frontalieri-432370",
-              "riassunto": "Lorenzo Quadri vuole che il Consiglio federale chiarisca subito all’UE che la Svizzera non verserà indennità di disoccupazione ai frontalieri. La questione è particolarmente sensibile per il Ticino, che ospita una parte importante dei circa 412'000 frontalieri presenti nel Paese. L’eventuale cambio di regime potrebbe pesare su finanze e URC cantonali.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il Gran Consiglio vodese chiede le dimissioni di Valérie Dittli",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Vaud-il-Parlamento-chiede-le-dimissioni-di-Val%C3%A9rie-Dittli--3701256.html",
-              "riassunto": "Il Parlamento vodese ha approvato una risoluzione simbolica che invita formalmente la consigliera di Stato Valérie Dittli a lasciare l’incarico. Il voto arriva dopo un nuovo rapporto compromettente e riflette una forte pressione politica sulla centrista. Il caso è rilevante perché apre una fase di instabilità nel governo cantonale vodese.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "sanità e condizioni di lavoro nel settore delle cure",
-            "tensioni tra Svizzera, UE e frontalieri"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno monitorati l’esito finale del dibattito federale sulle cure infermieristiche e le reazioni politiche al dossier frontalieri, soprattutto in chiave ticinese. Da seguire anche l’eventuale risposta del governo vodese sul caso Dittli.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da due filoni forti per il pubblico svizzero: il grande appuntamento fumettistico di Losanna e il rinnovo del profilo del Locarno Film Festival. Sul fronte internazionale, continua a pesare il caso Michael Jackson, tra trionfo commerciale del biopic e nuove accuse che riaprono il dibattito sull’eredità dell’artista.",
-          "notizie": [
-            {
-              "titolo": "BDFIL festeggia 20 anni a Losanna con Mirion Malle e il fumetto del Québec",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1921257/fumetto-malle-quebec-bdfil-mirion",
-              "riassunto": "La ventesima edizione del festival del fumetto si apre a Losanna con 16 mostre, oltre 100 autori e circa 80 appuntamenti fino al 10 maggio. L’omaggio principale è dedicato a Mirion Malle, figura del fumetto femminista e impegnato, con una retrospettiva inedita.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il Locarno Film Festival affida il manifesto a Cindy Sherman",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1921382/michael-biopic-dollari-michael-debutto",
-              "riassunto": "Il 79° Locarno Film Festival punta su Cindy Sherman per la propria immagine visiva: il manifesto ritrae una donna in bianco e nero avvolta in un telo leopardato. È un segnale forte per uno dei principali eventi culturali svizzeri, con ricaduta internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Michael Jackson torna al centro del dibattito: biopic record e nuove accuse",
-              "fonte": "Il Post Cultura",
-              "link": "https://www.ilpost.it/2026/04/28/accuse-abusi-michael-jackson-cascio/",
-              "riassunto": "Quattro fratelli Cascio hanno fatto causa al Michael Jackson Estate sostenendo abusi subiti da bambini; l’hanno raccontato al New York Times. Il caso esplode mentre il biopic 'Michael' incassa 218 milioni di dollari nel mondo in meno di una settimana.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Cultura",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "Il Post mette al centro le accuse, la causa civile e il contesto dell’operazione di riabilitazione dell’immagine di Jackson; il New York Times, nella notizia sui fan, privilegia invece la dimensione di successo commerciale e la reazione del pubblico, sottolineando il contrasto tra incassi record e giudizi critici severi."
-            }
-          ],
-          "trend": [
-            "grandi festival e istituzioni culturali svizzere in evidenza",
-            "cultura pop globale tra celebrazione commerciale e controversie etiche"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’eco del caso Michael Jackson, soprattutto tra reazioni del pubblico, eventuali repliche del Michael Jackson Estate e ulteriore copertura internazionale sul biopic. In Svizzera, attenzione alle prime immagini e ai numeri di affluenza di BDFIL e alla ricezione del nuovo volto del Locarno Film Festival.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La categoria oggi è dominata dalla crisi tra Stati Uniti, Iran e i riflessi sul petrolio globale, con un impatto potenzialmente diretto anche per la Svizzera attraverso carburanti e aviazione. In parallelo, si muovono gli equilibri dell’OPEC e riemerge un fronte regolatorio europeo su Meta.",
-          "notizie": [
-            {
-              "titolo": "Crisi Iran-USA: Hormuz bloccato, petrolio in stallo e ricadute per la Svizzera",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/schweiz/auswirkungen-des-iran-kriegs-exklusive-tankreserven-schweiz-als-treibstoffinsel-in-europa",
-              "riassunto": "SRF spiega che, nonostante la guerra e la stretta di Hormuz, in Svizzera benzina e diesel continuano a fluire; il punto più fragile è il cherosene per gli aeroporti. Il BWL valuta la copertura delle forniture fino a fine maggio 2026 e ricorda che le riserve elvetiche sono solo per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF International",
-                "ANSA Mondo",
-                "Internazionale",
-                "Il Post Mondo"
-              ],
-              "differenze_narrative": "SRF taglia il tema sulla sicurezza energetica svizzera, con taglio molto pratico su riserve, aeroporti e autonomia rispetto all’UE. ANSA e Internazionale puntano sullo scontro politico-diplomatico tra Trump e Teheran, usando toni più allarmati sulla leadership iraniana e sul controllo dello stretto. Il Post fornisce il dettaglio più tecnico ed economico: capacità di stoccaggio in esaurimento, taglio della produzione di oltre 2 milioni di barili al giorno e uso di navi cisterna come depositi galleggianti."
-            },
-            {
-              "titolo": "L’Iran sotto pressione: scorte di petrolio quasi esaurite e produzione in calo",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/04/28/probemi-iran-blocco-petrolio/",
-              "riassunto": "Secondo Kpler, all’Iran resterebbero tra 12 e 22 giorni prima di esaurire lo stoccaggio disponibile; le esportazioni sono scese a una media di 567 mila barili al giorno. Il regime sta usando petroliere vuote come magazzini e ha già ridotto la produzione di oltre 2 milioni di barili al giorno.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Mondo",
-                "ANSA Mondo",
-                "Internazionale",
-                "SRF International"
-              ],
-              "differenze_narrative": "Il Post privilegia una lettura economico-logistica, con numeri e conseguenze concrete sulla capacità iraniana di reggere il blocco. ANSA riprende il messaggio diretto di Trump su Truth, mentre Internazionale insiste sulla guerra di nervi e sul rischio di impatto elettorale interno per il presidente statunitense. SRF, invece, traduce la crisi in un problema di approvvigionamento per la Svizzera, soprattutto per il settore aereo."
-            },
-            {
-              "titolo": "Gli Emirati Arabi Uniti lasciano l’OPEC e indeboliscono il cartello del petrolio",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/04/28/emirati-arabi-uniti-uscita-opec/",
-              "riassunto": "Dal 1° maggio gli Emirati Arabi Uniti usciranno dall’OPEC, liberandosi dei limiti di produzione dell’organizzazione. La mossa, legata al contesto di guerra in Medio Oriente, riduce il potere dell’OPEC di influenzare i prezzi globali dei carburanti e mette pressione sull’Arabia Saudita.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Il Post insiste sulla meccanica economica: limiti di produzione, cartello, effetti sui prezzi internazionali e perdita di influenza dell’OPEC. Il New York Times mette più in evidenza il significato geopolitico della scelta, descrivendo gli Emirati come un paese che si sgancia dall’orbita saudita e prende una strada autonoma in una regione in tensione."
-            }
-          ],
-          "trend": [
-            "crisi energetica e rischio di shock sui prezzi del petrolio",
-            "riassetto degli equilibri tra Iran, Stati del Golfo e Stati Uniti"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il blocco di Hormuz si traduce in ulteriori tagli alle esportazioni iraniane o in nuove dichiarazioni di Trump: eventuali tensioni sul petrolio potrebbero riflettersi rapidamente su carburanti, cherosene e costi di trasporto anche in Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da due filoni: in Svizzera pesano gli aumenti dei prezzi nel mobile, mentre sul piano internazionale il ritorno delle tensioni in Iran fa salire petrolio e incertezza sui trasporti e sulle compagnie aeree. Sullo sfondo, arrivano anche segnali di mercato su finanza, acquisizioni e governance.",
-          "notizie": [
-            {
-              "titolo": "Salt alza i prezzi degli abbonamenti mobile in Svizzera",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/schon-wieder-salt-erhoeht-die-preise-das-steckt-dahinter-id21907178.html",
-              "riassunto": "Salt aumenterà da giugno i prezzi dei suoi abbonamenti di 1-2 franchi al mese per i clienti senza altri servizi o dispositivi. L’azienda giustifica il rincaro con gli investimenti nella rete e con un uso dati salito del 50% in cinque anni. Per il lettore svizzero è una notizia diretta e concreta sul costo della vita digitale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Lo shock Iran-Hormuz manda in tensione petrolio, borse e compagnie aeree",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/compagnie-aeree-shock-iraniano-manda-stallo-conti-trimestrali-AIGQzEjC",
-              "riassunto": "Il conflitto in Iran e le tensioni sullo Stretto di Hormuz stanno alzando il costo del carburante e bloccando i conti delle compagnie aeree europee. Air France-KLM ha già aggiunto 50 euro come contributo carburante, KLM ha cancellato 80 voli e SAS circa 1.000. Per chi viaggia da e verso la Svizzera, il rischio è di biglietti più cari e maggiore instabilità.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia",
-                "Il Sole 24 Ore Finanza",
-                "Adnkronos"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore Economia taglia sull’impatto industriale: rincari dei biglietti, cancellazioni e bilanci delle compagnie. Il Sole 24 Ore Finanza legge la stessa crisi dal lato dei mercati, con borse deboli, petrolio in rialzo e attesa per le banche centrali. Adnkronos spinge invece sul frame geopolitico-militare, con la ‘flotta delle zanzare’ e la guerra asimmetrica iraniana, enfatizzando il rischio per il commercio mondiale."
-            },
-            {
-              "titolo": "Petrolio in rialzo e mercati cauti tra tensioni in Medio Oriente e attesa per Fed e BCE",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borse-tokyo-rally-i-massimi-wall-street-tensioni-petrolio-AIteFBjC",
-              "riassunto": "Le piazze europee chiudono deboli mentre il petrolio torna a correre per lo stallo sui negoziati Usa-Iran e per le tensioni nello Stretto di Hormuz. Milano resta quasi invariata, con Saipem in forte rialzo, e gli investitori guardano alle riunioni di Fed e BCE. È un segnale rilevante per inflazione, trasporti ed energia anche in Svizzera.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Economia",
-                "Il Sole 24 Ore Finanza",
-                "Adnkronos"
-              ],
-              "differenze_narrative": "Rispetto al pezzo sulle compagnie aeree, qui il focus è sui mercati e sul petrolio, non sui bilanci aziendali. Adnkronos aggiunge il taglio più politico e strategico sullo scontro Iran-Usa, mentre Il Sole Finanza inserisce l’evento nel calendario macro, con Fed e BCE come variabili decisive per gli investitori."
-            }
-          ],
-          "trend": [
-            "aumento dei costi di trasporto e telecomunicazioni",
-            "tensione geopolitica che si traduce in pressione su petrolio, mercati e prezzi"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti l’evoluzione delle tensioni nello Stretto di Hormuz e le possibili ripercussioni su petrolio, compagnie aeree e listini dei carburanti in Europa.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da due grandi dossier industriali: la nuova intesa OpenAI-Microsoft, che cambia cloud, licenze e vincoli sull’AGI, e il blocco cinese dell’acquisizione Meta-Manus. Sullo sfondo, continua la corsa alla potenza di calcolo e all’hardware AI, con investimenti enormi e nuove scommesse su chip e dispositivi.",
-          "notizie": [
-            {
-              "titolo": "OpenAI e Microsoft riscrivono la partnership: meno esclusiva, più libertà su cloud e prodotti",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
-              "riassunto": "OpenAI e Microsoft hanno rinegoziato il loro accordo, risolvendo il nodo legato al contratto da up to 50 miliardi di dollari con Amazon/AWS. La nuova intesa consente a OpenAI di distribuire tutti i suoi prodotti su qualsiasi cloud, mentre Microsoft ottiene una licenza non esclusiva fino al 2032.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder",
-                "Bloomberg",
-                "Hacker News"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza soprattutto il rischio legale legato al deal con Amazon e il fatto che l’accordo sciolga un possibile contenzioso con Microsoft. The Decoder mette l’accento sulla fine dell’esclusiva Azure e sulla rimozione della clausola AGI. Bloomberg/HN lo presentano come un taglio netto al vecchio schema di revenue sharing, con forte enfasi finanziaria e di governance."
-            },
-            {
-              "titolo": "La Cina blocca l’acquisizione di Manus da parte di Meta e ordina di annullare il deal",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
-              "riassunto": "La NDRC cinese ha vietato l’acquisizione da circa 2 miliardi di dollari della startup AI Manus da parte di Meta. Secondo il testo, l’ordine impone di ritirare la transazione, con un impatto diretto sulla strategia di Meta negli agenti AI.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder",
-                "MIT Tech Review"
-              ],
-              "differenze_narrative": "TechCrunch punta sugli effetti operativi per Meta e sul lato aziendale della vicenda, citando anche il trasferimento di circa 100 dipendenti a Singapore e i ruoli dei fondatori. The Decoder adotta un framing più geopolitico, parlando di attacco alla base tecnologica cinese e possibile leva negoziale in vista di un vertice Xi-Trump. MIT Tech Review lo cita come una delle notizie chiave del giorno, con tono più sintetico e da rassegna."
-            },
-            {
-              "titolo": "OpenAI starebbe preparando un telefono con agenti AI al posto delle app",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
-              "riassunto": "Secondo una nota di Ming-Chi Kuo, OpenAI lavorerebbe a uno smartphone con MediaTek, Qualcomm e Luxshare, pensato per compiti affidati ad agenti AI invece che alle app tradizionali. La produzione di massa sarebbe prevista per il 2028.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch insiste sul salto di paradigma per l’iPhone e sull’idea di un ‘agentic homescreen’, con riferimento all’interesse degli investitori e al possibile mercato consumer. The Decoder è più tecnico-industriale: parla di chip personalizzati, controllo completo di sistema operativo e hardware, e possibile bundle con abbonamenti."
-            }
-          ],
-          "trend": [
-            "guerra per il controllo dello stack AI: cloud, chip, hardware e licenze",
-            "geopolitica dell’AI: acquisizioni, blocchi regolatori e competizione USA-Cina"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito soprattutto l’effetto concreto della nuova intesa OpenAI-Microsoft sui rapporti con AWS e sulla distribuzione dei prodotti, oltre a eventuali reazioni di Meta al blocco cinese di Manus e ai possibili ricorsi o soluzioni alternative.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
