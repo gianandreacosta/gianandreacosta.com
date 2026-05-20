@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-20T20:20:03.438786Z",
+  "generated_at": "2026-05-20T20:30:05.106410Z",
   "system": {
     "version": "OpenClaw 2026.5.7 (eeef486)",
     "current_ver": "2026.5.7",
-    "latest_ver": "2026.5.18",
+    "latest_ver": "2026.5.19",
     "update_available": true,
     "gateway_running": true,
     "gateway_port": 18789
