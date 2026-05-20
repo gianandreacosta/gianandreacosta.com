@@ -1,6 +1,6 @@
 /* Admin API wrapper. Gestisce bearer token in localStorage + redirect su 401. */
 
-const API_BASE = "https://api.lab.gianandreacosta.com/api";
+const API_BASE = "https://giangi-win11.tail38d0d3.ts.net/api";
 const TOKEN_KEY = "admin_token";
 
 const Auth = {
