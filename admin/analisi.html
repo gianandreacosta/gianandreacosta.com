@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧠 Admin — Parametri Analisi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  @media (max-width:700px) { .grid-2 { grid-template-columns: 1fr; } }
+  .field-help { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.15rem; line-height: 1.35; }
+  .chain-input { display: flex; gap: 0.4rem; align-items: center; margin-bottom: 0.4rem; }
+  .chain-input .label { width: 95px; font-size: 0.72rem; color: var(--text-muted); flex-shrink: 0; text-transform: uppercase; }
+  .chain-input input { flex: 1; }
+  textarea.prompt-editor { min-height: 360px; font-family: ui-monospace, monospace; font-size: 0.82rem; line-height: 1.5; resize: vertical; }
+  .dirty-badge { display: none; background: var(--accent); color: #0a0a0a; padding: 0.1rem 0.5rem; border-radius: 4px; font-size: 0.68rem; font-weight: 700; margin-left: 0.4rem; }
+  .dirty-badge.shown { display: inline-block; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      🛠️ <span>Rassegna</span> <span class="badge-admin">ADMIN</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="/admin/" class="nav-btn">⬅ Hub</a>
+      <a href="/admin/fonti.html" class="nav-btn">📰 Fonti</a>
+      <a href="/admin/analisi.html" class="nav-btn active">🧠 Analisi</a>
+      <a href="#" class="nav-btn disabled">⚙️ Impostazioni</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="api-status" class="api-status">…</span>
+    </div>
+  </div>
+
+  <div id="sync-banner" style="display:none;"></div>
+
+  <!-- Card: ultimo run -->
+  <div class="card">
+    <div class="card-title">📊 Stato pipeline</div>
+    <div id="last-run-box" class="loading"><span class="spinner"></span> Caricamento…</div>
+  </div>
+
+  <!-- Card: parametri di selezione -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">🎯 Selezione articoli <span id="dirty-sel" class="dirty-badge">modificato</span></div>
+    </div>
+    <div class="grid-2">
+      <div class="form-group">
+        <label>Max articoli per categoria</label>
+        <input type="number" id="cfg-max-articles" min="1" max="500" oninput="markDirty()">
+        <div class="field-help">Quanti articoli (max) ogni categoria invia al modello. Più alti = scelta più ampia per l'AI ma più token.</div>
+      </div>
+      <div class="form-group">
+        <label>Lunghezza minima descrizione</label>
+        <input type="number" id="cfg-min-desc" min="0" max="500" oninput="markDirty()">
+        <div class="field-help">Filtro qualità: articoli con descrizione più corta sono scartati (a meno che abbiano un body fetched).</div>
+      </div>
+      <div class="form-group">
+        <label>Notizie per categoria — minimo</label>
+        <input type="number" id="cfg-news-min" min="0" max="10" oninput="markDirty()">
+        <div class="field-help">Quante notizie il modello DEVE produrre (anche se la giornata è povera).</div>
+      </div>
+      <div class="form-group">
+        <label>Notizie per categoria — massimo</label>
+        <input type="number" id="cfg-news-max" min="1" max="20" oninput="markDirty()">
+        <div class="field-help">Tetto. Il modello sceglie tra min e max in base alla rilevanza.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card: body fetch -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">📄 Body fetch (testo completo articoli) <span id="dirty-body" class="dirty-badge">modificato</span></div>
+    </div>
+    <div class="form-group" style="display:flex;align-items:center;gap:0.6rem;">
+      <label class="toggle">
+        <input type="checkbox" id="cfg-enable-body" oninput="markDirty()">
+        <span class="toggle-slider"></span>
+      </label>
+      <span style="font-size:0.85rem;">Abilitato <span style="color:var(--text-muted);">— l'AI riceve il body completo invece della sola descrizione</span></span>
+    </div>
+    <div class="grid-2" style="margin-top:0.5rem;">
+      <div class="form-group">
+        <label>Max char body nel prompt</label>
+        <input type="number" id="cfg-body-max-chars" min="100" max="20000" step="100" oninput="markDirty()">
+        <div class="field-help">Tronchiamo il body prima di inviarlo al modello. 2000 char ≈ ~500 token.</div>
+      </div>
+      <div class="form-group">
+        <label>Min char body per qualificare</label>
+        <input type="number" id="cfg-body-min-qualify" min="0" max="2000" oninput="markDirty()">
+        <div class="field-help">Sotto questa soglia il body è considerato "troppo breve" e la fonte resta esclusa (a meno che abbia description valida).</div>
+      </div>
+      <div class="form-group">
+        <label>Timeout fetch (secondi)</label>
+        <input type="number" id="cfg-fetch-timeout" min="1" max="60" oninput="markDirty()">
+        <div class="field-help">Quanto aspettare per ogni singolo articolo prima di considerare il fetch fallito.</div>
+      </div>
+      <div class="form-group">
+        <label>Worker concorrenti</label>
+        <input type="number" id="cfg-fetch-workers" min="1" max="32" oninput="markDirty()">
+        <div class="field-help">Quanti fetch in parallelo. Più alto = più veloce ma più carico sui server target.</div>
+      </div>
+    </div>
+    <div class="form-group" style="display:flex;align-items:center;gap:0.6rem;margin-top:0.5rem;">
+      <label class="toggle">
+        <input type="checkbox" id="cfg-fallback-desc" oninput="markDirty()">
+        <span class="toggle-slider"></span>
+      </label>
+      <span style="font-size:0.85rem;">Fallback su descrizione se il body fetch fallisce</span>
+    </div>
+  </div>
+
+  <!-- Card: chain modelli -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">🤖 Chain modelli AI <span id="dirty-models" class="dirty-badge">modificato</span></div>
+    </div>
+    <div class="chain-input">
+      <span class="label">PRIMARY</span>
+      <input type="text" id="cfg-model-primary" placeholder="es. openai-codex/gpt-5.4-mini" oninput="markDirty()">
+    </div>
+    <div class="chain-input">
+      <span class="label">FALLBACK 1</span>
+      <input type="text" id="cfg-model-fallback" oninput="markDirty()">
+    </div>
+    <div class="chain-input">
+      <span class="label">FALLBACK 2</span>
+      <input type="text" id="cfg-model-fallback2" oninput="markDirty()">
+    </div>
+    <div class="chain-input">
+      <span class="label">FALLBACK 3</span>
+      <input type="text" id="cfg-model-fallback3" oninput="markDirty()">
+    </div>
+    <div class="field-help" style="margin-top:0.4rem;">L'analisi prova in ordine. Se PRIMARY fallisce (rate limit, 4xx), salta al successivo. Formato: <code>provider/modello</code>.</div>
+  </div>
+
+  <!-- Salva config -->
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-size:0.85rem;color:var(--text-muted);">Le modifiche vengono salvate nel <strong>shadow</strong> del repo GitHub. La pipeline V1 continua col live finché non fai cutover.</div>
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn" onclick="reloadConfig()">↻ Annulla</button>
+        <button class="btn primary" id="save-cfg-btn" onclick="saveConfig()">💾 Salva config</button>
+      </div>
+    </div>
+    <div id="save-result"></div>
+  </div>
+
+  <!-- Card: prompt editor -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">📝 Prompt AI <span id="prompt-version-badge" style="background:var(--bg-hover);color:var(--text-muted);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.7rem;font-family:ui-monospace,monospace;margin-left:0.4rem;">–</span> <span id="dirty-prompt" class="dirty-badge">modificato</span></div>
+    </div>
+    <div class="form-group">
+      <textarea id="cfg-prompt" class="prompt-editor" oninput="markDirtyPrompt()" placeholder="caricamento…"></textarea>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-size:0.78rem;color:var(--text-muted);"><span id="prompt-char-count">0</span> caratteri</div>
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn" onclick="reloadPrompt()">↻ Annulla</button>
+        <button class="btn primary" id="save-prompt-btn" onclick="savePrompt()">💾 Salva prompt + bump versione</button>
+      </div>
+    </div>
+    <div id="prompt-save-result"></div>
+  </div>
+
+  <!-- Card: storico run -->
+  <div class="card">
+    <div class="card-title">📈 Storico run analisi</div>
+    <div id="runs-box" class="loading"><span class="spinner"></span> Caricamento…</div>
+  </div>
+
+</div>
+
+<script src="lib/api.js"></script>
+<script src="lib/components.js"></script>
+<script>
+let STATE = { config: null, prompt: null, dirty: { sel: false, body: false, models: false, prompt: false } };
+
+async function init() {
+  try { await ensureAuth(); } catch { return; }
+  renderApiStatus();
+  await Promise.all([loadConfig(), loadPrompt(), loadRuns(), loadLastRun()]);
+  await renderSyncBanner();
+}
+
+function markDirty() {
+  STATE.dirty.sel = true; STATE.dirty.body = true; STATE.dirty.models = true;
+  document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.add("shown"));
+}
+function markDirtyPrompt() {
+  STATE.dirty.prompt = true;
+  document.getElementById("dirty-prompt").classList.add("shown");
+  document.getElementById("prompt-char-count").textContent = document.getElementById("cfg-prompt").value.length;
+}
+
+async function loadConfig() {
+  try {
+    const c = await Api.getAnalysisConfig();
+    STATE.config = c;
+    document.getElementById("cfg-max-articles").value = c.max_articles_per_category ?? "";
+    document.getElementById("cfg-min-desc").value = c.min_description_length ?? "";
+    document.getElementById("cfg-news-min").value = c.news_per_category_min ?? "";
+    document.getElementById("cfg-news-max").value = c.news_per_category_max ?? "";
+    document.getElementById("cfg-enable-body").checked = c.enable_body_fetch === true;
+    document.getElementById("cfg-body-max-chars").value = c.body_max_chars_in_prompt ?? "";
+    document.getElementById("cfg-body-min-qualify").value = c.body_min_chars_to_qualify ?? "";
+    document.getElementById("cfg-fetch-timeout").value = c.fetch_timeout_seconds ?? "";
+    document.getElementById("cfg-fetch-workers").value = c.fetch_concurrent_workers ?? "";
+    document.getElementById("cfg-fallback-desc").checked = c.fallback_to_description === true;
+    document.getElementById("cfg-model-primary").value = c.model_primary ?? "";
+    document.getElementById("cfg-model-fallback").value = c.model_fallback ?? "";
+    document.getElementById("cfg-model-fallback2").value = c.model_fallback2 ?? "";
+    document.getElementById("cfg-model-fallback3").value = c.model_fallback3 ?? "";
+    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = false;
+    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.remove("shown"));
+  } catch (e) {
+    Toast.error("Errore caricamento config: " + e.message);
+  }
+}
+
+function reloadConfig() {
+  if (Object.values(STATE.dirty).some(Boolean) && !confirm("Annullare le modifiche non salvate?")) return;
+  loadConfig();
+}
+
+async function saveConfig() {
+  const intOrNull = (id) => { const v = document.getElementById(id).value; return v === "" ? undefined : parseInt(v, 10); };
+  const strOrNull = (id) => { const v = document.getElementById(id).value.trim(); return v === "" ? undefined : v; };
+
+  const body = {
+    max_articles_per_category: intOrNull("cfg-max-articles"),
+    min_description_length: intOrNull("cfg-min-desc"),
+    news_per_category_min: intOrNull("cfg-news-min"),
+    news_per_category_max: intOrNull("cfg-news-max"),
+    enable_body_fetch: document.getElementById("cfg-enable-body").checked,
+    body_max_chars_in_prompt: intOrNull("cfg-body-max-chars"),
+    body_min_chars_to_qualify: intOrNull("cfg-body-min-qualify"),
+    fetch_timeout_seconds: intOrNull("cfg-fetch-timeout"),
+    fetch_concurrent_workers: intOrNull("cfg-fetch-workers"),
+    fallback_to_description: document.getElementById("cfg-fallback-desc").checked,
+    model_primary: strOrNull("cfg-model-primary"),
+    model_fallback: strOrNull("cfg-model-fallback"),
+    model_fallback2: strOrNull("cfg-model-fallback2"),
+    model_fallback3: strOrNull("cfg-model-fallback3"),
+  };
+  Object.keys(body).forEach(k => body[k] === undefined && delete body[k]);
+
+  const btn = document.getElementById("save-cfg-btn");
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Salvo…';
+  try {
+    const r = await Api.updateAnalysisConfig(body);
+    Toast.success(`Config salvato (${r.updated_fields.length} campi)`);
+    document.getElementById("save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Commit ${escHtml((r.git?.head || "").slice(0,7))} pushato. Pipeline V1 invariata fino al cutover.</div>`;
+    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = false;
+    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.remove("shown"));
+    renderSyncBanner();
+  } catch (e) {
+    Toast.error("Errore: " + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "💾 Salva config";
+  }
+}
+
+async function loadPrompt() {
+  try {
+    const p = await Api.getAnalysisPrompt();
+    STATE.prompt = p;
+    document.getElementById("cfg-prompt").value = p.content;
+    document.getElementById("prompt-version-badge").textContent = p.version;
+    document.getElementById("prompt-char-count").textContent = p.length;
+    STATE.dirty.prompt = false;
+    document.getElementById("dirty-prompt").classList.remove("shown");
+  } catch (e) {
+    Toast.error("Errore caricamento prompt: " + e.message);
+  }
+}
+
+function reloadPrompt() {
+  if (STATE.dirty.prompt && !confirm("Annullare modifiche prompt?")) return;
+  loadPrompt();
+}
+
+async function savePrompt() {
+  const content = document.getElementById("cfg-prompt").value;
+  if (content.length < 50) { Toast.error("Prompt troppo corto"); return; }
+  const btn = document.getElementById("save-prompt-btn");
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Salvo…';
+  try {
+    const r = await Api.updateAnalysisPrompt({ content });
+    Toast.success(`Prompt salvato → ${r.new_version}`);
+    document.getElementById("prompt-version-badge").textContent = r.new_version;
+    document.getElementById("prompt-save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Versione ${escHtml(r.new_version)} salvata. Commit ${escHtml((r.git?.head || "").slice(0,7))}.</div>`;
+    STATE.dirty.prompt = false;
+    document.getElementById("dirty-prompt").classList.remove("shown");
+    renderSyncBanner();
+  } catch (e) {
+    Toast.error("Errore: " + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "💾 Salva prompt + bump versione";
+  }
+}
+
+async function loadRuns() {
+  const box = document.getElementById("runs-box");
+  try {
+    const runs = await Api.listAnalysisRuns(15);
+    if (!runs.length) { box.innerHTML = '<div class="loading">Nessun run.</div>'; return; }
+    const rows = runs.map(r => `<tr>
+      <td>#${r.id}</td>
+      <td>${formatTime(new Date(r.analyzed_at).getTime() / 1000)}</td>
+      <td>${r.articles_analyzed}</td>
+      <td>${r.articles_selected}</td>
+      <td><code style="font-size:0.72rem;">${escHtml((r.model_used || "—").slice(0, 60))}</code></td>
+      <td><span class="badge ${r.status === "ok" ? "badge-rss" : "badge-cdt"}">${escHtml(r.status || "—")}</span></td>
+    </tr>`).join("");
+    box.innerHTML = `<div class="table-wrap"><table>
+      <thead><tr><th>ID</th><th>Quando</th><th>Analizzati</th><th>Selezionati</th><th>Modello</th><th>Status</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+  } catch (e) {
+    box.innerHTML = `<div class="banner error">${escHtml(e.message)}</div>`;
+  }
+}
+
+async function loadLastRun() {
+  const box = document.getElementById("last-run-box");
+  try {
+    const [runs, live] = await Promise.all([Api.listAnalysisRuns(1), Api.getAnalysisLiveConfig().catch(() => null)]);
+    if (!runs.length) { box.innerHTML = '<div class="loading">Nessun run ancora.</div>'; return; }
+    const r = runs[0];
+    box.innerHTML = `<div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-value">#${r.id}</div>
+        <div class="stat-label">Ultimo run</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">${r.articles_selected}/${r.articles_analyzed}</div>
+        <div class="stat-label">Notizie / Articoli</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" style="font-size:0.9rem;">${formatTime(new Date(r.analyzed_at).getTime() / 1000)}</div>
+        <div class="stat-label">Quando</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" style="font-size:0.78rem;font-family:ui-monospace,monospace;">${escHtml((r.model_used || "—").slice(0,40))}</div>
+        <div class="stat-label">Modello usato</div>
+      </div>
+    </div>`;
+  } catch (e) {
+    box.innerHTML = `<div class="banner error">${escHtml(e.message)}</div>`;
+  }
+}
+
+async function renderSyncBanner() {
+  const banner = document.getElementById("sync-banner");
+  try {
+    const configs = await Api.listConfigs();
+    const drift = configs.filter(c => (c.name.startsWith("rassegna_analisi") && !c.in_sync));
+    if (drift.length) {
+      banner.style.display = "block";
+      banner.innerHTML = `<div class="banner">◆ <strong>${drift.length} config dell'analisi modificato/i</strong> nel shadow rispetto al live. Cutover manuale richiesto perché vada in produzione.</div>`;
+    } else {
+      banner.style.display = "none";
+    }
+  } catch {}
+}
+
+init();
+</script>
+
+</body>
+</html>
