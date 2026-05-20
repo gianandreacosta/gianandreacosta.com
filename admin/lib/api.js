@@ -51,4 +51,12 @@ const Api = {
   updateSource: (cat, slug, body) => apiFetch(`/sources/${cat}/${slug}`, { method: "PATCH", body }),
   toggleSource: (cat, slug) => apiFetch(`/sources/${cat}/${slug}/toggle`, { method: "POST" }),
   testFeed: (body) => apiFetch("/sources/test", { method: "POST", body }),
+
+  // Analysis (Progetto 2)
+  getAnalysisConfig:  () => apiFetch("/analysis/config"),
+  getAnalysisLiveConfig: () => apiFetch("/analysis/config/live"),
+  updateAnalysisConfig: (body) => apiFetch("/analysis/config", { method: "PATCH", body }),
+  getAnalysisPrompt:  () => apiFetch("/analysis/prompt"),
+  updateAnalysisPrompt: (body) => apiFetch("/analysis/prompt", { method: "PUT", body }),
+  listAnalysisRuns:   (limit = 20) => apiFetch(`/analysis/runs?limit=${limit}`),
 };
