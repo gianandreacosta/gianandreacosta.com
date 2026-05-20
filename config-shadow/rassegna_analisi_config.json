@@ -4,7 +4,7 @@
   "model_fallback": "openrouter/openai/gpt-5.4-mini",
   "model_fallback2": "ollama/qwen3.5:cloud",
   "model_fallback3": "openrouter/openai/gpt-oss-120b:free",
-  "prompt_version": "v1.0",
+  "prompt_version": "v1.1",
   "prompt_file": "rassegna_analisi_prompt.txt",
   "max_articles_per_category": 30,
   "min_description_length": 20,
@@ -17,5 +17,11 @@
     "geopolitica",
     "economia",
     "ai_openclaw"
-  ]
+  ],
+  "enable_body_fetch": true,
+  "body_max_chars_in_prompt": 2000,
+  "body_min_chars_to_qualify": 200,
+  "fetch_timeout_seconds": 10,
+  "fetch_concurrent_workers": 8,
+  "fallback_to_description": true
 }
