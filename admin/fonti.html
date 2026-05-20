@@ -408,11 +408,30 @@ function renderTestResult(r) {
   if (r.first_titles && r.first_titles.length > 0) {
     titles = "<ul>" + r.first_titles.map(t => "<li>" + escHtml(t) + "</li>").join("") + "</ul>";
   }
+
+  // Body preview (estratto via article_fetcher dal 1° articolo del feed o dalla URL)
+  let bodyBlock = "";
+  if (r.body_status) {
+    const bodyOk = r.body_status === "ok" && r.body_preview;
+    const badgeColor = bodyOk ? "var(--green)" : (r.body_status.startsWith("fail") ? "var(--red)" : "var(--text-muted)");
+    let inner = "";
+    if (bodyOk) {
+      inner = `<div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:0.3rem;">${r.body_length} char dal corpo articolo</div>
+        ${r.body_source_url ? `<div style="font-size:0.72rem;margin-bottom:0.4rem;"><a href="${escHtml(r.body_source_url)}" target="_blank" rel="noopener" style="color:var(--blue);">${escHtml(r.body_source_url).slice(0,80)}…</a></div>` : ""}
+        <div style="font-size:0.8rem;color:var(--text);max-height:140px;overflow-y:auto;background:var(--bg);padding:0.5rem;border-radius:6px;border:1px solid var(--border);white-space:pre-wrap;">${escHtml(r.body_preview)}</div>`;
+    } else {
+      inner = `<div style="color:${badgeColor};font-size:0.8rem;">⚠ ${escHtml(r.body_status)}${r.body_length ? ` (${r.body_length} char)` : ""}</div>`;
+    }
+    bodyBlock = `<div style="margin-top:0.6rem;padding-top:0.5rem;border-top:1px solid var(--border);">
+      <h4 style="margin-bottom:0.3rem;">📄 Preview body</h4>${inner}</div>`;
+  }
+
   return `<div class="test-result ${cls}">
     <h4>${icon} ${r.ok ? "OK" : "Fallito"}</h4>
     <div>HTTP ${r.status_code ?? "—"} · ${r.entries_found ?? 0} entries · ${r.response_time_ms ?? "—"}ms</div>
     ${r.error ? `<div style="color:var(--red);margin-top:0.3rem;">${escHtml(r.error)}</div>` : ""}
     ${titles}
+    ${bodyBlock}
   </div>`;
 }
 
