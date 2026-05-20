@@ -59,4 +59,10 @@ const Api = {
   getAnalysisPrompt:  () => apiFetch("/analysis/prompt"),
   updateAnalysisPrompt: (body) => apiFetch("/analysis/prompt", { method: "PUT", body }),
   listAnalysisRuns:   (limit = 20) => apiFetch(`/analysis/runs?limit=${limit}`),
+
+  // Settings (Progetto C)
+  getScheduleStatus:  () => apiFetch("/settings/schedule"),
+  updateSchedule:     (body) => apiFetch("/settings/schedule", { method: "PATCH", body }),
+  runNow:             (body) => apiFetch("/settings/run-now", { method: "POST", body }),
+  triggerStatus:      () => apiFetch("/settings/run-now/status"),
 };

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚙️ Admin — Impostazioni</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .weekday-grid { display: flex; gap: 0.3rem; flex-wrap: wrap; }
+  .weekday-grid label {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    padding: 0.4rem 0.7rem; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 8px; font-size: 0.78rem; cursor: pointer; user-select: none;
+    transition: all 0.15s;
+  }
+  .weekday-grid label.checked {
+    background: rgba(74,222,128,0.1); border-color: var(--green); color: var(--green);
+  }
+  .weekday-grid input { display: none; }
+  .readonly-field {
+    padding: 0.5rem 0.7rem; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 6px; font-family: ui-monospace, monospace; font-size: 0.78rem;
+    color: var(--text-dim); word-break: break-all;
+  }
+  .locked-badge {
+    display: inline-block; background: rgba(248,113,113,0.1); color: var(--red);
+    border: 1px solid var(--red); padding: 0.1rem 0.5rem; border-radius: 4px;
+    font-size: 0.68rem; font-weight: 600; margin-left: 0.4rem;
+  }
+  .big-action-btn {
+    width: 100%; padding: 0.9rem; font-size: 0.95rem; font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="topbar">
+    <div class="topbar-brand">
+      🛠️ <span>Rassegna</span> <span class="badge-admin">ADMIN</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="/admin/" class="nav-btn">⬅ Hub</a>
+      <a href="/admin/fonti.html" class="nav-btn">📰 Fonti</a>
+      <a href="/admin/analisi.html" class="nav-btn">🧠 Analisi</a>
+      <a href="/admin/impostazioni.html" class="nav-btn active">⚙️ Impostazioni</a>
+    </nav>
+    <div class="topbar-right">
+      <span id="api-status" class="api-status">…</span>
+    </div>
+  </div>
+
+  <!-- Card: schedule -->
+  <div class="card">
+    <div class="card-title">⏰ Schedule rassegna</div>
+    <div id="schedule-box" class="loading"><span class="spinner"></span> Caricamento…</div>
+  </div>
+
+  <!-- Card: trigger manuale -->
+  <div class="card">
+    <div class="card-title">▶️ Forza esecuzione</div>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.7rem;">
+      Esegue la pipeline completa (raccolta → analisi → email) <strong>adesso</strong>, fuori dallo schedule. Utile per test o per recuperare un giorno saltato.
+    </p>
+    <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+      <select id="trigger-mode" style="flex:0 0 auto;">
+        <option value="full">full (raccolta + analisi + email)</option>
+        <option value="raccolta">solo raccolta</option>
+        <option value="analisi">solo analisi</option>
+        <option value="email">solo email</option>
+      </select>
+      <button class="btn primary big-action-btn" style="width:auto;flex:1;min-width:200px;" id="run-now-btn" onclick="confirmRunNow()">▶️ Forza esecuzione ORA</button>
+    </div>
+    <div id="trigger-status" style="margin-top:0.7rem;"></div>
+  </div>
+
+  <!-- Card: email -->
+  <div class="card">
+    <div class="card-title">📧 Email</div>
+    <div class="form-group">
+      <label>Destinatario <span class="locked-badge">🔒 LOCKED</span></label>
+      <div class="readonly-field" id="email-recipient">—</div>
+      <div class="field-help" style="font-size:0.7rem;color:var(--text-muted);margin-top:0.3rem;">
+        Destinatario inviolabile per policy OpenClaw. Per cambiarlo serve modificare la whitelist nel wrapper <code>email_send.py</code> (file <code>chattr +i</code>).
+      </div>
+    </div>
+  </div>
+
+  <!-- Card: cron Linux -->
+  <div class="card">
+    <div class="card-title">🐧 Cron Linux (read-only)</div>
+    <div class="readonly-field" id="cron-line" style="white-space:pre-wrap;">—</div>
+    <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.4rem;">
+      Il cron Linux scatta sempre a quest'orario, ma <code>rassegna_mattutina.sh</code> rispetta la policy <code>rassegna_schedule.json</code> sopra (toggle enabled, weekdays, paused_until). Per cambiare l'orario serve modificare il crontab via SSH.
+    </div>
+  </div>
+
+</div>
+
+<script src="lib/api.js"></script>
+<script src="lib/components.js"></script>
+<script>
+const WEEKDAYS = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
+let STATE = { schedule: null };
+
+async function init() {
+  try { await ensureAuth(); } catch { return; }
+  renderApiStatus();
+  await loadAll();
+  // Poll status trigger ogni 3s
+  pollTriggerStatus();
+}
+
+async function loadAll() {
+  const box = document.getElementById("schedule-box");
+  try {
+    const s = await Api.getScheduleStatus();
+    STATE.schedule = s.schedule;
+    document.getElementById("email-recipient").textContent = s.email_recipient;
+    document.getElementById("cron-line").textContent = s.cron.cron_line || "(nessun cron trovato)";
+    renderScheduleForm(s.schedule);
+  } catch (e) {
+    box.innerHTML = `<div class="banner error">${escHtml(e.message)}</div>`;
+  }
+}
+
+function renderScheduleForm(sched) {
+  const enabled = sched.enabled !== false;
+  const wd = sched.weekdays || [0,1,2,3,4,5,6];
+  const pu = sched.paused_until || "";
+  const isPaused = pu && new Date(pu) > new Date();
+
+  // Pre-fill datetime-local: converti da ISO UTC a locale (per input)
+  let puLocal = "";
+  if (pu) {
+    try {
+      const d = new Date(pu);
+      const off = d.getTimezoneOffset();
+      const local = new Date(d.getTime() - off * 60000);
+      puLocal = local.toISOString().slice(0, 16);
+    } catch {}
+  }
+
+  const wdHtml = WEEKDAYS.map((name, idx) => {
+    const checked = wd.includes(idx);
+    return `<label class="${checked ? 'checked' : ''}">
+      <input type="checkbox" data-weekday="${idx}" ${checked ? 'checked' : ''} onchange="this.parentElement.classList.toggle('checked', this.checked); markScheduleDirty()">
+      ${name}
+    </label>`;
+  }).join("");
+
+  const stateLine = !enabled
+    ? '<span class="badge" style="color:var(--red);border-color:var(--red);">disabilitata</span>'
+    : isPaused
+      ? `<span class="badge" style="color:var(--accent);border-color:var(--accent);">⏸ in pausa fino a ${escHtml(new Date(pu).toLocaleString("it-CH", {timeZone:"Europe/Zurich", dateStyle:"short", timeStyle:"short"}))}</span>`
+      : '<span class="badge" style="color:var(--green);border-color:var(--green);">attiva</span>';
+
+  document.getElementById("schedule-box").innerHTML = `
+    <div style="margin-bottom:0.9rem;">Stato corrente: ${stateLine}</div>
+
+    <div class="form-group">
+      <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer;">
+        <span class="toggle">
+          <input type="checkbox" id="sched-enabled" ${enabled ? 'checked' : ''} onchange="markScheduleDirty()">
+          <span class="toggle-slider"></span>
+        </span>
+        Abilitata (master switch)
+      </label>
+      <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.25rem;">
+        Se off, la rassegna NON parte (né cron mattutino, né trigger manuale dipende dal cron).
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Giorni della settimana</label>
+      <div class="weekday-grid">${wdHtml}</div>
+      <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.25rem;">
+        La rassegna parte solo nei giorni selezionati. Utile per skip weekend o pause programmate.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Pausa fino a (datetime, ora locale CH)</label>
+      <input type="datetime-local" id="sched-paused-until" value="${escHtml(puLocal)}" onchange="markScheduleDirty()">
+      <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.25rem;">
+        Lascia vuoto per nessuna pausa. Utile per vacanze. La rassegna riparte automaticamente dopo questa data.
+        <button class="btn small" style="margin-left:0.5rem;" onclick="document.getElementById('sched-paused-until').value=''; markScheduleDirty();">cancella pausa</button>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:flex-end;gap:0.5rem;margin-top:0.5rem;">
+      <button class="btn" onclick="loadAll()">↻ Annulla</button>
+      <button class="btn primary" id="save-sched-btn" onclick="saveSchedule()">💾 Salva schedule</button>
+    </div>
+    <div id="sched-save-result"></div>
+  `;
+}
+
+function markScheduleDirty() {
+  const btn = document.getElementById("save-sched-btn");
+  if (btn) { btn.classList.add("primary"); btn.disabled = false; }
+}
+
+async function saveSchedule() {
+  const enabled = document.getElementById("sched-enabled").checked;
+  const weekdays = [...document.querySelectorAll('[data-weekday]')].filter(i => i.checked).map(i => parseInt(i.dataset.weekday, 10));
+  const puRaw = document.getElementById("sched-paused-until").value;
+
+  let paused_until = null;
+  if (puRaw) {
+    // datetime-local è ora locale; converto in ISO UTC
+    paused_until = new Date(puRaw).toISOString();
+  }
+
+  const btn = document.getElementById("save-sched-btn");
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Salvo…';
+  try {
+    await Api.updateSchedule({ enabled, weekdays, paused_until });
+    Toast.success("Schedule salvato");
+    document.getElementById("sched-save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Schedule aggiornata. Effetto immediato sul prossimo cron.</div>`;
+    await loadAll();
+  } catch (e) {
+    Toast.error("Errore: " + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "💾 Salva schedule";
+  }
+}
+
+async function confirmRunNow() {
+  const mode = document.getElementById("trigger-mode").value;
+  if (!confirm(`Forzare esecuzione in modalità "${mode}" ADESSO?\n\nSe selezioni "full" o "email" verrà inviata una mail a gianandreacosta@gmail.com.`)) return;
+
+  const btn = document.getElementById("run-now-btn");
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Avvio…';
+  try {
+    const r = await Api.runNow({ mode });
+    Toast.success(`Avviato (pid=${r.pid}, mode=${r.mode})`);
+    document.getElementById("trigger-status").innerHTML = `<div class="banner info">▶️ In esecuzione pid=${r.pid} · log: <code>${escHtml(r.log_path)}</code></div>`;
+    pollTriggerStatus();
+  } catch (e) {
+    Toast.error("Errore: " + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = "▶️ Forza esecuzione ORA";
+  }
+}
+
+let _pollTimer = null;
+async function pollTriggerStatus() {
+  if (_pollTimer) clearTimeout(_pollTimer);
+  try {
+    const s = await Api.triggerStatus();
+    const box = document.getElementById("trigger-status");
+    if (s.running) {
+      box.innerHTML = `<div class="banner info">▶️ In esecuzione pid=${s.pid} (controllo ogni 3s)…</div>`;
+      _pollTimer = setTimeout(pollTriggerStatus, 3000);
+    } else if (s.stale_lock) {
+      box.innerHTML = `<div class="banner">⚠ Lock stale rimosso</div>`;
+    } else {
+      // Solo aggiorna se prima era running
+      const prev = box.innerHTML;
+      if (prev.includes("In esecuzione")) {
+        box.innerHTML = `<div class="banner info">✓ Trigger terminato</div>`;
+      }
+    }
+  } catch (e) {
+    // ignora errori di polling
+  }
+}
+
+init();
+</script>
+
+</body>
+</html>
