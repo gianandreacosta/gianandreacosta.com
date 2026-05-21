@@ -1,6 +1,263 @@
 {
-  "generated_at": "2026-05-20T02:53:58.151584+00:00",
+  "generated_at": "2026-05-21T02:54:55.573486+00:00",
   "analyses": [
+    {
+      "id": 76,
+      "run_id": 108,
+      "run_time": "2026-05-21 02:45:02.510795+00:00",
+      "analyzed_at": "2026-05-21T02:54:55.505174+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 16,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi di rilevanza nazionale: la riforma dell'AVS senza innalzamento dell'età pensionabile, le misure di sicurezza per il G7 a Evian e le indagini sulla morti sospette all'ospedale universitario di Zurigo.",
+          "notizie": [
+            {
+              "titolo": "Riforma AVS2030 senza aumento dell’età pensionabile",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Riforma-AVS2030-senza-aumento-dell%E2%80%99et%C3%A0-pensionabile--3756133.html",
+              "riassunto": "Il Consiglio federale ha avviato la consultazione sulla riforma AVS2030, che prevede il rialzo della soglia di reddito da cui si prelevano i contributi a 21’800 franchi e l’abolizione dell’età massima (70 anni), ma esclude l’innalzamento dell’età pensionabile. L’obiettivo è generare 600 milioni di franchi entro il 2040; se la consultazione non produrrà soluzioni, si prevede un aumento dell’IVA di 0,7 punti percentuali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "G7 a Evian: Ginevra autorizza manifestazione del 14 giugno",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/G7-a-Evian-Ginevra-autorizza-una-manifestazione--3756187.html",
+              "riassunto": "Il Consiglio di Stato di Ginevra ha concesso l’autorizzazione per una manifestazione contro il vertice del G7 il 14 giugno, con un “dispositivo di sicurezza di ampiezza inedita”. Saranno impiegati fino a 5 000 militari e solo 7 dei 35 valichi di frontiera rimarranno aperti dal 12 giugno. La decisione arriva dopo pressioni della coalizione NoG7 e precedenti diffide.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Zurigo: Procura indaga su circa 70 morti sospette in chirurgia cardiaca",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Zurigo-morti-sospette-all%E2%80%99ospedale-universitario-si-attiva-la-Procura--3756397.html",
+              "riassunto": "La Procura di Zurigo ha aperto un’indagine penale su 70 decessi sospetti registrati tra il 2016 e il 2020 nel reparto di chirurgia cardiaca dell’USZ. Sono state presentate 11 denunce per omicidio colposo e 13 segnalazioni per uso improprio di dispositivi medici. Un rapporto indipendente aveva già evidenziato 4 500 interventi con un eccesso di 70 morti rispetto alle statistiche attese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "riforma previdenziale",
+            "sicurezza per eventi internazionali",
+            "controlli sulla sanità pubblica"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni della consultazione AVS2030 e l'eventuale decisione sul rialzo dell'IVA; la risposta delle autorità svizzere alla sicurezza del G7 e eventuali proteste; gli esiti giudiziari dell'indagine sui decessi all'USZ.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da due temi: la tutela dei consumatori negli acquisti online e il nuovo assetto della rete di voli Swiss, con cancellazioni e l’introduzione di una rotta verso l’India.",
+          "notizie": [
+            {
+              "titolo": "Più protezione dei consumatori per gli acquisti online e controlli sui pacchi dall’Asia",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/piu-protezione-dei-consumatori-per-gli-acquisti-online-allestero-433893",
+              "riassunto": "La Commissione dell’economia e dei tributi (CET‑N) propone che le piattaforme estere etichettino i prodotti non conformi agli standard svizzeri e che venga introdotta una piccola imposta per finanziare controlli più severi sui piccoli pacchi provenienti dall’Asia, di cui 500 000 arrivano dalla Cina ogni anno.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews riporta la proposta parlamentare con dettagli sul voto (14‑8‑2) e sull’impatto sulle PMI; LaRegione ripropone il comunicato con enfasi sulla necessità di un’imposta per finanziare i controlli; CdT sintetizza la stessa mozione, ma mette in evidenza il problema dei pacchi a tariffa preferenziale e la diffusione di prodotti contraffatti, senza citare i numeri di voto."
+            },
+            {
+              "titolo": "Swiss riduce tre destinazioni europee e aggiunge Bengaluru al volo diretto da Zurigo",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/probleme-mit-a220-swiss-streicht-drei-europa-destiationen-aus-dem-flugplan-id21960191.html",
+              "riassunto": "A causa di problemi ai motori A220, Swiss elimina dal piano invernale 2026/27 le rotte verso Berlino, Amburgo e Pristina, ma apre un nuovo collegamento quotidiano da Zurigo a Bengaluru, la “Silicon Valley” indiana, con volo di circa 9 ore.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tutela dei consumatori e sicurezza dei prodotti importati",
+            "rivalutazione della rete aerea svizzera a causa di problemi tecnici"
+          ],
+          "da_tenere_d_occhio": "L’esito del dibattito parlamentare sulla piccola imposta per i controlli sui pacchi asiatici e le eventuali ulteriori modifiche al piano di volo Swiss in risposta ai problemi A220.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di diversi eventi: dal lancio della missione spaziale Smile con tecnologia elvetica, ai festival di Chiasso e Friburgo che mettono in scena artisti locali e tematiche sociali.",
+          "notizie": [
+            {
+              "titolo": "Lancio della missione spaziale Smile con contributi svizzeri",
+              "fonte": "Ticinonews Magazine",
+              "link": "https://www.ticinonews.ch/magazine/partita-smile-la-missione-spaziale-che-vede-protagonista-anche-la-svizzera-433836",
+              "riassunto": "Alle 05:52 ora svizzera è decollata la missione Smile, prima collaborazione Europa‑Cina, con un razzo Vega C da Kourou. Il satellite, a 706 km di quota, studierà il vento solare e la magnetosfera terrestre. A bordo sono installazioni sviluppate in Svizzera, sottolineando il ruolo del paese nella ricerca spaziale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Festival Festate a Chiasso: musica, solidarietà e integrazione",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1926601/piazza-festate-chiasso-mondo-festival-culture-giugno-rete-facciamo",
+              "riassunto": "Il 12‑13 giugno il Festival di culture e musiche del mondo di Chiasso torna alla sua 34ª edizione con il tema “Facciamo rete!”. Oltre a concerti, saranno presenti iniziative etniche, sociali e gastronomiche, e una zona ONG per la Giornata del Rifugiato. Tra gli artisti spicca Davide Ambrogio, polistrumentista calabrese, e la cantautrice nigeriana Nneka Egbuna.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Belluar Bollwerk Friburgo: performance sulle complicità sotterranee con focus ticinese",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1926907/festival-performance-complicita-belluard-friburgo-bollwerk",
+              "riassunto": "Dal 25 giugno al 4 luglio il 43° Belluard Bollwerk di Friburgo presenta 29 progetti su temi di territorio e sottosuolo. Tra le proposte, l'installazione di Deiara Semeco Kouto sulla presenza dei mercanti ticinesi nelle reti coloniali del cacao del XVIII sec. e la performance sonora “Fulgore furiosa” dell’artista ticinese Rebecca Solari.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Cooperazione scientifica internazionale con tecnologia svizzera",
+            "Festival locali con forte dimensione sociale e integrazione",
+            "Riscoperta delle radici storiche ticinesi in contesti artistici"
+          ],
+          "da_tenere_d_occhio": "L'esito della missione Smile e i primi dati scientifici, che potrebbero generare ulteriori investimenti svizzeri nello spazio",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la Svizzera è al centro di tre importanti sviluppi: l'accordo commerciale UE‑USA che influenzerà anche i rapporti svizzeri, la crisi della Flotilla con 27 italiani trattenuti da Israele e le tensioni diplomatiche tra UE e Turchia. Le notizie sono fresche e molteplici, con diversi punti di vista.",
+          "notizie": [
+            {
+              "titolo": "UE e USA raggiungono un accordo provvisorio sull’attuazione del patto commerciale",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/20/ue-raggiunta-intesa-sullaccordo-commerciale-con-gli-usa_90a87347-ef90-40bf-a773-990ff74c0423.html",
+              "riassunto": "Il Consiglio e il Parlamento europei hanno concordato le disposizioni tariffarie della dichiarazione congiunta UE‑USA del 21 agosto 2025. Il presidente americano Donald Trump ha minacciato nuove tariffe se l’accordo non sarà ratificato entro il 4 luglio, creando pressione anche sui partner commerciali svizzeri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Flotilla per Gaza: 27 italiani trattenuti, Tajani chiede il rilascio urgente",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/19/attivisti-italiani-riferiscono-uso-forza-tajani-chiede-verifica-urgente-a-israele_c4a405b6-6095-4c67-9af6-b8dd66fd7edc.html",
+              "riassunto": "Sono 27 gli italiani a bordo della Global Sumud Flotilla fermati da Israele. Il ministro degli Esteri Antonio Tajani ha richiesto una verifica urgente sull’uso della forza, mentre la Farnesina ha convocato l’ambasciatore israeliano per protestare. Altre fonti ANSA riportano la partenza imminente degli attivisti verso Grecia/Turchia e la richiesta dell’UE di liberarli.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Le varie segnalazioni ANSA enfatizzano aspetti diversi: l’articolo sul portavoce italiano sottolinea l’uso di proiettili di gomma; quello su Tajani mette in evidenza la pressione diplomatica italiana; quello sulla Farnesina descrive la protesta formale all’ambasciatore. Tutti concordano sul numero di italiani e sulla gravità, ma variano nel tono (diplomatico vs. denuncia dei diritti umani)."
+            },
+            {
+              "titolo": "Von der Leyen telefona a Erdogan per sostenere la de‑escalation in Iran",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/19/von-der-leyen-sente-erdogan-bene-sforzi-diplomatici-per-de-escalation_ab925e6f-5881-4c81-b0cf-f8f66bc5c571.html",
+              "riassunto": "Ursula von der Leyen ha parlato con il presidente turco Recep Tayyip Erdogan, definendo la Turchia un partner chiave per mantenere aperte le rotte commerciali, garantire l’energia e favorire la stabilità delle catene di approvvigionamento, oltre a sostenere gli sforzi di de‑escalation nel conflitto Iran‑Israele.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni commerciali UE‑USA con ripercussioni su Svizzera",
+            "Attivismo internazionale e risposta diplomatica italiana",
+            "Cooperazione UE‑Turchia per la sicurezza energetica e la stabilità regionale"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle negoziazioni UE‑USA (scadenza 4 luglio) e le eventuali decisioni dell’UE sul rilascio degli attivisti italiani, che potrebbero innescare ulteriori azioni diplomatiche nei prossimi 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'economia svizzera è al centro di tre notizie chiave: un massiccio taglio del personale nella controllata della sicurezza aerea Skyguide, l'impennata dei prezzi del carburante che spinge gli automobilisti a cambiare comportamento, e un episodio di fuoriuscita di refrigerante che ha provocato ricoveri in un supermercato di Zurigo.",
+          "notizie": [
+            {
+              "titolo": "Skyguide prevede il taglio di 220 posti di lavoro entro fine 2027",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/kahlschlag-in-zuerich-und-genf-skyguide-streicht-220-stellen-id21950193.html",
+              "riassunto": "La controllata svizzera della gestione del traffico aereo annuncia la riduzione di 220 posti, interessando principalmente le sedi di Dübendorf e Ginevra. Il piano prevede due fasi (90 dipendenti entro fine 2026, 130 entro metà 2027) per contenere i costi del personale, che nel 2025 hanno raggiunto 382 milioni di franchi su 576 milioni di spese totali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Crescita dei prezzi del carburante spinge 40% degli svizzeri a lasciare l'auto in garage",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/hohe-spritpreise-nerven-40-prozent-der-schweizer-lassen-ihr-auto-in-der-garage-stehen-id21960516.html",
+              "riassunto": "Una nuova indagine di Marketagent mostra che il 62% dei cittadini sente l’effetto dei prezzi del benzina (1,89 CHF/l, +13%) e diesel (2,14 CHF/l, +25%). Quasi metà degli intervistati ha ridotto l’uso dell’auto, con un aumento della domanda di veicoli elettrici e dei trasporti pubblici. Il 20% prevede che i prezzi rimarranno alti per almeno sette mesi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Fuoriuscita di refrigerante nella Coop di Bahnhofstrasse: quattro ricoverati",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1926641/fuoriuscita-quattro-bahnhofstrasse-zurigo-centro",
+              "riassunto": "Un allarme antincendio ha scoperto una perdita di refrigerante in un supermercato Coop lungo la Bahnhofstrasse di Zurigo. Dodici persone sono state valutate, quattro delle quali sono state trasferite in ospedale per approfondimenti. Le cause della perdita sono ancora oggetto di indagine.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ristrutturazione del personale nei settori strategici",
+            "impatto dei prezzi dell'energia sui comportamenti dei consumatori",
+            "sicurezza e gestione delle emergenze in ambienti urbani"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle negoziazioni tra Skyguide e i sindacati, e le possibili ripercussioni sul modello di gestione del traffico aereo svizzero",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi le novità più rilevanti per la Svizzera riguardano il lancio di Gemini 3.5 Flash, che arriva già disponibile nel paese, e la trasformazione di Google Search in un’esperienza AI‑agentica, cambiamento che impatterà l’uso quotidiano di internet.",
+          "notizie": [
+            {
+              "titolo": "Google lancia Gemini 3.5 Flash, disponibile subito anche in Svizzera",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/7-highlights-der-konferenz-groesste-aenderung-der-suche-seit-25-jahren-id21962049.html",
+              "riassunto": "Alla conferenza per sviluppatori, Google ha presentato Gemini 3.5 Flash, un modello KI quattro volte più veloce e meno costoso dei precedenti. Il modello è già attivo a livello globale, inclusa la Svizzera, sia nella Gemini‑App che nella modalità KI della ricerca. Google prevede che gli agenti basati su questo modello arriveranno negli USA quest’estate, con un roll‑out successivo in Europa.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google Search si trasforma: addio ai classici “dieci link blu”",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+              "riassunto": "Nel keynote di I/O 2026 Google ha annunciato una revisione totale della ricerca, con un nuovo “intelligent search box” che integra risposte conversazionali, agenti informativi 24/7 e mini‑app personalizzate. Il cambiamento, definito il più grande upgrade da 25 anni, ridurrà il traffico verso i siti web e impatterà direttamente gli utenti svizzeri che usano Google Search quotidianamente.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Adozione di modelli AI più veloci e a basso costo (Gemini 3.5 Flash)",
+            "Passaggio da ricerca basata su link a esperienze AI‑agentiche integrate"
+          ],
+          "da_tenere_d_occhio": "L’estensione dei nuovi agenti AI nella ricerca e nei prodotti Google (es. Universal Cart, Gemini Spark) nelle prossime 24 h, soprattutto per verificare la disponibilità in Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 75,
       "run_id": 107,
@@ -5294,324 +5551,6 @@
             "spostamento dell'AI verso applicazioni operative: sicurezza, automazione e infrastruttura industriale"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’esito del round di Anthropic e l’eventuale reazione di OpenAI e degli investitori, oltre agli sviluppi del processo Musk-OpenAI che potrebbe produrre nuove ammissioni o documenti sulla distillazione tra modelli.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "run_id": 88,
-      "run_time": "2026-05-01 04:45:02.070420+00:00",
-      "analyzed_at": "2026-05-01T04:51:03.232688+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 21,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La cronaca ticinese è dominata da fatti di forte impatto locale: una tragedia familiare a Vico Morcote, il nodo sicurezza al centro asilanti di Pasture e un nuovo caso giudiziario a Chiasso. Sullo sfondo, restano rilevanti anche temi strutturali come finanze comunali, polizia e rapporti transfrontalieri.",
-          "notizie": [
-            {
-              "titolo": "Bimbo di 2 anni muore annegato in una piscina a Vico Morcote",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Vico-Morcote-bimbo-di-2-anni-annega-in-piscina--3707523.html",
-              "riassunto": "Una tragedia ha colpito il Luganese: un bambino di due anni è stato trovato in una piscina privata a Vico Morcote poco prima delle 14.00. Nonostante la rianimazione e il trasporto urgente in ospedale, il piccolo è deceduto. Il caso ha forte impatto umano e locale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Pasture: Cantone e Comuni discutono sicurezza e gestione dei richiedenti problematici",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pasture-SEM-Cantone-e-Comuni-a-confronto-sulla-sicurezza--3708261.html",
-              "riassunto": "A Chiasso si è svolto un incontro tra SEM, Governo ticinese e sindaci del Mendrisiotto per affrontare le criticità di sicurezza legate al centro di Pasture. Sul tavolo anche il progetto, poi congelato, di un’area separata per richiedenti problematici. La questione riguarda direttamente il territorio di frontiera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Tentato assassinio a Chiasso: condanna confermata con 11 anni di carcere",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Tent%C3%B2-di-uccidere-la-compagna-condannato-a-11-anni--3707616.html",
-              "riassunto": "Un 34enne eritreo è stato condannato a 11 anni di carcere e a 11 anni di espulsione per aver aggredito la compagna a Chiasso nel gennaio 2024, colpendola ripetutamente alla testa con un manubrio. Il caso pesa per la violenza domestica e per la presenza dei figli durante l’aggressione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Ticino",
-                "RSI Ticino"
-              ],
-              "differenze_narrative": "Le due uscite RSI coprono lo stesso episodio da angolazioni diverse: l’articolo sul processo mette al centro la richiesta della procura di 15 anni, le versioni divergenti dell’imputato e i dettagli dibattimentali; quello sulla sentenza insiste invece sull’esito giudiziario definitivo, sulla pena di 11 anni e sull’espulsione. Il primo è più processuale e conflittuale, il secondo più sintetico e orientato alla decisione del tribunale."
-            }
-          ],
-          "trend": [
-            "sicurezza e gestione dell’ordine pubblico nel Mendrisiotto",
-            "cronaca nera e violenza domestica con forte impatto locale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire gli sviluppi su Pasture: eventuali decisioni operative della SEM e le reazioni di Cantone e Comuni potrebbero riaccendere il confronto politico e amministrativo.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi molto concreti per la Svizzera: il dossier frontalieri-UE, la pressione su UBS tra utili record e nuova regolamentazione, e il dibattito politico sulla violenza domestica e le armi private. Sullo sfondo, resta forte l’eco del caso Crans-Montana, soprattutto nel rapporto con l’Italia.",
-          "notizie": [
-            {
-              "titolo": "Riforma UE sulla disoccupazione dei frontalieri: possibili costi aggiuntivi per la Svizzera",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/disoccupazione-stesse-regole-per-i-frontalieri-e-i-residenti-426463",
-              "riassunto": "Gli ambasciatori dei 27 Paesi UE hanno dato il primo via libera a una riforma che sposterebbe l’onere dei sussidi di disoccupazione dal Paese di residenza a quello di ultimo impiego. Per la Svizzera, se decidesse di aderire, significherebbe farsi carico delle indennità di frontalieri rimasti senza lavoro. La SECO parla di decisione ancora non definitiva e precisa che serve il consenso esplicito di Berna.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "La CdT insiste sul cambio di paradigma giuridico («lex loci laboris») e sulla cautela istituzionale di Berna, con attenzione ai passaggi formali e al ruolo dell’UE. Ticinonews punta invece subito sull’impatto per la Svizzera e sul rischio di costi aggiuntivi, con un taglio più diretto e territoriale per il pubblico ticinese."
-            },
-            {
-              "titolo": "UBS, utili record da 3 miliardi mentre cresce lo scontro sulla regolamentazione",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/economia/ubs-in-tre-mesi-lutile-e-di-tre-miliardi-426444",
-              "riassunto": "Nel primo trimestre 2026 UBS ha registrato un utile netto di 3,04 miliardi di dollari, +80% rispetto all’anno prima, grazie soprattutto alla forte volatilità dei mercati e al boom del trading. I ricavi sono saliti a 14,24 miliardi e il rendimento CET1 è arrivato al 16,8%. Il risultato rafforza la banca, ma non attenua il conflitto con il Consiglio federale sulle nuove regole sui fondi propri.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Ermotti respinge le accuse di lobbying aggressivo di UBS sul pacchetto bancario",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/ubs-ermotti-respinge-le-accuse-di-lobbying-aggressivo-432497",
-              "riassunto": "Sergio Ermotti nega che UBS stia facendo pressioni indebite nel dibattito sui fondi propri delle banche: la banca ha il diritto di intervenire, ma non di lanciare minacce. Il CEO ribadisce che le misure del Consiglio federale sono «eccessive e sproporzionate», soprattutto sulla copertura completa delle filiali estere con capitale proprio. Il tema è sensibile anche per il Ticino, dato il profilo del manager e la rilevanza del settore bancario.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Armi in cantina e violenza domestica: il Parlamento valuta il ritiro delle armi militari inutilizzate",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/violenza-domestica-via-larma-dalla-cantina-426461",
-              "riassunto": "Una mozione chiede di confiscare le armi militari privatizzate non utilizzate da almeno dieci anni nel tiro sportivo. Il provvedimento mira a prevenire gli omicidi con armi da fuoco in ambito domestico: nel 2025 si contano 34 vittime di violenza domestica su 55 omicidi complessivi, con 11 casi commessi usando armi da fuoco. Il Consiglio federale sostiene la proposta, mentre ProTell promette battaglia.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Tensioni Svizzera-UE sui frontalieri e sulla sicurezza sociale",
-            "Pressione su UBS tra utili elevati e nuova stretta regolatoria"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione politica di Berna alla riforma UE sui frontalieri e l’evoluzione del dibattito parlamentare sulle armi private in relazione alla violenza domestica.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata dalla polemica sulla Biennale di Venezia, con il caso del Padiglione russo che incrocia politica italiana, fondi UE e dimissioni nella giuria internazionale. Sul fronte ticinese spiccano invece due appuntamenti: una mostra a Monte Carasso e l’anteprima luganese su Barbara Buser, entrambe con ricadute locali dirette.",
-          "notizie": [
-            {
-              "titolo": "La Biennale di Venezia travolta dal caso del Padiglione russo e dalle tensioni con l’UE",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1921931/biennale-giuli-ue-ispettori-linea",
-              "riassunto": "Il ministero italiano della Cultura ha inviato ispettori a Ca' Giustinian per chiarire la riapertura del Padiglione russo alla Biennale Arte, al via il 9 maggio. La Commissione UE sostiene la linea dura di Giuli e minaccia il ritiro di 2 milioni di euro di contributi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "SRF Kultur"
-              ],
-              "differenze_narrative": "LaRegione enfatizza lo scontro politico-istituzionale: ispettori, possibile commissariamento, pressione UE e reazioni di M5S e ministri. SRF, nel suo ticker, riduce il caso a un aggiornamento secco sulla Biennale, mettendo al centro il 'knall' e il ritiro collettivo della giuria, con tono più cronachistico e meno analitico."
-            },
-            {
-              "titolo": "Barbara Buser a Lugano: l’architetta basilese che trasforma invece di demolire",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/cinema/larchitetta-che-non-demolisce-ma-trasforma-pensando-al-clima-426438",
-              "riassunto": "Al Cinema Iride di Lugano arriva l’anteprima ticinese del documentario su Barbara Buser, 72 anni, pioniera dell’economia circolare in architettura. Il film racconta il suo approccio anti-spreco, basato su riuso dei materiali e sostenibilità, dopo anni di ostracismo professionale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "A Monte Carasso la mostra su Duane Michals, fotografo dell’invisibile",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1921950/fotografo-mostra-michals-spazioreale-giovedi",
-              "riassunto": "A SpazioReale di Monte Carasso si inaugura la mostra dedicata a Duane Michals, visitabile fino al 21 giugno. L’esposizione, curata da Enrica Viganò, attraversa l’intera carriera del fotografo statunitense e include autoritratti, ritratti di artisti e immagini annotate a mano.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Cultura e politica si intrecciano sempre più nei grandi eventi internazionali, come mostra il caso Biennale Venezia",
-            "Forte attenzione ticinese per mostre e documentari legati a figure artistiche e culturali di profilo internazionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Biennale: possibili nuove prese di posizione di Venezia, del ministero italiano e dell’UE, oltre a eventuali sviluppi sul Padiglione russo e sulla tenuta della giuria.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall’escalation in Medio Oriente: la Flotilla verso Gaza è stata intercettata da Israele e la crisi Iran-mercati energetici sta già facendo schizzare il petrolio. Sullo sfondo, emerge anche un fronte euro-atlantico più vicino alla Svizzera: le tensioni tra Trump, NATO e basi americane in Italia/Spagna.",
-          "notizie": [
-            {
-              "titolo": "Israele intercetta la Flotilla diretta a Gaza, con almeno 22 navi fermate",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/04/30/flotilla-almeno-22-le-navi-intercettate-al-largo-di-creta_a9fd1eb8-edeb-4522-ba0a-dd9ac21909f5.html",
-              "riassunto": "Secondo il tracker degli attivisti, almeno 22 imbarcazioni della Global Sumud Flotilla sono state intercettate dalla Marina israeliana al largo di Creta alle 4:23. Altre 36 risultavano ancora in navigazione. L’episodio pesa perché coinvolge una missione simbolo sul blocco di Gaza e ha già provocato tensioni diplomatiche con Italia e Ue.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale"
-              ],
-              "differenze_narrative": "ANSA adotta un taglio operativo e cronachistico, basato sul tracker degli attivisti e sulla geolocalizzazione delle navi; il framing è neutro e centrato sui fatti immediati. Internazionale inserisce la Flotilla nel contesto politico del conflitto a Gaza e dell’“assedio israeliano”, con un’angolazione più militante e solidale verso l’iniziativa."
-            },
-            {
-              "titolo": "A Gaza e in Cisgiordania la Flotilla e il voto locale si intrecciano nella crisi palestinese",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/magazine/2026/04/29/un-voto-parziale",
-              "riassunto": "L’articolo racconta le elezioni amministrative vinte da Al Fatah in Cisgiordania e a Deir el Balah, ma chiude con la partenza dalla Sicilia di una nuova missione della Global Sumud Flotilla. Conta perché mostra come il conflitto resti il perno della politica palestinese, mentre le iniziative civili tentano di riaprire l’attenzione internazionale su Gaza.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Internazionale collega la Flotilla al quadro politico palestinese e alla continuità dell’assedio su Gaza, enfatizzando la dimensione civile e simbolica. ANSA, invece, la tratta come un’operazione navale con conseguenze di ordine pubblico e diplomatiche, senza il medesimo contesto politico interno palestinese."
-            },
-            {
-              "titolo": "Il petrolio vola ai massimi dal 2022 dopo le nuove ipotesi Usa sull’Iran",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Il Brent è salito fino a oltre 126 dollari al barile, il livello più alto dal 2022, dopo un report secondo cui il Pentagono sta preparando nuove opzioni militari per Trump sull’Iran. Il nodo strategico è lo stretto di Hormuz, da cui passa circa il 20% del petrolio e del gas naturale liquefatto mondiali: un rischio immediato per inflazione, carburanti e mercati europei.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "BBC World",
-                "New York Times World"
-              ],
-              "differenze_narrative": "BBC mette al centro l’impatto immediato sui prezzi del petrolio, il possibile briefing a Trump e la vulnerabilità dello stretto di Hormuz, con un taglio molto economico-finanziario. Il New York Times sposta invece l’attenzione sulle conseguenze macroeconomiche in Europa: banche centrali, tassi fermi e rischio di uno shock energetico di lunga durata."
-            },
-            {
-              "titolo": "Lo shock del petrolio mette in difficoltà le banche centrali europee",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/04/30/business/bank-of-england-european-central-bank.html",
-              "riassunto": "Il tema è la stretta tra inflazione ed energia: la Banca d’Inghilterra e la Bce hanno lasciato i tassi fermi mentre cresce il timore di danni duraturi da un prolungato shock energetico. Per la Svizzera è rilevante perché un rialzo persistente dei prezzi del petrolio può alimentare pressioni su prezzi, valuta e politica monetaria anche nell’area alpina.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "New York Times World",
-                "BBC World"
-              ],
-              "differenze_narrative": "NYT interpreta la crisi come dilemma di politica monetaria e stabilità finanziaria, focalizzandosi su Bce e Bank of England. BBC racconta invece la causa geopolitica e di mercato: il possibile riacutizzarsi del confronto con l’Iran e la chiusura di Hormuz, cioè il motore dell’impennata dei prezzi."
-            },
-            {
-              "titolo": "Trump ipotizza un ridimensionamento delle truppe Usa in Italia e Spagna",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/04/30/trump-possibile-riduzione-truppe-in-italia-e-spagna-probabilmente_72b41511-1aac-437a-9152-604c578e278c.html",
-              "riassunto": "Trump ha risposto “probabilmente” alla domanda su una possibile riduzione delle truppe americane anche in Italia e Spagna, come già in Germania. Ha aggiunto che “l’Italia non è stata di alcun aiuto” e che la Spagna è stata “terribile”. È un segnale rilevante per gli equilibri Nato in Europa e per le basi Usa nel Mediterraneo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Escalation in Medio Oriente con effetto domino su logistica, diplomazia e mercati energetici",
-            "Pressioni sulla sicurezza europea e sulla presenza militare Usa nel Mediterraneo"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno monitorati due snodi: l’eventuale conferma del numero di navi fermate della Flotilla e la reazione europea/italiana; in parallelo, l’andamento del Brent e le eventuali comunicazioni Usa sull’Iran, perché potrebbero amplificare il rischio energetico e inflattivo.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: il braccio di ferro su UBS e le regole bancarie, il confronto sui tassi della Fed con riflessi sui mercati, e il peggioramento del clima di fiducia sociale in Svizzera. Sullo sfondo, restano segnali di tensione geopolitica e di incertezza per imprese e famiglie.",
-          "notizie": [
-            {
-              "titolo": "La Fed lascia i tassi invariati al 3,50%-3,75% tra inflazione e incertezza geopolitica",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/la-fed-lascia-i-tassi-di-interesse-invariati-fra-il-350-e-il-375-432528",
-              "riassunto": "La Federal Reserve ha confermato i tassi per la terza riunione consecutiva, con una decisione passata per 8 voti a 4. Powell ha definito questa la sua ultima seduta da presidente, mentre la banca centrale cita l’inflazione ancora elevata e l’incertezza legata alla guerra in Medio Oriente. Per la Svizzera conta perché le decisioni della Fed influenzano mercati, cambio e costo del capitale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Economia",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Ticinonews mette l’accento sul quadro istituzionale: voto del board, terza pausa consecutiva, uscita di scena di Jerome Powell e arrivo di Kevin Warsh. Blick invece legge la decisione soprattutto attraverso il conflitto in Iran, l’aumento del petrolio e i rischi immediati per inflazione e lavoro, con un framing più politico e allarmistico."
-            },
-            {
-              "titolo": "UBS respinge le accuse sul lobbying mentre Berna valuta regole più dure sul capitale",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1921834/ubs-svizzera-ermotti-banca-accuse-keller-sutter-respinge-karin",
-              "riassunto": "Sergio Ermotti ha difeso il diritto di UBS a intervenire nel dibattito sulle nuove regole per i fondi propri, negando pressioni o minacce al Parlamento. Il confronto nasce dalle critiche di Karin Keller-Sutter sulla lobby della banca e tocca un dossier sensibile per la Svizzera: come evitare un nuovo salvataggio pubblico senza penalizzare occupazione e competitività del settore finanziario.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "tio.ch Svizzera",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Blick privilegia il conflitto politico e l’impatto occupazionale, rilanciando l’idea di migliaia di posti di lavoro a rischio e dando voce al sindacato bancario. tio.ch adotta un taglio più istituzionale: riporta le accuse di Keller-Sutter, la replica di Ermotti e il nodo regolatorio, con minore enfasi su toni polemici e più attenzione al perimetro del dibattito."
-            },
-            {
-              "titolo": "In Svizzera cresce il sentimento di ingiustizia, soprattutto per chi ha redditi bassi",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1921654/delusi-dalla-svizzera-chi-guadagna-poco-si-sente-abbandonato",
-              "riassunto": "Il Barometro della giustizia 2026 mostra un peggioramento del clima sociale: tra 2.000 intervistati, il 33% giudica il sistema «piuttosto ingiusto» e il 18% «per niente giusto». Il malessere è più forte tra chi guadagna meno di 3.000 franchi al mese, mentre costi di affitto, premi e AVS dominano la percezione di insicurezza economica. È un segnale importante anche per il Ticino, dove il potere d’acquisto è tema centrale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "tio.ch Svizzera",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Blick presenta il sondaggio come prova del deterioramento del «legame sociale» nel Paese e insiste sulla frattura tra gruppi sociali e sul ruolo del denaro. tio.ch insiste di più sul disagio concreto di chi ha salari bassi e sul peso combinato di affitti, premi malattia e AVS, con un taglio più vicino alla vita quotidiana dei lettori."
-            }
-          ],
-          "trend": [
-            "politica monetaria e mercati sotto pressione geopolitica",
-            "regolazione bancaria svizzera e potere di lobbying di UBS",
-            "costo della vita e percezione di ingiustizia sociale in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorate le reazioni politiche e di mercato alla decisione della Fed, l’evoluzione del dossier UBS in Parlamento e l’eventuale rilancio mediatico del sondaggio sulla giustizia sociale, che potrebbe alimentare il dibattito su premi malattia, affitti e salario reale.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata dal riassetto dell’ecosistema AI tra Microsoft, OpenAI e AWS, con ricadute su cloud, enterprise e distribuzione dei modelli. In parallelo, Google spinge forte su Gemini in Europa, mentre emergono segnali importanti su affidabilità dei chatbot e usi regolati dell’IA in ambito pubblico.",
-          "notizie": [
-            {
-              "titolo": "Microsoft rilancia Copilot e consolida il nuovo equilibrio con OpenAI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/29/microsoft-says-it-has-over-20m-paid-copilot-users-and-they-really-are-using-it/",
-              "riassunto": "Microsoft dice di avere 20 milioni di seat Copilot a pagamento nel mondo enterprise. Tra i clienti citati ci sono Bayer, Johnson & Johnson, Mercedes e Roche, un segnale importante anche per il mercato svizzero. Nadella sostiene che l’uso cresce e che Copilot è ormai un’abitudine settimanale quasi al livello di Outlook.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch punta sull’adozione concreta di Copilot e sui numeri di utilizzo, con enfasi commerciale e su grandi clienti enterprise. The Decoder inquadra la notizia soprattutto nel nuovo assetto con OpenAI e AWS, sottolineando la fine dell’esclusiva e la libertà di Microsoft di sfruttare l’IP OpenAI fino al 2032."
-            },
-            {
-              "titolo": "Gemini arriva in Europa con memoria personalizzata e import dei dati da altre app AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/google-rolls-out-gemini-memory-in-europe-and-wants-you-to-bring-your-chatgpt-data-along/",
-              "riassunto": "Google porta in Europa la funzione Memories di Gemini, che ricorda preferenze e dettagli dei chat precedenti, attiva di default ma disattivabile. In più, consente di importare cronologia e contesto da altre app AI, compreso un archivio ZIP o un prompt di migrazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI rompe l’esclusiva con Microsoft e si apre ad AWS",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-lands-on-aws-one-day-after-microsoft-deal-restructuring/",
-              "riassunto": "A un giorno dal nuovo accordo con Microsoft, OpenAI lancia tre offerte su Amazon Bedrock: modelli OpenAI, Codex e Bedrock Managed Agents. La mossa segna il passaggio da un rapporto esclusivo con Azure a una distribuzione multi-cloud, con effetti rilevanti per il mercato enterprise globale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "The Decoder mette l’accento sulla rapidità della mossa di AWS e sul significato strategico della fine dell’esclusiva Microsoft. TechCrunch, nel pezzo su Nadella, racconta invece la lettura positiva di Microsoft: accesso all’IP OpenAI fino al 2032, nessun pagamento per i modelli e convinzione di poter ‘sfruttare’ appieno il nuovo accordo."
-            }
-          ],
-          "trend": [
-            "riassetto dei rapporti tra i grandi player del cloud AI",
-            "espansione europea di Gemini con funzioni di memoria e personalizzazione"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il nuovo equilibrio OpenAI-Microsoft-AWS porterà ulteriori annunci commerciali o reazioni dei competitor, e se il rollout europeo di Gemini solleverà questioni di privacy e consenso sui dati personali.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
