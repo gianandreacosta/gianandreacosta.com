@@ -1,6 +1,243 @@
 {
-  "generated_at": "2026-05-21T02:54:55.573486+00:00",
+  "generated_at": "2026-05-22T02:56:19.009372+00:00",
   "analyses": [
+    {
+      "id": 77,
+      "run_id": 109,
+      "run_time": "2026-05-22 02:45:02.432576+00:00",
+      "analyzed_at": "2026-05-22T02:56:18.961743+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 14,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da tre temi: la difficile situazione dei cittadini svizzeri coinvolti nella Global Sumud Flotilla, le decisioni di sicurezza per il G7 a Evian e l’impennata dei fallimenti aziendali in Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Sorella di Anek (ticinese) denuncia l’assenza di informazioni dal DFAE dopo l’arresto in Cipro",
+              "fonte": "CdT Ticino",
+              "link": "https://www.cdt.ch/news/flotilla-parla-la-sorella-di-anek-non-abbiamo-piu-sue-notizie-e-il-dfae-ci-ha-abbandonati-428310",
+              "riassunto": "Jamila Speranza, sorella del cittadino ticinese Anek Speranza, a bordo della Zio Faster fermata da soldati israeliani, denuncia l’assenza di notizie dal Dipartimento federale degli affari esteri e dal Consolato svizzero. La famiglia ha organizzato un presidio a Lugano e chiede un canale diretto con il governo per sapere se Anek è vivo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "CdT Ticino enfatizza il dramma familiare e la mancanza di risposta istituzionale, citando le proteste a Lugano. RSI Ticino, nell’articolo “Flotilla Ben Gvir deride gli attivisti”, si concentra maggiormente sulla reazione del ministro israeliano Ben‑Gvir e sul contesto politico, con meno dettagli sul punto di vista della famiglia svizzera."
+            },
+            {
+              "titolo": "G7 a Evian: il Consiglio di Stato di Ginevra autorizza una manifestazione il 14 giugno",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/G7-a-Evian-Ginevra-autorizza-una-manifestazione--3756187.html",
+              "riassunto": "Il Consiglio di Stato di Ginevra ha approvato l’autorizzazione per una manifestazione sulla riva del Lemano il 14 giugno, contro il vertice G7 del 15‑17 giugno. Le autorità hanno previsto un “dispositivo di sicurezza di ampiezza inedita” e mobiliteranno fino a 5 000 militari per garantire la sicurezza dei leader internazionali, tra cui il presidente degli USA Donald Trump.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Impennata dei fallimenti in Svizzera: +61% nel 2025 dopo la riforma della LEF",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/economia/Impennata-dei-fallimenti-in-Svizzera-nel-2025--3758347.html",
+              "riassunto": "Nel 2025 sono state aperte 12 485 procedure di fallimento per imprese, un aumento del 61,2 % rispetto al 2024, a seguito della modifica della Legge federale sull’esecuzione e sul fallimento (LEF) che consente ai creditori pubblici di chiedere il fallimento per mancato pagamento di imposte o contributi. Il numero totale di fallimenti è salito a 13 612, con un incremento del 48,5 % rispetto all’anno precedente.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensioni internazionali con impatto sui cittadini svizzeri",
+            "sicurezza e proteste legate a eventi globali (G7)",
+            "aumento dei fallimenti aziendali a seguito di riforme legislative"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle indagini e delle eventuali pressioni diplomatiche sulla Flotilla, nonché le conseguenze economiche della crescita dei fallimenti per le imprese ticinesi.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da due temi: la tensione diplomatica legata alla Global Sumud Flotilla, con attivisti svizzeri trattenuti in Israele, e il dibattito interno sulla possibile inasprimento della Lex Koller che potrebbe colpire le società immobiliari quotate.",
+          "notizie": [
+            {
+              "titolo": "Attivisti svizzeri della Flotilla fermati in Israele: il DFAE chiede il rispetto dei diritti fondamentali",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/mondo/attivisti-in-ginocchio-bendati-e-derisi-da-ben-gvir-benvenuti-in-israele-grandi-eroi-428295",
+              "riassunto": "Il video del ministro israeliano Itamar Ben‑Gvir mostra attivisti della Global Sumud Flotilla, tra cui cittadini svizzeri, inginocchiati, bendati e ammanettati al porto di Ashdod. Il DFAE ha chiesto alle autorità israeliane di garantire i diritti fondamentali dei detenuti e ha confermato il trasferimento in carcere a Ktzi'ot. Il caso ha suscitato proteste diplomatiche da Italia, Spagna, Francia e altri paesi.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "CdT enfatizza la reazione del DFAE e il coinvolgimento di attivisti svizzeri, con citazioni dirette del ministro Ben‑Gvir. LaRegione amplia il contesto diplomatico, elencando le condanne di diversi governi europei e le richieste di scuse. Ticinonews fornisce una versione più dettagliata del video e aggiunge le dichiarazioni delle autorità israeliane che difendono il trattamento, mostrando un tono più neutro e focalizzato sui fatti."
+            },
+            {
+              "titolo": "Lex Koller più severa: rischio di delisting per le società immobiliari quotate",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/lex-koller-piu-severa-ce-il-rischio-di-delisting-per-le-societa-immobiliari-428284",
+              "riassunto": "Il Consiglio federale prevede un inasprimento della Lex Koller, limitando l’acquisto di immobili da parte di stranieri e vietando a “persone all’estero” di comprare azioni di società immobiliari quotate. Le imprese del settore temono la perdita della quotazione in borsa, con il CEO di Mobimo che avverte di possibili abbandoni della borsa.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "CdT sottolinea il rischio di delisting e la reazione delle società immobiliari, citando direttamente le preoccupazioni dei dirigenti. Ticinonews aggiunge dettagli sulla motivazione politica (contrasto all’iniziativa UDC) e fornisce una panoramica più ampia delle modifiche proposte, con un tono più tecnico‑legislativo."
+            }
+          ],
+          "trend": [
+            "tensioni diplomatiche legate a manifestazioni internazionali con cittadini svizzeri",
+            "dibattito sulla regolamentazione immobiliare e protezione degli investimenti"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle negoziazioni tra Israele e le autorità svizzere sul caso Flotilla e l’esito del voto sulla Lex Koller previsto per il 14 giugno",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: dal festival multidisciplinare di Friburgo con un focus sul Ticino, allo studio della SSR sui contenuti culturali, fino al ritorno di Bastian Baker sui palcoscenici ticinesi.",
+          "notizie": [
+            {
+              "titolo": "Festival Belluard Bollwerk di Friburgo esplora le complicità sotterranee con un focus sul Ticino",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1926907/festival-performance-complicita-belluard-friburgo-bollwerk",
+              "riassunto": "Dal 25 giugno al 4 luglio il Belluard Bollwerk presenta 29 progetti su performance, installazioni e cinema. Tra le iniziative spicca un'installazione di Deiara Semeco Kouto che mappa le reti coloniali del cacao dei mercanti ticinesi del XVIII secolo. L'evento include anche la Women Walk at Midnight e una performance sonora di Rebecca Solari, artista ticinese.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La SSR pubblica il primo studio sui contributi culturali dell’emittente",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1926969/ssr-studio-svizzera-cultura-riguarda",
+              "riassunto": "La Società svizzera di radiotelevisione (SSR) ha commissionato uno studio che evidenzia il ruolo della SSR nella diversità culturale svizzera, con il 40,8% dei contenuti dedicati a eventi prodotti internamente. Il rapporto segnala però uno squilibrio a favore dei contenuti popolari rispetto a letteratura, arti visive e teatro.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bastian Baker torna in Svizzera con il ‘Solo Tour’ al Teatro Sociale di Bellinzona",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1926810/baker-bastian-teatro-anni-aperto",
+              "riassunto": "Il cantautore vodese Bastian Baker si esibisce il 24 maggio al Teatro Sociale di Bellinzona, in un concerto acustico che prevede dialoghi con il pubblico e improvvisazioni. L'evento è parte del suo ‘Solo Tour’ e richiama l'attenzione sul ritorno di artisti di fama internazionale sui palcoscenici ticinesi.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "cultura locale con prospettiva internazionale",
+            "analisi critica dei contenuti pubblici svizzeri"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della programmazione del Belluard Bollwerk e la risposta del pubblico ticinese nelle prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da tensioni energetiche e diplomatiche: il Regno Unito allenta sanzioni sul gas e petrolio russi per contenere i prezzi, mentre l'Italia spinge per il rilascio degli attivisti della Flotilla, un caso che coinvolge diversi attori internazionali.",
+          "notizie": [
+            {
+              "titolo": "Regno Unito revoca alcune sanzioni su gas e petrolio russi per frenare l’aumento dei prezzi energetici",
+              "fonte": "Il Post Mondo",
+              "link": "https://www.ilpost.it/2026/05/20/regno-unito-cancella-sanzioni-gas-e-petrolio-russia/",
+              "riassunto": "Il governo britannico ha annullato, a tempo indeterminato, le sanzioni su gas e petrolio russi per garantire l’approvvigionamento e contenere l’inflazione energetica. Da mercoledì le aziende potranno importare diesel e carburante per aerei raffinati da paesi terzi con petrolio russo, una misura già adottata dagli USA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tajani annuncia la partenza imminente degli attivisti italiani trattenuti in Israele",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/20/tajani-domani-dovrebbero-partire-tutti-gli-attivisti-italiani_6c7a0ae5-382f-4b1b-a971-31bb73226c90.html",
+              "riassunto": "Il ministro degli Esteri Antonio Tajani ha confermato che domani mattina tutti gli attivisti italiani della Freedom Flotilla saranno imbarcati a Ramon e trasferiti in Grecia o Turchia, dopo una trattativa quasi conclusa con le autorità israeliane.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo (Farnesina)",
+                "ANSA Mondo (Farnesina – partiti da Israele)"
+              ],
+              "differenze_narrative": "Le fonti ANSA riportano lo stesso contenuto di base (dichiarazioni di Tajani), ma la nota della Farnesina enfatizza la protesta diplomatica italiana e la possibilità di azioni a livello europeo, mentre l’articolo su \"partiti da Israele\" si concentra sul completamento del rientro dei cittadini, senza citare la pressione politica."
+            },
+            {
+              "titolo": "USA incriminano Raul Castro per l'abbattimento di due aerei civili nel 1996",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/20/incriminato-negativ-usa-lex-presidente-di-cuba-raul-castro_8a4de495-870b-483e-9e20-411dace6b502.html",
+              "riassunto": "Un gran jury della Florida ha accusato l’ex presidente cubano Raul Castro e altri cinque di omicidio per l’abbattimento di due aerei civili vicino alle coste cubane nel 1996, provocando tre vittime americane.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rilassamento delle sanzioni energetiche per mitigare l’inflazione",
+            "Pressioni diplomatiche legate a cittadini europei trattenuti all’estero"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle negoziazioni tra Regno Unito e Russia su ulteriori deroghe alle sanzioni energetiche nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la categoria economia è dominata da temi di impatto diretto sulla Svizzera: il mercato immobiliare, un caso giudiziario all’aeroporto di Ginevra e la denuncia di cittadini svizzeri detenuti in Israele. Questi eventi hanno rilevanza immediata per i lettori ticinesi.",
+          "notizie": [
+            {
+              "titolo": "Il sogno di possedere una casa propria è infranto: frustrazione tra gli inquilini urbani svizzeri",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/traum-vom-eigenheim-lebt-mieter-in-den-staedten-traeumen-vom-haus-auf-dem-land-id21963600.html",
+              "riassunto": "Una nuova indagine Moneypark‑Helvetia mostra che oltre il 70 % dei giovani svizzeri (25‑40 anni) desidera una casa di proprietà, ma l’età media di acquisto supera i 40 anni. I prezzi immobiliari in crescita e i tassi bassi hanno spinto i proprietari a restare, mentre il 37 % dei residenti urbani sogna di trasferirsi in campagna, generando frustrazione tra gli affittuari.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Scenata in aeroporto di Ginevra: passeggero denuncia abuso di autorità, ma la Corte respinge il ricorso",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1926783/scenata-in-aeroporto-e-5-anni-di-diffida-da-easyjet-lui-denuncia-ma-viene-sbugiardato",
+              "riassunto": "Un passeggero di EasyJet, negato l’imbarco a Ginevra per un bagaglio sovradimensionato, ha denunciato abuso di autorità contro un agente di polizia. La Corte dei reclami penali ha respinto l’accusa, confermando che l’agente si è limitato a chiedere al viaggiatore di allontanarsi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Flotilla: la Svizzera denuncia il trattamento inaccettabile dei cittadini detenuti in Israele",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1926994/dfae-diritti-autorita-svizzera-inaccettabile-flotilla-berna-trattamento",
+              "riassunto": "Il Dipartimento federale degli affari esteri ha chiesto alle autorità israeliane di garantire i diritti fondamentali dei partecipanti svizzeri alla Global Sumud Flotilla, attualmente detenuti. La Svizzera ha offerto assistenza consolare, ma denuncia condizioni di detenzione ritenute inaccettabili.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "crescente difficoltà di accesso alla proprietà immobiliare in Svizzera",
+            "tensioni legali tra viaggiatori e autorità aeroportuali",
+            "preoccupazioni per i diritti dei cittadini svizzeri all’estero"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle politiche di credito e delle misure a sostegno del mercato immobiliare svizzero nei prossimi 30 giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia della lista presenta un impatto diretto sulla Svizzera o sul Ticino né è una breaking news locale; si evidenziano solo eventi di portata internazionale nel settore AI.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 76,
       "run_id": 108,
@@ -5279,278 +5516,6 @@
             "Militarizzazione e sicurezza dell’IA: dal Pentagono alla difesa del codice"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi del processo Musk-OpenAI e l’eventuale reazione del mercato ai nuovi contratti del Pentagono: eventuali dettagli su OpenAI, Anthropic o sul ruolo di SpaceX potrebbero spostare ulteriormente il focus mediatico.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "run_id": 89,
-      "run_time": "2026-05-02 04:45:02.147113+00:00",
-      "analyzed_at": "2026-05-02T04:50:24.570078+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da fatti di cronaca ticinese molto concreti: una tragedia familiare a Vico Morcote, tensioni legate al centro asilanti di Pasture e il bilancio del Primo maggio a Lugano con disordini serali. Sullo sfondo restano temi sociali rilevanti come il salario minimo e la sicurezza pubblica.",
-          "notizie": [
-            {
-              "titolo": "Tragico annegamento di un bimbo di 2 anni in una piscina a Vico Morcote",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Vico-Morcote-bimbo-di-2-anni-annega-in-piscina--3707523.html",
-              "riassunto": "Un bambino di due anni è morto nel pomeriggio dopo essere stato trovato in una piscina privata a Vico Morcote. L’allarme è scattato poco prima delle 14.00 e sono intervenuti polizia, soccorritori e Care Team. È la notizia con l’impatto umano più forte sul Ticino oggi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Pasture: Cantone, Comuni e SEM si confrontano sulla sicurezza",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pasture-SEM-Cantone-e-Comuni-a-confronto-sulla-sicurezza--3708261.html",
-              "riassunto": "A Chiasso si è tenuto un incontro tra SEM, Consiglio di Stato e sindaci di Balerna, Chiasso e Novazzano sul tema sicurezza legato al centro di Pasture. Sul tavolo anche il progetto, poi congelato, dell’area separata per richiedenti problematici. La questione riguarda direttamente il Mendrisiotto e resta politicamente sensibile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Primo maggio a Lugano: manifestazione pacifica diurna e scontri in centro la sera",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-Primo-maggio-a-Lugano-%E2%80%9CN%C3%A9-sfruttati-n%C3%A9-divisi%E2%80%9D--3710049.html",
-              "riassunto": "Il corteo del Primo maggio a Lugano ha riunito oltre un migliaio di persone da Campo Marzo a Piazza Manzoni, con focus su salari, dignità e sicurezza sul lavoro. In serata però, in centro, si sono verificati scontri tra diverse decine di persone nei pressi della Pensilina Botta, con forte mobilitazione di polizia. La notizia conta sia per l’ordine pubblico sia per il significato sindacale della giornata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza e ordine pubblico nel Sottoceneri",
-            "questioni sociali: salari, lavoro e pressione sulle istituzioni locali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da seguire soprattutto l’evoluzione degli accertamenti sulla tragedia di Vico Morcote e l’eventuale comunicato della polizia sugli scontri di Lugano, che potrebbe chiarire dinamica, matrice e conseguenze giudiziarie.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi molto vicini alla vita quotidiana dei lettori svizzeri: costi della telefonia, tensioni sul mercato del lavoro e dibattito politico-sindacale in vista della votazione del 14 giugno. In parallelo emergono segnali di raffreddamento economico in alcuni settori, dal fotovoltaico al bancario.",
-          "notizie": [
-            {
-              "titolo": "Dal primo agosto Sunrise aumenta tutti gli abbonamenti di mobile e Internet",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/sunrise-da-agosto-aumentano-le-tariffe-telefonia-mobile-e-internet-432547",
-              "riassunto": "Sunrise alzerà i prezzi da agosto: +1,50 franchi per ogni contratto principale di clienti privati e aziendali, +75 centesimi per gli abbonamenti multipli o combinati. Per i marchi Yallo e Lebara gli aumenti arriveranno fino a 2 franchi al mese. Impatto diretto su famiglie e imprese in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "CKW taglia circa 60 posti nel fotovoltaico per il calo della domanda",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/mercato-solare-in-calo-ckw-taglia-60-posti-nel-ramo-fotovoltaico-432583",
-              "riassunto": "La società energetica lucernese CKW, controllata da Axpo, sopprime o trasferisce circa 60 posti nel ramo solare e termico: 30 licenziamenti e 30 modifiche contrattuali. Il gruppo parla di mercato fotovoltaico raffreddato dopo anni di boom e di ristrutturazione per restare competitivo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Primo Maggio e voto UDC: sindacati e commentatori alzano i toni sulla Svizzera da 10 milioni",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/primo-maggio-il-presidente-delluss-pierre-yves-maillard-attacca-liniziativa-delludc-426602",
-              "riassunto": "Pierre-Yves Maillard, presidente dell’USS, attacca l’iniziativa UDC «No a una Svizzera da 10 milioni!», in votazione il 14 giugno, definendola un pericolo per salari, pensioni e posti di lavoro. Il tema è centrale nelle manifestazioni del Primo Maggio, con ripercussioni dirette sul dibattito su immigrazione, mercato del lavoro e bilaterali.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "RSI Svizzera",
-                "Blick Schweiz"
-              ],
-              "differenze_narrative": "Il CdT mette al centro l’attacco politico-sindacale di Maillard e l’asse salari-pensioni-lavoro. RSI amplia il quadro con un’intervista a Daniel Lampart e insiste sulla pressione sul lavoro e sul rischio di isolamento della Svizzera. Blick adotta un taglio più polemico ed economico: contrappone le rivendicazioni dei lavoratori alle accuse di ‘faulness’ e difende la parte di chi sceglie il tempo parziale come fenomeno di benessere, non di pigrizia."
-            }
-          ],
-          "trend": [
-            "pressione sul costo della vita e sui servizi essenziali",
-            "dibattito su lavoro, salari, produttività e immigrazione"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione di sindacati, partiti e consumatori agli aumenti Sunrise e la possibile intensificazione del confronto politico in vista del voto del 14 giugno sulla 'Svizzera da 10 milioni'.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La notizia più rilevante per il pubblico svizzero italofono è il record del Passaporto Musei Svizzeri, che festeggia i 30 anni con numeri in crescita. Sul piano internazionale spiccano la Biennale di Venezia 2026, con forte presenza di figure legate alla Svizzera, e il ritorno di Banksy nel dibattito artistico londinese.",
-          "notizie": [
-            {
-              "titolo": "Il Passaporto Musei Svizzeri raggiunge un record e festeggia 30 anni",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1922149/musei-passaporto-anni-fondazione-svizzera",
-              "riassunto": "Nel 2024 il Passaporto Musei Svizzeri ha superato per la prima volta 1,5 milioni di ingressi, in crescita di oltre il 6%. Il sistema, nato nel 1996, oggi dà accesso gratuito a più di 500 musei ed è ormai un sostegno economico importante per le istituzioni culturali del Paese.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "La Biennale di Venezia 2026 punta su Koyo Kouoh, 111 artisti e un approccio più sensibile",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1922050/biennale-arte-venezia-artisti-keys",
-              "riassunto": "La 61esima Esposizione Internazionale d’Arte si terrà dal 9 maggio al 22 novembre 2026 con il titolo “In Minor Keys”. Il progetto, definito dalla svizzero-camerunese Koyo Kouoh prima della sua morte nel 2025, riunisce 111 partecipanti e insiste su relazioni, memoria e rallentamento dello sguardo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Fabrice Aragno porta a Venezia un’installazione immersiva ispirata a Godard",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1922051/aragno-film-installazione-godard-arte-biennale-immersiva",
-              "riassunto": "Il cineasta neocastellano Fabrice Aragno presenta alla Biennale Arte 2026 “Sentiments Signes Passions”, installazione tratta da “Le Livre d’image” di Jean-Luc Godard. L’opera trasforma il film in spazio fisico e sensoriale, con proiezioni su tulle e un sistema di computer e algoritmi.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Centralità della Svizzera nel sistema culturale europeo, tra musei e Biennale di Venezia",
-            "Musei e arte come esperienza immersiva e accessibile, non solo come visita tradizionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’avvio della Biennale di Venezia 2026 e l’eventuale eco in Svizzera, soprattutto per la presenza di Koyo Kouoh e di artisti legati al territorio elvetico.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall’escalation in Medio Oriente: stretto di Hormuz, negoziati sul nucleare iraniano e reazioni internazionali sui costi energetici. Sul fronte europeo pesano anche le nuove tensioni commerciali con Washington e le ricadute del caso Flotilla.",
-          "notizie": [
-            {
-              "titolo": "Hormuz sotto pressione: blocco navale, negoziati con l’Iran e rischio energetico globale",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/04/30/prosecuzione-blocco-hormuz-problema-mondo/",
-              "riassunto": "Il governo USA si prepara a un blocco prolungato dello stretto di Hormuz, mentre l’Iran prova a trattare su nucleare e sanzioni. Il Post spiega che il blocco colpisce la principale fonte di valuta iraniana e può pesare su prezzi e forniture energetiche mondiali, con effetti indiretti anche per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Il Post offre un quadro analitico e sistemico: descrive il blocco come problema globale, ne spiega gli effetti su economia iraniana, petrolio e stoccaggi, e legge la mossa USA come segnale di assenza di soluzioni rapide. ANSA, riprendendo il Wall Street Journal, taglia più sulla trattativa diplomatica: mette al centro la proposta iraniana di parlare di Hormuz e nucleare in cambio di allentamento delle sanzioni, con un tono più neutro e negoziale."
-            },
-            {
-              "titolo": "Italia, Spagna e Germania nel mirino di Trump: possibili tagli alle truppe USA in Europa",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/01/cbs-pentagono-vuole-ritirare-5.000-soldati-dalla-germania_83fa1bcf-7376-41d6-8e0e-4ce001e6cb17.html",
-              "riassunto": "Secondo CBS, il Pentagono vuole ritirare 5.000 soldati dalla Germania; Trump lascia intendere che il discorso possa estendersi anche a Italia e Spagna. Per l’Europa è un segnale di pressione politica sugli alleati, con possibili ripercussioni sulla sicurezza del continente e sul ruolo NATO.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Le due notizie ANSA sono complementari ma con framing diverso: una è una notizia di intelligence politica/militare, basata su CBS, che parla del ritiro dalla Germania come ritorsione per l’aiuto dato sull’Iran; l’altra riporta la frase di Trump su Italia e Spagna, più aggressiva e polemica. Insieme mostrano sia la possibile decisione operativa sia il tono di pressione verso gli alleati europei."
-            },
-            {
-              "titolo": "La marina israeliana ferma la Global Sumud Flotilla in acque internazionali",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/notizie/2026/04/30/global-sumud-flotilla-blocco-israele-acque-internazionali",
-              "riassunto": "Israele ha intercettato 21 delle 58 imbarcazioni della Flotilla, con 175 attivisti fermati e 25 italiani tra loro. Il caso è rilevante per l’Italia e l’Europa perché intreccia diritto internazionale, tensioni su Gaza e gestione diplomatica dei propri cittadini a bordo.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Internazionale adotta una cornice fortemente conflittuale e umanitaria: parla di attacco a imbarcazioni civili in acque internazionali, dà spazio alle voci degli attivisti e sottolinea la presenza di 25 italiani. ANSA privilegia invece la versione israeliana, secondo cui l’intervento era indispensabile per prevenire un’escalation e garantire la sicurezza delle persone a bordo nel rispetto del diritto internazionale. Il contrasto è soprattutto nel framing legale e politico dell’abbordaggio."
-            }
-          ],
-          "trend": [
-            "Escalation Iran-USA e centralità dello stretto di Hormuz per energia, sanzioni e diplomazia",
-            "Tensione transatlantica: dazi, pressione sugli alleati europei e riposizionamento militare USA"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore il punto chiave è se si aprirà davvero un canale negoziale tra USA e Iran su Hormuz e nucleare; in parallelo, vanno monitorate le decisioni europee sulle contromisure ai dazi di Trump e l’evoluzione del caso Flotilla con possibili reazioni diplomatiche italiane e UE.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: la decisione BCE sui tassi, una sentenza che tocca direttamente i consumatori svizzeri contro Sunrise e un segnale preoccupante sul mercato del lavoro elvetico, con aziende che puntano su IA e tagli ai costi. Sullo sfondo, restano rilevanti i movimenti internazionali su energia, mercati e telecomunicazioni.",
-          "notizie": [
-            {
-              "titolo": "La BCE congela i tassi al 2% mentre l'energia resta il principale rischio",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/la-bce-lascia-i-tassi-fermi-al-2-432578",
-              "riassunto": "La Banca centrale europea mantiene invariati i tassi: deposito al 2%, rifinanziamento al 2,15% e prestiti marginali al 2,40%. La BCE cita l'impennata dei prezzi energetici legata al conflitto in Medio Oriente come fattore che può rialzare l'inflazione e frenare la crescita dell'Eurozona. Per la Svizzera è importante perché il quadro monetario europeo influenza franco, export e costo del credito.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il tribunale di Zurigo impone a Sunrise di accettare le disdette scritte",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/sunrise-deve-accettare-le-disdette-scritte-432565",
-              "riassunto": "Il tribunale distrettuale di Zurigo ha accolto l'azione della Fondazione per la protezione dei consumatori contro Sunrise. Il giudice ha vietato due clausole: il rifiuto delle disdette scritte e la limitazione del recesso in caso di aumenti tariffari. La decisione non è ancora definitiva, ma tocca direttamente milioni di clienti svizzeri e potrebbe cambiare la prassi del settore.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "In Svizzera cresce la pressione dell'intelligenza artificiale su occupazione e salari",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/technologie-gefaehrdet-jobs-firmen-hoffen-auf-ki-und-wollen-bei-loehnen-sparen-id21912897.html",
-              "riassunto": "Un sondaggio Deloitte tra 126 CFO mostra più fiducia sulle prospettive 2026, ma anche un chiaro rovescio per i dipendenti: quasi il 50% prevede minori costi del personale grazie all'IA e il 39% preferirebbe investire fuori dalla Svizzera. È una notizia rilevante per il mercato del lavoro elvetico, perché segnala una possibile ondata di razionalizzazioni e delocalizzazioni.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "politica monetaria e inflazione trainata dall'energia",
-            "digitalizzazione e pressione sui posti di lavoro in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l'eventuale ricorso di Sunrise e la reazione delle associazioni dei consumatori: se la sentenza di Zurigo sarà confermata, potrebbe aprire la strada a cambiamenti contrattuali più ampi nel mercato telecom svizzero.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria di oggi è dominata dalla corsa ai capitali e al compute: Anthropic, OpenAI, Google e Microsoft continuano a spingere investimenti enormi su infrastrutture e modelli. Sul fronte industriale emergono anche temi di sicurezza, accesso selettivo agli strumenti cyber e la battaglia legale OpenAI-Musk, mentre prodotti AI entrano sempre più in auto, pagamenti e assistenza business.",
-          "notizie": [
-            {
-              "titolo": "Anthropic prepara un round che potrebbe superare i 900 miliardi di dollari",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
-              "riassunto": "Anthropic sta chiedendo agli investitori le allocazioni entro 48 ore per un nuovo round che potrebbe chiudersi in due settimane. La società punta a una valutazione intorno ai 900 miliardi di dollari, più del doppio rispetto al round di febbraio da 380 miliardi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch insiste sulla velocità del round, sulla raccolta prevista di circa 50 miliardi e sulla pressione degli investitori. The Decoder aggiunge il contesto strategico: Anthropic vuole superare OpenAI come startup AI più ارزشiosa, nota i possibili 10 miliardi di Google e 5 miliardi di Amazon e sottolinea che le trattative sono ancora preliminari."
-            },
-            {
-              "titolo": "OpenAI dice di aver raggiunto in anticipo il target di 10 gigawatt di potenza di calcolo",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-says-it-hit-its-10-gigawatt-compute-goal-years-ahead-of-schedule/",
-              "riassunto": "OpenAI afferma di avere già contrattualizzato 10 gigawatt di capacità di calcolo negli Stati Uniti, anni prima del target originario fissato per il 2029. Tre gigawatt sono stati aggiunti solo negli ultimi 90 giorni, inclusi 2 gigawatt da Amazon.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nel processo Musk-OpenAI emerge che xAI ha addestrato Grok su modelli OpenAI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
-              "riassunto": "In tribunale Elon Musk ha ammesso che xAI ha usato tecniche di distillazione sui modelli OpenAI per addestrare Grok, almeno in parte. La rivelazione è rilevante perché tocca il cuore della competizione tra i grandi laboratori AI e del contenzioso sulla missione originaria di OpenAI.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The New York Times"
-              ],
-              "differenze_narrative": "TechCrunch mette l’accento sull’ironia industriale: Musk denuncia OpenAI ma ammette pratiche di copia dei modelli, con un taglio molto tecnico e competitivo. Il New York Times, in formato video, inquadra invece il tema soprattutto come snodo del processo e delle origini di OpenAI, con un framing più giudiziario e biografico."
-            }
-          ],
-          "trend": [
-            "corsa al compute e ai round miliardari tra i grandi laboratori di AI",
-            "spostamento dell'AI verso applicazioni operative: sicurezza, automazione e infrastruttura industriale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’esito del round di Anthropic e l’eventuale reazione di OpenAI e degli investitori, oltre agli sviluppi del processo Musk-OpenAI che potrebbe produrre nuove ammissioni o documenti sulla distillazione tra modelli.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
