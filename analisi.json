@@ -1,6 +1,270 @@
 {
-  "generated_at": "2026-05-23T02:56:29.537406+00:00",
+  "generated_at": "2026-05-24T02:53:57.910547+00:00",
   "analyses": [
+    {
+      "id": 79,
+      "run_id": 111,
+      "run_time": "2026-05-24 02:45:01.946207+00:00",
+      "analyzed_at": "2026-05-24T02:53:57.814682+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 17,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie economiche e di sicurezza: il private banking svizzero registra nuovi record, le autorità di Zurigo intensificano la lotta al riciclaggio e il trasporto merci su rotaia rischia un regresso.",
+          "notizie": [
+            {
+              "titolo": "Julius Bär registra un nuovo massimo storico di patrimoni gestiti",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Julius-B%C3%A4r-ai-massimi-di-sempre--3760576.html",
+              "riassunto": "Nel primo quadrimestre 2026 Julius Bär ha portato le masse gestite a 528 miliardi di franchi, superando i 521 miliardi di fine 2025, grazie alla buona performance dei mercati azionari. La raccolta netta di nuovo denaro è scesa a 3,0 miliardi di franchi, al di sotto delle previsioni di 5,3 miliardi, ma la banca punta a un utile consolidato superiore al semestre precedente.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Zurigo intensifica le indagini sul riciclaggio di denaro",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Contro-la-criminalit%C3%A0-organizzata-%E2%80%9Cseguiamo-i-soldi%E2%80%9D--3762418.html",
+              "riassunto": "Il procuratore generale di Zurigo, David Zogg, ha dichiarato che ogni anno vengono aperti 1 200 procedimenti per riciclaggio, sequestrando decine di milioni di franchi. Un’operazione internazionale ha portato all’arresto di cinque persone che trasferivano proventi da droga e truffe tramite criptovalute. Zogg ha sottolineato la difficoltà dovuta al ruolo della Svizzera come paradiso del contante.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Riduzione dei terminal ferroviari minaccia il trasporto merci su rotaia in Ticino",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Merci-su-rotaia-il-Ticino-teme-un-passo-indietro--3762739.html",
+              "riassunto": "FFS Cargo ha annunciato la chiusura di quattro terminal nel cantone e la perdita di circa 40 posti di lavoro, suscitando timori che la quota di merci trasportate su rotaia scenda dal 74 % del 2021 al 69 % attuale. La direttrice dell’Ufficio federale dei trasporti, Christa Hostettler, ha avvertito che senza investimenti il trend negativo potrebbe invertire i benefici del tunnel del Gottardo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita dei patrimoni gestiti nel private banking svizzero",
+            "Rafforzamento delle misure anti-riciclaggio",
+            "Rischio di regressione nel trasporto ferroviario merci"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle politiche di regolamentazione bancaria e dei progetti di investimento per i terminal ferroviari, che influenzeranno sia l'economia locale sia la sostenibilità dei trasporti.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da temi istituzionali e economici: il dibattito sulla doppia maggioranza per gli accordi Svizzera‑UE, la fusione assicurativa Helvetia Baloise e il record di passeggeri negli aeroporti nazionali.",
+          "notizie": [
+            {
+              "titolo": "Doppia maggioranza per gli accordi Svizzera‑UE: la commissione del Nazionale la sostiene",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Svizzera-UE-%E2%80%9CNecessaria-la-doppia-maggioranza%E2%80%9D--3761731.html",
+              "riassunto": "La commissione delle istituzioni politiche del Nazionale ha votato 15 a 10 a favore di un’iniziativa che richiederebbe la doppia maggioranza (popolo e Cantoni) per approvare il pacchetto Svizzera‑UE, in particolare per la libera circolazione. La proposta mira a risolvere le contraddizioni costituzionali sull’immigrazione e prevede un eventuale referendum obbligatorio.",
+              "rilevanza": "alta",
+              "incrocio": false
+            },
+            {
+              "titolo": "Helvetia Baloise: l’integrazione avviata con successo",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/helvetia-baloise-lintegrazione-e-partita-bene-434112",
+              "riassunto": "Il nuovo gruppo assicurativo Helvetia Baloise, nato dalla fusione di Helvetia e Baloise, ha presentato risultati positivi nella prima assemblea generale a Basilea: aumento della redditività, dividendo di 7,70 franchi (+5%) e un piano di integrazione triennale con sede centrale a Basilea e una presenza importante a San Gallo.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews si concentra sul discorso del presidente del CDA, sui risultati operativi e sul piano triennale di integrazione, evidenziando il dividendo e la strategia di sede. LaRegione riporta gli stessi fatti ma aggiunge il contesto di mercato (leggero ribasso dell’azione) e sottolinea l’aspetto di \"progetto generazionale\" con più enfasi sulla reazione degli azionisti."
+            },
+            {
+              "titolo": "Record di passeggeri negli aeroporti svizzeri nel primo trimestre 2026",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1927398/aeroporti-svizzeri-registrano-un-record-di-13-3-milioni-di-passeggeri-nel-primo-trimestre",
+              "riassunto": "Gli aeroporti svizzeri hanno gestito 13,3 milioni di passeggeri nel primo trimestre, +5% rispetto al 2025. Zurich (+6%) ha raggiunto 6,9 milioni, Ginevra (+3%) 4,6 milioni e Basilea‑Mulhouse (+7%) 1,8 milioni. I voli verso Turchia e Italia hanno registrato i maggiori incrementi.",
+              "rilevanza": "media",
+              "incrocio": false
+            }
+          ],
+          "trend": [
+            "dibattito costituzionale su Svizzera‑UE",
+            "consolidamenti nel settore assicurativo",
+            "ripresa del traffico aereo post‑pandemia"
+          ],
+          "da_tenere_d_occhio": "L’esito del voto sull’iniziativa della doppia maggioranza nelle prossime settimane, che potrà influenzare le relazioni Svizzera‑UE.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: una mostra internazionale a Riehen, l'espansione del Gurtenfestival di Berna e un incontro letterario a Lugano con una scrittrice curda in esilio.",
+          "notizie": [
+            {
+              "titolo": "Pierre Huyghe in mostra alla Fondazione Beyeler di Riehen",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1927491/mostra-beyeler-fondazione-huyghe-svizzera-pierre-personale",
+              "riassunto": "Dal 1° luglio al 13 settembre la Fondazione Beyeler di Riehen ospita la prima mostra personale svizzera di Pierre Huyghe, con installazioni viventi, film e paesaggi immersivi. Tra le opere spicca \"Light Dust\" (2026), un tappeto luminoso che cambia aspetto a seconda della luce, e \"Umwelt\" (2011) con formiche in movimento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Gurtenfestival aumenta la capienza a 27.000 persone al giorno",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1927365/gurtenfestival-aumenta-la-capienza-con-2-000-persone-in-piu-al-giorno",
+              "riassunto": "Per l'edizione 15‑18 luglio 2026 il Gurtenfestival di Berna potrà accogliere 27.000 spettatori al giorno, 2.000 in più rispetto al passato, per far fronte ai costi post‑pandemia. L'ampliamento è stato autorizzato dalle autorità e include biglietti gratuiti o a prezzo ridotto per bambini e giovani.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Incontro a Lugano con la giornalista curda Asiye Tekin, rifugiata in Ticino",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1925763/donne-tekin-svizzera-scrive-asiye",
+              "riassunto": "Domani, alla Casa della letteratura di Lugano, Asiye Tekin, giornalista curda in esilio per persecuzioni in Turchia, presenterà il progetto “Scrivere ancora Svizzera” insieme a Sara Rossi Guidicelli. L'evento punta a dare voce a autori costretti all'esilio e a rafforzare il panorama letterario ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "mostre d'arte contemporanea con componenti interattive",
+            "espansione di eventi musicali per sostenere la ripresa post‑pandemia",
+            "crescente attenzione a voci di esiliati e rifugiati nella scena culturale ticinese"
+          ],
+          "da_tenere_d_occhio": "L'eventuale programmazione di ulteriori mostre di Huyghe in altre città svizzere e le reazioni del pubblico al nuovo limite di capienza del Gurtenfestival.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da tensioni legate al conflitto israelo-palestinese, con l'UE che avvia sanzioni contro il ministro Ben Gvir e l'Olanda che vieta le importazioni dagli insediamenti. Parallelamente, SpaceX ha lanciato con successo il razzo Starship V3, alimentando il dibattito sull'IPO da trilioni di dollari.",
+          "notizie": [
+            {
+              "titolo": "L'UE avvia le sanzioni contro il ministro israeliano Ben Gvir su spinta dell'Italia",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/22/lue-accoglie-la-richiesta-di-tajani-sulle-sanzioni-a-ben-gvir_55f8acee-f101-4a39-806d-c46ce9b0e278.html",
+              "riassunto": "L'Alto rappresentante UE per la politica estera Kaja Kallas ha accolto la proposta di Antonio Tajani di discutere sanzioni contro il ministro israeliano Itamar Ben Gvir al Consiglio Affari Esteri del 15 giugno. La misura, sostenuta da diversi Paesi, mira a penalizzare i coloni israeliani per violenze contro attivisti. La decisione finale è prevista per la prossima settimana.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "ANSA Mondo",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "Le tre segnalazioni ANSA enfatizzano aspetti diversi: l'articolo sul Coreper II sottolinea il ruolo di Tajani e il sostegno di più Stati; quello su Tajani in contatto con i ministri UE mette in evidenza le negoziazioni diplomatiche con la Germania; la nota di Parigi aggiunge la risposta francese, con l'interdizione di Ben Gvir dal territorio francese, mostrando una reazione più dura da parte di Parigi rispetto al semplice avvio della procedura UE."
+            },
+            {
+              "titolo": "SpaceX lancia con successo il razzo Starship V3 in un volo di prova",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/c62d65y16nno?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Elon Musk ha lanciato il più grande razzo mai costruito, Starship V3, che ha dispiegato 20 satelliti fittizi e si è schiantato nell'Oceano Indiano come previsto. Nonostante guasti a motori su entrambi gli stadi, la missione ha raggiunto gli obiettivi principali, rafforzando la fiducia degli investitori in vista dell'IPO di SpaceX, potenzialmente la più grande nella storia di Wall Street.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sanzioni UE contro figure israeliane",
+            "Ritmo accelerato delle negoziazioni USA‑Iran",
+            "Crescita dell'interesse per le IPO spaziali"
+          ],
+          "da_tenere_d_occhio": "L'esito della discussione UE del 15 giugno sulle sanzioni a Ben Gvir e le eventuali ripercussioni sui rapporti commerciali con Israele",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi i temi principali sono la performance del gruppo di lusso svizzero Richemont, le nuove nomine alla FINMA e l'accordo con il Marocco per accelerare i rimpatri, tutti con impatto diretto sulla Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Richemont registra crescita di ricavi e utili nell'esercizio 2025/26",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/richemont-vendite-e-utili-in-crescita-nellultimo-esercizio-434073",
+              "riassunto": "Il colosso del lusso con sede a Ginevra ha aumentato le vendite del 5% a 22,4 miliardi di euro e l'utile netto del 27% a 3,5 miliardi. Il segmento gioielli ha guidato la crescita (+8%). Viene proposto un dividendo di 3,30 franchi per azione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Finma: Simon Brönnimann alla guida della divisione Recovery e Resolution",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/finma-ex-responsabile-della-vigilanza-di-ubs-e-cs-diventa-capo-divisione-434108",
+              "riassunto": "Dal 1 giugno la FINMA affida a Simon Brönnimann la direzione della divisione Recovery e Resolution, responsabile dei piani di risanamento e liquidazione di UBS e Credit Suisse. Brönnimann ha già gestito la vigilanza su entrambe le banche dal 2015 al 2023.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Svizzera e Marocco accelerano i rimpatri degli irregolari",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1927585/svizzera-marocco-rimpatri-futuro-ridotto",
+              "riassunto": "Un nuovo accordo prevede di ridurre il tempo medio per identificare e rimpatriare i cittadini irregolari dal 150 a 30 giorni. L’accordo è stato siglato a Rabat dal segretario di Stato per la migrazione Vincenzo Mascioli e dal collega marocchino Khalid Zerouali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita dei gruppi di lusso svizzeri",
+            "Riforme nella vigilanza finanziaria",
+            "Accordi bilaterali per la gestione migratoria"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni della ristrutturazione della FINMA e l'impatto dei risultati di Richemont sui mercati azionari svizzeri nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su nuovi tool AI di OpenAI e su iniziative regolamentari statunitensi, con un impatto indiretto sulla Svizzera grazie alle limitazioni geografiche dei servizi.",
+          "notizie": [
+            {
+              "titolo": "OpenAI lancia un plugin ChatGPT per PowerPoint, ma avverte di possibili cancellazioni accidentali",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-launches-a-chatgpt-powerpoint-plugin-and-warns-it-might-accidentally-delete-your-content/",
+              "riassunto": "OpenAI ha rilasciato in beta un add‑in per PowerPoint che crea e modifica presentazioni usando ChatGPT. È disponibile per tutti i piani, ma la società avverte che formattazioni complesse o font personalizzati potrebbero essere modificati o cancellati, quindi consiglia di salvare le diapositive prima dell’uso.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI Appshots consente a qualsiasi finestra Mac di diventare contesto per Codex, senza restrizioni per Svizzera",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-appshots-turn-any-mac-window-into-context-for-codex/",
+              "riassunto": "La nuova funzionalità Appshots di Codex permette di inviare il contenuto testuale e visivo di qualsiasi finestra Mac a Codex con una scorciatoia. L’articolo specifica che, a differenza di altre funzioni, Appshots non è soggetto al divieto regionale per EEA, Regno Unito e Svizzera, rendendolo utilizzabile anche dagli utenti svizzeri.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI registra una perdita di 1,22 dollari per ogni dollaro di fatturato nel Q1 2026",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-burned-through-1-22-per-dollar-earned-even-after-stripping-out-stock-based-compensation/",
+              "riassunto": "Nel primo trimestre 2026 OpenAI ha fatturato circa 5,7 miliardi di dollari ma ha chiuso con un margine operativo aggiustato del -122 %, perdendo 1,22 $ per ogni dollaro di ricavo, anche escludendo le stock‑based compensation. La crescita è guidata da Codex, vendite enterprise e test pubblicitari in ChatGPT.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "nuovi plugin AI per suite produttive",
+            "funzionalità AI che superano le restrizioni geografiche",
+            "continua pressione finanziaria sui leader dell'AI"
+          ],
+          "da_tenere_d_occhio": "L’adozione dei plugin AI in ambienti aziendali e le possibili revisioni delle policy di utilizzo, soprattutto per gli utenti europei e svizzeri, nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 78,
       "run_id": 110,
@@ -5217,262 +5481,6 @@
             "AI applicata alla produttività e alla sanità: più capacità, ma anche più domande su controllo e responsabilità"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’impatto concreto delle tensioni geopolitiche sulle infrastrutture cloud e se lo studio di Harvard aprirà nuove repliche o critiche metodologiche sull’uso clinico dei modelli AI.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "run_id": 91,
-      "run_time": "2026-05-04 04:45:02.457313+00:00",
-      "analyzed_at": "2026-05-04T04:50:29.843129+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 17,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi molto concreti per il territorio: tensioni di ordine pubblico a Lugano, pressione sull’agricoltura locale e un successo sportivo con forte impronta ticinese. Sullo sfondo, restano alcuni dossier cantonali e federali con impatto più indiretto.",
-          "notizie": [
-            {
-              "titolo": "Scontri a Lugano: due feriti nei disordini ai margini del Primo maggio",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Scontri-a-Lugano-due-persone-ferite--3710940.html",
-              "riassunto": "A Lugano, nella zona della pensilina, la polizia è intervenuta venerdì sera per sedare tafferugli legati ai festeggiamenti del Primo maggio. Il bilancio è di due feriti leggeri e nessun fermo, ma resta da chiarire la dinamica e l’eventuale matrice sportiva dei disordini.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gli agricoltori ticinesi chiedono più sostegno alla politica e più prodotti locali",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/I-contadini-alla-politica-meno-import-pi%C3%B9-locale--3711420.html",
-              "riassunto": "L’Unione dei contadini ticinesi chiede interventi più decisi per proteggere terreni agricoli, formazione e filiera locale, denunciando anche la pressione delle importazioni. Il presidente Omar Pedrini invita enti pubblici ed eventi sovvenzionati a privilegiare i prodotti del territorio.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Thun è campione svizzero: successo storico con la firma ticinese di Mauro Lustrinelli",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/La-gioia-di-Thun--3712959.html",
-              "riassunto": "Il Thun ha conquistato il suo primo titolo nazionale dopo 128 anni di storia, coronando una stagione dominata quasi dall’inizio alla fine. Per il lettore ticinese conta anche il ruolo dell’allenatore Mauro Lustrinelli, uno degli artefici della vittoria.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensione tra ordine pubblico e tifoserie nel contesto di eventi in città",
-            "difesa dell’agricoltura ticinese e valorizzazione dei prodotti locali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’evoluzione delle indagini sui disordini di Lugano: autorità e polizia devono chiarire responsabilità, identità dei coinvolti ed eventuali collegamenti con gruppi sportivi.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da due temi molto concreti per famiglie e imprese: sicurezza degli approvvigionamenti energetici e tenuta del mercato del lavoro. Sullo sfondo, Berna accelera anche sul dossier difesa aerea, segnale di un contesto di sicurezza europeo sempre più teso.",
-          "notizie": [
-            {
-              "titolo": "Allarme per il rischio di carenza di carburante e gas in Svizzera",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/il-rischio-di-una-carenza-di-carburante-in-svizzera-e-molto-elevato-426658",
-              "riassunto": "Florence Schurch di Suissenégoce avverte che il rischio di una carenza di carburante in Svizzera è «molto elevato». Nel testo cita riserve strategiche in esaurimento in vari Paesi, la dipendenza svizzera da scorte all’estero e la fragilità delle forniture di gas e petrolio. Per il lettore svizzero conta perché tocca prezzi, sicurezza energetica e approvvigionamento.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Le tre testate trattano lo stesso allarme, ma con sfumature diverse: CdT sviluppa di più il contesto geopolitico e il rischio per gas, petrolio e prezzi alimentari; Ticinonews riprende il taglio pratico per il pubblico ticinese; LaRegione è più sintetica e neutra, concentrata sui dati essenziali e sulla dipendenza svizzera da depositi esteri."
-            },
-            {
-              "titolo": "Migros avverte: senza immigrazione rischiano di peggiorare offerta e servizio",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1922456/immigrazione-migros-ceo-offerta-udc",
-              "riassunto": "Il CEO di Migros Mario Irminger boccia l’iniziativa UDC «No a una Svizzera da 10 milioni!» e sostiene che l’industria alimentare dipende dall’immigrazione. Cita circa 1’000 posti vacanti difficili da coprire e una forte quota di lavoratori stranieri in Micarna, fino al 90% in alcuni reparti. Rilevante perché lega immigrazione, prezzi e qualità dell’offerta quotidiana.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews enfatizza l’argomento politico contro l’iniziativa UDC e riprende le cifre sui dipendenti stranieri; LaRegione mette più in evidenza le conseguenze concrete per i consumatori, come meno filiali, orari ridotti e scelta più limitata. In entrambi i casi il framing è favorevole all’apertura al lavoro straniero, ma con diversa sensibilità tra piano politico e impatto sul servizio."
-            },
-            {
-              "titolo": "La Confederazione cerca un sistema di difesa aerea supplementare oltre ai Patriot",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1922483/sistema-patriot-difesa-informazioni-confederazione-sistemi",
-              "riassunto": "Armasuisse sta raccogliendo informazioni su sistemi di difesa aerea di Germania, Francia, Israele e Corea del Sud per affiancare i Patriot già ordinati. Le risposte sono attese entro fine maggio e peseranno tempi di consegna, costi e quota di produzione in Europa o in Svizzera. È una notizia rilevante per la sicurezza nazionale e per l’industria.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza degli approvvigionamenti energetici e vulnerabilità delle scorte",
-            "immigrazione e manodopera straniera come leva per l’economia svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare eventuali chiarimenti del Consiglio federale sui rischi di carenza energetica e le reazioni politiche all’uscita del CEO di Migros, perché potrebbero alimentare il dibattito su prezzi, consumi e immigrazione.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la categoria cultura è dominata da due fili forti: da un lato l’attenzione svizzera per il Prix Walo e per la scena artistica legata al Ticino, dall’altro le regole e i meccanismi dell’industria globale dell’intrattenimento, dagli Oscar alle grandi produzioni internazionali. Sullo sfondo, anche il recupero di figure artistiche europee come Segantini.",
-          "notizie": [
-            {
-              "titolo": "Il Prix Walo celebra i protagonisti della scena dello spettacolo svizzero",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/news/schweiz/prix-walo-2025-ehrenpreis-fuer-musikmanager-freddy-burger",
-              "riassunto": "A Zurigo è stata assegnata la 50esima edizione del Prix Walo, il premio più prestigioso dello showbiz svizzero. L’Ehren-Prix è andato al manager musicale Freddy Burger, mentre il pubblico ha premiato Nik Hartmann. Un segnale chiaro della centralità della scena culturale elvetica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Segantini torna al centro della scena con una grande mostra a Parigi",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1922504/segantini-parigi-giovanni-parigi-arte",
-              "riassunto": "Il Museo Marmottan Monet ospita fino al 16 agosto la prima grande monografica francese su Giovanni Segantini, con oltre 60 opere. Per il pubblico svizzero è una riscoperta importante di un artista legato all’immaginario alpino e alla storia culturale italiana e svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Gli Oscar cambiano le regole e chiudono alla recitazione generata dall’IA",
-              "fonte": "Il Post Cultura",
-              "link": "https://www.ilpost.it/2026/05/03/oscar-regolamento-2027/",
-              "riassunto": "L’Academy ha modificato il regolamento in vista degli Oscar 2027: gli interpreti potranno comparire più volte nella stessa categoria se rientrano tra i cinque più votati. Restano centrali anche i paletti sull’uso dell’intelligenza artificiale, tema già evidenziato da altre testate.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Cultura",
-                "SRF Kultur"
-              ],
-              "differenze_narrative": "Il Post si concentra soprattutto sul funzionamento interno del voto e sulle strategie delle campagne premi, con taglio da analisi di industria. SRF, in forma più telegrafica, mette invece in primo piano l’elemento di attualità: l’esclusione dell’IA dalle candidature, trattandolo come notizia rapida e normativa."
-            }
-          ],
-          "trend": [
-            "centralità della cultura svizzera e dei premi nazionali",
-            "riforme dell’industria culturale tra Oscar, IA e nuove regole del settore"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare eventuali reazioni al nuovo regolamento degli Oscar, soprattutto sul fronte dell’uso dell’intelligenza artificiale, e l’eco mediatica del Prix Walo in Svizzera tedesca e in Romandia.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal Medio Oriente: il dossier Iran-USA-Israele resta al centro, mentre il conflitto in Libano continua a produrre vittime e tensioni. Sul fronte transatlantico, l’annuncio di nuovi dazi USA sulle auto europee aggiunge pressione ai rapporti con l’UE e può avere ricadute anche per l’economia svizzera.",
-          "notizie": [
-            {
-              "titolo": "Trump rilancia i dazi sulle auto europee al 25%: nuova tensione con l’Unione Europea",
-              "fonte": "Il Post Economia",
-              "link": "https://www.ilpost.it/2026/05/01/trump-aumento-dazi-auto-camion-unione-europea-25/",
-              "riassunto": "Donald Trump ha annunciato via Truth l’aumento dei dazi su auto e camion esportati dall’UE negli USA dal 15 al 25%. La misura entra in vigore la prossima settimana e irrigidisce ancora i rapporti transatlantici, con possibili effetti a catena anche sull’industria europea e svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Iran e Stati Uniti: sul tavolo una proposta in cinque punti su Hormuz, nucleare e sanzioni",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/02/i-cinque-punti-della-proposta-iraniana-su-hormuz-nucleare-e-sanzioni_e7db01bb-f601-46fc-80c2-6e5a02736960.html",
-              "riassunto": "Secondo Reuters, un alto funzionario iraniano avrebbe delineato una proposta in cinque punti: fine della guerra con garanzie contro nuovi attacchi, riapertura dello Stretto di Hormuz, revoca del blocco USA e colloqui sul nucleare in cambio della rimozione delle sanzioni. Il dossier è cruciale per i mercati energetici e la stabilità regionale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Raid israeliani in Libano: il bilancio delle vittime continua a salire nonostante il cessate il fuoco",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/02/beirut-e-salito-a-13-il-bilancio-delle-vittime-dei-raid-israeliani_3b28f0c2-920e-40e6-9761-770a47e48593.html",
-              "riassunto": "Il ministero della Salute di Beirut parla di almeno 13 morti nei raid israeliani nel sud del Libano, con donne e bambini tra le vittime. Gli attacchi arrivano nonostante il cessate il fuoco con Hezbollah in vigore dal 17 aprile, segnale di una tregua sempre più fragile.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Escalation e negoziati nel Medio Oriente, con il nodo Hormuz e il rischio energetico globale",
-            "Ritorno del protezionismo USA e pressione commerciale sull’Europa"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la reazione dell’Unione Europea ai dazi annunciati da Trump e l’eventuale evoluzione dei contatti diplomatici su Iran e Libano, soprattutto se emergeranno segnali di de-escalation o nuove misure militari.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: sicurezza degli approvvigionamenti energetici, spese e priorità della Confederazione, e pressione sul lavoro e sui salari. Sullo sfondo emerge anche il rafforzamento dei controlli fiscali internazionali e l’adattamento del tessuto produttivo ai nuovi vincoli globali.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera teme carenze di carburante se la crisi nel Golfo Persico si prolunga",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/wegen-der-militaerischen-lage-am-persischen-golf-treibstoff-engpaesse-ab-juni-moeglich-id21916780.html",
-              "riassunto": "La fornitura di carburanti in Svizzera sarebbe coperta solo fino a fine maggio; da giugno potrebbero comparire i primi colli di bottiglia se la rotta di Hormuz resta bloccata. Le scorte obbligatorie coprono circa 4,5 mesi, ma il mercato già mostra tensioni e maggiore tanktourismus.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Blick Wirtschaft",
-                "tio.ch Svizzera"
-              ],
-              "differenze_narrative": "Blick mette l'accento sulla tempistica pratica per i consumatori svizzeri, sui depositi obbligatori e sul rischio di panico ai distributori, con taglio molto concreto e quasi operativo. Tio riprende l'allarme in chiave più istituzionale, citando le valutazioni di Suissenégoce e il quadro delle riserve strategiche; il framing è più politico-economico e meno centrato sull'impatto immediato sugli automobilisti."
-            },
-            {
-              "titolo": "La Confederazione cerca un sistema di difesa aerea alternativo ai Patriot americani",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/politica/1922484/sistema-federale-patriot-informazioni-sievert",
-              "riassunto": "Berna sta valutando un ulteriore sistema di difesa a lungo raggio, complementare ai Patriot statunitensi, e ha chiesto informazioni a Germania, Francia, Israele e Corea del Sud. Contano tempi di consegna, costi e quota di produzione in Europa, idealmente in Svizzera, segno di una strategia più prudente dopo i ritardi Usa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Svizzera intensifica la caccia agli evasori fiscali con una rete sempre più globale",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1921814/sempre-piu-paesi-coinvolti-cosi-la-svizzera-da-la-caccia-agli-evasori-fiscali",
-              "riassunto": "Nel 2025 la Svizzera ha ricevuto 6'968 richieste di assistenza amministrativa dall'estero e ha rilasciato informazioni su 3,8 milioni di conti; in uscita, invece, le richieste sono scese a 61 verso 26 Paesi. Il dossier segnala un rafforzamento della cooperazione fiscale internazionale, rilevante anche per chi detiene attivi all'estero o in Svizzera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza degli approvvigionamenti e prezzi dell'energia",
-            "rafforzamento della cooperazione economico-fiscale e della spesa pubblica strategica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione della crisi nel Golfo Persico e l'eventuale risposta del Consiglio federale su misure preventive per carburanti e logistica: eventuali annunci su scorte, razionamenti o comunicazioni alle imprese potrebbero avere un impatto immediato anche in Svizzera italiana.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria di oggi è dominata dal tema della sovranità digitale: la dipendenza della Svizzera dai grandi fornitori USA torna al centro del dibattito, con focus su costi, controllo dei dati e autonomia operativa. Sullo sfondo, emergono anche le tensioni tra AI, privacy e modelli di business basati su tracking e monetizzazione.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera paga sempre di più la dipendenza da Microsoft e dalla Big Tech",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/digitale-souveraenitaet-als-einzelner-kannst-du-nicht-aussteigen-id21910507.html",
-              "riassunto": "Matthias Stürmer spiega che la Svizzera non ha mai affrontato in modo serio il rischio di dipendere dai grandi fornitori USA. I numeri citati sono eloquenti: il contratto federale con Microsoft passa da 42 milioni di franchi nel 2009 a 140 milioni oggi. Per un lettore svizzero, il tema tocca direttamente costi pubblici, continuità dei servizi e controllo sui dati.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Tentativo di uscire dall’ecosistema Big Tech: l’esperimento mostra quanto sia difficile",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/selbstversuch-von-blick-journi-big-tech-loswerden-halb-geschafft-halb-gescheitert-id21910501.html",
-              "riassunto": "Un giornalista di Blick prova a ridurre l’uso di servizi USA nella vita quotidiana e scopre che l’operazione è costosa, scomoda e solo parzialmente possibile. Il pezzo evidenzia anche il rischio del Cloud Act e la fragilità dell’autonomia digitale anche quando i server sono in Svizzera. Il framing è più pratico e personale rispetto all’analisi istituzionale del primo articolo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "sovranità digitale e dipendenza dalla Big Tech USA",
-            "privacy, dati e monetizzazione dei servizi AI"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il dibattito sulla sovranità digitale diventa politico in Svizzera, soprattutto per possibili reazioni di amministrazioni pubbliche e fornitori IT legati a Microsoft e agli altri grandi cloud americani.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
