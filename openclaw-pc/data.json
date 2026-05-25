@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T21:50:03.100338Z",
+  "generated_at": "2026-05-25T22:00:03.162130Z",
   "system": {
     "version": "OpenClaw 2026.5.7 (eeef486)",
     "current_ver": "2026.5.7",
@@ -158,6 +158,13 @@
   "summaries": [],
   "backups": [
     {
+      "file": "daily-config-20260526-0000.tar.gz",
+      "date": "2026-05-26T00:00:00Z",
+      "size": "10.2M",
+      "context": "Backup automatico",
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260526-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+    },
+    {
       "file": "daily-config-20260525-0000.tar.gz",
       "date": "2026-05-25T00:00:00Z",
       "size": "29.0M",
@@ -244,7 +251,7 @@
   ],
   "rassegna": {
     "articles_total": 43408,
-    "articles_today": 539,
+    "articles_today": 0,
     "articles_new_last_run": 539,
     "last_run": "2026-05-25 02:45:02.822866+00:00",
     "last_run_found": 3615
