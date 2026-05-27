@@ -155,6 +155,9 @@ function renderScheduleForm(sched) {
       ? `<span class="badge" style="color:var(--accent);border-color:var(--accent);">⏸ in pausa fino a ${escHtml(new Date(pu).toLocaleString("it-CH", {timeZone:"Europe/Zurich", dateStyle:"short", timeStyle:"short"}))}</span>`
       : '<span class="badge" style="color:var(--green);border-color:var(--green);">attiva</span>';
 
+  const hh = (sched.hour_local ?? 7).toString().padStart(2, "0");
+  const mm = (sched.minute ?? 0).toString().padStart(2, "0");
+
   document.getElementById("schedule-box").innerHTML = `
     <div style="margin-bottom:0.9rem;">Stato corrente: ${stateLine}</div>
 
@@ -168,6 +171,19 @@ function renderScheduleForm(sched) {
       </label>
       <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.25rem;">
         Se off, la rassegna NON parte (né cron mattutino, né trigger manuale dipende dal cron).
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Orario di partenza (ora locale CH)</label>
+      <div style="display:flex;gap:0.4rem;align-items:center;">
+        <input type="number" id="sched-hour" min="0" max="23" value="${hh}" style="width:80px;text-align:center;" onchange="markScheduleDirty()">
+        <span style="font-weight:700;font-size:1.1rem;">:</span>
+        <input type="number" id="sched-minute" min="0" max="59" value="${mm}" style="width:80px;text-align:center;" onchange="markScheduleDirty()">
+        <span class="field-help" style="margin:0 0 0 0.6rem;">UTC equivalente: <code id="utc-hint">—</code></span>
+      </div>
+      <div class="field-help" style="font-size:0.72rem;color:var(--text-muted);margin-top:0.25rem;">
+        Quando il cron scatta la rassegna. TZ-aware: si adegua automaticamente a CEST/CET (cambio ora di marzo/ottobre).
       </div>
     </div>
 
@@ -194,6 +210,29 @@ function renderScheduleForm(sched) {
     </div>
     <div id="sched-save-result"></div>
   `;
+  // Calcola UTC equivalente dell'orario locale CH (usa data odierna come riferimento per CEST/CET)
+  updateUtcHint();
+  document.getElementById("sched-hour").addEventListener("input", updateUtcHint);
+  document.getElementById("sched-minute").addEventListener("input", updateUtcHint);
+}
+
+function updateUtcHint() {
+  const h = parseInt(document.getElementById("sched-hour")?.value || "0", 10);
+  const m = parseInt(document.getElementById("sched-minute")?.value || "0", 10);
+  // Crea Date per oggi alle h:m ora locale Zurigo, poi mostra UTC.
+  // Trick: Intl per fare la conversione TZ-aware
+  try {
+    const today = new Date();
+    const yyyy = today.getFullYear(), mm = String(today.getMonth()+1).padStart(2,"0"), dd = String(today.getDate()).padStart(2,"0");
+    // Stringa "YYYY-MM-DD HH:MM" come fosse ora Zurigo; calcolo offset per quella data
+    const fmt = new Intl.DateTimeFormat("en-US", {timeZone:"Europe/Zurich", timeZoneName:"shortOffset"});
+    const parts = fmt.formatToParts(today);
+    const tz = (parts.find(p => p.type === "timeZoneName")?.value || "GMT+1").replace("GMT","");
+    const offset = parseInt(tz, 10) || 1;
+    const utcH = (h - offset + 24) % 24;
+    const el = document.getElementById("utc-hint");
+    if (el) el.textContent = String(utcH).padStart(2,"0") + ":" + String(m).padStart(2,"0");
+  } catch { /* ignore */ }
 }
 
 function markScheduleDirty() {
@@ -205,6 +244,11 @@ async function saveSchedule() {
   const enabled = document.getElementById("sched-enabled").checked;
   const weekdays = [...document.querySelectorAll('[data-weekday]')].filter(i => i.checked).map(i => parseInt(i.dataset.weekday, 10));
   const puRaw = document.getElementById("sched-paused-until").value;
+  const hour_local = parseInt(document.getElementById("sched-hour").value, 10);
+  const minute = parseInt(document.getElementById("sched-minute").value, 10);
+
+  if (isNaN(hour_local) || hour_local < 0 || hour_local > 23) { Toast.error("Ora non valida (0-23)"); return; }
+  if (isNaN(minute) || minute < 0 || minute > 59) { Toast.error("Minuto non valido (0-59)"); return; }
 
   let paused_until = null;
   if (puRaw) {
@@ -215,9 +259,10 @@ async function saveSchedule() {
   const btn = document.getElementById("save-sched-btn");
   btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Salvo…';
   try {
-    await Api.updateSchedule({ enabled, weekdays, paused_until });
+    const r = await Api.updateSchedule({ enabled, weekdays, paused_until, hour_local, minute });
     Toast.success("Schedule salvato");
-    document.getElementById("sched-save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Schedule aggiornata. Effetto immediato sul prossimo cron.</div>`;
+    const cronInfo = r.cron_line ? `<br>Nuova riga cron: <code style="font-size:0.72rem;">${escHtml(r.cron_line.slice(0, 80))}…</code>` : "";
+    document.getElementById("sched-save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Schedule aggiornata. Effetto immediato sul prossimo cron.${cronInfo}</div>`;
     await loadAll();
   } catch (e) {
     Toast.error("Errore: " + e.message);
