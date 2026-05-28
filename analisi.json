@@ -1,6 +1,245 @@
 {
-  "generated_at": "2026-05-27T02:54:54.618893+00:00",
+  "generated_at": "2026-05-28T05:09:43.179251+00:00",
   "analyses": [
+    {
+      "id": 83,
+      "run_id": 115,
+      "run_time": "2026-05-28 05:00:02.919138+00:00",
+      "analyzed_at": "2026-05-28T05:09:43.144208+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da questioni di rilevanza nazionale: tensioni legate al G7 di Evian, previsioni di calo del turismo a causa del conflitto in Iran e una revisione delle norme svizzere sull’esportazione di armi.",
+          "notizie": [
+            {
+              "titolo": "Tensioni svizzero-francesi per il G7 di Evian: la Svizzera teme costi di sicurezza e proteste a Ginevra",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/G7-di-Evian-a-Ginevra-cresce-il-malcontento--3769927.html",
+              "riassunto": "A meno di tre settimane dal G7 di Evian, la Confederazione teme di dover sostenere costi di sicurezza per l’accoglienza a Ginevra e per la manifestazione anti‑G7. Il presidente Parmelin ha scritto una lettera a Macron, resa pubblica da “Le Canard enchaîné”, denunciando la mancanza di contributi francesi. Le preoccupazioni includono milioni di franchi per la sicurezza e il timore che la protesta sia spostata su Ginevra.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Guerra in Iran farà calare il turismo svizzero: previsto -1,6% di pernottamenti nel 2026",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/La-guerra-in-Iran-frena-il-turismo-in-Svizzera--3769942.html",
+              "riassunto": "Il Centro di ricerche congiunturali (KOF) prevede un calo dell’1,6% dei pernottamenti in Svizzera nel 2026 a causa del conflitto in Iran. I pernottamenti provenienti dall’Asia dovrebbero diminuire del 10% (esclusa la Cina) e della Cina del 25,7%. Il turismo interno crescerà dello 0,2%, ma non compenserebbe le perdite estere.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nuove regole per l’esportazione di armi svizzere: allentamento per tutti i Paesi dell’UE e AELS",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Export-di-armi-regole-allentate-per-pi%C3%B9-Paesi--3775027.html",
+              "riassunto": "Il Consiglio federale ha deciso di estendere le agevolazioni svizzere sull’esportazione di armi a tutti gli Stati dell’Unione europea e dell’Associazione europea di libero scambio a partire dal 1° luglio 2026, includendo Islanda, Bulgaria, Croazia e altri. La modifica segue il referendum di novembre e l’aggiornamento di più ordinanze, con l’obiettivo di uniformare le regole per i Paesi EEA.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensioni legate a grandi vertici internazionali (G7)",
+            "impatto di conflitti esteri sul turismo svizzero",
+            "revisione delle normative sull’esportazione di armi"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dei costi di sicurezza per il G7 e le eventuali proteste a Ginevra, nonché le prime cifre del turismo estero nel primo trimestre 2026.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da temi legati a finanze pubbliche e sanità: la SUVA annuncia un risparmio record nella lotta alle frodi, il governo federale destina 3 milioni di franchi per l’emergenza Ebola in Congo, e in Ticino si discute l’aumento dei premi assicurativi per le casse malati.",
+          "notizie": [
+            {
+              "titolo": "SUVA risparmia 43,7 milioni di franchi grazie alla lotta contro le frodi assicurative",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/suva-un-risparmio-di-437-milioni-con-lotta-alle-frodi-assicurative-434298",
+              "riassunto": "Nel 2025 la SUVA ha analizzato 269 477 pratiche di indennità giornaliera o rendita, individuando 2 067 segnalazioni di sospetto abuso. 671 casi sono stati confermati in giudizio, consentendo un risparmio complessivo di 43,7 milioni di franchi, di cui 35,5 milioni per prestazioni indebitamente percepite e 8,2 milioni da premi aggiuntivi riscossi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Berna assegna 3 milioni di franchi per contenere l’epidemia di Ebola in Congo",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/berna-stanzia-3-milioni-di-franchi-contro-lepidemia-di-ebola-428817",
+              "riassunto": "Il Dipartimento federale degli affari esteri ha destinato 3 milioni di franchi dall’unità di aiuti d’urgenza per l’emergenza Ebola nella Repubblica Democratica del Congo: oltre 2 milioni per l’OMS, 0,5 milioni per un programma di salute materna‑infantile e circa 0,4 milioni per progetti di prevenzione nelle province di Ituri e Nord Kivu.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cassa malattia in Ticino: i premi assicurativi potrebbero aumentare di nuovo",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/premi-il-ticino-si-interroga-premi-piu-elevati-a-causa-delleffetto-di-recupero-428808",
+              "riassunto": "L’UFSP prevede un rialzo dei premi per le casse malattia vicino al 5 % a livello nazionale, ma in Ticino l’aumento è stato storicamente superiore a causa dell’«effetto di recupero» dei costi sanitari. I costi pro capite nel cantone sono cresciuti del 5,2 % nel 2025, pari a 247 franchi.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "lotta alle frodi assicurative",
+            "interventi svizzeri in emergenze sanitarie internazionali",
+            "aumento dei premi sanitari in Ticino"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori incrementi dei premi assicurativi in Ticino e l’efficacia dei fondi destinati all’emergenza Ebola",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro con le Giornate del teatro nel Canton Vaud, mentre a livello internazionale si registrano importanti lutti nel jazz e dibattiti su IA e arte.",
+          "notizie": [
+            {
+              "titolo": "Al via le Giornate del teatro svizzero a Yverdon-les-Bains e Losanna",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1928480/teatro-svizzero-giornate-yverdon-les-bains-losanna",
+              "riassunto": "Dal 24 al 28 maggio la 13ª edizione delle Giornate del teatro svizzero si svolge a Yverdon-les-Bains e Losanna, proponendo sette spettacoli tra produzioni indipendenti, istituzionali e una prima assoluta, “Mon Frère”. Tra le proposte spicca la performance immersiva “Venir meno”, diretta dalla ticinese Francesca Sproccati, che affronta il conflitto interiore e il ricordo di un nonno antifascista.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rinascita di festival culturali locali in Svizzera (teatro, musica)",
+            "Lutto e celebrazione di icone del jazz a livello globale"
+          ],
+          "da_tenere_d_occhio": "Le coperture internazionali del Festival di Cannes (AI, nuove tecnologie) nei prossimi giorni potrebbero influenzare il dibattito su innovazione e tradizione anche in ambito culturale svizzero.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica si concentra su questioni di sicurezza e difesa, ma per il lettore svizzero emergono due notizie locali: l’introduzione di un “Alpen‑Ranger” nel Canton Vallese e le tensioni legate al traffico turistico transfrontaliero a Chiasso.",
+          "notizie": [
+            {
+              "titolo": "Il Comune di Obergoms (VS) assume un “Alpen‑Ranger” per contrastare il campeggio selvaggio",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/wirtschaft/spezieller-job-ausgeschrieben-alpen-ranger-soll-fuer-walliser-gemeinde-wildcamper-aufspueren-id21978117.html",
+              "riassunto": "Il comune di Obergoms, nel Canton Vallese, ha pubblicato un bando per un ranger alpino che dovrà pattugliare i passi di Furka, Grimsel e Nufenen, informare i turisti e far rispettare le norme sul campeggio selvaggio. Il ruolo non ha poteri di polizia, ma mira a proteggere l’ambiente e a recuperare le entrate perse per il campeggio abusivo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Turisti in pullman e traffico a Chiasso: le autorità svizzere sotto pressione",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/2026/05/27/pullman-targhe-nascoste",
+              "riassunto": "Un reportage evidenzia come i pullman turistici parcheggino in doppia fila a Firenze e come, a Chiasso (Svizzera), la città si prepari ad accogliere i turisti in transito verso Como, mentre le autorità locali sono criticate per una presunta disparità di controlli tra residenti e visitatori.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza delle frontiere e gestione del turismo transfrontaliero",
+            "Nuove forme di vigilanza ambientale locale"
+          ],
+          "da_tenere_d_occhio": "L’efficacia del nuovo ruolo di ranger alpino e le possibili evoluzioni delle norme di controllo del traffico turistico a Chiasso nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l’attenzione è rivolta a tre temi chiave per la Svizzera: l’espansione di un operatore mobile tedesco con modello proprietario, le pressioni sul consumo interno legate all’aumento della TVA e le difficoltà emergenti nel mercato del lavoro svizzero.",
+          "notizie": [
+            {
+              "titolo": "ÖSI spusu conquista 70.000 clienti svizzeri con rete mobile proprietaria",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/life/anderthalb-jahre-nach-markteintritt-so-ueberzeugt-oesi-handyanbieter-spusu-die-schweizer-kundschaft-id21957696.html",
+              "riassunto": "Il nuovo operatore ÖSI spusu, parte del gruppo austriaco, ha superato i 70.000 abbonati in Svizzera grazie a una rete core proprietaria gestita da Zürich. Il modello “no‑binding” e i prezzi trasparenti gli hanno permesso di competere con i grandi player locali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I dettaglianti svizzeri avvertono l’impatto di una TVA al 10 % prevista per il 2028",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/entwicklung-ist-hochproblematisch-detailhaendler-warnen-vor-10-prozent-mehrwertsteuer-id21979192.html",
+              "riassunto": "Il Swiss Retail Federation segnala che l’aumento della TVA di 0,8 punti percentuali nel 2028, con possibili ulteriori incrementi, porterà il tasso al 10 %. I rivenditori temono una riduzione del consumo interno e un aumento del turismo di acquisto transfrontaliero, con una perdita stimata di miliardi di franchi di fatturato.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ghosting da parte dei datori di lavoro: 78 % dei candidati svizzeri denuncia il silenzio",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/ghosting-auf-dem-jobmarkt-wird-immer-groesseres-problem-schweizer-firmen-ignorieren-drei-von-vier-bewerbern-id21978965.html",
+              "riassunto": "Una nuova indagine di Indeed rivela che il 78,6 % dei 537 intervistati in Svizzera ha sperimentato il “ghosting” da parte dei potenziali datori di lavoro. Il fenomeno spinge il 43,8 % dei candidati a restare nel loro attuale impiego, aumentando la pressione sul mercato del lavoro qualificato.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Consolidamento del mercato delle telecomunicazioni con operatori low‑cost a rete proprietaria",
+            "Pressioni fiscali sul consumo interno e potenziale spostamento verso il cross‑border shopping",
+            "Crescente insoddisfazione dei candidati per processi di selezione poco trasparenti"
+          ],
+          "da_tenere_d_occhio": "L’attuazione dell’aumento della TVA nel 2028 e le eventuali misure di mitigazione per il retail, nonché l’evoluzione delle pratiche di recruiting nelle grandi aziende svizzere.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie di impatto globale sull'adozione dell'AI: la reazione degli utenti a Google Search AI, il raddoppio della valutazione di OpenRouter e un nuovo traguardo matematico di Claude Mythos.",
+          "notizie": [
+            {
+              "titolo": "Installazioni di DuckDuckGo aumentano del 30% dopo la nuova ricerca AI di Google",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
+              "riassunto": "Dopo l'annuncio di Google a I/O 2026 di trasformare la barra di ricerca in un motore conversazionale con AI Overviews, gli utenti hanno migrato verso DuckDuckGo, con un incremento del 30% delle installazioni dell'app negli Stati Uniti. Il CEO di DuckDuckGo ha denunciato il \"force‑feeding\" dell'AI da parte di Google, sostenendo che i risultati stanno peggiorando.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenRouter raddoppia la valutazione a 1,3 miliardi di dollari",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+              "riassunto": "Il gateway AI OpenRouter ha chiuso un round Serie B da 113 milioni di dollari guidato da CapitalG, portando la valutazione post‑money a circa 1,3 miliardi di dollari, più del doppio rispetto all'anno precedente. La piattaforma ora gestisce oltre 400 modelli AI, 8 milioni di utenti e 100 trilioni di token al mese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Claude Mythos risolve il problema di Erdős con una dimostrazione \"carina\"",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/",
+              "riassunto": "Secondo gli ingegneri di Anthropic, Claude Mythos ha replicato la soluzione di OpenAI al famoso congettura di Erdős sul unit‑distance, fornendo una dimostrazione breve e intuitiva. Il risultato evidenzia un nuovo livello di capacità delle LLM nel campo della matematica avanzata.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita dell'adozione di AI agentic e gateway multi‑modello",
+            "Resistenza degli utenti a soluzioni AI integrate nei motori di ricerca",
+            "Avanzamenti delle LLM nella ricerca matematica"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle politiche di Google sulla ricerca AI e le possibili reazioni normative o di mercato nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 82,
       "run_id": 114,
@@ -5132,277 +5371,6 @@
             "accelerazione dei modelli vocali e degli agenti operativi"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena seguire due sviluppi: l’effettiva disponibilità e qualità dell’AI DJ di Spotify in italiano per gli utenti svizzeri, e la reazione del mercato alle nuove API vocali di OpenAI, soprattutto sul fronte di adozione enterprise e possibili usi impropri.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 63,
-      "run_id": 95,
-      "run_time": "2026-05-08 04:45:02.512026+00:00",
-      "analyzed_at": "2026-05-08T04:50:24.990874+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da notizie di forte interesse locale: un grave incidente a Mezzovico con pazienti ricoverati e gestiti in parallelo, i conti di Chiasso letti anche in chiave aggregativa, e il caso della famiglia curda Pokerce rimpatriata dal Ticino. Sullo sfondo, qualche sviluppo di rilievo economico e infrastrutturale con impatto più ampio sulla Svizzera italiana.",
-          "notizie": [
-            {
-              "titolo": "Mezzovico: l’elicottero precipitato mette alla prova gli ospedali ticinesi",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Elicottero-precipitato-e-feriti-da-operare-contemporaneamente-%E2%80%9Cun-test-importante%E2%80%9D--3724011.html",
-              "riassunto": "Dopo l’incidente di lunedì a Mezzovico, con un elicottero privato precipitato e sei persone a bordo, i medici ticinesi hanno dovuto trattare tre feriti gravi nello stesso momento. Due interventi sono stati avviati quasi in parallelo all’Ospedale Civico di Lugano. La notizia conta perché tocca direttamente la gestione dell’emergenza sanitaria nel cantone.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Chiasso dimezza il disavanzo e prepara il terreno per l’aggregazione",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Consuntivo-di-Chiasso-disavanzo-dimezzato-da-6-a-3-milioni--3721713.html",
-              "riassunto": "Il consuntivo comunale mostra un disavanzo ridotto da quasi 6 a poco meno di 3 milioni grazie a rivalutazioni patrimoniali straordinarie. Il capitale proprio sale da 14 a 37 milioni, un elemento che il Municipio presenta come più favorevole nel dossier aggregativo del Basso Mendrisiotto. Rilevante perché incide sulle prospettive istituzionali e finanziarie della regione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Famiglia curda Pokerce rimpatriata dal Ticino: il padre fermato a Istanbul",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pokerce-il-rimpatrio-finisce-con-un-fermo-a-Istanbul--3724287.html",
-              "riassunto": "La famiglia, vissuta per quattro anni a Riazzino, è stata rimpatriata in Turchia e il padre è stato subito fermato all’aeroporto di Istanbul, poi rilasciato sotto sorveglianza dopo ore di incertezza. Il caso ha avuto forte eco in Ticino per il profilo politico della famiglia e per i timori legati alla persecuzione del padre. Conta perché riguarda un’espulsione partito dal cantone e i possibili rischi umanitari.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "cronaca locale con forte impatto su sanità, giustizia e amministrazione comunale",
-            "tensione tra mobilità/territorio e sicurezza: emergenze, infrastrutture e gestione pubblica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da seguire l’evoluzione clinica dei feriti di Mezzovico e l’eventuale sviluppo giudiziario o politico del caso Pokerce, mentre su Chiasso conterà il prossimo passo del processo aggregativo nel Basso Mendrisiotto.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da tre filoni con ricadute dirette per lettori svizzeri: una condanna della Svizzera da parte della CEDU, buone notizie per la previdenza professionale e risultati solidi per Swiss. Sullo sfondo, qualche segnale di attenzione anche su salute pubblica e trasformazioni economiche, ma con impatto più indiretto.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera condannata dalla CEDU per la gestione di una manifestazione a Ginevra",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/La-Corte-europea-dei-diritti-dell%E2%80%99uomo-condanna-la-Svizzera--3722940.html",
-              "riassunto": "La Corte europea dei diritti dell’uomo ha stabilito che la Svizzera ha violato la libertà di riunione e associazione nei confronti dell’organizzatrice di un corteo del 2019 a Ginevra. La donna era stata multata di 200 franchi per un servizio d’ordine ritenuto insufficiente. Il caso tocca un tema sensibile per Cantoni e comuni: fino a che punto si può imputare penalmente chi organizza una manifestazione autorizzata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Le casse pensioni rendono al livello più alto degli ultimi 25 anni",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/casse-pensioni-linteresse-sul-capitale-e-il-piu-alto-da-25-anni-432986",
-              "riassunto": "Nel 2025 il capitale di previdenza del secondo pilastro è stato remunerato in media del 4,3%, il miglior dato da un quarto di secolo. Secondo Complementa, il risultato è trainato dal rendimento degli investimenti, salito al 6,4%. Per lavoratori e futuri pensionati è una notizia importante perché rafforza il potere di remunerazione della previdenza professionale, ben oltre il tasso minimo del Consiglio federale all’1,25%.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Swiss parte bene nel primo trimestre, ma il Medio Oriente pesa sulle prospettive",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/swiss-risultati-solidi-nel-primo-trimestre-432958",
-              "riassunto": "Swiss ha chiuso il primo trimestre con fatturato a 1,22 miliardi di franchi, in aumento dello 0,3%, e utile operativo balzato da 3,3 a 30 milioni. La domanda verso l’Asia ha aiutato i conti, ma la compagnia avverte che nel secondo trimestre i costi del carburante legati al conflitto in Medio Oriente cresceranno sensibilmente. Per la Svizzera conta perché Swiss è un attore chiave del trasporto aereo nazionale e un indicatore della congiuntura.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "tenuta economica e previdenziale in Svizzera",
-            "diritti fondamentali e controllo pubblico delle autorità"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguita la reazione delle autorità svizzere alla condanna CEDU, mentre sul fronte economico sarà importante capire se i segnali positivi di casse pensioni e Swiss reggeranno l’impatto dei costi energetici e del contesto internazionale.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da temi molto vicini al pubblico svizzero italofono: iniziative tra Ticino e Svizzera interna, con attenzione a Monte Verità, all’OSI e alle attività sociali legate alla danza. Sul piano più ampio emergono anche due storie di costume: l’invecchiamento attivo e il rapporto tra arte, memoria e comunità.",
-          "notizie": [
-            {
-              "titolo": "Monte Verità rilancia i suoi Giardini in Arte ad Ascona",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1923640/verita-monte-arte-ascona-claudia",
-              "riassunto": "Il Monte Verità torna a valorizzare i suoi spazi storici con un progetto che intreccia natura e cultura. Per il Ticino conta perché rafforza uno dei luoghi simbolo dell’identità culturale della regione e della sua attrattività turistica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "L’Orchestra della Svizzera italiana celebra il sogno di Dimitri",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1923639/dimitri-osi-sogno-lac-clown",
-              "riassunto": "L’OSI propone undici repliche legate all’immaginario di Dimitri, figura chiave del clown e dello spettacolo in Svizzera. È un’iniziativa di forte richiamo locale, che unisce musica, memoria culturale e scena artistica ticinese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "In Svizzera crescono gli anziani che ballano: +35% in due anni",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/societa/1923419/ballo-senectute-partecipanti-piste-anziani",
-              "riassunto": "I partecipanti alle attività di danza di Pro Senectute sono saliti da circa 9’800 nel 2023 a 13’300 nel 2025. Il dato segnala un fenomeno sociale rilevante anche per il Ticino: il ballo come socialità, benessere e prevenzione dell’isolamento.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "cultura radicata nel territorio ticinese tra luoghi simbolo e istituzioni artistiche",
-            "invecchiamento attivo e pratiche culturali come spazio di socialità"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena monitorare se il rilancio di Monte Verità e le iniziative dell’OSI genereranno ulteriori dettagli su programmi, date e affluenza, soprattutto per capire l’impatto sul pubblico locale e sul turismo culturale.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dalla crisi legata all’Iran e allo stretto di Hormuz, con effetti potenzialmente diretti sui prezzi dell’energia e sulle piazze commerciali svizzere, in particolare Ginevra. In parallelo, il focolaio di hantavirus a bordo della nave Hondius continua a evolvere con evacuazioni e controlli in più Paesi.",
-          "notizie": [
-            {
-              "titolo": "Crisi di Hormuz e Iran: diplomazia, minacce e sanzioni restano bloccate",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/07/parigi-fuori-questione-revoca-sanzioni-a-iran-finche-hormuz-resta-chiuso_c99cacc9-7ade-41fd-a2ec-7bdda8387a0e.html",
-              "riassunto": "Il ministro francese Jean-Noël Barrot esclude qualunque revoca delle sanzioni finché lo stretto di Hormuz resta chiuso, definendolo un “bene comune dell’umanità”. Nelle stesse ore Trump ipotizza un’intesa con Teheran entro la prossima settimana, mentre i Pasdaran dicono che il transito sarà sicuro solo con la fine delle minacce statunitensi. È un dossier che può incidere sui mercati energetici e sugli operatori svizzeri delle materie prime.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Le tre fonti ANSA restituiscono registri diversi dello stesso nodo geopolitico: la Francia adotta un tono duro e normativo, concentrato sulla riapertura di Hormuz e sulla legittimità delle sanzioni; Trump propone invece un framing ottimistico e negoziale, con la firma dell’intesa evocata in tempi brevissimi; i Pasdaran parlano in chiave difensiva e condizionale, presentando la sicurezza della navigazione come conseguenza della fine delle minacce USA. La prima enfatizza il ricatto geopolitico, la seconda la possibile soluzione diplomatica, la terza la postura di deterrenza iraniana."
-            },
-            {
-              "titolo": "La guerra in Iran fa guadagnare le raffinerie e i trader di petrolio, con riflessi anche sulla Svizzera",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/magazine/serge-enderlin/2026/05/07/chi-guadagna-con-la-guerra",
-              "riassunto": "Secondo Internazionale, le raffinerie statunitensi stanno beneficiando della crisi con margini in forte aumento, mentre a Ginevra il commercio di materie prime vive un momento di profitti record. L’articolo cita il ruolo della lobby SuisseNégoce e il peso del settore, che movimenta un terzo del petrolio mondiale. Per la Svizzera è un tema sensibile perché tocca economia, sicurezza e reputazione del polo ginevrino.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Focolaio di hantavirus sulla nave Hondius: evacuazioni e quarantene in più Paesi",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/06/madrid-la-nave-col-focolaio-hantavirus-arriva-sabato-a-tenerife_55e6078f-8461-4263-b6b6-06db34d46492.html",
-              "riassunto": "La nave da crociera Mv Hondius, al centro del focolaio di hantavirus, arriverà sabato a Tenerife. La ministra spagnola della Sanità Monica García ha annunciato l’evacuazione dei passeggeri stranieri e la quarantena per i 14 spagnoli a Madrid. Il caso resta rilevante perché coinvolge passeggeri di più nazionalità e continua a generare allerta sanitaria internazionale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World",
-                "Il Sole 24 Ore Mondo"
-              ],
-              "differenze_narrative": "ANSA punta sulla gestione sanitaria immediata in Spagna, con date, porto di attracco e misure di quarantena. Il New York Times privilegia l’angolo epidemiologico e di tutela dei passeggeri, parlando di monitoraggio in almeno tre Stati USA e di evacuazioni della nave. Il Sole 24 Ore, con una nota più sintetica e logistica, si concentra soprattutto sulla posizione e sul tragitto della Hondius. L’ANSA è più istituzionale, il NYT più orientato ai rischi sanitari transnazionali, Il Sole più operativo."
-            }
-          ],
-          "trend": [
-            "crisi di Hormuz, energia e ripercussioni sui mercati europei",
-            "allerta sanitaria internazionale legata all'hantavirus e alla mobilità delle crociere"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti l’eventuale evoluzione dei negoziati USA-Iran e ogni aggiornamento sulla riapertura di Hormuz, perché può muovere subito prezzi energetici e assicurativi; sul fronte sanitario, conta capire se emergono nuovi casi collegati alla Hondius o ulteriori evacuazioni.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da temi con un forte riflesso svizzero: il settore aereo resta influenzato dal conflitto in Medio Oriente e dai costi del carburante, mentre in Svizzera emergono novità su governance industriale e uso dell’IA nei media. Sullo sfondo, i mercati globali reagiscono con forte volatilità al prezzo del petrolio.",
-          "notizie": [
-            {
-              "titolo": "Swiss chiude un trimestre molto forte grazie alla domanda legata alla guerra in Medio Oriente",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/aussergewoehnlich-stark-iran-krieg-beschert-swiss-mega-quartalsgewinn-id21920633.html",
-              "riassunto": "Swiss ha registrato nel primo trimestre 2026 un utile operativo di 30 milioni di franchi, contro i 3,3 milioni dell’anno prima. La compagnia spiega il balzo con la domanda aumentata nel marzo “straordinariamente forte” per il conflitto in Iran e la chiusura di hub come Dubai e Doha. Restano però in arrivo costi più alti per il carburante, che potrebbero pesare sui prossimi trimestri.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cambio al vertice di Swiss: Vranckx pronto a sostituire Francioni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/alter-bekannter-uebernimmt-langjaehriger-praesident-der-swiss-hoert-auf-id21926147.html",
-              "riassunto": "Reto Francioni lascia la presidenza del consiglio di amministrazione di Swiss dopo dieci anni; il mandato finirà nell’estate 2026. Al suo posto dovrebbe arrivare Dieter Vranckx, ex CEO della compagnia fino al 2024 e attuale vicepresidente. È un passaggio importante per la governance della principale compagnia aerea svizzera, in una fase ancora segnata da costi elevati e tensioni geopolitiche.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "I media svizzeri adottano un codice di condotta per l’uso responsabile dell’IA",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1923542/ia-media-svizzera-codice-condotta-consiglio-europa-strumento-fiducia-pubblico",
-              "riassunto": "Il settore mediatico svizzero introduce un codice di condotta sull’intelligenza artificiale, sostenuto da editori, SSR e Keystone-ATS. Il testo, presentato allo Swiss Media Forum di Lucerna, punta a rafforzare fiducia, trasparenza, protezione dei dati e rispetto del diritto d’autore. Per il pubblico svizzero è un tema rilevante perché tocca direttamente informazione, democrazia e standard editoriali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "energia e carburante come fattore trasversale per trasporti e mercati",
-            "intelligenza artificiale e governance: dal media system alle imprese"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l’evolversi dei prezzi del petrolio e le ricadute sui vettori aerei svizzeri, oltre alle reazioni del settore media e delle imprese svizzere alle nuove regole e adozioni dell’IA.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da due grandi filoni: la monetizzazione e i limiti pratici dell’AI nei prodotti consumer, con Apple sotto pressione, e la corsa all’infrastruttura di calcolo tra OpenAI, Anthropic, xAI e i grandi cloud. Sullo sfondo, cresce anche la competizione globale con DeepSeek e i segnali dal mercato dei chip.\nPer un lettore svizzero contano soprattutto le ricadute industriali e regolatorie: costi, data center, semiconduttori e affidabilità delle promesse AI.",
-          "notizie": [
-            {
-              "titolo": "Apple chiude con 250 milioni di dollari le cause sulle funzioni AI di Siri ritardate",
-              "fonte": "Il Post Tecnologia",
-              "link": "https://www.ilpost.it/2026/05/06/apple-accordo-pagare-250-milioni-per-inganno-clienti-su-ai/",
-              "riassunto": "Apple ha accettato di pagare 250 milioni di dollari per chiudere una serie di class action negli Stati Uniti legate ad Apple Intelligence e a pubblicità ritenute fuorvianti. Secondo il testo, gli iPhone 15 e 16 venduti tra giugno 2024 e marzo 2025 potrebbero dare diritto a rimborsi fino a 95 dollari per dispositivo. La vicenda pesa perché mostra i ritardi di Apple nel portare sul mercato funzioni AI realmente funzionanti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Tecnologia",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "Il Post insiste sul quadro di difficoltà tecnologica di Apple e sul fatto che l’azienda si appoggi a Google Gemini per colmare il ritardo; TechCrunch enfatizza invece il profilo legale e commerciale della class action, il timing rispetto alla WWDC e il tema della false advertising. Entrambe convergono sull’entità dell’accordo, ma una legge la vicenda come segnale di debolezza strategica, l’altra come correzione di una comunicazione ingannevole."
-            },
-            {
-              "titolo": "Anthropic e SpaceX: un mega-accordo da oltre 300 MW per alimentare Claude",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/anthropic-taps-spacexs-colossus-1-data-center-for-220000-gpus-to-power-claude/",
-              "riassunto": "Anthropic ha preso in uso l’intera capacità del data center Colossus-1 di SpaceX, pari a oltre 300 megawatt e più di 220.000 GPU NVIDIA, per far crescere Claude. In parallelo, l’azienda aumenterà i limiti d’uso per i clienti e continua a puntare su accordi infrastrutturali enormi con Google, Microsoft e Amazon. La notizia conta perché conferma che il vero collo di bottiglia dell’AI è sempre più l’energia e il compute.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "The Decoder",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "The Decoder mette l’accento sulla scala tecnica e politica dell’accordo, sui limiti d’uso per gli utenti di Claude e sulla contraddizione tra partner industriali e posizionamento ‘democratico’ di Anthropic. TechCrunch interpreta invece l’intesa come monetizzazione della capacità di calcolo di xAI/SpaceX e come segnale che Musk sta trasformando la sua infrastruttura in un business da fornitore di compute. Una fonte parla soprattutto di accesso al cloud, l’altra di strategia industriale e bilancio."
-            },
-            {
-              "titolo": "DeepSeek verso una valutazione di 45 miliardi, con il sostegno del fondo statale cinese",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/deepseek-nears-45-billion-valuation-as-chinas-state-chip-fund-leads-round/",
-              "riassunto": "DeepSeek, il laboratorio AI cinese emerso per modelli efficienti e a basso costo, sarebbe vicino a un round che lo valuterebbe circa 45 miliardi di dollari. Il round sarebbe guidato dal China Integrated Circuit Industry Investment Fund, con possibile partecipazione di Tencent. Il dato è rilevante perché segnala la risposta di Pechino alla dipendenza da chip e tecnologia statunitensi.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch insiste sul salto di valutazione da 20 a 45 miliardi in poche settimane e sul ruolo dei concorrenti che starebbero cercando di attrarre ricercatori DeepSeek; The Decoder dà più spazio alla lettura geopolitica e industriale, evidenziando il ruolo del fondo statale dei chip e la strategia cinese di autosufficienza tecnologica. La prima è più da mercato, la seconda più da politica industriale."
-            }
-          ],
-          "trend": [
-            "Le promesse AI iniziano a scontrarsi con costi, ritardi e cause legali",
-            "La vera corsa competitiva è sull’infrastruttura: chip, energia e data center"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l’effetto domino dell’accordo Apple su WWDC e roadmap di Siri, oltre a eventuali dettagli operativi sull’intesa Anthropic-SpaceX e sulle reazioni di mercato a DeepSeek e ai grandi player dei semiconduttori.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
