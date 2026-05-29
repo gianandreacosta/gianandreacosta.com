@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T07:50:03.071154Z",
+  "generated_at": "2026-05-29T08:00:04.622489Z",
   "system": {
     "version": "OpenClaw 2026.5.7 (eeef486)",
     "current_ver": "2026.5.7",
@@ -153,15 +153,6 @@
       "next": "n/a",
       "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
       "enabled": false
-    },
-    {
-      "name": "TEST fix Maria (auto-rimuovi dopo)",
-      "schedule": "50 7 29 5 * (UTC)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Invia ESATTAMENTE questo messaggio all'utente via DM Tele...",
-      "enabled": true
     }
   ],
   "summaries": [],
