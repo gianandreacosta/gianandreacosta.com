@@ -1,6 +1,258 @@
 {
-  "generated_at": "2026-05-28T05:09:43.179251+00:00",
+  "generated_at": "2026-05-29T05:09:30.383106+00:00",
   "analyses": [
+    {
+      "id": 84,
+      "run_id": 116,
+      "run_time": "2026-05-29 05:00:02.322155+00:00",
+      "analyzed_at": "2026-05-29T05:09:30.363236+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 16,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie di rilevanza economica e di politica estera, con particolare attenzione al settore finanziario svizzero, alle nuove norme sull'esportazione di armi e a una visita di Stato del presidente polacco.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera perde il primato nella gestione di capitali offshore a favore di Hong Kong",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/economia/Gestione-capitali-offshore-la-Svizzera-raggiunta-da-Hong-Kong--3771850.html",
+              "riassunto": "Uno studio BCG mostra che Hong Kong ha eguagliato la Svizzera nella gestione di circa 2,9 miliardi di dollari di capitali offshore, superando il primato svizzero. La crescita di Hong Kong (+10,7%) è trainata dal 60% di capitali cinesi, mentre la Svizzera registra +7,6% nel 2025. Gli esperti prevedono un sorpasso entro il 2030.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Svizzera allenta le regole per l'esportazione di armi verso più paesi dell'UE",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Export-di-armi-regole-allentate-per-pi%C3%B9-Paesi--3775027.html",
+              "riassunto": "Il Consiglio federale ha modificato le ordinanze per estendere le agevolazioni svizzere sull'esportazione di armi a tutti i Paesi dell'UE e dell'AELS a partire dal 1° luglio 2026, includendo Islanda, Bulgaria, Croazia e altri. La riforma, legata al referendum di novembre, prevede anche nuovi criteri per le forniture a stati in conflitto, mantenendo i vincoli di neutralità e diritti umani.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Visita di Stato del presidente polacco Nawrocki in Svizzera",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/Il-Consiglio-federale-riceve-il-presidente-polacco-Nawrocki--3775012.html",
+              "riassunto": "Il presidente polacco Karol Nawrocki ha incontrato il Consiglio federale a Berna, sottolineando le “ottime relazioni” bilaterali, soprattutto in ambito economico: la Polonia è stato il principale partner commerciale svizzero nel 2025 con scambi per circa 6,5 miliardi di franchi. La visita ha anche toccato temi di sicurezza e innovazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "competizione globale nella gestione patrimoniale",
+            "revisione delle norme di esportazione di armi",
+            "rafforzamento delle relazioni bilaterali con l'Europa centrale"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle politiche di controllo dei capitali offshore e le prossime votazioni sul nuovo regime di esportazione di armi, che potrebbero influenzare la posizione della Svizzera nei mercati finanziari e difensivi.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da un problema tecnico alla gestione del traffico aereo di Zurigo, da nuove misure federali contro i contaminanti PFAS negli alimenti e dal lancio del primo piano nazionale d'azione per l'intelligenza artificiale.",
+          "notizie": [
+            {
+              "titolo": "Problemi software di Skyguide riducono del 10% gli atterraggi all’aeroporto di Zurigo",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/10-prozent-weniger-fluege-skyguide-problem-fuehrt-zu-verspaetungen-am-flughafen-zuerich-id21980695.html",
+              "riassunto": "Un aggiornamento difettoso del software di Skyguide ha costretto la controlloria a limitare a 35 gli atterraggi orari a Zurigo, provocando ritardi su quasi il 75% dei voli tra le 11 e le 19. Il rollback è previsto per la notte di giovedì, ma i disagi potrebbero protrarsi fino a giovedì mattina.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Consiglio federale approva aiuti temporanei per le aziende agricole colpite da PFAS",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/pfas-negli-alimenti-berna-prepara-aiuti-per-le-aziende-agricole-434401",
+              "riassunto": "Il governo ha messo in consultazione una modifica d’ordinanza per sostenere le aziende agricole che devono fronteggiare elevati livelli di PFAS in uova, carne, latte e acqua. Prevede miscelazione temporanea di prodotti contaminati, obbligo di informare gli acquirenti e un sostegno finanziario limitato nel tempo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Digital Summit: la Svizzera lancia il primo Piano d’azione nazionale per l’IA",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/gipfel-von-digitalswitzerland-schweiz-macht-bei-ki-vorwaerts-mit-erstem-nationalen-aktionsplan-id21981919.html",
+              "riassunto": "Al Digital Gipfel 2026 di Andermatt, il Bund e digitalswitzerland hanno presentato l’AI Action Plan for Switzerland, con l’obiettivo di rafforzare ricerca, formazione, infrastrutture e governance. L’89 % delle imprese svizzere usa già soluzioni IA, ma il piano mira a scalare l’adozione e a posizionare il Paese tra USA ed EU nel settore.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Problemi tecnici nelle infrastrutture critiche (es. aviazione)",
+            "Azione governativa su contaminanti ambientali (PFAS)",
+            "Strategie nazionali per l’intelligenza artificiale"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori ritardi o estensioni del rollback di Skyguide e l’effettiva attuazione del Piano IA, oltre all’impatto dei provvedimenti PFAS sul mercato agricolo.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: dal teatro nazionale alle grandi manifestazioni musicali in Ticino, fino a un caso di controversia su un concerto internazionale. Le notizie più rilevanti hanno impatto diretto sul territorio e coinvolgono più testate.",
+          "notizie": [
+            {
+              "titolo": "JazzAscona 2026: oltre 200 concerti gratuiti a Ascona, con Fred Wesley e artisti internazionali",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1928566/jazz-jazzascona-ascona-band-festival",
+              "riassunto": "Dal 25 giugno al 4 luglio la 42ª edizione di JazzAscona riporterà più di 200 concerti gratuiti nei bar e nei vicoli del borgo, con la partecipazione del trombonista Fred Wesley e una dozzina di gruppi provenienti da New Orleans. L’evento, promosso dal presidente Stefano Steiger, è un punto di riferimento per l’estate musicale ticinese.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Culture",
+                "CdT Società"
+              ],
+              "differenze_narrative": "LaRegione si concentra sull’annuncio dei protagonisti internazionali (Fred Wesley) e sull’aspetto gratuito per il pubblico, mentre CdT fornisce maggiori dettagli sul programma (300 artisti, partnership con università americane, label discografica) e sul legame istituzionale con New Orleans."
+            },
+            {
+              "titolo": "Giornate del teatro svizzero 2026 a Yverdon-les-Bains e Losanna",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1928480/teatro-svizzero-giornate-yverdon-les-bains-losanna",
+              "riassunto": "La 13ª edizione delle Giornate del teatro svizzero, dal 27 maggio a domenica, presenta sette spettacoli, tra cui la performance immersiva “Venir meno” diretta dalla ticinese Francesca Sproccati. L’evento, promosso dall’Ufficio federale della cultura, mette in luce la diversità linguistica e artistica del teatro elvetico.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Concerto di Patrick Bruel rinviato a Friburgo, confermato a Pully",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1928868/festival-bruel-pully-concerto-friburgo-patrick",
+              "riassunto": "Il concerto di Patrick Bruel previsto per il 26 giugno a Friburgo è stato rinviato in attesa di chiarimenti giudiziari, mentre quello a Pully (25 giugno) resta confermato nonostante le petizioni di oltre 6 800 firme contro l’artista accusato di molestie sessuali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Festival musicali gratuiti in Ticino",
+            "Rinascita del teatro immersivo in Svizzera"
+          ],
+          "da_tenere_d_occhio": "L'esito delle indagini su Patrick Bruel e le eventuali decisioni delle autorità svizzere, che potrebbero influenzare altri eventi culturali programmati.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente e dal ruolo degli Stati Uniti nei negoziati con l'Iran, con ripercussioni potenziali per l'Europa e la sicurezza globale.",
+          "notizie": [
+            {
+              "titolo": "Trump: l'accordo con l'Iran dipende dall'adesione araba agli Accordi di Abramo",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/27/trump-non-sicuro-di-fare-lintesa-se-non-ce-firma-accordi-di-abramo_cdfc9ee4-4836-44d6-8aa9-6e77e7dfd48d.html",
+              "riassunto": "Donald Trump ha dichiarato che l'eventuale intesa con l'Iran sarà valutata in base all'adesione dei Paesi arabi agli Accordi di Abramo, senza però confermare una subordinazione esplicita. L'amministrazione statunitense richiede un accordo \"perfetto\" con Teheran.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Israele riavvia le ostilità contro Hezbollah nel sud del Libano",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/05/27/israele-rilancia-la-guerra-contro-hezbollah",
+              "riassunto": "L'esercito israeliano ha ordinato l'evacuazione di Nabatieh e ha ripreso gli attacchi contro Hezbollah dopo l'uso di droni a fibra ottica. Gli USA hanno dato il via libera a Israele per difendersi, in un contesto di negoziati sull'Iran guidati da Trump.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bozza di memorandum USA‑Iran per riaprire lo Stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/27/tv-iran-in-bozza-via-blocco-usa-da-hormuz-e-transito-a-livelli-pre-guerra_570f3b54-f8fe-403c-bd17-e619a71dfcc6.html",
+              "riassunto": "Secondo la televisione di Stato iraniana, gli USA ritireranno le forze militari e il blocco navale nello Stretto di Hormuz, mentre Teheran ripristinerà il traffico commerciale a livelli prebellici entro 30 giorni, con supervisione dell'ONU.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni USA‑Iran legate agli Accordi di Abramo",
+            "Rinascita dei combattimenti tra Israele e Hezbollah",
+            "Tentativi di de‑escalation nello Stretto di Hormuz"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle negoziazioni tra USA e Iran e possibili ripercussioni sul traffico marittimo globale nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la finanza svizzera è al centro dell'attenzione: la perdita del primato nella gestione patrimoniale, la presa di controllo quasi totale di Cornèr Banca e i risultati straordinari del colosso energetico Vitol evidenziano sfide e opportunità per la Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Hong Kong supera la Svizzera nella gestione patrimoniale offshore",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/svizzera/hong-kong-supera-la-svizzera-come-leader-nella-gestione-patrimoniale-434371",
+              "riassunto": "Secondo il Global Wealth Report 2026 di BCG, Hong Kong ha raggiunto la Svizzera al primo posto nella gestione di capitali offshore, con entrambi i poli intorno a 2,9 miliardi di dollari. La Svizzera registra un incremento del 7,6% nel 2025, mentre Hong Kong cresce del 10,7% grazie a flussi dalla Cina continentale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "La famiglia Cornaro prende il controllo quasi totale di Cornèr Banca",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/la-famiglia-cornaro-prende-il-controllo-completo-di-corner-banca-sa-434367",
+              "riassunto": "Cornaro ha acquistato la quota del 19,6% detenuta dalla famiglia Piotrkowski‑Dollfus, portando la proprietà al 99,7%. L’operazione è soggetta all’approvazione della FINMA e di altre autorità di vigilanza.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Vitol, il più grande trader di petrolio, registra profitti superiori a Novartis, Roche e Nestlé insieme",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/mehr-gewinn-als-novartis-roche-und-nestle-zusammen-der-heimliche-schweizer-oel-gigant-id21982503.html",
+              "riassunto": "Il trader svizzero Vitol ha fatturato 343 miliardi di dollari nel 2025, quasi il doppio dei tre maggiori gruppi quotati in Svizzera. Il profitto netto si aggira tra 5 e 10,5 miliardi di dollari, con un guadagno per dipendente di 4,5 milioni di franchi, ben oltre Apple.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Erosione del primato svizzero nella gestione patrimoniale offshore",
+            "Consolidamento del settore bancario locale",
+            "Crescita dei profitti di società energetiche con sede in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Possibili interventi regolamentari su Vitol e su Cornèr Banca, oltre all'evoluzione dei flussi di capitali verso Hong Kong, che potrebbero influenzare la competitività finanziaria della Svizzera nelle prossime 24 ore.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su avanzamenti tecnologici di alto profilo, con particolare attenzione a una scoperta svizzera di rilevanza globale nel campo della generazione di casualità quantistica.",
+          "notizie": [
+            {
+              "titolo": "I ricercatori dell'ETH Zurich creano il primo “casuale perfetto” con due chip quantistici e un tubo di 30 m",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/perfekter-wuerfel-eth-forscher-knacken-das-raetsel-um-den-zufall-id21981962.html",
+              "riassunto": "Un team dell'ETH Zürich, guidato da Renato Renner e Andreas Wallraff, ha pubblicato su Nature la prima dimostrazione di “casuale perfetto”. La tecnica, chiamata “randomness amplification”, usa due chip quantistici refrigerati a temperature estreme collegati da un tubo di 30 m, garantendo che nessuna informazione viaggi tra i chip durante la misurazione. Questo supera i limiti dei generatori di casualità attuali, riducendo vulnerabilità di hacking su crittografia, e promette miglioramenti per e‑banking e chat private.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Quantum randomness generation",
+            "Regolamentazione e etichettatura dei contenuti AI"
+          ],
+          "da_tenere_d_occhio": "Segui gli sviluppi della tecnologia di randomizzazione quantistica dell'ETH e le possibili applicazioni in crittografia e servizi finanziari svizzeri nelle prossime 24 ore.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 83,
       "run_id": 115,
@@ -5089,288 +5341,6 @@
             "AI sempre più integrata nella sicurezza informatica e nel test delle vulnerabilità"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del processo Musk-OpenAI: eventuali nuove testimonianze o documenti potrebbero cambiare la percezione del caso e avere effetti sul percorso di IPO di OpenAI e sull’equilibrio competitivo nell’AI generativa.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 64,
-      "run_id": 96,
-      "run_time": "2026-05-09 04:45:02.439581+00:00",
-      "analyzed_at": "2026-05-09T04:51:13.482481+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 19,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata ticinese è dominata da tre filoni: mercato del lavoro in rallentamento, vicenda giudiziaria e umana del rimpatrio della famiglia Pokerce, e gestione sanitaria/emergenziale dopo l’incidente di Mezzovico. Sullo sfondo, pesa anche il tema politico delle cure dentarie in votazione il 14 giugno.",
-          "notizie": [
-            {
-              "titolo": "Il mercato del lavoro ticinese entra in una fase di raffreddamento",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/economia/Mercato-del-lavoro-ticinese-in-raffreddamento--3723282.html",
-              "riassunto": "I dati USTAT indicano occupazione sostanzialmente ferma sia per residenti sia per frontalieri, in controtendenza rispetto al resto della Svizzera. A fine 2025 i disoccupati ILO erano 12’166, cioè 1’515 in più su base annua, per un tasso del 6,7%. Conta perché segnala un indebolimento del mercato ticinese e un reinserimento nel lavoro più difficile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Dopo il rimpatrio dalla Svizzera, la famiglia Pokerce resta sotto forte pressione in Turchia",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Pokerce-il-rimpatrio-finisce-con-un-fermo-a-Istanbul--3724287.html",
-              "riassunto": "Il padre della famiglia curda, vissuta per quattro anni a Riazzino, è stato fermato all’aeroporto di Istanbul subito dopo l’espulsione dalla Svizzera ed è rimasto per oltre 15 ore senza contatti con i familiari. L’uomo, perseguitato politico per una vignetta giudicata offensiva verso Erdogan, è stato poi rilasciato “sotto sorveglianza”. Il caso ha un impatto diretto sul Ticino per il forte coinvolgimento locale e per il profilo umanitario della vicenda.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Elicottero precipitato a Mezzovico: l’ospedale ticinese ha gestito tre casi gravi in parallelo",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Elicottero-precipitato-e-feriti-da-operare-contemporaneamente-%E2%80%9Cun-test-importante%E2%80%9D--3724011.html",
-              "riassunto": "Dopo lo schianto di un elicottero privato con sei persone a bordo, tre feriti sono stati ricoverati al Civico di Lugano e i medici hanno dovuto operare contemporaneamente pazienti politraumatizzati. I neurochirurghi EOC parlano di un “test importante” per triage e coordinamento tra rianimazione, ortopedia e sala operatoria. Conta perché mostra la tenuta della rete ospedaliera ticinese in un’emergenza complessa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "In Ticino si riapre il dibattito sulle cure dentarie accessibili a tutti",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Cure-dentarie-per-tutte-e-tutti-%E2%80%9CSi-vota-un-principio-non-un-costo%E2%80%9D--3723579.html",
-              "riassunto": "I promotori dell’iniziativa in votazione il 14 giugno chiedono un’assicurazione pubblica per rimborsare le cure dentarie di base, finanziata come l’AVS. In campagna viene ricordato che quasi un svizzero su tre rinuncia o rimanda cure per motivi finanziari. È un tema di forte impatto sociale per il Ticino, dove l’accesso alle cure è percepito come problema concreto.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "tenuta del welfare e del costo della vita in Ticino",
-            "pressione su sanità e servizi pubblici nelle emergenze"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito l’evolversi delle condizioni dei feriti di Mezzovico e l’eventuale ulteriore sviluppo del caso Pokerce, soprattutto sul fronte legale e umanitario.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è segnata soprattutto da temi con ricadute dirette sulla Svizzera: una condanna della CEDU contro Berna, l’allerta per il focolaio di hantavirus con un caso seguito a Zurigo e la multa a UBS Monaco per presunte lacune antiriciclaggio. In secondo piano, economia e lavoro restano sotto osservazione, ma l’impatto più immediato è su sanità, diritto e reputazione finanziaria.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera condannata dalla Corte di Strasburgo per la gestione di una manifestazione a Ginevra",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/La-Corte-europea-dei-diritti-dell%E2%80%99uomo-condanna-la-Svizzera--3722940.html",
-              "riassunto": "La CEDU ha stabilito che la Svizzera ha violato la libertà di riunione e di associazione nei confronti dell’organizzatrice di un corteo autorizzato a Ginevra nel 2019. La donna era stata multata di 200 franchi dai tribunali svizzeri per un dispositivo di sicurezza ritenuto insufficiente. Il caso tocca direttamente il confine tra ordine pubblico e libertà di manifestazione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "La RSI offre il quadro più completo: luogo, data, importo della multa e motivazione della condanna, con enfasi sul conflitto tra diritti fondamentali e responsabilità dell’organizzatrice. LaRegione invece sintetizza molto di più e punta sul risultato giuridico, con un taglio più istituzionale e meno narrativo."
-            },
-            {
-              "titolo": "Allerta hantavirus: un caso seguito a Zurigo mentre l’Oms conferma cinque contagi sul focolaio della nave Hondius",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1923896/nave-aprile-hantavirus-focolaio-virus-contatti",
-              "riassunto": "L’Oms ha confermato cinque casi di hantavirus sul viaggio della nave da crociera MV Hondius e avverte che altri contagi sono possibili per l’incubazione fino a sei settimane. In Svizzera viene tracciato anche il caso di un uomo positivo ricoverato a Zurigo, segno che l’evento ha già un riflesso sanitario nel Paese. Il rischio per la popolazione generale resta giudicato basso.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "SRF adotta un taglio più divulgativo e rassicurante, con una spiegazione scientifica del rischio e un’intervista a un’esperta che sottolinea come non si tratti di un nuovo scenario pandemico. LaRegione insiste invece sul lavoro di tracciamento, sui contatti internazionali e sul caso svizzero di Zurigo, quindi su ciò che interessa più direttamente le autorità e il pubblico elvetico."
-            },
-            {
-              "titolo": "UBS multata a Monaco per gravi lacune nelle norme antiriciclaggio",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/ubs-multata-a-monaco-per-gravi-violazioni-norme-antiriciclaggio-433065",
-              "riassunto": "La filiale monegasca di UBS è stata sanzionata con 6 milioni di euro dall’autorità finanziaria di Monaco per presunte “numerose e gravi violazioni” in materia di antiriciclaggio e contrasto al finanziamento del terrorismo. Il dossier riguarda il periodo 2018-2023 e cita ritardi nelle segnalazioni e controlli carenti sulla clientela ad alto rischio. Per una banca svizzera leader globale, il caso pesa sulla reputazione e sulla governance.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "diritti fondamentali e controllo dello spazio pubblico",
-            "sanità pubblica e tracciamento di focolai internazionali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno seguiti gli sviluppi sul caso hantavirus, in particolare eventuali nuovi contagi o indicazioni delle autorità sanitarie svizzere, e la reazione istituzionale alla condanna della CEDU, che potrebbe avere ricadute su future manifestazioni in Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da alcuni appuntamenti con forte aggancio svizzero e da un grande evento del cinema italiano. In primo piano ci sono le Giornate fotografiche di Bienne, il riconoscimento dello Zurich Film Festival a Glen Basner e il bilancio dei David di Donatello, raccontati da più testate con sfumature diverse.",
-          "notizie": [
-            {
-              "titolo": "Le Giornate fotografiche di Bienne puntano su migrazione, femminismi ed ecologie",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1923786/giornate-migrazione-bienne-vulnerabilita-artisti",
-              "riassunto": "La 29ª edizione, dal 9 al 31 maggio, si svolge in 14 sedi della città bilingue con 23 artisti e 3 collettivi. Il tema è la vulnerabilità, declinata in quattro assi: migrazione e ospitalità, femminismi, ecologie affettive e gesti artistici riparatori.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Lo ZFF premia il produttore statunitense Glen Basner con il Game Changer Award",
-              "fonte": "LaRegione Spettacoli",
-              "link": "https://www.laregione.ch/culture/spettacoli/1923812/film-changer-game-basner-zurich-award-settembre-zff-glen-produttore",
-              "riassunto": "Lo Zurich Film Festival assegnerà a settembre il Game Changer Award al CEO di FilmNation Entertainment, Glen Basner. Il riconoscimento gli verrà consegnato allo Zurich Summit, tra il 25 e il 27 settembre, per il suo peso nell’industria internazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Ai David di Donatello trionfa ‘Le città di pianura’",
-              "fonte": "LaRegione Spettacoli",
-              "link": "https://www.laregione.ch/culture/spettacoli/1923663/david-cinema-tre-le-citta-premi-pianura-donatello-sbanca-assaggiatrici",
-              "riassunto": "Il film di Francesco Sossai e Adriano Candiago porta a casa i premi principali: miglior film, regia, attore protagonista e altri riconoscimenti, in una serata segnata anche dalle proteste sulla crisi del cinema italiano. ‘Le assaggiatrici’ ottiene tre premi, mentre ‘La Grazia’ resta a mani vuote.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Cultura",
-                "LaRegione Spettacoli"
-              ],
-              "differenze_narrative": "Il Post adotta un taglio più descrittivo e ordinato, concentrandosi sulla lista dei vincitori e sul successo inatteso di ‘Le città di pianura’. LaRegione insiste invece sul contesto politico-industriale, sottolineando la crisi del cinema italiano, le proteste fuori da Cinecittà e il flop di Sorrentino. Più attenzione al clima della serata e meno alla semplice cronaca dei premi."
-            }
-          ],
-          "trend": [
-            "forte presenza della cultura svizzera e ticinese nei circuiti internazionali",
-            "cinema europeo e italiano raccontato anche attraverso dinamiche industriali e di potere"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’eventuale risonanza in Svizzera delle Giornate fotografiche di Bienne e dello ZFF, oltre alle reazioni al palmarès dei David di Donatello, soprattutto sul caso ‘Le Grazia’ escluso dai premi.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La categoria è dominata dalla guerra tra Iran e Occidente: stretto di Hormuz, sanzioni e ricadute energetiche in Europa e in Svizzera. Sullo sfondo, resta centrale anche la guerra in Ucraina, con nuove pressioni per una tregua legata alle celebrazioni russe del 9 maggio.",
-          "notizie": [
-            {
-              "titolo": "Crisi Iran-Hormuz: Parigi esclude ogni revoca delle sanzioni finché lo stretto resta chiuso",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/07/parigi-fuori-questione-revoca-sanzioni-a-iran-finche-hormuz-resta-chiuso_c99cacc9-7ade-41fd-a2ec-7bdda8387a0e.html",
-              "riassunto": "Il ministro degli Esteri francese Jean-Noël Barrot ha detto che non è possibile revocare “qualsiasi” sanzione all’Iran finché Hormuz resta bloccato. Il punto è sensibile anche per la Svizzera: il passaggio marittimo è cruciale per il commercio energetico e per i prezzi di petrolio e carburanti in Europa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale",
-                "Il Sole 24 Ore Mondo"
-              ],
-              "differenze_narrative": "ANSA mette al centro la linea dura diplomatica francese e il tema delle sanzioni. Internazionale guarda soprattutto alle conseguenze economiche della guerra su raffinerie, trading del petrolio e profitti delle aziende, con un forte taglio su chi guadagna dal conflitto. Il Sole 24 Ore, dal titolo disponibile, sembra invece concentrarsi sulla posizione operativa della nave Hondius, quindi su un effetto indiretto e logistico dell’instabilità."
-            },
-            {
-              "titolo": "La guerra in Iran fa volare i profitti delle raffinerie e dei commercianti di petrolio",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/magazine/serge-enderlin/2026/05/07/chi-guadagna-con-la-guerra",
-              "riassunto": "Il conflitto ha spinto incassi record per le aziende legate alle materie prime, in particolare quelle attive nel commercio del petrolio a Ginevra. L’articolo cita la lobby SuisseNégoce e il settore delle commodity svizzere, che movimenta un terzo del petrolio mondiale: un tema direttamente rilevante per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Questa fonte adotta un taglio economico-svizzero: mostra come la guerra si traduca in profitti per raffinerie e trader, con Ginevra come snodo chiave. ANSA invece insiste sulla dimensione politico-diplomatica e sulla condizione preliminare per qualunque alleggerimento delle sanzioni, cioè la riapertura di Hormuz."
-            },
-            {
-              "titolo": "Trump annuncia una tregua di tre giorni in Ucraina per le celebrazioni del 9 maggio",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/08/trump-ci-saranno-tre-giorni-di-tregua-in-ucraina-dal-9-all11-maggio_d664aaf3-1967-40fd-9a0e-98ba6fcf9be9.html",
-              "riassunto": "Donald Trump ha annunciato su Truth un cessate il fuoco di tre giorni, dal 9 all’11 maggio, con anche lo scambio di 1.000 prigionieri per Paese. La tempistica coincide con il Victory Day russo: è un segnale diplomatico importante, ma non è ancora chiaro se Mosca e Kiev lo accetteranno davvero.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "guerra Iran-Hormuz e shock energetico globale",
-            "ricadute economiche in Svizzera: trading di petrolio e materie prime",
-            "nuove pressioni diplomatiche sulla guerra in Ucraina"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’eventuale riapertura dello stretto di Hormuz e l’impatto su prezzi di petrolio, carburanti e mercati energetici europei; per l’Ucraina, conta se la tregua annunciata da Trump verrà confermata o respinta da Mosca e Kiev.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l’attenzione economica in Svizzera è soprattutto su telecomunicazioni, mercato immobiliare e previdenza. Sullo sfondo, i mercati restano volatili e alcuni temi internazionali toccano indirettamente anche consumi, energia e finanza.",
-          "notizie": [
-            {
-              "titolo": "Swisscom rallenta ancora nel primo trimestre, ma conferma dividendo e obiettivi annuali",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/swisscom-ulteriore-rallentamento-trimestrale-433043",
-              "riassunto": "Nel primo trimestre 2026 il fatturato scende del 4,1% a 3,61 miliardi e l’utile netto cala di quasi il 10% a 332 milioni. Per il lettore svizzero conta perché Swisscom resta un barometro del mercato domestico delle telecomunicazioni e dei dividendi difensivi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "In Svizzera i prezzi delle case iniziano ad appiattirsi, soprattutto in alcune regioni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/blick-bittet-experten-um-rat-neue-zahlen-zu-immo-preisen-in-der-schweiz-verblueffen-id21931024.html",
-              "riassunto": "I prezzi d’offerta delle case unifamiliari sono scesi dello 0,2% in aprile, mentre gli appartamenti segnano solo un +0,1%. In Zentralschweiz le case costano il 4,2% in meno rispetto al mese prima: un segnale importante per famiglie e acquirenti in Ticino e nel resto del Paese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Le casse pensioni svizzere offrono rendimenti più alti e i tassi di conversione sembrano stabilizzarsi",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/historisch-hohe-verzinsung-endlich-gibts-mal-good-news-von-deiner-pensionskasse-id21929153.html",
-              "riassunto": "Secondo Complementa, per il 2026 il tasso di conversione medio è al 5,19%, e non dovrebbe scendere sotto il 5,11% entro il 2031. Per i pensionati e i futuri pensionati svizzeri è una notizia importante: le rendite della seconda colonna potrebbero smettere di erodersi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "tenuta dell’economia domestica svizzera tra telecom, casa e previdenza",
-            "segnali di rallentamento dei costi abitativi e maggiore stabilizzazione della seconda colonna"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dei titoli difensivi svizzeri e l’eventuale reazione del mercato immobiliare ai nuovi dati sui prezzi: se il raffreddamento delle offerte si conferma, potrebbe influenzare anche aspettative su tassi e mutui.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da nuove mosse di OpenAI e Spotify, con un impatto più diretto per il pubblico svizzero-italofono grazie all’arrivo dell’AI DJ di Spotify in italiano e in Svizzera. Sullo sfondo, l’Europa ammorbidisce i tempi dell’AI Act e il settore continua a spingere su agenti, voce e automazione.",
-          "notizie": [
-            {
-              "titolo": "Spotify porta l’AI DJ in italiano e lo lancia anche in Svizzera",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/07/spotifys-ai-dj-now-supports-french-german-italian-and-brazilian-portuguese/",
-              "riassunto": "Spotify ha esteso il suo AI DJ a quattro nuove lingue, tra cui l’italiano, e lo ha reso disponibile anche in Svizzera. È la notizia più concreta per un lettore ticinese o svizzero italofono, perché introduce un’interazione AI direttamente nell’app usata ogni giorno.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "OpenAI rilancia la voce in tempo reale con nuovi modelli per parlare, tradurre e trascrivere",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
-              "riassunto": "OpenAI ha annunciato tre nuove funzioni vocali via API: GPT‑Realtime‑2, GPT‑Realtime‑Translate e GPT‑Realtime‑Whisper. Il primo integra un ragionamento di classe GPT‑5, mentre gli altri servono per traduzione live in oltre 70 lingue e trascrizione in tempo reale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch mette l’accento sugli usi pratici per aziende, customer service, educazione e creator economy, oltre alle protezioni contro abuso, spam e frodi. The Decoder entra più nel merito tecnico, evidenziando il ragionamento GPT‑5, i livelli di intensità e i tre pattern d’uso (voice-to-action, systems-to-voice, voice-to-voice), con taglio più da prodotto e architettura."
-            },
-            {
-              "titolo": "L’Europa rinvia gran parte dell’AI Act e allenta gli obblighi per le imprese",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/europes-answer-to-ai-regulation-complexity-is-to-just-delay-most-of-it/",
-              "riassunto": "UE, Parlamento e Consiglio hanno trovato un compromesso per semplificare le regole sull’AI: i vincoli per i sistemi ad alto rischio slittano a dicembre 2027 o agosto 2028. Restano però fermi al 2026 gli obblighi di etichettatura per deepfake e alcuni contenuti generati dall’AI.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "AI integrata nei servizi consumer in lingua locale",
-            "accelerazione dei modelli vocali e degli agenti operativi"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena seguire due sviluppi: l’effettiva disponibilità e qualità dell’AI DJ di Spotify in italiano per gli utenti svizzeri, e la reazione del mercato alle nuove API vocali di OpenAI, soprattutto sul fronte di adozione enterprise e possibili usi impropri.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
