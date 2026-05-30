@@ -1,6 +1,220 @@
 {
-  "generated_at": "2026-05-29T05:09:30.383106+00:00",
+  "generated_at": "2026-05-30T05:09:34.791224+00:00",
   "analyses": [
+    {
+      "id": 85,
+      "run_id": 117,
+      "run_time": "2026-05-30 05:00:02.687170+00:00",
+      "analyzed_at": "2026-05-30T05:09:34.755949+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 12,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie con impatto diretto sulla Svizzera: un caso di possibili violazioni di sanzioni internazionali legate al petrolio iraniano, la vendita della torre RTS a Ginevra e la ripresa dei lavori del secondo tubo del Gottardo.",
+          "notizie": [
+            {
+              "titolo": "Possibili violazioni di sanzioni svizzere nella rete di petrolio iraniano",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/La-scia-del-petrolio-iraniano-verso-la-Svizzera--3775974.html",
+              "riassunto": "Le autorità statunitensi accusano la società ginevrina Fractal Shipping (ora Progwin Shipping) di far parte di una rete iraniana che aggira le sanzioni, trasportando petrolio iraniano verso Russia, Cina e India. Il CEO, Mathieu Philippe, è nella lista delle sanzioni USA dal 2025. La SECO non ha ancora commentato, ma il caso solleva dubbi su possibili violazioni delle sanzioni svizzere.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Venduta la torre della RTS a Ginevra per 150 milioni di franchi",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Venduta-per-150-milioni-la-torre-della-RTS-a-Ginevra--3778789.html",
+              "riassunto": "La torre della Radio Televisione Svizzera (RTS) a Ginevra è stata acquistata dalla Fondazione Wilsdorf per 150 milioni di franchi, con diritto di superficie gratuito dallo Stato. La SSR rimarrà locataria fino al 2029, mentre altre testate come Le Temps e Heidi.news occuperanno parte dell’edificio, segnando una convergenza tra media pubblici e privati.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ripresa dei lavori nel secondo tubo del Gottardo a Airolo",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Airolo-nel-secondo-tubo-%E2%80%9CPaulina%E2%80%9D-ha-ripreso-il-lavoro--3777901.html",
+              "riassunto": "Airolo ha riavviato lo scavo con la fresa “Paulina” nel secondo tunnel del San Gottardo, interrotto per 11 mesi a causa di difficoltà geologiche. Sono stati completati il 75 % del tratto di disturbo a sud; rimane circa 100 m di scavo complesso, con avanzamento di 60‑80 cm al giorno. L’apertura è prevista per il 2030.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Controlli e rischi legati a sanzioni internazionali e attività finanziarie svizzere",
+            "Ristrutturazione e consolidamento del patrimonio mediatico cantonale",
+            "Avanzamento di grandi infrastrutture di trasporto"
+          ],
+          "da_tenere_d_occhio": "Sviluppi delle indagini su Fractal Shipping e possibili azioni della SECO, nonché eventuali ulteriori vendite o riorganizzazioni di immobili pubblici legati ai media svizzeri.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da un attacco con arma da taglio alla stazione di Winterthur, da un'indagine sui giovani più ricchi under 40 e da una proposta popolare per rendere più severi i criteri ambientali nel settore finanziario.",
+          "notizie": [
+            {
+              "titolo": "Attacco con coltello alla stazione di Winterthur: tre feriti, l'aggressore è un cittadino svizzero di origine turca",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1928823/winterthur-stazione-feriti-arma-taglio-attacco-zh",
+              "riassunto": "Un uomo di 31 anni, cittadino svizzero-turco, ha ferito tre persone, una gravemente, con un coltello alla stazione di Winterthur. È stato arrestato; le indagini sono in corso e non è ancora chiaro se avesse gridato \"Allahu Akbar\". La polizia ha isolato l'area e ha coinvolto più forze dell'ordine.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "CdT Svizzera"
+              ],
+              "differenze_narrative": "LaRegione riporta i fatti in modo neutro, concentrandosi sull'arresto, le ferite e le indagini, senza approfondire il passato dell'aggressore. CdT, invece, sottolinea che l'uomo era stato dimesso da una clinica psichiatrica il giorno prima dell'attacco e mette in evidenza i suoi legami con una cellula jihadista, aggiungendo il possibile grido \"Allahu Akbar\"."
+            },
+            {
+              "titolo": "Giovani svizzeri sotto i 40: i 100 più ricchi, tra eredi, imprenditori e sportivi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/ecco-chi-sono-i-giovani-super-ricchi-della-svizzera-429031",
+              "riassunto": "Bilanz ha pubblicato la 12ª edizione della classifica dei 100 più ricchi under 40 in Svizzera. In vetta David Wertheimer (39) con un patrimonio di 5‑6 miliardi di franchi; il più giovane imprenditore è Hany Rashwan (36) con 500‑600 milioni. Tra i Ticinesi spicca Edoardo Ermotti, figlio del CEO di UBS, con un patrimonio stimato tra 5‑10 milioni.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Le tre testate riportano lo stesso contenuto della classifica Bilanz. CdT e Ticinonews ripropongono integralmente il comunicato, mentre LaRegione aggiunge un breve riassunto focalizzato sul primo posto e sul rappresentante ticinese, senza i dettagli sportivi presenti negli altri due."
+            },
+            {
+              "titolo": "Iniziativa popolare per regole ambientali più severe nel settore finanziario",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1928826/iniziativa-clima-attivita-autorita-piani",
+              "riassunto": "Una proposta di modifica costituzionale, sostenuta da 108 979 firme, vuole imporre a banche, assicurazioni e fondi pensione svizzeri piani climatici, limiti ai finanziamenti di progetti fossili e una nuova autorità di vigilanza. Il comitato promotore include partiti di centro-sinistra, liberali e rappresentanti religiosi.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aumento della violenza con armi da taglio",
+            "Interesse per la ricchezza giovanile e la sua distribuzione geografica",
+            "Pressioni ambientali sul settore finanziario"
+          ],
+          "da_tenere_d_occhio": "Sviluppi delle indagini sull'attacco di Winterthur e possibili misure di sicurezza nei trasporti pubblici nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di tre notizie: la cancellazione del concerto di Patrick Bruel a Pully, il riconoscimento internazionale al compositore Gabriel Yared al Zurich Film Festival e il nuovo disco dei Vent Negru, gruppo di musica popolare ticinese.",
+          "notizie": [
+            {
+              "titolo": "Patrick Bruel annulla il concerto a Pully e rinvia quello a Friburgo per le accuse di molestie",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1929230/festival-concerto-pully-friburgo-bruel-molestie-accuse-patrick",
+              "riassunto": "Il cantante francese Patrick Bruel ha deciso di non esibirsi più in Svizzera: il concerto del 25 giugno al Pully Live Festival è stato annullato e quello del 26 giugno a Friburgo è stato rinviato. La decisione, comunicata dalla sua società 14 Productions, è motivata dal desiderio di non creare tensioni in un contesto di indagini per molestie sessuali in Francia e Belgio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il Zurich Film Festival premia il compositore libanese Gabriel Yared",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1928838/film-yared-premio-musica-concorso-compositore-zurich-gabriel-festival",
+              "riassunto": "Al Zurich Film Festival (ZFF) è stato conferito a Gabriel Yared il Career Achievement Award; l’artista, vincitore dell’Oscar per “Il paziente inglese”, presiederà anche la giuria del Concorso internazionale di musica da film. La premiazione avverrà il 1 ottobre durante il gala “Cinema in Concert” alla Tonhalle di Zurigo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Vent Negru: nuovo CD per i 35 anni del gruppo ticinese",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1928775/nuovo-giugno-cd-negru-vent-anni",
+              "riassunto": "Il gruppo folk ticinese Vent Negru presenta il suo decimo disco, celebrando 35 anni di attività e il premio svizzero di musica 2025. Il CD sarà lanciato con tre concerti: 3 giugno a Berzona, 5 giugno a Locarno e 6 giugno a Banco.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Controversie su artisti internazionali e loro concerti in Svizzera",
+            "Riconoscimenti internazionali a talenti legati al panorama culturale svizzero",
+            "Rinascita e valorizzazione della musica tradizionale ticinese"
+          ],
+          "da_tenere_d_occhio": "L'esito delle indagini giudiziarie su Patrick Bruel e le eventuali riprogrammazioni dei concerti; l'andamento del Zurich Film Festival e le future collaborazioni di Gabriel Yared con artisti svizzeri.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la sezione geopolitica è dominata da notizie internazionali di vario tipo, ma nessuna presenta un impatto diretto sulla Svizzera o sul Ticino né costituisce una breaking news di rilevanza immediata per il lettore svizzero.",
+          "notizie": [],
+          "trend": [
+            "tensioni tra USA e Iran",
+            "escalation del conflitto in Ucraina"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Donald Trump sullo Stretto di Hormuz e possibili sviluppi diplomatici tra USA e Iran nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui dati salariali svizzeri, su un nuovo hotel all'Euroairport di Basilea e sul ruolo crescente delle giovani imprenditrici nella ricchezza nazionale.",
+          "notizie": [
+            {
+              "titolo": "Adecco prevede aumenti salariali medi in Svizzera tra l'1,5% e il 2,0%",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/i-salari-medi-dovrebbero-aumentare-fino-al-2-434500",
+              "riassunto": "L'indagine di Adecco, basata su oltre 15.000 colloqui, indica che i salari medi in Svizzera cresceranno tra l'1,5% e il 2% quest'anno, con aumenti più marcati per profili specialistici in ESG e IA. Persistono disparità regionali, il “premio zurighese” con differenze di 5.000‑10.000 franchi annui.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Euroairport Basel inaugurerà il suo primo hotel aeroportuale entro il 2027",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/direkt-am-terminal-basler-euroairport-bekommt-erstes-flughafenhotel-id21985338.html",
+              "riassunto": "KER Hospitality costruirà un complesso di 140 camere direttamente al terminal di Euroairport Basel, con un Ibis Budget a 2 stelle (80 camere) e un hotel Tribe a 4 stelle (60 camere). L’apertura è prevista per fine 2027, segnando la prima struttura alberghiera sul terminal dell’aeroporto binazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Le giovani imprenditrici svizzere entrano nella lista dei più ricchi sotto i 40 anni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/erfolgreiche-frauen-in-der-wirtschaft-sie-sind-die-reichsten-jungunternehmerinnen-der-schweiz-id21984620.html",
+              "riassunto": "Sette donne sono presenti nella classifica “Bilanz 100 under 40”, dominata da uomini. Le imprenditrici hanno fondato aziende nei settori auto, bellezza e finanza, dimostrando una crescente presenza femminile nella ricchezza giovanile svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita salariale legata a competenze high‑tech e ESG",
+            "Sviluppo di infrastrutture turistiche e di trasporto in Svizzera",
+            "Aumento della visibilità e del peso economico delle giovani imprenditrici"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei salari regionali e le politiche per ridurre il divario tra Zurigo e il resto del Paese nelle prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su finanziamenti record, nuovi modelli AI e iniziative infrastrutturali per agenti intelligenti, senza impatti diretti sulla Svizzera.",
+          "notizie": [],
+          "trend": [
+            "Finanziamenti multimiliardari per startup AI",
+            "Sviluppo di infrastrutture per agenti AI e token AI"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei modelli AI agentici (es. Claude Opus 4.8, Dynamic Workflows) e le iniziative di mercato sui token AI, che potrebbero influenzare il settore finanziario e tecnologico nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 84,
       "run_id": 116,
@@ -5083,264 +5297,6 @@
             "Infrastruttura e governance dell’ecosistema AI: archivi, chip, partnership e controllo delle piattaforme"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena seguire due sviluppi: l’eventuale reazione del mondo accademico e istituzionale svizzero al progetto di Internet Archive Switzerland, e le conseguenze dello studio sui LLM che corrompono documenti, soprattutto se aziende o laboratori rilanceranno benchmark o repliche indipendenti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 65,
-      "run_id": 97,
-      "run_time": "2026-05-10 04:45:02.558463+00:00",
-      "analyzed_at": "2026-05-10T04:50:35.072683+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la categoria è dominata da temi che toccano direttamente la Svizzera italiana: una nomina politica di peso a Berna per la ticinese Greta Gysin, la presenza svizzera nel caso sanitario dell’hantavirus e il dibattito interno alla SSR/CORSI dopo il voto sui 200 franchi. Sullo sfondo, restano aggiornamenti su sicurezza e istituzioni ticinesi.",
-          "notizie": [
-            {
-              "titolo": "Greta Gysin verso la guida del gruppo parlamentare dei Verdi",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/svizzera/verdi-greta-gysin-elunica-candidata-alla-presidenza-del-gruppo-433137",
-              "riassunto": "La consigliera nazionale ticinese è l’unica candidata a succedere ad Aline Trede alla presidenza del gruppo dei Verdi. Se l’elezione del 22 maggio sarà confermata, il Ticino guadagnerà una figura chiave nei rapporti di forza a Palazzo federale, con un profilo ecologista molto visibile su clima e conciliabilità lavoro-vita privata.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "RSI Ticino"
-              ],
-              "differenze_narrative": "Ticinonews punta sul profilo personale e politico di Gysin, sottolineando la sua origine ticinese, la maternità e le priorità programmatiche. RSI mette più in evidenza l’equilibrio interno dei Verdi e il fatto che con lei le cariche di vertice passerebbero a donne latine, dunque un taglio più istituzionale e di assetto partitico."
-            },
-            {
-              "titolo": "Un svizzero a bordo della nave Hondius, focolaio di hantavirus in evacuazione",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/mondo/Hantavirus-sulla-Hondius-c%E2%80%99%C3%A8-uno-svizzero--3728172.html",
-              "riassunto": "L’UFSP conferma che fra i passeggeri della MV Hondius c’è un cittadino svizzero, asintomatico e senza sintomi, mentre la nave con il focolaio si prepara allo sbarco a Tenerife. Il caso conta per la Svizzera perché coinvolge anche un paziente elvetico ricoverato a Zurigo e una persona di Ginevra in isolamento dopo un volo a rischio.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "La SSR ticinese prepara la trasformazione con il progetto Enavant",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Alla-CORSI-focus-su-Enavant-e-verticalizzazione--3728574.html",
-              "riassunto": "Alla prima assemblea dopo il no all’iniziativa sui 200 franchi, la CORSI e la RSI hanno illustrato il progetto Enavant e la verticalizzazione di alcuni settori, in un contesto di risparmio da 270 milioni entro il 2029. Il tema pesa sul servizio pubblico in Svizzera italiana perché può cambiare organizzazione, ruoli e riparto delle risorse.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "ascesa di una leadership ticinese a Berna",
-            "impatto di sanità pubblica e gestione dei rischi internazionali con ricadute svizzere",
-            "riforma e contenimento dei costi del servizio pubblico radiotelevisivo"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la conferma formale dell’elezione di Greta Gysin e l’evoluzione del caso Hondius, in particolare l’eventuale sbarco dei passeggeri a Tenerife e le condizioni del cittadino svizzero coinvolto.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da temi molto concreti per il pubblico italofono: viabilità alpina, sicurezza domestica e grandi inchieste giudiziarie ancora in corso.\nSpiccano anche due incroci di notizie riprese da più testate, segnale di forte attenzione mediatica e rilevanza pubblica.",
-          "notizie": [
-            {
-              "titolo": "Riaperto in anticipo il Passo del San Gottardo per alleggerire il traffico sull’A2",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Riaperto-il-Passo-del-San-Gottardo--3726198.html",
-              "riassunto": "Il Passo del San Gottardo è stato riaperto venerdì alle 11, offrendo un’alternativa all’A2 nei giorni di forte traffico per Ascensione e Pentecoste. L’USTRA parla di apertura più anticipata degli ultimi 5 anni, grazie a neve inferiore e meteo favorevole.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Crans-Montana: nuove audizioni nell’inchiesta sul rogo del bar Le Constellation",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Rogo-di-Crans-Montana-convocati-tre-dei-nuovi-indagati--3725337.html",
-              "riassunto": "Tre nuovi indagati saranno sentiti la prossima settimana sul rogo di Capodanno che nel bar Le Constellation causò 41 morti e 115 feriti. Tra loro figurano l’attuale municipale della sicurezza Patrick Clivaz e l’ex sindaco di Chermignon.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "RSI e LaRegione raccontano lo stesso sviluppo giudiziario con taglio molto simile e istituzionale, ma RSI insiste di più sulle ricadute amministrative locali e sul fatto che Clivaz non fosse in carica ai tempi dei controlli antincendio. LaRegione sintetizza maggiormente gli aspetti procedurali e mantiene un tono più secco da agenzia, con meno contesto sulla situazione dei feriti."
-            },
-            {
-              "titolo": "La Svizzera prepara una sorveglianza elettronica in tempo reale contro la violenza domestica",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Violenza-domestica-i-diffidati-presto-controllati-in-diretta--3725487.html",
-              "riassunto": "Vaud avvierà un progetto pilota con braccialetti elettronici e centrale di controllo in tempo reale per far rispettare le zone di divieto. Il sistema, oggi perlopiù passivo, dovrebbe diventare attivo entro il 2027 e potrebbe cambiare la gestione dei casi in tutta la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "RSI sviluppa di più il quadro politico-cantonale e mette in evidenza i costi, la frequenza degli interventi di polizia e l’ipotesi di allentare il segreto medico. LaRegione accentua invece la dimensione operativa del progetto pilota, spiegando in modo più diretto il funzionamento tecnico del sistema e la futura estensione nazionale."
-            }
-          ],
-          "trend": [
-            "mobilità e gestione del traffico alpino",
-            "sicurezza pubblica e prevenzione della violenza domestica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà seguito soprattutto l’evolversi dell’inchiesta di Crans-Montana, con possibili nuovi dettagli dalle audizioni, e l’eventuale reazione politica al progetto di sorveglianza elettronica contro la violenza domestica.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata dalla Biennale di Venezia, con un caso che tocca direttamente la Svizzera: il padiglione svizzero coinvolto nelle proteste pro-Palestina. Sul fronte elvetico spicca anche una grande mostra a Mendrisio dedicata a Felice Varini, mentre all’estero emergono sviluppi rilevanti attorno all’arte di Paul Klee.",
-          "notizie": [
-            {
-              "titolo": "Alla Biennale di Venezia il padiglione svizzero chiude per protesta, tra tensioni e letture opposte",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1924108/biennale-project-padiglioni-venezia-anti-israele",
-              "riassunto": "Alla Biennale una ventina di padiglioni nazionali, incluso quello svizzero, hanno chiuso in segno di protesta contro la presenza del padiglione israeliano. Pro Helvetia parla invece di carenza di personale, mentre i manifestanti rivendicano uno sciopero contro il «genocidio in corso in Palestina».",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione mette in primo piano il coinvolgimento della Svizzera e dettaglia la posizione di Pro Helvetia, che attribuisce la chiusura a una carenza di personale. Il New York Times inquadra invece l’episodio come parte di una protesta più ampia e internazionale, insistendo sul carattere spettacolare e dirompente della chiusura dei padiglioni più visitati. LaRegione offre quindi un taglio più istituzionale e locale, il NYT uno più conflittuale e da cronaca culturale globale."
-            },
-            {
-              "titolo": "A Mendrisio la prima grande mostra monografica di Felice Varini",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1924177/museo-mostra-vista-varini-arte-punti",
-              "riassunto": "Il Museo d’Arte di Mendrisio ospita la prima grande retrospettiva mai dedicata a Felice Varini, artista molto legato alla percezione e allo spazio. La mostra, aperta dal 10 maggio all’11 ottobre, ha un forte interesse per il pubblico ticinese e per chi segue l’arte contemporanea.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Paul Klee entra in una grande mostra al Jewish Museum di New York",
-              "fonte": "New York Times Arts",
-              "link": "https://www.nytimes.com/2026/05/08/arts/design/paul-klee-angelus-novus-jewish-museum.html",
-              "riassunto": "“Angelus Novus”, una delle opere più note e cariche di storia di Paul Klee, si aggiunge in extremis a una grande rassegna già importante al Jewish Museum. Per la Svizzera culturale è un segnale rilevante della centralità internazionale dell’artista basilese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "La Biennale di Venezia come arena politica oltre che artistica",
-            "Rafforzamento della presenza degli artisti svizzeri nel circuito internazionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle proteste alla Biennale, in particolare se la chiusura dei padiglioni verrà prorogata o se il padiglione svizzero chiarirà definitivamente la propria posizione.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata da tre dossier ad alta intensità: la nuova battaglia legale sui dazi di Trump, che tocca direttamente anche la Svizzera come economia aperta; la crisi tra Stati Uniti e Iran nello Stretto di Hormuz, con ricadute immediate sui mercati energetici; e il fronte ucraino-russo, tra tregua annunciata e forte dimensione simbolica del 9 maggio a Mosca.",
-          "notizie": [
-            {
-              "titolo": "Un tribunale federale boccia anche i nuovi dazi del 10% introdotti da Trump",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/05/08/stati-uniti-dazi-donald-trump-10-per-cento-illegittimi/",
-              "riassunto": "Un tribunale federale statunitense ha giudicato illegittimi i dazi del 10% imposti da Trump contro tutti i paesi a fine febbraio. La sentenza, per ora limitata ad alcune parti ricorrenti e allo stato di Washington, potrebbe però diventare un nuovo caso fino alla Corte Suprema. Per la Svizzera conta perché il dossier dazi è centrale per export, farmaceutica e negoziati commerciali con Washington.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Lo scontro tra Washington e Teheran fa salire la tensione nello Stretto di Hormuz",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Il ministro degli esteri iraniano Abbas Araghchi accusa gli Stati Uniti di scegliere una “avventura militare spericolata” ogni volta che c’è una soluzione diplomatica sul tavolo. Intanto gli USA hanno colpito o bloccato varie navi iraniane, mentre lo Stretto di Hormuz resta un punto critico per il 20% del petrolio e del gas liquefatto mondiali. La crisi può riflettersi rapidamente su prezzi dell’energia, trasporti e commercio anche in Europa e in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "BBC World",
-                "New York Times World"
-              ],
-              "differenze_narrative": "La BBC mette in primo piano la denuncia iraniana e il linguaggio diplomatico di Teheran, dando peso alla narrativa della pressione americana. Il NYT enfatizza invece l’effetto strategico della blocco navale, il ruolo operativo della Marina USA e le conseguenze pratiche sul traffico marittimo e sui mercati energetici. La prima fonte privilegia il conflitto politico-diplomatico, la seconda il quadro militare e logistico."
-            },
-            {
-              "titolo": "Trump annuncia una tregua di tre giorni in Ucraina per le celebrazioni del 9 maggio",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/08/trump-ci-saranno-tre-giorni-di-tregua-in-ucraina-dal-9-all11-maggio_d664aaf3-1967-40fd-9a0e-98ba6fcf9be9.html",
-              "riassunto": "Donald Trump dice su Truth che dal 9 all’11 maggio ci sarà un cessate il fuoco di tre giorni tra Russia e Ucraina, con scambio di 1.000 prigionieri per parte. L’annuncio arriva mentre in Russia si celebra la vittoria nella Seconda guerra mondiale e può essere un segnale politico importante, ma resta tutto da verificare sul terreno.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Pressione americana su dazi, commercio e regole economiche globali",
-            "Escalation USA-Iran con effetti immediati su energia e navigazione marittima"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la risposta di Washington alla sentenza sui dazi, perché un ricorso o un intervento della Casa Bianca potrebbe cambiare subito il quadro; sul fronte iraniano, conta capire se lo Stretto di Hormuz resterà di fatto bloccato e se l’annunciata tregua in Ucraina reggerà oltre l’effetto simbolico delle celebrazioni russe.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l’attenzione cade soprattutto su temi molto vicini al lettore svizzero: la situazione fragile di alcuni gruppi industriali elvetici, il potere d’acquisto della classe media e segnali contrastanti nel turismo/consumi. Sullo sfondo, emergono anche notizie di governance e reputazione per grandi marchi svizzeri.",
-          "notizie": [
-            {
-              "titolo": "Barry Callebaut resta in crisi: debito alle stelle, utili sotto pressione",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/barry-callebaut-praesident-gefordert-schweizer-schoggi-gigant-steckt-in-der-krise-fest-id21932406.html",
-              "riassunto": "Il gigante svizzero del cioccolato continua a soffrire: vendite e utili calano, mentre il debito è salito fino a 6,5 miliardi di franchi. Il crollo e la volatilità del cacao pesano su un gruppo che è centrale per l’industria alimentare elvetica e per molti marchi globali.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Anche la classe media svizzera fatica a far quadrare i conti",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/ab-diesem-lohn-gehoerst-du-dazu-jetzt-kaempft-sogar-der-schweizer-mittelstand-mit-geldproblemen-id21932676.html",
-              "riassunto": "Secondo un’analisi del BFS, circa il 55% della popolazione rientra nella fascia di reddito media, ma il 25% della “bassa media” non ha nemmeno 2’500 franchi di riserva. Il tema è molto rilevante per consumi, affitti e tenuta del potere d’acquisto in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Reka chiude il 2025 con ricavi record e punta sull’estero",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1924086/reka-gruppo-ricavi-attivita-svizzera",
-              "riassunto": "Il gruppo svizzero del viaggio ha raggiunto 132 milioni di franchi di ricavi, in crescita rispetto ai 125 milioni dell’anno precedente. Trainano le vacanze e la Reka-Card, mentre l’acquisizione di un resort all’Elba segnala un’espansione oltre confine.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "pressione sul potere d’acquisto e sui bilanci familiari",
-            "difficoltà e ristrutturazioni nei grandi gruppi industriali svizzeri"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del caso Barry Callebaut, sia per eventuali mosse del management sia per reazioni di mercato; da seguire anche l’impatto delle tensioni sul potere d’acquisto su consumi e domanda interna.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi dominano tre filoni: la battaglia legale tra Elon Musk e OpenAI, la corsa alle valutazioni record nell’AI generativa e il fronte sicurezza/cyber con nuovi modelli più permissivi per i test difensivi. Sullo sfondo, continua la normalizzazione dell’AI nel software, ma anche il suo impatto su investimenti, lavoro e sicurezza digitale.",
-          "notizie": [
-            {
-              "titolo": "Il processo Musk-OpenAI entra nel vivo: accuse incrociate e rischio per la futura IPO",
-              "fonte": "MIT Tech Review",
-              "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/",
-              "riassunto": "Nella seconda settimana del processo, OpenAI ribalta la narrativa: secondo Brockman, sarebbe stato Musk a voler spingere per un ramo for profit e a cercare il “controllo assoluto” del progetto. Shivon Zilis ha inoltre testimoniato che Musk tentò di reclutare Sam Altman per guidare un nuovo laboratorio AI in Tesla. La causa può influire sulla corsa di OpenAI verso una IPO stimata vicino a 1.000 miliardi di dollari.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Anthropic si avvicina a una valutazione da 900 miliardi: l’AI privata accelera ancora",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/anthropic-approaches-1-trillion-valuation-as-revenue-grows-fivefold/",
-              "riassunto": "Anthropic starebbe preparando un round da 50 miliardi di dollari, con una valutazione attorno ai 900 miliardi. Il fatturato annualizzato sarebbe cresciuto di cinque volte rispetto a fine 2024, arrivando vicino a 45 miliardi, trainato da Claude Code e Cowork. È un segnale forte di quanto gli investitori stiano anticipando una possibile IPO già entro l’anno.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "OpenAI apre una versione più permissiva di GPT per la ricerca cyber difensiva",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-opens-gpt-5-5-cyber-to-vetted-security-researchers/",
-              "riassunto": "OpenAI ha lanciato GPT-5.5-Cyber, un modello con filtri di sicurezza più deboli destinato solo a ricercatori verificati e difensori di infrastrutture critiche. Il sistema permette attività come analisi malware, test di penetrazione e simulazione di exploit in ambienti controllati. Per aziende e infrastrutture europee, il tema è rilevante perché mostra come l’AI stia entrando nel cuore della cyber-difesa.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "valutazioni record e finanziarizzazione dell’AI privata",
-            "AI sempre più integrata nella sicurezza informatica e nel test delle vulnerabilità"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del processo Musk-OpenAI: eventuali nuove testimonianze o documenti potrebbero cambiare la percezione del caso e avere effetti sul percorso di IPO di OpenAI e sull’equilibrio competitivo nell’AI generativa.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
