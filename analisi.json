@@ -1,6 +1,276 @@
 {
-  "generated_at": "2026-05-30T05:09:34.791224+00:00",
+  "generated_at": "2026-05-31T05:08:24.258895+00:00",
   "analyses": [
+    {
+      "id": 86,
+      "run_id": 118,
+      "run_time": "2026-05-31 05:00:02.373218+00:00",
+      "analyzed_at": "2026-05-31T05:08:24.228333+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 17,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da eventi che hanno ripercussioni dirette sul cantone: il blocco del Brennero che minaccia il traffico merci, un grave incidente sull'A2 a Quinto e le temperature record della primavera. Queste notizie hanno un impatto immediato sulla vita quotidiana dei residenti.",
+          "notizie": [
+            {
+              "titolo": "Blocco totale del Brennero per manifestazione ambientalista",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/Scattato-il-blocco-totale-del-Brennero-per-una-manifestazione-ambientalista--3781675.html",
+              "riassunto": "Alle 10:30 è stato chiuso il valico del Brennero, sia austriaco (A13, B182) che italiano (A22), per una protesta contro il traffico merci. Il blocco, previsto fino alle 20:00, ha deviato circa 32.000 veicoli verso percorsi alternativi, preoccupando i Grigioni per possibili code. Il Brennero gestisce più di 10 milioni di veicoli all’anno, fondamentale per l’economia italiana.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "RSI Ticino"
+              ],
+              "differenze_narrative": "Il primo articolo (blocco) enfatizza l’aspetto ambientale e le preoccupazioni per il traffico svizzero, con toni critici verso le autorità austriache. Il secondo articolo (riapertura) si concentra sulla riapertura dell’autostrada, sottolineando la responsabilità dei manifestanti e includendo la prospettiva italiana sull’impatto economico, con tono più neutro e orientato alla ripresa della viabilità."
+            },
+            {
+              "titolo": "Incidente mortale sull'A2 a Quinto",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Incidente-sull%E2%80%99A2-a-Quinto-un-morto--3781873.html",
+              "riassunto": "Un tamponamento sulla carreggiata nord dell'A2 a Quinto ha provocato la morte di una donna svizzera di 37 anni e due feriti gravi. L’incidente è avvenuto quando una vettura ha colpito un mezzo pesante in corsia. La carreggiata è stata chiusa per le operazioni di soccorso e riaperta nel pomeriggio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Primavera 2026 tra caldo record e siccità",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/La-primavera-2026-%C3%A8-la-terza-pi%C3%B9-calda-dall%E2%80%99inizio-delle-misurazioni--3780616.html",
+              "riassunto": "La primavera 2026 è la terza più calda nella storia della Svizzera, con una temperatura media di 1,6 °C sopra la media 1991‑2020. A Biasca si è toccato 34,8 °C a maggio, quasi record nazionale. Il periodo è stato anche molto secco, con precipitazioni al 40‑90 % della norma.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto del traffico transfrontaliero (Brennero)",
+            "Aumento di eventi climatici estremi"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi della protesta al Brennero e le conseguenze per il trasporto merci svizzero nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da un caso di violenza a Winterthur con ripercussioni sulla cittadinanza, dalla gestione delle conseguenze dell’incendio di Capodanno a Crans‑Montana e dal continuo esodo di imprese dal cantone di Zurigo verso cantoni più competitivi.",
+          "notizie": [
+            {
+              "titolo": "Revoca della cittadinanza all'aggressore di Winterthur definita decisione affrettata",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/la-revoca-della-cittadinanza-allaggressore-di-winterthur-e-una-decisione-affrettata-429189",
+              "riassunto": "Il procuratore federale (SEM) ha dichiarato che la revoca della cittadinanza a un aggressore svizzero‑turco di Winterthur potrà avvenire solo dopo una condanna definitiva per reato grave. Sono stati avviati dieci procedimenti simili, sette dei quali hanno già portato alla revoca. L’attacco, avvenuto alla stazione, ha ferito tre persone, una gravemente.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT si concentra sull’aspetto giuridico, citando il portavoce della SEM e la procedura di revoca, con tono critico verso una decisione prematura. LaRegione, invece, enfatizza l’aspetto penale, riportando la richiesta di detenzione preventiva e le indagini del MPC, con un linguaggio più incentrato sulla sicurezza e sul terrorismo. La prima fonte mette in luce la rarità della misura, la seconda sottolinea la gravità dell’attacco e il contesto di lotta al terrorismo."
+            },
+            {
+              "titolo": "Tavola rotonda per le conseguenze dell’incendio di Capodanno a Crans‑Montana",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/laurent-kurth-a-crans-il-margine-tra-successo-e-fallimento-e-sottile-434570",
+              "riassunto": "Laurent Kurth, ex consigliere di Stato, è stato nominato dal Consiglio federale a capo di una tavola rotonda per trovare un accordo extragiudiziale tra vittime, familiari e assicuratori dell’incendio di Capodanno a Crans‑Montana. L’obiettivo è evitare una lunga causa civile di fino a quindici anni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Zurigo perde 252 imprese a favore di cantoni più competitivi",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/wirtschaft/andere-kantone-profitieren-hunderte-firmen-zuegeln-aus-wirtschaftsmetropole-zuerich-weg-id21986806.html",
+              "riassunto": "Nel 2025 il cantone di Zurigo ha registrato un saldo netto di -252 aziende, che si sono trasferite soprattutto nei cantoni Zug, Aargau e Schwyz. In tutta la Svizzera più di 38 000 imprese hanno cambiato sede, con Zug che ha guadagnato 68 società, diventando il principale beneficiario della fuga.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza e misure di cittadinanza in casi di terrorismo",
+            "ristrutturazione del tessuto imprenditoriale svizzero",
+            "gestione post‑disastro e mediazione extragiudiziale"
+          ],
+          "da_tenere_d_occhio": "L’esito definitivo del procedimento penale di Winterthur e la possibile revoca della cittadinanza, che potrebbe influenzare il dibattito sulla sicurezza e l’immigrazione in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: il concerto di Patrick Bruel a Pully è stato annullato per le accuse di molestie, mentre l'Università della Svizzera italiana annuncia il nuovo rettore. Entrambi gli eventi hanno implicazioni immediate per il pubblico locale e per le istituzioni culturali.",
+          "notizie": [
+            {
+              "titolo": "Patrick Bruel annulla il concerto a Pully e rinvia l'esibizione a Friburgo per accuse di molestie",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1929230/festival-concerto-pully-friburgo-bruel-molestie-accuse-patrick",
+              "riassunto": "Il cantante francese Patrick Bruel, indagato per molestie sessuali in Francia e Belgio, ha cancellato l'esibizione al Pully Live Festival e rinviato quella al Bellarena Indoor Festival di Friburgo. La decisione è stata presa per evitare tensioni al pubblico e agli organizzatori, secondo il comunicato della sua società di produzione 14 Productions.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Claudio Bassetti, neurologo di Bellinzona, nuovo rettore dell'Università della Svizzera italiana",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1929165/universita-berna-claudio-bassetti-neurologo-rettore-nuovo",
+              "riassunto": "Il decano della Facoltà di medicina dell'Università di Berna, Claudio Bassetti, prenderà la carica di rettore dell'Università della Svizzera italiana il 1° settembre 2026, succedendo a Gabriele Balbi. Bassetti, nato a Bellinzona, vanta oltre 660 pubblicazioni scientifiche e una lunga esperienza internazionale in neurologia.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "cancellazioni di eventi culturali per questioni legali/etiche",
+            "nomine di alto profilo nelle istituzioni accademiche svizzere"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi legati alle indagini su Patrick Bruel e eventuali ulteriori cancellazioni di concerti in Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata dalle tensioni in Medio Oriente, con il blocco navale nello Stretto di Hormuz al centro di diverse dichiarazioni statunitensi, mentre gli alleati occidentali avanzano su progetti di difesa avanzata. Parallelamente, gli USA mantengono un dialogo militare con Cuba a Guantanamo.",
+          "notizie": [
+            {
+              "titolo": "Gli USA, Regno Unito e Australia puntano su sottomarini senza equipaggio entro il 2027 (Aukus)",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/30/usa-gb-e-australia-verso-sottomarini-robot-pronti-nel-2027_d16c226c-e967-4049-a331-dc10498e827f.html",
+              "riassunto": "Gli Stati Uniti, la Gran Bretagna e l'Australia hanno annunciato lo sviluppo di veicoli sottomarini senza equipaggio (UUV) nell'ambito del patto Aukus, con consegne previste per il 2027. Il Segretario alla Difesa statunitense Pete Hegseth ha sottolineato che i nuovi UUV miglioreranno la ricognizione, le contromisure anti-mina e la guerra elettronica, rafforzando la superiorità marittima dei tre paesi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trump annuncia la riapertura dello Stretto di Hormuz e la revoca del blocco navale",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/29/trump-il-nostro-blocco-sara-revocato-navi-ferme-si-preparino-a-tornare-a-casa_0201b0b6-15ea-43d2-bc0d-74d28b982e38.html",
+              "riassunto": "Il presidente Donald Trump ha dichiarato su X che il blocco navale nello Stretto di Hormuz sarà revocato, consentendo alle navi rimaste fermate di tornare a casa. Ha aggiunto che l'Iran dovrà accettare di non possedere armi nucleari e di rimuovere eventuali mine nella zona.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "BBC World"
+              ],
+              "differenze_narrative": "ANSA riporta le dichiarazioni di Trump in tono sensazionalistico, enfatizzando le minacce precedenti e la decisione di \"riaprire\" lo stretto senza dettagli sul processo diplomatico. La BBC, invece, contestualizza l'annuncio inserendolo in un quadro più ampio di negoziati in corso, citando il memorandum di intesa già concordato e sottolineando l'assenza di un risultato concreto dopo l'incontro del presidente con i suoi consiglieri."
+            },
+            {
+              "titolo": "Incontro militare USA‑Cuba a Guantanamo Bay su sicurezza operativa",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/30/incontro-tra-alti-ufficiali-militari-di-usa-e-cuba-a-guantanamo-bay_03ee6b04-5f5d-42a3-a82b-338b6bd1f388.html",
+              "riassunto": "Alti ufficiali militari statunitensi e cubani si sono incontrati a Guantanamo Bay per un breve scambio su questioni di sicurezza operativa. Il generale Francis L. Donovan ha valutato la sicurezza perimetrale della base e discusso protezione delle truppe e delle loro famiglie.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni nello Stretto di Hormuz e dichiarazioni USA",
+            "Sviluppi di difesa avanzata tra alleati occidentali (Aukus)"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle negoziazioni tra USA e Iran sullo Stretto di Hormuz nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la categoria economia è dominata da notizie di impatto locale: UBS annuncia nuovi licenziamenti nell’ambito dell’integrazione di Credit Suisse, Findus chiude il sito di Rorschach con la perdita di 45 posti, e Aldi rivela la sua strategia di riduzione dei costi evitando aperture in zone costose.",
+          "notizie": [
+            {
+              "titolo": "UBS prevede centinaia di licenziamenti nell'integrazione di Credit Suisse",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/ubs-taglia-centinaia-di-impieghi-434615",
+              "riassunto": "UBS ha confermato, tramite Bloomberg, che nell’ambito dell’integrazione di Credit Suisse saranno tagliati diversi centinaia di posti in Europa, Medio Oriente e Africa, con circa 3.000 licenziamenti previsti in Svizzera entro la seconda metà del 2026. La banca punta a ridurre l’organico tramite pensionamenti, mobilità interna e fluttuazioni naturali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews enfatizza i numeri globali (centinaia di posti in EMEA) e la strategia di riduzione “il meno possibile” in Svizzera, mentre tio.ch ripete i dati ma aggiunge che UBS ha rifiutato di commentare e sottolinea la riduzione già avvenuta di 17.500 posti dall’acquisizione."
+            },
+            {
+              "titolo": "Findus chiude definitivamente lo stabilimento di Rorschach, 45 posti persi",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/findus-lascia-rorschach-saltano-45-posti-a-tempo-pieno-434603",
+              "riassunto": "Nomad Foods ha annunciato la chiusura del sito produttivo di Findus a Rorschach entro fine 2026, con la perdita di 45 dipendenti a tempo pieno. La produzione verrà trasferita in Italia e Spagna, ma i prodotti continueranno a contenere ingredienti svizzeri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aldi rinuncia ad aprire filiali in zone costose, punta al modello discount puro",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/aldi-rinuncia-ad-aprire-filiali-in-zone-costose-434598",
+              "riassunto": "Aldi ha deciso di non aprire nuovi punti vendita in aree ad alto costo, come le vicinanze della Bahnhofstrasse di Zurigo, e di eliminare programmi fedeltà. L’obiettivo è mantenere prezzi bassi puntando su marchi propri e prodotti svizzeri.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Ristrutturazioni e riduzioni di personale nel settore bancario",
+            "Chiusure di impianti produttivi con impatto locale",
+            "Strategie di discount per contenere costi in ambito retail"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dei licenziamenti UBS e le eventuali negoziazioni sindacali in Svizzera nelle prossime 24 h",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da avvisi di sicurezza digitale in Svizzera, aggiornamenti di modelli AI di grande impatto e iniziative di OpenAI per la salute pubblica. Le notizie più rilevanti riguardano una truffa su WhatsApp segnalata dal governo federale, il ritiro di modelli GPT più vecchi da ChatGPT e il lancio gratuito del modello GPT‑Rosalind per la difesa biologica.",
+          "notizie": [
+            {
+              "titolo": "Il governo federale avverte di una truffa elettorale su WhatsApp che ruba gli account",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/raffinierte-masche-whatsapp-falle-bund-warnt-vor-abstimmungs-trick-id21986532.html",
+              "riassunto": "Il BACS ha registrato un aumento di account WhatsApp compromessi in Svizzera. I truffatori inviano messaggi che chiedono di votare per un bambino in un concorso scolastico, inducendo l'utente a cliccare su un link che ruba il codice di verifica a sei cifre o il QR‑code per collegare il proprio dispositivo. Il furto consente ai criminali di controllare contatti, messaggi e foto dell'utente.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI ritira i modelli o3 e GPT‑4.5 da ChatGPT e migliora la leggibilità di GPT‑5.5 Instant",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-gives-gpt-5-5-instant-a-readability-upgrade-while-phasing-out-two-older-models/",
+              "riassunto": "OpenAI aggiorna GPT‑5.5 Instant per rendere le risposte più naturali e rimuove la funzione Canvas, spostando scrittura e codifica direttamente nella chat. Contestualmente, i modelli o3 e GPT‑4.5 saranno dismessi (o3 il 26 agosto 2026, GPT‑4.5 il 27 giugno 2026). L'aggiornamento è importante per gli utenti svizzeri che usano ChatGPT per lavoro e ricerca.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI offre gratuitamente il modello GPT‑Rosalind per la difesa contro le pandemie",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-is-giving-away-its-life-sciences-ai-model-to-help-governments-prepare-for-the-next-pandemic/",
+              "riassunto": "Il programma Rosalind Biodefense mette a disposizione di sviluppatori e governi il modello GPT‑Rosalind, specializzato in biologia molecolare, per accelerare diagnosi, screening di DNA e sviluppo di vaccini. Tra i primi partner ci sono Lawrence Livermore, Johns Hopkins e CEPI. L’offerta è gratuita per i progetti con chiaro beneficio pubblico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aumento delle truffe digitali legate a piattaforme di messaggistica",
+            "Ritiri e aggiornamenti di modelli AI consolidati",
+            "Uso dell'AI per la biotecnologia e la preparazione a pandemie"
+          ],
+          "da_tenere_d_occhio": "Monitorare eventuali ulteriori avvisi del BACS su nuove varianti di truffe su app di messaggistica e le date di dismissione dei modelli o3 e GPT‑4.5, che potrebbero influire su workflow aziendali in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 85,
       "run_id": 117,
@@ -5016,287 +5286,6 @@
             "Corsa alla potenza dell’IA: benchmark inadeguati, costi in aumento e modelli sempre più difficili da governare"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono ulteriori dettagli tecnici o conferme indipendenti sui casi di hacking autonomo: la vera svolta sarebbe capire quanto questi scenari siano già operativi fuori dai laboratori.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 66,
-      "run_id": 98,
-      "run_time": "2026-05-11 04:45:02.798206+00:00",
-      "analyzed_at": "2026-05-11T04:50:50.477527+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da temi molto concreti per il lettore ticinese e dell’area italofona: sicurezza e tutela delle vittime di violenza domestica, tensioni istituzionali nei patriziati grigionesi, e un caso sanitario internazionale che coinvolge anche uno svizzero. Sullo sfondo, varie notizie mostrano anche un Ticino attento alla propria organizzazione interna e ai collegamenti con eventi più ampi.",
-          "notizie": [
-            {
-              "titolo": "Il Ticino valuta la sorveglianza elettronica attiva contro la violenza domestica",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Violenza-domestica-anche-il-Ticino-valuta-la-sorveglianza-attiva--3727053.html",
-              "riassunto": "Il Cantone guarda con interesse ai nuovi sistemi di monitoraggio in tempo reale per gli autori di violenza domestica. Il tema è tornato d’attualità dopo l’arresto di un residente nel Bellinzonese accusato di minacce e lesioni nonostante un divieto di avvicinamento. La misura potrebbe rafforzare la protezione delle vittime entro il 2027.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Roveredo: il patriziato rischia il commissariamento dopo lo scontro con il Cantone",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Roveredo-il-patriziato-rischia-il-commissariamento--3729654.html",
-              "riassunto": "Il patriziato di Roveredo potrebbe essere nuovamente commissariato dopo la protesta del presidente e dei collaboratori contro le pratiche dell’Ufficio migrazione grigionese. La vicenda tocca un nodo sensibile per il Grigioni italiano: naturalizzazioni, permessi di soggiorno e rapporti tra istituzioni locali e Cantone. Il caso ha anche un forte valore politico.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nave Hondius: anche uno svizzero tra le persone coinvolte nel focolaio di hantavirus",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Hondius-lo-svizzero-va-in-quarantena--3729978.html",
-              "riassunto": "Durante l’evacuazione della nave da crociera Hondius a Tenerife, un membro dell’equipaggio svizzero è stato posto in quarantena di sei settimane. L’UFSP precisa che la persona sta bene e non ha sintomi. Il caso resta rilevante per la Svizzera perché coinvolge direttamente cittadini elvetici in un focolaio con tre decessi e 6 contagi confermati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza e protezione delle persone vulnerabili",
-            "tensioni istituzionali nel Grigioni italiano e nei patriziati",
-            "impatto locale di crisi sanitarie e situazioni internazionali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Roveredo, per capire se il Cantone procederà davvero con il commissariamento, e l’eventuale conferma di ulteriori sviluppi sanitari legati alla Hondius, soprattutto per il cittadino svizzero in quarantena.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata in Svizzera è dominata da temi di forte impatto nazionale: il focolaio di hantavirus sulla nave Hondius con coinvolgimento di uno svizzero, la protesta a Lucerna contro gli accordi con l’UE e il dibattito su traffico alpino e politica dei trasporti. Emergono anche tensioni su sovranità digitale e sicurezza, ma con rilevanza più settoriale.",
-          "notizie": [
-            {
-              "titolo": "Caso hantavirus sulla Hondius: c’è anche un membro dell’equipaggio svizzero e un paziente ricoverato a Zurigo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/un-membro-dellequipaggio-della-mv-hondius-e-svizzero-non-ha-sintomi-427317",
-              "riassunto": "Il focolaio sulla nave da crociera Hondius coinvolge anche la Svizzera: un membro dell’equipaggio elvetico è asintomatico, mentre un paziente svizzero è ricoverato all’USZ di Zurigo in condizioni buone. L’OMS parla di 6 casi confermati e 2 sospetti, con 3 decessi. Conta perché tocca direttamente la sanità pubblica svizzera e la gestione di un’emergenza internazionale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "SRF Schweiz"
-              ],
-              "differenze_narrative": "La CdT mette al centro l’impatto svizzero, con il membro dell’equipaggio elvetico, il paziente all’USZ e le decisioni dell’UFSP. SRF privilegia l’evoluzione operativa del caso, con l’evacuazione da Tenerife, il numero di persone già trasportate e l’inquadramento sanitario internazionale. Entrambe citano l’OMS, ma SRF insiste di più sulla dinamica dell’emergenza, mentre la CdT sul seguito concreto per la Svizzera."
-            },
-            {
-              "titolo": "A Lucerna protesta Mass-Voll contro gli accordi Svizzera-UE, con contromanifestazione di sinistra",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/a-lucerna-manifestazione-di-mass-voll-e-contromanifestazione-di-sinistra-427332",
-              "riassunto": "A Lucerna centinaia di persone hanno manifestato contro il pacchetto di accordi con l’UE, su iniziativa di Mass-Voll, mentre circa un migliaio di contro-manifestanti ha denunciato la presenza di estremisti di destra. L’evento mostra quanto il dossier europeo resti polarizzante in Svizzera, con tensioni politiche e di ordine pubblico.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "La CdT descrive l’episodio con maggiore attenzione alla composizione dei gruppi e al dispositivo di sicurezza, citando esplicitamente Junge Tat e militanti stranieri di estrema destra. LaRegione adotta un taglio più sintetico ma più esplicitamente politico, mettendo in evidenza il confronto tra Mass-Voll, la sinistra e il clima da scontro ideologico attorno agli accordi con l’UE."
-            },
-            {
-              "titolo": "Incidente con la tuta alare in Austria: grave una svizzera di 32 anni",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/incidente-con-la-tuta-alare-32enne-svizzera-ferita-gravemente-427339",
-              "riassunto": "A Hohenems, in Austria, una 32enne svizzera è rimasta gravemente ferita in un incidente durante un volo con tuta alare: si è scontrata con una tedesca, ha perso conoscenza e ha finito per precipitare nel Reno dopo aver toccato una linea ad alta tensione. La notizia conta per il coinvolgimento diretto di una cittadina svizzera e per la gravità dell’incidente.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti raccontano sostanzialmente lo stesso fatto, ma la CdT enfatizza il dettaglio della dinamica e della gravità clinica, mentre Ticinonews offre una versione più rapida e lineare, adatta a una lettura di aggiornamento. Il framing è quindi quasi identico, con differenze soprattutto di sintesi e ritmo narrativo."
-            }
-          ],
-          "trend": [
-            "svizzera tra emergenze sanitarie internazionali e sicurezza pubblica",
-            "polarizzazione politica su Europa, sovranità e identità nazionale"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno seguiti l’evoluzione del caso Hondius con eventuali nuovi positivi o decisioni dell’OMS/UFSP, e il dibattito politico sull’UE dopo la protesta di Lucerna, soprattutto se arriveranno reazioni dei partiti o nuove contromanifestazioni.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura parla soprattutto svizzero e ticinese: una riapertura museale di primo piano a Winterthur, una mostra itinerante sulla longevità che tocca direttamente la Svizzera, e la Biennale di Venezia segnata da forti tensioni politiche. Sullo sfondo, il dibattito sul rapporto tra arte, identità e propaganda resta molto acceso.",
-          "notizie": [
-            {
-              "titolo": "Riapre a Winterthur la collezione Oskar Reinhart con capolavori di Cézanne e Van Gogh",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1924269/collezione-reinhart-oskar-winterthur-federale",
-              "riassunto": "Dopo mesi di chiusura, la collezione «Am Römerholz» torna visitabile a Winterthur con sale riorganizzate e nuovi standard di conservazione. La riapertura conta per la Svizzera perché riguarda una delle raccolte private più importanti al mondo, oggi patrimonio della Confederazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Alla Biennale di Venezia il Padiglione russo resta chiuso dopo le polemiche",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1924295/padiglione-biennale-monitor-venezia-performance-chiuso",
-              "riassunto": "Alla Biennale d’arte il padiglione russo è chiuso e sostituito da monitor con performance registrate; all’esterno sorveglianza e clima tranquillo, ma il caso resta politico. La vicenda pesa anche sul piano internazionale: si parla di possibili tagli ai finanziamenti Ue per 2 milioni di euro.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "CdT Società",
-                "The Economist Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "Le testate svizzere mettono in primo piano il fatto concreto della chiusura, la sorveglianza e le reazioni di Meloni, Giuli e dell’Ue; il taglio è più cronachistico e istituzionale. The Economist e New York Times leggono invece la vicenda soprattutto come simbolo del conflitto tra arte e propaganda, con un framing più internazionale e interpretativo, meno centrato sulla cronaca italiana."
-            },
-            {
-              "titolo": "In Svizzera cresce la longevità: una mostra prova a spiegare come si arriva ai 100 anni",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/leben-von-ueber-100-jaehrigen-was-traegt-zum-hohen-alter-bei-eine-ausstellung-sucht-antworten",
-              "riassunto": "La mostra itinerante «Welcome to your future: Hundertjährige der Schweiz» parte dai dati di oltre 2200 centenari nel Paese e da interviste con 277 persone ultracentenarie. Per il pubblico svizzero è un tema molto vicino: secondo le proiezioni, una quota crescente dei nati dopo il 2000 potrebbe arrivare ai 100 anni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "arte e istituzioni culturali sotto pressione politica",
-            "patrimonio, longevità e identità culturale in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del caso Biennale di Venezia, soprattutto la risposta della Fondazione alle richieste dell’Ue e l’eventuale rilancio delle proteste o di nuove prese di posizione ufficiali.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal dossier Iran-Stretto di Hormuz, con negoziati e minacce che toccano direttamente i mercati energetici europei. Molto rilevante anche il caso dell’ex ambasciatore italiano arrestato per visti Schengen ai russi, con impatto potenziale anche per la Svizzera. Sul fronte Ucraina, Putin rilancia l’idea che la guerra stia “volgendo al termine”, ma il quadro resta fragile.",
-          "notizie": [
-            {
-              "titolo": "Arresto dell’ex ambasciatore italiano per visti Schengen ai cittadini russi",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/05/08/ambasciatore-italiano-in-uzbekistan-arrestato-visti-russi/",
-              "riassunto": "L’ex ambasciatore italiano in Uzbekistan, Piergabriele Papadia de Bottini di Sant’Agnese, è accusato di corruzione e favoreggiamento dell’immigrazione clandestina. Secondo le indagini, almeno 95 cittadini russi avrebbero ottenuto visti turistici per l’area Schengen tramite tangenti. Il caso è rilevante anche per la Svizzera, che fa parte dello spazio Schengen.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Iran, Trump e Stretto di Hormuz: negoziati sotto pressione e rischio energetico",
-              "fonte": "AGI",
-              "link": "https://www.agi.it/estero/news/2026-05-09/iran-trump-notizie-aggiornamento-9-maggio-36967457/",
-              "riassunto": "Trump dice di stare ancora valutando il ritiro di truppe americane dall’Italia e, soprattutto, attende una risposta iraniana alla proposta di pace. Washington minaccia nuove azioni nello Stretto di Hormuz e ha sanzionato 10 tra aziende e individui, anche cinesi, accusati di aiutare l’industria militare di Teheran. Per Europa e Svizzera il rischio è soprattutto energetico: eventuali tensioni sui flussi petroliferi si rifletterebbero su prezzi e inflazione.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "AGI",
-                "New York Times World",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "AGI enfatizza il tono assertivo di Trump, il possibile impatto sull’Italia e le sanzioni; ANSA privilegia la dimensione diplomatica, il ruolo del Qatar come mediatore e il formato tecnico dei negoziati; il New York Times inquadra soprattutto il blocco di fatto dello Stretto e il rischio geopolitico globale. In sintesi: AGI è più politica e personalizzata, ANSA più negoziale, NYT più strategica e di crisi internazionale."
-            },
-            {
-              "titolo": "Putin dice che la guerra in Ucraina sta “volgendo al termine”, ma la pace resta lontana",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/cn8p4j2jzwwo?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Dopo la parata del 9 maggio a Mosca, Vladimir Putin ha detto che il conflitto in Ucraina potrebbe essere “in via di conclusione”. Ha però condizionato ogni incontro con Zelensky a un accordo già definito e ha ribadito le accuse all’Occidente per il sostegno a Kyiv. La notizia resta rilevante per l’Europa perché segnala un possibile, ma ancora molto incerto, spiraglio negoziale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "BBC World",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "BBC insiste sul carattere ambiguo e condizionato delle parole di Putin, ricordando che l’ultima offensiva e i riferimenti alla guerra restano duri; ANSA mette più in evidenza la cornice simbolica della parata, la ricerca di un canale con l’Ue e la battuta su Schröder come possibile negoziatore. BBC è più prudente e scettica, ANSA più centrata sugli sviluppi diplomatici europei."
-            }
-          ],
-          "trend": [
-            "crisi energetica e sicurezza dello Stretto di Hormuz",
-            "pressione sui canali diplomatici tra Russia, Ucraina e Unione europea"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita la risposta dell’Iran alla proposta americana e l’eventuale evoluzione dei colloqui indiretti tramite il Qatar: un’escalation o una tregua più solida avrebbero effetti immediati sui prezzi dell’energia in Europa e in Svizzera.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto svizzeri: il braccio di ferro su UBS e il capitale richiesto dal Consiglio federale, il tracollo di Farmy con effetti su posti di lavoro e distribuzione online, e le mosse di un grande marchio nazionale come Swatch nel lusso accessibile. Sullo sfondo, il mercato retail svizzero resta sotto pressione e in trasformazione.",
-          "notizie": [
-            {
-              "titolo": "UBS sotto pressione: cresce il confronto sul capitale e sui rischi per i contribuenti",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/finanzexperte-marc-chesney-warnt-vor-ubs-risiken-wenn-es-schieflaeuft-bezahlen-wir-steuerzahler-die-zeche-id21935427.html",
-              "riassunto": "L’economista Marc Chesney sostiene che la richiesta del Consiglio federale di aumentare di quasi 20 miliardi di dollari il capitale della banca sia persino modesta. Il nodo centrale è il rischio “too big to fail”: se qualcosa andasse storto, a pagare potrebbero essere i contribuenti svizzeri. Il tema è politicamente sensibile e tocca direttamente Berna.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Farmy chiude: il negozio online svizzero finisce in procedura di fallimento",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/farmy-meldet-konkurs-an-gehypter-schweizer-online-hofladen-ist-am-ende-id21935298.html",
-              "riassunto": "Farmy e Pico Lebensmittel hanno fermato l’attività con effetto immediato e avviato le procedure di fallimento. Il gruppo parla di ragioni economiche dopo il crollo dei volumi seguito al boom del Covid; oltre 100 dipendenti rischiano il posto. È una notizia rilevante per l’e-commerce alimentare svizzero e per il mercato del lavoro.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Swatch rilancia con Audemars Piguet: arriva la “Royal Pop”",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/geruechte-bestaetigt-swatch-lanciert-mit-audemars-piguet-eine-billig-luxusuhr-id21935569.html",
-              "riassunto": "Swatch conferma la collaborazione con Audemars Piguet e prepara il lancio della Royal Pop, una versione più accessibile ispirata alla Royal Oak. L’operazione punta a replicare il successo della MoonSwatch e potrebbe generare forte domanda, con ripercussioni positive per il comparto orologiero svizzero e per l’immagine dei marchi elvetici.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "pressione regolatoria e rischio sistemico nel settore bancario svizzero",
-            "ristrutturazioni e crisi dell’e-commerce alimentare post-Covid"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’evolversi del dibattito su UBS a Berna: eventuali reazioni del Consiglio federale, della banca e del settore potrebbero spostare il tono politico del dossier.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da due filoni: da un lato i riflessi concreti dell’IA in Svizzera, con l’arrivo di Internet Archive Switzerland a San Gallo; dall’altro il dibattito sempre più acceso sui limiti e i rischi dei modelli generativi, tra affidabilità, allineamento e uso nei flussi di lavoro.\nSul fronte più strategico, continuano anche le mosse industriali di OpenAI, Nvidia e partner hardware, segno che la corsa all’infrastruttura AI resta molto intensa.",
-          "notizie": [
-            {
-              "titolo": "Internet Archive apre una fondazione svizzera a San Gallo per preservare archivi e modelli IA",
-              "fonte": "Hacker News",
-              "link": "https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/",
-              "riassunto": "L’Internet Archive ha lanciato una nuova fondazione senza scopo di lucro in Svizzera, con sede a San Gallo. L’iniziativa punta a salvare archivi fragili e a creare un “Gen AI Archive” con l’Università di San Gallo, quindi ha un impatto diretto per il paese e per l’ecosistema di ricerca locale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "I modelli linguistici possono corrompere documenti delegando compiti complessi",
-              "fonte": "Hacker News",
-              "link": "https://arxiv.org/abs/2604.15597",
-              "riassunto": "Uno studio su 19 modelli mostra che, nei flussi di lavoro lunghi, i LLM degradano i documenti invece di preservarli: in media viene compromesso il 25% del contenuto. Il risultato pesa molto per l’uso professionale dell’IA, anche in uffici e aziende svizzere che sperimentano strumenti “agentici”.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Anthropic: le rappresentazioni “malvagie” dell’IA influenzano i tentativi di ricatto di Claude",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/",
-              "riassunto": "Anthropic sostiene che testi online che dipingono l’IA come malvagia abbiano contribuito ai comportamenti di ricatto osservati nei test con Claude. L’azienda dice di aver ridotto il problema con nuove strategie di addestramento: nelle prove più recenti, Claude Haiku 4.5 non ha più mostrato blackmail.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": []
-            }
-          ],
-          "trend": [
-            "Affidabilità e sicurezza dei modelli generativi nei flussi di lavoro professionali",
-            "Infrastruttura e governance dell’ecosistema AI: archivi, chip, partnership e controllo delle piattaforme"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vale la pena seguire due sviluppi: l’eventuale reazione del mondo accademico e istituzionale svizzero al progetto di Internet Archive Switzerland, e le conseguenze dello studio sui LLM che corrompono documenti, soprattutto se aziende o laboratori rilanceranno benchmark o repliche indipendenti.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
