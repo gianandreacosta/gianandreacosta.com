@@ -139,6 +139,29 @@
     <div class="field-help" style="margin-top:0.4rem;">L'analisi prova in ordine. Se PRIMARY fallisce (rate limit, 4xx), salta al successivo. Formato: <code>provider/modello</code>.</div>
   </div>
 
+  <!-- Card: boost keywords -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">🎯 Priorità keyword <span id="dirty-boost" class="dirty-badge">modificato</span></div>
+    </div>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.7rem;">
+      Articoli che menzionano queste parole entrano <strong>sempre</strong> nel pool inviato all'AI,
+      anche se sono coperti da una sola fonte. Bypassa il cap di articoli per categoria.
+      <br>Esempio: <code>RSI SSR SRG</code> garantisce che notizie sui media svizzeri emergano
+      anche quando le scrivono testate non-svizzere.
+    </p>
+    <div class="form-group">
+      <label>Keyword (una per riga)</label>
+      <textarea id="cfg-boost-keywords" style="min-height:90px;font-family:ui-monospace,monospace;font-size:0.82rem;" oninput="markBoostDirty()" placeholder="RSI&#10;SSR&#10;SRG&#10;RTS&#10;SRF"></textarea>
+      <div class="field-help">Match con confine di parola (es. "RSI" non matcha "thRSI"), case-insensitive. Lascia vuoto per disabilitare il boost.</div>
+    </div>
+    <div class="form-group">
+      <label>Max articoli extra per categoria</label>
+      <input type="number" id="cfg-boost-extra" min="0" max="50" oninput="markBoostDirty()">
+      <div class="field-help">Quanti articoli boost al massimo possono superare il cap normale (default 30). Un valore di 10 = fino a 30+10 = 40 articoli per categoria in caso di molte notizie matchate.</div>
+    </div>
+  </div>
+
   <!-- Salva config -->
   <div class="card">
     <div style="display:flex;justify-content:space-between;align-items:center;">
@@ -193,6 +216,10 @@ function markDirty() {
   STATE.dirty.sel = true; STATE.dirty.body = true; STATE.dirty.models = true;
   document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.add("shown"));
 }
+function markBoostDirty() {
+  STATE.dirty.boost = true;
+  document.getElementById("dirty-boost").classList.add("shown");
+}
 function markDirtyPrompt() {
   STATE.dirty.prompt = true;
   document.getElementById("dirty-prompt").classList.add("shown");
@@ -217,8 +244,10 @@ async function loadConfig() {
     document.getElementById("cfg-model-fallback").value = c.model_fallback ?? "";
     document.getElementById("cfg-model-fallback2").value = c.model_fallback2 ?? "";
     document.getElementById("cfg-model-fallback3").value = c.model_fallback3 ?? "";
-    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = false;
-    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.remove("shown"));
+    document.getElementById("cfg-boost-keywords").value = (c.boost_keywords || []).join("\n");
+    document.getElementById("cfg-boost-extra").value = c.boost_max_extra_per_category ?? "";
+    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = STATE.dirty.boost = false;
+    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models, #dirty-boost").forEach(e => e.classList.remove("shown"));
   } catch (e) {
     Toast.error("Errore caricamento config: " + e.message);
   }
@@ -248,6 +277,9 @@ async function saveConfig() {
     model_fallback: strOrNull("cfg-model-fallback"),
     model_fallback2: strOrNull("cfg-model-fallback2"),
     model_fallback3: strOrNull("cfg-model-fallback3"),
+    boost_keywords: document.getElementById("cfg-boost-keywords").value
+      .split("\n").map(s => s.trim()).filter(Boolean),
+    boost_max_extra_per_category: intOrNull("cfg-boost-extra"),
   };
   Object.keys(body).forEach(k => body[k] === undefined && delete body[k]);
 
@@ -257,8 +289,8 @@ async function saveConfig() {
     const r = await Api.updateAnalysisConfig(body);
     Toast.success(`Config salvato (${r.updated_fields.length} campi)`);
     document.getElementById("save-result").innerHTML = `<div class="banner info" style="margin-top:0.7rem;">✓ Commit ${escHtml((r.git?.head || "").slice(0,7))} pushato. Pipeline V1 invariata fino al cutover.</div>`;
-    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = false;
-    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models").forEach(e => e.classList.remove("shown"));
+    STATE.dirty.sel = STATE.dirty.body = STATE.dirty.models = STATE.dirty.boost = false;
+    document.querySelectorAll("#dirty-sel, #dirty-body, #dirty-models, #dirty-boost").forEach(e => e.classList.remove("shown"));
     renderSyncBanner();
   } catch (e) {
     Toast.error("Errore: " + e.message);
