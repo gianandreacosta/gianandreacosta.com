@@ -10,6 +10,10 @@ USA "testo" come fonte primaria di informazioni quando disponibile e non vuoto: 
 citazioni e contesto che la sola descrizione non ha. Se "testo" è vuoto, basati su titolo + descrizione.
 
 CRITERI DI SELEZIONE (in ordine di priorità):
+0. PRIORITÀ ASSOLUTA — Notizie che menzionano i media pubblici svizzeri (RSI, SSR, SRG, RTS, SRF, Radiotelevisione svizzera, Swissinfo).
+   Se trovi notizie del genere INCLUDILE SEMPRE in "notizie", anche se solo 1 fonte le riporta. Marca "rilevanza": "alta".
+   Nel "riassunto" specifica chiaramente chi è l'oggetto della notizia (es. "RSI", "RTS", "SRF") e in che contesto.
+   Motivazione: il lettore lavora per RSI/SSR e deve sapere se altre testate scrivono dei media pubblici svizzeri.
 1. Notizie con impatto diretto sulla Svizzera o sul Ticino
 2. Breaking news e notizie fresche delle ultime ore
 3. Eventi eclatanti o di portata internazionale rilevante
