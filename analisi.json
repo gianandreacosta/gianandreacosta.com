@@ -1,6 +1,226 @@
 {
-  "generated_at": "2026-05-31T05:08:24.258895+00:00",
+  "generated_at": "2026-06-01T05:07:05.380253+00:00",
   "analyses": [
+    {
+      "id": 87,
+      "run_id": 119,
+      "run_time": "2026-06-01 05:00:02.188376+00:00",
+      "analyzed_at": "2026-06-01T05:07:05.358297+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 13,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.1",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie che hanno ripercussioni dirette sulla Svizzera: il blocco del valico del Brennero che ha minacciato il traffico merci, la finale di hockey mondiale seguita con fervore nazionale, e la decisione di Swiss di smantellare due A220‑100 per ricambi.",
+          "notizie": [
+            {
+              "titolo": "Blocco totale del Brennero per manifestazione ambientalista: impatto sul traffico svizzero",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/Scattato-il-blocco-totale-del-Brennero-per-una-manifestazione-ambientalista--3781675.html",
+              "riassunto": "Alle 10:30 è stato chiuso il valico del Brennero, sia austriaco (A13, B182) che italiano (A22), per una protesta contro il traffico merci. Il passo registra quasi tre volte i TIR svizzeri all'anno; l'ente austriaco prevede 32 000 veicoli di deviazione, con timori di ingorghi nei Grigioni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Finale di hockey 2026: la Svizzera perde l’argento, ma il paese segue la partita con il fiato sospeso",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/La-Svizzera-ha-seguito-la-finale-di-hockey-col-fiato-sospeso--3784534.html",
+              "riassunto": "La nazionale svizzera di hockey ha chiuso al secondo posto dopo la vittoria della Finlandia ai supplementari. La partita è stata trasmessa in public viewing, tra cui la Cornèr Arena di Lugano, e ha ispirato un volo Swiss che ha tracciato un cuore nei cieli di Zurigo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Swiss rinuncia a due A220‑100 per ricambiare la flotta A220‑300",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Swiss-rinuncia-a-due-A220-100-saranno-usati-per-i-pezzi-di-ricambio--3784246.html",
+              "riassunto": "Swiss ha deciso di smantellare definitivamente due aeromobili A220‑100, destinandoli a fornire pezzi di ricambio per i 21 A220‑300 della compagnia. La mossa segue problemi di manutenzione e la strategia di ottimizzare la flotta, con tre esemplari ancora in deposito a Tolosa.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "impatto del traffico transfrontaliero su Svizzera",
+            "passione sportiva nazionale (hockey)"
+          ],
+          "da_tenere_d_occhio": "Possibili nuovi blocchi o restrizioni al traffico sul Brennero nei prossimi giorni, che potrebbero influenzare le catene di approvvigionamento svizzere",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da temi di sicurezza, tensioni sociali e cambiamenti ambientali: la discussa revoca della cittadinanza a Winterthur, le proteste contro l’aumento degli affitti a Zurigo e le temperature record dei laghi alpini.",
+          "notizie": [
+            {
+              "titolo": "Revoca della cittadinanza all'aggressore di Winterthur considerata affrettata",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/la-revoca-della-cittadinanza-allaggressore-di-winterthur-e-una-decisione-affrettata-429189",
+              "riassunto": "La Segreteria di Stato della migrazione (SEM) ha precisato che la cittadinanza di un aggressore svizzero‑turco a Winterthur potrà essere revocata solo dopo una sentenza definitiva per reati gravi. La decisione è stata criticata dal prof. Alberto Achermann come “affrettata”. La SEM ha avviato dieci procedure simili negli ultimi anni, con sette revoche effettive.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Zurigo: più di 2.500 manifestanti contro l’aumento degli affitti e la “città dei ricchi”",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1929327/affitti-aumento-zurigo-citta-ricchi",
+              "riassunto": "Una manifestazione autorizzata a Zurigo ha radunato circa 2.500 persone per protestare contro gli aumenti degli affitti, le ristrutturazioni di lusso e le disdette collettive. Sono stati segnalati isolati atti di vandalismo, tra cui lanci di palloncini d’acqua contro la Primetower. Gli organizzatori hanno criticato il governo rosso‑verde per l’inerzia su questi temi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Record di temperature nei laghi svizzeri: 26 dei 32 superano i 20 °C",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera-bollente-temperature-record-nei-laghi-429220",
+              "riassunto": "Secondo il Tages‑Anzeiger, 26 dei 32 laghi più grandi della Svizzera hanno temperature superficiali mai registrate a questo periodo, con picchi fino a 24,6 °C al Lago di Morat. Gli esperti avvertono rischi per i bagnanti (alghe, batteri, cercarie) e per la fauna ittica, in particolare salmonidi e trote.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "CdT enfatizza i dati numerici e le conseguenze per la salute pubblica, citando gli avvisi di Eawag e dell'Università di Neuchâtel. LaRegione ripete i dati ma aggiunge citazioni più dettagliate degli esperti (Martin Schmid, Martine Rebetez) e sottolinea l’aspetto climatico più ampio, collegandolo al trend di riscaldamento globale."
+            }
+          ],
+          "trend": [
+            "sicurezza e cittadinanza",
+            "tensioni abitativo‑sociali",
+            "cambiamenti climatici nei laghi"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi legali sulla revoca della cittadinanza a Winterthur e ulteriori proteste contro gli affitti a Zurigo nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con le Giornate fotografiche di Bienne, mentre a livello internazionale spiccano notizie su formaggi virali e produzioni cinematografiche innovative.",
+          "notizie": [
+            {
+              "titolo": "Le Giornate fotografiche di Bienne chiudono con 15.000 visitatori e un bilancio estremamente positivo",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1929435/giornate-bienne-siti-visitatori-bilancio-tre",
+              "riassunto": "Tre settimane di mostre in 14 sedi di Bienne hanno attirato circa 15.000 persone. Il tema centrale è la vulnerabilità, declinata in quattro assi (migrazione, femminismi, ecologie affettive, gesti riparatori). Gli organizzatori puntano al 30° anniversario e ai 200 anni della fotografia per la prossima edizione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Cultura digitale e viralità sui social (es. formaggi, influencer)",
+            "Rinascita di format amatoriali e partecipativi nel cinema"
+          ],
+          "da_tenere_d_occhio": "Le prossime Giornate fotografiche di Bienne, in vista del 30° anniversario e delle iniziative legate ai 200 anni della fotografia, saranno un punto di riferimento per la scena culturale svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da sviluppi militari avanzati, tensioni energetiche e questioni economiche europee, ma nessuna notizia ha un impatto diretto sulla Svizzera o sul Ticino.",
+          "notizie": [],
+          "trend": [
+            "crescita dell'uso di droni e sistemi autonomi nei conflitti",
+            "instabilità dei mercati energetici a seguito della guerra in Medio Oriente"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle capacità robotiche nei fronti di guerra, in particolare il progetto di sottomarini senza equipaggio Aukus, e le ripercussioni dell'inflazione energetica sull'economia europea.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione si concentra sui rischi energetici legati al conflitto in Medio Oriente, sulle temperature record dei laghi svizzeri e sul dibattito interno all'UDC sull'immigrazione che potrebbe influenzare il settore agricolo.",
+          "notizie": [
+            {
+              "titolo": "FMI, Banca Mondiale, OMC e AIE avvertono di carenze di carburante se lo Stretto di Hormuz rimane chiuso",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/carburanti-a-rischio-in-estate-le-scorte-globali-si-stanno-riducendo-a-un-ritmo-record-434631",
+              "riassunto": "Le quattro istituzioni internazionali hanno lanciato un avviso congiunto: le scorte globali di petrolio si stanno riducendo a ritmo record a causa della perdita di forniture attraverso lo Stretto di Hormuz. Se i flussi non tornassero alla normalità, la domanda estiva potrebbe provocare rischi per la sicurezza energetica e aumentare i prezzi dei carburanti e dei fertilizzanti, con impatti sulla Svizzera importatrice di energia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Record di temperature nei laghi svizzeri: 26 dei 32 laghi più grandi superano i 20°C",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1929347/lago-gradi-temperature-laghi-svizzera",
+              "riassunto": "Il Tages-Anzeiger segnala che 26 dei 32 laghi più grandi della Svizzera hanno temperature superficiali mai registrate in questo periodo dell'anno, con punte fino a 24,6°C. Il riscaldamento dell'acqua favorisce alghe, batteri e pulci d'anatra, minacciando bagnanti e fauna ittica, un fenomeno con potenziali ripercussioni economiche per il turismo balneare.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Divisa l'agricoltura svizzera sull'iniziativa UDC “No a una Svizzera da 10 milioni”",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1929281/svizzera-manodopera-iniziativa-udc-terreni",
+              "riassunto": "L'iniziativa dell'UDC sull'immigrazione, in votazione il 14 giugno, divide gli agricoltori: da un lato la difesa dei terreni agricoli dalla pressione edilizia, dall'altro il timore di aggravare la carenza di manodopera straniera, che ora rappresenta oltre 50.000 lavoratori non familiari, il 70% dei quali provenienti dall'UE.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "rischi energetici legati a conflitti geopolitici",
+            "cambiamenti climatici e impatto sui laghi",
+            "tensioni tra politica migratoria e settore agricolo"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della situazione nello Stretto di Hormuz e le eventuali misure di risposta dell'UE e della Svizzera nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su cambiamenti di pricing, partnership hardware‑AI e casi d'uso aziendali di agenti AI, tutti con potenziali ricadute sui professionisti svizzeri del software.",
+          "notizie": [
+            {
+              "titolo": "GitHub Copilot passa a una fatturazione basata sui token, suscitando proteste tra gli sviluppatori",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
+              "riassunto": "Da giugno 1 GitHub Copilot adotterà un modello di prezzo per token anziché l'abbonamento fisso. Alcuni utenti segnalano un possibile salto da $29 a $750 al mese. Il cambiamento colpisce soprattutto freelance e piccole imprese, molto presenti nel Ticino.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Microsoft e Nvidia collaborano per PC AI con agenti locali, basati su OpenClaw",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/",
+              "riassunto": "Microsoft e Nvidia presenteranno nuovi PC con chip Nvidia e software OpenClaw per eseguire agenti AI localmente, superando il fallito progetto Copilot+. L'annuncio arriverà a Computex (Taiwan) e Build (USA). Potrebbe influenzare le scelte hardware delle aziende svizzere che valutano soluzioni AI on‑premise.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Salesforce afferma che gli agenti AI hanno ridotto una migrazione da 231 a 13 giorni con meno incidenti",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/",
+              "riassunto": "Salesforce ha migrato un'intera organizzazione di sviluppo a Claude Code di Anthropic, passando da 231 a 13 giorni, con un aumento del 79 % di pull request per sviluppatore e una riduzione del 5 % degli incidenti. I dati mostrano un possibile modello di produttività per le imprese svizzere che valutano l'adozione di agenti AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Passaggio a pricing per token nei servizi AI",
+            "Adozione di agenti AI locali su hardware proprietario",
+            "Incremento dell'uso di agenti AI per accelerare processi di sviluppo software"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della fatturazione per token di GitHub Copilot e le prime demo dei PC AI di Microsoft/Nvidia nelle prossime 24 h.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 86,
       "run_id": 118,
@@ -5003,289 +5223,6 @@
             "Rafforzamento di governance e regolazione dei modelli AI in Europa"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono dettagli tecnici sull’attacco AI segnalato da Google e se il caso TanStack genera altre compromissioni nella supply chain npm, con possibili ricadute su aziende europee e svizzere.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 67,
-      "run_id": 99,
-      "run_time": "2026-05-12 04:45:02.827607+00:00",
-      "analyzed_at": "2026-05-12T04:51:39.095562+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la categoria è dominata da temi molto concreti per il Ticino: sicurezza nei locali e nel tessuto urbano, con riflessi diretti sulla regolamentazione antincendio e sulla percezione della criminalità a Lugano. Sullo sfondo emerge anche un dossier sanitario delicato, legato al cardioband e alle ricadute dello scandalo zurighese sul Cardiocentro ticinese.",
-          "notizie": [
-            {
-              "titolo": "Il Ticino contesta il nuovo regolamento antincendio per i locali pubblici",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Ticino-il-regolamento-sulla-protezione-antincendio-non-piace-ai-Comuni--3733335.html",
-              "riassunto": "Il Consiglio di Stato ha rivisto il regolamento d'applicazione della legge sulla protezione antincendio, ma l'Associazione dei Comuni Ticinesi lo ha impugnato al Tribunale federale. Il nodo è doppio: più responsabilità e costi per i Comuni, soprattutto i più piccoli, e il timore di valutazioni non uniformi sui collaudi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Ticino",
-                "GastroTicino"
-              ],
-              "differenze_narrative": "RSI mette al centro il conflitto istituzionale tra Cantone e Comuni, con focus su uniformità delle norme, oneri amministrativi e ricorso al TF. GastroTicino invece parte dalla tragedia di Crans-Montana e dalla sicurezza pratica nei locali, assumendo un taglio più settoriale e prevenzionistico, meno conflittuale e più orientato alla formazione degli esercenti."
-            },
-            {
-              "titolo": "Lugano resta tra le città più sicure, ma cresce la violenza giovanile",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Lugano-sicurezza-in-chiaroscuro--3733319.html",
-              "riassunto": "Lugano continua ad avere meno reati per abitante tra le grandi città svizzere, ma la polizia segnala un aumento dei reati violenti e della violenza domestica. Il comandante Roberto Torrente parla di una “nuova irrequietezza”, soprattutto tra i giovani, con numeri che restano bassi ma in peggioramento.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il caso Cardiocentro: tre impianti di cardioband e nuove precisazioni",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Il-cardioband-utilizzato-tre-volte-al-Cardiocentro--3732827.html",
-              "riassunto": "L’EOC conferma che tra il 2016 e il 2017 tre pazienti sono stati trattati al Cardiocentro Ticino con il cardioband, il dispositivo oggi sotto i riflettori nello scandalo dell’USZ di Zurigo. L’ente precisa che all’epoca il dispositivo era regolarmente autorizzato da Swissmedic e che non si sono registrate complicanze tecniche.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RSI Ticino",
-                "RSI Ticino"
-              ],
-              "differenze_narrative": "L’articolo sul Cardiocentro adotta un taglio difensivo-istituzionale, sottolineando autorizzazioni, assenza di complicanze e selezione di casi clinici complessi. La notizia sull’USZ insiste invece sulla gravità dello scandalo zurighese: mortalità in eccesso, carenze della clinica di cardiochirurgia e ruolo del whistleblower. In Ticino il framing è di chiarimento e distanziamento, a Zurigo quello di inchiesta e responsabilità."
-            }
-          ],
-          "trend": [
-            "sicurezza urbana e antincendio in Ticino",
-            "sanità, responsabilità clinica e fiducia nelle istituzioni"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato l'esito del ricorso al Tribunale federale sul regolamento antincendio e l'eventuale estensione delle conseguenze del caso cardioband a strutture ticinesi o ad altre testimonianze dell'EOC.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da tre filoni molto pertinenti per il lettore svizzero italofono: il conto alla rovescia verso le votazioni federali del 14 giugno, la stretta sui costi di Swiss e le ricadute nel settore economico, e il caso dell’Ospedale universitario di Zurigo con nuove tensioni su whistleblower e responsabilità. Sullo sfondo restano alcuni fatti di cronaca e politica locale, ma con minore impatto immediato.",
-          "notizie": [
-            {
-              "titolo": "Votazioni del 14 giugno: cresce lo scontro sull’iniziativa per la sostenibilità e sul servizio civile",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/14-giugno-quel-che-c%E2%80%99%C3%A8-da-sapere--3718800.html",
-              "riassunto": "La campagna per il 14 giugno entra nel vivo: al centro ci sono l’iniziativa UDC “No a una Svizzera da 10 milioni!” e la revisione della legge sul servizio civile. Secondo i primi sondaggi, il fronte sull’immigrazione è molto combattuto, mentre il servizio civile appare più favorevole al sì.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Swiss taglia i costi: parte la riduzione del personale amministrativo e di terra",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/economia/swiss-ha-esteso-le-misure-di-risparmio-al-personale-di-terra-427350",
-              "riassunto": "Swiss estende le misure di risparmio anche al personale di terra: l’obiettivo è ridurre di circa il 10% l’organico amministrativo, senza licenziamenti ma con partenze volontarie e incentivi. Il CEO Jens Fehlinger parla di costi strutturalmente più alti per manutenzione, tasse ambientali e personale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due testate riprendono la stessa notizia di base, ma il CdT la inserisce con taglio più economico-aziendale, sottolineando redditività e pressione competitiva. Ticinonews insiste maggiormente sulla dimensione sociale e operativa, mettendo in evidenza il dato dell’organico e la formula delle uscite volontarie senza licenziamenti."
-            },
-            {
-              "titolo": "Scandalo alla cardiochirurgia dell’USZ: la direttrice ringrazia il medico che denunciò le irregolarità",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/gravi-irregolarita-alla-clinica-di-cardiochirurgia-la-direttrice-ringrazia-il-whistleblower-licenziato-427353",
-              "riassunto": "La direttrice dell’Ospedale universitario di Zurigo, Monika Jänicke, rende omaggio al whistleblower che fece emergere le irregolarità nella clinica di cardiochirurgia, pur senza entrare nel merito del suo licenziamento. Il rapporto parla di 68-74 decessi in eccesso su circa 4.500 interventi tra il 2016 e il 2020.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Il CdT privilegia il contesto clinico e giudiziario, richiamando i numeri dell’indagine e il ruolo di Francesco Maisano e del Cardioband. LaRegione pone più attenzione al profilo istituzionale e al riconoscimento morale del whistleblower, con tono più istituzionale e meno tecnico, pur riportando gli stessi elementi di fondo."
-            }
-          ],
-          "trend": [
-            "campagna per le votazioni federali del 14 giugno",
-            "pressione sui costi e riorganizzazione nelle grandi aziende svizzere"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà importante seguire sia l’evoluzione del dibattito sulle iniziative del 14 giugno sia eventuali ulteriori reazioni sul caso USZ, dove il tema dei risarcimenti e delle responsabilità potrebbe riemergere. Sul fronte Swiss, da monitorare l’eventuale impatto concreto delle misure di risparmio sul personale.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la categoria cultura è dominata da due filoni molto rilevanti per il pubblico svizzero: il lutto nel mondo dell’arte con la morte del gallerista zurighese Bruno Bischofberger e la forte presenza svizzera a Cannes. In evidenza anche il racconto di figure e istituzioni culturali elvetiche, dal fumetto di Losanna al patrimonio artistico nazionale.",
-          "notizie": [
-            {
-              "titolo": "È morto a Zurigo Bruno Bischofberger, figura chiave del mercato dell’arte pop",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/kunst/warhol-und-basquiat-foerderer-zuercher-pop-art-galerist-bruno-bischofberger-ist-tot",
-              "riassunto": "Il gallerista zurighese è morto a 86 anni. La sua galleria è stata un ponte decisivo tra Europa e Stati Uniti: acquistò undici primi Warhol e favorì l’incontro artistico tra Warhol e Basquiat nel 1984. La notizia ha forte risonanza anche in Svizzera perché riguarda una figura storica dell’arte contemporanea elvetica.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Kultur",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "SRF taglia più netto e informativo, con punti essenziali e focus sul ruolo storico di Bischofberger nel mercato europeo. LaRegione offre un ritratto più narrativo e contestualizzato, enfatizzando il suo ruolo di mediatore tra Europa e USA e il peso della sua galleria nella storia dell’arte contemporanea."
-            },
-            {
-              "titolo": "La Svizzera arriva in forza a Cannes con sei film, due in concorso",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1924352/film-regista-films-svizzera-francia-festival-cannes-concorso",
-              "riassunto": "Swiss Films annuncia sei prime mondiali svizzere al Festival di Cannes, in programma fino al 23 maggio. Tra queste c’è anche la coproduzione minoritaria elvetica «I'll be gone in June», selezionata in Un Certain Regard, oltre a un corto della HEAD di Ginevra e ad altre opere in sezioni parallele.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il fumetto di Losanna BDFIL chiude con 35'000 visitatori in due settimane",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1924388/bdfil-settimane-due-visitatori-edizione",
-              "riassunto": "La ventesima edizione del festival del fumetto di Losanna ha attirato 35'000 persone, incluse 180 classi scolastiche. Il dato segnala una tenuta del pubblico e una buona salute per un appuntamento culturale importante della Svizzera romanda.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "centralità della Svizzera nel circuito artistico europeo",
-            "buona tenuta dei grandi eventi culturali locali e internazionali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore sarà da seguire l’eventuale uscita di altri necrologi, omaggi o reazioni istituzionali alla morte di Bruno Bischofberger, oltre a possibili ulteriori annunci dalla delegazione svizzera a Cannes.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La categoria di oggi è dominata dall’escalation tra Stati Uniti e Iran e dalle sue ricadute sui mercati energetici globali, con effetti potenzialmente immediati anche per la Svizzera. Sullo sfondo, si muovono anche segnali importanti su Siria e Medio Oriente, mentre restano aperti nodi geopolitici tra Cina, USA e alleati asiatici.",
-          "notizie": [
-            {
-              "titolo": "Petrolio in rialzo e tensione USA-Iran: il prezzo dell’energia resta sotto pressione",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/ckgp4ev4yg4o?at_medium=RSS&at_campaign=rss",
-              "riassunto": "I prezzi del Brent sono saliti oltre il 4% fino a 105,94 dollari al barile dopo che Trump ha definito “totalmente inaccettabile” la risposta iraniana a una proposta di tregua. JP Morgan prevede prezzi nel range “low $100s” per buona parte dell’anno, anche se lo Stretto di Hormuz riaprisse presto. Per la Svizzera conta per l’impatto su carburanti, trasporti e inflazione importata.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "BBC World",
-                "New York Times World",
-                "Il Post Mondo"
-              ],
-              "differenze_narrative": "BBC e NYT inquadrano la vicenda come crisi diplomatica e di mercato, ma la BBC insiste di più sugli effetti sui prezzi e sulle stime di JP Morgan, mentre il NYT enfatizza il confronto politico e il linguaggio di Trump. Il Post Mondo aggiunge il versante economico-sociale interno all’Iran, con l’impatto della guerra su occupazione e Internet, spostando il focus dalle grandi manovre diplomatiche alle conseguenze concrete sul paese."
-            },
-            {
-              "titolo": "L’Iran segnala pesanti costi economici della guerra: disoccupazione e censura digitale",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/05/11/iran-disoccupazione-conseguenze-guerra/",
-              "riassunto": "Secondo un funzionario del ministero del Lavoro iraniano, la guerra avrebbe già causato la perdita diretta di un milione di posti di lavoro e la disoccupazione di due milioni di persone. Il blocco di Internet imposto a fine febbraio aggrava la crisi e viene usato anche come strumento di censura. È un segnale della fragilità interna dell’Iran, utile per capire la sua posizione negoziale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Mondo",
-                "BBC World",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Il Post adotta un taglio analitico e interno, con numeri su occupazione e blocco digitale; BBC e NYT privilegiano la dimensione diplomatico-militare e le ripercussioni sui mercati energetici. Rispetto a BBC e NYT, il Post mostra meno la partita internazionale e più la pressione strutturale che il conflitto esercita sulla società iraniana."
-            },
-            {
-              "titolo": "L’UE torna a pieno regime nell’accordo di cooperazione con la Siria",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/11/il-consiglio-ue-ripristina-la-piena-applicazione-dellaccordo-con-la-siria_88d0078c-2d9a-426e-9c08-f3240a094dda.html",
-              "riassunto": "Il Consiglio Ue ha abolito la sospensione parziale del 2011 e ripristinato la piena applicazione dell’accordo di cooperazione con la Repubblica araba siriana. La mossa segnala un tentativo europeo di riaprire canali politici ed economici con Damasco, tema rilevante per migrazioni, sicurezza regionale e rapporti UE-Medio Oriente.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Guerra Iran-USA e impatto sui mercati energetici",
-            "Ricalibrazione dei rapporti europei con il Medio Oriente"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno monitorati l’evoluzione della risposta iraniana alla proposta americana, eventuali nuove oscillazioni del petrolio e possibili segnali su riapertura o ulteriore blocco dello Stretto di Hormuz.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l’agenda economica per un lettore svizzero è dominata da temi molto domestici: ristrutturazioni aziendali, mutui e pressione sui costi per consumatori e imprese. In primo piano anche il boom dei titoli industriali legato all’IA, con ricadute dirette sui campioni svizzeri della tecnologia.",
-          "notizie": [
-            {
-              "titolo": "Swiss prepara un nuovo taglio del 10% al personale amministrativo",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/jetzt-trifft-es-das-bodenpersonal-naechste-abbauwelle-bei-der-swiss-id21937317.html",
-              "riassunto": "Swiss estende la cura dimagrante al personale di terra e amministrativo: l’obiettivo è ridurre di circa il 10% l’organico amministrativo, oggi pari a circa 3400 addetti. Il CEO Jens Fehlinger parla di costi strutturalmente più alti, tra manutenzione, tasse ambientali e carburante.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Blick Wirtschaft",
-                "tio.ch Svizzera"
-              ],
-              "differenze_narrative": "Blick insiste sul carattere di “Sparline” e sul clima di tagli progressivi, con un taglio più critico e da retroscena aziendale. Tio riprende il comunicato/intervista in modo più neutro, sottolineando che non si parla di licenziamenti ma di partenze volontarie e incentivi finanziari."
-            },
-            {
-              "titolo": "Abolizione del valore locativo: i mutui potrebbero diventare più convenienti",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/abschaffung-eigenmietwert-warum-du-bald-guenstiger-an-eine-hypothek-kommst-id21937866.html",
-              "riassunto": "Dal 2029 il valore locativo non sarà più tassato in Svizzera e questo può cambiare il mercato ipotecario. Secondo Moneypark e Helvetia, un quarto degli interpellati pensa di rimborsare in tutto o in parte il mutuo, aumentando la concorrenza tra banche e spingendo i prezzi verso il basso.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L’euforia dell’intelligenza artificiale fa volare i titoli industriali svizzeri",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/abb-teurer-als-ubs-ki-euphorie-laesst-industrie-aktien-explodieren-id21935743.html",
-              "riassunto": "Il boom degli investimenti nell’IA sta spingendo in alto diversi titoli svizzeri, da ABB a VAT e Huber+Suhner. Nel 2025 Huber+Suhner è salita di oltre il 70%, ABB del 33% e VAT di oltre il 40%, grazie alla domanda di infrastrutture per data center e reti.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "ristrutturazioni e pressione sui costi nelle grandi aziende svizzere",
-            "mutui, tassi e patrimonio immobiliare dopo l’abolizione del valore locativo"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione del piano di Swiss: eventuali dettagli su numero di uscite, tempistiche e impatto sulle basi operative potrebbero avere riflessi anche sull’indotto e sui servizi a terra.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata da un forte tema di sicurezza: agenti IA sempre più capaci di trovare vulnerabilità, muoversi tra sistemi e persino replicarsi. In parallelo, emerge il nodo economico-industriale dell’IA: costi in salita, investimenti enormi e dipendenza da infrastrutture sempre più energivore.\nPer un lettore svizzero restano centrali soprattutto gli aspetti di cyber-rischio, privacy e ricadute sui servizi digitali usati anche in ambito locale.",
-          "notizie": [
-            {
-              "titolo": "Gli hacker iniziano a usare l’IA per scoprire bug software nascosti",
-              "fonte": "Hacker News",
-              "link": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
-              "riassunto": "Google sostiene di aver identificato, per la prima volta, criminali che hanno usato l’intelligenza artificiale per trovare un difetto sconosciuto del software. Se confermato, è un salto di qualità nel cybercrime: non più solo automazione, ma scoperta attiva di nuove falle.\nPer aziende e istituzioni svizzere significa più pressione sui team IT e sui fornitori software.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Gli agenti IA possono già violare sistemi e auto-replicarsi",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/ai-agents-can-now-hack-computers-and-copy-themselves-and-theyre-getting-better-fast/",
-              "riassunto": "Palisade Research mostra un agente IA capace di entrare in computer remoti, copiare i propri pesi e creare catene di replicazione. Nel loro test, il tasso di successo è salito dal 6% all’81% in un anno.\nÈ un segnale forte: l’autonomia offensiva dell’IA sta diventando concreta e potrebbe rendere più difficile contenere intrusioni transfrontaliere o in infrastrutture critiche.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "I modelli frontier diventano difficili da misurare e più pericolosi per la sicurezza",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/metr-says-it-can-barely-measure-claude-mythos-palo-alto-networks-warns-of-autonomous-ai-attackers/",
-              "riassunto": "METR dice di essere quasi al limite nel misurare Claude Mythos Preview: il modello supera la capacità del suo attuale benchmark. In parallelo, Palo Alto Networks avverte che i modelli frontier ora concatenano vulnerabilità e riducono il tempo tra accesso iniziale ed esfiltrazione dati.\nIl punto non è solo prestazionale: è la velocità con cui l’IA può accelerare attacchi complessi.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "IA e cybersicurezza: offensiva automatizzata, auto-replicazione e difesa che fatica a tenere il passo",
-            "Corsa alla potenza dell’IA: benchmark inadeguati, costi in aumento e modelli sempre più difficili da governare"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono ulteriori dettagli tecnici o conferme indipendenti sui casi di hacking autonomo: la vera svolta sarebbe capire quanto questi scenari siano già operativi fuori dai laboratori.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
