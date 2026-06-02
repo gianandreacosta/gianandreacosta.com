@@ -1,0 +1,372 @@
+{
+ "data": "Martedì 2 giugno 2026",
+ "verifica": {
+  "ver": 28,
+  "tot": 28
+ },
+ "totale_raccolte": 1113,
+ "categorie": [
+  {
+   "key": "cronaca_ticino",
+   "emoji": "📌",
+   "nome": "Cronaca Ticino",
+   "sommario": "Giornata dominata da due fatti di cronaca freschi nel Bellinzonese e nel Mendrisiotto (gas urticante su un bus, arresti a Chiasso). Sul piano cantonale pesa il dossier delle iniziative sulle casse malati, lunedì in Gran Consiglio.",
+   "raccolte": 172,
+   "stories": [
+    {
+     "titolo": "Gas urticante su un bus a Galbisio: tre persone in ospedale",
+     "fonte": "RSI Ticino",
+     "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Bellinzonese-gas-urticante-sul-bus-3-persone-all%E2%80%99ospedale--3792842.html",
+     "riassunto": "Martedì pomeriggio, verso le 13:45, una sostanza urticante si è diffusa nell'abitacolo di un bus di linea a Galbisio (tratta Castione–Monte Carasso), costringendo all'evacuazione del mezzo con una decina di passeggeri. All'origine una bomboletta di gas urticante. Tre persone — due bambini e un adulto — sono state portate in ospedale per controlli; una decina di passeggeri è stata visitata sul posto. La polizia ha chiuso temporaneamente il tratto di strada; le cause restano ignote.",
+     "rilevanza": 82,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Furti con scasso: tre arresti a Chiasso",
+     "fonte": "RSI Ticino",
+     "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Furti-con-scasso-tre-arresti-a-Chiasso--3792911.html",
+     "riassunto": "Due cittadini cileni (26 e 21 anni) e un cubano 26enne residente in Italia sono stati fermati a Chiasso dall'Ufficio federale della dogana e della sicurezza dei confini, sospettati di una serie di furti con scasso in abitazioni. Nell'auto con targhe italiane sono stati trovati attrezzi per lo scasso e refurtiva, in parte recuperata. L'arresto è stato confermato dal giudice dei provvedimenti coercitivi; le accuse sono furto con scasso, danneggiamento e violazione di domicilio.",
+     "rilevanza": 78,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Casse malati: la perizia smentisce il Governo, le iniziative entrano in vigore",
+     "fonte": "RSI Ticino",
+     "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Iniziative-casse-malati-perizie-e-costi-dividono-i-partiti--3793118.html",
+     "riassunto": "In vista della seduta di lunedì del Gran Consiglio, una perizia del Centro per la Democrazia di Aarau conclude che non si può vincolare l'entrata in vigore delle due iniziative cantonali sulle casse malati (approvate dal popolo a settembre) al reperimento delle coperture finanziarie — posizione che smentisce il Governo. Sui costi dell'iniziativa della Sinistra (premi al 10% del reddito), il Consiglio di Stato stima 300 milioni col premio di riferimento, che scendono a 130 milioni col premio effettivo.",
+     "rilevanza": 72,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Grandi ustionati: nasce a Crans-Montana l'associazione Initiative Phoenix",
+     "fonte": "RSI",
+     "link": "https://www.rsi.ch/info/svizzera/Phoenix-d%C3%A0-una-mano-ai-grandi-ustionati--3792815.html",
+     "riassunto": "A cinque mesi dall'incendio di Crans-Montana (1° gennaio) nasce l'associazione di volontariato Initiative Phoenix, per sostenere cure e innovazione medica nel campo dei grandi ustionati. La presidenza è del dottor Johann Wary, specialista in chirurgia plastica; vicepresidente l'ex chef stellato Didier de Courten. Il comitato conta otto persone e un comitato scientifico di sei medici belgi e svizzeri.",
+     "rilevanza": 42,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  },
+  {
+   "key": "cronaca_svizzera",
+   "emoji": "🇨🇭",
+   "nome": "Cronaca Svizzera",
+   "sommario": "Domina il dibattito su migrazione e popolazione: revoca della cittadinanza all'aggressore di Winterthur e sondaggio sulla crescita demografica a due settimane dal voto UDC. In primo piano anche temi RSI/SRF/RTS e i 5 miliardi per la ricostruzione dell'Ucraina.",
+   "raccolte": 134,
+   "stories": [
+    {
+     "titolo": "La revoca della cittadinanza all'aggressore di Winterthur è «affrettata»",
+     "fonte": "CdT / SRF",
+     "link": "https://www.cdt.ch/news/la-revoca-della-cittadinanza-allaggressore-di-winterthur-e-una-decisione-affrettata-429189",
+     "riassunto": "Dopo l'aggressione a coltellate a Winterthur, le autorità zurighesi vorrebbero revocare la cittadinanza all'autore, uno svizzero-turco con doppia nazionalità. La SEM frena: la revoca è possibile solo con sentenza definitiva per reati gravissimi. Il portavoce SEM (al TG SRF) cita dieci procedure negli ultimi anni, sette con revoca. Il giurista Alberto Achermann (Università di Berna) la definisce «decisione affrettata».",
+     "rilevanza": 90,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Due svizzeri su tre favorevoli alle misure per frenare la popolazione",
+     "fonte": "CdT Svizzera",
+     "link": "https://www.cdt.ch/news/due-svizzeri-su-tre-favorevoli-alle-misure-per-frenare-la-popolazione-429479",
+     "riassunto": "A meno di due settimane dal voto sull'iniziativa UDC, un sondaggio Demoscope per Infosperber (1.110 aventi diritto, 21–31 maggio) mostra una popolazione preoccupata dalla crescita demografica: il 51% giudica problematica una Svizzera oltre i 10 milioni di abitanti e il 62% sostiene misure per frenarne l'aumento, pur mantenendo la libera circolazione. Sostegno più forte nella Svizzera tedesca (66%) che in Romandia (51%).",
+     "rilevanza": 85,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Ricostruzione dell'Ucraina: il Nazionale apre al settore privato svizzero",
+     "fonte": "Ticinonews",
+     "link": "https://www.ticinonews.ch/svizzera/la-ricostruzione-dellucraina-deve-coinvolgere-maggiormente-il-settore-privato-svizzero-434819",
+     "riassunto": "Il Consiglio nazionale ha approvato (148 a 9, 38 astensioni) un accordo con Kiev per coinvolgere il settore privato svizzero nella ricostruzione dell'Ucraina, soprattutto in ambito energetico e infrastrutturale: 1,5 miliardi per il 2025-2028 e 5 miliardi complessivi fino al 2036, con aiuti a fondo perso legati ad acquisti presso aziende elvetiche. Il ministro Parmelin ha definito «esemplare» il modello svizzero.",
+     "rilevanza": 78,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Pacchi Amazon mai ordinati: il caso «brushing» finisce a RTS e SRF",
+     "fonte": "CdT / RTS / SRF",
+     "link": "https://www.cdt.ch/news/svizzera/riceve-pacchi-amazon-ogni-giorno-senza-aver-ordinato-nulla-il-mistero-del-brushing-427858",
+     "riassunto": "Una famiglia di Bienne ha ricevuto per settimane pacchi Amazon mai ordinati: dietro ci sarebbe il «brushing», pratica fraudolenta che spedisce prodotti economici a indirizzi ottenuti illegalmente per pubblicare false recensioni. Il caso, riportato da RTS, è arrivato anche alla trasmissione SRF «Espresso». Nemmeno l'account bloccato di un 17enne spiega del tutto la vicenda.",
+     "rilevanza": 68,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Lanciata l'iniziativa per la sicurezza digitale della Svizzera",
+     "fonte": "RSI Svizzera",
+     "link": "https://www.rsi.ch/info/svizzera/Lanciata-l%E2%80%99iniziativa-per-una-maggiore-sicurezza-digitale--3791825.html",
+     "riassunto": "L'associazione Swiss Digital Pact ha lanciato l'iniziativa popolare «Per la sicurezza digitale della Svizzera», che chiede di sancire a livello costituzionale fiducia, sicurezza e sovranità digitale, con disposizioni vincolanti per attori pubblici e privati. Il presidente Gérald Vernez chiede che la sicurezza digitale sia una missione centrale dello Stato.",
+     "rilevanza": 60,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  },
+  {
+   "key": "cultura",
+   "emoji": "🎭",
+   "nome": "Cultura",
+   "sommario": "Settimana dominata dal cinema: Locarno chiude in attivo e Cannes premia Mungiu con la seconda Palma d'oro. Lutto culturale per Edgar Morin (104 anni). In Ticino spazio al festival organistico di Magadino.",
+   "raccolte": 112,
+   "stories": [
+    {
+     "titolo": "Locarno Film Festival: conti solidi, utile di 115'000 franchi",
+     "fonte": "RSI Cultura",
+     "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Locarno-Film-Festival-finanze-solide-e-pi%C3%B9-collaborazione-coi-privati--3775024.html",
+     "riassunto": "Il Locarno Film Festival chiude l'edizione 2025 con un utile di 115'000 franchi su un budget di 18 milioni, confermato per il 2026. Per la prima volta il contributo dei privati (39%) supera quello pubblico (38%). L'edizione 2026 tornerà allo schermo storico di Livio Vacchini in Piazza Grande; tra gli ospiti annunciati Darren Aronofsky e Isabella Rossellini.",
+     "rilevanza": 92,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Addio a Edgar Morin, il filosofo della complessità",
+     "fonte": "RSI Cultura",
+     "link": "https://www.rsi.ch/info/cultura-e-spettacoli/Addio-al-sociologo-e-filosofo-francese-Edgar-Morin--3781483.html",
+     "riassunto": "È morto a 104 anni Edgar Morin, sociologo e filosofo francese tra le figure più note della vita intellettuale del Novecento. Si definiva un «bracconiere del sapere». Pensatore di orientamento di sinistra, costruì una riflessione sull'Uomo a partire dai dati della scienza, restando attivo nel dibattito fino agli ultimi giorni.",
+     "rilevanza": 85,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Cannes: seconda Palma d'oro per Cristian Mungiu con «Fjord»",
+     "fonte": "RSI Cultura",
+     "link": "https://www.rsi.ch/info/cultura-e-spettacoli/Cannes-seconda-Palma-d%E2%80%99oro-per-Cristian-Mungiu--3764089.html",
+     "riassunto": "La Palma d'oro del 79mo Festival di Cannes va a «Fjord» di Cristian Mungiu, secondo trionfo per il regista rumeno dopo il 2007, scelto fra 22 pellicole in concorso. Edizione segnata da premi ex aequo per le interpretazioni.",
+     "rilevanza": 78,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Magadino, 63 anni di musica: un libro sul Festival organistico",
+     "fonte": "Ticinonews",
+     "link": "https://www.ticinonews.ch/magazine/magadino-63-anni-di-musica-un-libro-racconta-il-festival-internazionale-organistico-432909",
+     "riassunto": "Esce «2300 canne», volume di Giuseppe Clericetti sulla storia del Festival internazionale di musica organistica di Magadino, nato nel 1963 e tra le rassegne organistiche più longeve d'Europa. Al centro l'organo Balbiani del 1902. Le registrazioni della RSI ne hanno diffuso il nome oltre i confini.",
+     "rilevanza": 70,
+     "rsi": true,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Patrick Bruel annulla Pully e rinvia Friburgo dopo accuse di molestie",
+     "fonte": "LaRegione",
+     "link": "https://www.laregione.ch/culture/spettacoli/1929230/festival-concerto-pully-friburgo-bruel-molestie-accuse-patrick",
+     "riassunto": "Il cantante francese Patrick Bruel, sotto accusa per molestie sessuali, non si esibirà in Svizzera quest'estate: dopo il rinvio del 26 giugno a Friburgo ha annullato anche il 25 giugno al Pully Live Festival. La procura di Nanterre indaga su quattro denunce per stupro; un'inchiesta è aperta in Belgio.",
+     "rilevanza": 62,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  },
+  {
+   "key": "geopolitica",
+   "emoji": "🌍",
+   "nome": "Geopolitica & Esteri",
+   "sommario": "L'escalation Israele-Libano domina lo scenario: l'avanzata israeliana ha bloccato i negoziati USA-Iran e gelato i mercati asiatici. Sul fronte europeo, intesa UE sui rimpatri e indiscrezioni del FT su armi nucleari USA in nuovi Paesi NATO dell'Est.",
+   "raccolte": 571,
+   "stories": [
+    {
+     "titolo": "Libano: Israele pronto a colpire Beirut, fermato dagli USA",
+     "fonte": "ANSA (Kan/Haaretz)",
+     "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/01/media-israele-stava-per-attaccare-beirut-fermato-dagli-usa_906dc61e-4d49-4a96-9b35-7bd5e8e57a20.html",
+     "riassunto": "Secondo la tv pubblica israeliana Kan, Israele aveva pianificato un attacco su vasta scala contro la roccaforte di Hezbollah a Dahiyeh (Beirut), rinviato all'ultimo minuto per l'intervento USA. Trump dice di aver escluso «truppe dirette a Beirut» e rivendica un'intesa con Hezbollah; Netanyahu però (via Haaretz) avverte che colpirà Beirut se gli attacchi non cesseranno. Un equilibrio fragile, con Washington nel ruolo di freno.",
+     "rilevanza": 90,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Iran: Teheran blocca i negoziati, Trump minimizza",
+     "fonte": "ANSA Mondo",
+     "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/01/trump-non-mi-importa-se-i-negoziati-con-liran-sono-finiti_7c114036-a6a7-4b93-bae2-0da9f15c77e9.html",
+     "riassunto": "Teheran ha sospeso i negoziati nucleari per protesta contro l'escalation israeliana in Libano. Trump, alla CNBC, minimizza: «Non mi importa se sono finiti». La dichiarazione stride con le sue stesse parole su colloqui «a ritmo serrato»: è il fattore che ha innescato l'incertezza sui mercati e sullo Stretto di Hormuz.",
+     "rilevanza": 80,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Accordo UE sul regolamento rimpatri: sì agli hub in Paesi terzi",
+     "fonte": "ANSA Mondo",
+     "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/01/accordo-in-ue-sul-regolamento-rimpatri-si-agli-hub-in-paesi-terzi_45366dd2-9f4f-4325-9246-7053a7a3f3b9.html",
+     "riassunto": "Parlamento e Consiglio UE hanno trovato l'intesa nel trilogo sul regolamento rimpatri, ultimo tassello del nuovo Patto Migrazione e Asilo. Le norme impongono obblighi di cooperazione ai cittadini di Paesi terzi senza diritto di soggiorno e aprono alla creazione di hub per i rimpatri in Paesi terzi. L'intesa deve ancora passare da commissione Libe e plenaria. Tema di forte interesse per la Svizzera.",
+     "rilevanza": 78,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "FT: gli USA valutano armi nucleari in altri Paesi NATO dell'Est",
+     "fonte": "ANSA (Financial Times)",
+     "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/02/ft-usa-stanno-discutendo-idea-armi-nucleari-in-altri-paesi-nato_64d8077d-e4ca-494d-afd6-e4297b03f8d7.html",
+     "riassunto": "Secondo il Financial Times, gli Stati Uniti starebbero valutando lo schieramento di armi nucleari in altri Stati NATO europei per rassicurare gli alleati a fronte della riduzione del supporto convenzionale americano. I più interessati a ospitare basi a duplice capacità sarebbero Polonia e alcuni Stati baltici. Notizia basata su fonti anonime citate dal FT.",
+     "rilevanza": 75,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Borsa di Tokyo in calo sull'incertezza mediorientale",
+     "fonte": "ANSA Mondo",
+     "link": "https://www.ansa.it/sito/notizie/mondo/asia/2026/06/02/borsa-di-tokyo-apertura-in-calo-052_008af2bc-692b-41ea-b8be-430c22c5565a.html",
+     "riassunto": "La Borsa di Tokyo apre in calo dello 0,52% (Nikkei -345 punti) sull'incertezza per l'assenza di un accordo Iran-USA e la mancata riapertura dello Stretto di Hormuz, mentre prosegue l'avanzata israeliana in Libano. È il termometro finanziario della crisi.",
+     "rilevanza": 62,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  },
+  {
+   "key": "economia",
+   "emoji": "💰",
+   "nome": "Economia & Finanza",
+   "sommario": "Giornata di temi fiscali e di regolazione svizzeri: doppio voto delle Camere su IVA e tax free, inchiesta MPC per corruzione contro il colosso ginevrino Gunvor, e l'allarme di Swisscamps sulla capacità ricettiva.",
+   "raccolte": 67,
+   "stories": [
+    {
+     "titolo": "Perquisita a Ginevra la sede di Gunvor per sospetta corruzione",
+     "fonte": "tio.ch / RSI",
+     "link": "https://www.tio.ch/svizzera/cronaca/1929776/stata-gunvor-corruzione-ginevra-perquisita-sede",
+     "riassunto": "Il Ministero pubblico della Confederazione ha fatto perquisire a maggio, tramite fedpol, la sede ginevrina del trader di materie prime Gunvor, per sospetta corruzione di pubblici ufficiali stranieri. Nel mirino, secondo l'ONG Public Eye, un contratto petrolifero in Gabon del 2024 con presunti pagamenti paralleli. Gunvor respinge le accuse (inchiesta contro ignoti), ma ha già due condanne in Svizzera (Congo/Costa d'Avorio 2019, Ecuador 2024).",
+     "rilevanza": 88,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Rimborso IVA ai turisti: il Nazionale abbassa la soglia a 150 franchi",
+     "fonte": "tio.ch Svizzera",
+     "link": "https://www.tio.ch/svizzera/economia/1929818/svizzera-franchi-soglia-nazionale-rimborso-iva",
+     "riassunto": "Il Consiglio nazionale ha approvato (128 a 65) la mozione di Leo Müller per abbassare da 300 a 150 franchi la soglia minima di spesa per il rimborso IVA ai turisti, per rafforzare la competitività nel tax free. Favorevole anche il Consiglio federale (Keller-Sutter). Minori entrate stimate in circa 2 milioni; contrario il PS. Il dossier passa agli Stati.",
+     "rilevanza": 80,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Dogane: la nuova app QuickZoll calcola anche l'aliquota ridotta 2,6%",
+     "fonte": "tio.ch / RSI",
+     "link": "https://www.tio.ch/svizzera/attualita/1929817/aliquota-beni-app-spesa-franchi",
+     "riassunto": "L'Ufficio federale della dogana ha aggiornato l'app QuickZoll: ora si può autodichiarare la spesa transfrontaliera anche con l'aliquota ridotta del 2,6% sui beni di largo consumo, oltre all'8,1% normale. Tema rilevante per il Ticino di frontiera (soglia esenzione IVA a 150 fr./giorno da gennaio 2025). L'uso dell'app è passato da 13'000 dichiarazioni nel 2018 a oltre 192'000 nel 2025.",
+     "rilevanza": 72,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Crans-Montana: gli Stati sbloccano 20 milioni federali per la tavola rotonda",
+     "fonte": "tio.ch Svizzera",
+     "link": "https://www.tio.ch/svizzera/politica/1929800/rotonda-tavola-crans-montana-dossier-va",
+     "riassunto": "Il Consiglio degli Stati ha approvato (36 a 7) la partecipazione finanziaria federale alla tavola rotonda istituita dopo l'incendio di Capodanno a Crans-Montana (41 morti, 115 feriti), sbloccando i 20 milioni chiesti dal Governo. La struttura riunisce vittime, assicuratori e autorità per favorire accordi amichevoli. Il dossier passa al Nazionale.",
+     "rilevanza": 48,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  },
+  {
+   "key": "ai_openclaw",
+   "emoji": "🤖",
+   "nome": "AI & Tech",
+   "sommario": "Settimana densa sull'AI: Anthropic verso la mega-IPO, Microsoft ammette il ritardo su Copilot, la Florida fa causa a OpenAI e il Vaticano dedica un'enciclica all'AI. Sul fronte sicurezza, una falla nel chatbot di Meta ha dirottato account Instagram di alto profilo.",
+   "raccolte": 57,
+   "stories": [
+    {
+     "titolo": "Anthropic verso la quotazione: depositati i documenti per una mega-IPO",
+     "fonte": "New York Times",
+     "link": "https://www.nytimes.com/2026/06/01/technology/anthropic-ipo.html",
+     "riassunto": "Anthropic (l'azienda dietro Claude) ha avviato il processo di quotazione in borsa, in corsa testa a testa con OpenAI. La crescita esplosiva dell'ultimo anno è trainata soprattutto dalla tecnologia per la scrittura automatica di codice. NB: il corpo dell'articolo NYT non era disponibile, quindi mancano valutazione e tempistiche — riassunto basato su titolo e sommario.",
+     "rilevanza": 92,
+     "rsi": false,
+     "aff": false,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "Microsoft ammette il ritardo sull'AI: Nadella ribalta i vertici",
+     "fonte": "Il Post",
+     "link": "https://www.ilpost.it/2026/05/31/microsoft-intelligenza-artificiale/",
+     "riassunto": "Satya Nadella ha rimosso gran parte del gruppo dirigente storico di Microsoft, sostituendolo con nuovi manager per rilanciare l'azienda nell'AI. Pur essendo stato il principale investitore di OpenAI, oggi Microsoft ne subisce la concorrenza — insieme a Google e Anthropic — mentre l'assistente Copilot cresce in modo deludente.",
+     "rilevanza": 88,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "La Florida fa causa a OpenAI: prima azione di uno Stato USA sui minori",
+     "fonte": "New York Times",
+     "link": "https://www.nytimes.com/2026/06/01/technology/florida-sues-openai-chatgpt-safety.html",
+     "riassunto": "La Florida è il primo Stato americano a citare in giudizio OpenAI, sostenendo che la sua tecnologia rappresenti un rischio per i bambini e che l'azienda non abbia avvertito il pubblico dei pericoli. Precedente regolatorio rilevante. NB: corpo NYT non disponibile, niente dettagli su capi d'accusa — riassunto su titolo e sommario.",
+     "rilevanza": 84,
+     "rsi": false,
+     "aff": false,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "«La falla più stupida»: account Instagram dirottati con una frase al bot Meta",
+     "fonte": "Blick",
+     "link": "https://www.blick.ch/digital/duemmste-sicherheitsluecke-hacker-kapern-reihenweise-instagram-konten-mit-einem-satz-id21995630.html",
+     "riassunto": "Bastava chiedere gentilmente al chatbot di supporto AI di Meta di collegare una nuova email a un account Instagram altrui: il bot inviava il codice di conferma a quell'indirizzo, permettendo il reset della password. Dirottati il profilo della Casa Bianca dell'era Obama, quello di un alto sottufficiale della US Space Force e l'account Sephora. Nemmeno la 2FA proteggeva. Meta ha poi chiuso la falla.",
+     "rilevanza": 80,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    },
+    {
+     "titolo": "«Magnifica humanitas»: la prima enciclica di Leone XIV è sull'AI",
+     "fonte": "Il Post",
+     "link": "https://www.ilpost.it/2026/05/25/enciclica-leone-xiv-intelligenza-artificiale/",
+     "riassunto": "Papa Leone XIV ha pubblicato la prima enciclica del pontificato, interamente dedicata all'AI: quasi 36mila parole, sottotitolo «sulla custodia della persona umana nel tempo dell'intelligenza artificiale». Ammonisce contro «disumanizzazione» e «idolatria del profitto». Alla presentazione in Vaticano era presente il cofondatore di Anthropic Christopher Olah.",
+     "rilevanza": 74,
+     "rsi": false,
+     "aff": true,
+     "verok": 1,
+     "vertot": 1
+    }
+   ]
+  }
+ ]
+}
