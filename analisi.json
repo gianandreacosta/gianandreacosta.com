@@ -1,6 +1,248 @@
 {
-  "generated_at": "2026-06-01T05:07:05.380253+00:00",
+  "generated_at": "2026-06-02T05:09:40.247918+00:00",
   "analyses": [
+    {
+      "id": 88,
+      "run_id": 120,
+      "run_time": "2026-06-02 05:00:02.495319+00:00",
+      "analyzed_at": "2026-06-02T05:09:40.227308+00:00",
+      "articles_analyzed": 184,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da un caso interno alla RSI che ha suscitato l'attenzione di più testate. Parallelamente, si osservano temi ricorrenti di sicurezza stradale e di governance dei media pubblici.",
+          "notizie": [
+            {
+              "titolo": "Giornalista RSI sospeso per presunti comportamenti inadeguati",
+              "fonte": "LaRegione Ticino",
+              "link": "https://www.laregione.ch/cantone/ticino/1929418/giornalista-rsi-sospeso-per-presunti-comportamenti-inadeguati",
+              "riassunto": "La RSI ha avviato un procedimento interno dopo segnalazioni di molestie da parte di colleghe nei confronti del giornalista Emiliano Bos. La sospensione è cautelare, in attesa degli esiti delle indagini. La notizia è rilevante perché riguarda direttamente un media pubblico svizzero.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Ticino",
+                "tio.ch Ticino"
+              ],
+              "differenze_narrative": "LaRegione Ticino si concentra sulla procedura formale della RSI, citando la politica di tolleranza zero e la presunzione di innocenza. tio.ch aggiunge dettagli sul contesto dell'accaduto, indicando che la segnalazione proviene da una videomaker esterna e menzionando precedenti critiche sul clima aziendale della RSI."
+            }
+          ],
+          "trend": [
+            "Gestione delle risorse umane nei media pubblici",
+            "Sicurezza stradale e incidenti sul territorio ticinese"
+          ],
+          "da_tenere_d_occhio": "Esiti dell'indagine interna sulla condotta del giornalista RSI e eventuali ripercussioni sulla credibilità dell'emittente",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da questioni di difesa e sicurezza, da una nuova campagna contro le violenze domestiche e da un caso giudiziario che blocca le indagini su un incendio a Crans-Montana.",
+          "notizie": [
+            {
+              "titolo": "31 miliardi di franchi per l’esercito: proposta di aumento dell’IVA contestata",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/31-miliardi-per-l%E2%80%99esercito-la-soluzione-con-l%E2%80%99IVA-non-convince--3785674.html",
+              "riassunto": "Il Consiglio federale vuole finanziare 31 miliardi di franchi per la difesa entro il 2038 con un aumento temporaneo dell’IVA di 0,8 punti percentuali. La consultazione ha suscitato critiche da tutti i partiti, eccetto il Centro, che sostiene la misura per “bene pubblico”. Il PLR e i Verdi la definiscono “sbilanciata” e “antisociale”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nuova fase della campagna nazionale contro le violenze domestiche",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Violenze-domestiche-nuova-fase-per-la-campagna-preventiva--3785023.html",
+              "riassunto": "Il governo lancia una seconda fase della campagna contro le violenze domestiche, con due nuovi manifesti e il numero d’emergenza 142 attivo 24/7 dal 1° maggio. Nel 2025 sono stati registrati 22 000 reati e 34 omicidi legati alla violenza domestica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Procedura errata blocca le indagini sull’incendio del bar a Crans‑Montana",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Crans-Montana-un-dettaglio-procedurale-blocca-le-indagini--3783013.html",
+              "riassunto": "Il Ministero pubblico del Vallese ha ordinato al fornitore Internet del comune di copiare dati dal 2015, ma l’ordine è ritenuto illegittimo perché manca una richiesta di assistenza giudiziaria. Il comune ha contestato, lasciando la procura in difficoltà; spetterà al tribunale cantonale decidere.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Finanziamento della difesa tramite IVA",
+            "Rafforzamento delle misure contro la violenza domestica",
+            "Problemi procedurali nelle indagini penali"
+          ],
+          "da_tenere_d_occhio": "L’esito della votazione sull’aumento dell’IVA per la difesa, l’efficacia della nuova campagna contro le violenze domestiche e la decisione del tribunale cantonale di Crans‑Montana",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di diversi eventi: le Giornate fotografiche di Bienne attirano migliaia di visitatori, una cantante ticinese conquista la vittoria in Francia e il Territori Festival anima il Ticino con spettacoli teatrali.",
+          "notizie": [
+            {
+              "titolo": "Le Giornate fotografiche di Bienne chiudono con 15.000 visitatori e bilancio estremamente positivo",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1929435/giornate-bienne-siti-visitatori-bilancio-tre",
+              "riassunto": "Il festival fotografico di Bienne si è concluso con circa 15.000 visitatori in tre settimane, focalizzato sul tema della vulnerabilità. Gli organizzatori hanno definito il bilancio “estremamente positivo” e hanno annunciato che l’edizione del prossimo anno celebrerà i 30 anni del festival e i 200 anni della fotografia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lady O, cantante vodese, vince The Voice in Francia – prima vittoria svizzera",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/la-cantante-vodese-lady-o-vince-the-voice-in-francia-429240",
+              "riassunto": "Lady O, 19enne originaria di Lutry (VD), ha conquistato la quindicesima edizione di The Voice su TF1, diventando la prima artista svizzera a vincere il talent show. È seguita da Florent Pagny e ha appena pubblicato il suo primo album “Thank You Little Girl”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Territori Festival porta il teatro al Sociale di Lugano dal 3 al 7 giugno",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1929375/festival-giugno-spettacolo-teatro-territori-pubblico",
+              "riassunto": "Il Territori Festival, ideato da Gianfranco Helbling, propone una serie di spettacoli teatrali dal 3 al 7 giugno al Sociale di Lugano, con l’obiettivo di avvicinare il pubblico locale a forme di teatro sperimentale e di pubblico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita della visibilità internazionale di artisti svizzeri",
+            "Rinascita di festival culturali locali con forte partecipazione di pubblico",
+            "Valorizzazione di tematiche sociali (vulnerabilità, migrazione) nei programmi culturali"
+          ],
+          "da_tenere_d_occhio": "Le prossime edizioni delle Giornate fotografiche di Bienne, in vista dei 30 anni del festival e dei 200 anni della fotografia, per monitorare l'evoluzione della partecipazione e dei temi trattati.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente: l'Iran riapre i tunnel delle basi missili, le dichiarazioni contrastanti tra Netanyahu e Trump su un eventuale attacco a Beirut, e gli Stati Uniti rispondono a presunte aggressioni iraniane con attacchi di autodifesa.",
+          "notizie": [
+            {
+              "titolo": "L'Iran riapre la maggior parte dei tunnel delle basi missili sotterranee",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/31/cnn-iran-ha-riaperto-la-maggior-parte-dei-tunnel-delle-basi-missili_99df8649-8a0d-4d01-b4a9-15f0662b704d.html",
+              "riassunto": "Secondo analisi di immagini satellitari la CNN, l'Iran ha riaperto 50 dei 69 ingressi di tunnel in 18 basi missilistiche colpite da USA e Israele. Gli esperti affermano che l'Iran può continuare a lanciare missili finché dispone di lanciatori, nonostante la produzione sia stata interrotta.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Netanyahu dichiara a Trump la volontà di colpire Beirut se Hezbollah non smette gli attacchi",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/01/netanyahu-ho-detto-a-trump-che-colpiremo-beirut-in-caso-di-attacchi-di-hezbollah_46d87a90-7ce7-437f-83f0-8489be542e24.html",
+              "riassunto": "Il premier israeliano Benjamin Netanyahu ha riferito a Donald Trump che, se Hezbollah continuerà a colpire città israeliane, Israele prenderà di mira obiettivi terroristici a Beirut. L'affermazione è stata riportata da Haaretz e ripresa da ANSA.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Gli Stati Uniti conducono attacchi di autodifesa contro siti iraniani",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/06/01/usa-nel-weekend-attacchi-in-autodifesa-contro-siti-iraniani_5b35b1b5-1298-41f2-8fe9-1b02c6b379ae.html",
+              "riassunto": "Il comando centrale degli USA (CentCom) ha effettuato attacchi mirati contro radar e centri di comando droni iraniani a Goruk e sull'isola di Qeshm, in risposta all'abbattimento di un drone MQ-1 su acque internazionali. Nessuna perdita umana tra le forze americane.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riapertura delle capacità missilistiche iraniane",
+            "Tensioni tra Israele, Hezbollah e gli USA",
+            "Risposte militari statunitensi alle attività iraniane"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle dichiarazioni di Netanyahu e Trump su un possibile attacco a Beirut, che potrebbe innescare una nuova escalation militare nella regione",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta a due temi chiave per la Svizzera: le strategie di investimento pensionistico e le attività internazionali di un gruppo energetico svizzero. Entrambi gli argomenti mostrano come le dinamiche di mercato e le politiche aziendali influenzino direttamente il contesto economico locale.",
+          "notizie": [
+            {
+              "titolo": "Investimenti volontari nella seconda pietra miliare: la bassa adesione svizzera al versamento nella cassa pensioni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/saeule-3a-ist-viel-beliebter-warum-sich-nur-wenige-versicherte-freiwillig-in-die-pk-einkaufen-id21991601.html",
+              "riassunto": "Una recente indagine della BKB evidenzia che solo il 12 % dei lavoratori svizzeri tra i 55‑59 anni versa volontariamente nella seconda colonna pensionistica, mentre la colonna 3a è scelta dal 46 % nel 2022. Il tasso medio di conversione previsto per il 2026 è del 5,19 %. Il rapporto spiega che la maggiore popolarità della 3a è dovuta alla sua semplicità e ai vantaggi fiscali, mentre i versamenti nella seconda colonna sono percepiti come più complessi.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "BKW espande la capacità eolica in Italia: 250 milioni di franchi per 29 turbine",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/reportage-aus-sueditalien-gegenwind-treibt-bkw-chef-robert-itschner-an-id21991234.html",
+              "riassunto": "Il CEO svizzero Robert Itschner ha aperto un nuovo parco eolico in Puglia con 29 turbine, realizzato in sei anni con un investimento di 250 milioni di franchi. L’impianto fornirà energia a circa 140 000 famiglie. Itschner ha sottolineato che, nonostante l’interesse, la Svizzera fatica a replicare questi successi a causa di ostacoli normativi e di mercato domestici.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Bassa adesione ai versamenti volontari nella seconda colonna pensionistica",
+            "Espansione delle energie rinnovabili svizzere all’estero"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle normative fiscali svizzere sulla previdenza e le future decisioni politiche che potrebbero facilitare gli investimenti nelle pensioni complementari",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da aggiornamenti di versione di OpenClaw, una nota notizia di strategia AI di Microsoft e un ambizioso progetto europeo di data center AI da parte di SoftBank.",
+          "notizie": [
+            {
+              "titolo": "OpenClaw 2026.5.31 beta 4 rilasciata con miglioramenti di recupero e stabilità dei canali",
+              "fonte": "OpenClaw Releases",
+              "link": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.4",
+              "riassunto": "La nuova beta 4 introduce recovery più pulito per agenti e runtime CLI, stabilità dei canali su Telegram, WhatsApp, Slack, Discord, Teams e miglioramenti di timeout, retry e gestione OAuth. Tra le novità, supporto per Tailscale Serve e UI più completa per lo Skill Workshop.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Microsoft perde l'opportunità di dominare il mercato dell'AI dopo il ritiro di Satya Nadella",
+              "fonte": "Il Post Tecnologia",
+              "link": "https://www.ilpost.it/2026/05/31/microsoft-intelligenza-artificiale/",
+              "riassunto": "Satya Nadella ha ristrutturato il top management per rilanciare Microsoft nell'AI, ma l'azienda non è riuscita a sfruttare il vantaggio competitivo di inizio 2023 con OpenAI e Azure. Oggi Copilot registra crescita deludente e la concorrenza di OpenAI, Google e Anthropic è più forte.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SoftBank prevede 75 miliardi di euro in data center AI in Francia entro il 2031",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/softbank-plans-75-billion-euro-ai-data-center-buildout-in-france/",
+              "riassunto": "SoftBank intende costruire data center AI da 5 GW in Francia, con un investimento iniziale di 45 miliardi di euro in tre siti del Nord. Il progetto, annunciato al summit \"Choose France\", mira a creare migliaia di posti di lavoro e a posizionare la Francia come hub europeo di infrastrutture AI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aggiornamenti rapidi di piattaforme AI open‑source",
+            "Ristrutturazioni aziendali per recuperare leadership AI",
+            "Investimenti massicci in infrastrutture AI in Europa"
+          ],
+          "da_tenere_d_occhio": "Segui i prossimi rilasci di OpenClaw (beta 5) e le reazioni di Microsoft alle nuove strategie AI nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 87,
       "run_id": 119,
@@ -4952,277 +5194,6 @@
             "I capitali si concentrano su pochi campioni dell’AI, con investimenti enormi in infrastrutture, modelli e applicazioni verticali"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se l’integrazione di Gemini su Android genererà reazioni su privacy, concorrenza e compatibilità con servizi europei, oltre a eventuali ulteriori dettagli sui maxi-round di Anthropic e Isomorphic Labs.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 68,
-      "run_id": 100,
-      "run_time": "2026-05-13 08:56:54.647229+00:00",
-      "analyzed_at": "2026-05-13T09:03:41.125711+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi molto concreti per il territorio: sicurezza urbana a Lugano, nuove tensioni sulle norme antincendio e un fronte politico delicato nei rapporti finanziari con l’Italia. Sullo sfondo, emergono anche questioni di prevenzione e governance comunale.",
-          "notizie": [
-            {
-              "titolo": "Lugano resta tra le città più sicure, ma crescono i segnali di violenza",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Lugano-sicurezza-in-chiaroscuro--3733319.html",
-              "riassunto": "Lugano mantiene il primato svizzero tra le grandi città con meno reati per abitante, ma la polizia segnala un peggioramento su due fronti: reati violenti e violenza domestica. Nel 2023 il tasso è salito a 34,9 reati ogni 1’000 abitanti, +2,2%.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Ticino, i Comuni contestano il nuovo regolamento sulla protezione antincendio",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Ticino-il-regolamento-sulla-protezione-antincendio-non-piace-ai-Comuni--3733335.html",
-              "riassunto": "Dopo la tragedia di Crans-Montana, il Consiglio di Stato ha ritoccato le norme antincendio, ma l’Associazione dei Comuni ticinesi ha presentato ricorso al Tribunale federale. Al centro del conflitto ci sono uniformità delle valutazioni, costi e responsabilità per i piccoli Comuni.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "I rappresentanti ticinesi frenano sul blocco dei ristorni all’Italia",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/blocco-dei-ristorni-allitalia-la-deputazione-tira-il-freno-427469",
-              "riassunto": "Dopo le parole del presidente del Governo Claudio Zali, la deputazione ticinese a Berna invita alla cautela sul blocco dei ristorni fiscali all’Italia. Il rischio, secondo i parlamentari, è di irrigidire ulteriormente i rapporti già tesi con Roma e con il Consiglio federale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "sicurezza urbana e percezione del rischio in Ticino",
-            "pressione su Comuni e istituzioni locali tra prevenzione, costi e responsabilità",
-            "rapporti Ticino-Italia e gestione dei dossier fiscali sensibili"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguita l’evoluzione del dossier sui ristorni all’Italia, perché può trasformarsi rapidamente in uno scontro politico più ampio. Da monitorare anche eventuali reazioni dei Comuni ticinesi sul regolamento antincendio e nuovi dati o prese di posizione sulla sicurezza a Lugano.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La giornata è dominata da temi con impatto diretto sulla Svizzera: sanità, sicurezza e giustizia. In evidenza anche alcune notizie di taglio sociale che toccano da vicino il dibattito pubblico, con più testate che rilanciano gli stessi casi.",
-          "notizie": [
-            {
-              "titolo": "I premi di cassa malati dovrebbero salire ancora del 3,7% nel 2027",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/comparis-premi-su-del-37-ma-occhio-al-rischio-mercati-427488",
-              "riassunto": "Comparis prevede un nuovo aumento dei premi in Svizzera, stimato al 3,7% per il prossimo anno. Il tema pesa in modo diretto sui bilanci delle famiglie e resta uno dei principali dossier politici e sociali del Paese.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "La CdT inserisce la stima in un quadro più ampio, collegandola alla crescita dei costi, all’ampliamento dell’assicurazione di base e ai rischi dei mercati globali. Ticinonews riprende soprattutto il dato secco del 3,7% e il richiamo alla situazione economica mondiale, con un taglio più breve e divulgativo."
-            },
-            {
-              "titolo": "Scarcerato Carlos dopo il ritiro della denuncia",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/carlos-e-stato-scarcerato-427454",
-              "riassunto": "Il detenuto più noto della Svizzera è stato liberato dalla detenzione preventiva. L’indagine per minacce e altri reati resta sullo sfondo, ma il ritiro della denuncia da parte della presunta vittima cambia radicalmente la situazione giudiziaria.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le testate danno rilievo al fatto giudiziario e al ritiro della denuncia. La CdT sottolinea la notorietà del caso con un tono più narrativo, mentre Ticinonews lo presenta in modo più diretto e cronachistico, centrato sull’esito processuale immediato."
-            },
-            {
-              "titolo": "Operazione antidroga nel Giura: venti perquisizioni e diversi arresti",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/operazione-antidroga-nel-giura-venti-perquisizioni-e-diversi-arresti-427478",
-              "riassunto": "Nel Giura sono scattate venti perquisizioni con diversi arresti e sequestri di cocaina, LSD, eroina e metanfetamina. L’operazione, condotta con polizia, ministero pubblico e dogana, segnala un intervento coordinato contro il traffico di stupefacenti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "La CdT concentra l’attenzione sul territorio giurassiano e sull’azione congiunta delle autorità. Ticinonews amplia il quadro parlando di operazione internazionale contro traffico di droga e riciclaggio di denaro, aggiungendo dettagli sugli arresti in Svizzera (Berna e Vaud), quindi con un framing più ampio e transfrontaliero."
-            }
-          ],
-          "trend": [
-            "aumento del costo della salute e pressione sul potere d'acquisto",
-            "operazioni di polizia e casi giudiziari con forte eco mediatica"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andranno monitorati eventuali ulteriori dettagli sui premi di cassa malati e gli sviluppi giudiziari nel caso Carlos; da seguire anche se emergeranno nuovi elementi sull’operazione antidroga e sul numero complessivo di arresti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è segnata soprattutto da temi vicini al pubblico svizzero-italiano: Eurovision e musica, con un forte eco politico, e due notizie molto ticinesi legate a Magadino e al suo festival organistico. Sul fronte internazionale spicca anche il nuovo museo dei Beatles a Londra, già raccontato da più testate.",
-          "notizie": [
-            {
-              "titolo": "Eurovision a Vienna tra musica e protesta contro Israele",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1924746/vienna-esc-israele-eurovision-contest-big-musica-song-aspetta",
-              "riassunto": "L’Eurovision di Vienna entra nel vivo con una forte coda politica: la protesta contro la partecipazione israeliana ha trasformato i tradizionali “Big Five” in “Four”. Per il pubblico svizzero conta anche per la vicinanza geografica e mediatica dell’evento, molto seguito anche in Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Magadino celebra 63 anni di festival organistico, ma l’organo ha bisogno di cure",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/magadino-63-anni-di-musica-un-libro-racconta-il-festival-internazionale-organistico-427400",
-              "riassunto": "La presentazione del libro di Giuseppe Clericetti racconta la storia del Festival internazionale organistico di Magadino, una rassegna storica per il Ticino. Il testo segnala anche la necessità di una revisione dell’organo per adeguarlo alle esigenze artistiche attuali.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Società",
-                "Ticinonews Magazine"
-              ],
-              "differenze_narrative": "Le due fonti raccontano lo stesso evento con taglio quasi identico e molto locale. Il CdT insiste leggermente di più sul valore storico-culturale della rassegna, mentre Ticinonews ne riprende soprattutto l’aspetto di comunità e la presentazione pubblica dell’11 maggio."
-            },
-            {
-              "titolo": "A Londra apre il museo ufficiale dei Beatles nella storica Savile Row",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1924739/beatles-museo-tetto-mccartney-row-savile-paul-starr-ringo-londra",
-              "riassunto": "Paul McCartney e Ringo Starr hanno annunciato un museo al 3 di Savile Row, luogo simbolico dell’ultima esibizione live dei Beatles. L’apertura interessa anche il pubblico svizzero per la forte risonanza internazionale del progetto e per il valore archivistico degli inediti promessi.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione punta sul valore simbolico del sito e sull’annuncio dei due ex Beatles, con tono più evocativo. Il New York Times sottolinea invece l’aspetto museale e istituzionale, precisando che la townhouse di 3 Savile Row aprirà al pubblico l’anno prossimo e richiamando anche il legame con la registrazione di \"Let It Be\"."
-            }
-          ],
-          "trend": [
-            "forte intreccio tra cultura e politica, soprattutto nell’area europea",
-            "valorizzazione di patrimoni musicali storici e locali, dal Ticino ai Beatles"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle polemiche sull’Eurovision e l’eventuale rimbalzo mediatico del caso Magadino, soprattutto se emergono dettagli su tempi e costi dell’intervento sull’organo.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata da tre filoni: la partita USA-Cina, con il riavvicinamento/negoziato tra Trump e Xi; le ricadute regionali della guerra in Medio Oriente, soprattutto sullo stretto di Hormuz e sui prezzi dell’energia; e alcuni segnali di riallineamento diplomatico, come l’Ue che riapre il canale con la Siria. Per un lettore svizzero, contano soprattutto gli effetti indiretti su commercio, mercati e costi di importazione.",
-          "notizie": [
-            {
-              "titolo": "Trump e Xi si preparano a ridefinire gli equilibri tra Stati Uniti e Cina",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/ceqprgen1nyo?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Il vertice tra Donald Trump e Xi Jinping viene descritto come uno dei più importanti da anni. La posta in gioco è alta: dazi, Taiwan e la tenuta della competizione tra le due superpotenze nei prossimi anni.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "BBC World",
-                "New York Times World",
-                "Internazionale"
-              ],
-              "differenze_narrative": "BBC punta sul carattere storico del vertice e sull’incertezza sugli esiti; il New York Times enfatizza la pressione cinese su Taiwan e il tentativo di Xi di frenare le vendite di armi; Internazionale inquadra la visita come prova che Pechino si considera ormai alla pari con Washington. Cambia quindi il framing: diplomazia bilaterale, sicurezza asiatica e ascesa sistemica della Cina."
-            },
-            {
-              "titolo": "Lo stretto di Hormuz torna al centro della crisi mediorientale e pesa su energia e trasporti",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/13/media-usa-cina-concordano-di-non-far-pagare-pedaggi-ad-hormuz_1d1eae49-2737-4544-9245-1b7de5e685c2.html",
-              "riassunto": "Secondo un portavoce del dipartimento di Stato citato da Kyodo, Usa e Cina avrebbero concordato di non far pagare pedaggi nello stretto. Il tema conferma quanto Hormuz resti un punto sensibile per il petrolio e le catene di approvvigionamento.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Il Post Mondo",
-                "Il Post Economia",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA tratta la notizia come segnale diplomatico tra grandi potenze; Il Post la collega agli effetti concreti su bitume, strade e prezzi al supermercato, quindi al costo della vita; il New York Times la inserisce nel quadro di una tregua iraniana fragile e dei timori economici globali. Il focus varia da gesto politico a impatto materiale sui mercati e sulle infrastrutture."
-            },
-            {
-              "titolo": "L’Unione europea riapre pienamente l’accordo di cooperazione con la Siria",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/11/il-consiglio-ue-ripristina-la-piena-applicazione-dellaccordo-con-la-siria_88d0078c-2d9a-426e-9c08-f3240a094dda.html",
-              "riassunto": "Il Consiglio Ue ha deciso di porre fine alla sospensione parziale dell’accordo con Damasco, ripristinando la piena applicazione della cooperazione. È un segnale politico importante di riavvicinamento dopo anni di gelo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Competizione strategica USA-Cina e gestione di Taiwan",
-            "Effetti economici della guerra in Medio Oriente su energia, trasporti e prezzi"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se dal confronto Trump-Xi emergono segnali concreti su Taiwan e dazi, e se la situazione a Hormuz produce nuove tensioni sui mercati energetici e sui costi di trasporto.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Le notizie più rilevanti oggi riguardano soprattutto il Ticino, con un sequestro di rifiuti al valico di Ponte Chiasso che tocca da vicino la frontiera. Sul piano più ampio pesano energia e mercati, tra tensioni geopolitiche, petrolio in rialzo e segnali dalla politica monetaria giapponese.",
-          "notizie": [
-            {
-              "titolo": "Sequestrato a Ponte Chiasso un tir con 24 tonnellate di rifiuti: denunciato l'autista",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/estero/tir-con-24-tonnellate-di-rifiuti-sequestrato-a-ponte-chiasso-denunciato-lautista-bielorusso-433289",
-              "riassunto": "Al controllo doganale sono emerse incongruenze tra la dichiarazione di carico e la merce effettiva: al posto di “lavori di ferro e acciaio” c’erano rifiuti e 13 casse di cenere di zinco, per un valore di oltre 40 mila euro. Il caso è rilevante per il Ticino perché riguarda direttamente il confine e i controlli ambientali e doganali.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Petrolio in rialzo e borse sotto pressione per le tensioni geopolitiche",
-              "fonte": "Il Sole 24 Ore Finanza",
-              "link": "https://www.ilsole24ore.com/art/borse-asiatiche-rialzo-nonostante-tensioni-medio-oriente-petrolio-torna-salire-AITqfZ0C",
-              "riassunto": "Il Brent torna sopra i 100 dollari al barile, mentre il gas si muove in area 45 euro/MWh. Il rialzo dell’energia ha effetti diretti su inflazione, costi aziendali e mercati, quindi interessa anche la Svizzera, molto esposta ai prezzi internazionali dell’energia.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "La Banca del Giappone apre a un possibile rialzo dei tassi a giugno",
-              "fonte": "Adnkronos",
-              "link": "https://www.adnkronos.com/internazionale/akieng/boj-member-saw-possible-near-term-rate-hike-summary_4opvAIdvcZ4USP5wwefCeA",
-              "riassunto": "Nel riepilogo dell’ultima riunione emerge che un membro della BoJ ha ritenuto possibile un aumento del tasso di riferimento già a giugno. È un segnale importante per i mercati globali: movimenti sui tassi giapponesi possono influenzare valute, bond e flussi finanziari internazionali.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "energia e prezzi delle materie prime sotto tensione",
-            "controlli doganali e traffici transfrontalieri in area italo-svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato l’evolversi dei prezzi di petrolio e gas e, in Ticino, eventuali sviluppi sul caso del tir sequestrato a Ponte Chiasso, con possibili ricadute su controlli e normativa sui rifiuti.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria di oggi è dominata da sicurezza informatica e reazioni industriali all’IA: emergono segnali di uso offensivo dell’AI da parte degli hacker, nuove vulnerabilità nella supply chain software e un’accelerazione degli investimenti/riorganizzazioni aziendali attorno ai modelli AI.\nPer un lettore svizzero, i temi più sensibili sono quelli legati a cyber-rischi, compliance e impatti su imprese che dipendono da software open source e infrastrutture cloud.",
-          "notizie": [
-            {
-              "titolo": "Gli hacker iniziano a usare l’IA per scoprire bug critici nei software",
-              "fonte": "Hacker News",
-              "link": "https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html",
-              "riassunto": "Google segnala per la prima volta un tentativo di attacco in cui criminali hanno usato l’intelligenza artificiale per individuare una vulnerabilità sconosciuta. Il caso è rilevante perché suggerisce un salto di qualità negli attacchi, con tempi più rapidi e maggiore scala.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "La catena di fornitura npm resta sotto pressione dopo la compromissione di TanStack",
-              "fonte": "Hacker News",
-              "link": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
-              "riassunto": "Il post-mortem sulla compromissione npm di TanStack conferma che la supply chain open source resta un punto debole concreto per team e aziende. Per la Svizzera, dove molte imprese dipendono da pacchetti JavaScript e cloud delivery, il tema è direttamente operativo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "L’UE spinge sulla regolamentazione dell’IA, ma dipende dall’accesso concesso da OpenAI e Anthropic",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/the-eu-wants-to-regulate-ai-but-needs-openai-and-anthropic-to-let-regulators-through-the-door/",
-              "riassunto": "La Commissione europea sta negoziando accesso diretto ai modelli per valutarne la sicurezza: OpenAI avrebbe già aperto a GPT-5.5 Cyber, mentre Anthropic sarebbe più cauta. Il messaggio è chiaro: senza cooperazione dei provider, la supervisione pubblica resta parziale.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "AI usata sia per attaccare sia per difendere sistemi informatici",
-            "Rafforzamento di governance e regolazione dei modelli AI in Europa"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se emergono dettagli tecnici sull’attacco AI segnalato da Google e se il caso TanStack genera altre compromissioni nella supply chain npm, con possibili ricadute su aziende europee e svizzere.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
