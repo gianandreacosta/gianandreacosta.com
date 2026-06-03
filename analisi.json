@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-06-02T05:09:40.247918+00:00",
+  "generated_at": "2026-06-03T05:04:03.229973+00:00",
   "analyses": [
+    {
+      "id": 89,
+      "run_id": 121,
+      "run_time": "2026-06-03 05:00:02.358808+00:00",
+      "analyzed_at": "2026-06-03T05:04:03.199604+00:00",
+      "articles_analyzed": 185,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
+        }
+      ]
+    },
     {
       "id": 88,
       "run_id": 120,
@@ -4953,247 +5014,6 @@
             "Sfida commerciale tra Anthropic, OpenAI e Meta sul mercato business"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito se le novità WhatsApp/Meta AI generano reazioni su privacy e regolazione, e se emergono ulteriori dettagli sulla causa legata alla morte del 19enne, perché potrebbe riaccendere il dibattito sulla sicurezza dei chatbot.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 69,
-      "run_id": 101,
-      "run_time": "2026-05-14 02:45:01.788265+00:00",
-      "analyzed_at": "2026-05-14T02:51:17.995375+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 15,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "partial",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La notizia più forte riguarda ancora il San Gottardo: il deragliamento del treno merci torna al centro del dibattito con accuse, perizie e nuove misure di sicurezza. Sul fronte politico-federale, il Ticino si fa sentire anche su carburanti e servizio civile, ma con risposte negative da Berna.",
-          "notizie": [
-            {
-              "titolo": "Deragliamento al San Gottardo: nuove accuse e replica dura delle FFS",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/svizzera/il-deragliamento-del-treno-merci-nel-san-gottardo-avrebbe-potuto-essere-evitato-433459",
-              "riassunto": "Secondo una perizia citata dalla procura ticinese, il deragliamento del treno merci nel tunnel del San Gottardo avrebbe potuto essere evitato. Le FFS respingono la ricostruzione e parlano di «falsità». Il caso resta centrale per la sicurezza ferroviaria in un asse strategico per il Ticino e per la Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino",
-                "LaRegione Ticino"
-              ],
-              "differenze_narrative": "Ticinonews punta sul contrasto tra la perizia della procura e la replica delle FFS, con taglio più diretto e conflittuale. Il CdT riprende la stessa notizia in modo più asciutto, enfatizzando l'esito dell'indagine. LaRegione sposta invece il focus sulla prevenzione, collegando il caso all'installazione dei sensori e alla revoca del limite di velocità, quindi su soluzioni e responsabilità tecnica più che sullo scontro giudiziario."
-            },
-            {
-              "titolo": "Berna boccia lo sconto temporaneo su benzina e carburanti",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/nessuno-sconto-sulla-benzina-berna-dice-no-a-tagli-fiscali-sui-carburanti-427697",
-              "riassunto": "Il Consiglio federale respinge la richiesta del consigliere nazionale ticinese Piero Marchesi di ridurre temporaneamente accise e Iva sui carburanti. Per il Governo l'impatto economico sarebbe limitato e i costi per la Confederazione troppo elevati. Tema sensibile anche per pendolari e automobilisti ticinesi.",
-              "rilevanza": "media",
-              "incrocio": false
-            },
-            {
-              "titolo": "Il Governo frena sul divieto di smartphone sotto i 12 anni",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/smartphones-per-il-governo-il-divieto-sotto-i-12-anni-e-eccessivo-427686",
-              "riassunto": "Berna invita il Parlamento a respingere la mozione del consigliere nazionale ticinese Giorgio Fonio che proponeva di limitare l'accesso agli smartphone per i minori di 12 anni. Il Consiglio federale parla di ingerenza eccessiva nella sfera privata e familiare.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "sicurezza e responsabilità sul San Gottardo",
-            "interventi federali respinti su temi sensibili per il Ticino"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l'evoluzione del caso San Gottardo: eventuali repliche delle FFS, dettagli della perizia e possibili conseguenze giudiziarie o tecniche sul traffico ferroviario.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: AI response not parseable as JSON for cronaca_svizzera",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "AI response not parseable as JSON for cronaca_svizzera"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata dall’Eurovision a Vienna, con un forte carico politico attorno alle proteste contro Israele e una copertura frammentata tra cronaca, commento e pagelle. Sul fronte svizzero-romando e ticinese emergono anche iniziative locali: un nuovo evento letterario a Ginevra e appuntamenti musicali a Bellinzona.",
-          "notizie": [
-            {
-              "titolo": "Eurovision a Vienna: proteste contro Israele, tensioni politiche e finale già polemica",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1925079/israele-eurovision-palco-pro-vinci",
-              "riassunto": "L’ESC 2026 è partito in un clima teso: attivisti a Vienna hanno annunciato proteste musicali, una deposizione simbolica di piccole bare in Schwedenplatz e una manifestazione di massa contro la partecipazione di Israele. Il tema ha già generato più articoli e letture diverse, tra cronaca delle contestazioni e focus sul risultato sul palco.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "SRF Kultur",
-                "CdT Società"
-              ],
-              "differenze_narrative": "LaRegione e CdT privilegiano il frame politico e conflittuale, insistendo su proteste, boicottaggi e precedenti storici delle tensioni all’Eurovision. SRF resta più sul versante spettacolare e televisivo, enfatizzando gli highlights della semifinale e il lato show, con meno spazio al contesto geopolitico."
-            },
-            {
-              "titolo": "A Ginevra nasce il nuovo evento letterario ‘Grand Juillet’",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1925128/luglio-evento-juillet-nuovo-ginevra",
-              "riassunto": "Il Cantone di Ginevra lancia ‘Grand Juillet’, una nuova iniziativa letteraria prevista per luglio. È una notizia rilevante per la Svizzera romanda perché segnala un investimento pubblico e culturale in una manifestazione potenzialmente destinata a crescere.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Bellinzona tra musica live e scena locale: tornano Bat Battiston e i Nolimit Band",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1925130/band-battiston-nolimit-bat-bellinzona",
-              "riassunto": "A Bellinzona si riaffaccia una proposta musicale radicata nel territorio: il chitarrista ticinese Bat Battiston torna al bar Castello con il suo gruppo. Per il lettore ticinese conta perché segnala continuità e vitalità della scena locale, spesso meno visibile dei grandi eventi internazionali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Eurovision come arena politica oltre che musicale",
-            "Vitalità della cultura locale in Svizzera romanda e in Ticino"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione delle proteste a Vienna e l’eventuale impatto sulla copertura mediatica dell’Eurovision, inclusi possibili nuovi boicottaggi o reazioni ufficiali degli organizzatori.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal ritorno della diplomazia ad altissima tensione tra Stati Uniti e Cina, con Trump a Pechino e diversi dossier aperti su Iran, commercio e tecnologia. In parallelo, la crisi di Hormuz e i riflessi energetici sull’Europa restano centrali anche per la Svizzera, mentre sullo sfondo continuano le fragilità di sicurezza in America Latina e sul fronte russo-ucraino.",
-          "notizie": [
-            {
-              "titolo": "Trump in visita a Pechino: Cina, Iran, Boeing e rapporti di forza globali al centro",
-              "fonte": "AGI",
-              "link": "https://www.agi.it/estero/news/2026-05-13/trump-cina-dossier-37028884/",
-              "riassunto": "Donald Trump è arrivato a Pechino ed è stato accolto dal vicepresidente Han Zheng, con una cerimonia che sottolinea il peso politico della visita. Sul tavolo ci sono dossier sensibili come Iran e Boeing, in un contesto in cui Pechino si presenta ormai da pari a pari con Washington.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "AGI",
-                "Internazionale"
-              ],
-              "differenze_narrative": "AGI taglia sul protocollo della visita e sui dossier concreti, con tono cronachistico e istituzionale. Internazionale legge l’evento come prova del declino del vantaggio americano, enfatizzando il nuovo equilibrio di potenza e il significato geopolitico della visita di Trump."
-            },
-            {
-              "titolo": "Crisi di Hormuz: l’Europa spinge su transizione energetica e riduzione della dipendenza dal fossile",
-              "fonte": "Il Sole 24 Ore Mondo",
-              "link": "https://www.ilsole24ore.com/art/energia-ue-e-crisi-fossile-bisogna-puntare-transizione-e-rinnovabili-AIFWL22C",
-              "riassunto": "L’Ue avverte che la crisi energetica in Medio Oriente sta mettendo sotto pressione l’Europa e va letta come una crisi più ampia del sistema fossile. Il messaggio politico è chiaro: più rinnovabili e transizione per ridurre la vulnerabilità strategica sui prezzi e sugli approvvigionamenti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Sole 24 Ore Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Il Sole 24 Ore insiste sulle conseguenze economiche e industriali per l’Europa, usando un framing di politica energetica e transizione. ANSA, con il riferimento a Tajani e al passaggio su Hormuz, privilegia il profilo diplomatico-istituzionale e la cautela politica italiana, con focus su Parlamento e impegno militare."
-            },
-            {
-              "titolo": "Crisi di Hormuz e prudenza italiana: nessun impegno militare senza mandato parlamentare",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/13/tajani-non-chiediamo-una-nuova-operazione-nel-golfo-impegno-solo_7e21f85b-187d-4045-8cbc-855559cd98dc.html",
-              "riassunto": "Antonio Tajani esclude una nuova operazione italiana nel Golfo in assenza di un quadro politico chiaro e di pace. La linea è di massima prudenza: nessuna nave sarà impegnata a Hormuz senza l’ok del Parlamento, segnale di quanto la crisi tocchi anche le scelte di sicurezza europee.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Il Sole 24 Ore Mondo"
-              ],
-              "differenze_narrative": "ANSA mette al centro la postura italiana e i vincoli istituzionali, con una narrazione politica e diplomatica. Il Sole 24 Ore inserisce la stessa crisi dentro il quadro macroeconomico europeo, puntando su prezzi dell’energia, dipendenza dal Medio Oriente e urgenza della transizione."
-            }
-          ],
-          "trend": [
-            "Rivalità Usa-Cina e ridefinizione dell’equilibrio di potenza globale",
-            "Crisi energetica e sicurezza dello stretto di Hormuz con effetti sull’Europa"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l’esito della visita di Trump in Cina e soprattutto ogni segnale su Iran, commercio e tecnologia; in parallelo, eventuali nuove mosse su Hormuz potrebbero tradursi rapidamente in pressioni sui mercati energetici europei e sulle scelte dei governi.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi vicini alla Svizzera: mercato immobiliare in aumento, governance bancaria e investimenti in ricerca. Sullo sfondo, c’è anche un segnale importante sulla sicurezza del traffico merci lungo l’asse del San Gottardo.",
-          "notizie": [
-            {
-              "titolo": "In Svizzera gli affitti richiesti tornano a salire, con aumenti marcati in alcune regioni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/viele-staedte-werden-teurer-in-diesen-regionen-stiegen-die-angebotsmieten-im-april-besonders-id21944487.html",
-              "riassunto": "Gli affitti offerti in Svizzera sono tornati a crescere ad aprile 2026, con rialzi particolarmente forti in un cantone e un aumento visibile anche a Zurigo. Per un lettore svizzero è un segnale diretto sul costo della casa e sulla pressione abitativa nei centri urbani.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Giorgio Pradelli guiderà l’Associazione svizzera dei banchieri",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/giorgio-pradelli-nominato-presidente-dellassociazione-svizzera-dei-banchieri-433352",
-              "riassunto": "Cambio ai vertici dell’ASB: Marcel Rohner lascerà la carica in autunno e al suo posto arriva Giorgio Pradelli, CEO di EFG International. La nomina è rilevante per il settore finanziario svizzero e per i rapporti tra banche, regolazione e piazza economica.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "La Svizzera è terza al mondo per investimenti aziendali in ricerca e sviluppo",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/investimenti-aziendali-nella-ricerca-la-svizzera-e-terza-al-mondo-433345",
-              "riassunto": "Nonostante le difficoltà globali, i gruppi svizzeri restano ai vertici mondiali per investimenti privati in R&S. È una notizia importante per competitività, innovazione e attrattività industriale del Paese, anche in chiave Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Pressione sul costo della vita in Svizzera, soprattutto abitazione",
-            "Forza strutturale della piazza finanziaria e dell’innovazione svizzera"
-          ],
-          "da_tenere_d_occhio": "Da monitorare nelle prossime 24 ore se il rialzo degli affitti si estende ad altre aree svizzere e se la nuova guida dell’Associazione svizzera dei banchieri porterà indicazioni su priorità regolatorie o fiscali per il settore.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La categoria è dominata oggi da due filoni: l’espansione di Google di Gemini su Android e l’ondata di grandi finanziamenti alle società AI più avanzate. Sullo sfondo, continuano a emergere temi sensibili per l’Europa e la Svizzera: sicurezza informatica, uso dell’AI in ambito legale e concentrazione di potere nelle mani di pochi grandi player.",
-          "notizie": [
-            {
-              "titolo": "Google porta agenti AI e funzioni Gemini più profonde su Android",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/",
-              "riassunto": "Google sta integrando Gemini in modo molto più ampio su Android: dettatura in Gboard, compilazione automatica di moduli, widget creati con linguaggio naturale e altre funzioni “agentiche”. Per gli utenti svizzeri significa un’accelerazione forte dell’AI nei telefoni di uso quotidiano, con possibili effetti anche per app, produttività e privacy.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza il lancio di prodotto e l’ecosistema Google, con un taglio da annuncio di piattaforma. The Decoder insiste di più sulla dimensione “agentica” e sulle funzioni pratiche che automatizzano compiti multi-step, mettendo in risalto l’evoluzione verso assistenti che agiscono al posto dell’utente."
-            },
-            {
-              "titolo": "Anthropic in trattative per una valutazione da 950 miliardi di dollari",
-              "fonte": "New York Times Technology",
-              "link": "https://www.nytimes.com/2026/05/12/technology/anthropic-funding-950-billion-valuation.html",
-              "riassunto": "Anthropic starebbe cercando nuovo capitale con una valutazione potenziale di 950 miliardi di dollari, dopo essere stata valutata 380 miliardi in precedenza. È uno dei segnali più forti della bolla/espansione del settore AI: pochi attori raccolgono cifre enormi, con ricadute su mercato, concorrenza e regolazione anche in Europa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Isomorphic Labs di Alphabet raccoglie 2,1 miliardi di dollari per spingere l’AI nella scoperta di farmaci",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials/",
-              "riassunto": "La società di Alphabet guidata da Demis Hassabis ha chiuso un round da 2,1 miliardi di dollari per portare la propria piattaforma di drug discovery verso le sperimentazioni cliniche. Per la Svizzera, forte hub farmaceutico, è una notizia molto rilevante: l’AI si sposta sempre più vicino alla pipeline industriale del farmaco.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "L’AI sta diventando una funzione nativa dei sistemi operativi e delle app di uso quotidiano, non più solo un servizio separato",
-            "I capitali si concentrano su pochi campioni dell’AI, con investimenti enormi in infrastrutture, modelli e applicazioni verticali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se l’integrazione di Gemini su Android genererà reazioni su privacy, concorrenza e compatibilità con servizi europei, oltre a eventuali ulteriori dettagli sui maxi-round di Anthropic e Isomorphic Labs.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
