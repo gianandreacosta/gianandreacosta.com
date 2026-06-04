@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T05:00:03.641731Z",
+  "generated_at": "2026-06-04T05:10:03.158886Z",
   "system": {
     "version": "OpenClaw 2026.5.7 (eeef486)",
     "current_ver": "2026.5.7",
@@ -313,11 +313,11 @@
     }
   ],
   "rassegna": {
-    "articles_total": 50143,
-    "articles_today": 0,
-    "articles_new_last_run": 763,
-    "last_run": "2026-06-03 05:00:02.358808+00:00",
-    "last_run_found": 2529
+    "articles_total": 50947,
+    "articles_today": 804,
+    "articles_new_last_run": 804,
+    "last_run": "2026-06-04 05:00:02.723108+00:00",
+    "last_run_found": 3525
   },
   "model_status": {
     "timestamp": "2026-06-04T02:00:01Z",
