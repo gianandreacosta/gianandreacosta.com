@@ -1,6 +1,255 @@
 {
-  "generated_at": "2026-06-04T05:07:59.607695+00:00",
+  "generated_at": "2026-06-05T05:08:37.650955+00:00",
   "analyses": [
+    {
+      "id": 91,
+      "run_id": 123,
+      "run_time": "2026-06-05 05:00:02.534828+00:00",
+      "analyzed_at": "2026-06-05T05:08:37.614235+00:00",
+      "articles_analyzed": 186,
+      "articles_selected": 16,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da due temi: le polemiche interne alla RSI su presunte molestie e la denuncia di SRF sui contenuti di caffeina negli energy drink, entrambi di forte interesse per i media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Molestie alla RSI: il collettivo femminista chiede strumenti indipendenti",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/molestie-alla-rsi-io-l8-ogni-giorno-servono-strumenti-indipendenti-e-una-cultura-del-rispetto-434922",
+              "riassunto": "Il collettivo femminista \"Io l'8 ogni giorno\" ha commentato la sospensione cautelare di un giornalista RSI per presunte molestie, chiedendo meccanismi di segnalazione autonomi e una cultura del rispetto all'interno dell'emittente pubblica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Energy drink in Svizzera: troppa caffeina, avverte SRF",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Bevande-energetiche-in-vendita-con-troppa-caffeina--3794230.html",
+              "riassunto": "Un'inchiesta di SRF (Impact Investigativ) evidenzia che in Svizzera vengono importati oltre 40 milioni di litri di energy drink all'anno, con livelli di caffeina potenzialmente pericolosi per i giovani, provocando tachicardia e disturbi del sonno.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "questioni di condotta e cultura organizzativa nei media pubblici",
+            "preoccupazioni per la salute dei giovani legate a prodotti energetici"
+          ],
+          "da_tenere_d_occhio": "Sviluppi delle indagini interne alla RSI e possibili interventi normativi su energia e caffeina",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici, da tensioni commerciali con gli USA e da proteste legate a progetti immobiliari di stampo internazionale.",
+          "notizie": [
+            {
+              "titolo": "Droni ucraini colpiscono un terminal petrolifero a San Pietroburgo prima del forum economico",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/mondo/Droni-ucraini-colpiscono-San-Pietroburgo--3795038.html",
+              "riassunto": "Droni ucraini hanno colpito un terminal petrolifero e una nave da guerra a San Pietroburgo poche ore prima dell’apertura del forum economico organizzato da Vladimir Putin. Il governatore russo ha segnalato danni e feriti, ma nessuna vittima mortale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Incendio del bar “Le Constellation” a Crans‑Montana: interrogato ex consigliere comunale",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/svizzera/Incendio-a-Crans-Montana-interrogato-un-ex-municipale--3794856.html",
+              "riassunto": "Jérémie Rey, ex consigliere comunale di Chermignon (ora Crans‑Montana), ha risposto alle autorità nell’inchiesta sull’incendio del bar “Le Constellation”. Altri imputati hanno scelto di tacere; i coniugi proprietari del locale saranno interrogati a breve.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il calciatore Breel Embolo vede negato l’ingresso negli USA per problemi con l’ESTA",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/svizzera/Embolo-il-viaggio-negato-negli-USA-dove-ESTA-%C3%A8-il-problema--3795138.html",
+              "riassunto": "Le autorità americane hanno bloccato l’ESTA di Breel Embolo, attaccante della nazionale svizzera, a causa di una domanda sul suo eventuale coinvolgimento in reati. La questione è al vaglio dell’Associazione svizzera di calcio in vista del Mondiale negli USA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni commerciali USA‑Svizzera (nuovi dazi per lavoro forzato)",
+            "Proteste e inchieste su progetti immobiliari legati a Kushner/Trump in Albania",
+            "Gestione delle scorte energetiche nazionali (cherosene garantito fino a fine giugno)"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle negoziazioni tra Svizzera e USA sui dazi proposti per lavoro forzato, con possibili decisioni entro le prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: il RSI annuncia nuove nomine dirigenziali, il Montreux Jazz Festival svela un ricco programma gratuito, e tre tennisti italiani raggiungono i quarti di finale al Roland Garros, un evento seguito anche in Svizzera.",
+          "notizie": [
+            {
+              "titolo": "RSI: Danny Masa e Lorenzo Buccella nominati a capo della Distribuzione e del Pubblico",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1930372/masa-buccella-distribuzione-rsi-nomine",
+              "riassunto": "La Radiotelevisione svizzera (RSI) ha comunicato due nuove nomine ai vertici: Danny Masa diventerà responsabile della Distribuzione, mentre Lorenzo Buccella guiderà il Pubblico. Le nomine mirano a rafforzare la strategia di contenuti multimediali dell'emittente pubblica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Montreux Jazz Festival 2026: programma gratuito per la 60ª edizione e omaggio a Miles Davis",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/il-montreux-jazz-festival-omaggia-miles-davis-429563",
+              "riassunto": "Il festival di Montreux ha pubblicato il cartellone gratuito per la 60ª edizione (3‑18 luglio), con più di 700 concerti. Tra le iniziative, 140 concerti gratuiti, 320 DJ set e una settimana dedicata ai 100 anni di Miles Davis, con proiezioni di concerti storici.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tre tennisti italiani in quarti di finale al Roland Garros 2026",
+              "fonte": "Il Post Sport",
+              "link": "https://www.ilpost.it/2026/06/03/cobolli-berrettini-arnaldi-orario-dove-vederla-roland-garros-a-che-ora/",
+              "riassunto": "Il 3 giugno tre italiani – Flavio Cobolli, Matteo Arnaldi e Matteo Berrettini – hanno raggiunto i quarti di finale del Roland Garros, un risultato storico per il tennis italiano. Cobolli giocherà contro Felix Auger‑Aliassime alle 13:20 (probabile inizio 15:00), mentre Arnaldi e Berrettini si sfideranno alle 20:15.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "nomine strategiche nei media pubblici svizzeri",
+            "programmi gratuiti di grandi festival culturali",
+            "ascesa di atleti italiani in tornei internazionali"
+          ],
+          "da_tenere_d_occhio": "Segui gli sviluppi delle nuove nomine RSI e le eventuali dichiarazioni dei dirigenti sulla programmazione futura dei contenuti.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica si concentra su due notizie che coinvolgono direttamente i media pubblici svizzeri: la riorganizzazione della SRG/SRF e il dibattito sull'energia nucleare che ha provocato il boicottaggio di un programma televisivo da parte di partiti di sinistra.",
+          "notizie": [
+            {
+              "titolo": "La SRG avvia una ristrutturazione che costringe i dirigenti della SRF a ripresentare domanda",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/neue-geschaeftsleitung-srf-baut-um-ganze-chefetage-musste-sich-neu-bewerben-103576833",
+              "riassunto": "Per risparmiare circa 270 milioni di franchi entro il 2029, la SRG sta eliminando duplicazioni strutturali. Quasi tutti i dirigenti senior, compresi i caporedattori di SRF, hanno dovuto ricandidarsi. Le redazioni radio e TV saranno fuse in una sola unità “Information”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Il programma “Arena” della SRF sulla centrale nucleare cancellato dopo il boicottaggio dei partiti di sinistra",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/so-reagiert-moderator-sandro-brotz-linke-lassen-akw-arena-platzen-id22000565.html",
+              "riassunto": "Il dibattito televisivo sulla riapertura delle centrali nucleari, previsto per il 5 giugno, è stato annullato perché SP, Verdi e GLP hanno rifiutato di partecipare, ritenendo la composizione dei partecipanti sbilanciata. Il moderatore Sandro Brotz ha dovuto riorganizzare il programma.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riorganizzazione dei media pubblici svizzeri",
+            "Controversie politiche su temi energetici"
+          ],
+          "da_tenere_d_occhio": "L'esito della ristrutturazione della SRG e le reazioni dei partiti svizzeri al futuro dibattito nucleare",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'economia svizzera è al centro di tre temi chiave: le tensioni commerciali con l'UE, la forte pressione sui mercati finanziari a seguito del crollo di Partners Group e la crescita del settore della sicurezza con Verisure che assume centinaia di dipendenti.",
+          "notizie": [
+            {
+              "titolo": "La Svizzera ribadisce l'esigenza di evitare nuovi ostacoli al commercio con l'UE",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/economia/1930197/svizzera-ue-commercio-comitato-riunione-ribadito-scambio-accordo-ostacolo-unione",
+              "riassunto": "In una riunione del Comitato misto sull'accordo di libero scambio, la Svizzera ha sottolineato che non vuole ostacoli alle esportazioni, soprattutto nel settore dell'acciaio, dove l'UE prevede misure a partire dal 1° luglio. Il comunicato della SECO avverte che tali restrizioni potrebbero compromettere catene di approvvigionamento integrate.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Partners Group fa crollare l'SMI: perdita giornaliera del 16 % per le azioni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/finanz-titel-zieht-smi-runter-mega-tagesverlust-bei-partners-group-aktie-id20253021.html",
+              "riassunto": "Il titolo della Partners Group è sceso fino al -18 % in giornata, trascinando l'indice SMI a -0,7 % e toccando il minimo dal 2020. La perdita è legata alla decisione di limitare i rimborsi dei fondi private‑equity a 5 % del valore netto, in risposta a richieste di liquidità.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Verisure, con sede svizzera, registra crescita a due cifre e assume 300 dipendenti",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/verisure-cresce-2-cifre-e-assume-300-tecnici-manutentori-venditori-e-guardie-AIn8NJPD",
+              "riassunto": "Il gruppo svedese Verisure, con headquarter a Ginevra, ha annunciato una crescita a due cifre in Italia e prevede l'assunzione di 300 nuovi tecnici, manutentori, venditori e guardie. Nel 2025 ha gestito 9 milioni di allarmi in Italia, di cui 11 000 reali, con 6 000 tentativi di intrusione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni commerciali tra Svizzera e UE, soprattutto su misure \"Made in EU\"",
+            "Volatilità dei mercati finanziari svizzeri legata a grandi gruppi bancari/finanziari",
+            "Espansione del settore della sicurezza domestica con investimenti e assunzioni"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle misure UE sull'acciaio e sui contenuti di origine, l'andamento del prezzo delle azioni Partners Group e le prossime mosse di Verisure sul mercato svizzero",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie di grande impatto internazionale: Google Deepmind lancia un modello multimodale leggero, Alphabet raccoglie 85 miliardi di dollari per l'AI e Meta rende globale l'agente AI per WhatsApp Business.",
+          "notizie": [
+            {
+              "titolo": "Google Deepmind rilascia Gemma 4 12B, modello multimodale che gira su laptop con 16 GB di RAM",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram/",
+              "riassunto": "Gemma 4 12B è un modello open‑source che elabora testo, immagini e audio senza encoder separati, funzionando localmente con soli 16 GB di RAM. Secondo Google, le prestazioni sono quasi pari al modello da 26 B più grande e il codice è rilasciato sotto licenza Apache 2.0 per uso commerciale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Alphabet registra un'emissione record di 85 miliardi di dollari per finanziare l'AI di Google",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/",
+              "riassunto": "L'operazione ha superato le aspettative, raccogliendo 45 miliardi in un primo tranche e prevedendo altri 40 miliardi nel prossimo trimestre. Il CEO Sundar Pichai ha dichiarato che i proventi saranno destinati a investimenti in infrastrutture AI, con spese previste tra 180 e 190 miliardi di dollari entro l'anno.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Meta rende globale l'agente AI per WhatsApp Business",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
+              "riassunto": "L'agente AI, chiamato Meta Business Agent, è ora disponibile su WhatsApp Business in tutti i Paesi. Offre risposte automatiche, consigli di prodotto, prenotazioni e può essere integrato con Shopify, Zendesk e altri. Le imprese pagheranno in base al consumo di token, inserito nei piani Premium di WhatsApp Business.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita di modelli AI open‑source ottimizzati per hardware consumer",
+            "Forte interesse degli investitori per il capitale AI di grandi gruppi (Alphabet, Google)",
+            "Espansione dell'AI generativa nei servizi di messaggistica aziendale"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle normative europee sull'uso dell'AI nei motori di ricerca, che potrebbe influenzare l'adozione di questi nuovi modelli e servizi nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 90,
       "run_id": 122,
@@ -4611,286 +4860,6 @@
             "Centralizzazione dei servizi digitali da parte dei grandi platform player, tra controllo degli accessi e riduzione degli spazi gratuiti"
           ],
           "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il processo Musk-OpenAI produrrà segnali utili a capire la futura strategia di governance di OpenAI e se l’integrazione bancaria di ChatGPT verrà spiegata meglio sul fronte sicurezza, soprattutto per utenti europei e svizzeri.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "run_id": 103,
-      "run_time": "2026-05-16 02:45:01.451318+00:00",
-      "analyzed_at": "2026-05-16T02:51:34.914218+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da temi di impatto immediato per il Ticino: traffico da Ascensione con code al Gottardo e rallentamenti a Chiasso, un allarme al Fox Town con polizia e pompieri sul posto, e il dibattito politico sull’iniziativa per la sostenibilità e la crescita demografica. Sullo sfondo, emergono anche preoccupazioni per università, sport locale e finanze comunali.",
-          "notizie": [
-            {
-              "titolo": "Traffico da Ascensione: code al Gottardo e rallentamenti a Chiasso",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/ascensione-in-colonna-sotto-la-pioggia-433535",
-              "riassunto": "La giornata festiva ha portato subito forti disagi sulla rete viaria ticinese: alle 8.30 si registravano 10 chilometri di coda al portale nord del San Gottardo, con rallentamenti anche a Chiasso. È una notizia rilevante perché tocca direttamente frontalieri, vacanzieri e traffico di transito.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Le due testate convergono sul dato principale delle code al Gottardo e dei rallentamenti a Chiasso, ma Ticinonews mette più enfasi sul contesto pratico e sul maltempo ('sotto la pioggia'), mentre CdT presenta il fatto in modo più neutro e sintetico, concentrandosi sul livello di congestione."
-            },
-            {
-              "titolo": "Allarme al Fox Town, intervento di polizia e pompieri",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/polizia-e-pompieri-al-fox-town-433574",
-              "riassunto": "Al centro commerciale di Mendrisio sono intervenuti polizia e pompieri dopo segnalazioni di porte d’accesso bloccate e forte odore di fumo. Il caso interessa direttamente il Mendrisiotto e può implicare un rischio per clienti e commercianti, anche se i dettagli restano ancora limitati.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Le fonti descrivono lo stesso allarme quasi negli stessi termini, ma senza ancora una ricostruzione ufficiale. Il framing è prevalentemente prudente e descrittivo: si segnala la presenza delle forze d’intervento e l’odore di fumo, senza attribuire cause o conseguenze. Ticinonews dà un taglio più immediato da breaking news."
-            },
-            {
-              "titolo": "Iniziativa dei 10 milioni: scontro politico sulla sostenibilità",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/iniziativa-10-milioni-la-situazione-e-insostenibile-oppure-e-la-solita-battaglia-delludc-433520",
-              "riassunto": "Il confronto tra Alain Bühler e Giangiorgio Gargantini mostra quanto il tema della crescita demografica divida la politica ticinese. La votazione del 14 giugno può incidere su popolazione, pianificazione e risorse pubbliche, quindi è una notizia ad alto interesse cantonale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "mobilità e congestione legate ai ponti festivi e al traffico di transito",
-            "tensioni politiche cantonali su crescita demografica, sostenibilità e servizi pubblici"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata l’evoluzione dell’allarme al Fox Town, per capire se si tratti di un falso allarme, di un guasto o di un principio d’incendio, e l’andamento del traffico sull’asse del San Gottardo con possibili nuovi picchi di coda.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "La cronaca svizzera di oggi è dominata da due temi molto concreti per il pubblico elvetico: un nuovo caso di criminalità con un bancomat fatto esplodere in Basilea Campagna e un taglio occupazionale importante nel settore farmaceutico. Sullo sfondo, resta aperto il dibattito svizzero sul nucleare, con possibili effetti di lungo periodo sulla politica energetica.",
-          "notizie": [
-            {
-              "titolo": "Bancomat fatto esplodere ad Allschwil: polizia alla caccia dei responsabili",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1925452/polizia-allschwil-bancomat-bl-esplodere",
-              "riassunto": "Nella notte un bancomat è stato fatto esplodere in un'agenzia bancaria ad Allschwil (BL), con ingenti danni materiali e i malviventi in fuga. Il caso tocca direttamente la Svizzera tedesca e segnala una dinamica criminale che preoccupa anche per il rischio di escalation.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le tre testate convergono sul fatto di cronaca, ma LaRegione sottolinea soprattutto l'evento e la fuga dei responsabili, il CdT mette in evidenza il danno materiale e il contesto dell'agenzia bancaria in Baslerstrasse, mentre Ticinonews riprende la notizia in forma più sintetica e di servizio. Il framing è dunque più operativo nelle testate ticinesi, più descrittivo in LaRegione."
-            },
-            {
-              "titolo": "Takeda taglia fino a 280 posti a Opfikon: forte ridimensionamento in Svizzera",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/takeda-sopprime-impieghi-in-svizzera-tagliati-fino-a-280-posti-a-opfikon-427771",
-              "riassunto": "Il gruppo farmaceutico giapponese prevede di sopprimere fino a 280 impieghi nella sede di Opfikon, pari a circa un quarto degli attuali 1110 dipendenti. La notizia pesa perché tocca un settore strategico e un bacino occupazionale importante in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Le due fonti presentano la stessa decisione con taglio quasi identico, ma il CdT la inserisce con maggior rilievo nel contesto economico e occupazionale, mentre Ticinonews la riporta in maniera più breve e immediata. Entrambe privilegiano il dato numerico dei 280 posti e il peso relativo rispetto ai 1110 dipendenti, senza sviluppi politici o sindacali."
-            },
-            {
-              "titolo": "Il nucleare torna al centro del dibattito svizzero: più vicina l'apertura a nuovi impianti",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/la-porta-del-nucleare-e-sempre-piu-aperta-427765",
-              "riassunto": "Il Consiglio federale ha indicato che le centrali di Gösgen e Leibstadt potrebbero restare in esercizio fino a 80 anni, mentre a giugno il Nazionale discuterà la revoca del divieto di costruire nuovi impianti. È un cambio di tono potenzialmente decisivo per la politica energetica svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "sicurezza e criminalità con attacchi a bancomat",
-            "occupazione e ristrutturazioni nelle grandi aziende attive in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito l'evolversi delle indagini sull'esplosione del bancomat di Allschwil, in particolare eventuali dettagli su modalità e identità dei responsabili. Sul fronte economico, saranno rilevanti eventuali reazioni sindacali o istituzionali ai tagli di Takeda.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "La giornata culturale è dominata da tre filoni molto pertinenti per un lettore svizzero italofono: l’eliminazione di Veronica Fusaro all’Eurovision, l’avvio della Festa federale della musica a Bienne e l’annuncio del premio a Isabella Rossellini per Locarno79. Sullo sfondo, altri temi internazionali importanti ma meno vicini al pubblico locale.",
-          "notizie": [
-            {
-              "titolo": "Veronica Fusaro fuori dalla finale dell’Eurovision: delusione, ma il progetto continua",
-              "fonte": "Corriere del Ticino",
-              "link": "https://www.cdt.ch/societa/musica/veronica-fusaro-la-delusione-e-grande-ma-il-mio-sogno-continua-427802",
-              "riassunto": "La cantante svizzera non è riuscita a qualificarsi per la finale dell’Eurovision 2026 con “Alice”, interrompendo la serie positiva della Svizzera iniziata nel 2019. La notizia ha un impatto diretto sul pubblico svizzero e ticinese perché riguarda una rappresentante nazionale in una delle vetrine musicali più seguite d’Europa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Corriere del Ticino",
-                "LaRegione"
-              ],
-              "differenze_narrative": "Il Corriere del Ticino enfatizza l’aspetto sportivo/competitivo della sconfitta e la fine della striscia positiva svizzera, con taglio molto locale. LaRegione sembra puntare di più sul lato umano e motivazionale, con tono più empatico e orientato alla resilienza dell’artista."
-            },
-            {
-              "titolo": "A Bienne parte la Festa federale della musica con 25’063 musicisti",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1925482/festa-manifestazione-musica-federale-bienne-sfilata",
-              "riassunto": "La parata inaugurale è partita nonostante il rischio di pioggia: da oggi a domenica si esibiranno 532 società e 25’063 musicisti nella manifestazione quinquennale. È un evento di forte portata nazionale, con evidente interesse anche per la Svizzera italiana per scala, simbolico e rete associativa.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Isabella Rossellini riceverà il premio Excellence a Locarno79",
-              "fonte": "Corriere del Ticino",
-              "link": "https://www.cdt.ch/societa/cinema/a-isabella-rossellini-lexcellence-award-di-locarno79-427674",
-              "riassunto": "Il Locarno Film Festival consegnerà il prestigioso riconoscimento all’attrice, modella e regista italiana nella serata inaugurale di mercoledì 5 agosto 2026 in Piazza Grande. Per il Ticino è una notizia di primo piano: rafforza l’appeal internazionale della rassegna e anticipa un’apertura di grande visibilità.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Corriere del Ticino",
-                "LaRegione"
-              ],
-              "differenze_narrative": "Il Corriere del Ticino incornicia l’annuncio come evento chiave per l’apertura del festival e per la sua dimensione spettacolare in Piazza Grande. LaRegione tende a valorizzare maggiormente il profilo artistico di Rossellini e il prestigio del riconoscimento, con taglio più culturale che locale."
-            }
-          ],
-          "trend": [
-            "Centralità degli eventi culturali svizzeri con forte richiamo popolare",
-            "Eurovision e grandi festival come specchio dell’identità culturale svizzera"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare le reazioni a caldo all’eliminazione di Veronica Fusaro e l’eventuale ulteriore copertura su ospiti, programma e retroscena di Locarno79 e della Festa federale della musica.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dal riavvicinamento tra Washington e Pechino, con Trump e Xi che provano a smorzare i toni dopo mesi di tensioni. Sullo sfondo resta la crisi iraniana, ancora senza svolta, mentre in Europa continua il dibattito su sanzioni e responsabilità nel conflitto israelo-palestinese.",
-          "notizie": [
-            {
-              "titolo": "Trump e Xi provano a rilanciare il dialogo tra Stati Uniti e Cina",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/14/xi-a-trump-usa-e-cina-dovrebbero-essere-partner-non-rivali_0e5e5b9c-1106-4b18-af6e-86d6012f6a0c.html",
-              "riassunto": "Xi ha detto a Trump che Usa e Cina dovrebbero essere “partner, non rivali”, mentre il presidente americano ha risposto con toni concilianti parlando di grande rispetto per la Cina e per Xi. È una svolta di tono importante dopo mesi di tensioni su commercio, tecnologia e Taiwan.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA mette in primo piano il messaggio politico e diplomatico reciproco, con enfasi sulla formula di distensione. Il New York Times insiste invece sul contrasto tra la retorica dura di Trump in patria e il tono conciliante all’estero, leggendo l’incontro anche come performance politica e di stile."
-            },
-            {
-              "titolo": "La trattativa sull’Iran resta bloccata, con la Cina evocata come possibile mediatore",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/14/trump-xi-si-e-offerto-di-aiutare-sulliran-non-dara-armi-a-teheran_e24ecac7-f207-4d9f-a851-94574628cb1f.html",
-              "riassunto": "Trump ha detto in un’intervista a Fox News che Xi si sarebbe offerto di aiutare sulla crisi iraniana e che la Cina non darà armi a Teheran. La notizia conta perché collega la partita Iran alla relazione Usa-Cina, in un momento in cui il cessate il fuoco diplomatico resta fragile.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "Internazionale"
-              ],
-              "differenze_narrative": "ANSA presenta la dichiarazione di Trump come un fatto diplomatico utile a leggere il ruolo di Pechino nel dossier Iran. Internazionale colloca invece la vicenda dentro uno stallo più ampio, sottolineando la debolezza degli Stati Uniti e la precarietà della tregua, con un taglio più strutturale e meno personalizzato."
-            },
-            {
-              "titolo": "L’Unione europea approva nuove sanzioni contro coloni israeliani violenti",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/magazine/2026/05/14/un-primo-passo-2",
-              "riassunto": "L’11 maggio i ministri degli esteri dell’Ue hanno approvato nuove sanzioni contro coloni israeliani responsabili dell’aumento delle violenze contro i palestinesi. È un segnale politico rilevante perché mostra una linea europea più dura, ma ancora limitata, verso la crisi in Medio Oriente.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Riallineamento strategico Usa-Cina",
-            "Diplomazia fragile sul dossier Iran e Medio Oriente"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va seguito se il tono conciliante tra Trump e Xi si tradurrà in segnali concreti su commercio, Taiwan e Iran, oppure resterà solo un gesto diplomatico senza effetti immediati.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da temi con impatto diretto sulla Svizzera: un richiamo alimentare legato ad Aldi Suisse, una ricerca Empa su abbigliamento tecnico e PFAS, e il calo del carburante avio che resta comunque su livelli elevati. Sullo sfondo, diversi segnali di mercato e industria in Europa e nel mondo, ma con minore rilevanza immediata per un lettore ticinese.",
-          "notizie": [
-            {
-              "titolo": "Richiamo immediato di carne affumicata di manzo Aldi per presenza di STEC",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/stec-nella-carne-affumicata-di-manzo-venduta-da-aldi-433536",
-              "riassunto": "L’USAV raccomanda di non consumare il prodotto, mentre Aldi Suisse SA ha ritirato subito la carne dalla vendita e avviato un richiamo. È una notizia di sicurezza alimentare con impatto diretto sui consumatori in Svizzera e in Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L’Empa sviluppa una tecnologia per ridurre l’impatto dei tessuti tecnici trattati con PFAS",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1924932/pfas-abbigliamento-tecnologia-empa-ricercatori",
-              "riassunto": "La ricerca svizzera punta a mitigare il costo ambientale e sanitario degli indumenti impermeabili e antimacchia usati per escursionismo, corsa e ciclismo. Il tema è rilevante per innovazione, salute pubblica e sostenibilità industriale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "In forte calo il prezzo del carburante per aerei, ma i livelli restano ancora alti",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/in-forte-calo-il-prezzo-del-carburante-per-aerei-433552",
-              "riassunto": "Eurocontrol segnala un calo del 12% rispetto alle due settimane precedenti, ma il prezzo del carburante avio resta 1,75 volte sopra i livelli pre-crisi. Per l’aviazione europea, e quindi anche per i collegamenti da e per la Svizzera, i costi restano un fattore da monitorare.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza alimentare e controlli sui prodotti di largo consumo",
-            "innovazione svizzera su sostenibilità, materiali e salute"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare l’evoluzione del richiamo Aldi Suisse, in particolare eventuali estensioni ad altri lotti o punti vendita, e l’eventuale ricaduta sui prezzi e sulle operazioni del comparto aereo se il ribasso del carburante dovesse consolidarsi.",
-          "_model_used": "openai-codex/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi emergono soprattutto tre filoni: la corsa delle big tech a finanziare l’AI tagliando costi e posti di lavoro, le tensioni commerciali attorno a OpenAI e Apple, e il tema della sovranità dei dati che tocca da vicino anche la Svizzera. Sullo sfondo, cresce il dibattito su infrastrutture, data center e controllo dei dati.",
-          "notizie": [
-            {
-              "titolo": "Cisco taglia quasi 4.000 posti per investire di più nell’AI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
-              "riassunto": "Cisco annuncia un nuovo giro di tagli, quasi 4.000 posti, per liberare risorse da destinare all’intelligenza artificiale. Il caso è rilevante perché mostra come anche gruppi solidi, con ricavi trimestrali record, stiano ridisegnando organici e priorità per inseguire l’AI.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "OpenAI valuta azioni legali contro Apple dopo la delusione per l’integrazione di ChatGPT",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple-it-wouldnt-be-the-first-partner-to-feel-burned/",
-              "riassunto": "Secondo il report, OpenAI sarebbe frustrata perché l’integrazione di ChatGPT su Apple non avrebbe portato gli abbonati e la visibilità attesi. La notizia conta perché segnala attriti crescenti tra piattaforme e fornitori di AI: chi controlla l’accesso all’utente controlla anche il valore commerciale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Sovranità dei dati e AI: il nodo centrale per le imprese nell’era dei sistemi autonomi",
-              "fonte": "MIT Tech Review",
-              "link": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
-              "riassunto": "L’articolo sottolinea il compromesso fatto da molte imprese: usare subito modelli terzi in cambio di controllo ridotto sui dati. Per la Svizzera, e in particolare per banche, assicurazioni e settore pubblico, il tema è molto concreto: dove passano i dati e chi li governa diventa decisivo.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "Pressione sulle aziende per finanziare l’AI tramite tagli, riorganizzazioni e nuove priorità industriali",
-            "Crescente centralità di sovranità dei dati, controllo delle piattaforme e dipendenza da fornitori esterni di AI"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il dossier OpenAI-Apple si trasforma in una disputa formale e se altri grandi gruppi annunciano nuove misure di contenimento dei costi per finanziare l’AI.",
           "_model_used": "openai-codex/gpt-5.4-mini"
         }
       ]
