@@ -1,6 +1,258 @@
 {
-  "generated_at": "2026-06-07T05:07:46.500966+00:00",
+  "generated_at": "2026-06-08T05:09:04.722571+00:00",
   "analyses": [
+    {
+      "id": 94,
+      "run_id": 126,
+      "run_time": "2026-06-08 05:00:03.019224+00:00",
+      "analyzed_at": "2026-06-08T05:09:04.663017+00:00",
+      "articles_analyzed": 184,
+      "articles_selected": 16,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie di rilevanza nazionale: la decisione del Consiglio federale di rinunciare a Copernicus, la distruzione da parte di RUAG di munizioni americane con l’intervento di SRF, e una massiccia fuga di dati di Booking che ha alimentato truffe online.",
+          "notizie": [
+            {
+              "titolo": "Il Consiglio federale rinuncia all’adesione a Copernicus per motivi politico‑finanziari",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/%E2%80%9CNon-aderire-a-Copernicus-%C3%A8-pericoloso-per-la-Svizzera%E2%80%9D--3802259.html",
+              "riassunto": "Il Consiglio federale ha deciso di non aderire al programma europeo di osservazione della Terra Copernicus per il periodo 2028‑2034, citando vincoli politico‑finanziari. La Svizzera potrà usare i dati grezzi ma resterà esclusa dai servizi operativi, dagli appalti e dalle decisioni del programma. Il prof. Reto Knutti (Politecnico di Zurigo) ha avvertito che “è pericoloso non far parte di questo programma” per la previsione di rischi naturali e climatici.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "RUAG distrugge circa quattro tonnellate di munizioni americane ad Altdorf",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/La-RUAG-distrugge-munizioni-americane-ad-Altdorf--3802049.html",
+              "riassunto": "RUAG, azienda d’armamenti federale, sta smaltendo per la prima volta munizioni di piccolo calibro dell’esercito USA, trasferite dalla Germania. Il progetto, avviato nel 2025, coinvolge circa 4 tonnellate di materiale. Il Consiglio federale, tramite Armasuisse, ha autorizzato l’operazione e il consigliere della Difesa Martin Pfister ha confermato l’assenza di rischi per la neutralità svizzera. La notizia è stata resa nota da SRF, sottolineando l’interesse dei media pubblici svizzeri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Fuga di dati di Booking genera un triplo delle segnalazioni di truffa via WhatsApp",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Fuga-di-dati-Booking-triplicate-le-segnalazioni-di-truffa--3802220.html",
+              "riassunto": "Una violazione dei dati di Booking avvenuta ad aprile ha permesso a truffatori di inviare messaggi fraudolenti su WhatsApp. L’Ufficio federale della cybersicurezza ha registrato 23 segnalazioni a maggio, contro 8 ad aprile. Le truffe includono falsi rimborsi con link a falsi portali Twint e phishing bancario. Le autorità raccomandano di non cliccare sui link e di verificare le comunicazioni tramite l’app ufficiale o contattare direttamente l’hotel.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza digitale e cyber‑crime",
+            "Politiche di difesa e neutralità svizzera",
+            "Gestione dei dati ambientali e scientifici"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione della posizione svizzera su Copernicus e le eventuali ripercussioni per la ricerca climatica nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da tre temi di rilievo: il trasferimento di 180.000 vinili della RTS in un bunker, il record storico di donne in Parlamento segnalato da RSI, e il pagamento di un riscatto da parte di Ruag, riportato da CdT e Ticinonews con citazione di SRF.",
+          "notizie": [
+            {
+              "titolo": "RTS trasferisce 180.000 vinili in un bunker di Schlierbach",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Un-tesoro-troppo-prezioso-180%E2%80%99000-vinili-in-un-bunker--3800756.html",
+              "riassunto": "La RTS sta spostando 180.000 dischi in vinile, per circa 40 tonnellate, dal nuovo polo di Ecublens a un ex bunker militare a Schlierbach (canton Lucerna). Il bunker garantisce temperatura e umidità ideali per la conservazione di materiale raro, tra cui registrazioni classiche mai ristampate.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Record storico: 97 donne su 246 seggi del Parlamento svizzero",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Mai-cos%C3%AC-tante-donne-nel-Parlamento-svizzero--3803078.html",
+              "riassunto": "Con l’avvio della sessione estiva, il numero di donne in Parlamento è salito a 97, di cui 82 al Consiglio nazionale (41%). Il dato supera il precedente record del 2019 (96). L’aumento è attribuito a cinque nuove parlamentari donne provenienti dal centro‑sinistra.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ruag paga un riscatto agli hacker per recuperare i dati della filiale USA",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/ruag-ha-pagato-un-riscatto-agli-hacker-per-recuperare-i-dati-della-sua-filiale-usa-429872",
+              "riassunto": "Il presidente del Consiglio di amministrazione di Ruag, Jörg Rötheli, ha confermato a SRF che l’azienda ha pagato un “piccolo importo” per ottenere il ripristino dei dati rubati dalla filiale statunitense. L’attacco era stato compiuto dal gruppo Akira. Il pagamento contrasta le linee guida dell’Ufficio federale della cibersicurezza.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "CdT enfatizza la dichiarazione di Rötheli a SRF e il contesto dell’attacco, mentre Ticinonews aggiunge dati di mercato sui riscatti ransomware e cita lo studio di Sophos, fornendo una panoramica più ampia sul fenomeno."
+            }
+          ],
+          "trend": [
+            "Sicurezza informatica e ransomware",
+            "Parità di genere in politica",
+            "Valorizzazione del patrimonio culturale audiovisivo"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi della vicenda Ruag, in particolare eventuali indagini dell'UFCS o ulteriori richieste di riscatto da parte di gruppi di hacker",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con un articolo di SRF Kultur sul futuro di James Bond, mentre in Ticino si segnalano eventi locali di spettacolo e nuove forme di marketing per le serie TV.",
+          "notizie": [
+            {
+              "titolo": "Congettura sul doppio zero: chi sarà il nuovo Bond? Idee folli per la 007",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/film-serien/mutmassen-um-die-doppelnull-wer-wird-der-neue-bond-vier-verrueckte-ideen-zur-007-neubesetzung",
+              "riassunto": "SRF Kultur riporta che la ricerca del prossimo James Bond è in corso, con proposte che vanno da Harry Styles a Jennifer Lawrence come Mystique. L'articolo cita la casting‑chief Nina Gold e menziona i nomi più discussi (Henry Cavill, Callum Turner, Jacob Elordi).",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Un trip con cintura di sicurezza: performance di Albert Hofmann a Lugano",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1930504/trip-sicurezza-cintura-lsd-hofmann",
+              "riassunto": "Nel Garage Ferrari di Lugano, Flavio Stroppini ha presentato una performance ispirata al viaggio di Albert Hofmann, il chimico che sintetizzò l'LSD. L'evento, parte del programma \"Territori\", ha attirato un pubblico locale di appassionati di arte contemporanea.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Companion podcast: le serie TV creano contenuti audio per i fan",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/06/07/marketing-serie-tv-companion-podcast/",
+              "riassunto": "Il Post Cultura spiega il fenomeno dei \"companion podcast\" legati a serie TV, con esempi di Hulu, HBO e altri. Gli attori e gli autori partecipano a interviste e approfondimenti, creando un nuovo canale di engagement per il pubblico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Coinvolgimento dei fan tramite podcast audio",
+            "Speculazioni su icone cinematografiche internazionali (James Bond)"
+          ],
+          "da_tenere_d_occhio": "Seguitare l'evoluzione della ricerca del nuovo James Bond e le eventuali conferme di casting nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni in Medio Oriente e dagli effetti della guerra sul mercato energetico, mentre in Svizzera emerge una polemica su dichiarazioni politiche legate a una nota azienda svizzera.",
+          "notizie": [
+            {
+              "titolo": "Martullo-Blocher risponde alle accuse di reclutare personale all'estero in una dichiarazione a RTS",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/martullo-blocher-ueber-die-10-millionen-schweiz-schweizer-unternehmen-werden-weiter-personal-finden-id22008418.html",
+              "riassunto": "Durante un'intervista a RTS, la vicepresidente SVP Magdalena Martullo‑Blocher ha smentito le accuse secondo cui la sua azienda Ems‑Chemie recluta personale all’estero, spiegando che le offerte di lavoro sono state copiate da portali svizzeri. Ha inoltre difeso la posizione svizzera sulla proposta di iniziativa sulla sostenibilità, sostenendo che le imprese troveranno comunque personale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni tra Iran e Stati Uniti",
+            "Impatto della guerra in Medio Oriente sui prezzi dell'energia"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Martullo‑Blocher e possibili ripercussioni politiche sulla proposta di iniziativa sulla sostenibilità in Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'economia svizzera è al centro dell'attenzione: un caso di violenza a bordo di un volo Swiss è stato riportato da SRF, mentre due grandi aziende svizzere (Partners Group e Ruag) affrontano crisi e decisioni strategiche.",
+          "notizie": [
+            {
+              "titolo": "Passeggero violento su volo Swiss condannato a 10 mesi di carcere",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1930250/swiss-volo-passeggero-carcere-passeggeri",
+              "riassunto": "Un uomo a bordo di un volo Swiss New York‑Zurigo ha aggredito l'equipaggio, minacciato di entrare nel cockpit e ha provocato il ritorno dell’aereo. Il Tribunale federale del New Jersey lo ha condannato a dieci mesi di reclusione e a un risarcimento di 70 000 $; l'incidente è stato segnalato dal telegiornale della SRF.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Partners Group promette maggiore trasparenza dopo il crollo del titolo",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/economia/1930673/societa-group-grizzly-partners-azioni",
+              "riassunto": "Il co‑fondatore Fredy Gantner ha ammesso carenze comunicative dopo che l’azione di Partners Group è scesa del 27 % in una settimana, con una perdita di capitalizzazione di circa 20 miliardi di franchi. Prevede comunque afflussi di capitale tra 26 e 32 miliardi di dollari per il 2026.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ruag paga riscatto a gruppo di hacker per recuperare dati rubati",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/economia/1930589/ruag-hacker-dati-riscatto-pagato",
+              "riassunto": "L’azienda svizzera di armamenti Ruag ha versato un “piccolo” riscatto al gruppo Akira per riottenere dati sottratti dalla filiale statunitense Ruag LLC. Il presidente del consiglio d’amministrazione, Jörg Rötheli, ha confermato il pagamento a SRF, ma il Dipartimento federale della difesa non era stato informato.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza aerea e gestione dei comportamenti a bordo",
+            "Crisi di comunicazione e governance nelle grandi società svizzere",
+            "Ransomware e sicurezza informatica nel settore della difesa"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni normative sulla gestione dei passeggeri indisciplinati e ulteriori sviluppi legati a ransomware contro aziende strategiche svizzere",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da annunci di nuove funzionalità di sicurezza e prodotti a pagamento per gli LLM, con un focus su modalità di protezione dei dati e agenti AI commerciali.",
+          "notizie": [
+            {
+              "titolo": "OpenAI introduce la modalità Lockdown per proteggere i dati sensibili da attacchi di prompt injection",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+              "riassunto": "OpenAI ha lanciato Lockdown Mode, che disabilita la navigazione web in tempo reale, il recupero di immagini, la ricerca approfondita e la modalità agente, limitando così il rischio di esfiltrazione di dati tramite prompt injection. La funzione è disponibile per gli account ChatGPT Business e per alcuni account personali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Meta prepara Hatch, il primo agente AI a pagamento, con tariffe fino a 200 $ al mese",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/metas-hatch-ai-agent-could-cost-up-to-200-a-month-and-marks-its-first-paid-ai-product/",
+              "riassunto": "Meta sta sviluppando Hatch, un agente AI che traduce richieste in linguaggio naturale in strumenti funzionanti, con una versione gratuita e una premium (Hatch Plus) che può costare fino a 200 $ al mese. Il lancio previsto negli USA è per luglio, segnando il primo prodotto AI a pagamento di Meta.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sakana AI crea un laboratorio RSI per l'auto‑miglioramento ricorsivo delle AI",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs/",
+              "riassunto": "La startup giapponese Sakana AI ha istituito il \"Sakana AI RSI Lab\", un gruppo di ricerca dedicato all'auto‑miglioramento ricorsivo (RSI). L'obiettivo è superare la corsa al compute dei grandi laboratori occidentali sviluppando AI che ottimizzano sé stesse, con risultati già pubblicati su Nature.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza dei dati tramite modalità di isolamento (Lockdown Mode)",
+            "Commercializzazione di agenti AI a pagamento",
+            "Ricerca su auto‑miglioramento ricorsivo per ridurre la dipendenza dal compute"
+          ],
+          "da_tenere_d_occhio": "L'adozione e l'evoluzione della Lockdown Mode di OpenAI nelle prossime 24 h, soprattutto tra le imprese che gestiscono dati sensibili",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 93,
       "run_id": 125,
@@ -4391,336 +4643,6 @@
           ],
           "da_tenere_d_occhio": "Possibili sviluppi dell'appello di Elon Musk e le reazioni di OpenAI/Regolatori nei prossimi giorni",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 74,
-      "run_id": 106,
-      "run_time": "2026-05-19 02:45:01.311364+00:00",
-      "analyzed_at": "2026-05-19T02:51:14.562031+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 23,
-      "model_used": "openrouter/openai/gpt-5.4-mini",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "La giornata è dominata da temi molto concreti per il Ticino: traffico e mobilità sul San Gottardo, dossier politici ed economici che toccano direttamente frontalieri, FFS Cargo e rapporti con Berna. In parallelo emergono casi locali di forte impatto sociale e sanitario, con più articoli incrociati tra testate.",
-          "notizie": [
-            {
-              "titolo": "Rientro dell’Ascensione: traffico intenso e chiusura temporanea del San Gottardo",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/ecco-il-traffico-di-rientro-dellascensione-433729",
-              "riassunto": "Il rientro dall’Ascensione ha creato forti disagi al traffico: poco prima delle 12.30 la galleria del San Gottardo è stata chiusa temporaneamente per un veicolo in avaria. Alle 15 la coda era di 6 chilometri, con ritardi fino a un’ora. È un tema di impatto diretto per chi rientra in Ticino e per la gestione dell’asse nord-sud.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "San Gottardo: riprendono gli scavi del secondo tubo",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/svizzera/secondo-tubo-del-san-gottardo-riprendono-i-lavori-di-scavo-433787",
-              "riassunto": "L’USTRA ha informato i rappresentanti di Uri e Ticino sulle prossime tappe del secondo tubo del San Gottardo; oggi la fresa meccanica «Paulina» ha ripreso a scavare. Il dossier è strategico per la viabilità ticinese e per il futuro del collegamento alpino più importante del Cantone.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Fronte aperto tra Ticino e Berna sui ristorni dei frontalieri",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/ticino-e-berna-sui-ristorni-la-distanza-rimane-428105",
-              "riassunto": "Ignazio Cassis ha invitato alla cautela su un eventuale blocco dei ristorni dei frontalieri, sottolineando le possibili ripercussioni con la Confederazione. Il consigliere di Stato Norman Gobbi spinge invece per una linea più dura, segno che il dossier resta politicamente sensibile e molto rilevante per il Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "FFS Cargo Chiasso: il comitato chiede un incontro urgente al Governo",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/deposito-ffs-cargo-di-chiasso-il-comitato-contro-lo-smantellamento-chiede-un-incontro-al-governo-433726",
-              "riassunto": "Il comitato contro lo «smantellamento» del deposito FFS Cargo di Chiasso chiede un incontro urgente al Governo, sostenendo che le FFS restano sorde alle richieste del Cantone. Il tema tocca occupazione, logistica e il peso economico di Chiasso come nodo ferroviario.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "LaRegione Mendrisiotto"
-              ],
-              "differenze_narrative": "Ticinonews insiste sul conflitto istituzionale e sulla pressione politica sul Governo cantonale; LaRegione mette maggiormente in risalto l’allarme per il lavoro e il rischio di smantellamento, con taglio più territoriale/mendrisiotto."
-            },
-            {
-              "titolo": "Molestie in ospedale a Lugano: le sanzioni non chiudono il caso",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/bene-le-sanzioni-ma-il-tema-delle-molestie-nel-mondo-sanitario-resta-aperto-433755",
-              "riassunto": "Dopo l’inchiesta interna sull’ortopedia dell’Ospedale regionale di Lugano, l’ASMACT accoglie le sanzioni ma avverte che il problema delle molestie nel mondo sanitario resta aperto. La notizia pesa perché riguarda il clima di lavoro in una struttura sanitaria cantonale e la tutela del personale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Ticinonews privilegia la lettura sindacale e la continuità del problema; il CdT concentra il racconto sull’esito dell’inchiesta e sulle violazioni accertate, con un taglio più istituzionale e meno rivendicativo."
-            },
-            {
-              "titolo": "Locarno: aumentano i casi di assistenza sociale, soprattutto tra i giovani",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/ticino/assistenza-sociale-a-locarno-esplode-il-numero-di-richieste-427994",
-              "riassunto": "Le domande per accedere ai contributi di assistenza sociale a Locarno sono aumentate di oltre il 13% nel 2025. Preoccupano in particolare i molti giovani in difficoltà e la durata prolungata delle prestazioni. È un segnale sociale importante per il Locarnese e per il Cantone.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "LaRegione Locarnese"
-              ],
-              "differenze_narrative": "Il CdT mette in primo piano i numeri e il tema dei giovani; LaRegione accentua il dibattito istituzionale locale e il rifiuto della commissione consultiva, quindi il confronto politico-amministrativo attorno alla risposta comunale."
-            },
-            {
-              "titolo": "Dunja Valsesia guiderà la Sezione della popolazione",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/dunja-valsesia-a-capo-della-sezione-della-popolazione-433737",
-              "riassunto": "L’avvocata Dunja Valsesia subentrerà a Silvia Gada alla guida della Sezione della popolazione, che lascia l’Amministrazione cantonale per la pensione. È un passaggio amministrativo rilevante per un settore delicato come permessi, popolazione residente e gestione degli atti ufficiali.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino"
-              ],
-              "differenze_narrative": "Entrambe le testate presentano il cambio ai vertici come notizia istituzionale, ma Ticinonews lo formula in modo più immediato e orientato alla continuità amministrativa; il CdT tende a un taglio più neutro e burocratico."
-            },
-            {
-              "titolo": "Bellinzona, un tuffo dal bordo piscina finisce con ferite serie",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/si-tuffa-dal-bordo-piscina-e-riporta-ferite-di-una-certa-gravita-433749",
-              "riassunto": "Al Bagno pubblico di Bellinzona un 25enne si è tuffato dal bordo piscina poco prima delle 17 ed è rimasto ferito in modo serio, tanto da essere trasportato in ambulanza all’ospedale. È una notizia di cronaca immediata con impatto locale.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Ticino",
-                "CdT Ticino",
-                "LaRegione Bellinzonese"
-              ],
-              "differenze_narrative": "Tutte le fonti trattano l’episodio come cronaca d’urgenza; Ticinonews enfatizza l’orario e il trasporto in ambulanza, il CdT la gravità delle ferite, mentre LaRegione inserisce la notizia in modo più secco e locale."
-            }
-          ],
-          "trend": [
-            "Asse del San Gottardo: traffico, secondo tubo e gestione della mobilità",
-            "Tensioni istituzionali su lavoro, frontalieri e servizi pubblici (FFS Cargo, ristorni, assistenza sociale)"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore vanno seguiti gli sviluppi sul dossier FFS Cargo Chiasso e sulle reazioni del Governo, oltre all’evoluzione del traffico di rientro e alle eventuali nuove informazioni sul caso molestie in sanità, che potrebbe avere ulteriori strascichi istituzionali.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da temi ad alto impatto istituzionale e federale: dalla gestione delle sanzioni verso la Russia ai dossier giudiziari e ferroviari che toccano direttamente il Ticino. In parallelo, alcuni casi di forte richiamo mediatico mostrano come la Svizzera resti anche un palcoscenico internazionale per eventi e personalità di grande visibilità.",
-          "notizie": [
-            {
-              "titolo": "L’Ucraina accusa: tecnologia svizzera ancora presente in Russia nonostante le sanzioni",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/le-accuse-dallucraina-la-tecnologia-svizzera-arriva-ancora-in-russia-427983",
-              "riassunto": "Un consigliere di Zelensky sulle sanzioni denuncia che componenti o tecnologie svizzere continuerebbero ad arrivare in Russia. Il messaggio politico è chiaro: per Kiev le misure adottate dalla SECO non bastano e servono controlli più incisivi lungo la filiera commerciale.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Deragliamento del San Gottardo: le FFS contestano la perizia, ma emergono dettagli omessi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/deragliamento-nel-san-gottardo-del-2023-le-ffs-hanno-omesso-qualche-dettaglio-427995",
-              "riassunto": "Il caso del deragliamento del 2023 al San Gottardo torna al centro del dibattito: le FFS respingono le accuse della perizia del Ministero pubblico ticinese, sostenendo di non aver commesso errori. Dai documenti, però, emergerebbe che il macchinista si sarebbe accorto di un'anomalia, elemento potenzialmente importante per capire la catena delle responsabilità.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Valérie Dittli vuole chiudere la legislatura nonostante la fiducia compromessa",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/valerie-dittli-vuole-finire-la-legislatura-la-rendita-vitalizia-vi-rinuncerei-433722",
-              "riassunto": "La consigliera di Stato vodese, al centro di accuse di aver mentito e nascosto informazioni, dice di voler restare in carica fino alla fine della legislatura e afferma che rinuncerebbe alla rendita vitalizia. Il caso è rilevante perché tocca la credibilità del governo cantonale e la capacità di ripristinare la fiducia interna.",
-              "rilevanza": "alta",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "fiducia nelle istituzioni e gestione delle responsabilità pubbliche",
-            "impatti svizzeri delle tensioni geopolitiche e delle sanzioni internazionali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore da monitorare soprattutto l'evoluzione del dossier Dittli e le eventuali nuove prese di posizione della SECO o di Kiev sul presunto aggiramento delle sanzioni svizzere; sul fronte ferroviario, eventuali ulteriori documenti o chiarimenti sul caso San Gottardo potrebbero cambiare il quadro delle responsabilità.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "In questa tornata spiccano soprattutto temi con un legame diretto alla Svizzera italiana: l’Eurovision, osservato tra polemiche politiche e risultati del televoto elvetico, e le notizie dalla vita culturale svizzera, da Soletta alla musica federale. Sullo sfondo, restano alcuni grandi appuntamenti internazionali come Cannes e Broadway, ma con minore impatto locale immediato.",
-          "notizie": [
-            {
-              "titolo": "Eurovision: tra boicottaggio spagnolo, televoto svizzero e vittoria bulgara, il concorso diventa un caso politico",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1926013/guerra-eurovision-sanchez-boicottaggio-finale",
-              "riassunto": "Pedro Sánchez ha ribadito il boicottaggio spagnolo dell’Eurovision e ha rilanciato un messaggio contro la guerra. Intanto RTVE ha trasmesso un messaggio di protesta durante la finale, mentre in Svizzera il televoto ha premiato Israele e Sal Da Vinci, mostrando una forte distanza dalla giuria. È un tema rilevante anche per il pubblico ticinese perché unisce cultura pop, geopolitica e partecipazione elvetica.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "CdT Società",
-                "New York Times Arts"
-              ],
-              "differenze_narrative": "LaRegione mette al centro la protesta politica spagnola e il boicottaggio, con un taglio apertamente polemico. CdT guarda invece al lato svizzero, evidenziando la spaccatura tra pubblico e giuria nel televoto nazionale. Il New York Times sposta il focus sulla dimensione geopolitica della vittoria bulgara, interpretandola come segnale del ruolo della Bulgaria nello scenario europeo. Le tre fonti raccontano quindi lo stesso contenitore, ma con angolazioni diverse: protesta, recezione svizzera e lettura continentale."
-            },
-            {
-              "titolo": "Le Giornate letterarie di Soletta confermano il loro peso nel panorama culturale svizzero",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-literaturtage-solothurn-verzeichnen-grossen-andrang",
-              "riassunto": "Le Giornate letterarie di Soletta hanno registrato un forte afflusso di pubblico, con nomi come Lukas Bärfuss e ospiti internazionali che hanno portato temi politici nei dibattiti. Per la Svizzera italiana conta perché segnala una scena letteraria nazionale vivace e capace di attirare attenzione oltre i confini regionali.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Le bande vallesane dominano la Festa federale di musica",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1926093/festa-vallesane-federale-bande-band-musica",
-              "riassunto": "Le formazioni del Vallese occupano sei dei sette posti nella Brass Band Excellence, con l’Ancienne Cécilia di Chermignon al primo posto. Il quadro racconta una forte vitalità della musica bandistica svizzera, ma segnala anche problemi organizzativi come la carenza di volontari.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "cultura e politica si intrecciano sempre più spesso nei grandi eventi",
-            "forte visibilità della scena culturale svizzera tra letteratura, musica e televoto"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato soprattutto l’ulteriore sviluppo del caso Eurovision: possibili reazioni ufficiali, nuove prese di posizione sul boicottaggio e commenti sui risultati del televoto svizzero.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "La giornata è dominata dall’escalation tra Stati Uniti, Israele e Iran: diplomazia in stallo, minacce militari e nuove mosse sullo Stretto di Hormuz. Sullo sfondo, la guerra in Ucraina continua a intensificarsi e l’epidemia di Ebola in Congo riporta l’attenzione sui rischi sanitari globali.",
-          "notizie": [
-            {
-              "titolo": "La crisi con l’Iran entra in una fase più pericolosa: diplomazia bloccata e opzioni militari sul tavolo",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/18/trump-ha-convocato-i-consiglieri-di-sicurezza-al-golf-club-per-parlare-di-iran_0313c74e-43b8-4e2e-81ee-b5a8c22fa169.html",
-              "riassunto": "Trump ha riunito sabato al golf club Vance, Rubio, il direttore della Cia e Witkoff per discutere dell’Iran, mentre BBC e NYT parlano di negoziati in stallo e di possibili nuove risposte iraniane. Tema ad alta rilevanza per gli equilibri energetici e per l’Europa.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "BBC World",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA mette l’accento sulla riunione di sicurezza e sul perimetro politico dell’emergenza; BBC privilegia la fase diplomatica, con l’idea di un “tempo che stringe” ma con scambi ancora aperti; il NYT insiste sulle possibili contromosse iraniane e sul rischio di un allargamento regionale, con più dettaglio sulle opzioni militari e sulle conseguenze strategiche."
-            },
-            {
-              "titolo": "L’Iran prepara nuove strutture di controllo sullo Stretto di Hormuz",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/18/teheran-annuncia-creato-organismo-che-gestira-lo-stretto-di-hormuz_399d109c-b70c-4b9e-9c69-f00c91837091.html",
-              "riassunto": "Teheran annuncia la creazione dell’“Autorità dello Stretto del Golfo Persico”, segnale che si inserisce nel braccio di ferro sulle rotte energetiche. Per l’Europa e la Svizzera conta per i possibili effetti su prezzi dell’energia e mercati.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "New York Times World"
-              ],
-              "differenze_narrative": "ANSA presenta la notizia come un annuncio istituzionale iraniano, con taglio più descrittivo; il NYT la collega invece alla guerra con l’Iran e alle possibili risposte di Teheran, interpretandola come segnale di escalation e di pressione sulle rotte marittime."
-            },
-            {
-              "titolo": "Ebola in Congo: l’OMS dichiara l’emergenza globale mentre gli Stati Uniti limitano gli ingressi",
-              "fonte": "New York Times World",
-              "link": "https://www.nytimes.com/2026/05/18/world/africa/congo-ebola-testing.html",
-              "riassunto": "Il focolaio in Congo è stato identificato con ritardo e ha già colpito anche un medico americano tra i casi confermati. Il NYT segnala problemi di sorveglianza e test, mentre la dichiarazione dell’OMS e le restrizioni USA indicano un rischio di diffusione internazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Escalation Iran-Stati Uniti-Israele e rischio per le rotte energetiche",
-            "Ritorno delle emergenze transnazionali: sicurezza, salute pubblica e controlli alle frontiere"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorata la possibilità di nuovi attacchi o annunci militari legati all’Iran, soprattutto su Hormuz e sui partner regionali. Da seguire anche l’evoluzione diplomatica e le eventuali reazioni sui mercati energetici.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "La giornata economica è dominata da temi molto vicini alla Svizzera: energia, export e marchi nazionali. Spiccano l’allarme UBS sulle scorte di petrolio, la mossa di MSC nel trading del greggio e il caso Swatch, diventato un fenomeno commerciale ma anche reputazionale.",
-          "notizie": [
-            {
-              "titolo": "UBS avverte: le scorte mondiali di petrolio scendono verso i minimi degli ultimi dieci anni",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/ubs-lancia-lallarme-scorte-globali-di-petrolio-verso-i-minimi-degli-ultimi-10-anni-433742",
-              "riassunto": "Secondo gli analisti di UBS, entro fine maggio le scorte globali dovrebbero calare a 7,6 miliardi di barili, avvicinandosi ai minimi di un decennio. Per Svizzera e Ticino il tema pesa subito su trasporti, costi energetici e inflazione importata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "MSC entra con forza nel petrolio: la strategia di Aponte si allarga oltre i container",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/aponte-mit-mega-offensive-zum-perfekten-zeitpunkt-schweizer-containerriese-msc-will-jetzt-auch-beim-oel-die-weltmeere-beherrschen-id21955598.html",
-              "riassunto": "Il colosso svizzero MSC rileva la metà della coreana Sinokor e diventa improvvisamente uno dei grandi player del trasporto di petrolio via tanker. È una diversificazione importante per un gruppo simbolo dell’economia svizzera, in un mercato reso più volatile da tensioni geopolitiche e prezzi ballerini.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": []
-            },
-            {
-              "titolo": "Il lancio di Swatch «Royal Pop» divide: successo commerciale, caos nei negozi e critiche al brand",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/war-genau-was-ihr-wolltet-swatch-reagiert-auf-tumulte-und-erntet-kritik-id21955998.html",
-              "riassunto": "Il debutto della nuova Swatch «Royal Pop» ha creato code, tumulti e chiusure temporanee in città come Basilea e Londra. Il caso è rilevante perché mostra la forza dei marchi svizzeri nel lusso accessibile, ma anche il rischio di un hype che sfugge di mano.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Blick Wirtschaft",
-                "Blick Life"
-              ],
-              "differenze_narrative": "Blick Wirtschaft mette l’accento sulle criticità operative, sul caos e sulla risposta difensiva di Swatch; il contenuto di Blick Life/podcast legge invece il caso come esempio di marketing estremo e spiega i meccanismi che generano l’hype, con tono più analitico e meno polemico."
-            }
-          ],
-          "trend": [
-            "energia e petrolio come fattore chiave per prezzi e costi in Svizzera",
-            "forza e vulnerabilità dei marchi svizzeri nei mercati globali"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore andrà monitorato se l’allarme sulle scorte di petrolio si tradurrà in nuovi rialzi dei carburanti e se il caso Swatch si estenderà ad altri negozi o causerà una reazione ufficiale più netta del gruppo.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "La giornata è dominata dallo scontro OpenAI-Musk, con effetti che vanno oltre il tribunale perché toccano governance, fiducia e modello di business dell’IA. Sullo sfondo emergono anche temi molto sensibili per Europa e Svizzera: privacy negli assistenti vocali e sovranità/cybersecurity dei dati e del codice.",
-          "notizie": [
-            {
-              "titolo": "Musk perde la causa contro Sam Altman e OpenAI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
-              "riassunto": "Il caso legale tra Elon Musk, Sam Altman e OpenAI si chiude con una sconfitta per Musk. Per il settore è una notizia importante perché chiarisce, almeno per ora, la posizione giudiziaria di OpenAI in una disputa che ha forte valore simbolico e industriale.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "TechCrunch AI"
-              ],
-              "differenze_narrative": "Una fonte racconta l’esito secco della controversia; l’altra si concentra sul tema della fiducia e sull’affidabilità personale di Altman emersa nelle fasi finali del processo. Il framing passa quindi dal risultato legale al giudizio sulla credibilità dei protagonisti."
-            },
-            {
-              "titolo": "Apple prepara un Siri rinnovato che potrebbe eliminare automaticamente le chat",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
-              "riassunto": "Apple starebbe puntando sulla privacy per il nuovo Siri, fino a prevedere la cancellazione automatica delle conversazioni. È un tema molto rilevante per i lettori svizzeri: tocca direttamente protezione dei dati, fiducia nei dispositivi e gestione locale delle informazioni personali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Mistral avverte la Francia: attenzione a far analizzare codice militare da modelli AI statunitensi",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/mistral-ceo-arthur-mensch-warns-france-against-letting-anthropics-mythos-scan-military-code-bases/",
-              "riassunto": "Il CEO di Mistral, Arthur Mensch, mette in guardia contro la dipendenza europea dalla cybersecurity statunitense, sostenendo che le basi di codice militari francesi non dovrebbero essere scansionate da modelli AI USA. Il messaggio è molto attuale anche per la Svizzera: sovranità digitale, difesa e controllo dei dati.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "IA, privacy e controllo dei dati personali",
-            "Sovranità digitale europea e fiducia nei grandi laboratori AI"
-          ],
-          "da_tenere_d_occhio": "Nelle prossime 24 ore va monitorato se il caso OpenAI-Musk genererà nuove reazioni di mercato o dichiarazioni dei protagonisti, e se Apple confermerà dettagli concreti sul nuovo Siri e sulla gestione automatica delle chat.",
-          "_model_used": "openrouter/openai/gpt-5.4-mini"
         }
       ]
     }
