@@ -1,6 +1,205 @@
 {
-  "generated_at": "2026-06-08T05:09:04.722571+00:00",
+  "generated_at": "2026-06-09T05:08:41.377894+00:00",
   "analyses": [
+    {
+      "id": 95,
+      "run_id": 127,
+      "run_time": "2026-06-09 05:00:02.531898+00:00",
+      "analyzed_at": "2026-06-09T05:08:41.310968+00:00",
+      "articles_analyzed": 181,
+      "articles_selected": 11,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi di politica locale e sicurezza: il dibattito parlamentare sul radon, le critiche al consuntivo 2025 del Cantone e l'evacuazione di emergenza a Zurigo. Questi fatti hanno un impatto diretto sulla vita dei cittadini e sulle decisioni istituzionali.",
+          "notizie": [
+            {
+              "titolo": "Parlamento in disaccordo sul gas radon e le misure di risanamento",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Gas-radon-disaccordo-in-Parlamento--3805868.html",
+              "riassunto": "Le Camere federali non concordano sulle misure di risanamento obbligatorio per gli edifici con radon sopra i nuovi limiti (300 Bq/m³). Il dibattito riguarda direttamente Ticino e Grigioni, dove il 10% degli edifici è fuori norma. Il costo medio di adeguamento è stimato in 10’000 franchi per edificio, per circa 200’000 immobili interessati.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Consuntivo 2025 del Cantone: critiche da destra a sinistra",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Consuntivo-2025-le-critiche-non-mancano-da-destra-a-sinistra--3806234.html",
+              "riassunto": "Il Gran Consiglio ticinese discute il rendiconto 2025. Le opposizioni (Centro, PLR, Lega, UDC, Socialisti) denunciano la mancanza di strategia, l’aumento delle spese correnti e la difficoltà a raggiungere il pareggio di bilancio, nonostante un’iniezione di 80 milioni dalla Banca nazionale che ha ridotto il disavanzo a -32,5 milioni.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Evacuazione completata nella zona del Politecnico di Zurigo",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Terminata-l%E2%80%99evacuazione-nella-zona-del-Poli-di-Zurigo--3803024.html",
+              "riassunto": "Le circa 300 persone evacuate dalla zona del Politecnico di Zurigo sono rientrate a casa dopo 6 ore. È stato rimosso in sicurezza il gas pericoloso (trifluoruro di cloro) da un vecchio laboratorio, con l’intervento di una ditta specializzata e della polizia cantonale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "dibattito ambientale e salute pubblica (radon)",
+            "tensioni di bilancio cantonale",
+            "sicurezza e gestione di emergenze industriali"
+          ],
+          "da_tenere_d_occhio": "L'esito delle negoziazioni parlamentari sul radon e le eventuali decisioni di finanziamento per i risanamenti, che potrebbero influenzare le spese dei proprietari immobiliari in Ticino nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da una disputa sulla presenza di croci religiose in alta quota e da dibattiti su parità di genere e benessere animale, con un clima elettorale attivo in diversi cantoni.",
+          "notizie": [
+            {
+              "titolo": "Una disputa sulla croce di vetta al Pico de Aneto coinvolge un giornalista RTS",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/dialog/hoechster-berg-in-den-pyrenaeen-am-pico-de-aneto-tobt-ein-kampf-um-das-gipfelkreuz",
+              "riassunto": "Un giovane costruttore francese ha installato una nuova croce di legno sul Pico de Aneto, la vetta più alta dei Pirenei, suscitando polemiche. Un giornalista di RTS ha commentato il caso, evidenziando il dibattito più ampio sul ruolo dei simboli religiosi in montagna.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Parità di genere in politica (record di donne in Parlamento)",
+            "Controversie su pubblicità e benessere animale (Migros vs animalisti)"
+          ],
+          "da_tenere_d_occhio": "Il referendum e le iniziative popolari in 16 cantoni domenica 14 giugno, soprattutto il salario minimo e l'imposizione alla fonte",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: SRF segnala sia la design‑crime che minaccia le imprese locali, sia la designazione di Aarau come Capitale culturale 2030. Inoltre, notizie internazionali su premi teatrali dominano i feed esteri.",
+          "notizie": [
+            {
+              "titolo": "Furto di idee: designer svizzeri sotto pressione per le contraffazioni",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kampf-gegen-ideenklau-faelscher-am-werk-schweizer-designer-stehen-unter-druck",
+              "riassunto": "Il designer basileño Berend Frenzel denuncia la rapida diffusione di copie non autorizzate del suo supporto per iPad, venduto su piattaforme di crowdfunding. Il problema è aggravato da strutture mafiose cinesi che replicano prodotto e marketing, costringendo gli artigiani svizzeri a difendersi con brevetti internazionali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aarau sarà la Capitale culturale della Svizzera nel 2030",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-iranische-justiz-bestaetigt-haftstrafe-gegen-regisseur-panahi",
+              "riassunto": "Nel livestream di SRF Kultur si annuncia che Aarau è stata scelta per il programma “Cultura 2030”, con un investimento previsto di oltre 200 milioni di franchi per musei, festival e infrastrutture artistiche, rafforzando il ruolo del Ticino nella scena nazionale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Panahi condannato: la giustizia iraniana conferma la pena detentiva",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-iranische-justiz-bestaetigt-haftstrafe-gegen-regisseur-panahi",
+              "riassunto": "Un tribunale rivoluzionario di Teheran ha confermato la condanna di un anno di carcere per il regista Jafar Panahi, nonostante le pressioni internazionali per la sua liberazione. La notizia è inserita nel bollettino culturale di SRF del 1 giugno 2026.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita dei companion podcast per serie TV",
+            "Ampia copertura internazionale dei Tony Awards"
+          ],
+          "da_tenere_d_occhio": "Sviluppi legislativi svizzeri sul design‑protection e aggiornamenti sul progetto Cultura 2030 di Aarau nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Le notizie di oggi mostrano tensioni in Medio Oriente e un dibattito interno sulla politica migratoria svizzera, con un focus sui media pubblici.",
+          "notizie": [
+            {
+              "titolo": "Martullo-Blocher risponde alle accuse di reclutare personale all'estero in una dichiarazione a RTS",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/martullo-blocher-ueber-die-10-millionen-schweiz-schweizer-unternehmen-werden-weiter-personal-finden-id22008418.html",
+              "riassunto": "Durante un'intervista a RTS, la vicepresidente SVP e amministratrice delegata di Ems‑Chemie, Magdalena Martullo‑Blocher, ha respinto le accuse di pubblicare offerte di lavoro svizzere all'estero, spiegando che gli annunci sono copiati automaticamente da portali internazionali. Ha sottolineato che l'azienda forma 150 apprendisti in Svizzera e che, anche senza l'iniziativa di sostenibilità, le imprese svizzere troverebbero comunque personale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensioni tra Iran e Israele",
+            "dibattito sulla politica migratoria in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Martullo‑Blocher e possibili reazioni del governo federale sulla proposta di iniziativa sulla sostenibilità",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui flussi di capitale svizzeri verso gli USA, su un incidente aereo che ha coinvolto Swiss e su un forte aumento dei prezzi delle funivie alpine, temi che colpiscono direttamente la Svizzera.",
+          "notizie": [
+            {
+              "titolo": "Le aziende svizzere hanno investito 27 miliardi di dollari negli USA",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/dazi-le-aziende-svizzere-stanno-investendo-miliardi-negli-usa-435246",
+              "riassunto": "Tra gennaio e aprile le imprese elvetiche hanno impegnato 27 miliardi di dollari (21 miliardi di franchi) negli Stati Uniti, con una previsione di 67 miliardi entro fine anno. Il direttore della Camera di commercio svizzero‑americana, Rahul Sahgal, sottolinea l’impegno svizzero, mentre si avverte il rischio di dazi punitivi da Washington.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews aggiunge dichiarazioni di politici svizzeri (Franz Grüter) e avverte di possibili dazi, enfatizzando la dimensione politica. tio.ch ripropone i dati di investimento ma si limita a riportare i numeri, senza citare interlocutori né il rischio doganale, mostrando una narrazione più neutra e focalizzata sui fatti economici."
+            },
+            {
+              "titolo": "Volo Swiss costretto a tornare a Zurigo per particelle solide nel carburante",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1930773/swiss-volo-stato-carburante-particelle",
+              "riassunto": "Il volo LX2646 Zurich‑Delhi ha invertito rotta sopra il Mar Nero a causa di un allarme su particelle solide nel carburante del motore 1. L’aereo è tornato a Zurigo e il volo di ritorno è stato cancellato, coinvolgendo 151 passeggeri e 218 persone in attesa di collegamenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I prezzi delle funivie alpine salgono fino a 264 franchi per un viaggio di andata‑ritorno",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/bis-zu-14-franken-in-einem-jahr-satte-preiserhoehungen-bei-beliebten-ausflugsbahnen-id22009336.html",
+              "riassunto": "Le tariffe delle principali funivie svizzere sono aumentate del 15‑17 % negli ultimi quattro anni: Pilatus 84 CHF, Rigi 84 CHF, Schilthorn 115 CHF, Jungfraujoch 239,20 CHF. Gli aumenti sono giustificati da investimenti infrastrutturali, ma suscitano forte malcontento tra i viaggiatori.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Investimenti svizzeri negli USA",
+            "Aumento dei costi dei servizi turistici alpini",
+            "Sicurezza operativa nel trasporto aereo"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni delle tariffe delle funivie e eventuali interventi dell'Ufficio federale dell'economia (SECO) per tutelare i consumatori",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia di rilievo per i media pubblici svizzeri o per la Svizzera/Ticino è emersa tra gli articoli analizzati; prevale la copertura internazionale di sviluppi AI e tecnologia.",
+          "notizie": [],
+          "trend": [
+            "crescita dei costi e token economy nell'AI",
+            "strategia delle grandi aziende AI verso super‑app e agenti"
+          ],
+          "da_tenere_d_occhio": "Monitorare eventuali future dichiarazioni o partnership di aziende AI con enti svizzeri o impatti normativi locali nei prossimi 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 94,
       "run_id": 126,
@@ -4368,280 +4567,6 @@
             "Passaggio da ricerca basata su link a esperienze AI‑agentiche integrate"
           ],
           "da_tenere_d_occhio": "L’estensione dei nuovi agenti AI nella ricerca e nei prodotti Google (es. Universal Cart, Gemini Spark) nelle prossime 24 h, soprattutto per verificare la disponibilità in Svizzera",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 75,
-      "run_id": 107,
-      "run_time": "2026-05-20 02:45:03.312257+00:00",
-      "analyzed_at": "2026-05-20T02:53:58.092937+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 17,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da tre temi chiave: la ripresa dei lavori al secondo tunnel del San Gottardo, le tensioni sui ristorni dei frontalieri con la Confederazione e l'elezione di Daria Lepori a presidente del Gran Consiglio.",
-          "notizie": [
-            {
-              "titolo": "Riprendono i lavori di scavo del secondo tunnel del San Gottardo",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/svizzera/secondo-tubo-del-san-gottardo-riprendono-i-lavori-di-scavo-433787",
-              "riassunto": "La commissione politica per il nuovo tunnel e la ristrutturazione del primo si è riunita ad Airolo; la fresa meccanica “Paulina” ha ricominciato a scavare, segnando il ritorno delle attività dopo la pausa invernale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cassis avverte che il blocco dei ristorni creerebbe tensioni tra Ticino e Berna",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/cassis-il-blocco-dei-ristorni-provocherebbe-tensioni-tra-ticino-e-berna-433818",
-              "riassunto": "Il consigliere federale Ignazio Cassis, in visita a Bellinzona, ha sottolineato che un blocco dei ristorni per i frontalieri potrebbe generare gravi tensioni con la Confederazione, mentre il consigliere cantonale Zali ha riconosciuto la sensibilità del tema.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "Ticinonews Ticino"
-              ],
-              "differenze_narrative": "CdT Ticino mette in evidenza la richiesta di cautela di Cassis e la risposta di Zali, enfatizzando le possibili ripercussioni economiche; Ticinonews aggiunge il contesto dell'incontro a Palazzo delle Orsoline e usa un tono più diplomatico, citando la necessità di un dialogo più che mai necessario."
-            },
-            {
-              "titolo": "Daria Lepori eletta presidente del Gran Consiglio",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/lepori-nuova-presidente-del-gran-consiglio-sono-felicissima-e-molto-emozionata-433820",
-              "riassunto": "La socialista Daria Lepori succede a Fabio Schnellmann come presidente del Gran Consiglio, diventando la quarta donna a ricoprire la carica dal 2008; i vicepresidenti sono Giovanni Berardi (Il Centro) e Sem Genini (Lega dei Ticinesi).",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Infrastrutture strategiche (tunnel San Gottardo)",
-            "Conflitti fiscali sui frontalieri"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle trattative sui ristorni dei frontalieri nelle prossime 24 ore, soprattutto eventuali dichiarazioni ufficiali della Confederazione.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie di sicurezza e economia: un'importante operazione contro droga e riciclaggio, tensioni sul trasporto ferroviario dal Ticino e le recenti polemiche sui dazi all’acciaio tra Svizzera ed UE.",
-          "notizie": [
-            {
-              "titolo": "Sequestrati beni per quasi 13 milioni in operazione contro droga e riciclaggio",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/traffico-di-droga-e-riciclaggio-sequestrati-beni-per-quasi-13-milioni-428084",
-              "riassunto": "Le autorità hanno sequestrato beni per 12,9 milioni di franchi in un'indagine su traffico di droga e riciclaggio che ha coinvolto cantoni di Argovia, Svitto, Zugo e Ginevra. Un imputato è stato arrestato il 5 maggio.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Caos su treno dal Ticino verso la Svizzera tedesca: passeggeri a terra",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/caos-su-un-treno-dal-ticino-verso-la-svizzera-tedesca-passeggeri-a-terra-e-tensioni-a-bordo-428090",
-              "riassunto": "Un convoglio partito da Bellinzona è stato costretto a fermarsi a causa del sovraffollamento; alcuni viaggiatori con biglietto valido sono stati fatti scendere per motivi di sicurezza.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Dazi sull’acciaio: l’UE respinge le critiche di Guy Parmelin",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/dazi-sullacciaio-lue-respinge-le-critiche-di-guy-parmelin-428089",
-              "riassunto": "La Commissione europea ha respinto le osservazioni del ministro svizzero dell’Economia, Guy Parmelin, sostenendo che i dazi sull’acciaio non violano l’accordo Svizzera‑UE sul pacchetto di stabilizzazione e sviluppo delle relazioni.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera",
-                "SRF Schweiz"
-              ],
-              "differenze_narrative": "CdT e Ticinonews riportano in modo neutro la risposta dell’UE, citando la dichiarazione di non violazione dell’accordo. SRF aggiunge una nota critica, evidenziando il malcontento della Svizzera e definendo la risposta “schietta”."
-            }
-          ],
-          "trend": [
-            "rafforzamento delle misure contro il riciclaggio",
-            "tensioni nei trasporti pubblici post‑festività",
-            "dibattito sui dazi commerciali UE‑Svizzera"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni delle negoziazioni sui dazi all’acciaio e ulteriori controlli su traffico di droga e riciclaggio nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: un film locale trionfa al DOK.fest, un premio nazionale valorizza il libro per ragazzi e un musicista ticinese lancia un nuovo album introspectivo.",
-          "notizie": [
-            {
-              "titolo": "Il film svizzero “The Narrative” vince al DOK.fest",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1926127/the-narrative-svizzero-baviera-monaco",
-              "riassunto": "Al DOK.fest di Monaco di Baviera, i registi svizzeri Bernard Weber e Martin Schilt hanno ricevuto il premio principale per il documentario “The Narrative”. Il film, in concorso tra 30 opere internazionali, è stato lodato per la sua struttura innovativa e per l'approccio critico alla narrazione contemporanea.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Premio svizzero del libro per ragazzi 2026 assegnato a Pavoni, Raubaum e Walther",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1926129/pavoni-walther-raubaum-soletta-ragazzi",
-              "riassunto": "Il Premio svizzero del libro per ragazzi 2026 è stato conferito all'illustratrice Pavoni e ai co‑autori Raubaum e Walther per il volume “Soletta”. La giuria ha evidenziato la capacità dell’opera di coniugare narrazione visiva e temi di inclusività, con una tiratura iniziale di 5 000 copie.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Valentino Vivace pubblica l'album “Oscillare”",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1926172/valentino-album-vita-luce-buio",
-              "riassunto": "Il cantautore ticinese Valentino Vivace ha lanciato “Oscillare”, un album che esplora il contrasto tra luce e buio della vita. Il disco, registrato al Sound Studio di Lugano, include 10 tracce, tra cui il singolo “Luce d’inverno” che ha già superato le 200 000 stream su piattaforme digitali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescente visibilità internazionale di produzioni culturali svizzere",
-            "Rinascita della scena letteraria per ragazzi in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori riconoscimenti per “The Narrative” nei festival europei nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da sviluppi commerciali transatlantici e da tensioni nel Mediterraneo, con ripercussioni per la Svizzera e il Ticino, soprattutto per il settore energetico e per la presenza italiana nella Flotilla Sumud.",
-          "notizie": [
-            {
-              "titolo": "UE e USA raggiungono un'intesa sull'accordo commerciale",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/20/ue-raggiunta-intesa-sullaccordo-commerciale-con-gli-usa_90a87347-ef90-40bf-a773-990ff74c0423.html",
-              "riassunto": "Il Consiglio e il Parlamento europeo hanno dato il via libera all’attuazione del patto commerciale siglato l’estate scorsa con gli Stati Uniti. L’accordo prevede la riduzione di dazi su prodotti agricoli e industriali, con potenziali benefici per le esportazioni svizzere, in particolare per il settore farmaceutico e dei macchinari di precisione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Von der Leyen in conversazione con Erdogan per de‑escalation in Iran",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/19/von-der-leyen-sente-erdogan-bene-sforzi-diplomatici-per-de-escalation_ab925e6f-5881-4c81-b0cf-f8f66bc5c571.html",
-              "riassunto": "La presidente della Commissione europea Ursula von der Leyen ha parlato con il presidente turco Recep Tayyip Erdogan, definendo “bene” gli sforzi diplomatici per contenere le tensioni tra Iran e Israele. L’incontro è volto a garantire rotte commerciali aperte nel Mar Rosso, cruciale per il transito del gas svizzero verso l’Asia.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Flotilla Sumud: sparatorie israeliane su sei barche, una italiana",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/05/19/global-sumud-flotilla-spari-di-israele-su-6-barche-una-e-italiana_2af92462-4765-4a19-af87-417b1ebd2117.html",
-              "riassunto": "Durante la Global Sumud Flotilla, forze israeliane hanno aperto il fuoco su sei imbarcazioni; una era italiana. Il portavoce italiano ha definito “gravissimo” l’uso di proiettili, anche se di gomma. L’incidente ha scatenato richieste di verifica da parte del ministro degli Esteri Tajani.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "La prima fonte (flotilla) enfatizza l’aspetto di violenza e la gravità dell’attacco, citando il portavoce italiano. La seconda fonte (attivisti) si concentra sulla risposta del governo italiano, con Tajani che chiede una verifica urgente, sottolineando l’aspetto diplomatico."
-            }
-          ],
-          "trend": [
-            "Rinegoziazione di accordi commerciali UE‑USA",
-            "Tensioni nel Mar Rosso e loro impatto energetico",
-            "Attività di attivisti italiani in conflitti mediorientali"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle negoziazioni UE‑USA e le eventuali misure di risposta dell'Unione europea alle tensioni tra Iran e Israele, che potrebbero influenzare i flussi energetici verso la Svizzera nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione si concentra su tre temi chiave per la Svizzera: la forte presenza di Ricola nei mercati esteri, la possibile concorrenza di una nuova compagnia aerea egiziana sul segmento turistico svizzero e la trasformazione delle aziende svizzere di componentistica auto di fronte alla crisi del settore.",
-          "notizie": [
-            {
-              "titolo": "Ricola esporta 43.000 Zältli al minuto, la maggior parte verso l'estero",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/mehrheit-geht-ins-ausland-ricola-produziert-43000-zaeltli-pro-minute-id21958528.html",
-              "riassunto": "Il marchio svizzero Ricola produce 43.000 bustine di erbe al minuto, con la gran parte delle vendite destinata ai mercati esteri. L'articolo sottolinea il valore culturale del prodotto in Svizzera e la sua importanza per l'export nazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nuova compagnia aerea egiziana punta a rubare clienti a Swiss ed Edelweiss",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/konkurrenz-fuer-swiss-und-edelweiss-touri-boom-in-aegypten-jetzt-gibts-sogar-eine-neue-airline-id21958050.html",
-              "riassunto": "Il gruppo turistico egiziano Travco lancerà una nuova airline per il turismo europeo a partire dall’autunno, con l’obiettivo di attrarre viaggiatori verso l’Egitto. L’iniziativa potrebbe creare concorrenza per le compagnie svizzere Swiss e Edelweiss, soprattutto nei voli charter verso le destinazioni balneari.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Le aziende svizzere di componentistica auto si reinventano di fronte alla crisi del settore",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/gnadenloser-wandel-schweizer-firmen-trotzen-der-automobilkrise-id21957768.html",
-              "riassunto": "Le imprese svizzere di forniture per l’industria automobilistica stanno ristrutturando il loro modello di business, spostando il know‑how verso settori emergenti come la meccanica di precisione e le tecnologie verdi. Il cambiamento è descritto come “gnadenloser Wandel” (trasformazione spietata).",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita dell'export svizzero di prodotti tradizionali (es. Ricola)",
-            "Pressioni competitive nel settore aereo turistico per le compagnie svizzere"
-          ],
-          "da_tenere_d_occhio": "L'avvio della nuova compagnia aerea egiziana e il suo impatto sui volumi di passeggeri di Swiss ed Edelweiss nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da due grandi sviluppi: la sconfitta di Elon Musk nella causa contro OpenAI, confermata da più testate, e l'acquisizione da parte di Anthropic della startup Stainless, anch'essa riportata da diverse fonti.",
-          "notizie": [
-            {
-              "titolo": "Elon Musk perde la causa da 134 miliardi di dollari contro OpenAI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
-              "riassunto": "Una giuria di Oakland ha respinto la causa di Musk contro OpenAI e Sam Altman dopo sole due ore di deliberazione, dichiarando che il reclamo è decaduto per prescrizione. Musk chiedeva 134 miliardi di dollari; il giudice ha già accettato la decisione della giuria. L'avvocato di Musk ha annunciato l'intenzione di fare appello.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder",
-                "MIT Tech Review"
-              ],
-              "differenze_narrative": "TechCrunch riporta i fatti in modo sintetico, evidenziando la rapidità del dibattimento e il valore richiesto da Musk. The Decoder aggiunge dettagli sul contesto legale, sottolineando che la giuria ha deliberato per sole due ore. MIT Tech Review enfatizza l'aspetto giuridico, spiegando che il giudice ha ritenuto la causa “barred by the statutes of limitations” e che la decisione è stata univoca."
-            },
-            {
-              "titolo": "Anthropic acquisisce la startup di sviluppo SDK Stainless",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-              "riassunto": "Anthropic ha comprato Stainless, startup newyorkese specializzata nell'automazione di SDK, già utilizzata da OpenAI, Google e Cloudflare. L'operazione rafforza la capacità di Anthropic di offrire strumenti di sviluppo più efficienti per i propri modelli di IA.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "Hacker News"
-              ],
-              "differenze_narrative": "TechCrunch descrive l'acquisizione come parte della strategia di Anthropic di consolidare l'infrastruttura di sviluppo AI, con focus sui clienti di alto profilo. L'articolo su Hacker News, citando il comunicato ufficiale di Anthropic, si concentra più sul valore tecnico di Stainless e sull'impatto potenziale sul mercato degli SDK, senza entrare nei dettagli commerciali."
-            }
-          ],
-          "trend": [
-            "Consolidamento del mercato AI tramite acquisizioni",
-            "Contenziosi legali ad alta visibilità tra giganti della tecnologia"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi dell'appello di Elon Musk e le reazioni di OpenAI/Regolatori nei prossimi giorni",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
