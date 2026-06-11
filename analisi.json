@@ -1,6 +1,250 @@
 {
-  "generated_at": "2026-06-10T05:08:38.761970+00:00",
+  "generated_at": "2026-06-11T05:09:32.440375+00:00",
   "analyses": [
+    {
+      "id": 97,
+      "run_id": 129,
+      "run_time": "2026-06-11 05:00:02.734669+00:00",
+      "analyzed_at": "2026-06-11T05:09:32.352599+00:00",
+      "articles_analyzed": 183,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da dibattiti su servizi pubblici e politiche sociali, con particolare attenzione a decisioni che coinvolgono media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "AutoPostale elimina il Wi‑Fi gratuito sui mezzi",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/AutoPostale-elimina-il-Wi-Fi-gratuito--3807692.html",
+              "riassunto": "AutoPostale ha comunicato che dal fine anno non offrirà più il Wi‑Fi gratuito sui suoi autobus, servizio introdotto nel 2012. La decisione è motivata dal dimezzamento dell’uso negli ultimi cinque anni e dal costo di diverse centinaia di migliaia di franchi all’anno. Un ascoltatore della SRF ha criticato la scelta, definendola una riduzione dei servizi pubblici.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aumento dei disaccordi tra le Camere federali sulla 13ª AVS",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Sempre-pi%C3%B9-disaccordi-tra-le-Camere-federali--3810872.html",
+              "riassunto": "Il finanziamento della 13ª AVS è tornato alla Conferenza di conciliazione, 24ª volta in questa legislatura. 13 rappresentanti per Camera hanno proposto un mix di aumenti salariali e IVA. La proposta deve ora essere approvata integralmente da entrambe le Camere. L’intervista a Rahel Freiburghaus è stata citata da SRF.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Intelligenza artificiale: la sfida di restare umani",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/scienza-e-tecnologia/Intelligenza-artificiale-la-sfida-%C3%A8-restare-umani--3806273.html",
+              "riassunto": "Nel programma “60 Minuti” si è discusso del ruolo dell’IA nella società. Tra gli ospiti c’erano Alessandro Trivilini, Matteo Colombo, Lelio Demichelis e Michele Mattia. È emerso che l’IA è uno strumento potente ma non neutro, con rischi legati al controllo, alla delega di decisioni e alla normativa che fatica a stare al passo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Regolamentazione digitale e privacy (IA, deepfake)",
+            "Tagli e riorganizzazioni dei servizi pubblici (Wi‑Fi, pensioni)",
+            "Impatto climatico locale (grandine, evacuazioni)"
+          ],
+          "da_tenere_d_occhio": "L’esito della conferenza di conciliazione sull’AVS e la reazione dei cittadini allo stop del Wi‑Fi gratuito di AutoPostale nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da questioni economiche e ambientali: la disputa sulla rete dei bancomat, la redistribuzione finanziaria tra cantoni e una protesta di Greenpeace al Palazzo federale contro il ritorno al nucleare.",
+          "notizie": [
+            {
+              "titolo": "Greenpeace proietta immagini anti-nucleare sul Palazzo federale durante il dibattito del Consiglio nazionale",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/attivisti-di-greenpeace-proiettano-immagini-contro-il-nucleare-su-palazzo-federale-435380",
+              "riassunto": "Attivisti di Greenpeace hanno proiettato sul retro del Palazzo federale simboli contro il nucleare, tra cui il simbolo della radioattività e un ritratto di Putin, per denunciare il pericolo di un ritorno all'energia atomica in Svizzera mentre il Consiglio nazionale discuteva il tema.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Perequazione finanziaria 2027: Ticino e Grigioni tra i principali beneficiari",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/economia/perequazione-finanziaria-ticino-e-grigioni-ancora-tra-beneficiari-435395",
+              "riassunto": "L'Amministrazione federale delle finanze ha pubblicato i calcoli per la perequazione del 2027: il Ticino riceverà oltre 112 milioni di franchi, i Grigioni più di 220 milioni, mentre cantoni come Zugo e Ginevra dovranno versare rispettivamente 529 e 497 milioni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Progetto di rete unica per i bancomat in Svizzera ancora bloccato",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/bancomat-la-svolta-di-una-rete-unica-e-ancora-lontana-435387",
+              "riassunto": "Il tentativo di creare una rete nazionale di bancomat, promosso da Confederazione e BNS, è fermo: la società SIX ha dichiarato che il progetto non verrà portato avanti, lasciando Posta e SIX come principali fornitori di contante. Un unico sportello pilota a Güttingen sarà operativo solo dal 2025.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "dibattito sul nucleare e proteste ambientali",
+            "redistribuzione finanziaria tra cantoni",
+            "sfide infrastrutturali nel settore dei pagamenti in contanti"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della discussione sul controprogetto nucleare in Consiglio nazionale e le eventuali decisioni sulla rete dei bancomat",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: due testate trattano la morte dell'editore Hoepli, mentre il LAC lancia una stagione di grande impatto per il Ticino e SRF celebra la Giornata svizzera della letteratura.",
+          "notizie": [
+            {
+              "titolo": "È morto Ulrico Carlo Hoepli, storico editore milanese",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/e-morto-ulrico-carlo-hoepli-430183",
+              "riassunto": "Ulrico Carlo Hoepli, quarto della dinastia che ha gestito la casa editrice Hoepli dal 1870, è deceduto a Milano. L’articolo riporta la sua biografia e cita un’intervista del 2011 a Swissinfo, dove il fondatore parlava del futuro dell’editoria italiana.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Società",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "CdT fornisce dettagli sulla biografia, la liquidazione della società e la citazione a Swissinfo; LaRegione limita la notizia a un breve annuncio di morte senza approfondimenti."
+            },
+            {
+              "titolo": "LAC presenta la stagione 2026/27 “In/Civiltà” con 82 produzioni",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/spettacoli/lac-sullonda-del-successo-ma-senza-dimenticare-limpegno-430192",
+              "riassunto": "Il direttore del LAC, Carmelo Rifici, ha svelato una stagione di 82 titoli, 19 produzioni e 165 aperture di sipario, con oltre 100.000 spettatori e un tasso di occupazione dell’80%. L’iniziativa punta a un “radicale ringiovanimento” del pubblico ticinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Giornata svizzera della letteratura: leggende alpine tra Sennentuntschi e Slenderman",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/literatur/tag-der-schweizer-literatur-vom-sennentuntschi-zum-slenderman-sagen-faszinieren-bis-heute",
+              "riassunto": "Il servizio di SRF Kultur ricorda la Giornata svizzera della letteratura, illustrando come le leggende alpine, dal Sennentuntschi al moderno Slenderman, continuino a influenzare cinema, teatro e dibattito culturale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rinascita e rinnovamento del pubblico culturale ticinese",
+            "Riconoscimento e valorizzazione del patrimonio narrativo alpino"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della programmazione del LAC nella seconda metà dell'anno e le eventuali reazioni del pubblico e dei finanziatori",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni legate a media pubblici svizzeri e da nuove sanzioni internazionali contro gli insediamenti israeliani. Un caso di spaccatura interna coinvolge SRF e il mondo dello sport.",
+          "notizie": [
+            {
+              "titolo": "Scandalo Fischer: e‑mail compromettente tra giornalista SRF e la federazione svizzera di hockey",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/off-the-record-brisantes-mail-enthuellt-so-lief-es-wirklich-beim-fischer-skandal-103580021",
+              "riassunto": "Un'email di Pascal Schmitz, giornalista di SRF, ha confermato l'esistenza di un presunto “off‑the‑record” con il capo dei media della Swiss Ice Hockey Federation, scatenando una nuova polemica sul caso Fischer. SRF aveva negato qualsiasi accordo informale. L'email, resa pubblica da Schweizheute, riporta la frase “Off‑the‑Record‑Gespräch” e mostra che la SRF ha contestato la richiesta retroattiva di riservatezza.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "20 Minuten",
+                "20 Minutes"
+              ],
+              "differenze_narrative": "Entrambe le versioni (italiano e francese) descrivono lo stesso scambio di email e la negazione di SRF, ma la versione italiana enfatizza il contenuto testuale dell'email, mentre quella francese sottolinea la risposta ufficiale di SRF e il contesto della dichiarazione del capo redattore Tristan Brenn."
+            }
+          ],
+          "trend": [
+            "controversie su media pubblici svizzeri (SRF)",
+            "sanzioni multilaterali contro gli insediamenti israeliani in Cisgiordania"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della disputa tra SRF e la federazione di hockey, soprattutto eventuali azioni legali o ulteriori rivelazioni di comunicazioni interne",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui grandi gruppi svizzeri citati in studi internazionali, sul continuo record dei prezzi immobiliari in Svizzera e su una contraddizione tra la strategia digitale della Confederazione e la richiesta di 600 milioni di fogli di carta.",
+          "notizie": [
+            {
+              "titolo": "Studio Oxfam denuncia i dividendi delle multinazionali europee, tra cui Zurich, Swiss Re e Glencore",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/le-multinazionali-europee-contribuiscono-ad-aggravare-la-disuguaglianza-globale-435428",
+              "riassunto": "Un rapporto Oxfam pubblicato oggi evidenzia che le 100 maggiori aziende europee hanno distribuito il 70 % dei profitti agli azionisti. Tra le svizzere, Zurich, Swiss Re e Glencore hanno pagato dividendi superiori agli utili netti, con Zurich che ha aumentato il dividendo a 28 franchi per azione nel 2024 nonostante un utile in calo del 11,5 %.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Quattro delle cinque città più costose d'Europa sono svizzere: Zurich guida la classifica",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/economia/1931096/casa-salata-casa-quattro-delle-cinque-citta-piu-care-d-europa-sono-svizzere",
+              "riassunto": "Secondo Global Property Guide, Zurigo è la città più cara d'Europa con prezzi medi di 18.229 € al m², seguito da Ginevra, Lucerna e Berna. I valori sono cresciuti del 4,2 % nell'ultimo anno, spinti da domanda internazionale e scarsa offerta abitativa.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Confederazione svizzera bandisce 600 milioni di fogli di carta nonostante la strategia “digital only”",
+              "fonte": "Il Sole 24 Ore Economia",
+              "link": "https://www.ilsole24ore.com/art/una-pila-alta-sette-volte-everest",
+              "riassunto": "L’Ufficio federale delle costruzioni e della logistica ha indetto una gara per 600 milioni di fogli di carta destinati a fotocopie nei prossimi cinque anni, pari a circa 3 000 fogli per dipendente all'anno, suscitando critiche sulla coerenza con gli obiettivi di digitalizzazione dell'amministrazione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescente pressione su multinazionali svizzere riguardo a distribuzione di dividendi e responsabilità sociale",
+            "Aumento dei prezzi immobiliari nelle principali città svizzere",
+            "Contraddizioni tra politiche di digitalizzazione e spese cartacee nella pubblica amministrazione"
+          ],
+          "da_tenere_d_occhio": "Le prossime decisioni dell'UE sul sistema ETS, che potrebbero influenzare i costi di produzione delle imprese svizzere esportatrici",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su assistenti AI potenziati e traduzioni vocali in tempo reale, con particolare attenzione all'impatto per gli utenti svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Apple ricostruisce Siri con IA: la nuova “Siri AI” arriva in Svizzera",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/highlights-der-apple-konferenz-ios-27-macht-dein-altes-iphone-wieder-fit-id22012997.html",
+              "riassunto": "Apple ha presentato “Siri AI”, una versione completamente ridisegnata dell’assistente vocale che ora integra modelli di IA sviluppati con Google e GPU Nvidia per le richieste più complesse. La Svizzera riceverà la versione con funzionalità AI, mentre l’UE ne sarà esclusa per il Digital Markets Act. L’articolo cita il responsabile di Apple, Craig Federighi, che definisce Siri un “strumento dialogico integrato” e indica che la privacy è garantita con elaborazione locale per i comandi semplici.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google lancia Gemini 3.5 Live Translate: traduzione vocale in tempo reale per oltre 70 lingue",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/googles-gemini-3-5-live-translate-delivers-real-time-voice-translation-across-70-languages/",
+              "riassunto": "Google ha reso disponibile Gemini 3.5 Live Translate, un modello audio capace di tradurre simultaneamente più di 70 lingue mantenendo tono, ritmo e intonazione. Il servizio è integrato nell’app Google Translate, in Google Meet (da 5 a 70+ lingue) e in un’API per sviluppatori. L’articolo specifica che l’audio generato è marcato con un watermark inaudibile SynthID.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Integrazione di assistenti IA nei dispositivi consumer",
+            "Traduzione vocale in tempo reale per mercati multilingue"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle normative europee (es. Digital Markets Act) e le eventuali restrizioni di disponibilità per Siri AI in Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 96,
       "run_id": 128,
@@ -4224,243 +4468,6 @@
             "Integrazione di AI in infrastrutture industriali e finanziarie"
           ],
           "da_tenere_d_occhio": "L'esito dell'IPO di OpenAI e le prime quotazioni di SpaceX: monitorare le reazioni del mercato e le eventuali implicazioni normative per l'AI.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 77,
-      "run_id": 109,
-      "run_time": "2026-05-22 02:45:02.432576+00:00",
-      "analyzed_at": "2026-05-22T02:56:18.961743+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 14,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da tre temi: la difficile situazione dei cittadini svizzeri coinvolti nella Global Sumud Flotilla, le decisioni di sicurezza per il G7 a Evian e l’impennata dei fallimenti aziendali in Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Sorella di Anek (ticinese) denuncia l’assenza di informazioni dal DFAE dopo l’arresto in Cipro",
-              "fonte": "CdT Ticino",
-              "link": "https://www.cdt.ch/news/flotilla-parla-la-sorella-di-anek-non-abbiamo-piu-sue-notizie-e-il-dfae-ci-ha-abbandonati-428310",
-              "riassunto": "Jamila Speranza, sorella del cittadino ticinese Anek Speranza, a bordo della Zio Faster fermata da soldati israeliani, denuncia l’assenza di notizie dal Dipartimento federale degli affari esteri e dal Consolato svizzero. La famiglia ha organizzato un presidio a Lugano e chiede un canale diretto con il governo per sapere se Anek è vivo.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Ticino",
-                "RSI Ticino"
-              ],
-              "differenze_narrative": "CdT Ticino enfatizza il dramma familiare e la mancanza di risposta istituzionale, citando le proteste a Lugano. RSI Ticino, nell’articolo “Flotilla Ben Gvir deride gli attivisti”, si concentra maggiormente sulla reazione del ministro israeliano Ben‑Gvir e sul contesto politico, con meno dettagli sul punto di vista della famiglia svizzera."
-            },
-            {
-              "titolo": "G7 a Evian: il Consiglio di Stato di Ginevra autorizza una manifestazione il 14 giugno",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/G7-a-Evian-Ginevra-autorizza-una-manifestazione--3756187.html",
-              "riassunto": "Il Consiglio di Stato di Ginevra ha approvato l’autorizzazione per una manifestazione sulla riva del Lemano il 14 giugno, contro il vertice G7 del 15‑17 giugno. Le autorità hanno previsto un “dispositivo di sicurezza di ampiezza inedita” e mobiliteranno fino a 5 000 militari per garantire la sicurezza dei leader internazionali, tra cui il presidente degli USA Donald Trump.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Impennata dei fallimenti in Svizzera: +61% nel 2025 dopo la riforma della LEF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/economia/Impennata-dei-fallimenti-in-Svizzera-nel-2025--3758347.html",
-              "riassunto": "Nel 2025 sono state aperte 12 485 procedure di fallimento per imprese, un aumento del 61,2 % rispetto al 2024, a seguito della modifica della Legge federale sull’esecuzione e sul fallimento (LEF) che consente ai creditori pubblici di chiedere il fallimento per mancato pagamento di imposte o contributi. Il numero totale di fallimenti è salito a 13 612, con un incremento del 48,5 % rispetto all’anno precedente.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensioni internazionali con impatto sui cittadini svizzeri",
-            "sicurezza e proteste legate a eventi globali (G7)",
-            "aumento dei fallimenti aziendali a seguito di riforme legislative"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle indagini e delle eventuali pressioni diplomatiche sulla Flotilla, nonché le conseguenze economiche della crescita dei fallimenti per le imprese ticinesi.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da due temi: la tensione diplomatica legata alla Global Sumud Flotilla, con attivisti svizzeri trattenuti in Israele, e il dibattito interno sulla possibile inasprimento della Lex Koller che potrebbe colpire le società immobiliari quotate.",
-          "notizie": [
-            {
-              "titolo": "Attivisti svizzeri della Flotilla fermati in Israele: il DFAE chiede il rispetto dei diritti fondamentali",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/mondo/attivisti-in-ginocchio-bendati-e-derisi-da-ben-gvir-benvenuti-in-israele-grandi-eroi-428295",
-              "riassunto": "Il video del ministro israeliano Itamar Ben‑Gvir mostra attivisti della Global Sumud Flotilla, tra cui cittadini svizzeri, inginocchiati, bendati e ammanettati al porto di Ashdod. Il DFAE ha chiesto alle autorità israeliane di garantire i diritti fondamentali dei detenuti e ha confermato il trasferimento in carcere a Ktzi'ot. Il caso ha suscitato proteste diplomatiche da Italia, Spagna, Francia e altri paesi.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT enfatizza la reazione del DFAE e il coinvolgimento di attivisti svizzeri, con citazioni dirette del ministro Ben‑Gvir. LaRegione amplia il contesto diplomatico, elencando le condanne di diversi governi europei e le richieste di scuse. Ticinonews fornisce una versione più dettagliata del video e aggiunge le dichiarazioni delle autorità israeliane che difendono il trattamento, mostrando un tono più neutro e focalizzato sui fatti."
-            },
-            {
-              "titolo": "Lex Koller più severa: rischio di delisting per le società immobiliari quotate",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/lex-koller-piu-severa-ce-il-rischio-di-delisting-per-le-societa-immobiliari-428284",
-              "riassunto": "Il Consiglio federale prevede un inasprimento della Lex Koller, limitando l’acquisto di immobili da parte di stranieri e vietando a “persone all’estero” di comprare azioni di società immobiliari quotate. Le imprese del settore temono la perdita della quotazione in borsa, con il CEO di Mobimo che avverte di possibili abbandoni della borsa.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT sottolinea il rischio di delisting e la reazione delle società immobiliari, citando direttamente le preoccupazioni dei dirigenti. Ticinonews aggiunge dettagli sulla motivazione politica (contrasto all’iniziativa UDC) e fornisce una panoramica più ampia delle modifiche proposte, con un tono più tecnico‑legislativo."
-            }
-          ],
-          "trend": [
-            "tensioni diplomatiche legate a manifestazioni internazionali con cittadini svizzeri",
-            "dibattito sulla regolamentazione immobiliare e protezione degli investimenti"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle negoziazioni tra Israele e le autorità svizzere sul caso Flotilla e l’esito del voto sulla Lex Koller previsto per il 14 giugno",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: dal festival multidisciplinare di Friburgo con un focus sul Ticino, allo studio della SSR sui contenuti culturali, fino al ritorno di Bastian Baker sui palcoscenici ticinesi.",
-          "notizie": [
-            {
-              "titolo": "Festival Belluard Bollwerk di Friburgo esplora le complicità sotterranee con un focus sul Ticino",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1926907/festival-performance-complicita-belluard-friburgo-bollwerk",
-              "riassunto": "Dal 25 giugno al 4 luglio il Belluard Bollwerk presenta 29 progetti su performance, installazioni e cinema. Tra le iniziative spicca un'installazione di Deiara Semeco Kouto che mappa le reti coloniali del cacao dei mercanti ticinesi del XVIII secolo. L'evento include anche la Women Walk at Midnight e una performance sonora di Rebecca Solari, artista ticinese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La SSR pubblica il primo studio sui contributi culturali dell’emittente",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1926969/ssr-studio-svizzera-cultura-riguarda",
-              "riassunto": "La Società svizzera di radiotelevisione (SSR) ha commissionato uno studio che evidenzia il ruolo della SSR nella diversità culturale svizzera, con il 40,8% dei contenuti dedicati a eventi prodotti internamente. Il rapporto segnala però uno squilibrio a favore dei contenuti popolari rispetto a letteratura, arti visive e teatro.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Bastian Baker torna in Svizzera con il ‘Solo Tour’ al Teatro Sociale di Bellinzona",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1926810/baker-bastian-teatro-anni-aperto",
-              "riassunto": "Il cantautore vodese Bastian Baker si esibisce il 24 maggio al Teatro Sociale di Bellinzona, in un concerto acustico che prevede dialoghi con il pubblico e improvvisazioni. L'evento è parte del suo ‘Solo Tour’ e richiama l'attenzione sul ritorno di artisti di fama internazionale sui palcoscenici ticinesi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "cultura locale con prospettiva internazionale",
-            "analisi critica dei contenuti pubblici svizzeri"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della programmazione del Belluard Bollwerk e la risposta del pubblico ticinese nelle prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni energetiche e diplomatiche: il Regno Unito allenta sanzioni sul gas e petrolio russi per contenere i prezzi, mentre l'Italia spinge per il rilascio degli attivisti della Flotilla, un caso che coinvolge diversi attori internazionali.",
-          "notizie": [
-            {
-              "titolo": "Regno Unito revoca alcune sanzioni su gas e petrolio russi per frenare l’aumento dei prezzi energetici",
-              "fonte": "Il Post Mondo",
-              "link": "https://www.ilpost.it/2026/05/20/regno-unito-cancella-sanzioni-gas-e-petrolio-russia/",
-              "riassunto": "Il governo britannico ha annullato, a tempo indeterminato, le sanzioni su gas e petrolio russi per garantire l’approvvigionamento e contenere l’inflazione energetica. Da mercoledì le aziende potranno importare diesel e carburante per aerei raffinati da paesi terzi con petrolio russo, una misura già adottata dagli USA.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Tajani annuncia la partenza imminente degli attivisti italiani trattenuti in Israele",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/20/tajani-domani-dovrebbero-partire-tutti-gli-attivisti-italiani_6c7a0ae5-382f-4b1b-a971-31bb73226c90.html",
-              "riassunto": "Il ministro degli Esteri Antonio Tajani ha confermato che domani mattina tutti gli attivisti italiani della Freedom Flotilla saranno imbarcati a Ramon e trasferiti in Grecia o Turchia, dopo una trattativa quasi conclusa con le autorità israeliane.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo (Farnesina)",
-                "ANSA Mondo (Farnesina – partiti da Israele)"
-              ],
-              "differenze_narrative": "Le fonti ANSA riportano lo stesso contenuto di base (dichiarazioni di Tajani), ma la nota della Farnesina enfatizza la protesta diplomatica italiana e la possibilità di azioni a livello europeo, mentre l’articolo su \"partiti da Israele\" si concentra sul completamento del rientro dei cittadini, senza citare la pressione politica."
-            },
-            {
-              "titolo": "USA incriminano Raul Castro per l'abbattimento di due aerei civili nel 1996",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/20/incriminato-negativ-usa-lex-presidente-di-cuba-raul-castro_8a4de495-870b-483e-9e20-411dace6b502.html",
-              "riassunto": "Un gran jury della Florida ha accusato l’ex presidente cubano Raul Castro e altri cinque di omicidio per l’abbattimento di due aerei civili vicino alle coste cubane nel 1996, provocando tre vittime americane.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rilassamento delle sanzioni energetiche per mitigare l’inflazione",
-            "Pressioni diplomatiche legate a cittadini europei trattenuti all’estero"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle negoziazioni tra Regno Unito e Russia su ulteriori deroghe alle sanzioni energetiche nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da temi di impatto diretto sulla Svizzera: il mercato immobiliare, un caso giudiziario all’aeroporto di Ginevra e la denuncia di cittadini svizzeri detenuti in Israele. Questi eventi hanno rilevanza immediata per i lettori ticinesi.",
-          "notizie": [
-            {
-              "titolo": "Il sogno di possedere una casa propria è infranto: frustrazione tra gli inquilini urbani svizzeri",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/traum-vom-eigenheim-lebt-mieter-in-den-staedten-traeumen-vom-haus-auf-dem-land-id21963600.html",
-              "riassunto": "Una nuova indagine Moneypark‑Helvetia mostra che oltre il 70 % dei giovani svizzeri (25‑40 anni) desidera una casa di proprietà, ma l’età media di acquisto supera i 40 anni. I prezzi immobiliari in crescita e i tassi bassi hanno spinto i proprietari a restare, mentre il 37 % dei residenti urbani sogna di trasferirsi in campagna, generando frustrazione tra gli affittuari.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Scenata in aeroporto di Ginevra: passeggero denuncia abuso di autorità, ma la Corte respinge il ricorso",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1926783/scenata-in-aeroporto-e-5-anni-di-diffida-da-easyjet-lui-denuncia-ma-viene-sbugiardato",
-              "riassunto": "Un passeggero di EasyJet, negato l’imbarco a Ginevra per un bagaglio sovradimensionato, ha denunciato abuso di autorità contro un agente di polizia. La Corte dei reclami penali ha respinto l’accusa, confermando che l’agente si è limitato a chiedere al viaggiatore di allontanarsi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Flotilla: la Svizzera denuncia il trattamento inaccettabile dei cittadini detenuti in Israele",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1926994/dfae-diritti-autorita-svizzera-inaccettabile-flotilla-berna-trattamento",
-              "riassunto": "Il Dipartimento federale degli affari esteri ha chiesto alle autorità israeliane di garantire i diritti fondamentali dei partecipanti svizzeri alla Global Sumud Flotilla, attualmente detenuti. La Svizzera ha offerto assistenza consolare, ma denuncia condizioni di detenzione ritenute inaccettabili.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "crescente difficoltà di accesso alla proprietà immobiliare in Svizzera",
-            "tensioni legali tra viaggiatori e autorità aeroportuali",
-            "preoccupazioni per i diritti dei cittadini svizzeri all’estero"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle politiche di credito e delle misure a sostegno del mercato immobiliare svizzero nei prossimi 30 giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Nessuna notizia della lista presenta un impatto diretto sulla Svizzera o sul Ticino né è una breaking news locale; si evidenziano solo eventi di portata internazionale nel settore AI.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
