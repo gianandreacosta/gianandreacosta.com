@@ -1,6 +1,250 @@
 {
-  "generated_at": "2026-06-11T05:09:32.440375+00:00",
+  "generated_at": "2026-06-12T06:58:12.858062+00:00",
   "analyses": [
+    {
+      "id": 98,
+      "run_id": 130,
+      "run_time": "2026-06-12 06:49:40.264204+00:00",
+      "analyzed_at": "2026-06-12T06:58:12.799729+00:00",
+      "articles_analyzed": 185,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri e da tensioni politiche interne, con particolare attenzione a difesa, finanza e conflitti parlamentari.",
+          "notizie": [
+            {
+              "titolo": "Il consigliere federale Martin Pfister sotto i riflettori della SRF",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/In-missione-con-Martin-Pfister--3812399.html",
+              "riassunto": "La SRF ha seguito per una settimana il consigliere federale della Difesa Martin Pfister, evidenziando le difficoltà di rafforzare l’esercito svizzero e la vulnerabilità a possibili attacchi con droni entro il 2028.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Crescente polarizzazione tra le Camere federali, citata dalla SRF",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Sempre-pi%C3%B9-disaccordi-tra-le-Camere-federali--3810872.html",
+              "riassunto": "Il finanziamento della 13ª AVS è bloccato dopo 24 ricorsi alla Conferenza di conciliazione; la politologa Rahel Freiburghaus, intervistata dalla SRF, attribuisce il fenomeno a una crescente polarizzazione politica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Processo per l’incendio del Constellation a Crans‑Montana, citata dalla RTS",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Crans-Montana-gli-avvocati-chiedono-l%E2%80%99omicidio-con-dolo-eventuale-per-i-Moretti--3811301.html",
+              "riassunto": "La RTS riporta che gli avvocati delle vittime chiedono di elevare l’accusa contro i coniugi Moretti da omicidio colposo a omicidio con dolo eventuale per l’incendio del bar Constellation, con pene potenziali fino a 20 anni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensioni politiche tra Consiglio degli Stati e Consiglio nazionale",
+            "sicurezza nazionale e capacità difensiva svizzera",
+            "processi giudiziari ad alta visibilità"
+          ],
+          "da_tenere_d_occhio": "L’esito della conferenza di conciliazione sull’AVS e le eventuali evoluzioni della politica di difesa svizzera nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da questioni di identità nazionale e diritti sociali, con la nazionale di hockey che abbandona lo scudo federale, una nuova tutela per i genitori adottivi in Ticino e un caso di furto di profumi che ha coinvolto Givaudan.",
+          "notizie": [
+            {
+              "titolo": "La nazionale di hockey svizzera eliminerà lo scudo federale dalla maglia dal 2027",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/la-nazionale-di-hockey-dice-addio-allo-scudo-sulla-maglia-430251",
+              "riassunto": "La Swiss Ice Hockey Federation ha confermato che, a partire dal 1° gennaio 2027, la maglia della nazionale maschile non riporterà più lo scudo rosso‑crociato della Confederazione, a seguito di una sentenza del Tribunale amministrativo che ha ritenuto il suo uso non conforme alla legge sulla protezione degli stemmi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ticino: nuova tutela sul lavoro per i genitori adottivi",
+              "fonte": "CdT Svizzera",
+              "link": "https://www.cdt.ch/news/svizzera/maggiore-tutela-sul-lavoro-per-chi-ha-appena-adottato-430409",
+              "riassunto": "Il Consiglio nazionale ha approvato l’iniziativa cantonale che equiparerà la protezione contro il licenziamento delle madri adottive a quella delle madri biologiche, garantendo 16 settimane di tutela dal licenziamento per i genitori che hanno appena adottato.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Givaudan licenzia dipendenti per furto di essenze profumate",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/givaudan-licenzia-dipendenti-per-furto-di-profumi-435506",
+              "riassunto": "La multinazionale ginevrina Givaudan ha licenziato sette collaboratori di Vernier per aver sottratto essenze di valore, provocando un ammanco di decine di migliaia di franchi; l’azienda ha sporto denuncia penale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Identità nazionale e simboli istituzionali",
+            "Diritti dei genitori adottivi",
+            "Sicurezza e furti in grandi aziende svizzere"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi legali e politici attorno alla rimozione dello scudo dalla maglia nazionale di hockey e all’attuazione della nuova tutela per i genitori adottivi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con una nuova serie televisiva prodotta da SRF e RTL, mentre i media internazionali coprono eventi sportivi e artistici di ampio respiro.",
+          "notizie": [
+            {
+              "titolo": "Nuova serie TV su Heidi prodotta da SRF e RTL",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/film-serien/neue-serie-von-srf-und-rtl-kohlund-makatsch-und-co-das-sind-die-heidi-stars",
+              "riassunto": "SRF Kultur annuncia l'avvio delle riprese della nuova serie televisiva su Heidi, co‑produzione con RTL. Il cast comprende Neah Hefti (Heidi), Christian Kohlund (Alpöhi) e Heike Makatsch (Fräulein Rottenmeier). Le riprese si svolgono in Germania e nel Bergell svizzero; la messa in onda è prevista per il 2027.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Co‑produzioni tra media pubblici svizzeri e case internazionali",
+            "Crescita dell’interesse per contenuti culturali legati a icone nazionali (es. Heidi)"
+          ],
+          "da_tenere_d_occhio": "L'uscita e la risposta del pubblico alla serie Heidi, che potrebbe influenzare future collaborazioni tra SRF e partner esteri",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni mediorientali, ma per il lettore svizzero emergono soprattutto le notizie che coinvolgono i media pubblici del paese, con due inchieste su SRF e un dossier energetico della stessa emittente.",
+          "notizie": [
+            {
+              "titolo": "Scandalo Fischer: una e‑mail compromettente rivela un presunto accordo “off‑the‑record” con la SRF",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/off-the-record-brisantes-mail-enthuellt-so-lief-es-wirklich-beim-fischer-skandal-103580021",
+              "riassunto": "Un'email di Pascal Schmitz, giornalista della SRF, a Finn Sulzer (Swiss Ice Hockey) menziona un “off‑the‑record”. La SRF aveva negato l’esistenza di tale accordo. La pubblicazione del messaggio riaccende il dibattito sulla trasparenza della rete pubblica svizzera.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "20 Minuten (ITA)",
+                "20 Minutes (FRA)"
+              ],
+              "differenze_narrative": "La versione italiana sottolinea il contenuto dell'email e la contraddizione con la dichiarazione di Tristan Brenn; la versione francese enfatizza la risposta ufficiale della SRF e il contesto legale, ma riporta gli stessi fatti."
+            },
+            {
+              "titolo": "«Heidi»: le star tedesche si uniscono all’adattamento della serie prodotta da SRF e RTL",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/dreharbeiten-heidi-serie-deutsche-stars-103580521",
+              "riassunto": "SRF collabora con RTL per una nuova serie “Heidi”. Il cast include attori tedeschi (Heike Makatsch, Charly Hübner) e il veterano svizzero Christian Kohlund. Le riprese sono a Colonia e nel Bergell svizzero, in vista del 200° anniversario di Johanna Spyri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "L’Europa avanza nella transizione energetica: il nuovo rapporto SRF evidenzia una produzione interna sufficiente per le rinnovabili",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/wirtschaft/energie-umbau-kommt-voran-europa-macht-vorwaerts-mit-den-erneuerbaren",
+              "riassunto": "Un rapporto Ember, analizzato da Klaus Ammann di SRF, stima che l’UE possa produrre più di 4,6 milioni di auto elettriche all’anno e il doppio di turbine eoliche rispetto alla domanda attuale, riducendo la dipendenza da fonti fossili.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni USA‑Iran con continui scambi diplomatici e militari",
+            "Uso crescente dell’intelligenza artificiale in operazioni militari",
+            "Rinforzo della presenza dei media pubblici svizzeri nei dibattiti internazionali"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dei negoziati USA‑Iran e le eventuali dichiarazioni di Trump nei prossimi 24 h, che potrebbero riaccendere la pressione militare nella regione del Golfo.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta al mercato immobiliare svizzero, dove i tassi dei mutui a fisso aumentano nonostante il tasso di politica monetaria a zero, e alle novità di consumo di Migros, che sperimenta il trend sushi in tubo. Entrambi gli eventi mostrano tensioni tra dinamiche globali e risposte locali.",
+          "notizie": [
+            {
+              "titolo": "I tassi dei mutui a fisso svizzeri salgono nonostante il tasso di politica a zero",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/brisante-prognose-warum-festhypotheken-teurer-werden-und-was-mit-dem-saron-los-ist-id22018145.html",
+              "riassunto": "Secondo l'analisi di Comparis, i mutui a tasso fisso a 10 anni costano in media l'1,86 % in Svizzera, in rialzo rispetto all'anno precedente, pur con il tasso di riferimento della SNB fermo a zero. Il fenomeno è attribuito all'aumento dei tassi sui mercati globali, che spinge gli investitori a chiedere rendimenti più alti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Migros lancia i “Sushi Pop” in tubo di cartone in filiali selezionate",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/in-ausgewaehlten-filialen-migros-verkauft-jetzt-sushi-aus-der-kartonroehre-id22017881.html",
+              "riassunto": "Da giovedì 11 giugno la Migros propone, per sei settimane, i “Sushi Pop”, rotoli di sushi confezionati in una cartuccia di cartone da spremere, a 13,90 CHF per otto pezzi. Il prodotto è fornito dal locale produttore Tasted Food (Dietlikon) e segue un trend già diffuso in Germania e Austria.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aumento dei tassi dei mutui svizzeri nonostante la politica monetaria accomodante",
+            "Innovazione alimentare nei retail svizzeri, con prodotti virali e confezioni pratiche"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della politica della SNB e le reazioni dei mercati obbligazionari internazionali, che potrebbero influenzare ulteriormente i tassi dei mutui a fisso in Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su Anthropic e i suoi nuovi modelli Mythos/Fable, con critiche sulla sicurezza e discussioni su guardrail. Altre due notizie di rilievo riguardano l'IPO di OpenAI, posticipata, e l'avvio di un istituto tedesco per la sicurezza dell'AI.",
+          "notizie": [
+            {
+              "titolo": "Ricercatori di sicurezza scontenti dei guardrail di Anthropic Fable",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+              "riassunto": "Anthropic ha lanciato Fable, versione limitata del modello Mythos, ma i ricercatori di sicurezza lo criticano perché blocca anche richieste innocue legate alla cybersecurity. Valentina Palmiotti (IBM X‑Force) segnala che il modello rifiuta anche la lettura di blog, e Matt Suiche osserva che il filtro è basato su parole‑chiave, degradando richieste di codice sicuro.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "Il Post Tecnologia"
+              ],
+              "differenze_narrative": "TechCrunch si concentra sulle lamentele tecniche dei ricercatori e sui dettagli dei guardrail, mentre Il Post enfatizza l'impatto commerciale di Mythos, la limitazione a clienti selezionati e le performance del nuovo modello Fable 5, con meno focus sui problemi di sicurezza."
+            },
+            {
+              "titolo": "OpenAI posticipa l'IPO: Altman prevede l'offerta entro il prossimo anno",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year/",
+              "riassunto": "Il CEO Sam Altman ha comunicato ai dipendenti che l'IPO di OpenAI potrebbe slittare al 2027, citando la necessità di attendere sviluppi dell'AI auto‑migliorante e la concorrenza di Anthropic. L'azienda ha già depositato un prospetto e prevede una vendita di azioni ai dipendenti a $687,69 per azione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Germania avvia un istituto per la sicurezza dell'AI ispirato al modello britannico",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/germanys-national-security-council-greenights-an-ai-safety-institute-modeled-after-the-uks-aisi/",
+              "riassunto": "Il Consiglio di Sicurezza Nazionale tedesco ha approvato la creazione del DE‑AISI, un istituto per testare i rischi di modelli AI di frontiera come Anthropic Mythos e OpenAI GPT‑5.5. L'obiettivo è rafforzare la cooperazione internazionale e ridurre la dipendenza dell'UE da tecnologie statunitensi e cinesi.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "preoccupazioni sulla sicurezza dei modelli AI di frontiera",
+            "ritardi e strategie di IPO nel settore AI"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle politiche di guardrail di Anthropic e le possibili nuove restrizioni che potrebbero influenzare l'adozione dei modelli Mythos/Fable in Europa",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 97,
       "run_id": 129,
@@ -4209,265 +4453,6 @@
             "continua pressione finanziaria sui leader dell'AI"
           ],
           "da_tenere_d_occhio": "L’adozione dei plugin AI in ambienti aziendali e le possibili revisioni delle policy di utilizzo, soprattutto per gli utenti europei e svizzeri, nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 78,
-      "run_id": 110,
-      "run_time": "2026-05-23 02:45:02.344234+00:00",
-      "analyzed_at": "2026-05-23T02:56:29.503445+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 16,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie economiche e di trasporti che riguardano direttamente la Svizzera, con un focus su fallimenti aziendali, frontiere fiscali e la logistica ferroviaria.",
-          "notizie": [
-            {
-              "titolo": "Impennata dei fallimenti in Svizzera nel 2025",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/economia/Impennata-dei-fallimenti-in-Svizzera-nel-2025--3758347.html",
-              "riassunto": "Nel 2025 sono state aperte 12’485 procedure di fallimento per imprese, un aumento del 61,2% rispetto al 2024, a seguito della modifica della Legge federale sull'esecuzione e sul fallimento. Il totale dei fallimenti dichiarati è 13’612, con 12’485 a carico di imprese e 1’127 a carico di privati.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ristorni dei frontalieri: Berna dice no ai tagli",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Ristorni-dei-frontalieri-Berna-dice-no-ai-tagli--3759373.html",
-              "riassunto": "Il Consiglio federale respinge l'idea di dedurre la nuova “tassa sulla salute” italiana dai ristorni ai frontalieri, definendola incompatibile con gli accordi italo‑svizzeri. La tassa non è ancora in vigore, perciò al momento non vi è violazione dell’accordo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Merci su rotaia: il Ticino teme un passo indietro",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Merci-su-rotaia-il-Ticino-teme-un-passo-indietro--3762739.html",
-              "riassunto": "FFS Cargo annuncia il ridimensionamento della presenza in Ticino, con la chiusura di quattro terminal e la perdita di circa 40 posti di lavoro, minacciando la quota di trasporto merci su rotaia, scesa dal 74% al 69% dopo il tunnel del Gottardo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento dei fallimenti aziendali",
-            "Tensioni fiscali sui frontalieri",
-            "Ritrazione della logistica ferroviaria"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della normativa sui frontalieri e le possibili ulteriori riduzioni dei terminal ferroviari in Ticino nelle prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie economiche di grande impatto: UBS sposta la sede della gestione patrimoniale verso Doha, si registra un forte aumento dei fallimenti aziendali e cresce il dibattito sui salari dei dirigenti delle casse malati.",
-          "notizie": [
-            {
-              "titolo": "UBS trasferisce la sede della divisione di gestione patrimoniale EMEA a Doha",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/ubs-trasferisce-la-sede-della-divisione-della-gestione-patrimoniale-emea-a-doha-434061",
-              "riassunto": "UBS ha annunciato il trasferimento della sede della divisione Wealth Management per l'area EMEA a Doha, Qatar, con la direttrice Christine Novakovic che si sposterà quest’estate. La decisione è motivata dal ruolo centrale del Medio Oriente per gli obiettivi di crescita a lungo termine della banca.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Impennata dei fallimenti in Svizzera: +61,2% nel 2025",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/impennata-di-fallimenti-in-svizzera-registrato-un-aumento-del-612-in-un-anno-433999",
-              "riassunto": "Nel 2025 sono state aperte 12.485 procedure di fallimento per imprese, un aumento del 61,2% rispetto al 2024, probabilmente legato alla nuova normativa che consente il fallimento per crediti pubblici non pagati. Le procedure per privati sono calate del 20,9%.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Stipendi dei dirigenti delle casse malati in forte aumento, dibattito parlamentare",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/casse-malati-gli-stipendi-dei-dirigenti-sono-in-forte-aumento-434044",
-              "riassunto": "I dirigenti delle principali casse malati svizzere hanno quasi raggiunto il milione di franchi: Philomena Colatrella (CSS) ha percepito 998'600 franchi, +17% rispetto al 2024, e Roman Sonderegger (Helsana) 996'000 franchi, +20%. Il Parlamento discute un tetto salariale di 405'700 franchi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "spostamento di attività finanziarie verso il Medio Oriente",
-            "aumento dei fallimenti aziendali",
-            "crescita delle retribuzioni dirigenziali nel settore sanitario"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della normativa sui fallimenti e le reazioni del mercato svizzero nelle prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: un documentario musicale che valorizza voci ticinesi, un prestigioso premio fotografico a Zurigo e la pubblicazione di un libro di Fleur Jaeggy, vincitrice del Gran Premio svizzero di letteratura.",
-          "notizie": [
-            {
-              "titolo": "Documentario “Melodie” celebra il canto tra generazioni, con protagonisti ticinesi",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1926954/canto-melodie-schmid-documentario-voci-generazioni",
-              "riassunto": "Il film di Anka Schmid, in programmazione dal 25 giugno al 4 luglio, raccoglie voci da tutta Europa, tra cui la rapper ticinese Jhon Riot. Il documentario esplora come il canto trasmetta identità, memoria e spiritualità, senza imposizioni didattiche, lasciando parlare le immagini e le storie dei protagonisti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Wolfgang Tillmans premiato con il Roswitha‑Haftmann 2026 a Zurigo",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1927124/roswitha-haftmann-tillmans-opere-impegno-premio-wolfgang",
-              "riassunto": "Il fotografo tedesco Wolfgang Tillmans riceve il premio Roswitha‑Haftmann, 150 000 franchi, per la sua opera e l’impegno sociale. La cerimonia avrà luogo il 17 settembre al Kunsthaus di Zurigo. Tillmans è noto per le sue immagini documentarie e per le iniziative contro il Brexit.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Fleur Jaeggy ricorda Ingeborg Bachmann in un nuovo libro",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1927093/jaeggy-bachmann-ingeborg-libro-amica-ricorda-fleur",
-              "riassunto": "Nel centenario di Ingeborg Bachmann, la scrittrice svizzera Fleur Jaeggy, vincitrice del Gran Premio svizzero di letteratura 2025, pubblica “Gli ultimi giorni di Ingeborg”. Il volume ricostruisce tre momenti della loro amicizia, con particolare attenzione alle circostanze misteriose della morte di Bachmann.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Valorizzazione delle voci locali nella cultura musicale",
-            "Premi internazionali assegnati a artisti attivi in Svizzera",
-            "Riscoperta di figure letterarie svizzere con respiro internazionale"
-          ],
-          "da_tenere_d_occhio": "L'andamento di “Melodie” nelle sale ticinesi e la copertura mediatica del premio Tillmans, che potrebbero generare ulteriori eventi culturali a Zurigo nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni tra USA e alleati europei, da una nuova accusa statunitense contro l'ex leader cubano Raúl Castro e da una spinta dell'UE verso sanzioni contro il ministro israeliano Ben Gvir, con ripercussioni per la sicurezza e le relazioni commerciali della Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Trump annuncia l'invio di altre 5.000 truppe statunitensi in Polonia",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/cedpz9669deo?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Il presidente Donald Trump ha dichiarato su Truth Social di voler rafforzare la presenza militare americana in Polonia con 5.000 soldati, a pochi giorni dalla cancellazione di un precedente dispiegamento di 4.000. La decisione arriva durante il vertice dei ministri esteri della NATO in Svezia, creando confusione tra gli alleati.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gli Stati Uniti accusano Raúl Castro di omicidio: Cuba reagisce",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/notizie/2026/05/21/stati-uniti-cuba-castro-manovre-militari",
-              "riassunto": "Il Dipartimento di Giustizia USA ha emesso un mandato d'arresto contro l'ex presidente cubano Raúl Castro per l'abbattimento di due aerei civili nel 1996, accusandolo di omicidio. Washington definisce Cuba un rischio per la sicurezza nazionale e valuta opzioni militari. L'accusa è vista come parte di una pressione più ampia su L'Avana.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Internazionale",
-                "New York Times World"
-              ],
-              "differenze_narrative": "Internazionale enfatizza la dimensione geopolitica e le possibili opzioni militari USA, citando piani di attacco limitato, mentre il New York Times si concentra sulla reazione cubana e sull'aspetto simbolico della celebrazione di Raúl Castro, con meno dettagli su eventuali operazioni militari."
-            },
-            {
-              "titolo": "L'UE accoglie la proposta italiana di sanzionare il ministro israeliano Ben Gvir",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/22/lue-accoglie-la-richiesta-di-tajani-sulle-sanzioni-a-ben-gvir_55f8acee-f101-4a39-806d-c46ce9b0e278.html",
-              "riassunto": "Kaja Kallas, Alto rappresentante UE per la politica estera, ha confermato l'accoglimento della richiesta dell'Italia, guidata da Antonio Tajani, di inserire sanzioni contro il ministro israeliano Ben Gvir. La proposta, sostenuta da diversi Paesi, sarà discussa al Consiglio Affari Esteri il 15 giugno.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Le due segnalazioni ANSA coprono lo stesso comunicato UE ma con angolazioni diverse: la prima mette in luce il ruolo di Kaja Kallas e la data della riunione, la seconda enfatizza le attività diplomatiche di Tajani, citando i contatti con i ministri europei e la posizione della Germania."
-            }
-          ],
-          "trend": [
-            "Rafforzamento della presenza militare USA in Europa",
-            "Pressioni legali e diplomatiche USA su Cuba",
-            "Uso delle sanzioni UE come strumento di politica mediorientale"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della risposta polacca e degli alleati NATO all'annuncio di Trump sulle truppe aggiuntive, che potrebbe influenzare la postura difensiva della Svizzera",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta al settore bancario svizzero: una nuova ondata di fusioni tra le Raiffeisen sta riducendo drasticamente il numero di filiali autonome. La notizia è l'unica con impatto diretto sulla Svizzera tra le 30 analizzate.",
-          "notizie": [
-            {
-              "titolo": "Fusione tra Raiffeisen Uzwil e Niederhelfenschwil: la banca cooperativa svizzera continua a ridursi",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/zahl-der-banken-schrumpft-bei-raiffeisen-gruppe-rollt-eine-fusionswelle-was-ist-los-id21966036.html",
-              "riassunto": "Dal 2000 il numero di banche Raiffeisen autonome è sceso di oltre il 50%, ora a 212. L'ultima operazione è la fusione di Raiffeisen Uzwil con quella di Niederhelfenschwil, spinta soprattutto da problemi di personale e non solo da efficienze di costo. La tendenza suggerisce ulteriori consolidamenti in futuro.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Consolidamento delle banche cooperative svizzere",
-            "Pressioni sul personale e digitalizzazione come driver di fusioni"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori fusioni tra Raiffeisen nei prossimi mesi e le reazioni della FINMA e delle autorità cantonali",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie di grande impatto internazionale: l'imminente IPO di OpenAI, l'adozione di AI su reti top‑secret del Cyber Command USA e il gigantesco piano di IPO di SpaceX, con valutazioni che superano i trilioni di dollari.",
-          "notizie": [
-            {
-              "titolo": "OpenAI si prepara a quotarsi in borsa: deposito di documenti riservati entro pochi giorni",
-              "fonte": "Il Post Tecnologia",
-              "link": "https://www.ilpost.it/2026/05/21/openai-quotazione-in-borsa/",
-              "riassunto": "OpenAI sta finalizzando la sua IPO, con l’obiettivo di quotarsi a settembre. Collabora con Morgan Stanley e Goldman Sachs; la valutazione più recente è di 852 miliardi di dollari. La stessa notizia è riportata da The Decoder, che sottolinea il deposito imminente di documenti riservati alla SEC.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Il Post Tecnologia",
-                "The Decoder"
-              ],
-              "differenze_narrative": "Il Post enfatizza i dettagli finanziari (banche, valutazione, timeline) e il contesto di altre IPO nel settore AI, mentre The Decoder si concentra sul procedimento normativo (documenti riservati, vittoria in causa contro Elon Musk) e sulla possibile influenza sul mercato americano."
-            },
-            {
-              "titolo": "US Cyber Command accelera l'uso dell'AI su reti top‑secret",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/us-cyber-command-races-to-deploy-ai-on-top-secret-networks/",
-              "riassunto": "Il Cyber Command ha creato una task force per far girare modelli AI di OpenAI, Google e altri su reti classificate del Pentagono e della NSA, spinto dalla capacità di AI come Claude Mythos di individuare vulnerabilità più velocemente degli hacker umani.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "SpaceX presenta l'IPO: valutazione fino a 2 trilioni di dollari e perdite miliardarie nell'AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/spacex-ipo-filing-shows-billions-in-ai-losses-a-2-trillion-valuation-target-and-turbine-spending-that-signals-more-data-center-conflicts-ahead/",
-              "riassunto": "SpaceX ha depositato la documentazione per un'IPO che punta a una valutazione di 2 trilioni di dollari. Il filing rivela perdite di 6,36 miliardi di dollari nel 2025 per la divisione AI xAI e un accordo da 15 miliardi di dollari annui con Anthropic per il compute.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "IPO di grandi player AI",
-            "Adozione militare di AI per la sicurezza informatica",
-            "Integrazione di AI in infrastrutture industriali e finanziarie"
-          ],
-          "da_tenere_d_occhio": "L'esito dell'IPO di OpenAI e le prime quotazioni di SpaceX: monitorare le reazioni del mercato e le eventuali implicazioni normative per l'AI.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
