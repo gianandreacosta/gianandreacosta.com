@@ -1,6 +1,236 @@
 {
-  "generated_at": "2026-06-12T06:58:12.858062+00:00",
+  "generated_at": "2026-06-13T05:08:39.591984+00:00",
   "analyses": [
+    {
+      "id": 99,
+      "run_id": 131,
+      "run_time": "2026-06-13 05:00:02.401211+00:00",
+      "analyzed_at": "2026-06-13T05:08:39.584129+00:00",
+      "articles_analyzed": 187,
+      "articles_selected": 14,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri, con particolare attenzione a un reportage su Martin Pfister e a un progetto locale citato da SRF. Altre tematiche emergenti includono l'uso dell'IA da parte di Google e le tensioni politiche sui processi di naturalizzazione.",
+          "notizie": [
+            {
+              "titolo": "Martin Pfister sotto la lente di SRF: sfide per la difesa svizzera",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/In-missione-con-Martin-Pfister--3812399.html",
+              "riassunto": "Il consigliere federale della Difesa Martin Pfister è stato seguito per una settimana dal servizio di SRF, che ha evidenziato le difficoltà nel rafforzare l'esercito e le preoccupazioni per la difesa contro droni entro il 2028. La copertura di SRF rende la notizia rilevante per i media pubblici.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Andermatt: il nuovo centro sportivo citato da SRF",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Andermatt-Sawiris-mantiene-la-promessa-20-anni-dopo--3814481.html",
+              "riassunto": "Il progetto di un centro sportivo a Andermatt, promesso da Samih Sawiris, è stato riportato da SRF nella sua regionaljournal. Il centro includerà arrampicata, yoga e piscina, con lavori previsti per il 2027. La menzione di SRF lo rende di alta rilevanza per il lettore RSI.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Google IA Overview riduce del 60% i click verso i siti web",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/scienza-e-tecnologia/Google-risponde-e-i-siti-vanno-deserti--3814697.html",
+              "riassunto": "L'introduzione della funzione IA Overview di Google ha provocato un calo fino al 60% dei click verso i risultati di ricerca tradizionali, con solo il 30% delle ricerche che genera un clic. Gli esperti avvertono di un cambiamento nella gerarchia delle fonti e nel comportamento degli utenti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto dell'intelligenza artificiale sui motori di ricerca",
+            "Tensioni politiche su naturalizzazioni e gestione dei patriziati"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle controversie tra il Cantone Ticino e il patriziato di Roveredo sulle procedure di naturalizzazione, che potrebbero riemergere nelle prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da un grave incidente militare nel Canton Soletta e da nuove rivelazioni giudiziarie sul tragico incendio di Crans‑Montana, con la RTS citata nel procedimento.",
+          "notizie": [
+            {
+              "titolo": "Incidente militare a Soletta: nove soldati feriti durante un’esercitazione",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Incidente-militare-nel-canton-Soletta-nove-feriti--3813185.html",
+              "riassunto": "Durante l’esercitazione “Conex 26” un veicolo del battaglione di fanteria 20 è uscito di strada sul tratto Challhöchi‑Ifenthal, ribaltandosi e ferendo sette militari gravemente e due leggermente. I feriti sono stati trasportati in diversi ospedali. L’incidente è stato segnalato alle 10:47 e le autorità hanno avviato un’inchiesta militare.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "RTS cita il verbale dell’interrogatorio: i Moretti negano la responsabilità per l’incendio di Crans‑Montana",
+              "fonte": "Blick Schweiz",
+              "link": "https://www.blick.ch/schweiz/westschweiz/wallis/rts-zitiert-aus-verhoerprotokoll-morettis-weisen-schuld-von-sich-wir-wussten-nicht-dass-wunderkerzen-eine-solche-tragoedie-verursachen-koennen-id22024172.html",
+              "riassunto": "Il tribunale cantonale del Vallese ha nuovamente interrogato Jacques e Jessica Moretti sul rogo della bar Le Constellation (41 morti, oltre 100 feriti). La RTS ha pubblicato una parte di un messaggio WhatsApp del 2019 in cui Jessica avvertiva dei rischi delle stelle filanti, ma i coniugi hanno sostenuto di non aver previsto una tragedia di tale portata.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "sicurezza durante esercitazioni militari",
+            "responsabilità legale in caso di incidenti pubblici"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi dell’inchiesta sull’incidente di Soletta e eventuali ulteriori dichiarazioni o azioni legali nei confronti dei Moretti",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con la nuova serie televisiva prodotta da SRF e RTL, mentre i festival estivi in Svizzera attirano artisti internazionali. Si osservano inoltre trend su clima globale e arte generata dall'IA.",
+          "notizie": [
+            {
+              "titolo": "Nuova serie TV su Heidi prodotta da SRF e RTL",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/film-serien/neue-serie-von-srf-und-rtl-kohlund-makatsch-und-co-das-sind-die-heidi-stars",
+              "riassunto": "SRF e RTL hanno avviato le riprese della nuova serie su Heidi; il cast comprende Neah Hefti, Christian Kohlund e Heike Makatsch. Le riprese si svolgono in Germania e nel Bergell svizzero, con uscita prevista per il 2027.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Festival estivi in Svizzera: Greenfield, Festi'Neuch, Paléo e Openair Frauenfeld",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/musica/1931577/festival-luglio-artisti-musica-estate-festi",
+              "riassunto": "La stagione dei festival svizzeri parte con il Greenfield Festival a Interlaken, segue Festi'Neuch a Neuchâtel e il Paléo a Nyon, oltre all'Openair Frauenfeld, il più grande festival hip‑hop d'Europa. Tra gli ospiti: The Offspring, Volbeat, Vanessa Paradis, Gorillaz e Katy Perry.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Impatto climatico di El Niño",
+            "Musei d'arte generata dall'IA"
+          ],
+          "da_tenere_d_occhio": "Possibili aggiornamenti sulla programmazione della serie Heidi e sulle date di apertura dei festival svizzeri nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la copertura si concentra su tensioni USA‑Iran e su questioni legate ai media pubblici svizzeri, con la RTS criticata per la trasmissione dei Mondiali e SRF che sfata un circolario su WhatsApp.",
+          "notizie": [
+            {
+              "titolo": "Delusa dalla RTS per la trasmissione parziale dei Mondiali di calcio",
+              "fonte": "20 Minutes",
+              "link": "https://www.20min.ch/fr/story/suisse-romande-decu-par-la-rts-pour-sa-diffusion-partielle-du-mondial-de-foot-103581195",
+              "riassunto": "Gli spettatori svizzeri lamentano che la RTS, nonostante la promessa di trasmettere tutti i match dei Mondiali 2026, ne mostri solo 11 in diretta, relegando le altre partite a Play RTS senza commento. La rete pubblica giustifica la scelta con i costi di personale e l’audience limitata delle partite notturne, ma la decisione è vista come una delusione per le numerose comunità straniere residenti in Svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SRF smentisce il circolario sulla lettura dei messaggi WhatsApp da parte di un'IA",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/wirtschaft/umgang-mit-ki-liest-eine-ki-tatsaechlich-bald-unsere-whatsapp-chats",
+              "riassunto": "Il digital editor di SRF, Guido Berger, chiarisce che le voci secondo cui un'IA di Meta leggerebbe tutti i messaggi WhatsApp sono infondate. L'IA Meta AI può accedere solo ai contenuti di una chat in cui è inserita come partecipante; i messaggi privati rimangono protetti. La notizia è stata diffusa da un catena di avvertimenti senza fonte affidabile.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni diplomatiche USA‑Iran con minacce di attacchi e negoziati in corso",
+            "Critiche ai media pubblici svizzeri per la gestione dei diritti sportivi",
+            "Preoccupazioni sulla privacy e l'uso dell'IA nelle piattaforme di messaggistica"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle trattative USA‑Iran, in particolare eventuali firme a Ginevra, che potrebbero avere ripercussioni sulla neutralità svizzera e sulla copertura mediatica internazionale.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta a temi di impatto locale come l'aumento dei debiti dei consumatori svizzeri e alle conseguenze della politica monetaria europea, con la BCE che alza i tassi di interesse per la prima volta in tre anni.",
+          "notizie": [
+            {
+              "titolo": "Crescita record dei debiti dei consumatori svizzeri: 13 miliardi di franchi in ritardi",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/inkasso-boss-packt-ueber-seine-branche-aus-so-treiben-wir-bei-schweizer-haushalten-heute-schulden-ein-id22020522.html",
+              "riassunto": "Il direttore di Coeo Group, una delle più grandi società di recupero crediti in Europa, segnala che un su sei nuclei familiari svizzeri è in sofferenza. I debiti totali ammontano a circa 13 miliardi di franchi, con un aumento di quasi 2 miliardi rispetto al 2022, trainati soprattutto da bollette, crediti fiscali e acquisti online.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "BCE alza il tasso di riferimento al 2,25 %: primo aumento da quasi tre anni",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/kleiner-schritt-nach-oben-auf-2-25-prozent-ezb-erhoeht-den-leitzins-erstmals-seit-fast-drei-jahren-id22020269.html",
+              "riassunto": "La Banca centrale europea ha aumentato il tasso di interesse di 0,25 punti percentuali, portandolo al 2,25 %. La decisione è stata motivata dall’inflazione in crescita (da 1,9 % a 3,2 % tra febbraio e maggio) e dal conflitto in Iran che ha spinto i prezzi dell’energia. L’aumento dovrebbe contenere l’inflazione ma rischia di frenare la crescita economica, con previsioni di crescita annua dell’Eurozona intorno allo 0,5 % per il 2026.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aumento dei debiti dei consumatori in Svizzera",
+            "Rialzo dei tassi di interesse da parte della BCE"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei tassi BCE e le eventuali misure di sostegno alla domanda interna, nonché l'impatto dei debiti sui consumi svizzeri nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria si concentra su importanti round di finanziamento per startup AI con presenza in Svizzera, su le novità di iOS 27 testate da un media ticinese e su un nuovo strumento di Deezer per rilevare musica AI, coperto da più fonti.",
+          "notizie": [
+            {
+              "titolo": "Prometheus, la startup AI di Jeff Bezos, chiude un round da 12 miliardi di dollari con valutazione di 41 miliardi",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+              "riassunto": "Prometheus ha raccolto 12 miliardi di dollari, portando la valutazione a 41 miliardi. L’azienda, fondata da Jeff Bezos e Vik Bajaj, dichiara di impiegare 150 dipendenti con uffici a San Francisco, Londra e **Zurich**, puntando a un “artificial general engineer” per progettare motori, farmaci e altri sistemi fisici.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "iOS 27: l’iPhone sperimenta l’AI per modificare foto, Siri e routine vocali",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/blick-digitalexperte-bolzern-hat-ios-27-schon-ausprobiert-ki-verzaubert-jetzt-deine-iphone-fotos-mit-einem-haken-id22019074.html",
+              "riassunto": "Il giornalista digitale di Blick ha testato la beta di iOS 27. Le nuove funzioni AI includono rimozione e rotazione di oggetti nelle foto, espansione dell’immagine oltre i bordi e una Siri “AI” capace di leggere lo schermo e accedere a app. La versione finale arriverà in autunno, ma per ora è disponibile solo su iPhone 11 e successivi, con Siri AI inizialmente limitata all’inglese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Deezer lancia uno strumento gratuito per identificare brani AI su tutte le piattaforme di streaming",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+              "riassunto": "Deezer ha rilasciato un detector online che, in 27 lingue, scansiona playlist di Spotify, Apple Music, YouTube Music e altri 20 servizi per trovare tracce generate da AI. Il tool segnala che **75 000** brani AI vengono caricati al giorno, pari al 44 % di tutti gli upload, e li rimuove dalle raccomandazioni editoriali.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "TechCrunch AI",
+                "The Decoder"
+              ],
+              "differenze_narrative": "TechCrunch enfatizza la concorrenza con Spotify e Apple, descrivendo il tool come un vantaggio competitivo per Deezer. The Decoder aggiunge dati di sondaggio (97 % non distingue AI, 80 % vuole etichettatura) e sottolinea la quota di 75 000 brani AI al giorno."
+            }
+          ],
+          "trend": [
+            "Finanziamenti massivi per startup AI con presenza svizzera",
+            "Integrazione dell’AI nelle funzionalità di iOS",
+            "Rilevamento e trasparenza della musica AI nei servizi di streaming"
+          ],
+          "da_tenere_d_occhio": "L’eventuale lancio di Siri AI in lingua tedesca e francese, che potrebbe influenzare gli utenti svizzeri, e le reazioni del mercato alla nuova policy di Deezer sulla rimozione di brani AI.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 98,
       "run_id": 130,
@@ -4189,270 +4419,6 @@
           "notizie": [],
           "trend": [],
           "da_tenere_d_occhio": "Nessun sviluppo imminente da monitorare per la Svizzera nella prossima giornata.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 79,
-      "run_id": 111,
-      "run_time": "2026-05-24 02:45:01.946207+00:00",
-      "analyzed_at": "2026-05-24T02:53:57.814682+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 17,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie economiche e di sicurezza: il private banking svizzero registra nuovi record, le autorità di Zurigo intensificano la lotta al riciclaggio e il trasporto merci su rotaia rischia un regresso.",
-          "notizie": [
-            {
-              "titolo": "Julius Bär registra un nuovo massimo storico di patrimoni gestiti",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Julius-B%C3%A4r-ai-massimi-di-sempre--3760576.html",
-              "riassunto": "Nel primo quadrimestre 2026 Julius Bär ha portato le masse gestite a 528 miliardi di franchi, superando i 521 miliardi di fine 2025, grazie alla buona performance dei mercati azionari. La raccolta netta di nuovo denaro è scesa a 3,0 miliardi di franchi, al di sotto delle previsioni di 5,3 miliardi, ma la banca punta a un utile consolidato superiore al semestre precedente.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Zurigo intensifica le indagini sul riciclaggio di denaro",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Contro-la-criminalit%C3%A0-organizzata-%E2%80%9Cseguiamo-i-soldi%E2%80%9D--3762418.html",
-              "riassunto": "Il procuratore generale di Zurigo, David Zogg, ha dichiarato che ogni anno vengono aperti 1 200 procedimenti per riciclaggio, sequestrando decine di milioni di franchi. Un’operazione internazionale ha portato all’arresto di cinque persone che trasferivano proventi da droga e truffe tramite criptovalute. Zogg ha sottolineato la difficoltà dovuta al ruolo della Svizzera come paradiso del contante.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Riduzione dei terminal ferroviari minaccia il trasporto merci su rotaia in Ticino",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Merci-su-rotaia-il-Ticino-teme-un-passo-indietro--3762739.html",
-              "riassunto": "FFS Cargo ha annunciato la chiusura di quattro terminal nel cantone e la perdita di circa 40 posti di lavoro, suscitando timori che la quota di merci trasportate su rotaia scenda dal 74 % del 2021 al 69 % attuale. La direttrice dell’Ufficio federale dei trasporti, Christa Hostettler, ha avvertito che senza investimenti il trend negativo potrebbe invertire i benefici del tunnel del Gottardo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita dei patrimoni gestiti nel private banking svizzero",
-            "Rafforzamento delle misure anti-riciclaggio",
-            "Rischio di regressione nel trasporto ferroviario merci"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle politiche di regolamentazione bancaria e dei progetti di investimento per i terminal ferroviari, che influenzeranno sia l'economia locale sia la sostenibilità dei trasporti.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da temi istituzionali e economici: il dibattito sulla doppia maggioranza per gli accordi Svizzera‑UE, la fusione assicurativa Helvetia Baloise e il record di passeggeri negli aeroporti nazionali.",
-          "notizie": [
-            {
-              "titolo": "Doppia maggioranza per gli accordi Svizzera‑UE: la commissione del Nazionale la sostiene",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Svizzera-UE-%E2%80%9CNecessaria-la-doppia-maggioranza%E2%80%9D--3761731.html",
-              "riassunto": "La commissione delle istituzioni politiche del Nazionale ha votato 15 a 10 a favore di un’iniziativa che richiederebbe la doppia maggioranza (popolo e Cantoni) per approvare il pacchetto Svizzera‑UE, in particolare per la libera circolazione. La proposta mira a risolvere le contraddizioni costituzionali sull’immigrazione e prevede un eventuale referendum obbligatorio.",
-              "rilevanza": "alta",
-              "incrocio": false
-            },
-            {
-              "titolo": "Helvetia Baloise: l’integrazione avviata con successo",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/helvetia-baloise-lintegrazione-e-partita-bene-434112",
-              "riassunto": "Il nuovo gruppo assicurativo Helvetia Baloise, nato dalla fusione di Helvetia e Baloise, ha presentato risultati positivi nella prima assemblea generale a Basilea: aumento della redditività, dividendo di 7,70 franchi (+5%) e un piano di integrazione triennale con sede centrale a Basilea e una presenza importante a San Gallo.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews si concentra sul discorso del presidente del CDA, sui risultati operativi e sul piano triennale di integrazione, evidenziando il dividendo e la strategia di sede. LaRegione riporta gli stessi fatti ma aggiunge il contesto di mercato (leggero ribasso dell’azione) e sottolinea l’aspetto di \"progetto generazionale\" con più enfasi sulla reazione degli azionisti."
-            },
-            {
-              "titolo": "Record di passeggeri negli aeroporti svizzeri nel primo trimestre 2026",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1927398/aeroporti-svizzeri-registrano-un-record-di-13-3-milioni-di-passeggeri-nel-primo-trimestre",
-              "riassunto": "Gli aeroporti svizzeri hanno gestito 13,3 milioni di passeggeri nel primo trimestre, +5% rispetto al 2025. Zurich (+6%) ha raggiunto 6,9 milioni, Ginevra (+3%) 4,6 milioni e Basilea‑Mulhouse (+7%) 1,8 milioni. I voli verso Turchia e Italia hanno registrato i maggiori incrementi.",
-              "rilevanza": "media",
-              "incrocio": false
-            }
-          ],
-          "trend": [
-            "dibattito costituzionale su Svizzera‑UE",
-            "consolidamenti nel settore assicurativo",
-            "ripresa del traffico aereo post‑pandemia"
-          ],
-          "da_tenere_d_occhio": "L’esito del voto sull’iniziativa della doppia maggioranza nelle prossime settimane, che potrà influenzare le relazioni Svizzera‑UE.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: una mostra internazionale a Riehen, l'espansione del Gurtenfestival di Berna e un incontro letterario a Lugano con una scrittrice curda in esilio.",
-          "notizie": [
-            {
-              "titolo": "Pierre Huyghe in mostra alla Fondazione Beyeler di Riehen",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/arte/1927491/mostra-beyeler-fondazione-huyghe-svizzera-pierre-personale",
-              "riassunto": "Dal 1° luglio al 13 settembre la Fondazione Beyeler di Riehen ospita la prima mostra personale svizzera di Pierre Huyghe, con installazioni viventi, film e paesaggi immersivi. Tra le opere spicca \"Light Dust\" (2026), un tappeto luminoso che cambia aspetto a seconda della luce, e \"Umwelt\" (2011) con formiche in movimento.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gurtenfestival aumenta la capienza a 27.000 persone al giorno",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1927365/gurtenfestival-aumenta-la-capienza-con-2-000-persone-in-piu-al-giorno",
-              "riassunto": "Per l'edizione 15‑18 luglio 2026 il Gurtenfestival di Berna potrà accogliere 27.000 spettatori al giorno, 2.000 in più rispetto al passato, per far fronte ai costi post‑pandemia. L'ampliamento è stato autorizzato dalle autorità e include biglietti gratuiti o a prezzo ridotto per bambini e giovani.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Incontro a Lugano con la giornalista curda Asiye Tekin, rifugiata in Ticino",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1925763/donne-tekin-svizzera-scrive-asiye",
-              "riassunto": "Domani, alla Casa della letteratura di Lugano, Asiye Tekin, giornalista curda in esilio per persecuzioni in Turchia, presenterà il progetto “Scrivere ancora Svizzera” insieme a Sara Rossi Guidicelli. L'evento punta a dare voce a autori costretti all'esilio e a rafforzare il panorama letterario ticinese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "mostre d'arte contemporanea con componenti interattive",
-            "espansione di eventi musicali per sostenere la ripresa post‑pandemia",
-            "crescente attenzione a voci di esiliati e rifugiati nella scena culturale ticinese"
-          ],
-          "da_tenere_d_occhio": "L'eventuale programmazione di ulteriori mostre di Huyghe in altre città svizzere e le reazioni del pubblico al nuovo limite di capienza del Gurtenfestival.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni legate al conflitto israelo-palestinese, con l'UE che avvia sanzioni contro il ministro Ben Gvir e l'Olanda che vieta le importazioni dagli insediamenti. Parallelamente, SpaceX ha lanciato con successo il razzo Starship V3, alimentando il dibattito sull'IPO da trilioni di dollari.",
-          "notizie": [
-            {
-              "titolo": "L'UE avvia le sanzioni contro il ministro israeliano Ben Gvir su spinta dell'Italia",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/22/lue-accoglie-la-richiesta-di-tajani-sulle-sanzioni-a-ben-gvir_55f8acee-f101-4a39-806d-c46ce9b0e278.html",
-              "riassunto": "L'Alto rappresentante UE per la politica estera Kaja Kallas ha accolto la proposta di Antonio Tajani di discutere sanzioni contro il ministro israeliano Itamar Ben Gvir al Consiglio Affari Esteri del 15 giugno. La misura, sostenuta da diversi Paesi, mira a penalizzare i coloni israeliani per violenze contro attivisti. La decisione finale è prevista per la prossima settimana.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Le tre segnalazioni ANSA enfatizzano aspetti diversi: l'articolo sul Coreper II sottolinea il ruolo di Tajani e il sostegno di più Stati; quello su Tajani in contatto con i ministri UE mette in evidenza le negoziazioni diplomatiche con la Germania; la nota di Parigi aggiunge la risposta francese, con l'interdizione di Ben Gvir dal territorio francese, mostrando una reazione più dura da parte di Parigi rispetto al semplice avvio della procedura UE."
-            },
-            {
-              "titolo": "SpaceX lancia con successo il razzo Starship V3 in un volo di prova",
-              "fonte": "BBC World",
-              "link": "https://www.bbc.com/news/articles/c62d65y16nno?at_medium=RSS&at_campaign=rss",
-              "riassunto": "Elon Musk ha lanciato il più grande razzo mai costruito, Starship V3, che ha dispiegato 20 satelliti fittizi e si è schiantato nell'Oceano Indiano come previsto. Nonostante guasti a motori su entrambi gli stadi, la missione ha raggiunto gli obiettivi principali, rafforzando la fiducia degli investitori in vista dell'IPO di SpaceX, potenzialmente la più grande nella storia di Wall Street.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sanzioni UE contro figure israeliane",
-            "Ritmo accelerato delle negoziazioni USA‑Iran",
-            "Crescita dell'interesse per le IPO spaziali"
-          ],
-          "da_tenere_d_occhio": "L'esito della discussione UE del 15 giugno sulle sanzioni a Ben Gvir e le eventuali ripercussioni sui rapporti commerciali con Israele",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi i temi principali sono la performance del gruppo di lusso svizzero Richemont, le nuove nomine alla FINMA e l'accordo con il Marocco per accelerare i rimpatri, tutti con impatto diretto sulla Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Richemont registra crescita di ricavi e utili nell'esercizio 2025/26",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/richemont-vendite-e-utili-in-crescita-nellultimo-esercizio-434073",
-              "riassunto": "Il colosso del lusso con sede a Ginevra ha aumentato le vendite del 5% a 22,4 miliardi di euro e l'utile netto del 27% a 3,5 miliardi. Il segmento gioielli ha guidato la crescita (+8%). Viene proposto un dividendo di 3,30 franchi per azione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Finma: Simon Brönnimann alla guida della divisione Recovery e Resolution",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/finma-ex-responsabile-della-vigilanza-di-ubs-e-cs-diventa-capo-divisione-434108",
-              "riassunto": "Dal 1 giugno la FINMA affida a Simon Brönnimann la direzione della divisione Recovery e Resolution, responsabile dei piani di risanamento e liquidazione di UBS e Credit Suisse. Brönnimann ha già gestito la vigilanza su entrambe le banche dal 2015 al 2023.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Svizzera e Marocco accelerano i rimpatri degli irregolari",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1927585/svizzera-marocco-rimpatri-futuro-ridotto",
-              "riassunto": "Un nuovo accordo prevede di ridurre il tempo medio per identificare e rimpatriare i cittadini irregolari dal 150 a 30 giorni. L’accordo è stato siglato a Rabat dal segretario di Stato per la migrazione Vincenzo Mascioli e dal collega marocchino Khalid Zerouali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita dei gruppi di lusso svizzeri",
-            "Riforme nella vigilanza finanziaria",
-            "Accordi bilaterali per la gestione migratoria"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni della ristrutturazione della FINMA e l'impatto dei risultati di Richemont sui mercati azionari svizzeri nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su nuovi tool AI di OpenAI e su iniziative regolamentari statunitensi, con un impatto indiretto sulla Svizzera grazie alle limitazioni geografiche dei servizi.",
-          "notizie": [
-            {
-              "titolo": "OpenAI lancia un plugin ChatGPT per PowerPoint, ma avverte di possibili cancellazioni accidentali",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-launches-a-chatgpt-powerpoint-plugin-and-warns-it-might-accidentally-delete-your-content/",
-              "riassunto": "OpenAI ha rilasciato in beta un add‑in per PowerPoint che crea e modifica presentazioni usando ChatGPT. È disponibile per tutti i piani, ma la società avverte che formattazioni complesse o font personalizzati potrebbero essere modificati o cancellati, quindi consiglia di salvare le diapositive prima dell’uso.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI Appshots consente a qualsiasi finestra Mac di diventare contesto per Codex, senza restrizioni per Svizzera",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-appshots-turn-any-mac-window-into-context-for-codex/",
-              "riassunto": "La nuova funzionalità Appshots di Codex permette di inviare il contenuto testuale e visivo di qualsiasi finestra Mac a Codex con una scorciatoia. L’articolo specifica che, a differenza di altre funzioni, Appshots non è soggetto al divieto regionale per EEA, Regno Unito e Svizzera, rendendolo utilizzabile anche dagli utenti svizzeri.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenAI registra una perdita di 1,22 dollari per ogni dollaro di fatturato nel Q1 2026",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-burned-through-1-22-per-dollar-earned-even-after-stripping-out-stock-based-compensation/",
-              "riassunto": "Nel primo trimestre 2026 OpenAI ha fatturato circa 5,7 miliardi di dollari ma ha chiuso con un margine operativo aggiustato del -122 %, perdendo 1,22 $ per ogni dollaro di ricavo, anche escludendo le stock‑based compensation. La crescita è guidata da Codex, vendite enterprise e test pubblicitari in ChatGPT.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "nuovi plugin AI per suite produttive",
-            "funzionalità AI che superano le restrizioni geografiche",
-            "continua pressione finanziaria sui leader dell'AI"
-          ],
-          "da_tenere_d_occhio": "L’adozione dei plugin AI in ambienti aziendali e le possibili revisioni delle policy di utilizzo, soprattutto per gli utenti europei e svizzeri, nei prossimi giorni.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
