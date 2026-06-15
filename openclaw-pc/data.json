@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T21:20:04.911001Z",
+  "generated_at": "2026-06-15T21:30:03.923214Z",
   "system": {
     "version": "OpenClaw 2026.5.7 (eeef486)",
     "current_ver": "2026.5.7",
@@ -80,7 +80,7 @@
       "status": "idle",
       "next": "n/a",
       "note": "You are Geoffrey's background memory reviewer. Every run:...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "backup-daily-config",
@@ -116,7 +116,7 @@
       "status": "idle",
       "next": "n/a",
       "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "rassegna-mattutina",
