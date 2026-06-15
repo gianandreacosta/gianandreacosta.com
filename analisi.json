@@ -1,6 +1,214 @@
 {
-  "generated_at": "2026-06-14T05:07:51.306470+00:00",
+  "generated_at": "2026-06-15T05:07:40.449861+00:00",
   "analyses": [
+    {
+      "id": 101,
+      "run_id": 133,
+      "run_time": "2026-06-15 05:00:02.898836+00:00",
+      "analyzed_at": "2026-06-15T05:07:40.388292+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 12,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Nessuna notizia della lista riguarda direttamente i media pubblici svizzeri; le altre notizie hanno impatto locale o internazionale ma non soddisfano i criteri di priorità assoluta.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da proteste legate al G7, da un'analisi sul carattere pacifico delle manifestazioni locali e da uno sciopero femminista nazionale che ha mobilitato migliaia di persone.",
+          "notizie": [
+            {
+              "titolo": "Una flotta di imbarcazioni a sostegno della Palestina sul Lago di Ginevra",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/svizzera/G7-una-flottiglia-nel-Lemano-per-Gaza--3818795.html",
+              "riassunto": "Circa venti imbarcazioni hanno solcato il Lago di Ginevra con bandiere palestinesi e fumogeni per protestare contro il conflitto a Gaza in vista del vertice G7 di Évian. L'azione, organizzata da una coalizione di attivisti di circa un centinaio di persone provenienti da 15 Paesi, mira a denunciare la complicità degli Stati occidentali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Le proteste in Svizzera rimangono pacifiche ma più frequenti",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/svizzera/Le-proteste-in-Svizzera-meno-radicali-ma-non-meno-frequenti--3816443.html",
+              "riassunto": "Uno studio del politologo Marco Giugni conferma che le manifestazioni svizzere sono generalmente meno radicali rispetto a quelle di Germania, Italia o Francia, grazie al sistema federale e a una politica permissiva. Tuttavia, la frequenza è in aumento, con esempi recenti a Losanna, Ginevra e altre città in vista del G7.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Sciopero femminista a Losanna e Neuchâtel: migliaia in piazza",
+              "fonte": "LaRegione",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1932115/sciopero-piazza-neuchatel-losanna-femminista-migliaia",
+              "riassunto": "A Losanna e Neuchâtel si sono radunate rispettivamente 9.000 (stima della polizia) e circa 1.000 persone per chiedere parità, maggiori risorse per le vittime di violenza di genere e riconoscimento del lavoro di cura. Le manifestazioni proseguono in vista di un grande corteo a Ginevra prima del G7.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione (Losanna)",
+                "LaRegione (Neuchâtel)"
+              ],
+              "differenze_narrative": "Entrambe le versioni descrivono gli stessi fatti, ma l'articolo di Losanna enfatizza il numero totale di manifestanti (9.000) e cita più dichiarazioni di attiviste, mentre quello di Neuchâtel si concentra su richieste specifiche (prevenzione femminicidi, riconoscimento del lavoro di cura) e menziona la strategia di anticipare la manifestazione di Ginevra."
+            }
+          ],
+          "trend": [
+            "Crescente attivismo legato al G7",
+            "Maggiore attenzione alle questioni di genere e violenza domestica"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori proteste in Svizzera durante il vertice G7 di Évian e l'evoluzione delle richieste femministe a livello nazionale",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con un approfondimento di SRF Kultur sul fenomeno dei Dark Romance, mentre la scomparsa della filosofa Luisa Muraro genera un incrocio di copertura tra Il Post e LaRegione.",
+          "notizie": [
+            {
+              "titolo": "Il boom dei romanzi Dark Romance e le polemiche sul loro impatto giovanile",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/literatur/liebesromane-voller-tabus-duestere-faszination-warum-dark-romance-so-polarisiert",
+              "riassunto": "Il reportage di SRF Kultur analizza il crescente successo dei romanzi Dark Romance, in cui protagonisti come mafiosi o stalker diventano figure romantiche. Gli esperti denunciano il rischio di normalizzare dinamiche di potere squilibrate tra i giovani lettori, proponendo etichette di età simili a quelle dei film.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Morta la filosofa Luisa Muraro, icona del femminismo italiano",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/06/13/morta-filosofa-luisa-muraro/",
+              "riassunto": "Luisa Muraro, 85enne, fondatrice della Libreria delle Donne di Milano e pioniera del femminismo della seconda ondata, è deceduta. Tra le sue opere spiccano traduzioni di Irigaray e saggi come “Il Dio delle donne”. La notizia è stata replicata da LaRegione Culture con ulteriori dettagli biografici.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Cultura",
+                "LaRegione Culture"
+              ],
+              "differenze_narrative": "Il Post fornisce una biografia estesa e citazioni dirette, mentre LaRegione si concentra su omaggi dei colleghi e sui messaggi di cordoglio sui social, omettendo alcuni titoli bibliografici."
+            }
+          ],
+          "trend": [
+            "Crescita dei generi letterari controversi (Dark Romance)",
+            "Riconoscimento postumo di figure femministe italiane"
+          ],
+          "da_tenere_d_occhio": "Possibili reazioni istituzionali o editoriali svizzere verso i Dark Romance e eventuali iniziative di commemorazione per Luisa Muraro in ambito accademico",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica svizzera è al centro di due temi: il risultato della partita di calcio Svizzera‑Qatar, segnalato da RTS, e il dibattito sul nuovo accordo di libero scambio con il Mercosur, discusso in un talk‑show SRF‑Arena.",
+          "notizie": [
+            {
+              "titolo": "Pareggio Qatar‑Svizzera 1-1 al Mondiale 2026, l'RTS riporta la cronaca",
+              "fonte": "20 Minutes",
+              "link": "https://www.20min.ch/fr/video/coupe-du-monde-2026-l-egalisation-du-qatar-contre-la-suisse-103582154",
+              "riassunto": "Nel loro primo match del Mondiale 2026, la Svizzera ha subito un pareggio per 1-1 contro il Qatar, con il gol del Qatar al minuto finale. La notizia cita RTS come fonte svizzera di riferimento per la copertura sportiva.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dibattito acceso sul trattato Mercosur in SRF‑Arena, il Consiglio nazionale decide la settimana prossima",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/unheilige-allianz-beim-mercosur-deal-sie-und-die-gruene-seite-wollen-uns-erpressen-herr-ritter-id22025862.html",
+              "riassunto": "Il Nationalrat svizzero dovrà votare entro una settimana sul libero scambio con i quattro paesi del Mercosur. In SRF‑Arena le parti si sono scontrate: agricoltori guidati da Markus Ritter temono pressioni, mentre l’industria (Swissmem) lo vede come opportunità di crescita. La discussione è segnalata da SRF, media pubblico svizzero.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sviluppi della diplomazia sportiva svizzera",
+            "Contenzioso commerciale su accordi di libero scambio"
+          ],
+          "da_tenere_d_occhio": "Il voto del Consiglio nazionale sul trattato Mercosur, previsto nei prossimi giorni, che potrà influenzare l'economia agricola e industriale svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta alle prospettive commerciali della Svizzera: la SECO avverte sulla continuità dei dazi USA, il mercato interno è analizzato attraverso il caso di spesa di una famiglia Coop, e le relazioni con il Qatar evidenziano l'importanza delle esportazioni di lusso.",
+          "notizie": [
+            {
+              "titolo": "I dazi USA continueranno anche senza Trump, avverte la SECO",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1932062/stati-politica-svizzera-dazi-trump",
+              "riassunto": "Helene Budliger Artieda, direttrice della SECO, ha dichiarato che la politica tariffaria americana persisterà anche con un presidente democratico, con dazi tra il 10% e il 20%. Per la Svizzera consiglia di puntare su condizioni quadro favorevoli e di evitare sperimentazioni di politica industriale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Budget familiare di una dipendente Coop: spese e leasing auto in Svizzera",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/budget-von-coop-verkaeuferin-ich-zahle-1045-franken-leasing-fuer-meinen-mercedes-id22025629.html",
+              "riassunto": "Il reportage mostra il bilancio mensile di Sara Pal, impiegata presso Coop, con reddito netto di 6'840 franchi e spese tra affitto, bollette e leasing di una Mercedes a 1'045 franchi. L’articolo illustra le dinamiche di consumo e risparmio delle famiglie svizzere di classe media.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Qatar, importante partner commerciale svizzero nel settore lusso",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schweizer-wm-gegner-katar-doha-scheichs-stehen-auf-unsere-luxus-hotellerie-id22023918.html",
+              "riassunto": "Il Qatar è tra i primi cinque mercati di esportazione svizzeri, soprattutto per orologi, metalli preziosi e prodotti farmaceutici. Il fondo sovrano qatariota ha investito più di un miliardo di franchi in hotel svizzeri e detiene circa il 9% di Glencore.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Persistenza dei dazi USA e loro impatto sulla competitività svizzera",
+            "Consumo delle famiglie svizzere e pressione sui costi di vita",
+            "Rafforzamento dei legami commerciali con i mercati del Medio Oriente"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione della politica tariffaria statunitense nei prossimi mesi e le eventuali contromisure svizzere",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie di impatto internazionale sull'AI, con particolare attenzione a restrizioni governative sugli ultimi modelli di Anthropic e a problemi di affidabilità dei report basati su AI che coinvolgono enti svizzeri pubblici.",
+          "notizie": [
+            {
+              "titolo": "Il governo USA obbliga Anthropic a disabilitare i modelli Claude Fable 5 e Mythos 5 a livello globale",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/us-government-forces-anthropic-to-disable-claude-fable-5-and-mythos-5-for-all-customers-worldwide/",
+              "riassunto": "Il Dipartimento del Tesoro statunitense ha emesso un ordine di esportazione che vieta a tutti i clienti non‑americani di accedere ai modelli di Anthropic Fable 5 e Mythos 5, citando il rischio di jailbreak. Anthropic ha chiuso l’accesso immediatamente, ma contesta la gravità del problema, sostenendo che vulnerabilità simili esistono anche in GPT‑5.5. L’annuncio è stato pubblicato il 13 giugno 2026.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "KPMG ritira un rapporto sull’uso dell’AI dopo aver scoperto “allucinazioni” che coinvolgevano la SBB",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+              "riassunto": "KPMG ha rimosso dal web un report intitolato “Redefining excellence in the age of agentic AI” perché conteneva affermazioni false sull’uso dell’AI da parte di diverse organizzazioni, tra cui le Ferrovie Federali Svizzere (SBB). GPTZero ha identificato le inesattezze come frutto di “hallucinations” dell’AI. KPMG ha promesso una revisione interna e ha ribadito l’obbligo di supervisione umana.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Regolamentazione governativa dei modelli frontier",
+            "Problemi di affidabilità dei contenuti generati da AI in report aziendali"
+          ],
+          "da_tenere_d_occhio": "Possibili ulteriori restrizioni statunitensi su altri fornitori di AI e reazioni delle autorità europee, inclusa la Svizzera, nei prossimi 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 100,
       "run_id": 132,
@@ -4162,284 +4370,6 @@
             "Ricerca avanzata su AI per la dimostrazione matematica"
           ],
           "da_tenere_d_occhio": "Evoluzione delle normative europee e svizzere sulla verifica dell'età e sull'uso responsabile dell'AI, monitorare eventuali proposte legislative nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 81,
-      "run_id": 113,
-      "run_time": "2026-05-26 02:45:02.741467+00:00",
-      "analyzed_at": "2026-05-26T02:55:07.085828+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 18,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie con impatto economico e sociale: la guerra in Medio Oriente che minaccia il benessere svizzero, la conferma di una multa milionaria per l’ex dirigente di Raiffeisen e l’arrivo del Giro d’Italia con effetti locali.",
-          "notizie": [
-            {
-              "titolo": "La guerra in Medio Oriente minaccia il benessere in Svizzera",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Direttore-KOF-la-guerra-mette-a-rischio-benessere-in-Svizzera--3768646.html",
-              "riassunto": "Il direttore del KOF, Jan‑Egbert Sturm, avverte che il conflitto in Iran‑U.S. sta già influenzando la catena di approvvigionamento e i prezzi in Svizzera. Prevede un aumento dell’inflazione al 2% e un possibile rialzo dei costi di trasporto a causa della chiusura prolungata dello Stretto di Hormuz.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Mega multa di quasi un milione di franchi per l’ex direttore di Raiffeisen",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Mega-multa-confermata-per-Pierin-Vincenz--3765019.html",
-              "riassunto": "Il Tribunale federale ha confermato la multa di 980’000 franchi a Pierin Vincenz per sottrazione d’imposta tra il 2012 e il 2015, dopo che il tribunale cantonale di Appenzello Esterno aveva già stabilito la violazione. Il caso riapre il dibattito sulla governance delle banche svizzere.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Giro d’Italia in Ticino: festa e grande afflusso di veicoli",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Giro-d%E2%80%99Italia-in-Ticino-un-clima-di-festa--3768535.html",
-              "riassunto": "La tappa del Giro d’Italia attraversa il Ticino da Bellinzona a Carì per 113 km, con 2 500 veicoli di supporto previsti. L’evento attira turisti, promuove la mobilità lenta e offre una vetrina per le bellezze locali, generando un impatto economico immediato per la regione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Impatto della guerra medio-orientale sull’economia svizzera",
-            "Controlli e sanzioni nel settore bancario",
-            "Eventi sportivi come volano di turismo locale"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle trattative tra USA e Iran e le loro ripercussioni sui prezzi energetici e sull’inflazione svizzera nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie che riguardano la fiducia digitale dei cittadini, una pesante sanzione fiscale a un ex dirigente bancario e tensioni urbane a Zurigo. Gli eventi hanno impatto diretto sul territorio e suscitano dibattito pubblico.",
-          "notizie": [
-            {
-              "titolo": "Fiducia nei servizi digitali cresce se sono “Made in Switzerland”",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/piu-fiducia-nei-servizi-digitali-se-sono-made-in-switzerland-428613",
-              "riassunto": "Il rapporto della fondazione Risiko‑Dialog, pubblicato oggi, rileva che oltre l'80% degli svizzeri si fida di più dei servizi digitali “Made in Switzerland”. Il 58% considera l'infrastruttura digitale un punto di forza, ma il 41% vede la digitalizzazione in modo negativo, superando per la prima volta dal 2020 la percezione positiva.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT fornisce un'analisi più dettagliata, citando Daniela Ramp e includendo dati sull'IA; Ticinonews ripropone il contenuto con minor approfondimento e senza le citazioni dirette, mantenendo lo stesso tono informativo."
-            },
-            {
-              "titolo": "Ex direttore Raiffeisen multato per quasi un milione di franchi per evasione fiscale",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1927797/multa-tribunale-franchi-raiffeisen-direttore-milione-federale",
-              "riassunto": "Il Tribunale federale ha confermato una multa di 980'000 franchi più 12'500 franchi di spese a Pierin Vincenz, ex direttore di Raiffeisen, per omissioni fiscali tra il 2012 e il 2015. Il provvedimento segue una condanna penale del 2022 per truffa e corruzione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Disordini a Zurigo: agente di polizia ferito durante intervento",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/disordini-a-zurigo-ferito-un-agente-di-polizia-428623",
-              "riassunto": "Durante una manifestazione notturna a Zurigo, la polizia è stata bersagliata da bottiglie e sassi; un agente ha riportato lievi ferite e un veicolo di servizio è stato danneggiato. Le forze dell'ordine hanno usato proiettili di gomma, irritanti, cani e un idrante per disperdere la folla.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescente attenzione alla sovranità digitale svizzera",
-            "Controlli fiscali rigorosi su figure bancarie di spicco",
-            "Aumento di tensioni sociali urbane"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni normative sulla digital sovereignty e ulteriori azioni legali contro l'evasione fiscale nel settore bancario",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: il Lugano 1956 celebra i 70 anni del primo Eurofestival, mentre in Solothurn una mostra sui polli attira l'interesse nazionale. Parallelamente, il dibattito sull'uso dei libri cartacei nelle scuole si sposta su un modello svedese, ma con implicazioni per la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "70° anniversario del primo Eurofestival a Lugano",
-              "fonte": "Il Post Cultura",
-              "link": "https://www.ilpost.it/2026/05/24/primo-eurofestival-70-anni-fa/",
-              "riassunto": "Il 24 maggio 1956 il Teatro Kursaal di Lugano ospitò la prima edizione dell'Eurofestival (oggi Eurovision). Parteciparono solo sette paesi; la Svizzera vinse con Lys Assia e la canzone “Refrain”. L'articolo ricorda che la trasmissione raggiunse più di 10 milioni di spettatori.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Mostra “Hühner – unterschätztes Federvieh” a Solothurn",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/unterschaetztes-federvieh-dummes-huhn-zeit-dass-dieses-klischee-federn-laesst",
-              "riassunto": "Al Natural Museum di Solothurn è aperta l'esposizione sui polli, che evidenzia il ritorno di 15 milioni di galline in Svizzera e il loro ruolo sociale. La mostra mostra varietà di razze e spiega il crescente interesse dei cittadini per l’allevamento domestico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La Svezia reinventa la didattica con i libri cartacei",
-              "fonte": "Il Post Cultura",
-              "link": "https://www.ilpost.it/2026/05/24/vantaggi-libri-cartacei-tablet/",
-              "riassunto": "Dal 2023 la Svezia finanzia l’acquisto di libri di testo cartacei (circa 70 milioni € nel 2025) e vieta gli smartphone a scuola, dopo che i tablet non hanno migliorato i risultati PISA 2022. Il caso svedese è citato come possibile modello per altri paesi, inclusa la Svizzera, dove si discute l’equilibrio tra digitale e cartaceo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riscoperta di eventi culturali storici svizzeri",
-            "Rinascita dell’interesse per l’allevamento domestico e la fauna locale",
-            "Rivalutazione dei libri di testo cartacei nella didattica digitale"
-          ],
-          "da_tenere_d_occhio": "Possibili iniziative cantonali ticinesi per celebrare il 70° anniversario dell'Eurofestival e dibattiti su politiche educative analoghe al modello svedese.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente e dall'Europa dell'Est, con nuovi allarmi diplomatici tra Russia e USA e una possibile escalation contro Hezbollah. Parallelamente, l'attenzione si sposta su un'operazione umanitaria italiana in Libia, segnalata da più fonti.",
-          "notizie": [
-            {
-              "titolo": "Lavrov chiede l'evacuazione dell'ambasciata USA da Kiev",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/25/lavrov-sente-rubio-evacuare-lambasciata-usa-a-kiev_facc6c9b-3863-4804-abfc-09e3dc2f9590.html",
-              "riassunto": "Il ministro degli Esteri russo Serghei Lavrov, in una telefonata con il segretario di Stato americano Marco Rubio, ha ribadito la raccomandazione del Ministero degli Esteri russo di evacuare il personale diplomatico statunitense da Kiev, citando l'escalation di violenza nella capitale ucraina.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "USA pronti a autorizzare un'operazione su larga scala contro Hezbollah in Libano",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/25/channel-12-usa-verso-ok-a-vasta-operazione-idf-contro-hezbollah-in-libano_0c6f77f3-e2ce-40b2-8fdd-e20a3e35fb33.html",
-              "riassunto": "Un alto funzionario statunitense ha dichiarato a Channel 12 che gli USA potrebbero dare il via libera a un'operazione israeliana di ampia portata contro Hezbollah, in risposta all’aumento degli attacchi con droni contro Israele.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Attivisti italiani fermati a Sirte: possibile arresto di due cittadini",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/05/24/flotilla-fermato-gruppo-a-sirte-con-due-italiani-forse-arrestati_8898c249-a16c-475b-80f6-ddf5e440799c.html",
-              "riassunto": "Un convoglio umanitario della Flotilla, con due italiani tra i membri, è stato fermato a Sirte, Libia, e potrebbe essere stato arrestato dalle autorità di Haftar. La Farnesina ha avviato verifiche. La stessa vicenda è riportata in un secondo articolo ANSA con dettagli sul gruppo e le testimonianze sul campo.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "ANSA Mondo",
-                "ANSA Mondo"
-              ],
-              "differenze_narrative": "Il primo articolo enfatizza la perdita di contatti e la possibile detenzione, citando la portavoce Maria Elena Delia e la verifica della Farnesina. Il secondo approfondisce le testimonianze di un'attivista sul posto, descrivendo la composizione del convoglio e il dialogo con il consolato, aggiungendo il nome dei cittadini italiani. Entrambe mantengono un tono informativo, ma il secondo fornisce più dettagli operativi."
-            }
-          ],
-          "trend": [
-            "rischio di escalation militare in Medio Oriente",
-            "coordinamento diplomatico tra grandi potenze in risposta a conflitti locali"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi dell'operazione USA‑IDF contro Hezbollah e la risposta diplomatica russa‑americana sull'Ucraina nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta a tre temi chiave per la Svizzera: la conferma della multa record a un ex dirigente di Raiffeisen, le nuove indagini parlamentari sul deragliamento del Gottardo e le importanti modifiche legislative in vigore dal 1° giugno su esercito, asilo e frontiere.",
-          "notizie": [
-            {
-              "titolo": "Confermata la multa quasi milionario a Pierin Vincenz, ex direttore di Raiffeisen, per evasione fiscale",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/sottrazione-dimposta-confermata-la-mega-multa-allex-direttore-di-raiffeisen-434212",
-              "riassunto": "Il Tribunale federale ha respinto il ricorso di Pierin Vincenz, confermando la sanzione di 980'000 franchi per non aver dichiarato 3,4 milioni di franchi tra il 2012 e il 2015. La decisione conferma anche le spese processuali di 12'500 franchi e riapre la discussione sul caso penale in corso a Zurigo.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Economia",
-                "Blick Wirtschaft"
-              ],
-              "differenze_narrative": "Ticinonews riporta i dettagli del procedimento fiscale e la cronologia giudiziaria, enfatizzando l'impatto sulla reputazione bancaria. Blick ripete la notizia ma aggiunge il contesto penale di Zurigo e cita le accuse aggiuntive di frode e corruzione, dando maggiore peso al quadro penale complessivo."
-            },
-            {
-              "titolo": "Commissione degli Stati indaga sulle nuove accuse contro le Ferrovie FFS per il deragliamento del Gottardo del 2023",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1927872/commissione-stati-accuse-deragliamento-gottardo-vigilanza-vuole",
-              "riassunto": "Il Consiglio degli Stati avvia una nuova indagine sulla responsabilità delle Ferrovie Federali Svizzere (FFS) dopo il deragliamento che nel 2023 causò danni per 150 milioni di franchi e la chiusura della galleria per più di un anno. La commissione valuterà se le segnalazioni di guasto erano state adeguatamente interpretate.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Dal 1° giugno in vigore nuove regole su esercito, asilo e frontiere in Svizzera",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1927767/lavoro-servizio-frontiere-esercito-giugno-asilo-novita-svizzera",
-              "riassunto": "Il 1° giugno entreranno in vigore modifiche legislative che digitalizzano il libretto di servizio militare, ampliano i poteri della Segreteria di Stato della migrazione (SEM) e adeguano la normativa alle regole Schengen, con nuove competenze per controlli temporanei alle frontiere e per la gestione dei minori non accompagnati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Intensificazione della vigilanza su grandi gruppi bancari svizzeri",
-            "Rafforzamento della normativa su sicurezza e migrazione",
-            "Maggiore attenzione parlamentare a incidenti infrastrutturali"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle indagini sul caso Raiffeisen e le eventuali conseguenze per il settore bancario svizzero nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da dibattiti sulla governance dell'AI e da notizie di impatto sul mercato del lavoro, con particolare attenzione a decisioni strategiche di grandi player e a riflessioni etiche di alto livello.",
-          "notizie": [
-            {
-              "titolo": "ClickUp licenzia il 22% del personale per sostituirlo con migliaia di agenti AI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
-              "riassunto": "Il CEO Zeb Evans ha annunciato il licenziamento del 22% dei dipendenti di ClickUp, sostituendoli con circa 3.000 agenti AI interni. L'azienda promette salari da un milione di dollari per chi genera impatti significativi con l'AI e punta a trasformarsi in una “organizzazione 100x”. La notizia, pubblicata il 25 maggio, è citata da Fortune e Gartner, evidenziando il trend di riduzione del personale a favore dell’automazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L’enciclica papale sull’AI mette in luce problemi di potere e democrazia",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
-              "riassunto": "Il Papa Leo XIV ha pubblicato l’enciclica “Magnifica Humanitas”, usando l’AI come pretesto per denunciare concentrazioni di potere, disuguaglianze e minacce alla democrazia. Il documento, di 200 pagine, richiama l’attenzione su una “corsa agli armamenti AI” e propone una supervisione partecipativa. È stato rilasciato il 25 maggio e citato anche in contesti politici statunitensi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Dibattito tra DeepMind e LeCun sullo stato attuale dell’intelligenza artificiale",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/deepminds-hassabis-sees-humanity-in-the-foothills-of-the-singularity-while-lecun-says-current-ai-isnt-intelligent/",
-              "riassunto": "Demis Hassabis di DeepMind afferma che l’umanità è “ai piedi della singolarità” e prevede un AGI entro cinque anni, mentre Yann LeCun sostiene che le attuali LLM non sono davvero intelligenti. Oriol Vinyals, co‑lead di Gemini, colloca i modelli odierni a metà strada. L’intervista è stata rilasciata durante il keynote di Google I/O 2026.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Adozione massiccia di agenti AI per sostituire lavoro umano",
-            "Crescente attenzione etica e politica verso la concentrazione di potere dell’AI"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle politiche aziendali su AI‑agent staffing e le reazioni normative internazionali nei prossimi giorni.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
