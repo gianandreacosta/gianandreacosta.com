@@ -1,405 +1,411 @@
 {
-  "total_articles": 59922,
+  "total_articles": 60744,
   "by_category": [
     {
       "category": "geopolitica",
-      "count": 36820
+      "count": 37302
     },
     {
       "category": "cronaca_ticino",
-      "count": 6735
+      "count": 6840
     },
     {
       "category": "cronaca_svizzera",
-      "count": 6394
+      "count": 6493
     },
     {
       "category": "ai_openclaw",
-      "count": 3513
+      "count": 3560
     },
     {
       "category": "economia",
-      "count": 3270
+      "count": 3322
     },
     {
       "category": "cultura",
-      "count": 3190
+      "count": 3227
     }
   ],
   "last_run": {
-    "run_time": "2026-06-16 05:00:02.391217+00:00",
-    "articles_found": 3216,
-    "articles_new": 799,
-    "articles_updated": 850
+    "run_time": "2026-06-17 05:00:02.515556+00:00",
+    "articles_found": 2573,
+    "articles_new": 822,
+    "articles_updated": 788
   },
   "last_run_by_category": [
     {
       "category": "geopolitica",
-      "count": 470
-    },
-    {
-      "category": "cronaca_svizzera",
-      "count": 105
+      "count": 482
     },
     {
       "category": "cronaca_ticino",
-      "count": 102
+      "count": 105
+    },
+    {
+      "category": "cronaca_svizzera",
+      "count": 99
     },
     {
       "category": "economia",
-      "count": 43
+      "count": 52
     },
     {
       "category": "ai_openclaw",
-      "count": 43
+      "count": 47
     },
     {
       "category": "cultura",
-      "count": 36
+      "count": 37
     }
   ],
   "by_source": [
     {
       "source": "20 Minutes",
       "category": "geopolitica",
-      "total_articles": 3880,
-      "last_run_articles": 43
+      "total_articles": 3927,
+      "last_run_articles": 47
     },
     {
       "source": "20 Minuten",
       "category": "geopolitica",
-      "total_articles": 3820,
-      "last_run_articles": 46
+      "total_articles": 3865,
+      "last_run_articles": 45
     },
     {
       "source": "ANSA Cronaca",
       "category": "geopolitica",
-      "total_articles": 3482,
-      "last_run_articles": 36
+      "total_articles": 3543,
+      "last_run_articles": 61
     },
     {
       "source": "ANSA Mondo",
       "category": "geopolitica",
-      "total_articles": 3119,
-      "last_run_articles": 51
+      "total_articles": 3153,
+      "last_run_articles": 34
     },
     {
       "source": "Domani",
       "category": "geopolitica",
-      "total_articles": 2515,
-      "last_run_articles": 34
+      "total_articles": 2552,
+      "last_run_articles": 37
     },
     {
       "source": "The Guardian",
       "category": "geopolitica",
-      "total_articles": 2426,
-      "last_run_articles": 31
+      "total_articles": 2454,
+      "last_run_articles": 28
     },
     {
       "source": "Al Jazeera",
       "category": "geopolitica",
-      "total_articles": 2110,
+      "total_articles": 2135,
       "last_run_articles": 25
     },
     {
       "source": "New York Times World",
       "category": "geopolitica",
-      "total_articles": 1870,
-      "last_run_articles": 37
+      "total_articles": 1894,
+      "last_run_articles": 24
     },
     {
       "source": "Adnkronos",
       "category": "geopolitica",
-      "total_articles": 1636,
+      "total_articles": 1656,
       "last_run_articles": 20
     },
     {
       "source": "AGI",
       "category": "geopolitica",
-      "total_articles": 1615,
-      "last_run_articles": 20
+      "total_articles": 1634,
+      "last_run_articles": 19
     },
     {
       "source": "Hacker News",
       "category": "ai_openclaw",
-      "total_articles": 1585,
+      "total_articles": 1605,
       "last_run_articles": 20
     },
     {
       "source": "BBC World",
       "category": "geopolitica",
-      "total_articles": 1541,
-      "last_run_articles": 24
+      "total_articles": 1560,
+      "last_run_articles": 19
     },
     {
       "source": "RSI Ticino",
       "category": "cronaca_ticino",
-      "total_articles": 1492,
-      "last_run_articles": 20
+      "total_articles": 1510,
+      "last_run_articles": 18
     },
     {
       "source": "LaRegione Estero",
       "category": "cronaca_svizzera",
-      "total_articles": 1482,
-      "last_run_articles": 22
+      "total_articles": 1505,
+      "last_run_articles": 23
     },
     {
       "source": "la Repubblica",
       "category": "geopolitica",
-      "total_articles": 1460,
+      "total_articles": 1480,
       "last_run_articles": 20
     },
     {
       "source": "New York Times Homepage",
       "category": "geopolitica",
-      "total_articles": 1455,
-      "last_run_articles": 15
+      "total_articles": 1473,
+      "last_run_articles": 18
     },
     {
       "source": "tio.ch Ticino",
       "category": "cronaca_ticino",
-      "total_articles": 1335,
+      "total_articles": 1355,
       "last_run_articles": 20
     },
     {
       "source": "tio.ch Svizzera",
       "category": "economia",
-      "total_articles": 1317,
+      "total_articles": 1337,
       "last_run_articles": 20
     },
     {
       "source": "Ticinonews Svizzera",
       "category": "cronaca_svizzera",
-      "total_articles": 1240,
-      "last_run_articles": 28
+      "total_articles": 1264,
+      "last_run_articles": 24
     },
     {
       "source": "New York Times Arts",
       "category": "cultura",
-      "total_articles": 1162,
-      "last_run_articles": 16
+      "total_articles": 1171,
+      "last_run_articles": 9
     },
     {
       "source": "Ticinonews Ticino",
       "category": "cronaca_ticino",
-      "total_articles": 1046,
-      "last_run_articles": 16
+      "total_articles": 1064,
+      "last_run_articles": 18
     },
     {
       "source": "Blick Schweiz",
       "category": "cronaca_svizzera",
-      "total_articles": 1016,
-      "last_run_articles": 14
-    },
-    {
-      "source": "Internazionale",
-      "category": "geopolitica",
-      "total_articles": 979,
-      "last_run_articles": 6
+      "total_articles": 1028,
+      "last_run_articles": 12
     },
     {
       "source": "LaRegione Svizzera",
       "category": "cronaca_svizzera",
-      "total_articles": 979,
-      "last_run_articles": 22
+      "total_articles": 1002,
+      "last_run_articles": 23
     },
     {
       "source": "Blick Ausland",
       "category": "geopolitica",
-      "total_articles": 974,
-      "last_run_articles": 23
+      "total_articles": 990,
+      "last_run_articles": 16
+    },
+    {
+      "source": "Internazionale",
+      "category": "geopolitica",
+      "total_articles": 984,
+      "last_run_articles": 5
     },
     {
       "source": "CdT Ticino",
       "category": "cronaca_ticino",
-      "total_articles": 915,
-      "last_run_articles": 14
+      "total_articles": 930,
+      "last_run_articles": 15
     },
     {
       "source": "Il Sole 24 Ore Italia",
       "category": "geopolitica",
-      "total_articles": 863,
-      "last_run_articles": 10
+      "total_articles": 875,
+      "last_run_articles": 12
     },
     {
       "source": "SRF Schweiz",
       "category": "cronaca_svizzera",
-      "total_articles": 851,
-      "last_run_articles": 10
+      "total_articles": 860,
+      "last_run_articles": 9
     },
     {
       "source": "Il Post Mondo",
       "category": "geopolitica",
-      "total_articles": 715,
+      "total_articles": 725,
       "last_run_articles": 10
     },
     {
       "source": "Il Sole 24 Ore Economia",
       "category": "economia",
-      "total_articles": 654,
-      "last_run_articles": 8
+      "total_articles": 663,
+      "last_run_articles": 9
     },
     {
       "source": "LaRegione Culture",
       "category": "cultura",
-      "total_articles": 632,
-      "last_run_articles": 7
+      "total_articles": 645,
+      "last_run_articles": 13
     },
     {
       "source": "TechCrunch AI",
       "category": "ai_openclaw",
-      "total_articles": 623,
-      "last_run_articles": 10
+      "total_articles": 634,
+      "last_run_articles": 11
     },
     {
       "source": "Il Sole 24 Ore Mondo",
       "category": "geopolitica",
-      "total_articles": 612,
-      "last_run_articles": 5
-    },
-    {
-      "source": "CdT Svizzera",
-      "category": "cronaca_svizzera",
-      "total_articles": 577,
-      "last_run_articles": 5
+      "total_articles": 623,
+      "last_run_articles": 11
     },
     {
       "source": "Blick Politik",
       "category": "geopolitica",
-      "total_articles": 573,
-      "last_run_articles": 9
+      "total_articles": 585,
+      "last_run_articles": 12
+    },
+    {
+      "source": "CdT Svizzera",
+      "category": "cronaca_svizzera",
+      "total_articles": 583,
+      "last_run_articles": 6
     },
     {
       "source": "LaRegione Locarnese",
       "category": "cronaca_ticino",
-      "total_articles": 557,
+      "total_articles": 567,
       "last_run_articles": 10
     },
     {
       "source": "The Decoder",
       "category": "ai_openclaw",
-      "total_articles": 552,
-      "last_run_articles": 5
+      "total_articles": 560,
+      "last_run_articles": 8
     },
     {
       "source": "Blick Wirtschaft",
       "category": "economia",
-      "total_articles": 448,
-      "last_run_articles": 10
+      "total_articles": 456,
+      "last_run_articles": 8
     },
     {
       "source": "LaRegione Bellinzonese",
       "category": "cronaca_ticino",
-      "total_articles": 446,
-      "last_run_articles": 7
+      "total_articles": 452,
+      "last_run_articles": 6
     },
     {
       "source": "Il Post Italia",
       "category": "geopolitica",
-      "total_articles": 425,
-      "last_run_articles": 1
+      "total_articles": 435,
+      "last_run_articles": 10
     },
     {
       "source": "LaRegione Luganese",
       "category": "cronaca_ticino",
-      "total_articles": 377,
-      "last_run_articles": 5
+      "total_articles": 384,
+      "last_run_articles": 7
     },
     {
       "source": "Il Post Sport",
       "category": "cultura",
-      "total_articles": 342,
-      "last_run_articles": 1
+      "total_articles": 347,
+      "last_run_articles": 5
     },
     {
       "source": "SRF International",
       "category": "geopolitica",
-      "total_articles": 341,
-      "last_run_articles": 2
-    },
-    {
-      "source": "SRF Kultur",
-      "category": "cultura",
-      "total_articles": 314,
+      "total_articles": 346,
       "last_run_articles": 5
     },
     {
       "source": "LaRegione Mendrisiotto",
       "category": "cronaca_ticino",
-      "total_articles": 310,
-      "last_run_articles": 5
+      "total_articles": 316,
+      "last_run_articles": 6
+    },
+    {
+      "source": "SRF Kultur",
+      "category": "cultura",
+      "total_articles": 316,
+      "last_run_articles": 2
     },
     {
       "source": "LaRegione Ticino",
       "category": "cronaca_ticino",
-      "total_articles": 257,
+      "total_articles": 262,
       "last_run_articles": 5
     },
     {
       "source": "CdT Società",
       "category": "cultura",
-      "total_articles": 242,
-      "last_run_articles": 3
+      "total_articles": 246,
+      "last_run_articles": 4
     },
     {
       "source": "Il Post Cultura",
       "category": "cultura",
-      "total_articles": 236,
+      "total_articles": 239,
       "last_run_articles": 3
     },
     {
       "source": "New York Times Technology",
       "category": "ai_openclaw",
-      "total_articles": 203,
-      "last_run_articles": 1
+      "total_articles": 206,
+      "last_run_articles": 3
     },
     {
       "source": "MIT Tech Review",
       "category": "ai_openclaw",
-      "total_articles": 197,
-      "last_run_articles": 4
+      "total_articles": 200,
+      "last_run_articles": 3
     },
     {
       "source": "OpenClaw Releases",
       "category": "ai_openclaw",
-      "total_articles": 196,
-      "last_run_articles": 2
+      "total_articles": 197,
+      "last_run_articles": 1
     },
     {
       "source": "Il Sole 24 Ore Finanza",
       "category": "economia",
-      "total_articles": 164,
+      "total_articles": 165,
       "last_run_articles": 1
     },
     {
       "source": "Adnkronos",
       "category": "economia",
-      "total_articles": 153,
-      "last_run_articles": 0
+      "total_articles": 154,
+      "last_run_articles": 1
     },
     {
       "source": "RSI Svizzera",
       "category": "cronaca_svizzera",
-      "total_articles": 139,
-      "last_run_articles": 2
+      "total_articles": 140,
+      "last_run_articles": 1
     },
     {
       "source": "Ticinonews Economia",
       "category": "economia",
-      "total_articles": 125,
-      "last_run_articles": 1
+      "total_articles": 127,
+      "last_run_articles": 2
     },
     {
       "source": "Il Post Politica",
       "category": "geopolitica",
-      "total_articles": 99,
-      "last_run_articles": 2
+      "total_articles": 100,
+      "last_run_articles": 1
+    },
+    {
+      "source": "Domani",
+      "category": "economia",
+      "total_articles": 93,
+      "last_run_articles": 7
     },
     {
       "source": "RSI Mondo",
       "category": "cronaca_svizzera",
-      "total_articles": 89,
-      "last_run_articles": 2
+      "total_articles": 90,
+      "last_run_articles": 1
     },
     {
       "source": "la Repubblica JS",
@@ -416,38 +422,32 @@
     {
       "source": "The Economist Business",
       "category": "economia",
-      "total_articles": 87,
+      "total_articles": 88,
       "last_run_articles": 1
-    },
-    {
-      "source": "Domani",
-      "category": "economia",
-      "total_articles": 86,
-      "last_run_articles": 0
     },
     {
       "source": "The Economist Culture",
       "category": "cultura",
       "total_articles": 81,
-      "last_run_articles": 1
+      "last_run_articles": 0
     },
     {
       "source": "The Economist Finance",
       "category": "economia",
-      "total_articles": 77,
-      "last_run_articles": 1
-    },
-    {
-      "source": "Il Post Scienza",
-      "category": "cultura",
-      "total_articles": 73,
-      "last_run_articles": 0
+      "total_articles": 79,
+      "last_run_articles": 2
     },
     {
       "source": "Il Post Economia",
       "category": "geopolitica",
-      "total_articles": 72,
-      "last_run_articles": 0
+      "total_articles": 74,
+      "last_run_articles": 2
+    },
+    {
+      "source": "Il Post Scienza",
+      "category": "cultura",
+      "total_articles": 74,
+      "last_run_articles": 1
     },
     {
       "source": "Corriere della Sera",
@@ -470,14 +470,14 @@
     {
       "source": "The Economist Science & Tech",
       "category": "ai_openclaw",
-      "total_articles": 49,
-      "last_run_articles": 0
+      "total_articles": 50,
+      "last_run_articles": 1
     },
     {
       "source": "Blick Digital",
       "category": "ai_openclaw",
       "total_articles": 40,
-      "last_run_articles": 1
+      "last_run_articles": 0
     },
     {
       "source": "LaRegione Spettacoli",
@@ -492,13 +492,13 @@
       "last_run_articles": 0
     },
     {
-      "source": "New York Times",
+      "source": "The Economist International",
       "category": "geopolitica",
-      "total_articles": 24,
-      "last_run_articles": 0
+      "total_articles": 25,
+      "last_run_articles": 1
     },
     {
-      "source": "The Economist International",
+      "source": "New York Times",
       "category": "geopolitica",
       "total_articles": 24,
       "last_run_articles": 0
@@ -507,7 +507,7 @@
       "source": "Il Sole 24 Ore Italia",
       "category": "economia",
       "total_articles": 18,
-      "last_run_articles": 1
+      "last_run_articles": 0
     },
     {
       "source": "20 Minutes Suisse",
@@ -542,8 +542,8 @@
     {
       "source": "Il Sole 24 Ore Mondo",
       "category": "economia",
-      "total_articles": 9,
-      "last_run_articles": 0
+      "total_articles": 10,
+      "last_run_articles": 1
     },
     {
       "source": "AGI",
@@ -583,6 +583,12 @@
     }
   ],
   "runs_history": [
+    {
+      "run_time": "2026-06-17 05:00:02.515556+00:00",
+      "articles_found": 2573,
+      "articles_new": 822,
+      "articles_updated": 788
+    },
     {
       "run_time": "2026-06-16 05:00:02.391217+00:00",
       "articles_found": 3216,
@@ -636,13 +642,7 @@
       "articles_found": 3430,
       "articles_new": 647,
       "articles_updated": 931
-    },
-    {
-      "run_time": "2026-06-07 05:00:01.854587+00:00",
-      "articles_found": 3897,
-      "articles_new": 562,
-      "articles_updated": 876
     }
   ],
-  "generated_at": "2026-06-16 07:08:51 UTC+02:00"
+  "generated_at": "2026-06-17 07:04:27 UTC+02:00"
 }
