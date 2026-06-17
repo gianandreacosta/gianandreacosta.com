@@ -1,6 +1,222 @@
 {
-  "generated_at": "2026-06-16T05:08:38.657983+00:00",
+  "generated_at": "2026-06-17T05:07:56.979606+00:00",
   "analyses": [
+    {
+      "id": 103,
+      "run_id": 135,
+      "run_time": "2026-06-17 05:00:02.515556+00:00",
+      "analyzed_at": "2026-06-17T05:07:56.968733+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 13,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri, dalla crisi di un'importante cooperativa lattiero-casearia alla diffusione di un modello di IA militare, passando per la mediazione svizzera in un accordo USA‑Iran.",
+          "notizie": [
+            {
+              "titolo": "Crisi finanziaria di Cremo: perdite per il sesto anno consecutivo",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/La-crisi-di-Cremo-e-il-rischio-per-l%E2%80%99industria-lattiera--3821213.html",
+              "riassunto": "L'assemblea generale di Cremo, principale trasformatore di latte svizzero, ha evidenziato perdite per il sesto anno di fila, attribuite soprattutto alla produzione di latte in polvere, considerata poco redditizia. Pierre‑André Tombez, ex presidente di Uniterre, ha dichiarato a RTS che “la produzione di latte in polvere non è interessante dal punto di vista economico e può essere sostenuta solo con aiuti federali”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Modello IA nato da Pokémon Go potrà guidare droni militari",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Dalla-caccia-ai-Pok%C3%A9mon-ai-droni-militari--3825353.html",
+              "riassunto": "Una ricerca olandese ha mostrato che il modello di intelligenza artificiale sviluppato da Niantic Spatial, basato su 30 miliardi di scansioni raccolte da giocatori di Pokémon Go, può essere impiegato per il riconoscimento di oggetti da parte di droni militari. Tanja Eder di SRF 4 News ha spiegato che la tecnologia permette di associare immagini in tempo reale a rappresentazioni digitali di edifici o fontane, superando una sfida chiave per l’IA.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Svizzera media nella mediazione dell’accordo USA‑Iran a Ginevra",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Cassis-e-la-diplomazia-discreta-%E2%80%9CSiamo-olio-per-gli-ingranaggi%E2%80%9D--3822863.html",
+              "riassunto": "Il segretario di Stato Ignazio Cassis ha ribadito il ruolo di “oliodi ingranaggi” della Svizzera nella mediazione del memorandum d’intesa tra Stati Uniti e Iran, da firmare a Ginevra. Cassis ha dichiarato che la Confederazione facilita la pace e ha contribuito al rilancio delle trattative sullo Stretto di Hormuz. La notizia è stata riportata da RSI con citazioni dirette del ministro degli Esteri.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Coinvolgimento dei media pubblici svizzeri in temi internazionali",
+            "Applicazioni civili‑militari dell’intelligenza artificiale"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dell’accordo tra USA e Iran, in particolare le fasi successive di negoziazione a Ginevra, che potrebbero influenzare la geopolitica energetica e la posizione diplomatica della Svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata dal risultato dell’iniziativa “No a una Svizzera da 10 milioni” e dal dibattito sull’immigrazione; al contempo emergono temi di energia nucleare e intelligenza artificiale nel mercato del lavoro.",
+          "notizie": [
+            {
+              "titolo": "L'UDC respinta: l'iniziativa “No a una Svizzera da 10 milioni” bocciata alle urne",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Nessun-voto-di-pancia-ma-i-problemi-restano--3821105.html",
+              "riassunto": "L’iniziativa popolare dell’UDC, che proponeva di limitare la popolazione residente a 10 milioni, è stata respinta dal voto federale. Il 45 % dei votanti ha detto sì, un risultato considerato “elevato per un tema così radicale”. Il rifiuto è stato interpretato come un segnale di allarme sull’immigrazione, ma anche come un avvertimento sui rischi per i rapporti con l’UE. Commentatori di diversi quotidiani hanno evidenziato la difficoltà di conciliare la libera circolazione con le preoccupazioni demografiche.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Immigrazione e iniziative popolari contro la crescita demografica",
+            "Ritorno sul dibattito nucleare in Parlamento"
+          ],
+          "da_tenere_d_occhio": "Le prossime discussioni sui Bilaterali III e le eventuali proposte di legge per gestire la libera circolazione, in vista delle elezioni federali.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di tre notizie: l'animazione elvetica al Festival di Annecy, il voto popolare sul risanamento del Kunstmuseum di Berna e un approfondimento sul progetto di ampliamento del museo.",
+          "notizie": [
+            {
+              "titolo": "Sei opere d'animazione svizzere selezionate al Festival di Annecy",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1932356/film-animazione-marcel-cinema-progetti-festival-sviluppo-opere-annecy",
+              "riassunto": "Al Festival internazionale del film d'animazione di Annecy (21‑27 giugno) sono state scelte sei produzioni elvetiche, tra cui il corto di Georges Schwizgebel “The Picture of Dorian Gray” e il progetto in sviluppo “Hermien” di Marcel Barelli, regista ticinese. L’evento mette in luce la crescente presenza della Svizzera nella scena animata internazionale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bocciato il risanamento del Kunstmuseum di Berna",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1932527/bocciato-il-risanamento-del-kunstmuseum",
+              "riassunto": "Nel referendum popolare del cantone di Berna la proposta di ristrutturare e ampliare il Kunstmuseum è stata respinta con il 51,8 % dei voti. La sconfitta blocca per ora i piani di ampliamento e riqualificazione dell’edificio storico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Progetto di ampliamento del Kunstmuseum di Berna in fase di studio",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1931420/butler-terzaghi-santuari-alpi-libro",
+              "riassunto": "L’articolo esamina il progetto di ristrutturazione del Kunstmuseum di Berna, citando gli architetti Butler e Terzaghi e le discussioni sul nuovo spazio espositivo. Il progetto, ancora in fase di valutazione, è al centro del dibattito culturale cantonale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita della produzione di animazione svizzera a livello internazionale",
+            "Debate pubblico su investimenti culturali e museali in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi del progetto Kunstmuseum dopo il referendum e ulteriori candidature svizzere al Festival di Annecy nelle prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Le notizie di oggi ruotano attorno ai nuovi sviluppi diplomatici tra USA e Iran, alla possibile missione navale per riaprire lo Stretto di Hormuz con il coinvolgimento dell'Italia e alle dichiarazioni di Trump sul ritorno delle sanzioni al petrolio russo al G7 di Evian.",
+          "notizie": [
+            {
+              "titolo": "Intesa preliminare USA‑Iran: i dettagli dell’accordo per porre fine alla guerra in Medio Oriente",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/2026/06/15/usa-iran-dettagli-accordo",
+              "riassunto": "Secondo l'articolo, il primo ministro pakistano Shehbaz Sharif ha confermato che USA, Iran e Pakistan firmeranno a Ginevra il 19 giugno un documento che prevede la cessazione immediata delle ostilità, la riapertura dello Stretto di Hormuz e la sospensione delle attività nucleari iraniane per 60 giorni. L’accordo prevede inoltre la revoca del blocco navale statunitense e la regolazione del traffico marittimo con l’Oman.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Internazionale",
+                "ANSA Mondo"
+              ],
+              "differenze_narrative": "L'Internazionale fornisce una panoramica completa dei punti chiave (cessate il fuoco, Hormuz, nucleare) e cita le dichiarazioni pakistane, mentre l'ANSA si limita a segnalare che USA e Iran terranno colloqui preparatori a Doha, senza entrare nei dettagli dell'accordo né menzionare il ruolo del Pakistan."
+            },
+            {
+              "titolo": "Macron annuncia la missione franco‑britannica per riaprire lo Stretto di Hormuz con il sostegno di Italia e Olanda",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/15/macron-pronti-a-guida-missione-hormuz-con-gb-olanda-e-italia_5620d4ca-9c34-4862-a1d4-d5f78da13d90.html",
+              "riassunto": "Durante il G7 a Evian‑les‑Bains, Emmanuel Macron ha dichiarato che Francia e Regno Unito guideranno una missione navale per garantire la riapertura dello Stretto di Hormuz, con il supporto di Olanda e Italia. La missione potrebbe essere dispiegata entro due‑tre giorni, a condizione che l’accordo USA‑Iran sia attuato.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trump promette il ritorno delle sanzioni sul petrolio russo al G7 di Evian",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/16/trump-presto-potremo-reintrodurre-le-sanzioni-sul-petrolio-russo_dec4af03-2ee3-48f9-9118-69959adcc50c.html",
+              "riassunto": "Al vertice del G7, Donald Trump ha affermato che gli Stati Uniti potranno presto reintrodurre le sanzioni sul petrolio russo, sostenendo che il flusso attuale di petrolio è stabile ma che la posizione americana consentirà di agire “a un certo punto”. La dichiarazione è stata riportata dal Guardian.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Riapertura dello Stretto di Hormuz",
+            "Accordi USA‑Iran e loro ripercussioni geopolitiche",
+            "Ritorno delle sanzioni energetiche contro la Russia"
+          ],
+          "da_tenere_d_occhio": "L'esito della firma a Ginevra il 19 giugno e l'eventuale attivazione della missione navale per Hormuz, che influenzeranno i prezzi dell'energia e la sicurezza delle rotte commerciali.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la categoria economia è dominata da notizie di forte impatto interno: il dibattito sui Bilaterali III, la discussione sul ritorno del nucleare e gli incontri bilaterali in vista del G7. Si evidenziano tensioni politiche e decisioni che potrebbero influenzare l'economia svizzera nei prossimi mesi.",
+          "notizie": [
+            {
+              "titolo": "I Bilaterali III dividono l'elettorato svizzero: il sondaggio mostra una netta polarizzazione",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1932484/sulla-questione-dei-bilaterali-iii-la-svizzera-non-potrebbe-essere-piu-divisa",
+              "riassunto": "Un sondaggio Tamedia/20 Minuti, condotto dal 11 al 14 giugno, rileva che il 30 % degli intervistati è favorevole ai Bilaterali III, il 16 % “piuttosto favorevole”, mentre il 25 % è contrario e il 15 % “piuttosto contrario”. Il 14 % resta indeciso. Le divisioni sono marcate per partito: i Verdi‑Liberali (53 %) e i Verdi (49 %) sostengono l’accordo, l’UDC è per lo più contraria (60 %). Inoltre, il 43 % ritiene sufficiente la maggioranza popolare, contro il 39 % che chiede anche la maggioranza dei cantoni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dibattito nucleare al Consiglio nazionale: il voto è stato rinviato al governo",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1932475/nucleare-governo-dieci-consiglio-centrali",
+              "riassunto": "Il Consiglio nazionale ha votato 100 a 97 (2 astenuti) per rimandare la decisione sul ritorno del nucleare al Consiglio federale, che dovrà formulare una nuova proposta di regolamentazione e finanziamento. Il dibattito ha evidenziato preoccupazioni sui possibili sussidi pubblici: un deputato del Centro ha stimato il costo di un nuovo reattore intorno ai 13 miliardi di franchi.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Parmelin avvia colloqui bilaterali a Ginevra prima del G7 di Évian",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1932472/ginevra-stato-parmelin-evian-g7-alcuni-bilaterali-colloqui",
+              "riassunto": "Il presidente della Confederazione, Guy Parmelin, ha incontrato diversi capi di Stato e di Governo del G7 a Ginevra, tra cui Ursula von der Leyen e António Costa, per discutere i Bilaterali III, le misure UE sull’acciaio e la crisi mediorientale. Parmelin ha inoltre tenuto colloqui con il presidente brasiliano Lula da Silva sul libero scambio AELS‑Mercosur.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Polarizzazione sull'integrazione europea (Bilaterali III)",
+            "Ritorno al nucleare come tema energetico nazionale",
+            "Attività diplomatica svizzera legata al G7"
+          ],
+          "da_tenere_d_occhio": "L'esito finale dei Bilaterali III e la proposta del governo sul nucleare, che saranno definiti nei prossimi giorni, potranno influenzare investimenti, regolamentazioni settoriali e la percezione internazionale della Svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia rilevante per i media pubblici svizzeri, impatto diretto sulla Svizzera o breaking news di rilievo nella categoria.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 102,
       "run_id": 134,
@@ -4099,245 +4315,6 @@
             "Regolamentazione e etichettatura dei contenuti AI"
           ],
           "da_tenere_d_occhio": "Segui gli sviluppi della tecnologia di randomizzazione quantistica dell'ETH e le possibili applicazioni in crittografia e servizi finanziari svizzeri nelle prossime 24 ore.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 83,
-      "run_id": 115,
-      "run_time": "2026-05-28 05:00:02.919138+00:00",
-      "analyzed_at": "2026-05-28T05:09:43.144208+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 15,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da questioni di rilevanza nazionale: tensioni legate al G7 di Evian, previsioni di calo del turismo a causa del conflitto in Iran e una revisione delle norme svizzere sull’esportazione di armi.",
-          "notizie": [
-            {
-              "titolo": "Tensioni svizzero-francesi per il G7 di Evian: la Svizzera teme costi di sicurezza e proteste a Ginevra",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/G7-di-Evian-a-Ginevra-cresce-il-malcontento--3769927.html",
-              "riassunto": "A meno di tre settimane dal G7 di Evian, la Confederazione teme di dover sostenere costi di sicurezza per l’accoglienza a Ginevra e per la manifestazione anti‑G7. Il presidente Parmelin ha scritto una lettera a Macron, resa pubblica da “Le Canard enchaîné”, denunciando la mancanza di contributi francesi. Le preoccupazioni includono milioni di franchi per la sicurezza e il timore che la protesta sia spostata su Ginevra.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Guerra in Iran farà calare il turismo svizzero: previsto -1,6% di pernottamenti nel 2026",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/La-guerra-in-Iran-frena-il-turismo-in-Svizzera--3769942.html",
-              "riassunto": "Il Centro di ricerche congiunturali (KOF) prevede un calo dell’1,6% dei pernottamenti in Svizzera nel 2026 a causa del conflitto in Iran. I pernottamenti provenienti dall’Asia dovrebbero diminuire del 10% (esclusa la Cina) e della Cina del 25,7%. Il turismo interno crescerà dello 0,2%, ma non compenserebbe le perdite estere.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nuove regole per l’esportazione di armi svizzere: allentamento per tutti i Paesi dell’UE e AELS",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Export-di-armi-regole-allentate-per-pi%C3%B9-Paesi--3775027.html",
-              "riassunto": "Il Consiglio federale ha deciso di estendere le agevolazioni svizzere sull’esportazione di armi a tutti gli Stati dell’Unione europea e dell’Associazione europea di libero scambio a partire dal 1° luglio 2026, includendo Islanda, Bulgaria, Croazia e altri. La modifica segue il referendum di novembre e l’aggiornamento di più ordinanze, con l’obiettivo di uniformare le regole per i Paesi EEA.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensioni legate a grandi vertici internazionali (G7)",
-            "impatto di conflitti esteri sul turismo svizzero",
-            "revisione delle normative sull’esportazione di armi"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione dei costi di sicurezza per il G7 e le eventuali proteste a Ginevra, nonché le prime cifre del turismo estero nel primo trimestre 2026.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da temi legati a finanze pubbliche e sanità: la SUVA annuncia un risparmio record nella lotta alle frodi, il governo federale destina 3 milioni di franchi per l’emergenza Ebola in Congo, e in Ticino si discute l’aumento dei premi assicurativi per le casse malati.",
-          "notizie": [
-            {
-              "titolo": "SUVA risparmia 43,7 milioni di franchi grazie alla lotta contro le frodi assicurative",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/suva-un-risparmio-di-437-milioni-con-lotta-alle-frodi-assicurative-434298",
-              "riassunto": "Nel 2025 la SUVA ha analizzato 269 477 pratiche di indennità giornaliera o rendita, individuando 2 067 segnalazioni di sospetto abuso. 671 casi sono stati confermati in giudizio, consentendo un risparmio complessivo di 43,7 milioni di franchi, di cui 35,5 milioni per prestazioni indebitamente percepite e 8,2 milioni da premi aggiuntivi riscossi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Berna assegna 3 milioni di franchi per contenere l’epidemia di Ebola in Congo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/berna-stanzia-3-milioni-di-franchi-contro-lepidemia-di-ebola-428817",
-              "riassunto": "Il Dipartimento federale degli affari esteri ha destinato 3 milioni di franchi dall’unità di aiuti d’urgenza per l’emergenza Ebola nella Repubblica Democratica del Congo: oltre 2 milioni per l’OMS, 0,5 milioni per un programma di salute materna‑infantile e circa 0,4 milioni per progetti di prevenzione nelle province di Ituri e Nord Kivu.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cassa malattia in Ticino: i premi assicurativi potrebbero aumentare di nuovo",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/premi-il-ticino-si-interroga-premi-piu-elevati-a-causa-delleffetto-di-recupero-428808",
-              "riassunto": "L’UFSP prevede un rialzo dei premi per le casse malattia vicino al 5 % a livello nazionale, ma in Ticino l’aumento è stato storicamente superiore a causa dell’«effetto di recupero» dei costi sanitari. I costi pro capite nel cantone sono cresciuti del 5,2 % nel 2025, pari a 247 franchi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "lotta alle frodi assicurative",
-            "interventi svizzeri in emergenze sanitarie internazionali",
-            "aumento dei premi sanitari in Ticino"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori incrementi dei premi assicurativi in Ticino e l’efficacia dei fondi destinati all’emergenza Ebola",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro con le Giornate del teatro nel Canton Vaud, mentre a livello internazionale si registrano importanti lutti nel jazz e dibattiti su IA e arte.",
-          "notizie": [
-            {
-              "titolo": "Al via le Giornate del teatro svizzero a Yverdon-les-Bains e Losanna",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1928480/teatro-svizzero-giornate-yverdon-les-bains-losanna",
-              "riassunto": "Dal 24 al 28 maggio la 13ª edizione delle Giornate del teatro svizzero si svolge a Yverdon-les-Bains e Losanna, proponendo sette spettacoli tra produzioni indipendenti, istituzionali e una prima assoluta, “Mon Frère”. Tra le proposte spicca la performance immersiva “Venir meno”, diretta dalla ticinese Francesca Sproccati, che affronta il conflitto interiore e il ricordo di un nonno antifascista.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rinascita di festival culturali locali in Svizzera (teatro, musica)",
-            "Lutto e celebrazione di icone del jazz a livello globale"
-          ],
-          "da_tenere_d_occhio": "Le coperture internazionali del Festival di Cannes (AI, nuove tecnologie) nei prossimi giorni potrebbero influenzare il dibattito su innovazione e tradizione anche in ambito culturale svizzero.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica si concentra su questioni di sicurezza e difesa, ma per il lettore svizzero emergono due notizie locali: l’introduzione di un “Alpen‑Ranger” nel Canton Vallese e le tensioni legate al traffico turistico transfrontaliero a Chiasso.",
-          "notizie": [
-            {
-              "titolo": "Il Comune di Obergoms (VS) assume un “Alpen‑Ranger” per contrastare il campeggio selvaggio",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/wirtschaft/spezieller-job-ausgeschrieben-alpen-ranger-soll-fuer-walliser-gemeinde-wildcamper-aufspueren-id21978117.html",
-              "riassunto": "Il comune di Obergoms, nel Canton Vallese, ha pubblicato un bando per un ranger alpino che dovrà pattugliare i passi di Furka, Grimsel e Nufenen, informare i turisti e far rispettare le norme sul campeggio selvaggio. Il ruolo non ha poteri di polizia, ma mira a proteggere l’ambiente e a recuperare le entrate perse per il campeggio abusivo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Turisti in pullman e traffico a Chiasso: le autorità svizzere sotto pressione",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/notizie/2026/05/27/pullman-targhe-nascoste",
-              "riassunto": "Un reportage evidenzia come i pullman turistici parcheggino in doppia fila a Firenze e come, a Chiasso (Svizzera), la città si prepari ad accogliere i turisti in transito verso Como, mentre le autorità locali sono criticate per una presunta disparità di controlli tra residenti e visitatori.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza delle frontiere e gestione del turismo transfrontaliero",
-            "Nuove forme di vigilanza ambientale locale"
-          ],
-          "da_tenere_d_occhio": "L’efficacia del nuovo ruolo di ranger alpino e le possibili evoluzioni delle norme di controllo del traffico turistico a Chiasso nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l’attenzione è rivolta a tre temi chiave per la Svizzera: l’espansione di un operatore mobile tedesco con modello proprietario, le pressioni sul consumo interno legate all’aumento della TVA e le difficoltà emergenti nel mercato del lavoro svizzero.",
-          "notizie": [
-            {
-              "titolo": "ÖSI spusu conquista 70.000 clienti svizzeri con rete mobile proprietaria",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/life/anderthalb-jahre-nach-markteintritt-so-ueberzeugt-oesi-handyanbieter-spusu-die-schweizer-kundschaft-id21957696.html",
-              "riassunto": "Il nuovo operatore ÖSI spusu, parte del gruppo austriaco, ha superato i 70.000 abbonati in Svizzera grazie a una rete core proprietaria gestita da Zürich. Il modello “no‑binding” e i prezzi trasparenti gli hanno permesso di competere con i grandi player locali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "I dettaglianti svizzeri avvertono l’impatto di una TVA al 10 % prevista per il 2028",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/entwicklung-ist-hochproblematisch-detailhaendler-warnen-vor-10-prozent-mehrwertsteuer-id21979192.html",
-              "riassunto": "Il Swiss Retail Federation segnala che l’aumento della TVA di 0,8 punti percentuali nel 2028, con possibili ulteriori incrementi, porterà il tasso al 10 %. I rivenditori temono una riduzione del consumo interno e un aumento del turismo di acquisto transfrontaliero, con una perdita stimata di miliardi di franchi di fatturato.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ghosting da parte dei datori di lavoro: 78 % dei candidati svizzeri denuncia il silenzio",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/ghosting-auf-dem-jobmarkt-wird-immer-groesseres-problem-schweizer-firmen-ignorieren-drei-von-vier-bewerbern-id21978965.html",
-              "riassunto": "Una nuova indagine di Indeed rivela che il 78,6 % dei 537 intervistati in Svizzera ha sperimentato il “ghosting” da parte dei potenziali datori di lavoro. Il fenomeno spinge il 43,8 % dei candidati a restare nel loro attuale impiego, aumentando la pressione sul mercato del lavoro qualificato.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Consolidamento del mercato delle telecomunicazioni con operatori low‑cost a rete proprietaria",
-            "Pressioni fiscali sul consumo interno e potenziale spostamento verso il cross‑border shopping",
-            "Crescente insoddisfazione dei candidati per processi di selezione poco trasparenti"
-          ],
-          "da_tenere_d_occhio": "L’attuazione dell’aumento della TVA nel 2028 e le eventuali misure di mitigazione per il retail, nonché l’evoluzione delle pratiche di recruiting nelle grandi aziende svizzere.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie di impatto globale sull'adozione dell'AI: la reazione degli utenti a Google Search AI, il raddoppio della valutazione di OpenRouter e un nuovo traguardo matematico di Claude Mythos.",
-          "notizie": [
-            {
-              "titolo": "Installazioni di DuckDuckGo aumentano del 30% dopo la nuova ricerca AI di Google",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-              "riassunto": "Dopo l'annuncio di Google a I/O 2026 di trasformare la barra di ricerca in un motore conversazionale con AI Overviews, gli utenti hanno migrato verso DuckDuckGo, con un incremento del 30% delle installazioni dell'app negli Stati Uniti. Il CEO di DuckDuckGo ha denunciato il \"force‑feeding\" dell'AI da parte di Google, sostenendo che i risultati stanno peggiorando.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "OpenRouter raddoppia la valutazione a 1,3 miliardi di dollari",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-              "riassunto": "Il gateway AI OpenRouter ha chiuso un round Serie B da 113 milioni di dollari guidato da CapitalG, portando la valutazione post‑money a circa 1,3 miliardi di dollari, più del doppio rispetto all'anno precedente. La piattaforma ora gestisce oltre 400 modelli AI, 8 milioni di utenti e 100 trilioni di token al mese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Claude Mythos risolve il problema di Erdős con una dimostrazione \"carina\"",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/",
-              "riassunto": "Secondo gli ingegneri di Anthropic, Claude Mythos ha replicato la soluzione di OpenAI al famoso congettura di Erdős sul unit‑distance, fornendo una dimostrazione breve e intuitiva. Il risultato evidenzia un nuovo livello di capacità delle LLM nel campo della matematica avanzata.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita dell'adozione di AI agentic e gateway multi‑modello",
-            "Resistenza degli utenti a soluzioni AI integrate nei motori di ricerca",
-            "Avanzamenti delle LLM nella ricerca matematica"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle politiche di Google sulla ricerca AI e le possibili reazioni normative o di mercato nelle prossime 24 ore",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
