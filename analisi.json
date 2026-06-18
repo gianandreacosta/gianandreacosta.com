@@ -1,6 +1,246 @@
 {
-  "generated_at": "2026-06-17T05:07:56.979606+00:00",
+  "generated_at": "2026-06-18T05:08:11.803279+00:00",
   "analyses": [
+    {
+      "id": 104,
+      "run_id": 136,
+      "run_time": "2026-06-18 05:00:02.444948+00:00",
+      "analyzed_at": "2026-06-18T05:08:11.775805+00:00",
+      "articles_analyzed": 183,
+      "articles_selected": 15,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri, da tensioni legate alla sicurezza e da decisioni finanziarie della SSR.",
+          "notizie": [
+            {
+              "titolo": "Intelligenza artificiale di Niantic potrebbe essere usata per droni militari",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Dalla-caccia-ai-Pok%C3%A9mon-ai-droni-militari--3825353.html",
+              "riassunto": "Un modello di IA sviluppato da Niantic Spatial, basato su dati raccolti da Pokémon Go, potrebbe essere impiegato per il riconoscimento di oggetti da parte di droni militari. La ricerca, citata da Trouw, evidenzia che Niantic ha raccolto circa 30 miliardi di scansioni. Tanja Eder (SRF 4 News) ha commentato le implicazioni per la navigazione dei droni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Giovane picchiato dalla polizia durante manifestazione anti‑G7 a Ginevra",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Manifestazione-anti-G7-giovane-picchiato-dalla-polizia-%E2%80%9CPensavo-di-morire%E2%80%9D--3829070.html",
+              "riassunto": "Un giovane, identificato come Alexandre, ha raccontato di essere stato percosso da agenti in borghese durante la manifestazione “No G7” a Ginevra. L’inchiesta, realizzata da RTS, ha raccolto testimonianze, video e dichiarazioni dei residenti, evidenziando l’uso di manganelli e la difficoltà a respirare. La vicenda riaccende il dibattito sulla gestione delle proteste.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SSR definisce le misure di risparmio per il 2027",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/SSR-precisate-le-misure-di-risparmio-per-il-2027--3828380.html",
+              "riassunto": "La Società Svizzera di Radiotelevisione (SSR) ha annunciato un piano di risparmio di 80 milioni di franchi per il 2027, includendo razionalizzazioni strutturali e la non candidatura per i diritti della UEFA Champions League. L’obiettivo è contenere i costi entro i 270 milioni di franchi previsti entro il 2029, mantenendo la qualità dell’offerta pubblica.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Coinvolgimento dei media pubblici svizzeri in temi di sicurezza e tecnologia",
+            "Controversie sulla gestione delle proteste e dei diritti civili"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi legislativi o giudiziari relativi all'uso della forza da parte della polizia durante le manifestazioni G7 e alle decisioni di bilancio della SSR per il prossimo esercizio.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici: la SSR annuncia importanti misure di risparmio, mentre il SRF segnala la partecipazione eccezionale del Presidente Parmelin al gala del G7. Un incrocio tra due fonti evidenzia le diverse angolazioni sul piano di risparmio della SSR.",
+          "notizie": [
+            {
+              "titolo": "SSR definisce misure di risparmio per il 2027: 80 milioni da tagliare",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/la-ssr-precisa-le-misure-di-risparmio-per-il-2027-436245",
+              "riassunto": "La SSR ha illustrato i dettagli del piano di risparmio da 80 milioni di franchi per il 2027, basato su semplificazioni strutturali, ottimizzazione degli spazi e riduzione dei processi. Tra le novità, l'emittente non parteciperà più all’acquisizione dei diritti UEFA Champions League a partire dalla stagione 2027‑2028.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "LaRegione fornisce un quadro più ampio, indicando l’obiettivo complessivo di 270 milioni di franchi di risparmio entro il 2029 e menzionando la riduzione del canone decisa dal Consiglio federale. Ticinonews si concentra sui 80 milioni del 2027 e specifica l’eliminazione della candidatura per i diritti UEFA, evidenziando un approccio più operativo."
+            },
+            {
+              "titolo": "SSR avvia la trasformazione Enavant: 270 milioni di risparmi entro il 2029",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1932957/ssr-franchi-risparmi-misure-strutture-programmi-processi-risparmio-offerta-trasformazione",
+              "riassunto": "La SSR, nell’ambito del progetto Enavant, annuncia un piano di trasformazione digitale e agile per garantire la sostenibilità, con l’obiettivo di risparmiare 270 milioni di franchi entro il 2029, principalmente tramite interventi su strutture, processi e partnership.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "LaRegione Svizzera",
+                "Ticinonews Svizzera"
+              ],
+              "differenze_narrative": "LaRegione enfatizza la dimensione strategica e il contesto politico (riduzione del canone), mentre Ticinonews fornisce dettagli operativi sul taglio di 80 milioni per il 2027 e sulla decisione di non puntare più sui diritti UEFA."
+            },
+            {
+              "titolo": "SRF: Parmelin partecipa al gala del G7, una prima nella storia",
+              "fonte": "SRF Schweiz",
+              "link": "https://www.srf.ch/news/international/g7-gipfel-am-genfersee-eine-premiere-parmelin-durfte-am-g7-galadiner-teilnehmen",
+              "riassunto": "Il Presidente della Confederazione Guy Parmelin è stato invitato al gala del G7 a Évian, una prima per la Svizzera. L’articolo sottolinea l’importanza di questo incontro per la diplomazia svizzera e la possibilità di confrontarsi direttamente con i leader dei paesi più potenti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Piano di risparmio e trasformazione dei media pubblici",
+            "Presenza della Svizzera in eventi internazionali di alto profilo"
+          ],
+          "da_tenere_d_occhio": "L’attuazione delle misure di risparmio della SSR e l’impatto sul panorama televisivo svizzero nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di grandi eventi internazionali e di ricerche sociali: Art Basel riaccende l'attenzione sul mercato dell'arte, uno studio universitario svela nuove dinamiche di mascolinità, e il Museo di etnografia di Neuchâtel apre le sue porte allo skate.",
+          "notizie": [
+            {
+              "titolo": "Art Basel 2025: la fiera d'arte a Basilea attira 290 gallerie da 43 Paesi",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1932630/art-basel-arte-gallerie-bisogna",
+              "riassunto": "La 56ª edizione di Art Basel apre il 18 giugno a Basilea con 290 gallerie internazionali. Il fatturato del mercato dell'arte cresce del 13% in Svizzera, raggiungendo 59,6 miliardi di dollari a livello globale. Tra le opere in mostra spiccano Picasso, Warhol, Hockney e Baselitz, con una sezione Unlimited curata da Ruba Katrib.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Studio svizzero: un giovane su tre aderisce a una mascolinità dominante",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/societa/1932731/un-giovane-su-tre-in-svizzera-aderisce-a-una-visione-della-mascolinita-legata-al-dominio",
+              "riassunto": "Un'indagine dell'Università di Zurigo, con il Jacobs Center, analizza 6 000 svizzeri (18‑64 anni) e scopre che il 31% dei giovani uomini (18‑24) condivide visioni \"restrittivo‑dominanti\" della mascolinità, correlate a violenza e misoginia. Viene introdotto il nuovo indicatore “fattore M”.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Neuchâtel: il museo di etnografia ospita la mostra interattiva “Skate of mind”",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1932884/skateboard-skate-museo-skater-collezione-mostra-etnografia-neuchatel",
+              "riassunto": "Il Museo di etnografia di Neuchâtel inaugura “Skate of mind”, una mostra che combina esposizione storica e moduli praticabili per skater, con laboratori di autocostruzione e 50 tavole da collezione in vendita. L’obiettivo è avvicinare giovani e non‑tradizionali al museo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescita del mercato dell'arte svizzero con Art Basel",
+            "Ricerche sulla mascolinità e violenza di genere in Svizzera",
+            "Musei che sperimentano format interattivi per giovani"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle vendite e dei prezzi delle opere di alto profilo durante Art Basel, che potrebbe influenzare il mercato locale nei prossimi mesi.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi il focus è sul G7 di Evian, con discussioni su Hormuz, sanzioni al petrolio russo e la sicurezza interna USA. Parallelamente, un piano di attacco al UFC alla Casa Bianca è stato sventato dalle autorità federali.",
+          "notizie": [
+            {
+              "titolo": "Trump annuncia la possibile reintroduzione delle sanzioni sul petrolio russo",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/16/trump-presto-potremo-reintrodurre-le-sanzioni-sul-petrolio-russo_dec4af03-2ee3-48f9-9118-69959adcc50c.html",
+              "riassunto": "Durante il G7 a Evian, il presidente USA Donald Trump ha dichiarato che gli USA saranno presto in grado di reintrodurre le sanzioni sul petrolio russo, ora che il flusso è garantito. La dichiarazione, riportata dal Guardian, indica una possibile svolta nella politica energetica occidentale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Macron: la Francia pronta a difendere la libera circolazione nello Stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/17/macron-su-hormuz-francia-pronta-con-una-ventina-di-paesi_ed946bf5-547d-428d-b327-215c06eb36db.html",
+              "riassunto": "Al vertice G7, Emmanuel Macron ha affermato che la Francia, insieme a una ventina di paesi, è pronta a garantire la libera navigazione nello Stretto di Hormuz, definendola la “prima pietra” dell’accordo sul traffico marittimo. La dichiarazione sottolinea l’importanza strategica del canale per l’approvvigionamento energetico globale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "FBI sventa un complotto per attaccare l'evento UFC alla Casa Bianca",
+              "fonte": "BBC World",
+              "link": "https://www.bbc.com/news/articles/cqx10xlje1lo?at_medium=RSS&at_campaign=rss",
+              "riassunto": "Il Dipartimento di Giustizia USA ha annunciato l'arresto di cinque uomini coinvolti in un piano che prevedeva l'uso di droni ed eccitatori per colpire l'evento UFC tenutosi sul South Lawn della Casa Bianca. Il gruppo avrebbe mirato a creare panico e a colpire figure di alto profilo, tra cui il presidente Trump.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Sicurezza energetica legata a sanzioni russo‑ukrainiane",
+            "Tensioni nello Stretto di Hormuz e ruolo europeo",
+            "Minacce interne agli eventi pubblici negli USA"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle sanzioni sul petrolio russo e le eventuali reazioni di Mosca nei prossimi 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi i media pubblici svizzeri sono al centro di un annuncio di risparmio, mentre due notizie di cronaca economica riguardano direttamente la Svizzera: l'espansione di una panetteria vegana e un guasto tecnico nella lounge Swiss di Zurigo.",
+          "notizie": [
+            {
+              "titolo": "SSR prevede risparmi di 80 milioni di franchi entro il 2027",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1932979/ssr-franchi-risparmi-misure-produzione",
+              "riassunto": "La Società Svizzera di Radiotelevisione (SSR) ha annunciato un piano di risparmio di circa 80 milioni di franchi per il 2027, inserito in un obiettivo più ampio di 270 milioni entro il 2029. Le misure includono l'eliminazione di duplicazioni organizzative, la centralizzazione della produzione e la condivisione di contenuti tra le regioni linguistiche, con risparmi stimati di 35,2 milioni per la ristrutturazione degli spazi, 9,1 milioni per processi più efficienti e 13,2 milioni per metodi di produzione ottimizzati.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Bakery Bakery, la catena svizzera di panetterie vegane apre cinque nuovi punti entro fine anno",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/das-ist-das-erfolgsrezept-diese-baeckerei-eroeffnet-5-filialen-pro-jahr-obwohl-vielerorts-der-ofen-ausgeht-id22034982.html",
+              "riassunto": "Bakery Bakery, nata come pop‑up a Berna nel 2019, è diventata una catena con 12 negozi in cinque città svizzere. I fondatori, Lycra Stattmann e Kevin Schmid, hanno in programma cinque nuove aperture entro il 2026, di cui tre già realizzate quest’anno a Lucerna e Berna. Il modello di business si basa su prodotti 100 % vegani e su una rapida espansione nonostante la crisi del settore della panetteria tradizionale in Svizzera.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Guasto alla pompa dell’acqua nella lounge Swiss dell’aeroporto di Zurigo: solo docce fredde per i clienti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/pumpe-am-flughafen-defekt-kalte-dusche-fuer-swiss-kunden-id22034699.html",
+              "riassunto": "Nella Swiss Arrival Lounge dell’aeroporto di Zurich è stata segnalata una rottura della pompa di riscaldamento dell’acqua, che ha lasciato le docce con solo acqua fredda per diversi clienti. Swiss ha dichiarato che il pezzo difettoso sarà sostituito entro il giorno successivo e ha chiesto scusa per il disagio.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Efficienza e riduzione dei costi nei media pubblici",
+            "Espansione di modelli di business sostenibili (vegan) in Svizzera",
+            "Problemi operativi di servizi premium in contesti di viaggio"
+          ],
+          "da_tenere_d_occhio": "L’attuazione del piano di risparmio della SSR e le sue eventuali ripercussioni sulla programmazione dei contenuti",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia rilevante per i media pubblici svizzeri, la Svizzera o il Ticino è stata individuata tra le 30 voci analizzate.",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "Monitorare eventuali future comunicazioni di RSI, SRF o altre testate svizzere riguardo a sviluppi di OpenClaw o tematiche AI.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 103,
       "run_id": 135,
@@ -4063,258 +4303,6 @@
             "Sviluppo di infrastrutture per agenti AI e token AI"
           ],
           "da_tenere_d_occhio": "L'evoluzione dei modelli AI agentici (es. Claude Opus 4.8, Dynamic Workflows) e le iniziative di mercato sui token AI, che potrebbero influenzare il settore finanziario e tecnologico nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 84,
-      "run_id": 116,
-      "run_time": "2026-05-29 05:00:02.322155+00:00",
-      "analyzed_at": "2026-05-29T05:09:30.363236+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 16,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie di rilevanza economica e di politica estera, con particolare attenzione al settore finanziario svizzero, alle nuove norme sull'esportazione di armi e a una visita di Stato del presidente polacco.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera perde il primato nella gestione di capitali offshore a favore di Hong Kong",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/economia/Gestione-capitali-offshore-la-Svizzera-raggiunta-da-Hong-Kong--3771850.html",
-              "riassunto": "Uno studio BCG mostra che Hong Kong ha eguagliato la Svizzera nella gestione di circa 2,9 miliardi di dollari di capitali offshore, superando il primato svizzero. La crescita di Hong Kong (+10,7%) è trainata dal 60% di capitali cinesi, mentre la Svizzera registra +7,6% nel 2025. Gli esperti prevedono un sorpasso entro il 2030.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Svizzera allenta le regole per l'esportazione di armi verso più paesi dell'UE",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Export-di-armi-regole-allentate-per-pi%C3%B9-Paesi--3775027.html",
-              "riassunto": "Il Consiglio federale ha modificato le ordinanze per estendere le agevolazioni svizzere sull'esportazione di armi a tutti i Paesi dell'UE e dell'AELS a partire dal 1° luglio 2026, includendo Islanda, Bulgaria, Croazia e altri. La riforma, legata al referendum di novembre, prevede anche nuovi criteri per le forniture a stati in conflitto, mantenendo i vincoli di neutralità e diritti umani.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Visita di Stato del presidente polacco Nawrocki in Svizzera",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/mondo/Il-Consiglio-federale-riceve-il-presidente-polacco-Nawrocki--3775012.html",
-              "riassunto": "Il presidente polacco Karol Nawrocki ha incontrato il Consiglio federale a Berna, sottolineando le “ottime relazioni” bilaterali, soprattutto in ambito economico: la Polonia è stato il principale partner commerciale svizzero nel 2025 con scambi per circa 6,5 miliardi di franchi. La visita ha anche toccato temi di sicurezza e innovazione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "competizione globale nella gestione patrimoniale",
-            "revisione delle norme di esportazione di armi",
-            "rafforzamento delle relazioni bilaterali con l'Europa centrale"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle politiche di controllo dei capitali offshore e le prossime votazioni sul nuovo regime di esportazione di armi, che potrebbero influenzare la posizione della Svizzera nei mercati finanziari e difensivi.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da un problema tecnico alla gestione del traffico aereo di Zurigo, da nuove misure federali contro i contaminanti PFAS negli alimenti e dal lancio del primo piano nazionale d'azione per l'intelligenza artificiale.",
-          "notizie": [
-            {
-              "titolo": "Problemi software di Skyguide riducono del 10% gli atterraggi all’aeroporto di Zurigo",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/wirtschaft/10-prozent-weniger-fluege-skyguide-problem-fuehrt-zu-verspaetungen-am-flughafen-zuerich-id21980695.html",
-              "riassunto": "Un aggiornamento difettoso del software di Skyguide ha costretto la controlloria a limitare a 35 gli atterraggi orari a Zurigo, provocando ritardi su quasi il 75% dei voli tra le 11 e le 19. Il rollback è previsto per la notte di giovedì, ma i disagi potrebbero protrarsi fino a giovedì mattina.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Consiglio federale approva aiuti temporanei per le aziende agricole colpite da PFAS",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/pfas-negli-alimenti-berna-prepara-aiuti-per-le-aziende-agricole-434401",
-              "riassunto": "Il governo ha messo in consultazione una modifica d’ordinanza per sostenere le aziende agricole che devono fronteggiare elevati livelli di PFAS in uova, carne, latte e acqua. Prevede miscelazione temporanea di prodotti contaminati, obbligo di informare gli acquirenti e un sostegno finanziario limitato nel tempo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Digital Summit: la Svizzera lancia il primo Piano d’azione nazionale per l’IA",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/wirtschaft/gipfel-von-digitalswitzerland-schweiz-macht-bei-ki-vorwaerts-mit-erstem-nationalen-aktionsplan-id21981919.html",
-              "riassunto": "Al Digital Gipfel 2026 di Andermatt, il Bund e digitalswitzerland hanno presentato l’AI Action Plan for Switzerland, con l’obiettivo di rafforzare ricerca, formazione, infrastrutture e governance. L’89 % delle imprese svizzere usa già soluzioni IA, ma il piano mira a scalare l’adozione e a posizionare il Paese tra USA ed EU nel settore.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Problemi tecnici nelle infrastrutture critiche (es. aviazione)",
-            "Azione governativa su contaminanti ambientali (PFAS)",
-            "Strategie nazionali per l’intelligenza artificiale"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori ritardi o estensioni del rollback di Skyguide e l’effettiva attuazione del Piano IA, oltre all’impatto dei provvedimenti PFAS sul mercato agricolo.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: dal teatro nazionale alle grandi manifestazioni musicali in Ticino, fino a un caso di controversia su un concerto internazionale. Le notizie più rilevanti hanno impatto diretto sul territorio e coinvolgono più testate.",
-          "notizie": [
-            {
-              "titolo": "JazzAscona 2026: oltre 200 concerti gratuiti a Ascona, con Fred Wesley e artisti internazionali",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1928566/jazz-jazzascona-ascona-band-festival",
-              "riassunto": "Dal 25 giugno al 4 luglio la 42ª edizione di JazzAscona riporterà più di 200 concerti gratuiti nei bar e nei vicoli del borgo, con la partecipazione del trombonista Fred Wesley e una dozzina di gruppi provenienti da New Orleans. L’evento, promosso dal presidente Stefano Steiger, è un punto di riferimento per l’estate musicale ticinese.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Culture",
-                "CdT Società"
-              ],
-              "differenze_narrative": "LaRegione si concentra sull’annuncio dei protagonisti internazionali (Fred Wesley) e sull’aspetto gratuito per il pubblico, mentre CdT fornisce maggiori dettagli sul programma (300 artisti, partnership con università americane, label discografica) e sul legame istituzionale con New Orleans."
-            },
-            {
-              "titolo": "Giornate del teatro svizzero 2026 a Yverdon-les-Bains e Losanna",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1928480/teatro-svizzero-giornate-yverdon-les-bains-losanna",
-              "riassunto": "La 13ª edizione delle Giornate del teatro svizzero, dal 27 maggio a domenica, presenta sette spettacoli, tra cui la performance immersiva “Venir meno” diretta dalla ticinese Francesca Sproccati. L’evento, promosso dall’Ufficio federale della cultura, mette in luce la diversità linguistica e artistica del teatro elvetico.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Concerto di Patrick Bruel rinviato a Friburgo, confermato a Pully",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1928868/festival-bruel-pully-concerto-friburgo-patrick",
-              "riassunto": "Il concerto di Patrick Bruel previsto per il 26 giugno a Friburgo è stato rinviato in attesa di chiarimenti giudiziari, mentre quello a Pully (25 giugno) resta confermato nonostante le petizioni di oltre 6 800 firme contro l’artista accusato di molestie sessuali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Festival musicali gratuiti in Ticino",
-            "Rinascita del teatro immersivo in Svizzera"
-          ],
-          "da_tenere_d_occhio": "L'esito delle indagini su Patrick Bruel e le eventuali decisioni delle autorità svizzere, che potrebbero influenzare altri eventi culturali programmati.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente e dal ruolo degli Stati Uniti nei negoziati con l'Iran, con ripercussioni potenziali per l'Europa e la sicurezza globale.",
-          "notizie": [
-            {
-              "titolo": "Trump: l'accordo con l'Iran dipende dall'adesione araba agli Accordi di Abramo",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/27/trump-non-sicuro-di-fare-lintesa-se-non-ce-firma-accordi-di-abramo_cdfc9ee4-4836-44d6-8aa9-6e77e7dfd48d.html",
-              "riassunto": "Donald Trump ha dichiarato che l'eventuale intesa con l'Iran sarà valutata in base all'adesione dei Paesi arabi agli Accordi di Abramo, senza però confermare una subordinazione esplicita. L'amministrazione statunitense richiede un accordo \"perfetto\" con Teheran.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Israele riavvia le ostilità contro Hezbollah nel sud del Libano",
-              "fonte": "Internazionale",
-              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/05/27/israele-rilancia-la-guerra-contro-hezbollah",
-              "riassunto": "L'esercito israeliano ha ordinato l'evacuazione di Nabatieh e ha ripreso gli attacchi contro Hezbollah dopo l'uso di droni a fibra ottica. Gli USA hanno dato il via libera a Israele per difendersi, in un contesto di negoziati sull'Iran guidati da Trump.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Bozza di memorandum USA‑Iran per riaprire lo Stretto di Hormuz",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/27/tv-iran-in-bozza-via-blocco-usa-da-hormuz-e-transito-a-livelli-pre-guerra_570f3b54-f8fe-403c-bd17-e619a71dfcc6.html",
-              "riassunto": "Secondo la televisione di Stato iraniana, gli USA ritireranno le forze militari e il blocco navale nello Stretto di Hormuz, mentre Teheran ripristinerà il traffico commerciale a livelli prebellici entro 30 giorni, con supervisione dell'ONU.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni USA‑Iran legate agli Accordi di Abramo",
-            "Rinascita dei combattimenti tra Israele e Hezbollah",
-            "Tentativi di de‑escalation nello Stretto di Hormuz"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle negoziazioni tra USA e Iran e possibili ripercussioni sul traffico marittimo globale nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la finanza svizzera è al centro dell'attenzione: la perdita del primato nella gestione patrimoniale, la presa di controllo quasi totale di Cornèr Banca e i risultati straordinari del colosso energetico Vitol evidenziano sfide e opportunità per la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Hong Kong supera la Svizzera nella gestione patrimoniale offshore",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/svizzera/hong-kong-supera-la-svizzera-come-leader-nella-gestione-patrimoniale-434371",
-              "riassunto": "Secondo il Global Wealth Report 2026 di BCG, Hong Kong ha raggiunto la Svizzera al primo posto nella gestione di capitali offshore, con entrambi i poli intorno a 2,9 miliardi di dollari. La Svizzera registra un incremento del 7,6% nel 2025, mentre Hong Kong cresce del 10,7% grazie a flussi dalla Cina continentale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "La famiglia Cornaro prende il controllo quasi totale di Cornèr Banca",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/la-famiglia-cornaro-prende-il-controllo-completo-di-corner-banca-sa-434367",
-              "riassunto": "Cornaro ha acquistato la quota del 19,6% detenuta dalla famiglia Piotrkowski‑Dollfus, portando la proprietà al 99,7%. L’operazione è soggetta all’approvazione della FINMA e di altre autorità di vigilanza.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Vitol, il più grande trader di petrolio, registra profitti superiori a Novartis, Roche e Nestlé insieme",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/mehr-gewinn-als-novartis-roche-und-nestle-zusammen-der-heimliche-schweizer-oel-gigant-id21982503.html",
-              "riassunto": "Il trader svizzero Vitol ha fatturato 343 miliardi di dollari nel 2025, quasi il doppio dei tre maggiori gruppi quotati in Svizzera. Il profitto netto si aggira tra 5 e 10,5 miliardi di dollari, con un guadagno per dipendente di 4,5 milioni di franchi, ben oltre Apple.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Erosione del primato svizzero nella gestione patrimoniale offshore",
-            "Consolidamento del settore bancario locale",
-            "Crescita dei profitti di società energetiche con sede in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Possibili interventi regolamentari su Vitol e su Cornèr Banca, oltre all'evoluzione dei flussi di capitali verso Hong Kong, che potrebbero influenzare la competitività finanziaria della Svizzera nelle prossime 24 ore.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su avanzamenti tecnologici di alto profilo, con particolare attenzione a una scoperta svizzera di rilevanza globale nel campo della generazione di casualità quantistica.",
-          "notizie": [
-            {
-              "titolo": "I ricercatori dell'ETH Zurich creano il primo “casuale perfetto” con due chip quantistici e un tubo di 30 m",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/perfekter-wuerfel-eth-forscher-knacken-das-raetsel-um-den-zufall-id21981962.html",
-              "riassunto": "Un team dell'ETH Zürich, guidato da Renato Renner e Andreas Wallraff, ha pubblicato su Nature la prima dimostrazione di “casuale perfetto”. La tecnica, chiamata “randomness amplification”, usa due chip quantistici refrigerati a temperature estreme collegati da un tubo di 30 m, garantendo che nessuna informazione viaggi tra i chip durante la misurazione. Questo supera i limiti dei generatori di casualità attuali, riducendo vulnerabilità di hacking su crittografia, e promette miglioramenti per e‑banking e chat private.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Quantum randomness generation",
-            "Regolamentazione e etichettatura dei contenuti AI"
-          ],
-          "da_tenere_d_occhio": "Segui gli sviluppi della tecnologia di randomizzazione quantistica dell'ETH e le possibili applicazioni in crittografia e servizi finanziari svizzeri nelle prossime 24 ore.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
