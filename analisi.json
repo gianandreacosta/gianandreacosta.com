@@ -1,6 +1,221 @@
 {
-  "generated_at": "2026-06-18T05:08:11.803279+00:00",
+  "generated_at": "2026-06-19T05:08:36.476076+00:00",
   "analyses": [
+    {
+      "id": 105,
+      "run_id": 137,
+      "run_time": "2026-06-19 05:00:02.800351+00:00",
+      "analyzed_at": "2026-06-19T05:08:36.444451+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 12,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da tensioni legate al G7, dalle polemiche sull'arrivo degli F‑35 a Payerne e dalle misure di contenimento della spesa della SSR, tutti temi che coinvolgono direttamente i media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Giovane picchiato dalla polizia durante manifestazione anti‑G7 a Ginevra",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Manifestazione-anti-G7-giovane-picchiato-dalla-polizia-%E2%80%9CPensavo-di-morire%E2%80%9D--3829070.html",
+              "riassunto": "Un giovane è stato percosso con i manganelli da agenti in borghese durante la manifestazione “No G7” a Ginevra. L’inchiesta è stata condotta da RTS, che ha ricostruito i fatti grazie a testimonianze e video. Il giovane ha dichiarato di aver pensato di morire durante l’intervento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "I residenti di Payerne protestano contro il rumore dei nuovi F‑35",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/F-35-a-Payerne-i-cittadini-insorgono-contro-il-rumore--3827315.html",
+              "riassunto": "Decine di abitanti di Payerne e del Comune di Estavayer hanno presentato opposizione ai nuovi regolamenti per i F‑35, che secondo loro saranno fino al doppio più rumorosi degli aerei attuali. Le dichiarazioni sono state raccolte da RTS.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SSR definisce le misure di risparmio per il 2027",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/SSR-precisate-le-misure-di-risparmio-per-il-2027--3828380.html",
+              "riassunto": "La Società Svizzera di Radiotelevisione (SSR) ha annunciato un piano di risparmio di 270 milioni di franchi entro il 2029, con 80 milioni da tagliare già nel 2027 tramite razionalizzazioni strutturali e la non partecipazione ai diritti UEFA Champions League.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni legate al G7 e alle forze dell’ordine",
+            "Opposizione civica all’arrivo di F‑35 in Ticino",
+            "Pressioni di bilancio sui media pubblici svizzeri"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni della protesta contro i F‑35 e ulteriori sviluppi dell’inchiesta RTS sulla violenza della polizia durante le manifestazioni G7",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da due notizie sul futuro della SSR, l'emittente pubblica, che annuncia un piano di risparmio da 80 milioni di franchi per il 2027 e un obiettivo di 270 milioni entro il 2029, con tagli strutturali e operativi. Entrambe le testate riportano gli stessi dati, evidenziando un incrocio di copertura.",
+          "notizie": [
+            {
+              "titolo": "SSR definisce misure di risparmio da 80 milioni di franchi per il 2027",
+              "fonte": "Ticinonews Svizzera",
+              "link": "https://www.ticinonews.ch/svizzera/la-ssr-precisa-le-misure-di-risparmio-per-il-2027-436245",
+              "riassunto": "La SSR ha annunciato che dovrà risparmiare 80 milioni di franchi nel 2027, intervenendo su strutture, processi, modalità di produzione e partnership. Il piano prevede anche la rinuncia ai diritti UEFA Champions League dal 2027‑2028 e un risparmio complessivo di 270 milioni entro il 2029, in risposta alla riduzione del canone decisa dal Consiglio federale.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews si concentra sui dettagli operativi (adeguamenti strutturali, taglio dei diritti sportivi) e cita le cifre di risparmio. LaRegione, pur riportando le stesse cifre, enfatizza il contesto della trasformazione digitale \"Enavant\" e il ruolo della SSR nella sostenibilità a lungo termine, aggiungendo citazioni di dirigenti."
+            },
+            {
+              "titolo": "SSR prosegue la trasformazione con misure di risparmio per il 2027",
+              "fonte": "LaRegione Svizzera",
+              "link": "https://www.laregione.ch/svizzera/svizzera/1932957/ssr-franchi-risparmi-misure-strutture-programmi-processi-risparmio-offerta-trasformazione",
+              "riassunto": "Nel quadro del progetto di trasformazione \"Enavant\", la SSR ha precisato le misure di risparmio per il 2027: 80 milioni di franchi saranno ottenuti tramite semplificazione delle strutture direttive, ottimizzazione degli spazi e processi più efficienti, per tutelare l’offerta di programmi. L’obiettivo complessivo resta 270 milioni di risparmio entro il 2029.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Svizzera",
+                "LaRegione Svizzera"
+              ],
+              "differenze_narrative": "LaRegione evidenzia il legame con la strategia digitale \"Enavant\" e la necessità di adattarsi ai cambiamenti del panorama mediatico, mentre Ticinonews fornisce più dettagli sui tagli specifici (es. diritti sportivi) e sulle motivazioni politiche."
+            }
+          ],
+          "trend": [
+            "Riforma e risparmio della SSR",
+            "Ruolo della Svizzera nei negoziati internazionali (USA‑Iran)"
+          ],
+          "da_tenere_d_occhio": "L'attuazione concreta delle misure di risparmio della SSR e l'impatto sui contenuti programmati nei prossimi mesi",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di tre notizie: un museo di Neuchâtel apre le porte agli skater, il festival Ceresio Estate celebra 50 anni di concerti sul lago di Lugano e Art Basel registra una vendita record di un Picasso. Tutti eventi di rilievo locale con potenziali ripercussioni sul panorama culturale nazionale.",
+          "notizie": [
+            {
+              "titolo": "Il museo di etnografia di Neuchâtel ospita la mostra 'Skate of mind' per gli skater",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1932884/skateboard-skate-museo-skater-collezione-mostra-etnografia-neuchatel",
+              "riassunto": "Dal venerdì il Museo di etnografia di Neuchâtel presenta la mostra 'Skate of mind', con moduli praticabili, laboratori di autocostruzione e 50 tavole da collezione. L'obiettivo, secondo la direttrice Aurélie Carré, è avvicinare i giovani alle istituzioni museali.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Ceresio Estate festeggia 50 anni di concerti sul lago di Lugano",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/musica/ceresio-estate-e-la-costruzione-di-una-cultura-dellascolto-431182",
+              "riassunto": "L'edizione numero 50 del festival Ceresio Estate parte venerdì, proponendo concerti in chiese, piazze e cortili lungo il Lago di Lugano. Il progetto, nato nel 1976, punta a diffondere la musica fuori dai grandi centri urbani, creando una rete culturale territoriale.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Art Basel registra una vendita record: un dipinto di Picasso a 35 milioni di dollari",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1932850/art-dollari-galleria-picasso-opere-wirth-basel-venduto-dipinto",
+              "riassunto": "Durante le anteprime VIP di Art Basel, la galleria Hauser & Wirth ha venduto un'opera tardiva di Picasso per 35 milioni di dollari (27,7 milioni di franchi). La transazione segna il più alto prezzo mai raggiunto in una giornata di vendite dell'evento.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Musei che sperimentano format interattivi per giovani",
+            "Festival musicali legati al territorio e alla valorizzazione dei luoghi"
+          ],
+          "da_tenere_d_occhio": "Le prossime settimane di Art Basel a Basilea, dove potrebbero emergere ulteriori record di vendita e nuove partnership con istituzioni svizzere.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Le notizie di oggi sono dominate dalle recenti dichiarazioni sull'accordo USA‑Iran e le sue ripercussioni sul traffico marittimo nello Stretto di Hormuz, con un focus sull'impatto per la Svizzera, in particolare per il prossimo viaggio del vicepresidente americano.",
+          "notizie": [
+            {
+              "titolo": "Il vicepresidente americano Vance indica un possibile viaggio in Svizzera nel weekend",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/18/vance-non-so-quando-andro-in-svizzera-credo-nel-weekend_df754dd7-abaa-4e96-b358-f33e241b0149.html",
+              "riassunto": "Il vicepresidente degli Stati Uniti, J.D. Vance, ha dichiarato di non sapere ancora quando arriverà in Svizzera, ma ipotizza un arrivo nel weekend, dipendente anche dalla possibilità che gli iraniani possano recarsi in Europa. Ha ricordato che gli USA hanno permesso il passaggio di 12 navi iraniane dopo la firma dell'accordo con Teheran, sottolineando che lo Stretto di Hormuz è ora aperto.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Accordo USA‑Iran e apertura dello Stretto di Hormuz",
+            "Dichiarazioni di alti funzionari USA su viaggi in Svizzera"
+          ],
+          "da_tenere_d_occhio": "Eventuali conferme ufficiali sul viaggio di Vance in Svizzera e sviluppi sull'implementazione dell'accordo USA‑Iran che potrebbero influenzare il traffico marittimo e le relazioni economiche svizzere nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi la stampa economica si concentra su tre temi chiave: le misure di risparmio della SSR, il dibattito sul finanziamento della tredicesima AVS e le ripercussioni dell’accordo USA‑Iran sullo Stretto di Hormuz, coperto da più testate.",
+          "notizie": [
+            {
+              "titolo": "SSR prevede risparmi di 80 milioni di franchi entro il 2027",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1932979/ssr-franchi-risparmi-misure-produzione",
+              "riassunto": "La Società Svizzera di Radiotelevisione (SSR) ha annunciato un piano di risparmio da 80 milioni di franchi per il 2027, basato su eliminazione di duplicazioni, ottimizzazione degli spazi e condivisione di contenuti tra le regioni linguistiche. Le misure includono 35,2 milioni per la riorganizzazione strutturale, 9,1 milioni per processi più efficienti e 13,2 milioni per una produzione più snella.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Finanziamento della 13ª AVS: sindacati e datori di lavoro in disaccordo",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/finanziamento-13esima-avs-tutti-scontenti-436247",
+              "riassunto": "Il Consiglio nazionale ha deciso di finanziare la tredicesima rendita AVS esclusivamente con un aumento permanente dell'IVA, scartando l'opzione di incrementare i contributi salariali. L'Unione svizzera degli imprenditori (USI) denuncia effetti economici indesiderati, mentre i sindacati denunciano il peggioramento delle finanze dell'AVS nonostante un compromesso precedentemente concordato.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Accordo USA‑Iran su Hormuz: impatti economici e reazioni industriali",
+              "fonte": "AGI",
+              "link": "https://www.agi.it/estero/news/2026-06-18/iran-usa-accordo-trump-37616260/",
+              "riassunto": "L'Ayatollah Khamenei ha annunciato la firma di un memorandum d'intesa tra USA e Iran, con la promessa di riaprire immediatamente lo Stretto di Hormuz. Gli Stati Uniti hanno autorizzato il transito di almeno 12 navi, mentre il prezzo del petrolio è sceso da 118 a poco più di 90 $ al barile. L'accordo è stato discusso anche da Il Sole 24 Ore, che ha riportato la posizione della Confederazione degli armatori (Confitarma) contro qualsiasi forma di pedaggio nello stretto.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "AGI",
+                "Il Sole 24 Ore Economia"
+              ],
+              "differenze_narrative": "AGI si concentra sul messaggio politico di Khamenei e sui dettagli della firma elettronica, evidenziando la riapertura del traffico marittimo e le implicazioni per le sanzioni. Il Sole 24 Ore, invece, riporta la reazione del settore navale, sottolineando il rifiuto di Confitarma a qualsiasi pedaggio nello Stretto di Hormuz e avvertendo di possibili violazioni del regime sanzionatorio UE."
+            }
+          ],
+          "trend": [
+            "riforme dei costi nei media pubblici svizzeri",
+            "tensioni fiscali per il finanziamento della AVS",
+            "effetti economici della geopolitica sul trasporto marittimo"
+          ],
+          "da_tenere_d_occhio": "L'attuazione pratica dell'accordo USA‑Iran e le eventuali decisioni sui pedaggi nello Stretto di Hormuz, che potrebbero influenzare i costi di trasporto energetico per la Svizzera nelle prossime 24 ore.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia di rilievo diretto per i media pubblici svizzeri o per la Svizzera/Ticino è emersa; la maggior parte dei contenuti riguarda sviluppi internazionali di AI e startup.",
+          "notizie": [],
+          "trend": [
+            "Crescita dell'interesse per la governance e il ROI dell'AI nelle imprese",
+            "Adozione di modelli AI più sostenibili e iniziative di carbon removal"
+          ],
+          "da_tenere_d_occhio": "Monitorare eventuali dichiarazioni o partnership future che coinvolgano media pubblici svizzeri (RSI, SRF, RTS) o impatti normativi sull'AI in Svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 104,
       "run_id": 136,
@@ -4089,220 +4304,6 @@
             "Uso dell'AI per la biotecnologia e la preparazione a pandemie"
           ],
           "da_tenere_d_occhio": "Monitorare eventuali ulteriori avvisi del BACS su nuove varianti di truffe su app di messaggistica e le date di dismissione dei modelli o3 e GPT‑4.5, che potrebbero influire su workflow aziendali in Svizzera.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 85,
-      "run_id": 117,
-      "run_time": "2026-05-30 05:00:02.687170+00:00",
-      "analyzed_at": "2026-05-30T05:09:34.755949+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 12,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie con impatto diretto sulla Svizzera: un caso di possibili violazioni di sanzioni internazionali legate al petrolio iraniano, la vendita della torre RTS a Ginevra e la ripresa dei lavori del secondo tubo del Gottardo.",
-          "notizie": [
-            {
-              "titolo": "Possibili violazioni di sanzioni svizzere nella rete di petrolio iraniano",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/La-scia-del-petrolio-iraniano-verso-la-Svizzera--3775974.html",
-              "riassunto": "Le autorità statunitensi accusano la società ginevrina Fractal Shipping (ora Progwin Shipping) di far parte di una rete iraniana che aggira le sanzioni, trasportando petrolio iraniano verso Russia, Cina e India. Il CEO, Mathieu Philippe, è nella lista delle sanzioni USA dal 2025. La SECO non ha ancora commentato, ma il caso solleva dubbi su possibili violazioni delle sanzioni svizzere.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Venduta la torre della RTS a Ginevra per 150 milioni di franchi",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Venduta-per-150-milioni-la-torre-della-RTS-a-Ginevra--3778789.html",
-              "riassunto": "La torre della Radio Televisione Svizzera (RTS) a Ginevra è stata acquistata dalla Fondazione Wilsdorf per 150 milioni di franchi, con diritto di superficie gratuito dallo Stato. La SSR rimarrà locataria fino al 2029, mentre altre testate come Le Temps e Heidi.news occuperanno parte dell’edificio, segnando una convergenza tra media pubblici e privati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ripresa dei lavori nel secondo tubo del Gottardo a Airolo",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Airolo-nel-secondo-tubo-%E2%80%9CPaulina%E2%80%9D-ha-ripreso-il-lavoro--3777901.html",
-              "riassunto": "Airolo ha riavviato lo scavo con la fresa “Paulina” nel secondo tunnel del San Gottardo, interrotto per 11 mesi a causa di difficoltà geologiche. Sono stati completati il 75 % del tratto di disturbo a sud; rimane circa 100 m di scavo complesso, con avanzamento di 60‑80 cm al giorno. L’apertura è prevista per il 2030.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Controlli e rischi legati a sanzioni internazionali e attività finanziarie svizzere",
-            "Ristrutturazione e consolidamento del patrimonio mediatico cantonale",
-            "Avanzamento di grandi infrastrutture di trasporto"
-          ],
-          "da_tenere_d_occhio": "Sviluppi delle indagini su Fractal Shipping e possibili azioni della SECO, nonché eventuali ulteriori vendite o riorganizzazioni di immobili pubblici legati ai media svizzeri.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da un attacco con arma da taglio alla stazione di Winterthur, da un'indagine sui giovani più ricchi under 40 e da una proposta popolare per rendere più severi i criteri ambientali nel settore finanziario.",
-          "notizie": [
-            {
-              "titolo": "Attacco con coltello alla stazione di Winterthur: tre feriti, l'aggressore è un cittadino svizzero di origine turca",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1928823/winterthur-stazione-feriti-arma-taglio-attacco-zh",
-              "riassunto": "Un uomo di 31 anni, cittadino svizzero-turco, ha ferito tre persone, una gravemente, con un coltello alla stazione di Winterthur. È stato arrestato; le indagini sono in corso e non è ancora chiaro se avesse gridato \"Allahu Akbar\". La polizia ha isolato l'area e ha coinvolto più forze dell'ordine.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Svizzera",
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "LaRegione riporta i fatti in modo neutro, concentrandosi sull'arresto, le ferite e le indagini, senza approfondire il passato dell'aggressore. CdT, invece, sottolinea che l'uomo era stato dimesso da una clinica psichiatrica il giorno prima dell'attacco e mette in evidenza i suoi legami con una cellula jihadista, aggiungendo il possibile grido \"Allahu Akbar\"."
-            },
-            {
-              "titolo": "Giovani svizzeri sotto i 40: i 100 più ricchi, tra eredi, imprenditori e sportivi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/ecco-chi-sono-i-giovani-super-ricchi-della-svizzera-429031",
-              "riassunto": "Bilanz ha pubblicato la 12ª edizione della classifica dei 100 più ricchi under 40 in Svizzera. In vetta David Wertheimer (39) con un patrimonio di 5‑6 miliardi di franchi; il più giovane imprenditore è Hany Rashwan (36) con 500‑600 milioni. Tra i Ticinesi spicca Edoardo Ermotti, figlio del CEO di UBS, con un patrimonio stimato tra 5‑10 milioni.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "Le tre testate riportano lo stesso contenuto della classifica Bilanz. CdT e Ticinonews ripropongono integralmente il comunicato, mentre LaRegione aggiunge un breve riassunto focalizzato sul primo posto e sul rappresentante ticinese, senza i dettagli sportivi presenti negli altri due."
-            },
-            {
-              "titolo": "Iniziativa popolare per regole ambientali più severe nel settore finanziario",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1928826/iniziativa-clima-attivita-autorita-piani",
-              "riassunto": "Una proposta di modifica costituzionale, sostenuta da 108 979 firme, vuole imporre a banche, assicurazioni e fondi pensione svizzeri piani climatici, limiti ai finanziamenti di progetti fossili e una nuova autorità di vigilanza. Il comitato promotore include partiti di centro-sinistra, liberali e rappresentanti religiosi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento della violenza con armi da taglio",
-            "Interesse per la ricchezza giovanile e la sua distribuzione geografica",
-            "Pressioni ambientali sul settore finanziario"
-          ],
-          "da_tenere_d_occhio": "Sviluppi delle indagini sull'attacco di Winterthur e possibili misure di sicurezza nei trasporti pubblici nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro di tre notizie: la cancellazione del concerto di Patrick Bruel a Pully, il riconoscimento internazionale al compositore Gabriel Yared al Zurich Film Festival e il nuovo disco dei Vent Negru, gruppo di musica popolare ticinese.",
-          "notizie": [
-            {
-              "titolo": "Patrick Bruel annulla il concerto a Pully e rinvia quello a Friburgo per le accuse di molestie",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1929230/festival-concerto-pully-friburgo-bruel-molestie-accuse-patrick",
-              "riassunto": "Il cantante francese Patrick Bruel ha deciso di non esibirsi più in Svizzera: il concerto del 25 giugno al Pully Live Festival è stato annullato e quello del 26 giugno a Friburgo è stato rinviato. La decisione, comunicata dalla sua società 14 Productions, è motivata dal desiderio di non creare tensioni in un contesto di indagini per molestie sessuali in Francia e Belgio.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il Zurich Film Festival premia il compositore libanese Gabriel Yared",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1928838/film-yared-premio-musica-concorso-compositore-zurich-gabriel-festival",
-              "riassunto": "Al Zurich Film Festival (ZFF) è stato conferito a Gabriel Yared il Career Achievement Award; l’artista, vincitore dell’Oscar per “Il paziente inglese”, presiederà anche la giuria del Concorso internazionale di musica da film. La premiazione avverrà il 1 ottobre durante il gala “Cinema in Concert” alla Tonhalle di Zurigo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Vent Negru: nuovo CD per i 35 anni del gruppo ticinese",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1928775/nuovo-giugno-cd-negru-vent-anni",
-              "riassunto": "Il gruppo folk ticinese Vent Negru presenta il suo decimo disco, celebrando 35 anni di attività e il premio svizzero di musica 2025. Il CD sarà lanciato con tre concerti: 3 giugno a Berzona, 5 giugno a Locarno e 6 giugno a Banco.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Controversie su artisti internazionali e loro concerti in Svizzera",
-            "Riconoscimenti internazionali a talenti legati al panorama culturale svizzero",
-            "Rinascita e valorizzazione della musica tradizionale ticinese"
-          ],
-          "da_tenere_d_occhio": "L'esito delle indagini giudiziarie su Patrick Bruel e le eventuali riprogrammazioni dei concerti; l'andamento del Zurich Film Festival e le future collaborazioni di Gabriel Yared con artisti svizzeri.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la sezione geopolitica è dominata da notizie internazionali di vario tipo, ma nessuna presenta un impatto diretto sulla Svizzera o sul Ticino né costituisce una breaking news di rilevanza immediata per il lettore svizzero.",
-          "notizie": [],
-          "trend": [
-            "tensioni tra USA e Iran",
-            "escalation del conflitto in Ucraina"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Donald Trump sullo Stretto di Hormuz e possibili sviluppi diplomatici tra USA e Iran nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è sui dati salariali svizzeri, su un nuovo hotel all'Euroairport di Basilea e sul ruolo crescente delle giovani imprenditrici nella ricchezza nazionale.",
-          "notizie": [
-            {
-              "titolo": "Adecco prevede aumenti salariali medi in Svizzera tra l'1,5% e il 2,0%",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/i-salari-medi-dovrebbero-aumentare-fino-al-2-434500",
-              "riassunto": "L'indagine di Adecco, basata su oltre 15.000 colloqui, indica che i salari medi in Svizzera cresceranno tra l'1,5% e il 2% quest'anno, con aumenti più marcati per profili specialistici in ESG e IA. Persistono disparità regionali, il “premio zurighese” con differenze di 5.000‑10.000 franchi annui.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Euroairport Basel inaugurerà il suo primo hotel aeroportuale entro il 2027",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/direkt-am-terminal-basler-euroairport-bekommt-erstes-flughafenhotel-id21985338.html",
-              "riassunto": "KER Hospitality costruirà un complesso di 140 camere direttamente al terminal di Euroairport Basel, con un Ibis Budget a 2 stelle (80 camere) e un hotel Tribe a 4 stelle (60 camere). L’apertura è prevista per fine 2027, segnando la prima struttura alberghiera sul terminal dell’aeroporto binazionale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Le giovani imprenditrici svizzere entrano nella lista dei più ricchi sotto i 40 anni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/erfolgreiche-frauen-in-der-wirtschaft-sie-sind-die-reichsten-jungunternehmerinnen-der-schweiz-id21984620.html",
-              "riassunto": "Sette donne sono presenti nella classifica “Bilanz 100 under 40”, dominata da uomini. Le imprenditrici hanno fondato aziende nei settori auto, bellezza e finanza, dimostrando una crescente presenza femminile nella ricchezza giovanile svizzera.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita salariale legata a competenze high‑tech e ESG",
-            "Sviluppo di infrastrutture turistiche e di trasporto in Svizzera",
-            "Aumento della visibilità e del peso economico delle giovani imprenditrici"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei salari regionali e le politiche per ridurre il divario tra Zurigo e il resto del Paese nelle prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su finanziamenti record, nuovi modelli AI e iniziative infrastrutturali per agenti intelligenti, senza impatti diretti sulla Svizzera.",
-          "notizie": [],
-          "trend": [
-            "Finanziamenti multimiliardari per startup AI",
-            "Sviluppo di infrastrutture per agenti AI e token AI"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei modelli AI agentici (es. Claude Opus 4.8, Dynamic Workflows) e le iniziative di mercato sui token AI, che potrebbero influenzare il settore finanziario e tecnologico nei prossimi giorni.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
