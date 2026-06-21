@@ -1,6 +1,227 @@
 {
-  "generated_at": "2026-06-20T05:08:55.495011+00:00",
+  "generated_at": "2026-06-21T05:06:46.503769+00:00",
   "analyses": [
+    {
+      "id": 107,
+      "run_id": 139,
+      "run_time": "2026-06-21 05:00:02.213906+00:00",
+      "analyzed_at": "2026-06-21T05:06:46.460459+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 13,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Le notizie più rilevanti oggi riguardano la decisione sul finanziamento della 13ª AVS, le discussioni sulla gestione della navigazione sul Lago Verbano e le nuove priorità di investimento nei trasporti nazionali.",
+          "notizie": [
+            {
+              "titolo": "13ª AVS: aumento dell'IVA al 8,5% per finanziare la rendita supplementare",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Tredicesima-AVS-Baume-Schneider-%E2%80%9CNon-ci-sono-alternative-all%E2%80%99aumento-dell%E2%80%99IVA%E2%80%9D--3833960.html",
+              "riassunto": "Il Consiglio federale ha approvato un aumento di 0,4 punti percentuali dell'IVA, portandola all'8,5%, per finanziare la 13ª AVS, che costerà oltre 4 miliardi di franchi all'anno. La consigliera Elisabeth Baume‑Schneider ha difeso la scelta in un'intervista a RTS, sottolineando l'assenza di alternative valide.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Verbano: la SNL collabora con Decalia Capital per rafforzare la navigazione sul Lago Maggiore",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Verbano-partita-aperta-sulla-navigazione--3834356.html",
+              "riassunto": "La Società Navigazione Lago di Lugano (SNL) ha annunciato una partnership con Decalia Capital per raccogliere capitali privati destinati a potenziare la navigazione sul Lago Maggiore, in risposta alle critiche cantonali sulla gestione attuale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Trasporti 45: il Consiglio federale avvia la consultazione su 13 miliardi di investimenti",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/economia/il-consiglio-federale-ha-definito-le-priorita-trasporti-45-va-in-consultazione-436428",
+              "riassunto": "Il pacchetto «Trasporti 45», da 13 miliardi di franchi, è stato messo in consultazione fino al 9 ottobre. Prevede potenziamenti ferroviari e stradali, con frequenze aumentate tra Bellinzona e Locarno, ma nessun nuovo investimento diretto in Ticino.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Finanziamento della AVS tramite IVA",
+            "Ricerca di capitali privati per la navigazione lacustre",
+            "Piano di investimenti a lungo termine nei trasporti"
+          ],
+          "da_tenere_d_occhio": "L'esito della consultazione su Trasporti 45 e le possibili reazioni politiche all'aumento dell'IVA per la 13ª AVS nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata dal rinvio dei colloqui Iran‑USA al Bürgenstock, con diverse testate che ne riportano i dettagli, e da un'importante decisione parlamentare sull'AVS che coinvolge i media pubblici.",
+          "notizie": [
+            {
+              "titolo": "Rinviati i colloqui Iran‑USA al Bürgenstock: motivi logistici e politici",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/mondo/Perch%C3%A9-i-colloqui-Iran-Usa-al-B%C3%BCrgenstock-sono-saltati--3833162.html",
+              "riassunto": "Il Dipartimento federale degli affari esteri conferma che le misure di sicurezza rimangono in vigore, ma l’incontro è stato rimandato. RSI spiega tre ragioni: la dichiarazione di Trump sul generale Soleimani, il desiderio di Trump di firmare il memorandum a Versailles e la mancanza di tempo per il presidente iraniano a organizzare lo spostamento.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "CdT Svizzera",
+                "RSI Svizzera"
+              ],
+              "differenze_narrative": "CdT si concentra sugli aspetti operativi (chiusura dell’hotel Bürgenstock, dispiegamento dell’esercito svizzero, protocolli di sicurezza) e cita le motivazioni logistiche ufficiali della Casa Bianca. RSI, invece, approfondisce le cause politiche, includendo la dichiarazione di Trump su Soleimani e il ruolo del presidente iraniano, offrendo una narrazione più politica e meno tecnica."
+            },
+            {
+              "titolo": "13ª AVS: aumento dell’IVA al 8,5% per finanziare la rendita supplementare",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/13esima-AVS-Baume-Schneider-%E2%80%9CNessuna-alternativa-all%E2%80%99aumento-dell%E2%80%99IVA%E2%80%9D--3833960.html",
+              "riassunto": "Il Consiglio federale ha approvato un aumento dell’IVA di 0,4 punti percentuali (passando all’8,5%) per finanziare la 13ª AVS, che costerà più di quattro miliardi di franchi all’anno. La consigliera Baume‑Schneider ha definito la misura “responsabile” e l’unica alternativa praticabile.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "rinvio dei colloqui diplomatici al Bürgenstock",
+            "finanziamento dell’AVS tramite aumento dell’IVA"
+          ],
+          "da_tenere_d_occhio": "Possibili nuovi sviluppi sui colloqui Iran‑USA nei prossimi giorni e l’impatto politico dell’aumento dell’IVA sull’opinione pubblica svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro di diversi eventi: da un murale a Basilea smentito come opera di Banksy, a una rassegna musicale estiva in Ticino, fino a un nuovo studio ETH sull'impatto ambientale degli oli vegetali.",
+          "notizie": [
+            {
+              "titolo": "Il murale di Basilea non è opera di Banksy, conferma il Pest Control Office",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/arte/1933481/graffito-apparso-banksy-basilea-control-pest-office",
+              "riassunto": "Durante la 56ª Art Basel, è comparso un graffito di un bambino con orsacchiotto. Il Pest Control Office, unico ente autorizzato a certificare le opere di Banksy, ha smentito l'attribuzione, precisando che l'immagine non è presente sull'Instagram ufficiale dell'artista.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Al via la rassegna musicale “Lac en plein air” con sonorità Italia‑Brasile",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1933590/al-via-lac-en-plein-air-sonorita-tra-italia-e-brasile",
+              "riassunto": "Il 26 giugno inizia a Lugano la rassegna estiva “Lac en plein air”, che presenterà sei concerti con artisti che fondono tradizioni musicali italiane e brasiliane, valorizzando il territorio ticinese.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Studio ETH: olio di palma, soia e cocco responsabili dell'1,5% della perdita globale di specie",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/scienze/1933460/studio-biodiversit-soia-cocco-olio-palma-oli-pi",
+              "riassunto": "Un'indagine del Politecnico federale di Zurigo (ETH) pubblicata su Nature Food evidenzia che la coltivazione di olio di palma, soia e cocco causa l'1,5% delle perdite mondiali di biodiversità, con un aumento dell'impatto dell'80% tra il 1995 e il 2020.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Arte urbana e verifiche di autenticità",
+            "Programmi culturali estivi in Ticino",
+            "Impatto ambientale delle colture oleaginose"
+          ],
+          "da_tenere_d_occhio": "Possibili reazioni dei media svizzeri alla smentita del graffito di Banksy e ulteriori sviluppi della rassegna “Lac en plein air”",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata da tensioni tra Iran e USA con la Svizzera come sede dei negoziati, mentre in patria si discute la finanziamento della 13ª pensione AHV in un dibattito trasmesso da SRF.",
+          "notizie": [
+            {
+              "titolo": "SRF Arena discute la soluzione per finanziare la 13ª AHV pensione",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/srf-arena-knacknuss-vom-volk-die-ahv-loesung-bleibt-umstritten-103586816",
+              "riassunto": "Nel programma SRF «Arena», politici svizzeri hanno dibattuto l’aumento dell’IVA del 0,4% proposto per finanziare la tredicesima pensione AHV. La discussione ha coinvolto rappresentanti di SP, FDP, Mitte e SVP, con critiche sul compromesso e la necessità di un voto popolare previsto per novembre.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Negoziazioni Iran‑USA in Svizzera",
+            "Finanziamento della 13ª pensione AHV in Svizzera"
+          ],
+          "da_tenere_d_occhio": "L’esito del voto popolare sull’aumento dell’IVA per la 13ª AHV, previsto per novembre, che potrà influenzare il dibattito politico interno.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui costi della difesa svizzera, con il caso del casco da 500 000 dollari per gli F‑35, e su importanti cambiamenti normativi come la revisione del canone radiotelevisivo per le imprese.",
+          "notizie": [
+            {
+              "titolo": "Il casco del pilota F‑35 costa 500 000 dollari: il progetto svizzero solleva polemiche",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1933505/f-35-aereo-pilota-casco-dollari-costa",
+              "riassunto": "Il Dipartimento federale della difesa (DDPS) ha suscitato dibattito perché il casco per i piloti dei nuovi caccia F‑35 costerebbe 500 000 dollari (circa 400 000 franchi). Il velivolo è ancora in fase di produzione, con il primo aereo previsto a Payerne nel 2028. Tre comuni (Payerne, Meiringen, Emmen) hanno chiesto garanzie contro l’inquinamento acustico. SRF ha riferito che i primi tre esemplari sono stati consegnati alla Polonia.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Aumento dei costi e delle controversie legate agli acquisti militari (F‑35, casco da 500 k$)",
+            "Riforma del canone radiotelevisivo per le imprese, con introduzione di 60 fasce tariffarie"
+          ],
+          "da_tenere_d_occhio": "L'entrata in vigore, il 1° gennaio 2028, della nuova struttura a 60 livelli del canone radiotelevisivo per le aziende",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su restrizioni legali e tecniche che impattano l'Europa, con particolare attenzione a una nuova limitazione svizzera su un tool di OpenAI e a tensioni commerciali su componenti chiave per l'AI.",
+          "notizie": [
+            {
+              "titolo": "OpenAI lancia la funzione Record & Replay per Codex, ma non è disponibile in Svizzera",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openais-codex-can-now-watch-you-work-once-and-repeat-the-task-forever/",
+              "riassunto": "OpenAI ha introdotto la feature Record & Replay per l’app Codex su macOS, che consente di registrare un workflow una sola volta e farlo ripetere automaticamente. La novità non è ancora attiva in UE, Regno Unito né in Svizzera, dove gli utenti non potranno usufruire della funzionalità finché non verrà approvata.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Gli USA accusano ASML di aver inviato una macchina EUV in Cina, una questione che riguarda anche l’Europa",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+              "riassunto": "Il Segretario al Commercio USA ha espresso preoccupazione per un presunto trasferimento di una macchina EUV di ASML in Cina, violando i controlli all’esportazione. ASML nega l’esistenza di tale macchina. La vicenda è critica per l’Europa, poiché ASML è l’unico fornitore di litografia EUV, indispensabile per i chip AI di ultima generazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nuovo benchmark AA‑Briefcase mostra che anche i modelli più avanzati falliscono nella maggior parte dei compiti di lavoro conoscitivo",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/new-benchmark-exposes-how-badly-ai-struggles-with-real-knowledge-work/",
+              "riassunto": "Il benchmark AA‑Briefcase, basato su progetti di lavoro reale (email, Slack, trascrizioni), ha valutato diversi LLM. Il modello top, Claude Fable 5, ha risolto completamente solo il 3 % dei 91 task; 31 task non hanno superato il 50 % di accuratezza. Il costo per task varia da 0,04 $ a oltre 31 $, evidenziando inefficienze economiche.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "restrizioni legali su AI in Europa",
+            "preoccupazioni sulla catena di fornitura dei chip EUV",
+            "scarsa performance dei LLM su compiti di conoscenza reale"
+          ],
+          "da_tenere_d_occhio": "Possibile aggiornamento della normativa svizzera sull’uso di AI in applicazioni di automazione, che potrebbe sbloccare Codex per la Svizzera nelle prossime 24 h",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 106,
       "run_id": 138,
@@ -4088,226 +4309,6 @@
             "Investimenti massicci in infrastrutture AI in Europa"
           ],
           "da_tenere_d_occhio": "Segui i prossimi rilasci di OpenClaw (beta 5) e le reazioni di Microsoft alle nuove strategie AI nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 87,
-      "run_id": 119,
-      "run_time": "2026-06-01 05:00:02.188376+00:00",
-      "analyzed_at": "2026-06-01T05:07:05.358297+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 13,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.1",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie che hanno ripercussioni dirette sulla Svizzera: il blocco del valico del Brennero che ha minacciato il traffico merci, la finale di hockey mondiale seguita con fervore nazionale, e la decisione di Swiss di smantellare due A220‑100 per ricambi.",
-          "notizie": [
-            {
-              "titolo": "Blocco totale del Brennero per manifestazione ambientalista: impatto sul traffico svizzero",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/mondo/Scattato-il-blocco-totale-del-Brennero-per-una-manifestazione-ambientalista--3781675.html",
-              "riassunto": "Alle 10:30 è stato chiuso il valico del Brennero, sia austriaco (A13, B182) che italiano (A22), per una protesta contro il traffico merci. Il passo registra quasi tre volte i TIR svizzeri all'anno; l'ente austriaco prevede 32 000 veicoli di deviazione, con timori di ingorghi nei Grigioni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Finale di hockey 2026: la Svizzera perde l’argento, ma il paese segue la partita con il fiato sospeso",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/La-Svizzera-ha-seguito-la-finale-di-hockey-col-fiato-sospeso--3784534.html",
-              "riassunto": "La nazionale svizzera di hockey ha chiuso al secondo posto dopo la vittoria della Finlandia ai supplementari. La partita è stata trasmessa in public viewing, tra cui la Cornèr Arena di Lugano, e ha ispirato un volo Swiss che ha tracciato un cuore nei cieli di Zurigo.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Swiss rinuncia a due A220‑100 per ricambiare la flotta A220‑300",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Swiss-rinuncia-a-due-A220-100-saranno-usati-per-i-pezzi-di-ricambio--3784246.html",
-              "riassunto": "Swiss ha deciso di smantellare definitivamente due aeromobili A220‑100, destinandoli a fornire pezzi di ricambio per i 21 A220‑300 della compagnia. La mossa segue problemi di manutenzione e la strategia di ottimizzare la flotta, con tre esemplari ancora in deposito a Tolosa.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "impatto del traffico transfrontaliero su Svizzera",
-            "passione sportiva nazionale (hockey)"
-          ],
-          "da_tenere_d_occhio": "Possibili nuovi blocchi o restrizioni al traffico sul Brennero nei prossimi giorni, che potrebbero influenzare le catene di approvvigionamento svizzere",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da temi di sicurezza, tensioni sociali e cambiamenti ambientali: la discussa revoca della cittadinanza a Winterthur, le proteste contro l’aumento degli affitti a Zurigo e le temperature record dei laghi alpini.",
-          "notizie": [
-            {
-              "titolo": "Revoca della cittadinanza all'aggressore di Winterthur considerata affrettata",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/la-revoca-della-cittadinanza-allaggressore-di-winterthur-e-una-decisione-affrettata-429189",
-              "riassunto": "La Segreteria di Stato della migrazione (SEM) ha precisato che la cittadinanza di un aggressore svizzero‑turco a Winterthur potrà essere revocata solo dopo una sentenza definitiva per reati gravi. La decisione è stata criticata dal prof. Alberto Achermann come “affrettata”. La SEM ha avviato dieci procedure simili negli ultimi anni, con sette revoche effettive.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Zurigo: più di 2.500 manifestanti contro l’aumento degli affitti e la “città dei ricchi”",
-              "fonte": "LaRegione Svizzera",
-              "link": "https://www.laregione.ch/svizzera/svizzera/1929327/affitti-aumento-zurigo-citta-ricchi",
-              "riassunto": "Una manifestazione autorizzata a Zurigo ha radunato circa 2.500 persone per protestare contro gli aumenti degli affitti, le ristrutturazioni di lusso e le disdette collettive. Sono stati segnalati isolati atti di vandalismo, tra cui lanci di palloncini d’acqua contro la Primetower. Gli organizzatori hanno criticato il governo rosso‑verde per l’inerzia su questi temi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Record di temperature nei laghi svizzeri: 26 dei 32 superano i 20 °C",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera-bollente-temperature-record-nei-laghi-429220",
-              "riassunto": "Secondo il Tages‑Anzeiger, 26 dei 32 laghi più grandi della Svizzera hanno temperature superficiali mai registrate a questo periodo, con picchi fino a 24,6 °C al Lago di Morat. Gli esperti avvertono rischi per i bagnanti (alghe, batteri, cercarie) e per la fauna ittica, in particolare salmonidi e trote.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "LaRegione Svizzera"
-              ],
-              "differenze_narrative": "CdT enfatizza i dati numerici e le conseguenze per la salute pubblica, citando gli avvisi di Eawag e dell'Università di Neuchâtel. LaRegione ripete i dati ma aggiunge citazioni più dettagliate degli esperti (Martin Schmid, Martine Rebetez) e sottolinea l’aspetto climatico più ampio, collegandolo al trend di riscaldamento globale."
-            }
-          ],
-          "trend": [
-            "sicurezza e cittadinanza",
-            "tensioni abitativo‑sociali",
-            "cambiamenti climatici nei laghi"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi legali sulla revoca della cittadinanza a Winterthur e ulteriori proteste contro gli affitti a Zurigo nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con le Giornate fotografiche di Bienne, mentre a livello internazionale spiccano notizie su formaggi virali e produzioni cinematografiche innovative.",
-          "notizie": [
-            {
-              "titolo": "Le Giornate fotografiche di Bienne chiudono con 15.000 visitatori e un bilancio estremamente positivo",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1929435/giornate-bienne-siti-visitatori-bilancio-tre",
-              "riassunto": "Tre settimane di mostre in 14 sedi di Bienne hanno attirato circa 15.000 persone. Il tema centrale è la vulnerabilità, declinata in quattro assi (migrazione, femminismi, ecologie affettive, gesti riparatori). Gli organizzatori puntano al 30° anniversario e ai 200 anni della fotografia per la prossima edizione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Cultura digitale e viralità sui social (es. formaggi, influencer)",
-            "Rinascita di format amatoriali e partecipativi nel cinema"
-          ],
-          "da_tenere_d_occhio": "Le prossime Giornate fotografiche di Bienne, in vista del 30° anniversario e delle iniziative legate ai 200 anni della fotografia, saranno un punto di riferimento per la scena culturale svizzera.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da sviluppi militari avanzati, tensioni energetiche e questioni economiche europee, ma nessuna notizia ha un impatto diretto sulla Svizzera o sul Ticino.",
-          "notizie": [],
-          "trend": [
-            "crescita dell'uso di droni e sistemi autonomi nei conflitti",
-            "instabilità dei mercati energetici a seguito della guerra in Medio Oriente"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle capacità robotiche nei fronti di guerra, in particolare il progetto di sottomarini senza equipaggio Aukus, e le ripercussioni dell'inflazione energetica sull'economia europea.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione si concentra sui rischi energetici legati al conflitto in Medio Oriente, sulle temperature record dei laghi svizzeri e sul dibattito interno all'UDC sull'immigrazione che potrebbe influenzare il settore agricolo.",
-          "notizie": [
-            {
-              "titolo": "FMI, Banca Mondiale, OMC e AIE avvertono di carenze di carburante se lo Stretto di Hormuz rimane chiuso",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/carburanti-a-rischio-in-estate-le-scorte-globali-si-stanno-riducendo-a-un-ritmo-record-434631",
-              "riassunto": "Le quattro istituzioni internazionali hanno lanciato un avviso congiunto: le scorte globali di petrolio si stanno riducendo a ritmo record a causa della perdita di forniture attraverso lo Stretto di Hormuz. Se i flussi non tornassero alla normalità, la domanda estiva potrebbe provocare rischi per la sicurezza energetica e aumentare i prezzi dei carburanti e dei fertilizzanti, con impatti sulla Svizzera importatrice di energia.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Record di temperature nei laghi svizzeri: 26 dei 32 laghi più grandi superano i 20°C",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1929347/lago-gradi-temperature-laghi-svizzera",
-              "riassunto": "Il Tages-Anzeiger segnala che 26 dei 32 laghi più grandi della Svizzera hanno temperature superficiali mai registrate in questo periodo dell'anno, con punte fino a 24,6°C. Il riscaldamento dell'acqua favorisce alghe, batteri e pulci d'anatra, minacciando bagnanti e fauna ittica, un fenomeno con potenziali ripercussioni economiche per il turismo balneare.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Divisa l'agricoltura svizzera sull'iniziativa UDC “No a una Svizzera da 10 milioni”",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/politica/1929281/svizzera-manodopera-iniziativa-udc-terreni",
-              "riassunto": "L'iniziativa dell'UDC sull'immigrazione, in votazione il 14 giugno, divide gli agricoltori: da un lato la difesa dei terreni agricoli dalla pressione edilizia, dall'altro il timore di aggravare la carenza di manodopera straniera, che ora rappresenta oltre 50.000 lavoratori non familiari, il 70% dei quali provenienti dall'UE.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "rischi energetici legati a conflitti geopolitici",
-            "cambiamenti climatici e impatto sui laghi",
-            "tensioni tra politica migratoria e settore agricolo"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della situazione nello Stretto di Hormuz e le eventuali misure di risposta dell'UE e della Svizzera nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su cambiamenti di pricing, partnership hardware‑AI e casi d'uso aziendali di agenti AI, tutti con potenziali ricadute sui professionisti svizzeri del software.",
-          "notizie": [
-            {
-              "titolo": "GitHub Copilot passa a una fatturazione basata sui token, suscitando proteste tra gli sviluppatori",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
-              "riassunto": "Da giugno 1 GitHub Copilot adotterà un modello di prezzo per token anziché l'abbonamento fisso. Alcuni utenti segnalano un possibile salto da $29 a $750 al mese. Il cambiamento colpisce soprattutto freelance e piccole imprese, molto presenti nel Ticino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Microsoft e Nvidia collaborano per PC AI con agenti locali, basati su OpenClaw",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/microsoft-and-nvidia-reportedly-team-up-on-ai-pcs-that-run-actual-agents-instead-of-copilot/",
-              "riassunto": "Microsoft e Nvidia presenteranno nuovi PC con chip Nvidia e software OpenClaw per eseguire agenti AI localmente, superando il fallito progetto Copilot+. L'annuncio arriverà a Computex (Taiwan) e Build (USA). Potrebbe influenzare le scelte hardware delle aziende svizzere che valutano soluzioni AI on‑premise.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Salesforce afferma che gli agenti AI hanno ridotto una migrazione da 231 a 13 giorni con meno incidenti",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/salesforce-claims-ai-agents-cut-a-231-day-migration-to-13-days-with-fewer-incidents/",
-              "riassunto": "Salesforce ha migrato un'intera organizzazione di sviluppo a Claude Code di Anthropic, passando da 231 a 13 giorni, con un aumento del 79 % di pull request per sviluppatore e una riduzione del 5 % degli incidenti. I dati mostrano un possibile modello di produttività per le imprese svizzere che valutano l'adozione di agenti AI.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Passaggio a pricing per token nei servizi AI",
-            "Adozione di agenti AI locali su hardware proprietario",
-            "Incremento dell'uso di agenti AI per accelerare processi di sviluppo software"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della fatturazione per token di GitHub Copilot e le prime demo dei PC AI di Microsoft/Nvidia nelle prossime 24 h.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
