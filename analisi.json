@@ -1,6 +1,202 @@
 {
-  "generated_at": "2026-06-21T05:06:46.503769+00:00",
+  "generated_at": "2026-06-22T05:07:00.741145+00:00",
   "analyses": [
+    {
+      "id": 108,
+      "run_id": 140,
+      "run_time": "2026-06-22 05:00:02.468735+00:00",
+      "analyzed_at": "2026-06-22T05:07:00.725517+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 11,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da eventi meteo estremi, con ondate di caldo in tutta Europa e una violenta tempesta a Zurigo che ha provocato vittime e numerosi feriti.",
+          "notizie": [
+            {
+              "titolo": "Tempesta a Zurigo causa la morte di una 16enne colpita da un ramo",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Tempesta-a-Zurigo-morta-la-16enne-colpita-da-un-ramo--3836453.html",
+              "riassunto": "Una violenta tempesta a Zurico ha provocato la caduta di un ramo che ha colpito una ragazza di 16 anni; la giovane è deceduta in ospedale. L’evento ha generato più di 700 chiamate di emergenza e 680 interventi dei vigili del fuoco. L’articolo cita anche SRF Meteo per i dati sui fulmini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Tempesta a Zurigo provoca diversi feriti, tra cui una 16enne in condizioni critiche",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Tempesta-a-Zurigo-diversi-feriti-grave-una-16enne--3834776.html",
+              "riassunto": "La stessa tempesta ha ferito almeno otto persone, con una 16enne ricoverata in condizioni critiche. Sono state registrate circa 15 000 fulmini in Svizzera, con danni a linee elettriche e veicoli. Anche qui viene menzionato SRF Meteo per le statistiche sui fulmini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Allerta canicola prolungata in Ticino e Moesano fino al 28 giugno",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Allerta-canicola-prolungata-in-Ticino-e-Moesano--3836417.html",
+              "riassunto": "MeteoSvizzera ha esteso l’allerta canicola di grado 3 (pericolo marcato) fino al 28 giugno per Ticino, Mesolcina e Calanca, con temperature previste fino a 34 °C. L’allerta è valida sotto i 600 m di quota e avverte di rischi per la salute cardiovascolare.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ondate di caldo estremo in Europa",
+            "tempeste violente con fulmini in Svizzera"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione delle allerte meteo (caldo e temporali) nelle prossime 24 ore, soprattutto per il rischio di ulteriori emergenze sanitarie in Ticino",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da una notizia di rilevanza politica nazionale legata al finanziamento della 13ª AVS, mentre gli eventi locali come incendi e temporali restano al centro dell'attenzione.",
+          "notizie": [
+            {
+              "titolo": "13ª AVS finanziata con aumento dell'IVA: la consigliera Baume‑Schneider lo spiega a RTS",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/13esima-AVS-Baume-Schneider-%E2%80%9CNessuna-alternativa-all%E2%80%99aumento-dell%E2%80%99IVA%E2%80%9D--3833960.html",
+              "riassunto": "Il Parlamento ha approvato un aumento di 0,4 punti percentuali dell'IVA (passando all'8,5%) per finanziare la 13ª AVS, che costerà oltre 4 miliardi di franchi all'anno. La consigliera federale Elisabeth Baume‑Schneider, responsabile del dossier, ha dichiarato a RTS che l'IVA è la soluzione più realistica e ha sottolineato l'importanza del finanziamento senza limiti di tempo.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "finanziamento della AVS tramite aumento dell'IVA",
+            "impatto di eventi climatici estremi (incendi, temporali)"
+          ],
+          "da_tenere_d_occhio": "L'esito del referendum sull'implementazione dell'aumento dell'IVA per la 13ª AVS nelle prossime settimane",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura è al centro di dibattiti su mascolinità, attenzione digitale e innovazione, con un focus sui media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Educatore sociale sulla mascolinità: tra dominio e insicurezza, quando è un uomo?",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/sozialpaedagoge-zu-maennlichkeit-zwischen-dominanz-und-verunsicherung-wann-ist-ein-mann-ein-mann",
+              "riassunto": "Il social pedagogo Kambez Nuri, intervistato da SRF Kultur, analizza i modelli tradizionali di mascolinità e il loro impatto su giovani uomini, evidenziando la pressione dei social media e la popolarità di figure come Andrew Tate. Citazioni: “Un uomo deve essere dominante, avere status, guadagnare molto e proteggere la famiglia” (Nuri).",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "impatto dei social media sull'attenzione",
+            "rivalutazione dei modelli di mascolinità"
+          ],
+          "da_tenere_d_occhio": "Possibili reazioni politiche o sindacali alle tematiche di mascolinità trattate da SRF nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni internazionali su Iran e USA, ma per il lettore svizzero emergono notizie legate ai media pubblici e a questioni interne come la crisi ferroviaria e il caso Aeschbach Chocolatier.",
+          "notizie": [
+            {
+              "titolo": "La soluzione AVS nella SRF‑Arena: dibattito acceso sulla tassa sul valore aggiunto",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/srf-arena-knacknuss-vom-volk-die-ahv-loesung-bleibt-umstritten-103586816",
+              "riassunto": "Durante la trasmissione SRF‑Arena è stato discusso il finanziamento della 13ª pensione AVS. Il Parlamento ha approvato un aumento dell'IVA di 0,4 punti percentuali, ma i politici di SP, FDP, Mitte e SVP hanno definito la soluzione una \"knacknuss\" per il popolo. La decisione dovrà ancora essere confermata da un referendum previsto per novembre.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SBB sotto pressione: alluvioni e ondate di calore minacciano la rete ferroviaria",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/schweiz/sbb-unter-druck-erst-patschnass-dann-zu-heiss-id22046494.html",
+              "riassunto": "Il capostazione di Zurigo ha riferito che le recenti piogge hanno allagato il Hauptbahnhof, creando disagi per i pendolari, mentre la prossima settimana è attesa una ondata di calore con temperature tra 32 °C e 35 °C. La SBB avverte che i binari possono raggiungere i 60 °C, con rischio di deformazioni.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Aeschbach Chocolatier costretto a restituire i fondi Corona: la Corte federale decide",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/wirtschaft/bittere-pille-fuer-chocolatier-wegen-corona-geldern-muss-luzerner-firma-gewinn-abgeben-id22045639.html",
+              "riassunto": "Il tribunale federale ha ordinato alla Aeschbach Chocolatier AG di restituire i 204’455 CHF di aiuti di emergenza ricevuti nel 2021, poiché la legge prevede la restituzione del profitto fino al totale degli aiuti. L'azienda aveva registrato un utile di oltre 700’000 CHF nello stesso anno, contestando la decisione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Tensioni diplomatiche Iran‑USA con la Svizzera come sede di negoziati",
+            "Pressioni climatiche su infrastrutture critiche svizzere"
+          ],
+          "da_tenere_d_occhio": "Sviluppi dei colloqui USA‑Iran in Svizzera e possibili ripercussioni sulla sicurezza energetica europea nelle prossime 24 h",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta alla crisi del mercato suino svizzero, alle tensioni nel settore delle telecomunicazioni e alle richieste di maggior capitale per la UBS. Gli eventi hanno impatti diretti sull'economia nazionale e suscitano dibattiti tra istituzioni e imprese.",
+          "notizie": [
+            {
+              "titolo": "Crisi dei suini in Svizzera: migliaia di suinetti esportati per la macellazione d'emergenza",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/schweinekrise-in-der-schweiz-tausende-schweizer-ferkel-zur-notschlachtung-exportiert-id22046359.html",
+              "riassunto": "A causa di un eccesso di circa 5.000 capretti a settimana, la Svizzera sta esportando oltre 900 suinetti settimanali verso la Germania per una macellazione d'emergenza, con una previsione di 22.000 animali fino a novembre. L'articolo cita SRF come fonte dei dati.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Accuse esplosive: dipendenti Swisscom over 50 temono licenziamenti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/sonntagsblick/brisante-vorwuerfe-ex-kaderleute-schlagen-alarm-bei-swisscom-angestellten-ab-50-geht-die-job-angst-um-id22046268.html",
+              "riassunto": "Ex dirigenti di Swisscom denunciano una cultura aziendale tossica: dal 2022 al 2025 la quota di dipendenti over 50 è scesa dal 35,9% al 31%, con licenziamenti giustificati da riorganizzazioni interne. Le testimonianze evidenziano paura e difficoltà nel trovare nuovo impiego.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Piccole banche svizzere si oppongono alle richieste di capitale della UBS",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/invest/knatsch-am-finanzplatz-kleine-banken-stellen-sich-gegen-grosse-ubs-id22046200.html",
+              "riassunto": "Le banche regionali e l'esperto Andreas Blöchlinger avvertono che le richieste di maggior capitale per la UBS potrebbero creare un'implicita garanzia statale a scapito dei contribuenti. La UBS ha già visto il suo titolo superare i 40 franchi, ma resiste alle proposte del governo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "eccesso di produzione suina e misure di emergenza",
+            "ristrutturazioni e licenziamenti nel settore telecom",
+            "dibattito sul capitale bancario e garanzie implicite"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle politiche di capitale per la UBS e le possibili nuove normative che potrebbero influenzare l'intero settore finanziario svizzero",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su nuove funzionalità AI, preoccupazioni sulla privacy e l'impatto economico del settore, senza riferimenti diretti ai media pubblici svizzeri.",
+          "notizie": [],
+          "trend": [
+            "Regolamentazione dei contenuti AI (deepfake, trasparenza)",
+            "Integrazione di AI nei flussi di lavoro e produttività",
+            "Preoccupazioni finanziarie e di sostenibilità del modello di business AI"
+          ],
+          "da_tenere_d_occhio": "Le evoluzioni delle policy di privacy e delle funzionalità di automazione AI, in particolare le nuove offerte di OpenAI e le reazioni delle autorità europee, che potrebbero influenzare anche il contesto svizzero nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 107,
       "run_id": 139,
@@ -4068,248 +4264,6 @@
           "trend": [],
           "da_tenere_d_occhio": "",
           "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "run_id": 120,
-      "run_time": "2026-06-02 05:00:02.495319+00:00",
-      "analyzed_at": "2026-06-02T05:09:40.227308+00:00",
-      "articles_analyzed": 184,
-      "articles_selected": 15,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da un caso interno alla RSI che ha suscitato l'attenzione di più testate. Parallelamente, si osservano temi ricorrenti di sicurezza stradale e di governance dei media pubblici.",
-          "notizie": [
-            {
-              "titolo": "Giornalista RSI sospeso per presunti comportamenti inadeguati",
-              "fonte": "LaRegione Ticino",
-              "link": "https://www.laregione.ch/cantone/ticino/1929418/giornalista-rsi-sospeso-per-presunti-comportamenti-inadeguati",
-              "riassunto": "La RSI ha avviato un procedimento interno dopo segnalazioni di molestie da parte di colleghe nei confronti del giornalista Emiliano Bos. La sospensione è cautelare, in attesa degli esiti delle indagini. La notizia è rilevante perché riguarda direttamente un media pubblico svizzero.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "LaRegione Ticino",
-                "tio.ch Ticino"
-              ],
-              "differenze_narrative": "LaRegione Ticino si concentra sulla procedura formale della RSI, citando la politica di tolleranza zero e la presunzione di innocenza. tio.ch aggiunge dettagli sul contesto dell'accaduto, indicando che la segnalazione proviene da una videomaker esterna e menzionando precedenti critiche sul clima aziendale della RSI."
-            }
-          ],
-          "trend": [
-            "Gestione delle risorse umane nei media pubblici",
-            "Sicurezza stradale e incidenti sul territorio ticinese"
-          ],
-          "da_tenere_d_occhio": "Esiti dell'indagine interna sulla condotta del giornalista RSI e eventuali ripercussioni sulla credibilità dell'emittente",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da questioni di difesa e sicurezza, da una nuova campagna contro le violenze domestiche e da un caso giudiziario che blocca le indagini su un incendio a Crans-Montana.",
-          "notizie": [
-            {
-              "titolo": "31 miliardi di franchi per l’esercito: proposta di aumento dell’IVA contestata",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/31-miliardi-per-l%E2%80%99esercito-la-soluzione-con-l%E2%80%99IVA-non-convince--3785674.html",
-              "riassunto": "Il Consiglio federale vuole finanziare 31 miliardi di franchi per la difesa entro il 2038 con un aumento temporaneo dell’IVA di 0,8 punti percentuali. La consultazione ha suscitato critiche da tutti i partiti, eccetto il Centro, che sostiene la misura per “bene pubblico”. Il PLR e i Verdi la definiscono “sbilanciata” e “antisociale”.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Nuova fase della campagna nazionale contro le violenze domestiche",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Violenze-domestiche-nuova-fase-per-la-campagna-preventiva--3785023.html",
-              "riassunto": "Il governo lancia una seconda fase della campagna contro le violenze domestiche, con due nuovi manifesti e il numero d’emergenza 142 attivo 24/7 dal 1° maggio. Nel 2025 sono stati registrati 22 000 reati e 34 omicidi legati alla violenza domestica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Procedura errata blocca le indagini sull’incendio del bar a Crans‑Montana",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Crans-Montana-un-dettaglio-procedurale-blocca-le-indagini--3783013.html",
-              "riassunto": "Il Ministero pubblico del Vallese ha ordinato al fornitore Internet del comune di copiare dati dal 2015, ma l’ordine è ritenuto illegittimo perché manca una richiesta di assistenza giudiziaria. Il comune ha contestato, lasciando la procura in difficoltà; spetterà al tribunale cantonale decidere.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Finanziamento della difesa tramite IVA",
-            "Rafforzamento delle misure contro la violenza domestica",
-            "Problemi procedurali nelle indagini penali"
-          ],
-          "da_tenere_d_occhio": "L’esito della votazione sull’aumento dell’IVA per la difesa, l’efficacia della nuova campagna contro le violenze domestiche e la decisione del tribunale cantonale di Crans‑Montana",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro di diversi eventi: le Giornate fotografiche di Bienne attirano migliaia di visitatori, una cantante ticinese conquista la vittoria in Francia e il Territori Festival anima il Ticino con spettacoli teatrali.",
-          "notizie": [
-            {
-              "titolo": "Le Giornate fotografiche di Bienne chiudono con 15.000 visitatori e bilancio estremamente positivo",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1929435/giornate-bienne-siti-visitatori-bilancio-tre",
-              "riassunto": "Il festival fotografico di Bienne si è concluso con circa 15.000 visitatori in tre settimane, focalizzato sul tema della vulnerabilità. Gli organizzatori hanno definito il bilancio “estremamente positivo” e hanno annunciato che l’edizione del prossimo anno celebrerà i 30 anni del festival e i 200 anni della fotografia.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Lady O, cantante vodese, vince The Voice in Francia – prima vittoria svizzera",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/la-cantante-vodese-lady-o-vince-the-voice-in-francia-429240",
-              "riassunto": "Lady O, 19enne originaria di Lutry (VD), ha conquistato la quindicesima edizione di The Voice su TF1, diventando la prima artista svizzera a vincere il talent show. È seguita da Florent Pagny e ha appena pubblicato il suo primo album “Thank You Little Girl”.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Territori Festival porta il teatro al Sociale di Lugano dal 3 al 7 giugno",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1929375/festival-giugno-spettacolo-teatro-territori-pubblico",
-              "riassunto": "Il Territori Festival, ideato da Gianfranco Helbling, propone una serie di spettacoli teatrali dal 3 al 7 giugno al Sociale di Lugano, con l’obiettivo di avvicinare il pubblico locale a forme di teatro sperimentale e di pubblico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita della visibilità internazionale di artisti svizzeri",
-            "Rinascita di festival culturali locali con forte partecipazione di pubblico",
-            "Valorizzazione di tematiche sociali (vulnerabilità, migrazione) nei programmi culturali"
-          ],
-          "da_tenere_d_occhio": "Le prossime edizioni delle Giornate fotografiche di Bienne, in vista dei 30 anni del festival e dei 200 anni della fotografia, per monitorare l'evoluzione della partecipazione e dei temi trattati.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente: l'Iran riapre i tunnel delle basi missili, le dichiarazioni contrastanti tra Netanyahu e Trump su un eventuale attacco a Beirut, e gli Stati Uniti rispondono a presunte aggressioni iraniane con attacchi di autodifesa.",
-          "notizie": [
-            {
-              "titolo": "L'Iran riapre la maggior parte dei tunnel delle basi missili sotterranee",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/05/31/cnn-iran-ha-riaperto-la-maggior-parte-dei-tunnel-delle-basi-missili_99df8649-8a0d-4d01-b4a9-15f0662b704d.html",
-              "riassunto": "Secondo analisi di immagini satellitari la CNN, l'Iran ha riaperto 50 dei 69 ingressi di tunnel in 18 basi missilistiche colpite da USA e Israele. Gli esperti affermano che l'Iran può continuare a lanciare missili finché dispone di lanciatori, nonostante la produzione sia stata interrotta.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Netanyahu dichiara a Trump la volontà di colpire Beirut se Hezbollah non smette gli attacchi",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/01/netanyahu-ho-detto-a-trump-che-colpiremo-beirut-in-caso-di-attacchi-di-hezbollah_46d87a90-7ce7-437f-83f0-8489be542e24.html",
-              "riassunto": "Il premier israeliano Benjamin Netanyahu ha riferito a Donald Trump che, se Hezbollah continuerà a colpire città israeliane, Israele prenderà di mira obiettivi terroristici a Beirut. L'affermazione è stata riportata da Haaretz e ripresa da ANSA.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gli Stati Uniti conducono attacchi di autodifesa contro siti iraniani",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/06/01/usa-nel-weekend-attacchi-in-autodifesa-contro-siti-iraniani_5b35b1b5-1298-41f2-8fe9-1b02c6b379ae.html",
-              "riassunto": "Il comando centrale degli USA (CentCom) ha effettuato attacchi mirati contro radar e centri di comando droni iraniani a Goruk e sull'isola di Qeshm, in risposta all'abbattimento di un drone MQ-1 su acque internazionali. Nessuna perdita umana tra le forze americane.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riapertura delle capacità missilistiche iraniane",
-            "Tensioni tra Israele, Hezbollah e gli USA",
-            "Risposte militari statunitensi alle attività iraniane"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle dichiarazioni di Netanyahu e Trump su un possibile attacco a Beirut, che potrebbe innescare una nuova escalation militare nella regione",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta a due temi chiave per la Svizzera: le strategie di investimento pensionistico e le attività internazionali di un gruppo energetico svizzero. Entrambi gli argomenti mostrano come le dinamiche di mercato e le politiche aziendali influenzino direttamente il contesto economico locale.",
-          "notizie": [
-            {
-              "titolo": "Investimenti volontari nella seconda pietra miliare: la bassa adesione svizzera al versamento nella cassa pensioni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/saeule-3a-ist-viel-beliebter-warum-sich-nur-wenige-versicherte-freiwillig-in-die-pk-einkaufen-id21991601.html",
-              "riassunto": "Una recente indagine della BKB evidenzia che solo il 12 % dei lavoratori svizzeri tra i 55‑59 anni versa volontariamente nella seconda colonna pensionistica, mentre la colonna 3a è scelta dal 46 % nel 2022. Il tasso medio di conversione previsto per il 2026 è del 5,19 %. Il rapporto spiega che la maggiore popolarità della 3a è dovuta alla sua semplicità e ai vantaggi fiscali, mentre i versamenti nella seconda colonna sono percepiti come più complessi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "BKW espande la capacità eolica in Italia: 250 milioni di franchi per 29 turbine",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/reportage-aus-sueditalien-gegenwind-treibt-bkw-chef-robert-itschner-an-id21991234.html",
-              "riassunto": "Il CEO svizzero Robert Itschner ha aperto un nuovo parco eolico in Puglia con 29 turbine, realizzato in sei anni con un investimento di 250 milioni di franchi. L’impianto fornirà energia a circa 140 000 famiglie. Itschner ha sottolineato che, nonostante l’interesse, la Svizzera fatica a replicare questi successi a causa di ostacoli normativi e di mercato domestici.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Bassa adesione ai versamenti volontari nella seconda colonna pensionistica",
-            "Espansione delle energie rinnovabili svizzere all’estero"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle normative fiscali svizzere sulla previdenza e le future decisioni politiche che potrebbero facilitare gli investimenti nelle pensioni complementari",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da aggiornamenti di versione di OpenClaw, una nota notizia di strategia AI di Microsoft e un ambizioso progetto europeo di data center AI da parte di SoftBank.",
-          "notizie": [
-            {
-              "titolo": "OpenClaw 2026.5.31 beta 4 rilasciata con miglioramenti di recupero e stabilità dei canali",
-              "fonte": "OpenClaw Releases",
-              "link": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.31-beta.4",
-              "riassunto": "La nuova beta 4 introduce recovery più pulito per agenti e runtime CLI, stabilità dei canali su Telegram, WhatsApp, Slack, Discord, Teams e miglioramenti di timeout, retry e gestione OAuth. Tra le novità, supporto per Tailscale Serve e UI più completa per lo Skill Workshop.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Microsoft perde l'opportunità di dominare il mercato dell'AI dopo il ritiro di Satya Nadella",
-              "fonte": "Il Post Tecnologia",
-              "link": "https://www.ilpost.it/2026/05/31/microsoft-intelligenza-artificiale/",
-              "riassunto": "Satya Nadella ha ristrutturato il top management per rilanciare Microsoft nell'AI, ma l'azienda non è riuscita a sfruttare il vantaggio competitivo di inizio 2023 con OpenAI e Azure. Oggi Copilot registra crescita deludente e la concorrenza di OpenAI, Google e Anthropic è più forte.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "SoftBank prevede 75 miliardi di euro in data center AI in Francia entro il 2031",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/softbank-plans-75-billion-euro-ai-data-center-buildout-in-france/",
-              "riassunto": "SoftBank intende costruire data center AI da 5 GW in Francia, con un investimento iniziale di 45 miliardi di euro in tre siti del Nord. Il progetto, annunciato al summit \"Choose France\", mira a creare migliaia di posti di lavoro e a posizionare la Francia come hub europeo di infrastrutture AI.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aggiornamenti rapidi di piattaforme AI open‑source",
-            "Ristrutturazioni aziendali per recuperare leadership AI",
-            "Investimenti massicci in infrastrutture AI in Europa"
-          ],
-          "da_tenere_d_occhio": "Segui i prossimi rilasci di OpenClaw (beta 5) e le reazioni di Microsoft alle nuove strategie AI nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
     }
