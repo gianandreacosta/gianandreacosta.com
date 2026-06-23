@@ -1,6 +1,209 @@
 {
-  "generated_at": "2026-06-22T05:07:00.741145+00:00",
+  "generated_at": "2026-06-23T05:08:35.015886+00:00",
   "analyses": [
+    {
+      "id": 109,
+      "run_id": 141,
+      "run_time": "2026-06-23 05:00:02.317612+00:00",
+      "analyzed_at": "2026-06-23T05:08:34.992530+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 11,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie legate a emergenze climatiche e a decisioni di carattere pubblico, con particolare attenzione all'allerta canicola prolungata, alle misure fiscali per le colonie estive e a un guasto tecnico all'aeroporto di Zurigo che ha interessato lo spazio aereo svizzero.",
+          "notizie": [
+            {
+              "titolo": "Allerta canicola prolungata in Ticino e Moesano fino al 28 giugno",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Allerta-canicola-prolungata-in-Ticino-e-Moesano--3836417.html",
+              "riassunto": "MeteoSvizzera ha prorogato l’allerta canicola di grado 3 (pericolo marcato) in Ticino, Mesolcina e Calanca fino al 28 giugno, con temperature previste fino a 34 °C. L’allerta, valida sotto i 600 m, segnala rischi per la salute cardiovascolare e il benessere fisico.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Colonìe estive: le spese possono essere dedotte dalle imposte",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Colonie-estive-le-spese-possono-essere-dedotte-dalle-imposte-ecco-come--3836663.html",
+              "riassunto": "Il Dipartimento della sanità e della socialità (DSS) del Cantone Ticino ha diffuso una circolare che spiega come le rette delle colonie di vacanza e dei centri estivi per bambini possano essere dedotte fiscalmente, in linea con una sentenza del Tribunale federale del 12 marzo 2026.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Guasto tecnico a Skyguide: l’aeroporto di Zurigo riprende i voli",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/L%E2%80%99aeroporto-di-Zurigo-riprende-i-voli-dopo-un-guasto-a-Skyguide--3836390.html",
+              "riassunto": "Un errore nell’inserimento di dati per la conferenza di pace sul Bürgenstock ha provocato un guasto nei sistemi radar di Skyguide, chiudendo temporaneamente lo spazio aereo a est di Berna. I voli all’aeroporto di Zurigo sono stati ripristinati gradualmente dalle 07:45.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Allerta canicola e gestione del caldo estivo",
+            "Fiscalità familiare per le colonie estive",
+            "Sicurezza del traffico aereo e gestione di guasti tecnici"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dell’allerta canicola in Ticino e le eventuali misure di emergenza adottate nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da un evento di grande rilevanza per i media pubblici, con il Pride di Zurigo sotto i riflettori, mentre continuano le tensioni diplomatiche USA‑Iran a Bürgenstock e gli effetti del maltempo nel cantone di Zurigo.",
+          "notizie": [
+            {
+              "titolo": "Pride di Zurigo: decine di migliaia in corteo lungo la Bahnhofstrasse dopo la tempesta",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Passata-la-tempesta-il-Pride-a-Zurigo-fa-festa--3835508.html",
+              "riassunto": "Il corteo Pride di Zurigo ha attirato decine di migliaia di persone lungo la Bahnhofstrasse, con il nuovo slogan “Protect queer youth – L’accesso è il futuro”. Il sindaco Raphael Golta ha aperto la manifestazione, che ha messo al centro la richiesta di spazi sicuri per i giovani LGBTQIA+. La manifestazione è proseguita nonostante i danni lasciati dalla violenta tempesta della sera precedente.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Negoziazioni USA‑Iran a Bürgenstock",
+            "Impatto del maltempo su Zurigo"
+          ],
+          "da_tenere_d_occhio": "Sviluppi dei colloqui USA‑Iran a Bürgenstock nelle prossime 24 h, in particolare eventuali riprese o ulteriori interruzioni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: l'Art Basel attira 90.000 visitatori, si discute del lavoro invisibile nei servizi pubblici e si rinnova il dibattito sulla tutela dei monumenti in un contesto di boom edilizio.",
+          "notizie": [
+            {
+              "titolo": "Art Basel 2026 registra 90.000 visitatori provenienti da 103 Paesi",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-90-000-besucherinnen-und-besucher-an-der-art-basel-2026",
+              "riassunto": "L'edizione 2026 della Art Basel a Basilea ha chiuso con 90.000 partecipanti, provenienti da 103 nazioni, confermando l'importanza dell'evento per l'economia e la visibilità internazionale della Svizzera. Il comunicato sottolinea anche altre notizie culturali, ma il dato principale è il record di affluenza.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Detergenti invisibili: il lavoro di pulizia a basso salario nei centri sportivi svizzeri",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/unsichtbare-reinigungskraefte-sauberkeit-hat-ihren-preis-und-viele-gesichter",
+              "riassunto": "Un reportage sul lavoro di pulizia nei centri sportivi, con focus su Heidi Walter, badenmeisterin a Appenzell. Evidenzia le condizioni di lavoro, il salario minimo di 21,40 CHF/ora (dal 2004) e l'importanza di queste figure per la fruibilità degli spazi pubblici.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Conservazione dei monumenti in Svizzera: demolizioni vs. tutela in un periodo di boom edilizio",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/abreissen-oder-erhalten-zuendstoff-denkmalpflege-weniger-schutz-ist-auch-keine-loesung",
+              "riassunto": "Il Swiss Heritage Society denuncia la crescente demolizione di edifici storici di 50‑60 anni per nuove costruzioni. L'articolo analizza le differenze cantonali nella normativa di tutela e propone soluzioni di riuso sostenibile.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescente attenzione verso l'impatto economico e turistico degli eventi culturali svizzeri",
+            "Visibilità dei lavori poco riconosciuti (pulizia, manutenzione) nella narrativa culturale"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni normative sulla tutela dei beni culturali nei cantoni, in particolare eventuali proposte di legge federale per armonizzare i criteri di salvaguardia.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Le trattative tra Stati Uniti e Iran, ospitate in Svizzera, sono al centro dell'attenzione internazionale. Diverse testate riportano interruzioni e tensioni legate a minacce politiche, con implicazioni dirette per la neutralità svizzera.",
+          "notizie": [
+            {
+              "titolo": "Interruzione dei colloqui USA‑Iran in Svizzera per proteste e consultazioni interne",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/notizie/pierre-haski/2026/06/22/trattativa-stati-uniti-iran",
+              "riassunto": "Il primo round di negoziati tra USA e Iran, tenutosi a Burgenstock, è terminato con il ritiro della delegazione iraniana in segno di protesta per le minacce di Donald Trump. La stessa giornata ha visto una pausa dichiarata per “consultazioni interne”. L’articolo cita il vicepresidente statunitense JD Vance e il presidente del parlamento iraniano Mohammed Ghalibaf, sottolineando che l’incontro in territorio svizzero è un passo importante nonostante le tensioni.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "ANSA Mondo",
+                "Internazionale"
+              ],
+              "differenze_narrative": "ANSA riporta in modo sintetico i fatti: la delegazione iraniana ha lasciato i colloqui e i negoziati sono in pausa per consultazioni interne, citando fonti iraniane. Internazionale aggiunge un'analisi più ampia, descrivendo il contesto politico interno di entrambi i paesi, il ruolo di JD Vance, e inquadra l’evento come parte di una “drammaturgia psicologica” con implicazioni per la neutralità svizzera."
+            }
+          ],
+          "trend": [
+            "Tensioni nelle negoziazioni USA‑Iran",
+            "Uso della Svizzera come sede neutrale per dialoghi internazionali"
+          ],
+          "da_tenere_d_occhio": "Sviluppi dei colloqui USA‑Iran in Svizzera nelle prossime 24 ore, in particolare eventuali riprese o ulteriori interruzioni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui settori vitivinicolo e retail svizzeri, con una inchiesta penale su un noto teologo e una disputa sulla politica di importazione del vino. Le notizie più rilevanti includono anche le critiche interne al discount Denner.",
+          "notizie": [
+            {
+              "titolo": "Presunti abusi sessuali: indagine penale sul teologo Daniel Marguerat",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/cronaca/1933653/marguerat-abusi-pubblico-vodese-daniel-inchiesta-teologo",
+              "riassunto": "Il pubblico ministero del cantone Vaud ha avviato un'inchiesta su presunti abusi sessuali commessi negli anni ’90 dal professore emerito Daniel Marguerat dell'Università di Losanna. Marguerat nega le accuse, affermando di non essere stato mai indagato. La notizia è stata riportata dalla RTS, citata nel servizio di tio.ch.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Nuove norme sull’importazione del vino: il Consiglio federale vuole privilegiare la produzione svizzera",
+              "fonte": "Ticinonews Economia",
+              "link": "https://www.ticinonews.ch/economia/nuove-norme-per-limportazione-vini-spuntano-divergenze-nel-settore-436551",
+              "riassunto": "Il DEFR ha proposto una modifica all’Ordinanza sul vino per ridistribuire i contingenti doganali a favore delle aziende che acquistano e vinificano uva svizzera. I commercianti temono prezzi più alti e concentrazione del mercato, mentre i viticoltori sostengono il provvedimento. La consultazione è terminata e il Consiglio federale deciderà nell’autunno 2026.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Economia",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Ticinonews fornisce una panoramica dettagliata con citazioni del Consiglio federale, date precise e la posizione delle associazioni economiche; tio.ch riporta sinteticamente la stessa controversia, enfatizzando maggiormente le critiche dei commercianti e omettendo i riferimenti temporali e i nomi dei consiglianti."
+            },
+            {
+              "titolo": "Ex proprietario Denner accusa la Migros di mancati investimenti",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/es-wurde-kaum-investiert-ex-denner-besitzer-philippe-gaydoul-schiesst-gegen-die-migros-id22047507.html",
+              "riassunto": "Philippe Gaydoul, ex proprietario di Denner, denuncia che la Migros non abbia investito nel discount, affermando che i negozi sono rimasti invariati da venti anni. La Migros replica con una dichiarazione che evidenzia 400 milioni di franchi investiti in filiali, IT e centri di distribuzione negli ultimi otto anni. Il CEO di Denner è dimesso, segnalando una crisi di identità.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "rivalutazione delle politiche commerciali nel settore vinicolo",
+            "tensioni tra grandi gruppi retail e la gestione dei discount",
+            "indagini penali su figure accademiche di rilievo"
+          ],
+          "da_tenere_d_occhio": "L'esito della decisione del Consiglio federale sulla nuova ordinanza sul vino, previsto per l'autunno, che potrà influenzare prezzi e concorrenza nel mercato svizzero.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su regolamentazioni, impatti aziendali dell'AI e nuovi servizi cloud, senza riferimenti diretti ai media pubblici svizzeri.",
+          "notizie": [],
+          "trend": [
+            "Regolamentazione e sicurezza degli agenti AI",
+            "Layoff aziendali legati all'adozione dell'AI",
+            "Rilascio di nuovi modelli e servizi AI open source"
+          ],
+          "da_tenere_d_occhio": "Monitorare le evoluzioni normative statunitensi sull'AI e le dichiarazioni di aziende svizzere su possibili partnership o adozioni di tecnologie AI nei prossimi 24h",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 108,
       "run_id": 140,
@@ -4203,67 +4406,6 @@
           "trend": [],
           "da_tenere_d_occhio": "Monitorare eventuali future segnalazioni che coinvolgano RSI, SRF o altri media pubblici svizzeri.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 89,
-      "run_id": 121,
-      "run_time": "2026-06-03 05:00:02.358808+00:00",
-      "analyzed_at": "2026-06-03T05:04:03.199604+00:00",
-      "articles_analyzed": 185,
-      "articles_selected": 0,
-      "model_used": "openai-codex/gpt-5.4-mini",
-      "status": "error",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 503: Service Unavailable"
         }
       ]
     }
