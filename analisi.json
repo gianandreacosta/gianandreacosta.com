@@ -1,6 +1,232 @@
 {
-  "generated_at": "2026-06-23T05:08:35.015886+00:00",
+  "generated_at": "2026-06-24T05:09:40.323966+00:00",
   "analyses": [
+    {
+      "id": 110,
+      "run_id": 142,
+      "run_time": "2026-06-24 05:00:02.936735+00:00",
+      "analyzed_at": "2026-06-24T05:09:40.301785+00:00",
+      "articles_analyzed": 181,
+      "articles_selected": 13,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi legati alla salute pubblica e all'ambiente, con particolare attenzione a contaminanti alimentari, effetti delle ondate di calore e soluzioni per mantenere fresche le abitazioni.",
+          "notizie": [
+            {
+              "titolo": "Residui di pesticidi vietati trovati in alcune lenticchie commercializzate",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Residui-di-pesticidi-vietati-nelle-lenticchie--3827285.html",
+              "riassunto": "Un'indagine condotta da RTS ha rilevato residui di glifosato, diquat e paraquat in sei confezioni di lenticchie non biologiche, due delle quali superano i limiti legali per il paraquat. Le lenticchie biologiche e quelle svizzere di alta gamma risultano prive di contaminanti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Caldo estremo penalizza le funzioni cognitive secondo gli esperti",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Caldo-estremo-mente-a-rischio--3842372.html",
+              "riassunto": "Carmen Sandi, professoressa di neuroscienze all'EPFL, ha spiegato a RTS che le alte temperature riducono la capacità di attenzione, la memoria e aumentano il rischio di crimini violenti, con una diminuzione cognitiva del 10‑15% durante le ondate di calore.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Consigli per tenere fresca la casa senza aria condizionata",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/salute/Come-tenere-fresca-la-casa-d%E2%80%99estate--3839897.html",
+              "riassunto": "Nel programma “À bon entendeur” della RTS, esperti di architettura mostrano soluzioni passive (tende esterne, materiali a massa termica, ventilazione naturale) che mantengono le abitazioni 10 °C più fresche rispetto all’esterno, riducendo i rischi per la salute durante le ondate di calore.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Controlli sui residui di pesticidi negli alimenti",
+            "Impatto delle ondate di calore sulla salute mentale e fisica",
+            "Soluzioni passive di architettura per combattere il caldo"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni normative sui pesticidi e nuove linee guida sanitarie per le ondate di calore nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici: allerta canicola, iniziativa per trasporti gratuiti e una truffa bancaria che coinvolge il numero d'emergenza. Si evidenziano anche temi di salute pubblica e mobilità.",
+          "notizie": [
+            {
+              "titolo": "Allerta canicola in tutta la Svizzera: temperature record e livello di pericolo 4",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/La-canicola-non-d%C3%A0-tregua-livelli-di-allerta-alzati-in-diverse-regioni--3838739.html",
+              "riassunto": "MeteoSvizzera ha alzato l’allerta canicola al livello 4 (pericolo forte) in diverse regioni, con temperature fino a 36 °C a Basilea e 35 °C a Ginevra. L’allerta rimarrà in vigore fino al weekend e si prevede che l’ondata di caldo sia la più lunga mai registrata.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Inizia la raccolta firme per l’iniziativa sui trasporti pubblici gratuiti e accessibili",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/svizzera/Trasporti-pubblici-pi%C3%B9-accessibili-parte-la-caccia-alle-firme--3841886.html",
+              "riassunto": "A Renens è partita la campagna per raccogliere le 100 000 firme necessarie a modificare la Costituzione e garantire trasporti pubblici gratuiti e di qualità su tutto il territorio, con un fondo previsto di 8 miliardi di franchi all’anno.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Truffa bancaria: il numero d’emergenza non risponde alle richieste di aiuto",
+              "fonte": "RSI Svizzera",
+              "link": "https://www.rsi.ch/info/dialogo/Conto-svuotato-ma-il-numero-d%E2%80%99emergenza-non-risponde--3824567.html",
+              "riassunto": "Le banche segnalano una nuova frode in cui falsi impiegati chiedono dati di accesso all’e‑banking. Solo UBS e PostFinance offrono un numero d’emergenza 24 h; le altre banche hanno assistenza limitata agli orari d’ufficio.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ondata di caldo record",
+            "iniziative per trasporti pubblici gratuiti",
+            "truffe bancarie legate all’e‑banking"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dell’allerta canicola e le possibili estensioni delle misure di emergenza nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cronaca culturale è dominata da notizie legate ai media pubblici svizzeri e da un caso di copertura internazionale sulla morte di Clive Davis. Si evidenziano anche temi di intelligenza artificiale nel patrimonio librario e la gestione di scandali religiosi.",
+          "notizie": [
+            {
+              "titolo": "Morto a 94 anni il leggendario produttore discografico Clive Davis",
+              "fonte": "Il Post Cultura",
+              "link": "https://www.ilpost.it/2026/06/22/morto-clive-davis/",
+              "riassunto": "Clive Davis, icona dell'industria musicale statunitense, è deceduto a New York all'età di 94 anni. L'articolo riporta che la sua agente Aliza Rabinoff ha confermato il decesso e ricorda i successi con Whitney Houston, Barry Manilow e altri artisti. La notizia è stata ripresa da diverse testate internazionali.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Cultura",
+                "LaRegione Culture",
+                "New York Times Arts",
+                "SRF Kultur"
+              ],
+              "differenze_narrative": "Il Post enfatizza il ruolo di Davis nella scoperta di talenti e i dati biografici; LaRegione offre solo un breve avviso di morte; il New York Times aggiunge reazioni di celebrità come Bruce Springsteen e contestualizza l'impatto culturale; SRF Kultur inserisce la notizia in un ticker di breve formato senza approfondimenti."
+            },
+            {
+              "titolo": "Intelligenza artificiale compra e distrugge libri usati in Europa",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/jagd-auf-alte-buecher-ki-firmen-kaufen-antiquariate-leer-und-vernichten-die-buecher",
+              "riassunto": "Un'indagine rivela che aziende di IA, tra cui Zoom Books, acquistano pallet di libri non più richiesti (circa 700 000 titoli in Germania) per digitalizzarli e poi distruggerli, sfruttando una lacuna del diritto d'autore statunitense. Il reportage cita anche il caso di Anthropic che ha scansionato milioni di libri per i propri modelli linguistici.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Abate di Saint‑Maurice affronta la crisi degli abusi sessuali nel monastero",
+              "fonte": "SRF Kultur",
+              "link": "https://www.srf.ch/kultur/gesellschaft-religion/sexuelle-uebergriffe-im-kloster-wie-weiter-nach-dem-missbrauchsskandal-in-st-maurice",
+              "riassunto": "Alexandre Ineichen, nuovo abate di Saint‑Maurice, descrive le misure per superare lo scandalo di abusi sessuali: riconoscimento del danno, piano d'azione con codice di condotta, formazione preventiva e tentativi di ricostruire la fiducia tra i monaci e le vittime. L'articolo sottolinea le difficoltà culturali interne al convento.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Intelligenza artificiale e digitalizzazione del patrimonio culturale",
+            "Rivisitazione di figure storiche della musica con ampio eco mediatico"
+          ],
+          "da_tenere_d_occhio": "Possibili sviluppi legali sulla pratica di acquistare e distruggere libri per l'addestramento di IA, con potenziali cause in Europa nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la geopolitica è dominata dalle tensioni tra USA e Iran, con negoziati in Svizzera, mentre la Cina registra un calo dei consumi che spinge le sue esportazioni. Parallelamente, la Brexit continua a influenzare l'economia britannica.",
+          "notizie": [
+            {
+              "titolo": "Prime trattative USA-Iran a Burgenstock, in Svizzera, tra tensioni e minacce",
+              "fonte": "Internazionale",
+              "link": "https://www.internazionale.it/opinione/pierre-haski/2026/06/22/trattativa-stati-uniti-iran",
+              "riassunto": "Il 21 giugno le delegazioni statunitense (VP JD Vance) e iraniana (presidente del parlamento Mohammed Bagher Ghalibaf) si sono incontrate a Burgenstock, Svizzera, per avviare i primi colloqui sul nucleare. L’incontro è iniziato con il rifiuto iraniano di farsi fotografare e si è concluso con il ritiro della delegazione iraniana in segno di protesta per le minacce di Donald Trump. Il contesto è segnato da recenti offensive israeliane contro Hezbollah che rischiano di far deragliare il processo.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rinegoziazione del nucleare USA‑Iran",
+            "Calo dei consumi cinesi e aumento delle esportazioni",
+            "Effetti a lungo termine della Brexit sul Regno Unito"
+          ],
+          "da_tenere_d_occhio": "Sviluppi delle trattative USA‑Iran in Svizzera nelle prossime 24 ore, soprattutto eventuali dichiarazioni di Trump o di Teheran che possano influenzare il percorso verso un accordo finale",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta a tre temi chiave per la Svizzera: l'ondata di calore record che sta colpendo il territorio, il dibattito sull'occupazione dei lavoratori over 65 e le negoziazioni commerciali dell'AELS con il Vietnam.",
+          "notizie": [
+            {
+              "titolo": "Ondata di calore record in Svizzera: superati i 36°C con allerta canicola di livello quattro",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1934022/ondata-di-calore-record-superati-i-36-gradi",
+              "riassunto": "Le temperature hanno superato i 36°C in diverse località svizzere, con Basel‑Binningen a 36,6°C. È stata attivata un'allerta canicola di livello quattro in gran parte della Svizzera occidentale, con rischi per la salute, soprattutto per anziani e lavoratori all’aperto.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Studie: le aziende svizzere faticano a trattenere i dipendenti over 65",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/weiterbeschaeftigen-kein-thema-schweizer-firmen-ignorieren-die-bald-pensionierten-id22049672.html",
+              "riassunto": "Una nuova indagine su 500 dirigenti svizzeri mostra che il 90% riconosce il valore dell’esperienza over‑60, ma solo il 30% delle imprese promuove politiche per mantenere i dipendenti oltre i 65 anni. La riforma AHV 2030 punta a incentivare il lavoro post‑pensionamento.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Blick Wirtschaft",
+                "tio.ch Svizzera"
+              ],
+              "differenze_narrative": "Blick enfatizza i dati della ricerca (30% di aziende attive, 90% riconoscimento del valore) e collega la questione alla riforma AHV 2030, mentre tio.ch aggiunge una prospettiva più qualitativa, citando testimonianze di dirigenti e sottolineando le resistenze culturali nelle imprese svizzere."
+            },
+            {
+              "titolo": "Parmelin a Reykjavik: avanzamenti per l’accordo di libero scambio AELS‑Vietnam",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1934058/aels-stati-accordo-parmelin-reykjavik-progressi",
+              "riassunto": "Il Presidente della Confederazione, Guy Parmelin, ha partecipato alla conferenza ministeriale dell’AELS a Reykjavik, dove sono stati segnalati importanti progressi verso un accordo di libero scambio con il Vietnam e accordi agricoli bilaterali con l’Autorità palestinese.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Crescente pressione climatica su salute e lavoro",
+            "Invecchiamento della forza lavoro e politiche di retention",
+            "Rafforzamento del commercio internazionale svizzero tramite AELS"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle misure di protezione dal caldo per i lavoratori e le eventuali modifiche legislative alla normativa sul lavoro estivo",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia della lista menziona direttamente i media pubblici svizzeri né presenta un impatto immediato sulla Svizzera o sul Ticino; gli eventi più rilevanti sono di natura internazionale.",
+          "notizie": [],
+          "trend": [
+            "Crescita delle partnership tra grandi player AI e settori tradizionali (cinema, open source, chip)",
+            "Aumento delle preoccupazioni sulla sicurezza e sull'uso dell'AI in ambito governativo e militare"
+          ],
+          "da_tenere_d_occhio": "Monitorare gli sviluppi delle normative internazionali sull'AI, in particolare le reazioni dei governi europei, che potrebbero influenzare anche la Svizzera.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 109,
       "run_id": 141,
@@ -4223,188 +4449,6 @@
             "Espansione dell'AI generativa nei servizi di messaggistica aziendale"
           ],
           "da_tenere_d_occhio": "L'evoluzione delle normative europee sull'uso dell'AI nei motori di ricerca, che potrebbe influenzare l'adozione di questi nuovi modelli e servizi nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 90,
-      "run_id": 122,
-      "run_time": "2026-06-04 05:00:02.723108+00:00",
-      "analyzed_at": "2026-06-04T05:07:59.594522+00:00",
-      "articles_analyzed": 184,
-      "articles_selected": 10,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi le notizie più rilevanti riguardano il coinvolgimento dei media pubblici svizzeri e questioni di integrità interna alla RSI, con un focus su problemi di prenotazioni nei rifugi alpini.",
-          "notizie": [
-            {
-              "titolo": "Prenotazioni fantasma alle capanne del CAS: 40% di annullamenti, possibile tassa di prenotazione",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Troppe-prenotazioni-fantasma-nelle-capanne-del-CAS--3787730.html",
-              "riassunto": "Il Club alpino svizzero (CAS) registra un record di 40% di prenotazioni annullate senza preavviso, più del doppio rispetto agli hotel tradizionali. Per contrastare il fenomeno si valuta l’introduzione di una tassa di prenotazione e una campagna di sensibilizzazione con club alpini tedeschi e austriaci. L’articolo cita un servizio di SRF (Tagesschau) che ha ripreso il caso della capanna Glärnisch.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Molestie alla RSI: il collettivo femminista chiede strumenti indipendenti",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/molestie-alla-rsi-io-l8-ogni-giorno-servono-strumenti-indipendenti-e-una-cultura-del-rispetto-434922",
-              "riassunto": "Il collettivo femminista “Io l'8 ogni giorno” commenta la sospensione cautelare di un giornalista RSI per presunte molestie. Il gruppo denuncia carenze nei meccanismi di segnalazione interna e chiede canali autonomi e una cultura del rispetto all’interno della RSI, considerata un media pubblico svizzero.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "prenotazioni fantasma nei rifugi alpini",
-            "questioni di integrità e clima lavorativo nei media pubblici"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi normativi sulla tassa di prenotazione del CAS e l’evoluzione delle procedure interne della RSI su molestie",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici RSI, dal dibattito demografico legato all'iniziativa UDC e da tensioni internazionali che coinvolgono la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Droni ucraini colpiscono un terminal petrolifero a San Pietroburgo",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/mondo/Droni-ucraini-colpiscono-San-Pietroburgo--3795038.html",
-              "riassunto": "Gli attacchi con droni ucraini hanno colpito un terminal petrolifero e una nave da guerra a San Pietroburgo poche ore prima dell’apertura del forum economico organizzato da Vladimir Putin. Il governatore della città ha confermato danni alle strutture e feriti, ma nessun decesso. L’incidente è stato interpretato come tentativo di mettere in imbarazzo il Cremlino.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Incendio al bar “Le Constellation” di Crans‑Montana: interrogato ex consigliere comunale",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Incendio-a-Crans-Montana-interrogato-un-ex-municipale--3794856.html",
-              "riassunto": "Jérémie Rey, ex consigliere comunale di Chermignon (ora Crans‑Montana), ha risposto alle domande degli inquirenti sull’incendio del bar “Le Constellation”. L’indagine riguarda la mancata richiesta di permesso di costruzione e l’assenza di controlli durante i lavori di ristrutturazione del 2015.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Problemi con l’ESTA impediscono a Breel Embolo di partire per i Mondiali negli USA",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Embolo-il-viaggio-negato-negli-USA-dove-ESTA-%C3%A8-il-problema--3795138.html",
-              "riassunto": "L’attaccante della nazionale svizzera Breel Embolo è stato fermato dalle autorità statunitensi per una revisione della sua autorizzazione ESTA. La questione potrebbe dipendere da una precedente condanna per minaccia nel 2018, ma al momento rimane una speculazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescente dibattito sull’iniziativa UDC “No a una Svizzera da 10 milioni”",
-            "Preoccupazione per la crescita demografica e le misure di contenimento"
-          ],
-          "da_tenere_d_occhio": "L’esito della votazione sull’iniziativa UDC del 14 giugno, che potrebbe influenzare le politiche migratorie e demografiche svizzere",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la principale notizia culturale riguarda un servizio di SRF Kultur che segnala l'uscita di un nuovo brano di Taylor Swift per \"Toy Story 5\". Altre notizie internazionali non coinvolgono direttamente i media svizzeri.",
-          "notizie": [
-            {
-              "titolo": "Taylor Swift registra un nuovo brano per \"Toy Story 5\"",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-taylor-swift-singt-fuer-toy-story-5",
-              "riassunto": "Il servizio di SRF Kultur segnala che la popstar americana Taylor Swift ha realizzato un nuovo brano per la colonna sonora del prossimo film \"Toy Story 5\", previsto per il prossimo venerdì. La notizia è inserita in un breve riepilogo di attualità culturale svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Collaborazioni tra star internazionali e produzioni cinematografiche",
-            "Crescita della copertura culturale da parte dei media pubblici svizzeri"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori dettagli su data di uscita e performance della colonna sonora di \"Toy Story 5\" nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica è dominata da un caso interno ai media pubblici svizzeri, con la sospensione di un giornalista RSI per presunto comportamento inappropriato. Altre notizie internazionali riguardano tensioni militari, ma non hanno impatto diretto sulla Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Giornalista RSI sospeso per presunto comportamento inappropriato",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/italienische-schweiz-unangemessenes-verhalten-rsi-journalist-suspendiert-103575862",
-              "riassunto": "La divisione italiana della SRG SSR (RSI) ha sospeso un giornalista di cinquant'anni, attivo da quasi 20 anni, dopo una denuncia di comportamento inappropriato avvenuta durante una trasferta. L'indagine interna ha raccolto ulteriori testimonianze di comportamenti simili, sollevando dubbi sul clima interno della redazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "questioni di condotta e cultura organizzativa nei media pubblici",
-            "tensioni militari in Europa e Medio Oriente"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle indagini interne alla RSI e possibili ripercussioni sulla credibilità dei media pubblici svizzeri nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta al rallentamento delle esportazioni svizzere, alle decisioni operative di Swiss sui voli verso Tel Aviv e al continuo predominio dei SUV nel mercato auto locale.",
-          "notizie": [
-            {
-              "titolo": "Le esportazioni svizzere rimangono quasi stazionarie ad aprile, con un calo delle importazioni verso l'Europa",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/esportazioni-svizzere-ristagnano-in-aprile-meno-scambi-con-leuropa-434830",
-              "riassunto": "I dati dell'Ufficio federale della dogana mostrano che le esportazioni svizzere sono cresciute solo dello 0,1% a livello nominale ad aprile, mentre le importazioni sono calate del 3,0%. In termini reali, l'export è +3,0% e le importazioni +4,1%. Il settore chimico‑farmaceutico è l'area più colpita, con un calo del 3,1% a 11,1 miliardi di franchi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Swiss posticipa di un mese la ripresa dei voli per Tel Aviv per motivi operativi",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/auf-august-verschoben-swiss-nimmt-fluege-nach-tel-aviv-spaeter-als-geplant-wieder-auf-id21996766.html",
-              "riassunto": "Swiss aveva previsto di riavviare i collegamenti con Tel Aviv il 1° luglio 2026, ma ha comunicato il rinvio al 1° agosto per \"motivi operativi\" legati a pianificazione del personale e disponibilità degli aeromobili. Lufthansa, sua controllante, riprenderà i voli già a giugno.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "I SUV dominano il mercato auto svizzero: il 58% delle nuove immatricolazioni nel 2025",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/boom-reisst-nicht-ab-mehr-als-jeder-zweite-neuwagen-ist-ein-suv-schweizer-kaufen-so-viele-strassen-panzer-wie-noch-nie-id21995950.html",
-              "riassunto": "Secondo il SUV Report 2026 di Comparis, il 58% dei veicoli immatricolati in Svizzera nel 2025 erano SUV, con Skoda al primo posto per vendite (14.758 unità). La tendenza è in crescita rispetto al 28% di dieci anni fa, mentre marchi come Tesla e Ford hanno registrato forti cali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Stagnazione delle esportazioni svizzere e pressione sul settore farmaceutico",
-            "Ritardi operativi e riorganizzazioni nei collegamenti aerei internazionali",
-            "Crescita costante della quota di SUV nelle nuove immatricolazioni"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei dati doganali nel prossimo mese per verificare se le importazioni continueranno a diminuire e se l'export potrà riprendere slancio",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Nessuna notizia di rilievo per i media pubblici svizzeri o per la Svizzera/Ticino nella categoria oggi.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Monitorare eventuali future segnalazioni che coinvolgano RSI, SRF o altri media pubblici svizzeri.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
