@@ -1,6 +1,276 @@
 {
-  "generated_at": "2026-06-24T05:09:40.323966+00:00",
+  "generated_at": "2026-06-26T05:11:04.284362+00:00",
   "analyses": [
+    {
+      "id": 111,
+      "run_id": 143,
+      "run_time": "2026-06-26 05:00:02.197046+00:00",
+      "analyzed_at": "2026-06-26T05:11:04.262836+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 18,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "ok",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie legate al caldo estremo e ai suoi effetti sulla salute, consigli pratici per affrontare le ondate di calore e un'indagine sui residui di pesticidi nelle lenticchie, tutte con riferimenti ai media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "Il caldo estremo riduce le capacità cognitive del 10‑15%",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Caldo-estremo-mente-a-rischio--3842372.html",
+              "riassunto": "Studi scientifici mostrano che le ondate di calore diminuiscono l'attenzione, la memoria e la reattività del 10‑15%. La prof.ssa Carmen Sandi (EPFL) spiega a RTS che il calore dilata i vasi, riducendo l’apporto di ossigeno al cervello e aumentando lo stress fisiologico.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Consigli per tenere fresca la casa senza aria condizionata",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/salute/Come-tenere-fresca-la-casa-d%E2%80%99estate--3839897.html",
+              "riassunto": "La trasmissione “À bon entendeur” della RTS illustra soluzioni passive: chiudere finestre e persiane di giorno, arieggiare di notte, usare tende esterne e materiali che accumulano frescura. Un edificio testato mantiene 10 °C di differenza interno‑esterno anche a 35 °C esterni.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lenticchie svizzere e importate contaminate da pesticidi vietati",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/dialogo/Residui-di-pesticidi-vietati-nelle-lenticchie--3827285.html",
+              "riassunto": "RTS ha testato 12 confezioni di lenticchie; sei prodotti convenzionali presentano residui di glifosato, diquat o paraquat, due dei quali superano i limiti legali. Le lenticchie biologiche e quelle svizzere di alta gamma risultano prive di contaminanti.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ondate di calore e impatto sulla salute",
+            "soluzioni passive per il raffrescamento domestico",
+            "controlli sui residui di pesticidi negli alimenti"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione delle misure di allerta canicola e le eventuali nuove restrizioni per l'uso di acqua in agricoltura nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Oggi la cronaca svizzera è dominata da notizie che coinvolgono i media pubblici (RSI, SRF) e da eventi di impatto nazionale, tra ondate di caldo estremo e iniziative sui trasporti pubblici.",
+          "notizie": [
+            {
+              "titolo": "Ondata di caldo estremo in Europa: allerta in Francia e Italia, RSI informa anche sulla Svizzera",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/mondo/Ondata-di-caldo-estremo-in-Europa-Francia-e-Italia-in-allerta--3841904.html",
+              "riassunto": "RSI segnala una canicola senza precedenti in Europa, con la notte più calda mai registrata in Francia (38,8 °C) e l’allerta massima in 15 città italiane. In Svizzera, il caldo ha spinto il governo a riattivare la cassa integrazione per i lavoratori colpiti dalle alte temperature.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Iniziativa per trasporti pubblici più accessibili: la raccolta firme parte da Renens",
+              "fonte": "RSI",
+              "link": "https://www.rsi.ch/info/svizzera/Trasporti-pubblici-pi%C3%B9-accessibili-parte-la-caccia-alle-firme--3841886.html",
+              "riassunto": "RSI riporta l’avvio della raccolta firme per l’iniziativa federale che chiede trasporti pubblici gratuiti e più accessibili. L’evento di lancio a Renens ha visto una catena umana a forma di autobus e la presentazione dei 27 membri del comitato, tra cui le consiglieri federali Tuosto e Klopfenstein Broggini.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Interruzione nazionale della Deutsche Bahn: i treni riprendono a circolare dopo due ore di fermo",
+              "fonte": "SRF",
+              "link": "https://www.srf.ch/news/international/stoerung-bei-deutscher-bahn-landesweiter-ausfall-bei-der-deutschen-bahn-zuege-rollen-wieder",
+              "riassunto": "SRF informa che una guasta al sistema GSM‑R ha causato lo stop di tutti i treni della Deutsche Bahn per circa due ore nella notte di martedì. Il servizio è stato ripristinato gradualmente a partire dalle 00:30, ma sono previsti ritardi prolungati fino alle 06:00.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "ondate di caldo estremo e loro impatto socio‑economico",
+            "iniziative per la gratuità e l’accessibilità dei trasporti pubblici",
+            "interruzioni dei servizi di trasporto a causa di guasti tecnologici"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni delle politiche climatiche in Svizzera e l’avanzamento della raccolta firme per l’iniziativa sui trasporti pubblici nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Oggi la cronaca culturale si concentra sul Ticino, con dibattiti sulla germanizzazione, celebrazioni museali e concerti internazionali, mentre si osservano le tendenze verso la valorizzazione del patrimonio locale.",
+          "notizie": [
+            {
+              "titolo": "La germanizzazione del Ticino vista dalla stampa estera",
+              "fonte": "CdT Società",
+              "link": "https://www.cdt.ch/societa/la-germanizzazione-del-ticino-vista-dalla-stampa-estera-425039",
+              "riassunto": "Un articolo di CdT analizza come la stampa straniera dipinga il presunto rischio di germanizzazione del Canton Ticino, sottolineando le preoccupazioni delle autorità locali e la necessità di preservare l'equilibrio etnico svizzero.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dieci anni di Museo d’arte dei Grigioni",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/culture/1934320/dieci-anni-di-museo-d-arte-dei-grigioni",
+              "riassunto": "Il Museo d’arte dei Grigioni celebra il decimo anniversario dell’ampliamento, presentando un bilancio delle attività, nuove mostre e progetti per il futuro, con particolare attenzione al coinvolgimento della comunità locale.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Jazz Ascona, musica per stare insieme dalla Louisiana alla Svezia",
+              "fonte": "LaRegione Culture",
+              "link": "https://www.laregione.ch/culture/spettacoli/1934505/musica-band-louisiana-carling-edizione",
+              "riassunto": "Il festival Jazz Ascona presenta performance di Sean Ardoin (kreole rock & soul) e Nanna Carling (jazz classico), sottolineando la dimensione internazionale dell’evento che unisce musicisti da Louisiana e Svezia.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "dibattito sulla identità linguistica ticinese",
+            "celebrazioni di anniversari museali",
+            "festival musicali internazionali in Ticino"
+          ],
+          "da_tenere_d_occhio": "Eventi legati al decimo anniversario del Museo d'arte dei Grigioni e ulteriori discussioni sulla lingua e cultura ticinese nei prossimi giorni",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la Svizzera è poco coinvolta direttamente, ma l'Italia è al centro di diverse dinamiche geopolitiche: mediazione tra Qatar e Iran, tensioni con Teheran e accordi tecnologici con gli USA.",
+          "notizie": [
+            {
+              "titolo": "Il Qatar vede la sicurezza del Golfo legata a un'intesa con l'Iran, con l'Italia come porta verso l'Europa",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/06/23/negoziatore-qatar-la-sicurezza-del-golfo-passa-dallintesa-con-liran_a314bc69-9d06-4ef0-9cb1-c3f221f9ff82.html",
+              "riassunto": "Il consigliere del premier qatarino Majed al‑Ansari, in visita a Roma, ha dichiarato che la sicurezza del Golfo non può più essere separata da quella dell'Iran. L'Italia è descritta come \"porta del nostro gas verso l'Europa\" e partner chiave per Doha, soprattutto per i progetti Eni nel North Field.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Teheran accusa Italia e Romania di complicità nella guerra contro l'Iran",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/25/teheran-italia-e-romania-complici-della-guerra_8b0f3e24-335a-4eaf-9c93-906731c20e69.html",
+              "riassunto": "Il portavoce del ministero degli Esteri iraniano, Esmaeil Baqei, ha scritto su X che l'Italia e la Romania sono nominate dalla NATO come parte dell'aggressione contro l'Iran e devono spiegare ai cittadini il loro ruolo nella presunta collusione con gli Stati Uniti e Israele.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Firma in Italia della Pax Silica, iniziativa USA per rafforzare le catene di approvvigionamento IA",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/25/varricchio-la-firma-di-pax-silica-con-gli-usa-in-italia-nelle-prossime_23a2ac0f-fe28-41f3-92d5-842411cdcff0.html",
+              "riassunto": "L'ambasciatore Armando Varricchio ha annunciato che la firma dell'Italia alla Pax Silica, progetto statunitense per garantire la sicurezza delle catene di approvvigionamento legate all'IA, avverrà nelle prossime settimane con la presenza del sottosegretario Jacob Helberg.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "L'Italia come attore chiave nelle mediazioni energetiche e di sicurezza mediorientali",
+            "Rafforzamento delle catene di approvvigionamento tecnologico tra USA e Italia"
+          ],
+          "da_tenere_d_occhio": "L'evoluzione dei negoziati tra Qatar e Iran e le loro implicazioni per la sicurezza energetica europea nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è sui temi economici svizzeri: le nuove garanzie per le aziende elettriche, le tensioni salariali di un partner logistico di Zalando e le disuguaglianze di spesa sanitaria evidenziate da uno studio Helsana.",
+          "notizie": [
+            {
+              "titolo": "Garanzie statali per le aziende elettriche svizzere non prorogate",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/politica/1934243/imprese-aziende-commissione-proroga-legge",
+              "riassunto": "Il Consiglio degli Stati, tramite la Commissione CAPTE‑S, ha votato contro la proroga della legge sugli aiuti finanziari alle imprese elettriche di rilevanza sistemica fino al 2031. Dal 2027 le aziende dovranno nuovamente gestire autonomamente i rischi di crisi, con 10 voti a favore e 2 contrari.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dispute salariali in MS Direct, partner svizzero di Zalando",
+              "fonte": "Blick Wirtschaft",
+              "link": "https://www.blick.ch/wirtschaft/loehne-fehlen-auf-konto-personal-mit-kameras-gefilmt-25-angestellte-laufen-sturm-gegen-schweizer-zalando-retouren-partner-id22052999.html",
+              "riassunto": "Più di 25 ex‑dipendenti di MS Direct, il partner svizzero di Zalando per la gestione dei resi, chiedono salari arretrati (fino a 25 000 CHF) e denunciano controlli con telecamere. L’azienda nega le accuse, ma le cause sono in corso.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Studio Helsana: i redditi bassi aumentano i costi sanitari in Svizzera",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1934113/chi-guadagna-poco-si-ammala-di-piu-e-rinuncia-alla-prevenzione",
+              "riassunto": "Un'analisi congiunta di Helsana e dell'Università di Basilea mostra che le persone con reddito inferiore a 2 000 CHF mensili spendono in media 4 764 CHF all'anno in assistenza sanitaria, 31 % in più rispetto a chi guadagna oltre 8 000 CHF. Le differenze si riflettono in maggiori diagnosi di depressione, colesterolo alto e dolore cronico.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Rischio finanziario per il settore energetico",
+            "Conflitti sul lavoro nei servizi logistici",
+            "Disuguaglianze di spesa sanitaria legate al reddito"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni legislative sulle garanzie alle utilities e ulteriori azioni legali di MS Direct",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie su grandi player dell'AI che ristrutturano le proprie attività, lanciano nuovi modelli specializzati e introducono tool aziendali per la collaborazione, segnando un’accelerazione verso l’integrazione dell’IA nei processi produttivi.",
+          "notizie": [
+            {
+              "titolo": "Oracle elimina circa 21.000 posti di lavoro per concentrarsi sull'intelligenza artificiale",
+              "fonte": "Il Post Tecnologia",
+              "link": "https://www.ilpost.it/2026/06/23/oracle-elimina-posti-di-lavoro-intelligenza-artificiale/",
+              "riassunto": "Oracle ha ridotto del 13 % la forza lavoro, licenziando circa 21 000 dipendenti, per focalizzarsi su progetti di intelligenza artificiale. Nel rapporto annuale l’azienda dichiara di aver speso 70 miliardi di dollari in data‑center IA e di aver siglato un accordo da 300 miliardi con OpenAI.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Anthropic lancia Claude Tag, l’assistente AI sempre attivo su Slack",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+              "riassunto": "Anthropic introduce Claude Tag, un “always‑on” AI su Slack che apprende il contesto aziendale taggando messaggi e assegnando compiti. Il servizio mantiene memoria persistente per canale e può accedere a strumenti aziendali previa autorizzazione, puntando a sostituire il collega virtuale per flussi di lavoro sensibili.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "OpenAI presenta GPT‑5.5‑Cyber, modello specializzato per la sicurezza informatica",
+              "fonte": "The Decoder",
+              "link": "https://the-decoder.com/openai-says-new-gpt-5-5-cyber-outperforms-anthropics-mythos-on-cybersecurity-benchmark/",
+              "riassunto": "OpenAI lancia GPT‑5.5‑Cyber, il nuovo modello di sicurezza che supera Mythos di Anthropic sui benchmark di cybersecurity. Con l’estensione del plugin Codex Security, il modello automatizza l’intero ciclo di scoperta‑patch, avendo analizzato più di 30 milioni di commit e generato 570 000 patch automatiche.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Ristrutturazioni aziendali verso l'AI (licenziamenti, investimenti in data‑center)",
+            "Lancio di modelli AI specializzati per settori critici (cybersecurity, collaborazione aziendale)",
+            "Integrazione di assistenti AI persistenti nei tool di comunicazione (Slack, Git, ecc.)"
+          ],
+          "da_tenere_d_occhio": "Le prossime settimane vedranno possibili annunci di partnership tra i grandi provider cloud e le startup AI, oltre a ulteriori dettagli sui piani di licenziamento di Oracle e su eventuali versioni beta di Claude Tag.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 110,
       "run_id": 142,
@@ -4200,255 +4470,6 @@
             "Crescita esponenziale del traffico bot e nuove strategie di monetizzazione"
           ],
           "da_tenere_d_occhio": "L'evoluzione dei modelli proattivi di OpenAI e le risposte dei concorrenti nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 91,
-      "run_id": 123,
-      "run_time": "2026-06-05 05:00:02.534828+00:00",
-      "analyzed_at": "2026-06-05T05:08:37.614235+00:00",
-      "articles_analyzed": 186,
-      "articles_selected": 16,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da due temi: le polemiche interne alla RSI su presunte molestie e la denuncia di SRF sui contenuti di caffeina negli energy drink, entrambi di forte interesse per i media pubblici svizzeri.",
-          "notizie": [
-            {
-              "titolo": "Molestie alla RSI: il collettivo femminista chiede strumenti indipendenti",
-              "fonte": "Ticinonews Ticino",
-              "link": "https://www.ticinonews.ch/ticino/molestie-alla-rsi-io-l8-ogni-giorno-servono-strumenti-indipendenti-e-una-cultura-del-rispetto-434922",
-              "riassunto": "Il collettivo femminista \"Io l'8 ogni giorno\" ha commentato la sospensione cautelare di un giornalista RSI per presunte molestie, chiedendo meccanismi di segnalazione autonomi e una cultura del rispetto all'interno dell'emittente pubblica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Energy drink in Svizzera: troppa caffeina, avverte SRF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Bevande-energetiche-in-vendita-con-troppa-caffeina--3794230.html",
-              "riassunto": "Un'inchiesta di SRF (Impact Investigativ) evidenzia che in Svizzera vengono importati oltre 40 milioni di litri di energy drink all'anno, con livelli di caffeina potenzialmente pericolosi per i giovani, provocando tachicardia e disturbi del sonno.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "questioni di condotta e cultura organizzativa nei media pubblici",
-            "preoccupazioni per la salute dei giovani legate a prodotti energetici"
-          ],
-          "da_tenere_d_occhio": "Sviluppi delle indagini interne alla RSI e possibili interventi normativi su energia e caffeina",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici, da tensioni commerciali con gli USA e da proteste legate a progetti immobiliari di stampo internazionale.",
-          "notizie": [
-            {
-              "titolo": "Droni ucraini colpiscono un terminal petrolifero a San Pietroburgo prima del forum economico",
-              "fonte": "RSI",
-              "link": "https://www.rsi.ch/info/mondo/Droni-ucraini-colpiscono-San-Pietroburgo--3795038.html",
-              "riassunto": "Droni ucraini hanno colpito un terminal petrolifero e una nave da guerra a San Pietroburgo poche ore prima dell’apertura del forum economico organizzato da Vladimir Putin. Il governatore russo ha segnalato danni e feriti, ma nessuna vittima mortale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Incendio del bar “Le Constellation” a Crans‑Montana: interrogato ex consigliere comunale",
-              "fonte": "RSI",
-              "link": "https://www.rsi.ch/info/svizzera/Incendio-a-Crans-Montana-interrogato-un-ex-municipale--3794856.html",
-              "riassunto": "Jérémie Rey, ex consigliere comunale di Chermignon (ora Crans‑Montana), ha risposto alle autorità nell’inchiesta sull’incendio del bar “Le Constellation”. Altri imputati hanno scelto di tacere; i coniugi proprietari del locale saranno interrogati a breve.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il calciatore Breel Embolo vede negato l’ingresso negli USA per problemi con l’ESTA",
-              "fonte": "RSI",
-              "link": "https://www.rsi.ch/info/svizzera/Embolo-il-viaggio-negato-negli-USA-dove-ESTA-%C3%A8-il-problema--3795138.html",
-              "riassunto": "Le autorità americane hanno bloccato l’ESTA di Breel Embolo, attaccante della nazionale svizzera, a causa di una domanda sul suo eventuale coinvolgimento in reati. La questione è al vaglio dell’Associazione svizzera di calcio in vista del Mondiale negli USA.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni commerciali USA‑Svizzera (nuovi dazi per lavoro forzato)",
-            "Proteste e inchieste su progetti immobiliari legati a Kushner/Trump in Albania",
-            "Gestione delle scorte energetiche nazionali (cherosene garantito fino a fine giugno)"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle negoziazioni tra Svizzera e USA sui dazi proposti per lavoro forzato, con possibili decisioni entro le prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: il RSI annuncia nuove nomine dirigenziali, il Montreux Jazz Festival svela un ricco programma gratuito, e tre tennisti italiani raggiungono i quarti di finale al Roland Garros, un evento seguito anche in Svizzera.",
-          "notizie": [
-            {
-              "titolo": "RSI: Danny Masa e Lorenzo Buccella nominati a capo della Distribuzione e del Pubblico",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1930372/masa-buccella-distribuzione-rsi-nomine",
-              "riassunto": "La Radiotelevisione svizzera (RSI) ha comunicato due nuove nomine ai vertici: Danny Masa diventerà responsabile della Distribuzione, mentre Lorenzo Buccella guiderà il Pubblico. Le nomine mirano a rafforzare la strategia di contenuti multimediali dell'emittente pubblica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Montreux Jazz Festival 2026: programma gratuito per la 60ª edizione e omaggio a Miles Davis",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/il-montreux-jazz-festival-omaggia-miles-davis-429563",
-              "riassunto": "Il festival di Montreux ha pubblicato il cartellone gratuito per la 60ª edizione (3‑18 luglio), con più di 700 concerti. Tra le iniziative, 140 concerti gratuiti, 320 DJ set e una settimana dedicata ai 100 anni di Miles Davis, con proiezioni di concerti storici.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Tre tennisti italiani in quarti di finale al Roland Garros 2026",
-              "fonte": "Il Post Sport",
-              "link": "https://www.ilpost.it/2026/06/03/cobolli-berrettini-arnaldi-orario-dove-vederla-roland-garros-a-che-ora/",
-              "riassunto": "Il 3 giugno tre italiani – Flavio Cobolli, Matteo Arnaldi e Matteo Berrettini – hanno raggiunto i quarti di finale del Roland Garros, un risultato storico per il tennis italiano. Cobolli giocherà contro Felix Auger‑Aliassime alle 13:20 (probabile inizio 15:00), mentre Arnaldi e Berrettini si sfideranno alle 20:15.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "nomine strategiche nei media pubblici svizzeri",
-            "programmi gratuiti di grandi festival culturali",
-            "ascesa di atleti italiani in tornei internazionali"
-          ],
-          "da_tenere_d_occhio": "Segui gli sviluppi delle nuove nomine RSI e le eventuali dichiarazioni dei dirigenti sulla programmazione futura dei contenuti.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica si concentra su due notizie che coinvolgono direttamente i media pubblici svizzeri: la riorganizzazione della SRG/SRF e il dibattito sull'energia nucleare che ha provocato il boicottaggio di un programma televisivo da parte di partiti di sinistra.",
-          "notizie": [
-            {
-              "titolo": "La SRG avvia una ristrutturazione che costringe i dirigenti della SRF a ripresentare domanda",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/neue-geschaeftsleitung-srf-baut-um-ganze-chefetage-musste-sich-neu-bewerben-103576833",
-              "riassunto": "Per risparmiare circa 270 milioni di franchi entro il 2029, la SRG sta eliminando duplicazioni strutturali. Quasi tutti i dirigenti senior, compresi i caporedattori di SRF, hanno dovuto ricandidarsi. Le redazioni radio e TV saranno fuse in una sola unità “Information”.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il programma “Arena” della SRF sulla centrale nucleare cancellato dopo il boicottaggio dei partiti di sinistra",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/politik/so-reagiert-moderator-sandro-brotz-linke-lassen-akw-arena-platzen-id22000565.html",
-              "riassunto": "Il dibattito televisivo sulla riapertura delle centrali nucleari, previsto per il 5 giugno, è stato annullato perché SP, Verdi e GLP hanno rifiutato di partecipare, ritenendo la composizione dei partecipanti sbilanciata. Il moderatore Sandro Brotz ha dovuto riorganizzare il programma.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riorganizzazione dei media pubblici svizzeri",
-            "Controversie politiche su temi energetici"
-          ],
-          "da_tenere_d_occhio": "L'esito della ristrutturazione della SRG e le reazioni dei partiti svizzeri al futuro dibattito nucleare",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'economia svizzera è al centro di tre temi chiave: le tensioni commerciali con l'UE, la forte pressione sui mercati finanziari a seguito del crollo di Partners Group e la crescita del settore della sicurezza con Verisure che assume centinaia di dipendenti.",
-          "notizie": [
-            {
-              "titolo": "La Svizzera ribadisce l'esigenza di evitare nuovi ostacoli al commercio con l'UE",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/economia/1930197/svizzera-ue-commercio-comitato-riunione-ribadito-scambio-accordo-ostacolo-unione",
-              "riassunto": "In una riunione del Comitato misto sull'accordo di libero scambio, la Svizzera ha sottolineato che non vuole ostacoli alle esportazioni, soprattutto nel settore dell'acciaio, dove l'UE prevede misure a partire dal 1° luglio. Il comunicato della SECO avverte che tali restrizioni potrebbero compromettere catene di approvvigionamento integrate.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Partners Group fa crollare l'SMI: perdita giornaliera del 16 % per le azioni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/finanz-titel-zieht-smi-runter-mega-tagesverlust-bei-partners-group-aktie-id20253021.html",
-              "riassunto": "Il titolo della Partners Group è sceso fino al -18 % in giornata, trascinando l'indice SMI a -0,7 % e toccando il minimo dal 2020. La perdita è legata alla decisione di limitare i rimborsi dei fondi private‑equity a 5 % del valore netto, in risposta a richieste di liquidità.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Verisure, con sede svizzera, registra crescita a due cifre e assume 300 dipendenti",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/verisure-cresce-2-cifre-e-assume-300-tecnici-manutentori-venditori-e-guardie-AIn8NJPD",
-              "riassunto": "Il gruppo svedese Verisure, con headquarter a Ginevra, ha annunciato una crescita a due cifre in Italia e prevede l'assunzione di 300 nuovi tecnici, manutentori, venditori e guardie. Nel 2025 ha gestito 9 milioni di allarmi in Italia, di cui 11 000 reali, con 6 000 tentativi di intrusione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni commerciali tra Svizzera e UE, soprattutto su misure \"Made in EU\"",
-            "Volatilità dei mercati finanziari svizzeri legata a grandi gruppi bancari/finanziari",
-            "Espansione del settore della sicurezza domestica con investimenti e assunzioni"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle misure UE sull'acciaio e sui contenuti di origine, l'andamento del prezzo delle azioni Partners Group e le prossime mosse di Verisure sul mercato svizzero",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie di grande impatto internazionale: Google Deepmind lancia un modello multimodale leggero, Alphabet raccoglie 85 miliardi di dollari per l'AI e Meta rende globale l'agente AI per WhatsApp Business.",
-          "notizie": [
-            {
-              "titolo": "Google Deepmind rilascia Gemma 4 12B, modello multimodale che gira su laptop con 16 GB di RAM",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram/",
-              "riassunto": "Gemma 4 12B è un modello open‑source che elabora testo, immagini e audio senza encoder separati, funzionando localmente con soli 16 GB di RAM. Secondo Google, le prestazioni sono quasi pari al modello da 26 B più grande e il codice è rilasciato sotto licenza Apache 2.0 per uso commerciale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Alphabet registra un'emissione record di 85 miliardi di dollari per finanziare l'AI di Google",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/",
-              "riassunto": "L'operazione ha superato le aspettative, raccogliendo 45 miliardi in un primo tranche e prevedendo altri 40 miliardi nel prossimo trimestre. Il CEO Sundar Pichai ha dichiarato che i proventi saranno destinati a investimenti in infrastrutture AI, con spese previste tra 180 e 190 miliardi di dollari entro l'anno.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Meta rende globale l'agente AI per WhatsApp Business",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
-              "riassunto": "L'agente AI, chiamato Meta Business Agent, è ora disponibile su WhatsApp Business in tutti i Paesi. Offre risposte automatiche, consigli di prodotto, prenotazioni e può essere integrato con Shopify, Zendesk e altri. Le imprese pagheranno in base al consumo di token, inserito nei piani Premium di WhatsApp Business.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita di modelli AI open‑source ottimizzati per hardware consumer",
-            "Forte interesse degli investitori per il capitale AI di grandi gruppi (Alphabet, Google)",
-            "Espansione dell'AI generativa nei servizi di messaggistica aziendale"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle normative europee sull'uso dell'AI nei motori di ricerca, che potrebbe influenzare l'adozione di questi nuovi modelli e servizi nei prossimi giorni",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
