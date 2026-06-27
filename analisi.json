@@ -1,6 +1,143 @@
 {
-  "generated_at": "2026-06-26T05:11:04.284362+00:00",
+  "generated_at": "2026-06-27T05:07:06.894341+00:00",
   "analyses": [
+    {
+      "id": 112,
+      "run_id": 144,
+      "run_time": "2026-06-27 05:00:02.583432+00:00",
+      "analyzed_at": "2026-06-27T05:07:06.873270+00:00",
+      "articles_analyzed": 180,
+      "articles_selected": 6,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da notizie di rilevanza nazionale: il soccorso svizzero in Venezuela, il nuovo record di caldo estivo in Svizzera e l'operazione Fedpol contro le bande criminali giovanili.",
+          "notizie": [
+            {
+              "titolo": "Squadra svizzera di soccorso in Venezuela: 80 specialisti, 8 cani e 18 tonnellate di attrezzature",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/mondo/I-soccorsi-svizzeri-in-Venezuela-%E2%80%9Cil-naso-dei-cani-resta-insuperabile%E2%80%9D--3848564.html",
+              "riassunto": "Una squadra di Swiss Rescue è partita da Zurigo per il terremoto in Venezuela con 80 esperti, 8 cani da ricerca e 18 t di materiale. La responsabile Regina Gujan, intervistata da SRF, ha spiegato il coordinamento con le autorità locali e le esercitazioni di preparazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Record di caldo in giugno: temperature sopra i 37 °C in quattro stazioni svizzere",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Record-di-calore-a-giugno-in-Svizzera--3847322.html",
+              "riassunto": "Il 24 giugno le temperature hanno superato i 37 °C in quattro stazioni (Buchs‑Aarau 37,2 °C, Beznau 37,1 °C, Würenlingen e Basilea‑Binningen 37,0 °C), il valore più alto mai registrato a giugno dal 1947. MeteoSvizzera avverte l’allerta canicola di livello 4 fino a martedì.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "RSI Ticino",
+                "Ticinonews Ticino"
+              ],
+              "differenze_narrative": "RSI si limita a riportare i dati di quattro stazioni e l’allerta, mentre Ticinonews aggiunge che a Basilea‑Binningen la temperatura ha superato i 38 °C, elenca altre cinque stazioni con valori simili e sottolinea le conseguenze su incendi boschivi e divieti d’irrigazione."
+            },
+            {
+              "titolo": "Fedpol crea una task‑force contro le bande criminali giovanili dopo furto in armeria di Camorino",
+              "fonte": "RSI Ticino",
+              "link": "https://www.rsi.ch/info/svizzera/Fedpol-una-task-force-contro-le-bande-criminali-giovanili--3847460.html",
+              "riassunto": "Dopo un furto con scasso in un’armeria di Camorino, la Polizia federale ha costituito una task‑force per contrastare bande giovanili responsabili di più di 150 colpi in Svizzera. L’intervento è stato motivato da una rete transfrontaliera che ha già operato in Vallese e Ticino.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "aumento delle ondate di caldo estremo",
+            "rafforzamento delle operazioni di sicurezza contro bande giovanili",
+            "interventi di soccorso svizzeri all’estero"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione dell’allerta canicola nei prossimi giorni e le eventuali nuove misure di emergenza a livello cantonale",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la copertura geopolitica è dominata da due temi: l’avanzata normativa sull’euro digitale a livello europeo e le tensioni militari in Medio Oriente, con gli USA che colpiscono infrastrutture iraniane. Parallelamente, l’Iran accusa l’Italia e la Romania di complicità nella guerra.",
+          "notizie": [
+            {
+              "titolo": "Il Parlamento europeo approva la prima fase del regolamento per l’euro digitale",
+              "fonte": "Il Post Economia",
+              "link": "https://www.ilpost.it/2026/06/23/euro-digitale-creazione-parlamento-europeo/",
+              "riassunto": "La commissione per i problemi economici e monetari del Parlamento europeo ha votato a favore di un regolamento che avvia la discussione sull’euro digitale, una moneta digitale a corso legale prevista per il 2029. La BCE intende ridurre la dipendenza da sistemi di pagamento statunitensi. Il voto è solo il primo passo, resta da approvare in plenaria e a livello nazionale.",
+              "rilevanza": "media",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Il Post Economia",
+                "Il Post Economia"
+              ],
+              "differenze_narrative": "Entrambe le versioni del Post descrivono l’approvazione, ma l’articolo del 23/06 enfatizza il voto parlamentare e il contesto politico, mentre quello del 25/06 (euro digitale, spiegato) approfondisce il funzionamento tecnico e le scadenze, aggiungendo dati sui costi e sull’app prevista."
+            },
+            {
+              "titolo": "Gli USA bombardano depositi di missili e droni iraniani in risposta a un attacco a una nave nello stretto di Hormuz",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/26/usa-bombardato-depositi-di-missili-e-droni-iran-dopo-attacco-a-nave_fb7ad320-7660-4093-9a34-8060939c0871.html",
+              "riassunto": "Il comando centrale americano ha annunciato su X il bombardamento di depositi di missili, droni e radar costieri iraniani, in risposta a un attacco iraniano contro una nave commerciale nello stretto di Hormuz. L’azione segna un’escalation militare nella regione.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Teheran accusa Italia e Romania di essere complici della guerra contro l’Iran",
+              "fonte": "ANSA Mondo",
+              "link": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/25/teheran-italia-e-romania-complici-della-guerra_8b0f3e24-335a-4eaf-9c93-906731c20e69.html",
+              "riassunto": "Il portavoce del ministero degli Esteri iraniano, Esmaeil Baqei, ha dichiarato su X che Italia e Romania sono state nominate dalla NATO come parte dell’aggressione contro l’Iran, chiedendo spiegazioni sui loro ruoli nella presunta collusione con gli Stati Uniti e Israele.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "euro digitale in fase legislativa",
+            "tensioni militari in Medio Oriente",
+            "accuse diplomatiche tra Iran e paesi europei"
+          ],
+          "da_tenere_d_occhio": "L’evoluzione del dibattito sull’euro digitale nelle prossime settimane e le possibili ritorsioni iraniane dopo gli attacchi statunitensi.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 111,
       "run_id": 143,
@@ -4246,230 +4383,6 @@
             "Ricerca su RSI (recursive self‑improvement) come alternativa alla corsa al compute"
           ],
           "da_tenere_d_occhio": "Evoluzione degli attacchi contro agenti AI di supporto clienti, in particolare il caso Meta, e le possibili risposte di sicurezza nei prossimi giorni.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 92,
-      "run_id": 124,
-      "run_time": "2026-06-06 05:00:01.996656+00:00",
-      "analyzed_at": "2026-06-06T05:08:12.744893+00:00",
-      "articles_analyzed": 184,
-      "articles_selected": 14,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "partial",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie sull'economia locale, i trasporti e una curiosa vicenda legata ai parcheggi privati che coinvolge i media pubblici.",
-          "notizie": [
-            {
-              "titolo": "App per parcheggi privati chiedono 80 franchi agli automobilisti",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Delle-app-fanno-pagare-la-sosta-nei-posteggi-privati--3792353.html",
-              "riassunto": "Un ascoltatore della RTS ha ricevuto una multa di 80 franchi tramite QR code per aver parcheggiato in un posteggio privato chiuso. L’avvocata Maëlle Roulet spiega che si tratta di un’indennità, non di una multa, e che l’importo è legittimo entro certi limiti. La vicenda solleva dubbi sulla legittimità e sulla trasparenza di questi sistemi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Disoccupazione in Svizzera stabile al 3%, Ticino al 2,8%",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Disoccupazione-stabile-al-3-in-Svizzera--3796679.html",
-              "riassunto": "A maggio la SECO ha confermato un tasso di disoccupazione nazionale del 3%, invariato rispetto ad aprile. In Ticino il tasso è leggermente più basso, 2,8%, posizionandosi al dodicesimo posto tra i cantoni. I disoccupati di lunga durata sono aumentati del 34,1% rispetto all’anno precedente, con una prevalenza di ultracinquantenni.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ticino spinge Ferrovie federali su lavoro e investimenti",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Ticino-e-ferrovie-pressing-su-lavoro-e-investimenti--3798032.html",
-              "riassunto": "La deputazione ticinese ha incontrato i vertici delle Ferrovie federali a Berna per assicurare che non ci saranno licenziamenti nel ridimensionamento di FFS Cargo e per ottenere investimenti del programma Ferrovia 2045, stimati intorno ai 500 milioni di franchi, tra cui il raddoppio del ponte sul Ticino.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "digitalizzazione dei servizi di parcheggio",
-            "monitoraggio dell’occupazione post‑pandemia",
-            "investimenti infrastrutturali ferroviari"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni normative sulle app di sosta privata e le decisioni finali del programma Ferrovia 2045",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici, dall'attenzione verso l'intelligenza artificiale e da un caso di leadership culturale. Si evidenziano cambiamenti nella gestione della SSR e dibattiti su regolamentazione e innovazione.",
-          "notizie": [
-            {
-              "titolo": "Simona Caminada nominata direttrice della Radiotelevisiun Svizra Rumantscha",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/simona-caminada-e-la-nuova-direttrice-della-radiotelevisiun-svizra-rumantscha-435009",
-              "riassunto": "Il Consiglio d'amministrazione della SSR ha nominato Simona Caminada a capo della RTR, unità regionale della Radiotelevisiun Svizra Rumantscha, con effetto dal 1 settembre. La nomina fa parte della riorganizzazione della SSR, che ha anche definito i nuovi team direttivi di RSI, RTS e SRF per una trasformazione più digitale e agile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Il cofondatore di Anthropic avverte dei rischi dell’intelligenza artificiale",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/wissen/kuenstliche-intelligenz/anthropic-mitbegruender-warnt-wie-gefaehrlich-wird-kuenstliche-intelligenz-tatsaechlich",
-              "riassunto": "Jack Clark, co‑fondatore di Anthropic, ha dichiarato a SRF che la sua IA Claude potrà auto‑migliorarsi entro due anni, richiedendo urgentemente un “freno” normativo. L’articolo riporta le preoccupazioni di esperti su una possibile crescita esponenziale (recursive self‑improvement) e la mancanza di piani concreti di regolamentazione.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Morta Marjane Satrapi, autrice di “Persepolis”",
-              "fonte": "RSI Mondo",
-              "link": "https://www.rsi.ch/info/cultura-e-spettacoli/Morta-Marjane-Satrapi-autrice-di-Persepolis--3796589.html",
-              "riassunto": "L’artista franco‑iraniana Marjane Satrapi, famosa per il fumetto e il film “Persepolis”, è deceduta a 56 anni. L’annuncio, diffuso da RSI, ricorda i suoi premi internazionali, tra cui il Jury Prize a Cannes 2007, e il suo impatto culturale globale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "ristrutturazione dei media pubblici svizzeri",
-            "regolamentazione dell’intelligenza artificiale"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle politiche svizzere sulla IA e i prossimi passi della riorganizzazione della SSR, in particolare l’impatto sui canali RSI, RTS e SRF",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 403: Forbidden"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica è dominata da due notizie sui media pubblici svizzeri: la ristrutturazione della SRG che coinvolge il gruppo dirigente di SRF, e la cancellazione della trasmissione SRF‑Arena sulla questione nucleare per pressione dei partiti di sinistra.",
-          "notizie": [
-            {
-              "titolo": "La SRF si ristruttura: tutti i dirigenti hanno dovuto ripresentare domanda",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/neue-geschaeftsleitung-srf-baut-um-ganze-chefetage-musste-sich-neu-bewerben-103576833",
-              "riassunto": "Nel quadro del piano di risparmio di 270 milioni di franchi entro il 2029, la SRG ha chiuso quasi tutte le posizioni dirigenziali, costringendo i capi di SRF a ricandidarsi. Sono previste 900 riduzioni di posti a tempo pieno. Il nuovo team di SRF comprende Ursula Gabathuler, Beat Soltermann e altri dirigenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Scoppio nella “Arena” SRF sulla questione nucleare per boicottaggio dei partiti di sinistra",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/community/geplatzte-akw-arena-srf-beugt-die-knie-vor-den-linken-parteien-id22002442.html",
-              "riassunto": "La discussione televisiva SRF‑Arena sul futuro degli impianti nucleari è stata annullata perché i partiti SP, Verdi e GLP hanno boicottato la trasmissione, ritenendo la composizione del dibattito sbilanciata. La decisione alimenta polemiche tra gli ascoltatori che accusano la SRG di cedere alle pressioni politiche.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Ristrutturazione e tagli al personale dei media pubblici svizzeri",
-            "Tensioni politiche attorno ai contenuti editoriali della SRF"
-          ],
-          "da_tenere_d_occhio": "L'esito delle negoziazioni interne alla SRG sul nuovo assetto dirigenziale e la possibile riprogrammazione della trasmissione SRF‑Arena sulla questione nucleare nelle prossime 24 ore.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta a tre temi chiave per la Svizzera: il rischio assicurativo globale evidenziato da Swiss Re, le pressioni demografiche sul sistema pensionistico AHV e il forte rialzo dei prezzi delle seconde case nelle Alpi svizzere.",
-          "notizie": [
-            {
-              "titolo": "Swiss Re: il divario tra danni da catastrofi e coperture assicurative supera i 400 miliardi di dollari",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/swiss-re-catastrofi-cresce-il-divario-fra-danni-attesi-e-coperture-435014",
-              "riassunto": "Il Swiss Re Institute ha pubblicato uno studio che mostra come, nel 2025, il gap tra perdite economiche attese da catastrofi naturali e coperture assicurative sia pari a 424 miliardi di dollari (333 miliardi di franchi), in crescita rispetto ai 395 miliardi dell'anno precedente. Solo il 27 % delle esposizioni è coperto, lasciando il 73 % non assicurato, con particolare carenza nei mercati emergenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Demografo svizzero avverte: l'AHV sotto pressione per l'invecchiamento della popolazione",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/demograf-manuel-buchmann-ich-sehe-grosse-risiken-am-immobilienmarkt-auf-uns-zukommen-id22002129.html",
-              "riassunto": "Manuel Buchmann spiega che, dal 2019, in Svizzera più pensionati entrano nel sistema AHV rispetto ai nuovi lavoratori, creando un deficit che senza l'immigrazione raggiungerebbe i 6 miliardi CHF. La soluzione passa per aumenti dei contributi, riduzione delle pensioni o allungamento dell'età pensionabile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Prezzi record per le seconde case nelle Alpi svizzere: Gstaad supera i 25 000 CHF al metro quadro",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/ferienwohnungen-heiss-begehrt-das-sind-die-teuersten-pflaster-in-den-schweizer-bergen-id22002074.html",
-              "riassunto": "Il rapporto UBS Swiss Alpine Property Focus indica che nel primo trimestre 2026 le seconde case in Gstaad costano in media 25 200 CHF/m², con prezzi di lusso oltre i 40 000 CHF/m². I prezzi sono aumentati del 45 % dal 2019, spinti da un record di 28 milioni di notti turistiche nel 2025.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescente gap assicurativo per catastrofi naturali",
-            "Pressioni demografiche sul sistema pensionistico svizzero",
-            "Boom dei prezzi immobiliari nelle località alpine"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle politiche di copertura assicurativa per le catastrofi naturali e le possibili riforme dell'AHV nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie internazionali su evoluzioni strategiche dell'AI, con focus su nuove visioni di prodotto, preoccupazioni sui costi e studi sul ritorno economico delle implementazioni aziendali.",
-          "notizie": [
-            {
-              "titolo": "OpenAI prevede una nuova fase di \"AI proattiva\" dopo chatbot e agenti",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openai-ceo-sam-altman-sees-proactive-ai-as-the-next-big-phase-after-chatbots-and-agents/",
-              "riassunto": "Sam Altman, CEO di OpenAI, ha annunciato che il prossimo passo dell'AI sarà una \"AI proattiva\" che opera costantemente in background, superando i modelli di chat e gli agenti. Ha evidenziato l’aumento dei costi, citando Uber che ha consumato l’intero budget AI nel primo trimestre, e ha promesso di migliorare il rapporto valore‑costo con nuove funzionalità.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Studio Bain: le aziende non raggiungono gli obiettivi di risparmio AI a causa dell’intervento umano",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/bain-study-finds-companies-miss-ai-savings-targets-because-humans-keep-getting-in-the-way/",
-              "riassunto": "Un’indagine di Bain & Company su 951 imprese mostra che quasi il 40 % ha realizzato meno del 10 % di risparmio previsto con l’AI, nonostante l’obiettivo medio fosse 11‑20 %. La principale causa è l’eccessivo coinvolgimento umano: solo il 7 % utilizza agenti AI completamente autonomi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Cloudflare prevede un futuro \"pay‑to‑crawl\" per il web a causa del boom dei bot AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/cloudflare-ceo-says-the-webs-future-is-pay-to-crawl-as-bots-overtake-human-traffic/",
-              "riassunto": "Il CEO di Cloudflare, Matthew Prince, ha dichiarato che il traffico dei bot ha superato quello umano, anticipando di anni il suo scenario previsto per il 2027. Propone un modello \"pay to crawl\" e ha lanciato una piattaforma per far pagare gli accessi dei crawler AI, ma con scarsa adozione finora.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Passaggio da chatbot/agent a AI proattiva",
-            "Difficoltà a realizzare risparmi economici con l'AI in azienda",
-            "Crescita esponenziale del traffico bot e nuove strategie di monetizzazione"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei modelli proattivi di OpenAI e le risposte dei concorrenti nei prossimi mesi",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
