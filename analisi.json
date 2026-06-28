@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-06-27T05:07:06.894341+00:00",
+  "generated_at": "2026-06-28T05:05:27.271755+00:00",
   "analyses": [
+    {
+      "id": 113,
+      "run_id": 145,
+      "run_time": "2026-06-28 05:00:02.183725+00:00",
+      "analyzed_at": "2026-06-28T05:05:27.262594+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 112,
       "run_id": 144,
@@ -4169,220 +4230,6 @@
             "Ricerca su auto‑miglioramento ricorsivo per ridurre la dipendenza dal compute"
           ],
           "da_tenere_d_occhio": "L'adozione e l'evoluzione della Lockdown Mode di OpenAI nelle prossime 24 h, soprattutto tra le imprese che gestiscono dati sensibili",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 93,
-      "run_id": 125,
-      "run_time": "2026-06-07 05:00:01.854587+00:00",
-      "analyzed_at": "2026-06-07T05:07:46.482518+00:00",
-      "articles_analyzed": 183,
-      "articles_selected": 12,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi di politica del lavoro, difesa e ambiente: l'USS avverte di un possibile referendum sui salari minimi, il Consiglio federale rinuncia all'adesione a Copernicus e la RUAG smaltisce munizioni americane, sollevando questioni di neutralità.",
-          "notizie": [
-            {
-              "titolo": "USS minaccia di ricorrere a un referendum sui salari minimi cantonali",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/L%E2%80%99USS-minaccia-il-referendum-sui-salari-minimi--3800714.html",
-              "riassunto": "L'Unione Sindacale Svizzera ha lanciato un ultimatum al Parlamento: se verrà autorizzato l'aggiramento dei salari minimi cantonali tramite i contratti collettivi, l'USS ricorrerà al referendum. Il sindacato cita il rischio di erosione del potere d'acquisto per i lavoratori a basso reddito, con salari reali fermi dal 2016.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Svizzera rinuncia all'adesione al programma satellitare europeo Copernicus",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/%E2%80%9CNon-aderire-a-Copernicus-%C3%A8-pericoloso-per-la-Svizzera%E2%80%9D--3802259.html",
-              "riassunto": "Il Consiglio federale ha deciso di non aderire al programma di osservazione della Terra Copernicus per il periodo 2028‑2034, per motivi politico‑finanziari. La Svizzera potrà comunque usare i dati grezzi, ma resterà esclusa da servizi operativi, decisioni e appalti del programma, con possibili ripercussioni sulla gestione di rischi naturali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "RUAG distrugge per la prima volta munizioni americane in Svizzera",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/La-RUAG-distrugge-munizioni-americane-ad-Altdorf--3802049.html",
-              "riassunto": "L'azienda federale RUAG, su mandato di Armasuisse e con l'autorizzazione del consigliere della Difesa Martin Pfister, sta smaltendo circa quattro tonnellate di munizioni di piccolo calibro provenienti dall'esercito USA in Germania. L'operazione, la prima di questo tipo in Svizzera, è stata valutata priva di impatti sulla neutralità del Paese.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "politica del lavoro e referendum",
-            "politiche ambientali e dati satellitari",
-            "neutralità svizzera e cooperazione difensiva"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi del referendum sui salari minimi e le reazioni politiche a livello cantonale e federale",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da tre temi: la vicenda di un ransomware su Ruag, il trasferimento di 180 000 vinili della RTS in un bunker, e le tensioni geopolitiche che colpiscono Swisscom.",
-          "notizie": [
-            {
-              "titolo": "Ruag paga un riscatto agli hacker per recuperare i dati della filiale USA",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/ruag-ha-pagato-un-riscatto-agli-hacker-per-recuperare-i-dati-della-sua-filiale-usa-429872",
-              "riassunto": "Ruag ha versato un “piccolo” riscatto al gruppo Akira per riottenere i dati della sua filiale statunitense Ruag LLC, confermato dal presidente del consiglio di amministrazione Jörg Rötheli in un’intervista a SRF. L’azienda ha violato le linee guida dell’Ufficio federale della cibersicurezza, che sconsiglia i pagamenti, in un contesto in cui la media globale dei riscatti è di 1,2 milioni USD.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "Entrambe le fonti riportano lo stesso intervento di Jörg Rötheli a SRF e i dati sul riscatto medio. CdT enfatizza il contrasto con le raccomandazioni dell’UFCS, mentre Ticinonews aggiunge dettagli sullo studio di Sophos (riscatto medio 328.748 USD in Svizzera) e sullo studio Tinbergen (riscatto mediano 390.000 USD)."
-            },
-            {
-              "titolo": "180 000 vinili della RTS trasferiti in un bunker sicuro a Schlierbach",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Un-tesoro-troppo-prezioso-180%E2%80%99000-vinili-in-un-bunker--3800756.html",
-              "riassunto": "Nel trasferimento del nuovo polo di produzione di Ecublens, la RTS ha spostato 180 000 dischi in vinile (circa 40 tonnellate) in un ex bunker militare a Schlierbach (canton Lucerna). Il bunker garantisce temperatura e umidità ottimali per la conservazione di materiale raro, inclusi registrazioni classiche non più disponibili.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Swisscom afferma di essere solo marginalmente colpita dalle tensioni geopolitiche",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/swisscom-toccata-marginalmente-dalle-tensioni-geopolitiche-435092",
-              "riassunto": "Il CEO Christoph Aeschlimann, intervistato all’Awp durante lo Swiss Economic Forum a Interlaken, ha dichiarato che Swisscom è “toccata marginalmente” dalle tensioni geopolitiche, ma avverte un’incertezza tra i clienti aziendali. L’azienda punta su cloud sovrano, cibersicurezza e IA, mentre la vendita di dispositivi resta stagnante a causa della carenza di chip.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "crescente minaccia ransomware alle aziende svizzere",
-            "valorizzazione e tutela del patrimonio culturale audiovisivo pubblico",
-            "incertezza economica per le imprese svizzere a causa di tensioni geopolitiche"
-          ],
-          "da_tenere_d_occhio": "Possibili nuovi attacchi ransomware su società strategiche svizzere e l’evoluzione delle linee guida dell’UFCS nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro con eventi locali in Ticino, mentre festival internazionali affrontano sfide organizzative. Si evidenziano iniziative artistiche che coinvolgono IA e musica tradizionale.",
-          "notizie": [
-            {
-              "titolo": "Verbano Musica Estate celebra il patrimonio musicale svizzero",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1930508/giugno-losone-locarno-musica-helvetica-estate-verbano",
-              "riassunto": "Dal 1 al 28 giugno il festival Verbano Musica Estate si svolge a Locarno, Losone, Minusio e Brissago con concerti che mettono in dialogo compositori svizzeri di diverse regioni. Tra i protagonisti: Stefano Moccetti, Emma Urriani, Ensemble Astera e l’Orchestra da camera Canova. L’iniziativa, intitolata “Musica Helvetica”, punta a valorizzare il patrimonio musicale nazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Evento “IA – Quando l’intelligenza artificiale avanza” a Lugano",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1929738/macchina-ia-fv-rg-poesia-poeta-confronto-macchine",
-              "riassunto": "Il 6 giugno a Lugano, nell’ambito del festival Poestate, Roberto Gorini e Fosco Valentini partecipano a un dibattito su poesia e intelligenza artificiale, trasmesso in diretta su RadioPoestate e YouTube. L’incontro fa parte della programmazione finale del festival, che esplora il rapporto tra arte letteraria e tecnologie emergenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Carona ospita la mostra “Scandalo Visivo”",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/carona-diventa-una-galleria-a-cielo-aperto-con-scandalo-visivo-429804",
-              "riassunto": "Dal 12 al 14 giugno il borgo di Carona trasforma le sue piazze in una galleria a cielo aperto con installazioni, performance e teatro. Dieci artisti, tra cui Gudrun De Chirico, affrontano temi come identità, violenza e tecnologia, coinvolgendo il pubblico in un’opera collettiva.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita di eventi culturali locali in Ticino",
-            "Intersezione tra intelligenza artificiale e pratiche artistiche"
-          ],
-          "da_tenere_d_occhio": "Possibili problemi logistici e meteorologici per i festival all’aperto in Ticino nelle prossime 24 h",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la copertura geopolitica è dominata da tensioni in Medio Oriente, dibattiti sulla migrazione in Europa e sviluppi energetici legati al conflitto in Ucraina, senza riferimenti diretti ai media pubblici svizzeri.",
-          "notizie": [],
-          "trend": [
-            "Rinforzo della retorica migratoria in Europa",
-            "Escalation di conflitti in Medio Oriente (Israele-Lebano, Ucraina)",
-            "Impatto dei prezzi dell'energia e politiche di sconto carburanti"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni della crisi energetica europea legate alle tensioni in Medio Oriente e alle decisioni sui sussidi carburanti nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da notizie sui media pubblici svizzeri e su un caso giudiziario di grande risonanza, con più testate che ne riportano gli sviluppi.",
-          "notizie": [
-            {
-              "titolo": "RTS denuncia la falsità in documenti di Jessica Moretti nel caso del bar di Crans-Montana",
-              "fonte": "RTS",
-              "link": "https://www.rts.ch/info/suisse/2026/06/07/jessica-moretti-falsita-documenti",
-              "riassunto": "La RTS ha confermato che la proprietaria del bar Le Constellation, Jessica Moretti, è stata formalmente imputata per falsità in documenti legati a una fattura sospetta sulla schiuma fonoassorbente usata nel locale. L’accusa, aggiunta durante l’interrogatorio, riguarda possibili manipolazioni fiscali, senza legame diretto con l’incendio che ha causato 41 morti.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "RTS",
-                "tio.ch"
-              ],
-              "differenze_narrative": "RTS enfatizza l’aspetto penale e la gravità della falsità documentale, con tono investigativo; tio.ch, invece, si concentra sull’interrogatorio dei coniugi Moretti, descrivendo le dinamiche processuali e includendo reazioni di avvocati, con un tono più descrittivo e meno focalizzato sull’accusa specifica."
-            },
-            {
-              "titolo": "SRF analizza la copertura internazionale dell’iniziativa “Svizzera no a 10 milioni”",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/dialog/keine-10-millionen-schweiz-was-auslaendische-medien-aus-dem-schweizer-abstimmungskampf-lesen",
-              "riassunto": "SRF riporta che la proposta di limitare la popolazione svizzera a 10 milioni ha suscitato un ampio eco nei media esteri, con Time, New York Times, Die Zeit e Der Spiegel che ne hanno discusso le implicazioni demografiche e politiche. L’articolo cita le diverse interpretazioni, dal rischio di xenofobia al ritorno a politiche migratorie più restrittive.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "maggiore attenzione ai media pubblici svizzeri",
-            "crescente copertura internazionale di temi migratori svizzeri"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle indagini su Jessica Moretti e le eventuali ulteriori accuse",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su sicurezza e costi dell'AI, con un focus su un nuovo tracker di Google lanciato in Svizzera e su continui dibattiti sulla governance dei modelli.",
-          "notizie": [
-            {
-              "titolo": "Google lancia un tracker band da 12 grammi a 99 franchi svizzeri",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/wiegt-nur-zwoelf-gramm-das-kann-googles-99-franken-band-id22005937.html",
-              "riassunto": "Google ha introdotto il Fitbit Air, un braccialetto senza display che pesa 12 g e costa 99 CHF. Offre monitoraggio di sonno, frequenza cardiaca e saturazione, ma presenta bug nel tracciamento del sonno in tre notti su due settimane. Il dispositivo salva i dati sui server Google.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza dell'AI: exploit di agenti di supporto (es. hack di Meta)",
-            "Gestione dei costi e tokenomics nell'adozione aziendale dell'AI",
-            "Ricerca su RSI (recursive self‑improvement) come alternativa alla corsa al compute"
-          ],
-          "da_tenere_d_occhio": "Evoluzione degli attacchi contro agenti AI di supporto clienti, in particolare il caso Meta, e le possibili risposte di sicurezza nei prossimi giorni.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
