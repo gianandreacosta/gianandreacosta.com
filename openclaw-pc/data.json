@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-29T11:10:01.825280Z",
+  "generated_at": "2026-06-29T11:20:02.272930Z",
   "system": {
-    "version": "/bin/sh: 1: /home/gianbot/.npm-global/bin/openclaw: not found",
-    "current_ver": "/bin/sh: 1: /home/gianbot/.npm-global/bin/openclaw: not found",
+    "version": "openclaw: Node.js v22.12+ is required (current: v20.19.2).\nIf you use nvm, run:\n  nvm install 22\n  nvm use 22\n  nvm alias default 22",
+    "current_ver": "openclaw: Node.js v22.12+ is required (current: v20.19.2).\nIf you use nvm, run:\n  nvm install 22\n  nvm use 22\n  nvm alias default 22",
     "latest_ver": "n/a",
     "update_available": false,
     "gateway_running": false,
