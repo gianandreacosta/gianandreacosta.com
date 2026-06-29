@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-28T20:10:03.471895Z",
+  "generated_at": "2026-06-29T05:50:03.754026Z",
   "system": {
-    "version": "OpenClaw 2026.5.7 (eeef486)",
-    "current_ver": "2026.5.7",
-    "latest_ver": "2026.6.10",
-    "update_available": true,
-    "gateway_running": true,
+    "version": "/bin/sh: 1: /home/gianbot/.npm-global/bin/openclaw: not found",
+    "current_ver": "/bin/sh: 1: /home/gianbot/.npm-global/bin/openclaw: not found",
+    "latest_ver": "n/a",
+    "update_available": false,
+    "gateway_running": false,
     "gateway_port": 18789
   },
   "telegram": {
@@ -370,7 +370,7 @@
   ],
   "rassegna": {
     "articles_total": 68248,
-    "articles_today": 542,
+    "articles_today": 0,
     "articles_new_last_run": 542,
     "last_run": "2026-06-28 05:00:02.183725+00:00",
     "last_run_found": 3953
