@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-29T11:20:02.272930Z",
+  "generated_at": "2026-06-29T11:30:03.982929Z",
   "system": {
-    "version": "openclaw: Node.js v22.12+ is required (current: v20.19.2).\nIf you use nvm, run:\n  nvm install 22\n  nvm use 22\n  nvm alias default 22",
-    "current_ver": "openclaw: Node.js v22.12+ is required (current: v20.19.2).\nIf you use nvm, run:\n  nvm install 22\n  nvm use 22\n  nvm alias default 22",
-    "latest_ver": "n/a",
-    "update_available": false,
-    "gateway_running": false,
+    "version": "OpenClaw 2026.5.7 (eeef486)",
+    "current_ver": "2026.5.7",
+    "latest_ver": "2026.6.10",
+    "update_available": true,
+    "gateway_running": true,
     "gateway_port": 18789
   },
   "telegram": {
@@ -71,7 +71,7 @@
       ]
     }
   ],
-  "rate_limits_today": 0,
+  "rate_limits_today": 25,
   "cron_jobs": [
     {
       "name": "memory-review",
