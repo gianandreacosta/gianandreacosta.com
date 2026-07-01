@@ -1,6 +1,105 @@
 {
-  "generated_at": "2026-06-28T05:05:27.271755+00:00",
+  "generated_at": "2026-07-01T05:05:29.409878+00:00",
   "analyses": [
+    {
+      "id": 114,
+      "run_id": 146,
+      "run_time": "2026-07-01 05:00:01.184592+00:00",
+      "analyzed_at": "2026-07-01T05:05:29.398361+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 3,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni in Medio Oriente e dalla risposta internazionale ai terremoti in Venezuela, mentre in Svizzera i media pubblici sono al centro di proteste sindacali.",
+          "notizie": [
+            {
+              "titolo": "350 dipendenti della SSR protestano contro il testamento della direzione SRG",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/sprechtrainer-entlassen-350-srg-mitarbeiter-unterschreiben-protestbrief-gegen-wille-103593622",
+              "riassunto": "350 collaboratori della SRG/SSR hanno firmato una lettera di protesta contro il testamento della direttrice, denunciando licenziamenti ingiustificati di quattro formatori linguistici e accuse di gestione autoritaria. La protesta è guidata dal sindacato dei media SSM.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Dibattito in arena SRF sulla 13ª AHV: accuse di prelievo fiscale ai cittadini",
+              "fonte": "Blick Politik",
+              "link": "https://www.blick.ch/politik/hitzige-duelle-in-der-srf-arena-die-kreativitaet-geht-nur-so-weit-dass-man-die-13-ahv-finanziert-indem-man-der-bevoelkerung-das-geld-aus-der-tasche-zieht-eure-kreativitaet-besteht-darin-die-leute-laenger-arbeiten-zu-lassen-id22064162.html",
+              "riassunto": "Durante la SRF‑Arena, i leader dei partiti federali hanno discusso la finanziamento della 13ª AHV tramite l’IVA, accusandosi a vicenda di “prelevare soldi dalle tasche dei cittadini”. La trasmissione è stata citata come esempio di dibattito pubblico su politiche fiscali.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Escalation delle tensioni tra USA e Iran nello Stretto di Hormuz",
+            "Conseguenze umanitarie dei terremoti in Venezuela"
+          ],
+          "da_tenere_d_occhio": "Il prossimo round di negoziati USA‑Iran previsto per luglio in Qatar, che potrebbe influenzare la sicurezza dello Stretto di Hormuz",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Oggi l'attenzione è rivolta a una vicenda di gestione del personale nella Posta svizzera, che ha coinvolto anche la televisione pubblica RTS. Nessun altro evento economico ha superato i criteri di rilevanza per il lettore RSI/SSR.",
+          "notizie": [
+            {
+              "titolo": "Postino licenziato dopo 42 anni: il Consiglio federale non interviene",
+              "fonte": "tio.ch Svizzera",
+              "link": "https://www.tio.ch/svizzera/attualita/1934984/posta-consigliere-postino-federale-berna",
+              "riassunto": "Un postino di Vaud, Jean‑Daniel Taverney, è stato licenziato dopo 42 anni di servizio. Il Consigliere federale Albert Rösti ha risposto alle richieste parlamentari dichiarando di non avere competenza per esaminare il caso. Il direttore della Posta ha commentato la vicenda in un’intervista alla RTS, la televisione pubblica svizzera.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "gestione del personale nelle imprese pubbliche",
+            "interventi limitati del governo federale su questioni operative"
+          ],
+          "da_tenere_d_occhio": "Possibili evoluzioni legislative o pressioni politiche sul ruolo di vigilanza del Consiglio federale nei confronti della Posta svizzera",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 113,
       "run_id": 145,
@@ -3978,258 +4077,6 @@
             "strategia delle grandi aziende AI verso super‑app e agenti"
           ],
           "da_tenere_d_occhio": "Monitorare eventuali future dichiarazioni o partnership di aziende AI con enti svizzeri o impatti normativi locali nei prossimi 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 94,
-      "run_id": 126,
-      "run_time": "2026-06-08 05:00:03.019224+00:00",
-      "analyzed_at": "2026-06-08T05:09:04.663017+00:00",
-      "articles_analyzed": 184,
-      "articles_selected": 16,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie di rilevanza nazionale: la decisione del Consiglio federale di rinunciare a Copernicus, la distruzione da parte di RUAG di munizioni americane con l’intervento di SRF, e una massiccia fuga di dati di Booking che ha alimentato truffe online.",
-          "notizie": [
-            {
-              "titolo": "Il Consiglio federale rinuncia all’adesione a Copernicus per motivi politico‑finanziari",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/%E2%80%9CNon-aderire-a-Copernicus-%C3%A8-pericoloso-per-la-Svizzera%E2%80%9D--3802259.html",
-              "riassunto": "Il Consiglio federale ha deciso di non aderire al programma europeo di osservazione della Terra Copernicus per il periodo 2028‑2034, citando vincoli politico‑finanziari. La Svizzera potrà usare i dati grezzi ma resterà esclusa dai servizi operativi, dagli appalti e dalle decisioni del programma. Il prof. Reto Knutti (Politecnico di Zurigo) ha avvertito che “è pericoloso non far parte di questo programma” per la previsione di rischi naturali e climatici.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "RUAG distrugge circa quattro tonnellate di munizioni americane ad Altdorf",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/La-RUAG-distrugge-munizioni-americane-ad-Altdorf--3802049.html",
-              "riassunto": "RUAG, azienda d’armamenti federale, sta smaltendo per la prima volta munizioni di piccolo calibro dell’esercito USA, trasferite dalla Germania. Il progetto, avviato nel 2025, coinvolge circa 4 tonnellate di materiale. Il Consiglio federale, tramite Armasuisse, ha autorizzato l’operazione e il consigliere della Difesa Martin Pfister ha confermato l’assenza di rischi per la neutralità svizzera. La notizia è stata resa nota da SRF, sottolineando l’interesse dei media pubblici svizzeri.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Fuga di dati di Booking genera un triplo delle segnalazioni di truffa via WhatsApp",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Fuga-di-dati-Booking-triplicate-le-segnalazioni-di-truffa--3802220.html",
-              "riassunto": "Una violazione dei dati di Booking avvenuta ad aprile ha permesso a truffatori di inviare messaggi fraudolenti su WhatsApp. L’Ufficio federale della cybersicurezza ha registrato 23 segnalazioni a maggio, contro 8 ad aprile. Le truffe includono falsi rimborsi con link a falsi portali Twint e phishing bancario. Le autorità raccomandano di non cliccare sui link e di verificare le comunicazioni tramite l’app ufficiale o contattare direttamente l’hotel.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza digitale e cyber‑crime",
-            "Politiche di difesa e neutralità svizzera",
-            "Gestione dei dati ambientali e scientifici"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione della posizione svizzera su Copernicus e le eventuali ripercussioni per la ricerca climatica nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da tre temi di rilievo: il trasferimento di 180.000 vinili della RTS in un bunker, il record storico di donne in Parlamento segnalato da RSI, e il pagamento di un riscatto da parte di Ruag, riportato da CdT e Ticinonews con citazione di SRF.",
-          "notizie": [
-            {
-              "titolo": "RTS trasferisce 180.000 vinili in un bunker di Schlierbach",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Un-tesoro-troppo-prezioso-180%E2%80%99000-vinili-in-un-bunker--3800756.html",
-              "riassunto": "La RTS sta spostando 180.000 dischi in vinile, per circa 40 tonnellate, dal nuovo polo di Ecublens a un ex bunker militare a Schlierbach (canton Lucerna). Il bunker garantisce temperatura e umidità ideali per la conservazione di materiale raro, tra cui registrazioni classiche mai ristampate.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Record storico: 97 donne su 246 seggi del Parlamento svizzero",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Mai-cos%C3%AC-tante-donne-nel-Parlamento-svizzero--3803078.html",
-              "riassunto": "Con l’avvio della sessione estiva, il numero di donne in Parlamento è salito a 97, di cui 82 al Consiglio nazionale (41%). Il dato supera il precedente record del 2019 (96). L’aumento è attribuito a cinque nuove parlamentari donne provenienti dal centro‑sinistra.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ruag paga un riscatto agli hacker per recuperare i dati della filiale USA",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/ruag-ha-pagato-un-riscatto-agli-hacker-per-recuperare-i-dati-della-sua-filiale-usa-429872",
-              "riassunto": "Il presidente del Consiglio di amministrazione di Ruag, Jörg Rötheli, ha confermato a SRF che l’azienda ha pagato un “piccolo importo” per ottenere il ripristino dei dati rubati dalla filiale statunitense. L’attacco era stato compiuto dal gruppo Akira. Il pagamento contrasta le linee guida dell’Ufficio federale della cibersicurezza.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Svizzera",
-                "Ticinonews Svizzera"
-              ],
-              "differenze_narrative": "CdT enfatizza la dichiarazione di Rötheli a SRF e il contesto dell’attacco, mentre Ticinonews aggiunge dati di mercato sui riscatti ransomware e cita lo studio di Sophos, fornendo una panoramica più ampia sul fenomeno."
-            }
-          ],
-          "trend": [
-            "Sicurezza informatica e ransomware",
-            "Parità di genere in politica",
-            "Valorizzazione del patrimonio culturale audiovisivo"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi della vicenda Ruag, in particolare eventuali indagini dell'UFCS o ulteriori richieste di riscatto da parte di gruppi di hacker",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con un articolo di SRF Kultur sul futuro di James Bond, mentre in Ticino si segnalano eventi locali di spettacolo e nuove forme di marketing per le serie TV.",
-          "notizie": [
-            {
-              "titolo": "Congettura sul doppio zero: chi sarà il nuovo Bond? Idee folli per la 007",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/film-serien/mutmassen-um-die-doppelnull-wer-wird-der-neue-bond-vier-verrueckte-ideen-zur-007-neubesetzung",
-              "riassunto": "SRF Kultur riporta che la ricerca del prossimo James Bond è in corso, con proposte che vanno da Harry Styles a Jennifer Lawrence come Mystique. L'articolo cita la casting‑chief Nina Gold e menziona i nomi più discussi (Henry Cavill, Callum Turner, Jacob Elordi).",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Un trip con cintura di sicurezza: performance di Albert Hofmann a Lugano",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/spettacoli/1930504/trip-sicurezza-cintura-lsd-hofmann",
-              "riassunto": "Nel Garage Ferrari di Lugano, Flavio Stroppini ha presentato una performance ispirata al viaggio di Albert Hofmann, il chimico che sintetizzò l'LSD. L'evento, parte del programma \"Territori\", ha attirato un pubblico locale di appassionati di arte contemporanea.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Companion podcast: le serie TV creano contenuti audio per i fan",
-              "fonte": "Il Post Cultura",
-              "link": "https://www.ilpost.it/2026/06/07/marketing-serie-tv-companion-podcast/",
-              "riassunto": "Il Post Cultura spiega il fenomeno dei \"companion podcast\" legati a serie TV, con esempi di Hulu, HBO e altri. Gli attori e gli autori partecipano a interviste e approfondimenti, creando un nuovo canale di engagement per il pubblico.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Coinvolgimento dei fan tramite podcast audio",
-            "Speculazioni su icone cinematografiche internazionali (James Bond)"
-          ],
-          "da_tenere_d_occhio": "Seguitare l'evoluzione della ricerca del nuovo James Bond e le eventuali conferme di casting nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni in Medio Oriente e dagli effetti della guerra sul mercato energetico, mentre in Svizzera emerge una polemica su dichiarazioni politiche legate a una nota azienda svizzera.",
-          "notizie": [
-            {
-              "titolo": "Martullo-Blocher risponde alle accuse di reclutare personale all'estero in una dichiarazione a RTS",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/politik/martullo-blocher-ueber-die-10-millionen-schweiz-schweizer-unternehmen-werden-weiter-personal-finden-id22008418.html",
-              "riassunto": "Durante un'intervista a RTS, la vicepresidente SVP Magdalena Martullo‑Blocher ha smentito le accuse secondo cui la sua azienda Ems‑Chemie recluta personale all’estero, spiegando che le offerte di lavoro sono state copiate da portali svizzeri. Ha inoltre difeso la posizione svizzera sulla proposta di iniziativa sulla sostenibilità, sostenendo che le imprese troveranno comunque personale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni tra Iran e Stati Uniti",
-            "Impatto della guerra in Medio Oriente sui prezzi dell'energia"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Martullo‑Blocher e possibili ripercussioni politiche sulla proposta di iniziativa sulla sostenibilità in Svizzera",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'economia svizzera è al centro dell'attenzione: un caso di violenza a bordo di un volo Swiss è stato riportato da SRF, mentre due grandi aziende svizzere (Partners Group e Ruag) affrontano crisi e decisioni strategiche.",
-          "notizie": [
-            {
-              "titolo": "Passeggero violento su volo Swiss condannato a 10 mesi di carcere",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1930250/swiss-volo-passeggero-carcere-passeggeri",
-              "riassunto": "Un uomo a bordo di un volo Swiss New York‑Zurigo ha aggredito l'equipaggio, minacciato di entrare nel cockpit e ha provocato il ritorno dell’aereo. Il Tribunale federale del New Jersey lo ha condannato a dieci mesi di reclusione e a un risarcimento di 70 000 $; l'incidente è stato segnalato dal telegiornale della SRF.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Partners Group promette maggiore trasparenza dopo il crollo del titolo",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/economia/1930673/societa-group-grizzly-partners-azioni",
-              "riassunto": "Il co‑fondatore Fredy Gantner ha ammesso carenze comunicative dopo che l’azione di Partners Group è scesa del 27 % in una settimana, con una perdita di capitalizzazione di circa 20 miliardi di franchi. Prevede comunque afflussi di capitale tra 26 e 32 miliardi di dollari per il 2026.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ruag paga riscatto a gruppo di hacker per recuperare dati rubati",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/economia/1930589/ruag-hacker-dati-riscatto-pagato",
-              "riassunto": "L’azienda svizzera di armamenti Ruag ha versato un “piccolo” riscatto al gruppo Akira per riottenere dati sottratti dalla filiale statunitense Ruag LLC. Il presidente del consiglio d’amministrazione, Jörg Rötheli, ha confermato il pagamento a SRF, ma il Dipartimento federale della difesa non era stato informato.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza aerea e gestione dei comportamenti a bordo",
-            "Crisi di comunicazione e governance nelle grandi società svizzere",
-            "Ransomware e sicurezza informatica nel settore della difesa"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni normative sulla gestione dei passeggeri indisciplinati e ulteriori sviluppi legati a ransomware contro aziende strategiche svizzere",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da annunci di nuove funzionalità di sicurezza e prodotti a pagamento per gli LLM, con un focus su modalità di protezione dei dati e agenti AI commerciali.",
-          "notizie": [
-            {
-              "titolo": "OpenAI introduce la modalità Lockdown per proteggere i dati sensibili da attacchi di prompt injection",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
-              "riassunto": "OpenAI ha lanciato Lockdown Mode, che disabilita la navigazione web in tempo reale, il recupero di immagini, la ricerca approfondita e la modalità agente, limitando così il rischio di esfiltrazione di dati tramite prompt injection. La funzione è disponibile per gli account ChatGPT Business e per alcuni account personali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Meta prepara Hatch, il primo agente AI a pagamento, con tariffe fino a 200 $ al mese",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/metas-hatch-ai-agent-could-cost-up-to-200-a-month-and-marks-its-first-paid-ai-product/",
-              "riassunto": "Meta sta sviluppando Hatch, un agente AI che traduce richieste in linguaggio naturale in strumenti funzionanti, con una versione gratuita e una premium (Hatch Plus) che può costare fino a 200 $ al mese. Il lancio previsto negli USA è per luglio, segnando il primo prodotto AI a pagamento di Meta.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Sakana AI crea un laboratorio RSI per l'auto‑miglioramento ricorsivo delle AI",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/sakana-ai-bets-ai-that-improves-itself-can-break-the-compute-arms-race-of-frontier-labs/",
-              "riassunto": "La startup giapponese Sakana AI ha istituito il \"Sakana AI RSI Lab\", un gruppo di ricerca dedicato all'auto‑miglioramento ricorsivo (RSI). L'obiettivo è superare la corsa al compute dei grandi laboratori occidentali sviluppando AI che ottimizzano sé stesse, con risultati già pubblicati su Nature.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza dei dati tramite modalità di isolamento (Lockdown Mode)",
-            "Commercializzazione di agenti AI a pagamento",
-            "Ricerca su auto‑miglioramento ricorsivo per ridurre la dipendenza dal compute"
-          ],
-          "da_tenere_d_occhio": "L'adozione e l'evoluzione della Lockdown Mode di OpenAI nelle prossime 24 h, soprattutto tra le imprese che gestiscono dati sensibili",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
