@@ -1,6 +1,91 @@
 {
-  "generated_at": "2026-07-01T05:05:29.409878+00:00",
+  "generated_at": "2026-07-02T05:05:12.281979+00:00",
   "analyses": [
+    {
+      "id": 115,
+      "run_id": 147,
+      "run_time": "2026-07-02 05:00:01.430092+00:00",
+      "analyzed_at": "2026-07-02T05:05:12.270438+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 2,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da annunci di nuovi agenti AI su dispositivi mobili e da aggiornamenti di soluzioni focalizzate sulla privacy, con particolare attenzione a Proton, azienda svizzera.",
+          "notizie": [
+            {
+              "titolo": "OpenClaw è finalmente disponibile su Android e iOS",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/",
+              "riassunto": "Il progetto open‑source OpenClaw, un agente AI autonomo, è stato rilasciato per la prima volta su piattaforme mobili. Il codice è gratuito e può essere installato sia su Android che su iOS, aprendo la strada a un uso più diffuso di agenti AI personali su smartphone.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Lumo, il chatbot AI incentrato sulla privacy di Proton, ottiene un aggiornamento",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/06/30/lumo-protons-privacy-focused-ai-chatbot-gets-an-upgrade/",
+              "riassunto": "Proton, la società svizzera di servizi di posta elettronica e VPN, ha lanciato Lumo 2.0, una versione migliorata del suo chatbot AI orientato alla privacy. La nuova release aggiunge funzionalità di sintesi testuale, integrazione con i calendari e un'interfaccia più veloce, mantenendo la crittografia end‑to‑end.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Diffusione di agenti AI su dispositivi mobili",
+            "Crescente attenzione alla privacy nei chatbot AI"
+          ],
+          "da_tenere_d_occhio": "Monitorare l'adozione di OpenClaw su Android/iOS e le prime recensioni degli utenti, nonché l'eventuale espansione di Lumo 2.0 verso nuovi servizi Proton nei prossimi giorni.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 114,
       "run_id": 146,
@@ -3878,205 +3963,6 @@
             "OpenAI avvia la procedura di IPO, seguita da movimenti di mercato di altri giganti AI"
           ],
           "da_tenere_d_occhio": "Monitorare le reazioni dei regolatori europei alle nuove funzionalità AI di Apple e le evoluzioni della procedura di IPO di OpenAI nelle prossime 24 ore.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 95,
-      "run_id": 127,
-      "run_time": "2026-06-09 05:00:02.531898+00:00",
-      "analyzed_at": "2026-06-09T05:08:41.310968+00:00",
-      "articles_analyzed": 181,
-      "articles_selected": 11,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi di politica locale e sicurezza: il dibattito parlamentare sul radon, le critiche al consuntivo 2025 del Cantone e l'evacuazione di emergenza a Zurigo. Questi fatti hanno un impatto diretto sulla vita dei cittadini e sulle decisioni istituzionali.",
-          "notizie": [
-            {
-              "titolo": "Parlamento in disaccordo sul gas radon e le misure di risanamento",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Gas-radon-disaccordo-in-Parlamento--3805868.html",
-              "riassunto": "Le Camere federali non concordano sulle misure di risanamento obbligatorio per gli edifici con radon sopra i nuovi limiti (300 Bq/m³). Il dibattito riguarda direttamente Ticino e Grigioni, dove il 10% degli edifici è fuori norma. Il costo medio di adeguamento è stimato in 10’000 franchi per edificio, per circa 200’000 immobili interessati.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Consuntivo 2025 del Cantone: critiche da destra a sinistra",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Consuntivo-2025-le-critiche-non-mancano-da-destra-a-sinistra--3806234.html",
-              "riassunto": "Il Gran Consiglio ticinese discute il rendiconto 2025. Le opposizioni (Centro, PLR, Lega, UDC, Socialisti) denunciano la mancanza di strategia, l’aumento delle spese correnti e la difficoltà a raggiungere il pareggio di bilancio, nonostante un’iniezione di 80 milioni dalla Banca nazionale che ha ridotto il disavanzo a -32,5 milioni.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Evacuazione completata nella zona del Politecnico di Zurigo",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Terminata-l%E2%80%99evacuazione-nella-zona-del-Poli-di-Zurigo--3803024.html",
-              "riassunto": "Le circa 300 persone evacuate dalla zona del Politecnico di Zurigo sono rientrate a casa dopo 6 ore. È stato rimosso in sicurezza il gas pericoloso (trifluoruro di cloro) da un vecchio laboratorio, con l’intervento di una ditta specializzata e della polizia cantonale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "dibattito ambientale e salute pubblica (radon)",
-            "tensioni di bilancio cantonale",
-            "sicurezza e gestione di emergenze industriali"
-          ],
-          "da_tenere_d_occhio": "L'esito delle negoziazioni parlamentari sul radon e le eventuali decisioni di finanziamento per i risanamenti, che potrebbero influenzare le spese dei proprietari immobiliari in Ticino nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da una disputa sulla presenza di croci religiose in alta quota e da dibattiti su parità di genere e benessere animale, con un clima elettorale attivo in diversi cantoni.",
-          "notizie": [
-            {
-              "titolo": "Una disputa sulla croce di vetta al Pico de Aneto coinvolge un giornalista RTS",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/dialog/hoechster-berg-in-den-pyrenaeen-am-pico-de-aneto-tobt-ein-kampf-um-das-gipfelkreuz",
-              "riassunto": "Un giovane costruttore francese ha installato una nuova croce di legno sul Pico de Aneto, la vetta più alta dei Pirenei, suscitando polemiche. Un giornalista di RTS ha commentato il caso, evidenziando il dibattito più ampio sul ruolo dei simboli religiosi in montagna.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Parità di genere in politica (record di donne in Parlamento)",
-            "Controversie su pubblicità e benessere animale (Migros vs animalisti)"
-          ],
-          "da_tenere_d_occhio": "Il referendum e le iniziative popolari in 16 cantoni domenica 14 giugno, soprattutto il salario minimo e l'imposizione alla fonte",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: SRF segnala sia la design‑crime che minaccia le imprese locali, sia la designazione di Aarau come Capitale culturale 2030. Inoltre, notizie internazionali su premi teatrali dominano i feed esteri.",
-          "notizie": [
-            {
-              "titolo": "Furto di idee: designer svizzeri sotto pressione per le contraffazioni",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kampf-gegen-ideenklau-faelscher-am-werk-schweizer-designer-stehen-unter-druck",
-              "riassunto": "Il designer basileño Berend Frenzel denuncia la rapida diffusione di copie non autorizzate del suo supporto per iPad, venduto su piattaforme di crowdfunding. Il problema è aggravato da strutture mafiose cinesi che replicano prodotto e marketing, costringendo gli artigiani svizzeri a difendersi con brevetti internazionali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Aarau sarà la Capitale culturale della Svizzera nel 2030",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-iranische-justiz-bestaetigt-haftstrafe-gegen-regisseur-panahi",
-              "riassunto": "Nel livestream di SRF Kultur si annuncia che Aarau è stata scelta per il programma “Cultura 2030”, con un investimento previsto di oltre 200 milioni di franchi per musei, festival e infrastrutture artistiche, rafforzando il ruolo del Ticino nella scena nazionale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Panahi condannato: la giustizia iraniana conferma la pena detentiva",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-iranische-justiz-bestaetigt-haftstrafe-gegen-regisseur-panahi",
-              "riassunto": "Un tribunale rivoluzionario di Teheran ha confermato la condanna di un anno di carcere per il regista Jafar Panahi, nonostante le pressioni internazionali per la sua liberazione. La notizia è inserita nel bollettino culturale di SRF del 1 giugno 2026.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita dei companion podcast per serie TV",
-            "Ampia copertura internazionale dei Tony Awards"
-          ],
-          "da_tenere_d_occhio": "Sviluppi legislativi svizzeri sul design‑protection e aggiornamenti sul progetto Cultura 2030 di Aarau nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Le notizie di oggi mostrano tensioni in Medio Oriente e un dibattito interno sulla politica migratoria svizzera, con un focus sui media pubblici.",
-          "notizie": [
-            {
-              "titolo": "Martullo-Blocher risponde alle accuse di reclutare personale all'estero in una dichiarazione a RTS",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/politik/martullo-blocher-ueber-die-10-millionen-schweiz-schweizer-unternehmen-werden-weiter-personal-finden-id22008418.html",
-              "riassunto": "Durante un'intervista a RTS, la vicepresidente SVP e amministratrice delegata di Ems‑Chemie, Magdalena Martullo‑Blocher, ha respinto le accuse di pubblicare offerte di lavoro svizzere all'estero, spiegando che gli annunci sono copiati automaticamente da portali internazionali. Ha sottolineato che l'azienda forma 150 apprendisti in Svizzera e che, anche senza l'iniziativa di sostenibilità, le imprese svizzere troverebbero comunque personale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensioni tra Iran e Israele",
-            "dibattito sulla politica migratoria in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle dichiarazioni di Martullo‑Blocher e possibili reazioni del governo federale sulla proposta di iniziativa sulla sostenibilità",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è sui flussi di capitale svizzeri verso gli USA, su un incidente aereo che ha coinvolto Swiss e su un forte aumento dei prezzi delle funivie alpine, temi che colpiscono direttamente la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Le aziende svizzere hanno investito 27 miliardi di dollari negli USA",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/dazi-le-aziende-svizzere-stanno-investendo-miliardi-negli-usa-435246",
-              "riassunto": "Tra gennaio e aprile le imprese elvetiche hanno impegnato 27 miliardi di dollari (21 miliardi di franchi) negli Stati Uniti, con una previsione di 67 miliardi entro fine anno. Il direttore della Camera di commercio svizzero‑americana, Rahul Sahgal, sottolinea l’impegno svizzero, mentre si avverte il rischio di dazi punitivi da Washington.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "Ticinonews Economia",
-                "tio.ch Svizzera"
-              ],
-              "differenze_narrative": "Ticinonews aggiunge dichiarazioni di politici svizzeri (Franz Grüter) e avverte di possibili dazi, enfatizzando la dimensione politica. tio.ch ripropone i dati di investimento ma si limita a riportare i numeri, senza citare interlocutori né il rischio doganale, mostrando una narrazione più neutra e focalizzata sui fatti economici."
-            },
-            {
-              "titolo": "Volo Swiss costretto a tornare a Zurigo per particelle solide nel carburante",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1930773/swiss-volo-stato-carburante-particelle",
-              "riassunto": "Il volo LX2646 Zurich‑Delhi ha invertito rotta sopra il Mar Nero a causa di un allarme su particelle solide nel carburante del motore 1. L’aereo è tornato a Zurigo e il volo di ritorno è stato cancellato, coinvolgendo 151 passeggeri e 218 persone in attesa di collegamenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "I prezzi delle funivie alpine salgono fino a 264 franchi per un viaggio di andata‑ritorno",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/bis-zu-14-franken-in-einem-jahr-satte-preiserhoehungen-bei-beliebten-ausflugsbahnen-id22009336.html",
-              "riassunto": "Le tariffe delle principali funivie svizzere sono aumentate del 15‑17 % negli ultimi quattro anni: Pilatus 84 CHF, Rigi 84 CHF, Schilthorn 115 CHF, Jungfraujoch 239,20 CHF. Gli aumenti sono giustificati da investimenti infrastrutturali, ma suscitano forte malcontento tra i viaggiatori.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Investimenti svizzeri negli USA",
-            "Aumento dei costi dei servizi turistici alpini",
-            "Sicurezza operativa nel trasporto aereo"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni delle tariffe delle funivie e eventuali interventi dell'Ufficio federale dell'economia (SECO) per tutelare i consumatori",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Nessuna notizia di rilievo per i media pubblici svizzeri o per la Svizzera/Ticino è emersa tra gli articoli analizzati; prevale la copertura internazionale di sviluppi AI e tecnologia.",
-          "notizie": [],
-          "trend": [
-            "crescita dei costi e token economy nell'AI",
-            "strategia delle grandi aziende AI verso super‑app e agenti"
-          ],
-          "da_tenere_d_occhio": "Monitorare eventuali future dichiarazioni o partnership di aziende AI con enti svizzeri o impatti normativi locali nei prossimi 24 ore",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
