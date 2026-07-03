@@ -1,6 +1,101 @@
 {
-  "generated_at": "2026-07-02T05:05:12.281979+00:00",
+  "generated_at": "2026-07-03T05:03:23.973382+00:00",
   "analyses": [
+    {
+      "id": 116,
+      "run_id": 148,
+      "run_time": "2026-07-03 05:00:01.521749+00:00",
+      "analyzed_at": "2026-07-03T05:03:23.961732+00:00",
+      "articles_analyzed": 183,
+      "articles_selected": 3,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Oggi la categoria è dominata da notizie di impatto internazionale sul mercato dell'AI, con un focus su decisioni regolamentari statunitensi, politiche di piattaforme di rete e prototipi hardware di grandi player.",
+          "notizie": [
+            {
+              "titolo": "Gli USA revocano il divieto di esportazione per i modelli di punta Anthropic",
+              "fonte": "Blick Digital",
+              "link": "https://www.blick.ch/digital/kehrtwende-in-washington-usa-heben-sperre-fuer-ki-spitzenmodell-auf-mit-einem-haken-id22073562.html",
+              "riassunto": "Il Dipartimento del Commercio americano ha annullato il blocco che impediva l’accesso globale a Claude Fable 5 e Mythos 5 di Anthropic. I modelli torneranno disponibili entro pochi giorni, ma la decisione è accompagnata da nuove restrizioni tecniche per mitigare rischi di abuso.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Cloudflare impone scadenza per i crawler AI: le case editrici dovranno pagare",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+              "riassunto": "A partire dal 15 settembre Cloudflare separerà i crawler usati per la ricerca da quelli destinati all’addestramento AI, bloccando di default i secondi su molti siti editoriali. Le aziende AI dovranno negoziare accordi di licenza con gli editori per continuare a indicizzare i contenuti.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SpaceX mostra un prototipo di smartphone AI più sottile di un iPhone",
+              "fonte": "TechCrunch AI",
+              "link": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+              "riassunto": "Durante una presentazione agli investitori, SpaceX ha rivelato un dispositivo portatile simile a un telefono, alimentato da tecnologia xAI e da un chip Qualcomm Snapdragon. Il prodotto punta a integrare assistenti vocali avanzati e a fungere da “everything app” in stile WeChat.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "Regolamentazione e licenze per l'uso dei dati editoriali da parte dell'AI",
+            "Rilancio di modelli AI precedentemente bloccati da restrizioni governative"
+          ],
+          "da_tenere_d_occhio": "Le reazioni dei principali editori svizzeri alla nuova policy di Cloudflare e l'eventuale evoluzione delle restrizioni statunitensi su modelli AI di Anthropic",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 115,
       "run_id": 147,
@@ -3812,157 +3907,6 @@
             "Traduzione vocale in tempo reale per mercati multilingue"
           ],
           "da_tenere_d_occhio": "L’evoluzione delle normative europee (es. Digital Markets Act) e le eventuali restrizioni di disponibilità per Siri AI in Svizzera",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 96,
-      "run_id": 128,
-      "run_time": "2026-06-10 05:00:02.778837+00:00",
-      "analyzed_at": "2026-06-10T05:08:38.684733+00:00",
-      "articles_analyzed": 181,
-      "articles_selected": 7,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "partial",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da due notizie che coinvolgono i media pubblici svizzeri: una truffa legata alla Posta segnalata da RTS e un'analisi sul deterioramento dei rapporti tra Trump e Netanyahu per SRF.",
-          "notizie": [
-            {
-              "titolo": "Allarme truffa: falsi inviti di ritiro della Posta con QR code da 2,10 CHF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Attenzione-ai-falsi-inviti-di-ritiro-della-Posta--3804212.html",
-              "riassunto": "Le autorità di Ginevra hanno segnalato una truffa che utilizza foglietti di avviso di ritiro della Posta con un codice QR che reindirizza a un sito falsificato. Il sito richiede il pagamento di 2,10 franchi e i dati della carta di credito. Cindy Lerin (FRC) ha avvertito che il vero obiettivo è il furto di dati. La notizia è stata ripresa da RTS (04.06.2026).",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Tensioni tra Trump e Netanyahu: il rapporto sull’orlo del collasso",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/mondo/Il-rapporto-tra-Trump-e-Netanyahu-%C3%A8-sull%E2%80%99orlo-del-collasso--3805595.html",
-              "riassunto": "L’analista Stephan Bierling, citato da SRF, descrive il rapporto tra Donald Trump e Benjamin Netanyahu come una “faida” in fase di sgretolamento, con diminuita solidarietà americana verso Israele e timori di coinvolgimento in conflitti con l’Iran. Bierling sottolinea che entrambi hanno tratto vantaggio dalla reciproca alleanza populista, ma ora le divergenze aumentano.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento delle truffe digitali legate a servizi pubblici",
-            "Crescente instabilità nelle relazioni USA‑Israele"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle indagini sulla truffa della Posta e possibili sviluppi diplomatici tra USA e Israele nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "",
-          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: HTTP Error 401: Unauthorized | OR-fallback3: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura è dominata da una notizia di grande impatto sui media pubblici svizzeri, mentre a livello internazionale spiccano i Tony Awards e gli eventi sportivi di rilievo.",
-          "notizie": [
-            {
-              "titolo": "Patrick Bruel fermato dalla polizia in Francia",
-              "fonte": "RSI Cultura",
-              "link": "https://www.rsi.ch/info/mondo/Patrick-Bruel-fermato-dalla-polizia--3804221.html",
-              "riassunto": "L'artista francese Patrick Bruel è stato interrogato dal primo distretto della polizia giudiziaria di Parigi. È indagato per una decina di denunce di violenze sessuali presentate da circa trenta donne, con accuse di stupri e aggressioni in Francia e Belgio. Bruel nega le accuse e può essere trattenuto in custodia cautelare fino a 48 ore.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Copertura internazionale dei Tony Awards",
-            "Eventi sportivi di grande risonanza (Roland Garros, Formula 1)"
-          ],
-          "da_tenere_d_occhio": "Evoluzione delle indagini su Patrick Bruel e possibili sviluppi giudiziari nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la geopolitica è dominata da tensioni in Medio Oriente e da un acceso dibattito sull'energia nucleare in Europa, con ripercussioni anche per la Svizzera.",
-          "notizie": [
-            {
-              "titolo": "Dalla Finlandia al Giappone: la rinascita del nucleare e il dibattito in Svizzera",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/international/von-finnland-bis-japan-atomkraft-ja-bitte-wo-kernenergie-die-zukunft-ist",
-              "riassunto": "Il servizio di SRF analizza la ripresa del nucleare in Giappone, Francia e altri paesi, sollevando la questione del divieto svizzero di nuovi impianti. Il testo cita il “Swiss nuclear new‑build ban” e spiega che il dibattito è alimentato dall’aumento dei prezzi dell’energia dopo l’invasione russa dell’Ucraina.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "rivalutazione del nucleare in Europa",
-            "escalation tra Iran e Israele con coinvolgimento USA"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle tensioni tra Iran, Israele e Stati Uniti, che potrebbe influenzare i mercati energetici e le politiche di sicurezza europea nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta a temi di sicurezza e finanza pubblica in Svizzera: dal licenziamento di un postino per motivi di sicurezza, alla lotta contro i furti organizzati nei garage, fino al dibattito sul finanziamento della tredicesima AVS.",
-          "notizie": [
-            {
-              "titolo": "Postino di Vevey licenziato dopo 42 anni per aver consegnato i pacchi ai piani, per prevenire i furti",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1930894/postino-lavoro-anni-licenziato-servizio",
-              "riassunto": "Jean‑Daniel Taverney, postino di Vevey con 42 anni di servizio, è stato licenziato perché, contrariamente alle direttive interne, consegnava i pacchi ai piani degli edifici per evitare furti. L’azienda postale ha ritenuto la pratica una perdita di tempo, nonostante le segnalazioni di furti frequenti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Task force federale per contrastare i furti nei garage: 435 casi dal 2025",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1931004/furti-svizzera-fenomeno-garage-force-task",
-              "riassunto": "Il governo ha istituito una task force guidata da Fedpol per combattere i furti nei garage, considerati “crime as a service”. Dal 2025 sono stati registrati 435 furti o tentativi, con 116 nel solo 2024, attribuiti a bande criminali straniere, soprattutto francesi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "13ª AVS: dibattito su finanziamento misto tra aumento IVA e contributi salariali",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/politica/1930964/aumento-nazionale-iva-stati-soluzione-finanziamento-contributi-consiglio-camera-13esima",
-              "riassunto": "Il Consiglio nazionale ha votato (26‑18) per un finanziamento misto della tredicesima AVS, combinando un aumento dell’IVA (0,4 punti) con un rialzo dei contributi salariali, respingendo la proposta della Camera che prevedeva solo l’IVA.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Sicurezza dei servizi pubblici (postino, furti organizzati)",
-            "Finanziamento della previdenza sociale (debate AVS)",
-            "Aumento della criminalità transnazionale in Svizzera"
-          ],
-          "da_tenere_d_occhio": "Possibili modifiche legislative sulla procedura di consegna della posta e sull’estensione dei poteri della task force per i furti, oltre a evoluzioni nel dibattito sul finanziamento della AVS che potrebbero influenzare le aliquote fiscali.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da numerosi annunci di Apple al WWDC 2026 e da sviluppi legati a OpenAI, Google e Microsoft, ma nessuna notizia coinvolge direttamente i media pubblici svizzeri né ha impatto specifico sulla Svizzera o il Ticino.",
-          "notizie": [],
-          "trend": [
-            "Apple intensifica le funzionalità AI con Siri AI e Apple Intelligence al WWDC 2026",
-            "OpenAI avvia la procedura di IPO, seguita da movimenti di mercato di altri giganti AI"
-          ],
-          "da_tenere_d_occhio": "Monitorare le reazioni dei regolatori europei alle nuove funzionalità AI di Apple e le evoluzioni della procedura di IPO di OpenAI nelle prossime 24 ore.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
