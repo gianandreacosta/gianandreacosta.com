@@ -1,6 +1,131 @@
 {
-  "generated_at": "2026-07-03T05:03:23.973382+00:00",
+  "generated_at": "2026-07-04T05:05:43.343566+00:00",
   "analyses": [
+    {
+      "id": 117,
+      "run_id": 149,
+      "run_time": "2026-07-04 05:00:02.134291+00:00",
+      "analyzed_at": "2026-07-04T05:05:43.333007+00:00",
+      "articles_analyzed": 184,
+      "articles_selected": 5,
+      "model_used": "openrouter/openai/gpt-oss-120b:free",
+      "status": "partial",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Oggi la cronaca ticinese è dominata da temi legati al costo della vita e alle politiche ambientali: prezzi della benzina in calo, iniziativa per più asili nido pubblici e la nuova strategia verde di Bellinzona.",
+          "notizie": [
+            {
+              "titolo": "Benzina ai minimi: il nuovo player fa crollare i prezzi nel Bellinzonese",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/benzina-ai-minimi-tutti-pazzi-per-i-distributori-del-bellinzonese-437552",
+              "riassunto": "L’arrivo di un nuovo distributore ha provocato un calo generalizzato dei prezzi della benzina nella zona di Bellinzona, con la benzina a 1,45 CHF/l. La “bolla” attrae automobilisti da Valli e Luganese, creando code alle pompe.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "Iniziativa per più asili nido pubblici: 3.000 firme consegnate a Bellinzona",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/ho-sentito-parlare-persino-di-2000-franchi-pochi-posti-e-rette-care-negli-asili-nido-consegnate-3000-firme-437546",
+              "riassunto": "L’associazione “Più nidi d’infanzia pubblici” ha depositato a Bellinzona un’iniziativa con 3.000 firme, chiedendo più posti e tariffe più basse. Si lamenta di rette fino a 2.000 CHF per un posto, ritenute inaccessibili per molte famiglie.",
+              "rilevanza": "alta",
+              "incrocio": true,
+              "fonti_incrocio": [
+                "Ticinonews Ticino",
+                "LaRegione Bellinzonese"
+              ],
+              "differenze_narrative": "Ticinonews enfatizza l’entità delle rette (fino a 2.000 CHF) e il numero di firme, mentre LaRegione Bellinzonese sottolinea il bisogno espresso dalle famiglie e la pressione sul Comune per aumentare i nidi pubblici."
+            },
+            {
+              "titolo": "Bellinzona lancia la Strategia della Città per il verde urbano",
+              "fonte": "Ticinonews Ticino",
+              "link": "https://www.ticinonews.ch/ticino/ecco-come-bellinzona-vuole-affrontare-le-sfide-climatiche-437535",
+              "riassunto": "Il Municipio ha approvato la Strategia della Città, articolata in 12 linee guida per aumentare il verde urbano, migliorare la gestione delle acque piovane e ridurre le isole di calore. La misura prevede la piantumazione di 5.000 nuovi alberi entro il 2028.",
+              "rilevanza": "media",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "crescente pressione sui costi dei servizi pubblici",
+            "politiche ambientali urbane"
+          ],
+          "da_tenere_d_occhio": "L’andamento dei prezzi della benzina nelle prossime settimane e le eventuali risposte delle autorità cantonali alle richieste di più asili nido pubblici.",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Oggi la cronaca geopolitica si concentra su due temi chiave per la Svizzera: la stabilità del settore bancario, evidenziata dalla BNS, e le critiche rivolte a SRF per la copertura dell'AfD. Entrambe le notizie coinvolgono direttamente i media pubblici svizzeri.",
+          "notizie": [
+            {
+              "titolo": "La BNS conferma la solidità del settore bancario ma avverte di rischi esteri",
+              "fonte": "SRF International",
+              "link": "https://www.srf.ch/news/wirtschaft/finanzstabilitaet-bankensektor-ist-gesund-und-robust-trotzdem-warnt-die-snb",
+              "riassunto": "Il Direttore della Banca Nazionale Svizzera ha dichiarato che il sistema bancario è “sano e robusto”, ma ha segnalato possibili pericoli provenienti dall’estero, soprattutto a causa di tensioni geopolitiche. La dichiarazione è stata fatta dal redattore economico Zaugg.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            },
+            {
+              "titolo": "SRF criticata per la copertura dell'AfD: la UBI accoglie il reclamo",
+              "fonte": "20 Minuten",
+              "link": "https://www.20min.ch/story/medienkritik-srf-kassiert-ruege-wegen-afd-berichterstattung-103596097",
+              "riassunto": "L'Ufficio federale delle comunicazioni (UBI) ha accolto una denuncia del parlamentare svizzero Thomas Matter (SVP) contro SRF per una segnalazione considerata inadeguata sull'AfD. SRF ha riconosciuto una “posizionamento sfortunato” nella sua precedente valutazione.",
+              "rilevanza": "alta",
+              "incrocio": false,
+              "fonti_incrocio": [],
+              "differenze_narrative": ""
+            }
+          ],
+          "trend": [
+            "tensioni sui media pubblici svizzeri",
+            "preoccupazioni per la stabilità finanziaria in un contesto geopolitico incerto"
+          ],
+          "da_tenere_d_occhio": "Eventuali ulteriori dichiarazioni della BNS o nuovi reclami contro SRF nei prossimi 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Nessuna notizia di oggi menziona direttamente i media pubblici svizzeri né presenta impatti specifici sulla Svizzera o sul Ticino; la maggior parte dei contenuti riguarda sviluppi internazionali di AI.",
+          "notizie": [],
+          "trend": [
+            "Crescita degli investimenti corporate in AI (es. Microsoft, Anthropic)",
+            "Aumento dell'uso di AI per applicazioni enterprise e custom chip"
+          ],
+          "da_tenere_d_occhio": "Monitorare eventuali annunci di partnership o investimenti di aziende svizzere nel settore AI nelle prossime 24 ore",
+          "_model_used": "openrouter/openai/gpt-oss-120b:free"
+        }
+      ]
+    },
     {
       "id": 116,
       "run_id": 148,
@@ -3663,250 +3788,6 @@
             "ritardi e strategie di IPO nel settore AI"
           ],
           "da_tenere_d_occhio": "L'evoluzione delle politiche di guardrail di Anthropic e le possibili nuove restrizioni che potrebbero influenzare l'adozione dei modelli Mythos/Fable in Europa",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "run_id": 129,
-      "run_time": "2026-06-11 05:00:02.734669+00:00",
-      "analyzed_at": "2026-06-11T05:09:32.352599+00:00",
-      "articles_analyzed": 183,
-      "articles_selected": 15,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da dibattiti su servizi pubblici e politiche sociali, con particolare attenzione a decisioni che coinvolgono media pubblici svizzeri.",
-          "notizie": [
-            {
-              "titolo": "AutoPostale elimina il Wi‑Fi gratuito sui mezzi",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/AutoPostale-elimina-il-Wi-Fi-gratuito--3807692.html",
-              "riassunto": "AutoPostale ha comunicato che dal fine anno non offrirà più il Wi‑Fi gratuito sui suoi autobus, servizio introdotto nel 2012. La decisione è motivata dal dimezzamento dell’uso negli ultimi cinque anni e dal costo di diverse centinaia di migliaia di franchi all’anno. Un ascoltatore della SRF ha criticato la scelta, definendola una riduzione dei servizi pubblici.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Aumento dei disaccordi tra le Camere federali sulla 13ª AVS",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Sempre-pi%C3%B9-disaccordi-tra-le-Camere-federali--3810872.html",
-              "riassunto": "Il finanziamento della 13ª AVS è tornato alla Conferenza di conciliazione, 24ª volta in questa legislatura. 13 rappresentanti per Camera hanno proposto un mix di aumenti salariali e IVA. La proposta deve ora essere approvata integralmente da entrambe le Camere. L’intervista a Rahel Freiburghaus è stata citata da SRF.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Intelligenza artificiale: la sfida di restare umani",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/scienza-e-tecnologia/Intelligenza-artificiale-la-sfida-%C3%A8-restare-umani--3806273.html",
-              "riassunto": "Nel programma “60 Minuti” si è discusso del ruolo dell’IA nella società. Tra gli ospiti c’erano Alessandro Trivilini, Matteo Colombo, Lelio Demichelis e Michele Mattia. È emerso che l’IA è uno strumento potente ma non neutro, con rischi legati al controllo, alla delega di decisioni e alla normativa che fatica a stare al passo.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Regolamentazione digitale e privacy (IA, deepfake)",
-            "Tagli e riorganizzazioni dei servizi pubblici (Wi‑Fi, pensioni)",
-            "Impatto climatico locale (grandine, evacuazioni)"
-          ],
-          "da_tenere_d_occhio": "L’esito della conferenza di conciliazione sull’AVS e la reazione dei cittadini allo stop del Wi‑Fi gratuito di AutoPostale nelle prossime 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da questioni economiche e ambientali: la disputa sulla rete dei bancomat, la redistribuzione finanziaria tra cantoni e una protesta di Greenpeace al Palazzo federale contro il ritorno al nucleare.",
-          "notizie": [
-            {
-              "titolo": "Greenpeace proietta immagini anti-nucleare sul Palazzo federale durante il dibattito del Consiglio nazionale",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/attivisti-di-greenpeace-proiettano-immagini-contro-il-nucleare-su-palazzo-federale-435380",
-              "riassunto": "Attivisti di Greenpeace hanno proiettato sul retro del Palazzo federale simboli contro il nucleare, tra cui il simbolo della radioattività e un ritratto di Putin, per denunciare il pericolo di un ritorno all'energia atomica in Svizzera mentre il Consiglio nazionale discuteva il tema.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Perequazione finanziaria 2027: Ticino e Grigioni tra i principali beneficiari",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/perequazione-finanziaria-ticino-e-grigioni-ancora-tra-beneficiari-435395",
-              "riassunto": "L'Amministrazione federale delle finanze ha pubblicato i calcoli per la perequazione del 2027: il Ticino riceverà oltre 112 milioni di franchi, i Grigioni più di 220 milioni, mentre cantoni come Zugo e Ginevra dovranno versare rispettivamente 529 e 497 milioni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Progetto di rete unica per i bancomat in Svizzera ancora bloccato",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/bancomat-la-svolta-di-una-rete-unica-e-ancora-lontana-435387",
-              "riassunto": "Il tentativo di creare una rete nazionale di bancomat, promosso da Confederazione e BNS, è fermo: la società SIX ha dichiarato che il progetto non verrà portato avanti, lasciando Posta e SIX come principali fornitori di contante. Un unico sportello pilota a Güttingen sarà operativo solo dal 2025.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "dibattito sul nucleare e proteste ambientali",
-            "redistribuzione finanziaria tra cantoni",
-            "sfide infrastrutturali nel settore dei pagamenti in contanti"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della discussione sul controprogetto nucleare in Consiglio nazionale e le eventuali decisioni sulla rete dei bancomat",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: due testate trattano la morte dell'editore Hoepli, mentre il LAC lancia una stagione di grande impatto per il Ticino e SRF celebra la Giornata svizzera della letteratura.",
-          "notizie": [
-            {
-              "titolo": "È morto Ulrico Carlo Hoepli, storico editore milanese",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/e-morto-ulrico-carlo-hoepli-430183",
-              "riassunto": "Ulrico Carlo Hoepli, quarto della dinastia che ha gestito la casa editrice Hoepli dal 1870, è deceduto a Milano. L’articolo riporta la sua biografia e cita un’intervista del 2011 a Swissinfo, dove il fondatore parlava del futuro dell’editoria italiana.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "CdT Società",
-                "LaRegione Culture"
-              ],
-              "differenze_narrative": "CdT fornisce dettagli sulla biografia, la liquidazione della società e la citazione a Swissinfo; LaRegione limita la notizia a un breve annuncio di morte senza approfondimenti."
-            },
-            {
-              "titolo": "LAC presenta la stagione 2026/27 “In/Civiltà” con 82 produzioni",
-              "fonte": "CdT Società",
-              "link": "https://www.cdt.ch/societa/spettacoli/lac-sullonda-del-successo-ma-senza-dimenticare-limpegno-430192",
-              "riassunto": "Il direttore del LAC, Carmelo Rifici, ha svelato una stagione di 82 titoli, 19 produzioni e 165 aperture di sipario, con oltre 100.000 spettatori e un tasso di occupazione dell’80%. L’iniziativa punta a un “radicale ringiovanimento” del pubblico ticinese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Giornata svizzera della letteratura: leggende alpine tra Sennentuntschi e Slenderman",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/literatur/tag-der-schweizer-literatur-vom-sennentuntschi-zum-slenderman-sagen-faszinieren-bis-heute",
-              "riassunto": "Il servizio di SRF Kultur ricorda la Giornata svizzera della letteratura, illustrando come le leggende alpine, dal Sennentuntschi al moderno Slenderman, continuino a influenzare cinema, teatro e dibattito culturale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Rinascita e rinnovamento del pubblico culturale ticinese",
-            "Riconoscimento e valorizzazione del patrimonio narrativo alpino"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della programmazione del LAC nella seconda metà dell'anno e le eventuali reazioni del pubblico e dei finanziatori",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni legate a media pubblici svizzeri e da nuove sanzioni internazionali contro gli insediamenti israeliani. Un caso di spaccatura interna coinvolge SRF e il mondo dello sport.",
-          "notizie": [
-            {
-              "titolo": "Scandalo Fischer: e‑mail compromettente tra giornalista SRF e la federazione svizzera di hockey",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/off-the-record-brisantes-mail-enthuellt-so-lief-es-wirklich-beim-fischer-skandal-103580021",
-              "riassunto": "Un'email di Pascal Schmitz, giornalista di SRF, ha confermato l'esistenza di un presunto “off‑the‑record” con il capo dei media della Swiss Ice Hockey Federation, scatenando una nuova polemica sul caso Fischer. SRF aveva negato qualsiasi accordo informale. L'email, resa pubblica da Schweizheute, riporta la frase “Off‑the‑Record‑Gespräch” e mostra che la SRF ha contestato la richiesta retroattiva di riservatezza.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "20 Minuten",
-                "20 Minutes"
-              ],
-              "differenze_narrative": "Entrambe le versioni (italiano e francese) descrivono lo stesso scambio di email e la negazione di SRF, ma la versione italiana enfatizza il contenuto testuale dell'email, mentre quella francese sottolinea la risposta ufficiale di SRF e il contesto della dichiarazione del capo redattore Tristan Brenn."
-            }
-          ],
-          "trend": [
-            "controversie su media pubblici svizzeri (SRF)",
-            "sanzioni multilaterali contro gli insediamenti israeliani in Cisgiordania"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della disputa tra SRF e la federazione di hockey, soprattutto eventuali azioni legali o ulteriori rivelazioni di comunicazioni interne",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è sui grandi gruppi svizzeri citati in studi internazionali, sul continuo record dei prezzi immobiliari in Svizzera e su una contraddizione tra la strategia digitale della Confederazione e la richiesta di 600 milioni di fogli di carta.",
-          "notizie": [
-            {
-              "titolo": "Studio Oxfam denuncia i dividendi delle multinazionali europee, tra cui Zurich, Swiss Re e Glencore",
-              "fonte": "Ticinonews Economia",
-              "link": "https://www.ticinonews.ch/economia/le-multinazionali-europee-contribuiscono-ad-aggravare-la-disuguaglianza-globale-435428",
-              "riassunto": "Un rapporto Oxfam pubblicato oggi evidenzia che le 100 maggiori aziende europee hanno distribuito il 70 % dei profitti agli azionisti. Tra le svizzere, Zurich, Swiss Re e Glencore hanno pagato dividendi superiori agli utili netti, con Zurich che ha aumentato il dividendo a 28 franchi per azione nel 2024 nonostante un utile in calo del 11,5 %.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Quattro delle cinque città più costose d'Europa sono svizzere: Zurich guida la classifica",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/economia/1931096/casa-salata-casa-quattro-delle-cinque-citta-piu-care-d-europa-sono-svizzere",
-              "riassunto": "Secondo Global Property Guide, Zurigo è la città più cara d'Europa con prezzi medi di 18.229 € al m², seguito da Ginevra, Lucerna e Berna. I valori sono cresciuti del 4,2 % nell'ultimo anno, spinti da domanda internazionale e scarsa offerta abitativa.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Confederazione svizzera bandisce 600 milioni di fogli di carta nonostante la strategia “digital only”",
-              "fonte": "Il Sole 24 Ore Economia",
-              "link": "https://www.ilsole24ore.com/art/una-pila-alta-sette-volte-everest",
-              "riassunto": "L’Ufficio federale delle costruzioni e della logistica ha indetto una gara per 600 milioni di fogli di carta destinati a fotocopie nei prossimi cinque anni, pari a circa 3 000 fogli per dipendente all'anno, suscitando critiche sulla coerenza con gli obiettivi di digitalizzazione dell'amministrazione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescente pressione su multinazionali svizzere riguardo a distribuzione di dividendi e responsabilità sociale",
-            "Aumento dei prezzi immobiliari nelle principali città svizzere",
-            "Contraddizioni tra politiche di digitalizzazione e spese cartacee nella pubblica amministrazione"
-          ],
-          "da_tenere_d_occhio": "Le prossime decisioni dell'UE sul sistema ETS, che potrebbero influenzare i costi di produzione delle imprese svizzere esportatrici",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su assistenti AI potenziati e traduzioni vocali in tempo reale, con particolare attenzione all'impatto per gli utenti svizzeri.",
-          "notizie": [
-            {
-              "titolo": "Apple ricostruisce Siri con IA: la nuova “Siri AI” arriva in Svizzera",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/highlights-der-apple-konferenz-ios-27-macht-dein-altes-iphone-wieder-fit-id22012997.html",
-              "riassunto": "Apple ha presentato “Siri AI”, una versione completamente ridisegnata dell’assistente vocale che ora integra modelli di IA sviluppati con Google e GPU Nvidia per le richieste più complesse. La Svizzera riceverà la versione con funzionalità AI, mentre l’UE ne sarà esclusa per il Digital Markets Act. L’articolo cita il responsabile di Apple, Craig Federighi, che definisce Siri un “strumento dialogico integrato” e indica che la privacy è garantita con elaborazione locale per i comandi semplici.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Google lancia Gemini 3.5 Live Translate: traduzione vocale in tempo reale per oltre 70 lingue",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/googles-gemini-3-5-live-translate-delivers-real-time-voice-translation-across-70-languages/",
-              "riassunto": "Google ha reso disponibile Gemini 3.5 Live Translate, un modello audio capace di tradurre simultaneamente più di 70 lingue mantenendo tono, ritmo e intonazione. Il servizio è integrato nell’app Google Translate, in Google Meet (da 5 a 70+ lingue) e in un’API per sviluppatori. L’articolo specifica che l’audio generato è marcato con un watermark inaudibile SynthID.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Integrazione di assistenti IA nei dispositivi consumer",
-            "Traduzione vocale in tempo reale per mercati multilingue"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione delle normative europee (es. Digital Markets Act) e le eventuali restrizioni di disponibilità per Siri AI in Svizzera",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
