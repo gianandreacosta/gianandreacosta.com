@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-07-04T05:05:43.343566+00:00",
+  "generated_at": "2026-07-05T05:03:28.037891+00:00",
   "analyses": [
+    {
+      "id": 118,
+      "run_id": 150,
+      "run_time": "2026-07-05 05:00:01.412656+00:00",
+      "analyzed_at": "2026-07-05T05:03:28.025372+00:00",
+      "articles_analyzed": 176,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 117,
       "run_id": 149,
@@ -3544,250 +3605,6 @@
             "Rilevamento e trasparenza della musica AI nei servizi di streaming"
           ],
           "da_tenere_d_occhio": "L’eventuale lancio di Siri AI in lingua tedesca e francese, che potrebbe influenzare gli utenti svizzeri, e le reazioni del mercato alla nuova policy di Deezer sulla rimozione di brani AI.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 98,
-      "run_id": 130,
-      "run_time": "2026-06-12 06:49:40.264204+00:00",
-      "analyzed_at": "2026-06-12T06:58:12.799729+00:00",
-      "articles_analyzed": 185,
-      "articles_selected": 15,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri e da tensioni politiche interne, con particolare attenzione a difesa, finanza e conflitti parlamentari.",
-          "notizie": [
-            {
-              "titolo": "Il consigliere federale Martin Pfister sotto i riflettori della SRF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/In-missione-con-Martin-Pfister--3812399.html",
-              "riassunto": "La SRF ha seguito per una settimana il consigliere federale della Difesa Martin Pfister, evidenziando le difficoltà di rafforzare l’esercito svizzero e la vulnerabilità a possibili attacchi con droni entro il 2028.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Crescente polarizzazione tra le Camere federali, citata dalla SRF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Sempre-pi%C3%B9-disaccordi-tra-le-Camere-federali--3810872.html",
-              "riassunto": "Il finanziamento della 13ª AVS è bloccato dopo 24 ricorsi alla Conferenza di conciliazione; la politologa Rahel Freiburghaus, intervistata dalla SRF, attribuisce il fenomeno a una crescente polarizzazione politica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Processo per l’incendio del Constellation a Crans‑Montana, citata dalla RTS",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/svizzera/Crans-Montana-gli-avvocati-chiedono-l%E2%80%99omicidio-con-dolo-eventuale-per-i-Moretti--3811301.html",
-              "riassunto": "La RTS riporta che gli avvocati delle vittime chiedono di elevare l’accusa contro i coniugi Moretti da omicidio colposo a omicidio con dolo eventuale per l’incendio del bar Constellation, con pene potenziali fino a 20 anni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "tensioni politiche tra Consiglio degli Stati e Consiglio nazionale",
-            "sicurezza nazionale e capacità difensiva svizzera",
-            "processi giudiziari ad alta visibilità"
-          ],
-          "da_tenere_d_occhio": "L’esito della conferenza di conciliazione sull’AVS e le eventuali evoluzioni della politica di difesa svizzera nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da questioni di identità nazionale e diritti sociali, con la nazionale di hockey che abbandona lo scudo federale, una nuova tutela per i genitori adottivi in Ticino e un caso di furto di profumi che ha coinvolto Givaudan.",
-          "notizie": [
-            {
-              "titolo": "La nazionale di hockey svizzera eliminerà lo scudo federale dalla maglia dal 2027",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/la-nazionale-di-hockey-dice-addio-allo-scudo-sulla-maglia-430251",
-              "riassunto": "La Swiss Ice Hockey Federation ha confermato che, a partire dal 1° gennaio 2027, la maglia della nazionale maschile non riporterà più lo scudo rosso‑crociato della Confederazione, a seguito di una sentenza del Tribunale amministrativo che ha ritenuto il suo uso non conforme alla legge sulla protezione degli stemmi.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Ticino: nuova tutela sul lavoro per i genitori adottivi",
-              "fonte": "CdT Svizzera",
-              "link": "https://www.cdt.ch/news/svizzera/maggiore-tutela-sul-lavoro-per-chi-ha-appena-adottato-430409",
-              "riassunto": "Il Consiglio nazionale ha approvato l’iniziativa cantonale che equiparerà la protezione contro il licenziamento delle madri adottive a quella delle madri biologiche, garantendo 16 settimane di tutela dal licenziamento per i genitori che hanno appena adottato.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Givaudan licenzia dipendenti per furto di essenze profumate",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/svizzera/givaudan-licenzia-dipendenti-per-furto-di-profumi-435506",
-              "riassunto": "La multinazionale ginevrina Givaudan ha licenziato sette collaboratori di Vernier per aver sottratto essenze di valore, provocando un ammanco di decine di migliaia di franchi; l’azienda ha sporto denuncia penale.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Identità nazionale e simboli istituzionali",
-            "Diritti dei genitori adottivi",
-            "Sicurezza e furti in grandi aziende svizzere"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi legali e politici attorno alla rimozione dello scudo dalla maglia nazionale di hockey e all’attuazione della nuova tutela per i genitori adottivi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con una nuova serie televisiva prodotta da SRF e RTL, mentre i media internazionali coprono eventi sportivi e artistici di ampio respiro.",
-          "notizie": [
-            {
-              "titolo": "Nuova serie TV su Heidi prodotta da SRF e RTL",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/film-serien/neue-serie-von-srf-und-rtl-kohlund-makatsch-und-co-das-sind-die-heidi-stars",
-              "riassunto": "SRF Kultur annuncia l'avvio delle riprese della nuova serie televisiva su Heidi, co‑produzione con RTL. Il cast comprende Neah Hefti (Heidi), Christian Kohlund (Alpöhi) e Heike Makatsch (Fräulein Rottenmeier). Le riprese si svolgono in Germania e nel Bergell svizzero; la messa in onda è prevista per il 2027.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Co‑produzioni tra media pubblici svizzeri e case internazionali",
-            "Crescita dell’interesse per contenuti culturali legati a icone nazionali (es. Heidi)"
-          ],
-          "da_tenere_d_occhio": "L'uscita e la risposta del pubblico alla serie Heidi, che potrebbe influenzare future collaborazioni tra SRF e partner esteri",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica è dominata da tensioni mediorientali, ma per il lettore svizzero emergono soprattutto le notizie che coinvolgono i media pubblici del paese, con due inchieste su SRF e un dossier energetico della stessa emittente.",
-          "notizie": [
-            {
-              "titolo": "Scandalo Fischer: una e‑mail compromettente rivela un presunto accordo “off‑the‑record” con la SRF",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/off-the-record-brisantes-mail-enthuellt-so-lief-es-wirklich-beim-fischer-skandal-103580021",
-              "riassunto": "Un'email di Pascal Schmitz, giornalista della SRF, a Finn Sulzer (Swiss Ice Hockey) menziona un “off‑the‑record”. La SRF aveva negato l’esistenza di tale accordo. La pubblicazione del messaggio riaccende il dibattito sulla trasparenza della rete pubblica svizzera.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "20 Minuten (ITA)",
-                "20 Minutes (FRA)"
-              ],
-              "differenze_narrative": "La versione italiana sottolinea il contenuto dell'email e la contraddizione con la dichiarazione di Tristan Brenn; la versione francese enfatizza la risposta ufficiale della SRF e il contesto legale, ma riporta gli stessi fatti."
-            },
-            {
-              "titolo": "«Heidi»: le star tedesche si uniscono all’adattamento della serie prodotta da SRF e RTL",
-              "fonte": "20 Minuten",
-              "link": "https://www.20min.ch/story/dreharbeiten-heidi-serie-deutsche-stars-103580521",
-              "riassunto": "SRF collabora con RTL per una nuova serie “Heidi”. Il cast include attori tedeschi (Heike Makatsch, Charly Hübner) e il veterano svizzero Christian Kohlund. Le riprese sono a Colonia e nel Bergell svizzero, in vista del 200° anniversario di Johanna Spyri.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "L’Europa avanza nella transizione energetica: il nuovo rapporto SRF evidenzia una produzione interna sufficiente per le rinnovabili",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/wirtschaft/energie-umbau-kommt-voran-europa-macht-vorwaerts-mit-den-erneuerbaren",
-              "riassunto": "Un rapporto Ember, analizzato da Klaus Ammann di SRF, stima che l’UE possa produrre più di 4,6 milioni di auto elettriche all’anno e il doppio di turbine eoliche rispetto alla domanda attuale, riducendo la dipendenza da fonti fossili.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni USA‑Iran con continui scambi diplomatici e militari",
-            "Uso crescente dell’intelligenza artificiale in operazioni militari",
-            "Rinforzo della presenza dei media pubblici svizzeri nei dibattiti internazionali"
-          ],
-          "da_tenere_d_occhio": "L’evoluzione dei negoziati USA‑Iran e le eventuali dichiarazioni di Trump nei prossimi 24 h, che potrebbero riaccendere la pressione militare nella regione del Golfo.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta al mercato immobiliare svizzero, dove i tassi dei mutui a fisso aumentano nonostante il tasso di politica monetaria a zero, e alle novità di consumo di Migros, che sperimenta il trend sushi in tubo. Entrambi gli eventi mostrano tensioni tra dinamiche globali e risposte locali.",
-          "notizie": [
-            {
-              "titolo": "I tassi dei mutui a fisso svizzeri salgono nonostante il tasso di politica a zero",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/invest/brisante-prognose-warum-festhypotheken-teurer-werden-und-was-mit-dem-saron-los-ist-id22018145.html",
-              "riassunto": "Secondo l'analisi di Comparis, i mutui a tasso fisso a 10 anni costano in media l'1,86 % in Svizzera, in rialzo rispetto all'anno precedente, pur con il tasso di riferimento della SNB fermo a zero. Il fenomeno è attribuito all'aumento dei tassi sui mercati globali, che spinge gli investitori a chiedere rendimenti più alti.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Migros lancia i “Sushi Pop” in tubo di cartone in filiali selezionate",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/in-ausgewaehlten-filialen-migros-verkauft-jetzt-sushi-aus-der-kartonroehre-id22017881.html",
-              "riassunto": "Da giovedì 11 giugno la Migros propone, per sei settimane, i “Sushi Pop”, rotoli di sushi confezionati in una cartuccia di cartone da spremere, a 13,90 CHF per otto pezzi. Il prodotto è fornito dal locale produttore Tasted Food (Dietlikon) e segue un trend già diffuso in Germania e Austria.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento dei tassi dei mutui svizzeri nonostante la politica monetaria accomodante",
-            "Innovazione alimentare nei retail svizzeri, con prodotti virali e confezioni pratiche"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione della politica della SNB e le reazioni dei mercati obbligazionari internazionali, che potrebbero influenzare ulteriormente i tassi dei mutui a fisso in Svizzera",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie su Anthropic e i suoi nuovi modelli Mythos/Fable, con critiche sulla sicurezza e discussioni su guardrail. Altre due notizie di rilievo riguardano l'IPO di OpenAI, posticipata, e l'avvio di un istituto tedesco per la sicurezza dell'AI.",
-          "notizie": [
-            {
-              "titolo": "Ricercatori di sicurezza scontenti dei guardrail di Anthropic Fable",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
-              "riassunto": "Anthropic ha lanciato Fable, versione limitata del modello Mythos, ma i ricercatori di sicurezza lo criticano perché blocca anche richieste innocue legate alla cybersecurity. Valentina Palmiotti (IBM X‑Force) segnala che il modello rifiuta anche la lettura di blog, e Matt Suiche osserva che il filtro è basato su parole‑chiave, degradando richieste di codice sicuro.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "Il Post Tecnologia"
-              ],
-              "differenze_narrative": "TechCrunch si concentra sulle lamentele tecniche dei ricercatori e sui dettagli dei guardrail, mentre Il Post enfatizza l'impatto commerciale di Mythos, la limitazione a clienti selezionati e le performance del nuovo modello Fable 5, con meno focus sui problemi di sicurezza."
-            },
-            {
-              "titolo": "OpenAI posticipa l'IPO: Altman prevede l'offerta entro il prossimo anno",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/openais-ipo-slips-as-altman-tells-staff-to-expect-a-public-offering-within-the-next-year/",
-              "riassunto": "Il CEO Sam Altman ha comunicato ai dipendenti che l'IPO di OpenAI potrebbe slittare al 2027, citando la necessità di attendere sviluppi dell'AI auto‑migliorante e la concorrenza di Anthropic. L'azienda ha già depositato un prospetto e prevede una vendita di azioni ai dipendenti a $687,69 per azione.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Germania avvia un istituto per la sicurezza dell'AI ispirato al modello britannico",
-              "fonte": "The Decoder",
-              "link": "https://the-decoder.com/germanys-national-security-council-greenights-an-ai-safety-institute-modeled-after-the-uks-aisi/",
-              "riassunto": "Il Consiglio di Sicurezza Nazionale tedesco ha approvato la creazione del DE‑AISI, un istituto per testare i rischi di modelli AI di frontiera come Anthropic Mythos e OpenAI GPT‑5.5. L'obiettivo è rafforzare la cooperazione internazionale e ridurre la dipendenza dell'UE da tecnologie statunitensi e cinesi.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "preoccupazioni sulla sicurezza dei modelli AI di frontiera",
-            "ritardi e strategie di IPO nel settore AI"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle politiche di guardrail di Anthropic e le possibili nuove restrizioni che potrebbero influenzare l'adozione dei modelli Mythos/Fable in Europa",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
