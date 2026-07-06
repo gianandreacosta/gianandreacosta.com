@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-07-05T05:03:28.037891+00:00",
+  "generated_at": "2026-07-06T05:03:11.071577+00:00",
   "analyses": [
+    {
+      "id": 119,
+      "run_id": 151,
+      "run_time": "2026-07-06 05:00:01.525917+00:00",
+      "analyzed_at": "2026-07-06T05:03:11.061046+00:00",
+      "articles_analyzed": 173,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 118,
       "run_id": 150,
@@ -3375,236 +3436,6 @@
             "Uso dell'AI per truffe e cybercrime su scala globale"
           ],
           "da_tenere_d_occhio": "Possibili ulteriori divieti o restrizioni su altri modelli di IA di ultima generazione nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 99,
-      "run_id": 131,
-      "run_time": "2026-06-13 05:00:02.401211+00:00",
-      "analyzed_at": "2026-06-13T05:08:39.584129+00:00",
-      "articles_analyzed": 187,
-      "articles_selected": 14,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da notizie che coinvolgono i media pubblici svizzeri, con particolare attenzione a un reportage su Martin Pfister e a un progetto locale citato da SRF. Altre tematiche emergenti includono l'uso dell'IA da parte di Google e le tensioni politiche sui processi di naturalizzazione.",
-          "notizie": [
-            {
-              "titolo": "Martin Pfister sotto la lente di SRF: sfide per la difesa svizzera",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/In-missione-con-Martin-Pfister--3812399.html",
-              "riassunto": "Il consigliere federale della Difesa Martin Pfister è stato seguito per una settimana dal servizio di SRF, che ha evidenziato le difficoltà nel rafforzare l'esercito e le preoccupazioni per la difesa contro droni entro il 2028. La copertura di SRF rende la notizia rilevante per i media pubblici.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Andermatt: il nuovo centro sportivo citato da SRF",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/Andermatt-Sawiris-mantiene-la-promessa-20-anni-dopo--3814481.html",
-              "riassunto": "Il progetto di un centro sportivo a Andermatt, promesso da Samih Sawiris, è stato riportato da SRF nella sua regionaljournal. Il centro includerà arrampicata, yoga e piscina, con lavori previsti per il 2027. La menzione di SRF lo rende di alta rilevanza per il lettore RSI.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Google IA Overview riduce del 60% i click verso i siti web",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/scienza-e-tecnologia/Google-risponde-e-i-siti-vanno-deserti--3814697.html",
-              "riassunto": "L'introduzione della funzione IA Overview di Google ha provocato un calo fino al 60% dei click verso i risultati di ricerca tradizionali, con solo il 30% delle ricerche che genera un clic. Gli esperti avvertono di un cambiamento nella gerarchia delle fonti e nel comportamento degli utenti.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Impatto dell'intelligenza artificiale sui motori di ricerca",
-            "Tensioni politiche su naturalizzazioni e gestione dei patriziati"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle controversie tra il Cantone Ticino e il patriziato di Roveredo sulle procedure di naturalizzazione, che potrebbero riemergere nelle prossime settimane",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da un grave incidente militare nel Canton Soletta e da nuove rivelazioni giudiziarie sul tragico incendio di Crans‑Montana, con la RTS citata nel procedimento.",
-          "notizie": [
-            {
-              "titolo": "Incidente militare a Soletta: nove soldati feriti durante un’esercitazione",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Incidente-militare-nel-canton-Soletta-nove-feriti--3813185.html",
-              "riassunto": "Durante l’esercitazione “Conex 26” un veicolo del battaglione di fanteria 20 è uscito di strada sul tratto Challhöchi‑Ifenthal, ribaltandosi e ferendo sette militari gravemente e due leggermente. I feriti sono stati trasportati in diversi ospedali. L’incidente è stato segnalato alle 10:47 e le autorità hanno avviato un’inchiesta militare.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "RTS cita il verbale dell’interrogatorio: i Moretti negano la responsabilità per l’incendio di Crans‑Montana",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/schweiz/westschweiz/wallis/rts-zitiert-aus-verhoerprotokoll-morettis-weisen-schuld-von-sich-wir-wussten-nicht-dass-wunderkerzen-eine-solche-tragoedie-verursachen-koennen-id22024172.html",
-              "riassunto": "Il tribunale cantonale del Vallese ha nuovamente interrogato Jacques e Jessica Moretti sul rogo della bar Le Constellation (41 morti, oltre 100 feriti). La RTS ha pubblicato una parte di un messaggio WhatsApp del 2019 in cui Jessica avvertiva dei rischi delle stelle filanti, ma i coniugi hanno sostenuto di non aver previsto una tragedia di tale portata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "sicurezza durante esercitazioni militari",
-            "responsabilità legale in caso di incidenti pubblici"
-          ],
-          "da_tenere_d_occhio": "Possibili sviluppi dell’inchiesta sull’incidente di Soletta e eventuali ulteriori dichiarazioni o azioni legali nei confronti dei Moretti",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione con la nuova serie televisiva prodotta da SRF e RTL, mentre i festival estivi in Svizzera attirano artisti internazionali. Si osservano inoltre trend su clima globale e arte generata dall'IA.",
-          "notizie": [
-            {
-              "titolo": "Nuova serie TV su Heidi prodotta da SRF e RTL",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/film-serien/neue-serie-von-srf-und-rtl-kohlund-makatsch-und-co-das-sind-die-heidi-stars",
-              "riassunto": "SRF e RTL hanno avviato le riprese della nuova serie su Heidi; il cast comprende Neah Hefti, Christian Kohlund e Heike Makatsch. Le riprese si svolgono in Germania e nel Bergell svizzero, con uscita prevista per il 2027.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Festival estivi in Svizzera: Greenfield, Festi'Neuch, Paléo e Openair Frauenfeld",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/musica/1931577/festival-luglio-artisti-musica-estate-festi",
-              "riassunto": "La stagione dei festival svizzeri parte con il Greenfield Festival a Interlaken, segue Festi'Neuch a Neuchâtel e il Paléo a Nyon, oltre all'Openair Frauenfeld, il più grande festival hip‑hop d'Europa. Tra gli ospiti: The Offspring, Volbeat, Vanessa Paradis, Gorillaz e Katy Perry.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Impatto climatico di El Niño",
-            "Musei d'arte generata dall'IA"
-          ],
-          "da_tenere_d_occhio": "Possibili aggiornamenti sulla programmazione della serie Heidi e sulle date di apertura dei festival svizzeri nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la copertura si concentra su tensioni USA‑Iran e su questioni legate ai media pubblici svizzeri, con la RTS criticata per la trasmissione dei Mondiali e SRF che sfata un circolario su WhatsApp.",
-          "notizie": [
-            {
-              "titolo": "Delusa dalla RTS per la trasmissione parziale dei Mondiali di calcio",
-              "fonte": "20 Minutes",
-              "link": "https://www.20min.ch/fr/story/suisse-romande-decu-par-la-rts-pour-sa-diffusion-partielle-du-mondial-de-foot-103581195",
-              "riassunto": "Gli spettatori svizzeri lamentano che la RTS, nonostante la promessa di trasmettere tutti i match dei Mondiali 2026, ne mostri solo 11 in diretta, relegando le altre partite a Play RTS senza commento. La rete pubblica giustifica la scelta con i costi di personale e l’audience limitata delle partite notturne, ma la decisione è vista come una delusione per le numerose comunità straniere residenti in Svizzera.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "SRF smentisce il circolario sulla lettura dei messaggi WhatsApp da parte di un'IA",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/wirtschaft/umgang-mit-ki-liest-eine-ki-tatsaechlich-bald-unsere-whatsapp-chats",
-              "riassunto": "Il digital editor di SRF, Guido Berger, chiarisce che le voci secondo cui un'IA di Meta leggerebbe tutti i messaggi WhatsApp sono infondate. L'IA Meta AI può accedere solo ai contenuti di una chat in cui è inserita come partecipante; i messaggi privati rimangono protetti. La notizia è stata diffusa da un catena di avvertimenti senza fonte affidabile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Tensioni diplomatiche USA‑Iran con minacce di attacchi e negoziati in corso",
-            "Critiche ai media pubblici svizzeri per la gestione dei diritti sportivi",
-            "Preoccupazioni sulla privacy e l'uso dell'IA nelle piattaforme di messaggistica"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle trattative USA‑Iran, in particolare eventuali firme a Ginevra, che potrebbero avere ripercussioni sulla neutralità svizzera e sulla copertura mediatica internazionale.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi l'attenzione è rivolta a temi di impatto locale come l'aumento dei debiti dei consumatori svizzeri e alle conseguenze della politica monetaria europea, con la BCE che alza i tassi di interesse per la prima volta in tre anni.",
-          "notizie": [
-            {
-              "titolo": "Crescita record dei debiti dei consumatori svizzeri: 13 miliardi di franchi in ritardi",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/inkasso-boss-packt-ueber-seine-branche-aus-so-treiben-wir-bei-schweizer-haushalten-heute-schulden-ein-id22020522.html",
-              "riassunto": "Il direttore di Coeo Group, una delle più grandi società di recupero crediti in Europa, segnala che un su sei nuclei familiari svizzeri è in sofferenza. I debiti totali ammontano a circa 13 miliardi di franchi, con un aumento di quasi 2 miliardi rispetto al 2022, trainati soprattutto da bollette, crediti fiscali e acquisti online.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "BCE alza il tasso di riferimento al 2,25 %: primo aumento da quasi tre anni",
-              "fonte": "Blick Wirtschaft",
-              "link": "https://www.blick.ch/wirtschaft/kleiner-schritt-nach-oben-auf-2-25-prozent-ezb-erhoeht-den-leitzins-erstmals-seit-fast-drei-jahren-id22020269.html",
-              "riassunto": "La Banca centrale europea ha aumentato il tasso di interesse di 0,25 punti percentuali, portandolo al 2,25 %. La decisione è stata motivata dall’inflazione in crescita (da 1,9 % a 3,2 % tra febbraio e maggio) e dal conflitto in Iran che ha spinto i prezzi dell’energia. L’aumento dovrebbe contenere l’inflazione ma rischia di frenare la crescita economica, con previsioni di crescita annua dell’Eurozona intorno allo 0,5 % per il 2026.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento dei debiti dei consumatori in Svizzera",
-            "Rialzo dei tassi di interesse da parte della BCE"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei tassi BCE e le eventuali misure di sostegno alla domanda interna, nonché l'impatto dei debiti sui consumi svizzeri nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria si concentra su importanti round di finanziamento per startup AI con presenza in Svizzera, su le novità di iOS 27 testate da un media ticinese e su un nuovo strumento di Deezer per rilevare musica AI, coperto da più fonti.",
-          "notizie": [
-            {
-              "titolo": "Prometheus, la startup AI di Jeff Bezos, chiude un round da 12 miliardi di dollari con valutazione di 41 miliardi",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
-              "riassunto": "Prometheus ha raccolto 12 miliardi di dollari, portando la valutazione a 41 miliardi. L’azienda, fondata da Jeff Bezos e Vik Bajaj, dichiara di impiegare 150 dipendenti con uffici a San Francisco, Londra e **Zurich**, puntando a un “artificial general engineer” per progettare motori, farmaci e altri sistemi fisici.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "iOS 27: l’iPhone sperimenta l’AI per modificare foto, Siri e routine vocali",
-              "fonte": "Blick Digital",
-              "link": "https://www.blick.ch/digital/blick-digitalexperte-bolzern-hat-ios-27-schon-ausprobiert-ki-verzaubert-jetzt-deine-iphone-fotos-mit-einem-haken-id22019074.html",
-              "riassunto": "Il giornalista digitale di Blick ha testato la beta di iOS 27. Le nuove funzioni AI includono rimozione e rotazione di oggetti nelle foto, espansione dell’immagine oltre i bordi e una Siri “AI” capace di leggere lo schermo e accedere a app. La versione finale arriverà in autunno, ma per ora è disponibile solo su iPhone 11 e successivi, con Siri AI inizialmente limitata all’inglese.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Deezer lancia uno strumento gratuito per identificare brani AI su tutte le piattaforme di streaming",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
-              "riassunto": "Deezer ha rilasciato un detector online che, in 27 lingue, scansiona playlist di Spotify, Apple Music, YouTube Music e altri 20 servizi per trovare tracce generate da AI. Il tool segnala che **75 000** brani AI vengono caricati al giorno, pari al 44 % di tutti gli upload, e li rimuove dalle raccomandazioni editoriali.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza la concorrenza con Spotify e Apple, descrivendo il tool come un vantaggio competitivo per Deezer. The Decoder aggiunge dati di sondaggio (97 % non distingue AI, 80 % vuole etichettatura) e sottolinea la quota di 75 000 brani AI al giorno."
-            }
-          ],
-          "trend": [
-            "Finanziamenti massivi per startup AI con presenza svizzera",
-            "Integrazione dell’AI nelle funzionalità di iOS",
-            "Rilevamento e trasparenza della musica AI nei servizi di streaming"
-          ],
-          "da_tenere_d_occhio": "L’eventuale lancio di Siri AI in lingua tedesca e francese, che potrebbe influenzare gli utenti svizzeri, e le reazioni del mercato alla nuova policy di Deezer sulla rimozione di brani AI.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
