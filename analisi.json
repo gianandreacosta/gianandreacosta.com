@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-07-06T05:03:11.071577+00:00",
+  "generated_at": "2026-07-07T05:04:23.516959+00:00",
   "analyses": [
+    {
+      "id": 120,
+      "run_id": 152,
+      "run_time": "2026-07-07 05:00:01.328146+00:00",
+      "analyzed_at": "2026-07-07T05:04:23.504673+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 119,
       "run_id": 151,
@@ -3200,242 +3261,6 @@
             "Problemi di affidabilità dei contenuti generati da AI in report aziendali"
           ],
           "da_tenere_d_occhio": "Possibili ulteriori restrizioni statunitensi su altri fornitori di AI e reazioni delle autorità europee, inclusa la Svizzera, nei prossimi 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 100,
-      "run_id": 132,
-      "run_time": "2026-06-14 05:00:02.848306+00:00",
-      "analyzed_at": "2026-06-14T05:07:51.284544+00:00",
-      "articles_analyzed": 186,
-      "articles_selected": 14,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da temi elettorali, innovazioni giudiziarie e proteste sindacali, tutti con potenziali ripercussioni sul territorio e sulla vita dei cittadini.",
-          "notizie": [
-            {
-              "titolo": "Il voto per corrispondenza domina la partecipazione elettorale in Ticino",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Voto-per-corrispondenza-sempre-pi%C3%B9-dominante-in-Ticino--3818192.html",
-              "riassunto": "In vista del voto di domenica, la RSI ha rilevato che il 95 % degli elettori di Bellinzona utilizza il voto per corrispondenza, mentre la presenza ai seggi tradizionali è scesa al 3‑3,5 %. Nei comuni più grandi la partecipazione al voto per corrispondenza è intorno al 30 %, con picchi del 36 % ad Airolo. I temi in votazione (cure dentarie, valori di stima, servizio civile e iniziativa “No a una Svizzera da 10 milioni”) influenzano la scelta dei cittadini.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Aula bunker nel carcere di Lugano: il nuovo modello per processi ad alta sicurezza",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Aula-bunker-in-Ticino-un-esperimento-riuscito--3817796.html",
-              "riassunto": "Per la rapina alla gioielleria Taleda del 2024, il tribunale di Lugano ha tenuto il processo in un’aula all’interno del carcere La Stampa, evitando trasferimenti giornalieri e blindature esterne. Il direttore delle strutture carcerarie, Stefano Laffranchini, ha definito l’esperimento “estremamente positivo”, sottolineando che le parti non hanno percepito differenze rispetto a un’aula tradizionale, ma la sicurezza è stata garantita con telefoni, computer e procedure di accesso snelle.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Corteo a Chiasso contro la riorganizzazione di FFS Cargo",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Chiasso-corteo-contro-la-riorganizzazione-di-FFS--3818009.html",
-              "riassunto": "Un corteo a Chiasso, promosso dal comitato “No allo smantellamento di FFS Cargo in Ticino”, ha protestato contro il piano di riorganizzazione che prevede il cambio di mansione per 40 dipendenti. Il sindaco Bruno Arrigoni e la vicepresidente del Consiglio di Stato, Marina Carobbio Guscetti, hanno espresso preoccupazione per la perdita di posti qualificati e hanno chiesto l’apertura di un tavolo di lavoro con FFS Cargo, il Cantone e le autorità federali.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Crescita del voto per corrispondenza",
-            "Innovazioni nei procedimenti giudiziari",
-            "Tensioni nel settore dei trasporti e dell’occupazione"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione dei risultati elettorali domenica e le eventuali decisioni sul futuro della riorganizzazione di FFS Cargo, che potrebbero influenzare l'occupazione nel Ticino.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da proteste legate al G7, da un dibattito sull'impatto dei consumi e da una segnalazione sulla copertura mediatica di un caso giudiziario.",
-          "notizie": [
-            {
-              "titolo": "RTS cita la trascrizione dell’interrogatorio: Moretti nega la colpevolezza per la tragedia delle stelle filanti",
-              "fonte": "Blick Schweiz",
-              "link": "https://www.blick.ch/schweiz/westschweiz/wallis/rts-zitiert-aus-verhoerprotokoll-morettis-weisen-schuld-von-sich-wir-wussten-nicht-dass-wunderkerzen-eine-solche-tragoedie-verursachen-koennen-id22024172.html",
-              "riassunto": "Il verbale dell’interrogatorio dei coniugi Moretti, citato da RTS, mostra che Jessica Moretti aveva avvertito nel 2019 sui rischi delle stelle filanti. Nonostante la consapevolezza, i coniugi hanno sostenuto che non potevano prevedere l’incendio che ha causato 41 morti e oltre 100 feriti a Crans‑Montana il 1° gennaio 2026.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "G7 una flottiglia nel Lemano per protestare contro il conflitto a Gaza",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/G7-una-flottiglia-nel-Lemano-per-Gaza--3818795.html",
-              "riassunto": "Una ventina di imbarcazioni ha solcato il Lemano con bandiere palestinesi e fumogeni per denunciare il genocidio a Gaza e l’appoggio militare di Israele, in vista del vertice G7 a Évian.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Gli svizzeri aumentano la spesa per viaggi e tempo libero",
-              "fonte": "Ticinonews Svizzera",
-              "link": "https://www.ticinonews.ch/economia/gli-svizzeri-tornano-a-spendere-in-particolare-per-viaggi-e-tempo-libero-435696",
-              "riassunto": "L’indicatore dei consumi di PostFinance mostra un rialzo dell’1,1 % a maggio rispetto al 2025, trainato da un ritorno alle spese per viaggi, hotel e ristoranti, nonostante le tensioni geopolitiche e l’inflazione energetica.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "proteste legate al G7",
-            "ripresa della spesa dei consumatori",
-            "attenzione verso la copertura mediatica di casi giudiziari"
-          ],
-          "da_tenere_d_occhio": "Possibili evoluzioni delle proteste G7 a Ginevra e ulteriori dichiarazioni delle autorità svizzere sulla sicurezza degli eventi pubblici",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera italiana è al centro dell'attenzione con un nuovo podcast sulla storia LGBTQIA+ e un concerto di Stefano Saletti a Neuchâtel. Entrambe le iniziative evidenziano l'impegno locale per la diversità e la scena musicale dal vivo.",
-          "notizie": [
-            {
-              "titolo": "Nuovo podcast “Panico morale” racconta 30 anni di storia LGBTQIA+ in Svizzera italiana",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1931139/anni-bandecchi-storia-podcast-racconta-panico-lgbtqia-stato-proprio-svizzera",
-              "riassunto": "È uscito “Panico morale”, podcast di Natascia Bandecchi che ricostruisce tre decenni di lotte, conquiste e vita quotidiana della comunità LGBTQIA+ nella Svizzera italiana, con testimonianze, archivio sonoro e analisi storica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Stefano Saletti e la Banda Ikona in concerto a Neuchâtel",
-              "fonte": "LaRegione Culture",
-              "link": "https://www.laregione.ch/culture/culture/1931871/saletti-banda-ikona-posto-nneka",
-              "riassunto": "A causa di un malore di Nneka, il concerto di quest'ultima è stato annullato; al suo posto, il 13 giugno, Stefano Saletti con la Banda Ikona si esibirà in Piazza Bernasconi, proponendo un percorso sonoro che unisce tradizioni mediterranee e linguaggi contemporanei.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "crescente valorizzazione della storia LGBTQIA+ in ambito culturale svizzero",
-            "programmazione di concerti live che mescolano tradizioni locali e internazionali"
-          ],
-          "da_tenere_d_occhio": "Il proseguimento del festival NIFFF (3‑11 luglio) e le eventuali nuove iniziative culturali legate al podcast “Panico morale” nelle settimane successive.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Oggi la cronaca geopolitica svizzera è dominata da tensioni su diritti sportivi e commercio internazionale, con i media pubblici al centro del dibattito.",
-          "notizie": [
-            {
-              "titolo": "Delusa la RTS per la trasmissione parziale dei Mondiali di calcio",
-              "fonte": "20 Minutes",
-              "link": "https://www.20min.ch/fr/story/suisse-romande-decu-par-la-rts-pour-sa-diffusion-partielle-du-mondial-de-foot-103581195",
-              "riassunto": "Gli spettatori svizzeri lamentano che la RTS 2 ha trasmesso solo contenuti di intrattenimento durante la partita Corea del Sud‑Cechia, costringendo a usare l’app Play RTS per vedere il match. La redazione della RTS giustifica la scelta con i costi di commento e la bassa audience prevista per le partite in orari notturni.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "“Alleanza empia” nell’accordo Mercosur: accesi i contrasti in arena SRF",
-              "fonte": "Blick Politik",
-              "link": "https://www.blick.ch/politik/unheilige-allianz-beim-mercosur-deal-sie-und-die-gruene-seite-wollen-uns-erpressen-herr-ritter-id22025862.html",
-              "riassunto": "Nel dibattito televisivo SRF‑Arena, il presidente dell’associazione agraria Markus Ritter accusa i Verdi e il governo di “ricattarci” sul futuro accordo di libero scambio con i paesi Mercosur. La discussione si svolge a pochi giorni dalla votazione del Consiglio nazionale, con la Svizzera divisa tra industria favorevole e agricoltura preoccupata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Critiche di Massimo Lorenzi alla FIFA durante la Coppa del mondo 2026",
-              "fonte": "20 Minutes",
-              "link": "https://www.20min.ch/fr/story/coupe-du-monde-2026-massimo-lorenzi-dezingue-la-fifa-et-le-parrain-gianni-infantino-103581124",
-              "riassunto": "L’ex capo sport della RTS, Massimo Lorenzi, ha pubblicato su LinkedIn una dura denuncia contro la FIFA e il presidente Gianni Infantino, definendoli una “mafia”. Il post, diffuso durante la fase inaugurale del Mondiale, richiama le stesse critiche fatte nel 2022 e sottolinea presunte pratiche corruttive e mancanza di trasparenza.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Controversie sulla copertura sportiva pubblica (RTS) durante il Mondiale 2026",
-            "Dibattito interno svizzero sul libero scambio con il Mercosur"
-          ],
-          "da_tenere_d_occhio": "Il voto del Consiglio nazionale svizzero sul trattato di libero scambio con i paesi Mercosur, previsto per la prossima settimana.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi spicca la notizia sul finanziamento dell'indagine interna all'esercito svizzero, che coinvolge Radio SRF. Altri temi di rilievo sono l'IPO record di SpaceX e le tensioni legate all'AI, che continuano a dominare l'agenda economica.",
-          "notizie": [
-            {
-              "titolo": "Esercito svizzero spende 117.000 franchi per indagine su fuga di notizie senza identificare il whistleblower",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/attualita/1931812/esercito-indagine-fuga-notizie-franchi",
-              "riassunto": "Il Dipartimento federale della difesa ha speso 117.000 CHF per un'inchiesta interna volta a scoprire chi ha fornito a Radio SRF informazioni su un buco finanziario dell'esercito. L'indagine, documentata in un rapporto di 40 pagine, non ha identificato il responsabile.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "tio.ch Svizzera",
-                "Tages-Anzeiger (citato)"
-              ],
-              "differenze_narrative": "tio.ch enfatizza la spesa e la mancanza di risultati, mentre il Tages-Anzeiger, citato nel rapporto, sottolinea le ripercussioni politiche e le richieste di maggiore trasparenza."
-            }
-          ],
-          "trend": [
-            "IPO record di SpaceX e valorizzazione delle società tecnologiche",
-            "Controversie e cause legali nel settore dell'intelligenza artificiale"
-          ],
-          "da_tenere_d_occhio": "L'andamento del debutto in borsa di SpaceX e le possibili ripercussioni sul mercato svizzero nei prossimi giorni",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Oggi la categoria è dominata da notizie di sicurezza e regolamentazione dell'IA: gli USA hanno imposto un divieto all'accesso a due modelli di Anthropic e Google ha avviato una causa congiunta con l'FBI contro una rete cinese di truffe AI.",
-          "notizie": [
-            {
-              "titolo": "Il governo USA ordina la sospensione di Anthropic per i modelli Fable 5 e Mythos 5",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
-              "riassunto": "Il Dipartimento della Sicurezza Nazionale USA ha emesso un'ordinanza di esportazione che obbliga Anthropic a disattivare globalmente i modelli Fable 5 e Mythos 5, citando potenziali vulnerabilità di sicurezza. Anthropic ha confermato la chiusura, ma ha contestato la decisione, sostenendo che i modelli sono già soggetti a rigorosi controlli.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "Hacker News"
-              ],
-              "differenze_narrative": "TechCrunch fornisce dettagli sul contenuto dell'ordinanza, le ragioni di sicurezza e le reazioni di Anthropic; Hacker News riporta solo il breve annuncio di Anthropic su X, senza approfondire le motivazioni governative."
-            },
-            {
-              "titolo": "Google e FBI intentano una causa congiunta contro una rete cinese di truffe AI",
-              "fonte": "TechCrunch AI",
-              "link": "https://techcrunch.com/2026/06/12/google-files-first-joint-lawsuit-with-fbi-over-chinese-ai-scam-network/",
-              "riassunto": "Google ha sporto causa, insieme all'FBI, contro il gruppo cinese \"Outsider Enterprise\" che, secondo l'azienda, ha inviato 2,5 milioni di SMS fraudolenti usando l'AI di Gemini, truffando centinaia di migliaia di utenti e provocando danni per milioni di dollari.",
-              "rilevanza": "media",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "TechCrunch AI",
-                "The Decoder"
-              ],
-              "differenze_narrative": "TechCrunch enfatizza l'aspetto legale e le collaborazioni con gli operatori telefonici, mentre The Decoder aggiunge il contesto del coinvolgimento di OpenAI in operazioni analoghe e fornisce cifre più precise sui danni stimati."
-            }
-          ],
-          "trend": [
-            "Regolamentazione governativa delle LLM di frontiera",
-            "Uso dell'AI per truffe e cybercrime su scala globale"
-          ],
-          "da_tenere_d_occhio": "Possibili ulteriori divieti o restrizioni su altri modelli di IA di ultima generazione nei prossimi giorni",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
