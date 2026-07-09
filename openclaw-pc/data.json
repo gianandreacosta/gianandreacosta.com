@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T10:00:02.785587Z",
+  "generated_at": "2026-07-09T10:10:03.208337Z",
   "system": {
-    "version": "OpenClaw 2026.5.7 (eeef486)",
-    "current_ver": "2026.5.7",
+    "version": "OpenClaw 2026.6.11 (e085fa1)",
+    "current_ver": "2026.6.11",
     "latest_ver": "2026.6.11",
-    "update_available": true,
+    "update_available": false,
     "gateway_running": true,
     "gateway_port": 18789
   },
@@ -72,89 +72,7 @@
     }
   ],
   "rate_limits_today": 34,
-  "cron_jobs": [
-    {
-      "name": "memory-review",
-      "schedule": "0 6 * * * (UTC)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "You are Geoffrey's background memory reviewer. Every run:...",
-      "enabled": false
-    },
-    {
-      "name": "backup-daily-config",
-      "schedule": "0 2 * * * (Europe/Zurich)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Run /home/gianbot/.openclaw/workspace/tools/backup_daily_...",
-      "enabled": false
-    },
-    {
-      "name": "Promemoria pagamento Maria",
-      "schedule": "0 21 28 * * (UTC)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Invia ESATTAMENTE questo messaggio all'utente via DM Tele...",
-      "enabled": true
-    },
-    {
-      "name": "backup-weekly-full",
-      "schedule": "0 1 * * 0 (Europe/Zurich)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Run /home/gianbot/.openclaw/workspace/tools/backup_weekly...",
-      "enabled": false
-    },
-    {
-      "name": "session-memory-capture",
-      "schedule": "5 11,20 * * * (UTC)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Sei il sub-agent Archivio. Il tuo compito \u00e8 creare una si...",
-      "enabled": false
-    },
-    {
-      "name": "rassegna-mattutina",
-      "schedule": "45 6 * * * (Europe/Zurich)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
-      "enabled": false
-    },
-    {
-      "name": "dashboard-data-update",
-      "schedule": "*/10 * * * *",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Esegui questo comando shell e riporta solo \"ok\" o l'error...",
-      "enabled": false
-    },
-    {
-      "name": "rassegna-analisi",
-      "schedule": "0 7 * * * (Europe/Zurich)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
-      "enabled": false
-    },
-    {
-      "name": "rassegna-email-dashboard",
-      "schedule": "15 7 * * * (Europe/Zurich)",
-      "target": "isolated",
-      "status": "idle",
-      "next": "n/a",
-      "note": "Esegui: cd /home/gianbot/.openclaw/workspace && bash tool...",
-      "enabled": false
-    }
-  ],
+  "cron_jobs": [],
   "summaries": [],
   "backups": [
     {
