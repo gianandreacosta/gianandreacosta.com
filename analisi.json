@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-07-08T05:03:50.688782+00:00",
+  "generated_at": "2026-07-09T05:03:42.645500+00:00",
   "analyses": [
+    {
+      "id": 122,
+      "run_id": 154,
+      "run_time": "2026-07-09 05:00:02.134386+00:00",
+      "analyzed_at": "2026-07-09T05:03:42.634361+00:00",
+      "articles_analyzed": 182,
+      "articles_selected": 0,
+      "model_used": "openai-codex/gpt-5.4-mini",
+      "status": "error",
+      "prompt_version": "v1.2",
+      "data": [
+        {
+          "categoria": "cronaca_ticino",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cronaca_svizzera",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "cultura",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "geopolitica",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "economia",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "categoria": "ai_openclaw",
+          "sommario": "Errore analisi: Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Pay",
+          "notizie": [],
+          "trend": [],
+          "da_tenere_d_occhio": "",
+          "_error": "Tutte le API fallite. OpenAI-OAuth: HTTP Error 401: Unauthorized | OR-fallback1: HTTP Error 402: Payment Required | Ollama-fallback2: <urlopen error [Errno 111] Connection refused> | OR-fallback3: HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
     {
       "id": 121,
       "run_id": 153,
@@ -2904,216 +2965,6 @@
           "notizie": [],
           "trend": [],
           "da_tenere_d_occhio": "",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        }
-      ]
-    },
-    {
-      "id": 102,
-      "run_id": 134,
-      "run_time": "2026-06-16 05:00:02.391217+00:00",
-      "analyzed_at": "2026-06-16T05:08:38.588779+00:00",
-      "articles_analyzed": 180,
-      "articles_selected": 12,
-      "model_used": "openrouter/openai/gpt-oss-120b:free",
-      "status": "ok",
-      "prompt_version": "v1.2",
-      "data": [
-        {
-          "categoria": "cronaca_ticino",
-          "sommario": "Oggi la cronaca ticinese è dominata da questioni politiche cantonali e da un caso di crisi aziendale che coinvolge i media pubblici svizzeri, con particolare attenzione al dibattito su Cremo e alle recenti elezioni cantonali.",
-          "notizie": [
-            {
-              "titolo": "Cremo sotto pressione: la crisi dell'azienda lattiera e le critiche di RTS",
-              "fonte": "RSI Ticino",
-              "link": "https://www.rsi.ch/info/dialogo/La-crisi-di-Cremo-e-il-rischio-per-l%E2%80%99industria-lattiera--3821213.html",
-              "riassunto": "L'azienda friburghese Cremo, secondo trasformatore di latte, registra perdite per il sesto anno consecutivo a causa della produzione di latte in polvere, considerata poco redditizia. Il presidente dell'organizzazione contadina Uniterre, Pierre‑André Tombez, ha criticato la gestione in un intervento a RTS, definendo il modello insostenibile senza sussidi federali.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "crisi delle cooperative lattiero‑casearie",
-            "elezioni cantonali e iniziative popolari"
-          ],
-          "da_tenere_d_occhio": "L'evoluzione delle votazioni cantonali e le possibili decisioni di intervento pubblico per sostenere Cremo nei prossimi mesi",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cronaca_svizzera",
-          "sommario": "Oggi la cronaca svizzera è dominata da notizie sui media pubblici (RSI, SRF) e da importanti eventi internazionali che coinvolgono la Svizzera, come le proteste contro il G7 e l’allarme a Kreuzlingen.",
-          "notizie": [
-            {
-              "titolo": "Cessato l’allarme per la minaccia di bomba al mercatino di Kreuzlingen",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/svizzera/Cessato-allarme-a-Kreuzlingen--3819722.html",
-              "riassunto": "La polizia ha revocato l’allarme scattato dopo una telefonata anonima alle 02:00 che minacciava ordigni al mercatino transfrontaliero di Kreuzlingen (TG) e Costanza. L’area è stata evacuata per poche ore e riaperta alle 12:15. Nessuna esplosione è stata registrata.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Protesta anti‑G7 a Ginevra: migliaia in piazza, scontri e danni",
-              "fonte": "SRF Schweiz",
-              "link": "https://www.srf.ch/news/schweiz/g7-treffen-in-evian-trump-iran-ukraine-ein-gipfel-mit-vielen-fallstricken",
-              "riassunto": "Il 20 000 (stima della polizia) manifestanti hanno marciato lungo la riva del lago per protestare contro il vertice G7 a Évian. Si sono verificati scontri con la polizia, lanci di oggetti e l’incendio di una Tesla. Le forze dell’ordine hanno sequestrato armi improvvisate e materiale pirotecnico.",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "SRF Schweiz",
-                "CdT Svizzera"
-              ],
-              "differenze_narrative": "SRF enfatizza la dimensione violenta (incendi, sequestri di armi) e il numero di partecipanti stimato dalla polizia, mentre CdT sottolinea la composizione eterogenea del corteo e il contesto di sicurezza più ampio, citando anche le dichiarazioni delle autorità cantonali."
-            },
-            {
-              "titolo": "Comprare un bosco per proteggerlo – reportage di RTS",
-              "fonte": "RSI Svizzera",
-              "link": "https://www.rsi.ch/info/dialogo/Comprare-un-bosco-per-proteggerlo--3813776.html",
-              "riassunto": "Laurent Thévoz ha acquistato una foresta a Montagny (FR) per 9 000 franchi, scegliendo di non tagliare legname e di creare un’isola di senescenza per 50 anni. Il reportage evidenzia che il 29 % delle foreste svizzere è in mano privata (≈245 000 proprietari) e descrive l’iniziativa di Pro Natura di riunire piccole parcelle per una gestione sostenibile.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Aumento delle proteste contro eventi internazionali (G7)",
-            "Coinvolgimento dei media pubblici svizzeri nelle notizie di cronaca",
-            "Crescente attenzione a tematiche ambientali e di proprietà forestale"
-          ],
-          "da_tenere_d_occhio": "Sviluppi delle proteste anti‑G7 nei giorni successivi e possibili ulteriori decisioni legislative sul servizio civile e la gestione delle foreste private",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "cultura",
-          "sommario": "Oggi la cultura svizzera è al centro dell'attenzione: SRF Kultur riporta diverse iniziative, dalle mostre storiche sui banchieri svizzeri alle riflessioni femministe, passando per le celebrazioni reali britanniche. Al contempo, emergono temi internazionali come l'uso dell'AI nella moda e le nuove regole del calcio mondiale.",
-          "notizie": [
-            {
-              "titolo": "Mostra “Bankenland Schweiz” al Landesmuseum di Zurigo sul ruolo storico delle banche svizzere",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/landesmuseum-zuerich-bankenland-schweiz-vertrauen-diskret-verwaltet",
-              "riassunto": "Il nuovo percorso espositivo “Bankenland Schweiz” apre al Landesmuseum di Zurigo e ricostruisce 500 anni di storia monetaria, dal peso delle monete alle prime banconote, senza focalizzarsi su scandali recenti. Il curatore Christian Weiss sottolinea che la mostra indaga il desiderio umano di proteggere il patrimonio, mentre la direttrice Denise Tonella interroga l’identità svizzera legata al sistema bancario.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Esposizione “Labouring Bodies” al Museum Tinguely: il corpo femminile al lavoro",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/kunst/ausstellung-labouring-bodies-der-koerper-der-frau-pausenlos-in-betrieb",
-              "riassunto": "Al Museum Tinguely di Basilea si apre la mostra “Labouring Bodies”, che mette in scena il corpo della donna come macchina produttiva. L’artista Ernestyna Orlowska, polacca-svizzera, presenta performance e opere che denunciano il lavoro invisibile e non retribuito delle donne, confrontandolo con la tradizione artistica del “lavoratore meccanico”.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Notizie culturali in breve – Re Carlo onora Helen Mirren e Julia Donaldson",
-              "fonte": "SRF Kultur",
-              "link": "https://www.srf.ch/kultur/gesellschaft-religion/kulturnews-in-kurzform-koenig-charles-ehrt-helen-mirren-und-grueffelo-autorin",
-              "riassunto": "Nel contesto del suo compleanno, il re Carlo III conferisce titoli onorari a Helen Mirren e alla scrittrice di “Il Gruffalò”, Julia Donaldson. La breve nota di SRF Cultura segnala anche la protesta dei fan contro l’uso di anime giapponesi da parte di Donald Trump, dimostrando la connessione tra cultura pop e politica.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riscoperta delle radici culturali svizzere (mostre storiche, identità nazionale)",
-            "Riflessioni di genere e lavoro nella scena artistica contemporanea",
-            "Impatto dell'intelligenza artificiale sulla moda e sulla comunicazione"
-          ],
-          "da_tenere_d_occhio": "Le reazioni del pubblico e dei critici alla mostra “Bankenland Schweiz”, che potrebbe alimentare dibattiti sul ruolo delle banche svizzere in futuro.",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "geopolitica",
-          "sommario": "Le notizie di oggi ruotano attorno alle tensioni in Medio Oriente e alle loro ripercussioni economiche, con un focus sulla Svizzera sia come soggetto mediatico che come paese ospitante di negoziati internazionali.",
-          "notizie": [
-            {
-              "titolo": "Crisi in Medio Oriente – “Abbiamo sei navi bloccate”",
-              "fonte": "SRF International",
-              "link": "https://www.srf.ch/news/international/nahost/nahost-krise-wir-haben-sechs-schiffe-die-blockiert-sind",
-              "riassunto": "Il presidente del più grande trader di fertilizzanti al mondo, Ameropa (Binningen, Baselbiet), denuncia l’impatto della crisi in Medio Oriente: sei navi sono bloccate nello Stretto di Hormuz, con costi di circa 0,5 milioni di dollari a settimana per nave, per oltre 20 milioni di dollari complessivi. L’articolo evidenzia le conseguenze per l’economia svizzera e per le assicurazioni marittime.",
-              "rilevanza": "alta",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "USA e Iran terranno colloqui preparatori a Doha prima della firma a Ginevra",
-              "fonte": "ANSA Mondo",
-              "link": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/06/15/usa-e-iran-terranno-colloqui-preparatori-a-doha-prima-della-firma_a0e20cf6-c67e-4cfb-bcd0-41c11d6a2c2e.html",
-              "riassunto": "Gli Stati Uniti e l’Iran si incontreranno a Doha per negoziare i dettagli di un accordo da firmare il 19 giugno a Ginevra, in Svizzera. La fonte ANSA riporta che il Qatar ha mediato 17 ore di trattative intensive, segnando un passo decisivo verso la cessazione delle ostilità e la riapertura dello Stretto di Hormuz.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "Riapertura dello Stretto di Hormuz e impatti sul commercio marittimo",
-            "Coinvolgimento della Svizzera come sede di negoziati internazionali"
-          ],
-          "da_tenere_d_occhio": "Evoluzione dei colloqui USA‑Iran e le prime decisioni operative sullo sblocco delle rotte marittime, che influenzeranno direttamente le imprese svizzere del settore logistico e assicurativo",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "economia",
-          "sommario": "Oggi la categoria economia è dominata da temi politici svizzeri: i risultati delle votazioni federali, le tensioni legate al G7 e una novità fiscale a Basilea Città. Questi eventi hanno impatto diretto su cittadini, imprese e istituzioni.",
-          "notizie": [
-            {
-              "titolo": "Bocciata l’iniziativa “No a una Svizzera da 10 milioni” e approvata la modifica della legge sul servizio civile",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/politica/1932195/ecco-come-hanno-votato-gli-svizzeri",
-              "riassunto": "Il 14 giugno gli elettori svizzeri hanno respinto con il 54,79 % l’iniziativa populista che voleva fissare un tetto alla popolazione, mentre la riforma del servizio civile è stata accettata con il 52,46 % dei voti. La vittoria dell’iniziativa è stata più forte in cantoni come Appenzello Interno (65,92 %) e più debole in cantoni di frontiera (es. Ginevra 65,42 %).",
-              "rilevanza": "alta",
-              "incrocio": true,
-              "fonti_incrocio": [
-                "tio.ch Svizzera – Ecco come hanno votato gli svizzeri",
-                "tio.ch Svizzera – Fine dei giochi: bocciata con il 54,8% dei voti l'iniziativa"
-              ],
-              "differenze_narrative": "L’articolo “Ecco come hanno votato gli svizzeri” si concentra sui risultati cantonali e sulla partecipazione, evidenziando le differenze tra cantoni di lingua tedesca e francese. “Fine dei giochi” enfatizza il contesto politico dell’iniziativa UDC, la bassa affluenza in Ticino e il confronto con altre consultazioni federali, fornendo una visione più ampia del clima elettorale."
-            },
-            {
-              "titolo": "Scontri tra manifestanti e polizia a Ginevra durante la vigilia del G7",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/cronaca/1932234/polizia-g7-scontri-manifestanti-vigilia",
-              "riassunto": "Nella notte prima del vertice G7 a Évian, manifestanti anti‑G7 hanno lanciato bottiglie, pietre e petardi contro la polizia vicino all’ONU a Ginevra. La polizia ha risposto con granate lacrimogene; sono stati segnalati atti di vandalismo contro PricewaterhouseCoopers e l’ITU. Gli organizzatori stimano 20 000 partecipanti, la polizia 7 000.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            },
-            {
-              "titolo": "Basel‑Stadt introduce la detrazione fiscale diretta dallo stipendio",
-              "fonte": "tio.ch Svizzera",
-              "link": "https://www.tio.ch/svizzera/politica/1932196/iniziativa-percento-citta-stata-basilea-salario-potra-imposte",
-              "riassunto": "Con 53,4 % dei voti, i cittadini di Basel‑Stadt hanno approvato la prima legge in Svizzera che permette la detrazione automatica delle imposte dal salario. Per i dipendenti con più di 50 dipendenti la detrazione è obbligatoria (10 % del lordo), per le piccole imprese è facoltativa. L’obiettivo è contenere l’indebitamento fiscale.",
-              "rilevanza": "media",
-              "incrocio": false,
-              "fonti_incrocio": [],
-              "differenze_narrative": ""
-            }
-          ],
-          "trend": [
-            "politica fiscale locale",
-            "tensioni legate a eventi internazionali (G7)",
-            "partecipazione elettorale e riforme istituzionali"
-          ],
-          "da_tenere_d_occhio": "L’attuazione della detrazione fiscale a Basel‑Stadt e le possibili ripercussioni su altre regioni svizzere nei prossimi 24 ore",
-          "_model_used": "openrouter/openai/gpt-oss-120b:free"
-        },
-        {
-          "categoria": "ai_openclaw",
-          "sommario": "Nessuna notizia di rilievo per i media pubblici svizzeri o per la Svizzera/Ticino è emersa tra le 30 voci analizzate.",
-          "notizie": [],
-          "trend": [],
-          "da_tenere_d_occhio": "Monitorare eventuali future notizie che coinvolgano direttamente RSI, SRF o altri media pubblici svizzeri.",
           "_model_used": "openrouter/openai/gpt-oss-120b:free"
         }
       ]
