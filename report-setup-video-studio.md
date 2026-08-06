@@ -167,26 +167,41 @@ Domanda mai posta in chat, ed è **la più importante**. Il requisito «file in 
 
 ## 4. Lista finale rivista
 
-La raccomandazione dipende da **una domanda che devi decidere tu**, mai posta in chat:
+La raccomandazione dipendeva da **una domanda mai posta in chat**:
 
 > **Ti serve un master 4K/10-bit su scheda, o un master 1080p va bene come consegna finale?**
 
-Da lì tre scenari puliti. In tutti: **ottica 23 mm da usare a f/2–f/2.8** (non f/1.4), **misura prima lo spazio davanti** (se < 1,2 m → 16–18 mm), illuminazione **come da handoff** (regge), audio **come da handoff** (regge), **GoPro HERO4** come B-cam wide.
+> ✅ **DECISIONE DEL COMMITTENTE (6 ago 2026): 1080p basta.** → Si applica lo **Scenario A**. Gli scenari B e C restano documentati sotto solo come riferimento, ma **non** sono il piano.
 
-### Scenario A — «1080p mi basta» → il più semplice ed economico *(consigliato se non fai molto reframing in post)*
-- Un corpo con **UVC nativo 1080p** (ZV-E10 II, Fuji X-M5, Nikon Z50 II…), **OBS registra il feed**. Un cavo, niente capture card, niente sync.
-- Nota: la ZV-E10 **Mk I** qui è comunque debole (cappa a 720p su USB 2.0). Se resti Sony e vuoi UVC pulito, il pavimento è la **ZV-E10 II**, non la Mk I.
+Conseguenza diretta della decisione: **decade l'intero requisito fragile.** Niente «registra 4K su scheda mentre streammi», niente capture card sul corpo principale, niente sync col battito di mani, niente sostituzione dei proxy. **OBS registra le sorgenti a 1080p → si montano quei file.** Il multicamera è già sincronizzato sulla stessa timeline OBS (l'audio può entrare anch'esso in OBS dall'interfaccia → sync automatica, senza traccia scratch).
 
-### Scenario B — «voglio master pieno su scheda» → HDMI + capture card *(consigliato se vuoi 4K/10-bit e flessibilità in post)*
-- **Architettura HDMI pulito + capture card**, riusando il convertitore che hai; una **seconda** capture card economica (~€15–40) per la camera principale (una card = una camera).
-- Corpo, in ordine di adeguatezza:
-  1. **Panasonic GH6/GH7** se prevedi sessioni lunghe fisse (illimitato, ventilato).
-  2. **Nikon Z50 II** (~$909) o **Fuji X-S20** per miglior stacco APS-C + colore.
-  3. **Via Sony usata economica**: **α6400** (ancora nuova a listino) — HDMI pulito + registrazione simultanea; **ma verifica sul singolo esemplare** l'HDMI pulito mentre registra. Tiene aperto l'E-mount e le ottiche 23 mm già individuate.
-- Coerenza: in questa architettura la **GoPro rientra naturalmente** (è già HDMI+capture).
+In tutti i casi restano fermi: **ottica 23 mm da usare a f/2–f/2.8** (non f/1.4), **misura prima lo spazio davanti** (se < 1,2 m → 16–18 mm), illuminazione **come da handoff** (regge), audio **come da handoff** (regge), **GoPro HERO4** come B-cam wide.
 
-### Scenario C — «voglio l'UVC Sony 4K-mentre-registra, un cavo solo» → corpo nuovo, budget più alto
-- Il pavimento è la **Sony ZV-E10 II** (~$999 / usata CHF 550–600), **non** la Mk I. Superiore ma più caro: **α6700** (IBIS). La camera da sola mangia quasi tutto il budget «CHF 600–830». È questo il costo reale del requisito così com'è stato scritto.
+### ✅ Scenario A — PIANO ATTIVO (1080p)
+
+Architettura a 2 camere, **zero hardware capture nuovo**:
+- **Camera principale = corpo con UVC nativo 1080p, un cavo USB → OBS registra.**
+- **GoPro HERO4 = piano largo, sul convertitore HDMI→USB che già possiedi.**
+
+Ogni camera ha il suo percorso indipendente; non si compra nessuna capture card in più.
+
+**Corpi candidati per la ricerca prezzi** (devono avere **UVC nativo 1080p pulito**):
+- **Sony ZV-E10 II usata** — se vuoi restare **E-mount** e usare il 23 mm Viltrox/Sigma già individuato. È il pavimento Sony; la **Mk I è esclusa** (cappa a 720p su USB 2.0).
+- **Fuji X-M5** (~$799 nuovo) o **Nikon Z50 II** (~$909 nuovo) — più recenti/economici, ma **cambiano mount → cambia l'ottica** (Viltrox 23 mm f/1.4 esiste anche in X e Z).
+
+**Variante più economica** (se il budget stringe e non pesa un box in più): **corpo usato con HDMI pulito 1080p + una seconda capture card (~€20)** sul modello del convertitore che già conosci. Riapre l'**α6400** e gran parte dell'usato (serve solo l'HDMI pulito, non l'UVC né la registrazione simultanea). Meno elegante (due percorsi capture), ma il più a buon mercato.
+
+<details><summary><strong>Scenario B</strong> — «voglio master pieno 4K su scheda» (NON scelto, per riferimento)</summary>
+
+- Architettura HDMI pulito + capture card, riusando il convertitore + una seconda capture card economica per la camera principale (una card = una camera).
+- Corpi: **Panasonic GH6/GH7** (illimitato, ventilato) · **Nikon Z50 II** / **Fuji X-S20** (stacco APS-C + colore) · **α6400 usata** (E-mount, ma verifica sull'esemplare l'HDMI pulito mentre registra).
+- In questa architettura la GoPro rientra naturalmente.
+</details>
+
+<details><summary><strong>Scenario C</strong> — «UVC Sony 4K-mentre-registra, un cavo solo» (NON scelto, per riferimento)</summary>
+
+- Pavimento **ZV-E10 II** (~$999 / usata CHF 550–600), **non** la Mk I; superiore **α6700** (IBIS). La camera da sola mangia quasi tutto il budget «CHF 600–830» — il costo reale del requisito così com'era scritto.
+</details>
 
 ### Cosa esce dalla lista finale dell'handoff
 - **ZV-E10 Mk I, α6400 e α6100 come corpi per UVC-mentre-registra**: fuori (falliscono il requisito).
@@ -197,31 +212,30 @@ Da lì tre scenari puliti. In tutti: **ottica 23 mm da usare a f/2–f/2.8** (no
 
 ## 5. Raccomandazione motivata
 
-**Primo: decidi 1080p vs 4K-master.** È la vera biforcazione, e nessuno te l'ha messa davanti. Il mio consiglio netto:
+**Decisione presa: 1080p.** Quindi Scenario A. La raccomandazione operativa netta:
 
-**Vai sullo Scenario B — HDMI pulito + capture card — con un Nikon Z50 II (o una α6400 usata se vuoi restare E-mount e verifichi l'esemplare).** Motivi:
+**Camera principale con UVC nativo 1080p, un cavo USB, OBS registra; GoPro HERO4 come piano largo sul convertitore che già hai.** Nessuna capture card nuova, nessun sync in post, montaggio diretto dei file OBS. È la lettura letterale del tuo requisito iniziale «semplice ma di qualità».
 
-1. **Riusa hardware che già possiedi** e usi la stessa logica per entrambe le camere → coerenza di sistema, GoPro inclusa senza forzature.
-2. **Ti slega dalla funzione-trappola** «Movie Rec During Streaming»: è quella dipendenza a rendere fragile e cara la lista attuale. Con HDMI+capture la camera va scelta per come *riprende*, non per un flag di firmware raro.
-3. **È l'architettura più affidabile**: la capture card si presenta a OBS come UVC standard, indipendente da brand/firmware/quirks USB.
-4. **Ti dà il master pieno su scheda** senza rinunce, e il feed 1080p pulito a OBS per la regia live.
+Sul corpo, per la ricerca prezzi:
+- **Se dai valore alla continuità E-mount** (per usare il 23 mm Viltrox/Sigma già scelto): **ZV-E10 II usata**. Escludi la Mk I.
+- **Se conta spendere meno**, a parità di risultato 1080p: **Fuji X-M5** o **Nikon Z50 II** nuovi (mount diverso → ottica 23 mm corrispondente), oppure la **variante usato + seconda capture card** che riapre l'α6400.
 
-Se invece **1080p ti basta davvero** (probabile, per social parlati), lo **Scenario A** è più semplice ancora e più economico: un corpo UVC nativo, OBS registra, un cavo. In quel caso non serve nemmeno la seconda capture card. È la scelta «semplice ma di qualità» che avevi chiesto all'inizio, presa alla lettera.
+La scelta tra questi è materia della fase prezzi: dipende da quanto costano *davvero* usato/nuovo sui tuoi siti. Te li porto tutti e tre come candidati.
 
-**Non consiglio** di inseguire l'usato Sony economico dentro l'architettura UVC: è la strada che ha appena fallito la verifica.
+**Non ha più senso**, data la decisione 1080p: inseguire il 4K su scheda, le capture card sul corpo principale, il workflow di sync coi proxy. Tutto rimosso.
 
-**Su ottica e stanza, indipendentemente dallo scenario:** compra il 23 mm f/1.4 (Viltrox o Sigma) **ma lavora a f/2–f/2.8**, e **misura lo spazio davanti a te prima di ordinare l'ottica** — è l'unico dato che può ancora ribaltare la focale.
+**Su ottica e stanza:** compra il 23 mm f/1.4 (Viltrox o Sigma, nel mount del corpo scelto) **ma lavora a f/2–f/2.8**, e **misura lo spazio davanti a te prima di ordinare l'ottica** — è l'unico dato che può ancora ribaltare la focale.
 
 ---
 
 ## 6. Cosa resta da verificare sul campo (prima della fase prezzi)
 
-1. **Misura la profondità della stanza davanti al soggetto.** Sblocca (o ribalta) la scelta della focale. Costo zero.
-2. **Decidi 1080p vs 4K-master.** Sblocca l'intera architettura.
-3. Se Scenario B con Sony usata: **prova l'esemplare** — HDMI pulito attivo *mentre registra su scheda*. È il nuovo requisito-cardine e va confermato sull'unità, non sulla scheda tecnica.
+1. ~~Decidi 1080p vs 4K-master.~~ **FATTO: 1080p.** Architettura bloccata sullo Scenario A.
+2. **Misura la profondità della stanza davanti al soggetto.** Sblocca (o ribalta) la scelta della focale. Costo zero.
+3. Sul corpo UVC scelto: **conferma sull'esemplare l'uscita UVC 1080p pulita** in OBS (plug-and-play, senza software proprietario). Con la decisione 1080p è l'unica verifica che resta sul corpo — non serve più il flag «registra-mentre-streamma».
 4. **Test HERO4** a costo zero: clean HDMI (OSD OFF) + registrazione simultanea + tenuta termica su sessione lunga a 1080p.
 5. **Attacco della luce** vs softbox, prima di ordinare la diffusione (unico elemento potenzialmente incompatibile, come già notato).
-6. Solo dopo le decisioni 1–2: **ricerca prezzi** nuovo/usato sui siti che indicherai tu (sezione 7 dell'handoff). Non l'ho avviata.
+6. Solo dopo la misura della stanza (punto 2): **ricerca prezzi** nuovo/usato sui siti che indicherai tu (sezione 7 dell'handoff). Non l'ho avviata.
 
 ---
 
