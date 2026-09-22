@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-11T05:00:02.425331Z",
+  "generated_at": "2026-09-22T18:50:06.514262Z",
   "system": {
     "version": "OpenClaw 2026.6.11 (e085fa1)",
     "current_ver": "2026.6.11",
-    "latest_ver": "2026.6.11",
-    "update_available": false,
+    "latest_ver": "2026.9.5",
+    "update_available": true,
     "gateway_running": true,
     "gateway_port": 18789
   },
@@ -76,214 +76,214 @@
   "summaries": [],
   "backups": [
     {
-      "file": "daily-config-20260711-0000.tar.gz",
-      "date": "2026-07-11T00:00:00Z",
-      "size": "49.7M",
+      "file": "daily-config-20260922-0000.tar.gz",
+      "date": "2026-09-22T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260711-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260922-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260710-0000.tar.gz",
-      "date": "2026-07-10T00:00:00Z",
-      "size": "49.7M",
+      "file": "daily-config-20260921-0000.tar.gz",
+      "date": "2026-09-21T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260710-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260921-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260709-0000.tar.gz",
-      "date": "2026-07-09T00:00:00Z",
-      "size": "49.5M",
+      "file": "daily-config-20260920-0000.tar.gz",
+      "date": "2026-09-20T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260709-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260920-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260708-0000.tar.gz",
-      "date": "2026-07-08T00:00:00Z",
-      "size": "49.2M",
+      "file": "daily-config-20260919-0000.tar.gz",
+      "date": "2026-09-19T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260708-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260919-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260707-0000.tar.gz",
-      "date": "2026-07-07T00:00:00Z",
-      "size": "48.9M",
+      "file": "daily-config-20260918-0000.tar.gz",
+      "date": "2026-09-18T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260707-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260918-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260706-0000.tar.gz",
-      "date": "2026-07-06T00:00:00Z",
-      "size": "48.7M",
+      "file": "daily-config-20260917-0000.tar.gz",
+      "date": "2026-09-17T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260706-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260917-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260705-0000.tar.gz",
-      "date": "2026-07-05T00:00:00Z",
-      "size": "48.5M",
+      "file": "daily-config-20260916-0000.tar.gz",
+      "date": "2026-09-16T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260705-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260916-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260704-0000.tar.gz",
-      "date": "2026-07-04T00:00:00Z",
-      "size": "48.3M",
+      "file": "daily-config-20260915-0000.tar.gz",
+      "date": "2026-09-15T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260704-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260915-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260703-0000.tar.gz",
-      "date": "2026-07-03T00:00:00Z",
-      "size": "48.0M",
+      "file": "daily-config-20260914-0000.tar.gz",
+      "date": "2026-09-14T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260703-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260914-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260702-0000.tar.gz",
-      "date": "2026-07-02T00:00:00Z",
-      "size": "47.7M",
+      "file": "daily-config-20260913-0000.tar.gz",
+      "date": "2026-09-13T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260702-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260913-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260701-0000.tar.gz",
-      "date": "2026-07-01T00:00:00Z",
-      "size": "47.4M",
+      "file": "daily-config-20260912-0000.tar.gz",
+      "date": "2026-09-12T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260701-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260912-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260630-0000.tar.gz",
-      "date": "2026-06-30T00:00:00Z",
-      "size": "47.4M",
+      "file": "daily-config-20260911-0000.tar.gz",
+      "date": "2026-09-11T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260630-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260911-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260628-0000.tar.gz",
-      "date": "2026-06-28T00:00:00Z",
-      "size": "47.1M",
+      "file": "daily-config-20260910-0000.tar.gz",
+      "date": "2026-09-10T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260628-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260910-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260627-0000.tar.gz",
-      "date": "2026-06-27T00:00:00Z",
-      "size": "46.5M",
+      "file": "daily-config-20260909-0000.tar.gz",
+      "date": "2026-09-09T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260627-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260909-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260626-0000.tar.gz",
-      "date": "2026-06-26T00:00:00Z",
-      "size": "45.9M",
+      "file": "daily-config-20260908-0000.tar.gz",
+      "date": "2026-09-08T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260626-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260908-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260625-0000.tar.gz",
-      "date": "2026-06-25T00:00:00Z",
-      "size": "45.9M",
+      "file": "daily-config-20260907-0000.tar.gz",
+      "date": "2026-09-07T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260625-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260907-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260624-0000.tar.gz",
-      "date": "2026-06-24T00:00:00Z",
-      "size": "45.3M",
+      "file": "daily-config-20260906-0000.tar.gz",
+      "date": "2026-09-06T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260624-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260906-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260623-0000.tar.gz",
-      "date": "2026-06-23T00:00:00Z",
-      "size": "44.7M",
+      "file": "daily-config-20260905-0000.tar.gz",
+      "date": "2026-09-05T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260623-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260905-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260622-0000.tar.gz",
-      "date": "2026-06-22T00:00:00Z",
-      "size": "44.3M",
+      "file": "daily-config-20260904-0000.tar.gz",
+      "date": "2026-09-04T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260622-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260904-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260621-0000.tar.gz",
-      "date": "2026-06-21T00:00:00Z",
-      "size": "43.8M",
+      "file": "daily-config-20260903-0000.tar.gz",
+      "date": "2026-09-03T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260621-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260903-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260620-0000.tar.gz",
-      "date": "2026-06-20T00:00:00Z",
-      "size": "43.3M",
+      "file": "daily-config-20260902-0000.tar.gz",
+      "date": "2026-09-02T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260620-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260902-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260619-0000.tar.gz",
-      "date": "2026-06-19T00:00:00Z",
-      "size": "42.7M",
+      "file": "daily-config-20260901-0000.tar.gz",
+      "date": "2026-09-01T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260619-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260901-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260618-0000.tar.gz",
-      "date": "2026-06-18T00:00:00Z",
-      "size": "42.1M",
+      "file": "daily-config-20260831-0000.tar.gz",
+      "date": "2026-08-31T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260618-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260831-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260617-0000.tar.gz",
-      "date": "2026-06-17T00:00:00Z",
-      "size": "41.5M",
+      "file": "daily-config-20260830-0000.tar.gz",
+      "date": "2026-08-30T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260617-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260830-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260616-0000.tar.gz",
-      "date": "2026-06-16T00:00:00Z",
-      "size": "40.9M",
+      "file": "daily-config-20260829-0000.tar.gz",
+      "date": "2026-08-29T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260616-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260829-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260615-0000.tar.gz",
-      "date": "2026-06-15T00:00:00Z",
-      "size": "40.4M",
+      "file": "daily-config-20260828-0000.tar.gz",
+      "date": "2026-08-28T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260615-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260828-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260614-0000.tar.gz",
-      "date": "2026-06-14T00:00:00Z",
-      "size": "40.0M",
+      "file": "daily-config-20260827-0000.tar.gz",
+      "date": "2026-08-27T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260614-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260827-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260613-0000.tar.gz",
-      "date": "2026-06-13T00:00:00Z",
-      "size": "39.4M",
+      "file": "daily-config-20260826-0000.tar.gz",
+      "date": "2026-08-26T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260613-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260826-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260612-0000.tar.gz",
-      "date": "2026-06-12T00:00:00Z",
-      "size": "38.8M",
+      "file": "daily-config-20260825-0000.tar.gz",
+      "date": "2026-08-25T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260612-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260825-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
     {
-      "file": "daily-config-20260611-0000.tar.gz",
-      "date": "2026-06-11T00:00:00Z",
-      "size": "38.2M",
+      "file": "daily-config-20260824-0000.tar.gz",
+      "date": "2026-08-24T00:00:00Z",
+      "size": "49.8M",
       "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260611-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
+      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20260824-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
@@ -294,7 +294,7 @@
     "last_run_found": 3168
   },
   "model_status": {
-    "timestamp": "2026-07-11T02:00:01Z",
+    "timestamp": "2026-09-22T02:00:01Z",
     "providers": {
       "openrouter": {
         "provider": "openrouter",
@@ -327,15 +327,15 @@
         "window_5h_used_pct": 0.0,
         "window_5h_remaining_pct": 100.0,
         "window_5h_reset_in": "5.0h",
-        "window_5h_reset_at": "2026-07-11 07:00 UTC",
+        "window_5h_reset_at": "2026-09-22 07:00 UTC",
         "window_7d_status": "allowed",
-        "window_7d_used_pct": 5.0,
-        "window_7d_remaining_pct": 95.0,
-        "window_7d_reset_in": "146.0h",
-        "window_7d_reset_at": "2026-07-17 04:00 UTC",
+        "window_7d_used_pct": 12.0,
+        "window_7d_remaining_pct": 88.0,
+        "window_7d_reset_in": "74.0h",
+        "window_7d_reset_at": "2026-09-25 04:00 UTC",
         "overall_status": "allowed",
         "overage_status": "rejected",
-        "overage_reason": "out_of_credits"
+        "overage_reason": "org_level_disabled"
       },
       "openai-codex": {
         "provider": "openai-codex",
@@ -384,24 +384,24 @@
         "model_id": "openrouter/minimax/minimax-m2.5",
         "alias": "minimax",
         "type": "paid",
-        "cost_input_per_1M": 0.15,
-        "cost_output_per_1M": 0.9,
+        "cost_input_per_1M": 0.27,
+        "cost_output_per_1M": 1.08,
         "context_length": 204800
       },
       {
         "model_id": "openrouter/deepseek/deepseek-v3.2",
         "alias": "deepseek",
         "type": "paid",
-        "cost_input_per_1M": 0.2145,
-        "cost_output_per_1M": 0.3217,
-        "context_length": 131072
+        "cost_input_per_1M": 0.269,
+        "cost_output_per_1M": 0.4,
+        "context_length": 163840
       },
       {
         "model_id": "openrouter/moonshotai/kimi-k2.5",
         "alias": "kimi",
         "type": "paid",
-        "cost_input_per_1M": 0.375,
-        "cost_output_per_1M": 2.025,
+        "cost_input_per_1M": 0.45,
+        "cost_output_per_1M": 2.25,
         "context_length": 262144
       },
       {
@@ -410,7 +410,7 @@
         "type": "paid",
         "cost_input_per_1M": 0.6,
         "cost_output_per_1M": 1.92,
-        "context_length": 202752
+        "context_length": 204800
       },
       {
         "model_id": "openrouter/google/gemini-2.5-flash-lite",
