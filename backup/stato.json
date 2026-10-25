@@ -1,0 +1,99 @@
+{
+ "aggiornato": "2026-10-25T17:47:00.940015+01:00",
+ "problemi": 1,
+ "backup": [
+  {
+   "nome": "Foto e documenti OneDrive → T7",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T16:18:44+01:00"
+  },
+  {
+   "nome": "Musica → T7",
+   "stato": "errore",
+   "ultimo_ok": null
+  },
+  {
+   "nome": "Nextcloud → cloud",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T16:27:13+01:00"
+  },
+  {
+   "nome": "Sistema → T7 + cloud",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T17:09:07+01:00"
+  },
+  {
+   "nome": "Galleria foto",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T04:31:06+01:00"
+  },
+  {
+   "nome": "Mac → disco Musica",
+   "stato": "attesa",
+   "ultimo_ok": null
+  },
+  {
+   "nome": "Settimanale → Backup 1",
+   "stato": "attesa",
+   "ultimo_ok": null
+  },
+  {
+   "nome": "Settimanale → Backup 3",
+   "stato": "attesa",
+   "ultimo_ok": null
+  },
+  {
+   "nome": "Database Immich",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T02:00:26+02:00"
+  },
+  {
+   "nome": "Finanza",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T03:10:01+01:00"
+  },
+  {
+   "nome": "OpenClaw",
+   "stato": "ok",
+   "ultimo_ok": "2026-10-25T00:00:07+02:00"
+  }
+ ],
+ "dischi": [
+  {
+   "nome": "SSD sistema",
+   "uso": 75,
+   "libero_gb": 50,
+   "smart": "ok"
+  },
+  {
+   "nome": "T7",
+   "uso": 61,
+   "libero_gb": 1453,
+   "smart": "ok"
+  },
+  {
+   "nome": "Musica",
+   "uso": 91,
+   "libero_gb": 362,
+   "smart": "ok"
+  },
+  {
+   "nome": "Docs",
+   "uso": 86,
+   "libero_gb": 555,
+   "smart": "ok"
+  },
+  {
+   "nome": "Backup 1",
+   "uso": 51,
+   "libero_gb": 928,
+   "smart": "ok"
+  },
+  {
+   "nome": "Backup 3",
+   "uso": 1,
+   "libero_gb": 2794,
+   "smart": "ok"
+  }
+ ]
+}
