@@ -24,6 +24,10 @@ h1{margin:0;font-size:1.45rem;font-weight:600}
 .ok{--c:var(--ok)}.warn{--c:var(--warn)}.bad{--c:var(--bad)}
 .dot{background:var(--c)}
 .big b{font-size:1.1rem;display:block}
+.big{align-items:flex-start}.big .dot{margin-top:4px}.gtxt{min-width:0}
+#avvisi{margin:6px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:2px}
+#avvisi:empty{display:none}
+#avvisi li{display:list-item;background:none;border:0;padding:0;font-size:.95rem}
 h2{margin:0 0 6px;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
 ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
 li{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 12px}
@@ -53,7 +57,7 @@ td.no{color:var(--bad)}
 <body>
 <div class="wrap">
  <header><h1>Stato backup</h1><p class="sub" id="agg">Carico…</p></header>
- <div class="big" id="gen"><div class="dot"></div><div><b>…</b><span class="sub"></span></div></div>
+ <div class="big" id="gen"><div class="dot"></div><div class="gtxt"><b>…</b><span class="sub"></span><ol id="avvisi"></ol></div></div>
  <section><h2>Backup</h2><ul id="bk"></ul></section>
  <section><h2>Dischi</h2><ul id="dk"></ul></section>
  <section id="rip" hidden><h2>Ultima prova di ripristino</h2><ul id="rp"></ul></section>
@@ -143,9 +147,12 @@ fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  document.getElementById("agg").textContent="Ultimo controllo del server: "+fmt(d.aggiornato);
  const g=document.getElementById("gen");
  let cls="ok",tit="Tutto a posto",det="Tutti i backup sono recenti e i dischi sono sani.";
- if(d.problemi>0){cls="bad";tit=d.problemi===1?"C'è un problema":"Ci sono "+d.problemi+" problemi";det="Dettagli per mail (una sola volta) e qui sotto."}
+ if(d.problemi>0){cls="bad";tit=d.problemi===1?"C'è un avviso":"Ci sono "+d.problemi+" avvisi";det=""}
  if(vecchio){cls="bad";tit="Il server non dà notizie";det="Ultimo segnale "+Math.round(ore(d.aggiornato))+" ore fa: PC spento o controllo fermo."}
  g.className="big "+cls;g.querySelector("b").textContent=tit;g.querySelector(".sub").textContent=det;
+ const av=document.getElementById("avvisi");av.replaceChildren();
+ if(!vecchio&&d.problemi>0){for(const t of (d.avvisi||[])){const li=document.createElement("li");li.textContent=t;av.appendChild(li)}
+  if(!(d.avvisi||[]).length){const li=document.createElement("li");li.textContent="Dettagli nella mail del controllo.";av.appendChild(li)}}
  const bk=document.getElementById("bk");
  for(const b of d.backup){const c=b.stato==="ok"?"ok":b.stato==="attesa"?"warn":"bad";bk.appendChild(riga(c,b.nome,"ultimo OK "+fmt(b.ultimo_ok)))}
  const dk=document.getElementById("dk");

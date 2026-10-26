@@ -1,6 +1,9 @@
 {
- "aggiornato": "2026-10-26T12:19:35.619836+01:00",
+ "aggiornato": "2026-10-26T12:27:05.275354+01:00",
  "problemi": 1,
+ "avvisi": [
+  "Disco Musica quasi pieno: 65 GB liberi (99% usato)"
+ ],
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
@@ -91,8 +94,8 @@
   },
   {
    "nome": "Backup 3",
-   "uso": 35,
-   "libero_gb": 1827,
+   "uso": 36,
+   "libero_gb": 1796,
    "smart": "ok"
   }
  ]
