@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26T12:27:05.275354+01:00",
+ "aggiornato": "2026-10-26T12:27:17.553975+01:00",
  "problemi": 1,
  "avvisi": [
   "Disco Musica quasi pieno: 65 GB liberi (99% usato)"
@@ -95,7 +95,7 @@
   {
    "nome": "Backup 3",
    "uso": 36,
-   "libero_gb": 1796,
+   "libero_gb": 1795,
    "smart": "ok"
   }
  ]
