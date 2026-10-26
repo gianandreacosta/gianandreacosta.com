@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-10-26T07:00:01.669152+01:00",
- "problemi": 2,
+ "aggiornato": "2026-10-26T12:19:35.619836+01:00",
+ "problemi": 1,
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
@@ -29,8 +29,8 @@
   },
   {
    "nome": "Mac → disco Musica",
-   "stato": "errore",
-   "ultimo_ok": null
+   "stato": "ok",
+   "ultimo_ok": "2026-10-26T06:33:41+01:00"
   },
   {
    "nome": "Settimanale → Backup 1",
@@ -67,8 +67,8 @@
   },
   {
    "nome": "T7",
-   "uso": 70,
-   "libero_gb": 1129,
+   "uso": 73,
+   "libero_gb": 1029,
    "smart": "ok"
   },
   {
@@ -91,8 +91,8 @@
   },
   {
    "nome": "Backup 3",
-   "uso": 1,
-   "libero_gb": 2794,
+   "uso": 35,
+   "libero_gb": 1827,
    "smart": "ok"
   }
  ]
