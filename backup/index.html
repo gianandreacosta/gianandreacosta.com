@@ -33,6 +33,21 @@ li span{min-width:0}
 .meter{height:5px;background:var(--line);border-radius:3px;margin-top:5px;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--c)}
 .foot{color:var(--muted);font-size:.8rem}
+/* mappa dei dati: disegno + tabella "cosa sta dove" */
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:30px;border-top:3px solid #2b6a86}
+.legend i.w{border-top:3px dashed #b07a2a}
+.diagram{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto}
+.diagram pre{margin:0;min-width:900px;font-family:var(--sans)}
+.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td:first-child{font-weight:500}
+td.no{color:var(--bad)}
+.mappa{max-width:1100px;width:100%;margin:8px auto 0;display:flex;flex-direction:column;gap:22px}
 </style>
 </head>
 <body>
@@ -44,6 +59,80 @@ li span{min-width:0}
  <section id="rip" hidden><h2>Ultima prova di ripristino</h2><ul id="rp"></ul></section>
  <p class="foot">Pagina pubblica: solo informazioni generiche. Si aggiorna una volta al giorno. Se il server non manda notizie da più di 30 ore, diventa rossa da sola.</p>
 </div>
+<div class="mappa">
+ <section>
+  <h2>Dove stanno i dati</h2>
+  <div class="legend"><span><i></i>copia ogni notte (o ogni giorno)</span><span><i class="w"></i>copia ogni domenica</span></div>
+  <div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  subgraph SEDI["Dove vivono i file"]
+    direction TB
+    OD["<b>OneDrive</b> (Microsoft)<br/>foto originali, Documenti, Condivisa"]
+    MAC["<b>Mac</b><br/>produzioni musicali"]
+    MUS["<b>Disco Musica</b> (nel PC)<br/>Musica, band, archivio Dreamshade,<br/>Studio One, copia del Mac<br/><i>+ librerie: nessuna copia</i>"]
+    SSD["<b>SSD del server</b><br/>sistema, Claude, script, database"]
+  end
+  subgraph T7["T7 (disco esterno)"]
+    direction TB
+    NC["<b>Nextcloud</b><br/>foto Da OneDrive + Galleria<br/>copia documenti OneDrive<br/>file Nextcloud"]
+    PC["<b>backup/PC</b><br/>copia della Musica"]
+    SIS["<b>backup/sistema</b><br/>copia del sistema<br/>(password cifrate)"]
+    ARC["<b>archivio</b><br/>iTunes, immagine Maxtor"]
+    MED["<b>media</b><br/>video personali (Jellyfin),<br/>film e serie"]
+  end
+  subgraph INT["Dischi di backup nel PC"]
+    direction TB
+    B1["<b>Backup 1</b><br/>foto, Galleria, file Nextcloud,<br/>video personali, sistema"]
+    B3["<b>Backup 3</b><br/>Musica, iTunes, video personali,<br/>documenti OneDrive, sistema"]
+  end
+  CLOUD["<b>Fuori casa</b><br/>OneDrive, cartella<br/>Backup Nextcloud"]
+  OD -->|"foto e documenti"| NC
+  MAC -->|"una volta al giorno"| MUS
+  MUS -->|"Musica"| PC
+  SSD -->|"sistema"| SIS
+  NC -->|"file Nextcloud"| CLOUD
+  SIS -.->|"cifrato"| NC
+  NC -.-> B1
+  MED -.-> B1
+  SIS -.-> B1
+  MUS -.-> B3
+  ARC -.->|"iTunes"| B3
+  MED -.-> B3
+  NC -.->|"documenti OneDrive"| B3
+  SIS -.-> B3
+  linkStyle 0,1,2,3,4 stroke:#2b6a86,stroke-width:2.5px
+  linkStyle 5,6,7,8,9,10,11,12,13 stroke:#b07a2a,stroke-width:2px
+</pre>
+  </div>
+ </section>
+ <section>
+  <h2>Cosa sta dove</h2>
+  <div class="tbl"><table>
+   <thead><tr><th>Cosa</th><th>Dove vive</th><th>Copia ogni notte</th><th>Copia la domenica</th><th>Fuori casa</th></tr></thead>
+   <tbody>
+    <tr><td>Foto originali</td><td>OneDrive</td><td>T7 (Nextcloud)</td><td>Backup 1</td><td>sì, OneDrive stesso</td></tr>
+    <tr><td>Galleria ordinata</td><td>T7 (Nextcloud)</td><td>—</td><td>Backup 1</td><td>si rifà dalle originali</td></tr>
+    <tr><td>Documenti OneDrive</td><td>OneDrive</td><td>T7 (Nextcloud)</td><td>Backup 3</td><td>sì, OneDrive stesso</td></tr>
+    <tr><td>File Nextcloud</td><td>T7 (Nextcloud)</td><td>OneDrive, Backup Nextcloud</td><td>Backup 1</td><td>sì</td></tr>
+    <tr><td>Musica, band, Studio One</td><td>disco Musica</td><td>T7 (backup/PC)</td><td>Backup 3</td><td class="no">no (scelta)</td></tr>
+    <tr><td>Produzioni del Mac</td><td>Mac</td><td>disco Musica, poi T7</td><td>Backup 3 (+ Time Machine)</td><td class="no">no</td></tr>
+    <tr><td>iTunes</td><td>T7 (archivio)</td><td>—</td><td>Backup 3</td><td class="no">no</td></tr>
+    <tr><td>Video personali</td><td>T7 (media)</td><td>—</td><td>Backup 1 e Backup 3</td><td class="no">no</td></tr>
+    <tr><td>Sistema del server</td><td>SSD</td><td>T7 (backup/sistema)</td><td>Backup 1 e Backup 3</td><td>sì, cifrato</td></tr>
+    <tr><td>Librerie musicali</td><td>disco Musica</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no (scelta)</td></tr>
+    <tr><td>Immagine disco Maxtor</td><td>T7 (archivio)</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no (scelta)</td></tr>
+    <tr><td>Film e serie</td><td>Docs e T7 (media)</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no</td></tr>
+   </tbody>
+  </table></div>
+ </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({startOnLoad:true,securityLevel:"loose",
+ theme:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"default",
+ flowchart:{htmlLabels:true,curve:"basis"},themeVariables:{fontFamily:"IBM Plex Sans, system-ui, sans-serif"}});
+</script>
 <script>
 const fmt=s=>s?new Date(s).toLocaleString("it-CH",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"mai";
 const ore=s=>s?(Date.now()-new Date(s))/36e5:Infinity;
