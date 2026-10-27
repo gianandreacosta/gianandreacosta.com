@@ -1,0 +1,76 @@
+/* lab.css: stile comune di lab.gianandreacosta.com (template "Vetro", palette "Bosco", scuro).
+   Uso in una pagina:
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+     <link rel="stylesheet" href="/assets/lab.css">
+     <div class="lab-blobs"><i></i><i></i><i></i></div>            (primo figlio di body)
+     <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
+   Il body NON deve avere un background proprio: lo sfondo sta su html, altrimenti copre le sfumature. */
+
+:root {
+  --a1: #1f9d63;   /* verde */
+  --a2: #a8d44a;   /* verde chiaro */
+  --a3: #0e7c86;   /* petrolio */
+  --bg: #0a0f0c;
+  --tile: #141a17;
+  --tile-solid: #121815;
+  --fg: #f2f4f0;
+  --mut: #98a39c;
+  --line: rgba(255,255,255,.1);
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --stop: #f87171;
+  --idle: #6b756f;
+  --radius: 24px;
+  --radius-sm: 14px;
+  --font: "Sora", system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+html { background: var(--bg); }
+body {
+  font-family: var(--font);
+  color: var(--fg);
+  background: transparent;
+  overflow-x: hidden;
+}
+
+/* sfondo con sfumature mobili */
+.lab-blobs { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.lab-blobs i { position: absolute; width: 46vmax; aspect-ratio: 1; border-radius: 50%; filter: blur(90px); opacity: .32; animation: lab-drift 18s ease-in-out infinite alternate; }
+.lab-blobs i:nth-child(1) { background: var(--a1); top: -18vmax; left: -12vmax; }
+.lab-blobs i:nth-child(2) { background: var(--a2); top: 20vh; right: -20vmax; opacity: .2; animation-delay: -6s; }
+.lab-blobs i:nth-child(3) { background: var(--a3); bottom: -22vmax; left: 20vw; animation-delay: -12s; }
+@keyframes lab-drift { to { transform: translate(6%, 8%) scale(1.12); } }
+
+/* superficie in vetro */
+.lab-glass {
+  background: color-mix(in srgb, var(--tile) 55%, transparent);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+  border-radius: var(--radius);
+}
+
+/* barra di ritorno alla homepage */
+.lab-top { max-width: 1080px; margin: 0 auto 18px; display: flex; align-items: center; gap: 12px; }
+.lab-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 600 .8rem var(--font); color: var(--fg); text-decoration: none;
+  padding: 6px 14px; border-radius: 999px;
+  background: color-mix(in srgb, var(--tile) 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  transition: border-color .2s;
+}
+.lab-back:hover { border-color: color-mix(in srgb, var(--a1) 60%, transparent); }
+
+/* titolo pagina e testo sfumato */
+.lab-title { font: 700 clamp(2rem, 6vw, 3.4rem)/1 var(--font); letter-spacing: -.04em; }
+.lab-grad { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lab-label { font: 600 .78rem var(--font); letter-spacing: .14em; text-transform: uppercase; color: var(--mut); }
+
+:focus-visible { outline: 2px solid var(--a2); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .lab-blobs i { animation: none; } }

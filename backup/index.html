@@ -6,57 +6,63 @@
 <meta name="robots" content="noindex">
 <title>Stato backup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/assets/lab.css">
 <style>
-/* Layout: una colonna; in alto il semaforo generale, poi backup e dischi come righe di stato */
-:root{--bg:#f4f5f3;--panel:#fff;--fg:#1c2320;--muted:#5f6a64;--line:#dde2de;
- --ok:#2f7d4f;--warn:#b0700c;--bad:#b3261e;--sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#131816;--panel:#1a201d;--fg:#e4eae6;--muted:#97a29c;--line:#2b3430;
- --ok:#5cc28a;--warn:#e2a33c;--bad:#ef6a60;color-scheme:dark}}
+/* Layout: una colonna; in alto il semaforo generale, poi backup e dischi come righe di stato. Stile lab.css (Vetro, Bosco, scuro) */
+:root{--bad:var(--stop);--sans:var(--font);--mono:var(--font)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 var(--sans);
- padding:28px max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
-.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
-h1{margin:0;font-size:1.45rem;font-weight:600}
-.sub{margin:4px 0 0;color:var(--muted);font-size:.9rem}
-.big{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+body{margin:0;font:15px/1.5 var(--font);
+ padding:max(28px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+.lab-top{max-width:1100px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:26px}
+h1{margin:0;font-size:clamp(2rem,6vw,3.2rem);font-weight:700;line-height:1;letter-spacing:-.04em}
+h1 span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:8px 0 0;color:var(--mut);font-size:.88rem}
+.glass,.big,li,.diagram,.tbl{background:color-mix(in srgb,var(--tile) 55%,transparent);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid color-mix(in srgb,var(--fg) 12%,transparent)}
+.big{display:flex;gap:16px;align-items:center;border-radius:24px;padding:22px}
 .dot{width:18px;height:18px;border-radius:50%;flex:none}
 .ok{--c:var(--ok)}.warn{--c:var(--warn)}.bad{--c:var(--bad)}
-.dot{background:var(--c)}
-.big b{font-size:1.1rem;display:block}
-.big{align-items:flex-start}.big .dot{margin-top:4px}.gtxt{min-width:0}
-#avvisi{margin:6px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:2px}
+.dot{background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
+.big b{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;display:block}
+.big{align-items:flex-start}.big .dot{margin-top:6px}.gtxt{min-width:0}
+.big.bad{border-color:color-mix(in srgb,var(--bad) 45%,transparent)}
+.big.warn{border-color:color-mix(in srgb,var(--warn) 45%,transparent)}
+#avvisi{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:2px}
 #avvisi:empty{display:none}
-#avvisi li{display:list-item;background:none;border:0;padding:0;font-size:.95rem}
-h2{margin:0 0 6px;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
-ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
-li{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 12px}
-li .dot{width:10px;height:10px}
+#avvisi li{display:list-item;background:none;border:0;padding:0;font-size:.92rem;backdrop-filter:none;-webkit-backdrop-filter:none}
+h2{margin:0 0 12px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);font-weight:600}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+li{display:grid;grid-template-columns:14px 1fr auto;gap:12px;align-items:center;border-radius:14px;padding:11px 16px}
+li .dot{width:10px;height:10px;box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 18%,transparent)}
 li span{min-width:0}
-.v{font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.meter{height:5px;background:var(--line);border-radius:3px;margin-top:5px;overflow:hidden}
-.meter i{display:block;height:100%;background:var(--c)}
-.foot{color:var(--muted);font-size:.8rem}
+.v{font-size:.78rem;color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+.meter{height:5px;background:var(--line);border-radius:3px;margin-top:6px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--c);border-radius:3px}
+.foot{color:var(--mut);font-size:.78rem}
 /* mappa dei dati: disegno + tabella "cosa sta dove" */
-.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.84rem;color:var(--mut);margin-bottom:10px}
 .legend span{display:inline-flex;align-items:center;gap:8px}
-.legend i{display:inline-block;width:30px;border-top:3px solid #2b6a86}
-.legend i.w{border-top:3px dashed #b07a2a}
-.diagram{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto}
-.diagram pre{margin:0;min-width:900px;font-family:var(--sans)}
-.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
-table{border-collapse:collapse;width:100%;font-size:.86rem}
-th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.legend i{display:inline-block;width:30px;border-top:3px solid var(--a1)}
+.legend i.w{border-top:3px dashed var(--a2)}
+.diagram{border-radius:24px;padding:14px;overflow-x:auto}
+.diagram pre{margin:0;min-width:900px;font-family:var(--font)}
+.tbl{overflow-x:auto;border-radius:24px}
+table{border-collapse:collapse;width:100%;font-size:.84rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
-th{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:500}
-td:first-child{font-weight:500}
+th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
+td:first-child{font-weight:600}
 td.no{color:var(--bad)}
-.mappa{max-width:1100px;width:100%;margin:8px auto 0;display:flex;flex-direction:column;gap:22px}
+.mappa{max-width:1100px;width:100%;margin:26px auto 0;display:flex;flex-direction:column;gap:26px}
 </style>
 </head>
 <body>
+<div class="lab-blobs"><i></i><i></i><i></i></div>
+<nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
 <div class="wrap">
- <header><h1>Stato backup</h1><p class="sub" id="agg">Carico…</p></header>
+ <header><h1>Stato <span>backup</span></h1><p class="sub" id="agg">Carico…</p></header>
  <div class="big" id="gen"><div class="dot"></div><div class="gtxt"><b>…</b><span class="sub"></span><ol id="avvisi"></ol></div></div>
  <section><h2>Backup</h2><ul id="bk"></ul></section>
  <section><h2>Dischi</h2><ul id="dk"></ul></section>
@@ -105,8 +111,8 @@ flowchart LR
   MED -.-> B3
   NC -.->|"documenti OneDrive"| B3
   SIS -.-> B3
-  linkStyle 0,1,2,3,4 stroke:#2b6a86,stroke-width:2.5px
-  linkStyle 5,6,7,8,9,10,11,12,13 stroke:#b07a2a,stroke-width:2px
+  linkStyle 0,1,2,3,4 stroke:#1f9d63,stroke-width:2.5px
+  linkStyle 5,6,7,8,9,10,11,12,13 stroke:#a8d44a,stroke-width:2px
 </pre>
   </div>
  </section>
@@ -133,9 +139,12 @@ flowchart LR
 </div>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
 <script>
-mermaid.initialize({startOnLoad:true,securityLevel:"loose",
- theme:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"default",
- flowchart:{htmlLabels:true,curve:"basis"},themeVariables:{fontFamily:"IBM Plex Sans, system-ui, sans-serif"}});
+mermaid.initialize({startOnLoad:true,securityLevel:"loose",theme:"base",
+ flowchart:{htmlLabels:true,curve:"basis"},
+ themeVariables:{fontFamily:"Sora, system-ui, sans-serif",darkMode:true,background:"transparent",
+  primaryColor:"#16211b",primaryTextColor:"#f2f4f0",primaryBorderColor:"#1f9d63",lineColor:"#98a39c",
+  clusterBkg:"rgba(20,26,23,.55)",clusterBorder:"rgba(255,255,255,.14)",titleColor:"#a8d44a",
+  edgeLabelBackground:"#121815",textColor:"#f2f4f0"}});
 </script>
 <script>
 const fmt=s=>s?new Date(s).toLocaleString("it-CH",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"mai";

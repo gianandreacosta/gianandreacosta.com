@@ -4,123 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meteo Svizzera — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/lab.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: #e4e4e7;
+      line-height: 1.5;
       min-height: 100vh;
-      padding: 1.25rem 1rem 3rem;
+      padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 3rem max(16px, env(safe-area-inset-left));
     }
+    .lab-top { max-width: 960px; }
+    .container { max-width: 960px; margin: 0 auto; }
 
-    .container { max-width: 900px; margin: 0 auto; }
-
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: #71717a;
-      text-decoration: none;
-      font-size: 0.85rem;
-      margin-bottom: 1.25rem;
-      transition: color 0.15s;
+    /* vetro comune */
+    .weather-card, .clock-header {
+      background: color-mix(in srgb, var(--tile) 55%, transparent);
+      backdrop-filter: blur(20px) saturate(150%);
+      -webkit-backdrop-filter: blur(20px) saturate(150%);
+      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
     }
-    .back-link:hover { color: #a1a1aa; }
 
     /* ─── Clock ───────────────────────────────── */
-    .clock-header {
-      text-align: center;
-      background: linear-gradient(135deg, #0c4a6e, #0369a1);
-      border-radius: 20px;
-      padding: 1.5rem 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .clock-time { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
-    .clock-date { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin-top: 0.4rem; text-transform: capitalize; }
-    .clock-tz   { font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-top: 0.25rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .clock-header { border-radius: var(--radius); padding: 1.6rem 1.6rem; margin-bottom: 1.5rem; }
+    .clock-time { font-size: clamp(2.8rem, 9vw, 4.6rem); font-weight: 700; letter-spacing: -0.045em; color: var(--fg); line-height: 1; font-variant-numeric: tabular-nums; }
+    .clock-date { font-size: 0.95rem; color: var(--mut); margin-top: 0.5rem; text-transform: capitalize; }
+    .clock-tz   { font-size: 0.7rem; color: var(--a2); margin-top: 0.3rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
 
     /* ─── Alert banner ────────────────────────── */
     .global-alerts { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem; }
     .alert-banner {
-      background: #431407;
-      border: 1px solid #c2410c;
-      border-radius: 10px;
-      padding: 0.65rem 1rem;
-      font-size: 0.82rem;
-      color: #fed7aa;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
+      background: color-mix(in srgb, #f97316 14%, transparent);
+      border: 1px solid color-mix(in srgb, #f97316 45%, transparent);
+      border-radius: var(--radius-sm);
+      padding: 0.7rem 1rem; font-size: 0.82rem; color: #fed7aa;
+      display: flex; align-items: center; gap: 0.6rem;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
     }
-    .alert-banner.frost { background: #1e1b4b; border-color: #6366f1; color: #c7d2fe; }
-    .alert-banner.wind  { background: #431407; border-color: #c2410c; color: #fed7aa; }
-    .alert-banner.storm { background: #3b1f05; border-color: #d97706; color: #fde68a; }
+    .alert-banner.frost { background: color-mix(in srgb, #818cf8 14%, transparent); border-color: color-mix(in srgb, #818cf8 45%, transparent); color: #c7d2fe; }
+    .alert-banner.wind  { background: color-mix(in srgb, #f97316 14%, transparent); border-color: color-mix(in srgb, #f97316 45%, transparent); color: #fed7aa; }
+    .alert-banner.storm { background: color-mix(in srgb, var(--warn) 14%, transparent); border-color: color-mix(in srgb, var(--warn) 45%, transparent); color: #fde68a; }
 
     /* ─── Lugano Featured Card ────────────────── */
     .lugano-featured {
-      background: linear-gradient(135deg, #0c4a6e 0%, #164e63 50%, #0e7490 100%);
-      border-radius: 20px;
-      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--a1) 0%, var(--a3) 70%, #0b5a63 100%);
+      border-radius: var(--radius);
+      padding: 1.6rem;
       margin-bottom: 1.25rem;
       position: relative;
       overflow: hidden;
+      color: #fff;
     }
     .lugano-featured::before {
       content: '🌊';
       position: absolute; top: -10px; right: -10px;
-      font-size: 8rem; opacity: 0.07; line-height: 1;
+      font-size: 8rem; opacity: 0.08; line-height: 1;
     }
-    .lugano-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.55); margin-bottom: 0.5rem; }
+    .lugano-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
     .lugano-main { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .lugano-left {}
     .lugano-icon { font-size: 3.5rem; line-height: 1; margin-bottom: 0.3rem; }
-    .lugano-desc { font-size: 0.88rem; color: rgba(255,255,255,0.7); }
-    .lugano-temp { font-size: 3.5rem; font-weight: 800; color: #fff; line-height: 1; }
-    .lugano-feels { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 0.2rem; }
+    .lugano-desc { font-size: 0.88rem; color: rgba(255,255,255,0.8); }
+    .lugano-temp { font-size: clamp(3rem, 9vw, 4.4rem); font-weight: 700; letter-spacing: -0.045em; color: #fff; line-height: 1; }
+    .lugano-feels { font-size: 0.82rem; color: rgba(255,255,255,0.72); margin-top: 0.2rem; }
     .lugano-right { display: flex; flex-direction: column; gap: 0.4rem; min-width: 130px; }
-    .lugano-meta-row { font-size: 0.8rem; color: rgba(255,255,255,0.7); display: flex; gap: 0.4rem; align-items: center; }
-    .lugano-advice { margin-top: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 0.5rem 0.75rem; font-size: 0.8rem; color: rgba(255,255,255,0.85); display: flex; gap: 0.5rem; align-items: center; }
+    .lugano-meta-row { font-size: 0.8rem; color: rgba(255,255,255,0.82); display: flex; gap: 0.4rem; align-items: center; }
+    .lugano-advice { margin-top: 0.85rem; background: rgba(0,0,0,0.18); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-sm); padding: 0.55rem 0.8rem; font-size: 0.8rem; color: rgba(255,255,255,0.9); display: flex; gap: 0.5rem; align-items: center; }
 
     /* Forecast 3gg inline Lugano */
     .lugano-forecast { margin-top: 1rem; display: flex; gap: 0.5rem; }
     .forecast-pill {
       flex: 1;
-      background: rgba(255,255,255,0.1);
-      border-radius: 10px;
-      padding: 0.5rem 0.4rem;
+      background: rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius-sm);
+      padding: 0.55rem 0.4rem;
       text-align: center;
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.9);
+      min-width: 0;
     }
-    .forecast-pill .fp-day { font-size: 0.65rem; color: rgba(255,255,255,0.5); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .forecast-pill .fp-day { font-size: 0.65rem; color: rgba(255,255,255,0.6); margin-bottom: 0.2rem; text-transform: uppercase; letter-spacing: 0.06em; }
     .forecast-pill .fp-icon { font-size: 1.4rem; margin: 0.2rem 0; }
-    .forecast-pill .fp-rain { font-size: 0.65rem; color: #7dd3fc; margin-top: 0.2rem; }
+    .forecast-pill .fp-rain { font-size: 0.65rem; color: #bdeaff; margin-top: 0.2rem; }
 
     /* Mini chart */
     .lugano-chart { margin-top: 1rem; }
-    .lugano-chart-title { font-size: 0.65rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .lugano-chart-title { font-size: 0.65rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
     .chart-svg { width: 100%; height: 48px; display: block; }
 
     /* Sun/UV row */
     .lugano-sun-row { margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
     .sun-pill {
-      background: rgba(255,255,255,0.08);
-      border-radius: 8px;
-      padding: 0.35rem 0.65rem;
+      background: rgba(0,0,0,0.18);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.7);
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
+      color: rgba(255,255,255,0.85);
+      display: flex; align-items: center; gap: 0.35rem;
     }
-    .uv-badge {
-      display: inline-block;
-      padding: 0.1rem 0.4rem;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 0.72rem;
-    }
+    .uv-badge { display: inline-block; padding: 0.1rem 0.45rem; border-radius: 999px; font-weight: 600; font-size: 0.72rem; }
     .uv-low    { background: #14532d; color: #86efac; }
     .uv-mod    { background: #713f12; color: #fde68a; }
     .uv-high   { background: #7f1d1d; color: #fca5a5; }
@@ -128,82 +113,75 @@
 
     /* ─── Cities Grid ─────────────────────────── */
     .section-title {
-      font-size: 0.68rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #52525b;
-      margin-bottom: 0.75rem;
+      font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--mut); margin-bottom: 0.75rem;
     }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0.65rem;
-    }
+    .weather-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
 
     .weather-card {
-      background: #18181b;
-      border: 1px solid #27272a;
-      border-radius: 14px;
-      padding: 1.1rem 1rem;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      border-radius: var(--radius);
+      padding: 1.2rem 1.1rem;
+      transition: transform 0.3s cubic-bezier(.2,.8,.2,1), border-color 0.3s;
       position: relative;
     }
     @media (hover: hover) {
-      .weather-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      .weather-card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--a1) 60%, transparent); }
     }
-    .weather-card.has-alert { border-color: #854d0e; }
-    .weather-card.has-frost  { border-color: #4338ca; }
+    .weather-card.has-alert { border-color: color-mix(in srgb, var(--warn) 55%, transparent); }
+    .weather-card.has-frost  { border-color: color-mix(in srgb, #818cf8 55%, transparent); }
 
-    .city-name { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin-bottom: 0.45rem; }
+    .city-name { font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--a2); margin-bottom: 0.45rem; }
     .weather-icon { font-size: 1.9rem; line-height: 1; margin-bottom: 0.3rem; }
-    .weather-desc { font-size: 0.75rem; color: #71717a; margin-bottom: 0.55rem; }
-    .temp-main { font-size: 1.9rem; font-weight: 800; color: #fff; line-height: 1; }
-    .temp-feels { font-size: 0.72rem; color: #71717a; margin-top: 0.15rem; margin-bottom: 0.55rem; }
+    .weather-desc { font-size: 0.76rem; color: var(--mut); margin-bottom: 0.55rem; }
+    .temp-main { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.04em; color: var(--fg); line-height: 1; }
+    .temp-feels { font-size: 0.72rem; color: var(--mut); margin-top: 0.2rem; margin-bottom: 0.55rem; }
     .weather-meta { display: flex; flex-direction: column; gap: 0.25rem; }
-    .meta-row { font-size: 0.72rem; color: #71717a; display: flex; align-items: center; gap: 0.35rem; }
+    .meta-row { font-size: 0.72rem; color: var(--mut); display: flex; align-items: center; gap: 0.35rem; }
     .meta-icon { width: 14px; text-align: center; }
     .wind-arrow { display: inline-block; }
 
     /* Card alerts */
-    .card-alert { margin-top: 0.5rem; font-size: 0.68rem; padding: 0.25rem 0.5rem; border-radius: 6px; display: inline-block; }
-    .card-alert.frost { background: #1e1b4b; color: #c7d2fe; }
-    .card-alert.wind  { background: #431407; color: #fed7aa; }
+    .card-alert { margin-top: 0.5rem; font-size: 0.68rem; padding: 0.25rem 0.6rem; border-radius: 999px; display: inline-block; }
+    .card-alert.frost { background: color-mix(in srgb, #818cf8 20%, transparent); color: #c7d2fe; }
+    .card-alert.wind  { background: color-mix(in srgb, #f97316 20%, transparent); color: #fed7aa; }
 
     /* Card forecast strip */
-    .card-forecast { margin-top: 0.65rem; padding-top: 0.55rem; border-top: 1px solid #27272a; display: flex; gap: 0.25rem; }
-    .cf-day { flex: 1; text-align: center; font-size: 0.65rem; color: #52525b; }
+    .card-forecast { margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px solid var(--line); display: flex; gap: 0.25rem; }
+    .cf-day { flex: 1; text-align: center; font-size: 0.65rem; color: var(--mut); min-width: 0; }
     .cf-day .cf-icon { font-size: 1rem; display: block; margin: 0.15rem 0; }
-    .cf-day .cf-max { color: #e4e4e7; font-weight: 600; }
-    .cf-day .cf-min { color: #52525b; }
+    .cf-day .cf-max { color: var(--fg); font-weight: 600; }
+    .cf-day .cf-min { color: var(--idle); }
 
     /* Rain prob */
-    .rain-bar-wrap { margin-top: 0.4rem; display: flex; align-items: center; gap: 0.4rem; font-size: 0.65rem; color: #71717a; }
-    .rain-bar { flex: 1; height: 3px; background: #27272a; border-radius: 2px; overflow: hidden; }
-    .rain-bar-fill { height: 100%; border-radius: 2px; background: #0284c7; transition: width 0.5s; }
+    .rain-bar-wrap { margin-top: 0.45rem; display: flex; align-items: center; gap: 0.4rem; font-size: 0.65rem; color: var(--mut); }
+    .rain-bar { flex: 1; height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; }
+    .rain-bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--a3), #38bdf8); transition: width 0.5s; }
 
     /* Thermal advice */
-    .thermal-advice { margin-top: 0.45rem; font-size: 0.68rem; color: #71717a; font-style: italic; }
+    .thermal-advice { margin-top: 0.45rem; font-size: 0.68rem; color: var(--mut); font-style: italic; }
 
     /* Skeleton */
-    .skeleton { background: #27272a; border-radius: 6px; animation: pulse 1.5s infinite; }
+    .skeleton { background: color-mix(in srgb, var(--fg) 10%, transparent); border-radius: 6px; animation: pulse 1.5s infinite; }
     .skeleton-icon { width: 36px; height: 36px; border-radius: 8px; margin-bottom: 0.4rem; }
     .skeleton-line { height: 10px; margin-bottom: 0.4rem; }
     .skeleton-temp { height: 28px; width: 70px; margin-bottom: 0.5rem; }
     @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
     /* Footer */
-    footer { text-align: center; margin-top: 1.5rem; color: #3f3f46; font-size: 0.72rem; }
-    footer a { color: #52525b; text-decoration: none; }
-    footer a:hover { color: #71717a; }
+    footer { margin-top: 2rem; color: var(--mut); font-size: 0.74rem; border-top: 1px solid var(--line); padding-top: 16px; }
+    footer a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+    footer a:hover { color: var(--a2); }
 
     /* Skeleton Lugano */
-    .lugano-skeleton { height: 200px; background: linear-gradient(135deg, #0c4a6e 0%, #164e63 100%); border-radius: 20px; animation: pulse 1.5s infinite; }
+    .lugano-skeleton { height: 200px; background: linear-gradient(135deg, var(--a1) 0%, var(--a3) 100%); opacity: .6; border-radius: var(--radius); animation: pulse 1.5s infinite; }
+
+    @media (prefers-reduced-motion: reduce) { .weather-card { transition: none; } .weather-card:hover { transform: none; } .skeleton, .lugano-skeleton { animation: none; } }
   </style>
 </head>
 <body>
+  <div class="lab-blobs"><i></i><i></i><i></i></div>
+  <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
   <div class="container">
-    <a class="back-link" href="/">← Torna all'home</a>
 
     <!-- Clock -->
     <div class="clock-header">

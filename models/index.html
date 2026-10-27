@@ -4,52 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geoffrey — Model Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/lab.css">
   <style>
     :root {
-      --bg: #0f1117;
-      --surface: #1a1d27;
-      --surface2: #22263a;
-      --border: #2e3250;
-      --accent: #6c8aff;
-      --accent2: #a78bfa;
-      --green: #34d399;
-      --yellow: #fbbf24;
-      --red: #f87171;
+      --surface: color-mix(in srgb, var(--tile) 55%, transparent);
+      --surface2: rgba(255,255,255,.05);
+      --border: var(--line);
+      --accent: var(--a1);
+      --accent2: var(--a2);
+      --green: var(--ok);
+      --yellow: var(--warn);
+      --red: var(--stop);
       --orange: #fb923c;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --radius: 10px;
+      --text: var(--fg);
+      --muted: var(--mut);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+    body { line-height: 1.5; min-height: 100vh; padding: max(24px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+    .wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 20px; min-width: 0; }
 
-    header {
-      background: linear-gradient(135deg, #1e1b4b 0%, #1a1d27 100%);
-      border-bottom: 1px solid var(--border);
-      padding: 28px 32px 20px;
-    }
-    header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; }
-    header h1 span { color: var(--accent); }
-    header p { color: var(--muted); margin-top: 4px; font-size: 0.9rem; }
-    #update-time { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+    header { padding: 8px 0 4px; }
+    header h1 { margin-top: 8px; }
+    header p { color: var(--muted); margin-top: 12px; font-size: 0.92rem; }
+    #update-time { font-size: 0.76rem; color: var(--muted); margin-top: 6px; }
 
     .controls {
-      padding: 20px 32px;
+      padding: 16px 18px;
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       align-items: center;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
     }
     .controls input {
-      background: var(--bg);
+      background: rgba(0,0,0,.25);
       border: 1px solid var(--border);
       color: var(--text);
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      width: 260px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font: 0.88rem var(--font);
+      width: 280px;
+      max-width: 100%;
       outline: none;
       transition: border 0.2s;
     }
@@ -60,69 +57,51 @@
       border: 1px solid var(--border);
       color: var(--muted);
       padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
+      border-radius: 999px;
+      font: 0.78rem var(--font);
       cursor: pointer;
       transition: all 0.2s;
       white-space: nowrap;
     }
-    .filter-btn:hover, .filter-btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: white;
-    }
-    #count { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+    .filter-btn:hover { border-color: color-mix(in srgb, var(--a1) 60%, transparent); color: var(--text); }
+    .filter-btn.active { background: linear-gradient(135deg, var(--a1), var(--a3)); border-color: transparent; color: #fff; }
+    #count { color: var(--muted); font-size: 0.82rem; margin-left: auto; }
 
-    .table-wrap {
-      padding: 24px 32px;
-      overflow-x: auto;
-    }
-    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .table-wrap { padding: 6px; overflow-x: auto; min-width: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
     thead th {
-      background: var(--surface2);
       color: var(--muted);
       font-weight: 600;
       text-transform: uppercase;
-      font-size: 0.72rem;
-      letter-spacing: 0.5px;
-      padding: 10px 14px;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      padding: 14px 14px 12px;
       text-align: left;
       border-bottom: 1px solid var(--border);
       cursor: pointer;
       user-select: none;
       white-space: nowrap;
     }
-    thead th:hover { color: var(--accent); }
-    thead th.sorted-asc::after { content: ' ↑'; color: var(--accent); }
-    thead th.sorted-desc::after { content: ' ↓'; color: var(--accent); }
-    tbody tr {
-      border-bottom: 1px solid var(--border);
-      transition: background 0.15s;
-    }
+    thead th:hover { color: var(--a2); }
+    thead th.sorted-asc::after { content: ' ↑'; color: var(--a2); }
+    thead th.sorted-desc::after { content: ' ↓'; color: var(--a2); }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+    tbody tr:last-child { border-bottom: 0; }
     tbody tr:hover { background: var(--surface2); }
     td { padding: 12px 14px; vertical-align: top; }
-    td:first-child { font-weight: 600; }
+    td:first-child { font-weight: 600; min-width: 180px; }
 
-    .badge {
-      display: inline-block;
-      padding: 2px 9px;
-      border-radius: 12px;
-      font-size: 0.72rem;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .badge-anthropic { background: #3b1f47; color: #d8b4fe; }
-    .badge-openai   { background: #1a3a2e; color: #6ee7b7; }
-    .badge-or-anthropic { background: #2d1f3f; color: #c4b5fd; }
-    .badge-or-openai    { background: #14302a; color: #86efac; }
-    .badge-or-google    { background: #1e3a1e; color: #4ade80; }
-    .badge-or-deepseek  { background: #1a2744; color: #93c5fd; }
-    .badge-or-minimax   { background: #3a1f1f; color: #fca5a5; }
-    .badge-or-other     { background: #2a2a1f; color: #fde68a; }
-    .badge-ollama       { background: #1f2e3a; color: #7dd3fc; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; border: 1px solid var(--border); background: var(--surface2); }
+    .badge-anthropic, .badge-or-anthropic { color: #f0b48a; }
+    .badge-openai, .badge-or-openai { color: #6ee7b7; }
+    .badge-or-google    { color: var(--a2); }
+    .badge-or-deepseek  { color: #7dd3fc; }
+    .badge-or-minimax   { color: #fca5a5; }
+    .badge-or-other     { color: #fde68a; }
+    .badge-ollama       { color: #5eead4; }
 
     .cost-free { color: var(--green); font-weight: 700; }
-    .cost-low  { color: var(--accent); }
+    .cost-low  { color: var(--a2); }
     .cost-mid  { color: var(--yellow); }
     .cost-high { color: var(--orange); }
     .cost-xhigh{ color: var(--red); }
@@ -131,25 +110,28 @@
     .speed-medium { color: var(--yellow); }
     .speed-slow   { color: var(--orange); }
 
-    .tag { display: inline-block; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 7px; font-size: 0.7rem; color: var(--muted); margin: 1px 2px; }
+    .tag { display: inline-block; background: var(--surface2); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-size: 0.68rem; color: var(--muted); margin: 1px 2px; }
+    .alias { font-size: 0.74rem; color: var(--a2); font-family: ui-monospace, Menlo, monospace; }
+    .no-results { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 1.05rem; }
 
-    .alias { font-size: 0.75rem; color: var(--accent2); font-family: monospace; }
-
-    .no-results { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 1.1rem; }
-
-    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 0.75rem; border-top: 1px solid var(--border); }
-    a { color: var(--accent); }
+    footer { text-align: center; padding: 18px 0 0; color: var(--muted); font-size: 0.74rem; border-top: 1px solid var(--border); }
+    a { color: var(--a2); }
+    @media (max-width: 600px) { .controls input { width: 100%; } #count { margin-left: 0; } }
   </style>
 </head>
 <body>
+<div class="lab-blobs"><i></i><i></i><i></i></div>
+<nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
+<div class="wrap">
 
 <header>
-  <h1>🦇 Geoffrey — <span>Model Catalog</span></h1>
+  <span class="lab-label">Archivio · Geoffrey</span>
+  <h1 class="lab-title">Model <span class="lab-grad">Catalog</span></h1>
   <p>Tutti i modelli configurati in OpenClaw — costi, specifiche, velocità, use case</p>
   <div id="update-time">Aggiornato: <script>document.write(new Date('2026-04-15').toLocaleDateString('it-IT', {day:'numeric',month:'long',year:'numeric'}))</script></div>
 </header>
 
-<div class="controls">
+<div class="controls lab-glass">
   <input type="text" id="search" placeholder="🔍  Cerca modello, alias, provider…" oninput="applyFilters()" />
   <div class="filter-group" id="provider-filters">
     <button class="filter-btn active" data-filter="all" onclick="setFilter('all', this)">Tutti</button>
@@ -165,7 +147,7 @@
   <span id="count"></span>
 </div>
 
-<div class="table-wrap">
+<div class="table-wrap lab-glass">
   <table id="models-table">
     <thead>
       <tr>
@@ -185,6 +167,7 @@
 </div>
 
 <footer>Geoffrey Monitor · <a href="/openclaw/">Dashboard principale</a> · Aggiornato manualmente</footer>
+</div>
 
 <script>
 const MODELS = [
