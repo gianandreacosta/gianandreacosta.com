@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0a0f0c">
+<meta name="theme-color" content="#111414">
 <title>Geoffrey PC (Debian)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/lab.css">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -17,11 +17,11 @@ body { font-size: 14px; line-height: 1.5; padding: max(24px, env(safe-area-inset
 .header h1 { font: 700 clamp(2rem, 6vw, 3.4rem)/1 var(--font); letter-spacing: -.04em; color: var(--fg); }
 .header h1 span { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .header .meta { color: var(--mut); font-size: 12px; }
-.btn { background: color-mix(in srgb, var(--tile) 55%, transparent); border: 1px solid var(--line); color: var(--fg); padding: 7px 16px; border-radius: 999px; cursor: pointer; font: 600 13px var(--font); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: border-color .2s; }
+.btn { background: var(--tile); border: 1px solid var(--line); color: var(--fg); padding: 7px 16px; border-radius: 999px; cursor: pointer; font: 600 13px var(--font); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: border-color .2s; }
 .btn:hover { border-color: color-mix(in srgb, var(--a1) 60%, transparent); }
 .container { max-width: 1200px; margin: 0 auto; padding: 24px 0; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 12px; margin-bottom: 24px; }
-.card { background: color-mix(in srgb, var(--tile) 55%, transparent); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius); padding: 20px; min-width: 0; }
+.card { background: var(--tile); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius); padding: 20px; min-width: 0; }
 .card h2 { font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; color: var(--mut); margin-bottom: 12px; }
 .status-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
 .status-row:last-child { border-bottom: none; }
@@ -41,7 +41,7 @@ body { font-size: 14px; line-height: 1.5; padding: max(24px, env(safe-area-inset
 .section.collapsed .section-toggle { transform: rotate(-90deg); }
 .section.collapsed .section-body { display: none; }
 .section-body { overflow-x: auto; }
-table { width: 100%; border-collapse: separate; border-spacing: 0; background: color-mix(in srgb, var(--tile) 55%, transparent); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius-sm); overflow: hidden; }
+table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--tile); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius-sm); overflow: hidden; }
 th { background: color-mix(in srgb, var(--fg) 4%, transparent); text-align: left; padding: 11px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--mut); border-bottom: 1px solid var(--line); cursor: pointer; user-select: none; white-space: nowrap; }
 th:hover { color: var(--fg); }
 th.sorted-asc::after { content: ' ↑'; color: var(--a2); }
@@ -64,7 +64,7 @@ tr:hover td { background: color-mix(in srgb, var(--a1) 7%, transparent); }
 .show-more-btn { background: transparent; border: 1px solid var(--line); color: var(--a2); padding: 5px 16px; border-radius: 999px; cursor: pointer; font: 600 12px var(--font); }
 .show-more-btn:hover { border-color: var(--a2); }
 .row-hidden { display: none; }
-.day-accordion { background: color-mix(in srgb, var(--tile) 55%, transparent); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden; }
+.day-accordion { background: var(--tile); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden; }
 .day-header { padding: 13px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; user-select: none; }
 .day-header:hover { background: color-mix(in srgb, var(--a1) 7%, transparent); }
 .day-title { font-weight: 600; color: var(--fg); }
@@ -88,7 +88,6 @@ a { color: var(--a2); }
 </style>
 </head>
 <body>
-<div class="lab-blobs"><i></i><i></i><i></i></div>
 <nav class="lab-top" style="max-width:1200px"><a class="lab-back" href="/">← Lab</a></nav>
 
 <div class="header">

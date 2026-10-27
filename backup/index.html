@@ -7,7 +7,7 @@
 <title>Stato backup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/lab.css">
 <style>
 /* Layout: una colonna; in alto il semaforo generale, poi backup e dischi come righe di stato. Stile lab.css (Vetro, Bosco, scuro) */
@@ -20,8 +20,8 @@ body{margin:0;font:15px/1.5 var(--font);
 h1{margin:0;font-size:clamp(2rem,6vw,3.2rem);font-weight:700;line-height:1;letter-spacing:-.04em}
 h1 span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{margin:8px 0 0;color:var(--mut);font-size:.88rem}
-.glass,.big,li,.diagram,.tbl{background:color-mix(in srgb,var(--tile) 55%,transparent);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid color-mix(in srgb,var(--fg) 12%,transparent)}
-.big{display:flex;gap:16px;align-items:center;border-radius:24px;padding:22px}
+.glass,.big,li,.diagram,.tbl{background:var(--tile);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid color-mix(in srgb,var(--fg) 12%,transparent)}
+.big{display:flex;gap:16px;align-items:center;border-radius:14px;padding:22px}
 .dot{width:18px;height:18px;border-radius:50%;flex:none}
 .ok{--c:var(--ok)}.warn{--c:var(--warn)}.bad{--c:var(--bad)}
 .dot{background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
@@ -46,9 +46,9 @@ li span{min-width:0}
 .legend span{display:inline-flex;align-items:center;gap:8px}
 .legend i{display:inline-block;width:30px;border-top:3px solid var(--a1)}
 .legend i.w{border-top:3px dashed var(--a2)}
-.diagram{border-radius:24px;padding:14px;overflow-x:auto}
+.diagram{border-radius:14px;padding:14px;overflow-x:auto}
 .diagram pre{margin:0;min-width:900px;font-family:var(--font)}
-.tbl{overflow-x:auto;border-radius:24px}
+.tbl{overflow-x:auto;border-radius:14px}
 table{border-collapse:collapse;width:100%;font-size:.84rem}
 th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
@@ -59,7 +59,6 @@ td.no{color:var(--bad)}
 </style>
 </head>
 <body>
-<div class="lab-blobs"><i></i><i></i><i></i></div>
 <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
 <div class="wrap">
  <header><h1>Stato <span>backup</span></h1><p class="sub" id="agg">Carico…</p></header>
@@ -111,8 +110,8 @@ flowchart LR
   MED -.-> B3
   NC -.->|"documenti OneDrive"| B3
   SIS -.-> B3
-  linkStyle 0,1,2,3,4 stroke:#1f9d63,stroke-width:2.5px
-  linkStyle 5,6,7,8,9,10,11,12,13 stroke:#a8d44a,stroke-width:2px
+  linkStyle 0,1,2,3,4 stroke:#6f8a4e,stroke-width:2.5px
+  linkStyle 5,6,7,8,9,10,11,12,13 stroke:#d8b48a,stroke-width:2px
 </pre>
   </div>
  </section>
@@ -141,10 +140,10 @@ flowchart LR
 <script>
 mermaid.initialize({startOnLoad:true,securityLevel:"loose",theme:"base",
  flowchart:{htmlLabels:true,curve:"basis"},
- themeVariables:{fontFamily:"Sora, system-ui, sans-serif",darkMode:true,background:"transparent",
-  primaryColor:"#16211b",primaryTextColor:"#f2f4f0",primaryBorderColor:"#1f9d63",lineColor:"#98a39c",
-  clusterBkg:"rgba(20,26,23,.55)",clusterBorder:"rgba(255,255,255,.14)",titleColor:"#a8d44a",
-  edgeLabelBackground:"#121815",textColor:"#f2f4f0"}});
+ themeVariables:{fontFamily:"Geist, system-ui, sans-serif",darkMode:true,background:"transparent",
+  primaryColor:"#242a25",primaryTextColor:"#f4f2ee",primaryBorderColor:"#6f8a4e",lineColor:"#9aa0ac",
+  clusterBkg:"rgba(26,29,31,.55)",clusterBorder:"rgba(255,255,255,.14)",titleColor:"#d8b48a",
+  edgeLabelBackground:"#1a1d1f",textColor:"#f4f2ee"}});
 </script>
 <script>
 const fmt=s=>s?new Date(s).toLocaleString("it-CH",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"mai";

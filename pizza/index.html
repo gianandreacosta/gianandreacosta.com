@@ -6,7 +6,7 @@
   <title>Pizza Fatta in Casa — I Miei Esperimenti</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="/assets/lab.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,7 +35,7 @@
       -webkit-overflow-scrolling: touch;
       margin-bottom: 2rem;
       border-radius: var(--radius-sm);
-      background: color-mix(in srgb, var(--tile) 55%, transparent);
+      background: var(--tile);
       backdrop-filter: blur(20px) saturate(150%);
       -webkit-backdrop-filter: blur(20px) saturate(150%);
       border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
@@ -68,7 +68,7 @@
 
     /* Recipe cards */
     .recipe {
-      background: color-mix(in srgb, var(--tile) 55%, transparent);
+      background: var(--tile);
       backdrop-filter: blur(20px) saturate(150%);
       -webkit-backdrop-filter: blur(20px) saturate(150%);
       border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
@@ -150,7 +150,6 @@
   </style>
 </head>
 <body>
-  <div class="lab-blobs"><i></i><i></i><i></i></div>
   <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
   <div class="container">
 
