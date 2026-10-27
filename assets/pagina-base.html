@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Titolo · Lab</title>
+  <link rel="stylesheet" href="/assets/lab.css">
+  <style>
+    /* Solo disposizione. Colori, font e superfici vengono da /assets/lab.css:
+       usa var(--a1) var(--a2) var(--a3) var(--fg) var(--mut) var(--line) var(--ok) var(--warn) var(--stop),
+       var(--surface) var(--surface-border) var(--blur) var(--radius) var(--font) var(--mono). Niente codici colore qui. */
+    body { margin: 0; line-height: 1.55; padding: max(28px, env(safe-area-inset-top)) 16px 40px; }
+    main { max-width: 1080px; margin: 0 auto; display: grid; gap: 24px; }
+    .card { padding: 22px; }
+  </style>
+</head>
+<body>
+  <div class="lab-blobs"><i></i><i></i><i></i></div>
+  <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
+  <main>
+    <header>
+      <span class="lab-label">Sezione</span>
+      <h1 class="lab-title">Titolo <span class="lab-grad">pagina</span></h1>
+    </header>
+    <section class="lab-glass card">
+      Contenuto.
+    </section>
+  </main>
+</body>
+</html>

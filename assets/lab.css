@@ -1,30 +1,50 @@
-/* lab.css: stile comune di lab.gianandreacosta.com (template "App", palette "Terra", scuro).
-   Uso in una pagina:
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+/* lab.css: UNICA fonte dello stile di lab.gianandreacosta.com.
+   Stile attuale: template "Vetro", palette "Bosco", scuro (A3).
+
+   Regola: colori, font e superfici stanno SOLO qui. Le pagine usano le variabili
+   (var(--a1), var(--surface), var(--font)...) e non scrivono codici colore o nomi di font.
+   Fanno eccezione i colori che hanno un significato proprio (meteo, fornitori di modelli).
+   Per cambiare palette o font si cambia questo file e vale per tutto il sito.
+
+   Uso in una pagina (base pronta da copiare: /assets/pagina-base.html):
      <link rel="stylesheet" href="/assets/lab.css">
+     <div class="lab-blobs"><i></i><i></i><i></i></div>            (primo figlio di body)
      <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
-   Lo sfondo sta su html; il body resta trasparente. */
+   Lo sfondo sta su html; il body resta trasparente, altrimenti copre le sfumature. */
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap");
 
 :root {
-  --a1: #6f8a4e;   /* muschio */
-  --a2: #d8b48a;   /* sabbia */
-  --a3: #8a5a44;   /* cacao */
-  --bg: #111414;
-  --tile: #1a1d1f;
-  --tile-solid: #1a1d1f;
-  --fg: #f4f2ee;
-  --mut: #9aa0ac;
+  /* palette */
+  --a1: #1f9d63;   /* verde */
+  --a2: #a8d44a;   /* verde chiaro */
+  --a3: #0e7c86;   /* petrolio */
+  --bg: #0a0f0c;
+  --tile: #141a17;
+  --tile-solid: #121815;
+  --fg: #f2f4f0;
+  --mut: #98a39c;
   --line: rgba(255,255,255,.1);
   --ok: #34d399;
   --warn: #fbbf24;
   --stop: #f87171;
-  --idle: #6b7078;
-  --radius: 14px;
-  --radius-sm: 10px;
-  --font: "Geist", system-ui, -apple-system, sans-serif;
-  --mono: "Geist Mono", ui-monospace, monospace;
+  --idle: #6b756f;
+
+  /* font */
+  --font: "Sora", system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* superfici: vetro. Per tessere piene: --surface: var(--tile); --blur: none; --blur-sm: none */
+  --surface: color-mix(in srgb, var(--tile) 55%, transparent);
+  --surface-border: color-mix(in srgb, var(--fg) 12%, transparent);
+  --blur: blur(20px) saturate(150%);
+  --blur-sm: blur(12px);
+  --radius: 24px;
+  --radius-sm: 14px;
+
+  /* sfumature di sfondo: 1 accese, 0 spente */
+  --blobs: 1;
+
   color-scheme: dark;
 }
 
@@ -36,13 +56,20 @@ body {
   overflow-x: hidden;
 }
 
-/* template App: niente sfumature di sfondo */
-.lab-blobs { display: none; }
+/* sfondo con sfumature mobili */
+.lab-blobs { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; opacity: var(--blobs); }
+.lab-blobs i { position: absolute; width: 46vmax; aspect-ratio: 1; border-radius: 50%; filter: blur(90px); opacity: .32; animation: lab-drift 18s ease-in-out infinite alternate; }
+.lab-blobs i:nth-child(1) { background: var(--a1); top: -18vmax; left: -12vmax; }
+.lab-blobs i:nth-child(2) { background: var(--a2); top: 20vh; right: -20vmax; opacity: .2; animation-delay: -6s; }
+.lab-blobs i:nth-child(3) { background: var(--a3); bottom: -22vmax; left: 20vw; animation-delay: -12s; }
+@keyframes lab-drift { to { transform: translate(6%, 8%) scale(1.12); } }
 
 /* tessera */
 .lab-glass {
-  background: var(--tile);
-  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--surface-border);
   border-radius: var(--radius);
 }
 
@@ -52,16 +79,18 @@ body {
   display: inline-flex; align-items: center; gap: 6px;
   font: 600 .8rem var(--font); color: var(--fg); text-decoration: none;
   padding: 6px 14px; border-radius: 999px;
-  background: var(--tile);
-  border: 1px solid var(--line);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  backdrop-filter: var(--blur-sm); -webkit-backdrop-filter: var(--blur-sm);
   transition: border-color .2s;
 }
 .lab-back:hover { border-color: color-mix(in srgb, var(--a1) 60%, transparent); }
 
-/* titolo pagina e testo sfumato */
+/* titolo pagina, testo sfumato, etichette */
 .lab-title { font: 700 clamp(2rem, 6vw, 3.4rem)/1 var(--font); letter-spacing: -.04em; }
 .lab-grad { background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.lab-label { font: 500 .74rem var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--mut); }
+.lab-label { font: 600 .78rem var(--font); letter-spacing: .14em; text-transform: uppercase; color: var(--mut); }
 
 :focus-visible { outline: 2px solid var(--a2); outline-offset: 3px; }
 
+@media (prefers-reduced-motion: reduce) { .lab-blobs i { animation: none; } }

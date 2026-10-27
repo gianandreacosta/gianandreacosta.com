@@ -6,7 +6,6 @@
   <title>Pizza Fatta in Casa — I Miei Esperimenti</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="/assets/lab.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,10 +34,10 @@
       -webkit-overflow-scrolling: touch;
       margin-bottom: 2rem;
       border-radius: var(--radius-sm);
-      background: var(--tile);
-      backdrop-filter: blur(20px) saturate(150%);
-      -webkit-backdrop-filter: blur(20px) saturate(150%);
-      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      background: var(--surface);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      border: 1px solid var(--surface-border);
     }
     table { width: 100%; min-width: 580px; border-collapse: collapse; font-size: 0.78rem; line-height: 1.4; }
     thead th {
@@ -56,9 +55,9 @@
     }
     thead th:first-child { color: var(--idle); width: 90px; }
     thead th.col-1 { color: var(--a2); }
-    thead th.col-2 { color: #5fd3c6; }
+    thead th.col-2 { color: color-mix(in srgb, var(--a3) 45%, #fff); }
     thead th.col-3 { color: var(--ok); }
-    thead th.col-4 { color: #7cc4ff; }
+    thead th.col-4 { color: color-mix(in srgb, var(--a1) 45%, #fff); }
     tbody td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line); color: color-mix(in srgb, var(--fg) 88%, transparent); vertical-align: top; }
     tbody tr:last-child td { border-bottom: none; }
     tbody td:first-child { font-weight: 600; color: var(--mut); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -68,10 +67,10 @@
 
     /* Recipe cards */
     .recipe {
-      background: var(--tile);
-      backdrop-filter: blur(20px) saturate(150%);
-      -webkit-backdrop-filter: blur(20px) saturate(150%);
-      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      background: var(--surface);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      border: 1px solid var(--surface-border);
       border-radius: var(--radius);
       padding: 1.4rem 1.5rem;
       margin-bottom: 0.75rem;
@@ -102,7 +101,7 @@
       background: color-mix(in srgb, var(--fg) 8%, transparent); color: var(--mut);
       border: 1px solid var(--line);
     }
-    .badge--hydra { background: color-mix(in srgb, var(--a3) 25%, transparent); color: #7fd9e0; border-color: color-mix(in srgb, var(--a3) 50%, transparent); }
+    .badge--hydra { background: color-mix(in srgb, var(--a3) 25%, transparent); color: color-mix(in srgb, var(--a3) 45%, #fff); border-color: color-mix(in srgb, var(--a3) 50%, transparent); }
     .badge--best { background: color-mix(in srgb, var(--a1) 22%, transparent); color: var(--ok); border-color: color-mix(in srgb, var(--a1) 50%, transparent); }
     .badge--wip { background: color-mix(in srgb, var(--warn) 14%, transparent); color: var(--warn); border-color: color-mix(in srgb, var(--warn) 40%, transparent); }
 
@@ -150,6 +149,7 @@
   </style>
 </head>
 <body>
+  <div class="lab-blobs"><i></i><i></i><i></i></div>
   <nav class="lab-top"><a class="lab-back" href="/">← Lab</a></nav>
   <div class="container">
 
