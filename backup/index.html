@@ -140,6 +140,7 @@ mermaid.initialize({startOnLoad:true,securityLevel:"loose",
 <script>
 const fmt=s=>s?new Date(s).toLocaleString("it-CH",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"mai";
 const ore=s=>s?(Date.now()-new Date(s))/36e5:Infinity;
+const gb=n=>n<1000?n+" GB":(n/1024).toFixed(1).replace(".",",")+" TB";
 function riga(cls,testo,val,uso){const li=document.createElement("li");li.className=cls;
  li.innerHTML=`<div class="dot"></div><span>${testo}${uso!=null?`<div class="meter"><i style="width:${uso}%"></i></div>`:""}</span><span class="v">${val}</span>`;return li}
 fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
@@ -157,7 +158,7 @@ fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  for(const b of d.backup){const c=b.stato==="ok"?"ok":b.stato==="attesa"?"warn":"bad";bk.appendChild(riga(c,b.nome,"ultimo OK "+fmt(b.ultimo_ok)))}
  const dk=document.getElementById("dk");
  for(const x of d.dischi){const c=x.smart==="guasto"?"bad":(x.libero_gb!=null&&x.libero_gb<100)?"warn":"ok";
-  dk.appendChild(riga(c,x.nome+(x.smart==="guasto"?" — SMART: guasto":""),x.uso!=null?`${x.uso}% · ${x.libero_gb} GB liberi`:"non montato",x.uso))}
+  dk.appendChild(riga(c,x.nome+(x.smart==="guasto"?" — SMART: guasto":""),x.uso!=null?`${100-x.uso}% libero · ${gb(x.libero_gb)}${x.totale_gb!=null?" / "+gb(x.totale_gb):""}`:"non montato",x.uso))}
  if(d.ripristino){document.getElementById("rip").hidden=false;const rp=document.getElementById("rp");
   for(const r of d.ripristino.esito)rp.appendChild(riga(r.diversi?"bad":"ok",r.nome,`${r.provati-r.diversi}/${r.provati} identici`));}
 }).catch(()=>{const g=document.getElementById("gen");g.className="big bad";g.querySelector("b").textContent="Stato non disponibile";});
