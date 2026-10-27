@@ -67,42 +67,48 @@
    "uso": 76,
    "libero_gb": 49,
    "totale_gb": 209,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   },
   {
    "nome": "T7",
    "uso": 82,
    "libero_gb": 684,
    "totale_gb": 3726,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   },
   {
    "nome": "Musica",
    "uso": 97,
    "libero_gb": 146,
    "totale_gb": 3726,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   },
   {
    "nome": "Docs",
    "uso": 82,
    "libero_gb": 701,
    "totale_gb": 3726,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   },
   {
    "nome": "Backup 1",
    "uso": 83,
    "libero_gb": 321,
    "totale_gb": 1863,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   },
   {
    "nome": "Backup 3",
    "uso": 59,
    "libero_gb": 1151,
    "totale_gb": 2794,
-   "smart": "ok"
+   "smart": "ok",
+   "ritirato": null
   }
  ]
 }

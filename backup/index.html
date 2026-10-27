@@ -23,6 +23,7 @@ h1 span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background
 .big{display:flex;gap:16px;align-items:center;border-radius:var(--radius);padding:22px}
 .dot{width:18px;height:18px;border-radius:50%;flex:none}
 .ok{--c:var(--ok)}.warn{--c:var(--warn)}.bad{--c:var(--bad)}
+.off{--c:var(--mut);opacity:.65}
 .dot{background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 18%,transparent)}
 .big b{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;display:block}
 .big{align-items:flex-start}.big .dot{margin-top:6px}.gtxt{min-width:0}
@@ -92,8 +93,8 @@ flowchart LR
   end
   subgraph INT["Dischi di backup nel PC"]
     direction TB
-    B1["<b>Backup 1</b><br/>foto, Galleria, file Nextcloud,<br/>video personali, sistema"]
-    B3["<b>Backup 3</b><br/>Musica, iTunes, video personali,<br/>documenti OneDrive, sistema"]
+    B3["<b>Backup 3</b><br/>Musica, iTunes, video personali,<br/>foto, Galleria, file Nextcloud,<br/>documenti OneDrive, sistema"]
+    B1["<b>Backup 1</b><br/>ritirato il 27.10.2026<br/>(disco guasto)"]
   end
   CLOUD["<b>Fuori casa</b><br/>OneDrive, cartella<br/>Backup Nextcloud"]
   OD -->|"foto e documenti"| NC
@@ -102,16 +103,14 @@ flowchart LR
   SSD -->|"sistema"| SIS
   NC -->|"file Nextcloud"| CLOUD
   SIS -.->|"cifrato"| NC
-  NC -.-> B1
-  MED -.-> B1
-  SIS -.-> B1
   MUS -.-> B3
   ARC -.->|"iTunes"| B3
   MED -.-> B3
-  NC -.->|"documenti OneDrive"| B3
+  NC -.->|"foto, Galleria, file,<br/>documenti OneDrive"| B3
   SIS -.-> B3
   linkStyle 0,1,2,3,4 stroke:@A1@,stroke-width:2.5px
-  linkStyle 5,6,7,8,9,10,11,12,13 stroke:@A2@,stroke-width:2px
+  linkStyle 5,6,7,8,9,10 stroke:@A2@,stroke-width:2px
+  style B1 stroke-dasharray:4 3,opacity:0.55
 </pre>
   </div>
  </section>
@@ -120,15 +119,15 @@ flowchart LR
   <div class="tbl"><table>
    <thead><tr><th>Cosa</th><th>Dove vive</th><th>Copia ogni notte</th><th>Copia la domenica</th><th>Fuori casa</th></tr></thead>
    <tbody>
-    <tr><td>Foto originali</td><td>OneDrive</td><td>T7 (Nextcloud)</td><td>Backup 1</td><td>sì, OneDrive stesso</td></tr>
-    <tr><td>Galleria ordinata</td><td>T7 (Nextcloud)</td><td>—</td><td>Backup 1</td><td>si rifà dalle originali</td></tr>
+    <tr><td>Foto originali</td><td>OneDrive</td><td>T7 (Nextcloud)</td><td>Backup 3</td><td>sì, OneDrive stesso</td></tr>
+    <tr><td>Galleria ordinata</td><td>T7 (Nextcloud)</td><td>—</td><td>Backup 3</td><td>si rifà dalle originali</td></tr>
     <tr><td>Documenti OneDrive</td><td>OneDrive</td><td>T7 (Nextcloud)</td><td>Backup 3</td><td>sì, OneDrive stesso</td></tr>
-    <tr><td>File Nextcloud</td><td>T7 (Nextcloud)</td><td>OneDrive, Backup Nextcloud</td><td>Backup 1</td><td>sì</td></tr>
+    <tr><td>File Nextcloud</td><td>T7 (Nextcloud)</td><td>OneDrive, Backup Nextcloud</td><td>Backup 3</td><td>sì</td></tr>
     <tr><td>Musica, band, Studio One</td><td>disco Musica</td><td>T7 (backup/PC)</td><td>Backup 3</td><td class="no">no (scelta)</td></tr>
     <tr><td>Produzioni del Mac</td><td>Mac</td><td>disco Musica, poi T7</td><td>Backup 3 (+ Time Machine)</td><td class="no">no</td></tr>
     <tr><td>iTunes</td><td>T7 (archivio)</td><td>—</td><td>Backup 3</td><td class="no">no</td></tr>
-    <tr><td>Video personali</td><td>T7 (media)</td><td>—</td><td>Backup 1 e Backup 3</td><td class="no">no</td></tr>
-    <tr><td>Sistema del server</td><td>SSD</td><td>T7 (backup/sistema)</td><td>Backup 1 e Backup 3</td><td>sì, cifrato</td></tr>
+    <tr><td>Video personali</td><td>T7 (media)</td><td>—</td><td>Backup 3</td><td class="no">no</td></tr>
+    <tr><td>Sistema del server</td><td>SSD</td><td>T7 (backup/sistema)</td><td>Backup 3</td><td>sì, cifrato</td></tr>
     <tr><td>Librerie musicali</td><td>disco Musica</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no (scelta)</td></tr>
     <tr><td>Immagine disco Maxtor</td><td>T7 (archivio)</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no (scelta)</td></tr>
     <tr><td>Film e serie</td><td>Docs e T7 (media)</td><td class="no">nessuna copia</td><td class="no">—</td><td class="no">no</td></tr>
@@ -170,8 +169,8 @@ fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  const bk=document.getElementById("bk");
  for(const b of d.backup){const c=b.stato==="ok"?"ok":b.stato==="attesa"?"warn":"bad";bk.appendChild(riga(c,b.nome,"ultimo OK "+fmt(b.ultimo_ok)))}
  const dk=document.getElementById("dk");
- for(const x of d.dischi){const c=x.smart==="guasto"?"bad":(x.libero_gb!=null&&x.libero_gb<100)?"warn":"ok";
-  dk.appendChild(riga(c,x.nome+(x.smart==="guasto"?" — SMART: guasto":""),x.uso!=null?`${100-x.uso}% libero · ${gb(x.libero_gb)}${x.totale_gb!=null?" / "+gb(x.totale_gb):""}`:"non montato",x.uso))}
+ for(const x of d.dischi){const c=x.ritirato?"off":x.smart==="guasto"?"bad":(x.libero_gb!=null&&x.libero_gb<100)?"warn":"ok";
+  dk.appendChild(riga(c,x.nome+(x.ritirato?" — ritirato, disco guasto":x.smart==="guasto"?" — SMART: guasto":""),x.uso!=null?`${100-x.uso}% libero · ${gb(x.libero_gb)}${x.totale_gb!=null?" / "+gb(x.totale_gb):""}`:"non montato",x.uso))}
  if(d.ripristino){document.getElementById("rip").hidden=false;const rp=document.getElementById("rp");
   for(const r of d.ripristino.esito)rp.appendChild(riga(r.diversi?"bad":"ok",r.nome,`${r.provati-r.diversi}/${r.provati} identici`));}
 }).catch(()=>{const g=document.getElementById("gen");g.className="big bad";g.querySelector("b").textContent="Stato non disponibile";});
