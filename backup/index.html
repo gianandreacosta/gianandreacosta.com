@@ -161,7 +161,7 @@ fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  const g=document.getElementById("gen");
  let cls="ok",tit="Tutto a posto",det="Tutti i backup sono recenti e i dischi sono sani.";
  if(d.problemi>0){cls="bad";tit=d.problemi===1?"C'è un avviso":"Ci sono "+d.problemi+" avvisi";det=""}
- if(vecchio){cls="bad";tit="Il server non dà notizie";det="Ultimo segnale "+Math.round(ore(d.aggiornato))+" ore fa: PC spento o controllo fermo."}
+ if(vecchio){cls="bad";tit="Pagina non aggiornata";det="Ultimo aggiornamento "+Math.round(ore(d.aggiornato))+" ore fa. Può essere il PC spento, il controllo fermo o la pubblicazione bloccata."}
  g.className="big "+cls;g.querySelector("b").textContent=tit;g.querySelector(".sub").textContent=det;
  const av=document.getElementById("avvisi");av.replaceChildren();
  if(!vecchio&&d.problemi>0){for(const t of (d.avvisi||[])){const li=document.createElement("li");li.textContent=t;av.appendChild(li)}
