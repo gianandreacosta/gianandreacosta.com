@@ -1,32 +1,32 @@
 {
- "aggiornato": "2026-10-27T20:38:23.739684+01:00",
+ "aggiornato": "2026-10-29T07:00:01.204730+01:00",
  "problemi": 0,
  "avvisi": [],
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T01:56:42+01:00"
+   "ultimo_ok": "2026-10-29T01:56:23+01:00"
   },
   {
    "nome": "Musica → T7",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T05:02:03+01:00"
+   "ultimo_ok": "2026-10-29T02:30:41+01:00"
   },
   {
    "nome": "Nextcloud → cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T03:32:07+01:00"
+   "ultimo_ok": "2026-10-29T03:32:08+01:00"
   },
   {
    "nome": "Sistema → T7 + cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T00:30:48+01:00"
+   "ultimo_ok": "2026-10-29T00:30:30+01:00"
   },
   {
    "nome": "Galleria foto",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T04:31:13+01:00"
+   "ultimo_ok": "2026-10-29T04:31:08+01:00"
   },
   {
    "nome": "Mac → disco Musica",
@@ -36,29 +36,29 @@
   {
    "nome": "Settimanale → Backup 3",
    "stato": "ok",
-   "ultimo_ok": "2026-10-26T15:11:21+01:00"
+   "ultimo_ok": "2026-10-27T23:19:40+01:00"
   },
   {
    "nome": "Database Immich",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T02:00:24+01:00"
+   "ultimo_ok": "2026-10-29T02:00:26+01:00"
   },
   {
    "nome": "Finanza",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T03:10:01+01:00"
+   "ultimo_ok": "2026-10-29T03:10:01+01:00"
   },
   {
    "nome": "OpenClaw",
    "stato": "ok",
-   "ultimo_ok": "2026-10-27T00:00:06+01:00"
+   "ultimo_ok": "2026-10-29T00:00:07+01:00"
   }
  ],
  "dischi": [
   {
    "nome": "SSD sistema",
-   "uso": 76,
-   "libero_gb": 49,
+   "uso": 75,
+   "libero_gb": 50,
    "totale_gb": 209,
    "smart": "ok",
    "ritirato": false
@@ -66,7 +66,7 @@
   {
    "nome": "T7",
    "uso": 82,
-   "libero_gb": 684,
+   "libero_gb": 680,
    "totale_gb": 3726,
    "smart": "ok",
    "ritirato": false
@@ -97,8 +97,8 @@
   },
   {
    "nome": "Backup 3",
-   "uso": 59,
-   "libero_gb": 1151,
+   "uso": 79,
+   "libero_gb": 603,
    "totale_gb": 2794,
    "smart": "ok",
    "ritirato": false
