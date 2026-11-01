@@ -1,9 +1,7 @@
 {
- "aggiornato": "2026-11-01T07:00:01.723774+01:00",
- "problemi": 1,
- "avvisi": [
-  "Musica → T7: nessun esito OK recente (ultimo OK: 31.10 02:31). OK 2026-10-31T02:31:40+01:00"
- ],
+ "aggiornato": "2026-11-01T07:39:49.283914+01:00",
+ "problemi": 0,
+ "avvisi": [],
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
@@ -12,7 +10,7 @@
   },
   {
    "nome": "Musica → T7",
-   "stato": "errore",
+   "stato": "corso",
    "ultimo_ok": "2026-10-31T02:31:40+01:00"
   },
   {

@@ -167,7 +167,7 @@ fetch("stato.json?t="+Date.now()).then(r=>r.json()).then(d=>{
  if(!vecchio&&d.problemi>0){for(const t of (d.avvisi||[])){const li=document.createElement("li");li.textContent=t;av.appendChild(li)}
   if(!(d.avvisi||[]).length){const li=document.createElement("li");li.textContent="Dettagli nella mail del controllo.";av.appendChild(li)}}
  const bk=document.getElementById("bk");
- for(const b of d.backup){const c=b.stato==="ok"?"ok":b.stato==="attesa"?"warn":"bad";bk.appendChild(riga(c,b.nome,"ultimo OK "+fmt(b.ultimo_ok)))}
+ for(const b of d.backup){const c=b.stato==="ok"?"ok":(b.stato==="attesa"||b.stato==="corso")?"warn":"bad";bk.appendChild(riga(c,b.nome,(b.stato==="corso"?"in corso · ":"")+"ultimo OK "+fmt(b.ultimo_ok)))}
  const dk=document.getElementById("dk");
  for(const x of d.dischi){const c=x.ritirato?"off":x.smart==="guasto"?"bad":(x.libero_gb!=null&&x.libero_gb<100)?"warn":"ok";
   dk.appendChild(riga(c,x.nome+(x.ritirato?" — ritirato, disco guasto":x.smart==="guasto"?" — SMART: guasto":""),x.uso!=null?`${100-x.uso}% libero · ${gb(x.libero_gb)}${x.totale_gb!=null?" / "+gb(x.totale_gb):""}`:"non montato",x.uso))}
