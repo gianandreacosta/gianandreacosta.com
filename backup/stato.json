@@ -1,37 +1,39 @@
 {
- "aggiornato": "2026-10-31T07:00:01.879611+01:00",
- "problemi": 0,
- "avvisi": [],
+ "aggiornato": "2026-11-01T07:00:01.723774+01:00",
+ "problemi": 1,
+ "avvisi": [
+  "Musica → T7: nessun esito OK recente (ultimo OK: 31.10 02:31). OK 2026-10-31T02:31:40+01:00"
+ ],
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T01:56:35+01:00"
+   "ultimo_ok": "2026-11-01T01:56:33+01:00"
   },
   {
    "nome": "Musica → T7",
-   "stato": "ok",
+   "stato": "errore",
    "ultimo_ok": "2026-10-31T02:31:40+01:00"
   },
   {
    "nome": "Nextcloud → cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T03:32:03+01:00"
+   "ultimo_ok": "2026-11-01T03:33:48+01:00"
   },
   {
    "nome": "Sistema → T7 + cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T00:30:38+01:00"
+   "ultimo_ok": "2026-11-01T00:31:11+01:00"
   },
   {
    "nome": "Galleria foto",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T04:31:17+01:00"
+   "ultimo_ok": "2026-11-01T04:31:08+01:00"
   },
   {
    "nome": "Mac → disco Musica",
    "stato": "ok",
-   "ultimo_ok": "2026-10-30T09:15:23+01:00"
+   "ultimo_ok": "2026-10-31T10:20:16+01:00"
   },
   {
    "nome": "Settimanale → Backup 3",
@@ -41,32 +43,32 @@
   {
    "nome": "Database Immich",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T02:00:25+01:00"
+   "ultimo_ok": "2026-11-01T02:00:26+01:00"
   },
   {
    "nome": "Finanza",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T03:10:01+01:00"
+   "ultimo_ok": "2026-11-01T03:10:01+01:00"
   },
   {
    "nome": "OpenClaw",
    "stato": "ok",
-   "ultimo_ok": "2026-10-31T00:00:07+01:00"
+   "ultimo_ok": "2026-11-01T00:00:07+01:00"
   }
  ],
  "dischi": [
   {
    "nome": "SSD sistema",
-   "uso": 76,
-   "libero_gb": 48,
+   "uso": 77,
+   "libero_gb": 47,
    "totale_gb": 209,
    "smart": "ok",
    "ritirato": false
   },
   {
    "nome": "T7",
-   "uso": 82,
-   "libero_gb": 677,
+   "uso": 83,
+   "libero_gb": 634,
    "totale_gb": 3726,
    "smart": "ok",
    "ritirato": false
@@ -74,7 +76,7 @@
   {
    "nome": "Musica",
    "uso": 97,
-   "libero_gb": 146,
+   "libero_gb": 135,
    "totale_gb": 3726,
    "smart": "ok",
    "ritirato": false
@@ -98,7 +100,7 @@
   {
    "nome": "Backup 3",
    "uso": 79,
-   "libero_gb": 603,
+   "libero_gb": 592,
    "totale_gb": 2794,
    "smart": "ok",
    "ritirato": false
