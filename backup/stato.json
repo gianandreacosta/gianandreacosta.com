@@ -1,7 +1,10 @@
 {
  "aggiornato": "2026-11-01T07:39:49.283914+01:00",
- "problemi": 0,
- "avvisi": [],
+ "problemi": 2,
+ "avvisi": [
+  "Prova di ripristino Video personali → Backup 3: 8 file su 20 diversi o mancanti",
+  "Prova di ripristino iTunes → Backup 3: 6 file su 20 diversi o mancanti.mp3)"
+ ],
  "backup": [
   {
    "nome": "Foto e documenti OneDrive → T7",
@@ -103,5 +106,50 @@
    "smart": "ok",
    "ritirato": false
   }
- ]
+ ],
+ "ripristino": {
+  "quando": "2026-11-01T12:15:00.008596+01:00",
+  "esito": [
+   {
+    "nome": "Musica → T7",
+    "provati": 20,
+    "diversi": 0
+   },
+   {
+    "nome": "Musica → Backup 3",
+    "provati": 20,
+    "diversi": 0
+   },
+   {
+    "nome": "Galleria → Backup 3",
+    "provati": 20,
+    "diversi": 0
+   },
+   {
+    "nome": "Foto OneDrive → Backup 3",
+    "provati": 20,
+    "diversi": 0
+   },
+   {
+    "nome": "Documenti OneDrive → Backup 3",
+    "provati": 20,
+    "diversi": 0
+   },
+   {
+    "nome": "Video personali → Backup 3",
+    "provati": 20,
+    "diversi": 8
+   },
+   {
+    "nome": "iTunes → Backup 3",
+    "provati": 20,
+    "diversi": 6
+   },
+   {
+    "nome": "Archivio di sistema si apre",
+    "provati": 1,
+    "diversi": 0
+   }
+  ]
+ }
 }
