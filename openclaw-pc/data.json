@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T23:00:02.916072Z",
+  "generated_at": "2026-11-03T23:10:02.812336Z",
   "system": {
     "version": "OpenClaw 2026.6.11 (e085fa1)",
     "current_ver": "2026.6.11",
@@ -78,7 +78,7 @@
     {
       "file": "daily-config-20261104-0000.tar.gz",
       "date": "2026-11-04T00:00:00Z",
-      "size": "11.5M",
+      "size": "49.8M",
       "context": "Backup automatico",
       "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20261104-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     },
@@ -284,13 +284,6 @@
       "size": "49.8M",
       "context": "Backup automatico",
       "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20261006-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
-    },
-    {
-      "file": "daily-config-20261005-0000.tar.gz",
-      "date": "2026-10-05T00:00:00Z",
-      "size": "49.8M",
-      "context": "Backup automatico",
-      "restore_cmd": "BACKUP=/home/gianbot/.openclaw/workspace/backups/daily-config-20261005-0000.tar.gz bash /home/gianbot/.openclaw/workspace/tools/rollback_update.sh"
     }
   ],
   "rassegna": {
