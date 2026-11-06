@@ -116,15 +116,15 @@
             <div><b id="ras-cat">–</b><span>categorie</span></div>
           </div>
         </a>
-        <a href="/backup/" class="g sm">
-          <span class="k"><span class="dot" id="bk-dot"></span>Backup</span>
+        <a href="https://geoffrypc.tail38d0d3.ts.net:8449/backup/" class="g sm">
+          <span class="k"><span class="dot" id="bk-dot"></span>Backup <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
           <span class="t" id="bk-t">Stato backup</span>
-          <span class="foot" id="bk-f">Esito delle copie e salute dei dischi</span>
+          <span class="foot" id="bk-f">Stato visibile solo da Tailscale</span>
         </a>
-        <a href="/openclaw-pc/" class="g sm">
-          <span class="k"><span class="dot" id="mo-dot"></span>GeoffryPC</span>
+        <a href="https://geoffrypc.tail38d0d3.ts.net:8449/monitor/" class="g sm">
+          <span class="k"><span class="dot" id="mo-dot"></span>GeoffryPC <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
           <span class="t">OpenClaw Monitor</span>
-          <span class="foot" id="mo-f">Modelli, sub-agent, cron</span>
+          <span class="foot" id="mo-f">Stato visibile solo da Tailscale</span>
         </a>
       </div>
     </section>
@@ -190,7 +190,9 @@
       $('ras-cat').textContent = m.n_categorie;
     }).catch(() => setDot('ras-dot', ''));
 
-    json('/backup/stato.json').then(s => {
+    // Backup e Monitor stanno nella tailnet: da fuori la richiesta fallisce e resta il testo di partenza
+    const PRIV = 'https://geoffrypc.tail38d0d3.ts.net:8449';
+    json(PRIV + '/backup/stato.json').then(s => {
       const list = s.backup || [];
       const ok = list.filter(b => b.stato === 'ok').length;
       const old = ageH(s.aggiornato) > 26;
@@ -200,7 +202,7 @@
       else { setDot('bk-dot', 'ok'); $('bk-f').textContent = 'Controllo ' + when(s.aggiornato); }
     }).catch(() => setDot('bk-dot', ''));
 
-    json('/openclaw-pc/data.json').then(d => {
+    json(PRIV + '/monitor/data.json').then(d => {
       const h = ageH(d.generated_at);
       setDot('mo-dot', h < 0.75 ? 'ok' : 'stop');
       $('mo-f').className = 'foot' + (h < 0.75 ? '' : ' stop');
