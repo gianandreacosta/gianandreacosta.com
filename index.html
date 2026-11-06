@@ -117,14 +117,14 @@
           </div>
         </a>
         <a href="https://geoffrypc.tail38d0d3.ts.net:8449/backup/" class="g sm">
-          <span class="k"><span class="dot" id="bk-dot"></span>Backup <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
-          <span class="t" id="bk-t">Stato backup</span>
-          <span class="foot" id="bk-f">Stato visibile solo da Tailscale</span>
+          <span class="k">Backup <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
+          <span class="t">Stato backup</span>
+          <span class="foot">Copie e dischi · solo da Tailscale</span>
         </a>
         <a href="https://geoffrypc.tail38d0d3.ts.net:8449/monitor/" class="g sm">
-          <span class="k"><span class="dot" id="mo-dot"></span>GeoffryPC <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
+          <span class="k">GeoffryPC <svg class="lock" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5.5" width="8" height="5.5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg></span>
           <span class="t">OpenClaw Monitor</span>
-          <span class="foot" id="mo-f">Stato visibile solo da Tailscale</span>
+          <span class="foot">Modelli e agenti · solo da Tailscale</span>
         </a>
       </div>
     </section>
@@ -168,10 +168,8 @@
     const fmtN = n => Number(n).toLocaleString('de-CH');
     const hhmm = d => d.toLocaleTimeString('it-CH', { hour: '2-digit', minute: '2-digit', timeZone: TZ });
     const dayKey = d => d.toLocaleDateString('sv-SE', { timeZone: TZ });
-    const ageH = iso => (Date.now() - new Date(iso).getTime()) / 36e5;
     const setDot = (id, s) => { $(id).className = 'dot ' + s; };
     const json = url => fetch(url + '?t=' + Date.now()).then(r => { if (!r.ok) throw r.status; return r.json(); });
-    const when = iso => { const d = new Date(iso); return dayKey(d) === dayKey(new Date()) ? 'oggi ' + hhmm(d) : d.toLocaleDateString('it-CH', { day: '2-digit', month: '2-digit', timeZone: TZ }) + ' ' + hhmm(d); };
 
     function clock() {
       const d = new Date();
@@ -189,25 +187,6 @@
       $('ras-fonti').textContent = m.n_fonti;
       $('ras-cat').textContent = m.n_categorie;
     }).catch(() => setDot('ras-dot', ''));
-
-    // Backup e Monitor stanno nella tailnet: da fuori la richiesta fallisce e resta il testo di partenza
-    const PRIV = 'https://geoffrypc.tail38d0d3.ts.net:8449';
-    json(PRIV + '/backup/stato.json').then(s => {
-      const list = s.backup || [];
-      const ok = list.filter(b => b.stato === 'ok').length;
-      const old = ageH(s.aggiornato) > 26;
-      $('bk-t').textContent = `${ok} su ${list.length} copie ok`;
-      if (old) { setDot('bk-dot', 'stop'); $('bk-f').className = 'foot stop'; $('bk-f').textContent = 'Stato fermo dal ' + when(s.aggiornato); }
-      else if (ok < list.length || s.problemi > 0) { setDot('bk-dot', 'warn'); $('bk-f').className = 'foot warn'; $('bk-f').textContent = (s.avvisi && s.avvisi[0]) || `${s.problemi} problemi`; }
-      else { setDot('bk-dot', 'ok'); $('bk-f').textContent = 'Controllo ' + when(s.aggiornato); }
-    }).catch(() => setDot('bk-dot', ''));
-
-    json(PRIV + '/monitor/data.json').then(d => {
-      const h = ageH(d.generated_at);
-      setDot('mo-dot', h < 0.75 ? 'ok' : 'stop');
-      $('mo-f').className = 'foot' + (h < 0.75 ? '' : ' stop');
-      $('mo-f').textContent = (h < 0.75 ? 'aggiornato ' : 'fermo dal ') + when(d.generated_at);
-    }).catch(() => setDot('mo-dot', ''));
 
     fetch('https://api.open-meteo.com/v1/forecast?latitude=46.0037&longitude=8.9511&current=temperature_2m&timezone=Europe%2FZurich')
       .then(r => r.json()).then(w => { $('meteo').textContent = `Lugano ${Math.round(w.current.temperature_2m)}° adesso · 4 città`; })
