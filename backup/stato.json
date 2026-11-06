@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-05T07:00:01.419554+01:00",
+ "aggiornato": "2026-11-06T07:00:01.905828+01:00",
  "problemi": 1,
  "avvisi": [
   "Disco Musica quasi pieno: 75 GB liberi (98% usato)"
@@ -8,32 +8,32 @@
   {
    "nome": "Foto e documenti OneDrive → T7",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T02:02:10+01:00"
+   "ultimo_ok": "2026-11-06T01:57:06+01:00"
   },
   {
    "nome": "Musica → T7",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T02:31:46+01:00"
+   "ultimo_ok": "2026-11-06T02:31:50+01:00"
   },
   {
    "nome": "Nextcloud → cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T03:32:32+01:00"
+   "ultimo_ok": "2026-11-06T03:33:03+01:00"
   },
   {
    "nome": "Sistema → T7 + cloud",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T00:30:35+01:00"
+   "ultimo_ok": "2026-11-06T00:31:41+01:00"
   },
   {
    "nome": "Galleria foto",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T04:32:34+01:00"
+   "ultimo_ok": "2026-11-06T04:31:07+01:00"
   },
   {
    "nome": "Mac → disco Musica",
    "stato": "ok",
-   "ultimo_ok": "2026-11-04T09:15:25+01:00"
+   "ultimo_ok": "2026-11-05T09:15:25+01:00"
   },
   {
    "nome": "Settimanale → Backup 3",
@@ -43,24 +43,24 @@
   {
    "nome": "Database Immich",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T02:01:21+01:00"
+   "ultimo_ok": "2026-11-06T02:00:25+01:00"
   },
   {
    "nome": "Finanza",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T03:10:01+01:00"
+   "ultimo_ok": "2026-11-06T03:10:01+01:00"
   },
   {
    "nome": "OpenClaw",
    "stato": "ok",
-   "ultimo_ok": "2026-11-05T00:00:06+01:00"
+   "ultimo_ok": "2026-11-06T00:00:07+01:00"
   }
  ],
  "dischi": [
   {
    "nome": "SSD sistema",
-   "uso": 78,
-   "libero_gb": 45,
+   "uso": 89,
+   "libero_gb": 23,
    "totale_gb": 209,
    "smart": "ok",
    "ritirato": false
@@ -68,7 +68,7 @@
   {
    "nome": "T7",
    "uso": 93,
-   "libero_gb": 289,
+   "libero_gb": 280,
    "totale_gb": 3726,
    "smart": "ok",
    "ritirato": false
